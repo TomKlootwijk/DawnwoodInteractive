@@ -1,0 +1,157 @@
+[
+  {
+    "index": 0,
+    "key": "klein",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 1,
+    "key": "hadamard",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 2,
+    "key": "phi",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 3,
+    "key": "rk4",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 4,
+    "key": "phyllotaxis",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 5,
+    "key": "pinion",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 6,
+    "key": "double_dot",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 7,
+    "key": "T_shape",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 8,
+    "key": "pyramid",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 9,
+    "key": "circle",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 10,
+    "key": "cone",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 11,
+    "key": "sphere",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 12,
+    "key": "apex",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 13,
+    "key": "delta_phi",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 14,
+    "key": "blend",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 15,
+    "key": "wavefront",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 16,
+    "key": "y_up",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 17,
+    "key": "crystal",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 18,
+    "key": "inverse_T",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 19,
+    "key": "T_transform",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 20,
+    "key": "jitter",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 21,
+    "key": "bst",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 22,
+    "key": "return",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 23,
+    "key": "phase_history",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 24,
+    "key": "dichromatic",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 25,
+    "key": "bayer",
+    "execution": "downstream test/readout"
+  },
+  {
+    "index": 26,
+    "key": "bc5",
+    "execution": "downstream test/readout"
+  },
+  {
+    "index": 27,
+    "key": "split",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 28,
+    "key": "parity",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 29,
+    "key": "psi",
+    "execution": "numerical recurrence"
+  },
+  {
+    "index": 30,
+    "key": "mutation",
+    "execution": "numerical recurrence"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "name": "cpu_selftest",
+  "command": [
+    "/mnt/data/Dawnwood_GPU_v0.3/build/dawnwood",
+    "selftest"
+  ],
+  "error": "[Errno 2] No such file or directory: '/mnt/data/Dawnwood_GPU_v0.3/build/dawnwood'",
+  "report": {
+    "error": "[Errno 2] No such file or directory: '/mnt/data/Dawnwood_GPU_v0.3/build/dawnwood'"
+  }
+}

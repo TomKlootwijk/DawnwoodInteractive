@@ -1,0 +1,19 @@
+{
+  "name": "body_05",
+  "command": [
+    "/mnt/data/Dawnwood_GPU_v0.3/build/dawnwood",
+    "run",
+    "--backend",
+    "cpu",
+    "--count",
+    "16",
+    "--steps",
+    "8",
+    "--program",
+    "5:0x2"
+  ],
+  "error": "[Errno 2] No such file or directory: '/mnt/data/Dawnwood_GPU_v0.3/build/dawnwood'",
+  "report": {
+    "error": "[Errno 2] No such file or directory: '/mnt/data/Dawnwood_GPU_v0.3/build/dawnwood'"
+  }
+}

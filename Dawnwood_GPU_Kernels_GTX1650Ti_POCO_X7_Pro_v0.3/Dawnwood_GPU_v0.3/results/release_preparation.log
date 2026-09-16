@@ -1,0 +1,15 @@
+release_shaders 1 
+{
+  "release": "0.3.0",
+  "profile": "DWI-N1",
+  "shaders_compiled": false,
+  "desktop_compiled": false,
+  "cpu_ctest_passed": false,
+  "source_claim_suite_passed": false,
+  "android_native_compiled": false,
+  "android_apk_built": false,
+  "android_build_note": "No installed Android SDK/NDK toolchain found in this build environment.",
+  "POCO_hardware_test_executed": false,
+  "GTX_1650_Ti_hardware_test_executed": false,
+  "original_source_present": true
+}

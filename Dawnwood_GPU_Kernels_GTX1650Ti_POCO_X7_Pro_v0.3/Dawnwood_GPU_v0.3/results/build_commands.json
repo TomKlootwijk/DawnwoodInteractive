@@ -1,0 +1,12 @@
+[
+  {
+    "name": "release_shaders",
+    "command": [
+      "/opt/pyvenv/bin/python",
+      "/mnt/data/Dawnwood_GPU_v0.3/tools/build_shaders.py"
+    ],
+    "cwd": "/mnt/data/Dawnwood_GPU_v0.3",
+    "utc": "2026-09-16T10:16:34.214364+00:00",
+    "exit_code": 1
+  }
+]

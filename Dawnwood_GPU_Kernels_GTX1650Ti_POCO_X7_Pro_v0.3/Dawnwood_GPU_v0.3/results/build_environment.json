@@ -1,0 +1,18 @@
+{
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "machine": "x86_64",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "tools": {
+    "cmake": "/usr/bin/cmake",
+    "g++": "/usr/bin/g++",
+    "clang++": "/usr/local/swift/usr/bin/clang++",
+    "glslangValidator": null,
+    "glslc": null,
+    "spirv-val": null,
+    "vulkaninfo": null,
+    "adb": null,
+    "java": "/usr/bin/java",
+    "gradle": null,
+    "nvidia-smi": null
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "owner_target": "POCO X7 Pro 12 GB system RAM",
+  "backend": "Android NDK Vulkan",
+  "expected_gpu_family": "Mali-G720",
+  "vendor_id": 5045,
+  "allow_software": false,
+  "starting_state_count": 4096,
+  "steps": 64,
+  "batch": 8,
+  "dedicated_vram_bytes": null,
+  "memory_policy": "Query device heaps and system memory; do not use 12 GB as a dedicated VRAM allocation budget."
+}

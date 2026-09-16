@@ -1,0 +1,19 @@
+{
+  "name": "checkpoint_first",
+  "command": [
+    "/mnt/data/Dawnwood_GPU_v0.3/build/dawnwood",
+    "run",
+    "--backend",
+    "cpu",
+    "--count",
+    "16",
+    "--steps",
+    "4",
+    "--checkpoint",
+    "/mnt/data/Dawnwood_GPU_v0.3/results/claims/checkpoint.dwk"
+  ],
+  "error": "[Errno 2] No such file or directory: '/mnt/data/Dawnwood_GPU_v0.3/build/dawnwood'",
+  "report": {
+    "error": "[Errno 2] No such file or directory: '/mnt/data/Dawnwood_GPU_v0.3/build/dawnwood'"
+  }
+}

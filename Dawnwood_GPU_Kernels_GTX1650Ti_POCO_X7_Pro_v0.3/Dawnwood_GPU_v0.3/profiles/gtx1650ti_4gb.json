@@ -1,0 +1,11 @@
+{
+  "owner_target": "GTX 1650 Ti laptop 4 GB",
+  "backend": "vulkan",
+  "device_filter": "1650 Ti",
+  "vendor_id": 4318,
+  "allow_software": false,
+  "starting_state_count": 4096,
+  "steps": 64,
+  "batch": 8,
+  "advertised_memory_is_not_allocation_budget": true
+}

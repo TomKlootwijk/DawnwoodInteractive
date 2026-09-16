@@ -1,0 +1,7 @@
+#!/bin/sh
+set -eu
+HERE=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+if [ ! -f "$HERE/gradle/wrapper/gradle-wrapper.jar" ]; then
+    python3 "$HERE/../tools/bootstrap_gradle.py"
+fi
+exec java -classpath "$HERE/gradle/wrapper/gradle-wrapper.jar" org.gradle.wrapper.GradleWrapperMain "$@"

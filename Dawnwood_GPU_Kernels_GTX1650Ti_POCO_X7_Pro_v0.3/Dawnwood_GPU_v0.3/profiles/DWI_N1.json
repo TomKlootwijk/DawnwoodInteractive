@@ -1,0 +1,26 @@
+{
+  "profile": "DWI-N1-0.3",
+  "source_vector": [
+    0,
+    2,
+    0,
+    1
+  ],
+  "seed_label": 756,
+  "operator_count": 31,
+  "tree_depth": 4,
+  "dt": 0.01,
+  "yup": 0.0005,
+  "epsilon": 0.125,
+  "mutation": 1,
+  "jitter": 1,
+  "feedback": 1,
+  "phaseRate": 0.125,
+  "radialRate": 0.01,
+  "historyWeight": 0.75,
+  "fieldScale": 0.005,
+  "state_record_bytes": 128,
+  "operator_record_bytes": 64,
+  "workgroup_size": 64,
+  "bytecode_default": "0x341"
+}

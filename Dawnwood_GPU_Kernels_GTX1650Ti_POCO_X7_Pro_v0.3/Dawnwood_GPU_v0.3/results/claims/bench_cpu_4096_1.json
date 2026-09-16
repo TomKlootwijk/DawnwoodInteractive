@@ -1,0 +1,19 @@
+{
+  "name": "bench_cpu_4096_1",
+  "command": [
+    "/mnt/data/Dawnwood_GPU_v0.3/build/dawnwood",
+    "run",
+    "--backend",
+    "cpu",
+    "--count",
+    "4096",
+    "--steps",
+    "16",
+    "--batch",
+    "8"
+  ],
+  "error": "[Errno 2] No such file or directory: '/mnt/data/Dawnwood_GPU_v0.3/build/dawnwood'",
+  "report": {
+    "error": "[Errno 2] No such file or directory: '/mnt/data/Dawnwood_GPU_v0.3/build/dawnwood'"
+  }
+}
