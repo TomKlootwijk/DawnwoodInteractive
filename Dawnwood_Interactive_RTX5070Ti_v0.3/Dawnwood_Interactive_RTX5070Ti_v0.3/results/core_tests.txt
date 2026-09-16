@@ -1,0 +1,31 @@
+PASS wire formats
+PASS parity is population parity
+PASS rotation and signed representation
+PASS implicit tree addresses and leaf depth
+PASS Klein quotient seam and embedding
+PASS Klein folds preserve domain and flip parity
+PASS LP8 cell-centre codec round trips
+PASS source wavefront starts at zero/2 with identity inverse
+PASS BC4 constant blocks remain exact
+PASS BC4 endpoint modes and all selector bits
+PASS BC5 separate dichromatic channels
+PASS packed program instruction semantics
+PASS mutated words have total arithmetic
+PASS primitive supports
+PASS RK4 constant derivative and fourth-slot Y-up
+PASS inverse-T word composition
+PASS one-bit executable body mutation
+PASS freeze flag preserves every operator byte
+PASS feedback changes executable bodies and positions
+PASS code references affect numerical behavior
+PASS closed-loop determinism
+PASS checkpoint-by-state continuation
+PASS window coverage has no padding-only pages
+PASS partial window and page seam
+PASS native field storage accounting
+PASS free-memory budget arithmetic
+PASS exact storage has no BC5 token loss
+PASS BC5 error is observed rather than silently called lossless
+PASS ablation seeds and jitter produce distinct recurrences
+PASS longer exact and compressed circulation
+SUMMARY 30 cases, 77111 assertions, 0 failures

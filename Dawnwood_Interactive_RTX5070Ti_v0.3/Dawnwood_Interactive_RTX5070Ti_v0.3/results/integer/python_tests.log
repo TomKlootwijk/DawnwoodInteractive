@@ -1,0 +1,32 @@
+test_alternating_trials_warmup_exclusion_and_speedup (test_benchmark_optimization.BenchmarkEvidenceTests.test_alternating_trials_warmup_exclusion_and_speedup) ... ok
+test_cache_policies_are_independent_and_do_not_change_state_comparisons (test_benchmark_optimization.BenchmarkEvidenceTests.test_cache_policies_are_independent_and_do_not_change_state_comparisons) ... ok
+test_full_field_difference_fails_even_when_operator_digest_matches (test_benchmark_optimization.BenchmarkEvidenceTests.test_full_field_difference_fails_even_when_operator_digest_matches) ... ok
+test_timing_report_recurrence_mismatch_fails (test_benchmark_optimization.BenchmarkEvidenceTests.test_timing_report_recurrence_mismatch_fails) ... ok
+test_all_defined_functions_are_scanned_even_when_unreachable (test_integer_audit.IntegerAuditTests.test_all_defined_functions_are_scanned_even_when_unreachable) ... ok
+test_blackwell_integer_vector_and_control_opcodes (test_integer_audit.IntegerAuditTests.test_blackwell_integer_vector_and_control_opcodes) ... ok
+test_comments_declarations_names_and_constants_are_not_float_opcodes (test_integer_audit.IntegerAuditTests.test_comments_declarations_names_and_constants_are_not_float_opcodes) ... ok
+test_constant_materialization_is_narrow_and_reported (test_integer_audit.IntegerAuditTests.test_constant_materialization_is_narrow_and_reported) ... ok
+test_direct_integer_helper_call_resolves (test_integer_audit.IntegerAuditTests.test_direct_integer_helper_call_resolves) ... ok
+test_external_and_indirect_calls_fail_conservatively (test_integer_audit.IntegerAuditTests.test_external_and_indirect_calls_fail_conservatively) ... ok
+test_float_arithmetic_conversion_comparison_sfu_matrix_and_texture_fail (test_integer_audit.IntegerAuditTests.test_float_arithmetic_conversion_comparison_sfu_matrix_and_texture_fail) ... ok
+test_integer_memory_pointer_and_texture_instructions_pass (test_integer_audit.IntegerAuditTests.test_integer_memory_pointer_and_texture_instructions_pass) ... ok
+test_integer_ptx_with_float_sass_lowering_fails_final_claim (test_integer_audit.IntegerAuditTests.test_integer_ptx_with_float_sass_lowering_fails_final_claim) ... ok
+test_native_sampler_boundary_is_explicit_and_narrow (test_integer_audit.IntegerAuditTests.test_native_sampler_boundary_is_explicit_and_narrow) ... ok
+test_required_entries_unknown_opcode_and_invalid_input_fail (test_integer_audit.IntegerAuditTests.test_required_entries_unknown_opcode_and_invalid_input_fail) ... ok
+test_sass_float_and_unknown_opcodes_fail (test_integer_audit.IntegerAuditTests.test_sass_float_and_unknown_opcodes_fail) ... ok
+test_sass_integer_names_are_not_mistaken_for_floating (test_integer_audit.IntegerAuditTests.test_sass_integer_names_are_not_mistaken_for_floating) ... ok
+test_arbitrary_bits_roundtrip (test_tools.ToolTests.test_arbitrary_bits_roundtrip) ... ok
+test_bad_length (test_tools.ToolTests.test_bad_length) ... ok
+test_bc5_page_bytes (test_tools.ToolTests.test_bc5_page_bytes) ... ok
+test_complete_sweep_rounding (test_tools.ToolTests.test_complete_sweep_rounding) ... ok
+test_default_image_roundtrip (test_tools.ToolTests.test_default_image_roundtrip) ... ok
+test_exact_page_bytes (test_tools.ToolTests.test_exact_page_bytes) ... ok
+test_json_matches_binary (test_tools.ToolTests.test_json_matches_binary) ... ok
+test_maximum_fill_is_not_disabled (test_tools.ToolTests.test_maximum_fill_is_not_disabled) ... ok
+test_named_edit_changes_instruction_word (test_tools.ToolTests.test_named_edit_changes_instruction_word) ... ok
+test_operand_range (test_tools.ToolTests.test_operand_range) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.546s
+
+OK

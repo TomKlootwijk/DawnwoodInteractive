@@ -1,0 +1,70 @@
+[
+  {
+    "executable": "build\\dawnwood_integer.exe",
+    "sha256": "e32870d0e9d7448dda4598ddc8e7fc1bfa19935ec2c878906d92f25915d6773b",
+    "ptx_command": [
+      "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin\\cuobjdump.exe",
+      "--dump-ptx",
+      "C:\\Users\\Tom\\Documents\\DawnwoodInteractive\\Dawnwood_Interactive_RTX5070Ti_v0.3\\Dawnwood_Interactive_RTX5070Ti_v0.3\\build\\dawnwood_integer.exe"
+    ],
+    "sass_command": [
+      "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin\\cuobjdump.exe",
+      "--dump-sass",
+      "C:\\Users\\Tom\\Documents\\DawnwoodInteractive\\Dawnwood_Interactive_RTX5070Ti_v0.3\\Dawnwood_Interactive_RTX5070Ti_v0.3\\build\\dawnwood_integer.exe"
+    ],
+    "audit": "results\\integer\\instructions\\dawnwood_integer.json",
+    "audit_returncode": 0,
+    "binary_unchanged": true
+  },
+  {
+    "executable": "build\\dawnwood_integer_texture.exe",
+    "sha256": "ba4b6746e6dfa6e3066b6fe6781f5681fb9fd2ff81d85d88576ee77a33ec80dc",
+    "ptx_command": [
+      "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin\\cuobjdump.exe",
+      "--dump-ptx",
+      "C:\\Users\\Tom\\Documents\\DawnwoodInteractive\\Dawnwood_Interactive_RTX5070Ti_v0.3\\Dawnwood_Interactive_RTX5070Ti_v0.3\\build\\dawnwood_integer_texture.exe"
+    ],
+    "sass_command": [
+      "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin\\cuobjdump.exe",
+      "--dump-sass",
+      "C:\\Users\\Tom\\Documents\\DawnwoodInteractive\\Dawnwood_Interactive_RTX5070Ti_v0.3\\Dawnwood_Interactive_RTX5070Ti_v0.3\\build\\dawnwood_integer_texture.exe"
+    ],
+    "audit": "results\\integer\\instructions\\dawnwood_integer_texture.json",
+    "audit_returncode": 0,
+    "binary_unchanged": true
+  },
+  {
+    "executable": "build\\dawnwood_integer_reference.exe",
+    "sha256": "76fe1be6938e59750c7d6b846810861ee2122bd45fc8ea36cd0930f594e7cc27",
+    "ptx_command": [
+      "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin\\cuobjdump.exe",
+      "--dump-ptx",
+      "C:\\Users\\Tom\\Documents\\DawnwoodInteractive\\Dawnwood_Interactive_RTX5070Ti_v0.3\\Dawnwood_Interactive_RTX5070Ti_v0.3\\build\\dawnwood_integer_reference.exe"
+    ],
+    "sass_command": [
+      "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin\\cuobjdump.exe",
+      "--dump-sass",
+      "C:\\Users\\Tom\\Documents\\DawnwoodInteractive\\Dawnwood_Interactive_RTX5070Ti_v0.3\\Dawnwood_Interactive_RTX5070Ti_v0.3\\build\\dawnwood_integer_reference.exe"
+    ],
+    "audit": "results\\integer\\instructions\\dawnwood_integer_reference.json",
+    "audit_returncode": 0,
+    "binary_unchanged": true
+  },
+  {
+    "executable": "build\\dawnwood_integer_cached.exe",
+    "sha256": "aadfeb295f77f814e8abc1eebdbc61e94a1a12dc7d75d09e08ae73a6e2af5387",
+    "ptx_command": [
+      "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin\\cuobjdump.exe",
+      "--dump-ptx",
+      "C:\\Users\\Tom\\Documents\\DawnwoodInteractive\\Dawnwood_Interactive_RTX5070Ti_v0.3\\Dawnwood_Interactive_RTX5070Ti_v0.3\\build\\dawnwood_integer_cached.exe"
+    ],
+    "sass_command": [
+      "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin\\cuobjdump.exe",
+      "--dump-sass",
+      "C:\\Users\\Tom\\Documents\\DawnwoodInteractive\\Dawnwood_Interactive_RTX5070Ti_v0.3\\Dawnwood_Interactive_RTX5070Ti_v0.3\\build\\dawnwood_integer_cached.exe"
+    ],
+    "audit": "results\\integer\\instructions\\dawnwood_integer_cached.json",
+    "audit_returncode": 0,
+    "binary_unchanged": true
+  }
+]

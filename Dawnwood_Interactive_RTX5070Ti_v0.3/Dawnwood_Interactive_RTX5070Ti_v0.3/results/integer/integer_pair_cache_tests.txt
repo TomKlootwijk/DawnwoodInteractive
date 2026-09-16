@@ -1,0 +1,10 @@
+METRIC cache_bytes=65536
+METRIC corrected_entries=0
+METRIC orientation_corrections=0
+METRIC max_phase_correction=0
+METRIC radial_invariance_failures=0
+METRIC cpu_direct_ms=78.8713
+METRIC cpu_cached_ms=4.9655
+METRIC cpu_speed_ratio=15.8839
+METRIC checksum=165225600
+SUMMARY 1253890 assertions, 0 failures

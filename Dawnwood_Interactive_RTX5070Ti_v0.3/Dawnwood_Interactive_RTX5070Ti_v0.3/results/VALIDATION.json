@@ -1,0 +1,105 @@
+{
+  "project": "Dawnwood Interactive",
+  "version": "0.3",
+  "validation_date": "2026-09-16",
+  "author": {
+    "project": "Dawnwood Interactive",
+    "name": "Tom Klootwijk",
+    "identifier": "NL200678942",
+    "date_of_birth_as_supplied": "10-07-1990",
+    "edition": "RTX 5070 Ti native texture kernel v0.3",
+    "date": "2026-09-16"
+  },
+  "environment": {
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "python": "3.13.5",
+    "cxx_compiler": "c++ (Debian 14.2.0-19) 14.2.0",
+    "cmake": "cmake version 3.31.6"
+  },
+  "cpu_build": {
+    "status": "passed",
+    "mode": "Release, C++17, floating-point contraction disabled",
+    "log": "results/build_cpu.txt"
+  },
+  "cpp_core_tests": {
+    "status": "passed",
+    "test_groups": 30,
+    "core_assertions": 77110,
+    "export_image_assertion": 1,
+    "failed": 0,
+    "log": "results/core_tests.txt"
+  },
+  "ctest": {
+    "status": "passed",
+    "tests": 3,
+    "log": "results/ctest_cpu.txt",
+    "note": "The 3 CTest entries run the core suite and the two CPU example modes; they are not 3 additional distinct core groups."
+  },
+  "python_tools": {
+    "status": "passed",
+    "tests": 10,
+    "log": "results/python_tests.txt"
+  },
+  "cpu_sanitizers": {
+    "status": "passed",
+    "tools": [
+      "AddressSanitizer",
+      "UndefinedBehaviorSanitizer"
+    ],
+    "test_groups": 30,
+    "assertions": 77110,
+    "log": "results/cpu_sanitizers.txt"
+  },
+  "cpu_reproducibility": {
+    "status": "passed",
+    "method": "Each 64-interval example executed twice as a new process; complete JSONL traces compared byte for byte.",
+    "bc5": {
+      "backend": "CPU reference",
+      "codec": "bc5-software",
+      "pages": 3,
+      "side": 16,
+      "epochs": 64,
+      "visited_blocks": 448,
+      "digest_fnv1a64": "18695ce21c60d23f",
+      "software_codec_mean_absolute_token_error": 4.45940290179
+    },
+    "rg8": {
+      "backend": "CPU reference",
+      "codec": "rg8",
+      "pages": 3,
+      "side": 16,
+      "epochs": 64,
+      "visited_blocks": 448,
+      "digest_fnv1a64": "b55793d198e7481e",
+      "software_codec_mean_absolute_token_error": 0
+    }
+  },
+  "operator_image": {
+    "bytes": 1984,
+    "sha256": "5c2030a702b7876ff162500beb1f2307d80034c680ef9656422421825d3a81a4",
+    "json_binary_roundtrip": "passed"
+  },
+  "original_source": {
+    "unchanged": true,
+    "sha256": "e3cf7d49e6a4942c7ccad4805f6a2a07e1c817753ff8d384b1f2e37791ebbe27"
+  },
+  "native_cuda": {
+    "configuration_attempted": true,
+    "configuration_exit_code": 1,
+    "nvcc_available": false,
+    "compiled": false,
+    "gpu_execution_performed": false,
+    "status": "not run: no CUDA compiler or NVIDIA device in the delivery environment",
+    "configuration_log": "results/native_configure.txt",
+    "laptop_acceptance_command": "python tools/gpu_acceptance.py build/Release/dawnwood.exe --out work/acceptance_01"
+  },
+  "hardware_measurements": {
+    "vram_allocation": null,
+    "texture_cache_hit_rate": null,
+    "physical_residency": null,
+    "updates_per_second": null,
+    "dram_bandwidth": null,
+    "note": "These values are intentionally absent until measured on the target GPU. CPU codec error is not a GPU performance result."
+  },
+  "release_contents": "Native CUDA/C++ source and build scripts, not a precompiled GPU executable."
+}

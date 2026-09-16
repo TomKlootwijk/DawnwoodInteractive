@@ -1,0 +1,15 @@
+test_arbitrary_bits_roundtrip (test_tools.ToolTests.test_arbitrary_bits_roundtrip) ... ok
+test_bad_length (test_tools.ToolTests.test_bad_length) ... ok
+test_bc5_page_bytes (test_tools.ToolTests.test_bc5_page_bytes) ... ok
+test_complete_sweep_rounding (test_tools.ToolTests.test_complete_sweep_rounding) ... ok
+test_default_image_roundtrip (test_tools.ToolTests.test_default_image_roundtrip) ... ok
+test_exact_page_bytes (test_tools.ToolTests.test_exact_page_bytes) ... ok
+test_json_matches_binary (test_tools.ToolTests.test_json_matches_binary) ... ok
+test_maximum_fill_is_not_disabled (test_tools.ToolTests.test_maximum_fill_is_not_disabled) ... ok
+test_named_edit_changes_instruction_word (test_tools.ToolTests.test_named_edit_changes_instruction_word) ... ok
+test_operand_range (test_tools.ToolTests.test_operand_range) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.010s
+
+OK

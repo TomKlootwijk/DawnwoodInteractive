@@ -1,0 +1,9 @@
+Microsoft (R) C/C++ Optimizing Compiler Version 19.44.35221 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+integer_predicate_tests.cpp
+Microsoft (R) Incremental Linker Version 14.44.35221.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:build/integer_predicate_tests.exe 
+build/integer_predicate_tests.obj 

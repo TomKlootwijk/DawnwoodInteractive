@@ -1,0 +1,8 @@
+Dawnwood Interactive integer-1 | Tom Klootwijk | NL200678942 | 10-07-1990
+NVIDIA GeForce RTX 5070 Ti Laptop GPU | compute 12.0 | 12820480000 bytes total | 11561598976 free
+L2 37748736 | L2 persisting maximum 23592960 | shared/block 49152 | SMs 46
+Packed 16 pages / 160 MiB
+Packed 32 pages / 320 MiB
+Field: 32 pages | 134217728 dichromatic token pairs | 335544320 payload bytes | free 11219763200
+Logical active-bank hot set: 4004 bytes; evolve shared allocation: 3524 bytes; L2 preference enabled
+Completed 256 Psi intervals, 16777216 block updates; report C:\Users\Tom\Documents\DawnwoodInteractive\Dawnwood_Interactive_RTX5070Ti_v0.3\Dawnwood_Interactive_RTX5070Ti_v0.3\results\integer\benchmark_large\rg8_trial1_reference_balanced.json

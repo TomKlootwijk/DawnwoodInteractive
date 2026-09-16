@@ -1,0 +1,20 @@
+Dawnwood Interactive | Tom Klootwijk | NL200678942 | 10-07-1990
+NVIDIA GeForce RTX 5070 Ti Laptop GPU | compute 12.0 | 12820480000 bytes total | 11561598976 free
+L2 37748736 | L2 persisting maximum 23592960 | shared/block 49152 | SMs 46
+PASS 64 CPU/GPU packed-instruction cases
+PASS all 65536 GPU pair-cache entries at four chart offsets
+PASS allocate native BC5 texture view
+PASS BC5 hardware decoding agrees within one UNORM8 unit
+PASS one-interval CPU/GPU token recurrence
+PASS commit then texture-read observes the new field
+PASS operator records evolve on device
+PASS executable body words mutate, not just a dispatch index
+PASS device-owned Psi and cursor advance
+PASS allocate exact RG8 texture
+PASS RG8 texture tokens are exact
+PASS one-interval CPU/GPU token recurrence
+PASS commit then texture-read observes the new field
+PASS operator records evolve on device
+PASS executable body words mutate, not just a dispatch index
+PASS device-owned Psi and cursor advance
+GPU self-test complete.

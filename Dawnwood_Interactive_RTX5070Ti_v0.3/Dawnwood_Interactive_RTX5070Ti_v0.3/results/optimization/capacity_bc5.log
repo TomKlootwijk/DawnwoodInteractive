@@ -1,0 +1,34 @@
+Dawnwood Interactive | Tom Klootwijk | NL200678942 | 10-07-1990
+NVIDIA GeForce RTX 5070 Ti Laptop GPU | compute 12.0 | 12820480000 bytes total | 11561598976 free
+L2 37748736 | L2 persisting maximum 23592960 | shared/block 49152 | SMs 46
+Packed 16 pages / 384 MiB
+Packed 32 pages / 768 MiB
+Packed 48 pages / 1152 MiB
+Packed 64 pages / 1536 MiB
+Packed 80 pages / 1920 MiB
+Packed 96 pages / 2304 MiB
+Packed 112 pages / 2688 MiB
+Packed 128 pages / 3072 MiB
+Packed 144 pages / 3456 MiB
+Packed 160 pages / 3840 MiB
+Packed 176 pages / 4224 MiB
+Packed 192 pages / 4608 MiB
+Packed 208 pages / 4992 MiB
+Packed 224 pages / 5376 MiB
+Packed 240 pages / 5760 MiB
+Packed 256 pages / 6144 MiB
+Packed 272 pages / 6528 MiB
+Packed 288 pages / 6912 MiB
+Packed 304 pages / 7296 MiB
+Packed 320 pages / 7680 MiB
+Packed 336 pages / 8064 MiB
+Packed 352 pages / 8448 MiB
+Packed 368 pages / 8832 MiB
+Packed 384 pages / 9216 MiB
+Packed 400 pages / 9600 MiB
+Packed 416 pages / 9984 MiB
+Packed 432 pages / 10368 MiB
+Packed 448 pages / 10752 MiB
+Field: 448 pages | 7516192768 dichromatic token pairs | 11274289152 payload bytes | free 278921216
+Hot shared per CTA: 6080 bytes; L2 preference enabled
+Completed 8192 Psi intervals, 536870912 block updates; report results\optimization\capacity_bc5.json

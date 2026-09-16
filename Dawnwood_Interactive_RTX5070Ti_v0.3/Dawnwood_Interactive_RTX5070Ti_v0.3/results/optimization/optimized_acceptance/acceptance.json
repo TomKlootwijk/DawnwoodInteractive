@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "probe",
+      "returncode": 0
+    },
+    {
+      "name": "native_self_test",
+      "returncode": 0
+    },
+    {
+      "name": "rg8_whole",
+      "returncode": 0
+    },
+    {
+      "name": "rg8_repeat",
+      "returncode": 0
+    },
+    {
+      "name": "rg8_part",
+      "returncode": 0
+    },
+    {
+      "name": "rg8_resumed",
+      "returncode": 0
+    },
+    {
+      "name": "rg8_operator_repeat_and_resume",
+      "passed": true
+    },
+    {
+      "name": "rg8_complete_field_repeat_and_resume",
+      "passed": true
+    },
+    {
+      "name": "rg8_no_graph",
+      "returncode": 0
+    },
+    {
+      "name": "rg8_graph_equivalence",
+      "passed": true
+    },
+    {
+      "name": "bc5_whole",
+      "returncode": 0
+    },
+    {
+      "name": "bc5_repeat",
+      "returncode": 0
+    },
+    {
+      "name": "bc5_part",
+      "returncode": 0
+    },
+    {
+      "name": "bc5_resumed",
+      "returncode": 0
+    },
+    {
+      "name": "bc5_operator_repeat_and_resume",
+      "passed": true
+    },
+    {
+      "name": "bc5_complete_field_repeat_and_resume",
+      "passed": true
+    },
+    {
+      "name": "bc5_no_graph",
+      "returncode": 0
+    },
+    {
+      "name": "bc5_graph_equivalence",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+PASS explicit scales and compact wire format
+PASS rounding and signed boundary arithmetic
+PASS integer-only division lowering preserves exact arithmetic
+PASS Klein chart quotient seams and negative windings
+PASS LP8 codec roundtrips and exact antipodal reconstruction
+METRIC hadamard_max_relative_energy_error=0.0073157
+PASS Hadamard pair cancellation and quantified energy error
+METRIC sine_max_q15_error=1.0007
+PASS trigonometric LUT symmetry and independent accuracy
+PASS integer square root and near-boundary signed radii
+METRIC log_max_q16_error=1
+METRIC phase_max_turn16_error=1
+PASS integer logarithm and CORDIC independent reference
+METRIC embedding_max_q18_error=20.38
+PASS embedding quotient identity and independent accuracy
+METRIC support_max_q18_error=25.4844
+PASS all signed primitive supports and boundary membership
+SUMMARY 11 cases, 1483985 assertions, 0 failures

@@ -1,0 +1,74 @@
+{
+  "edition": "v0.3 optimized, 2026-09-16",
+  "status": "digital correctness and measured optimization validated within recorded scope",
+  "source_sha256": "e3cf7d49e6a4942c7ccad4805f6a2a07e1c817753ff8d384b1f2e37791ebbe27",
+  "pdf": {
+    "path": "output\\pdf\\Dawnwood_Interactive_Optimized_Formalization.pdf",
+    "pages": 12,
+    "sha256": "b5cc709b1471e2bc6b6c554fa725d8f17433786bff701db81c5f56a5f1740da6",
+    "visual_review": "all 12 rendered pages inspected; changed math/command pages re-rendered and inspected"
+  },
+  "benchmarks": {
+    "benchmark_small": {
+      "status": "passed",
+      "sha256": "c5bdb2f7b0842dc09918620f4505024a8662dd4985da9671a47a6c925384ecec",
+      "speedup_circulation_ratio_of_medians": {
+        "bc5": 3.7664457876357575,
+        "rg8": 3.0219086466801772
+      }
+    },
+    "benchmark_large": {
+      "status": "passed",
+      "sha256": "fdcf1f4070effc1dcef15d917bc62c4ef7d2489d49d119e315a5f6913a476fc3",
+      "speedup_circulation_ratio_of_medians": {
+        "bc5": 3.564044832163884,
+        "rg8": 3.125050791238302
+      }
+    },
+    "benchmark_balanced": {
+      "status": "passed",
+      "sha256": "15008cc683124d42da3574c9a2199afbba50020fac7b01a8218139de58e57129",
+      "speedup_circulation_ratio_of_medians": {
+        "bc5": 1.3213300846668683,
+        "rg8": 1.2987473148628734
+      }
+    },
+    "benchmark_capacity_margin": {
+      "status": "passed",
+      "sha256": "3bd8cf8b238b029bbed0dcd72cc054e88c5a8dff4e14622e87c0b4a219936faf",
+      "speedup_circulation_ratio_of_medians": {
+        "bc5": 3.8877453450963952,
+        "rg8": 3.342420015361826
+      }
+    }
+  },
+  "snapshot_checks": 20,
+  "snapshot_scope": "16 small reference/optimized cases and four graph/sequential full-state checks. No complete multi-GiB field hashes.",
+  "acceptance_status": "passed",
+  "ctest_passed": 4,
+  "python_tests_passed": 14,
+  "gpu_pair_cache_check": "all 65536 entries at four offsets passed; gpu_pair_checks.txt",
+  "sanitizer_log_hashes": {
+    "sanitizer_bc5_memcheck.txt": "adba10db853bd67fe9009b776eefe7b61210d2cbe3eee029ba6fa188978b5832",
+    "sanitizer_bc5_racecheck.txt": "c69d09b31a66173faf98f267db57c7eb988035ce364fa0f0f184ffc933c541a7",
+    "sanitizer_bc5_synccheck.txt": "adba10db853bd67fe9009b776eefe7b61210d2cbe3eee029ba6fa188978b5832",
+    "sanitizer_rg8_memcheck.txt": "adba10db853bd67fe9009b776eefe7b61210d2cbe3eee029ba6fa188978b5832",
+    "sanitizer_rg8_racecheck.txt": "c69d09b31a66173faf98f267db57c7eb988035ce364fa0f0f184ffc933c541a7",
+    "sanitizer_rg8_synccheck.txt": "adba10db853bd67fe9009b776eefe7b61210d2cbe3eee029ba6fa188978b5832"
+  },
+  "retained_failures": [
+    "Initial BC5 texture object failed normalized-float creation on uint4 backing. Fixed with cudaReadModeElementType for BC5 views.",
+    "benchmark_capacity: maximum explicit-page repeat ran out of device memory; original logs retained. Separate 75%-page margin suite passed."
+  ],
+  "theory_verdict": "Literal digital mechanisms mapped and component laws checked; physical double-slit validation not established. LP8 quotient is nonunitary, cancellation-sensitive, and fourth-stage forcing differs from unforced RK4.",
+  "file_hashes": {
+    "src/main.cu": "89cebb1070fff74c49c5d9943ec0a7d918bcc88f6c91aca054cddcf0f0cea2fd",
+    "src/kernels.cuh": "6ac6899c502a15b8191e8273dd5dd68cb228b364ea2f021b61cb1d4c62fda7a2",
+    "include/dawnwood/core.hpp": "d4c9a7ab94ca6756e01a432c9f8907bec65e8a8a35f545d1f80345d9283c838f",
+    "CMakeLists.txt": "daf67a784d4ebf732a7d75a42f8e76f2cabe1dc2092f277e0a6c8f755283cf66",
+    "build/dawnwood.exe": "905ad6a5d96d82280460b9b128910ffada7621b8e0ba9393abf632d65d042d00",
+    "build/dawnwood_reference.exe": "a5f7f4e741aba94606b9080d146efc4bd3065c44e0ba9813d540bd26702b0a7d",
+    "source/double-slit-theory.pdf": "e3cf7d49e6a4942c7ccad4805f6a2a07e1c817753ff8d384b1f2e37791ebbe27",
+    "tools/build_formalization_pdf.py": "cc12a2b650f94d490e1d75e8488b987a5e1613c5d26ba684039ec0b260e611a4"
+  }
+}

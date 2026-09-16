@@ -1,0 +1,6 @@
+Dawnwood Interactive | Tom Klootwijk | NL200678942 | 10-07-1990
+NVIDIA GeForce RTX 5070 Ti Laptop GPU | compute 12.0 | 12820480000 bytes total | 11561598976 free
+L2 37748736 | L2 persisting maximum 23592960 | shared/block 49152 | SMs 46
+Field: 2 pages | 2097152 dichromatic token pairs | 3145728 payload bytes | free 11551113216
+Hot shared per CTA: 6080 bytes; L2 preference enabled
+Completed 1024 Psi intervals, 67108864 block updates; report C:\Users\Tom\Documents\DawnwoodInteractive\Dawnwood_Interactive_RTX5070Ti_v0.3\Dawnwood_Interactive_RTX5070Ti_v0.3\results\optimization\benchmark_small\timed_bc5_3_reference.json

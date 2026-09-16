@@ -1,0 +1,103 @@
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.21
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x64'
+[0/1] Re-running CMake...
+-- Configuring done (2.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/Tom/Documents/DawnwoodInteractive/Dawnwood_Interactive_RTX5070Ti_v0.3/Dawnwood_Interactive_RTX5070Ti_v0.3/build
+[1/9] Building CXX object CMakeFiles\dawnwood_cpu.dir\src\cpu_main.cpp.obj
+[2/9] Building CXX object CMakeFiles\dawnwood_core_tests.dir\tests\core_tests.cpp.obj
+[3/9] Linking CXX executable dawnwood_core_tests.exe
+[4/9] Linking CXX executable dawnwood_cpu.exe
+[5/9] Building CUDA object CMakeFiles\dawnwood.dir\src\main.cu.obj
+ptxas info    : 24 bytes gmem
+ptxas info    : Compiling entry function '_ZN2dw16primitive_checksEPj' for 'sm_120'
+ptxas info    : Function properties for _ZN2dw16primitive_checksEPj
+    16 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 20 registers, used 0 barriers, 16 bytes cumulative stack size
+ptxas info    : Compile time = 0.000 ms
+ptxas info    : Compiling entry function '_ZN2dw13sample_pixelsENS_4PageEjjPh' for 'sm_120'
+ptxas info    : Function properties for _ZN2dw13sample_pixelsENS_4PageEjjPh
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 10 registers, used 0 barriers
+ptxas info    : Compile time = 0.000 ms
+ptxas info    : Compiling entry function '_ZN2dw16advance_intervalEPNS_7ControlE' for 'sm_120'
+ptxas info    : Function properties for _ZN2dw16advance_intervalEPNS_7ControlE
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 16 registers, used 0 barriers
+ptxas info    : Compile time = 0.000 ms
+ptxas info    : Compiling entry function '_ZN2dw16mutate_operatorsEPNS_7ControlENS_3HotEPKNS_5StageE' for 'sm_120'
+ptxas info    : Function properties for _ZN2dw16mutate_operatorsEPNS_7ControlENS_3HotEPKNS_5StageE
+    112 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 36 registers, used 0 barriers, 112 bytes cumulative stack size
+ptxas info    : Compile time = 0.000 ms
+ptxas info    : Compiling entry function '_ZN2dw13commit_windowEPKNS_4PageEPNS_7ControlEPKNS_5StageE' for 'sm_120'
+ptxas info    : Function properties for _ZN2dw13commit_windowEPKNS_4PageEPNS_7ControlEPKNS_5StageE
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 28 registers, used 1 barriers, 16 bytes smem
+ptxas info    : Compile time = 0.000 ms
+ptxas info    : Compiling entry function '_ZN2dw13evolve_windowEPKNS_4PageEPNS_7ControlENS_3HotEPNS_5StageE' for 'sm_120'
+ptxas info    : Function properties for _ZN2dw13evolve_windowEPKNS_4PageEPNS_7ControlENS_3HotEPNS_5StageE
+    208 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 61 registers, used 1 barriers, 208 bytes cumulative stack size, 6080 bytes smem
+ptxas info    : Compile time = 0.000 ms
+ptxas info    : Compiling entry function '_ZN2dw15initialize_pageENS_4PageEjjjyyy' for 'sm_120'
+ptxas info    : Function properties for _ZN2dw15initialize_pageENS_4PageEjjjyyy
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 80 registers, used 0 barriers
+ptxas info    : Compile time = 0.000 ms
+ptxas info    : Compiling entry function '_ZN2dw16initialize_pairsENS_3HotE' for 'sm_120'
+ptxas info    : Function properties for _ZN2dw16initialize_pairsENS_3HotE
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 21 registers, used 0 barriers
+ptxas info    : Compile time = 0.000 ms
+main.cu
+tmpxft_00009824_00000000-7_main.cudafe1.cpp
+[6/9] Linking CUDA executable dawnwood.exe
+[7/9] Building CUDA object CMakeFiles\dawnwood_reference.dir\src\main.cu.obj
+ptxas info    : 24 bytes gmem
+ptxas info    : Compiling entry function '_ZN2dw16primitive_checksEPj' for 'sm_120'
+ptxas info    : Function properties for _ZN2dw16primitive_checksEPj
+    16 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 20 registers, used 0 barriers, 16 bytes cumulative stack size
+ptxas info    : Compile time = 0.000 ms
+ptxas info    : Compiling entry function '_ZN2dw13sample_pixelsENS_4PageEjjPh' for 'sm_120'
+ptxas info    : Function properties for _ZN2dw13sample_pixelsENS_4PageEjjPh
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 10 registers, used 0 barriers
+ptxas info    : Compile time = 0.000 ms
+ptxas info    : Compiling entry function '_ZN2dw16advance_intervalEPNS_7ControlE' for 'sm_120'
+ptxas info    : Function properties for _ZN2dw16advance_intervalEPNS_7ControlE
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 24 registers, used 0 barriers
+ptxas info    : Compile time = 0.000 ms
+ptxas info    : Compiling entry function '_ZN2dw16mutate_operatorsEPNS_7ControlENS_3HotEPKNS_5StageE' for 'sm_120'
+ptxas info    : Function properties for _ZN2dw16mutate_operatorsEPNS_7ControlENS_3HotEPKNS_5StageE
+    112 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 36 registers, used 0 barriers, 112 bytes cumulative stack size
+ptxas info    : Compile time = 0.000 ms
+ptxas info    : Compiling entry function '_ZN2dw13commit_windowEPKNS_4PageEPNS_7ControlEPKNS_5StageE' for 'sm_120'
+ptxas info    : Function properties for _ZN2dw13commit_windowEPKNS_4PageEPNS_7ControlEPKNS_5StageE
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, used 1 barriers, 1024 bytes smem
+ptxas info    : Compile time = 0.000 ms
+ptxas info    : Compiling entry function '_ZN2dw13evolve_windowEPKNS_4PageEPNS_7ControlENS_3HotEPNS_5StageE' for 'sm_120'
+ptxas info    : Function properties for _ZN2dw13evolve_windowEPKNS_4PageEPNS_7ControlENS_3HotEPNS_5StageE
+    208 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 100 registers, used 1 barriers, 208 bytes cumulative stack size, 6080 bytes smem
+ptxas info    : Compile time = 0.000 ms
+ptxas info    : Compiling entry function '_ZN2dw15initialize_pageENS_4PageEjjjyyy' for 'sm_120'
+ptxas info    : Function properties for _ZN2dw15initialize_pageENS_4PageEjjjyyy
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 101 registers, used 0 barriers
+ptxas info    : Compile time = 0.000 ms
+ptxas info    : Compiling entry function '_ZN2dw16initialize_pairsENS_3HotE' for 'sm_120'
+ptxas info    : Function properties for _ZN2dw16initialize_pairsENS_3HotE
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 21 registers, used 0 barriers
+ptxas info    : Compile time = 0.000 ms
+main.cu
+tmpxft_000081b4_00000000-7_main.cudafe1.cpp
+[8/9] Linking CUDA executable dawnwood_reference.exe

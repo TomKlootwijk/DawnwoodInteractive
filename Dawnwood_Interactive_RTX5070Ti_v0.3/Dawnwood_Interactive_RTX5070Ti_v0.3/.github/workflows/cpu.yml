@@ -1,0 +1,12 @@
+name: CPU reference checks
+on: [workflow_dispatch, push, pull_request]
+jobs:
+  cpu:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cmake -S . -B build -DDW_ENABLE_CUDA=OFF -DCMAKE_BUILD_TYPE=Release
+      - run: cmake --build build --parallel
+      - run: ctest --test-dir build --output-on-failure
+      - run: python3 -m unittest discover -s tests -p 'test_*.py' -v
+# This workflow does not run native CUDA compilation or GPU tests.

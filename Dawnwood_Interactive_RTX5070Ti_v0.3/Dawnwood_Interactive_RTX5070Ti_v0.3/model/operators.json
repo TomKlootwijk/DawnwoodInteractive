@@ -1,0 +1,2424 @@
+{
+  "schema": "dawnwood-operator-image-v0.3",
+  "byte_order": "little",
+  "operators": [
+    {
+      "index": 0,
+      "name": "klein",
+      "location": 8938,
+      "support": 24000,
+      "links": 961,
+      "coeff": 402657280,
+      "body": [
+        {
+          "op": "PARITY_SELECT",
+          "dst": 1,
+          "a": 4,
+          "b": 1,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "SUB",
+          "dst": 3,
+          "a": 7,
+          "b": 3,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 211
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 137
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 0,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 1,
+      "name": "hadamard",
+      "location": 1640513015,
+      "support": 24000,
+      "links": 2,
+      "coeff": 404688967,
+      "body": [
+        {
+          "op": "HAD_PLUS",
+          "dst": 0,
+          "a": 0,
+          "b": 2,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "HAD_MINUS",
+          "dst": 2,
+          "a": 0,
+          "b": 2,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 248
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 138
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 1753845952,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 2,
+      "name": "phi",
+      "location": 3281078922,
+      "support": 24000,
+      "links": 35,
+      "coeff": 406720654,
+      "body": [
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 4096
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 4096
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 285
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 139
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 3507691905,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 3,
+      "name": "rk4",
+      "location": 626610899,
+      "support": 24000,
+      "links": 68,
+      "coeff": 408752341,
+      "body": [
+        {
+          "op": "BLEND",
+          "dst": 0,
+          "a": 0,
+          "b": 2,
+          "reserved": 0,
+          "imm": 21845
+        },
+        {
+          "op": "BLEND",
+          "dst": 1,
+          "a": 1,
+          "b": 3,
+          "reserved": 0,
+          "imm": 43690
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 322
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 140
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 1408362973,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 4,
+      "name": "phyllotaxis",
+      "location": 2267175171,
+      "support": 24000,
+      "links": 101,
+      "coeff": 410784028,
+      "body": [
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 3,
+          "a": 3,
+          "b": 0,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 359
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 141
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 3648937681,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 5,
+      "name": "pinion",
+      "location": 3907673588,
+      "support": 24000,
+      "links": 134,
+      "coeff": 412815715,
+      "body": [
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 1024
+        },
+        {
+          "op": "ADDI",
+          "dst": 3,
+          "a": 3,
+          "b": 0,
+          "reserved": 0,
+          "imm": 64512
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 396
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 142
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 1548080446,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 6,
+      "name": "double_dot",
+      "location": 1253270033,
+      "support": 24000,
+      "links": 167,
+      "coeff": 414847402,
+      "body": [
+        {
+          "op": "MUL_Q16",
+          "dst": 0,
+          "a": 0,
+          "b": 2,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "MUL_Q16",
+          "dst": 1,
+          "a": 1,
+          "b": 3,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADD",
+          "dst": 0,
+          "a": 0,
+          "b": 1,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 433
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 143
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 2816725947,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 7,
+      "name": "T_shape",
+      "location": 2893768087,
+      "support": 89536,
+      "links": 200,
+      "coeff": 416879089,
+      "body": [
+        {
+          "op": "MIN",
+          "dst": 0,
+          "a": 0,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "MAX",
+          "dst": 1,
+          "a": 1,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 470
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 144
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 2492178918,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 8,
+      "name": "pyramid",
+      "location": 239364268,
+      "support": 155072,
+      "links": 233,
+      "coeff": 418910776,
+      "body": [
+        {
+          "op": "SUB",
+          "dst": 0,
+          "a": 0,
+          "b": 1,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "MIN",
+          "dst": 0,
+          "a": 0,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 507
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 145
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 3931332538,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 9,
+      "name": "circle",
+      "location": 1879862121,
+      "support": 24000,
+      "links": 266,
+      "coeff": 420942463,
+      "body": [
+        {
+          "op": "MUL_Q16",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "MUL_Q16",
+          "dst": 1,
+          "a": 1,
+          "b": 1,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 544
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 146
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 1117771179,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 10,
+      "name": "cone",
+      "location": 3520425440,
+      "support": 220608,
+      "links": 299,
+      "coeff": 422974150,
+      "body": [
+        {
+          "op": "SUB",
+          "dst": 0,
+          "a": 0,
+          "b": 1,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "MAX",
+          "dst": 0,
+          "a": 0,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 581
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 147
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 3096160893,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 11,
+      "name": "sphere",
+      "location": 865955869,
+      "support": 286144,
+      "links": 332,
+      "coeff": 425005837,
+      "body": [
+        {
+          "op": "MUL_Q16",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "MUL_Q16",
+          "dst": 1,
+          "a": 1,
+          "b": 1,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADD",
+          "dst": 0,
+          "a": 0,
+          "b": 1,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 618
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 148
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 69794299,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 12,
+      "name": "apex",
+      "location": 2506519083,
+      "support": 351680,
+      "links": 365,
+      "coeff": 427037524,
+      "body": [
+        {
+          "op": "MIN",
+          "dst": 0,
+          "a": 0,
+          "b": 2,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "MIN",
+          "dst": 1,
+          "a": 1,
+          "b": 3,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 655
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 149
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 2631693420,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 13,
+      "name": "delta_phi",
+      "location": 4147016720,
+      "support": 24000,
+      "links": 398,
+      "coeff": 429069211,
+      "body": [
+        {
+          "op": "SUB",
+          "dst": 1,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "SUB",
+          "dst": 1,
+          "a": 1,
+          "b": 3,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 692
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 150
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 1035980785,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 14,
+      "name": "blend",
+      "location": 1492612563,
+      "support": 24000,
+      "links": 431,
+      "coeff": 431100898,
+      "body": [
+        {
+          "op": "BLEND",
+          "dst": 0,
+          "a": 0,
+          "b": 2,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "BLEND",
+          "dst": 1,
+          "a": 1,
+          "b": 3,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 729
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 151
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 2911091942,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 15,
+      "name": "wavefront",
+      "location": 3133110135,
+      "support": 24000,
+      "links": 464,
+      "coeff": 433132585,
+      "body": [
+        {
+          "op": "IMM",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "IMM",
+          "dst": 1,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 2
+        },
+        {
+          "op": "IMM",
+          "dst": 2,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "IMM",
+          "dst": 3,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 1
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 766
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 152
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 4193662023,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 16,
+      "name": "y_up",
+      "location": 478705921,
+      "support": 24000,
+      "links": 497,
+      "coeff": 435164272,
+      "body": [
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 2
+        },
+        {
+          "op": "ADDI",
+          "dst": 3,
+          "a": 3,
+          "b": 0,
+          "reserved": 0,
+          "imm": 2
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 803
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 153
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 566053487,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 17,
+      "name": "crystal",
+      "location": 2119203444,
+      "support": 24000,
+      "links": 530,
+      "coeff": 437195959,
+      "body": [
+        {
+          "op": "PARITY_SELECT",
+          "dst": 0,
+          "a": 4,
+          "b": 0,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 2,
+          "a": 0,
+          "b": 2,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 840
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 154
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 1285909221,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 18,
+      "name": "inverse_T",
+      "location": 3759766482,
+      "support": 24000,
+      "links": 563,
+      "coeff": 439227646,
+      "body": [
+        {
+          "op": "IMM",
+          "dst": 7,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "SUB",
+          "dst": 1,
+          "a": 7,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 877
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 155
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 162258264,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 19,
+      "name": "T_transform",
+      "location": 1105296670,
+      "support": 24000,
+      "links": 596,
+      "coeff": 441259333,
+      "body": [
+        {
+          "op": "ADD",
+          "dst": 1,
+          "a": 1,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADD",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 914
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 156
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 448475025,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 20,
+      "name": "jitter",
+      "location": 2745859673,
+      "support": 24000,
+      "links": 629,
+      "coeff": 443291020,
+      "body": [
+        {
+          "op": "XOR",
+          "dst": 0,
+          "a": 0,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 951
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 157
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 603980268,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 21,
+      "name": "bst",
+      "location": 91455365,
+      "support": 24000,
+      "links": 662,
+      "coeff": 445322707,
+      "body": [
+        {
+          "op": "ADD",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 1
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 988
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 158
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 1230861936,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 22,
+      "name": "return",
+      "location": 1731952804,
+      "support": 24000,
+      "links": 695,
+      "coeff": 447354394,
+      "body": [
+        {
+          "op": "IMM",
+          "dst": 7,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "SUB",
+          "dst": 1,
+          "a": 7,
+          "b": 1,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 1025
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 159
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 2361273999,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 23,
+      "name": "phase_history",
+      "location": 3372515766,
+      "support": 24000,
+      "links": 728,
+      "coeff": 449386081,
+      "body": [
+        {
+          "op": "IMM",
+          "dst": 7,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 1
+        },
+        {
+          "op": "ROL16",
+          "dst": 4,
+          "a": 4,
+          "b": 7,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 1062
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 160
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 719047363,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 24,
+      "name": "dichromatic",
+      "location": 718045885,
+      "support": 24000,
+      "links": 761,
+      "coeff": 451417768,
+      "body": [
+        {
+          "op": "MOV",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "MOV",
+          "dst": 2,
+          "a": 2,
+          "b": 2,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 1099
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 161
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 1896875771,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 25,
+      "name": "bayer",
+      "location": 2358608825,
+      "support": 24000,
+      "links": 794,
+      "coeff": 453449455,
+      "body": [
+        {
+          "op": "PARITY_SELECT",
+          "dst": 0,
+          "a": 4,
+          "b": 0,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "PARITY_SELECT",
+          "dst": 2,
+          "a": 4,
+          "b": 2,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 1136
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 162
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 72259753,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 26,
+      "name": "bc5",
+      "location": 3999106219,
+      "support": 24000,
+      "links": 827,
+      "coeff": 455481142,
+      "body": [
+        {
+          "op": "MIN",
+          "dst": 0,
+          "a": 0,
+          "b": 2,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "MAX",
+          "dst": 2,
+          "a": 0,
+          "b": 2,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 1173
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 163
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 2071961571,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 27,
+      "name": "split",
+      "location": 1344701845,
+      "support": 24000,
+      "links": 860,
+      "coeff": 457512829,
+      "body": [
+        {
+          "op": "IMM",
+          "dst": 7,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 1
+        },
+        {
+          "op": "ROL16",
+          "dst": 0,
+          "a": 0,
+          "b": 7,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 1210
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 164
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 935070154,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 28,
+      "name": "parity",
+      "location": 2985199222,
+      "support": 24000,
+      "links": 893,
+      "coeff": 459544516,
+      "body": [
+        {
+          "op": "PARITY_SELECT",
+          "dst": 0,
+          "a": 4,
+          "b": 7,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 1247
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 165
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 2455526153,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 29,
+      "name": "psi",
+      "location": 330794831,
+      "support": 24000,
+      "links": 926,
+      "coeff": 461576203,
+      "body": [
+        {
+          "op": "ADDI",
+          "dst": 4,
+          "a": 4,
+          "b": 0,
+          "reserved": 0,
+          "imm": 1
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 1
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 1284
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 166
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 2255018105,
+      "inverse_t": 0,
+      "route": 0
+    },
+    {
+      "index": 30,
+      "name": "mutation",
+      "location": 1971292194,
+      "support": 24000,
+      "links": 928,
+      "coeff": 463607890,
+      "body": [
+        {
+          "op": "XOR",
+          "dst": 0,
+          "a": 0,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "XOR",
+          "dst": 1,
+          "a": 1,
+          "b": 4,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "BLEND",
+          "dst": 3,
+          "a": 3,
+          "b": 1,
+          "reserved": 0,
+          "imm": 25032
+        },
+        {
+          "op": "ADDI",
+          "dst": 0,
+          "a": 0,
+          "b": 0,
+          "reserved": 0,
+          "imm": 1321
+        },
+        {
+          "op": "ADD",
+          "dst": 2,
+          "a": 2,
+          "b": 6,
+          "reserved": 0,
+          "imm": 0
+        },
+        {
+          "op": "ADDI",
+          "dst": 1,
+          "a": 1,
+          "b": 0,
+          "reserved": 0,
+          "imm": 167
+        },
+        {
+          "op": "XOR",
+          "dst": 3,
+          "a": 3,
+          "b": 5,
+          "reserved": 0,
+          "imm": 0
+        }
+      ],
+      "last_rg": 512,
+      "history": 4092422287,
+      "inverse_t": 0,
+      "route": 0
+    }
+  ]
+}
