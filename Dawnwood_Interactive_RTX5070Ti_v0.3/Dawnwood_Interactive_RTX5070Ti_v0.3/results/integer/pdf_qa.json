@@ -1,0 +1,8 @@
+{
+  "pdf": "output/pdf/Dawnwood_Interactive_Integer_Formalization.pdf",
+  "pages": 12,
+  "pdf_sha256": "4349af914c6b52117434b2a144616dc10464443469e81be8f8f189061a0ec244",
+  "visual_review_complete": true,
+  "visual_review": "All 12 final rendered pages inspected via contact sheet; full pages 4, 6, 8, 10, 11 and 12 inspected. Final dynamic tables and reproduction commands checked. No clipping or overlap observed.",
+  "render_directory": "tmp/pdfs/integer-final"
+}

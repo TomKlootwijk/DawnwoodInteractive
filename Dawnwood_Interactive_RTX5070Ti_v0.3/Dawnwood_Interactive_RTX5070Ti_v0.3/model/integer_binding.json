@@ -2,7 +2,7 @@
   "schema": "dawnwood.integer-binding.v1",
   "edition": "integer-1",
   "project": "Dawnwood Interactive",
-  "status": "numerical_contract_defined_with_cpu_evidence_gpu_acceptance_separate",
+  "status": "computational_mechanisms_implemented_and_scoped_integer_acceptance_passed",
   "runtime_interface": {
     "model_identifier": "integer-1",
     "report_version": "0.4",
@@ -32,7 +32,10 @@
     "fractional_bits": 16,
     "u": "normalized log2-radius chart coordinate; extended signed integer before folding",
     "v": "linear modular phase in turns",
-    "identifications": ["(u+65536,v) ~ (u,-v)", "(u,v+65536) ~ (u,v)"],
+    "identifications": [
+      "(u+65536,v) ~ (u,-v)",
+      "(u,v+65536) ~ (u,v)"
+    ],
     "negative_winding_division": "mathematical floor",
     "phase_logarithm": false,
     "phase_logarithm_reason": "Source user statements do not specify a logarithm of phase, angular branch or treatment of zero/negative angles; log radius plus periodic linear phase is this edition's explicit binding."
@@ -46,7 +49,24 @@
     "rho_span_log2_numerator": 15,
     "rho_span_log2_denominator": 2,
     "reconstruction": "integer-quantized cell centres",
-    "zero_aliases": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+    "zero_aliases": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
     "canonical_encoder_zero": 0,
     "zero_cutoff": "exact zero in the integer complex representation; no additional arbitrary epsilon",
     "streams": "R and G each hold a complete complex log-polar token"
@@ -56,7 +76,10 @@
     "fractional_bits": 11,
     "scale": 2048,
     "packed_type": "uint32",
-    "components": ["real", "imaginary"],
+    "components": [
+      "real",
+      "imaginary"
+    ],
     "antipodes": "constructed by exact integer negation",
     "intermediates": "bounded int32 or widened int64 as required; no undefined signed overflow",
     "hadamard_coefficient_numerator": 23170,
@@ -75,8 +98,18 @@
   "math_lut": {
     "struct_name": "MathLut",
     "fields": [
-      {"name": "lp", "type": "uint32", "count": 256, "payload_bytes": 1024},
-      {"name": "sin_quarter", "type": "uint16", "count": 257, "payload_bytes": 514}
+      {
+        "name": "lp",
+        "type": "uint32",
+        "count": 256,
+        "payload_bytes": 1024
+      },
+      {
+        "name": "sin_quarter",
+        "type": "uint16",
+        "count": 257,
+        "payload_bytes": 514
+      }
     ],
     "payload_bytes": 1538,
     "alignment_bytes": 4,
@@ -84,7 +117,10 @@
     "sine_fractional_bits": 15,
     "sine_peak": 32768,
     "sine_reconstruction": "integer interpolation with exact quadrant/antipodal symmetry",
-    "lookup_consumer_methods": ["lp_word(index)", "sin_word(index)"],
+    "lookup_consumer_methods": [
+      "lp_word(index)",
+      "sin_word(index)"
+    ],
     "requires_large_all_pairs_lut": false,
     "routing_mask_internal_nodes": 15,
     "routing_mask_tokens_per_node": 256,
@@ -105,7 +141,12 @@
     "component_assertions": 1253890,
     "component_failures": 0,
     "gpu_speedup_implied_by_component_checks": false,
-    "compact_table_count_excludes": ["compiled machine code", "driver resources", "staging", "second operator bank"]
+    "compact_table_count_excludes": [
+      "compiled machine code",
+      "driver resources",
+      "staging",
+      "second operator bank"
+    ]
   },
   "geometry": {
     "fractional_bits": 18,
@@ -114,12 +155,30 @@
     "support_radius": "low16(support)+1 integer geometry units",
     "return_contract": "signed integer support magnitude, not only a membership mask",
     "primitives": [
-      {"name": "circle", "meaning": "quantized radial signed distance"},
-      {"name": "T", "meaning": "minimum of box support fields; not exact Euclidean interior distance throughout overlaps"},
-      {"name": "pyramid_side", "meaning": "quantized signed triangle distance using projected segments"},
-      {"name": "cone_meridian", "meaning": "documented two-dimensional triangle meridian"},
-      {"name": "sphere", "meaning": "ambient radial support using integer four-coordinate Klein realization"},
-      {"name": "apex", "meaning": "quantized point-distance field"}
+      {
+        "name": "circle",
+        "meaning": "quantized radial signed distance"
+      },
+      {
+        "name": "T",
+        "meaning": "minimum of box support fields; not exact Euclidean interior distance throughout overlaps"
+      },
+      {
+        "name": "pyramid_side",
+        "meaning": "quantized signed triangle distance using projected segments"
+      },
+      {
+        "name": "cone_meridian",
+        "meaning": "documented two-dimensional triangle meridian"
+      },
+      {
+        "name": "sphere",
+        "meaning": "ambient radial support using integer four-coordinate Klein realization"
+      },
+      {
+        "name": "apex",
+        "meaning": "quantized point-distance field"
+      }
     ],
     "surface_constraint": "integer quotient chart parameterizes K; operator-local support moves with its chart location",
     "global_klein_signed_distance_claimed": false,
@@ -131,10 +190,16 @@
     "status": "defined_integer_Q16",
     "dt_integer_scale": 65536,
     "dt_default_word": 1024,
-    "dt_allowed_word_range": [1, 65536],
+    "dt_allowed_word_range": [
+      1,
+      65536
+    ],
     "inverse_gain_integer_scale": 65536,
     "inverse_gain_default_word": 16384,
-    "inverse_gain_allowed_word_range": [0, 65536],
+    "inverse_gain_allowed_word_range": [
+      0,
+      65536
+    ],
     "drive_u_word": "nearest(signed16(reg0)/2)",
     "drive_v_word": "nearest(signed16(reg1)/2)+25032",
     "golden_step_q16_word": 25032,
@@ -149,7 +214,12 @@
     "phase_difference": "wrap_turn16(neighbour_R_phase-2*local_R_phase+neighbour_G_phase)",
     "inverse_feedback_word": "round_nearest(inverse_gain_q16*signed16(previous_inverse)/65536)",
     "fourth_stage_y_event_chart_units": 2,
-    "stage_weights": [1, 2, 2, 1],
+    "stage_weights": [
+      1,
+      2,
+      2,
+      1
+    ],
     "stage_weight_denominator": 6,
     "classical_real_rk4_accuracy_claimed": false,
     "required_rounding_record": "Stage products and final accumulation each round once at the explicit divisors above; verify the compiled implementation and every future optimization against these rules."
@@ -160,7 +230,12 @@
     "scope": "the explicitly applied phase-word pair, not the full Hadamard/codec/fold/mutation transition"
   },
   "source_seed": {
-    "requested_wavefront": [0, 2, 0, 1],
+    "requested_wavefront": [
+      0,
+      2,
+      0,
+      1
+    ],
     "first_block_R_token": 0,
     "first_block_G_token": 176,
     "first_block_B_word": 0,
@@ -184,22 +259,45 @@
     "vm_registers": 8,
     "vm_register_bits": 16,
     "references": "two five-bit body references; word31 aliases root0",
-    "implicit_children": ["2*i+1", "2*i+2"],
-    "required_changes": ["body words", "body references", "signed support", "coefficients", "surface location", "routing parity"],
+    "implicit_children": [
+      "2*i+1",
+      "2*i+2"
+    ],
+    "required_changes": [
+      "body words",
+      "body references",
+      "signed support",
+      "coefficients",
+      "surface location",
+      "routing parity"
+    ],
     "jitter": "one deterministic state/seed-derived bit per specified event",
     "mutation_objective_or_reward": null,
     "unbounded_recursion": false
   },
   "texture_contract": {
-    "status": "native_sampler_boundary_defined_pending_verification",
+    "status": "native_sampler_boundary_tested_and_actual_executables_ptx_sass_audited",
     "arithmetic_claim": "integer software-visible recurrence arithmetic with explicit native UNORM sampler boundary",
     "bc5_native_normalized_readout": "retained hardware compressed sampler; float-typed coordinate/result bit patterns constructed/interpreted by integer operations and bitcasts",
     "rg8_readout": "tex2D<uint2> integer results; float-typed centre-coordinate bits constructed using integer operations",
-    "permitted_float_typed_boundary": ["native texture instruction interface", "bit-preserving representation moves, loads and stores"],
+    "permitted_float_typed_boundary": [
+      "native texture instruction interface",
+      "bit-preserving representation moves, loads and stores"
+    ],
     "constant_only_sass_exception": "Audited HFMA2 dst,-RZ,RZ,literal,literal form materializes constant bit patterns with architectural zero operands and immediate literals; no evolving-data operand is permitted",
     "zero_floating_opcode_claimed": false,
-    "prohibited_device_arithmetic": ["input-dependent floating add/multiply/divide", "floating conversion", "floating comparison", "floating SFU or reciprocal machinery", "floating logarithm or trigonometry"],
-    "required_boundary_checks": ["coordinate domain and exact centre-coordinate bit construction", "UNORM bit-pattern recovery", "native BC5 decoder rounding against the reference law"],
+    "prohibited_device_arithmetic": [
+      "input-dependent floating add/multiply/divide",
+      "floating conversion",
+      "floating comparison",
+      "floating SFU or reciprocal machinery",
+      "floating logarithm or trigonometry"
+    ],
+    "required_boundary_checks": [
+      "coordinate domain and exact centre-coordinate bit construction",
+      "UNORM bit-pattern recovery",
+      "native BC5 decoder rounding against the reference law"
+    ],
     "instruction_audit_tool": "tools/verify_integer_device_code.py",
     "requires_final_sass_audit": true,
     "cpu_gpu_bc5_equality_requires_same_decoder_mapping": true,
@@ -209,7 +307,24 @@
     "physical_residency_guarantee_claimed": false
   },
   "verification_contract": {
-    "requirements": ["INT-01", "INT-02", "INT-03", "INT-04", "INT-05", "INT-06", "INT-07", "INT-08", "INT-09", "INT-10", "INT-11", "INT-12", "INT-13", "INT-14", "INT-15", "INT-16"],
+    "requirements": [
+      "INT-01",
+      "INT-02",
+      "INT-03",
+      "INT-04",
+      "INT-05",
+      "INT-06",
+      "INT-07",
+      "INT-08",
+      "INT-09",
+      "INT-10",
+      "INT-11",
+      "INT-12",
+      "INT-13",
+      "INT-14",
+      "INT-15",
+      "INT-16"
+    ],
     "optional_requirement": "INT-17",
     "must_record": [
       "source and compiled arithmetic audit of the complete recurrence",
@@ -229,7 +344,7 @@
       "cache-hit, occupancy and bandwidth counters with profiling scope"
     ],
     "historical_floating_measurements_satisfy_integer_acceptance": false,
-    "evidence_index": null
+    "evidence_index": "results/integer/final_summary.json"
   },
   "recorded_component_evidence": {
     "scope": "CPU integer math component diagnostics only; does not complete GPU recurrence, device instruction or performance acceptance",
@@ -260,7 +375,7 @@
     "theory_diagnostic_inverse_exact_cases": 65536,
     "theory_diagnostic_forced_stage_cases": 16384,
     "theory_diagnostic_structural_failures": 0,
-    "theory_diagnostic_encoded_energy_ratio_minimum": 0.000030424900160797462,
+    "theory_diagnostic_encoded_energy_ratio_minimum": 3.0424900160797462e-05,
     "theory_diagnostic_encoded_energy_ratio_maximum": 32867.81533266958,
     "theory_diagnostic_in_window_amplitude_relative_error_median": 0.08631964408309792,
     "theory_diagnostic_in_window_amplitude_relative_error_maximum": 0.19376175273150673,
@@ -272,5 +387,56 @@
     "H_LP8_H_LP8_fidelity_median": 0.9974364054622388,
     "full_recurrence_quantum_state_fidelity_established": false,
     "general_quantum_simulator_claimed": false
+  },
+  "recorded_acceptance_evidence": {
+    "status": "passed_at_recorded_scopes",
+    "all_required_computational_components_implemented": true,
+    "optional_readout_required": false,
+    "index": "results/integer/final_summary.json",
+    "gpu_validation": "results/integer/validation_fast_masks/validation.json",
+    "gpu_snapshot_equality_or_rejection_checks": 46,
+    "gpu_validation_process_count": 70,
+    "implementation_variants": 4,
+    "codecs": [
+      "bc5",
+      "rg8"
+    ],
+    "integer_sign_predicate_comparisons": 187164,
+    "integer_sign_boundary_coverage_assertions": 3598,
+    "integer_sign_failures": 0,
+    "gpu_exact_pair_cache_comparisons": 65536,
+    "gpu_pair_cache_scope": "both output charts; separate complete-state comparisons test the composed recurrence",
+    "gpu_support_predicates_per_bank": 3840,
+    "sanitizer_runs": 8,
+    "sanitizer_tools": [
+      "memcheck",
+      "racecheck",
+      "synccheck",
+      "initcheck"
+    ],
+    "sanitizer_commands": "results/integer/sanitizer/commands.json",
+    "ctest_passed": 12,
+    "ctest_log": "results/integer/final_build_ctest.log",
+    "python_tests_passed": 27,
+    "python_tests_log": "results/integer/python_tests.log",
+    "regression_totals_include_historical_paths": true,
+    "actual_binary_instruction_audits": "results/integer/instructions/build_audits.json",
+    "actual_binary_instruction_audits_passed": 4,
+    "instruction_scope": "No input-dependent floating arithmetic/conversion/SFU found; native sampler and constant-only HFMA2 remain explicit exceptions",
+    "recommended_executable": "build/dawnwood_integer_cached.exe",
+    "recommended_default_cache_policy": "balanced",
+    "same_law_repeated_benchmark": "results/integer/benchmark_large/benchmark.json",
+    "repeated_trials_per_configuration": 3,
+    "capacity_bc5_payload_bytes": 10619977728,
+    "capacity_bc5_token_pairs": 7079985152,
+    "capacity_bc5_completed_sweeps": 1,
+    "capacity_rg8_payload_bytes": 10611589120,
+    "capacity_rg8_token_pairs": 4244635648,
+    "capacity_rg8_completed_sweeps": 2,
+    "physical_quantum_validation_claimed": false,
+    "general_quantum_simulator_claimed": false,
+    "maximum_vram_allocation_claimed": false,
+    "dram_bandwidth_saturation_claimed": false,
+    "permanent_hardware_cache_residency_claimed": false
   }
 }
