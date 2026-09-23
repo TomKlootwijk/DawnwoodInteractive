@@ -27,3 +27,9 @@ git -C C:\DawnwoodInteractive -c attr.tree= -c core.attributesFile= -c safe.bare
 
 The status command returns exit code zero. A successful Git command alone does
 not establish end-to-end success of the Codex Fork operation.
+
+End-to-end verification also completed: Codex's `fork_thread` operation with
+`environment.type = worktree` created task
+`01a0cd94-adcd-7720-83da-a0114d5cd075` in
+`C:\Users\ietsm\.codex\worktrees\e102\DawnwoodInteractive`. Reading that task
+confirmed it was available and idle. The worktree started at commit `175744c`.
