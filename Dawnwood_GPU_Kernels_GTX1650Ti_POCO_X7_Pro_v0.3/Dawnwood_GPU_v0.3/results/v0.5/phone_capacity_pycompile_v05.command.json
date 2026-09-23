@@ -1,0 +1,14 @@
+{
+  "name": "phone_capacity_pycompile_v05",
+  "command": [
+    "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-m",
+    "py_compile",
+    "tools/measure_phone_capacity.py"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T12:07:36.503358+00:00",
+  "exit_code": 0,
+  "wall_seconds": 0.14099999982863665,
+  "validation_environment": {}
+}

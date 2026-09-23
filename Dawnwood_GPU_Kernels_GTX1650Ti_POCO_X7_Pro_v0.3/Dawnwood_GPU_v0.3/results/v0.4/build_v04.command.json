@@ -1,0 +1,16 @@
+{
+  "name": "build_v04",
+  "command": [
+    "C:\\Users\\ietsm\\AppData\\Local\\Android\\Sdk\\cmake\\3.31.6\\bin\\cmake.exe",
+    "--build",
+    "build",
+    "--config",
+    "Release",
+    "-j",
+    "4"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:35:11.710110+00:00",
+  "exit_code": 0,
+  "wall_seconds": 12.797000000020489
+}

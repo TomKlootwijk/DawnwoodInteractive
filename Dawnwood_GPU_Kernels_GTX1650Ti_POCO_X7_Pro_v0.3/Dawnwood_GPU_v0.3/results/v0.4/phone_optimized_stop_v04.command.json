@@ -1,0 +1,17 @@
+{
+  "name": "phone_optimized_stop_v04",
+  "command": [
+    "C:\\Users\\ietsm\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe",
+    "-s",
+    "XOVSTSHYNREMZ5D6",
+    "shell",
+    "am",
+    "force-stop",
+    "nl.dawnwood.kernel"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:49:28.848577+00:00",
+  "exit_code": 0,
+  "wall_seconds": 0.15699999989010394,
+  "validation_environment": {}
+}

@@ -1,5 +1,9 @@
 # Source and implementation references
 
+**User-confirmed formalization baseline:** `source/Dawnwood_Interactive_Unified_v0.2.pdf`, 18 pages. Its bytes and the original discussion are unchanged; the historical `source/formalization_lineage_v0.4.json` records both hashes. The current full numerical definition is `FORMALIZATION_v0.5.md`, developed through the preserved v0.4 edition.
+
+Arithmetic control reference: [Khronos GLSL specification, precise qualification](https://registry.khronos.org/OpenGL/specs/gl/GLSLangSpec.4.60.html). Portable validation tooling was extracted from the [official LunarG Vulkan SDK](https://vulkan.lunarg.com/sdk/home); the downloaded archive matched its published checksum. `results/v0.4/layers_provenance.json` records the exact archive URL, version and file hashes. No SDK installer or system registration was needed for these desktop validation runs.
+
 **Controlling project source:** `source/double-slit-theory.pdf`, supplied 24-page discussion. Technical requirements are mapped by page in `CLAIMS.md`. The owner's current device correction—GTX 1650 Ti laptop, 4 GB—is recorded in the laptop profile rather than retaining the older RTX laptop target from the source.
 
 Primary technical references for the implementation and test protocols:

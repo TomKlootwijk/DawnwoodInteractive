@@ -1,0 +1,27 @@
+CMake is re-running because C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/build/CMakeFiles/generate.stamp is out-of-date.
+  the file 'C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/CMakeLists.txt'
+  is newer than 'C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/build/CMakeFiles/generate.stamp.depend'
+  result='-1'
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
+-- Configuring done (0.3s)
+-- Generating done (0.4s)
+-- Build files have been written to: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/build
+MSBuild version 17.14.40+3e7442088 for .NET Framework
+
+  1>Checking Build System
+  Building Custom Rule C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/CMakeLists.txt
+  cpu.cpp
+  driver.cpp
+  vulkan.cpp
+  Generating Code...
+C:\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\src\vulkan.cpp(122,12): warning C4458: declaration of 'p' hides class member [C:\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+      C:\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\runtime.hpp(13,36):
+      see declaration of 'VulkanRuntime::p'
+  
+C:\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\src\vulkan.cpp(72,11): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+C:\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\src\vulkan.cpp(100,34): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  dawnwood_core.vcxproj -> C:\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\Release\dawnwood_core.lib
+  Building Custom Rule C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/CMakeLists.txt
+  main.cpp
+  dawnwood.vcxproj -> C:\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\Release\dawnwood.exe
+  Building Custom Rule C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/CMakeLists.txt

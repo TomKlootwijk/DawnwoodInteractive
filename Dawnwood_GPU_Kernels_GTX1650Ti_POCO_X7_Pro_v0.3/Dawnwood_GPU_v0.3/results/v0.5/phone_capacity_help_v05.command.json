@@ -1,0 +1,13 @@
+{
+  "name": "phone_capacity_help_v05",
+  "command": [
+    "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "tools/measure_phone_capacity.py",
+    "--help"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T12:07:36.802164+00:00",
+  "exit_code": 0,
+  "wall_seconds": 0.18799999984912574,
+  "validation_environment": {}
+}

@@ -1,0 +1,19 @@
+{
+  "command": [
+    "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-x64\\dawnwood.exe",
+    "run",
+    "--backend",
+    "cpu",
+    "--count",
+    "64",
+    "--steps",
+    "0",
+    "--feedback",
+    "0",
+    "--checkpoint",
+    "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\feedback_off_seed.dwk"
+  ],
+  "exit_code": 0,
+  "exe_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+  "utc": "2026-09-23T06:08:33.592688+00:00"
+}

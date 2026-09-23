@@ -1,0 +1,14 @@
+[
+  {
+    "shader": "mutate",
+    "bytes": 140272,
+    "sha256": "497c2abb20f38ca673bdef2a1ffdd37dfdeb040120d59da95611a00ca0c473a5",
+    "spirv_validation_executed": true
+  },
+  {
+    "shader": "evolve",
+    "bytes": 1052796,
+    "sha256": "7ccb31344077f6fc5abf47054294567f5928a3b88ca05328d6f0e2bc4f1610cb",
+    "spirv_validation_executed": true
+  }
+]

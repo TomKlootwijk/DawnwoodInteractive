@@ -1,0 +1,164 @@
+{
+  "profile": "DWI-N1-0.5",
+  "collected_utc": "2026-09-23T05:12:27.182902+00:00",
+  "binary_sha256": "20b944a181d52e105150196b1f7e2a4f309b79cc478ebd9185f161e9686085e0",
+  "count": 4096,
+  "epochs": 64,
+  "batch": 8,
+  "repeats": 3,
+  "definition": "One state-update advances one complete 128-byte state by one epoch through the declared recurrence. Each GPU epoch also mutates the shared operator LUT.",
+  "timing_note": "CPU seconds measure evolution wall time. Vulkan seconds sum GPU device-timestamp intervals, exclude initialization/upload/readback/digest/host gaps. Process wall includes setup and readback. Fresh process for every sample; first-sample and clock variation retained. Validation disabled for performance.",
+  "backends": {
+    "cpu": {
+      "samples": [
+        {
+          "evidence": "benchmark_cpu_4096_64_1.stdout",
+          "exit_code": 0,
+          "started_utc": "2026-09-23T05:10:50.692616+00:00",
+          "seconds": 6.4672045,
+          "process_wall_seconds": 6.5,
+          "timing": {
+            "runtime_setup_upload_seconds": 0,
+            "advance_wall_seconds": 6.4672045,
+            "readback_seconds": 0,
+            "digest_and_health_seconds": 0.0050141
+          },
+          "health": {
+            "passed": true,
+            "first_invalid_record": "",
+            "nonfinite_state_values": 0,
+            "out_of_chart_states": 0,
+            "max_energy_error_from_source_seed_5": 2.47955e-05
+          },
+          "state_digest": "ea2a2e5ff6ce7adb",
+          "complete_digest": "c79b636e728e12b1"
+        },
+        {
+          "evidence": "benchmark_cpu_4096_64_2.stdout",
+          "exit_code": 0,
+          "started_utc": "2026-09-23T05:10:57.330349+00:00",
+          "seconds": 5.8424078,
+          "process_wall_seconds": 5.859000000000378,
+          "timing": {
+            "runtime_setup_upload_seconds": 0,
+            "advance_wall_seconds": 5.8424078,
+            "readback_seconds": 0,
+            "digest_and_health_seconds": 0.0027724
+          },
+          "health": {
+            "passed": true,
+            "first_invalid_record": "",
+            "nonfinite_state_values": 0,
+            "out_of_chart_states": 0,
+            "max_energy_error_from_source_seed_5": 2.47955e-05
+          },
+          "state_digest": "ea2a2e5ff6ce7adb",
+          "complete_digest": "c79b636e728e12b1"
+        },
+        {
+          "evidence": "benchmark_cpu_4096_64_3.stdout",
+          "exit_code": 0,
+          "started_utc": "2026-09-23T05:11:03.319653+00:00",
+          "seconds": 7.1262284,
+          "process_wall_seconds": 7.156000000000859,
+          "timing": {
+            "runtime_setup_upload_seconds": 0,
+            "advance_wall_seconds": 7.1262284,
+            "readback_seconds": 0,
+            "digest_and_health_seconds": 0.0032431
+          },
+          "health": {
+            "passed": true,
+            "first_invalid_record": "",
+            "nonfinite_state_values": 0,
+            "out_of_chart_states": 0,
+            "max_energy_error_from_source_seed_5": 2.47955e-05
+          },
+          "state_digest": "ea2a2e5ff6ce7adb",
+          "complete_digest": "c79b636e728e12b1"
+        }
+      ],
+      "median_seconds": 6.4672045,
+      "median_mean_epoch_ms": 101.0500703125,
+      "state_updates_per_second_using_median": 40534.36071180368,
+      "median_process_wall_seconds": 6.5
+    },
+    "vulkan": {
+      "samples": [
+        {
+          "evidence": "benchmark_vulkan_4096_64_1.stdout",
+          "exit_code": 0,
+          "started_utc": "2026-09-23T05:11:10.685549+00:00",
+          "seconds": 0.153940768,
+          "process_wall_seconds": 0.7659999999996217,
+          "timing": {
+            "runtime_setup_upload_seconds": 0.4703001,
+            "advance_wall_seconds": 0.1564225,
+            "readback_seconds": 0.0026165,
+            "digest_and_health_seconds": 0.002717
+          },
+          "health": {
+            "passed": true,
+            "first_invalid_record": "",
+            "nonfinite_state_values": 0,
+            "out_of_chart_states": 0,
+            "max_energy_error_from_source_seed_5": 2.47955e-05
+          },
+          "state_digest": "ea2a2e5ff6ce7adb",
+          "complete_digest": "c79b636e728e12b1"
+        },
+        {
+          "evidence": "benchmark_vulkan_4096_64_2.stdout",
+          "exit_code": 0,
+          "started_utc": "2026-09-23T05:11:11.646166+00:00",
+          "seconds": 0.09632352,
+          "process_wall_seconds": 0.625,
+          "timing": {
+            "runtime_setup_upload_seconds": 0.395375,
+            "advance_wall_seconds": 0.0982942,
+            "readback_seconds": 0.0016304,
+            "digest_and_health_seconds": 0.0024776
+          },
+          "health": {
+            "passed": true,
+            "first_invalid_record": "",
+            "nonfinite_state_values": 0,
+            "out_of_chart_states": 0,
+            "max_energy_error_from_source_seed_5": 2.47955e-05
+          },
+          "state_digest": "ea2a2e5ff6ce7adb",
+          "complete_digest": "c79b636e728e12b1"
+        },
+        {
+          "evidence": "benchmark_vulkan_4096_64_3.stdout",
+          "exit_code": 0,
+          "started_utc": "2026-09-23T05:11:12.472956+00:00",
+          "seconds": 0.090845888,
+          "process_wall_seconds": 0.6880000000001019,
+          "timing": {
+            "runtime_setup_upload_seconds": 0.4492746,
+            "advance_wall_seconds": 0.0944774,
+            "readback_seconds": 0.0025892,
+            "digest_and_health_seconds": 0.0024839
+          },
+          "health": {
+            "passed": true,
+            "first_invalid_record": "",
+            "nonfinite_state_values": 0,
+            "out_of_chart_states": 0,
+            "max_energy_error_from_source_seed_5": 2.47955e-05
+          },
+          "state_digest": "ea2a2e5ff6ce7adb",
+          "complete_digest": "c79b636e728e12b1"
+        }
+      ],
+      "median_seconds": 0.09632352,
+      "median_mean_epoch_ms": 1.505055,
+      "state_updates_per_second_using_median": 2721495.227749152,
+      "median_process_wall_seconds": 0.6880000000001019
+    }
+  },
+  "all_final_digests_equal": true,
+  "cpu_evolution_wall_over_gpu_device_time_ratio": 67.14045022441042,
+  "whole_process_median_ratio": 9.447674418603253
+}

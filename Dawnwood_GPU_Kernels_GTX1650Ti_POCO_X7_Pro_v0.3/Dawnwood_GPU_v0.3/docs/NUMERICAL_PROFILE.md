@@ -1,10 +1,12 @@
 # DWI-N1 — numerical bindings for the Dawnwood recurrence
 
-**Tom Klootwijk · Dawnwood Interactive · Version 0.3.0**
+The complete current definition is `FORMALIZATION_v0.5.md`, developed from the supplied unified v0.2 formalization through v0.4. See `CHANGES_v0.5.md` for the arithmetic and texture changes and `VALIDATION_v0.5.md` for measured status. The profile is a discrete recurrence in a canonical Klein chart. Position wrapping does not establish smooth tangent-field covariance across chart transitions; asymmetric operator-frame transport remains an explicit limitation.
+
+**Tom Klootwijk · Dawnwood Interactive · Version 0.5.0 / DWI-N1-0.5**
 
 This profile turns the source's connected operator/state definition into executable FP32/uint32 operations. The original discussion is `source/double-slit-theory.pdf`. The original relationships are listed below alongside the equations and storage choices introduced to execute them. A numerical binding is an implementation choice, not an equation retrospectively attributed to the source.
 
-## 1. One evolving field, two scheduled compute passes
+## 1. One evolving field, mutation then evolution
 
 The live state consists of a set of wavefront states and one shared, mutable operator LUT. Each operator has a scalar expression program, field parameters, position, phase, transport parameters and one-bit/routing context. The default catalogue has the 31 source-named entries retained by the v0.2 formalization.
 
@@ -12,12 +14,16 @@ One Ψ interval is scheduled as:
 
 1. `mutate.comp`: read the preceding whole state and preceding operator field; write the next operator bodies, field parameters and Klein-surface positions.
 2. A Vulkan compute-write → compute-read memory dependency.
-3. `evolve.comp`: read the preceding wavefront state and the changed operator field; evaluate the numerical recurrence; write the next whole wavefront/history/inverse-T state.
-4. A dependency before the next interval; exchange the roles of the two state buffers and two operator buffers.
+3. Evolution reads the preceding wavefront state and the changed operator field, evaluates the numerical recurrence, and writes the next whole wavefront/history/inverse-T state. The monolithic path uses `evolve.comp`; the ARM path uses the staged schedule below.
+4. A dependency before the next interval; exchange the roles of the two state buffers and two operator images.
 
 The operator that performs mutation is itself record 30 of the preceding LUT. The pinion is record 5. The mutation pass reads two reproducible feedback states for each operator: `(17*i + epoch) mod N` and `(31*i + epoch + 1) mod N`. These sampling rules are this profile's explicit coupling choice. The operator change therefore depends on numerical results of earlier circulation, not a detached animation timer. All operators share the same evolving field.
 
-These are actual GPU storage-buffer writes and subsequent GPU reads. Updating an operator's `program` changes its interpreted body without recompiling the native compute pipeline. There is no per-interval host upload of that operator change.
+These are actual GPU image writes and subsequent integer texel reads for the LUT; wavefronts remain storage buffers. Updating an operator's `program` changes its interpreted scalar body without recompiling the native compute pipeline. There is no per-interval host upload of that operator change.
+
+To reduce Mali compiler workload, the ARM path divides evolution into **eight dispatches per population partition**: prepare, four slope evaluations, combine, geometry and finish. Five shader entry points share `dw_prepare`, `dw_slope`, `dw_combine`, `dw_geometry` and `dw_finish` with the CPU and monolithic GPU path. Each dependent dispatch has a compute-write to compute-read/write barrier. The preceding state remains unchanged, the changed LUT is common to all stages, and mutation still executes once per logical epoch. These are subdivisions of one recurrence, not eight epochs. `VALIDATION_v0.5.md` records successful actual phone execution and scoped bitwise comparisons; smaller shaders alone would not establish those results.
+
+The descriptor interpreter, RK4 stage algorithm, Hadamard matrix, primitive formulas, Klein wrapping, route-address rule, update order and allocation sizes remain native implementation rules. The `rk4` record modulates a derivative response; it does not contain an editable integrator. The `hadamard` record affects phase; it does not replace the matrix. Operator feedback changes supported record values and scalar programs, while the fixed tree/population does not grow itself. This is partial realization of the source's stronger proposal that the entire algorithm should be geometrically self-defined.
 
 ## 2. Klein carrier and situated fields
 
@@ -52,6 +58,8 @@ An operator is 64 bytes:
 | 8–11, FP32 | du, dv, mutationRate, reserved |
 | 12–15, uint32 | program, seed, kind, flags |
 
+Version 0.5 stores those words in four `RGBA32_UINT` texels per record, in two sampled/storage images. FP32 parameter bits are packed and unpacked losslessly; point `texelFetch` reads perform no interpolation. Orientation is flag bit 0, and all other flag bits survive transfer. This is the agreed representation of packed one-bit controls with full-precision field parameters; neither distances nor complete operators are one bit. The texture contains descriptors for field evaluation, not a spatial grid of precomputed distances.
+
 A body contains eight four-bit scalar instructions in a uint32. The low nibble executes first. The instruction set is: identity, add gain, subtract gain, multiply by coupling, sine, cosine, absolute value, negate, square. Zero is an explicit identity instruction; unknown instructions are rejected by the authoring/CLI path. The default body is `0x341`: add gain, sine, multiply by coupling, then identity slots.
 
 `dw_field` evaluates the situated primitive and the current body. `dw_apply` combines an input value with the current situated field and evaluates the body. This makes an operator's body and location participate in its action. The integer jitter, branch and parity roles additionally consume the current packed program as an integer control word.
@@ -74,7 +82,7 @@ Population parity and integer even/odd classification are distinct operations. T
 
 ## 5. Kinematics, geometry and the source's fourth-slot event
 
-Source basis: pages 7–9. `dw_derivative` supplies the autonomous vector field for `(u,v,rho,theta)`. It uses the six source primitive fields, the pinion, the colon coupling, log-polar components, the selected operator, the phase differential and the preceding inverse-T response. The exact equations are shared in `include/numeric_evolve.inc` and are compiled into both CPU and GPU implementations.
+Source basis: pages 7–9. `dw_derivative` supplies the canonical-chart stage derivative for `(u,v,rho,theta)`. It uses the six source primitive fields, the pinion, the colon coupling, log-polar components, the selected operator, the phase differential and the preceding inverse-T response. The exact equations are shared in `include/numeric_evolve.inc` and are compiled into both CPU and GPU implementations.
 
 The six source primitives are real numerical fields:
 
@@ -91,7 +99,7 @@ The colon binding is a Frobenius coupling of the two constructed pinion tensors.
 
 RK4 uses four actual derivative evaluations. Before the fourth evaluation, the stage's local v coordinate receives the current Y-up displacement **twice**. Its value is the configured `yup` multiplied by the current Y-up field/body response. Tests confirm that this changes the fourth stage without changing the first three in the same interval. The source did not provide a numerical derivative or displacement size; these are N1 bindings. With this additional event enabled, ordinary unmodified-RK4 order is not simply assumed.
 
-The Ψ record supplies a small numerical modulation of the local integration step. The global logical Ψ cadence remains one pair of compute passes. The source did not specify a physical wall-clock duration.
+Under the default body, the Ψ record supplies a small numerical modulation of the local integration step. The global logical Ψ cadence remains one pair of compute passes. The source did not specify a physical wall-clock duration.
 
 ## 6. RGBA, history and inverse T remain connected
 
@@ -109,18 +117,28 @@ Catalogue entries 25 (Bayer) and 26 (BC5) are downstream markers. If an intrinsi
 
 The optional Bayer function is downstream of returned state; it is not a required raster, raymarcher or raytracer. `tools/readout.py` reads a completed numerical checkpoint and exports channel values and ordered-threshold output as CSV. It never feeds a display pixel back into the compute recurrence.
 
-BC5 is tested with an actual CPU block encoder/decoder and a device-format probe. It uses 16 bytes for a two-channel 4×4 block and generally reconstructs arbitrary inputs approximately. The exact live operator/state records therefore remain in storage buffers in N1. The source's BC5 compression figures are tested as storage-format claims, not assumed to encode a full 128-byte state losslessly in one texel. The POCO probe reports BC5 support rather than substituting another format without telling you.
+BC5 is tested with an actual CPU block encoder/decoder and a device-format probe. It uses 16 bytes for a two-channel 4×4 block and generally reconstructs arbitrary inputs approximately. Live wavefronts therefore retain full storage-buffer records and operators retain exact integer-texture records. The source's BC5 compression figures are tested as storage-format claims, not assumed to encode a full 128-byte state losslessly in one texel. Device-format availability must be read from the identified probe; the prior POCO probe reported BC5 unavailable.
 
 ## 8. Parallel semantics and storage
 
 N states share M operator records. Mutation is one invocation per operator; evolution is one invocation per state. Each output has one writer. Mutation reads old state and old operator records; evolution reads old state and new operator records. The compute barriers implement that ordering. No cross-workgroup spin barrier or global in-place race is used.
 
-The two state buffers use `2*N*128` bytes and two operator buffers use `2*M*64`. One reusable host-visible transfer buffer uses `max(N*128,M*64)` bytes. Driver allocation padding and all additional objects are reported separately where available. There are no stored child pointers. Removing two hypothetical uint32 child pointers would save `8*M` bytes, not multiply the already pointer-free state capacity.
+The two state buffers use `2*N*128` payload bytes and two operator images contain `2*M*64` meaningful payload bytes before image-row padding and allocation alignment. Reusable host-visible staging is capped at 16 MiB; buffer transfers and whole image-row copies are chunked. Ordinary GPU runs release the initialization snapshot before allocating the final readback snapshot. A snapshot is another `N*128 + M*64` host bytes. On a phone, device allocations and host snapshots share physical RAM. Reported heap allocations include resource padding but omit unreported driver/compiler allocations. There are no stored child pointers. Removing two hypothetical uint32 child pointers would save `8*M` bytes, not multiply the already pointer-free state capacity.
 
-The workgroup size is 64. The runtime requires Vulkan 1.1, FP32, uint32 and storage buffers, not CUDA, ray tracing, tensor operations, device addresses or FP64. It checks actual storage-buffer, dispatch and memory-budget limits before allocation. Allocation failure is reported; the recurrence is not clipped or silently shrunk. The epoch representation is explicitly uint32 and is checked before exhaustion.
+The ARM staged path adds a transient **96-byte `EvolutionScratch` record per active partition state**, containing local step, phase difference, Y-up displacement, geometry result, route/RNG controls and four four-component slopes. Device scratch is `96*min(N,stateDispatchLimit)` bytes, at most **6 MiB** with the current 65,536-state limit. Binding 5 exposes this scratch to the staged shaders. It is reused after all stages of a partition finish and is not part of the 128-byte persistent state or checkpoint. Transient `Config.reserved0` carries the partition base and `reserved1` carries the slope stage; neither overwrites stored configuration. Monolithic GPU execution does not allocate this buffer.
+
+Evolution shares the core 31 operators in 1,984 bytes of workgroup memory; mutation shares two control records in 128 bytes. Higher operator indices use texture fetches. This specifies reuse for a workgroup's lifetime, not permanent residence in the device's hardware caches. At most 65,536 wavefronts are dispatched per current evolution partition. Every partition reads the same old population and changed LUT, and exchange occurs only after all partitions finish, so this does not simulate independent smaller populations. Mutation runs once per logical epoch.
+
+Each staged dispatch initializes its own workgroup-shared LUT window; that storage does not persist across dispatches. ARM vendor ID `0x13b5` selects the staged path in the current implementation; other devices default to the monolithic path. `DAWNWOOD_SPLIT_EVOLUTION=1` selects the same staged path on desktop for comparison and synchronization inspection. Additional dispatches, barriers and scratch traffic are real costs that require separate timing.
+
+The workgroup size is 64. The runtime requires Vulkan 1.1, FP32, uint32, storage buffers and sampled/storage `RGBA32_UINT` images. It checks actual format, buffer, image, dispatch and memory-budget limits before allocation. Allocation failure is reported; the recurrence is not clipped or silently shrunk. The epoch representation is explicitly uint32 and is checked before exhaustion. Capacity measurements use explicit budget fractions and memory reserves; they are completed populations under a stated policy, not hardware maxima.
 
 ## 9. Meaning of the tests
 
 CPU and Vulkan compile the same numerical functions. Their agreement tests the backend, ABI, ordering and implementation of these equations. Independent analytic fixtures test the basic mathematical bindings. Numerical agreement is not presented as an independent derivation of the source's physical claims.
+
+The v0.5 arithmetic binding in `include/numeric_math.inc` supplies ordered FP32 sine/cosine/exponential approximations and integer-corrected, round-to-nearest/even division and square root. `PORTABLE_MATH_v0.5.md` specifies reduction, special cases and sampled accuracy. Native division/square-root instructions supply estimates rather than final answers. This revision changes FP32 trajectories from older profiles without changing the real-function intent. Basic arithmetic retains strict noncontraction; absolute/relative comparison tolerance remains `1e-5 + 2e-5*max(abs(cpu),abs(gpu))` and integer comparison remains exact. A separate bitwise-word counter reports stronger identity when actually observed. No finite set of successful trajectories proves arbitrary-horizon or all-device identity.
+
+The portable binding applies to evolution/mutation, while `initialize()` in `src/cpu.cpp` still uses host-native `std::sqrt`, `std::sin`, `std::cos`, `std::log`, `std::fmod` and ordinary initialization division. Therefore Windows and Android can construct different initial FP32 bits from identical configuration and seeds. A local `verify` run supplies its CPU and GPU with the same initial snapshot, so that paired comparison remains valid. It does not establish cross-device replay from CLI parameters alone. Such a comparison must first use an identical checkpoint/initial-state payload and identify the executable profile; no universal cross-device bitwise claim is made.
 
 `docs/CLAIMS.md` links each original requirement or claim to a runnable test, a measurement protocol, a counterexample, or the additional evidence needed to evaluate it. The report never turns shader compilation, a software Vulkan run, or the presence of a phone build project into a claim that your physical devices have been tested.

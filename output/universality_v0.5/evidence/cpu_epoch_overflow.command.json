@@ -1,0 +1,24 @@
+{
+  "name": "cpu_epoch_overflow",
+  "command": [
+    "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-x64\\dawnwood.exe",
+    "run",
+    "--backend",
+    "cpu",
+    "--device",
+    "1650 Ti",
+    "--resume",
+    "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\cpu_epoch_last.dwk",
+    "--steps",
+    "1"
+  ],
+  "utc": "2026-09-23T06:09:04.871740+00:00",
+  "exit_code": 1,
+  "elapsed_seconds": 0.030999999999039574,
+  "exe_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+  "validation_environment": {
+    "DAWNWOOD_VALIDATION": "1",
+    "VK_LAYER_PATH": "C:/DawnwoodInteractive/tmp/validation_v04/layers",
+    "VK_LAYER_VALIDATE_SYNC": "1"
+  }
+}

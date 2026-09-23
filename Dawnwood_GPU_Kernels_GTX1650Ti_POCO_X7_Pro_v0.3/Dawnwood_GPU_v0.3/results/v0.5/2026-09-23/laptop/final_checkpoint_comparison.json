@@ -1,0 +1,59 @@
+{
+  "kind": "Full existing CLI checkpoint identity across pre-compaction CPU, compact CPU, final CPU, final monolithic Vulkan and final split Vulkan",
+  "comparisons": [
+    {
+      "count": 4096,
+      "epochs": 64,
+      "all_full_checkpoint_hashes_identical": true,
+      "artifacts": [
+        {
+          "file": "checkpoints\\before_4096_64.dwk",
+          "bytes": 526352,
+          "sha256": "1daa72e62cb1ab2c341e9c6b469296304f535bd235aef11d6b24e4587943adeb"
+        },
+        {
+          "file": "checkpoints\\after_4096_64.dwk",
+          "bytes": 526352,
+          "sha256": "1daa72e62cb1ab2c341e9c6b469296304f535bd235aef11d6b24e4587943adeb"
+        },
+        {
+          "file": "checkpoints\\final_cpu_4096_64.dwk",
+          "bytes": 526352,
+          "sha256": "1daa72e62cb1ab2c341e9c6b469296304f535bd235aef11d6b24e4587943adeb"
+        },
+        {
+          "file": "checkpoints\\final_mono_4096_64.dwk",
+          "bytes": 526352,
+          "sha256": "1daa72e62cb1ab2c341e9c6b469296304f535bd235aef11d6b24e4587943adeb"
+        },
+        {
+          "file": "checkpoints\\final_split_4096_64.dwk",
+          "bytes": 526352,
+          "sha256": "1daa72e62cb1ab2c341e9c6b469296304f535bd235aef11d6b24e4587943adeb"
+        }
+      ]
+    },
+    {
+      "count": 257,
+      "epochs": 1024,
+      "all_full_checkpoint_hashes_identical": true,
+      "artifacts": [
+        {
+          "file": "checkpoints\\before_257_1024.dwk",
+          "bytes": 34960,
+          "sha256": "de63880c5f291a591c36953ed17a354893e91a65f3f84f5adc9e9f91209c27e6"
+        },
+        {
+          "file": "checkpoints\\after_257_1024.dwk",
+          "bytes": 34960,
+          "sha256": "de63880c5f291a591c36953ed17a354893e91a65f3f84f5adc9e9f91209c27e6"
+        },
+        {
+          "file": "checkpoints\\final_cpu_257_1024.dwk",
+          "bytes": 34960,
+          "sha256": "de63880c5f291a591c36953ed17a354893e91a65f3f84f5adc9e9f91209c27e6"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "shader": "mutate",
+    "bytes": 65468,
+    "sha256": "974dd54b1d61cdf6400441e34bdd7bf44e4c772b501a547cc07c40ac0624898a",
+    "spirv_validation_executed": true,
+    "preserved_math_functions": [
+      "dw_div(f1;f1;",
+      "dw_sqrt(f1;",
+      "dw_trig_reduce(f1;u1;",
+      "dw_sin(f1;",
+      "dw_cos(f1;",
+      "dw_exp(f1;"
+    ]
+  },
+  {
+    "shader": "evolve",
+    "bytes": 315372,
+    "sha256": "a9f35b74444ca6f124bddd2fe447a4fddab69b0d73100513fcd68ac97d3aef14",
+    "spirv_validation_executed": true,
+    "preserved_math_functions": [
+      "dw_div(f1;f1;",
+      "dw_sqrt(f1;",
+      "dw_trig_reduce(f1;u1;",
+      "dw_sin(f1;",
+      "dw_cos(f1;",
+      "dw_exp(f1;"
+    ]
+  }
+]

@@ -1,0 +1,142 @@
+{
+  "compiler": "C:\\Users\\ietsm\\AppData\\Local\\Android\\Sdk\\ndk\\29.0.14206865\\shader-tools\\windows-x86_64\\glslc.EXE",
+  "validator": "C:\\Users\\ietsm\\AppData\\Local\\Android\\Sdk\\ndk\\29.0.14206865\\shader-tools\\windows-x86_64\\spirv-val.EXE",
+  "optimizer": "C:\\Users\\ietsm\\AppData\\Local\\Android\\Sdk\\ndk\\29.0.14206865\\shader-tools\\windows-x86_64\\spirv-opt.EXE",
+  "offline_optimization_requested": true,
+  "preserve_math_functions": true,
+  "preserve_interpreter_functions": true,
+  "validation_only": false,
+  "shaders": [
+    {
+      "shader": "mutate",
+      "bytes": 46636,
+      "sha256": "66ca0d7a044f4b7370fd9cccfd396ebf7141120d5d2f268639ac4a6e45b66b8f",
+      "spirv_validation_executed": true,
+      "preserved_math_functions": [
+        "dw_div(f1;f1;",
+        "dw_sqrt(f1;",
+        "dw_trig_reduce(f1;u1;",
+        "dw_sin(f1;",
+        "dw_cos(f1;",
+        "dw_exp(f1;",
+        "dw_shape(u1;f1;f1;f1;f1;f1;",
+        "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;",
+        "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;",
+        "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;"
+      ]
+    },
+    {
+      "shader": "evolve",
+      "bytes": 75068,
+      "sha256": "4e18c053e65557444b7b3062d47b67dfc5a5d4ff390f894c4fd45bb9e7eccde0",
+      "spirv_validation_executed": true,
+      "preserved_math_functions": [
+        "dw_div(f1;f1;",
+        "dw_sqrt(f1;",
+        "dw_trig_reduce(f1;u1;",
+        "dw_sin(f1;",
+        "dw_cos(f1;",
+        "dw_exp(f1;",
+        "dw_shape(u1;f1;f1;f1;f1;f1;",
+        "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;",
+        "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;",
+        "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;",
+        "dw_geometry(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;",
+        "dw_derivative(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Config-u1-u1-u1-u1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;u1;"
+      ]
+    },
+    {
+      "shader": "prepare",
+      "bytes": 43972,
+      "sha256": "3ab3f4276da3e6b31185398c44c637d66baeaae0f735001ba8079ca0cf423387",
+      "spirv_validation_executed": true,
+      "preserved_math_functions": [
+        "dw_div(f1;f1;",
+        "dw_sqrt(f1;",
+        "dw_trig_reduce(f1;u1;",
+        "dw_sin(f1;",
+        "dw_cos(f1;",
+        "dw_exp(f1;",
+        "dw_shape(u1;f1;f1;f1;f1;f1;",
+        "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;",
+        "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;",
+        "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;"
+      ]
+    },
+    {
+      "shader": "slope",
+      "bytes": 61984,
+      "sha256": "55787aefb2bcb76e11fcc1ad5d84cd240ecd259f6d3effd0f326802a96cfb04c",
+      "spirv_validation_executed": true,
+      "preserved_math_functions": [
+        "dw_div(f1;f1;",
+        "dw_sqrt(f1;",
+        "dw_trig_reduce(f1;u1;",
+        "dw_sin(f1;",
+        "dw_cos(f1;",
+        "dw_exp(f1;",
+        "dw_shape(u1;f1;f1;f1;f1;f1;",
+        "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;",
+        "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;",
+        "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;",
+        "dw_geometry(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;",
+        "dw_derivative(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Config-u1-u1-u1-u1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;u1;"
+      ]
+    },
+    {
+      "shader": "combine",
+      "bytes": 44164,
+      "sha256": "3ac940666b1d806bb1f86002ff8b1427b4199fb8aaf952c9a570b4fb74cbd337",
+      "spirv_validation_executed": true,
+      "preserved_math_functions": [
+        "dw_div(f1;f1;",
+        "dw_sqrt(f1;",
+        "dw_trig_reduce(f1;u1;",
+        "dw_sin(f1;",
+        "dw_cos(f1;",
+        "dw_exp(f1;",
+        "dw_shape(u1;f1;f1;f1;f1;f1;",
+        "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;",
+        "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;",
+        "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;"
+      ]
+    },
+    {
+      "shader": "geometry",
+      "bytes": 44236,
+      "sha256": "4edf5f2b1ac570ad5537adc268d46f84d7bc6542280291042ec6e9f9f0874a59",
+      "spirv_validation_executed": true,
+      "preserved_math_functions": [
+        "dw_div(f1;f1;",
+        "dw_sqrt(f1;",
+        "dw_trig_reduce(f1;u1;",
+        "dw_sin(f1;",
+        "dw_cos(f1;",
+        "dw_exp(f1;",
+        "dw_shape(u1;f1;f1;f1;f1;f1;",
+        "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;",
+        "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;",
+        "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;",
+        "dw_geometry(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;"
+      ]
+    },
+    {
+      "shader": "finish",
+      "bytes": 50328,
+      "sha256": "5c0033ab585514e8f618006acc205c842f0f114d81841913b87a75626b813948",
+      "spirv_validation_executed": true,
+      "preserved_math_functions": [
+        "dw_div(f1;f1;",
+        "dw_sqrt(f1;",
+        "dw_trig_reduce(f1;u1;",
+        "dw_sin(f1;",
+        "dw_cos(f1;",
+        "dw_exp(f1;",
+        "dw_shape(u1;f1;f1;f1;f1;f1;",
+        "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;",
+        "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;",
+        "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;"
+      ]
+    }
+  ]
+}

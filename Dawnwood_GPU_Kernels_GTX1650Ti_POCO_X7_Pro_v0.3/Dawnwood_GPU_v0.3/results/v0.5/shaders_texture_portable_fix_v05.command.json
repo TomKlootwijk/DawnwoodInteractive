@@ -1,0 +1,13 @@
+{
+  "name": "shaders_texture_portable_fix_v05",
+  "command": [
+    "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "tools\\build_shaders.py",
+    "--optimize"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T11:32:07.287227+00:00",
+  "exit_code": 0,
+  "wall_seconds": 12.218999999808148,
+  "validation_environment": {}
+}

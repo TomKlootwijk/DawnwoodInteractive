@@ -1,0 +1,410 @@
+[
+  {
+    "name": "cpu_feedback_off_seed_16",
+    "command": [
+      "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-x64\\dawnwood.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--device",
+      "1650 Ti",
+      "--resume",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\feedback_off_seed.dwk",
+      "--steps",
+      "16",
+      "--checkpoint",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\cpu_feedback_off_seed_16.dwk"
+    ],
+    "utc": "2026-09-23T06:09:04.597023+00:00",
+    "exit_code": 0,
+    "elapsed_seconds": 0.06299999999828287,
+    "exe_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+    "validation_environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:/DawnwoodInteractive/tmp/validation_v04/layers",
+      "VK_LAYER_VALIDATE_SYNC": "1"
+    }
+  },
+  {
+    "name": "cpu_feedback_off_changed_16",
+    "command": [
+      "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-x64\\dawnwood.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--device",
+      "1650 Ti",
+      "--resume",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\feedback_off_changed.dwk",
+      "--steps",
+      "16",
+      "--checkpoint",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\cpu_feedback_off_changed_16.dwk"
+    ],
+    "utc": "2026-09-23T06:09:04.655403+00:00",
+    "exit_code": 0,
+    "elapsed_seconds": 0.0470000000022992,
+    "exe_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+    "validation_environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:/DawnwoodInteractive/tmp/validation_v04/layers",
+      "VK_LAYER_VALIDATE_SYNC": "1"
+    }
+  },
+  {
+    "name": "cpu_feedback_on_seed_16",
+    "command": [
+      "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-x64\\dawnwood.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--device",
+      "1650 Ti",
+      "--resume",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\feedback_on_seed.dwk",
+      "--steps",
+      "16",
+      "--checkpoint",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\cpu_feedback_on_seed_16.dwk"
+    ],
+    "utc": "2026-09-23T06:09:04.708808+00:00",
+    "exit_code": 0,
+    "elapsed_seconds": 0.06199999999807915,
+    "exe_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+    "validation_environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:/DawnwoodInteractive/tmp/validation_v04/layers",
+      "VK_LAYER_VALIDATE_SYNC": "1"
+    }
+  },
+  {
+    "name": "cpu_feedback_on_changed_16",
+    "command": [
+      "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-x64\\dawnwood.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--device",
+      "1650 Ti",
+      "--resume",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\feedback_on_changed.dwk",
+      "--steps",
+      "16",
+      "--checkpoint",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\cpu_feedback_on_changed_16.dwk"
+    ],
+    "utc": "2026-09-23T06:09:04.773140+00:00",
+    "exit_code": 0,
+    "elapsed_seconds": 0.06300000000192085,
+    "exe_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+    "validation_environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:/DawnwoodInteractive/tmp/validation_v04/layers",
+      "VK_LAYER_VALIDATE_SYNC": "1"
+    }
+  },
+  {
+    "name": "cpu_epoch_last",
+    "command": [
+      "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-x64\\dawnwood.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--device",
+      "1650 Ti",
+      "--resume",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\epoch_max_minus_one.dwk",
+      "--steps",
+      "1",
+      "--checkpoint",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\cpu_epoch_last.dwk"
+    ],
+    "utc": "2026-09-23T06:09:04.833008+00:00",
+    "exit_code": 0,
+    "elapsed_seconds": 0.030999999999039574,
+    "exe_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+    "validation_environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:/DawnwoodInteractive/tmp/validation_v04/layers",
+      "VK_LAYER_VALIDATE_SYNC": "1"
+    }
+  },
+  {
+    "name": "cpu_epoch_overflow",
+    "command": [
+      "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-x64\\dawnwood.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--device",
+      "1650 Ti",
+      "--resume",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\cpu_epoch_last.dwk",
+      "--steps",
+      "1"
+    ],
+    "utc": "2026-09-23T06:09:04.871740+00:00",
+    "exit_code": 1,
+    "elapsed_seconds": 0.030999999999039574,
+    "exe_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+    "validation_environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:/DawnwoodInteractive/tmp/validation_v04/layers",
+      "VK_LAYER_VALIDATE_SYNC": "1"
+    }
+  },
+  {
+    "name": "vulkan_feedback_off_seed_16",
+    "command": [
+      "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-x64\\dawnwood.exe",
+      "run",
+      "--backend",
+      "vulkan",
+      "--device",
+      "1650 Ti",
+      "--resume",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\feedback_off_seed.dwk",
+      "--steps",
+      "16",
+      "--checkpoint",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\vulkan_feedback_off_seed_16.dwk"
+    ],
+    "utc": "2026-09-23T06:09:04.898851+00:00",
+    "exit_code": 0,
+    "elapsed_seconds": 0.5940000000009604,
+    "exe_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+    "validation_environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:/DawnwoodInteractive/tmp/validation_v04/layers",
+      "VK_LAYER_VALIDATE_SYNC": "1"
+    }
+  },
+  {
+    "name": "vulkan_feedback_off_changed_16",
+    "command": [
+      "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-x64\\dawnwood.exe",
+      "run",
+      "--backend",
+      "vulkan",
+      "--device",
+      "1650 Ti",
+      "--resume",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\feedback_off_changed.dwk",
+      "--steps",
+      "16",
+      "--checkpoint",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\vulkan_feedback_off_changed_16.dwk"
+    ],
+    "utc": "2026-09-23T06:09:05.492905+00:00",
+    "exit_code": 0,
+    "elapsed_seconds": 0.5159999999996217,
+    "exe_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+    "validation_environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:/DawnwoodInteractive/tmp/validation_v04/layers",
+      "VK_LAYER_VALIDATE_SYNC": "1"
+    }
+  },
+  {
+    "name": "vulkan_feedback_on_seed_16",
+    "command": [
+      "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-x64\\dawnwood.exe",
+      "run",
+      "--backend",
+      "vulkan",
+      "--device",
+      "1650 Ti",
+      "--resume",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\feedback_on_seed.dwk",
+      "--steps",
+      "16",
+      "--checkpoint",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\vulkan_feedback_on_seed_16.dwk"
+    ],
+    "utc": "2026-09-23T06:09:06.010030+00:00",
+    "exit_code": 0,
+    "elapsed_seconds": 0.5620000000017171,
+    "exe_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+    "validation_environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:/DawnwoodInteractive/tmp/validation_v04/layers",
+      "VK_LAYER_VALIDATE_SYNC": "1"
+    }
+  },
+  {
+    "name": "vulkan_feedback_on_changed_16",
+    "command": [
+      "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-x64\\dawnwood.exe",
+      "run",
+      "--backend",
+      "vulkan",
+      "--device",
+      "1650 Ti",
+      "--resume",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\feedback_on_changed.dwk",
+      "--steps",
+      "16",
+      "--checkpoint",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\vulkan_feedback_on_changed_16.dwk"
+    ],
+    "utc": "2026-09-23T06:09:06.575013+00:00",
+    "exit_code": 0,
+    "elapsed_seconds": 0.5159999999996217,
+    "exe_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+    "validation_environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:/DawnwoodInteractive/tmp/validation_v04/layers",
+      "VK_LAYER_VALIDATE_SYNC": "1"
+    }
+  },
+  {
+    "name": "vulkan_epoch_last",
+    "command": [
+      "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-x64\\dawnwood.exe",
+      "run",
+      "--backend",
+      "vulkan",
+      "--device",
+      "1650 Ti",
+      "--resume",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\epoch_max_minus_one.dwk",
+      "--steps",
+      "1",
+      "--checkpoint",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\vulkan_epoch_last.dwk"
+    ],
+    "utc": "2026-09-23T06:09:07.082345+00:00",
+    "exit_code": 0,
+    "elapsed_seconds": 0.48400000000037835,
+    "exe_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+    "validation_environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:/DawnwoodInteractive/tmp/validation_v04/layers",
+      "VK_LAYER_VALIDATE_SYNC": "1"
+    }
+  },
+  {
+    "name": "vulkan_epoch_overflow",
+    "command": [
+      "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-x64\\dawnwood.exe",
+      "run",
+      "--backend",
+      "vulkan",
+      "--device",
+      "1650 Ti",
+      "--resume",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\vulkan_epoch_last.dwk",
+      "--steps",
+      "1"
+    ],
+    "utc": "2026-09-23T06:09:07.575459+00:00",
+    "exit_code": 1,
+    "elapsed_seconds": 0.030999999999039574,
+    "exe_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+    "validation_environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:/DawnwoodInteractive/tmp/validation_v04/layers",
+      "VK_LAYER_VALIDATE_SYNC": "1"
+    }
+  },
+  {
+    "name": "cpu_feedback_off_rng_changed_16",
+    "command": [
+      "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-x64\\dawnwood.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--device",
+      "1650 Ti",
+      "--resume",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\feedback_off_rng_changed.dwk",
+      "--steps",
+      "16",
+      "--checkpoint",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\cpu_feedback_off_rng_changed_16.dwk"
+    ],
+    "exit_code": 0,
+    "exe_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+    "utc": "2026-09-23T06:10:14.598900+00:00",
+    "validation_environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:/DawnwoodInteractive/tmp/validation_v04/layers",
+      "VK_LAYER_VALIDATE_SYNC": "1"
+    }
+  },
+  {
+    "name": "vulkan_feedback_off_rng_changed_16",
+    "command": [
+      "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-x64\\dawnwood.exe",
+      "run",
+      "--backend",
+      "vulkan",
+      "--device",
+      "1650 Ti",
+      "--resume",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\feedback_off_rng_changed.dwk",
+      "--steps",
+      "16",
+      "--checkpoint",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\vulkan_feedback_off_rng_changed_16.dwk"
+    ],
+    "exit_code": 0,
+    "exe_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+    "utc": "2026-09-23T06:10:14.991574+00:00",
+    "validation_environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:/DawnwoodInteractive/tmp/validation_v04/layers",
+      "VK_LAYER_VALIDATE_SYNC": "1"
+    }
+  },
+  {
+    "name": "cpu_feedback_on_rng_changed_16",
+    "command": [
+      "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-x64\\dawnwood.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--device",
+      "1650 Ti",
+      "--resume",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\feedback_on_rng_changed.dwk",
+      "--steps",
+      "16",
+      "--checkpoint",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\cpu_feedback_on_rng_changed_16.dwk"
+    ],
+    "exit_code": 0,
+    "exe_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+    "utc": "2026-09-23T06:10:15.029316+00:00",
+    "validation_environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:/DawnwoodInteractive/tmp/validation_v04/layers",
+      "VK_LAYER_VALIDATE_SYNC": "1"
+    }
+  },
+  {
+    "name": "vulkan_feedback_on_rng_changed_16",
+    "command": [
+      "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-x64\\dawnwood.exe",
+      "run",
+      "--backend",
+      "vulkan",
+      "--device",
+      "1650 Ti",
+      "--resume",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\feedback_on_rng_changed.dwk",
+      "--steps",
+      "16",
+      "--checkpoint",
+      "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\vulkan_feedback_on_rng_changed_16.dwk"
+    ],
+    "exit_code": 0,
+    "exe_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+    "utc": "2026-09-23T06:10:15.409061+00:00",
+    "validation_environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:/DawnwoodInteractive/tmp/validation_v04/layers",
+      "VK_LAYER_VALIDATE_SYNC": "1"
+    }
+  }
+]

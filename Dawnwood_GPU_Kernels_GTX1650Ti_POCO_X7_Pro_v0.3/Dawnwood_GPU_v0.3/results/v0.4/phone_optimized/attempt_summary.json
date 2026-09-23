@@ -1,0 +1,31 @@
+{
+  "successful": false,
+  "real_phone_test_completed": true,
+  "completed_commands": 4,
+  "cpu_selftest": {
+    "passed": true,
+    "tests_run": 30
+  },
+  "vulkan_commands": {
+    "probe": {
+      "error": "vkCreateComputePipelines evolve on Mali-G720 MC7 (VkResult -3)"
+    },
+    "verify": {
+      "error": "vkCreateComputePipelines evolve on Mali-G720 MC7 (VkResult -3)"
+    },
+    "run": {
+      "error": "vkCreateComputePipelines evolve on Mali-G720 MC7 (VkResult -3)"
+    }
+  },
+  "vulkan_epochs_compared": 0,
+  "vulkan_epochs_run": 0,
+  "diagnosis": "All Vulkan commands fail creating the evolve pipeline on Mali-G720 MC7. Own-PID logs show Scudo allocation exhaustion and malloc failure. No completed numerical GPU evolution on this phone.",
+  "apk_sha256": "eb13d2612524792fb24849e1c4cd3a007bef5b1c4a53928b252d4db980b17fba",
+  "shader_sha256": {
+    "mutate.spv": "d7e2511fd94b800e3c173846b61d430c288591342485067305a12cc7448bccdd",
+    "evolve.spv": "4a3e99e293001348c1b1b485ed73fb14cb0533b09a84ea60bbd10f9779922923"
+  },
+  "shader_build": "glslc -O, DontUnroll loop hints, NoContraction retained",
+  "toolchain_override": "../android-local-toolchain.gradle",
+  "runtime_profile": "DWI-N1-0.4"
+}

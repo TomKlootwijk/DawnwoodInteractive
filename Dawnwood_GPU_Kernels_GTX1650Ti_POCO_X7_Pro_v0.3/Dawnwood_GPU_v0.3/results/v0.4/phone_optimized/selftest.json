@@ -1,0 +1,185 @@
+{
+  "run_id": "selftest_1789555734593233300",
+  "android_before": {
+    "model": "2412DPC0AG",
+    "manufacturer": "Xiaomi",
+    "sdk": 36,
+    "abi": "arm64-v8a",
+    "system_total_ram_bytes": 11861921792,
+    "system_available_ram_bytes": 4458815488,
+    "system_low_memory": false,
+    "android_thermal_status": 0,
+    "battery_temperature_celsius": 34.3
+  },
+  "runtime": {
+    "profile": "DWI-N1-0.4",
+    "backend": "CPU",
+    "tests": [
+      {
+        "name": "source_7_54_population_parity",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "population_parity_is_not_integer_parity",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "source_wavefront_components",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "record_ABI",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "implicit_tree_children",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "Klein_positive_seam",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "Klein_negative_seam",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "Klein_double_wrap_restores_orientation",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "Klein_R4_embedding_identification",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "log_radial_scale_identity",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "sphere_signed_distance",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "circle_signed_distance",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "T_geometry_sign",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "pyramid_side_geometry_sign",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "cone_apex_and_interior",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "apex_point_field",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "scalar_bytecode_body_changes_result",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "Hadamard_involution",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "fourth_slot_double_Y_up_is_active",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "operator_body_and_surface_position_change",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "feedback_changes_future_numerical_state",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "live_body_edit_changes_future_numerical_state",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "inverse_T_matrix_residual",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "inverse_is_not_automatic_noise_correction",
+        "passed": true,
+        "detail": "Counterexample witness: applying an inverse transform does not delete additive channel noise."
+      },
+      {
+        "name": "norm_preserved_in_full_numerical_cycle",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "same_seed_replay",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "history_participates_in_next_operator_change",
+        "passed": true,
+        "detail": ""
+      },
+      {
+        "name": "mutable_scalar_field_not_always_metric_SDF",
+        "passed": true,
+        "detail": "Counterexample witness: field scaling can violate the unit-gradient property of an exact SDF."
+      },
+      {
+        "name": "fixed_bit_store_cardinality",
+        "passed": true,
+        "detail": "A 256-pattern store cannot injectively encode 257 arbitrary distinct messages."
+      },
+      {
+        "name": "raw_GB_and_GiB_accounting",
+        "passed": true,
+        "detail": ""
+      }
+    ],
+    "tests_run": 30,
+    "passed": true
+  },
+  "elapsed_wall_ms": 216,
+  "android_after": {
+    "model": "2412DPC0AG",
+    "manufacturer": "Xiaomi",
+    "sdk": 36,
+    "abi": "arm64-v8a",
+    "system_total_ram_bytes": 11861921792,
+    "system_available_ram_bytes": 4144844800,
+    "system_low_memory": false,
+    "android_thermal_status": 0,
+    "battery_temperature_celsius": 34.3
+  },
+  "finished": true
+}

@@ -1,0 +1,15 @@
+{
+  "source_url": "https://sdk.lunarg.com/sdk/download/1.4.357.0/windows/vulkansdk-windows-X64-1.4.357.0.exe",
+  "catalogue_url": "https://vulkan.lunarg.com/sdk/home",
+  "sdk_version": "1.4.357.0",
+  "published_sdk_sha256": "81f474711e9042f4cd22b31b2f7a8870db2e428b21586fb43dd80150be97310d",
+  "actual_sdk_sha256": "81f474711e9042f4cd22b31b2f7a8870db2e428b21586fb43dd80150be97310d",
+  "method": "7-Zip archive extraction only; SDK installer was never executed",
+  "extraction_exit_code": 0,
+  "layer_path": "C:\\DawnwoodInteractive\\tmp\\validation_v04\\layers",
+  "validation_dll_sha256": "9725ce7a9225f42f8961c433dacae4cc8fae3a16e95ef1d0a7c7e8bc09132c40",
+  "validation_json_sha256": "20d3ef44fe96aa41fceefab2308892f9d4b346d23eebfe8b5e1690715f23f472",
+  "vulkaninfo_summary_exit_code": 0,
+  "recognized_layer": "VK_LAYER_KHRONOS_validation 1.4.357 version 1",
+  "environment_scope": "process only: VK_LAYER_PATH and VK_INSTANCE_LAYERS"
+}

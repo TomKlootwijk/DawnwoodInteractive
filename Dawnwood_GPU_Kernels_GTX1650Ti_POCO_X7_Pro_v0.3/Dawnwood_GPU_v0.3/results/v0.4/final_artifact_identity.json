@@ -1,0 +1,22 @@
+{
+  "bin/windows-x64/dawnwood.exe": {
+    "bytes": 479744,
+    "sha256": "6902ae8eec8176fb1c10c8a22e5274506c8e4cd3b61340e1de3d629f72909631"
+  },
+  "bin/android/Dawnwood_GPU_v0.4_debug.apk": {
+    "bytes": 2976779,
+    "sha256": "260f9ba977da853063384ac91b55f5dad5df8eca34e23f1091f3171248d90451"
+  },
+  "shaders/mutate.spv": {
+    "bytes": 41524,
+    "sha256": "d7e2511fd94b800e3c173846b61d430c288591342485067305a12cc7448bccdd"
+  },
+  "shaders/evolve.spv": {
+    "bytes": 268608,
+    "sha256": "b58cdccae0ca0624e3f6750fa91fccb2ac5b4ee771d9ea45084a6a9b7340a31c"
+  },
+  "docs/Dawnwood_Interactive_Unified_v0.4.pdf": {
+    "bytes": 160950,
+    "sha256": "20907140e31989c59d7aac423d1792ef5ff2562e1ea73eda2a5024ed4d3411ed"
+  }
+}

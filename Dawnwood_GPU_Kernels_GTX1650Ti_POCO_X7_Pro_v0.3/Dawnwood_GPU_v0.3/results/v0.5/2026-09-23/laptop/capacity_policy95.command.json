@@ -1,0 +1,26 @@
+{
+  "name": "capacity_policy95",
+  "command": [
+    "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "tools\\measure_capacity.py",
+    "--binary",
+    "build\\Release\\dawnwood.exe",
+    "--device",
+    "1650 Ti",
+    "--out",
+    "results\\v0.5\\2026-09-23\\laptop\\capacity95",
+    "--budget-fraction",
+    "0.95",
+    "--reserve-mib",
+    "128",
+    "--steps",
+    "2"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "started_utc": "2026-09-23T05:11:20.192556+00:00",
+  "binary_sha256": "20b944a181d52e105150196b1f7e2a4f309b79cc478ebd9185f161e9686085e0",
+  "validation_environment": {},
+  "exit_code": 0,
+  "wall_seconds": 99.26599999999962,
+  "finished_utc": "2026-09-23T05:12:59.453194+00:00"
+}

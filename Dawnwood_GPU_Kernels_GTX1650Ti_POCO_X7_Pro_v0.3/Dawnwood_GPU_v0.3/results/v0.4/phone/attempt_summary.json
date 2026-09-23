@@ -1,0 +1,9 @@
+{
+  "successful": false,
+  "real_phone_test_completed": false,
+  "probe": "vkCreateComputePipelines returned VK_ERROR_INITIALIZATION_FAILED (-3)",
+  "cpu_selftest": "30/30 passed",
+  "verify": "Native SIGABRT; app PID 24000 logged Scudo ERROR: internal map failure (Out of memory). Android exit-info confirms APP CRASH(NATIVE). No verification report was produced.",
+  "run": "Not executed: stopped the report waiter after confirming the verification process had crashed.",
+  "initial_broad_logcat_files": "probe_logcat.txt and selftest_logcat.txt contain unrelated app logs and must be excluded from release; relevant own-PID logs are preserved separately in results/v0.4/phone_probe_process_log_v04.stdout and phone_verify_process_log_v04.stdout."
+}

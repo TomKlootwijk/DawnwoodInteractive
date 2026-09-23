@@ -1,0 +1,523 @@
+--------- beginning of main
+09-16 12:41:17.710  1137  1137 I hwcomposer: [HWC] getDispDumpEnable(), register to client callback with client(1), disp(0)  
+09-16 12:41:17.710  1649  2313 E libsensor-frameBufferManager: frameBufferManager_sensor_debug : first_time getDispDump Enable ret = 0
+09-16 12:41:17.710  1649  2313 D libcomposer_ext: ClientImplAidl::getDispDump(), dpy 1, dst (240, 180), dump_point 1, release_fence -1
+--------- beginning of system
+09-16 12:41:17.710  2871  3052 I MultiTaskingTaskRepository: onTaskVanished::taskId = 2901 mTasks: 2902, 2901, 2890, 2886, 2877, 2874, 2856, 2850, 2849, 2800, 8, 7, 6, 5, 4, 3, 1, 
+09-16 12:41:17.710  2871  3052 D MultiTaskingTaskRepository: removeMultiTaskingTaskInfo::taskInfo.taskId = 2901 current mMultiTaskingTaskInfoList: { ,2902 ,2890 ,2886 ,2877 ,2874 ,2856 ,2850 ,2849 ,2800 ,2632 ,2093 ,1990 ,1912 ,1726 ,1502 ,1482 ,5 ,4 }
+09-16 12:41:17.710  2871  3052 I MultiTaskingTaskRepository: onTaskVanished::mMultiWindowTaskIdsInZOrder = [5, 4], mFullscreenTaskIdsInZOrder = [2902, 2856, 2800, 2886, 2890, 2850, 2877, 2874, 2849, 2632, 2093, 1990, 1912, 1726, 1502, 1482]
+09-16 12:41:17.710  2871  3052 D MulWinSwitchEventHandler: onForceStop taskId = 2901, type = TASK_VANISH, mTouchedTaskId = -1
+09-16 12:41:17.710  1137  1137 D libcomposer_ext: DeviceImplAidl::syncPerform(14), client_handle: 1
+09-16 12:41:17.710  1137  1137 D libcomposer_ext: DeviceImplAidl::DeviceClientContextAidl::ParseGetDispDump()
+09-16 12:41:17.710  1137  1137 D libcomposer_ext: DeviceImplAidl::ParseGetDispDump(), dpy 1, dst (240, 180), dump_point 1
+09-16 12:41:17.710  1137  1137 I hwcomposer: [HWC] getDispDump(), client(1), dpy 1, (778,0,1018,180), (240, 180), (1, 2), (-1), (-1), (0xb4000071cbdd4e70)  
+09-16 12:41:17.710  1137  1137 I hwcomposer: [DRMDEV] isSupportWbParams(), id_crtc 116, id_connector 34, dump_point 1, src(778, 0, 240, 180), dst(240, 180), config 2  
+09-16 12:41:17.710  1137  1137 I hwcomposer: [DISP_DUMP] setDumpBuf(), client(1), dpy(0), src(778, 0, 1018, 180), dst(240, 180), (1, 2), -1, (-1), (0xb4000071cbdd4e70)  
+09-16 12:41:17.710  1137  1137 I hwcomposer: [HWC] (0)fire a callback of refresh to SF[9]  
+09-16 12:41:17.710  1843  1966 I PowerHalWrapper: amsBoostNotify pid:23697,activity:com.google.android.youtube.app.honeycomb.Shell$HomeActivity, package:com.google.android.youtube, mProcessCreatePacknl.dawnwood.kernel 
+09-16 12:41:17.710  1843  1966 I PowerHalWrapper: state: 0 
+09-16 12:41:17.711  1843  1966 I mtkpower_client: [PowerHal_Wrap_notifyAppState] com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity pid=23697 activityId:256369433 state:0
+09-16 12:41:17.711  1843  1966 D MAGT_SYNC_FRAME: MAGT App State [NOTIFY]: package = com.google.android.youtube, action = com.google.android.youtube.app.honeycomb.Shell$HomeActivity, pid = 23697, state = 0, uid = 10221
+09-16 12:41:17.711  2871  3288 D DeskTopModeUtils: Failed to read MIUI_DESKTOP_MODE settings android.provider.Settings$SettingNotFoundException: miui_dkt_mode
+09-16 12:41:17.711  1179  4723 I vendor.mediatek.hardware.mtkpower_applist-service.mediatek: packName: com.google.android.youtube actName: com.google.android.youtube.app.honeycomb.Shell$HomeActivity pid: 23697 activityId: 256369433 uid: 10221 state: 0
+09-16 12:41:17.711  1179  4723 I MTK_APPList: [notifyAPPstate] com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity, pid=23697, activityId=256369433, uid=10221, state:PAUSED, fps:-1, win:0
+09-16 12:41:17.711  1179  4723 I MTK_APPList: [notifyAPPstate] multi_resumed_app_count: 1
+09-16 12:41:17.711  1179  4723 I MTK_APPList: [notifyAPPstate] multi_resumed_app_info[0] nl.dawnwood.kernel/nl.dawnwood.kernel.MainActivity, pid:15863, activityId:69017870, fps:-1, isMultiWindow:0
+09-16 12:41:17.711  1179  4723 I MTK_APPList: [getForegroundAPPCount] 1
+09-16 12:41:17.711  1179  4723 I MTK_APPList: [notifyNetdUID] 10432
+09-16 12:41:17.711  1843  1966 I PowerHalWrapper: amsBoostNotify AMS_BOOST_PROCESS_CREATE_BOOST:true 
+09-16 12:41:17.711  1179  4723 I MTK_APPList: [notifyPID] 15863
+09-16 12:41:17.711  7810 29365 D EventBus: No subscribers registered for event class com.miui.home.recents.messages.RecentTasksChangedEvent
+09-16 12:41:17.712  1843  2448 I CameraActivitySceneMode: decideSceneMode: ActivityStateChange isn't resumend activityName = com.google.android.apps.youtube.app.watchwhile.MainActivity, displayId = 0, state = 5, mIsVideocallResumed = false
+09-16 12:41:17.712  1198  1249 I libPowerHal: [perfSetSysInfo] pid type:24, 15863
+09-16 12:41:17.712  7810 29365 D EventBus: No subscribers registered for event class org.greenrobot.eventbus.NoSubscriberEvent
+09-16 12:41:17.712  7810  9044 W MiBridge: Permission not granted !!
+09-16 12:41:17.712  7810  9044 D Launcher.Boost: setDynamicVIPTaskIfNeeded::tid = 74359 duration = 500
+09-16 12:41:17.713  1843  3071 E NativeTurboSchedManagerJni: ioctl 8 failed!
+09-16 12:41:17.713  2871  3288 D DeskTopModeUtils: Failed to read MIUI_DESKTOP_MODE settings android.provider.Settings$SettingNotFoundException: miui_dkt_mode
+09-16 12:41:17.716  1273  1273 I SurfaceFlinger: onHandleDestroyed: layerId=270863, name=Task=2901#270863
+09-16 12:41:17.716  1273  1273 I SurfaceFlinger: onHandleDestroyed: layerId=270807, name=ActivityRecord{166957085 u0 nl.dawnwood.kernel/.MainActivity t2901}#270807
+09-16 12:41:17.716  1273  1273 I SurfaceFlinger: onHandleDestroyed: layerId=270821, name=809a0fb nl.dawnwood.kernel/nl.dawnwood.kernel.MainActivity#270821
+09-16 12:41:17.716  1273  1273 I SurfaceFlinger: onHandleDestroyed: layerId=270822, name=nl.dawnwood.kernel/nl.dawnwood.kernel.MainActivity#270822
+09-16 12:41:17.716  1273  1273 I SurfaceFlinger: onHandleDestroyed: layerId=270809, name=StatusBar Container of Task = 2901#270809
+09-16 12:41:17.716  1273  1273 I SurfaceFlinger: onHandleDestroyed: layerId=270808, name=NavigationBar Container of Task = 2901#270808
+09-16 12:41:17.716  2871  3288 D DeskTopModeUtils: Failed to read MIUI_DESKTOP_MODE settings android.provider.Settings$SettingNotFoundException: miui_dkt_mode
+09-16 12:41:17.716  7810  9044 W RecentsModel: getRunningTask   taskInfo=TaskInfo{userId=0 taskId=2902 effectiveUid=10432 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=nl.dawnwood.kernel/.MainActivity } baseActivity=ComponentInfo{nl.dawnwood.kernel/nl.dawnwood.kernel.MainActivity} topActivity=ComponentInfo{nl.dawnwood.kernel/nl.dawnwood.kernel.MainActivity} origActivity=null realActivity=ComponentInfo{nl.dawnwood.kernel/nl.dawnwood.kernel.MainActivity} numActivities=1 lastActiveTime=2780913265 supportsSplitScreenMultiWindow=true mSoScDisplayMode=-1 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=200 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@e633c87} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{41c17b4 nl.dawnwood.kernel.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(304, 734 - 916, 1954) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false topActivityInMiuiSizeCompat=false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1220, 2712) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactive}} isImmersive=false mTopActivityRequestOrientation=-1 mStatusBarParent=null mNavBarParent=null mBehindAppLockPkg=null mOriginatingUid=0 isEmbedded=false shouldBeVisible=true isCreatedByOrganizer=false mIsCastMode=false mTopActivityMediaSize=null mTopActivityRecordName=ActivityRecord{69017870 u0 nl.dawnwood.kernel/.MainActivity t2902} mTopActivityOrientation=-1 topActivityMainWindowFrame=null}
+09-16 12:41:17.716  1273  1273 E HwcComposer: presentOrValidateDisplay 0 presentFence:-1
+09-16 12:41:17.716  7810  9044 E ActivityManagerWrapper: get all recent tasks force including 2902 userId =0
+09-16 12:41:17.717  1137  1137 D libcomposer_ext: DeviceImplAidl::DeviceClientContextAidl::NotifyDispDumpReady(), client_handle:1, buffer:0xb4000071cbdd1cf0, fence:56, period8333333
+09-16 12:41:17.717  1649 20420 D libcomposer_ext: ClientCallbackAidl::asyncPerform(15)
+09-16 12:41:17.717  1649 20420 D libcomposer_ext: ClientImplAidl::ParseNotifyDispDumpReady()
+09-16 12:41:17.721 23697 23697 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=ezq@ed30bb8
+09-16 12:41:17.721  7810  9044 E ActivityManagerWrapper: getRecentTasksForceIncludingTaskIdIfValid: getRecentTasks: size=9
+09-16 12:41:17.721  7810  9044 E ActivityManagerWrapper:  mainTaskId=2902   userId=0   windowMode=1   isExcludedFromRecents=false   baseIntent=Intent { act=null flag=268435456 cmp=ComponentInfo{nl.dawnwood.kernel/nl.dawnwood.kernel.MainActivity} }
+09-16 12:41:17.721  7810  9044 E ActivityManagerWrapper:  mainTaskId=2856   userId=0   windowMode=1   isExcludedFromRecents=false   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity} }
+09-16 12:41:17.721  7810  9044 E ActivityManagerWrapper:  mainTaskId=2800   userId=0   windowMode=1   isExcludedFromRecents=false   baseIntent=Intent { act=null flag=268435456 cmp=ComponentInfo{com.whatsapp/com.whatsapp.home.ui.HomeActivity} }
+09-16 12:41:17.721  7810  9044 E ActivityManagerWrapper:  mainTaskId=2886   userId=0   windowMode=1   isExcludedFromRecents=false   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.android.chrome/com.google.android.apps.chrome.Main} }
+09-16 12:41:17.721  7810  9044 E ActivityManagerWrapper:  mainTaskId=2890   userId=0   windowMode=1   isExcludedFromRecents=false   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.android.camera/com.android.camera.Camera} }
+09-16 12:41:17.721  7810  9044 E ActivityManagerWrapper:  mainTaskId=2850   userId=0   windowMode=1   isExcludedFromRecents=false   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.instagram.android/com.instagram.android.activity.MainTabActivity} }
+09-16 12:41:17.721  7810  9044 E ActivityManagerWrapper:  mainTaskId=2877   userId=0   windowMode=1   isExcludedFromRecents=false   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.reddit.frontpage/launcher.worldcup2026} }
+09-16 12:41:17.721  7810  9044 E ActivityManagerWrapper:  mainTaskId=2874   userId=0   windowMode=1   isExcludedFromRecents=false   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.android.deskclock/com.android.deskclock.DeskClockTabActivity} }
+09-16 12:41:17.721  7810  9044 E ActivityManagerWrapper:  mainTaskId=2849   userId=0   windowMode=1   isExcludedFromRecents=false   baseIntent=Intent { act=android.intent.action.MAIN flag=270532608 cmp=ComponentInfo{com.google.android.apps.nbu.files/com.google.android.apps.nbu.files.home.HomeActivity} }
+09-16 12:41:17.721  1843  7960 D CoreBackPreview: Window{c12e81e u0 com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@1e94793, mPriority=-1, mIsAnimationCallback=false, mOverrideBehavior=0}
+09-16 12:41:17.723  7810  9044 D RecentsTaskLoader: reloadTasksData [TaskKey{id=2902, stackId=0, baseIntent=Intent { flg=0x10000000 cmp=nl.dawnwood.kernel/.MainActivity }, userId=0, lastActiveTime=2780912400, windowingMode=1, isThumbnailBlur=false, isAccessLocked=false, isScreening=false, topActivity=ComponentInfo{nl.dawnwood.kernel/nl.dawnwood.kernel.MainActivity}, mHashCode=87377034}, title=Dawnwood GPU, titleDescription=Dawnwood GPU, bounds=null, isLaunchTarget=false, isStackTask=true, isSystemApp=false, isDockable=true, baseActivity=ComponentInfo{nl.dawnwood.kernel/nl.dawnwood.kernel.MainActivity}, isLocked=false, mNeedHide=false, hasMultipleTasks=false, cti1Key=, cti2Key=, cti1Task=, cti2Task=] 
+09-16 12:41:17.723  7810  9044 D TaskSnapshotCompatVV: getIsInvalidateFromTaskSnapshot, return, mTaskSnapshot=null, mTaskSnapshotClazz=null
+09-16 12:41:17.723  7810  9044 D RecentsTaskLoader: reloadTasksData [TaskKey{id=2856, stackId=0, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.google.android.youtube/.app.honeycomb.Shell$HomeActivity }, userId=0, lastActiveTime=2780912117, windowingMode=1, isThumbnailBlur=false, isAccessLocked=false, isScreening=false, topActivity=ComponentInfo{com.google.android.youtube/com.google.android.apps.youtube.app.watchwhile.MainActivity}, mHashCode=86006648}, title=YouTube, titleDescription=YouTube, bounds=null, isLaunchTarget=true, isStackTask=true, isSystemApp=true, isDockable=true, baseActivity=ComponentInfo{com.google.android.youtube/com.google.android.apps.youtube.app.watchwhile.MainActivity}, isLocked=false, mNeedHide=false, hasMultipleTasks=false, cti1Key=, cti2Key=, cti1Task=, cti2Task=] 
+09-16 12:41:17.723  7810  9044 D RecentsTaskLoader: reloadTasksData [TaskKey{id=2800, stackId=0, baseIntent=Intent { flg=0x10000000 cmp=com.whatsapp/.home.ui.HomeActivity }, userId=0, lastActiveTime=2779407177, windowingMode=1, isThumbnailBlur=false, isAccessLocked=false, isScreening=false, topActivity=ComponentInfo{com.whatsapp/com.whatsapp.home.ui.HomeActivity}, mHashCode=84338352}, title=WhatsApp, titleDescription=WhatsApp, bounds=null, isLaunchTarget=true, isStackTask=true, isSystemApp=false, isDockable=true, baseActivity=ComponentInfo{com.whatsapp/com.whatsapp.home.ui.HomeActivity}, isLocked=false, mNeedHide=false, hasMultipleTasks=false, cti1Key=, cti2Key=, cti1Task=, cti2Task=] 
+09-16 12:41:17.723  7810  9044 D RecentsTaskLoader: reloadTasksData [TaskKey{id=2886, stackId=0, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.chrome/com.google.android.apps.chrome.Main }, userId=0, lastActiveTime=2779349993, windowingMode=1, isThumbnailBlur=false, isAccessLocked=false, isScreening=false, topActivity=ComponentInfo{com.android.chrome/org.chromium.chrome.browser.ChromeTabbedActivity}, mHashCode=86900378}, title=Chrome, titleDescription=Chrome, bounds=null, isLaunchTarget=false, isStackTask=true, isSystemApp=true, isDockable=true, baseActivity=ComponentInfo{com.android.chrome/org.chromium.chrome.browser.ChromeTabbedActivity}, isLocked=false, mNeedHide=false, hasMultipleTasks=false, cti1Key=, cti2Key=, cti1Task=, cti2Task=] 
+09-16 12:41:17.723  7810  9044 D RecentsTaskLoader: reloadTasksData [TaskKey{id=2890, stackId=0, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.camera/.Camera }, userId=0, lastActiveTime=2763330927, windowingMode=1, isThumbnailBlur=true, isAccessLocked=false, isScreening=false, topActivity=ComponentInfo{com.android.camera/com.android.camera.Camera}, mHashCode=87019542}, title=Camera, titleDescription=Camera, bounds=null, isLaunchTarget=true, isStackTask=true, isSystemApp=true, isDockable=false, baseActivity=ComponentInfo{com.android.camera/com.android.camera.Camera}, isLocked=false, mNeedHide=false, hasMultipleTasks=false, cti1Key=, cti2Key=, cti1Task=, cti2Task=] 
+09-16 12:41:17.723  7810  9044 D RecentsTaskLoader: reloadTasksData [TaskKey{id=2850, stackId=0, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.instagram.android/.activity.MainTabActivity }, userId=0, lastActiveTime=2716647356, windowingMode=1, isThumbnailBlur=false, isAccessLocked=false, isScreening=false, topActivity=ComponentInfo{com.instagram.android/com.instagram.mainactivity.InstagramMainActivity}, mHashCode=85827902}, title=Instagram, titleDescription=Instagram, bounds=null, isLaunchTarget=false, isStackTask=true, isSystemApp=false, isDockable=true, baseActivity=ComponentInfo{com.instagram.android/com.instagram.mainactivity.InstagramMainActivity}, isLocked=false, mNeedHide=false, hasMultipleTasks=false, cti1Key=, cti2Key=, cti1Task=, cti2Task=] 
+09-16 12:41:17.723  7810  9044 D RecentsTaskLoader: reloadTasksData [TaskKey{id=2877, stackId=0, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.reddit.frontpage/launcher.worldcup2026 }, userId=0, lastActiveTime=2716585234, windowingMode=1, isThumbnailBlur=false, isAccessLocked=false, isScreening=false, topActivity=ComponentInfo{com.reddit.frontpage/com.reddit.fullbleedplayer.common.FbpActivity}, mHashCode=86632259}, title=Reddit, titleDescription=Reddit, bounds=null, isLaunchTarget=true, isStackTask=true, isSystemApp=false, isDockable=true, baseActivity=ComponentInfo{com.reddit.frontpage/com.reddit.launch.main.MainActivity}, isLocked=false, mNeedHide=false, hasMultipleTasks=false, cti1Key=, cti2Key=, cti1Task=, cti2Task=] 
+09-16 12:41:17.724  7810  9044 D RecentsTaskLoader: reloadTasksData [TaskKey{id=2874, stackId=0, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.deskclock/.DeskClockTabActivity }, userId=0, lastActiveTime=2703840974, windowingMode=1, isThumbnailBlur=false, isAccessLocked=false, isScreening=false, topActivity=ComponentInfo{com.android.deskclock/com.android.deskclock.DeskClockTabActivity}, mHashCode=86542886}, title=Clock, titleDescription=Clock, bounds=null, isLaunchTarget=false, isStackTask=true, isSystemApp=false, isDockable=true, baseActivity=ComponentInfo{com.android.deskclock/com.android.deskclock.DeskClockTabActivity}, isLocked=false, mNeedHide=false, hasMultipleTasks=false, cti1Key=, cti2Key=, cti1Task=, cti2Task=] 
+09-16 12:41:17.724  7810  9044 D RecentsTaskLoader: reloadTasksData [TaskKey{id=2849, stackId=0, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.google.android.apps.nbu.files/.home.HomeActivity }, userId=0, lastActiveTime=2701498502, windowingMode=1, isThumbnailBlur=false, isAccessLocked=false, isScreening=false, topActivity=ComponentInfo{com.google.android.apps.nbu.files/com.google.android.apps.nbu.files.safefolder.browser.SafeFolderBrowserActivity}, mHashCode=85798111}, title=Files, titleDescription=Files by Google Files, bounds=null, isLaunchTarget=true, isStackTask=true, isSystemApp=false, isDockable=true, baseActivity=ComponentInfo{com.google.android.apps.nbu.files/com.google.android.apps.nbu.files.home.HomeActivity}, isLocked=false, mNeedHide=false, hasMultipleTasks=false, cti1Key=, cti2Key=, cti1Task=, cti2Task=] 
+09-16 12:41:17.724  1273  1768 E BpTransactionCompletedListener: Failed to transact (-32)
+09-16 12:41:17.728  2738  3428 I BtGatt.ScanManager: msg.what = MSG_IMPORTANCE_CHANGE, msg.arg1 = IMPORTANCE_CHANGE
+09-16 12:41:17.728  2738  3428 E BtGatt.ScanManager: scan data is null
+09-16 12:41:17.728  2738  3428 D BtGatt.ScanManager: uid 10159 isForeground true scanMode SCAN_MODE_LOW_POWER
+09-16 12:41:17.728  2738  3428 E BtGatt.ScanManager: scan data is null
+09-16 12:41:17.728  2738  3428 D BtGatt.ScanManager: uid 10159 isForeground true scanMode SCAN_MODE_LOW_POWER
+09-16 12:41:17.728  2738  3428 E BtGatt.ScanManager: scan data is null
+09-16 12:41:17.728  2738  3428 D BtGatt.ScanManager: uid 10159 isForeground true scanMode SCAN_MODE_LOW_POWER
+09-16 12:41:17.728  1843  2442 D DouyinContentPagePolicy:  setRefreshRate:-1
+09-16 12:41:17.728  1843  2338 I MiuiNetworkPolicy: updateUidState uid = 10221, uidState = 15
+09-16 12:41:17.728  1843  2338 I MiuiNetworkPolicy: updateUidState uid = 10168, uidState = 15
+09-16 12:41:17.728  1843  2338 I MiuiNetworkPolicy: updateUidState uid = 10159, uidState = 5
+09-16 12:41:17.729  1843  3465 I ForegroundAppManager: remove foregroundApp,uid:10221,procState:15
+09-16 12:41:17.729  4963  6928 D ForegroundUtils: onUidImportance: Foreground UID status
+09-16 12:41:17.729  4963  6928 D ForegroundUtils: onUidImportance: UID: 10091 is in foreground: true
+09-16 12:41:17.729  4963  6928 D ForegroundUtils: onUidImportance: UID: 10139 is in foreground: false
+09-16 12:41:17.729  4963  6928 D ForegroundUtils: onUidImportance: UID: 10159 is in foreground: true
+09-16 12:41:17.729  4963  6928 D ForegroundUtils: onUidImportance: UID: 10161 is in foreground: false
+09-16 12:41:17.729  4963  6928 D ForegroundUtils: onUidImportance: UID: 10185 is in foreground: false
+09-16 12:41:17.729  4963  6928 D ForegroundUtils: onUidImportance: UID: 10194 is in foreground: true
+09-16 12:41:17.729  4963  6928 D ForegroundUtils: onUidImportance: UID: 10221 is in foreground: false
+09-16 12:41:17.729  4963  6928 D ForegroundUtils: onUidImportance: UID: 10278 is in foreground: false
+09-16 12:41:17.729  4963  6928 D ForegroundUtils: onUidImportance: UID: 10333 is in foreground: false
+09-16 12:41:17.729  4963  6928 D ForegroundUtils: onUidImportance: UID: 10432 is in foreground: true
+09-16 12:41:17.729  2738  2738 D HidDeviceService: handleMessage(): msg.what=8
+09-16 12:41:17.729  2738  2738 D HidDeviceService: unregisterAppUid(): uid=10221
+09-16 12:41:17.729  2738  2738 D HidDeviceService: unregisterAppUid(): caller UID doesn't match user UID
+09-16 12:41:17.729  2738  2738 D HidDeviceService: handleMessage(): msg.what=8
+09-16 12:41:17.729  2738  2738 D HidDeviceService: unregisterAppUid(): uid=10168
+09-16 12:41:17.729  2738  2738 D HidDeviceService: unregisterAppUid(): caller UID doesn't match user UID
+09-16 12:41:17.734 23697 25517 D libMEOW : meow new tls: 0xb400007a5e5ff5a0
+09-16 12:41:17.734 23697 25517 D libMEOW : applied 0 plugin for [com.google.android.youtube].
+09-16 12:41:17.737  1649 20420 D libcomposer_ext: ClientImplAidl::getDispDumpEnable()
+09-16 12:41:17.737  1137  1137 D libcomposer_ext: DeviceImplAidl::syncPerform(13), client_handle: 1
+09-16 12:41:17.737  1137  1137 D libcomposer_ext: DeviceImplAidl::DeviceClientContextAidl::ParseGetDispDumpEnable()
+09-16 12:41:17.737  1137  1137 I hwcomposer: [HWC] getDispDumpEnable(), client(1), dpy 1, enable 0, (0,0,240,180), (240, 180), 3  
+09-16 12:41:17.737  1137  1137 I hwcomposer: [DISP_DUMP] setEnable(), client(1), dpy(0), enable 0/1, src(0, 0, 240, 180), dst(240, 180), fmt 0x3  
+09-16 12:41:17.737  1137  1137 I hwcomposer: [HWC] getDispDumpEnable(), register to client callback with client(1), disp(0)  
+09-16 12:41:17.737  1649 20420 E libsensor-frameBufferManager: frameBufferManager_sensor_debug : getDispDump_Disable ret = 0
+09-16 12:41:17.737  1649  2314 D libsensor-parseRGB: the value of RGB [241.483066 244.418670 247.378717], powPara: 2.290508
+09-16 12:41:17.749 23697 25517 D BufferQueueConsumer: [](id:5c9100000013,api:0,p:-1,c:23697) connect: controlledByApp=true
+09-16 12:41:17.749 23697 25364 I MediaCodec: [mId: 6] [video-debug-dec] connectToSurface: surface 0xb4000079ae220250, mSurface 0xb4000079ae1ca720
+09-16 12:41:17.749 23697 25364 D MediaCodec: [0xb4000079ce7686f0] [c2.mtk.av1.decoder] connectToSurface: surface 0xb4000079ae220250, mSurface 0xb4000079ae1ca720
+09-16 12:41:17.749 23697 25364 D SurfaceUtils: connecting to surface 0xb4000079ae220260, reason connectToSurface
+09-16 12:41:17.749 23697 25364 I MediaCodec: [c2.mtk.av1.decoder] setting surface generation to 24265745
+09-16 12:41:17.749 23697 25364 D SurfaceUtils: disconnecting from surface 0xb4000079ae220260, reason connectToSurface(reconnect)
+09-16 12:41:17.749 23697 25364 D SurfaceUtils: connecting to surface 0xb4000079ae220250, reason connectToSurface(reconnect-with-listener)
+09-16 12:41:17.749 23697 25364 W android.youtube: Binder 0xb400007b0e954b20 destroyed after setInheritRt before being parceled.
+09-16 12:41:17.750 23697 25364 D GraphicsTracker: new surface in configuration: maxDequeueRequested(0), maxDequeueCommitted(27)
+09-16 12:41:17.750 23697 25364 D GraphicsTracker: new surface configured with id:101777840013331 gen:24265745 maxDequeue:27
+09-16 12:41:17.750 23697 25364 D GraphicsTracker: maxDequeueCount is already 27
+09-16 12:41:17.750 23697 25364 D Codec2Client: setOutputSurface -- generation=24265745 consumer usage=0x900
+09-16 12:41:17.750 23697 25364 I MediaCodec: [mId: 6] [video-debug-dec] disconnectFromSurface: mSurface 0xb4000079ae1ca720
+09-16 12:41:17.750 23697 25364 D MediaCodec: [0xb4000079ce7686f0] [c2.mtk.av1.decoder] disconnectFromSurface: mSurface 0xb4000079ae1ca720
+09-16 12:41:17.750 23697 25364 D SurfaceUtils: disconnecting from surface 0xb4000079ae1ca730, reason disconnectFromSurface
+09-16 12:41:17.750  1446  1446 I adbd    : adbd service requested 'shell,v2,TERM=dumb,raw:run-as nl.dawnwood.kernel cat files/reports/selftest_1789555276285052800.json'
+09-16 12:41:17.752 23697 25364 D MediaCodec: [0xb4000079ce7686f0] setState: 7
+09-16 12:41:17.752 23697 25364 I MediaCodec: [mId: 6] [video-debug-dec] setState: FLUSHING
+09-16 12:41:17.753  1146  2121 D C2MtkComponent: [0xB400006EC9C71860] flush_sm
+09-16 12:41:17.753  1146  2121 D C2MtkComponent: [0xB400006EC9C71E28] printStash: key=1000129062000, frameIndex=56, inputFlags=0
+09-16 12:41:17.753  1146  2121 D C2MtkComponent: [0xB400006EC9C71E28] printStash: key=1000129078000, frameIndex=57, inputFlags=0
+09-16 12:41:17.753  1146  2121 D C2MtkComponent: [0xB400006EC9C71E28] printStash: key=1000129045000, frameIndex=55, inputFlags=0
+09-16 12:41:17.753  1146  2121 D C2MtkComponent: [0xB400006EC9C71E28] printStash: key=1000129028000, frameIndex=54, inputFlags=0
+09-16 12:41:17.754  1146 25374 D C2MtkVdec: [0xB400006EC9C71860] NotifyFlushDone, mGeneration=0
+09-16 12:41:17.754  1146 25374 D C2MtkComponent: [0xB400006EC9C71860] flushDone
+09-16 12:41:17.754  1146  2121 D C2MtkVdec: [0xB400006EC9C71860] VCodec Flushed, mGeneration: 0
+09-16 12:41:17.755  1146 25382 W C2MtkComponent: [0xB400006EC9C71860] processPostQueue: queue is empty.
+09-16 12:41:17.755  1146 25379 W C2MtkComponent: [0xB400006EC9C71860] processPreQueue: queue is empty.
+09-16 12:41:17.755  1146 25378 W C2MtkComponent: [0xB400006EC9C71860] processQueue: queue is empty.
+09-16 12:41:17.755 23697 25372 I CCodecBufferChannel: [mId: 6] [video-debug-dec] flush: flushing 4 works
+09-16 12:41:17.755 23697 25364 D MediaCodec: [0xb4000079ce7686f0] setState: 8
+09-16 12:41:17.755 23697 25364 I MediaCodec: [mId: 6] [video-debug-dec] setState: FLUSHED
+09-16 12:41:17.756 23697 15751 W libc    : Access denied finding property "vendor.mm.loading.state"
+09-16 12:41:17.757 23697 15751 D CCodecConfig: no recognized params in: Dict {
+09-16 12:41:17.757 23697 15751 D CCodecConfig: }
+09-16 12:41:17.757 23697 15751 D MediaCodec: keep callback message for reclaim
+09-16 12:41:17.757 23697 25364 D MediaCodec: [0xb4000079ce7686f0] setState: 6
+09-16 12:41:17.757 23697 25364 I MediaCodec: [mId: 6] [video-debug-dec] setState: STARTED
+09-16 12:41:17.758 23697 25364 I CCodecConfig: query failed after returning 19 values (BAD_INDEX)
+09-16 12:41:17.759 23697 25364 D CCodecConfig: c2 config diff is   c2::u32 coded.vui.color.matrix = 1
+09-16 12:41:17.759 23697 25364 D CCodecConfig:   c2::u32 coded.vui.color.primaries = 1
+09-16 12:41:17.759 23697 25364 D CCodecConfig:   c2::u32 coded.vui.color.range = 2
+09-16 12:41:17.759 23697 25364 D CCodecConfig:   c2::u32 coded.vui.color.transfer = 3
+09-16 12:41:17.759  1273  1744 W libc    : Access denied finding property "ro.vendor.display.max_hdr_luminance"
+09-16 12:41:17.766  1273  4156 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+09-16 12:41:17.766 23697 23697 D BLASTBufferQueue: [19b7eb3 SurfaceView[com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity]#6](f:0,a:1) destructor()
+09-16 12:41:17.766 23697 23697 D BufferQueueConsumer: [19b7eb3 SurfaceView[com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity]#6(BLAST Consumer)6](id:5c9100000012,api:0,p:-1,c:23697) disconnect: caller 23697
+09-16 12:41:17.767 23697 23697 D ViewRootImplStubImpl: onSurfaceViewDetached:
+09-16 12:41:17.767 23697 23697 D ViewRootImplStubImpl: , vri:android.view.ViewRootImpl@9fecf67, com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity
+09-16 12:41:17.767 23697 23697 D ViewRootImplStubImpl: , vri size:1220x2712
+09-16 12:41:17.767 23697 23697 D ViewRootImplStubImpl: , surfaceView:android.view.SurfaceView{19b7eb3 V.E...... ........ 0,0-1220,686}, SurfaceView[com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity]
+09-16 12:41:17.767 23697 23697 D ViewRootImplStubImpl: , surfaceView size:1220x686
+09-16 12:41:17.767 23697 23697 D ViewRootImplStubImpl: , surfaceControl:Surface(name=19b7eb3 SurfaceView[com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity](BLAST)#270835)/@0x5779bc8
+09-16 12:41:17.767  1273  4156 I SurfaceFlinger: onHandleDestroyed: layerId=270833, name=Bounds for - com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity#270833
+09-16 12:41:17.769  1146 25374 I DMABUFHEAPS: Using DMA-BUF heap named: mtk_mm
+09-16 12:41:17.769  1146 25374 D C2MtkVdecExt: [0xB400006EB9CE4748] allocBuffer: buffer 0x0xb400007009ca61e8, size 4096, alloc 15, free 0
+09-16 12:41:17.769  1146 25374 D C2MtkVdecExt: [0xB400006EB9C786B8] allocBuffer: buffer 0x0xb400007089c85228, size 0, alloc 15, free 0
+09-16 12:41:17.770  1146 25374 I DMABUFHEAPS: Using DMA-BUF heap named: mtk_mm
+09-16 12:41:17.770  1146 25374 D C2MtkVdecExt: [0xB400006EB9CE4748] allocBuffer: buffer 0x0xb400007009ca0328, size 4096, alloc 16, free 0
+09-16 12:41:17.770  1146 25374 D C2MtkVdecExt: [0xB400006EB9C786B8] allocBuffer: buffer 0x0xb400007089c893c8, size 0, alloc 16, free 0
+09-16 12:41:17.771  1146 25374 I DMABUFHEAPS: Using DMA-BUF heap named: mtk_mm
+09-16 12:41:17.771  1146 25374 D C2MtkVdecExt: [0xB400006EB9CE4748] allocBuffer: buffer 0x0xb400007009c999e8, size 4096, alloc 17, free 0
+09-16 12:41:17.771  1146 25374 D C2MtkVdecExt: [0xB400006EB9C786B8] allocBuffer: buffer 0x0xb400007089c81088, size 0, alloc 17, free 0
+09-16 12:41:17.772  1146 25374 I DMABUFHEAPS: Using DMA-BUF heap named: mtk_mm
+09-16 12:41:17.772  1146 25374 D C2MtkVdecExt: [0xB400006EB9CE4748] allocBuffer: buffer 0x0xb400007009c8cc28, size 4096, alloc 18, free 0
+09-16 12:41:17.772  1146 25374 D C2MtkVdecExt: [0xB400006EB9C786B8] allocBuffer: buffer 0x0xb400007089c864e8, size 0, alloc 18, free 0
+09-16 12:41:17.773  1146 25374 I DMABUFHEAPS: Using DMA-BUF heap named: mtk_mm
+09-16 12:41:17.773  1146 25374 D C2MtkVdecExt: [0xB400006EB9CE4748] allocBuffer: buffer 0x0xb400007009cb83a8, size 4096, alloc 19, free 0
+09-16 12:41:17.773  1146 25374 D C2MtkVdecExt: [0xB400006EB9C786B8] allocBuffer: buffer 0x0xb400007089c6cb88, size 0, alloc 19, free 0
+09-16 12:41:17.775  1146 25374 I DMABUFHEAPS: Using DMA-BUF heap named: mtk_mm
+09-16 12:41:17.775  1146 25374 D C2MtkVdecExt: [0xB400006EB9CE4748] allocBuffer: buffer 0x0xb400007009c923a8, size 4096, alloc 20, free 0
+09-16 12:41:17.775  1146 25374 D C2MtkVdecExt: [0xB400006EB9C786B8] allocBuffer: buffer 0x0xb400007089c91708, size 0, alloc 20, free 0
+09-16 12:41:17.777 23697 23697 E YT.mlplayer: MedialibPlayer.setForegroundMode(false)
+09-16 12:41:17.780 23697 23697 E YT.mlplayer: MedialibPlayer.blockingStopVideo(),  STOPPAGE_PLAYBACK_SUSPENDED
+09-16 12:41:17.780 23697 23697 E YT.mlplayer: MedialibPlayerEvents[96].onStopped()
+09-16 12:41:17.781 23697 15751 D AudioTrack: pause(47): 0xb4000079ae294d30, prior state:STATE_ACTIVE packageName: com.google.android.youtube
+09-16 12:41:17.781 23697 15751 D AudioTrackShared: this(0xb400007a8e361ff0), mCblk(0x7be62f8000), front(32768), mIsOut 1, interrupt() FUTEX_WAKE
+09-16 12:41:17.781 22843 23003 D AF::Track: pause(62): setFadeOutStatus(FADE_STATUS_START)
+09-16 12:41:17.782  1843  3006 E AppOps  : attributionTag  not declared in manifest of com.google.android.youtube
+09-16 12:41:17.782  1843  2240 D MediaSessionService: onSessionPlaybackStateChanged: record=com.google.android.youtube/YouTube playerlib/511 (userId=0) playbackState=PlaybackState {state=STOPPED(1), position=0, buffered position=0, speed=1.0, updated=2780913327, actions=8192, custom actions=[], active item id=-1, error=null}
+09-16 12:41:17.783  1843  3006 E AppOps  : attributionTag  not declared in manifest of com.google.android.youtube
+09-16 12:41:17.783 23697 15717 E YT.qoe  : Pinging https://s.youtube.com/api/stats/qoe?cl=980815445&ei=qnGqao6sGd601PIPqIvEyAc&el=detailpage&event=streamingstats&ns=yt&plid=AAZbl0TnKg7WAAG1&cpn=VwktJ5QgLH2gr5fA&cplatform=mobile&cbr=com.google.android.youtube&cff=SMALL_FORM_FACTOR&c=android&cmodel=2412DPC0AG&cos=Android&soc=Mediatek%3AMT6899&csdk=36&cbrver=21.36.47&cver=21.36.47&cosver=16&cbrand=Xiaomi&qclc=ChBWd2t0SjVRZ0xIMmdyNWZBGgCqAQA&conn=163.460:3&cplayer=PLATYPUS&bh=162.317:0.00,162.510:11.87&cmt=162.317:130.768,162.510:130.768&decoder=162.497:1:c2.mtk.av1.decoder:2:LibopusAudioRenderer&cache_bytes=162.510:1023308&mst=162.316:130768&is_offline=162.316:0&sur=162.315:3,163.443:1&bat=163.460:0.980:1&cat=sabr&vps=162.317:B,162.510:PL&ctmp=api:rt.162.314;clearQ,pcmp:u,ctype:rt.162.315;ytm,mem:tot.176;max.512;free.71;heap.263;hpall.210;hpfree.48,mlat:rt.162.318;loadVideo.3798,llv:3,vc:i.24,flags:2,poa:n,mime_fb:rt.162.326;1,pmqs:none,cir:rt.162.451;reused.false;reason.CODEC_INIT_REASON_BACKGROUND,dec:c2.mtk.av1.decoder,vnorm:rt.162.452;rng.-5.7;trkcfg.-8.3;tarcfg.-14.0;trkfmt.-8.3;mode.TRACK;tar.-14.0;pre.-8.3;ang.-5.7;inpvol.1.0;mult.0.5188;outvol.0.5188,bh0:tr1.21.548;tr2.15.691&spatial=162.316:0:1&seq=6&docid=(scrubbed) 
+09-16 12:41:17.783 23697 15717 E YT.qoe  : &fexp=
+09-16 12:41:17.784 22843 22953 D AudioFlinger_Threads: track(62) setFadeOutStatus(FADE_STATUS_SETVOLUME)
+09-16 12:41:17.784 22843 22953 D BatteryNotifier: batteryHandler::send audio final volume update msg! 10221, 23697, 47009
+09-16 12:41:17.784 22852 23009 D AHAL_DlbVolumeListenerEffectContext: setVolumeStereo, left = 0.000000, right = 0.000000, mCommon.ioHandle = 21
+09-16 12:41:17.784 22852 23009 D AHAL_DlbVolumeListenerEffectContext: setVolumeStereo: Ignore volume 0 coming from pausing playback
+09-16 12:41:17.784 22852 24309 D MTKAdapterStreamLayer: updateMetadataCommon(), 
+09-16 12:41:17.784 22852 24309 D WCNChipController: IsBTI2SSupport(), BTChipHWInterface() = 3, ret = 0
+09-16 12:41:17.784  2738 23821 I bluetooth: [bluetooth_audio_port_impl.cc(103)] updateSourceMetadata: 1 track(s)
+09-16 12:41:17.784  2738 23821 I bluetooth: [bluetooth_audio_port_impl.cc(109)] updateSourceMetadata: metadata tags size: 0
+09-16 12:41:17.784  2738 23821 I BTAudioA2dpAIDL: [a2dp_encoding_aidl.cc(252)] SourceMetadataChanged: track_count 1 track(s) received
+09-16 12:41:17.784  2738 23821 I BTAudioA2dpAIDL: [a2dp_encoding_aidl.cc(254)] SourceMetadataChanged: : usage=1, content_type=2, gain=0
+09-16 12:41:17.784  2738 23821 W btif_av : [btif_av.cc(5690)] btif_av_meta_data_changed: btif_av_meta_data_changed: track_count=1
+09-16 12:41:17.784  2738  3532 D AudioMediaPlayerWrapper: onPlaybackStateChanged(): com.google.android.youtube : PlaybackState {state=STOPPED(1), position=0, buffered position=0, speed=1.0, updated=2780913327, actions=8192, custom actions=[], active item id=-1, error=null}
+09-16 12:41:17.784  2738 23821 I bluetooth: [avrcp_service.cc(608)] MetadataChanged: usage=1 , content_type=2 , gain=0
+09-16 12:41:17.784  2738 23821 I bluetooth: [avrcp_service.cc(619)] MetadataChanged: pre audio status =1, new audio status = 2
+09-16 12:41:17.784  2738  3507 D AudioMediaPlayerWrapper: onPlaybackStateChanged(): com.google.android.youtube : PlaybackState {state=STOPPED(1), position=0, buffered position=0, speed=1.0, updated=2780913327, actions=8192, custom actions=[], active item id=-1, error=null}
+09-16 12:41:17.784 22843 22953 D AF::Track: getNextBuffer(62): setFadeOutStatus(FADE_STATUS_DONE)
+09-16 12:41:17.785 22843 22938 D BatteryNotifier: BatteryNotifier::update finalvolume to power insight! 10221, 23697, 47009, finalvolume 0.000000
+09-16 12:41:17.785  2738  3397 D AvrcpNativeInterface: getPlayStatus
+09-16 12:41:17.785  1843  2013 E BatteryStatsService: note final volume change AudioToPower BatteryStatsservices 10221 23697 47009 0.0
+09-16 12:41:17.786  1843  2013 E PowerInsightPolicy: sPowerInsightService null!
+09-16 12:41:17.786  2738  3507 V AudioMediaPlayerWrapper: trySendMediaUpdate(): Metadata update for { mediaId="currsong" title="El-P - Sign Here (Official Audio)" artist="El-P" album="El-P" duration=172000 trackPosition=1/1 image=null }
+09-16 12:41:17.786  2738  3507 D MediaPlayerList: sendMediaUpdate
+09-16 12:41:17.786  2738  3507 I MediaPlayerList: sendMediaUpdate: Creating a one item queue for a player with no queue
+09-16 12:41:17.786  2738  3507 D MediaPlayerList: sendMediaUpdate state=PlaybackState {state=STOPPED(1), position=0, buffered position=0, speed=1.0, updated=2780913327, actions=8192, custom actions=[], active item id=-1, error=null}
+09-16 12:41:17.786  2738  3507 D AvrcpTargetService: onMediaUpdated: track_changed=false state=true queue=false
+09-16 12:41:17.786  2738  3507 D AvrcpNativeInterface: sendMediaUpdate: metadata=false playStatus=true queue=false
+09-16 12:41:17.786  2738  3507 I bluetooth: [avrcp_service.cc(650)] SendMediaUpdate: track_changed=false :  play_state=true :  queue=false
+09-16 12:41:17.786  2738  3237 W avrcp   : [device.cc(2534)] HandlePlayPosUpdate: Device is not registered for play position updates
+09-16 12:41:17.785  2871  4074 I ActiveSessionRecord_export-api: onPlaybackStateChanged: PlaybackState {state=STOPPED(1), position=0, buffered position=0, speed=1.0, updated=2780913327, actions=8192, custom actions=[], active item id=-1, error=null}
+09-16 12:41:17.786  2871 18160 I ActiveSessionRecord_export-api: onPlaybackStateChanged: PlaybackState {state=STOPPED(1), position=0, buffered position=0, speed=1.0, updated=2780913327, actions=8192, custom actions=[], active item id=-1, error=null}
+09-16 12:41:17.786  2738  3397 D AvrcpNativeInterface: getPlayStatus
+09-16 12:41:17.786  2738  3237 I avrcp   : [connection_handler.cc(759)] SendMessage: SendMessage to handle=0x01
+09-16 12:41:17.787  1843  2472 D AS.AudioService: setBluetoothA2dpOn(true) from u/pid:1000/1843 src:AudioService.setBtA2dpOn, callingApp=android.uid.system:1000
+09-16 12:41:17.787 23697 15717 E YT.qoe  : Pinging https://s.youtube.com/api/stats/qoe?cl=980815445&ei=qnGqao6sGd601PIPqIvEyAc&el=detailpage&event=streamingstats&ns=yt&plid=AAZbl0TnKg7WAAG1&cpn=VwktJ5QgLH2gr5fA&cplatform=mobile&cbr=com.google.android.youtube&cff=SMALL_FORM_FACTOR&c=android&cmodel=2412DPC0AG&cos=Android&soc=Mediatek%3AMT6899&csdk=36&cbrver=21.36.47&cver=21.36.47&cosver=16&cbrand=Xiaomi&qclc=ChBWd2t0SjVRZ0xIMmdyNWZBGgCqAQA&df=163.459:0&conn=163.461:3&cplayer=PLATYPUS&bat=163.465:0.980:1&bwm=163.461:159961:0.012&ctmp=decs:hw.1_sw.0_a.1_s.1_v.1_t.0_p.1_l.200_p.4_l.200_p.1000_l.200_n.c2.mtk.vp9.decoder.secure__hw.1_sw.0_a.1_s.0_v.1_t.0_p.1_l.200_p.4_l.200_p.1000_l.200_n.c2.mtk.vp9.decoder__hw.1_sw.0_a.1_s.0_v.1_t.0_p.1_l.200_p.4_l.200_p.1000_l.200_n.c2.mtk.vp9.decoder.lowlatency__hw.0_sw.1_a.1_s.0_v.0_t.0_p.1_l.100_p.4_l.100_p.1000_l.100_p.4000_l.100_n.c2.android.vp9.decoder__hw.1_sw.0_a.1_s.1_v.1_t.0_p.1_l.2000_p.1000_l.2000_p.2_l.2000_n.c2.mtk.av1.decoder.secure__hw.1_sw.0_a.1_s.0_v.1_t.0_p.1_l.2000_p.1000_l.2000_p.2_l.2000_n.c2.mtk.av1.decoder__hw.1_sw.0_a.1_s.0_v.1_t.0_p.1_l.2000_p.1000_l.2000_p.2_l.2000_n.c2.mtk.av1.decoder.lowlatency__hw.0_sw.1_a.1_s.0_v.0_t.0_p.1_l.8000_p.1000_l.8000_p.2000_l.8000_p.2_l.8000_n.c2.android.av1-dav1d.decoder__hw.0_sw.1_a.1_s.0_v.0_t.0_p.1_l.8000_p.1000_l.8000_p.2000_l.8000_p.2_l.8000_n.c2.android.av1.decoder__hw.1_sw.0_a.1_s.1_v.1_t.0_p.1_l.10000_p.10000_l.10000_p.2_l.10000_p.8_l.10000_p.10_l.10000_p.80000_l.10000_n.c2.mtk.avc.decoder.secure__hw.1_sw.0_a.1_s.0_v.1_t.0_p.1_l.10000_p.10000_l.10000_p.2_l.10000_p.8_l.10000_p.10_l.10000_p.80000_l.10000_n.c2.mtk.avc.decoder__hw.1_sw.0_a.1_s.0_v.1_t.0_p.1_l.10000_p.10000_l.10000_p.2_l.10000_p.8_l.10000_p.10_l.10000_p.80000_l.10000_n.c2.mtk.avc.decoder.lowlatency__hw.0_sw.1_a.1_s.0_v.0_t.0_p.10000_l.10000_p.1_l.10000_p.2_l.10000_p.80000_l.10000_p.8_l.10000_n.c2.android.avc.decoder__&seq=7&docid=(scrubbed) 
+09-16 12:41:17.787 23697 15717 E YT.qoe  : &fexp=
+09-16 12:41:17.787  2738  3532 V AudioMediaPlayerWrapper: trySendMediaUpdate(): Metadata update for { mediaId="currsong" title="El-P - Sign Here (Official Audio)" artist="El-P" album="El-P" duration=172000 trackPosition=1/1 image=null }
+09-16 12:41:17.787  2738  3532 D MediaPlayerList: sendMediaUpdate
+09-16 12:41:17.788  2738  3532 I MediaPlayerList: sendMediaUpdate: Creating a one item queue for a player with no queue
+09-16 12:41:17.788  2738  3532 D MediaPlayerList: sendMediaUpdate state=PlaybackState {state=STOPPED(1), position=0, buffered position=0, speed=1.0, updated=2780913327, actions=8192, custom actions=[], active item id=-1, error=null}
+09-16 12:41:17.788  2738  3532 D MediaControlProfile: onMediaUpdated: post run() to main thread
+09-16 12:41:17.788  2738  3532 W BtAudioPlaybackCallback: onPlaybackConfigChanged() count: 5
+09-16 12:41:17.788  2738  3532 W BtAudioPlaybackCallback: handleMessage: MSG_EXECUTE_FUNC
+09-16 12:41:17.788  2738  3507 W BtAudioPlaybackCallback: onPlaybackConfigChanged() count: 5
+09-16 12:41:17.788  2738  2738 D MediaControlProfile: onMediaUpdated: track_changed=false state_changed=true queue_changed=false
+09-16 12:41:17.788  2738  3507 W BtAudioPlaybackCallback: handleMessage: MSG_EXECUTE_FUNC
+09-16 12:41:17.788  2738  2738 D MediaControlProfile: onCurrentPlayerStateUpdated: current player is YouTube
+09-16 12:41:17.788  1843  2369 V AS.AudioDeviceBroker: onSetForceUse(useCase<1>, config<0>, fromA2dp<true>, eventSource<setBluetoothA2dpOn(true) from u/pid:1000/1843 src:AudioService.setBtA2dpOn>)
+09-16 12:41:17.788  2738  3500 W BtAudioPlaybackCallback: onPlaybackConfigChanged() count: 5
+09-16 12:41:17.788  2738  2738 D MediaControlProfile: onCurrentPlayerStateUpdated: media state is PAUSED
+09-16 12:41:17.788  2738  3500 W BtAudioPlaybackCallback: handleMessage: MSG_EXECUTE_FUNC
+09-16 12:41:17.788  2738  2738 E MediaControlProfile: onCurrentPlayerStateUpdated: base actions not supported, player actions= 2000, expected at least= 7f
+09-16 12:41:17.788  2738  2738 D MediaControlProfile: onCurrentPlayerStateUpdated state= PAUSED, supported opcodes= 0x181f (PLAY | PAUSE | FAST_REWIND | FAST_FORWARD | STOP | PREVIOUS_TRACK | NEXT_TRACK), track position= 0 (0)
+09-16 12:41:17.788  2738  2738 D MediaControlGattService: updatePlayerState: playbackState= PAUSED
+09-16 12:41:17.788  2738  2738 D MediaControlGattService: updatePlaybackSpeedChar: 1.0
+09-16 12:41:17.788  2738  2738 W MediaControlGattService: Feature PLAYBACK_SPEED(BIT 8) support: true
+09-16 12:41:17.788  2738  2738 W MediaControlGattService: Feature PLAYBACK_SPEED(BIT 8) support: true
+09-16 12:41:17.788  2738  2738 W MediaControlGattService: Feature PLAYBACK_SPEED(BIT 8) support: true
+09-16 12:41:17.788  2738  2738 D MediaControlGattService: updateTrackPositionChar: 0
+09-16 12:41:17.788  2738  2738 W MediaControlGattService: Feature TRACK_POSITION(BIT 7) support: true
+09-16 12:41:17.788  2738  2738 W MediaControlGattService: Feature TRACK_POSITION_NOTIFY support: true
+09-16 12:41:17.788  2738  2738 W MediaControlGattService: Feature MEDIA_STATE(BIT 17) support: true
+09-16 12:41:17.788  2738  2738 W MediaControlGattService: Feature MEDIA_STATE(BIT 17) support: true
+09-16 12:41:17.788 22843 23003 V AudioPolicyInterfaceImpl: setForceUse()
+09-16 12:41:17.788 22843 23003 D APM_AudioPolicyManager: [MTK_APM_Route]setForceUse() usage 1, config 0, mPhoneState 0
+09-16 12:41:17.788 23697 15717 E YT.qoe  : Pinging https://s.youtube.com/api/stats/qoe?cl=980815445&ei=qnGqao6sGd601PIPqIvEyAc&el=detailpage&event=streamingstats&ns=yt&plid=AAZbl0TnKg7WAAG1&cpn=VwktJ5QgLH2gr5fA&cplatform=mobile&cbr=com.google.android.youtube&cff=SMALL_FORM_FACTOR&c=android&cmodel=2412DPC0AG&cos=Android&soc=Mediatek%3AMT6899&csdk=36&cbrver=21.36.47&cver=21.36.47&cosver=16&cbrand=Xiaomi&qclc=ChBWd2t0SjVRZ0xIMmdyNWZBGgCqAQA&conn=163.465:3&cplayer=PLATYPUS&bat=163.466:0.980:1&bh=163.461:11.87&vps=163.461:SU&cache_bytes=163.461:326888&cmt=163.461:128.128&seq=8&docid=(scrubbed) 
+09-16 12:41:17.788 23697 15717 E YT.qoe  : &fexp=
+09-16 12:41:17.788 22843 23003 D AudioPolicyInterfaceImpl: ->Debug: setForceUse: 413: setForceUse usage = 1, config = 0, changed = 0
+09-16 12:41:17.788  2871  4074 I ActiveAudioSessionManager_export-api: stopPositionCallbackTask
+09-16 12:41:17.789  2738  2738 D BtGatt.GattService: getDeviceType() - device=XX:XX:XX:XX:92:60, type=1
+09-16 12:41:17.789  2738  2738 D BtGatt.GattService: getDeviceType() - device=XX:XX:XX:XX:38:CB, type=3
+09-16 12:41:17.789  2738  2738 D MediaControlGattService: updateTrackPositionChar: positionMs= 0, position= 0
+09-16 12:41:17.789  2738  2738 W MediaControlGattService: Feature PLAYER_NAME(BIT 1) support: true
+09-16 12:41:17.789  2738  2738 D MediaControlGattService: updateSupportedOpcodesChar: opcodes= 0x181f (PLAY | PAUSE | FAST_REWIND | FAST_FORWARD | STOP | PREVIOUS_TRACK | NEXT_TRACK)
+09-16 12:41:17.789  2738  2738 W MediaControlGattService: Feature MEDIA_CONTROL_POINT_OPCODES_SUPPORTED(BIT 19) support: true
+09-16 12:41:17.789  2738  2738 W MediaControlGattService: Feature MEDIA_CONTROL_POINT_OPCODES_SUPPORTED_NOTIFY support: true
+09-16 12:41:17.789  2871 18160 I ActiveAudioSessionManager_export-api: stopPositionCallbackTask
+09-16 12:41:17.789  2871 18160 I SafeBinderCall: onPlaybackStateChange binder cost:0
+09-16 12:41:17.789  2871  2871 D MiPlayDetailViewModel: onPlaybackStateChange(): state = 1
+09-16 12:41:17.789  2738  2738 D BtGatt.GattService: getDeviceType() - device=XX:XX:XX:XX:92:60, type=1
+09-16 12:41:17.789  2738  2738 D BtGatt.GattService: getDeviceType() - device=XX:XX:XX:XX:38:CB, type=3
+09-16 12:41:17.790  2738  2738 D MediaControlGattService: updateSupportedOpcodesChar: opcodes= 0x181f (PLAY | PAUSE | FAST_REWIND | FAST_FORWARD | STOP | PREVIOUS_TRACK | NEXT_TRACK)
+09-16 12:41:17.790  2738  2738 W MediaControlGattService: Feature MEDIA_STATE(BIT 17) support: true
+09-16 12:41:17.790  2738  2738 D MediaControlGattService: updateMediaStateChar: state= PAUSED(0x02)
+09-16 12:41:17.790  2738  2738 W MediaControlGattService: Feature MEDIA_STATE(BIT 17) support: true
+09-16 12:41:17.790  2738  2738 D MediaControlGattService: updateMediaStateChar: state= PAUSED(0x02)
+09-16 12:41:17.790  2871  2871 D CpState : allowControlRemoteTV mediaType:0,isAppBackground:false,isPlayingAdvertisement:false,isLocalPausing:true
+09-16 12:41:17.790  2871  2871 D CpState : allowControlRemoteTV mediaType:0,isAppBackground:false,isPlayingAdvertisement:false,isLocalPausing:true
+09-16 12:41:17.790  2738  2738 D BtGatt.GattService: getDeviceType() - device=XX:XX:XX:XX:92:60, type=1
+09-16 12:41:17.790  2738  2738 D BtGatt.GattService: getDeviceType() - device=XX:XX:XX:XX:38:CB, type=3
+09-16 12:41:17.790  2738  2738 W MediaControlGattService: Feature MEDIA_STATE(BIT 17) support: true
+09-16 12:41:17.790  2738  2738 D MediaControlGattService: updateSeekingSpeedChar: speed= 1.0
+09-16 12:41:17.790  2738  2738 W MediaControlGattService: Feature SEEKING_SPEED(BIT 9) support: true
+09-16 12:41:17.790  2738  2738 W MediaControlGattService: Feature SEEKING_SPEED(BIT 9) support: true
+09-16 12:41:17.790  2738  2738 W MediaControlGattService: Feature SEEKING_SPEED(BIT 9) support: true
+09-16 12:41:17.790  2738  2738 V MediaControlProfile: onCurrentPlayerStateUpdated() done
+09-16 12:41:17.790  2738  2738 D MediaControlProfile: GMCS processPendingPlayerStateRequest
+09-16 12:41:17.790  2738  2738 D MediaControlProfile: onMediaUpdated: done
+09-16 12:41:17.790 22843 23003 D APM::AudioPolicyEngine: getDevices ForStrategy() strategy 0, device 0x80 avadevice 0x1, 0x2, 0x20, 0x80, 0x10000, 0x100000 sfu [0]:0, [1]:0, [4]:11
+09-16 12:41:17.790  2871  2871 I SafeBinderCall: call getMediaMetaData binder cost:0
+09-16 12:41:17.790  2871  2871 D MiPlayDetailViewModel: onGetSupportVideoFlowCapacity mediaType error
+09-16 12:41:17.790 22843 23003 D APM::AudioPolicyEngine: getDevices ForStrategy() strategy 0, device 0x80 avadevice 0x1, 0x2, 0x20, 0x80, 0x10000, 0x100000 sfu [0]:0, [1]:0, [4]:11
+09-16 12:41:17.791  2871  2871 I GlobalMiPlayAudioManager: onPlayStateChange: 1
+09-16 12:41:17.791  2871  2871 D MiCastSDKImpl: setPlaybackState state 1
+09-16 12:41:17.791  6312  6312 W MultiDeviceManager: setPlaybackState state 1
+09-16 12:41:17.792  6312  6312 I CastDeviceManager: setPlaybackState: state 1
+09-16 12:41:17.792  6312  6312 W CastDeviceManager: setPlaybackState: castSession is null return
+09-16 12:41:17.792 23697 23697 E YT.mlplayer: MedialibPlayer.setMediaView(null)
+09-16 12:41:17.792 22843 23003 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+09-16 12:41:17.793 22843 22998 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+09-16 12:41:17.793 22843 22998 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+09-16 12:41:17.794  1843  2372 D AS.AudioService: applyDeviceVolume_syncVSS: index=20 device=128 mStreamType=3
+09-16 12:41:17.794  1843  1901 D MiSound.MQSUtils: setStreamMusicOrVoiceCallIndex : stream=3 index=20 device=80
+09-16 12:41:17.794  1843  1901 D AudioSystem: +setParameters(): audio_volume_stream_music_device_bt_a2dp=2 
+09-16 12:41:17.794 22843 23003 D AudioFlingerImpl: setGameParameters keyvalue: audio_volume_stream_music_device_bt_a2dp=2
+09-16 12:41:17.794 22843 23003 D AudioFlinger: +mAudioHwDevs(primary)->setParameters(): audio_volume_stream_music_device_bt_a2dp=2
+09-16 12:41:17.794 22843 23003 D DeviceHalAidl: [default] setParameters: parameters: "audio_volume_stream_music_device_bt_a2dp=2"
+09-16 12:41:17.794  1444  1727 D connsyslogger: SD_LOG_ROOT is /data/debuglogger/connsyslog/fw.
+09-16 12:41:17.794  1444  1727 D connsyslogger: systemReady:1
+09-16 12:41:17.794 22848 22848 D Audio_ParameterParser: parseVendorParameters: scope: MODULE, keys/values: audio_volume_stream_music_device_bt_a2dp=2
+09-16 12:41:17.794 22843 22998 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+09-16 12:41:17.793 22852 22852 W binder:22852_2: type=1400 audit(0.0:5179691): avc:  denied  { read } for  name="u:object_r:default_prop:s0" dev="tmpfs" ino=191 scontext=u:r:mtk_hal_audio:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+09-16 12:41:17.795 22852 22852 W libc    : Access denied finding property "AUDIO_FEATURE_REVERSE_MIC_DIRECTION_SUPPORT"
+09-16 12:41:17.795  1843  2372 D AS.AudioService: applyDeviceVolume_syncVSS: index=20 device=536870912 mStreamType=3
+09-16 12:41:17.795 22852 22852 D AudioALSAHardware: +setParameters(): audio_volume_stream_music_device_bt_a2dp=2
+09-16 12:41:17.795 22852 22852 D AudioALSAHardware: -setParameters(): audio_volume_stream_music_device_bt_a2dp=2
+09-16 12:41:17.795 22852 22852 E AHAL_Module: setVendorParameters: default: unrecognized parameter "audio_volume_stream_music_device_bt_a2dp=2"
+09-16 12:41:17.795 22843 23003 E ConversionHelperAidl: Function: parseAndSetVendorParameters Line: 94 Failed 
+09-16 12:41:17.795 22843 23003 D AudioFlinger: -mAudioHwDevs(primary)->setParameters(): audio_volume_stream_music_device_bt_a2dp=2
+09-16 12:41:17.795 22843 23003 D AudioFlinger: +mAudioHwDevs(r_submix)->setParameters(): audio_volume_stream_music_device_bt_a2dp=2
+09-16 12:41:17.795 22843 23003 D DeviceHalAidl: [r_submix] setParameters: parameters: "audio_volume_stream_music_device_bt_a2dp=2"
+09-16 12:41:17.795 22843 23001 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+09-16 12:41:17.795 22848 22848 D Audio_ParameterParser: parseVendorParameters: scope: MODULE, keys/values: audio_volume_stream_music_device_bt_a2dp=2
+09-16 12:41:17.795  1843  3006 I SensorService: 	>>> actuating h/w activate handle=0x1 enabled=0
+09-16 12:41:17.795 22852 22852 D AHAL_ModuleRemoteSubmix: setVendorParameters: parameter count 1, async: 0
+09-16 12:41:17.795 22852 22852 D AHAL_ModuleRemoteSubmix: setVendorParameters parameters id = audio_volume_stream_music_device_bt_a2dp=2
+09-16 12:41:17.795  1843  2013 D SsruManagerImpl: MiSsru Sensor not init!!!!
+09-16 12:41:17.795 22843 23003 D AudioFlinger: -mAudioHwDevs(r_submix)->setParameters(): audio_volume_stream_music_device_bt_a2dp=2
+09-16 12:41:17.795 22843 23003 D AudioFlinger: +mAudioHwDevs(bluetooth)->setParameters(): audio_volume_stream_music_device_bt_a2dp=2
+09-16 12:41:17.795 22843 23003 D DeviceHalAidl: [bluetooth] setParameters: parameters: "audio_volume_stream_music_device_bt_a2dp=2"
+09-16 12:41:17.795  1151  1151 I OriginChannel: activate: [1,0]
+09-16 12:41:17.795 22848 22848 D Audio_ParameterParser: parseVendorParameters: scope: MODULE, keys/values: audio_volume_stream_music_device_bt_a2dp=2
+09-16 12:41:17.795 22852 22852 D AHAL_ModuleBluetooth: setVendorParameters: parameter count 1, async: 0
+09-16 12:41:17.795 22852 22852 D AHAL_ModuleBluetooth: setVendorParameters: audio_volume_stream_music_device_bt_a2dp=2
+09-16 12:41:17.795 22843 22998 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+09-16 12:41:17.796 22843 23003 D AudioFlinger: -mAudioHwDevs(bluetooth)->setParameters(): audio_volume_stream_music_device_bt_a2dp=2
+09-16 12:41:17.796  1843  1901 D MiSound.MQSUtils: setStreamMusicOrVoiceCallIndex : stream=3 index=20 device=20000000
+09-16 12:41:17.796  1843  1901 D AudioSystem: +setParameters(): audio_volume_stream_music_device_ble_headset=2 
+09-16 12:41:17.796 22843 22998 D AudioFlingerImpl: setGameParameters keyvalue: audio_volume_stream_music_device_ble_headset=2
+09-16 12:41:17.796 22843 22998 D AudioFlinger: +mAudioHwDevs(primary)->setParameters(): audio_volume_stream_music_device_ble_headset=2
+09-16 12:41:17.796 22843 22998 D DeviceHalAidl: [default] setParameters: parameters: "audio_volume_stream_music_device_ble_headset=2"
+09-16 12:41:17.796 22848 22848 D Audio_ParameterParser: parseVendorParameters: scope: MODULE, keys/values: audio_volume_stream_music_device_ble_headset=2
+09-16 12:41:17.793 22852 22852 W binder:22852_2: type=1400 audit(0.0:5179692): avc:  denied  { read } for  name="u:object_r:default_prop:s0" dev="tmpfs" ino=191 scontext=u:r:mtk_hal_audio:s0 tcontext=u:object_r:default_prop:s0 tclass=file permissive=0
+09-16 12:41:17.796 22852 22852 W libc    : Access denied finding property "AUDIO_FEATURE_REVERSE_MIC_DIRECTION_SUPPORT"
+09-16 12:41:17.796 22852 22852 D AudioALSAHardware: +setParameters(): audio_volume_stream_music_device_ble_headset=2
+09-16 12:41:17.796 22852 22852 D AudioALSAHardware: -setParameters(): audio_volume_stream_music_device_ble_headset=2
+09-16 12:41:17.796 22852 22852 E AHAL_Module: setVendorParameters: default: unrecognized parameter "audio_volume_stream_music_device_ble_headset=2"
+09-16 12:41:17.796 22843 22998 E ConversionHelperAidl: Function: parseAndSetVendorParameters Line: 94 Failed 
+09-16 12:41:17.796 22843 22998 D AudioFlinger: -mAudioHwDevs(primary)->setParameters(): audio_volume_stream_music_device_ble_headset=2
+09-16 12:41:17.796 22843 22998 D AudioFlinger: +mAudioHwDevs(r_submix)->setParameters(): audio_volume_stream_music_device_ble_headset=2
+09-16 12:41:17.796 22843 22998 D DeviceHalAidl: [r_submix] setParameters: parameters: "audio_volume_stream_music_device_ble_headset=2"
+09-16 12:41:17.796 22848 22848 D Audio_ParameterParser: parseVendorParameters: scope: MODULE, keys/values: audio_volume_stream_music_device_ble_headset=2
+09-16 12:41:17.797 22852 22852 D AHAL_ModuleRemoteSubmix: setVendorParameters: parameter count 1, async: 0
+09-16 12:41:17.797 22852 22852 D AHAL_ModuleRemoteSubmix: setVendorParameters parameters id = audio_volume_stream_music_device_ble_headset=2
+09-16 12:41:17.797 22843 22998 D AudioFlinger: -mAudioHwDevs(r_submix)->setParameters(): audio_volume_stream_music_device_ble_headset=2
+09-16 12:41:17.797 22843 22998 D AudioFlinger: +mAudioHwDevs(bluetooth)->setParameters(): audio_volume_stream_music_device_ble_headset=2
+09-16 12:41:17.797 22843 22998 D DeviceHalAidl: [bluetooth] setParameters: parameters: "audio_volume_stream_music_device_ble_headset=2"
+09-16 12:41:17.797 22848 22848 D Audio_ParameterParser: parseVendorParameters: scope: MODULE, keys/values: audio_volume_stream_music_device_ble_headset=2
+09-16 12:41:17.797 22852 22852 D AHAL_ModuleBluetooth: setVendorParameters: parameter count 1, async: 0
+09-16 12:41:17.797 22852 22852 D AHAL_ModuleBluetooth: setVendorParameters: audio_volume_stream_music_device_ble_headset=2
+09-16 12:41:17.797 22843 22998 D AudioFlinger: -mAudioHwDevs(bluetooth)->setParameters(): audio_volume_stream_music_device_ble_headset=2
+09-16 12:41:17.799 22843 23003 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+09-16 12:41:17.799 22843 23003 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+09-16 12:41:17.802 22843 23003 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+09-16 12:41:17.802  1843  2372 D AS.AudioService: applyDeviceVolume_syncVSS: index=10 device=128 mStreamType=9
+09-16 12:41:17.803  1843  3006 I ActivityManager: unbindService com.android.server.am.ActiveServices@8f24acf conn=android.os.BinderProxy@d61dd9c callingPid=23697
+09-16 12:41:17.803 26780 26780 W DiscoveryManager: BroadcastReceiver is already registered
+09-16 12:41:17.803 22843 23003 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+09-16 12:41:17.803 26780 24500 I DiscoveryManager: Discovery state (DiscoveryState{filterCriteria=[674A0243, 8E6C866D], categoryToCriteria={com.google.android.gms.cast.CATEGORY_CAST/8E6C866D///ALLOW_IPV6=[8E6C866D], com.google.android.gms.cast.CATEGORY_CAST/674A0243///ALLOW_IPV6=[674A0243]}, activeScan=false, activeScanWithScreenOff=false, discoveryRequestSupportsDynamicSession=false, eventFlowId=117})
+09-16 12:41:17.804 26780 24500 W DatabaseProcessor: processLocalDevices: failed to get the network info with non-null networkId.
+09-16 12:41:17.804  1843  2372 D AS.AudioService: applyDeviceVolume_syncVSS: index=10 device=536870912 mStreamType=9
+09-16 12:41:17.804 26780 26780 I CastMediaRouteProvider: Published 0 routes
+09-16 12:41:17.804 22843 23003 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+09-16 12:41:17.805 23697 25520 D AudioTrack: flush(47): 0xb4000079ae294d30, prior state:STATE_PAUSED
+09-16 12:41:17.805 22843 23003 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+09-16 12:41:17.806 23697 25520 D AudioTrack: stop(47): 0xb4000079ae294d30, prior state:STATE_FLUSHED packageName: com.google.android.youtube
+09-16 12:41:17.806 23697 25520 D AudioTrack: stop(47): prior state:STATE_FLUSHED
+09-16 12:41:17.806 23697 25520 D AudioTrack: ~AudioTrack(sessionID=47009)
+09-16 12:41:17.806 22843 23001 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+09-16 12:41:17.807 23697 25520 D AudioTrack: ~AudioTrack(47): 0xb4000079ae294d30, calling stop()
+09-16 12:41:17.807 23697 15715 D BLASTBufferQueue: [VRI[Shell$HomeActivity]#5](f:0,a:2) destructor()
+09-16 12:41:17.807 23697 15715 D BufferQueueConsumer: [VRI[Shell$HomeActivity]#5(BLAST Consumer)5](id:5c9100000011,api:0,p:-1,c:23697) disconnect: caller 23697
+09-16 12:41:17.807 23697 25520 D AudioTrack: stop(47): 0xb4000079ae294d30, prior state:STATE_FLUSHED packageName: com.google.android.youtube
+09-16 12:41:17.807 22843 23001 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+09-16 12:41:17.807 23697 25520 D AudioTrack: stop(47): prior state:STATE_FLUSHED
+09-16 12:41:17.807 23697 15715 W android.youtube: Binder 0xb400007b0e0953e0 destroyed after setInheritRt before being parceled.
+09-16 12:41:17.807  2738  3397 D AvrcpNativeInterface: getPlayStatus
+09-16 12:41:17.808 22843 23001 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+09-16 12:41:17.808  2738  3532 W BtAudioPlaybackCallback: onPlaybackConfigChanged() count: 5
+09-16 12:41:17.808  2738  3532 W BtAudioPlaybackCallback: handleMessage: MSG_EXECUTE_FUNC
+09-16 12:41:17.808  2738  3500 W BtAudioPlaybackCallback: onPlaybackConfigChanged() count: 5
+09-16 12:41:17.808  2738  3500 W BtAudioPlaybackCallback: handleMessage: MSG_EXECUTE_FUNC
+09-16 12:41:17.808  2738  3237 I avrcp   : [connection_handler.cc(759)] SendMessage: SendMessage to handle=0x01
+09-16 12:41:17.809  2738  3507 W BtAudioPlaybackCallback: onPlaybackConfigChanged() count: 5
+09-16 12:41:17.809  2738  3507 W BtAudioPlaybackCallback: handleMessage: MSG_EXECUTE_FUNC
+09-16 12:41:17.809 23697 25520 D AudioTrack: stopAndJoinCallbacks(47) done
+09-16 12:41:17.808  1843  2358 I serviceDiscovery: [MdnsDiscoveryManager] Unregistering listener for serviceType:_googlecast._tcp.local
+09-16 12:41:17.808  1843  2372 D AS.AudioService: applyDeviceVolume_syncVSS: index=10 device=128 mStreamType=10
+09-16 12:41:17.810 22843 22998 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+09-16 12:41:17.810  1843  3071 I WifiService: releaseMulticastLock uid=10159 lockTag=MdnsServiceBrowserImpl
+09-16 12:41:17.811  1843  3006 D DisplayContentStubImpl: onNewImeFrame: isImeVisible = false, imeFrame = Rect(0, 0 - 0, 0)
+09-16 12:41:17.811  1843  3006 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-16 12:41:17.811  1843  3006 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-16 12:41:17.811  1843  3006 D BarFollowAnimation: pairAppearanceRegionAndWin win=Window{dd92d9 u0 nl.dawnwood.kernel/nl.dawnwood.kernel.MainActivity} 0
+09-16 12:41:17.811  1843  3006 D BarFollowAnimation: isAppTaskBarOnTop win:Window{dd92d9 u0 nl.dawnwood.kernel/nl.dawnwood.kernel.MainActivity} (mCurrentTopTask:Task{8d113c #2902 type=standard A=10432:nl.dawnwood.kernel} : true); (mAssociatedTask:Task{8d113c #2902 type=standard A=10432:nl.dawnwood.kernel} : true); (mHomeTask:Task{22abb20 #1 type=home} : false); mReparentToOriginParent:false mLastAppBarVisible:true mLastHomeBarVisible:false
+09-16 12:41:17.811  1843  2372 D AS.AudioService: applyDeviceVolume_syncVSS: index=10 device=536870912 mStreamType=10
+09-16 12:41:17.811  1843  3006 D MiuiRefreshRatePolicy: reset
+09-16 12:41:17.811  2738  3507 W BtAudioPlaybackCallback: onPlaybackConfigChanged() count: 4
+09-16 12:41:17.811  2738  3507 W BtAudioPlaybackCallback: handleMessage: MSG_EXECUTE_FUNC
+09-16 12:41:17.811  2738  3532 W BtAudioPlaybackCallback: onPlaybackConfigChanged() count: 4
+09-16 12:41:17.811  2738  3532 W BtAudioPlaybackCallback: handleMessage: MSG_EXECUTE_FUNC
+09-16 12:41:17.811  1843  2240 I WifiService: acquireMulticastLock uid=10159 lockTag=MdnsServiceBrowserImpl
+09-16 12:41:17.811  1843  3006 D WindowManager: wms.commitFinishDrawingLocked: mDrawState=READY_TO_SHOW Window{c12e81e u0 com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity} in Surface(name=com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity#270829)/@0x9a20999
+09-16 12:41:17.811 22843 23001 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+09-16 12:41:17.811  2738  3500 W BtAudioPlaybackCallback: onPlaybackConfigChanged() count: 4
+09-16 12:41:17.811 26780 26811 I MdnsServiceBrowser: (REDACTED) registering %s
+09-16 12:41:17.811  2738  3500 W BtAudioPlaybackCallback: handleMessage: MSG_EXECUTE_FUNC
+09-16 12:41:17.812 23697 23697 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-16 12:41:17.812 23697 23697 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-16 12:41:17.812 23697 23697 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-16 12:41:17.813 22843 22998 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+09-16 12:41:17.814  1843  2358 I serviceDiscovery: [MdnsDiscoveryManager] Unregistering listener for serviceType:_googlecast._tcp.local
+09-16 12:41:17.814  1137  1715 I hwcomposer: [HWC] (0)fire a callback of refresh to SF[4]  
+09-16 12:41:17.814  1843  2358 I serviceDiscovery: [MdnsDiscoveryManager] Unregistering listener for serviceType:_googlecast._tcp.local
+09-16 12:41:17.814  1843  2358 I serviceDiscovery: [MdnsDiscoveryManager] Unregistering listener for serviceType:_googlecast._tcp.local
+09-16 12:41:17.815  1273  1273 I SurfaceFlinger: onHandleDestroyed: layerId=270835, name=19b7eb3 SurfaceView[com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity](BLAST)#270835
+09-16 12:41:17.815  1273  1273 I SurfaceFlinger: onHandleDestroyed: layerId=270834, name=19b7eb3 SurfaceView[com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity]#270834
+09-16 12:41:17.815  1273  1273 I SurfaceFlinger: onHandleDestroyed: layerId=270836, name=Background for 19b7eb3 SurfaceView[com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity]#270836
+09-16 12:41:17.816  1843  2358 I WifiService: releaseMulticastLock uid=1000 lockTag=NsdService
+09-16 12:41:17.816  1843  2358 I serviceDiscovery: [MdnsSocketProvider] Stop monitoring sockets.
+09-16 12:41:17.816  1843  2358 I TetheringManager: unregisterTetheringEventCallback caller:android
+09-16 12:41:17.816  1843  2358 I serviceDiscovery: [MdnsSocketProvider] Start monitoring sockets.
+09-16 12:41:17.816  1843  2358 I TetheringManager: registerTetheringEventCallback caller:android
+09-16 12:41:17.816  1843  2358 I serviceDiscovery: [MdnsDiscoveryManager] Registering listener for serviceType: _googlecast._tcp.local
+09-16 12:41:17.816  1273  1273 E HwcComposer: presentOrValidateDisplay 0 presentFence:-1
+09-16 12:41:17.817  1843  2358 I serviceDiscovery: [MdnsDiscoveryManager] Registering listener for serviceType: _googlecast._tcp.local
+09-16 12:41:17.817  1843  2358 I serviceDiscovery: [MdnsDiscoveryManager] Registering listener for serviceType: _googlecast._tcp.local
+09-16 12:41:17.817  1843  2240 D MediaSessionService: onSessionPlaybackStateChanged: record=com.google.android.youtube/YouTube playerlib/511 (userId=0) playbackState=PlaybackState {state=STOPPED(1), position=128128, buffered position=0, speed=1.0, updated=2780913360, actions=8631, custom actions=[], active item id=-1, error=null}
+09-16 12:41:17.817  2738  3532 D AudioMediaPlayerWrapper: onPlaybackStateChanged(): com.google.android.youtube : PlaybackState {state=STOPPED(1), position=128128, buffered position=0, speed=1.0, updated=2780913360, actions=8631, custom actions=[], active item id=-1, error=null}
+09-16 12:41:17.817  2871 18160 I ActiveSessionRecord_export-api: onPlaybackStateChanged: PlaybackState {state=STOPPED(1), position=128128, buffered position=0, speed=1.0, updated=2780913360, actions=8631, custom actions=[], active item id=-1, error=null}
+09-16 12:41:17.817  1843  2355 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 0]
+09-16 12:41:17.818  2738  3507 D AudioMediaPlayerWrapper: onPlaybackStateChanged(): com.google.android.youtube : PlaybackState {state=STOPPED(1), position=128128, buffered position=0, speed=1.0, updated=2780913360, actions=8631, custom actions=[], active item id=-1, error=null}
+09-16 12:41:17.819  2738  3532 V AudioMediaPlayerWrapper: trySendMediaUpdate(): Metadata update for { mediaId="currsong" title="El-P - Sign Here (Official Audio)" artist="El-P" album="El-P" duration=172000 trackPosition=1/1 image=null }
+09-16 12:41:17.819  2738  3532 D MediaPlayerList: sendMediaUpdate
+09-16 12:41:17.819  2738  3532 I MediaPlayerList: sendMediaUpdate: Creating a one item queue for a player with no queue
+09-16 12:41:17.819  2738  3532 D MediaPlayerList: sendMediaUpdate state=PlaybackState {state=STOPPED(1), position=128128, buffered position=0, speed=1.0, updated=2780913360, actions=8631, custom actions=[], active item id=-1, error=null}
+09-16 12:41:17.819  2738  3532 D MediaControlProfile: onMediaUpdated: post run() to main thread
+09-16 12:41:17.819  2738  2738 D MediaControlProfile: onMediaUpdated: track_changed=false state_changed=true queue_changed=false
+09-16 12:41:17.819  2738  2738 D MediaControlProfile: onCurrentPlayerStateUpdated: current player is YouTube
+09-16 12:41:17.819  2738  2738 D MediaControlProfile: onCurrentPlayerStateUpdated: media state is PAUSED
+09-16 12:41:17.819  2871  2871 D MiPlayDetailViewModel: onPlaybackStateChange(): state = 1
+09-16 12:41:17.819  2871  2871 D CpState : allowControlRemoteTV mediaType:0,isAppBackground:false,isPlayingAdvertisement:false,isLocalPausing:true
+09-16 12:41:17.819  2738  2738 E MediaControlProfile: onCurrentPlayerStateUpdated: base actions not supported, player actions= 21b7, expected at least= 7f
+09-16 12:41:17.819  2871  2871 D CpState : allowControlRemoteTV mediaType:0,isAppBackground:false,isPlayingAdvertisement:false,isLocalPausing:true
+09-16 12:41:17.819  2738  2738 D MediaControlProfile: onCurrentPlayerStateUpdated state= PAUSED, supported opcodes= 0x183f (PLAY | PAUSE | FAST_REWIND | FAST_FORWARD | STOP | MOVE_RELATIVE | PREVIOUS_TRACK | NEXT_TRACK), track position= 128128 (128128)
+09-16 12:41:17.819  2738  2738 D MediaControlGattService: updatePlayerState: playbackState= PAUSED
+09-16 12:41:17.819  2738  2738 D MediaControlGattService: updatePlaybackSpeedChar: 1.0
+09-16 12:41:17.819  2738  2738 W MediaControlGattService: Feature PLAYBACK_SPEED(BIT 8) support: true
+09-16 12:41:17.819  2738  2738 W MediaControlGattService: Feature PLAYBACK_SPEED(BIT 8) support: true
+09-16 12:41:17.819  2738  2738 W MediaControlGattService: Feature PLAYBACK_SPEED(BIT 8) support: true
+09-16 12:41:17.819  2738  2738 D MediaControlGattService: updateTrackPositionChar: 128128
+09-16 12:41:17.819  2738  2738 W MediaControlGattService: Feature TRACK_POSITION(BIT 7) support: true
+09-16 12:41:17.819  2738  2738 W MediaControlGattService: Feature TRACK_POSITION_NOTIFY support: true
+09-16 12:41:17.819  2738  2738 W MediaControlGattService: Feature MEDIA_STATE(BIT 17) support: true
+09-16 12:41:17.819  2871 18160 I SafeBinderCall: onPlaybackStateChange binder cost:1
+09-16 12:41:17.819  2871  2871 I SafeBinderCall: call getMediaMetaData binder cost:0
+09-16 12:41:17.819  2871  2871 D MiPlayDetailViewModel: onGetSupportVideoFlowCapacity mediaType error
+09-16 12:41:17.819  2871  2871 I GlobalMiPlayAudioManager: onPlayStateChange: 1
+09-16 12:41:17.819  2871  2871 D MiCastSDKImpl: setPlaybackState state 1
+09-16 12:41:17.820  2738  2738 D BtGatt.GattService: getDeviceType() - device=XX:XX:XX:XX:92:60, type=1
+09-16 12:41:17.820  2738  2738 D BtGatt.GattService: getDeviceType() - device=XX:XX:XX:XX:38:CB, type=3
+09-16 12:41:17.820  2738  2738 D MediaControlGattService: updateTrackPositionChar: positionMs= 128128, position= 12812
+09-16 12:41:17.820  2738  2738 W MediaControlGattService: Feature PLAYER_NAME(BIT 1) support: true
+09-16 12:41:17.820  2738  2738 D MediaControlGattService: updateSupportedOpcodesChar: opcodes= 0x183f (PLAY | PAUSE | FAST_REWIND | FAST_FORWARD | STOP | MOVE_RELATIVE | PREVIOUS_TRACK | NEXT_TRACK)
+09-16 12:41:17.820  2738  2738 W MediaControlGattService: Feature MEDIA_CONTROL_POINT_OPCODES_SUPPORTED(BIT 19) support: true
+09-16 12:41:17.820  2738  2738 W MediaControlGattService: Feature MEDIA_CONTROL_POINT_OPCODES_SUPPORTED_NOTIFY support: true
+09-16 12:41:17.820  2738  2738 D BtGatt.GattService: getDeviceType() - device=XX:XX:XX:XX:92:60, type=1
+09-16 12:41:17.820  2738  2738 D BtGatt.GattService: getDeviceType() - device=XX:XX:XX:XX:38:CB, type=3
+09-16 12:41:17.820  6312  6312 W MultiDeviceManager: setPlaybackState state 1
+09-16 12:41:17.821  6312  6312 I CastDeviceManager: setPlaybackState: state 1
+09-16 12:41:17.821  6312  6312 W CastDeviceManager: setPlaybackState: castSession is null return
+09-16 12:41:17.820  2738  2738 D MediaControlGattService: updateSupportedOpcodesChar: opcodes= 0x183f (PLAY | PAUSE | FAST_REWIND | FAST_FORWARD | STOP | MOVE_RELATIVE | PREVIOUS_TRACK | NEXT_TRACK)
+09-16 12:41:17.821  2738  2738 W MediaControlGattService: Feature MEDIA_STATE(BIT 17) support: true
+09-16 12:41:17.821  2738  2738 W MediaControlGattService: Feature MEDIA_STATE(BIT 17) support: true
+09-16 12:41:17.821  2738  2738 D MediaControlGattService: updateSeekingSpeedChar: speed= 1.0
+09-16 12:41:17.821 23697 23697 W BpBinder: Large outgoing transaction of 54016 bytes, interface descriptor android.app.IActivityClientController, code 6 was sent
+09-16 12:41:17.821  2738  2738 W MediaControlGattService: Feature SEEKING_SPEED(BIT 9) support: true
+09-16 12:41:17.821  2738  2738 W MediaControlGattService: Feature SEEKING_SPEED(BIT 9) support: true
+09-16 12:41:17.821  2738  2738 W MediaControlGattService: Feature SEEKING_SPEED(BIT 9) support: true
+09-16 12:41:17.821  2738  2738 V MediaControlProfile: onCurrentPlayerStateUpdated() done
+09-16 12:41:17.821  2738  2738 D MediaControlProfile: GMCS processPendingPlayerStateRequest
+09-16 12:41:17.821  2738  2738 D MediaControlProfile: onMediaUpdated: done
+09-16 12:41:17.821  1843  2448 I CameraActivitySceneMode: decideSceneMode: ActivityStateChange isn't resumend activityName = com.google.android.apps.youtube.app.watchwhile.MainActivity, displayId = 0, state = 6, mIsVideocallResumed = false
+09-16 12:41:17.821  1843  2358 I WifiService: acquireMulticastLock uid=1000 lockTag=NsdService
+09-16 12:41:17.823  1843  1964 D Aurogon :  uid = 10221 switch to BG
+09-16 12:41:17.824  1273  1273 I SurfaceFlinger: onHandleDestroyed: layerId=270829, name=com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity#270829
+09-16 12:41:17.825  1273  1273 E HwcComposer: presentOrValidateDisplay 0 presentFence:-1
+09-16 12:41:17.825 23697 23697 W AxMediaRouter: Ignoring null provider descriptor from ComponentInfo{com.google.android.gms/com.google.android.gms.cast.media.CastMediaRoute2ProviderService_Persistent}
+09-16 12:41:17.826  1843  2400 D ActionExecute: frozen uid =10315 reason=from module 16 enable=false
+09-16 12:41:17.826  1843  2400 D ActionExecute: frozen uid =10333 reason=from module 16 enable=false
+09-16 12:41:17.826 22843 22953 D AudioFlinger_Threads: 0xb400006fd0c64520:threadLoop_write write muted data to hw, mixerStatus 0 start, mId 21, mBytesWritten 294912
+09-16 12:41:17.827  2738  3507 V AudioMediaPlayerWrapper: trySendMediaUpdate(): Metadata update for { mediaId="currsong" title="El-P - Sign Here (Official Audio)" artist="El-P" album="El-P" duration=172000 trackPosition=1/1 image=null }
+09-16 12:41:17.827  2738  3507 D MediaPlayerList: sendMediaUpdate
+09-16 12:41:17.827  2738  3507 I MediaPlayerList: sendMediaUpdate: Creating a one item queue for a player with no queue
+09-16 12:41:17.827  2738  3507 D MediaPlayerList: sendMediaUpdate state=PlaybackState {state=STOPPED(1), position=128128, buffered position=0, speed=1.0, updated=2780913360, actions=8631, custom actions=[], active item id=-1, error=null}
+09-16 12:41:17.827  2738  3507 D AvrcpTargetService: onMediaUpdated: track_changed=false state=true queue=false
+09-16 12:41:17.827  2738  3507 D AvrcpNativeInterface: sendMediaUpdate: metadata=false playStatus=true queue=false
+09-16 12:41:17.827  2738  3507 I bluetooth: [avrcp_service.cc(650)] SendMediaUpdate: track_changed=false :  play_state=true :  queue=false
+09-16 12:41:17.827  2738  3237 W avrcp   : [device.cc(2534)] HandlePlayPosUpdate: Device is not registered for play position updates
+09-16 12:41:17.827  2738  3397 D AvrcpNativeInterface: getPlayStatus
+09-16 12:41:17.829  2871  4074 I ActiveSessionRecord_export-api: onPlaybackStateChanged: PlaybackState {state=STOPPED(1), position=128128, buffered position=0, speed=1.0, updated=2780913360, actions=8631, custom actions=[], active item id=-1, error=null}
+09-16 12:41:17.829  1843  2338 I MiuiNetworkPolicy: updateUidState uid = 10221, uidState = 16
+09-16 12:41:17.829  1843  2338 I MiuiNetworkPolicy: updateUidState uid = 10168, uidState = 19
+09-16 12:41:17.835  1843  2505 I SkJpegEncoder: [mId: 1660392] skia-debug Enter SkJpegEncoder::Encode.
+09-16 12:41:17.835  1843  2505 I SkJpegEncoder: [mId: 1660392] skia-debug Enter SkJpegEncoder::Make and Options: { fQuality = 95 fDownsample = 0 fAlphaOption = 0};.
+09-16 12:41:17.835  1843  2505 I SkJpegEncoder: [mId: 1660392] skia-debug src.info is SkImageInfo: {IsRGB = 1, ColorType = 4, AlphaType = 2, Dimensions.width = 1220, Dimensions.height = 2712};.
+09-16 12:41:17.835  1843  2505 I SkJpegEncoder: [mId: 1660392] skia-debug Create a new SkJpegEncoder.
+09-16 12:41:17.835  1843  2505 I SkJpegEncoder: [mId: 1660392] skia-debug Enter SkJpegEncoder::onEncodeRows and numRows is 2712
+09-16 12:41:17.835  1446  1446 I adbd    : adbd service requested 'shell,v2,TERM=dumb:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-t' '500''

@@ -1,0 +1,68 @@
+[
+  {
+    "backend": "cpu",
+    "count": 256,
+    "epochs": 16,
+    "seconds_samples": [
+      0.1011967,
+      0.1075365,
+      0.1127165
+    ],
+    "median_seconds": 0.1075365
+  },
+  {
+    "backend": "cpu",
+    "count": 1024,
+    "epochs": 16,
+    "seconds_samples": [
+      0.50403,
+      0.4620861,
+      0.3932309
+    ],
+    "median_seconds": 0.4620861
+  },
+  {
+    "backend": "cpu",
+    "count": 4096,
+    "epochs": 16,
+    "seconds_samples": [
+      1.6145976,
+      1.3862877,
+      1.7183883
+    ],
+    "median_seconds": 1.6145976
+  },
+  {
+    "backend": "vulkan",
+    "count": 256,
+    "epochs": 16,
+    "seconds_samples": [
+      0.02264112,
+      0.022644192,
+      0.02264672
+    ],
+    "median_seconds": 0.022644192
+  },
+  {
+    "backend": "vulkan",
+    "count": 1024,
+    "epochs": 16,
+    "seconds_samples": [
+      0.023300384,
+      0.023353728,
+      0.023288128
+    ],
+    "median_seconds": 0.023300384
+  },
+  {
+    "backend": "vulkan",
+    "count": 4096,
+    "epochs": 16,
+    "seconds_samples": [
+      0.038111712,
+      0.032301856,
+      0.037177152
+    ],
+    "median_seconds": 0.037177152
+  }
+]

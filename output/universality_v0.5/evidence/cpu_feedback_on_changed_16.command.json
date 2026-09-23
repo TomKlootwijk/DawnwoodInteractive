@@ -1,0 +1,26 @@
+{
+  "name": "cpu_feedback_on_changed_16",
+  "command": [
+    "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-x64\\dawnwood.exe",
+    "run",
+    "--backend",
+    "cpu",
+    "--device",
+    "1650 Ti",
+    "--resume",
+    "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\feedback_on_changed.dwk",
+    "--steps",
+    "16",
+    "--checkpoint",
+    "C:\\DawnwoodInteractive\\output\\universality_v0.5\\evidence\\cpu_feedback_on_changed_16.dwk"
+  ],
+  "utc": "2026-09-23T06:09:04.773140+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 0.06300000000192085,
+  "exe_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+  "validation_environment": {
+    "DAWNWOOD_VALIDATION": "1",
+    "VK_LAYER_PATH": "C:/DawnwoodInteractive/tmp/validation_v04/layers",
+    "VK_LAYER_VALIDATE_SYNC": "1"
+  }
+}

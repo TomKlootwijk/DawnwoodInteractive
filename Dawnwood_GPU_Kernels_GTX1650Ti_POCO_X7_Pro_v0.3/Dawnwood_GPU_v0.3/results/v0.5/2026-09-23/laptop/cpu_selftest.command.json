@@ -1,0 +1,18 @@
+{
+  "name": "cpu_selftest",
+  "command": [
+    "build\\Release\\dawnwood.exe",
+    "selftest"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "started_utc": "2026-09-23T05:10:10.968626+00:00",
+  "binary_sha256": "20b944a181d52e105150196b1f7e2a4f309b79cc478ebd9185f161e9686085e0",
+  "validation_environment": {
+    "DAWNWOOD_VALIDATION": "1",
+    "VK_LAYER_PATH": "C:\\DawnwoodInteractive\\tmp\\validation_v04\\layers",
+    "VK_LAYER_VALIDATE_SYNC": "1"
+  },
+  "exit_code": 0,
+  "wall_seconds": 0.21899999999914144,
+  "finished_utc": "2026-09-23T05:10:11.197947+00:00"
+}

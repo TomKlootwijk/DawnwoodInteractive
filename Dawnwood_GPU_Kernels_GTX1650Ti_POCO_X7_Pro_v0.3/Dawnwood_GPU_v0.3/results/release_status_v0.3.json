@@ -1,0 +1,183 @@
+{
+  "release": "0.3.0",
+  "profile": "DWI-N1",
+  "shaders_compiled": false,
+  "desktop_compiled": false,
+  "cpu_ctest_passed": false,
+  "source_claim_suite_passed": false,
+  "claims": {
+    "profile": "DWI-N1-0.3",
+    "environment": {
+      "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+      "platform": "Linux-6.18.44-x86_64-with-glibc2.41"
+    },
+    "python_tests": {
+      "tests_run": 17,
+      "failures": 0,
+      "errors": 0,
+      "passed": true
+    },
+    "cpu_tests_passed": false,
+    "vulkan_device": {},
+    "vulkan_comparison_executed": false,
+    "vulkan_comparison_passed": null,
+    "checkpoint_replay_passed": false,
+    "body_coverage": [
+      {
+        "operator_index": 0,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 1,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 2,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 3,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 4,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 5,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 6,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 7,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 8,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 9,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 10,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 11,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 12,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 13,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 14,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 15,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 16,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 17,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 18,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 19,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 20,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 21,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 22,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 23,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 24,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 27,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 28,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 29,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      },
+      {
+        "operator_index": 30,
+        "body_edit_record_changed": false,
+        "numerical_state_changed": null
+      }
+    ],
+    "packing_rmse": 9.440333572453023,
+    "real_GTX_1650_Ti_test": false,
+    "real_POCO_test": false,
+    "phone_note": "Only tools/test_phone.py can populate a connected-phone report; no phone result is inferred from shader compilation."
+  },
+  "android_native_compiled": false,
+  "android_apk_built": false,
+  "android_build_note": "No installed Android SDK/NDK toolchain found in this build environment.",
+  "POCO_hardware_test_executed": false,
+  "GTX_1650_Ti_hardware_test_executed": false,
+  "original_source_present": true
+}

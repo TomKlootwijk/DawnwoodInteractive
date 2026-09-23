@@ -1,0 +1,22 @@
+test_arbitrary_channels_do_not_round_trip_losslessly (test_claims.SourceExperiments.test_arbitrary_channels_do_not_round_trip_losslessly) ... ok
+test_bayer_is_a_downstream_display_operation (test_claims.SourceExperiments.test_bayer_is_a_downstream_display_operation) ... ok
+test_bc4_endpoint_branches (test_claims.SourceExperiments.test_bc4_endpoint_branches) ... ok
+test_bc5_is_sixteen_bytes_for_two_4x4_channels (test_claims.SourceExperiments.test_bc5_is_sixteen_bytes_for_two_4x4_channels) ... ok
+test_block_dimension_rounding (test_claims.SourceExperiments.test_block_dimension_rounding) ... ok
+test_constant_channels_round_trip (test_claims.SourceExperiments.test_constant_channels_round_trip) ... ok
+test_gb_gib_are_different_budgets (test_claims.SourceExperiments.test_gb_gib_are_different_budgets) ... ok
+test_inverse_does_not_remove_added_noise (test_claims.SourceExperiments.test_inverse_does_not_remove_added_noise) ... ok
+test_mip_allocation_is_not_base_level_only (test_claims.SourceExperiments.test_mip_allocation_is_not_base_level_only) ... ok
+test_one_bit_jitter_alone_does_not_prove_escape (test_claims.SourceExperiments.test_one_bit_jitter_alone_does_not_prove_escape) ... ok
+test_operator_fields_all_have_declared_record_locations (test_claims.SourceExperiments.test_operator_fields_all_have_declared_record_locations) ... ok
+test_phase_only_hinge_preserves_norm (test_claims.SourceExperiments.test_phase_only_hinge_preserves_norm) ... ok
+test_pigeonhole_arbitrary_compression (test_claims.SourceExperiments.test_pigeonhole_arbitrary_compression) ... ok
+test_pointer_elimination_saves_only_pointer_bytes (test_claims.SourceExperiments.test_pointer_elimination_saves_only_pointer_bytes) ... ok
+test_source_vector_forward_dft_binding (test_claims.SourceExperiments.test_source_vector_forward_dft_binding) ... ok
+test_two_path_interference_fixture (test_claims.SourceExperiments.test_two_path_interference_fixture) ... ok
+test_working_set_is_not_one_byte_per_state (test_claims.SourceExperiments.test_working_set_is_not_one_byte_per_state) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.004s
+
+OK

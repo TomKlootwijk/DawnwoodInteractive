@@ -1,0 +1,8 @@
+Internal ctest changing into directory: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/build
+Test project C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/build
+    Start 1: cpu_source_profile
+1/1 Test #1: cpu_source_profile ...............   Passed    0.14 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.17 sec

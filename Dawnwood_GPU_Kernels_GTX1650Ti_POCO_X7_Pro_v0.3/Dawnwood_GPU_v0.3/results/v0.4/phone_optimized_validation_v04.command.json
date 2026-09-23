@@ -1,0 +1,18 @@
+{
+  "name": "phone_optimized_validation_v04",
+  "command": [
+    "python",
+    "tools/test_phone.py",
+    "--serial",
+    "XOVSTSHYNREMZ5D6",
+    "--apk",
+    "android/app/build/outputs/apk/debug/app-debug.apk",
+    "--out",
+    "results/v0.4/phone_optimized"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:49:04.924311+00:00",
+  "exit_code": 2,
+  "wall_seconds": 16.32799999997951,
+  "validation_environment": {}
+}

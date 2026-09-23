@@ -1,0 +1,85 @@
+{
+  "utc": "2026-09-23T05:22:44.605582+00:00",
+  "stage": "Final split/monolithic runtime candidate validated on laptop and phone.",
+  "artifacts": [
+    {
+      "source": "build/Release/dawnwood.exe",
+      "retained_copy": "dawnwood.exe",
+      "sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+      "bytes": 555520
+    },
+    {
+      "source": "shaders/mutate.spv",
+      "retained_copy": "mutate.spv",
+      "sha256": "66ca0d7a044f4b7370fd9cccfd396ebf7141120d5d2f268639ac4a6e45b66b8f",
+      "bytes": 46636,
+      "complete_spirv_payload_found_in_executable": true
+    },
+    {
+      "source": "shaders/evolve.spv",
+      "retained_copy": "evolve.spv",
+      "sha256": "4e18c053e65557444b7b3062d47b67dfc5a5d4ff390f894c4fd45bb9e7eccde0",
+      "bytes": 75068,
+      "complete_spirv_payload_found_in_executable": true
+    },
+    {
+      "source": "shaders/prepare.spv",
+      "retained_copy": "prepare.spv",
+      "sha256": "3ab3f4276da3e6b31185398c44c637d66baeaae0f735001ba8079ca0cf423387",
+      "bytes": 43972,
+      "complete_spirv_payload_found_in_executable": true
+    },
+    {
+      "source": "shaders/slope.spv",
+      "retained_copy": "slope.spv",
+      "sha256": "55787aefb2bcb76e11fcc1ad5d84cd240ecd259f6d3effd0f326802a96cfb04c",
+      "bytes": 61984,
+      "complete_spirv_payload_found_in_executable": true
+    },
+    {
+      "source": "shaders/combine.spv",
+      "retained_copy": "combine.spv",
+      "sha256": "3ac940666b1d806bb1f86002ff8b1427b4199fb8aaf952c9a570b4fb74cbd337",
+      "bytes": 44164,
+      "complete_spirv_payload_found_in_executable": true
+    },
+    {
+      "source": "shaders/geometry.spv",
+      "retained_copy": "geometry.spv",
+      "sha256": "4edf5f2b1ac570ad5537adc268d46f84d7bc6542280291042ec6e9f9f0874a59",
+      "bytes": 44236,
+      "complete_spirv_payload_found_in_executable": true
+    },
+    {
+      "source": "shaders/finish.spv",
+      "retained_copy": "finish.spv",
+      "sha256": "5c0033ab585514e8f618006acc205c842f0f114d81841913b87a75626b813948",
+      "bytes": 50328,
+      "complete_spirv_payload_found_in_executable": true
+    },
+    {
+      "source": "include/numeric_types.inc",
+      "retained_copy": "numeric_types.inc",
+      "sha256": "4aa589d30453112d40b71868d7d87fed6de843bab01057acc92516ba01a65d53",
+      "bytes": 8976
+    },
+    {
+      "source": "include/numeric_evolve.inc",
+      "retained_copy": "numeric_evolve.inc",
+      "sha256": "3ad6f2cde0bb0c72a924bf196acbbd7e0e1dc5d4eb9c0da578b115dee4e7328d",
+      "bytes": 9033
+    },
+    {
+      "source": "include/numeric_math.inc",
+      "retained_copy": "numeric_math.inc",
+      "sha256": "80ef7e378b2be8c26a755063c3347dffc2a697b74d4f656c0879ee6d6092766f",
+      "bytes": 7732
+    },
+    {
+      "source": "results/shader_build.json",
+      "retained_copy": "shader_build.json",
+      "sha256": "cf537f42134bc3efe5beff4f4c4c8b6cbcbac19b1e4f04698e166aa0b24231f9",
+      "bytes": 7812
+    }
+  ]
+}

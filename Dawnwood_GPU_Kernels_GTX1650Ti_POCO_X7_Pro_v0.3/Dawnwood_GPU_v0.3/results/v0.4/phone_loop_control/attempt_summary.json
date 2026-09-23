@@ -1,0 +1,20 @@
+{
+  "successful": false,
+  "real_phone_test_completed": false,
+  "probe": {
+    "error": "vkCreateComputePipelines evolve on Mali-G720 MC7 (VkResult -3)"
+  },
+  "cpu_selftest": {
+    "passed": true,
+    "tests_run": 30
+  },
+  "verify": "Native crash: own-PID log reports Scudo out-of-memory and SIGABRT; Android exit-info confirms APP CRASH(NATIVE). No completed comparison report.",
+  "run": "Not executed after verify process crashed.",
+  "apk_sha256": "e3bd032d4be774df590893adb25477c6301f3756f7916f6b0e15a84b5130f9e6",
+  "shader_sha256": {
+    "mutate.spv": "6f6218269993e31753d148681e0685bf40bbddcd1c91b9424cacecc0f037fdb9",
+    "evolve.spv": "496d35ea0126759e071cbf15edccf955d3b496810e9c93a2743dac9dd48b9e71"
+  },
+  "toolchain_override": "../android-local-toolchain.gradle",
+  "runtime_profile": "DWI-N1-0.4"
+}

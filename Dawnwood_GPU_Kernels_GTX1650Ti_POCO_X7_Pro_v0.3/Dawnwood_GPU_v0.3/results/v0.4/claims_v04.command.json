@@ -1,0 +1,18 @@
+{
+  "name": "claims_v04",
+  "command": [
+    "python",
+    "tools/run_claims.py",
+    "--binary",
+    "build/Release/dawnwood.exe",
+    "--device",
+    "1650 Ti",
+    "--bench",
+    "--out",
+    "results/v0.4/claims"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:35:57.826609+00:00",
+  "exit_code": 0,
+  "wall_seconds": 22.109000000171363
+}

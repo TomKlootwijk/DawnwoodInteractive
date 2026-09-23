@@ -1,0 +1,119 @@
+{
+  "run_id": "verify_1789555925516402500",
+  "android_before": {
+    "model": "2412DPC0AG",
+    "manufacturer": "Xiaomi",
+    "sdk": 36,
+    "abi": "arm64-v8a",
+    "system_total_ram_bytes": 11861921792,
+    "system_available_ram_bytes": 3895484416,
+    "system_low_memory": false,
+    "android_thermal_status": 0,
+    "battery_temperature_celsius": 34.3
+  },
+  "runtime": {
+    "profile": "DWI-N1-0.4",
+    "kind": "CPU versus Vulkan every epoch, all state and operator words",
+    "config": {
+      "count": 128,
+      "operators": 31,
+      "epoch": 0,
+      "depth": 4,
+      "dt": 0.00999999978,
+      "yup": 0.000500000024,
+      "epsilon": 0.125,
+      "mutation": 1,
+      "jitter": 1,
+      "feedback": 1,
+      "phaseRate": 0.125,
+      "radialRate": 0.00999999978,
+      "historyWeight": 0.75,
+      "fieldScale": 0.00499999989,
+      "state_bytes": 128,
+      "operator_bytes": 64
+    },
+    "epochs_requested": 16,
+    "epochs_checked": 1,
+    "atol": 1e-05,
+    "rtol": 2e-05,
+    "passed": false,
+    "aggregate": {
+      "passed": false,
+      "float_mismatches": 135,
+      "integer_mismatches": 0,
+      "nonfinite_values": 0,
+      "invalid_snapshots": 0,
+      "worst_scaled_error": 3.415186812,
+      "max_absolute_error": 4.159659147e-05,
+      "first_mismatch": "epoch 1 state[1].ar cpu=-0.289921224 vulkan=-0.289942235"
+    },
+    "device": {
+      "name": "Mali-G720 MC7",
+      "vendor_id": 5045,
+      "device_id": 3362783248,
+      "api_version": 4206870,
+      "driver_version": 205524992,
+      "software_device": false,
+      "validation_layer_enabled": false,
+      "validation_errors": 0,
+      "validation_warnings": 0,
+      "memory_budget_extension": false,
+      "texture_compression_BC": false,
+      "BC5_sampled_image": false,
+      "EAC_RG11_sampled_image": true,
+      "ASTC_4x4_sampled_image": true,
+      "max_compute_shared_memory_bytes": 32768,
+      "max_storage_buffer_range": 2147483648,
+      "allocated_buffer_bytes": 53120,
+      "upload_bytes": 18368,
+      "download_bytes": 18368,
+      "completed_epochs": 1,
+      "advance_buffer_copy_commands": 0,
+      "timer": "Vulkan device timestamps",
+      "last_dispatch_seconds": 0.00215015,
+      "last_wall_seconds": 0.0102519,
+      "heaps": [
+        {
+          "index": 0,
+          "size": 11807592448,
+          "runtime_buffer_allocation_bytes": 53120,
+          "device_local": true
+        },
+        {
+          "index": 1,
+          "size": 104857600,
+          "runtime_buffer_allocation_bytes": 0,
+          "device_local": true
+        }
+      ]
+    },
+    "trace": [
+      {
+        "epoch": 1,
+        "comparison": {
+          "passed": false,
+          "float_mismatches": 135,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 3.415186812,
+          "max_absolute_error": 4.159659147e-05,
+          "first_mismatch": "state[1].ar cpu=-0.289921224 vulkan=-0.289942235"
+        }
+      }
+    ]
+  },
+  "elapsed_wall_ms": 3180,
+  "android_after": {
+    "model": "2412DPC0AG",
+    "manufacturer": "Xiaomi",
+    "sdk": 36,
+    "abi": "arm64-v8a",
+    "system_total_ram_bytes": 11861921792,
+    "system_available_ram_bytes": 3655217152,
+    "system_low_memory": false,
+    "android_thermal_status": 0,
+    "battery_temperature_celsius": 34.3
+  },
+  "finished": true
+}

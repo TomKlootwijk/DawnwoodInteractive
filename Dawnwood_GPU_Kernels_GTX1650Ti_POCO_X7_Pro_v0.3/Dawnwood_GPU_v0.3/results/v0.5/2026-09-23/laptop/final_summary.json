@@ -1,0 +1,522 @@
+{
+  "profile": "DWI-N1-0.5",
+  "stage": "Final split/monolithic runtime, portable arithmetic, integer LUT textures",
+  "created_utc": "2026-09-23T05:28:09.649639+00:00",
+  "binary_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+  "identity_evidence": "final_artifacts/identity.json",
+  "shader_manifest": "final_artifacts/shader_build.json",
+  "cpu_identity": {
+    "Name": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+    "NumberOfCores": 4,
+    "NumberOfLogicalProcessors": 8
+  },
+  "existing_fixtures": {
+    "cpu_tests_run": 30,
+    "cpu_passed": true,
+    "python": {
+      "tests_run": 17,
+      "failures": 0,
+      "errors": 0,
+      "passed": true
+    },
+    "active_operator_body_coverage": 29,
+    "body_coverage_passed": true,
+    "cpu_checkpoint_replay_passed": true,
+    "evidence": "claims_final_split/summary.json"
+  },
+  "verification": [
+    {
+      "evidence": "final_split_verify_257_1024.stdout",
+      "command_evidence": "final_split_verify_257_1024.command.json",
+      "exit_code": 0,
+      "count": 257,
+      "epochs_checked": 1024,
+      "passed": true,
+      "aggregate": {
+        "passed": true,
+        "bitwise_word_mismatches": 0,
+        "bitwise_equal": true,
+        "float_mismatches": 0,
+        "integer_mismatches": 0,
+        "nonfinite_values": 0,
+        "invalid_snapshots": 0,
+        "worst_scaled_error": 0,
+        "max_absolute_error": 0,
+        "first_mismatch": ""
+      },
+      "device": {
+        "name": "NVIDIA GeForce GTX 1650 Ti with Max-Q Design",
+        "split_evolution": true,
+        "evolution_scratch_bytes": 24672,
+        "evolution_dispatches_per_chunk": 8,
+        "validation_layer_enabled": true,
+        "validation_errors": 0,
+        "validation_warnings": 0
+      }
+    },
+    {
+      "evidence": "final_split_verify_65537_4.stdout",
+      "command_evidence": "final_split_verify_65537_4.command.json",
+      "exit_code": 0,
+      "count": 65537,
+      "epochs_checked": 4,
+      "passed": true,
+      "aggregate": {
+        "passed": true,
+        "bitwise_word_mismatches": 0,
+        "bitwise_equal": true,
+        "float_mismatches": 0,
+        "integer_mismatches": 0,
+        "nonfinite_values": 0,
+        "invalid_snapshots": 0,
+        "worst_scaled_error": 0,
+        "max_absolute_error": 0,
+        "first_mismatch": ""
+      },
+      "device": {
+        "name": "NVIDIA GeForce GTX 1650 Ti with Max-Q Design",
+        "split_evolution": true,
+        "evolution_scratch_bytes": 6291456,
+        "evolution_dispatches_per_chunk": 8,
+        "validation_layer_enabled": true,
+        "validation_errors": 0,
+        "validation_warnings": 0
+      }
+    },
+    {
+      "evidence": "final_mono_verify_257_64.stdout",
+      "command_evidence": "final_mono_verify_257_64.command.json",
+      "exit_code": 0,
+      "count": 257,
+      "epochs_checked": 64,
+      "passed": true,
+      "aggregate": {
+        "passed": true,
+        "bitwise_word_mismatches": 0,
+        "bitwise_equal": true,
+        "float_mismatches": 0,
+        "integer_mismatches": 0,
+        "nonfinite_values": 0,
+        "invalid_snapshots": 0,
+        "worst_scaled_error": 0,
+        "max_absolute_error": 0,
+        "first_mismatch": ""
+      },
+      "device": {
+        "name": "NVIDIA GeForce GTX 1650 Ti with Max-Q Design",
+        "split_evolution": false,
+        "evolution_scratch_bytes": 0,
+        "evolution_dispatches_per_chunk": 1,
+        "validation_layer_enabled": true,
+        "validation_errors": 0,
+        "validation_warnings": 0
+      }
+    },
+    {
+      "evidence": "final_mono_verify_257_1024.stdout",
+      "command_evidence": "final_mono_verify_257_1024.command.json",
+      "exit_code": 0,
+      "count": 257,
+      "epochs_checked": 1024,
+      "passed": true,
+      "aggregate": {
+        "passed": true,
+        "bitwise_word_mismatches": 0,
+        "bitwise_equal": true,
+        "float_mismatches": 0,
+        "integer_mismatches": 0,
+        "nonfinite_values": 0,
+        "invalid_snapshots": 0,
+        "worst_scaled_error": 0,
+        "max_absolute_error": 0,
+        "first_mismatch": ""
+      },
+      "device": {
+        "name": "NVIDIA GeForce GTX 1650 Ti with Max-Q Design",
+        "split_evolution": false,
+        "evolution_scratch_bytes": 0,
+        "evolution_dispatches_per_chunk": 1,
+        "validation_layer_enabled": true,
+        "validation_errors": 0,
+        "validation_warnings": 0
+      }
+    }
+  ],
+  "checkpoint_identity": {
+    "kind": "Full existing CLI checkpoint identity across pre-compaction CPU, compact CPU, final CPU, final monolithic Vulkan and final split Vulkan",
+    "comparisons": [
+      {
+        "count": 4096,
+        "epochs": 64,
+        "all_full_checkpoint_hashes_identical": true,
+        "artifacts": [
+          {
+            "file": "checkpoints\\before_4096_64.dwk",
+            "bytes": 526352,
+            "sha256": "1daa72e62cb1ab2c341e9c6b469296304f535bd235aef11d6b24e4587943adeb"
+          },
+          {
+            "file": "checkpoints\\after_4096_64.dwk",
+            "bytes": 526352,
+            "sha256": "1daa72e62cb1ab2c341e9c6b469296304f535bd235aef11d6b24e4587943adeb"
+          },
+          {
+            "file": "checkpoints\\final_cpu_4096_64.dwk",
+            "bytes": 526352,
+            "sha256": "1daa72e62cb1ab2c341e9c6b469296304f535bd235aef11d6b24e4587943adeb"
+          },
+          {
+            "file": "checkpoints\\final_mono_4096_64.dwk",
+            "bytes": 526352,
+            "sha256": "1daa72e62cb1ab2c341e9c6b469296304f535bd235aef11d6b24e4587943adeb"
+          },
+          {
+            "file": "checkpoints\\final_split_4096_64.dwk",
+            "bytes": 526352,
+            "sha256": "1daa72e62cb1ab2c341e9c6b469296304f535bd235aef11d6b24e4587943adeb"
+          }
+        ]
+      },
+      {
+        "count": 257,
+        "epochs": 1024,
+        "all_full_checkpoint_hashes_identical": true,
+        "artifacts": [
+          {
+            "file": "checkpoints\\before_257_1024.dwk",
+            "bytes": 34960,
+            "sha256": "de63880c5f291a591c36953ed17a354893e91a65f3f84f5adc9e9f91209c27e6"
+          },
+          {
+            "file": "checkpoints\\after_257_1024.dwk",
+            "bytes": 34960,
+            "sha256": "de63880c5f291a591c36953ed17a354893e91a65f3f84f5adc9e9f91209c27e6"
+          },
+          {
+            "file": "checkpoints\\final_cpu_257_1024.dwk",
+            "bytes": 34960,
+            "sha256": "de63880c5f291a591c36953ed17a354893e91a65f3f84f5adc9e9f91209c27e6"
+          }
+        ]
+      }
+    ]
+  },
+  "benchmarks": {
+    "profile": "DWI-N1-0.5",
+    "collected_utc": "2026-09-23T05:25:12.421332+00:00",
+    "binary_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+    "count": 4096,
+    "epochs": 64,
+    "batch": 8,
+    "repeats": 3,
+    "split_evolution": false,
+    "definition": "One state-update advances one complete 128-byte state by one epoch through the declared recurrence; each GPU epoch also mutates the shared operator LUT.",
+    "timing_note": "CPU seconds measure evolution wall time. Vulkan seconds sum device-timestamp intervals; initialization/upload/readback/digest/host gaps excluded. Whole-process wall includes these costs. Fresh process per sample; ordinary desktop background activity and clock variation uncontrolled. Validation disabled for performance.",
+    "backends": {
+      "cpu": {
+        "samples": [
+          {
+            "evidence": "final_benchmark_cpu_4096_64_1.stdout",
+            "command_evidence": "final_benchmark_cpu_4096_64_1.command.json",
+            "exit_code": 0,
+            "started_utc": "2026-09-23T05:24:02.861757+00:00",
+            "seconds": 8.759979,
+            "process_wall_seconds": 8.811999999999898,
+            "timing": {
+              "runtime_setup_upload_seconds": 0,
+              "advance_wall_seconds": 8.759979,
+              "readback_seconds": 0,
+              "digest_and_health_seconds": 0.0041967
+            },
+            "health": {
+              "passed": true,
+              "first_invalid_record": "",
+              "nonfinite_state_values": 0,
+              "out_of_chart_states": 0,
+              "max_energy_error_from_source_seed_5": 2.47955e-05
+            },
+            "state_digest": "ea2a2e5ff6ce7adb",
+            "complete_digest": "c79b636e728e12b1"
+          },
+          {
+            "evidence": "final_benchmark_cpu_4096_64_2.stdout",
+            "command_evidence": "final_benchmark_cpu_4096_64_2.command.json",
+            "exit_code": 0,
+            "started_utc": "2026-09-23T05:24:11.903973+00:00",
+            "seconds": 7.58345,
+            "process_wall_seconds": 7.625,
+            "timing": {
+              "runtime_setup_upload_seconds": 0,
+              "advance_wall_seconds": 7.58345,
+              "readback_seconds": 0,
+              "digest_and_health_seconds": 0.0026637
+            },
+            "health": {
+              "passed": true,
+              "first_invalid_record": "",
+              "nonfinite_state_values": 0,
+              "out_of_chart_states": 0,
+              "max_energy_error_from_source_seed_5": 2.47955e-05
+            },
+            "state_digest": "ea2a2e5ff6ce7adb",
+            "complete_digest": "c79b636e728e12b1"
+          },
+          {
+            "evidence": "final_benchmark_cpu_4096_64_3.stdout",
+            "command_evidence": "final_benchmark_cpu_4096_64_3.command.json",
+            "exit_code": 0,
+            "started_utc": "2026-09-23T05:24:19.704109+00:00",
+            "seconds": 8.1974733,
+            "process_wall_seconds": 8.218000000000757,
+            "timing": {
+              "runtime_setup_upload_seconds": 0,
+              "advance_wall_seconds": 8.1974733,
+              "readback_seconds": 0,
+              "digest_and_health_seconds": 0.0023868
+            },
+            "health": {
+              "passed": true,
+              "first_invalid_record": "",
+              "nonfinite_state_values": 0,
+              "out_of_chart_states": 0,
+              "max_energy_error_from_source_seed_5": 2.47955e-05
+            },
+            "state_digest": "ea2a2e5ff6ce7adb",
+            "complete_digest": "c79b636e728e12b1"
+          }
+        ],
+        "median_seconds": 8.1974733,
+        "median_mean_epoch_ms": 128.0855203125,
+        "state_updates_per_second_using_median": 31978.63419695432,
+        "median_process_wall_seconds": 8.218000000000757
+      },
+      "vulkan": {
+        "samples": [
+          {
+            "evidence": "final_benchmark_vulkan_4096_64_1.stdout",
+            "command_evidence": "final_benchmark_vulkan_4096_64_1.command.json",
+            "exit_code": 0,
+            "started_utc": "2026-09-23T05:24:28.081319+00:00",
+            "seconds": 0.199790944,
+            "process_wall_seconds": 0.8590000000003783,
+            "timing": {
+              "runtime_setup_upload_seconds": 0.4798508,
+              "advance_wall_seconds": 0.2031715,
+              "readback_seconds": 0.001743,
+              "digest_and_health_seconds": 0.0032747
+            },
+            "health": {
+              "passed": true,
+              "first_invalid_record": "",
+              "nonfinite_state_values": 0,
+              "out_of_chart_states": 0,
+              "max_energy_error_from_source_seed_5": 2.47955e-05
+            },
+            "state_digest": "ea2a2e5ff6ce7adb",
+            "complete_digest": "c79b636e728e12b1"
+          },
+          {
+            "evidence": "final_benchmark_vulkan_4096_64_2.stdout",
+            "command_evidence": "final_benchmark_vulkan_4096_64_2.command.json",
+            "exit_code": 0,
+            "started_utc": "2026-09-23T05:24:29.292122+00:00",
+            "seconds": 0.157167648,
+            "process_wall_seconds": 0.7969999999986612,
+            "timing": {
+              "runtime_setup_upload_seconds": 0.4653056,
+              "advance_wall_seconds": 0.1674788,
+              "readback_seconds": 0.0055616,
+              "digest_and_health_seconds": 0.0030226
+            },
+            "health": {
+              "passed": true,
+              "first_invalid_record": "",
+              "nonfinite_state_values": 0,
+              "out_of_chart_states": 0,
+              "max_energy_error_from_source_seed_5": 2.47955e-05
+            },
+            "state_digest": "ea2a2e5ff6ce7adb",
+            "complete_digest": "c79b636e728e12b1"
+          },
+          {
+            "evidence": "final_benchmark_vulkan_4096_64_3.stdout",
+            "command_evidence": "final_benchmark_vulkan_4096_64_3.command.json",
+            "exit_code": 0,
+            "started_utc": "2026-09-23T05:24:30.532473+00:00",
+            "seconds": 0.1556144,
+            "process_wall_seconds": 0.9839999999985594,
+            "timing": {
+              "runtime_setup_upload_seconds": 0.6710265,
+              "advance_wall_seconds": 0.1630658,
+              "readback_seconds": 0.0018489,
+              "digest_and_health_seconds": 0.0027174
+            },
+            "health": {
+              "passed": true,
+              "first_invalid_record": "",
+              "nonfinite_state_values": 0,
+              "out_of_chart_states": 0,
+              "max_energy_error_from_source_seed_5": 2.47955e-05
+            },
+            "state_digest": "ea2a2e5ff6ce7adb",
+            "complete_digest": "c79b636e728e12b1"
+          }
+        ],
+        "median_seconds": 0.157167648,
+        "median_mean_epoch_ms": 2.4557444999999998,
+        "state_updates_per_second_using_median": 1667925.9589098133,
+        "median_process_wall_seconds": 0.8590000000003783
+      }
+    },
+    "all_final_digests_equal": true,
+    "cpu_evolution_wall_over_gpu_device_time_ratio": 52.15751081291234,
+    "whole_process_median_ratio": 9.56693830034591
+  },
+  "paired_schedule_benchmark": {
+    "binary_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+    "workload": {
+      "count": 4096,
+      "epochs": 64,
+      "batch": 8
+    },
+    "sequence": [
+      "mono1",
+      "split1",
+      "mono2",
+      "split2",
+      "mono3",
+      "split3"
+    ],
+    "validation_enabled": false,
+    "note": "Three fresh-process pairs after capacity warmed the GPU. Timings still reflect ordinary desktop clock and background variation; no exclusive benchmark environment.",
+    "modes": {
+      "mono": {
+        "samples": [
+          {
+            "evidence": "final_paired_mono_4096_64_1.stdout",
+            "command_evidence": "final_paired_mono_4096_64_1.command.json",
+            "device_seconds": 0.18587728,
+            "advance_wall_seconds": 0.1879848,
+            "process_wall_seconds": 0.6880000000001019,
+            "health_passed": true,
+            "digest": "c79b636e728e12b1",
+            "split_evolution": false,
+            "exit_code": 0
+          },
+          {
+            "evidence": "final_paired_mono_4096_64_2.stdout",
+            "command_evidence": "final_paired_mono_4096_64_2.command.json",
+            "device_seconds": 0.155282368,
+            "advance_wall_seconds": 0.1581923,
+            "process_wall_seconds": 0.75,
+            "health_passed": true,
+            "digest": "c79b636e728e12b1",
+            "split_evolution": false,
+            "exit_code": 0
+          },
+          {
+            "evidence": "final_paired_mono_4096_64_3.stdout",
+            "command_evidence": "final_paired_mono_4096_64_3.command.json",
+            "device_seconds": 0.151656512,
+            "advance_wall_seconds": 0.1546969,
+            "process_wall_seconds": 0.7809999999990396,
+            "health_passed": true,
+            "digest": "c79b636e728e12b1",
+            "split_evolution": false,
+            "exit_code": 0
+          }
+        ],
+        "median_device_seconds": 0.155282368,
+        "median_mean_epoch_ms": 2.426287,
+        "state_updates_per_second": 1688176.213283919,
+        "median_process_wall_seconds": 0.75
+      },
+      "split": {
+        "samples": [
+          {
+            "evidence": "final_paired_split_4096_64_1.stdout",
+            "command_evidence": "final_paired_split_4096_64_1.command.json",
+            "device_seconds": 0.1592552,
+            "advance_wall_seconds": 0.1627967,
+            "process_wall_seconds": 0.6560000000008586,
+            "health_passed": true,
+            "digest": "c79b636e728e12b1",
+            "split_evolution": true,
+            "exit_code": 0
+          },
+          {
+            "evidence": "final_paired_split_4096_64_2.stdout",
+            "command_evidence": "final_paired_split_4096_64_2.command.json",
+            "device_seconds": 0.161960992,
+            "advance_wall_seconds": 0.1649029,
+            "process_wall_seconds": 0.75,
+            "health_passed": true,
+            "digest": "c79b636e728e12b1",
+            "split_evolution": true,
+            "exit_code": 0
+          },
+          {
+            "evidence": "final_paired_split_4096_64_3.stdout",
+            "command_evidence": "final_paired_split_4096_64_3.command.json",
+            "device_seconds": 0.162038464,
+            "advance_wall_seconds": 0.1673579,
+            "process_wall_seconds": 0.7969999999986612,
+            "health_passed": true,
+            "digest": "c79b636e728e12b1",
+            "split_evolution": true,
+            "exit_code": 0
+          }
+        ],
+        "median_device_seconds": 0.161960992,
+        "median_mean_epoch_ms": 2.5306405,
+        "state_updates_per_second": 1618562.5733880415,
+        "median_process_wall_seconds": 0.75
+      }
+    },
+    "all_digests_identical": true,
+    "split_over_mono_median_device_time_ratio": 1.043009545037335,
+    "observation": "Split was slower in two of three pairs and at the median. No measured benefit supporting a GTX default change."
+  },
+  "capacity": {
+    "evidence": "capacity_final95/summary.json",
+    "highest_completed_count": 12244544,
+    "epochs": 2,
+    "state_payload_bytes": 1567301632,
+    "state_ping_pong_bytes": 3134603264,
+    "kernel_seconds": 14.0899049,
+    "state_updates_per_second": 1738059.1404843335,
+    "process_wall_seconds": 36.48500000000058,
+    "timing": {
+      "runtime_setup_upload_seconds": 2.4042194,
+      "advance_wall_seconds": 14.260564,
+      "readback_seconds": 8.2101553,
+      "digest_and_health_seconds": 6.3418221
+    },
+    "stop_reason": "Current memory policy boundary reached",
+    "limiting_factor": "state_heap_0",
+    "policy_fraction": 0.95,
+    "reserve_mib": 128,
+    "absolute_hardware_maximum": false,
+    "numerical_equivalence_claimed_for_full_capacity_population": false,
+    "completed_without_serious_error": true,
+    "health": {
+      "passed": true,
+      "first_invalid_record": "",
+      "nonfinite_state_values": 0,
+      "out_of_chart_states": 0,
+      "max_energy_error_from_source_seed_5": 2.86102e-06
+    },
+    "max_submission_seconds": 0.0381315,
+    "compute_submission_count": 374,
+    "runtime_allocated_total_bytes": 3151412224,
+    "runtime_staging_bytes": 16777216
+  },
+  "limitations": [
+    "This is a normal desktop measurement with dynamic clocks and background activity, not an exclusive hardware benchmark. All timing samples are retained.",
+    "Capacity is the current GPU-budget policy boundary; no absolute maximum or long-horizon full-capacity correctness claim.",
+    "The prior 24.817M updates/s figure used earlier arithmetic, and the pre-compaction2.830M figure used another shader artifact; neither is performance of this final artifact.",
+    "The final code is slower than the measured pre-compaction artifact on this GTX workload. The changes establish numerical and device portability improvements, not a demonstrated speed gain.",
+    "A passing implementation fixture or backend comparison does not prove the original broad physical, universal-computation, permanent-cache or billion-state claims."
+  ],
+  "updated_utc": "2026-09-23T05:34:41.411770+00:00"
+}

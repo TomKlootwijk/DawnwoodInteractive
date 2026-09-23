@@ -1,8 +1,0 @@
-========= COMPUTE-SANITIZER
-Dawnwood Interactive integer-1 | Tom Klootwijk | NL200678942 | 10-07-1990
-NVIDIA GeForce RTX 5070 Ti Laptop GPU | compute 12.0 | 12820480000 bytes total | 11517558784 free
-L2 37748736 | L2 persisting maximum 23592960 | shared/block 49152 | SMs 46
-Field: 3 pages | 768 dichromatic token pairs | 1152 payload bytes | free 11513364480
-Logical active-bank hot set: 69540 bytes; evolve shared allocation: 0 bytes; L2 preference enabled
-Completed 17 Psi intervals, 629 block updates; report C:\Users\Tom\Documents\DawnwoodInteractive\Dawnwood_Interactive_RTX5070Ti_v0.3\Dawnwood_Interactive_RTX5070Ti_v0.3\results\integer\sanitizer\bc5_racecheck.json
-========= RACECHECK SUMMARY: 0 hazards displayed (0 errors, 0 warnings)

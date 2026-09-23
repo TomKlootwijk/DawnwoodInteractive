@@ -1,0 +1,13 @@
+{
+  "name": "android_elf_v04",
+  "command": [
+    "C:\\Users\\ietsm\\AppData\\Local\\Android\\Sdk\\ndk\\29.0.14206865\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\llvm-readelf.exe",
+    "--file-header",
+    "--dynamic",
+    "build-android/libdawnwood_jni.so"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:36:44.713580+00:00",
+  "exit_code": 0,
+  "wall_seconds": 0.06199999991804361
+}

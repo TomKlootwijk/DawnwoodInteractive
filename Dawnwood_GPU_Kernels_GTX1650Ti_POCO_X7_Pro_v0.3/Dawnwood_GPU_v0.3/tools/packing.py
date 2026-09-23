@@ -44,15 +44,67 @@ def bc5_bytes(width:int,height:int,layers:int=1,mips:bool=False)->int:
         width,height=max(1,width//2),max(1,height//2)
 
 def memory_model(count:int,operators:int=31)->dict:
+    """Legacy v0.3/v0.4 full-staging buffer model, retained for old evidence."""
     if count<=0 or operators<31:raise ValueError('Positive count and at least 31 operators required')
     state,ops=count*128,operators*64
-    return {'state_record_bytes':128,'operator_record_bytes':64,
+    return {'model':'legacy_v0.3_v0.4_buffer_payload',
+            'current_runtime_model':False,
+            'state_record_bytes':128,'operator_record_bytes':64,
             'two_state_buffers':2*state,'two_operator_buffers':2*ops,
             'reused_host_visible_staging':max(state,ops),
             'buffer_payload_total':2*state+2*ops+max(state,ops),
             'implicit_child_pointer_bytes':0,
             'comparison_two_uint32_child_pointers_per_operator':8*operators,
             'excluded':'driver allocation padding, pipelines, command buffers, runtime, OS and other applications'}
+
+def memory_model_v05(count:int,operators:int=31,*,max_image_dimension_2d:int|None=None,
+                     split_evolution:bool=False,state_dispatch_limit:int=65536)->dict:
+    """v0.5 resource payload arithmetic, not measured Vulkan allocations.
+
+    Match the runtime's four RGBA32_UINT texels per operator, at most 256
+    operators per row, reusable staging capped at 16 MiB, and optional bounded
+    split-evolution scratch (96 bytes per active chunk state). Supplying the
+    probed image dimension applies that limit; omitting it models the normal
+    256-record row cap without asserting device capability.
+    """
+    if type(count) is not int or type(operators) is not int or count<=0 or operators<31:
+        raise ValueError('Positive integer count and at least 31 integer operators required')
+    if type(split_evolution) is not bool or type(state_dispatch_limit) is not int or not 0<state_dispatch_limit<=65536:
+        raise ValueError('Split evolution requires a bool; state dispatch limit must be 1..65536')
+    per_row=min(256,operators)
+    if max_image_dimension_2d is not None:
+        if type(max_image_dimension_2d) is not int or max_image_dimension_2d<4:
+            raise ValueError('Image dimension must hold four texels per operator')
+        per_row=min(per_row,max_image_dimension_2d//4)
+    width=per_row*4
+    height=(operators+per_row-1)//per_row
+    if max_image_dimension_2d is not None and height>max_image_dimension_2d:
+        raise ValueError('Operator LUT exceeds maxImageDimension2D')
+    state,ops=count*128,operators*64
+    image=width*height*16
+    staging=min(16*1024*1024,max(state,image))
+    scratch=min(count,state_dispatch_limit)*96 if split_evolution else 0
+    return {'model':'v0.5_integer_LUT_and_bounded_staging_payload',
+            'current_runtime_model':True,'measured_allocation':False,
+            'state_record_bytes':128,'operator_record_bytes':64,
+            'two_state_buffers':2*state,'two_operator_record_payloads':2*ops,
+            'operator_lut_format':'RGBA32_UINT','operator_lut_width':width,
+            'operator_lut_height':height,'operator_lut_texels_per_record':4,
+            'max_image_dimension_2d':max_image_dimension_2d,
+            'two_operator_image_texel_payloads':2*image,
+            'two_operator_images_unused_row_texel_bytes':2*(image-ops),
+            'reused_host_visible_staging':staging,'staging_cap_bytes':16*1024*1024,
+            'split_evolution':split_evolution,'state_dispatch_limit':state_dispatch_limit,
+            'evolution_scratch_record_bytes':96,'evolution_scratch_bytes':scratch,
+            'buffer_payload_total':2*state+staging+scratch,
+            'image_texel_payload_total':2*image,
+            'resource_payload_total':2*state+staging+scratch+2*image,
+            'one_host_snapshot_payload':state+ops,
+            'host_snapshot_note':'Separate CPU vector payload, excluded from resource total; run releases the initial snapshot before readback. Verification retains additional snapshots.',
+            'implicit_child_pointer_bytes':0,
+            'comparison_two_uint32_child_pointers_per_operator':8*operators,
+            'excluded':'Vulkan allocation alignment and image tiling, driver/compiler/pipeline memory, command buffers, host snapshots, runtime, OS and other applications',
+            'authority':'Use actual device allocated_buffer_bytes, allocated_image_bytes, allocated_total_bytes and per-heap reports for measured Vulkan allocation; this model does not prove fit.'}
 
 BAYER4=((0,8,2,10),(12,4,14,6),(3,11,1,9),(15,7,13,5))
 def bayer(value:float,x:int,y:int)->int:

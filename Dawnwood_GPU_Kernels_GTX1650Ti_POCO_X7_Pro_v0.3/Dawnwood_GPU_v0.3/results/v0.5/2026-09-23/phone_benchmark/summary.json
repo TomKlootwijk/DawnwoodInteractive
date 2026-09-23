@@ -1,0 +1,162 @@
+{
+  "profile": "DWI-N1-0.5",
+  "apk_sha256": "8c86dbcd791a824b1402a5561c3ef3926a8f539900d0dcdf95b1563d89726430",
+  "count": 4096,
+  "epochs": 64,
+  "batch": 8,
+  "repeats": 3,
+  "device": "Mali-G720 MC7",
+  "schedule": "split evolution (eight dependent dispatches per chunk)",
+  "gpu_timer": "Vulkan device timestamps",
+  "validation_layers_enabled": false,
+  "median_gpu_seconds": 0.1693103924,
+  "median_mean_epoch_milliseconds": 2.64547488125,
+  "median_state_updates_per_second": 1548304.2492789119,
+  "median_app_native_wall_seconds": 5.818,
+  "samples": [
+    {
+      "evidence": "benchmark_4096_64_1_sep23.json",
+      "count": 4096,
+      "epochs": 64,
+      "seconds": 0.1692938539,
+      "mean_epoch_milliseconds": 2.645216467,
+      "health": {
+        "passed": true,
+        "first_invalid_record": "",
+        "nonfinite_state_values": 0,
+        "out_of_chart_states": 0,
+        "max_energy_error_from_source_seed_5": 2.47955e-05
+      },
+      "state_digest": "988816645dbc33c7",
+      "full_digest": "224e948febd94fe5",
+      "timing": {
+        "runtime_setup_upload_seconds": 5.302778462,
+        "advance_wall_seconds": 0.246030461,
+        "readback_seconds": 0.001746769,
+        "digest_and_health_seconds": 0.008899693
+      },
+      "app_native_wall_seconds": 5.665,
+      "android_before": {
+        "model": "2412DPC0AG",
+        "manufacturer": "Xiaomi",
+        "sdk": 36,
+        "abi": "arm64-v8a",
+        "system_total_ram_bytes": 11861921792,
+        "system_available_ram_bytes": 6969716736,
+        "system_low_memory_threshold_bytes": 226492416,
+        "system_low_memory": false,
+        "android_thermal_status": 0,
+        "battery_temperature_celsius": 37
+      },
+      "android_after": {
+        "model": "2412DPC0AG",
+        "manufacturer": "Xiaomi",
+        "sdk": 36,
+        "abi": "arm64-v8a",
+        "system_total_ram_bytes": 11861921792,
+        "system_available_ram_bytes": 6780211200,
+        "system_low_memory_threshold_bytes": 226492416,
+        "system_low_memory": false,
+        "android_thermal_status": 0,
+        "battery_temperature_celsius": 37
+      }
+    },
+    {
+      "evidence": "benchmark_4096_64_2_sep23.json",
+      "count": 4096,
+      "epochs": 64,
+      "seconds": 0.1693103924,
+      "mean_epoch_milliseconds": 2.645474881,
+      "health": {
+        "passed": true,
+        "first_invalid_record": "",
+        "nonfinite_state_values": 0,
+        "out_of_chart_states": 0,
+        "max_energy_error_from_source_seed_5": 2.47955e-05
+      },
+      "state_digest": "988816645dbc33c7",
+      "full_digest": "224e948febd94fe5",
+      "timing": {
+        "runtime_setup_upload_seconds": 5.461505616,
+        "advance_wall_seconds": 0.239979769,
+        "readback_seconds": 0.004088539,
+        "digest_and_health_seconds": 0.008863692
+      },
+      "app_native_wall_seconds": 5.818,
+      "android_before": {
+        "model": "2412DPC0AG",
+        "manufacturer": "Xiaomi",
+        "sdk": 36,
+        "abi": "arm64-v8a",
+        "system_total_ram_bytes": 11861921792,
+        "system_available_ram_bytes": 6912884736,
+        "system_low_memory_threshold_bytes": 226492416,
+        "system_low_memory": false,
+        "android_thermal_status": 0,
+        "battery_temperature_celsius": 37
+      },
+      "android_after": {
+        "model": "2412DPC0AG",
+        "manufacturer": "Xiaomi",
+        "sdk": 36,
+        "abi": "arm64-v8a",
+        "system_total_ram_bytes": 11861921792,
+        "system_available_ram_bytes": 6833905664,
+        "system_low_memory_threshold_bytes": 226492416,
+        "system_low_memory": false,
+        "android_thermal_status": 0,
+        "battery_temperature_celsius": 37
+      }
+    },
+    {
+      "evidence": "benchmark_4096_64_3_sep23.json",
+      "count": 4096,
+      "epochs": 64,
+      "seconds": 0.177697162,
+      "mean_epoch_milliseconds": 2.776518156,
+      "health": {
+        "passed": true,
+        "first_invalid_record": "",
+        "nonfinite_state_values": 0,
+        "out_of_chart_states": 0,
+        "max_energy_error_from_source_seed_5": 2.47955e-05
+      },
+      "state_digest": "988816645dbc33c7",
+      "full_digest": "224e948febd94fe5",
+      "timing": {
+        "runtime_setup_upload_seconds": 5.584377615,
+        "advance_wall_seconds": 0.251523692,
+        "readback_seconds": 0.002547692,
+        "digest_and_health_seconds": 0.008915077
+      },
+      "app_native_wall_seconds": 5.93,
+      "android_before": {
+        "model": "2412DPC0AG",
+        "manufacturer": "Xiaomi",
+        "sdk": 36,
+        "abi": "arm64-v8a",
+        "system_total_ram_bytes": 11861921792,
+        "system_available_ram_bytes": 6981091328,
+        "system_low_memory_threshold_bytes": 226492416,
+        "system_low_memory": false,
+        "android_thermal_status": 0,
+        "battery_temperature_celsius": 37
+      },
+      "android_after": {
+        "model": "2412DPC0AG",
+        "manufacturer": "Xiaomi",
+        "sdk": 36,
+        "abi": "arm64-v8a",
+        "system_total_ram_bytes": 11861921792,
+        "system_available_ram_bytes": 6775382016,
+        "system_low_memory_threshold_bytes": 226492416,
+        "system_low_memory": false,
+        "android_thermal_status": 0,
+        "battery_temperature_celsius": 37
+      }
+    }
+  ],
+  "health_passed_all": true,
+  "digests_identical": true,
+  "timing_scope": "GPU timestamps exclude setup/upload/readback/digest and host gaps. App native wall surrounds the JNI command and includes these phases but excludes ADB launch/report polling. Three fresh app processes, Android debug native build, ordinary USB charging/background environment; not a controlled thermal benchmark."
+}

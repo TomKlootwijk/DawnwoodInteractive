@@ -1,0 +1,15 @@
+{
+  "name": "shaders_split_20260923_v05",
+  "command": [
+    "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "tools/build_shaders.py",
+    "--optimize",
+    "--preserve-math-functions",
+    "--preserve-interpreter-functions"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-23T05:20:46.919879+00:00",
+  "exit_code": 0,
+  "wall_seconds": 2.5,
+  "validation_environment": {}
+}

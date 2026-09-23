@@ -1,0 +1,5 @@
+#version 450
+#extension GL_GOOGLE_include_directive : require
+#extension GL_EXT_control_flow_attributes : require
+#include "evolution_pass.inc"
+void main(){dw_stage_operators();uint local=gl_GlobalInvocationID.x,i=cfg.reserved0+local;if(i>=cfg.count)return;work[local]=dw_prepare(stateIn[i],cfg);}

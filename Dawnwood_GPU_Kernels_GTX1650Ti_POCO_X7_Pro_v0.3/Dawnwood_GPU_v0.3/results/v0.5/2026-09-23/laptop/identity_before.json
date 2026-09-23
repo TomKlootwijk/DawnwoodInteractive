@@ -1,0 +1,56 @@
+{
+  "captured_utc": "2026-09-23T05:09:05.1802571Z",
+  "artifacts": [
+    {
+      "path": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\build\\Release\\dawnwood.exe",
+      "bytes": 565248,
+      "modified_utc": "2026-09-16T12:06:41.3824442Z",
+      "sha256": "20b944a181d52e105150196b1f7e2a4f309b79cc478ebd9185f161e9686085e0"
+    },
+    {
+      "path": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\shaders\\mutate.spv",
+      "bytes": 65468,
+      "modified_utc": "2026-09-16T12:00:23.9487607Z",
+      "sha256": "974dd54b1d61cdf6400441e34bdd7bf44e4c772b501a547cc07c40ac0624898a"
+    },
+    {
+      "path": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\shaders\\evolve.spv",
+      "bytes": 315372,
+      "modified_utc": "2026-09-16T12:00:25.3352139Z",
+      "sha256": "a9f35b74444ca6f124bddd2fe447a4fddab69b0d73100513fcd68ac97d3aef14"
+    },
+    {
+      "path": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\include\\numeric_math.inc",
+      "bytes": 7732,
+      "modified_utc": "2026-09-16T11:59:25.9741480Z",
+      "sha256": "80ef7e378b2be8c26a755063c3347dffc2a697b74d4f656c0879ee6d6092766f"
+    },
+    {
+      "path": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\include\\numeric_types.inc",
+      "bytes": 8600,
+      "modified_utc": "2026-09-16T11:59:25.9591156Z",
+      "sha256": "4a63c9100ca6a3a4bed6e5ce858a51ec8f2bb79a15459ba5af966b13622192ff"
+    },
+    {
+      "path": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\include\\numeric_evolve.inc",
+      "bytes": 5650,
+      "modified_utc": "2026-09-16T11:59:25.9601174Z",
+      "sha256": "f3953913d5db220ab106b5066367eb512d39235cd2918b0db76872a080f570c5"
+    },
+    {
+      "path": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\shaders\\operator_texture.inc",
+      "bytes": 2745,
+      "modified_utc": "2026-09-16T11:27:46.8953813Z",
+      "sha256": "81b3e8045a23190fda3f8991e072b2f4bbb79ede74c51a7bab555fbc40eff914"
+    }
+  ],
+  "nvidia_smi": [
+    "name, driver_version, memory.total [MiB], memory.used [MiB], memory.free [MiB], temperature.gpu, power.draw [W]",
+    "NVIDIA GeForce GTX 1650 Ti with Max-Q Design, 581.80, 4096 MiB, 130 MiB, 3806 MiB, 44, 4.25 W"
+  ],
+  "current_memory": {
+    "TotalVisibleMemorySize": 16535496,
+    "FreePhysicalMemory": 1827108
+  },
+  "note": "Read-only identity capture before validation and timed runs; free memory is a transient observation."
+}

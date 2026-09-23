@@ -1,0 +1,12 @@
+{
+  "name": "shaders_release_v04",
+  "command": [
+    "python",
+    "tools/build_shaders.py"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:44:54.844115+00:00",
+  "exit_code": 0,
+  "wall_seconds": 0.4690000000409782,
+  "validation_environment": {}
+}

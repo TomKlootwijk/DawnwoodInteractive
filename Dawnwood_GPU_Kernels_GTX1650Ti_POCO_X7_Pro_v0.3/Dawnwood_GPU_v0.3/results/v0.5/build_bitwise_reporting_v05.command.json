@@ -1,0 +1,17 @@
+{
+  "name": "build_bitwise_reporting_v05",
+  "command": [
+    "C:\\Users\\ietsm\\AppData\\Local\\Android\\Sdk\\cmake\\3.31.6\\bin\\cmake.exe",
+    "--build",
+    "build",
+    "--config",
+    "Release",
+    "-j",
+    "4"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T12:03:21.406195+00:00",
+  "exit_code": 0,
+  "wall_seconds": 4.4689999998081475,
+  "validation_environment": {}
+}

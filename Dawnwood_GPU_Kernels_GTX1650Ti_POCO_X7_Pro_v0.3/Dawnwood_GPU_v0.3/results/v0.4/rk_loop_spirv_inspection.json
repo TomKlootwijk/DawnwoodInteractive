@@ -1,0 +1,36 @@
+[
+  {
+    "variant": "O0",
+    "path": "C:\\DawnwoodInteractive\\tmp\\validation_v04\\mali_rk_loop\\evolve_O0.spv",
+    "bytes": 76212,
+    "sha256": "4afe3dca3da41ff216077b393af8cbda63eb3eda8743b1124566997a06da9646",
+    "seconds_compile_validate_disassemble": 0.2777223999146372,
+    "instructions": 4680,
+    "function_definitions": 21,
+    "function_calls": 67,
+    "variables": 315,
+    "loop_merges": 5,
+    "DontUnroll_loops": 5,
+    "NoContraction_decorations": 264,
+    "basic_float_arithmetic_count": 237,
+    "undecorated_arithmetic": [],
+    "validation_exit_code": 0
+  },
+  {
+    "variant": "O",
+    "path": "C:\\DawnwoodInteractive\\tmp\\validation_v04\\mali_rk_loop\\evolve_O.spv",
+    "bytes": 268608,
+    "sha256": "b58cdccae0ca0624e3f6750fa91fccb2ac5b4ee771d9ea45084a6a9b7340a31c",
+    "seconds_compile_validate_disassemble": 1.45043780002743,
+    "instructions": 16724,
+    "function_definitions": 1,
+    "function_calls": 0,
+    "variables": 5,
+    "loop_merges": 68,
+    "DontUnroll_loops": 68,
+    "NoContraction_decorations": 3937,
+    "basic_float_arithmetic_count": 3667,
+    "undecorated_arithmetic": [],
+    "validation_exit_code": 0
+  }
+]

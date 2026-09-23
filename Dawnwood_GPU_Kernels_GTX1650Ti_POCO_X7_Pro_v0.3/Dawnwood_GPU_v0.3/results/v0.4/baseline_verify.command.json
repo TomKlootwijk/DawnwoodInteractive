@@ -1,0 +1,17 @@
+{
+  "name": "baseline_verify",
+  "command": [
+    "C:\\DawnwoodInteractive\\tmp\\validation_v04\\baseline\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\build\\Release\\dawnwood.exe",
+    "verify",
+    "--device",
+    "1650 Ti",
+    "--count",
+    "128",
+    "--steps",
+    "16"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:33:31.164858+00:00",
+  "exit_code": 0,
+  "wall_seconds": 5.061999999918044
+}

@@ -1,0 +1,28 @@
+{
+  "name": "edge_lut_staging_seed_v05",
+  "command": [
+    "build\\Release\\dawnwood.exe",
+    "run",
+    "--backend",
+    "cpu",
+    "--count",
+    "1",
+    "--operators",
+    "262145",
+    "--depth",
+    "4",
+    "--steps",
+    "0",
+    "--checkpoint",
+    "results\\v0.5\\edge_lut_staging_seed.dwk"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T12:02:28.238194+00:00",
+  "exit_code": 0,
+  "wall_seconds": 0.07800000021234155,
+  "validation_environment": {
+    "DAWNWOOD_VALIDATION": "1",
+    "VK_LAYER_PATH": "C:\\DawnwoodInteractive\\tmp\\validation_v04\\layers",
+    "VK_LAYER_VALIDATE_SYNC": "1"
+  }
+}

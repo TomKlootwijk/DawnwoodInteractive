@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.22)
-project(DawnwoodGPU VERSION 0.3.0 LANGUAGES CXX)
+project(DawnwoodGPU VERSION 0.5.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 # Refuse stale CPU/shader equation pairs even on an Android build without Python.
 set(DW_SHADER_HASH_INPUT "")
-foreach(DW_SOURCE include/numeric_types.inc include/numeric_evolve.inc shaders/mutate.comp shaders/evolve.comp)
+foreach(DW_SOURCE include/numeric_types.inc include/numeric_math.inc include/numeric_evolve.inc shaders/mutate.comp shaders/evolve.comp shaders/operator_texture.inc shaders/evolution_pass.inc shaders/prepare.comp shaders/slope.comp shaders/combine.comp shaders/geometry.comp shaders/finish.comp)
   file(SHA256 "${CMAKE_CURRENT_SOURCE_DIR}/${DW_SOURCE}" DW_PART_HASH)
   string(APPEND DW_SHADER_HASH_INPUT "${DW_PART_HASH}")
 endforeach()

@@ -1,0 +1,26 @@
+[
+  {
+    "shader": "mutate",
+    "bytes": 46860,
+    "sha256": "9c916bb1091c0d1dc8596b825db2e47cfd10532125b93e8dfe83c5f984349a9d",
+    "DontUnroll_loops": 3,
+    "NoContraction_decorations": 118,
+    "basic_float_arithmetic_count": 97,
+    "undecorated_arithmetic": [],
+    "capabilities": [
+      "Shader"
+    ]
+  },
+  {
+    "shader": "evolve",
+    "bytes": 77192,
+    "sha256": "faf8cb706bb3459a1372749324dbd7dffb93b8fba9567de8e4ecf01112da0bd0",
+    "DontUnroll_loops": 4,
+    "NoContraction_decorations": 265,
+    "basic_float_arithmetic_count": 238,
+    "undecorated_arithmetic": [],
+    "capabilities": [
+      "Shader"
+    ]
+  }
+]

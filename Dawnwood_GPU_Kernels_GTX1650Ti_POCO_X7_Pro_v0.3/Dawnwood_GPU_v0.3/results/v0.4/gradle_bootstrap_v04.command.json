@@ -1,0 +1,11 @@
+{
+  "name": "gradle_bootstrap_v04",
+  "command": [
+    "python",
+    "tools/bootstrap_gradle.py"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:37:34.983891+00:00",
+  "exit_code": 0,
+  "wall_seconds": 0.9680000001098961
+}

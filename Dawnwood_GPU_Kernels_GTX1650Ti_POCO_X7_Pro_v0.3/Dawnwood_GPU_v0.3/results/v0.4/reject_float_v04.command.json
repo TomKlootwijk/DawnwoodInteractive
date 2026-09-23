@@ -1,0 +1,18 @@
+{
+  "name": "reject_float_v04",
+  "command": [
+    "build/Release/dawnwood.exe",
+    "run",
+    "--backend",
+    "cpu",
+    "--dt",
+    "0.01oops",
+    "--steps",
+    "1"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:38:59.607757+00:00",
+  "exit_code": 1,
+  "wall_seconds": 0.031999999890103936,
+  "validation_environment": {}
+}

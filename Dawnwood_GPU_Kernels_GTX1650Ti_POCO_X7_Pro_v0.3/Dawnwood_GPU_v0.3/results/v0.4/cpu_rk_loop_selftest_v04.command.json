@@ -1,0 +1,12 @@
+{
+  "name": "cpu_rk_loop_selftest_v04",
+  "command": [
+    "build/Release/dawnwood.exe",
+    "selftest"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:51:10.249102+00:00",
+  "exit_code": 0,
+  "wall_seconds": 0.0470000000204891,
+  "validation_environment": {}
+}

@@ -1,0 +1,242 @@
+{
+  "kind": "Read-only inspection of compact SPIR-V modules",
+  "utc": "2026-09-23T05:15:31.231454+00:00",
+  "method": "Decode module instructions using installed Khronos SPIR-V grammar and GLSL.std.450 headers. No execution or device compiler guarantee is implied.",
+  "grammar": "C:\\Users\\ietsm\\AppData\\Local\\Android\\Sdk\\ndk\\29.0.14206865\\sources\\third_party\\shaderc\\third_party\\spirv-tools\\external\\spirv-headers\\include\\spirv\\unified1\\spirv.core.grammar.json",
+  "prior_evolve": {
+    "bytes": 315372,
+    "sha256": "a9f35b74444ca6f124bddd2fe447a4fddab69b0d73100513fcd68ac97d3aef14",
+    "main_instructions": 14532,
+    "arithmetic_instructions": 3682,
+    "no_contraction_arithmetic": 3682,
+    "naive_fully_inlined_estimate_bytes": 2401672,
+    "naive_fully_inlined_estimate_instructions": 149816
+  },
+  "shaders": [
+    {
+      "shader": "mutate",
+      "bytes": 62436,
+      "sha256": "e32089514da856ec8e64c017479236ef3f54bd29ded8284fc65ace59baed6773",
+      "arithmetic_instructions": 444,
+      "no_contraction_arithmetic": 444,
+      "without_no_contraction": [],
+      "native_elementary_instructions": {
+        "Sin": 0,
+        "Cos": 0,
+        "Exp": 0,
+        "Sqrt": 1,
+        "Fma": 0
+      },
+      "loop_control_masks": {
+        "2": 24
+      },
+      "dont_unroll_loop_count": 24,
+      "naive_fully_inlined_estimate": {
+        "bytes": 248980,
+        "instructions": 15534,
+        "note": "Static recursive function-size substitution, before cleanup or backend lowering; not measured compiler memory or machine code."
+      },
+      "functions": [
+        {
+          "id": 4,
+          "name": "main",
+          "function_control_mask": 0,
+          "bytes": 35296,
+          "instructions": 2115,
+          "calls": {
+            "dw_exp(f1;": 3,
+            "dw_cos(f1;": 9,
+            "dw_sin(f1;": 9,
+            "dw_sqrt(f1;": 27,
+            "dw_div(f1;f1;": 12
+          },
+          "DontInline": false,
+          "called_from_static_sites": 0
+        },
+        {
+          "id": 29,
+          "name": "dw_div(f1;f1;",
+          "function_control_mask": 2,
+          "bytes": 4656,
+          "instructions": 290,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 12
+        },
+        {
+          "id": 42,
+          "name": "dw_trig_reduce(f1;u1;",
+          "function_control_mask": 2,
+          "bytes": 3584,
+          "instructions": 228,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 33,
+          "name": "dw_sqrt(f1;",
+          "function_control_mask": 2,
+          "bytes": 2540,
+          "instructions": 161,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 27
+        },
+        {
+          "id": 57,
+          "name": "dw_exp(f1;",
+          "function_control_mask": 2,
+          "bytes": 1892,
+          "instructions": 118,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 3
+        },
+        {
+          "id": 51,
+          "name": "dw_sin(f1;",
+          "function_control_mask": 2,
+          "bytes": 1132,
+          "instructions": 68,
+          "calls": {
+            "dw_trig_reduce(f1;u1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 9
+        },
+        {
+          "id": 54,
+          "name": "dw_cos(f1;",
+          "function_control_mask": 2,
+          "bytes": 984,
+          "instructions": 58,
+          "calls": {
+            "dw_trig_reduce(f1;u1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 9
+        }
+      ],
+      "all_basic_float_arithmetic_no_contraction": true
+    },
+    {
+      "shader": "evolve",
+      "bytes": 164448,
+      "sha256": "1e024c7653b3e792dcdc03cc46f63b6a08ab3e0119b369717dc5340c92d7ec59",
+      "arithmetic_instructions": 1362,
+      "no_contraction_arithmetic": 1362,
+      "without_no_contraction": [],
+      "native_elementary_instructions": {
+        "Sin": 0,
+        "Cos": 0,
+        "Exp": 0,
+        "Sqrt": 1,
+        "Fma": 0
+      },
+      "loop_control_masks": {
+        "2": 63
+      },
+      "dont_unroll_loop_count": 63,
+      "naive_fully_inlined_estimate": {
+        "bytes": 950056,
+        "instructions": 59210,
+        "note": "Static recursive function-size substitution, before cleanup or backend lowering; not measured compiler memory or machine code."
+      },
+      "functions": [
+        {
+          "id": 4,
+          "name": "main",
+          "function_control_mask": 0,
+          "bytes": 124040,
+          "instructions": 7368,
+          "calls": {
+            "dw_exp(f1;": 11,
+            "dw_cos(f1;": 35,
+            "dw_sin(f1;": 39,
+            "dw_sqrt(f1;": 90,
+            "dw_div(f1;f1;": 50
+          },
+          "DontInline": false,
+          "called_from_static_sites": 0
+        },
+        {
+          "id": 29,
+          "name": "dw_div(f1;f1;",
+          "function_control_mask": 2,
+          "bytes": 4656,
+          "instructions": 290,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 50
+        },
+        {
+          "id": 42,
+          "name": "dw_trig_reduce(f1;u1;",
+          "function_control_mask": 2,
+          "bytes": 3584,
+          "instructions": 228,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 33,
+          "name": "dw_sqrt(f1;",
+          "function_control_mask": 2,
+          "bytes": 2540,
+          "instructions": 161,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 90
+        },
+        {
+          "id": 57,
+          "name": "dw_exp(f1;",
+          "function_control_mask": 2,
+          "bytes": 1892,
+          "instructions": 118,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 11
+        },
+        {
+          "id": 51,
+          "name": "dw_sin(f1;",
+          "function_control_mask": 2,
+          "bytes": 1132,
+          "instructions": 68,
+          "calls": {
+            "dw_trig_reduce(f1;u1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 39
+        },
+        {
+          "id": 54,
+          "name": "dw_cos(f1;",
+          "function_control_mask": 2,
+          "bytes": 984,
+          "instructions": 58,
+          "calls": {
+            "dw_trig_reduce(f1;u1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 35
+        }
+      ],
+      "all_basic_float_arithmetic_no_contraction": true
+    }
+  ],
+  "source_dependency_review": {
+    "numerical_equivalence_measured_by_this_inspection": false,
+    "findings": [
+      "Derivative requests retain phi -> colon -> growth -> blend -> selected -> pinion -> phase-motion dependencies. The selected downstream branch continues without dw_apply.",
+      "Derivative d.u/d.v/d.rho are written after the pinion result and before phase-motion evaluation, matching the original ordering.",
+      "Post-evolution phase requests use original outState before complex amplitude writes; phase expression keeps its original left-to-right grouping.",
+      "Complex rotation occurs after phase requests, inverse transform after angle request, phase response after inverse, and history after response.",
+      "Triangle and cone coordinates, signed values, and original nested minimum ordering are unchanged.",
+      "No numeric_math.inc changes were made. Hardware and baseline checkpoint comparisons are still required."
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "lut_edit_v05",
+  "command": [
+    "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "tools\\edit_checkpoint.py",
+    "results\\v0.5\\lut_seed.dwk",
+    "--index",
+    "256",
+    "--set",
+    "results\\v0.5\\lut_flags.json",
+    "--out",
+    "results\\v0.5\\lut_flags.dwk"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T11:56:54.840052+00:00",
+  "exit_code": 0,
+  "wall_seconds": 0.09399999980814755,
+  "validation_environment": {}
+}

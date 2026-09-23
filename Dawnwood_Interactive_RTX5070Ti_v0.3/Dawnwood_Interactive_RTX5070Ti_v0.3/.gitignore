@@ -1,7 +1,0 @@
-build*/
-work/
-*.partial
-*.snapshot
-*.ncu-rep
-__pycache__/
-*.pyc

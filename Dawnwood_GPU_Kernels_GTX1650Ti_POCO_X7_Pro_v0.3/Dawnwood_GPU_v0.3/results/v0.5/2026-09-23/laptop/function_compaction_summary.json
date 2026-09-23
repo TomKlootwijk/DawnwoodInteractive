@@ -1,0 +1,149 @@
+{
+  "profile": "DWI-N1-0.5",
+  "stage": "Compacted shared helper equations and preserved function boundaries",
+  "created_utc": "2026-09-23T05:19:07.588573+00:00",
+  "identity": {
+    "utc": "2026-09-23T05:17:16.613633+00:00",
+    "stage": "Compacted shared equations plus preserved function boundaries; clean successful rebuild.",
+    "artifacts": [
+      {
+        "source": "build/Release/dawnwood.exe",
+        "retained_copy": "dawnwood.exe",
+        "sha256": "fd3da2704959dc2bf4aa8e1e22bc33e210bca754b238c0d719fa78da2a0bc08f",
+        "bytes": 308224
+      },
+      {
+        "source": "shaders/mutate.spv",
+        "retained_copy": "mutate.spv",
+        "sha256": "66ca0d7a044f4b7370fd9cccfd396ebf7141120d5d2f268639ac4a6e45b66b8f",
+        "bytes": 46636,
+        "complete_spirv_payload_found_in_executable": true
+      },
+      {
+        "source": "shaders/evolve.spv",
+        "retained_copy": "evolve.spv",
+        "sha256": "e21dee428e61ed9d8e9e2d53493a3d408a24057c5dfed5a62b6fce2d726ece22",
+        "bytes": 74920,
+        "complete_spirv_payload_found_in_executable": true
+      },
+      {
+        "source": "include/numeric_types.inc",
+        "retained_copy": "numeric_types.inc",
+        "sha256": "4aa589d30453112d40b71868d7d87fed6de843bab01057acc92516ba01a65d53",
+        "bytes": 8976
+      },
+      {
+        "source": "include/numeric_evolve.inc",
+        "retained_copy": "numeric_evolve.inc",
+        "sha256": "b0bd9cc75737d40a7207de897d53168b710365e83dc97b634c75be59ac5ddebd",
+        "bytes": 6944
+      }
+    ]
+  },
+  "cpu_vulkan_verifications": [
+    {
+      "evidence": "compact_verify_257_1024.stdout",
+      "command_evidence": "compact_verify_257_1024.command.json",
+      "exit_code": 0,
+      "count": 257,
+      "epochs_checked": 1024,
+      "passed": true,
+      "aggregate": {
+        "passed": true,
+        "bitwise_word_mismatches": 0,
+        "bitwise_equal": true,
+        "float_mismatches": 0,
+        "integer_mismatches": 0,
+        "nonfinite_values": 0,
+        "invalid_snapshots": 0,
+        "worst_scaled_error": 0,
+        "max_absolute_error": 0,
+        "first_mismatch": ""
+      },
+      "validation": {
+        "validation_layer_enabled": true,
+        "validation_errors": 0,
+        "validation_warnings": 0
+      }
+    },
+    {
+      "evidence": "compact_verify_65537_4.stdout",
+      "command_evidence": "compact_verify_65537_4.command.json",
+      "exit_code": 0,
+      "count": 65537,
+      "epochs_checked": 4,
+      "passed": true,
+      "aggregate": {
+        "passed": true,
+        "bitwise_word_mismatches": 0,
+        "bitwise_equal": true,
+        "float_mismatches": 0,
+        "integer_mismatches": 0,
+        "nonfinite_values": 0,
+        "invalid_snapshots": 0,
+        "worst_scaled_error": 0,
+        "max_absolute_error": 0,
+        "first_mismatch": ""
+      },
+      "validation": {
+        "validation_layer_enabled": true,
+        "validation_errors": 0,
+        "validation_warnings": 0
+      }
+    }
+  ],
+  "cpu_checkpoint_before_after": {
+    "kind": "Existing CLI full CPU checkpoint identity, before versus after shared-source compaction",
+    "comparisons": [
+      {
+        "count": 4096,
+        "epochs": 64,
+        "byte_identical": true,
+        "artifacts": [
+          {
+            "file": "checkpoints/before_4096_64.dwk",
+            "sha256": "1daa72e62cb1ab2c341e9c6b469296304f535bd235aef11d6b24e4587943adeb",
+            "bytes": 526352
+          },
+          {
+            "file": "checkpoints/after_4096_64.dwk",
+            "sha256": "1daa72e62cb1ab2c341e9c6b469296304f535bd235aef11d6b24e4587943adeb",
+            "bytes": 526352
+          }
+        ]
+      },
+      {
+        "count": 257,
+        "epochs": 1024,
+        "byte_identical": true,
+        "artifacts": [
+          {
+            "file": "checkpoints/before_257_1024.dwk",
+            "sha256": "de63880c5f291a591c36953ed17a354893e91a65f3f84f5adc9e9f91209c27e6",
+            "bytes": 34960
+          },
+          {
+            "file": "checkpoints/after_257_1024.dwk",
+            "sha256": "de63880c5f291a591c36953ed17a354893e91a65f3f84f5adc9e9f91209c27e6",
+            "bytes": 34960
+          }
+        ]
+      }
+    ]
+  },
+  "existing_claims": {
+    "evidence": "claims_compact/summary.json",
+    "python_tests": {
+      "tests_run": 17,
+      "failures": 0,
+      "errors": 0,
+      "passed": true
+    },
+    "cpu_tests_passed": true,
+    "body_coverage_passed": true,
+    "checkpoint_replay_passed": true
+  },
+  "performance_measured_for_this_artifact": false,
+  "capacity_measured_for_this_artifact": false,
+  "note": "Per root direction, no timing or capacity reruns until phone compiler mitigation settles; pre-compaction timings must retain their earlier artifact identity."
+}

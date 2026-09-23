@@ -1,0 +1,62 @@
+{
+  "version": "0.5.0",
+  "profile": "DWI-N1-0.5",
+  "utc": "2026-09-23T05:29:20.750713+00:00",
+  "windows_exe_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+  "android_apk_sha256": "8c86dbcd791a824b1402a5561c3ef3926a8f539900d0dcdf95b1563d89726430",
+  "android_native_library_sha256": "3a3b19cdccdc6bcea8737493c771ea04416e3bb4c2b36c2d807a96347d1ddbc4",
+  "shader_source_fingerprint": "3b89050cd591cdb79f670f19a201b6e3feebb1cf0c44ffc138528d63958314fd",
+  "shaders": [
+    {
+      "name": "combine.spv",
+      "bytes": 44164,
+      "sha256": "3ac940666b1d806bb1f86002ff8b1427b4199fb8aaf952c9a570b4fb74cbd337",
+      "exact_payload_in_windows_exe": true,
+      "exact_payload_in_android_library": true
+    },
+    {
+      "name": "evolve.spv",
+      "bytes": 75068,
+      "sha256": "4e18c053e65557444b7b3062d47b67dfc5a5d4ff390f894c4fd45bb9e7eccde0",
+      "exact_payload_in_windows_exe": true,
+      "exact_payload_in_android_library": true
+    },
+    {
+      "name": "finish.spv",
+      "bytes": 50328,
+      "sha256": "5c0033ab585514e8f618006acc205c842f0f114d81841913b87a75626b813948",
+      "exact_payload_in_windows_exe": true,
+      "exact_payload_in_android_library": true
+    },
+    {
+      "name": "geometry.spv",
+      "bytes": 44236,
+      "sha256": "4edf5f2b1ac570ad5537adc268d46f84d7bc6542280291042ec6e9f9f0874a59",
+      "exact_payload_in_windows_exe": true,
+      "exact_payload_in_android_library": true
+    },
+    {
+      "name": "mutate.spv",
+      "bytes": 46636,
+      "sha256": "66ca0d7a044f4b7370fd9cccfd396ebf7141120d5d2f268639ac4a6e45b66b8f",
+      "exact_payload_in_windows_exe": true,
+      "exact_payload_in_android_library": true
+    },
+    {
+      "name": "prepare.spv",
+      "bytes": 43972,
+      "sha256": "3ab3f4276da3e6b31185398c44c637d66baeaae0f735001ba8079ca0cf423387",
+      "exact_payload_in_windows_exe": true,
+      "exact_payload_in_android_library": true
+    },
+    {
+      "name": "slope.spv",
+      "bytes": 61984,
+      "sha256": "55787aefb2bcb76e11fcc1ad5d84cd240ecd259f6d3effd0f326802a96cfb04c",
+      "exact_payload_in_windows_exe": true,
+      "exact_payload_in_android_library": true
+    }
+  ],
+  "android_variant": "Debug APK, arm64-v8a, NDK 29.0.14206865 / CMake 3.31.6; CPU native build not a release-speed baseline",
+  "initialization_scope": "Host native libm generates initial coordinates; per-device CPU/GPU comparisons share that snapshot."
+}

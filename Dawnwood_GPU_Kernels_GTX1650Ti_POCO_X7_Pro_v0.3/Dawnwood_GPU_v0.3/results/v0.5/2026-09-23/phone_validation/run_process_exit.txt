@@ -1,0 +1,1 @@
+The app process disappeared without a completed report; this is not a passed test.

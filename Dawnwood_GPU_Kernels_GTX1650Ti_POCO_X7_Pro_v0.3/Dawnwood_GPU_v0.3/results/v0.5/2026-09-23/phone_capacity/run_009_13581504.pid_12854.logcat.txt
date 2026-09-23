@@ -1,0 +1,203 @@
+--------- beginning of main
+09-23 07:31:53.789 12854 12854 E Zygote  : process_name_ptr:12854 nl.dawnwood.kernel
+09-23 07:31:53.789 12854 12854 E Zygote  : SetMemoryProtected process_name_ptr:12854 nl.dawnwood.kernel
+09-23 07:31:53.796 12854 12854 I dawnwood.kernel: Late-enabling -Xcheck:jni
+09-23 07:31:53.820 12854 12854 I dawnwood.kernel: Using generational CollectorTypeCMC GC.
+09-23 07:31:53.826 12854 12854 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+--------- beginning of system
+09-23 07:31:53.833 12854 12854 I ActivityThread: Current dynamic renderEngine type=0
+09-23 07:31:53.846 12854 13746 D MiuiDownscaleImpl: set override inverted scale : 1.0
+09-23 07:31:53.848 12854 12854 I RENDER_TURBO: onActivityThreadCreate not in white list, pkg=nl.dawnwood.kernel, type=rodin
+09-23 07:31:53.850 12854 13746 D AppScoutStateMachine: 12854-ScoutStateMachinecreated
+09-23 07:31:53.859 12854 12854 D ActivityThread: setEmbeddedParam packageName=nl.dawnwood.kernel processName=nl.dawnwood.kernel isEmbedded=false isIsolated=false
+09-23 07:31:53.863 12854 12854 D nativeloader: Configuring clns-10 for other apk /data/app/~~qst5v4rslEemuKHmx84faQ==/nl.dawnwood.kernel-9rvcyYMPgXNNjI7o8rGVuQ==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~qst5v4rslEemuKHmx84faQ==/nl.dawnwood.kernel-9rvcyYMPgXNNjI7o8rGVuQ==/lib/arm64:/data/app/~~qst5v4rslEemuKHmx84faQ==/nl.dawnwood.kernel-9rvcyYMPgXNNjI7o8rGVuQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/nl.dawnwood.kernel
+09-23 07:31:53.864 12854 12854 D CompatChangeReporter: Compat change id reported: 202956589; UID 10432; state: ENABLED
+09-23 07:31:53.867 12854 12854 I dawnwood.kernel: AssetManager2(0xb400007a1e076778) locale list changing from [] to [en-GB]
+09-23 07:31:53.869 12854 12854 E MiuiPreloadClassImpl: invoke error.
+09-23 07:31:53.870 12854 12854 D HWUI    : [HWUI] Flag vulkan_enhance_pipeline_cache enabled
+09-23 07:31:53.870 12854 12854 D HWUI    : [HWUI] EnhanceVkPipelineCache is enabled
+09-23 07:31:53.870 12854 12854 D HWUI    : [HWUI] Flag ddre enabled
+09-23 07:31:53.871 12854 12854 V GraphicsEnvironment: Currently set values for:
+09-23 07:31:53.871 12854 12854 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[com.android.angle, com.linecorp.b612.android, com.campmobile.snow, com.google.android.apps.tachyon]
+09-23 07:31:53.871 12854 12854 V GraphicsEnvironment:   angle_gl_driver_selection_values=[angle, native, native, native]
+09-23 07:31:53.871 12854 12854 V GraphicsEnvironment: nl.dawnwood.kernel is not listed in per-application setting
+09-23 07:31:53.871 12854 12854 V GraphicsEnvironment: ANGLE allowlist from config: 
+09-23 07:31:53.871 12854 12854 V GraphicsEnvironment: nl.dawnwood.kernel is not listed in ANGLE allowlist or settings, returning default
+09-23 07:31:53.871 12854 12854 V GraphicsEnvironment: App is not on the allowlist for updatable production driver.
+09-23 07:31:53.877 12854 13764 D MiuiMonitorThread: Shared singleton Thread for stability monitor start
+09-23 07:31:53.880 12854 12854 D ResMonitorStub: The current process type is: third_party_app, process name is: nl.dawnwood.kernel
+09-23 07:31:53.882 12854 13764 I ActivityThread: TrafficStats init done
+09-23 07:31:53.885 12854 13764 I ForceDarkHelperStubImpl: initialize for nl.dawnwood.kernel , ForceDarkAppConfig: null
+09-23 07:31:53.886 12854 13764 D nativeloader: Load libforcedarkimpl.so using system ns (caller=/system_ext/framework/miui-framework.jar): ok
+09-23 07:31:53.886 12854 13764 D HWUI    : JNI_OnLoad success
+09-23 07:31:53.886 12854 13764 I MiuiForceDarkConfig: setConfig density:3.250000, mainRule:0, secondaryRule:0, tertiaryRule:0
+09-23 07:31:53.893 12854 13764 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+09-23 07:31:53.896 12854 13764 I ActivityThread: Miui Feature Init done
+09-23 07:31:53.904 12854 12854 D HWUI    : [HWUI] Flag vulkan_enhance_pipeline_cache enabled
+09-23 07:31:53.904 12854 12854 D HWUI    : [HWUI] EnhanceVkPipelineCache is enabled
+09-23 07:31:53.904 12854 12854 D HWUI    : [HWUI] Flag ddre enabled
+09-23 07:31:53.904 12854 12854 D dawnwood.kernel: blurUtils, initBackgroundBlurMinInterval processName(nl.dawnwood.kernel), inWhiteLists(0)
+09-23 07:31:53.905 12854 13764 I ActivityThread: HardwareRenderer preload  done
+09-23 07:31:53.906 12854 13778 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+09-23 07:31:53.907 12854 12854 I dawnwood.kernel: AssetManager2(0xb400007a1e076db8) locale list changing from [] to [en-GB]
+09-23 07:31:53.918 12854 12854 D nativeloader: Load /data/app/~~qst5v4rslEemuKHmx84faQ==/nl.dawnwood.kernel-9rvcyYMPgXNNjI7o8rGVuQ==/base.apk!/lib/arm64-v8a/libdawnwood_jni.so using class loader ns clns-10 (caller=/data/app/~~qst5v4rslEemuKHmx84faQ==/nl.dawnwood.kernel-9rvcyYMPgXNNjI7o8rGVuQ==/base.apk!classes2.dex): ok
+09-23 07:31:53.918 12854 13778 W libc    : Access denied finding property "vendor.mivk.log.debug"
+09-23 07:31:53.919 12854 13778 D vulkan  : searching for layers in '/data/app/~~qst5v4rslEemuKHmx84faQ==/nl.dawnwood.kernel-9rvcyYMPgXNNjI7o8rGVuQ==/lib/arm64'
+09-23 07:31:53.919 12854 13778 D vulkan  : searching for layers in '/data/app/~~qst5v4rslEemuKHmx84faQ==/nl.dawnwood.kernel-9rvcyYMPgXNNjI7o8rGVuQ==/base.apk!/lib/arm64-v8a'
+09-23 07:31:53.923 12854 13778 D MMUD    : mtk_memory_debug_init nl.dawnwood.kernel 0xb400007c07dc7230
+09-23 07:31:53.925 12854 13778 I MMUD    : [MEMPROF] Memory instrumentation via debugfs (Experimental) enabled 0
+09-23 07:31:53.928 12854 12854 D CompatChangeReporter: Compat change id reported: 279646685; UID 10432; state: ENABLED
+09-23 07:31:53.930 12854 12854 D CompatChangeReporter: Compat change id reported: 63938206; UID 10432; state: ENABLED
+09-23 07:31:53.931 12854 13778 I libEGL  : shader cache num entries: 4
+09-23 07:31:53.931 12854 13778 D HWUI    : [HWUI] Flag vulkan_enhance_pipeline_cache enabled
+09-23 07:31:53.931 12854 13778 D HWUI    : [HWUI] EnhanceVkPipelineCache is enabled
+09-23 07:31:53.931 12854 13778 D HWUI    : [HWUI] Flag ddre enabled
+09-23 07:31:53.932 12854 13778 D SKIA    : [Skia] Flag vulkan_enhance_pipeline_cache enabled
+09-23 07:31:53.932 12854 13778 D SKIA    : [Skia] EnhanceVkPipelineCache is true
+09-23 07:31:53.941 12854 12854 D CompatChangeReporter: Compat change id reported: 352594277; UID 10432; state: ENABLED
+09-23 07:31:53.950 12854 12854 D ScrollerOptimizationManager: registerConfigChangedListener
+09-23 07:31:53.954 12854 12854 D SplineOverScroller: dynamic params is false
+09-23 07:31:53.957 12854 12854 D CompatChangeReporter: Compat change id reported: 309578419; UID 10432; state: ENABLED
+09-23 07:31:53.958 12854 12854 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+09-23 07:31:53.961 12854 12854 D DecorView: updateFreeformOutlineFromActivity, inFreeform=false,inFreeformWindowMode=false
+09-23 07:31:53.968 12854 12854 D Activity: Activity = ActivityInfo{1d30f70 nl.dawnwood.kernel.MainActivity}, Resume onConfigurationChanged = {1.0 204mcc16mnc [en_GB,en_NL,nl_NL] ldltr sw375dp w375dp h834dp 520dpi nrml long hdr widecg port night finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1220, 2712) mAppBounds=Rect(0, 0 - 1220, 2712) mMaxBounds=Rect(0, 0 - 1220, 2712) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0 mInSplitScreen=false letterBoxed=false foScaled=false isSpecificEmbedded=false embeddingScale=1.0} s.2 fontWeightAdjustment=0/d/0 themeChanged=0 themeChangedFlags=0 display=0 extraData = Bundle[{}] screenType=0/0}
+09-23 07:31:53.976 12854 12854 D nativeloader: Load libpowerhalwrap_jni.so using system ns (caller=/system_ext/framework/mediatek-framework.jar): ok
+09-23 07:31:53.977 12854 12854 I PowerHalWrapper: PowerHalWrapper.getInstance 
+09-23 07:31:53.977 12854 12854 I PowerHalWrapper: PowerHalWrapper.getInstance 
+09-23 07:31:53.977 12854 12854 I M-ProMotion: M-ProMotion is disabled
+09-23 07:31:53.979 12854 12854 I SurfaceFactory: [static] sSurfaceFactory = com.mediatek.view.impl.SurfaceFactoryImpl@b5a7407
+09-23 07:31:53.983 12854 12854 D RenderLite: trim renderNode enable: false
+09-23 07:31:53.983 12854 13790 I PowerHalWrapper: PowerHalWrapper.getInstance 
+09-23 07:31:53.985 12854 12854 D CompatChangeReporter: Compat change id reported: 349153669; UID 10432; state: ENABLED
+09-23 07:31:53.986 12854 12854 D FramePredict: FramePredict init: false
+09-23 07:31:53.986 12854 12854 D FramePredict: init success
+09-23 07:31:53.987 12854 12854 W libc    : Access denied finding property "ro.vendor.perf.scroll_opt"
+09-23 07:31:53.989 12854 12854 E MI-PreRender: init cloud whiteList failed
+09-23 07:31:53.990 12854 12854 D dawnwood.kernel: MiuiProcessManagerServiceStub setSchedFifo
+09-23 07:31:53.990 12854 12854 I MiuiProcessManagerImpl: setSchedFifo pid:12854, mode:3
+09-23 07:31:53.992 12854 13792 E FramePredict: registerContentObserver fail
+09-23 07:31:53.992 12854 13778 W libc    : Access denied finding property "ro.vendor.display.iris_x7.support"
+09-23 07:31:53.992 12854 13778 I pwIrisCR: isCnVersion = 0, isSupportIris = 0
+09-23 07:31:53.988 12854 12854 W RenderThread: type=1400 audit(0.0:6261823): avc:  denied  { read } for  name="u:object_r:vendor_displayfeature_prop:s0" dev="tmpfs" ino=573 scontext=u:r:untrusted_app:s0:c176,c257,c512,c768 tcontext=u:object_r:vendor_displayfeature_prop:s0 tclass=file permissive=0 app=nl.dawnwood.kernel
+09-23 07:31:53.995 12854 13778 D HWUI    : TAG_DDRE, CanvasContext::setDdreActivities: 
+09-23 07:31:53.995 12854 12854 I ForceDarkHelperStubImpl: setViewRootImplForceDark: false for nl.dawnwood.kernel.MainActivity@ab8da46, reason: AppDarkModeEnable
+09-23 07:31:53.999 12854 12854 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:31:53.999 12854 12854 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:31:53.999 12854 12854 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:31:54.000 12854 12854 D InputEventReceiver: Input log is disabled in InputEventReceiver.
+09-23 07:31:54.005 12854 12854 D DecorViewImmersiveImpl: onAttachedToWindow. pkg: nl.dawnwood.kernel
+09-23 07:31:54.005 12854 12854 I ComputilityLevel: getComputilityLevel(): 4
+09-23 07:31:54.006 12854 12854 D DecorViewImmersiveImpl: nl.dawnwood.kernel.MainActivity@ab8da46 already set forced E2E by app
+09-23 07:31:54.007 12854 12854 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:31:54.007 12854 12854 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:31:54.007 12854 12854 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:31:54.007 12854 12854 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:31:54.024 12854 12854 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:31:54.024 12854 12854 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:31:54.024 12854 12854 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:31:54.025 12854 12854 E dawnwood.kernel: [perfctl] 12854 12854 FPSGO ver:7
+09-23 07:31:54.025 12854 12854 E dawnwood.kernel: [perfctl] 1 1 1 0
+09-23 07:31:54.025 12854 12854 D BufferQueueConsumer: [](id:323600000000,api:0,p:-1,c:12854) connect: controlledByApp=false
+09-23 07:31:54.026 12854 12854 D BLASTBufferQueue: [VRI[MainActivity]#0](f:0,a:0) constructor()
+09-23 07:31:54.026 12854 12854 D BLASTBufferQueue: [VRI[MainActivity]#0](f:0,a:0) update width=1220 height=2712 format=-1 mTransformHint=0
+09-23 07:31:54.026 12854 13786 D MMUD    : get_leak_baseline 3246391296
+09-23 07:31:54.031 12854 12854 D VRI[MainActivity]: vri.Setup new sync=wmsSync-VRI[MainActivity]#0
+09-23 07:31:54.036 12854 12854 W FinalizerDaemon: type=1400 audit(0.0:6261825): avc:  denied  { getopt } for  path="/dev/socket/usap_pool_primary" scontext=u:r:untrusted_app:s0:c176,c257,c512,c768 tcontext=u:r:zygote:s0 tclass=unix_stream_socket permissive=0 app=nl.dawnwood.kernel
+09-23 07:31:54.055 12854 13778 I GrallocExtra: gralloc_extra_query:is_SW3D 0
+09-23 07:31:54.063 12854 13778 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.24 ms.
+09-23 07:31:54.063 12854 13778 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.09 ms.
+09-23 07:31:54.063 12854 13778 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.09 ms.
+09-23 07:31:54.064 12854 13778 I GrallocExtra: gralloc_extra_query:is_SW3D 0
+09-23 07:31:54.065 12854 13778 W libc    : Access denied finding property "ro.vendor.display.iris_x7.support"
+09-23 07:31:54.060 12854 12854 W RenderThread: type=1400 audit(0.0:6261826): avc:  denied  { read } for  name="u:object_r:vendor_displayfeature_prop:s0" dev="tmpfs" ino=573 scontext=u:r:untrusted_app:s0:c176,c257,c512,c768 tcontext=u:object_r:vendor_displayfeature_prop:s0 tclass=file permissive=0 app=nl.dawnwood.kernel
+09-23 07:31:54.065 12854 13778 D BLASTBufferQueue: [VRI[MainActivity]#0](f:0,a:1) acquireNextBufferLocked size=1220x2712 mFrameNumber=1 applyTransaction=true mTimestamp=2575445385733199(auto) mPendingTransactions.size=0 graphicBufferId=55207509622788 transform=0
+09-23 07:31:54.066 12854 12854 D VRI[MainActivity]: vri.reportDrawFinished 0 0 Rect(0, 0 - 1220, 2712)
+09-23 07:31:54.066 12854 12854 I NativeTurboSchedManager: Load libmiui_runtime
+09-23 07:31:54.067 12854 13778 D HWUI    : [HWUI] Flag vulkan_enhance_pipeline_cache enabled
+09-23 07:31:54.067 12854 13778 D HWUI    : [HWUI] EnhanceVkPipelineCache is enabled
+09-23 07:31:54.067 12854 13778 D HWUI    : [HWUI] Flag ddre enabled
+09-23 07:31:54.072 12854 12854 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:31:54.072 12854 12854 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:31:54.072 12854 12854 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:31:54.102 12854 12854 I HandWritingStubImpl: refreshLastKeyboardType: 1
+09-23 07:31:54.104 12854 12854 I HandWritingStubImpl: getCurrentKeyboardType: 1
+09-23 07:31:54.116 12854 12854 D InsetsController: hide(ime(), fromIme=false)
+09-23 07:31:54.116 12854 12854 I ImeTracker: nl.dawnwood.kernel:6f30340b: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+09-23 07:31:54.125 12854 12854 I HandWritingStubImpl: getCurrentKeyboardType: 1
+09-23 07:31:54.142 12854 12854 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:31:54.142 12854 12854 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:31:54.142 12854 12854 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:31:54.942 12854 13740 I dawnwood.kernel: Compiler allocated 6807KB to compile void android.view.ViewRootImpl.performTraversals()
+09-23 07:32:12.784 12854 13789 D MMUD    : mtk_memory_debug_init nl.dawnwood.kernel 0xb400007bfe8da230
+09-23 07:32:16.046 12854 13789 I scudo   : Can't populate more pages for size class 4624.
+09-23 07:32:21.495 12854 13888 I MMUD    : Total size 3501875200
+09-23 07:32:21.495 12854 13888 I MMUD    : H [00=00000000000000000000,02=00000000000000851968,03=00000000000000000000,04=00000000000000000000,]
+09-23 07:32:21.495 12854 13888 I MMUD    : H [05=00000000000000671744,06=00000000000000000000,08=00000000000000000000,09=00000000000000000000,]
+09-23 07:32:21.495 12854 13888 I MMUD    : H [10=00000000000000000000,11=00000000000000000000,12=00000000000000000000,13=00000000000000000000,]
+09-23 07:32:21.495 12854 13888 I MMUD    : H [14=00000000000000000000,15=00000000000000000000,16=00000000000000000000,17=00000000000000000000,]
+09-23 07:32:21.495 12854 13888 I MMUD    : H [18=00000000000000000000,19=00000000000000000000,20=00000000000000000000,21=00000000000000000000,]
+09-23 07:32:21.495 12854 13888 I MMUD    : H [22=00000000000000000000,23=00000000000000000000,24=00000000000000000000,25=00000000000000000000,]
+09-23 07:32:21.495 12854 13888 I MMUD    : H [26=00000000000000000000,28=00000000000000000000,29=00000000000000000000,30=00000000000000266240,]
+09-23 07:32:21.495 12854 13888 I MMUD    : H [31=00000000000000033200,33=00000000000000000000,34=00000000000000000000,35=00000000000000000000,]
+09-23 07:32:21.495 12854 13888 I MMUD    : H [36=00000000000000000000,38=00000000000000000000,39=00000000003500027904,40=00000000000000000000,]
+09-23 07:32:21.495 12854 13888 I MMUD    : H [41=00000000000000000000,42=00000000000000000000,43=00000000000000000000,44=00000000000000000000,]
+09-23 07:32:21.495 12854 13888 I MMUD    : H [45=00000000000000151552,46=00000000000000000000,47=00000000000000000000,48=00000000000000000000,]
+09-23 07:32:21.495 12854 13888 I MMUD    : H [49=00000000000000000000,50=00000000000000004096,51=00000000000000167936,52=00000000000000065536,]
+09-23 07:32:21.495 12854 13888 I MMUD    : H [53=00000000000000000000,54=00000000000000000000,55=00000000000000000000,56=00000000000000000000,]
+09-23 07:32:21.495 12854 13888 I MMUD    : H [57=00000000003499933696,58=00000000000000065536,59=00000000000000000000,60=00000000000000000000,]
+09-23 07:32:21.495 12854 13888 I MMUD    : H [61=00000000000000000000,]
+09-23 07:32:21.495 12854 13888 I MMUD    : Alarm update 3501875200, 3380609024
+09-23 07:32:21.596 12854 13888 I MMUD    : Total size 3501875200
+09-23 07:32:21.596 12854 13888 I MMUD    : H [00=00000000000000000000,02=00000000000000851968,03=00000000000000000000,04=00000000000000000000,]
+09-23 07:32:21.596 12854 13888 I MMUD    : H [05=00000000000000671744,06=00000000000000000000,08=00000000000000000000,09=00000000000000000000,]
+09-23 07:32:21.596 12854 13888 I MMUD    : H [10=00000000000000000000,11=00000000000000000000,12=00000000000000000000,13=00000000000000000000,]
+09-23 07:32:21.596 12854 13888 I MMUD    : H [14=00000000000000000000,15=00000000000000000000,16=00000000000000000000,17=00000000000000000000,]
+09-23 07:32:21.596 12854 13888 I MMUD    : H [18=00000000000000000000,19=00000000000000000000,20=00000000000000000000,21=00000000000000000000,]
+09-23 07:32:21.596 12854 13888 I MMUD    : H [22=00000000000000000000,23=00000000000000000000,24=00000000000000000000,25=00000000000000000000,]
+09-23 07:32:21.596 12854 13888 I MMUD    : H [26=00000000000000000000,28=00000000000000000000,29=00000000000000000000,30=00000000000000266240,]
+09-23 07:32:21.596 12854 13888 I MMUD    : H [31=00000000000000033200,33=00000000000000000000,34=00000000000000000000,35=00000000000000000000,]
+09-23 07:32:21.596 12854 13888 I MMUD    : H [36=00000000000000000000,38=00000000000000000000,39=00000000003500027904,40=00000000000000000000,]
+09-23 07:32:21.596 12854 13888 I MMUD    : H [41=00000000000000000000,42=00000000000000000000,43=00000000000000000000,44=00000000000000000000,]
+09-23 07:32:21.596 12854 13888 I MMUD    : H [45=00000000000000151552,46=00000000000000000000,47=00000000000000000000,48=00000000000000000000,]
+09-23 07:32:21.596 12854 13888 I MMUD    : H [49=00000000000000000000,50=00000000000000004096,51=00000000000000167936,52=00000000000000065536,]
+09-23 07:32:21.596 12854 13888 I MMUD    : H [53=00000000000000000000,54=00000000000000000000,55=00000000000000000000,56=00000000000000000000,]
+09-23 07:32:21.596 12854 13888 I MMUD    : H [57=00000000003499933696,58=00000000000000065536,59=00000000000000000000,60=00000000000000000000,]
+09-23 07:32:21.596 12854 13888 I MMUD    : H [61=00000000000000000000,]
+09-23 07:32:21.596 12854 13888 I MMUD    : Alarm update 3501875200, 3514826752
+09-23 07:32:22.301 12854 13888 I MMUD    : Total size 3667238912
+09-23 07:32:22.302 12854 13888 I MMUD    : H [00=00000000000000000000,02=00000000000000851968,03=00000000000000000000,04=00000000000000000000,]
+09-23 07:32:22.302 12854 13888 I MMUD    : H [05=00000000000000671744,06=00000000000000000000,08=00000000000000000000,09=00000000000000000000,]
+09-23 07:32:22.302 12854 13888 I MMUD    : H [10=00000000000000000000,11=00000000000000000000,12=00000000000000000000,13=00000000000000000000,]
+09-23 07:32:22.302 12854 13888 I MMUD    : H [14=00000000000000000000,15=00000000000000000000,16=00000000000000000000,17=00000000000000000000,]
+09-23 07:32:22.302 12854 13888 I MMUD    : H [18=00000000000000000000,19=00000000000000000000,20=00000000000000000000,21=00000000000000000000,]
+09-23 07:32:22.302 12854 13888 I MMUD    : H [22=00000000000000000000,23=00000000000000000000,24=00000000000000000000,25=00000000000000000000,]
+09-23 07:32:22.302 12854 13888 I MMUD    : H [26=00000000000000000000,28=00000000000000000000,29=00000000000000000000,30=00000000000000315392,]
+09-23 07:32:22.302 12854 13888 I MMUD    : H [31=00000000000000036720,33=00000000000000000000,34=00000000000000000000,35=00000000000000000000,]
+09-23 07:32:22.302 12854 13888 I MMUD    : H [36=00000000000000000000,38=00000000000000000000,39=00000000003500027904,40=00000000000000000000,]
+09-23 07:32:22.302 12854 13888 I MMUD    : H [41=00000000000000000000,42=00000000000000000000,43=00000000000000000000,44=00000000000000000000,]
+09-23 07:32:22.302 12854 13888 I MMUD    : H [45=00000000000000286720,46=00000000000154152960,47=00000000000000000000,48=00000000000000000000,]
+09-23 07:32:22.302 12854 13888 I MMUD    : H [49=00000000000000000000,50=00000000000000004096,51=00000000000011243520,52=00000000000000131072,]
+09-23 07:32:22.302 12854 13888 I MMUD    : H [53=00000000000000000000,54=00000000000000000000,55=00000000000000000000,56=00000000000000000000,]
+09-23 07:32:22.302 12854 13888 I MMUD    : H [57=00000000003499933696,58=00000000000000065536,59=00000000000000000000,60=00000000000000000000,]
+09-23 07:32:22.302 12854 13888 I MMUD    : H [61=00000000000000000000,]
+09-23 07:32:22.302 12854 13888 I MMUD    : Alarm update 3667238912, 3649044480
+09-23 07:32:22.403 12854 13888 I MMUD    : Total size 3667238912
+09-23 07:32:22.403 12854 13888 I MMUD    : H [00=00000000000000000000,02=00000000000000851968,03=00000000000000000000,04=00000000000000000000,]
+09-23 07:32:22.403 12854 13888 I MMUD    : H [05=00000000000000671744,06=00000000000000000000,08=00000000000000000000,09=00000000000000000000,]
+09-23 07:32:22.403 12854 13888 I MMUD    : H [10=00000000000000000000,11=00000000000000000000,12=00000000000000000000,13=00000000000000000000,]
+09-23 07:32:22.403 12854 13888 I MMUD    : H [14=00000000000000000000,15=00000000000000000000,16=00000000000000000000,17=00000000000000000000,]
+09-23 07:32:22.403 12854 13888 I MMUD    : H [18=00000000000000000000,19=00000000000000000000,20=00000000000000000000,21=00000000000000000000,]
+09-23 07:32:22.403 12854 13888 I MMUD    : H [22=00000000000000000000,23=00000000000000000000,24=00000000000000000000,25=00000000000000000000,]
+09-23 07:32:22.403 12854 13888 I MMUD    : H [26=00000000000000000000,28=00000000000000000000,29=00000000000000000000,30=00000000000000315392,]
+09-23 07:32:22.403 12854 13888 I MMUD    : H [31=00000000000000036720,33=00000000000000000000,34=00000000000000000000,35=00000000000000000000,]
+09-23 07:32:22.403 12854 13888 I MMUD    : H [36=00000000000000000000,38=00000000000000000000,39=00000000003500027904,40=00000000000000000000,]
+09-23 07:32:22.403 12854 13888 I MMUD    : H [41=00000000000000000000,42=00000000000000000000,43=00000000000000000000,44=00000000000000000000,]
+09-23 07:32:22.403 12854 13888 I MMUD    : H [45=00000000000000286720,46=00000000000154152960,47=00000000000000000000,48=00000000000000000000,]
+09-23 07:32:22.403 12854 13888 I MMUD    : H [49=00000000000000000000,50=00000000000000004096,51=00000000000011243520,52=00000000000000131072,]
+09-23 07:32:22.403 12854 13888 I MMUD    : H [53=00000000000000000000,54=00000000000000000000,55=00000000000000000000,56=00000000000000000000,]
+09-23 07:32:22.403 12854 13888 I MMUD    : H [57=00000000003499933696,58=00000000000000065536,59=00000000000000000000,60=00000000000000000000,]
+09-23 07:32:22.403 12854 13888 I MMUD    : H [61=00000000000000000000,]
+09-23 07:32:22.403 12854 13888 I MMUD    : Alarm update 3667238912, 3783262208
+09-23 07:33:06.491 12854 13778 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.79 ms.
+09-23 07:33:06.496 12854 13778 E dawnwood.kernel: FrameInsert open fail: No such file or directory
+09-23 07:33:06.548 12854 13778 W RenderInspector: DequeueBuffer time out on nl.dawnwood.kernel/nl.dawnwood.kernel.MainActivity, count=1, avg=13 ms, max=13 ms.

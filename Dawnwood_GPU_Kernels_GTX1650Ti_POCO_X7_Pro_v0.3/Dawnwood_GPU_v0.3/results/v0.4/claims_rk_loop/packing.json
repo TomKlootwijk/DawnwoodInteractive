@@ -1,0 +1,36 @@
+{
+  "kind": "CPU BC5 format/approximation experiment",
+  "encoded_block_bytes": 16,
+  "two_raw_UNORM8_channels_bytes": 32,
+  "rmse_UNORM8_units": 9.440333572453023,
+  "arbitrary_input_lossless": false,
+  "bc5_4096_base_bytes": 16777216,
+  "working_set_4096": {
+    "state_record_bytes": 128,
+    "operator_record_bytes": 64,
+    "two_state_buffers": 1048576,
+    "two_operator_buffers": 3968,
+    "reused_host_visible_staging": 524288,
+    "buffer_payload_total": 1576832,
+    "implicit_child_pointer_bytes": 0,
+    "comparison_two_uint32_child_pointers_per_operator": 248,
+    "excluded": "driver allocation padding, pipelines, command buffers, runtime, OS and other applications"
+  },
+  "raw_budget_examples": {
+    "4000000000": {
+      "rgba32f_elements": 250000000,
+      "rgba8_elements": 1000000000,
+      "bc5_aligned_average_texels": 4000000000
+    },
+    "4294967296": {
+      "rgba32f_elements": 268435456,
+      "rgba8_elements": 1073741824,
+      "bc5_aligned_average_texels": 4294967296
+    },
+    "12884901888": {
+      "rgba32f_elements": 805306368,
+      "rgba8_elements": 3221225472,
+      "bc5_aligned_average_texels": 12884901888
+    }
+  }
+}

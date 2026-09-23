@@ -1,0 +1,22 @@
+usage: measure_phone_capacity.py [-h] [--serial SERIAL] [--apk APK]
+                                 [--out OUT] [--steps STEPS]
+                                 [--budget-fraction BUDGET_FRACTION]
+                                 [--reserve-mib RESERVE_MIB]
+                                 [--granularity GRANULARITY]
+                                 [--timeout TIMEOUT]
+
+Measure real Android full-state capacity through the installed Dawnwood app.
+No phone measurement is implied by this file existing. Run only with an
+authorized ADB device. This measures completed circulation and health, not CPU
+equivalence.
+
+options:
+  -h, --help            show this help message and exit
+  --serial SERIAL
+  --apk APK             Optionally install this APK and record its SHA256
+  --out OUT
+  --steps STEPS
+  --budget-fraction BUDGET_FRACTION
+  --reserve-mib RESERVE_MIB
+  --granularity GRANULARITY
+  --timeout TIMEOUT

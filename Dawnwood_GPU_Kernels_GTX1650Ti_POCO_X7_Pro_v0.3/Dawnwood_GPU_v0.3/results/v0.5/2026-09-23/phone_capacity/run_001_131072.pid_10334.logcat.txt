@@ -1,0 +1,131 @@
+--------- beginning of main
+09-23 07:27:32.632 10334 10334 E Zygote  : process_name_ptr:10334 nl.dawnwood.kernel
+09-23 07:27:32.632 10334 10334 E Zygote  : SetMemoryProtected process_name_ptr:10334 nl.dawnwood.kernel
+09-23 07:27:32.640 10334 10334 I dawnwood.kernel: Late-enabling -Xcheck:jni
+09-23 07:27:32.665 10334 10334 I dawnwood.kernel: Using generational CollectorTypeCMC GC.
+09-23 07:27:32.672 10334 10334 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+--------- beginning of system
+09-23 07:27:32.677 10334 10334 I ActivityThread: Current dynamic renderEngine type=0
+09-23 07:27:32.691 10334 10642 D MiuiDownscaleImpl: set override inverted scale : 1.0
+09-23 07:27:32.692 10334 10334 I RENDER_TURBO: onActivityThreadCreate not in white list, pkg=nl.dawnwood.kernel, type=rodin
+09-23 07:27:32.695 10334 10642 D AppScoutStateMachine: 10334-ScoutStateMachinecreated
+09-23 07:27:32.704 10334 10334 D ActivityThread: setEmbeddedParam packageName=nl.dawnwood.kernel processName=nl.dawnwood.kernel isEmbedded=false isIsolated=false
+09-23 07:27:32.708 10334 10334 D nativeloader: Configuring clns-10 for other apk /data/app/~~qst5v4rslEemuKHmx84faQ==/nl.dawnwood.kernel-9rvcyYMPgXNNjI7o8rGVuQ==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~qst5v4rslEemuKHmx84faQ==/nl.dawnwood.kernel-9rvcyYMPgXNNjI7o8rGVuQ==/lib/arm64:/data/app/~~qst5v4rslEemuKHmx84faQ==/nl.dawnwood.kernel-9rvcyYMPgXNNjI7o8rGVuQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/nl.dawnwood.kernel
+09-23 07:27:32.709 10334 10334 D CompatChangeReporter: Compat change id reported: 202956589; UID 10432; state: ENABLED
+09-23 07:27:32.712 10334 10334 I dawnwood.kernel: AssetManager2(0xb400007a1e076778) locale list changing from [] to [en-GB]
+09-23 07:27:32.714 10334 10334 E MiuiPreloadClassImpl: invoke error.
+09-23 07:27:32.715 10334 10334 D HWUI    : [HWUI] Flag vulkan_enhance_pipeline_cache enabled
+09-23 07:27:32.716 10334 10334 D HWUI    : [HWUI] EnhanceVkPipelineCache is enabled
+09-23 07:27:32.716 10334 10334 D HWUI    : [HWUI] Flag ddre enabled
+09-23 07:27:32.716 10334 10334 V GraphicsEnvironment: Currently set values for:
+09-23 07:27:32.717 10334 10334 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[com.android.angle, com.linecorp.b612.android, com.campmobile.snow, com.google.android.apps.tachyon]
+09-23 07:27:32.717 10334 10334 V GraphicsEnvironment:   angle_gl_driver_selection_values=[angle, native, native, native]
+09-23 07:27:32.717 10334 10334 V GraphicsEnvironment: nl.dawnwood.kernel is not listed in per-application setting
+09-23 07:27:32.717 10334 10334 V GraphicsEnvironment: ANGLE allowlist from config: 
+09-23 07:27:32.717 10334 10334 V GraphicsEnvironment: nl.dawnwood.kernel is not listed in ANGLE allowlist or settings, returning default
+09-23 07:27:32.717 10334 10334 V GraphicsEnvironment: App is not on the allowlist for updatable production driver.
+09-23 07:27:32.718 10334 10646 D MiuiMonitorThread: Shared singleton Thread for stability monitor start
+09-23 07:27:32.723 10334 10646 I ActivityThread: TrafficStats init done
+09-23 07:27:32.726 10334 10334 D ResMonitorStub: The current process type is: third_party_app, process name is: nl.dawnwood.kernel
+09-23 07:27:32.726 10334 10646 I ForceDarkHelperStubImpl: initialize for nl.dawnwood.kernel , ForceDarkAppConfig: null
+09-23 07:27:32.727 10334 10646 D nativeloader: Load libforcedarkimpl.so using system ns (caller=/system_ext/framework/miui-framework.jar): ok
+09-23 07:27:32.727 10334 10646 D HWUI    : JNI_OnLoad success
+09-23 07:27:32.727 10334 10646 I MiuiForceDarkConfig: setConfig density:3.250000, mainRule:0, secondaryRule:0, tertiaryRule:0
+09-23 07:27:32.733 10334 10646 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+09-23 07:27:32.736 10334 10646 I ActivityThread: Miui Feature Init done
+09-23 07:27:32.744 10334 10334 D HWUI    : [HWUI] Flag vulkan_enhance_pipeline_cache enabled
+09-23 07:27:32.744 10334 10334 D HWUI    : [HWUI] EnhanceVkPipelineCache is enabled
+09-23 07:27:32.744 10334 10334 D HWUI    : [HWUI] Flag ddre enabled
+09-23 07:27:32.744 10334 10334 D dawnwood.kernel: blurUtils, initBackgroundBlurMinInterval processName(nl.dawnwood.kernel), inWhiteLists(0)
+09-23 07:27:32.745 10334 10646 I ActivityThread: HardwareRenderer preload  done
+09-23 07:27:32.747 10334 10661 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+09-23 07:27:32.755 10334 10334 I dawnwood.kernel: AssetManager2(0xb400007a1e070698) locale list changing from [] to [en-GB]
+09-23 07:27:32.758 10334 10661 W libc    : Access denied finding property "vendor.mivk.log.debug"
+09-23 07:27:32.758 10334 10661 D vulkan  : searching for layers in '/data/app/~~qst5v4rslEemuKHmx84faQ==/nl.dawnwood.kernel-9rvcyYMPgXNNjI7o8rGVuQ==/lib/arm64'
+09-23 07:27:32.758 10334 10661 D vulkan  : searching for layers in '/data/app/~~qst5v4rslEemuKHmx84faQ==/nl.dawnwood.kernel-9rvcyYMPgXNNjI7o8rGVuQ==/base.apk!/lib/arm64-v8a'
+09-23 07:27:32.759 10334 10334 D nativeloader: Load /data/app/~~qst5v4rslEemuKHmx84faQ==/nl.dawnwood.kernel-9rvcyYMPgXNNjI7o8rGVuQ==/base.apk!/lib/arm64-v8a/libdawnwood_jni.so using class loader ns clns-10 (caller=/data/app/~~qst5v4rslEemuKHmx84faQ==/nl.dawnwood.kernel-9rvcyYMPgXNNjI7o8rGVuQ==/base.apk!classes2.dex): ok
+09-23 07:27:32.762 10334 10661 D MMUD    : mtk_memory_debug_init nl.dawnwood.kernel 0xb400007c07ff0230
+09-23 07:27:32.763 10334 10661 I MMUD    : [MEMPROF] Memory instrumentation via debugfs (Experimental) enabled 0
+09-23 07:27:32.769 10334 10661 I libEGL  : shader cache num entries: 4
+09-23 07:27:32.770 10334 10661 D HWUI    : [HWUI] Flag vulkan_enhance_pipeline_cache enabled
+09-23 07:27:32.770 10334 10661 D HWUI    : [HWUI] EnhanceVkPipelineCache is enabled
+09-23 07:27:32.770 10334 10661 D HWUI    : [HWUI] Flag ddre enabled
+09-23 07:27:32.770 10334 10661 D SKIA    : [Skia] Flag vulkan_enhance_pipeline_cache enabled
+09-23 07:27:32.770 10334 10661 D SKIA    : [Skia] EnhanceVkPipelineCache is true
+09-23 07:27:32.792 10334 10334 D CompatChangeReporter: Compat change id reported: 279646685; UID 10432; state: ENABLED
+09-23 07:27:32.794 10334 10334 D CompatChangeReporter: Compat change id reported: 63938206; UID 10432; state: ENABLED
+09-23 07:27:32.805 10334 10334 D CompatChangeReporter: Compat change id reported: 352594277; UID 10432; state: ENABLED
+09-23 07:27:32.814 10334 10334 D ScrollerOptimizationManager: registerConfigChangedListener
+09-23 07:27:32.818 10334 10334 D SplineOverScroller: dynamic params is false
+09-23 07:27:32.821 10334 10334 D CompatChangeReporter: Compat change id reported: 309578419; UID 10432; state: ENABLED
+09-23 07:27:32.822 10334 10334 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+09-23 07:27:32.825 10334 10334 D DecorView: updateFreeformOutlineFromActivity, inFreeform=false,inFreeformWindowMode=false
+09-23 07:27:32.832 10334 10334 D Activity: Activity = ActivityInfo{1d30f70 nl.dawnwood.kernel.MainActivity}, Resume onConfigurationChanged = {1.0 204mcc16mnc [en_GB,en_NL,nl_NL] ldltr sw375dp w375dp h834dp 520dpi nrml long hdr widecg port night finger -keyb/v/h -nav/h winConfig={ mBounds=Rect(0, 0 - 1220, 2712) mAppBounds=Rect(0, 0 - 1220, 2712) mMaxBounds=Rect(0, 0 - 1220, 2712) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0 mInSplitScreen=false letterBoxed=false foScaled=false isSpecificEmbedded=false embeddingScale=1.0} s.2 fontWeightAdjustment=0/d/0 themeChanged=0 themeChangedFlags=0 display=0 extraData = Bundle[{}] screenType=0/0}
+09-23 07:27:32.848 10334 10334 D nativeloader: Load libpowerhalwrap_jni.so using system ns (caller=/system_ext/framework/mediatek-framework.jar): ok
+09-23 07:27:32.848 10334 10334 I PowerHalWrapper: PowerHalWrapper.getInstance 
+09-23 07:27:32.848 10334 10334 I PowerHalWrapper: PowerHalWrapper.getInstance 
+09-23 07:27:32.848 10334 10334 I M-ProMotion: M-ProMotion is disabled
+09-23 07:27:32.850 10334 10673 I PowerHalWrapper: PowerHalWrapper.getInstance 
+09-23 07:27:32.850 10334 10334 I SurfaceFactory: [static] sSurfaceFactory = com.mediatek.view.impl.SurfaceFactoryImpl@b5a7407
+09-23 07:27:32.853 10334 10334 D RenderLite: trim renderNode enable: false
+09-23 07:27:32.855 10334 10334 D CompatChangeReporter: Compat change id reported: 349153669; UID 10432; state: ENABLED
+09-23 07:27:32.856 10334 10334 D FramePredict: FramePredict init: false
+09-23 07:27:32.856 10334 10334 D FramePredict: init success
+09-23 07:27:32.858 10334 10334 W libc    : Access denied finding property "ro.vendor.perf.scroll_opt"
+09-23 07:27:32.859 10334 10334 E MI-PreRender: init cloud whiteList failed
+09-23 07:27:32.860 10334 10675 E FramePredict: registerContentObserver fail
+09-23 07:27:32.861 10334 10334 D dawnwood.kernel: MiuiProcessManagerServiceStub setSchedFifo
+09-23 07:27:32.861 10334 10334 I MiuiProcessManagerImpl: setSchedFifo pid:10334, mode:3
+09-23 07:27:32.862 10334 10661 W libc    : Access denied finding property "ro.vendor.display.iris_x7.support"
+09-23 07:27:32.862 10334 10661 I pwIrisCR: isCnVersion = 0, isSupportIris = 0
+09-23 07:27:32.864 10334 10661 D HWUI    : TAG_DDRE, CanvasContext::setDdreActivities: 
+09-23 07:27:32.864 10334 10334 I ForceDarkHelperStubImpl: setViewRootImplForceDark: false for nl.dawnwood.kernel.MainActivity@ab8da46, reason: AppDarkModeEnable
+09-23 07:27:32.865 10334 10667 D MMUD    : get_leak_baseline 3246391296
+09-23 07:27:32.871 10334 10334 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:27:32.871 10334 10334 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:27:32.871 10334 10334 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:27:32.872 10334 10334 D InputEventReceiver: Input log is disabled in InputEventReceiver.
+09-23 07:27:32.876 10334 10334 D DecorViewImmersiveImpl: onAttachedToWindow. pkg: nl.dawnwood.kernel
+09-23 07:27:32.876 10334 10334 I ComputilityLevel: getComputilityLevel(): 4
+09-23 07:27:32.876 10334 10334 D DecorViewImmersiveImpl: nl.dawnwood.kernel.MainActivity@ab8da46 already set forced E2E by app
+09-23 07:27:32.877 10334 10334 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:27:32.878 10334 10334 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:27:32.878 10334 10334 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:27:32.878 10334 10334 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:27:32.891 10334 10334 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:27:32.891 10334 10334 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:27:32.891 10334 10334 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:27:32.893 10334 10334 E dawnwood.kernel: [perfctl] 10334 10334 FPSGO ver:7
+09-23 07:27:32.893 10334 10334 E dawnwood.kernel: [perfctl] 1 1 1 0
+09-23 07:27:32.893 10334 10334 D BufferQueueConsumer: [](id:285e00000000,api:0,p:-1,c:10334) connect: controlledByApp=false
+09-23 07:27:32.894 10334 10334 D BLASTBufferQueue: [VRI[MainActivity]#0](f:0,a:0) constructor()
+09-23 07:27:32.894 10334 10334 D BLASTBufferQueue: [VRI[MainActivity]#0](f:0,a:0) update width=1220 height=2712 format=-1 mTransformHint=0
+09-23 07:27:32.898 10334 10334 D VRI[MainActivity]: vri.Setup new sync=wmsSync-VRI[MainActivity]#0
+09-23 07:27:32.915 10334 10661 I GrallocExtra: gralloc_extra_query:is_SW3D 0
+09-23 07:27:32.924 10334 10661 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.21 ms.
+09-23 07:27:32.924 10334 10661 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.11 ms.
+09-23 07:27:32.924 10334 10661 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.09 ms.
+09-23 07:27:32.925 10334 10661 I GrallocExtra: gralloc_extra_query:is_SW3D 0
+09-23 07:27:32.925 10334 10661 W libc    : Access denied finding property "ro.vendor.display.iris_x7.support"
+09-23 07:27:32.926 10334 10661 D BLASTBufferQueue: [VRI[MainActivity]#0](f:0,a:1) acquireNextBufferLocked size=1220x2712 mFrameNumber=1 applyTransaction=true mTimestamp=2575184246448568(auto) mPendingTransactions.size=0 graphicBufferId=44384192036866 transform=0
+09-23 07:27:32.927 10334 10334 D VRI[MainActivity]: vri.reportDrawFinished 0 0 Rect(0, 0 - 1220, 2712)
+09-23 07:27:32.927 10334 10334 I NativeTurboSchedManager: Load libmiui_runtime
+09-23 07:27:32.928 10334 10661 D HWUI    : [HWUI] Flag vulkan_enhance_pipeline_cache enabled
+09-23 07:27:32.928 10334 10661 D HWUI    : [HWUI] EnhanceVkPipelineCache is enabled
+09-23 07:27:32.928 10334 10661 D HWUI    : [HWUI] Flag ddre enabled
+09-23 07:27:32.934 10334 10334 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:27:32.934 10334 10334 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:27:32.934 10334 10334 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:27:32.947 10334 10334 I HandWritingStubImpl: refreshLastKeyboardType: 1
+09-23 07:27:32.947 10334 10334 I HandWritingStubImpl: getCurrentKeyboardType: 1
+09-23 07:27:32.952 10334 10334 D InsetsController: hide(ime(), fromIme=false)
+09-23 07:27:32.952 10334 10334 I ImeTracker: nl.dawnwood.kernel:edd80530: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+09-23 07:27:32.953 10334 10334 I HandWritingStubImpl: getCurrentKeyboardType: 1
+09-23 07:27:32.977 10334 10334 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:27:32.977 10334 10334 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:27:32.977 10334 10334 W InsetsSource: Has no intersection or mTmpFrame.height(), return Insets.NONE mTmpFrame.height() =0 hasIntersection =false
+09-23 07:27:33.095 10334 10672 D MMUD    : mtk_memory_debug_init nl.dawnwood.kernel 0xb400007bfe8da230
+09-23 07:27:33.440 10334 10635 I dawnwood.kernel: Compiler allocated 6807KB to compile void android.view.ViewRootImpl.performTraversals()
+09-23 07:27:35.688 10334 10672 I scudo   : Can't populate more pages for size class 4624.
+09-23 07:27:39.711 10334 10661 I SKIA    : CreateGraphicsPipeline pipeline cache hit. elpased time: 0.57 ms.
+09-23 07:27:39.713 10334 10661 E dawnwood.kernel: FrameInsert open fail: No such file or directory

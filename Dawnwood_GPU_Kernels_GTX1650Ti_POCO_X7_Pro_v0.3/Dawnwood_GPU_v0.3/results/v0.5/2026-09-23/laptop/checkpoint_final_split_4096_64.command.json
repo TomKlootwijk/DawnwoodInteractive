@@ -1,0 +1,31 @@
+{
+  "name": "checkpoint_final_split_4096_64",
+  "command": [
+    "build\\Release\\dawnwood.exe",
+    "run",
+    "--backend",
+    "vulkan",
+    "--device",
+    "1650 Ti",
+    "--count",
+    "4096",
+    "--steps",
+    "64",
+    "--batch",
+    "8",
+    "--checkpoint",
+    "results\\v0.5\\2026-09-23\\laptop\\checkpoints\\final_split_4096_64.dwk"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "started_utc": "2026-09-23T05:23:39.663501+00:00",
+  "binary_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+  "validation_environment": {
+    "DAWNWOOD_VALIDATION": "1",
+    "VK_LAYER_PATH": "C:\\DawnwoodInteractive\\tmp\\validation_v04\\layers",
+    "VK_LAYER_VALIDATE_SYNC": "1",
+    "DAWNWOOD_SPLIT_EVOLUTION": "1"
+  },
+  "exit_code": 0,
+  "wall_seconds": 1.4839999999985594,
+  "finished_utc": "2026-09-23T05:23:41.141783+00:00"
+}

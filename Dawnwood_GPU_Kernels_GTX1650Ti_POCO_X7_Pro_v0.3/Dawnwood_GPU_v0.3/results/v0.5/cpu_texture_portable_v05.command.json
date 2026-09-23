@@ -1,0 +1,12 @@
+{
+  "name": "cpu_texture_portable_v05",
+  "command": [
+    "build\\Release\\dawnwood.exe",
+    "selftest"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T11:55:27.296556+00:00",
+  "exit_code": 0,
+  "wall_seconds": 0.2660000000614673,
+  "validation_environment": {}
+}

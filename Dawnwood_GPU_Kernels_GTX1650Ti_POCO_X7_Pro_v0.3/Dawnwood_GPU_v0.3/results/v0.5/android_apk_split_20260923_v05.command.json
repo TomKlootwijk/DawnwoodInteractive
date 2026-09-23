@@ -1,0 +1,17 @@
+{
+  "name": "android_apk_split_20260923_v05",
+  "command": [
+    "android\\gradlew.bat",
+    "--project-dir",
+    "android",
+    "--init-script",
+    "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\results\\v0.4\\android-local-toolchain.gradle",
+    ":app:assembleDebug",
+    "--no-daemon"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-23T05:21:11.618996+00:00",
+  "exit_code": 0,
+  "wall_seconds": 18.45299999999952,
+  "validation_environment": {}
+}

@@ -1,0 +1,45 @@
+[
+  {
+    "meaning": "Only state[0].history changes from0 to1",
+    "original": {
+      "path": "feedback_off_seed.dwk",
+      "sha256": "51f5fd118b669ca39441f23a3390def3524b3c31f7ecf91786496d1bde00fe86"
+    },
+    "variant": {
+      "path": "feedback_off_changed.dwk",
+      "sha256": "6269d0c5723d7316b62ceceb6592bf46d03d23a0fe6eff7b3e492a51b39fae7e"
+    }
+  },
+  {
+    "meaning": "Identical perturbation with feedback enabled",
+    "original": {
+      "path": "feedback_on_seed.dwk",
+      "sha256": "268fa626ae7fb6aaafbae3c2dce840e3e0a51f35e2147803196d65de8ad4f8e8"
+    },
+    "variant": {
+      "path": "feedback_on_changed.dwk",
+      "sha256": "7cf377c43bff115e692dc37c7949f9a4c59e4912fbd8212b786f4a1b29dc18b3"
+    }
+  },
+  {
+    "meaning": "Synthetic epoch boundary; not billions of executed epochs",
+    "snapshot": {
+      "path": "epoch_max_minus_one.dwk",
+      "sha256": "9f47f93a68cd99a7eb46e2bea97764c1896394f04a19e9da08b98fc6d4681056"
+    }
+  },
+  {
+    "meaning": "feedback off: only state[0].rng low bit toggled",
+    "old_rng": 3361944549,
+    "new_rng": 3361944548,
+    "snapshot": "feedback_off_rng_changed.dwk",
+    "sha256": "e03708738e11f6f9e7d701aefd9b7663b25f5a5dda241edda9cb8bf4aee9b18b"
+  },
+  {
+    "meaning": "feedback on: only state[0].rng low bit toggled",
+    "old_rng": 3361944549,
+    "new_rng": 3361944548,
+    "snapshot": "feedback_on_rng_changed.dwk",
+    "sha256": "7577c292689c66c3f0eec279aa0ff0b738a847e55a54c654a759040eae61db8f"
+  }
+]

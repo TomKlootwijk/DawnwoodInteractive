@@ -1,23 +1,5 @@
-# Actual build and test status — Dawnwood GPU 0.3
+# Dawnwood v0.5 measured status
 
-| Stage | Recorded result |
-|---|---|
-| SPIR-V compilation | False |
-| Desktop C++ compilation | False |
-| CPU CTest suite | False |
-| Combined source-claim suite | False |
-| Vulkan device used | No completed Vulkan probe |
-| Software Vulkan device | not established |
-| Every-epoch CPU/Vulkan comparison | None |
-| Numerical operator-body coverage | not executed |
-| Checkpoint replay | False |
-| Android arm64 native compilation | False |
-| Android APK build | False |
-| Actual GTX 1650 Ti test | False |
-| Actual POCO X7 Pro test | Not executed in this environment |
+The recorded numerical campaign passed on the GTX 1650 Ti and POCO X7 Pro. This does not validate every architectural or physical claim.
 
-No installed Android SDK/NDK toolchain found in this build environment.
-
-False means the stage was not successfully completed; consult the corresponding command record and stderr to distinguish an unavailable toolchain from a failed test. Nothing is promoted from compiled to device-tested.
-
-The full command/exit-code record is `build_commands.json`. Numerical claim evidence is under `claims/`. `CLAIMS.md` distinguishes numerical fixtures, counterexamples, hardware measurements and physical/formal evidence still to be supplied.
+Read `../docs/VALIDATION_v0.5.md` for the quick claim assessment and actual metrics. The structured campaign is `v0.5/2026-09-23/summary.json`; all prior failures are retained. The new formalization is `../docs/FORMALIZATION_v0.5.md`.

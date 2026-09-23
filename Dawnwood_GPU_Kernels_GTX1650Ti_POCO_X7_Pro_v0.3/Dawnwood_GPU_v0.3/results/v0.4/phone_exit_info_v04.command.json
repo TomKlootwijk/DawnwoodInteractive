@@ -1,0 +1,18 @@
+{
+  "name": "phone_exit_info_v04",
+  "command": [
+    "C:\\Users\\ietsm\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe",
+    "-s",
+    "XOVSTSHYNREMZ5D6",
+    "shell",
+    "dumpsys",
+    "activity",
+    "exit-info",
+    "nl.dawnwood.kernel"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:42:14.508170+00:00",
+  "exit_code": 0,
+  "wall_seconds": 0.0940000000409782,
+  "validation_environment": {}
+}

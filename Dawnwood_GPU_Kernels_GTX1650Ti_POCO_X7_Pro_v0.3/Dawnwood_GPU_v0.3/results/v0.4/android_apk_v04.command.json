@@ -1,0 +1,17 @@
+{
+  "name": "android_apk_v04",
+  "command": [
+    "android\\gradlew.bat",
+    "--project-dir",
+    "android",
+    "--init-script",
+    "C:\\DawnwoodInteractive\\tmp\\validation_v04\\android-local-toolchain.gradle",
+    ":app:assembleDebug",
+    "--no-daemon"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:40:53.540808+00:00",
+  "exit_code": 0,
+  "wall_seconds": 44.514999999897555,
+  "validation_environment": {}
+}

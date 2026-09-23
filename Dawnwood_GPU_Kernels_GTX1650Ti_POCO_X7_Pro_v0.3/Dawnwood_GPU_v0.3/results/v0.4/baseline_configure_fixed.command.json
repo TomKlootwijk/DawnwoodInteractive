@@ -1,0 +1,15 @@
+{
+  "name": "baseline_configure_fixed",
+  "command": [
+    "C:\\Users\\ietsm\\AppData\\Local\\Android\\Sdk\\cmake\\3.31.6\\bin\\cmake.exe",
+    "-S",
+    "C:\\DawnwoodInteractive\\tmp\\validation_v04\\baseline\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+    "-B",
+    "C:\\DawnwoodInteractive\\tmp\\validation_v04\\baseline\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\build",
+    "-DVulkan_INCLUDE_DIR=C:/DawnwoodInteractive/tmp/validation_v04/include"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:32:56.082352+00:00",
+  "exit_code": 0,
+  "wall_seconds": 0.5309999999590218
+}

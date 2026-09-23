@@ -1,0 +1,13 @@
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+The specified initialization script 'C:\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\android\results\v0.4\android-local-toolchain.gradle' does not exist.
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 4s

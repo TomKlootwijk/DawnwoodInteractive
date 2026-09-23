@@ -1,0 +1,93 @@
+{
+  "kind": "Manual existing-CLI edge measurements; no new test source",
+  "utc": "2026-09-16T12:02:45.344924+00:00",
+  "binary_path": "build/Release/dawnwood.exe",
+  "binary_sha256": "3b6a475dff27ac6e0a101333c8e0c27b447aeec1ed7dd9f56a26432a3b042567",
+  "passed": true,
+  "checks": [
+    {
+      "name": "internal_eight_epoch_batching",
+      "passed": true,
+      "checkpoints": [
+        {
+          "path": "results\\v0.5\\edge_batch17.dwk",
+          "bytes": 34960,
+          "sha256": "54b43c5333f4ea347c15816c66eb147f81dc62144823f96a3fcaa1fb054afc42"
+        },
+        {
+          "path": "results\\v0.5\\edge_batch1.dwk",
+          "bytes": 34960,
+          "sha256": "54b43c5333f4ea347c15816c66eb147f81dc62144823f96a3fcaa1fb054afc42"
+        }
+      ],
+      "byte_identical": true,
+      "command_records": [
+        "edge_batch17_v05.command.json",
+        "edge_batch1_v05.command.json"
+      ],
+      "health_passed": [
+        true,
+        true
+      ],
+      "gpu_reports": [
+        {
+          "device": "NVIDIA GeForce GTX 1650 Ti with Max-Q Design",
+          "validation_layer_enabled": true,
+          "validation_errors": 0,
+          "validation_warnings": 0,
+          "compute_submission_count": 3,
+          "operator_lut_width": 124,
+          "operator_lut_height": 1,
+          "staging_bytes": 32896
+        },
+        {
+          "device": "NVIDIA GeForce GTX 1650 Ti with Max-Q Design",
+          "validation_layer_enabled": true,
+          "validation_errors": 0,
+          "validation_warnings": 0,
+          "compute_submission_count": 17,
+          "operator_lut_width": 124,
+          "operator_lut_height": 1,
+          "staging_bytes": 32896
+        }
+      ]
+    },
+    {
+      "name": "lut_transfer_staging_boundary",
+      "passed": true,
+      "checkpoints": [
+        {
+          "path": "results\\v0.5\\edge_lut_staging_seed.dwk",
+          "bytes": 16777488,
+          "sha256": "c26352a9c9f6d08f3afc7dfdfe910099a1b5b81f158b709472c2179d93e45da2"
+        },
+        {
+          "path": "results\\v0.5\\edge_lut_staging_roundtrip.dwk",
+          "bytes": 16777488,
+          "sha256": "c26352a9c9f6d08f3afc7dfdfe910099a1b5b81f158b709472c2179d93e45da2"
+        }
+      ],
+      "byte_identical": true,
+      "command_records": [
+        "edge_lut_staging_seed_v05.command.json",
+        "edge_lut_staging_roundtrip_v05.command.json"
+      ],
+      "health_passed": [
+        true,
+        true
+      ],
+      "gpu_reports": [
+        {
+          "device": "NVIDIA GeForce GTX 1650 Ti with Max-Q Design",
+          "validation_layer_enabled": true,
+          "validation_errors": 0,
+          "validation_warnings": 0,
+          "compute_submission_count": 0,
+          "operator_lut_width": 1024,
+          "operator_lut_height": 1025,
+          "staging_bytes": 16777216
+        }
+      ]
+    }
+  ]
+}

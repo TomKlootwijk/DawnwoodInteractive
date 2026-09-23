@@ -1,0 +1,39 @@
+{
+  "kind": "Existing CLI full CPU checkpoint identity, before versus after shared-source compaction",
+  "comparisons": [
+    {
+      "count": 4096,
+      "epochs": 64,
+      "byte_identical": true,
+      "artifacts": [
+        {
+          "file": "checkpoints/before_4096_64.dwk",
+          "sha256": "1daa72e62cb1ab2c341e9c6b469296304f535bd235aef11d6b24e4587943adeb",
+          "bytes": 526352
+        },
+        {
+          "file": "checkpoints/after_4096_64.dwk",
+          "sha256": "1daa72e62cb1ab2c341e9c6b469296304f535bd235aef11d6b24e4587943adeb",
+          "bytes": 526352
+        }
+      ]
+    },
+    {
+      "count": 257,
+      "epochs": 1024,
+      "byte_identical": true,
+      "artifacts": [
+        {
+          "file": "checkpoints/before_257_1024.dwk",
+          "sha256": "de63880c5f291a591c36953ed17a354893e91a65f3f84f5adc9e9f91209c27e6",
+          "bytes": 34960
+        },
+        {
+          "file": "checkpoints/after_257_1024.dwk",
+          "sha256": "de63880c5f291a591c36953ed17a354893e91a65f3f84f5adc9e9f91209c27e6",
+          "bytes": 34960
+        }
+      ]
+    }
+  ]
+}

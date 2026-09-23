@@ -1,0 +1,174 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        303f8f5 nl.dawnwood.kernel/.MainActivity filter 109d68a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Domain verification status:
+
+Key Set Manager:
+  [nl.dawnwood.kernel]
+      Signing KeySets: 168
+
+Packages:
+  Package [nl.dawnwood.kernel] (7860965):
+    appId=10432
+    pkg=Package{326e61b nl.dawnwood.kernel}
+    codePath=/data/app/~~qst5v4rslEemuKHmx84faQ==/nl.dawnwood.kernel-9rvcyYMPgXNNjI7o8rGVuQ==
+    resourcePath=/data/app/~~qst5v4rslEemuKHmx84faQ==/nl.dawnwood.kernel-9rvcyYMPgXNNjI7o8rGVuQ==
+    legacyNativeLibraryDir=/data/app/~~qst5v4rslEemuKHmx84faQ==/nl.dawnwood.kernel-9rvcyYMPgXNNjI7o8rGVuQ==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=5 minSdk=28 targetSdk=35
+    minExtensionVersions=[]
+    versionName=0.5.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    isMiuiPreinstall=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2026-09-23 07:27:09
+    lastUpdateTime=2026-09-23 07:27:10
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=com.android.shell
+    originatingPackageName=null
+    packageSource=1
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{3c61e18 version:2, signatures:[1452828f], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    User 0: ceDataInode=550027 deDataInode=527649 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/nl.dawnwood.kernel
+      firstInstallTime=2026-09-16 12:41:10
+      uninstallReason=0
+      overlay paths:
+        /data/resource-cache/com.android.systemui-neutral-aiSG.frro
+        /data/resource-cache/com.android.systemui-accent-jBui.frro
+        /data/resource-cache/com.android.systemui-dynamic-XDcO.frro
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    [com.android.systemui,com.miui.aod,com.android.server.telecom,com.mediatek,com.xiaomi.mirror,com.android.localtransport,com.xiaomi.trustservice,com.android.settings,com.android.dynsystem,com.novatek.novavis,com.android.providers.settings,com.xiaomi.misettings,com.android.inputdevices,miui.systemui.plugin,com.xiaomi.touchservice,com.xiaomi.aiasst.vision,com.android.keychain,com.xiaomi.joyose,com.miui.qr,com.xiaomi.mi_connect_service,com.android.provision,com.mediatek.voicecommand,com.xiaomi.barrage,com.android.DeviceAsWebcam,com.xiaomi.aon,com.mediatek.location.lppe.main,com.miui.securitycenter,com.bsp.catchlog,com.miui.audiomonitor,com.miui.powerkeeper,com.xiaomi.mtb,com.miui.notification,com.miui.securitycore,com.mediatek.atci.service,com.miui.daemon,com.miui.cit,com.miui.misightservice,com.miui.touchassistant,com.miui.bugreport,com.android.location.fused,android]:
+      nl.dawnwood.kernel
+    com.android.thememanager:
+      nl.dawnwood.kernel
+    com.xiaomi.aicr:
+      nl.dawnwood.kernel
+    com.miui.player:
+      nl.dawnwood.kernel
+    com.miui.videoplayer:
+      nl.dawnwood.kernel
+    com.miui.gallery:
+      nl.dawnwood.kernel
+    com.android.settings.intelligence:
+      nl.dawnwood.kernel
+    com.google.android.as:
+      nl.dawnwood.kernel
+    com.mi.appfinder:
+      nl.dawnwood.kernel
+    com.mi.globalminusscreen:
+      nl.dawnwood.kernel
+    com.mi.globalbrowser:
+      nl.dawnwood.kernel
+    com.google.android.as.oss:
+      nl.dawnwood.kernel
+    com.miui.global.packageinstaller:
+      nl.dawnwood.kernel
+    com.miui.msa.global:
+      nl.dawnwood.kernel
+    com.xiaomi.account:
+      nl.dawnwood.kernel
+    com.xiaomi.simactivate.service:
+      nl.dawnwood.kernel
+    com.xiaomi.glgm:
+      nl.dawnwood.kernel
+    com.xiaomi.payment:
+      nl.dawnwood.kernel
+    com.xiaomi.mipicks:
+      nl.dawnwood.kernel
+    com.miui.notes:
+      nl.dawnwood.kernel
+    com.android.soundrecorder:
+      nl.dawnwood.kernel
+    com.miui.weather2:
+      nl.dawnwood.kernel
+    com.mi.global.pocobbs:
+      nl.dawnwood.kernel
+    com.miui.android.fashiongallery:
+      nl.dawnwood.kernel
+    com.xiaomi.midrop:
+      nl.dawnwood.kernel
+    com.mi.global.shop:
+      nl.dawnwood.kernel
+    com.xiaomi.calendar:
+      nl.dawnwood.kernel
+    com.duokan.phone.remotecontroller:
+      nl.dawnwood.kernel
+    com.xiaomi.smarthome:
+      nl.dawnwood.kernel
+    com.hunters.legacy:
+      nl.dawnwood.kernel
+    com.adobe.reader:
+      nl.dawnwood.kernel
+    com.facebook.katana:
+      nl.dawnwood.kernel
+    com.mintgames.triplecrush.tile.fun:
+      nl.dawnwood.kernel
+    com.mintgames.wordtrip:
+      nl.dawnwood.kernel
+    com.nf.snake:
+      nl.dawnwood.kernel
+    com.zhiliaoapp.musically:
+      nl.dawnwood.kernel
+    com.instagram.android:
+      nl.dawnwood.kernel
+    com.whatsapp:
+      nl.dawnwood.kernel
+    com.block.juggle:
+      nl.dawnwood.kernel
+    com.nebula.mahjongtile:
+      nl.dawnwood.kernel
+    com.lemon.lvoverseas:
+      nl.dawnwood.kernel
+    com.vitastudio.mahjong:
+      nl.dawnwood.kernel
+    com.nextinitiatives.minigames.mpp:
+      nl.dawnwood.kernel
+    com.oakever.tiletrip:
+      nl.dawnwood.kernel
+    com.ecffri.arrows:
+      nl.dawnwood.kernel
+    com.apkcombo.app:
+      nl.dawnwood.kernel
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [nl.dawnwood.kernel]
+    path: /data/app/~~qst5v4rslEemuKHmx84faQ==/nl.dawnwood.kernel-9rvcyYMPgXNNjI7o8rGVuQ==/base.apk
+      arm64: [status=run-from-apk] [reason=unknown] [primary-abi]
+        [location is error]
+    base APK odex file size: Oops,Some thing wrong when get dex file output paths!
+
+Compiler stats:
+  [nl.dawnwood.kernel]
+    (No recorded stats)

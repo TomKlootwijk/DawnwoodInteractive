@@ -1,0 +1,59 @@
+{
+  "name": "body_15",
+  "command": [
+    "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\results\\v0.5\\2026-09-23\\laptop\\function_compaction_artifacts\\dawnwood.exe",
+    "run",
+    "--backend",
+    "cpu",
+    "--count",
+    "16",
+    "--steps",
+    "8",
+    "--program",
+    "15:0x2"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 0.01599999999962165,
+  "report": {
+    "profile": "DWI-N1-0.5",
+    "backend": "cpu",
+    "config": {
+      "count": 16,
+      "operators": 31,
+      "epoch": 8,
+      "depth": 4,
+      "dt": 0.00999999978,
+      "yup": 0.000500000024,
+      "epsilon": 0.125,
+      "mutation": 1,
+      "jitter": 1,
+      "feedback": 1,
+      "phaseRate": 0.125,
+      "radialRate": 0.00999999978,
+      "historyWeight": 0.75,
+      "fieldScale": 0.00499999989,
+      "state_bytes": 128,
+      "operator_bytes": 64
+    },
+    "new_epochs": 8,
+    "seconds": 0.0024001,
+    "state_epochs_per_second": 53331.1112,
+    "mean_epoch_milliseconds": 0.3000125,
+    "timing": {
+      "runtime_setup_upload_seconds": 0,
+      "advance_wall_seconds": 0.0024001,
+      "readback_seconds": 0,
+      "digest_and_health_seconds": 9.22e-05
+    },
+    "state_and_operator_fnv1a64": "ccfc3450fe27b836",
+    "state_only_fnv1a64": "95734a72c6e4dd9c",
+    "health": {
+      "passed": true,
+      "first_invalid_record": "",
+      "nonfinite_state_values": 0,
+      "out_of_chart_states": 0,
+      "max_energy_error_from_source_seed_5": 3.33786e-06
+    },
+    "device": null
+  }
+}

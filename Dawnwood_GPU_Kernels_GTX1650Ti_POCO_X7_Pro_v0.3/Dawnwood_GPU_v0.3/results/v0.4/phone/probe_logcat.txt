@@ -1,0 +1,505 @@
+--------- beginning of main
+09-16 12:41:15.772  2738 25222 I droid.bluetooth: [btif_linkqualitymonitor.cc(224)] OndataFull: [btif_linkqualitymonitor]:OndataFull
+09-16 12:41:15.772  2738 25222 I droid.bluetooth: [btif_linkqualitymonitor.cc(368)] transport_matrix: [btif_linkqualitymonitor]:transport_matrix:size:0
+09-16 12:41:15.772  2738 25222 I bluetooth: [btif_event_report.cc(49)] report: [btif_EventReport]:
+09-16 12:41:15.772  2738 25220 I droid.bluetooth: [btif_linkqualitymonitor.cc(224)] OndataFull: [btif_linkqualitymonitor]:OndataFull
+09-16 12:41:15.772  2738  3397 D AvrcpNativeInterface: getPlayStatus
+09-16 12:41:15.772  2738 25220 I droid.bluetooth: [btif_linkqualitymonitor.cc(368)] transport_matrix: [btif_linkqualitymonitor]:transport_matrix:size:60
+09-16 12:41:15.772  2738 25220 I droid.bluetooth: [btif_linkqualitymonitor.cc(373)] transport_matrix: [linkqualityAnalysts]:Address:6
+09-16 12:41:15.772  2738 25220 I droid.bluetooth: [btif_linkqualitymonitor.cc(665)] DataFeature: [linkqualityAnalysts]:Address:6
+09-16 12:41:15.772  2738 25220 I bluetooth: [btif_event_report.cc(49)] report: [btif_EventReport]:{"evenid":"717013009","TimeStamp":1789555275772675,"DeviceMac":"54:10:4f:5c:92:60","StartTimeStamp":18446744072195375705,"EndTimeStamp":18446744072195494633,"QualityReportID":[0,60,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"PacketTypes":[0,0,0,17,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,42,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"TxPowerLevel":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,59,0,0,1],"RssiQuartiles":[-59,-57,-56,-55,-54],"UnusedAfhChannelCountQuartiles":[0,3,10,19,32],"AfhSelectUnidealChannelCountQuartiles":[0,0,1,5,23],"RetransmissionCountQuartiles":[19,29,34,40,59],"NoRxCountQuartiles":[16,25,30,33,51],"NakCountQuartiles":[0,3,4,6,10],"FlowOffCountQuartiles":[0,0,0,0,0]}
+09-16 12:41:15.772  2738  2738 D A2dpStateMachine: handleMessage: E msg.what=101
+09-16 12:41:15.772  2738  2738 D A2dpStateMachine: processMsg: Connected
+09-16 12:41:15.772  2738  2738 D A2dpStateMachine: Connected process message(XX:XX:XX:XX:92:60): STACK_EVENT
+09-16 12:41:15.773  2738  2738 D A2dpStateMachine: Connected: stack event: A2dpStackEvent {type:EVENT_TYPE_AUDIO_STATE_CHANGED, device:XX:XX:XX:XX:92:60, value1:STOPPED}
+09-16 12:41:15.773  2738  2738 D A2dpStateMachine: Connected: stopped playing: XX:XX:XX:XX:92:60
+09-16 12:41:15.773  2738  2738 D A2dpService: Enable BLE scanning
+09-16 12:41:15.773  2738  3237 E bt_btu_hcif: [btu_hcif.cc(1053)] btu_hcif_hdl_command_complete: Command complete for opcode:0x811 should not be handled here
+09-16 12:41:15.773  2738  2738 D A2dpStateMachine: A2DP Playing state : device: XX:XX:XX:XX:92:60 State:PLAYING->NOT_PLAYING
+09-16 12:41:15.774  2738  2738 D A2dpStateMachine: handleMessage: X
+09-16 12:41:15.775  2738  3237 I bluetooth: [btif_bqr.cc(763)] BqrVscCompleteCallback: current event mask: 0x0000000e, vendor quality: 0000000000, vendor trace: 0000000000, report interval: 0000000000
+09-16 12:41:15.775  2738  3237 I bluetooth: [btif_bqr.cc(813)] ConfigureBqrCmpl: current_evt_mask: 0x0000000e, current_bqr_quality_event_mask: 0x0000000f
+09-16 12:41:15.776  2738  3397 W System.err: org.json.JSONException: End of input at character 0 of 
+09-16 12:41:15.776  2738  3397 W System.err: 	at org.json.JSONTokener.syntaxError(JSONTokener.java:469)
+09-16 12:41:15.776  2738  3397 W System.err: 	at org.json.JSONTokener.nextValue(JSONTokener.java:101)
+09-16 12:41:15.776  2738  3397 W System.err: 	at org.json.JSONObject.<init>(JSONObject.java:168)
+09-16 12:41:15.776  2738  3397 W System.err: 	at org.json.JSONObject.<init>(JSONObject.java:185)
+09-16 12:41:15.776  2738  3397 W System.err: 	at com.android.bluetooth.AutoRecovery.EventReport.Report(EventReport.java:88)
+09-16 12:41:15.776  2738  3397 D BluetoothEventReport: Report:{"evenid":"717013009","TimeStamp":1789555275772675,"DeviceMac":"54:10:4f:5c:92:60","StartTimeStamp":18446744072195375705,"EndTimeStamp":18446744072195494633,"QualityReportID":[0,60,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"PacketTypes":[0,0,0,17,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,42,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"TxPowerLevel":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,59,0,0,1],"RssiQuartiles":[-59,-57,-56,-55,-54],"UnusedAfhChannelCountQuartiles":[0,3,10,19,32],"AfhSelectUnidealChannelCountQuartiles":[0,0,1,5,23],"RetransmissionCountQuartiles":[19,29,34,40,59],"NoRxCountQuartiles":[16,25,30,33,51],"NakCountQuartiles":[0,3,4,6,10],"FlowOffCountQuartiles":[0,0,0,0,0]}
+09-16 12:41:15.777  2738 25223 I FaultProcessPlugInManager: FaultProcessPlugInManager.Enqueue data 
+09-16 12:41:15.777  2738  3410 I FaultProcessPlugInManager: FaultProcessPlugInManager.got data 
+09-16 12:41:15.777  2738  3410 I FaultProcessPlugInManager: FaultProcessPlugInManager.wait data 
+09-16 12:41:15.777  3674  3674 D MiuiFastConnectService_Plugin: onReceive(): action = android.bluetooth.a2dp.profile.action.PLAYING_STATE_CHANGED
+09-16 12:41:15.777 25201 25201 D nativeloader: Configuring clns-10 for other apk /system_ext/framework/miui-cameraopt.jar. target_sdk_version=35, uses_libraries=ALL, library_path=/product/priv-app/MiuiCamera/lib/arm64:/product/priv-app/MiuiCamera/MiuiCamera.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.android.camera
+09-16 12:41:15.777 25201 25201 D nativeloader: Extending system_exposed_libraries: libapuwareapusys.mtk.so:libapuwareapusys_v2.mtk.so:libapuwarexrp.mtk.so:libapuwarexrp_v2.mtk.so:libapuwareutils.mtk.so:libapuwareutils_v2.mtk.so:libapuwarehmp.mtk.so:libapuwareaiste.mtk.so:libneuron_graph_delegate.mtk.so:libneuronusdk_adapter.mtk.so:libtflite_mtk.mtk.so:libarmnn_ndk.mtk.so:libcmdl_ndk.mtk.so:libnir_neon_driver_ndk.mtk.so:libmvpu_runtime.mtk.so:libmvpu_runtime_pub.mtk.so:libmvpu_engine_pub.mtk.so:libmvpu_pattern_pub.mtk.so:libmvpuop_mtk_cv.mtk.so:libmvpuop_mtk_nn.mtk.so:libmvpu_runtime_25.mtk.so:libmvpu_runtime_25_pub.mtk.so:libmvpu_engine_25_pub.mtk.so:libmvpu_pattern_25_pub.mtk.so:libmvpuop25_mtk_cv.mtk.so:libmvpuop25_mtk_nn.mtk.so:libmvpu_config.mtk.so:libmvpu_engine_30.mtk.so:libmvpu_pattern_30.mtk.so:libmvpu_cic_ci_compiler_30.mtk.so:libmvpu_runtime_30.mtk.so:libmvpu_clc_30_mvpu_debuginfo.mtk.so:libmvpu_clc_30_mvpu_elf.mtk.so:libmvpu_clc_30_mvpu_utility.mtk.so:libneuronservice_adapter.mtk.so:libneuron_sys_util.mtk.so:libmvpuop30_mtk_nn.mtk.so:libneuron
+09-16 12:41:15.778 25201 25201 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+09-16 12:41:15.778 25201 25201 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+09-16 12:41:15.779  2738  3406 D ComplexExceptionDetection: a2dp_no_sound_check
+09-16 12:41:15.779  2738 25224 D DataReport: DataReport.HandlerRequest{}
+09-16 12:41:15.781  3674  3674 D MiuiBluetoothUtil_Plugin: isWifiConnected is24G false
+09-16 12:41:15.781  3674  3674 D MiuiFastConnectService_Plugin: isA2dpPlaying: false is24GHz: false
+09-16 12:41:15.781  3674  3674 D MiuiFastConnectService_Plugin: changeMode: true
+09-16 12:41:15.781  3674  3674 D MiuiFastConnectService_Plugin: change scan mode: 1
+09-16 12:41:15.783  7866  8694 I lyra-BtStRecv: onProfileStateChanged 54:**:**:**:**:60, 2, 10->11
+09-16 12:41:15.784  3674  3674 D MiuiFastConnectService_Plugin: stopBleScan: scanning: true
+09-16 12:41:15.786  3674  3674 D BluetoothAdapter: isLeEnabled(): ON
+09-16 12:41:15.786  3674  3674 D BluetoothAdapter: isLeEnabled(): ON
+09-16 12:41:15.786  7866  8694 I syswrapper-ble-BluetoothCommonSysWrapper: BluetoothCommonSysWrapper::OnBluetoothProfileStateChanged:133 Android Bt 54:**:**:**:**:60 profile 2 state 2
+09-16 12:41:15.786  7866  8694 I lyra-bluetooth-adapter: AdapterImpl::OnBluetoothProfileStateChanged:396 54:**:**:**:**:60 profile 2 state 2
+09-16 12:41:15.786  2738 23821 I BtGatt.ScanController: stopScan Uid/Pid=1002/3674
+09-16 12:41:15.786  7866  8414 I lyra-system: BleServerMonitorAndroid::OnBluetoothProfileStateChanged:132 address 54:**:**:**:**:60  profile 1  state 2
+09-16 12:41:15.787  2738 23821 D BtGatt.ScanController: stopScan() - queue size =6
+09-16 12:41:15.787  2738 23821 I AppScanStats: BLE_SCAN_RESULT_RECEIVED[5]reportBleScanResults=0
+09-16 12:41:15.788  2738 23821 I AppScanStats: BLE_SCAN_STATE_CHANGED[5]reportBleScanStopped=false
+09-16 12:41:15.788  2738 23821 W BluetoothMetricsLogger: MetricsLogger isn't initialized
+09-16 12:41:15.788  2738 23821 W BluetoothMetricsLogger: MetricsLogger isn't initialized
+09-16 12:41:15.788 22852 22952 D AudioALSAPlaybackHandlerDsp: -closePcmDriver(), mPcm = 0x0
+09-16 12:41:15.788 22852 22952 D audio_messenger_ipi: hal send, task: 13, msg_id: 0x16, ack_type: 1, p1: 0x0, p2: 0x0
+09-16 12:41:15.789  2738 23821 I BtGatt.ScanController: unregisterScanner Uid/Pid=1002/3674
+09-16 12:41:15.789  2738  3428 I BtGatt.ScanManager: msg.what = MSG_STOP_BLE_SCAN, msg.arg1 = None
+09-16 12:41:15.789  2738  3428 D BtGatt.ScanManager: track LE scan event: callerPackage = [com.xiaomi.bluetooth], scanMode = [0], reportDelayMillis = [0], behavior = [2], scannerId = [5], duration = [23086]
+09-16 12:41:15.789  2738  3428 D BtGatt.ScanManager: handling stopping scan  [ScanClient scanModeApp 0 scanModeUsed 0 [appScanStats android.uid.bluetooth:1002]]
+09-16 12:41:15.789  2738  3428 E BluetoothUtils: isDeepDozeMode? false
+09-16 12:41:15.789  2738  3428 I bt_shim_scanner: [le_scanning_manager.cc(223)] ScanFilterParamSetup: in shim layer, clientIf=5
+09-16 12:41:15.789  2738 23821 D BtGatt.ScanController: unregisterScanner() - scannerId=5
+09-16 12:41:15.789  2738  3397 D BtGatt.ScanController: onScanFilterParamsConfigured() - clientIf=5, status=0, action=0, availableSpace=0
+09-16 12:41:15.789  2738  3397 D BtGatt.ScanManager: callback done for scannerId - 5 status - 0
+09-16 12:41:15.789  2738 23821 D ScannerMap: register scanner remove 1
+09-16 12:41:15.790  2738 23821 I bt_shim_scanner: [le_scanning_manager.cc(181)] Unregister: in shim layer, scannerId=5
+09-16 12:41:15.790  2738  3428 I bt_shim_scanner: [le_scanning_manager.cc(223)] ScanFilterParamSetup: in shim layer, clientIf=5
+09-16 12:41:15.790  3674  3674 D BluetoothAdapter: isLeEnabled(): ON
+09-16 12:41:15.790  2738  3397 D BtGatt.ScanController: onScanFilterParamsConfigured() - clientIf=5, status=0, action=0, availableSpace=0
+09-16 12:41:15.790  2738  3397 D BtGatt.ScanManager: callback done for scannerId - 5 status - 0
+09-16 12:41:15.790 22852 22952 D aurisys_lib_manager: delete_aurisys_lib_manager(), manager 0xb400007371fc9bb0
+09-16 12:41:15.790  2738  3428 I bt_shim_scanner: [le_scanning_manager.cc(223)] ScanFilterParamSetup: in shim layer, clientIf=5
+09-16 12:41:15.790 22852 22952 D audio_messenger_ipi: audio_ipi_dma_cbk_deregister(), task 13
+09-16 12:41:15.790  2738  3397 D BtGatt.ScanController: onScanFilterParamsConfigured() - clientIf=5, status=0, action=0, availableSpace=0
+09-16 12:41:15.790  2738  3397 D BtGatt.ScanManager: callback done for scannerId - 5 status - 0
+09-16 12:41:15.790  2738 23821 I BtGatt.ScanController: stopScan Uid/Pid=1002/3674
+09-16 12:41:15.790  2738  3428 I bt_shim_scanner: [le_scanning_manager.cc(223)] ScanFilterParamSetup: in shim layer, clientIf=5
+09-16 12:41:15.790  2738  3397 D BtGatt.ScanController: onScanFilterParamsConfigured() - clientIf=5, status=0, action=0, availableSpace=0
+09-16 12:41:15.791  2738  3397 D BtGatt.ScanManager: callback done for scannerId - 5 status - 0
+09-16 12:41:15.791  2738 23821 D BtGatt.ScanController: stopScan() - queue size =5
+09-16 12:41:15.791  2738  3428 I bt_shim_scanner: [le_scanning_manager.cc(223)] ScanFilterParamSetup: in shim layer, clientIf=5
+09-16 12:41:15.791  2738 23821 I AppScanStats: BLE_SCAN_RESULT_RECEIVED[6]reportBleScanResults=0
+09-16 12:41:15.791  2738 23821 I AppScanStats: BLE_SCAN_STATE_CHANGED[6]reportBleScanStopped=false
+09-16 12:41:15.791  2738 23821 W BluetoothMetricsLogger: MetricsLogger isn't initialized
+09-16 12:41:15.791  2738 23821 W BluetoothMetricsLogger: MetricsLogger isn't initialized
+09-16 12:41:15.791  2738  3397 D BtGatt.ScanController: onScanFilterParamsConfigured() - clientIf=5, status=0, action=0, availableSpace=0
+09-16 12:41:15.791  2738  3397 D BtGatt.ScanManager: callback done for scannerId - 5 status - 0
+09-16 12:41:15.792 22852 22952 D AudioDspStreamManager: setDspRuntimeEn(), task_scene = 13, condition = 0
+09-16 12:41:15.792 22852 22952 D AudioDspStreamManager: removePlaybackHandler() mDspMusicStreamState = DSP_STREAM_STOP
+09-16 12:41:15.792 22852 22952 D AudioDspStreamManager: removePlaybackHandler() mOutputDeviceCount 0x0
+09-16 12:41:15.792 22852 22952 D AudioDspStreamManager: +closeA2dpTask() pcm_close 
+09-16 12:41:15.792  2738 20754 I BtGatt.ScanController: unregisterScanner Uid/Pid=1002/3674
+09-16 12:41:15.792  2738  3428 I bt_shim_scanner: [le_scanning_manager.cc(223)] ScanFilterParamSetup: in shim layer, clientIf=5
+09-16 12:41:15.792  2738  3397 D BtGatt.ScanController: onScanFilterParamsConfigured() - clientIf=5, status=0, action=0, availableSpace=0
+09-16 12:41:15.792  2738  3397 D BtGatt.ScanManager: callback done for scannerId - 5 status - 0
+09-16 12:41:15.792  2738  3428 I bt_shim_scanner: [le_scanning_manager.cc(223)] ScanFilterParamSetup: in shim layer, clientIf=5
+09-16 12:41:15.792  2738  3397 D BtGatt.ScanController: onScanFilterParamsConfigured() - clientIf=5, status=0, action=0, availableSpace=0
+09-16 12:41:15.792  2738  3397 D BtGatt.ScanManager: callback done for scannerId - 5 status - 0
+09-16 12:41:15.792  2738  3428 D BtGatt.ScanManager: configureRegularScanParams() - queue=5
+09-16 12:41:15.792  2738  3428 D BtGatt.ScanManager: curPhy: 255 mLastConfiguredScanPhy: 255
+09-16 12:41:15.792  2738 20754 D BtGatt.ScanController: unregisterScanner() - scannerId=6
+09-16 12:41:15.792  2738 20754 D ScannerMap: register scanner remove 0
+09-16 12:41:15.792  2738 20754 I bt_shim_scanner: [le_scanning_manager.cc(181)] Unregister: in shim layer, scannerId=6
+09-16 12:41:15.792 22852 22952 D AudioDspStreamManager: setDspRuntimeEn(), task_scene = 11, condition = 0
+09-16 12:41:15.792 22852 22952 D audio_messenger_ipi: audio_ipi_dma_cbk_deregister(), task 11
+09-16 12:41:15.793 22852 22952 D AudioDspStreamManager: -closeA2dpTask(), 
+09-16 12:41:15.793 22852 22952 D AudioDspStreamManager: removePlaybackHandler() mDspA2DPStreamState = DSP_STREAM_STOP
+09-16 12:41:15.793 22852 22952 D audio_messenger_ipi: hal send, task: 8, msg_id: 0x16, ack_type: 1, p1: 0x0, p2: 0x0
+09-16 12:41:15.793  3674  3674 W AIVS    : BluetoothBase:onReceive: ACTION_PLAYING_STATE_CHANGED, device:Tom's Buds FE state:11
+09-16 12:41:15.793  2738  3428 I bt_stack: [INFO:le_scanning_manager.cc(187)] Scan in shim layer stopped
+09-16 12:41:15.793  2738  3428 W BtGatt.ScanManager: trackLeScan() - mLastNativeScanParams = 0
+09-16 12:41:15.793  2738  3244 I bluetooth: [le_scanning_reassembler.h(77)] SetAppleScanStarted: started true
+09-16 12:41:15.793  2738  3244 I bluetooth: [le_address_manager.cc(252)] unregister_client: Client unregistered
+09-16 12:41:15.793  2738  3428 W BluetoothMetricsLogger: MetricsLogger isn't initialized
+09-16 12:41:15.793  2738  3428 W BluetoothMetricsLogger: MetricsLogger isn't initialized
+09-16 12:41:15.793  2738  3428 D BtGatt.ScanManager: Start gattClientScanNative with old scanMode 0 new scanMode 0 ( in MS: 660 / 66, in scan unit: 660 / 66, scanPhy: 255 ) [ScanClient scanModeApp 0 scanModeUsed 0 [appScanStats android.uid.system:1000]]
+09-16 12:41:15.793  2738  3428 I bt_shim_scanner: [le_scanning_manager.cc(366)] SetScanParameters: in shim layer, scannerId=1
+09-16 12:41:15.793  2738  3428 I bt_stack: [INFO:le_scanning_manager.cc(376)] SetScanParameters scan_phy 255 phy 5
+09-16 12:41:15.793  2738  3428 I bt_shim_scanner: [le_scanning_manager.cc(366)] SetScanParameters: in shim layer, scannerId=1
+09-16 12:41:15.793 22852 22952 D aurisys_lib_manager: delete_aurisys_lib_manager(), manager 0xb400007371fbef50
+09-16 12:41:15.793  2738  3428 I bt_stack: [INFO:le_scanning_manager.cc(376)] SetScanParameters scan_phy 255 phy 5
+09-16 12:41:15.793 22852 22952 D audio_messenger_ipi: audio_ipi_dma_cbk_deregister(), task 8
+09-16 12:41:15.794  2738  3428 I bt_stack: [INFO:le_scanning_manager.cc(187)] Scan in shim layer started
+09-16 12:41:15.794  2738  3397 D BtGatt.ScanController: onScanParamSetupCompleted() - scannerId=1, status=0
+09-16 12:41:15.794  2738  3428 D BtGatt.ScanManager: recordNativeStartScan() - mLastNativeScanParams = 13
+09-16 12:41:15.794  2738  3397 D BtGatt.ScanController: onScanParamSetupCompleted() - scannerId=1, status=0
+09-16 12:41:15.794  2738  3428 I BtGatt.ScanManager: msg.what = MSG_STOP_BLE_SCAN, msg.arg1 = None
+09-16 12:41:15.794  2738  3244 I bluetooth: [le_scanning_reassembler.h(77)] SetAppleScanStarted: started true
+09-16 12:41:15.794  2738  3428 D BtGatt.ScanManager: track LE scan event: callerPackage = [com.xiaomi.bluetooth], scanMode = [0], reportDelayMillis = [0], behavior = [2], scannerId = [6], duration = [23078]
+09-16 12:41:15.794  2738  3244 I bluetooth: [le_scanning_manager.cc(675)] stop_scan: Scanning already stopped, return!
+09-16 12:41:15.794  2738  3428 D BtGatt.ScanManager: handling stopping scan  [ScanClient scanModeApp 0 scanModeUsed 0 [appScanStats android.uid.bluetooth:1002]]
+09-16 12:41:15.794  2738  3244 I bluetooth: [le_address_manager.cc(237)] register_client: Client registered
+09-16 12:41:15.794  1444  1727 D connsyslogger: SD_LOG_ROOT is /data/debuglogger/connsyslog/fw.
+09-16 12:41:15.794  1444  1727 D connsyslogger: systemReady:1
+09-16 12:41:15.794 22852 22952 D AudioALSAPlaybackHandlerBase: DestroyAurisysLibManager()
+09-16 12:41:15.794  2738  3428 E BluetoothUtils: isDeepDozeMode? false
+09-16 12:41:15.794 22852 22952 I android.hardware.audio.service-aidl.mediatek: mi_lrswitch_destroy_handler mi_lrswitch_destroy_handler
+09-16 12:41:15.794  2738  3428 I bt_shim_scanner: [le_scanning_manager.cc(223)] ScanFilterParamSetup: in shim layer, clientIf=6
+09-16 12:41:15.794 22852 22952 D aurisys_lib_handler: aurisys_arsi_destroy_handler(), lib_name misoundcrossfade, 0xb400007301fae7b0, arsi_destroy_handler, arsi_handler = 0xb400007191fbfa10, retval = 0
+09-16 12:41:15.794  2738  3397 D BtGatt.ScanController: onScanFilterParamsConfigured() - clientIf=6, status=0, action=0, availableSpace=0
+09-16 12:41:15.794  2738  3397 D BtGatt.ScanManager: callback done for scannerId - 6 status - 0
+09-16 12:41:15.794 22852 22952 D aurisys_lib_manager: delete_aurisys_lib_manager(), manager 0xb400007371fbdcf0
+09-16 12:41:15.794  2738  3428 D BtGatt.ScanManager: configureRegularScanParams() - queue=4
+09-16 12:41:15.794  2738  3428 D BtGatt.ScanManager: curPhy: 255 mLastConfiguredScanPhy: 255
+09-16 12:41:15.794 22852 22952 D AudioALSAPlaybackHandlerDsp: -close(), flag 0x8, mDevice = 0x80
+09-16 12:41:15.794  2738  3428 I bt_stack: [INFO:le_scanning_manager.cc(187)] Scan in shim layer stopped
+09-16 12:41:15.794  2738  3428 D BtGatt.ScanManager: track LE scan event: callerPackage = [scannative], nativeScanMode = [13], behavior = [11], duration = [1]
+09-16 12:41:15.794  2738  3244 I bluetooth: [le_scanning_reassembler.h(77)] SetAppleScanStarted: started true
+09-16 12:41:15.794  2738  3428 D BtGatt.ScanManager: Start gattClientScanNative with old scanMode 0 new scanMode 0 ( in MS: 660 / 66, in scan unit: 660 / 66, scanPhy: 255 ) [ScanClient scanModeApp 0 scanModeUsed 0 [appScanStats android.uid.system:1000]]
+09-16 12:41:15.794  2738  3428 I bt_shim_scanner: [le_scanning_manager.cc(366)] SetScanParameters: in shim layer, scannerId=1
+09-16 12:41:15.794  2738  3244 I bluetooth: [le_address_manager.cc(252)] unregister_client: Client unregistered
+09-16 12:41:15.794  2738  3428 I bt_stack: [INFO:le_scanning_manager.cc(376)] SetScanParameters scan_phy 255 phy 5
+09-16 12:41:15.795  2738  3428 I bt_shim_scanner: [le_scanning_manager.cc(366)] SetScanParameters: in shim layer, scannerId=1
+09-16 12:41:15.795  2738  3428 I bt_stack: [INFO:le_scanning_manager.cc(376)] SetScanParameters scan_phy 255 phy 5
+09-16 12:41:15.795  2738  3428 I bt_stack: [INFO:le_scanning_manager.cc(187)] Scan in shim layer started
+09-16 12:41:15.795 22852 22952 D AudioUtility: power_hal_hint - custPowerHint 38, data 0
+09-16 12:41:15.795 22852 22952 D AudioALSAPlaybackHandlerDsp: ~AudioALSAPlaybackHandlerDsp()
+09-16 12:41:15.795  2738  3244 I bluetooth: [le_scanning_reassembler.h(77)] SetAppleScanStarted: started true
+09-16 12:41:15.795  2738  3244 I bluetooth: [le_scanning_manager.cc(675)] stop_scan: Scanning already stopped, return!
+09-16 12:41:15.795 22852 22952 D AudioALSAStreamManager: routingOutputDeviceForIEMs()
+09-16 12:41:15.795  2738  3428 D BtGatt.ScanManager: recordNativeStartScan() - mLastNativeScanParams = 13
+09-16 12:41:15.795 22852 22952 D AudioIEMsController: routing(+), cur out 0x0 in 0x0, hs 0, bt 0, usb 0, device 0x80, mask 0x1, on 0
+09-16 12:41:15.795  2738  3244 I bluetooth: [le_address_manager.cc(237)] register_client: Client registered
+09-16 12:41:15.795 22852 22952 D AudioIEMsController: routing(-), cur out 0x0 in 0x0
+09-16 12:41:15.795 22852 22952 D AHAL_Stream: cycle: writing reply Reply{status: 0, fmqByteCount: 0, observable: Position{frames: 28320329, timeNs: 2116433362956686}, hardware: Position{frames: -1, timeNs: -1}, latencyMs: 205, xrunFrames: 0, state: STANDBY}
+09-16 12:41:15.795  2738  3397 D BtGatt.ScanController: onScanParamSetupCompleted() - scannerId=1, status=0
+09-16 12:41:15.795  2738  3397 D BtGatt.ScanController: onScanParamSetupCompleted() - scannerId=1, status=0
+09-16 12:41:15.810  1131  1131 D android.hardware.bluetooth@aidl-impl: BtHostDebugInfo
+09-16 12:41:15.810  1131  1131 D [BT]    : mtk_bt_op: BT_VND_OP_SET_BTHOST
+09-16 12:41:15.815 25201 25201 D nativeloader: InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libavf.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-aarch64-android.so:libclang_rt.asan-arm-android.so:libclang_rt.hwasan-aarch64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+09-16 12:41:15.815 25201 25201 D nativeloader: Configuring product-clns-11 for unbundled product apk /product/priv-app/MiuiCamera/MiuiCamera.apk. target_sdk_version=35, uses_libraries=libOpenCL.so:libmiocr.so:libneuronusdk_adapter.mtk.so, library_path=/product/priv-app/MiuiCamera/lib/arm64:/product/priv-app/MiuiCamera/MiuiCamera.apk!/lib/arm64-v8a:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.android.camera:/product/lib64:/system/product/lib64
+09-16 12:41:15.815 25201 25201 D nativeloader: Extending system_exposed_libraries: libneuronusdk_adapter.mtk.so
+09-16 12:41:15.815 25201 25201 D nativeloader: InitVndkspLibrariesProduct: VNDK is deprecated with product
+09-16 12:41:15.817  1131  1131 D android.hardware.bluetooth@aidl-impl: BtHostDebugInfo
+09-16 12:41:15.817  1131  1131 D [BT]    : mtk_bt_op: BT_VND_OP_SET_BTHOST
+09-16 12:41:15.822 25201 25201 D CompatChangeReporter: Compat change id reported: 202956589; UID 10166; state: ENABLED
+09-16 12:41:15.824  1131  1131 D android.hardware.bluetooth@aidl-impl: BtHostDebugInfo
+09-16 12:41:15.824  1131  1131 D [BT]    : mtk_bt_op: BT_VND_OP_SET_BTHOST
+09-16 12:41:15.830  1131  1131 D android.hardware.bluetooth@aidl-impl: BtHostDebugInfo
+09-16 12:41:15.830  1131  1131 D [BT]    : mtk_bt_op: BT_VND_OP_SET_BTHOST
+09-16 12:41:15.842 25201 25201 I .android.camera: AssetManager2(0xb400007a1e07ac38) locale list changing from [] to [en-GB]
+--------- beginning of system
+09-16 12:41:15.845 25201 25201 E MiuiPreloadClassImpl: invoke error.
+09-16 12:41:15.845 25201 25219 D MiuiMonitorThread: Shared singleton Thread for stability monitor start
+09-16 12:41:15.848 25201 25201 D HWUI    : [HWUI] Flag vulkan_enhance_pipeline_cache enabled
+09-16 12:41:15.848 25201 25201 D HWUI    : [HWUI] EnhanceVkPipelineCache is enabled
+09-16 12:41:15.848 25201 25201 D HWUI    : [HWUI] Flag ddre enabled
+09-16 12:41:15.848 25201 25230 D ActivityThread: the event that target app starts is : AppLaunchEvent{mType='441', mProcessName='com.android.camera', mPackageName='com.android.camera', mIsMainProcess='true', mVersionCode='640003700', mVersionName='', mLaunchTime='2026-09-16'}
+09-16 12:41:15.848  4944 13379 W MQSEventManager: 441 occur
+09-16 12:41:15.850 25201 25201 V GraphicsEnvironment: Currently set values for:
+09-16 12:41:15.850 25201 25201 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[com.android.angle, com.linecorp.b612.android, com.campmobile.snow, com.google.android.apps.tachyon]
+09-16 12:41:15.850 25201 25201 V GraphicsEnvironment:   angle_gl_driver_selection_values=[angle, native, native, native]
+09-16 12:41:15.850 25201 25201 V GraphicsEnvironment: com.android.camera is not listed in per-application setting
+09-16 12:41:15.850 25201 25201 V GraphicsEnvironment: ANGLE allowlist from config: 
+09-16 12:41:15.850 25201 25201 V GraphicsEnvironment: com.android.camera is not listed in ANGLE allowlist or settings, returning default
+09-16 12:41:15.851 25201 25201 D ActivityThread: useGrowthLimitOutExpendMethod invoke error.
+09-16 12:41:15.852 25201 25219 I ActivityThread: TrafficStats init done
+09-16 12:41:15.854 25201 25219 I ForceDarkHelperStubImpl: initialize for com.android.camera , ForceDarkOrigin
+09-16 12:41:15.856 25201 25219 D nativeloader: Load libforcedarkimpl.so using system ns (caller=/system_ext/framework/miui-framework.jar): ok
+09-16 12:41:15.859 25201 25219 D HWUI    : JNI_OnLoad success
+09-16 12:41:15.859 25201 25219 I MiuiForceDarkConfig: setConfig density:3.250000, mainRule:0, secondaryRule:0, tertiaryRule:0
+09-16 12:41:15.868 25201 25219 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+09-16 12:41:15.871 25201 25219 I ActivityThread: Miui Feature Init done
+09-16 12:41:15.888  2738  3397 W BluetoothMetricsLogger: MetricsLogger isn't initialized
+09-16 12:41:15.888  2738  3397 W BluetoothMetricsLogger: MetricsLogger isn't initialized
+09-16 12:41:15.888  2738  3397 V BtGatt.ScanController: onScanResult() - eventType=0x1b, addressType=1, address=XX:XX:XX:XX:4A:07, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-59, periodicAdvInt=0x0, originalAddress=00:00:00:00:00:00
+09-16 12:41:15.888  2738  3397 V BtGatt.ScanController: Skipping client: permission=true matches=false
+09-16 12:41:15.888  2738  3397 V BtGatt.ScanController: Skipping client: permission=true matches=false
+09-16 12:41:15.888  2738  3397 V BtGatt.ScanController: Skipping client: permission=true matches=false
+09-16 12:41:15.889  2738  3397 D HyperRemoteDevicesAdapter: Update property, device=21:3A:08:AA:4A:07, type: 1
+09-16 12:41:15.889  2738  3397 D HyperRemoteDevicesAdapter: Remote device name is: LE-Atom type = 2 21:3A:08:AA:4A:07
+09-16 12:41:15.889  2738  3397 D HyperRemoteDevicesAdapter: update name for XX:XX:XX:XX:4A:07 type = 2 name = LE-Atom 0
+09-16 12:41:15.889  2738  3397 D HyperRemoteDevicesAdapter: Update property, device=21:3A:08:AA:4A:07, type: 4
+09-16 12:41:15.889  2738  3397 D HyperRemoteDevicesAdapter: Update property, device=21:3A:08:AA:4A:07, type: 5
+09-16 12:41:15.889  2738  3397 D HyperRemoteDevicesAdapter: Update property, device=21:3A:08:AA:4A:07, type: 1
+09-16 12:41:15.889  2738  3397 D HyperRemoteDevicesAdapter: Remote device name is: LE-Atom type = 2 21:3A:08:AA:4A:07
+09-16 12:41:15.889  2738  3397 D HyperRemoteDevicesAdapter: update name for XX:XX:XX:XX:4A:07 type = 2 name = LE-Atom 0
+09-16 12:41:15.889  2738  3397 D HyperRemoteDevicesAdapter: Update property, device=21:3A:08:AA:4A:07, type: 4
+09-16 12:41:15.889  2738  3397 D HyperRemoteDevicesAdapter: Update property, device=21:3A:08:AA:4A:07, type: 5
+09-16 12:41:15.889  2738  3397 D HyperRemoteDevicesAdapter: Update property, device=21:3A:08:AA:4A:07, type: 1
+09-16 12:41:15.889  2738  3397 D HyperRemoteDevicesAdapter: Remote device name is: LE-Atom type = 2 21:3A:08:AA:4A:07
+09-16 12:41:15.889  2738  3397 D HyperRemoteDevicesAdapter: update name for XX:XX:XX:XX:4A:07 type = 2 name = LE-Atom 0
+09-16 12:41:15.889  2738  3397 D HyperRemoteDevicesAdapter: Update property, device=21:3A:08:AA:4A:07, type: 4
+09-16 12:41:15.889  2738  3397 D HyperRemoteDevicesAdapter: Update property, device=21:3A:08:AA:4A:07, type: 5
+09-16 12:41:15.893 25201 25201 I MCAM_LogUtil: stableLog=4
+09-16 12:41:15.905 25201 25201 D nativeloader: Load libpowerhalwrap_jni.so using system ns (caller=/system_ext/framework/mediatek-framework.jar): ok
+09-16 12:41:15.905 25201 25201 I PowerHalWrapper: PowerHalWrapper.getInstance 
+09-16 12:41:15.926 25201 25201 I mtkpower_client: perf_lock_acq, hdl:0, dur:300, num:10, pid:25201, tid:25201
+09-16 12:41:15.927 25201 25201 I mtkpower_client: IMtkPowerService_isDeclared 1
+09-16 12:41:15.928 25201 25201 I mtkpower_client: load IMtkPowerService successfully
+09-16 12:41:15.925  1198  1198 W binder:1198_1: type=1400 audit(0.0:5179650): avc:  denied  { getattr } for  path="/proc/25201" dev="proc" ino=278321602 scontext=u:r:mtk_hal_power:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=dir permissive=0
+09-16 12:41:15.930  1198  4499 E libPowerHal: Could not open '/proc/25201/comm'
+09-16 12:41:15.925  1198  1198 W binder:1198_1: type=1400 audit(0.0:5179651): avc:  denied  { search } for  name="25201" dev="proc" ino=278321602 scontext=u:r:mtk_hal_power:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=dir permissive=0
+09-16 12:41:15.931 25201 25201 I mtkpower_client: ret_hdl:621191
+09-16 12:41:15.931  1198  1249 I libPowerHal: [perfLockAcq] idx:0 hdl:621191 hint:-1 pid:25201 tid:25201 duration:300 lock_user: => ret_hdl:621191
+09-16 12:41:15.931  1198  1249 I libPowerHal: [setGPUFreq]  user set gpu freq min:0, max:-1
+09-16 12:41:15.931  1198  1249 I libPowerHal: : set gpu opp level: 0
+09-16 12:41:15.932  1198  1249 I libPowerHal: : set gpu opp level max: 0
+09-16 12:41:15.932  1198  1249 I libPowerHal: [setGPUFreq] Soft min/max = (0, 0); Hard min/max = (40, 0)
+09-16 12:41:15.932  1198  1249 I libPowerHal: [setGPUFreq] final min/max = (0, 0)
+09-16 12:41:15.933  1198  1249 I libPowerHal: : set gpu opp level: 0
+09-16 12:41:15.933 25201 25201 I .android.camera: AssetManager2(0xb400007a1e07c858) locale list changing from [] to [en-GB]
+09-16 12:41:15.933  1198  1249 I libPowerHal: : set gpu opp level max: 0
+09-16 12:41:15.933  1198  1249 I libPowerHal: [PE]  update cmd:400000 param:2000000 pr:3
+09-16 12:41:15.933  1198  1249 I libPowerHal: [PE]  update cmd:400100 param:2900000 pr:3
+09-16 12:41:15.934  1198  1249 I libPowerHal: [PE]  update cmd:400200 param:3100000 pr:3
+09-16 12:41:15.934  1198  1249 I libPowerHal: [setDvfsrcDevFreqOpp] opp:0, freq:8533000000
+09-16 12:41:15.934  1198  1249 I libPowerHal: [PE]  update cmd:1000000 param:0 pr:3
+09-16 12:41:15.934  1198  1249 I libPowerHal: [recordCPUFreqInfo] set cluster[0] min(): 2000000 max(-1): -1 cluster[1] min(): 2900000 max(-1): -1 cluster[2] min(): 3100000 max(-1): -1
+09-16 12:41:15.934  1198  1249 I libPowerHal: [perfLockAcq] Done for hdl : 621191
+09-16 12:41:15.936 25201 25201 D ResMonitorStub: The current process type is: system_app, process name is: com.android.camera
+09-16 12:41:15.937 25201 25201 I JavaheapMonitor: Java heap leak ratio threshold from RMS: 80%, Max: 512M, Process name: com.android.camera
+09-16 12:41:15.938 25201 25201 I JavaheapMonitor: Java heap loop intervals: (Count: 5)
+09-16 12:41:15.938 25201 25201 I JavaheapMonitor: 0: 0.0, 300s
+09-16 12:41:15.938 25201 25201 I JavaheapMonitor: 1: 0.2, 180s
+09-16 12:41:15.938 25201 25201 I JavaheapMonitor: 2: 0.4, 60s
+09-16 12:41:15.938 25201 25201 I JavaheapMonitor: 3: 0.6, 30s
+09-16 12:41:15.938 25201 25201 I JavaheapMonitor: 4: 0.8, 10s
+09-16 12:41:15.938 25201 25201 I JavaheapMonitor: Java heap monitor start in proc: com.android.camera
+09-16 12:41:15.938 25201 25201 D ResMonitorStub: The current process type supports enabling Java heap monitoring
+09-16 12:41:15.940 25201 25238 I MCAM_PermissionManager: getNeedCheckPermissionList() listSize =0
+09-16 12:41:15.941 25201 25238 I CameraManagerGlobal: Connecting to camera service
+09-16 12:41:15.951  2738  3397 W BluetoothMetricsLogger: MetricsLogger isn't initialized
+09-16 12:41:15.951  2738  3397 W BluetoothMetricsLogger: MetricsLogger isn't initialized
+09-16 12:41:15.951  2738  3397 V BtGatt.ScanController: onScanResult() - eventType=0x10, addressType=1, address=XX:XX:XX:XX:F9:66, primaryPhy=1, secondaryPhy=0, advertisingSid=0xff, txPower=127, rssi=-89, periodicAdvInt=0x0, originalAddress=00:00:00:00:00:00
+09-16 12:41:15.951  2738  3397 V BtGatt.ScanController: Skipping client: permission=true matches=false
+09-16 12:41:15.951  2738  3397 V BtGatt.ScanController: Skipping client: permission=true matches=false
+09-16 12:41:15.952 25201 25201 D FirebaseSessions: Dependency to CRASHLYTICS added.
+09-16 12:41:15.952  1500  3375 I AttributionAndPermissionUtils: checkPermission (forDataDelivery 0 startDataDelivery 0): Permission hard denied for client attribution [uid 10166, pid 25201, packageName "<unknown>"]
+09-16 12:41:15.952  2738  3397 V BtGatt.ScanController: Skipping client: permission=true matches=false
+09-16 12:41:15.952 25201 25201 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+09-16 12:41:15.964 25201 25238 D CameraExtStub: init android.hardware.camera2.impl.CameraExtImplXiaoMi
+09-16 12:41:15.964 25201 25238 D CameraInjector: waitForResult: 
+09-16 12:41:15.965 25201 25242 D CameraInjector: updateCloudCameraControllerInfoAsync: E
+09-16 12:41:15.965 25201 25242 D ActivityThread: Loading provider com.android.camera.miviInfoProvider: com.android.camera.external.mivi.MiviInfoContentProvider
+09-16 12:41:15.971  1843  2924 D CompatChangeReporter: Compat change id reported: 297989574; UID 10166; state: ENABLED
+09-16 12:41:15.972 25201 25201 D nativeloader: Load /product/priv-app/MiuiCamera/MiuiCamera.apk!/lib/arm64-v8a/libdatastore_shared_counter.so using class loader ns product-clns-11 (caller=/product/priv-app/MiuiCamera/MiuiCamera.apk!classes3.dex): ok
+09-16 12:41:15.973 25201 25242 E CloudConfig: get error, call initialize first
+09-16 12:41:15.973 25201 25242 E CloudConfig: get error, call initialize first
+09-16 12:41:15.973 25201 25242 E CloudConfig: get error, call initialize first
+09-16 12:41:15.973 25201 25242 E CloudConfig: get error, call initialize first
+09-16 12:41:15.973 25201 25242 W MCAM_CloudMivi4InfoDataSource: request cloud mivi info success
+09-16 12:41:15.973 25201 25201 D FirebaseSessions: Initializing Firebase Sessions 3.0.0.
+09-16 12:41:15.974 25201 25201 I FirebaseCrashlytics: Initializing Firebase Crashlytics 20.0.0 for com.android.camera
+09-16 12:41:15.974 25201 25250 D CompatChangeReporter: Compat change id reported: 312399441; UID 10166; state: ENABLED
+09-16 12:41:15.975 25201 25244 W MCAM_CameraCloudConfig: cloudConfig initialized.
+09-16 12:41:15.975 25201 25244 I CloudConfig: update request status, current: null, expectPrev: 9 status: 2
+09-16 12:41:15.975 25201 25255 I CloudConfig: start request data, module: camera_app_mivi_v4_0
+09-16 12:41:15.977 25201 25201 I NativeTurboSchedManager: Load libmiui_runtime
+09-16 12:41:15.977 25201 25201 E TurboSchedMonitor: failed to find setSchedAffinity method com.android.camera
+09-16 12:41:15.978 25201 25201 E TurboSchedMonitor: failed to find setSchedAffinity method com.android.camera
+09-16 12:41:15.978 25201 25242 D CameraInjector: isMiviInfo4: use MiviInfo V4.0
+09-16 12:41:15.978 25201 25242 D CameraInjector: parseMiviInfo4 cameraExposedRoleIdList: 20#21#63#60#61#0
+09-16 12:41:15.978 25201 25242 D CameraInjector: updateCloudCameraControllerInfoAsync: X
+09-16 12:41:15.978 25201 25201 E TurboSchedMonitor: failed to find setSchedAffinity method com.android.camera
+09-16 12:41:15.979 25201 25258 I CloudConfig: update request status, current: null, expectPrev: 9 status: 2
+09-16 12:41:15.979 25201 25258 I CloudConfig: start request data, module: camera_dynamic
+09-16 12:41:15.979 25201 25238 D CameraInjector: updateCloudCameraControllerInfoAsync: has aleardy start update task.
+09-16 12:41:15.979 25201 25238 D CameraInjector: waitForResult: 
+09-16 12:41:15.979 25201 25201 E TurboSchedMonitor: failed to find setSchedAffinity method com.android.camera
+09-16 12:41:15.979 25201 25238 D CameraInjector: updateCloudCameraControllerInfoAsync: has aleardy start update task.
+09-16 12:41:15.979 25201 25238 D CameraInjector: waitForResult: 
+09-16 12:41:15.979 25201 25238 D CameraInjector: updateCloudCameraControllerInfoAsync: has aleardy start update task.
+09-16 12:41:15.979 25201 25238 D CameraInjector: waitForResult: 
+09-16 12:41:15.979 25201 25238 D CameraInjector: updateCloudCameraControllerInfoAsync: has aleardy start update task.
+09-16 12:41:15.979 25201 25238 D CameraInjector: waitForResult: 
+09-16 12:41:15.980 25201 25238 W libc    : Access denied finding property "persist.vendor.cameraid.totalnum"
+09-16 12:41:15.980 25201 25238 I MCAM_Camera2CompatAdapterRole: [K_PROCESS]: All available camera ids: [0, 1, 2, 3, 4, 5, 6]
+09-16 12:41:15.982 25201 25201 D nativeloader: Load /product/priv-app/MiuiCamera/MiuiCamera.apk!/lib/arm64-v8a/libcrashlytics.so using class loader ns product-clns-11 (caller=/product/priv-app/MiuiCamera/MiuiCamera.apk!classes3.dex): ok
+09-16 12:41:15.983 25201 25238 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+09-16 12:41:15.983 25201 25201 D FirebaseSessions: Subscriber CRASHLYTICS registered.
+09-16 12:41:15.983 25201 25251 D FirebaseSessions: Notified CRASHLYTICS of new session a44aca8cf34148b6b1961fb984181701
+09-16 12:41:15.988 25201 25258 W Settings: Setting android_id has moved from android.provider.Settings.System to android.provider.Settings.Secure, returning read-only value.
+09-16 12:41:15.989 25201 25255 W Settings: Setting android_id has moved from android.provider.Settings.System to android.provider.Settings.Secure, returning read-only value.
+09-16 12:41:15.989 25201 25255 D AdvertisingIdClient: Creating AdvertisingIdClient
+09-16 12:41:15.989 25201 25255 D AdvertisingIdClient: AdvertisingIdClient already created.
+09-16 12:41:15.989 25201 25258 D AdvertisingIdClient: AdvertisingIdClient already created.
+09-16 12:41:15.990 25201 25201 I FirebaseInitProvider: FirebaseApp initialization successful
+09-16 12:41:15.990 25201 25255 D AdvertisingIdClient: AdvertisingIdClient is not bounded. Starting to bind it...
+09-16 12:41:15.991  1843  2924 D FileUtils: Rounded bytes from 11861921792 to 16000000000
+09-16 12:41:15.992 25201 25251 D libcrashlytics: Initializing libcrashlytics version 3.2.0
+09-16 12:41:15.992 25201 25250 E FirebaseCrashlytics: Settings request failed.
+09-16 12:41:15.993 25201 25201 I MCAM_AppDistributor: Discovered: com.android.camera.provider.distributor.WatermarkDistributor
+09-16 12:41:15.996 25201 25246 I CloudConfig: update request status, current: null, expectPrev: 9 status: 2
+09-16 12:41:15.996 25201 25201 D CompatChangeReporter: Compat change id reported: 279646685; UID 10166; state: ENABLED
+09-16 12:41:15.996  1843  7963 I SmartPower: com.google.android.gms/10159(26780): idle->background(2330ms) R(content provider start ContentProviderRecord{526dc3b u0 com.google.android.gms/.chimera.container.GmsModuleProvider}) adj=0.
+09-16 12:41:15.997 25201 25269 I CloudConfig: start request data, module: camera_feature
+09-16 12:41:15.997 25201 25269 D AdvertisingIdClient: AdvertisingIdClient already created.
+09-16 12:41:15.997 25201 25201 W ResGuardResourcesHooker: skip hook resources, application resources is already hooked
+09-16 12:41:16.001 26780 26780 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentApiService }
+09-16 12:41:16.002 25201 25201 W MCAM_MIVICaptureManager: initImpl, IMPL: com.xiaomi.camera.mivi.qcom.MIVICaptureManagerQcomImpl@6d03c34, isSupportMIVI2: true, isSupportMIVI3OutputJpeg: true, isSupportMIVI2InMTK: false
+09-16 12:41:16.002 25201 25201 W MCAM_MIVICaptureManager: static init, IMPL: com.xiaomi.camera.mivi.qcom.MIVICaptureManagerQcomImpl@6d03c34
+09-16 12:41:16.003 25201 25251 D libcrashlytics: Initializing native crash handling successful.
+09-16 12:41:16.004  1843  7963 D FileUtils: Rounded bytes from 11861921792 to 16000000000
+09-16 12:41:16.005 25201 25201 W MCAM_DisplayHelper: invalid app bound size( w > h ).
+09-16 12:41:16.005 25201 25201 I MCAM_DisplayHelper: windowSize=1220x2712 boundSize=1220x2712 density=3.2500 ori=false mw=false sl=false
+09-16 12:41:16.007 25201 25251 I FirebaseCrashlytics: Saved version control info
+09-16 12:41:16.007 25201 25201 I MCAM_Display: appBoundSize=1220x2712 cp=DisplayAdapter{mKey='null,DisplayMode='NORMAL_MODE'}
+09-16 12:41:16.010 25201 25201 I MCAM_BugHunterManager: [P_PERFORM]: BUG_HUNTER_PROP=-1, bugHunterCloud=-1, bugHunterAppConfig=-1, sBugHunterType=-1
+09-16 12:41:16.012 25201 25201 D AutoDensity: autodensity debugEnable = 
+09-16 12:41:16.013 25201 25279 I MCAM_CameraAppImpl: [K_PROCESS]: load +
+09-16 12:41:16.013 25201 25278 I MCAM_PerformanceManager: [P_PERFORM]: check result: mIsOriginApp = true
+09-16 12:41:16.013 25201 25279 W MCAM_FeatureLoader: Build In Entries is NOT ready.
+09-16 12:41:16.014 25201 25279 I MCAM_PerformanceManager: [P_PERFORM]: Action: feature load_000_0 takes 1 ms
+09-16 12:41:16.014 25201 25279 I MCAM_CameraAppImpl: [K_PROCESS]: load -
+09-16 12:41:16.014 25201 25201 D AutoDensity: 	getAccessibilityDpi Exception: android.provider.Settings$SettingNotFoundException: display_density_forced
+09-16 12:41:16.015  1843  2924 D PackageManager: set app component=ComponentInfo{com.android.camera/com.android.camera2.compat.theme.custom.cv.widget.CameraFiltersWidgetProvider} enabled state: 2 from com.android.camera,uid=10166,pid=25201
+09-16 12:41:16.015  1843  2924 D PackageManager: set app component=ComponentInfo{com.android.camera/com.android.camera2.compat.theme.custom.cv.widget.CameraLensWidgetProvider} enabled state: 2 from com.android.camera,uid=10166,pid=25201
+09-16 12:41:16.015  1843  2924 D PackageManager: set app component=ComponentInfo{com.android.camera/com.android.camera2.compat.theme.custom.cv.widget.CameraLens2WidgetProvider} enabled state: 2 from com.android.camera,uid=10166,pid=25201
+09-16 12:41:16.015 25201 25201 I .android.camera: AssetManager2(0xb400007a1e07b8b8) locale list changing from [] to [en-GB]
+09-16 12:41:16.017 25201 25279 W MCAM_MiuiWidgetUtil: package with the given name cannot be found: android.content.pm.PackageManager$NameNotFoundException: ComponentInfo{com.android.camera/com.android.camera2.compat.theme.custom.cv.widget.CameraRedCaptureWidgetProvider}
+09-16 12:41:16.017  1843  2995 D PackageManager: set app component=ComponentInfo{com.android.camera/com.android.camera.DocumentTileService} enabled state: 2 from com.android.camera,uid=10166,pid=25201
+09-16 12:41:16.018 25201 25279 D LivePhotoImp: isDeviceSupportLivePhoto isSupportByMeminfo false
+09-16 12:41:16.018 25201 25279 D LivePhotoImp: isDeviceSupportLivePhoto isSupportByMeminfo false
+09-16 12:41:16.018  1843  2995 D PackageManager: set app component=ComponentInfo{com.android.camera/com.android.camera.OneShotLivephotoCamera} enabled state: 1 from com.android.camera,uid=10166,pid=25201
+09-16 12:41:16.018 29244 29309 D JavaheapMonitor: Java heap used=26M max=256M, proc: com.google.android.apps.messaging
+09-16 12:41:16.018 29244 29309 V JavaheapMonitor: Check java heap usage finished! Next check delay: 300000
+09-16 12:41:16.020 25201 25201 W libc    : Access denied finding property "ro.vendor.perf.scroll_opt"
+09-16 12:41:16.022  1843  2424 E HyperSentinel: ->pid:15121,processName:"nl.dawnwood.kernel",Rss Memory Size Change 2284516kb -> 1958152kb
+09-16 12:41:16.024 25201 25201 I PowerHalWrapper: PowerHalWrapper.getInstance 
+09-16 12:41:16.024 25201 25201 I PowerHalWrapper: PowerHalWrapper.getInstance 
+09-16 12:41:16.024 25201 25201 I M-ProMotion: M-ProMotion is disabled
+09-16 12:41:16.025 25201 25279 W libc    : Access denied finding property "persist.vendor.cam.icap.dump"
+09-16 12:41:16.026 25201 25279 D AudioSystem: onNewServiceWithAdapter: media.audio_flinger service obtained 0xb40000795e0d4a50
+09-16 12:41:16.026 22843 22998 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:21
+09-16 12:41:16.027 22843 22998 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:21
+09-16 12:41:16.027 22843 22998 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:21
+09-16 12:41:16.027 22843 22951 D AudioFlinger_Threads: updateWakeLockUids_l AudioOut_D uids:
+09-16 12:41:16.027 22843 22998 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:21
+09-16 12:41:16.027 22843 22953 D AudioFlinger_Threads: updateWakeLockUids_l AudioOut_15 uids:
+09-16 12:41:16.027 22843 22998 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:21
+09-16 12:41:16.027 22843 22956 D AudioFlinger_Threads: updateWakeLockUids_l AudioOut_1D uids:
+09-16 12:41:16.027 22843 22962 D AudioFlinger_Threads: updateWakeLockUids_l AudioOut_2D uids:
+09-16 12:41:16.027 22843 22964 D AudioFlinger_Threads: updateWakeLockUids_l AudioOut_35 uids:
+09-16 12:41:16.028 25201 25201 D FramePredict: FramePredict init: false
+09-16 12:41:16.028 25201 25279 D AudioSystem: getService: checking for service media.audio_flinger: 0xb400007ade099060
+09-16 12:41:16.029 22848 22848 D Audio_ParameterParser: parseVendorParameterIds: scope: MODULE, keys: audio_camera_loopback_support
+09-16 12:41:16.029 25201 25255 D AdvertisingIdClient: AdvertisingIdClient is bounded
+09-16 12:41:16.030 22852 23009 D AudioALSAHardware: -getParameters(), return ""
+09-16 12:41:16.030 22852 23009 D AudioALSAHardwareCustom: -getParameters(), return ""
+09-16 12:41:16.030 22843 22998 E ConversionHelperAidl: Function: parseAndGetVendorParameters Line: 51 Failed 
+09-16 12:41:16.030 22848 22848 D Audio_ParameterParser: parseVendorParameterIds: scope: MODULE, keys: audio_camera_loopback_support
+09-16 12:41:16.030 22843 22998 E ConversionHelperAidl: Function: parseAndGetVendorParameters Line: 51 Failed 
+09-16 12:41:16.031 22848 22848 D Audio_ParameterParser: parseVendorParameterIds: scope: MODULE, keys: audio_camera_loopback_support
+09-16 12:41:16.031 22843 22998 E ConversionHelperAidl: Function: parseAndGetVendorParameters Line: 51 Failed 
+09-16 12:41:16.032 25201 25279 W libc    : Access denied finding property "vendor.migl.debug"
+09-16 12:41:16.032 25201 25255 I AdvertisingIdClient: shouldSendLog -1
+09-16 12:41:16.032 25201 25255 I AdvertisingIdClient: GetInfoInternal elapse 42ms
+09-16 12:41:16.029 25201 25201 W RxCachedThreadS: type=1400 audit(0.0:5179652): avc:  denied  { search } for  name="mcd" dev="dm-67" ino=1477 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:mcd_data_file:s0 tclass=dir permissive=0 app=com.android.camera
+09-16 12:41:16.033 25201 25279 I libMiGL : EnableDR: 0
+09-16 12:41:16.033 25201 25279 D libMiGL : mDFIInterval: -1
+09-16 12:41:16.033 25201 25279 D libMEOW : meow new tls: 0xb400007a5e24f1f0
+09-16 12:41:16.034 25201 25279 D libMEOW : meow reload base cfg path: na
+09-16 12:41:16.034 25201 25279 D libMEOW : meow reload overlay cfg path: na
+09-16 12:41:16.034 25201 25279 D libMEOW : applied 0 plugin for [com.android.camera].
+09-16 12:41:16.035 25201 25244 W HidlServiceManagement: hwservicemanager is not supported on the device.
+09-16 12:41:16.035 25201 25244 I HidlServiceManagement: Trying to get transport of vendor.xiaomi.hardware.quickcamera@1.0::IQuickCameraService/default without hwservicemanager
+09-16 12:41:16.035 25201 25244 W CamOpt_QuickCamera: AidlQuickCamera Service sendEventInner Fail!
+09-16 12:41:16.039  1273  1273 D DisplayModeController: setDesiredMode 4627039422300187648 {mode={fps=60.00 Hz, modePtr={id=0, vsyncRate=60.00 Hz, peakRefreshRate=60.00 Hz}}, emitEvent=false, force=false}
+09-16 12:41:16.040 25201 25201 I AdvertisingIdClient: getting error as 17: API: ClientTelemetry.API is not available on this device. Connection failed with: ConnectionResult{statusCode=API_DISABLED_FOR_CONNECTION, resolution=null, message=null}
+09-16 12:41:16.040  1273  1273 D Scheduler: MtkOverrideDuration: update vsync 60
+09-16 12:41:16.040  1273  1273 D Scheduler: MtkOverrideDuration: reset override duration
+09-16 12:41:16.040  1273  1273 I PowerHalWrapper: updateFps(): 60
+09-16 12:41:16.041  1137  1137 I hwcomposer: [HWCDisplay] (0 setActiveConfigWithConstraints():4131), config:0  
+09-16 12:41:16.041 25201 25269 I AdvertisingIdClient: shouldSendLog 2780911577
+09-16 12:41:16.041 25201 25269 I AdvertisingIdClient: GetInfoInternal elapse 43ms
+09-16 12:41:16.041  1137  1137 I hwcomposer: [HWCDisplay] (0 setActiveConfigWithConstraints():4181), now 2116433714872994, diff 195385, estimated_applied_time 8333333 queued_size:0  
+09-16 12:41:16.041 25201 25258 I AdvertisingIdClient: shouldSendLog 2780911577
+09-16 12:41:16.041 25201 25258 I AdvertisingIdClient: GetInfoInternal elapse 50ms
+09-16 12:41:16.042  1273  1273 E HwcComposer: presentOrValidateDisplay 0 presentFence:-1
+09-16 12:41:16.042  1137  1137 I hwcomposer: [HWCDisplay] (0 updateFps():3684), (type:1, mode:2) fps:2.732753,dur:1097.79,max:1014.10,min:6.99  
+09-16 12:41:16.042  1137  1700 I android.hardware.graphics.composer@3.3-service: Sensor: notify citsensorservice to trigger cwb
+09-16 12:41:16.042  1649  2313 I libsensor-frameBufferManager: request dump start
+09-16 12:41:16.042  1649  2313 D libcomposer_ext: ClientImplAidl::getDispDumpEnable()
+09-16 12:41:16.042  1137  1137 D libcomposer_ext: DeviceImplAidl::syncPerform(13), client_handle: 1
+09-16 12:41:16.042  1137  1137 D libcomposer_ext: DeviceImplAidl::DeviceClientContextAidl::ParseGetDispDumpEnable()
+09-16 12:41:16.042  1137  1137 I hwcomposer: [HWC] getDispDumpEnable(), client(1), dpy 1, enable 1, (0,0,240,180), (240, 180), 3  
+09-16 12:41:16.042  1137  1137 I hwcomposer: [DRMDEV] isSupportWbParams(), id_crtc 116, id_connector 34, dump_point 0, src(0, 0, 240, 180), dst(240, 180), config 0  
+09-16 12:41:16.042  1137  1137 I hwcomposer: [DISP_DUMP] setEnable(), client(1), dpy(0), enable 1/0, src(0, 0, 240, 180), dst(240, 180), fmt 0x3  
+09-16 12:41:16.043  1137  1137 I hwcomposer: [HWC] getDispDumpEnable(), register to client callback with client(1), disp(0)  
+09-16 12:41:16.043  1649  2313 E libsensor-frameBufferManager: frameBufferManager_sensor_debug : first_time getDispDump Enable ret = 0
+09-16 12:41:16.043  1649  2313 D libcomposer_ext: ClientImplAidl::getDispDump(), dpy 1, dst (240, 180), dump_point 1, release_fence -1
+09-16 12:41:16.043  1273  1744 W libc    : Access denied finding property "ro.vendor.display.max_hdr_luminance"
+09-16 12:41:16.043  1137  1137 D libcomposer_ext: DeviceImplAidl::syncPerform(14), client_handle: 1
+09-16 12:41:16.043  1137  1137 D libcomposer_ext: DeviceImplAidl::DeviceClientContextAidl::ParseGetDispDump()
+09-16 12:41:16.043  1137  1137 D libcomposer_ext: DeviceImplAidl::ParseGetDispDump(), dpy 1, dst (240, 180), dump_point 1
+09-16 12:41:16.043  1137  1137 I hwcomposer: [HWC] getDispDump(), client(1), dpy 1, (778,0,1018,180), (240, 180), (1, 2), (-1), (-1), (0xb4000071cbdd4210)  
+09-16 12:41:16.043  1137  1137 I hwcomposer: [DRMDEV] isSupportWbParams(), id_crtc 116, id_connector 34, dump_point 1, src(778, 0, 240, 180), dst(240, 180), config 0  
+09-16 12:41:16.043  1137  1137 I hwcomposer: [DISP_DUMP] setDumpBuf(), client(1), dpy(0), src(778, 0, 1018, 180), dst(240, 180), (1, 2), -1, (-1), (0xb4000071cbdd4210)  
+09-16 12:41:16.043  1137  1137 I hwcomposer: [HWC] (0)fire a callback of refresh to SF[9]  
+09-16 12:41:16.046  1137  1762 I hwcomposer: [HWCDisplay] (0 updateAppliedConfigState():4377), applied config complete[idx:55342, config:0]  
+09-16 12:41:16.047  1273  1273 I PowerHalWrapper: updateFps(): 60
+09-16 12:41:16.047  1273  1273 D SurfaceFlinger: finalizeDisplayModeChange: display size = 1
+09-16 12:41:16.047  1273  1273 I PowerHalWrapper: mEnableMultiDisplayMode enable=0 fps=60
+09-16 12:41:16.047  1273  1273 I mtkpower_client: PowerHal_Wrap_EnableMultiDisplayMode, enable:0 fps:60 CurMultiDisplayMode:-1
+09-16 12:41:16.047  1273  1273 I PowerHalWrapper: updateFps(): 60
+09-16 12:41:16.048  1843  7963 D FileUtils: Rounded bytes from 11861921792 to 16000000000
+09-16 12:41:16.048  1273  1273 E HwcComposer: presentOrValidateDisplay 0 presentFence:-1
+09-16 12:41:16.049  1137  1137 D libcomposer_ext: DeviceImplAidl::DeviceClientContextAidl::NotifyDispDumpReady(), client_handle:1, buffer:0xb4000071cbdd4e70, fence:92, period16666667
+09-16 12:41:16.049  1649 20420 D libcomposer_ext: ClientCallbackAidl::asyncPerform(15)
+09-16 12:41:16.049  1649 20420 D libcomposer_ext: ClientImplAidl::ParseNotifyDispDumpReady()
+09-16 12:41:16.053  1446  1446 I adbd    : adbd service requested 'shell,v2,TERM=dumb,raw:run-as nl.dawnwood.kernel cat files/reports/probe_1789555271233895100.json'
+09-16 12:41:16.053 25201 25279 D nativeloader: Load /product/priv-app/MiuiCamera/MiuiCamera.apk!/lib/arm64-v8a/librender_engine.so using class loader ns product-clns-11 (caller=/product/priv-app/MiuiCamera/MiuiCamera.apk): ok
+09-16 12:41:16.053 25201 25279 I MCAM_PerformanceManager: [P_PERFORM]: Action: loading_class_000_0 takes 30 ms
+09-16 12:41:16.054 25201 25273 E VendorTagDescriptor: lookupTag: Tag name 'support.smallPicCheck' does not exist.
+09-16 12:41:16.054 25201 25273 E VendorTagDescriptor: lookupTag: Tag name 'enableUfsForm' does not exist.
+09-16 12:41:16.055 25201 25301 E CloudConfig: request net work failed, errorCode: 5, cause:
+09-16 12:41:16.055 25201 25301 E CloudConfig:  java.net.UnknownHostException: Unable to resolve host "mcc-intl.inf.miui.com": No address associated with hostname
+09-16 12:41:16.055 25201 25300 E CloudConfig: request net work failed, errorCode: 5, cause:
+09-16 12:41:16.055 25201 25300 E CloudConfig:  java.net.UnknownHostException: Unable to resolve host "mcc-intl.inf.miui.com": No address associated with hostname
+09-16 12:41:16.055 25201 25279 I MCAM_PermissionManager: getNeedCheckPermissionList() listSize =0
+09-16 12:41:16.056 25201 25302 E CloudConfig: request net work failed, errorCode: 5, cause:
+09-16 12:41:16.056 25201 25302 E CloudConfig:  java.net.UnknownHostException: Unable to resolve host "mcc-intl.inf.miui.com": No address associated with hostname
+09-16 12:41:16.056 25201 25299 I MCAM_BGServiceClient: initAfterConnected: 
+09-16 12:41:16.057 25201 25299 I MCAM_ImageReceiverFactory: init: mockCameraId has existed : 5
+09-16 12:41:16.057 25201 25279 D CompatChangeReporter: Compat change id reported: 270674727; UID 10166; state: ENABLED
+09-16 12:41:16.057 25201 25299 I MCAM_ImageReceiverFactory: init: mockCameraId has existed : 6
+09-16 12:41:16.058 25201 25299 I MCAM_BGServiceClient: initAfterConnected: mCameraInited = true
+09-16 12:41:16.061  1562 13322 W camerahalserver: AIBinder_linkToDeath is being called with a non-null cookie and no onUnlink callback set. This might not be intended. AIBinder_DeathRecipient_setOnUnlinked should be called first.
+09-16 12:41:16.062 25201 25299 I MCAM_BGServiceClient: setEventCallback: mivi bg service id > 1
+09-16 12:41:16.063 25201 25279 D BaseOneTrackImp: OneTrackImp init : Configuration{appId='31*******72'projectId='ca********20'pKeyId='e0************************************af', pluginId='null', channel='rodin_eea_global', international=false, region='null', overrideMiuiRegionSetting=false, mode=APP, GAIDEnable=true, IMSIEnable=true, IMEIEnable=true, ExceptionCatcherEnable=true, instanceId=null}
+09-16 12:41:16.063 25201 25322 D OneTrackSdk: updateDebugSwitch sEnable: false sDebugMode：false sDebugProperty：false
+09-16 12:41:16.063 25201 25322 D OneTrackSdk: updateTestSwitch sTestEnable: false sTestMode：false sTestProperty：false
+09-16 12:41:16.064 25201 25322 D OneTrackSdk: log on: false, quick upload on: false
+09-16 12:41:16.066 25201 25279 D BaseOneTrackImp: OneTrackImp sdk ver : 3.1.2
+09-16 12:41:16.066 25201 25279 D OneTrackSdk: updateDebugSwitch sEnable: false sDebugMode：false sDebugProperty：false
+09-16 12:41:16.066 25201 25279 D OneTrackSdk: updateTestSwitch sTestEnable: false sTestMode：false sTestProperty：false
+09-16 12:41:16.067 25201 25279 E MCAM_CameraImmunity: [IMMUNESYS] ErrorFrameworkIds = 
+09-16 12:41:16.067 25201 25279 E MCAM_CameraImmunity: [IMMUNESYS] ErrorRoleIds = 
+09-16 12:41:16.070 25201 25321 D nativeloader: Load /product/priv-app/MiuiCamera/MiuiCamera.apk!/lib/arm64-v8a/libxcrash.so using class loader ns product-clns-11 (caller=/product/priv-app/MiuiCamera/MiuiCamera.apk!classes7.dex): ok
+09-16 12:41:16.070  1649  2317 I libsensor-displayalgo: the value of channelCali ALS:29356.8,IR:3385.9,scales:0.930233
+09-16 12:41:16.070  1649  2317 D libsensor-displayalgo: brightness:2261.000000,flat_mode:0.000000,R1:287091.294026,G1:295148.042060,B1:303399.304649,R2:256139.614972,G2:263262.978002,B2:270573.622821,R3:257072.661850,G3:264114.428058,B3:271424.509799,R4:293655.081990,G4:301987.829706,B4:310453.731941,EVENT ALS:67540.000000,IR:18639.000000, lux: 396.156189 
+09-16 12:41:16.071  1649 20420 D libcomposer_ext: ClientImplAidl::getDispDumpEnable()
+09-16 12:41:16.071  1137  1137 D libcomposer_ext: DeviceImplAidl::syncPerform(13), client_handle: 1
+09-16 12:41:16.071  1137  1137 D libcomposer_ext: DeviceImplAidl::DeviceClientContextAidl::ParseGetDispDumpEnable()
+09-16 12:41:16.071  1137  1137 I hwcomposer: [HWC] getDispDumpEnable(), client(1), dpy 1, enable 0, (0,0,240,180), (240, 180), 3  
+09-16 12:41:16.071  1137  1137 I hwcomposer: [DISP_DUMP] setEnable(), client(1), dpy(0), enable 0/1, src(0, 0, 240, 180), dst(240, 180), fmt 0x3  
+09-16 12:41:16.071  1137  1137 I hwcomposer: [HWC] getDispDumpEnable(), register to client callback with client(1), disp(0)  
+09-16 12:41:16.072  1649 20420 E libsensor-frameBufferManager: frameBufferManager_sensor_debug : getDispDump_Disable ret = 0
+09-16 12:41:16.073  1649  2314 D libsensor-parseRGB: the value of RGB [241.483066 244.418670 247.378717], powPara: 2.290508
+09-16 12:41:16.076  1273  1273 D MI-SF   : isTpIdleScene mSetTpIdleFlag 0, mSetLtpoTpIdleFlag 0
+09-16 12:41:16.076  1273  1273 D DisplayModeController: setDesiredMode 4627039422300187648 {mode={fps=120.00 Hz, modePtr={id=2, vsyncRate=120.00 Hz, peakRefreshRate=120.00 Hz}}, emitEvent=true, force=false}
+09-16 12:41:16.076  1273  1273 D Scheduler: MtkOverrideDuration: update vsync 120
+09-16 12:41:16.077  1273  1273 D Scheduler: MtkOverrideDuration: reset override duration
+09-16 12:41:16.077  1273  1273 I PowerHalWrapper: updateFps(): 120
+09-16 12:41:16.078 15121 24953 I HWUI    : get: no pipeline info entry found for key of size 104
+09-16 12:41:16.079 15121 24953 W SKIA    : CreateGraphicsPipeline shader cache missed.
+09-16 12:41:16.088 15121 24953 W SKIA    : CreateGraphicsPipeline pipeline cache missed. elpased time: 8.57 ms.
+09-16 12:41:16.088 25201 25328 D CrashAnalysis: xc_trace_dumper->waiting for quit signal!
+09-16 12:41:16.088 25201 25201 D CrashAnalysis: xc_trace_signal_init->res: 0
+09-16 12:41:16.091  1273  1273 I BufferQueueProducer: [nl.dawnwood.kernel/nl.dawnwood.kernel.MainActivity#270822](this:0xb400006fcf2527c0,id:-1,api:0,p:-1,c:1273) queueBuffer: fps=13.53 dur=2365.66 max=2107.54 min=8.03
+09-16 12:41:16.092  1137  1137 I hwcomposer: [HWCDisplay] (0 setActiveConfigWithConstraints():4131), config:2  
+09-16 12:41:16.092  1137  1137 I hwcomposer: [HWCDisplay] (0 setActiveConfigWithConstraints():4181), now 2116433766065917, diff 343692, estimated_applied_time 16666667 queued_size:0  
+09-16 12:41:16.093  1273  1273 E HwcComposer: presentOrValidateDisplay 0 presentFence:-1
+09-16 12:41:16.104  1137  1762 I hwcomposer: [HWCDisplay] (0 updateAppliedConfigState():4377), applied config complete[idx:55343, config:2]  
+09-16 12:41:16.107  1273  1273 I PowerHalWrapper: updateFps(): 120
+09-16 12:41:16.107 13801 14861 D JavaheapMonitor: Java heap used=2M max=256M, proc: com.android.externalstorage
+09-16 12:41:16.107  1273  1273 D SurfaceFlinger: finalizeDisplayModeChange: display size = 1
+09-16 12:41:16.107  1273  1273 I PowerHalWrapper: mEnableMultiDisplayMode enable=0 fps=120
+09-16 12:41:16.107 13801 14861 V JavaheapMonitor: Check java heap usage finished! Next check delay: 300000
+09-16 12:41:16.108  1273  1273 I mtkpower_client: PowerHal_Wrap_EnableMultiDisplayMode, enable:0 fps:120 CurMultiDisplayMode:-1
+09-16 12:41:16.108  1273  1273 I PowerHalWrapper: updateFps(): 120
+09-16 12:41:16.125  1446  1446 I adbd    : adbd service requested 'shell,v2,TERM=dumb:export ANDROID_LOG_TAGS=''; exec logcat '-d' '-t' '500''

@@ -1,0 +1,22 @@
+{
+  "name": "near_epoch_limit_v04",
+  "command": [
+    "build/Release/dawnwood.exe",
+    "verify",
+    "--device",
+    "1650 Ti",
+    "--resume",
+    "results/v0.4/near_epoch_limit.dwk",
+    "--steps",
+    "1"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:41:25.980862+00:00",
+  "exit_code": 0,
+  "wall_seconds": 0.375,
+  "validation_environment": {
+    "DAWNWOOD_VALIDATION": "1",
+    "VK_LAYER_PATH": "C:\\DawnwoodInteractive\\tmp\\validation_v04\\layers",
+    "VK_LAYER_VALIDATE_SYNC": "1"
+  }
+}

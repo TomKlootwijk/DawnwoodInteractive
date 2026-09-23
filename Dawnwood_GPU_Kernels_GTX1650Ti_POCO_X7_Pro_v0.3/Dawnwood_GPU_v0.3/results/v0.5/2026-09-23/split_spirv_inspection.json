@@ -1,0 +1,1409 @@
+{
+  "kind": "Read-only inspection of shared-helper split evolution SPIR-V modules",
+  "utc": "2026-09-23T05:22:31.756303+00:00",
+  "method": "Decode instructions using installed Khronos SPIR-V grammar and GLSL.std.450 headers; no execution or device compiler guarantee.",
+  "grammar": "C:\\Users\\ietsm\\AppData\\Local\\Android\\Sdk\\ndk\\29.0.14206865\\sources\\third_party\\shaderc\\third_party\\spirv-tools\\external\\spirv-headers\\include\\spirv\\unified1\\spirv.core.grammar.json",
+  "source_fingerprint": "3b89050cd591cdb79f670f19a201b6e3feebb1cf0c44ffc138528d63958314fd",
+  "shaders": [
+    {
+      "shader": "mutate",
+      "bytes": 46636,
+      "sha256": "66ca0d7a044f4b7370fd9cccfd396ebf7141120d5d2f268639ac4a6e45b66b8f",
+      "arithmetic_instructions": 236,
+      "no_contraction_arithmetic": 236,
+      "without_no_contraction": [],
+      "native_elementary_instructions": {
+        "Sin": 0,
+        "Cos": 0,
+        "Exp": 0,
+        "Sqrt": 1,
+        "Fma": 0
+      },
+      "loop_control_masks": {
+        "2": 15
+      },
+      "dont_unroll_loop_count": 15,
+      "naive_fully_inlined_estimate": {
+        "bytes": 256456,
+        "instructions": 15988,
+        "note": "Static recursive function-size substitution, before cleanup or backend lowering; not measured compiler memory or machine code."
+      },
+      "functions": [
+        {
+          "id": 4,
+          "name": "main",
+          "function_control_mask": 0,
+          "bytes": 9476,
+          "instructions": 538,
+          "calls": {
+            "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;": 1,
+            "dw_sin(f1;": 2,
+            "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;": 2,
+            "dw_cos(f1;": 2
+          },
+          "DontInline": false,
+          "called_from_static_sites": 0
+        },
+        {
+          "id": 134,
+          "name": "dw_shape(u1;f1;f1;f1;f1;f1;",
+          "function_control_mask": 2,
+          "bytes": 6648,
+          "instructions": 389,
+          "calls": {
+            "dw_sqrt(f1;": 9,
+            "dw_div(f1;f1;": 4
+          },
+          "DontInline": true,
+          "called_from_static_sites": 1
+        },
+        {
+          "id": 29,
+          "name": "dw_div(f1;f1;",
+          "function_control_mask": 2,
+          "bytes": 4656,
+          "instructions": 290,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 4
+        },
+        {
+          "id": 42,
+          "name": "dw_trig_reduce(f1;u1;",
+          "function_control_mask": 2,
+          "bytes": 3584,
+          "instructions": 228,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 33,
+          "name": "dw_sqrt(f1;",
+          "function_control_mask": 2,
+          "bytes": 2540,
+          "instructions": 161,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 9
+        },
+        {
+          "id": 149,
+          "name": "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;",
+          "function_control_mask": 2,
+          "bytes": 2180,
+          "instructions": 128,
+          "calls": {
+            "dw_exp(f1;": 1,
+            "dw_cos(f1;": 1,
+            "dw_sin(f1;": 1,
+            "dw_shape(u1;f1;f1;f1;f1;f1;": 1,
+            "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 3
+        },
+        {
+          "id": 57,
+          "name": "dw_exp(f1;",
+          "function_control_mask": 2,
+          "bytes": 1892,
+          "instructions": 118,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 1
+        },
+        {
+          "id": 141,
+          "name": "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;",
+          "function_control_mask": 2,
+          "bytes": 1596,
+          "instructions": 113,
+          "calls": {
+            "dw_cos(f1;": 1,
+            "dw_sin(f1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 51,
+          "name": "dw_sin(f1;",
+          "function_control_mask": 2,
+          "bytes": 1132,
+          "instructions": 68,
+          "calls": {
+            "dw_trig_reduce(f1;u1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 4
+        },
+        {
+          "id": 54,
+          "name": "dw_cos(f1;",
+          "function_control_mask": 2,
+          "bytes": 984,
+          "instructions": 58,
+          "calls": {
+            "dw_trig_reduce(f1;u1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 4
+        },
+        {
+          "id": 155,
+          "name": "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;",
+          "function_control_mask": 2,
+          "bytes": 428,
+          "instructions": 28,
+          "calls": {
+            "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;": 1,
+            "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 1
+        }
+      ],
+      "evolution_scratch_member_offsets": [],
+      "array_strides": [
+        {
+          "id": 2738,
+          "stride_bytes": 128
+        }
+      ],
+      "all_basic_float_arithmetic_no_contraction": true
+    },
+    {
+      "shader": "evolve",
+      "bytes": 75068,
+      "sha256": "4e18c053e65557444b7b3062d47b67dfc5a5d4ff390f894c4fd45bb9e7eccde0",
+      "arithmetic_instructions": 384,
+      "no_contraction_arithmetic": 384,
+      "without_no_contraction": [],
+      "native_elementary_instructions": {
+        "Sin": 0,
+        "Cos": 0,
+        "Exp": 0,
+        "Sqrt": 1,
+        "Fma": 0
+      },
+      "loop_control_masks": {
+        "2": 18
+      },
+      "dont_unroll_loop_count": 18,
+      "naive_fully_inlined_estimate": {
+        "bytes": 983168,
+        "instructions": 61158,
+        "note": "Static recursive function-size substitution, before cleanup or backend lowering; not measured compiler memory or machine code."
+      },
+      "functions": [
+        {
+          "id": 4,
+          "name": "main",
+          "function_control_mask": 0,
+          "bytes": 19200,
+          "instructions": 997,
+          "calls": {
+            "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;": 5,
+            "dw_derivative(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Config-u1-u1-u1-u1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;u1;": 1,
+            "dw_div(f1;f1;": 8,
+            "dw_geometry(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;": 1,
+            "dw_cos(f1;": 5,
+            "dw_sin(f1;": 6
+          },
+          "DontInline": false,
+          "called_from_static_sites": 0
+        },
+        {
+          "id": 182,
+          "name": "dw_derivative(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Config-u1-u1-u1-u1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;u1;",
+          "function_control_mask": 2,
+          "bytes": 12064,
+          "instructions": 601,
+          "calls": {
+            "dw_geometry(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;": 1,
+            "dw_exp(f1;": 1,
+            "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;": 1,
+            "dw_sin(f1;": 5,
+            "dw_cos(f1;": 2
+          },
+          "DontInline": true,
+          "called_from_static_sites": 1
+        },
+        {
+          "id": 129,
+          "name": "dw_shape(u1;f1;f1;f1;f1;f1;",
+          "function_control_mask": 2,
+          "bytes": 6648,
+          "instructions": 389,
+          "calls": {
+            "dw_sqrt(f1;": 9,
+            "dw_div(f1;f1;": 4
+          },
+          "DontInline": true,
+          "called_from_static_sites": 1
+        },
+        {
+          "id": 29,
+          "name": "dw_div(f1;f1;",
+          "function_control_mask": 2,
+          "bytes": 4656,
+          "instructions": 290,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 13
+        },
+        {
+          "id": 42,
+          "name": "dw_trig_reduce(f1;u1;",
+          "function_control_mask": 2,
+          "bytes": 3584,
+          "instructions": 228,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 173,
+          "name": "dw_geometry(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;",
+          "function_control_mask": 2,
+          "bytes": 2728,
+          "instructions": 145,
+          "calls": {
+            "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;": 1,
+            "dw_div(f1;f1;": 1,
+            "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 33,
+          "name": "dw_sqrt(f1;",
+          "function_control_mask": 2,
+          "bytes": 2540,
+          "instructions": 161,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 9
+        },
+        {
+          "id": 142,
+          "name": "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;",
+          "function_control_mask": 2,
+          "bytes": 2180,
+          "instructions": 128,
+          "calls": {
+            "dw_exp(f1;": 1,
+            "dw_cos(f1;": 1,
+            "dw_sin(f1;": 1,
+            "dw_shape(u1;f1;f1;f1;f1;f1;": 1,
+            "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 57,
+          "name": "dw_exp(f1;",
+          "function_control_mask": 2,
+          "bytes": 1892,
+          "instructions": 118,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 136,
+          "name": "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;",
+          "function_control_mask": 2,
+          "bytes": 1596,
+          "instructions": 113,
+          "calls": {
+            "dw_cos(f1;": 1,
+            "dw_sin(f1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 51,
+          "name": "dw_sin(f1;",
+          "function_control_mask": 2,
+          "bytes": 1132,
+          "instructions": 68,
+          "calls": {
+            "dw_trig_reduce(f1;u1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 13
+        },
+        {
+          "id": 54,
+          "name": "dw_cos(f1;",
+          "function_control_mask": 2,
+          "bytes": 984,
+          "instructions": 58,
+          "calls": {
+            "dw_trig_reduce(f1;u1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 9
+        },
+        {
+          "id": 148,
+          "name": "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;",
+          "function_control_mask": 2,
+          "bytes": 428,
+          "instructions": 28,
+          "calls": {
+            "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;": 1,
+            "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 7
+        }
+      ],
+      "evolution_scratch_member_offsets": [],
+      "array_strides": [
+        {
+          "id": 3689,
+          "stride_bytes": 128
+        },
+        {
+          "id": 3694,
+          "stride_bytes": 128
+        }
+      ],
+      "all_basic_float_arithmetic_no_contraction": true
+    },
+    {
+      "shader": "prepare",
+      "bytes": 43972,
+      "sha256": "3ab3f4276da3e6b31185398c44c637d66baeaae0f735001ba8079ca0cf423387",
+      "arithmetic_instructions": 212,
+      "no_contraction_arithmetic": 212,
+      "without_no_contraction": [],
+      "native_elementary_instructions": {
+        "Sin": 0,
+        "Cos": 0,
+        "Exp": 0,
+        "Sqrt": 1,
+        "Fma": 0
+      },
+      "loop_control_masks": {
+        "2": 14
+      },
+      "dont_unroll_loop_count": 14,
+      "naive_fully_inlined_estimate": {
+        "bytes": 257172,
+        "instructions": 16053,
+        "note": "Static recursive function-size substitution, before cleanup or backend lowering; not measured compiler memory or machine code."
+      },
+      "functions": [
+        {
+          "id": 123,
+          "name": "dw_shape(u1;f1;f1;f1;f1;f1;",
+          "function_control_mask": 2,
+          "bytes": 6648,
+          "instructions": 389,
+          "calls": {
+            "dw_sqrt(f1;": 9,
+            "dw_div(f1;f1;": 4
+          },
+          "DontInline": true,
+          "called_from_static_sites": 1
+        },
+        {
+          "id": 4,
+          "name": "main",
+          "function_control_mask": 0,
+          "bytes": 6144,
+          "instructions": 321,
+          "calls": {
+            "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;": 3
+          },
+          "DontInline": false,
+          "called_from_static_sites": 0
+        },
+        {
+          "id": 29,
+          "name": "dw_div(f1;f1;",
+          "function_control_mask": 2,
+          "bytes": 4656,
+          "instructions": 290,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 4
+        },
+        {
+          "id": 42,
+          "name": "dw_trig_reduce(f1;u1;",
+          "function_control_mask": 2,
+          "bytes": 3584,
+          "instructions": 228,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 33,
+          "name": "dw_sqrt(f1;",
+          "function_control_mask": 2,
+          "bytes": 2540,
+          "instructions": 161,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 9
+        },
+        {
+          "id": 138,
+          "name": "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;",
+          "function_control_mask": 2,
+          "bytes": 2180,
+          "instructions": 128,
+          "calls": {
+            "dw_exp(f1;": 1,
+            "dw_cos(f1;": 1,
+            "dw_sin(f1;": 1,
+            "dw_shape(u1;f1;f1;f1;f1;f1;": 1,
+            "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 1
+        },
+        {
+          "id": 57,
+          "name": "dw_exp(f1;",
+          "function_control_mask": 2,
+          "bytes": 1892,
+          "instructions": 118,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 1
+        },
+        {
+          "id": 130,
+          "name": "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;",
+          "function_control_mask": 2,
+          "bytes": 1596,
+          "instructions": 113,
+          "calls": {
+            "dw_cos(f1;": 1,
+            "dw_sin(f1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 51,
+          "name": "dw_sin(f1;",
+          "function_control_mask": 2,
+          "bytes": 1132,
+          "instructions": 68,
+          "calls": {
+            "dw_trig_reduce(f1;u1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 54,
+          "name": "dw_cos(f1;",
+          "function_control_mask": 2,
+          "bytes": 984,
+          "instructions": 58,
+          "calls": {
+            "dw_trig_reduce(f1;u1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 144,
+          "name": "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;",
+          "function_control_mask": 2,
+          "bytes": 428,
+          "instructions": 28,
+          "calls": {
+            "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;": 1,
+            "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 3
+        }
+      ],
+      "evolution_scratch_member_offsets": [
+        {
+          "id": 2550,
+          "name": "EvolutionScratch",
+          "offsets": {
+            "0": 0,
+            "1": 4,
+            "2": 8,
+            "3": 12,
+            "4": 16,
+            "5": 20,
+            "6": 24,
+            "7": 28,
+            "8": 32,
+            "9": 48,
+            "10": 64,
+            "11": 80
+          }
+        }
+      ],
+      "array_strides": [
+        {
+          "id": 2551,
+          "stride_bytes": 96
+        },
+        {
+          "id": 2557,
+          "stride_bytes": 128
+        }
+      ],
+      "all_basic_float_arithmetic_no_contraction": true
+    },
+    {
+      "shader": "slope",
+      "bytes": 61984,
+      "sha256": "55787aefb2bcb76e11fcc1ad5d84cd240ecd259f6d3effd0f326802a96cfb04c",
+      "arithmetic_instructions": 274,
+      "no_contraction_arithmetic": 274,
+      "without_no_contraction": [],
+      "native_elementary_instructions": {
+        "Sin": 0,
+        "Cos": 0,
+        "Exp": 0,
+        "Sqrt": 1,
+        "Fma": 0
+      },
+      "loop_control_masks": {
+        "2": 15
+      },
+      "dont_unroll_loop_count": 15,
+      "naive_fully_inlined_estimate": {
+        "bytes": 301084,
+        "instructions": 18581,
+        "note": "Static recursive function-size substitution, before cleanup or backend lowering; not measured compiler memory or machine code."
+      },
+      "functions": [
+        {
+          "id": 172,
+          "name": "dw_derivative(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Config-u1-u1-u1-u1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;u1;",
+          "function_control_mask": 2,
+          "bytes": 12064,
+          "instructions": 601,
+          "calls": {
+            "dw_geometry(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;": 1,
+            "dw_exp(f1;": 1,
+            "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;": 1,
+            "dw_sin(f1;": 5,
+            "dw_cos(f1;": 2
+          },
+          "DontInline": true,
+          "called_from_static_sites": 1
+        },
+        {
+          "id": 4,
+          "name": "main",
+          "function_control_mask": 0,
+          "bytes": 7308,
+          "instructions": 366,
+          "calls": {
+            "dw_derivative(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Config-u1-u1-u1-u1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;u1;": 1
+          },
+          "DontInline": false,
+          "called_from_static_sites": 0
+        },
+        {
+          "id": 117,
+          "name": "dw_shape(u1;f1;f1;f1;f1;f1;",
+          "function_control_mask": 2,
+          "bytes": 6648,
+          "instructions": 389,
+          "calls": {
+            "dw_sqrt(f1;": 9,
+            "dw_div(f1;f1;": 4
+          },
+          "DontInline": true,
+          "called_from_static_sites": 1
+        },
+        {
+          "id": 29,
+          "name": "dw_div(f1;f1;",
+          "function_control_mask": 2,
+          "bytes": 4656,
+          "instructions": 290,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 5
+        },
+        {
+          "id": 42,
+          "name": "dw_trig_reduce(f1;u1;",
+          "function_control_mask": 2,
+          "bytes": 3584,
+          "instructions": 228,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 163,
+          "name": "dw_geometry(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;",
+          "function_control_mask": 2,
+          "bytes": 2728,
+          "instructions": 145,
+          "calls": {
+            "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;": 1,
+            "dw_div(f1;f1;": 1,
+            "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 1
+        },
+        {
+          "id": 33,
+          "name": "dw_sqrt(f1;",
+          "function_control_mask": 2,
+          "bytes": 2540,
+          "instructions": 161,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 9
+        },
+        {
+          "id": 132,
+          "name": "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;",
+          "function_control_mask": 2,
+          "bytes": 2180,
+          "instructions": 128,
+          "calls": {
+            "dw_exp(f1;": 1,
+            "dw_cos(f1;": 1,
+            "dw_sin(f1;": 1,
+            "dw_shape(u1;f1;f1;f1;f1;f1;": 1,
+            "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 57,
+          "name": "dw_exp(f1;",
+          "function_control_mask": 2,
+          "bytes": 1892,
+          "instructions": 118,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 124,
+          "name": "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;",
+          "function_control_mask": 2,
+          "bytes": 1596,
+          "instructions": 113,
+          "calls": {
+            "dw_cos(f1;": 1,
+            "dw_sin(f1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 51,
+          "name": "dw_sin(f1;",
+          "function_control_mask": 2,
+          "bytes": 1132,
+          "instructions": 68,
+          "calls": {
+            "dw_trig_reduce(f1;u1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 7
+        },
+        {
+          "id": 54,
+          "name": "dw_cos(f1;",
+          "function_control_mask": 2,
+          "bytes": 984,
+          "instructions": 58,
+          "calls": {
+            "dw_trig_reduce(f1;u1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 4
+        },
+        {
+          "id": 138,
+          "name": "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;",
+          "function_control_mask": 2,
+          "bytes": 428,
+          "instructions": 28,
+          "calls": {
+            "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;": 1,
+            "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 2
+        }
+      ],
+      "evolution_scratch_member_offsets": [
+        {
+          "id": 2782,
+          "name": "EvolutionScratch",
+          "offsets": {
+            "0": 0,
+            "1": 4,
+            "2": 8,
+            "3": 12,
+            "4": 16,
+            "5": 20,
+            "6": 24,
+            "7": 28,
+            "8": 32,
+            "9": 48,
+            "10": 64,
+            "11": 80
+          }
+        }
+      ],
+      "array_strides": [
+        {
+          "id": 2783,
+          "stride_bytes": 96
+        },
+        {
+          "id": 2849,
+          "stride_bytes": 128
+        }
+      ],
+      "all_basic_float_arithmetic_no_contraction": true
+    },
+    {
+      "shader": "combine",
+      "bytes": 44164,
+      "sha256": "3ac940666b1d806bb1f86002ff8b1427b4199fb8aaf952c9a570b4fb74cbd337",
+      "arithmetic_instructions": 241,
+      "no_contraction_arithmetic": 241,
+      "without_no_contraction": [],
+      "native_elementary_instructions": {
+        "Sin": 0,
+        "Cos": 0,
+        "Exp": 0,
+        "Sqrt": 1,
+        "Fma": 0
+      },
+      "loop_control_masks": {
+        "2": 13
+      },
+      "dont_unroll_loop_count": 13,
+      "naive_fully_inlined_estimate": {
+        "bytes": 107976,
+        "instructions": 6698,
+        "note": "Static recursive function-size substitution, before cleanup or backend lowering; not measured compiler memory or machine code."
+      },
+      "functions": [
+        {
+          "id": 117,
+          "name": "dw_shape(u1;f1;f1;f1;f1;f1;",
+          "function_control_mask": 2,
+          "bytes": 6648,
+          "instructions": 389,
+          "calls": {
+            "dw_sqrt(f1;": 9,
+            "dw_div(f1;f1;": 4
+          },
+          "DontInline": true,
+          "called_from_static_sites": 1
+        },
+        {
+          "id": 4,
+          "name": "main",
+          "function_control_mask": 0,
+          "bytes": 5676,
+          "instructions": 294,
+          "calls": {
+            "dw_div(f1;f1;": 4,
+            "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;": 1
+          },
+          "DontInline": false,
+          "called_from_static_sites": 0
+        },
+        {
+          "id": 29,
+          "name": "dw_div(f1;f1;",
+          "function_control_mask": 2,
+          "bytes": 4656,
+          "instructions": 290,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 8
+        },
+        {
+          "id": 42,
+          "name": "dw_trig_reduce(f1;u1;",
+          "function_control_mask": 2,
+          "bytes": 3584,
+          "instructions": 228,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 33,
+          "name": "dw_sqrt(f1;",
+          "function_control_mask": 2,
+          "bytes": 2540,
+          "instructions": 161,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 9
+        },
+        {
+          "id": 132,
+          "name": "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;",
+          "function_control_mask": 2,
+          "bytes": 2180,
+          "instructions": 128,
+          "calls": {
+            "dw_exp(f1;": 1,
+            "dw_cos(f1;": 1,
+            "dw_sin(f1;": 1,
+            "dw_shape(u1;f1;f1;f1;f1;f1;": 1,
+            "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 1
+        },
+        {
+          "id": 57,
+          "name": "dw_exp(f1;",
+          "function_control_mask": 2,
+          "bytes": 1892,
+          "instructions": 118,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 1
+        },
+        {
+          "id": 124,
+          "name": "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;",
+          "function_control_mask": 2,
+          "bytes": 1596,
+          "instructions": 113,
+          "calls": {
+            "dw_cos(f1;": 1,
+            "dw_sin(f1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 51,
+          "name": "dw_sin(f1;",
+          "function_control_mask": 2,
+          "bytes": 1132,
+          "instructions": 68,
+          "calls": {
+            "dw_trig_reduce(f1;u1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 54,
+          "name": "dw_cos(f1;",
+          "function_control_mask": 2,
+          "bytes": 984,
+          "instructions": 58,
+          "calls": {
+            "dw_trig_reduce(f1;u1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 138,
+          "name": "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;",
+          "function_control_mask": 2,
+          "bytes": 428,
+          "instructions": 28,
+          "calls": {
+            "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;": 1,
+            "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 1
+        }
+      ],
+      "evolution_scratch_member_offsets": [
+        {
+          "id": 2500,
+          "name": "EvolutionScratch",
+          "offsets": {
+            "0": 0,
+            "1": 4,
+            "2": 8,
+            "3": 12,
+            "4": 16,
+            "5": 20,
+            "6": 24,
+            "7": 28,
+            "8": 32,
+            "9": 48,
+            "10": 64,
+            "11": 80
+          }
+        }
+      ],
+      "array_strides": [
+        {
+          "id": 2489,
+          "stride_bytes": 128
+        },
+        {
+          "id": 2494,
+          "stride_bytes": 128
+        },
+        {
+          "id": 2501,
+          "stride_bytes": 96
+        }
+      ],
+      "all_basic_float_arithmetic_no_contraction": true
+    },
+    {
+      "shader": "geometry",
+      "bytes": 44236,
+      "sha256": "4edf5f2b1ac570ad5537adc268d46f84d7bc6542280291042ec6e9f9f0874a59",
+      "arithmetic_instructions": 206,
+      "no_contraction_arithmetic": 206,
+      "without_no_contraction": [],
+      "native_elementary_instructions": {
+        "Sin": 0,
+        "Cos": 0,
+        "Exp": 0,
+        "Sqrt": 1,
+        "Fma": 0
+      },
+      "loop_control_masks": {
+        "2": 14
+      },
+      "dont_unroll_loop_count": 14,
+      "naive_fully_inlined_estimate": {
+        "bytes": 166812,
+        "instructions": 10392,
+        "note": "Static recursive function-size substitution, before cleanup or backend lowering; not measured compiler memory or machine code."
+      },
+      "functions": [
+        {
+          "id": 117,
+          "name": "dw_shape(u1;f1;f1;f1;f1;f1;",
+          "function_control_mask": 2,
+          "bytes": 6648,
+          "instructions": 389,
+          "calls": {
+            "dw_sqrt(f1;": 9,
+            "dw_div(f1;f1;": 4
+          },
+          "DontInline": true,
+          "called_from_static_sites": 1
+        },
+        {
+          "id": 29,
+          "name": "dw_div(f1;f1;",
+          "function_control_mask": 2,
+          "bytes": 4656,
+          "instructions": 290,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 5
+        },
+        {
+          "id": 42,
+          "name": "dw_trig_reduce(f1;u1;",
+          "function_control_mask": 2,
+          "bytes": 3584,
+          "instructions": 228,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 4,
+          "name": "main",
+          "function_control_mask": 0,
+          "bytes": 3384,
+          "instructions": 192,
+          "calls": {
+            "dw_geometry(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;": 1
+          },
+          "DontInline": false,
+          "called_from_static_sites": 0
+        },
+        {
+          "id": 163,
+          "name": "dw_geometry(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;",
+          "function_control_mask": 2,
+          "bytes": 2728,
+          "instructions": 145,
+          "calls": {
+            "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;": 1,
+            "dw_div(f1;f1;": 1,
+            "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 1
+        },
+        {
+          "id": 33,
+          "name": "dw_sqrt(f1;",
+          "function_control_mask": 2,
+          "bytes": 2540,
+          "instructions": 161,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 9
+        },
+        {
+          "id": 132,
+          "name": "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;",
+          "function_control_mask": 2,
+          "bytes": 2180,
+          "instructions": 128,
+          "calls": {
+            "dw_exp(f1;": 1,
+            "dw_cos(f1;": 1,
+            "dw_sin(f1;": 1,
+            "dw_shape(u1;f1;f1;f1;f1;f1;": 1,
+            "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 57,
+          "name": "dw_exp(f1;",
+          "function_control_mask": 2,
+          "bytes": 1892,
+          "instructions": 118,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 1
+        },
+        {
+          "id": 124,
+          "name": "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;",
+          "function_control_mask": 2,
+          "bytes": 1596,
+          "instructions": 113,
+          "calls": {
+            "dw_cos(f1;": 1,
+            "dw_sin(f1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 51,
+          "name": "dw_sin(f1;",
+          "function_control_mask": 2,
+          "bytes": 1132,
+          "instructions": 68,
+          "calls": {
+            "dw_trig_reduce(f1;u1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 54,
+          "name": "dw_cos(f1;",
+          "function_control_mask": 2,
+          "bytes": 984,
+          "instructions": 58,
+          "calls": {
+            "dw_trig_reduce(f1;u1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 138,
+          "name": "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;",
+          "function_control_mask": 2,
+          "bytes": 428,
+          "instructions": 28,
+          "calls": {
+            "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;": 1,
+            "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 1
+        }
+      ],
+      "evolution_scratch_member_offsets": [
+        {
+          "id": 2365,
+          "name": "EvolutionScratch",
+          "offsets": {
+            "0": 0,
+            "1": 4,
+            "2": 8,
+            "3": 12,
+            "4": 16,
+            "5": 20,
+            "6": 24,
+            "7": 28,
+            "8": 32,
+            "9": 48,
+            "10": 64,
+            "11": 80
+          }
+        }
+      ],
+      "array_strides": [
+        {
+          "id": 2366,
+          "stride_bytes": 96
+        },
+        {
+          "id": 2372,
+          "stride_bytes": 128
+        }
+      ],
+      "all_basic_float_arithmetic_no_contraction": true
+    },
+    {
+      "shader": "finish",
+      "bytes": 50328,
+      "sha256": "5c0033ab585514e8f618006acc205c842f0f114d81841913b87a75626b813948",
+      "arithmetic_instructions": 272,
+      "no_contraction_arithmetic": 272,
+      "without_no_contraction": [],
+      "native_elementary_instructions": {
+        "Sin": 0,
+        "Cos": 0,
+        "Exp": 0,
+        "Sqrt": 1,
+        "Fma": 0
+      },
+      "loop_control_masks": {
+        "2": 14
+      },
+      "dont_unroll_loop_count": 14,
+      "naive_fully_inlined_estimate": {
+        "bytes": 164768,
+        "instructions": 10214,
+        "note": "Static recursive function-size substitution, before cleanup or backend lowering; not measured compiler memory or machine code."
+      },
+      "functions": [
+        {
+          "id": 4,
+          "name": "main",
+          "function_control_mask": 0,
+          "bytes": 11332,
+          "instructions": 604,
+          "calls": {
+            "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;": 1,
+            "dw_cos(f1;": 5,
+            "dw_sin(f1;": 6,
+            "dw_div(f1;f1;": 4
+          },
+          "DontInline": false,
+          "called_from_static_sites": 0
+        },
+        {
+          "id": 123,
+          "name": "dw_shape(u1;f1;f1;f1;f1;f1;",
+          "function_control_mask": 2,
+          "bytes": 6648,
+          "instructions": 389,
+          "calls": {
+            "dw_sqrt(f1;": 9,
+            "dw_div(f1;f1;": 4
+          },
+          "DontInline": true,
+          "called_from_static_sites": 1
+        },
+        {
+          "id": 29,
+          "name": "dw_div(f1;f1;",
+          "function_control_mask": 2,
+          "bytes": 4656,
+          "instructions": 290,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 8
+        },
+        {
+          "id": 42,
+          "name": "dw_trig_reduce(f1;u1;",
+          "function_control_mask": 2,
+          "bytes": 3584,
+          "instructions": 228,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 33,
+          "name": "dw_sqrt(f1;",
+          "function_control_mask": 2,
+          "bytes": 2540,
+          "instructions": 161,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 9
+        },
+        {
+          "id": 136,
+          "name": "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;",
+          "function_control_mask": 2,
+          "bytes": 2180,
+          "instructions": 128,
+          "calls": {
+            "dw_exp(f1;": 1,
+            "dw_cos(f1;": 1,
+            "dw_sin(f1;": 1,
+            "dw_shape(u1;f1;f1;f1;f1;f1;": 1,
+            "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 1
+        },
+        {
+          "id": 57,
+          "name": "dw_exp(f1;",
+          "function_control_mask": 2,
+          "bytes": 1892,
+          "instructions": 118,
+          "calls": {},
+          "DontInline": true,
+          "called_from_static_sites": 1
+        },
+        {
+          "id": 130,
+          "name": "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;",
+          "function_control_mask": 2,
+          "bytes": 1596,
+          "instructions": 113,
+          "calls": {
+            "dw_cos(f1;": 1,
+            "dw_sin(f1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 2
+        },
+        {
+          "id": 51,
+          "name": "dw_sin(f1;",
+          "function_control_mask": 2,
+          "bytes": 1132,
+          "instructions": 68,
+          "calls": {
+            "dw_trig_reduce(f1;u1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 8
+        },
+        {
+          "id": 54,
+          "name": "dw_cos(f1;",
+          "function_control_mask": 2,
+          "bytes": 984,
+          "instructions": 58,
+          "calls": {
+            "dw_trig_reduce(f1;u1;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 7
+        },
+        {
+          "id": 142,
+          "name": "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;",
+          "function_control_mask": 2,
+          "bytes": 428,
+          "instructions": 28,
+          "calls": {
+            "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;": 1,
+            "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;": 1
+          },
+          "DontInline": true,
+          "called_from_static_sites": 1
+        }
+      ],
+      "evolution_scratch_member_offsets": [
+        {
+          "id": 2797,
+          "name": "EvolutionScratch",
+          "offsets": {
+            "0": 0,
+            "1": 4,
+            "2": 8,
+            "3": 12,
+            "4": 16,
+            "5": 20,
+            "6": 24,
+            "7": 28,
+            "8": 32,
+            "9": 48,
+            "10": 64,
+            "11": 80
+          }
+        }
+      ],
+      "array_strides": [
+        {
+          "id": 2785,
+          "stride_bytes": 128
+        },
+        {
+          "id": 2790,
+          "stride_bytes": 128
+        },
+        {
+          "id": 2798,
+          "stride_bytes": 96
+        }
+      ],
+      "all_basic_float_arithmetic_no_contraction": true
+    }
+  ],
+  "runtime_review": {
+    "numerical_equivalence_measured_by_this_inspection": false,
+    "descriptor_bindings": {
+      "0": "original State storage buffer",
+      "1": "combined/final State storage buffer",
+      "2": "old operator sampled integer image",
+      "3": "next operator storage integer image",
+      "4": "next operator sampled integer image",
+      "5": "chunk-local EvolutionScratch storage buffer"
+    },
+    "scratch_record_bytes": 96,
+    "scratch_record_limit": 65536,
+    "scratch_payload_limit_bytes": 6291456,
+    "schedule": [
+      "prepare",
+      "slope0",
+      "slope1",
+      "slope2",
+      "slope3",
+      "combine",
+      "geometry",
+      "finish"
+    ],
+    "findings": [
+      "Scratch indices are local to each chunk, while state indices add the global base. Tail invocations return after the shared-operator barrier and before scratch access.",
+      "Every pass has a compute-shader write to compute-shader read/write memory dependency. Original input stays separate from output until epoch parity changes.",
+      "All four slopes and the final geometry field retain FP32 storage, exact arithmetic grouping, and explicit NoContraction decorations.",
+      "Push-constant reserved1 is overridden only in the local dispatch copy for slope stages and restored before combine. Stored Config and checkpoint fields are unchanged.",
+      "Constructor failure unwinds through Impl destruction; successfully created pipelines, buffers, images and device objects are retained in owned fields for cleanup.",
+      "Capacity sizing must account for bounded scratch in addition to staging; this inspection does not amend the sizing tool."
+    ]
+  }
+}

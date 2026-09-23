@@ -1,0 +1,22 @@
+{
+  "utc": "2026-09-23T06:15:50.899432+00:00",
+  "manifest_check": {
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\tools\\verify_manifest.py"
+    ],
+    "exit_code": 0,
+    "stdout": "Checked 2195 files; 0 failures."
+  },
+  "windows_exe_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+  "windows_exe_matches_validated_v05": true,
+  "android_apk_sha256": "8c86dbcd791a824b1402a5561c3ef3926a8f539900d0dcdf95b1563d89726430",
+  "android_apk_matches_validated_v05": true,
+  "shader_source_fingerprint": "3b89050cd591cdb79f670f19a201b6e3feebb1cf0c44ffc138528d63958314fd",
+  "release_zip_sha256": "ab25225f42e8a136464f591f9eabbbe388c750af065a279b2bc290c0e1078c46",
+  "release_zip_matches_prior_receipt": true,
+  "formalization_pdf_matches_prior_receipt": true,
+  "kernel_source_changed": false,
+  "new_tests_written": false,
+  "assessment_location": "outside frozen v0.5 project/release; output/universality_v0.5 and output/pdf"
+}

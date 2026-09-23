@@ -5,3 +5,4 @@
 static_assert(sizeof(State)==128,"State ABI");
 static_assert(sizeof(Operator)==64,"Operator ABI");
 static_assert(sizeof(Config)==64,"Push ABI");
+static_assert(sizeof(EvolutionScratch)==96,"Transient evolution scratch ABI");

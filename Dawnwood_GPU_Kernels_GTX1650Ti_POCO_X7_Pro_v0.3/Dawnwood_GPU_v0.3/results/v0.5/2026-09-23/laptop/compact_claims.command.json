@@ -1,0 +1,24 @@
+{
+  "name": "compact_claims",
+  "command": [
+    "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "tools\\run_claims.py",
+    "--binary",
+    "results\\v0.5\\2026-09-23\\laptop\\function_compaction_artifacts\\dawnwood.exe",
+    "--device",
+    "1650 Ti",
+    "--out",
+    "results\\v0.5\\2026-09-23\\laptop\\claims_compact"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "started_utc": "2026-09-23T05:18:20.519478+00:00",
+  "binary_sha256": "fd3da2704959dc2bf4aa8e1e22bc33e210bca754b238c0d719fa78da2a0bc08f",
+  "validation_environment": {
+    "DAWNWOOD_VALIDATION": "1",
+    "VK_LAYER_PATH": "C:\\DawnwoodInteractive\\tmp\\validation_v04\\layers",
+    "VK_LAYER_VALIDATE_SYNC": "1"
+  },
+  "exit_code": 0,
+  "wall_seconds": 1.8440000000009604,
+  "finished_utc": "2026-09-23T05:18:22.362150+00:00"
+}

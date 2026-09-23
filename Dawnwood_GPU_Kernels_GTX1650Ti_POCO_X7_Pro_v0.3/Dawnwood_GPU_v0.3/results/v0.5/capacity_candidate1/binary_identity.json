@@ -1,0 +1,7 @@
+{
+  "description": "Candidate 1, portable sine/cosine/exponential with native sqrt/div; actual integer LUT and bounded capacity runtime. Captured after measurements, before the next build.",
+  "evolve_sha256": "7CCB31344077F6FC5ABF47054294567F5928A3B88CA05328D6F0E2BC4F1610CB",
+  "mutate_sha256": "497C2ABB20F38CA673BDEF2A1FFDD37DFDEB040120D59DA95611A00CA0C473A5",
+  "shader_source_sha256": "56c265d340b171c229f33cad637ca0cd5402d8c225172756fd96840c154667f5",
+  "binary_sha256": "CBF3F69B3B90EE2CC4950B9849E1432552F224A87C07F7C1E35BBA901529CD60"
+}

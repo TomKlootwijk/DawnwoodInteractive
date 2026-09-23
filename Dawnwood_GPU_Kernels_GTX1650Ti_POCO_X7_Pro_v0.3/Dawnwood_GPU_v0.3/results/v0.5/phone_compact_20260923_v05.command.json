@@ -1,0 +1,20 @@
+{
+  "name": "phone_compact_20260923_v05",
+  "command": [
+    "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "tools/test_phone.py",
+    "--serial",
+    "XOVSTSHYNREMZ5D6",
+    "--apk",
+    "bin/android/Dawnwood_GPU_v0.5_debug.apk",
+    "--out",
+    "results/v0.5/2026-09-23/phone_compact",
+    "--timeout",
+    "300"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-23T05:15:05.668186+00:00",
+  "exit_code": 2,
+  "wall_seconds": 12.46900000000096,
+  "validation_environment": {}
+}

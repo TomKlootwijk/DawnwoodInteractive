@@ -1,0 +1,13 @@
+{
+  "name": "android_sdk35_v04",
+  "command": [
+    "C:\\Users\\ietsm\\AppData\\Local\\Android\\Sdk\\cmdline-tools\\latest\\bin\\sdkmanager.bat",
+    "--sdk_root=C:\\Users\\ietsm\\AppData\\Local\\Android\\Sdk",
+    "platforms;android-35"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:38:24.748529+00:00",
+  "exit_code": 0,
+  "wall_seconds": 41.48400000017136,
+  "validation_environment": {}
+}

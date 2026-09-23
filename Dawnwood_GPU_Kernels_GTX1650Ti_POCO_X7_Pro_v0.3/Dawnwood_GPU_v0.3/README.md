@@ -1,19 +1,31 @@
-# Dawnwood Interactive — Numerical GPU Kernel, v0.3
+# Dawnwood Interactive — Numerical GPU Kernel, v0.5.0
+
+**Numerical validation: pass for the recorded workloads on both physical devices, 23 September 2026.** Current GTX and POCO CPU/GPU comparisons have zero bitwise differences at unchanged tolerances, including 257 states over 1,024 epochs on both. The POCO also passes 4,096 × 256 and 65,537 × four; initial Mali pipeline failures remain recorded. Read **`docs/VALIDATION_v0.5.md`** for artifact identities, exact scope, performance costs and the quick claim table. The source's full self-defining architecture and stronger physical/universality claims remain unestablished.
+
+The current formalization is **`docs/FORMALIZATION_v0.5.md`**, developed from the supplied **Dawnwood_Interactive_Unified_v0.2.pdf** through the reviewed v0.4 edition. **`docs/CHANGES_v0.5.md`** records corrections and compatibility limits. The working-directory name is historical; current executable reports identify **DWI-N1-0.5**. Original v0.3/v0.4 documents and results remain historical evidence, including the v0.4 GTX epoch-96 and POCO epoch-1 numerical failures.
 
 **Tom Klootwijk · Dawnwood Interactive**  
 **Targets:** GTX 1650 Ti laptop, owner-confirmed 4 GB; POCO X7 Pro, owner-specified 12 GB edition.
 
+At **4,096 states × 64 epochs**, three-sample median GPU times are **0.157168 s on GTX** and **0.169310 s on POCO**: **1.668 million** and **1.548 million state updates/s**. Capacity runs complete **12,244,544 GTX states** and **14,569,792 POCO states**, two epochs each, under their stated memory policies. These are full 128-byte states with complete readback, not raw texel counts or absolute hardware maxima. GPU timers exclude setup/readback. Correctness and phone execution improved; a speed improvement over earlier candidates was not demonstrated.
+
 The source names the whole a **Universal Spatial State Automaton**. This package implements the Dawnwood recurrence numerically in **C++ and Vulkan compute**, with a desktop executable and an **Android NDK application using the same compute kernels**. It is not another symbolic-only workbench. The original source is included, and every major source requirement/claim has a linked test or measurement entry.
 
-Start with **`results/STATUS.md`** for what was actually built and tested in this archive. Then read **`docs/BUILD_AND_RUN.md`** for your laptop and phone. Your physical devices are not marked tested merely because source code, SPIR-V or an APK exists.
+Start with **`docs/VALIDATION_v0.5.md`** for what has actually completed on each device. Then read **`docs/BUILD_AND_RUN.md`** for your laptop and phone. `results/STATUS.md` indexes the current packaged campaign; files under older version directories describe their identified builds. The previous root status is preserved as `results/v0.4/historical_root_STATUS.md`. A source tree, SPIR-V file or APK is not evidence of successful physical-device execution.
 
 ## The implemented circulation
 
 A mutable operator LUT and a whole numerical state feed one another. The GPU first changes operator bodies, field parameters and pinion-held Klein-surface positions from preceding feedback. It then evaluates the changed operators through the double-pinion/Hadamard, log-polar, binary route, four-slot RK4 with double Y-up, geometric/colon/phyllotaxis/blend, RGBA/history/inverse-T, and surface-return stages. The result feeds the next interval.
 
-The operator body is executable scalar bytecode in a mutable device buffer. Body edits and GPU mutation affect actual numerical outputs. There are no per-interval host uploads of those changes. Several dispatches schedule one recurrence; they do not separate it into unrelated engines.
+The operator body is executable scalar bytecode in a mutable integer texture: four `RGBA32_UINT` texels preserve each 64-byte record. One-bit controls coexist with full FP32 field parameters; the nine-opcode vocabulary still uses four bits per instruction. The core 31 descriptors use 1,984 bytes of shared workgroup storage. Body edits and GPU mutation affect actual numerical outputs without per-interval host uploads. This is explicit descriptor reuse, not proof of permanent hardware-cache residence.
+
+**The full source proposal is only partly implemented.** The RK4 algorithm, Hadamard matrix, primitive formulas, Klein wrapping, update order and tree-address rules remain fixed native algorithms. Mutable records change their declared inputs and scalar responses; they do not rewrite those algorithms or grow a tree. Numerical backend agreement does not close that architectural gap or establish quantum physics, universality or automatic noise removal.
 
 The original discussion leaves several numerical equations open. **`docs/NUMERICAL_PROFILE.md`** states the complete DWI-N1 choices—including the Klein quotient/embedding, local fields, derivative, jitter, coupling and inverse representation—so no new equation is disguised as text already supplied in the source. The kernel uses FP32 and uint32 with an explicit 128-byte state and 64-byte operator ABI.
+
+Version 0.5 makes elementary-function arithmetic explicit across CPU/GPU and keeps the original acceptance tolerance. It caps staging at 16 MiB and partitions large populations while preserving one mutation per epoch and whole-population feedback. Practical capacity counts records that actually finish the requested updates and full readback under a stated memory policy. The phone's 12 GB system RAM is shared with Android and is not 12 GB of dedicated GPU memory.
+
+The ARM path splits each evolution partition into eight dependent dispatches and adds bounded scratch of at most 6 MiB to reduce compiler workload. GTX defaults to one evolution dispatch per partition. Timing and memory reports identify the selected path. Each local CPU/GPU comparison starts from the same snapshot, but initialization still uses host-native math: identical CLI parameters do not currently guarantee bitwise-identical initial state across Windows and Android.
 
 ## Laptop bring-up
 

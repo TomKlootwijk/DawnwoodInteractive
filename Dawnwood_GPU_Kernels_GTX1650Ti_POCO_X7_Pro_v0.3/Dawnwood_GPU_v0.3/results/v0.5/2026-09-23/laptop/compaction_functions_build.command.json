@@ -1,0 +1,19 @@
+{
+  "name": "compaction_functions_build",
+  "command": [
+    "C:\\Users\\ietsm\\AppData\\Local\\Android\\Sdk\\cmake\\3.31.6\\bin\\cmake.exe",
+    "--build",
+    "build",
+    "--config",
+    "Release",
+    "-j",
+    "4"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "started_utc": "2026-09-23T05:16:10.677916+00:00",
+  "binary_sha256": "9221fc2dd5aeedb7324575a3d9cd8a1f7ef0c21908b0dacf3bd8a9d34d69efdb",
+  "validation_environment": {},
+  "exit_code": 1,
+  "wall_seconds": 9.453999999999724,
+  "finished_utc": "2026-09-23T05:16:20.133011+00:00"
+}

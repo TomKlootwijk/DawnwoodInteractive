@@ -1,0 +1,1481 @@
+{
+  "kind": "Full-state GPU capacity measurement",
+  "absolute_hardware_maximum": false,
+  "numerical_equivalence_claimed": false,
+  "requested_epochs_per_candidate": 2,
+  "binary": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\build\\Release\\dawnwood.exe",
+  "device_selector": "1650 Ti",
+  "points": [
+    {
+      "count": 65536,
+      "epochs": 2,
+      "state_payload_bytes": 8388608,
+      "state_ping_pong_bytes": 16777216,
+      "kernel_seconds": 0.008504832,
+      "timer": "Vulkan device timestamps",
+      "state_updates_per_second": 15411474.32424297,
+      "process_wall_seconds": 0.43700000015087426,
+      "health": {
+        "passed": true,
+        "first_invalid_record": "",
+        "nonfinite_state_values": 0,
+        "out_of_chart_states": 0,
+        "max_energy_error_from_source_seed_5": 2.38419e-06
+      },
+      "digest": "7fe6a0d032e68109",
+      "device": {
+        "name": "NVIDIA GeForce GTX 1650 Ti with Max-Q Design",
+        "vendor_id": 4318,
+        "device_id": 8085,
+        "api_version": 4211000,
+        "driver_version": 2438201344,
+        "software_device": false,
+        "validation_layer_enabled": false,
+        "validation_errors": 0,
+        "validation_warnings": 0,
+        "memory_budget_extension": true,
+        "requested_budget_fraction": 0.95,
+        "device_type": 2,
+        "states_heap_index": 0,
+        "state_buffer_heaps": [
+          0,
+          0
+        ],
+        "state_dispatch_limit": 65536,
+        "compute_submission_count": 2,
+        "max_submission_seconds": 0.00425328,
+        "texture_compression_BC": true,
+        "BC5_sampled_image": true,
+        "EAC_RG11_sampled_image": false,
+        "ASTC_4x4_sampled_image": false,
+        "max_compute_shared_memory_bytes": 49152,
+        "max_storage_buffer_range": 4294967295,
+        "max_compute_workgroup_count_x": 2147483647,
+        "max_image_dimension_2d": 32768,
+        "max_memory_allocation_count": 4294967295,
+        "timestamp_valid_bits": 64,
+        "allocated_buffer_bytes": 25165824,
+        "allocated_image_bytes": 31744,
+        "allocated_total_bytes": 25197568,
+        "staging_bytes": 8388608,
+        "allocation_count": 5,
+        "state_ping_pong_payload_bytes": 16777216,
+        "operator_lut_payload_bytes": 3968,
+        "operator_lut_format": "RGBA32_UINT",
+        "operator_lut_storage": "sampled_and_storage_VkImage",
+        "operator_lut_width": 124,
+        "operator_lut_height": 1,
+        "operator_lut_texels_per_record": 4,
+        "operator_lut_point_fetch": true,
+        "operator_lut_filtering": false,
+        "operator_lut_parameter_precision_bits": 32,
+        "operator_lut_flag_word_bits": 32,
+        "operator_lut_used_orientation_mask": 1,
+        "operator_bytecode_bits_per_instruction": 4,
+        "evolve_shared_operator_records": 31,
+        "evolve_shared_operator_bytes": 1984,
+        "mutate_shared_operator_bytes": 128,
+        "permanent_texture_cache_residence_proven": false,
+        "upload_bytes": 8390592,
+        "download_bytes": 8390592,
+        "completed_epochs": 2,
+        "advance_buffer_copy_commands": 0,
+        "advance_image_copy_commands": 0,
+        "timer": "Vulkan device timestamps",
+        "last_dispatch_seconds": 0.00425155,
+        "last_wall_seconds": 0.0043937,
+        "heaps": [
+          {
+            "index": 0,
+            "size": 4126146560,
+            "runtime_buffer_allocation_bytes": 16777216,
+            "runtime_image_allocation_bytes": 31744,
+            "runtime_allocation_bytes": 16808960,
+            "device_local": true,
+            "budget_at_start": 3507224576,
+            "usage_at_start": 0
+          },
+          {
+            "index": 1,
+            "size": 8466173952,
+            "runtime_buffer_allocation_bytes": 8388608,
+            "runtime_image_allocation_bytes": 0,
+            "runtime_allocation_bytes": 8388608,
+            "device_local": false,
+            "budget_at_start": 7774429799,
+            "usage_at_start": 0
+          },
+          {
+            "index": 2,
+            "size": 224395264,
+            "runtime_buffer_allocation_bytes": 0,
+            "runtime_image_allocation_bytes": 0,
+            "runtime_allocation_bytes": 0,
+            "device_local": true,
+            "budget_at_start": 221335552,
+            "usage_at_start": 3059712
+          }
+        ]
+      },
+      "command_record": "run_000_65536.command.json"
+    },
+    {
+      "count": 131072,
+      "epochs": 2,
+      "state_payload_bytes": 16777216,
+      "state_ping_pong_bytes": 33554432,
+      "kernel_seconds": 0.016932544,
+      "timer": "Vulkan device timestamps",
+      "state_updates_per_second": 15481666.546976047,
+      "process_wall_seconds": 0.5779999999795109,
+      "health": {
+        "passed": true,
+        "first_invalid_record": "",
+        "nonfinite_state_values": 0,
+        "out_of_chart_states": 0,
+        "max_energy_error_from_source_seed_5": 2.86102e-06
+      },
+      "digest": "ac730497b80d82e9",
+      "device": {
+        "name": "NVIDIA GeForce GTX 1650 Ti with Max-Q Design",
+        "vendor_id": 4318,
+        "device_id": 8085,
+        "api_version": 4211000,
+        "driver_version": 2438201344,
+        "software_device": false,
+        "validation_layer_enabled": false,
+        "validation_errors": 0,
+        "validation_warnings": 0,
+        "memory_budget_extension": true,
+        "requested_budget_fraction": 0.95,
+        "device_type": 2,
+        "states_heap_index": 0,
+        "state_buffer_heaps": [
+          0,
+          0
+        ],
+        "state_dispatch_limit": 65536,
+        "compute_submission_count": 4,
+        "max_submission_seconds": 0.00424902,
+        "texture_compression_BC": true,
+        "BC5_sampled_image": true,
+        "EAC_RG11_sampled_image": false,
+        "ASTC_4x4_sampled_image": false,
+        "max_compute_shared_memory_bytes": 49152,
+        "max_storage_buffer_range": 4294967295,
+        "max_compute_workgroup_count_x": 2147483647,
+        "max_image_dimension_2d": 32768,
+        "max_memory_allocation_count": 4294967295,
+        "timestamp_valid_bits": 64,
+        "allocated_buffer_bytes": 50331648,
+        "allocated_image_bytes": 31744,
+        "allocated_total_bytes": 50363392,
+        "staging_bytes": 16777216,
+        "allocation_count": 5,
+        "state_ping_pong_payload_bytes": 33554432,
+        "operator_lut_payload_bytes": 3968,
+        "operator_lut_format": "RGBA32_UINT",
+        "operator_lut_storage": "sampled_and_storage_VkImage",
+        "operator_lut_width": 124,
+        "operator_lut_height": 1,
+        "operator_lut_texels_per_record": 4,
+        "operator_lut_point_fetch": true,
+        "operator_lut_filtering": false,
+        "operator_lut_parameter_precision_bits": 32,
+        "operator_lut_flag_word_bits": 32,
+        "operator_lut_used_orientation_mask": 1,
+        "operator_bytecode_bits_per_instruction": 4,
+        "evolve_shared_operator_records": 31,
+        "evolve_shared_operator_bytes": 1984,
+        "mutate_shared_operator_bytes": 128,
+        "permanent_texture_cache_residence_proven": false,
+        "upload_bytes": 16779200,
+        "download_bytes": 16779200,
+        "completed_epochs": 2,
+        "advance_buffer_copy_commands": 0,
+        "advance_image_copy_commands": 0,
+        "timer": "Vulkan device timestamps",
+        "last_dispatch_seconds": 0.00846646,
+        "last_wall_seconds": 0.0087338,
+        "heaps": [
+          {
+            "index": 0,
+            "size": 4126146560,
+            "runtime_buffer_allocation_bytes": 33554432,
+            "runtime_image_allocation_bytes": 31744,
+            "runtime_allocation_bytes": 33586176,
+            "device_local": true,
+            "budget_at_start": 3507224576,
+            "usage_at_start": 0
+          },
+          {
+            "index": 1,
+            "size": 8466173952,
+            "runtime_buffer_allocation_bytes": 16777216,
+            "runtime_image_allocation_bytes": 0,
+            "runtime_allocation_bytes": 16777216,
+            "device_local": false,
+            "budget_at_start": 7774429799,
+            "usage_at_start": 0
+          },
+          {
+            "index": 2,
+            "size": 224395264,
+            "runtime_buffer_allocation_bytes": 0,
+            "runtime_image_allocation_bytes": 0,
+            "runtime_allocation_bytes": 0,
+            "device_local": true,
+            "budget_at_start": 221335552,
+            "usage_at_start": 3059712
+          }
+        ]
+      },
+      "command_record": "run_001_131072.command.json"
+    },
+    {
+      "count": 262144,
+      "epochs": 2,
+      "state_payload_bytes": 33554432,
+      "state_ping_pong_bytes": 67108864,
+      "kernel_seconds": 0.033782112,
+      "timer": "Vulkan device timestamps",
+      "state_updates_per_second": 15519692.788893718,
+      "process_wall_seconds": 0.7650000001303852,
+      "health": {
+        "passed": true,
+        "first_invalid_record": "",
+        "nonfinite_state_values": 0,
+        "out_of_chart_states": 0,
+        "max_energy_error_from_source_seed_5": 2.38419e-06
+      },
+      "digest": "1206bcb71b4e9129",
+      "device": {
+        "name": "NVIDIA GeForce GTX 1650 Ti with Max-Q Design",
+        "vendor_id": 4318,
+        "device_id": 8085,
+        "api_version": 4211000,
+        "driver_version": 2438201344,
+        "software_device": false,
+        "validation_layer_enabled": false,
+        "validation_errors": 0,
+        "validation_warnings": 0,
+        "memory_budget_extension": true,
+        "requested_budget_fraction": 0.95,
+        "device_type": 2,
+        "states_heap_index": 0,
+        "state_buffer_heaps": [
+          0,
+          0
+        ],
+        "state_dispatch_limit": 65536,
+        "compute_submission_count": 8,
+        "max_submission_seconds": 0.00425062,
+        "texture_compression_BC": true,
+        "BC5_sampled_image": true,
+        "EAC_RG11_sampled_image": false,
+        "ASTC_4x4_sampled_image": false,
+        "max_compute_shared_memory_bytes": 49152,
+        "max_storage_buffer_range": 4294967295,
+        "max_compute_workgroup_count_x": 2147483647,
+        "max_image_dimension_2d": 32768,
+        "max_memory_allocation_count": 4294967295,
+        "timestamp_valid_bits": 64,
+        "allocated_buffer_bytes": 83886080,
+        "allocated_image_bytes": 31744,
+        "allocated_total_bytes": 83917824,
+        "staging_bytes": 16777216,
+        "allocation_count": 5,
+        "state_ping_pong_payload_bytes": 67108864,
+        "operator_lut_payload_bytes": 3968,
+        "operator_lut_format": "RGBA32_UINT",
+        "operator_lut_storage": "sampled_and_storage_VkImage",
+        "operator_lut_width": 124,
+        "operator_lut_height": 1,
+        "operator_lut_texels_per_record": 4,
+        "operator_lut_point_fetch": true,
+        "operator_lut_filtering": false,
+        "operator_lut_parameter_precision_bits": 32,
+        "operator_lut_flag_word_bits": 32,
+        "operator_lut_used_orientation_mask": 1,
+        "operator_bytecode_bits_per_instruction": 4,
+        "evolve_shared_operator_records": 31,
+        "evolve_shared_operator_bytes": 1984,
+        "mutate_shared_operator_bytes": 128,
+        "permanent_texture_cache_residence_proven": false,
+        "upload_bytes": 33556416,
+        "download_bytes": 33556416,
+        "completed_epochs": 2,
+        "advance_buffer_copy_commands": 0,
+        "advance_image_copy_commands": 0,
+        "timer": "Vulkan device timestamps",
+        "last_dispatch_seconds": 0.0168957,
+        "last_wall_seconds": 0.0178092,
+        "heaps": [
+          {
+            "index": 0,
+            "size": 4126146560,
+            "runtime_buffer_allocation_bytes": 67108864,
+            "runtime_image_allocation_bytes": 31744,
+            "runtime_allocation_bytes": 67140608,
+            "device_local": true,
+            "budget_at_start": 3507224576,
+            "usage_at_start": 0
+          },
+          {
+            "index": 1,
+            "size": 8466173952,
+            "runtime_buffer_allocation_bytes": 16777216,
+            "runtime_image_allocation_bytes": 0,
+            "runtime_allocation_bytes": 16777216,
+            "device_local": false,
+            "budget_at_start": 7774429799,
+            "usage_at_start": 0
+          },
+          {
+            "index": 2,
+            "size": 224395264,
+            "runtime_buffer_allocation_bytes": 0,
+            "runtime_image_allocation_bytes": 0,
+            "runtime_allocation_bytes": 0,
+            "device_local": true,
+            "budget_at_start": 221335552,
+            "usage_at_start": 3059712
+          }
+        ]
+      },
+      "command_record": "run_002_262144.command.json"
+    },
+    {
+      "count": 524288,
+      "epochs": 2,
+      "state_payload_bytes": 67108864,
+      "state_ping_pong_bytes": 134217728,
+      "kernel_seconds": 0.067509856,
+      "timer": "Vulkan device timestamps",
+      "state_updates_per_second": 15532191.329218656,
+      "process_wall_seconds": 1.0939999998081475,
+      "health": {
+        "passed": true,
+        "first_invalid_record": "",
+        "nonfinite_state_values": 0,
+        "out_of_chart_states": 0,
+        "max_energy_error_from_source_seed_5": 2.38419e-06
+      },
+      "digest": "262e7e7a47931eea",
+      "device": {
+        "name": "NVIDIA GeForce GTX 1650 Ti with Max-Q Design",
+        "vendor_id": 4318,
+        "device_id": 8085,
+        "api_version": 4211000,
+        "driver_version": 2438201344,
+        "software_device": false,
+        "validation_layer_enabled": false,
+        "validation_errors": 0,
+        "validation_warnings": 0,
+        "memory_budget_extension": true,
+        "requested_budget_fraction": 0.95,
+        "device_type": 2,
+        "states_heap_index": 0,
+        "state_buffer_heaps": [
+          0,
+          0
+        ],
+        "state_dispatch_limit": 65536,
+        "compute_submission_count": 16,
+        "max_submission_seconds": 0.00426118,
+        "texture_compression_BC": true,
+        "BC5_sampled_image": true,
+        "EAC_RG11_sampled_image": false,
+        "ASTC_4x4_sampled_image": false,
+        "max_compute_shared_memory_bytes": 49152,
+        "max_storage_buffer_range": 4294967295,
+        "max_compute_workgroup_count_x": 2147483647,
+        "max_image_dimension_2d": 32768,
+        "max_memory_allocation_count": 4294967295,
+        "timestamp_valid_bits": 64,
+        "allocated_buffer_bytes": 150994944,
+        "allocated_image_bytes": 31744,
+        "allocated_total_bytes": 151026688,
+        "staging_bytes": 16777216,
+        "allocation_count": 5,
+        "state_ping_pong_payload_bytes": 134217728,
+        "operator_lut_payload_bytes": 3968,
+        "operator_lut_format": "RGBA32_UINT",
+        "operator_lut_storage": "sampled_and_storage_VkImage",
+        "operator_lut_width": 124,
+        "operator_lut_height": 1,
+        "operator_lut_texels_per_record": 4,
+        "operator_lut_point_fetch": true,
+        "operator_lut_filtering": false,
+        "operator_lut_parameter_precision_bits": 32,
+        "operator_lut_flag_word_bits": 32,
+        "operator_lut_used_orientation_mask": 1,
+        "operator_bytecode_bits_per_instruction": 4,
+        "evolve_shared_operator_records": 31,
+        "evolve_shared_operator_bytes": 1984,
+        "mutate_shared_operator_bytes": 128,
+        "permanent_texture_cache_residence_proven": false,
+        "upload_bytes": 67110848,
+        "download_bytes": 67110848,
+        "completed_epochs": 2,
+        "advance_buffer_copy_commands": 0,
+        "advance_image_copy_commands": 0,
+        "timer": "Vulkan device timestamps",
+        "last_dispatch_seconds": 0.0337553,
+        "last_wall_seconds": 0.0355231,
+        "heaps": [
+          {
+            "index": 0,
+            "size": 4126146560,
+            "runtime_buffer_allocation_bytes": 134217728,
+            "runtime_image_allocation_bytes": 31744,
+            "runtime_allocation_bytes": 134249472,
+            "device_local": true,
+            "budget_at_start": 3507224576,
+            "usage_at_start": 0
+          },
+          {
+            "index": 1,
+            "size": 8466173952,
+            "runtime_buffer_allocation_bytes": 16777216,
+            "runtime_image_allocation_bytes": 0,
+            "runtime_allocation_bytes": 16777216,
+            "device_local": false,
+            "budget_at_start": 7774429799,
+            "usage_at_start": 0
+          },
+          {
+            "index": 2,
+            "size": 224395264,
+            "runtime_buffer_allocation_bytes": 0,
+            "runtime_image_allocation_bytes": 0,
+            "runtime_allocation_bytes": 0,
+            "device_local": true,
+            "budget_at_start": 221335552,
+            "usage_at_start": 3059712
+          }
+        ]
+      },
+      "command_record": "run_003_524288.command.json"
+    },
+    {
+      "count": 1048576,
+      "epochs": 2,
+      "state_payload_bytes": 134217728,
+      "state_ping_pong_bytes": 268435456,
+      "kernel_seconds": 0.115710208,
+      "timer": "Vulkan device timestamps",
+      "state_updates_per_second": 18124174.489427935,
+      "process_wall_seconds": 1.781999999890104,
+      "health": {
+        "passed": true,
+        "first_invalid_record": "",
+        "nonfinite_state_values": 0,
+        "out_of_chart_states": 0,
+        "max_energy_error_from_source_seed_5": 2.38419e-06
+      },
+      "digest": "12d177894e5e729d",
+      "device": {
+        "name": "NVIDIA GeForce GTX 1650 Ti with Max-Q Design",
+        "vendor_id": 4318,
+        "device_id": 8085,
+        "api_version": 4211000,
+        "driver_version": 2438201344,
+        "software_device": false,
+        "validation_layer_enabled": false,
+        "validation_errors": 0,
+        "validation_warnings": 0,
+        "memory_budget_extension": true,
+        "requested_budget_fraction": 0.95,
+        "device_type": 2,
+        "states_heap_index": 0,
+        "state_buffer_heaps": [
+          0,
+          0
+        ],
+        "state_dispatch_limit": 65536,
+        "compute_submission_count": 32,
+        "max_submission_seconds": 0.00387882,
+        "texture_compression_BC": true,
+        "BC5_sampled_image": true,
+        "EAC_RG11_sampled_image": false,
+        "ASTC_4x4_sampled_image": false,
+        "max_compute_shared_memory_bytes": 49152,
+        "max_storage_buffer_range": 4294967295,
+        "max_compute_workgroup_count_x": 2147483647,
+        "max_image_dimension_2d": 32768,
+        "max_memory_allocation_count": 4294967295,
+        "timestamp_valid_bits": 64,
+        "allocated_buffer_bytes": 285212672,
+        "allocated_image_bytes": 31744,
+        "allocated_total_bytes": 285244416,
+        "staging_bytes": 16777216,
+        "allocation_count": 5,
+        "state_ping_pong_payload_bytes": 268435456,
+        "operator_lut_payload_bytes": 3968,
+        "operator_lut_format": "RGBA32_UINT",
+        "operator_lut_storage": "sampled_and_storage_VkImage",
+        "operator_lut_width": 124,
+        "operator_lut_height": 1,
+        "operator_lut_texels_per_record": 4,
+        "operator_lut_point_fetch": true,
+        "operator_lut_filtering": false,
+        "operator_lut_parameter_precision_bits": 32,
+        "operator_lut_flag_word_bits": 32,
+        "operator_lut_used_orientation_mask": 1,
+        "operator_bytecode_bits_per_instruction": 4,
+        "evolve_shared_operator_records": 31,
+        "evolve_shared_operator_bytes": 1984,
+        "mutate_shared_operator_bytes": 128,
+        "permanent_texture_cache_residence_proven": false,
+        "upload_bytes": 134219712,
+        "download_bytes": 134219712,
+        "completed_epochs": 2,
+        "advance_buffer_copy_commands": 0,
+        "advance_image_copy_commands": 0,
+        "timer": "Vulkan device timestamps",
+        "last_dispatch_seconds": 0.0542074,
+        "last_wall_seconds": 0.0571822,
+        "heaps": [
+          {
+            "index": 0,
+            "size": 4126146560,
+            "runtime_buffer_allocation_bytes": 268435456,
+            "runtime_image_allocation_bytes": 31744,
+            "runtime_allocation_bytes": 268467200,
+            "device_local": true,
+            "budget_at_start": 3507224576,
+            "usage_at_start": 0
+          },
+          {
+            "index": 1,
+            "size": 8466173952,
+            "runtime_buffer_allocation_bytes": 16777216,
+            "runtime_image_allocation_bytes": 0,
+            "runtime_allocation_bytes": 16777216,
+            "device_local": false,
+            "budget_at_start": 7774429799,
+            "usage_at_start": 0
+          },
+          {
+            "index": 2,
+            "size": 224395264,
+            "runtime_buffer_allocation_bytes": 0,
+            "runtime_image_allocation_bytes": 0,
+            "runtime_allocation_bytes": 0,
+            "device_local": true,
+            "budget_at_start": 221335552,
+            "usage_at_start": 3059712
+          }
+        ]
+      },
+      "command_record": "run_004_1048576.command.json"
+    },
+    {
+      "count": 2097152,
+      "epochs": 2,
+      "state_payload_bytes": 268435456,
+      "state_ping_pong_bytes": 536870912,
+      "kernel_seconds": 0.214039744,
+      "timer": "Vulkan device timestamps",
+      "state_updates_per_second": 19595912.056407616,
+      "process_wall_seconds": 3.3910000000614673,
+      "health": {
+        "passed": true,
+        "first_invalid_record": "",
+        "nonfinite_state_values": 0,
+        "out_of_chart_states": 0,
+        "max_energy_error_from_source_seed_5": 2.38419e-06
+      },
+      "digest": "75bcc89e7a7016c7",
+      "device": {
+        "name": "NVIDIA GeForce GTX 1650 Ti with Max-Q Design",
+        "vendor_id": 4318,
+        "device_id": 8085,
+        "api_version": 4211000,
+        "driver_version": 2438201344,
+        "software_device": false,
+        "validation_layer_enabled": false,
+        "validation_errors": 0,
+        "validation_warnings": 0,
+        "memory_budget_extension": true,
+        "requested_budget_fraction": 0.95,
+        "device_type": 2,
+        "states_heap_index": 0,
+        "state_buffer_heaps": [
+          0,
+          0
+        ],
+        "state_dispatch_limit": 65536,
+        "compute_submission_count": 64,
+        "max_submission_seconds": 0.00425082,
+        "texture_compression_BC": true,
+        "BC5_sampled_image": true,
+        "EAC_RG11_sampled_image": false,
+        "ASTC_4x4_sampled_image": false,
+        "max_compute_shared_memory_bytes": 49152,
+        "max_storage_buffer_range": 4294967295,
+        "max_compute_workgroup_count_x": 2147483647,
+        "max_image_dimension_2d": 32768,
+        "max_memory_allocation_count": 4294967295,
+        "timestamp_valid_bits": 64,
+        "allocated_buffer_bytes": 553648128,
+        "allocated_image_bytes": 31744,
+        "allocated_total_bytes": 553679872,
+        "staging_bytes": 16777216,
+        "allocation_count": 5,
+        "state_ping_pong_payload_bytes": 536870912,
+        "operator_lut_payload_bytes": 3968,
+        "operator_lut_format": "RGBA32_UINT",
+        "operator_lut_storage": "sampled_and_storage_VkImage",
+        "operator_lut_width": 124,
+        "operator_lut_height": 1,
+        "operator_lut_texels_per_record": 4,
+        "operator_lut_point_fetch": true,
+        "operator_lut_filtering": false,
+        "operator_lut_parameter_precision_bits": 32,
+        "operator_lut_flag_word_bits": 32,
+        "operator_lut_used_orientation_mask": 1,
+        "operator_bytecode_bits_per_instruction": 4,
+        "evolve_shared_operator_records": 31,
+        "evolve_shared_operator_bytes": 1984,
+        "mutate_shared_operator_bytes": 128,
+        "permanent_texture_cache_residence_proven": false,
+        "upload_bytes": 268437440,
+        "download_bytes": 268437440,
+        "completed_epochs": 2,
+        "advance_buffer_copy_commands": 0,
+        "advance_image_copy_commands": 0,
+        "timer": "Vulkan device timestamps",
+        "last_dispatch_seconds": 0.0835844,
+        "last_wall_seconds": 0.0879596,
+        "heaps": [
+          {
+            "index": 0,
+            "size": 4126146560,
+            "runtime_buffer_allocation_bytes": 536870912,
+            "runtime_image_allocation_bytes": 31744,
+            "runtime_allocation_bytes": 536902656,
+            "device_local": true,
+            "budget_at_start": 3507224576,
+            "usage_at_start": 0
+          },
+          {
+            "index": 1,
+            "size": 8466173952,
+            "runtime_buffer_allocation_bytes": 16777216,
+            "runtime_image_allocation_bytes": 0,
+            "runtime_allocation_bytes": 16777216,
+            "device_local": false,
+            "budget_at_start": 7774429799,
+            "usage_at_start": 0
+          },
+          {
+            "index": 2,
+            "size": 224395264,
+            "runtime_buffer_allocation_bytes": 0,
+            "runtime_image_allocation_bytes": 0,
+            "runtime_allocation_bytes": 0,
+            "device_local": true,
+            "budget_at_start": 221335552,
+            "usage_at_start": 3059712
+          }
+        ]
+      },
+      "command_record": "run_005_2097152.command.json"
+    },
+    {
+      "count": 4194304,
+      "epochs": 2,
+      "state_payload_bytes": 536870912,
+      "state_ping_pong_bytes": 1073741824,
+      "kernel_seconds": 0.333974752,
+      "timer": "Vulkan device timestamps",
+      "state_updates_per_second": 25117491.516244918,
+      "process_wall_seconds": 6.687999999849126,
+      "health": {
+        "passed": true,
+        "first_invalid_record": "",
+        "nonfinite_state_values": 0,
+        "out_of_chart_states": 0,
+        "max_energy_error_from_source_seed_5": 2.38419e-06
+      },
+      "digest": "dd8f09b6841c46da",
+      "device": {
+        "name": "NVIDIA GeForce GTX 1650 Ti with Max-Q Design",
+        "vendor_id": 4318,
+        "device_id": 8085,
+        "api_version": 4211000,
+        "driver_version": 2438201344,
+        "software_device": false,
+        "validation_layer_enabled": false,
+        "validation_errors": 0,
+        "validation_warnings": 0,
+        "memory_budget_extension": true,
+        "requested_budget_fraction": 0.95,
+        "device_type": 2,
+        "states_heap_index": 0,
+        "state_buffer_heaps": [
+          0,
+          0
+        ],
+        "state_dispatch_limit": 65536,
+        "compute_submission_count": 128,
+        "max_submission_seconds": 0.00350352,
+        "texture_compression_BC": true,
+        "BC5_sampled_image": true,
+        "EAC_RG11_sampled_image": false,
+        "ASTC_4x4_sampled_image": false,
+        "max_compute_shared_memory_bytes": 49152,
+        "max_storage_buffer_range": 4294967295,
+        "max_compute_workgroup_count_x": 2147483647,
+        "max_image_dimension_2d": 32768,
+        "max_memory_allocation_count": 4294967295,
+        "timestamp_valid_bits": 64,
+        "allocated_buffer_bytes": 1090519040,
+        "allocated_image_bytes": 31744,
+        "allocated_total_bytes": 1090550784,
+        "staging_bytes": 16777216,
+        "allocation_count": 5,
+        "state_ping_pong_payload_bytes": 1073741824,
+        "operator_lut_payload_bytes": 3968,
+        "operator_lut_format": "RGBA32_UINT",
+        "operator_lut_storage": "sampled_and_storage_VkImage",
+        "operator_lut_width": 124,
+        "operator_lut_height": 1,
+        "operator_lut_texels_per_record": 4,
+        "operator_lut_point_fetch": true,
+        "operator_lut_filtering": false,
+        "operator_lut_parameter_precision_bits": 32,
+        "operator_lut_flag_word_bits": 32,
+        "operator_lut_used_orientation_mask": 1,
+        "operator_bytecode_bits_per_instruction": 4,
+        "evolve_shared_operator_records": 31,
+        "evolve_shared_operator_bytes": 1984,
+        "mutate_shared_operator_bytes": 128,
+        "permanent_texture_cache_residence_proven": false,
+        "upload_bytes": 536872896,
+        "download_bytes": 536872896,
+        "completed_epochs": 2,
+        "advance_buffer_copy_commands": 0,
+        "advance_image_copy_commands": 0,
+        "timer": "Vulkan device timestamps",
+        "last_dispatch_seconds": 0.166864,
+        "last_wall_seconds": 0.185193,
+        "heaps": [
+          {
+            "index": 0,
+            "size": 4126146560,
+            "runtime_buffer_allocation_bytes": 1073741824,
+            "runtime_image_allocation_bytes": 31744,
+            "runtime_allocation_bytes": 1073773568,
+            "device_local": true,
+            "budget_at_start": 3507224576,
+            "usage_at_start": 0
+          },
+          {
+            "index": 1,
+            "size": 8466173952,
+            "runtime_buffer_allocation_bytes": 16777216,
+            "runtime_image_allocation_bytes": 0,
+            "runtime_allocation_bytes": 16777216,
+            "device_local": false,
+            "budget_at_start": 7774429799,
+            "usage_at_start": 0
+          },
+          {
+            "index": 2,
+            "size": 224395264,
+            "runtime_buffer_allocation_bytes": 0,
+            "runtime_image_allocation_bytes": 0,
+            "runtime_allocation_bytes": 0,
+            "device_local": true,
+            "budget_at_start": 221335552,
+            "usage_at_start": 3059712
+          }
+        ]
+      },
+      "command_record": "run_006_4194304.command.json"
+    },
+    {
+      "count": 8388608,
+      "epochs": 2,
+      "state_payload_bytes": 1073741824,
+      "state_ping_pong_bytes": 2147483648,
+      "kernel_seconds": 0.672094208,
+      "timer": "Vulkan device timestamps",
+      "state_updates_per_second": 24962595.719914313,
+      "process_wall_seconds": 14.687999999849126,
+      "health": {
+        "passed": true,
+        "first_invalid_record": "",
+        "nonfinite_state_values": 0,
+        "out_of_chart_states": 0,
+        "max_energy_error_from_source_seed_5": 2.38419e-06
+      },
+      "digest": "396832b9fcfd9746",
+      "device": {
+        "name": "NVIDIA GeForce GTX 1650 Ti with Max-Q Design",
+        "vendor_id": 4318,
+        "device_id": 8085,
+        "api_version": 4211000,
+        "driver_version": 2438201344,
+        "software_device": false,
+        "validation_layer_enabled": false,
+        "validation_errors": 0,
+        "validation_warnings": 0,
+        "memory_budget_extension": true,
+        "requested_budget_fraction": 0.95,
+        "device_type": 2,
+        "states_heap_index": 0,
+        "state_buffer_heaps": [
+          0,
+          0
+        ],
+        "state_dispatch_limit": 65536,
+        "compute_submission_count": 256,
+        "max_submission_seconds": 0.0036361,
+        "texture_compression_BC": true,
+        "BC5_sampled_image": true,
+        "EAC_RG11_sampled_image": false,
+        "ASTC_4x4_sampled_image": false,
+        "max_compute_shared_memory_bytes": 49152,
+        "max_storage_buffer_range": 4294967295,
+        "max_compute_workgroup_count_x": 2147483647,
+        "max_image_dimension_2d": 32768,
+        "max_memory_allocation_count": 4294967295,
+        "timestamp_valid_bits": 64,
+        "allocated_buffer_bytes": 2164260864,
+        "allocated_image_bytes": 31744,
+        "allocated_total_bytes": 2164292608,
+        "staging_bytes": 16777216,
+        "allocation_count": 5,
+        "state_ping_pong_payload_bytes": 2147483648,
+        "operator_lut_payload_bytes": 3968,
+        "operator_lut_format": "RGBA32_UINT",
+        "operator_lut_storage": "sampled_and_storage_VkImage",
+        "operator_lut_width": 124,
+        "operator_lut_height": 1,
+        "operator_lut_texels_per_record": 4,
+        "operator_lut_point_fetch": true,
+        "operator_lut_filtering": false,
+        "operator_lut_parameter_precision_bits": 32,
+        "operator_lut_flag_word_bits": 32,
+        "operator_lut_used_orientation_mask": 1,
+        "operator_bytecode_bits_per_instruction": 4,
+        "evolve_shared_operator_records": 31,
+        "evolve_shared_operator_bytes": 1984,
+        "mutate_shared_operator_bytes": 128,
+        "permanent_texture_cache_residence_proven": false,
+        "upload_bytes": 1073743808,
+        "download_bytes": 1073743808,
+        "completed_epochs": 2,
+        "advance_buffer_copy_commands": 0,
+        "advance_image_copy_commands": 0,
+        "timer": "Vulkan device timestamps",
+        "last_dispatch_seconds": 0.337431,
+        "last_wall_seconds": 0.362344,
+        "heaps": [
+          {
+            "index": 0,
+            "size": 4126146560,
+            "runtime_buffer_allocation_bytes": 2147483648,
+            "runtime_image_allocation_bytes": 31744,
+            "runtime_allocation_bytes": 2147515392,
+            "device_local": true,
+            "budget_at_start": 3507224576,
+            "usage_at_start": 0
+          },
+          {
+            "index": 1,
+            "size": 8466173952,
+            "runtime_buffer_allocation_bytes": 16777216,
+            "runtime_image_allocation_bytes": 0,
+            "runtime_allocation_bytes": 16777216,
+            "device_local": false,
+            "budget_at_start": 7774429799,
+            "usage_at_start": 0
+          },
+          {
+            "index": 2,
+            "size": 224395264,
+            "runtime_buffer_allocation_bytes": 0,
+            "runtime_image_allocation_bytes": 0,
+            "runtime_allocation_bytes": 0,
+            "device_local": true,
+            "budget_at_start": 221335552,
+            "usage_at_start": 3059712
+          }
+        ]
+      },
+      "command_record": "run_007_8388608.command.json"
+    },
+    {
+      "count": 12490752,
+      "epochs": 2,
+      "state_payload_bytes": 1598816256,
+      "state_ping_pong_bytes": 3197632512,
+      "kernel_seconds": 1.006620256,
+      "timer": "Vulkan device timestamps",
+      "state_updates_per_second": 24817207.731611554,
+      "process_wall_seconds": 22.968999999808148,
+      "health": {
+        "passed": true,
+        "first_invalid_record": "",
+        "nonfinite_state_values": 0,
+        "out_of_chart_states": 0,
+        "max_energy_error_from_source_seed_5": 2.86102e-06
+      },
+      "digest": "ce1eb05b401c0a1a",
+      "device": {
+        "name": "NVIDIA GeForce GTX 1650 Ti with Max-Q Design",
+        "vendor_id": 4318,
+        "device_id": 8085,
+        "api_version": 4211000,
+        "driver_version": 2438201344,
+        "software_device": false,
+        "validation_layer_enabled": false,
+        "validation_errors": 0,
+        "validation_warnings": 0,
+        "memory_budget_extension": true,
+        "requested_budget_fraction": 0.95,
+        "device_type": 2,
+        "states_heap_index": 0,
+        "state_buffer_heaps": [
+          0,
+          0
+        ],
+        "state_dispatch_limit": 65536,
+        "compute_submission_count": 382,
+        "max_submission_seconds": 0.00305962,
+        "texture_compression_BC": true,
+        "BC5_sampled_image": true,
+        "EAC_RG11_sampled_image": false,
+        "ASTC_4x4_sampled_image": false,
+        "max_compute_shared_memory_bytes": 49152,
+        "max_storage_buffer_range": 4294967295,
+        "max_compute_workgroup_count_x": 2147483647,
+        "max_image_dimension_2d": 32768,
+        "max_memory_allocation_count": 4294967295,
+        "timestamp_valid_bits": 64,
+        "allocated_buffer_bytes": 3214409728,
+        "allocated_image_bytes": 31744,
+        "allocated_total_bytes": 3214441472,
+        "staging_bytes": 16777216,
+        "allocation_count": 5,
+        "state_ping_pong_payload_bytes": 3197632512,
+        "operator_lut_payload_bytes": 3968,
+        "operator_lut_format": "RGBA32_UINT",
+        "operator_lut_storage": "sampled_and_storage_VkImage",
+        "operator_lut_width": 124,
+        "operator_lut_height": 1,
+        "operator_lut_texels_per_record": 4,
+        "operator_lut_point_fetch": true,
+        "operator_lut_filtering": false,
+        "operator_lut_parameter_precision_bits": 32,
+        "operator_lut_flag_word_bits": 32,
+        "operator_lut_used_orientation_mask": 1,
+        "operator_bytecode_bits_per_instruction": 4,
+        "evolve_shared_operator_records": 31,
+        "evolve_shared_operator_bytes": 1984,
+        "mutate_shared_operator_bytes": 128,
+        "permanent_texture_cache_residence_proven": false,
+        "upload_bytes": 1598818240,
+        "download_bytes": 1598818240,
+        "completed_epochs": 2,
+        "advance_buffer_copy_commands": 0,
+        "advance_image_copy_commands": 0,
+        "timer": "Vulkan device timestamps",
+        "last_dispatch_seconds": 0.506647,
+        "last_wall_seconds": 0.539161,
+        "heaps": [
+          {
+            "index": 0,
+            "size": 4126146560,
+            "runtime_buffer_allocation_bytes": 3197632512,
+            "runtime_image_allocation_bytes": 31744,
+            "runtime_allocation_bytes": 3197664256,
+            "device_local": true,
+            "budget_at_start": 3507224576,
+            "usage_at_start": 0
+          },
+          {
+            "index": 1,
+            "size": 8466173952,
+            "runtime_buffer_allocation_bytes": 16777216,
+            "runtime_image_allocation_bytes": 0,
+            "runtime_allocation_bytes": 16777216,
+            "device_local": false,
+            "budget_at_start": 7774429799,
+            "usage_at_start": 0
+          },
+          {
+            "index": 2,
+            "size": 224395264,
+            "runtime_buffer_allocation_bytes": 0,
+            "runtime_image_allocation_bytes": 0,
+            "runtime_allocation_bytes": 0,
+            "device_local": true,
+            "budget_at_start": 221335552,
+            "usage_at_start": 3059712
+          }
+        ]
+      },
+      "command_record": "run_008_12490752.command.json"
+    }
+  ],
+  "policies": [
+    {
+      "target_count": 12490752,
+      "limiting_factor": "state_heap_0",
+      "count_limits": {
+        "storage_buffer_range": 33554431,
+        "uint32_state_count": 4294967295,
+        "state_heap_0": 12490803,
+        "physical_host_memory": 20397296
+      },
+      "state_heaps": [
+        0,
+        0
+      ],
+      "heap_selection_inferred": false,
+      "unified_memory_accounting": false,
+      "device_type": 2,
+      "host_bytes_per_state_at_peak": 128,
+      "host_memory": {
+        "available_bytes": 3249233920,
+        "total_bytes": 16932347904,
+        "source": "GlobalMemoryStatusEx"
+      },
+      "heap_policy": [
+        {
+          "index": 0,
+          "available_estimate_bytes": 3507224576,
+          "source": "Vulkan process budget minus usage",
+          "usable_after_policy_bytes": 3197645619,
+          "state_bytes_per_record": 256
+        }
+      ],
+      "gpu_budget_fraction": 0.95,
+      "host_available_fraction": 0.85,
+      "reserve_bytes": 134217728,
+      "staging_allowance_bytes": 16777216,
+      "refinement_count_granularity": 65536
+    },
+    {
+      "target_count": 12490752,
+      "limiting_factor": "state_heap_0",
+      "count_limits": {
+        "storage_buffer_range": 33554431,
+        "uint32_state_count": 4294967295,
+        "state_heap_0": 12490803,
+        "physical_host_memory": 20334681
+      },
+      "state_heaps": [
+        0,
+        0
+      ],
+      "heap_selection_inferred": false,
+      "unified_memory_accounting": false,
+      "device_type": 2,
+      "host_bytes_per_state_at_peak": 128,
+      "host_memory": {
+        "available_bytes": 3239804928,
+        "total_bytes": 16932347904,
+        "source": "GlobalMemoryStatusEx"
+      },
+      "heap_policy": [
+        {
+          "index": 0,
+          "available_estimate_bytes": 3507224576,
+          "source": "Vulkan process budget minus usage",
+          "usable_after_policy_bytes": 3197645619,
+          "state_bytes_per_record": 256
+        }
+      ],
+      "gpu_budget_fraction": 0.95,
+      "host_available_fraction": 0.85,
+      "reserve_bytes": 134217728,
+      "staging_allowance_bytes": 16777216,
+      "refinement_count_granularity": 65536
+    },
+    {
+      "target_count": 12490752,
+      "limiting_factor": "state_heap_0",
+      "count_limits": {
+        "storage_buffer_range": 33554431,
+        "uint32_state_count": 4294967295,
+        "state_heap_0": 12490803,
+        "physical_host_memory": 20334572
+      },
+      "state_heaps": [
+        0,
+        0
+      ],
+      "heap_selection_inferred": false,
+      "unified_memory_accounting": false,
+      "device_type": 2,
+      "host_bytes_per_state_at_peak": 128,
+      "host_memory": {
+        "available_bytes": 3239788544,
+        "total_bytes": 16932347904,
+        "source": "GlobalMemoryStatusEx"
+      },
+      "heap_policy": [
+        {
+          "index": 0,
+          "available_estimate_bytes": 3507224576,
+          "source": "Vulkan process budget minus usage",
+          "usable_after_policy_bytes": 3197645619,
+          "state_bytes_per_record": 256
+        }
+      ],
+      "gpu_budget_fraction": 0.95,
+      "host_available_fraction": 0.85,
+      "reserve_bytes": 134217728,
+      "staging_allowance_bytes": 16777216,
+      "refinement_count_granularity": 65536
+    },
+    {
+      "target_count": 12490752,
+      "limiting_factor": "state_heap_0",
+      "count_limits": {
+        "storage_buffer_range": 33554431,
+        "uint32_state_count": 4294967295,
+        "state_heap_0": 12490803,
+        "physical_host_memory": 20323339
+      },
+      "state_heaps": [
+        0,
+        0
+      ],
+      "heap_selection_inferred": false,
+      "unified_memory_accounting": false,
+      "device_type": 2,
+      "host_bytes_per_state_at_peak": 128,
+      "host_memory": {
+        "available_bytes": 3238096896,
+        "total_bytes": 16932347904,
+        "source": "GlobalMemoryStatusEx"
+      },
+      "heap_policy": [
+        {
+          "index": 0,
+          "available_estimate_bytes": 3507224576,
+          "source": "Vulkan process budget minus usage",
+          "usable_after_policy_bytes": 3197645619,
+          "state_bytes_per_record": 256
+        }
+      ],
+      "gpu_budget_fraction": 0.95,
+      "host_available_fraction": 0.85,
+      "reserve_bytes": 134217728,
+      "staging_allowance_bytes": 16777216,
+      "refinement_count_granularity": 65536
+    },
+    {
+      "target_count": 12490752,
+      "limiting_factor": "state_heap_0",
+      "count_limits": {
+        "storage_buffer_range": 33554431,
+        "uint32_state_count": 4294967295,
+        "state_heap_0": 12490803,
+        "physical_host_memory": 20285014
+      },
+      "state_heaps": [
+        0,
+        0
+      ],
+      "heap_selection_inferred": false,
+      "unified_memory_accounting": false,
+      "device_type": 2,
+      "host_bytes_per_state_at_peak": 128,
+      "host_memory": {
+        "available_bytes": 3232325632,
+        "total_bytes": 16932347904,
+        "source": "GlobalMemoryStatusEx"
+      },
+      "heap_policy": [
+        {
+          "index": 0,
+          "available_estimate_bytes": 3507224576,
+          "source": "Vulkan process budget minus usage",
+          "usable_after_policy_bytes": 3197645619,
+          "state_bytes_per_record": 256
+        }
+      ],
+      "gpu_budget_fraction": 0.95,
+      "host_available_fraction": 0.85,
+      "reserve_bytes": 134217728,
+      "staging_allowance_bytes": 16777216,
+      "refinement_count_granularity": 65536
+    },
+    {
+      "target_count": 12490752,
+      "limiting_factor": "state_heap_0",
+      "count_limits": {
+        "storage_buffer_range": 33554431,
+        "uint32_state_count": 4294967295,
+        "state_heap_0": 12490803,
+        "physical_host_memory": 20263417
+      },
+      "state_heaps": [
+        0,
+        0
+      ],
+      "heap_selection_inferred": false,
+      "unified_memory_accounting": false,
+      "device_type": 2,
+      "host_bytes_per_state_at_peak": 128,
+      "host_memory": {
+        "available_bytes": 3229073408,
+        "total_bytes": 16932347904,
+        "source": "GlobalMemoryStatusEx"
+      },
+      "heap_policy": [
+        {
+          "index": 0,
+          "available_estimate_bytes": 3507224576,
+          "source": "Vulkan process budget minus usage",
+          "usable_after_policy_bytes": 3197645619,
+          "state_bytes_per_record": 256
+        }
+      ],
+      "gpu_budget_fraction": 0.95,
+      "host_available_fraction": 0.85,
+      "reserve_bytes": 134217728,
+      "staging_allowance_bytes": 16777216,
+      "refinement_count_granularity": 65536
+    },
+    {
+      "target_count": 12490752,
+      "limiting_factor": "state_heap_0",
+      "count_limits": {
+        "storage_buffer_range": 33554431,
+        "uint32_state_count": 4294967295,
+        "state_heap_0": 12490803,
+        "physical_host_memory": 20157147
+      },
+      "state_heaps": [
+        0,
+        0
+      ],
+      "heap_selection_inferred": false,
+      "unified_memory_accounting": false,
+      "device_type": 2,
+      "host_bytes_per_state_at_peak": 128,
+      "host_memory": {
+        "available_bytes": 3213070336,
+        "total_bytes": 16932347904,
+        "source": "GlobalMemoryStatusEx"
+      },
+      "heap_policy": [
+        {
+          "index": 0,
+          "available_estimate_bytes": 3507224576,
+          "source": "Vulkan process budget minus usage",
+          "usable_after_policy_bytes": 3197645619,
+          "state_bytes_per_record": 256
+        }
+      ],
+      "gpu_budget_fraction": 0.95,
+      "host_available_fraction": 0.85,
+      "reserve_bytes": 134217728,
+      "staging_allowance_bytes": 16777216,
+      "refinement_count_granularity": 65536
+    },
+    {
+      "target_count": 12490752,
+      "limiting_factor": "state_heap_0",
+      "count_limits": {
+        "storage_buffer_range": 33554431,
+        "uint32_state_count": 4294967295,
+        "state_heap_0": 12490803,
+        "physical_host_memory": 20107425
+      },
+      "state_heaps": [
+        0,
+        0
+      ],
+      "heap_selection_inferred": false,
+      "unified_memory_accounting": false,
+      "device_type": 2,
+      "host_bytes_per_state_at_peak": 128,
+      "host_memory": {
+        "available_bytes": 3205582848,
+        "total_bytes": 16932347904,
+        "source": "GlobalMemoryStatusEx"
+      },
+      "heap_policy": [
+        {
+          "index": 0,
+          "available_estimate_bytes": 3507224576,
+          "source": "Vulkan process budget minus usage",
+          "usable_after_policy_bytes": 3197645619,
+          "state_bytes_per_record": 256
+        }
+      ],
+      "gpu_budget_fraction": 0.95,
+      "host_available_fraction": 0.85,
+      "reserve_bytes": 134217728,
+      "staging_allowance_bytes": 16777216,
+      "refinement_count_granularity": 65536
+    },
+    {
+      "target_count": 12490752,
+      "limiting_factor": "state_heap_0",
+      "count_limits": {
+        "storage_buffer_range": 33554431,
+        "uint32_state_count": 4294967295,
+        "state_heap_0": 12490803,
+        "physical_host_memory": 19990057
+      },
+      "state_heaps": [
+        0,
+        0
+      ],
+      "heap_selection_inferred": false,
+      "unified_memory_accounting": false,
+      "device_type": 2,
+      "host_bytes_per_state_at_peak": 128,
+      "host_memory": {
+        "available_bytes": 3187908608,
+        "total_bytes": 16932347904,
+        "source": "GlobalMemoryStatusEx"
+      },
+      "heap_policy": [
+        {
+          "index": 0,
+          "available_estimate_bytes": 3507224576,
+          "source": "Vulkan process budget minus usage",
+          "usable_after_policy_bytes": 3197645619,
+          "state_bytes_per_record": 256
+        }
+      ],
+      "gpu_budget_fraction": 0.95,
+      "host_available_fraction": 0.85,
+      "reserve_bytes": 134217728,
+      "staging_allowance_bytes": 16777216,
+      "refinement_count_granularity": 65536
+    },
+    {
+      "target_count": 12490752,
+      "limiting_factor": "state_heap_0",
+      "count_limits": {
+        "storage_buffer_range": 33554431,
+        "uint32_state_count": 4294967295,
+        "state_heap_0": 12490803,
+        "physical_host_memory": 26048884
+      },
+      "state_heaps": [
+        0,
+        0
+      ],
+      "heap_selection_inferred": false,
+      "unified_memory_accounting": false,
+      "device_type": 2,
+      "host_bytes_per_state_at_peak": 128,
+      "host_memory": {
+        "available_bytes": 4100296704,
+        "total_bytes": 16932347904,
+        "source": "GlobalMemoryStatusEx"
+      },
+      "heap_policy": [
+        {
+          "index": 0,
+          "available_estimate_bytes": 3507224576,
+          "source": "Vulkan process budget minus usage",
+          "usable_after_policy_bytes": 3197645619,
+          "state_bytes_per_record": 256
+        }
+      ],
+      "gpu_budget_fraction": 0.95,
+      "host_available_fraction": 0.85,
+      "reserve_bytes": 134217728,
+      "staging_allowance_bytes": 16777216,
+      "refinement_count_granularity": 65536
+    }
+  ],
+  "highest_completed_count": 12490752,
+  "failed_allocation_upper_count": null,
+  "commands": [
+    {
+      "name": "probe_000",
+      "exit_code": 0
+    },
+    {
+      "name": "run_000_65536",
+      "exit_code": 0
+    },
+    {
+      "name": "probe_001",
+      "exit_code": 0
+    },
+    {
+      "name": "run_001_131072",
+      "exit_code": 0
+    },
+    {
+      "name": "probe_002",
+      "exit_code": 0
+    },
+    {
+      "name": "run_002_262144",
+      "exit_code": 0
+    },
+    {
+      "name": "probe_003",
+      "exit_code": 0
+    },
+    {
+      "name": "run_003_524288",
+      "exit_code": 0
+    },
+    {
+      "name": "probe_004",
+      "exit_code": 0
+    },
+    {
+      "name": "run_004_1048576",
+      "exit_code": 0
+    },
+    {
+      "name": "probe_005",
+      "exit_code": 0
+    },
+    {
+      "name": "run_005_2097152",
+      "exit_code": 0
+    },
+    {
+      "name": "probe_006",
+      "exit_code": 0
+    },
+    {
+      "name": "run_006_4194304",
+      "exit_code": 0
+    },
+    {
+      "name": "probe_007",
+      "exit_code": 0
+    },
+    {
+      "name": "run_007_8388608",
+      "exit_code": 0
+    },
+    {
+      "name": "probe_008",
+      "exit_code": 0
+    },
+    {
+      "name": "run_008_12490752",
+      "exit_code": 0
+    },
+    {
+      "name": "probe_009",
+      "exit_code": 0
+    }
+  ],
+  "stop_reason": "Current memory policy boundary reached",
+  "completed_without_serious_error": true
+}

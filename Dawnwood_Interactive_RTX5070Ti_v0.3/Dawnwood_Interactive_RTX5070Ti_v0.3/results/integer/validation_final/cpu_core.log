@@ -1,9 +1,0 @@
-PASS config bounds and literal source seed
-PASS all LP8 mask decisions match signed supports under random operator data
-PASS all stage bytes match direct and masked recurrence including extremes
-PASS modular inverse T cancels the recorded phase increment
-PASS RK4 constant flow and event appears only at the fourth input
-PASS operator freezing and precise executable one-bit mutation
-PASS CPU RG8 circulation keeps every state byte equal across routing paths
-PASS frozen field and recurrence dependency ablations
-SUMMARY 8 cases, 296554 assertions, 0 failures

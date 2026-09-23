@@ -1,0 +1,24 @@
+{
+  "name": "benchmark_vulkan_4096_64_2",
+  "command": [
+    "build\\Release\\dawnwood.exe",
+    "run",
+    "--backend",
+    "vulkan",
+    "--device",
+    "1650 Ti",
+    "--count",
+    "4096",
+    "--steps",
+    "64",
+    "--batch",
+    "8"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "started_utc": "2026-09-23T05:11:11.646166+00:00",
+  "binary_sha256": "20b944a181d52e105150196b1f7e2a4f309b79cc478ebd9185f161e9686085e0",
+  "validation_environment": {},
+  "exit_code": 0,
+  "wall_seconds": 0.625,
+  "finished_utc": "2026-09-23T05:11:12.274290+00:00"
+}

@@ -1,0 +1,869 @@
+MSBuild version 17.14.40+3e7442088 for .NET Framework
+
+  1>Checking Build System
+  Building Custom Rule C:/DawnwoodInteractive/tmp/validation_v04/baseline/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/CMakeLists.txt
+  cpu.cpp
+  vulkan.cpp
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C2143: syntax error: missing ')' before '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C2065: 'android': undeclared identifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C2065: 'strict': undeclared identifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C2065: 'introduced': undeclared identifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C2146: syntax error: missing ')' before identifier '__VA_OPT__' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(137,40): error C2146: syntax error: missing ')' before identifier '__exponent' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(137,40): error C3646: '__exponent': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(137,50): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(138,39): error C2146: syntax error: missing ')' before identifier '__exponent' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(138,39): error C3646: '__exponent': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(138,49): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(139,51): error C2146: syntax error: missing ')' before identifier '__exponent' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(139,51): error C3646: '__exponent': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(139,61): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(142,23): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(142,23): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(142,23): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  driver.cpp
+  (compiling source file '../src/cpu.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(143,29): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(143,29): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(143,29): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(169,42): error C2146: syntax error: missing ')' before identifier '__integral_part' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(169,42): error C3646: '__integral_part': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(169,57): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(170,40): error C2146: syntax error: missing ')' before identifier '__integral_part' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(170,40): error C3646: '__integral_part': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(170,55): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(171,58): error C2146: syntax error: missing ')' before identifier '__integral_part' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(171,58): error C3646: '__integral_part': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(171,73): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(185,25): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(185,25): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(185,25): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(186,24): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(186,24): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(186,24): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(187,36): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(187,36): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(187,36): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(265,53): error C2146: syntax error: missing ')' before identifier '__quotient_bits' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(265,53): error C3646: '__quotient_bits': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(265,68): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(266,51): error C2146: syntax error: missing ')' before identifier '__quotient_bits' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(266,51): error C3646: '__quotient_bits': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(266,66): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(267,69): error C2146: syntax error: missing ')' before identifier '__quotient_bits' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(267,69): error C3646: '__quotient_bits': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(267,84): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(269,48): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(269,48): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(269,48): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(270,46): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(270,46): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(270,46): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(271,64): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(271,64): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(271,64): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(273,33): error C2146: syntax error: missing ')' before identifier '__kind' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(273,33): error C3646: '__kind': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(273,39): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(273,41): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(273,41): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(273,41): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(274,33): error C2146: syntax error: missing ')' before identifier '__kind' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(274,33): error C3646: '__kind': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(274,39): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(274,41): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(274,41): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(274,41): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(275,39): error C2146: syntax error: missing ')' before identifier '__kind' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(275,39): error C3646: '__kind': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(275,45): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(275,47): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(275,47): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(275,47): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(289,37): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(289,37): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(289,37): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(290,35): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(290,35): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(290,35): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(291,53): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(291,53): error C1003: error count exceeds 100; stopping compilation [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C2143: syntax error: missing ')' before '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C2065: 'android': undeclared identifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C2065: 'strict': undeclared identifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C2065: 'introduced': undeclared identifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C2146: syntax error: missing ')' before identifier '__VA_OPT__' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(137,40): error C2146: syntax error: missing ')' before identifier '__exponent' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(137,40): error C3646: '__exponent': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(137,50): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(138,39): error C2146: syntax error: missing ')' before identifier '__exponent' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(138,39): error C3646: '__exponent': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(138,49): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(139,51): error C2146: syntax error: missing ')' before identifier '__exponent' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(139,51): error C3646: '__exponent': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(139,61): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(142,23): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(142,23): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(142,23): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(143,29): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(143,29): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(143,29): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(169,42): error C2146: syntax error: missing ')' before identifier '__integral_part' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(169,42): error C3646: '__integral_part': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(169,57): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(170,40): error C2146: syntax error: missing ')' before identifier '__integral_part' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(170,40): error C3646: '__integral_part': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(170,55): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(171,58): error C2146: syntax error: missing ')' before identifier '__integral_part' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(171,58): error C3646: '__integral_part': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(171,73): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(185,25): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(185,25): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(185,25): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(186,24): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(186,24): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(186,24): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(187,36): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(187,36): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(187,36): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(265,53): error C2146: syntax error: missing ')' before identifier '__quotient_bits' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(265,53): error C3646: '__quotient_bits': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(265,68): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(266,51): error C2146: syntax error: missing ')' before identifier '__quotient_bits' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(266,51): error C3646: '__quotient_bits': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(266,66): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(267,69): error C2146: syntax error: missing ')' before identifier '__quotient_bits' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(267,69): error C3646: '__quotient_bits': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(267,84): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(269,48): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(269,48): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(269,48): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(270,46): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(270,46): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(270,46): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(271,64): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(271,64): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(271,64): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(273,33): error C2146: syntax error: missing ')' before identifier '__kind' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(273,33): error C3646: '__kind': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(273,39): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(273,41): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(273,41): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(273,41): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(274,33): error C2146: syntax error: missing ')' before identifier '__kind' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(274,33): error C3646: '__kind': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(274,39): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(274,41): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(274,41): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(274,41): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(275,39): error C2146: syntax error: missing ')' before identifier '__kind' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(275,39): error C3646: '__kind': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(275,45): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(275,47): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(275,47): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(275,47): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(289,37): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(289,37): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(289,37): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(290,35): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(290,35): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(290,35): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(291,53): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(291,53): error C1003: error count exceeds 100; stopping compilation [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C2143: syntax error: missing ')' before '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C2065: 'android': undeclared identifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C2065: 'strict': undeclared identifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C2065: 'introduced': undeclared identifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C2146: syntax error: missing ')' before identifier '__VA_OPT__' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\android\api-level.h(214,36): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(137,40): error C2146: syntax error: missing ')' before identifier '__exponent' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(137,40): error C3646: '__exponent': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(137,50): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(138,39): error C2146: syntax error: missing ')' before identifier '__exponent' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(138,39): error C3646: '__exponent': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(138,49): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(139,51): error C2146: syntax error: missing ')' before identifier '__exponent' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(139,51): error C3646: '__exponent': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(139,61): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(142,23): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(142,23): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(142,23): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(143,29): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(143,29): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(143,29): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(169,42): error C2146: syntax error: missing ')' before identifier '__integral_part' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(169,42): error C3646: '__integral_part': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(169,57): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(170,40): error C2146: syntax error: missing ')' before identifier '__integral_part' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(170,40): error C3646: '__integral_part': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(170,55): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(171,58): error C2146: syntax error: missing ')' before identifier '__integral_part' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(171,58): error C3646: '__integral_part': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(171,73): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(185,25): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(185,25): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(185,25): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(186,24): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(186,24): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(186,24): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(187,36): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(187,36): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(187,36): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(265,53): error C2146: syntax error: missing ')' before identifier '__quotient_bits' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(265,53): error C3646: '__quotient_bits': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(265,68): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(266,51): error C2146: syntax error: missing ')' before identifier '__quotient_bits' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(266,51): error C3646: '__quotient_bits': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(266,66): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(267,69): error C2146: syntax error: missing ')' before identifier '__quotient_bits' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(267,69): error C3646: '__quotient_bits': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(267,84): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(269,48): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(269,48): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(269,48): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(270,46): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(270,46): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(270,46): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(271,64): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(271,64): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(271,64): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(273,33): error C2146: syntax error: missing ')' before identifier '__kind' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(273,33): error C3646: '__kind': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(273,39): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(273,41): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(273,41): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(273,41): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(274,33): error C2146: syntax error: missing ')' before identifier '__kind' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(274,33): error C3646: '__kind': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(274,39): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(274,41): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(274,41): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(274,41): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(275,39): error C2146: syntax error: missing ')' before identifier '__kind' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(275,39): error C3646: '__kind': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(275,45): error C2059: syntax error: ')' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(275,47): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(275,47): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(275,47): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(289,37): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(289,37): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(289,37): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(290,35): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(290,35): error C2059: syntax error: '(' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(290,35): error C2086: 'int __const__': redefinition [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+      C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(141,23):
+      see declaration of '__const__'
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(291,53): error C3646: '__attribute__': unknown override specifier [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\Users\ietsm\AppData\Local\Android\Sdk\ndk\29.0.14206865\toolchains\llvm\prebuilt\windows-x86_64\sysroot\usr\include\math.h(291,53): error C1003: error count exceeds 100; stopping compilation [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+  Generating Code...

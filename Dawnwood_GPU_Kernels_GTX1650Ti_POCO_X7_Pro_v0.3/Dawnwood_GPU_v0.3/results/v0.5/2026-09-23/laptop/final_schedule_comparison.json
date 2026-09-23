@@ -1,0 +1,105 @@
+{
+  "binary_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+  "workload": {
+    "count": 4096,
+    "epochs": 64,
+    "batch": 8
+  },
+  "sequence": [
+    "mono1",
+    "split1",
+    "mono2",
+    "split2",
+    "mono3",
+    "split3"
+  ],
+  "validation_enabled": false,
+  "note": "Three fresh-process pairs after capacity warmed the GPU. Timings still reflect ordinary desktop clock and background variation; no exclusive benchmark environment.",
+  "modes": {
+    "mono": {
+      "samples": [
+        {
+          "evidence": "final_paired_mono_4096_64_1.stdout",
+          "command_evidence": "final_paired_mono_4096_64_1.command.json",
+          "device_seconds": 0.18587728,
+          "advance_wall_seconds": 0.1879848,
+          "process_wall_seconds": 0.6880000000001019,
+          "health_passed": true,
+          "digest": "c79b636e728e12b1",
+          "split_evolution": false,
+          "exit_code": 0
+        },
+        {
+          "evidence": "final_paired_mono_4096_64_2.stdout",
+          "command_evidence": "final_paired_mono_4096_64_2.command.json",
+          "device_seconds": 0.155282368,
+          "advance_wall_seconds": 0.1581923,
+          "process_wall_seconds": 0.75,
+          "health_passed": true,
+          "digest": "c79b636e728e12b1",
+          "split_evolution": false,
+          "exit_code": 0
+        },
+        {
+          "evidence": "final_paired_mono_4096_64_3.stdout",
+          "command_evidence": "final_paired_mono_4096_64_3.command.json",
+          "device_seconds": 0.151656512,
+          "advance_wall_seconds": 0.1546969,
+          "process_wall_seconds": 0.7809999999990396,
+          "health_passed": true,
+          "digest": "c79b636e728e12b1",
+          "split_evolution": false,
+          "exit_code": 0
+        }
+      ],
+      "median_device_seconds": 0.155282368,
+      "median_mean_epoch_ms": 2.426287,
+      "state_updates_per_second": 1688176.213283919,
+      "median_process_wall_seconds": 0.75
+    },
+    "split": {
+      "samples": [
+        {
+          "evidence": "final_paired_split_4096_64_1.stdout",
+          "command_evidence": "final_paired_split_4096_64_1.command.json",
+          "device_seconds": 0.1592552,
+          "advance_wall_seconds": 0.1627967,
+          "process_wall_seconds": 0.6560000000008586,
+          "health_passed": true,
+          "digest": "c79b636e728e12b1",
+          "split_evolution": true,
+          "exit_code": 0
+        },
+        {
+          "evidence": "final_paired_split_4096_64_2.stdout",
+          "command_evidence": "final_paired_split_4096_64_2.command.json",
+          "device_seconds": 0.161960992,
+          "advance_wall_seconds": 0.1649029,
+          "process_wall_seconds": 0.75,
+          "health_passed": true,
+          "digest": "c79b636e728e12b1",
+          "split_evolution": true,
+          "exit_code": 0
+        },
+        {
+          "evidence": "final_paired_split_4096_64_3.stdout",
+          "command_evidence": "final_paired_split_4096_64_3.command.json",
+          "device_seconds": 0.162038464,
+          "advance_wall_seconds": 0.1673579,
+          "process_wall_seconds": 0.7969999999986612,
+          "health_passed": true,
+          "digest": "c79b636e728e12b1",
+          "split_evolution": true,
+          "exit_code": 0
+        }
+      ],
+      "median_device_seconds": 0.161960992,
+      "median_mean_epoch_ms": 2.5306405,
+      "state_updates_per_second": 1618562.5733880415,
+      "median_process_wall_seconds": 0.75
+    }
+  },
+  "all_digests_identical": true,
+  "split_over_mono_median_device_time_ratio": 1.043009545037335,
+  "observation": "Split was slower in two of three pairs and at the median. No measured benefit supporting a GTX default change."
+}

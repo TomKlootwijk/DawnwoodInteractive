@@ -25,13 +25,14 @@ def read_json(path):
 def main():
     environment={'platform':platform.platform(),'machine':platform.machine(),'python':sys.version,'tools':{x:shutil.which(x) for x in ['cmake','g++','clang++','glslangValidator','glslc','spirv-val','vulkaninfo','adb','java','gradle','nvidia-smi']}}
     (RESULTS/'build_environment.json').write_text(json.dumps(environment,indent=2)+'\n')
-    shaders=command('release_shaders',[sys.executable,ROOT/'tools/build_shaders.py'])
+    shaders=command('release_shaders',[sys.executable,ROOT/'tools/build_shaders.py','--optimize','--preserve-math-functions','--preserve-interpreter-functions'])
     configured=shaders and command('release_configure',['cmake','-S',ROOT,'-B',ROOT/'build','-DCMAKE_BUILD_TYPE=Release'])
-    compiled=configured and command('release_compile',['cmake','--build',ROOT/'build','-j2'])
-    binary=ROOT/'build'/('dawnwood.exe' if os.name=='nt' else 'dawnwood')
+    compiled=configured and command('release_compile',['cmake','--build',ROOT/'build','--config','Release','-j2'])
+    binary_name='dawnwood.exe' if os.name=='nt' else 'dawnwood'
+    binary=next((p for p in [ROOT/'build/Release'/binary_name,ROOT/'build'/binary_name] if p.is_file()),ROOT/'build'/binary_name)
     cpu_pass=claims_pass=False
     if compiled:
-        cpu_pass=command('release_ctest',['ctest','--test-dir',ROOT/'build','--output-on-failure'])
+        cpu_pass=command('release_ctest',['ctest','--test-dir',ROOT/'build','-C','Release','--output-on-failure'])
         claims_pass=command('release_claims',[sys.executable,ROOT/'tools/run_claims.py','--binary',binary,'--allow-software','--bench'],timeout=240)
         # Verify a resumed GPU run separately from the epoch-by-epoch comparison.
         command('release_cpu_reference',[binary,'run','--backend','cpu','--count','64','--steps','32','--checkpoint',RESULTS/'cpu_32.dwk','--out',RESULTS/'cpu_32.json'])
@@ -63,10 +64,10 @@ def main():
     nvidia=shutil.which('nvidia-smi')
     if nvidia:command('release_nvidia_identity',[nvidia,'--query-gpu=name,memory.total,driver_version','--format=csv'],timeout=20)
     summary=read_json(RESULTS/'claims/summary.json') or {}
-    status={'release':'0.3.0','profile':'DWI-N1','shaders_compiled':shaders,'desktop_compiled':compiled,'cpu_ctest_passed':cpu_pass,'source_claim_suite_passed':claims_pass,'claims':summary,'android_native_compiled':bool(android_native),'android_apk_built':bool(apk_built),'android_build_note':android_reason,'POCO_hardware_test_executed':False,'GTX_1650_Ti_hardware_test_executed':bool(summary.get('real_GTX_1650_Ti_test',False)),'original_source_present':(ROOT/'source/double-slit-theory.pdf').exists()}
+    status={'release':'0.5.0','profile':'DWI-N1-0.5','shaders_compiled':shaders,'desktop_compiled':compiled,'cpu_ctest_passed':cpu_pass,'source_claim_suite_passed':claims_pass,'claims':summary,'android_native_compiled':bool(android_native),'android_apk_built':bool(apk_built),'android_build_note':android_reason,'POCO_hardware_test_executed':False,'GTX_1650_Ti_hardware_test_executed':bool(summary.get('real_GTX_1650_Ti_test',False)),'original_source_present':(ROOT/'source/double-slit-theory.pdf').exists()}
     (RESULTS/'release_status.json').write_text(json.dumps(status,indent=2)+'\n')
     device=summary.get('vulkan_device',{})
-    lines=['# Actual build and test status — Dawnwood GPU 0.3','',
+    lines=['# Actual build and test status — Dawnwood GPU 0.5','',
            '| Stage | Recorded result |','|---|---|',
            f'| SPIR-V compilation | {shaders} |',f'| Desktop C++ compilation | {compiled} |',
            f'| CPU CTest suite | {cpu_pass} |',f'| Combined source-claim suite | {claims_pass} |',

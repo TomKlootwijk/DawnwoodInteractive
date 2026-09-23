@@ -1,0 +1,20 @@
+{
+  "name": "configure_v04",
+  "command": [
+    "C:\\Users\\ietsm\\AppData\\Local\\Android\\Sdk\\cmake\\3.31.6\\bin\\cmake.exe",
+    "-S",
+    ".",
+    "-B",
+    "build",
+    "-G",
+    "Visual Studio 17 2022",
+    "-A",
+    "x64",
+    "-DVulkan_INCLUDE_DIR=C:/DawnwoodInteractive/tmp/validation_v04/include",
+    "-DVulkan_LIBRARY=C:/DawnwoodInteractive/tmp/validation_v04/vulkan-1.lib"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:34:58.764941+00:00",
+  "exit_code": 0,
+  "wall_seconds": 4.577999999979511
+}

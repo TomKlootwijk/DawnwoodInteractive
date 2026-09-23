@@ -1,0 +1,7 @@
+/tmp/
+**/build/
+**/build-android/
+**/.gradle/
+**/.cxx/
+**/__pycache__/
+**/android/local.properties

@@ -1,0 +1,68 @@
+{
+  "name": "device_probe",
+  "command": [
+    "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\build\\Release\\dawnwood.exe",
+    "probe",
+    "--count",
+    "1",
+    "--device",
+    "1650 Ti"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 0.375,
+  "report": {
+    "profile": "DWI-N1-0.4",
+    "device": {
+      "name": "NVIDIA GeForce GTX 1650 Ti with Max-Q Design",
+      "vendor_id": 4318,
+      "device_id": 8085,
+      "api_version": 4211000,
+      "driver_version": 2438201344,
+      "software_device": false,
+      "validation_layer_enabled": false,
+      "validation_errors": 0,
+      "validation_warnings": 0,
+      "memory_budget_extension": true,
+      "texture_compression_BC": true,
+      "BC5_sampled_image": true,
+      "EAC_RG11_sampled_image": false,
+      "ASTC_4x4_sampled_image": false,
+      "max_compute_shared_memory_bytes": 49152,
+      "max_storage_buffer_range": 4294967295,
+      "allocated_buffer_bytes": 6208,
+      "upload_bytes": 2112,
+      "download_bytes": 0,
+      "completed_epochs": 0,
+      "advance_buffer_copy_commands": 0,
+      "timer": "Vulkan device timestamps",
+      "last_dispatch_seconds": 0,
+      "last_wall_seconds": 0,
+      "heaps": [
+        {
+          "index": 0,
+          "size": 4126146560,
+          "runtime_buffer_allocation_bytes": 0,
+          "device_local": true,
+          "budget_at_start": 3507224576,
+          "usage_at_start": 0
+        },
+        {
+          "index": 1,
+          "size": 8466173952,
+          "runtime_buffer_allocation_bytes": 1984,
+          "device_local": false,
+          "budget_at_start": 7774429799,
+          "usage_at_start": 0
+        },
+        {
+          "index": 2,
+          "size": 224395264,
+          "runtime_buffer_allocation_bytes": 4224,
+          "device_local": true,
+          "budget_at_start": 221376512,
+          "usage_at_start": 3018752
+        }
+      ]
+    }
+  }
+}

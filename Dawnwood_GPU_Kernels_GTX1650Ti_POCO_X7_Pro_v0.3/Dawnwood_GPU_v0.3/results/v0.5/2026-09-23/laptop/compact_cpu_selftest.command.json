@@ -1,0 +1,14 @@
+{
+  "name": "compact_cpu_selftest",
+  "command": [
+    "build\\Release\\dawnwood.exe",
+    "selftest"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "started_utc": "2026-09-23T05:17:16.715108+00:00",
+  "binary_sha256": "fd3da2704959dc2bf4aa8e1e22bc33e210bca754b238c0d719fa78da2a0bc08f",
+  "validation_environment": {},
+  "exit_code": 0,
+  "wall_seconds": 0.15600000000085856,
+  "finished_utc": "2026-09-23T05:17:16.862995+00:00"
+}

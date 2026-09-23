@@ -1,0 +1,441 @@
+MSBuild version 17.14.40+3e7442088 for .NET Framework
+
+  1>Checking Build System
+  Building Custom Rule C:/DawnwoodInteractive/tmp/validation_v04/baseline/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/CMakeLists.txt
+  cpu.cpp
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(27,19): warning C4305: 'initializing': truncation from 'double' to 'float' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(28,20): warning C4305: 'initializing': truncation from 'double' to 'float' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(65,9): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(66,27): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(66,56): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(82,49): warning C4305: 'argument': truncation from 'double' to 'float' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(82,42): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(82,84): warning C4305: 'argument': truncation from 'double' to 'float' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(82,78): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(82,65): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(83,45): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(99,12): warning C4305: 'initializing': truncation from 'double' to 'float' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(100,106): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(101,36): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(101,69): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(102,9): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(105,75): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(109,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(110,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(111,14): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(113,21): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(114,19): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(115,20): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(1,155): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(5,46): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(9,67): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(12,97): warning C4244: '=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(13,47): warning C4244: '=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(14,38): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(14,80): warning C4244: '=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(15,59): warning C4244: '=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(21,13): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(22,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(25,43): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(26,43): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(30,50): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(31,50): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(32,60): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(33,70): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(34,26): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(37,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(38,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(38,47): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(39,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(39,47): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(43,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(50,46): warning C4244: '=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/cpu.cpp')
+  
+  vulkan.cpp
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(27,19): warning C4305: 'initializing': truncation from 'double' to 'float' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(28,20): warning C4305: 'initializing': truncation from 'double' to 'float' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(65,9): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(66,27): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(66,56): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(82,49): warning C4305: 'argument': truncation from 'double' to 'float' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(82,42): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(82,84): warning C4305: 'argument': truncation from 'double' to 'float' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(82,78): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(82,65): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(83,45): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(99,12): warning C4305: 'initializing': truncation from 'double' to 'float' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(100,106): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(101,36): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(101,69): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(102,9): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(105,75): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(109,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(110,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(111,14): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(113,21): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(114,19): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(115,20): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(1,155): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(5,46): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(9,67): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(12,97): warning C4244: '=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(13,47): warning C4244: '=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(14,38): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(14,80): warning C4244: '=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(15,59): warning C4244: '=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(21,13): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(22,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(25,43): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(26,43): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(30,50): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(31,50): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(32,60): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(33,70): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(34,26): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(37,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(38,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(38,47): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(39,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(39,47): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(43,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(50,46): warning C4244: '=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/vulkan.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\src\vulkan.cpp(65,12): warning C4458: declaration of 'p' hides class member [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+      C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\runtime.hpp(12,36):
+      see declaration of 'VulkanRuntime::p'
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\src\vulkan.cpp(42,11): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  driver.cpp
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(27,19): warning C4305: 'initializing': truncation from 'double' to 'float' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(28,20): warning C4305: 'initializing': truncation from 'double' to 'float' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(65,9): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(66,27): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(66,56): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(82,49): warning C4305: 'argument': truncation from 'double' to 'float' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(82,42): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(82,84): warning C4305: 'argument': truncation from 'double' to 'float' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(82,78): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(82,65): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(83,45): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(99,12): warning C4305: 'initializing': truncation from 'double' to 'float' [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(100,106): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(101,36): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(101,69): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(102,9): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(105,75): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(109,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(110,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(111,14): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(113,21): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(114,19): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_types.inc(115,20): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(1,155): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(5,46): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(9,67): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(12,97): warning C4244: '=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(13,47): warning C4244: '=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(14,38): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(14,80): warning C4244: '=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(15,59): warning C4244: '=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(21,13): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(22,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(25,43): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(26,43): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(30,50): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(31,50): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(32,60): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(33,70): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(34,26): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(37,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(38,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(38,47): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(39,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(39,47): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(43,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include\numeric_evolve.inc(50,46): warning C4244: '=': conversion from 'double' to 'float', possible loss of data [C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\dawnwood_core.vcxproj]
+  (compiling source file '../src/driver.cpp')
+  
+  Generating Code...
+  dawnwood_core.vcxproj -> C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\Release\dawnwood_core.lib
+  Building Custom Rule C:/DawnwoodInteractive/tmp/validation_v04/baseline/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/CMakeLists.txt
+  main.cpp
+  dawnwood.vcxproj -> C:\DawnwoodInteractive\tmp\validation_v04\baseline\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\build\Release\dawnwood.exe
+  Building Custom Rule C:/DawnwoodInteractive/tmp/validation_v04/baseline/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/CMakeLists.txt

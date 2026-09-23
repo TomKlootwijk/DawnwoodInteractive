@@ -1,0 +1,11 @@
+{
+  "arithmetic_instructions": 3682,
+  "no_contraction_arithmetic": 3682,
+  "without_no_contraction": [],
+  "native_elementary_instructions": {
+    "Sin": 0,
+    "Cos": 0,
+    "Exp": 0,
+    "Sqrt": 1
+  }
+}

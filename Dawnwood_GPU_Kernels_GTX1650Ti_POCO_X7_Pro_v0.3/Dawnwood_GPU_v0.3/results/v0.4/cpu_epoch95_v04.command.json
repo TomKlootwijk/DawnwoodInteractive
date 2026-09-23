@@ -1,0 +1,20 @@
+{
+  "name": "cpu_epoch95_v04",
+  "command": [
+    "build/Release/dawnwood.exe",
+    "run",
+    "--backend",
+    "cpu",
+    "--count",
+    "257",
+    "--steps",
+    "95",
+    "--checkpoint",
+    "results/v0.4/cpu_epoch95.dwk"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:40:52.648925+00:00",
+  "exit_code": 0,
+  "wall_seconds": 0.4380000000819564,
+  "validation_environment": {}
+}

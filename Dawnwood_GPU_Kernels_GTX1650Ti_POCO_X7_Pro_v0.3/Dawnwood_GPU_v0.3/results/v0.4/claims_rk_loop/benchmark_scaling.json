@@ -1,0 +1,68 @@
+[
+  {
+    "backend": "cpu",
+    "count": 256,
+    "epochs": 16,
+    "seconds_samples": [
+      0.045967,
+      0.0834999,
+      0.0442435
+    ],
+    "median_seconds": 0.045967
+  },
+  {
+    "backend": "cpu",
+    "count": 1024,
+    "epochs": 16,
+    "seconds_samples": [
+      0.2526268,
+      0.2198918,
+      0.1811202
+    ],
+    "median_seconds": 0.2198918
+  },
+  {
+    "backend": "cpu",
+    "count": 4096,
+    "epochs": 16,
+    "seconds_samples": [
+      0.6096861,
+      0.7350639,
+      0.7347995
+    ],
+    "median_seconds": 0.7347995
+  },
+  {
+    "backend": "vulkan",
+    "count": 256,
+    "epochs": 16,
+    "seconds_samples": [
+      0.003477856,
+      0.003335648,
+      0.0033344
+    ],
+    "median_seconds": 0.003335648
+  },
+  {
+    "backend": "vulkan",
+    "count": 1024,
+    "epochs": 16,
+    "seconds_samples": [
+      0.003414208,
+      0.003419776,
+      0.003413472
+    ],
+    "median_seconds": 0.003414208
+  },
+  {
+    "backend": "vulkan",
+    "count": 4096,
+    "epochs": 16,
+    "seconds_samples": [
+      0.004142656,
+      0.004168,
+      0.004145856
+    ],
+    "median_seconds": 0.004145856
+  }
+]

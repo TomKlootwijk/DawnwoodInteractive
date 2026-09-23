@@ -1,0 +1,24 @@
+{
+  "name": "zero_epoch_readback_v04",
+  "command": [
+    "build/Release/dawnwood.exe",
+    "run",
+    "--device",
+    "1650 Ti",
+    "--count",
+    "257",
+    "--steps",
+    "0",
+    "--checkpoint",
+    "results/v0.4/initial_257.dwk"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:37:37.962126+00:00",
+  "exit_code": 0,
+  "wall_seconds": 0.4220000000204891,
+  "validation_environment": {
+    "DAWNWOOD_VALIDATION": "1",
+    "VK_LAYER_PATH": "C:\\DawnwoodInteractive\\tmp\\validation_v04\\layers",
+    "VK_LAYER_ENABLES": "VK_VALIDATION_FEATURE_ENABLE_SYNCHRONIZATION_VALIDATION_EXT"
+  }
+}

@@ -1,0 +1,4 @@
+com.facebook.katana
+com.google.android.youtube
+com.instagram.android
+com.whatsapp

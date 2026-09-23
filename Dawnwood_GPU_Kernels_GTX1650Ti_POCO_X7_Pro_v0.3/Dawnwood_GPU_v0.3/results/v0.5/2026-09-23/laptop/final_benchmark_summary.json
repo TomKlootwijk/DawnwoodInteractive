@@ -1,0 +1,171 @@
+{
+  "profile": "DWI-N1-0.5",
+  "collected_utc": "2026-09-23T05:25:12.421332+00:00",
+  "binary_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+  "count": 4096,
+  "epochs": 64,
+  "batch": 8,
+  "repeats": 3,
+  "split_evolution": false,
+  "definition": "One state-update advances one complete 128-byte state by one epoch through the declared recurrence; each GPU epoch also mutates the shared operator LUT.",
+  "timing_note": "CPU seconds measure evolution wall time. Vulkan seconds sum device-timestamp intervals; initialization/upload/readback/digest/host gaps excluded. Whole-process wall includes these costs. Fresh process per sample; ordinary desktop background activity and clock variation uncontrolled. Validation disabled for performance.",
+  "backends": {
+    "cpu": {
+      "samples": [
+        {
+          "evidence": "final_benchmark_cpu_4096_64_1.stdout",
+          "command_evidence": "final_benchmark_cpu_4096_64_1.command.json",
+          "exit_code": 0,
+          "started_utc": "2026-09-23T05:24:02.861757+00:00",
+          "seconds": 8.759979,
+          "process_wall_seconds": 8.811999999999898,
+          "timing": {
+            "runtime_setup_upload_seconds": 0,
+            "advance_wall_seconds": 8.759979,
+            "readback_seconds": 0,
+            "digest_and_health_seconds": 0.0041967
+          },
+          "health": {
+            "passed": true,
+            "first_invalid_record": "",
+            "nonfinite_state_values": 0,
+            "out_of_chart_states": 0,
+            "max_energy_error_from_source_seed_5": 2.47955e-05
+          },
+          "state_digest": "ea2a2e5ff6ce7adb",
+          "complete_digest": "c79b636e728e12b1"
+        },
+        {
+          "evidence": "final_benchmark_cpu_4096_64_2.stdout",
+          "command_evidence": "final_benchmark_cpu_4096_64_2.command.json",
+          "exit_code": 0,
+          "started_utc": "2026-09-23T05:24:11.903973+00:00",
+          "seconds": 7.58345,
+          "process_wall_seconds": 7.625,
+          "timing": {
+            "runtime_setup_upload_seconds": 0,
+            "advance_wall_seconds": 7.58345,
+            "readback_seconds": 0,
+            "digest_and_health_seconds": 0.0026637
+          },
+          "health": {
+            "passed": true,
+            "first_invalid_record": "",
+            "nonfinite_state_values": 0,
+            "out_of_chart_states": 0,
+            "max_energy_error_from_source_seed_5": 2.47955e-05
+          },
+          "state_digest": "ea2a2e5ff6ce7adb",
+          "complete_digest": "c79b636e728e12b1"
+        },
+        {
+          "evidence": "final_benchmark_cpu_4096_64_3.stdout",
+          "command_evidence": "final_benchmark_cpu_4096_64_3.command.json",
+          "exit_code": 0,
+          "started_utc": "2026-09-23T05:24:19.704109+00:00",
+          "seconds": 8.1974733,
+          "process_wall_seconds": 8.218000000000757,
+          "timing": {
+            "runtime_setup_upload_seconds": 0,
+            "advance_wall_seconds": 8.1974733,
+            "readback_seconds": 0,
+            "digest_and_health_seconds": 0.0023868
+          },
+          "health": {
+            "passed": true,
+            "first_invalid_record": "",
+            "nonfinite_state_values": 0,
+            "out_of_chart_states": 0,
+            "max_energy_error_from_source_seed_5": 2.47955e-05
+          },
+          "state_digest": "ea2a2e5ff6ce7adb",
+          "complete_digest": "c79b636e728e12b1"
+        }
+      ],
+      "median_seconds": 8.1974733,
+      "median_mean_epoch_ms": 128.0855203125,
+      "state_updates_per_second_using_median": 31978.63419695432,
+      "median_process_wall_seconds": 8.218000000000757
+    },
+    "vulkan": {
+      "samples": [
+        {
+          "evidence": "final_benchmark_vulkan_4096_64_1.stdout",
+          "command_evidence": "final_benchmark_vulkan_4096_64_1.command.json",
+          "exit_code": 0,
+          "started_utc": "2026-09-23T05:24:28.081319+00:00",
+          "seconds": 0.199790944,
+          "process_wall_seconds": 0.8590000000003783,
+          "timing": {
+            "runtime_setup_upload_seconds": 0.4798508,
+            "advance_wall_seconds": 0.2031715,
+            "readback_seconds": 0.001743,
+            "digest_and_health_seconds": 0.0032747
+          },
+          "health": {
+            "passed": true,
+            "first_invalid_record": "",
+            "nonfinite_state_values": 0,
+            "out_of_chart_states": 0,
+            "max_energy_error_from_source_seed_5": 2.47955e-05
+          },
+          "state_digest": "ea2a2e5ff6ce7adb",
+          "complete_digest": "c79b636e728e12b1"
+        },
+        {
+          "evidence": "final_benchmark_vulkan_4096_64_2.stdout",
+          "command_evidence": "final_benchmark_vulkan_4096_64_2.command.json",
+          "exit_code": 0,
+          "started_utc": "2026-09-23T05:24:29.292122+00:00",
+          "seconds": 0.157167648,
+          "process_wall_seconds": 0.7969999999986612,
+          "timing": {
+            "runtime_setup_upload_seconds": 0.4653056,
+            "advance_wall_seconds": 0.1674788,
+            "readback_seconds": 0.0055616,
+            "digest_and_health_seconds": 0.0030226
+          },
+          "health": {
+            "passed": true,
+            "first_invalid_record": "",
+            "nonfinite_state_values": 0,
+            "out_of_chart_states": 0,
+            "max_energy_error_from_source_seed_5": 2.47955e-05
+          },
+          "state_digest": "ea2a2e5ff6ce7adb",
+          "complete_digest": "c79b636e728e12b1"
+        },
+        {
+          "evidence": "final_benchmark_vulkan_4096_64_3.stdout",
+          "command_evidence": "final_benchmark_vulkan_4096_64_3.command.json",
+          "exit_code": 0,
+          "started_utc": "2026-09-23T05:24:30.532473+00:00",
+          "seconds": 0.1556144,
+          "process_wall_seconds": 0.9839999999985594,
+          "timing": {
+            "runtime_setup_upload_seconds": 0.6710265,
+            "advance_wall_seconds": 0.1630658,
+            "readback_seconds": 0.0018489,
+            "digest_and_health_seconds": 0.0027174
+          },
+          "health": {
+            "passed": true,
+            "first_invalid_record": "",
+            "nonfinite_state_values": 0,
+            "out_of_chart_states": 0,
+            "max_energy_error_from_source_seed_5": 2.47955e-05
+          },
+          "state_digest": "ea2a2e5ff6ce7adb",
+          "complete_digest": "c79b636e728e12b1"
+        }
+      ],
+      "median_seconds": 0.157167648,
+      "median_mean_epoch_ms": 2.4557444999999998,
+      "state_updates_per_second_using_median": 1667925.9589098133,
+      "median_process_wall_seconds": 0.8590000000003783
+    }
+  },
+  "all_final_digests_equal": true,
+  "cpu_evolution_wall_over_gpu_device_time_ratio": 52.15751081291234,
+  "whole_process_median_ratio": 9.56693830034591
+}

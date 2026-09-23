@@ -1,0 +1,124 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.9/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:compileDebugJavaWithJavac UP-TO-DATE
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:dexBuilderDebug UP-TO-DATE
+> Task :app:mergeDebugGlobalSynthetics UP-TO-DATE
+> Task :app:processDebugJavaRes NO-SOURCE
+> Task :app:mergeDebugJavaResource UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :app:mergeLibDexDebug UP-TO-DATE
+> Task :app:mergeProjectDexDebug UP-TO-DATE
+> Task :app:configureCMakeDebug[arm64-v8a]
+
+> Task :app:buildCMakeDebug[arm64-v8a]
+C/C++: ninja: Entering directory `C:\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\android\app\.cxx\Debug\485m6c6m\arm64-v8a'
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:21:190: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    21 |  VkPhysicalDeviceProperties props{};VkPhysicalDeviceMemoryProperties memory{};VkPhysicalDeviceMemoryBudgetPropertiesEXT budget{VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_BUDGET_PROPERTIES_EXT};
+C/C++:       |                                                                                                                                                                                              ^
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:35:73: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    35 |   b.size=size;VkBufferCreateInfo ci{VK_STRUCTURE_TYPE_BUFFER_CREATE_INFO};ci.size=size;ci.usage=usage;ci.sharingMode=VK_SHARING_MODE_EXCLUSIVE;check(vkCreateBuffer(device,&ci,nullptr,&b.handle),"vkCreateBuffer");
+C/C++:       |                                                                         ^
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:39:65: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    39 |   VkMemoryAllocateInfo ai{VK_STRUCTURE_TYPE_MEMORY_ALLOCATE_INFO};ai.allocationSize=req.size;ai.memoryTypeIndex=type;check(vkAllocateMemory(device,&ai,nullptr,&b.memory),"vkAllocateMemory");b.allocated=req.size;b.heapIndex=memory.memoryTypes[type].heapIndex;heapAllocated[b.heapIndex]+=req.size;b.coherent=(memory.memoryTypes[type].propertyFlags&VK_MEMORY_PROPERTY_HOST_COHERENT_BIT)!=0;check(vkBindBufferMemory(device,b.handle,b.memory,0),"vkBindBufferMemory");
+C/C++:       |                                                                 ^
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:41:150: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    41 |  void begin(){check(vkResetCommandBuffer(command,0),"vkResetCommandBuffer");VkCommandBufferBeginInfo info{VK_STRUCTURE_TYPE_COMMAND_BUFFER_BEGIN_INFO};info.flags=VK_COMMAND_BUFFER_USAGE_ONE_TIME_SUBMIT_BIT;check(vkBeginCommandBuffer(command,&info),"vkBeginCommandBuffer");}
+C/C++:       |                                                                                                                                                      ^
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:42:170: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    42 |  void finish(){check(vkEndCommandBuffer(command),"vkEndCommandBuffer");check(vkResetFences(device,1,&fence),"vkResetFences");VkSubmitInfo s{VK_STRUCTURE_TYPE_SUBMIT_INFO};s.commandBufferCount=1;s.pCommandBuffers=&command;check(vkQueueSubmit(queue,1,&s,fence),"vkQueueSubmit");check(vkWaitForFences(device,1,&fence,VK_TRUE,UINT64_MAX),"vkWaitForFences");check_validation();}
+C/C++:       |                                                                                                                                                                          ^
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:43:152: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    43 |  void barrier(VkPipelineStageFlags from,VkPipelineStageFlags to,VkAccessFlags src,VkAccessFlags dst){VkMemoryBarrier b{VK_STRUCTURE_TYPE_MEMORY_BARRIER};b.srcAccessMask=src;b.dstAccessMask=dst;vkCmdPipelineBarrier(command,from,to,0,1,&b,0,nullptr,0,nullptr);}
+C/C++:       |                                                                                                                                                        ^
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:44:273: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    44 |  void upload(Buffer& target,const void* data,size_t bytes){void* map=nullptr;check(vkMapMemory(device,staging.memory,0,VK_WHOLE_SIZE,0,&map),"vkMapMemory upload");std::memcpy(map,data,bytes);if(!staging.coherent){VkMappedMemoryRange r{VK_STRUCTURE_TYPE_MAPPED_MEMORY_RANGE};r.memory=staging.memory;r.size=VK_WHOLE_SIZE;check(vkFlushMappedMemoryRanges(device,1,&r),"vkFlushMappedMemoryRanges");}vkUnmapMemory(device,staging.memory);begin();VkBufferCopy copy{0,0,bytes};vkCmdCopyBuffer(command,staging.handle,target.handle,1,&copy);barrier(VK_PIPELINE_STAGE_TRANSFER_BIT,VK_PIPELINE_STAGE_COMPUTE_SHADER_BIT,VK_ACCESS_TRANSFER_WRITE_BIT,VK_ACCESS_SHADER_READ_BIT);finish();uploadBytes+=bytes;}
+C/C++:       |                                                                                                                                                                                                                                                                                 ^
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:45:655: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    45 |  void read(Buffer& source,void* data,size_t bytes){begin();barrier(VK_PIPELINE_STAGE_COMPUTE_SHADER_BIT|VK_PIPELINE_STAGE_TRANSFER_BIT,VK_PIPELINE_STAGE_TRANSFER_BIT,VK_ACCESS_SHADER_WRITE_BIT|VK_ACCESS_TRANSFER_WRITE_BIT,VK_ACCESS_TRANSFER_READ_BIT);VkBufferCopy copy{0,0,bytes};vkCmdCopyBuffer(command,source.handle,staging.handle,1,&copy);barrier(VK_PIPELINE_STAGE_TRANSFER_BIT,VK_PIPELINE_STAGE_HOST_BIT,VK_ACCESS_TRANSFER_WRITE_BIT,VK_ACCESS_HOST_READ_BIT);finish();void* map=nullptr;check(vkMapMemory(device,staging.memory,0,VK_WHOLE_SIZE,0,&map),"vkMapMemory read");if(!staging.coherent){VkMappedMemoryRange r{VK_STRUCTURE_TYPE_MAPPED_MEMORY_RANGE};r.memory=staging.memory;r.size=VK_WHOLE_SIZE;check(vkInvalidateMappedMemoryRanges(device,1,&r),"vkInvalidateMappedMemoryRanges");}std::memcpy(data,map,bytes);vkUnmapMemory(device,staging.memory);downloadBytes+=bytes;}
+C/C++:       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:46:187: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    46 |  VkPipeline pipeline(const uint32_t* words,size_t bytes,const char* passName){VkShaderModule module=VK_NULL_HANDLE;VkShaderModuleCreateInfo mi{VK_STRUCTURE_TYPE_SHADER_MODULE_CREATE_INFO};mi.codeSize=bytes;mi.pCode=words;check(vkCreateShaderModule(device,&mi,nullptr,&module),"vkCreateShaderModule");VkComputePipelineCreateInfo pi{VK_STRUCTURE_TYPE_COMPUTE_PIPELINE_CREATE_INFO};pi.layout=pipelineLayout;pi.stage.sType=VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO;pi.stage.stage=VK_SHADER_STAGE_COMPUTE_BIT;pi.stage.module=module;pi.stage.pName="main";VkPipeline result=VK_NULL_HANDLE;auto status=vkCreateComputePipelines(device,VK_NULL_HANDLE,1,&pi,nullptr,&result);vkDestroyShaderModule(device,module,nullptr);std::string context=std::string(passName)+" on "+props.deviceName;check(status,context.c_str());return result;}
+C/C++:       |                                                                                                                                                                                           ^
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:46:378: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    46 |  VkPipeline pipeline(const uint32_t* words,size_t bytes,const char* passName){VkShaderModule module=VK_NULL_HANDLE;VkShaderModuleCreateInfo mi{VK_STRUCTURE_TYPE_SHADER_MODULE_CREATE_INFO};mi.codeSize=bytes;mi.pCode=words;check(vkCreateShaderModule(device,&mi,nullptr,&module),"vkCreateShaderModule");VkComputePipelineCreateInfo pi{VK_STRUCTURE_TYPE_COMPUTE_PIPELINE_CREATE_INFO};pi.layout=pipelineLayout;pi.stage.sType=VK_STRUCTURE_TYPE_PIPELINE_SHADER_STAGE_CREATE_INFO;pi.stage.stage=VK_SHADER_STAGE_COMPUTE_BIT;pi.stage.module=module;pi.stage.pName="main";VkPipeline result=VK_NULL_HANDLE;auto status=vkCreateComputePipelines(device,VK_NULL_HANDLE,1,&pi,nullptr,&result);vkDestroyShaderModule(device,module,nullptr);std::string context=std::string(passName)+" on "+props.deviceName;check(status,context.c_str());return result;}
+C/C++:       |                                                                                                                                                                                                                                                                                                                                                                                          ^
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:48:59: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    48 |   VkApplicationInfo app{VK_STRUCTURE_TYPE_APPLICATION_INFO};app.pApplicationName="Dawnwood Interactive DWI-N1";app.applicationVersion=VK_MAKE_VERSION(0,4,0);app.apiVersion=VK_API_VERSION_1_1;
+C/C++:       |                                                           ^
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:49:65: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    49 |   VkInstanceCreateInfo ci{VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO};ci.pApplicationInfo=&app;const char* validation="VK_LAYER_KHRONOS_validation";
+C/C++:       |                                                                 ^
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:51:103: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    51 |   VkDebugUtilsMessengerCreateInfoEXT debugInfo{VK_STRUCTURE_TYPE_DEBUG_UTILS_MESSENGER_CREATE_INFO_EXT};
+C/C++:       |                                                                                                       ^
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:65:95: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    65 |   VkPhysicalDeviceMemoryProperties2 mem2{VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_MEMORY_PROPERTIES_2};if(budgetAvailable)mem2.pNext=&budget;vkGetPhysicalDeviceMemoryProperties2(physical,&mem2);memory=mem2.memoryProperties;
+C/C++:       |                                                                                               ^
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:66:89: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    66 |   float priority=1;VkDeviceQueueCreateInfo qi{VK_STRUCTURE_TYPE_DEVICE_QUEUE_CREATE_INFO};qi.queueFamilyIndex=queueFamily;qi.queueCount=1;qi.pQueuePriorities=&priority;
+C/C++:       |                                                                                         ^
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:67:61: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    67 |   VkDeviceCreateInfo di{VK_STRUCTURE_TYPE_DEVICE_CREATE_INFO};di.queueCreateInfoCount=1;di.pQueueCreateInfos=&qi;const char* be=VK_EXT_MEMORY_BUDGET_EXTENSION_NAME;if(budgetAvailable){di.enabledExtensionCount=1;di.ppEnabledExtensionNames=&be;}check(vkCreateDevice(physical,&di,nullptr,&device),"vkCreateDevice");vkGetDeviceQueue(device,queueFamily,0,&queue);
+C/C++:       |                                                             ^
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:68:72: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    68 |   VkCommandPoolCreateInfo cp{VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO};cp.queueFamilyIndex=queueFamily;cp.flags=VK_COMMAND_POOL_CREATE_RESET_COMMAND_BUFFER_BIT;check(vkCreateCommandPool(device,&cp,nullptr,&commandPool),"vkCreateCommandPool");VkCommandBufferAllocateInfo ca{VK_STRUCTURE_TYPE_COMMAND_BUFFER_ALLOCATE_INFO};ca.commandPool=commandPool;ca.level=VK_COMMAND_BUFFER_LEVEL_PRIMARY;ca.commandBufferCount=1;check(vkAllocateCommandBuffers(device,&ca,&command),"vkAllocateCommandBuffers");VkFenceCreateInfo fi{VK_STRUCTURE_TYPE_FENCE_CREATE_INFO};check(vkCreateFence(device,&fi,nullptr,&fence),"vkCreateFence");
+C/C++:       |                                                                        ^
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:68:322: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    68 |   VkCommandPoolCreateInfo cp{VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO};cp.queueFamilyIndex=queueFamily;cp.flags=VK_COMMAND_POOL_CREATE_RESET_COMMAND_BUFFER_BIT;check(vkCreateCommandPool(device,&cp,nullptr,&commandPool),"vkCreateCommandPool");VkCommandBufferAllocateInfo ca{VK_STRUCTURE_TYPE_COMMAND_BUFFER_ALLOCATE_INFO};ca.commandPool=commandPool;ca.level=VK_COMMAND_BUFFER_LEVEL_PRIMARY;ca.commandBufferCount=1;check(vkAllocateCommandBuffers(device,&ca,&command),"vkAllocateCommandBuffers");VkFenceCreateInfo fi{VK_STRUCTURE_TYPE_FENCE_CREATE_INFO};check(vkCreateFence(device,&fi,nullptr,&fence),"vkCreateFence");
+C/C++:       |                                                                                                                                                                                                                                                                                                                                  ^
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:68:552: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    68 |   VkCommandPoolCreateInfo cp{VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO};cp.queueFamilyIndex=queueFamily;cp.flags=VK_COMMAND_POOL_CREATE_RESET_COMMAND_BUFFER_BIT;check(vkCreateCommandPool(device,&cp,nullptr,&commandPool),"vkCreateCommandPool");VkCommandBufferAllocateInfo ca{VK_STRUCTURE_TYPE_COMMAND_BUFFER_ALLOCATE_INFO};ca.commandPool=commandPool;ca.level=VK_COMMAND_BUFFER_LEVEL_PRIMARY;ca.commandBufferCount=1;check(vkAllocateCommandBuffers(device,&ca,&command),"vkAllocateCommandBuffers");VkFenceCreateInfo fi{VK_STRUCTURE_TYPE_FENCE_CREATE_INFO};check(vkCreateFence(device,&fi,nullptr,&fence),"vkCreateFence");
+C/C++:       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:73:89: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    73 |   VkDescriptorSetLayoutCreateInfo li{VK_STRUCTURE_TYPE_DESCRIPTOR_SET_LAYOUT_CREATE_INFO};li.bindingCount=4;li.pBindings=bindings;check(vkCreateDescriptorSetLayout(device,&li,nullptr,&descriptorLayout),"vkCreateDescriptorSetLayout");
+C/C++:       |                                                                                         ^
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:74:150: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    74 |   VkPushConstantRange push{VK_SHADER_STAGE_COMPUTE_BIT,0,sizeof(Config)};VkPipelineLayoutCreateInfo pli{VK_STRUCTURE_TYPE_PIPELINE_LAYOUT_CREATE_INFO};pli.setLayoutCount=1;pli.pSetLayouts=&descriptorLayout;pli.pushConstantRangeCount=1;pli.pPushConstantRanges=&push;check(vkCreatePipelineLayout(device,&pli,nullptr,&pipelineLayout),"vkCreatePipelineLayout");
+C/C++:       |                                                                                                                                                      ^
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:75:140: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    75 |   VkDescriptorPoolSize ps{VK_DESCRIPTOR_TYPE_STORAGE_BUFFER,8};VkDescriptorPoolCreateInfo dpi{VK_STRUCTURE_TYPE_DESCRIPTOR_POOL_CREATE_INFO};dpi.maxSets=2;dpi.poolSizeCount=1;dpi.pPoolSizes=&ps;check(vkCreateDescriptorPool(device,&dpi,nullptr,&descriptorPool),"vkCreateDescriptorPool");VkDescriptorSetLayout layouts[2]={descriptorLayout,descriptorLayout};VkDescriptorSetAllocateInfo da{VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO};da.descriptorPool=descriptorPool;da.descriptorSetCount=2;da.pSetLayouts=layouts;check(vkAllocateDescriptorSets(device,&da,sets),"vkAllocateDescriptorSets");
+C/C++:       |                                                                                                                                            ^
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:75:433: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    75 |   VkDescriptorPoolSize ps{VK_DESCRIPTOR_TYPE_STORAGE_BUFFER,8};VkDescriptorPoolCreateInfo dpi{VK_STRUCTURE_TYPE_DESCRIPTOR_POOL_CREATE_INFO};dpi.maxSets=2;dpi.poolSizeCount=1;dpi.pPoolSizes=&ps;check(vkCreateDescriptorPool(device,&dpi,nullptr,&descriptorPool),"vkCreateDescriptorPool");VkDescriptorSetLayout layouts[2]={descriptorLayout,descriptorLayout};VkDescriptorSetAllocateInfo da{VK_STRUCTURE_TYPE_DESCRIPTOR_SET_ALLOCATE_INFO};da.descriptorPool=descriptorPool;da.descriptorSetCount=2;da.pSetLayouts=layouts;check(vkAllocateDescriptorSets(device,&da,sets),"vkAllocateDescriptorSets");
+C/C++:       |                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^
+C/C++: C:/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/vulkan.cpp:78:86: warning: missing field 'pNext' initializer [-Wmissing-field-initializers]
+C/C++:    78 |   if(timestampBits){VkQueryPoolCreateInfo qp{VK_STRUCTURE_TYPE_QUERY_POOL_CREATE_INFO};qp.queryType=VK_QUERY_TYPE_TIMESTAMP;qp.queryCount=2;check(vkCreateQueryPool(device,&qp,nullptr,&queries),"vkCreateQueryPool");}
+C/C++:       |                                                                                      ^
+C/C++: 24 warnings generated.
+
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+> Task :app:mergeDebugNativeLibs
+> Task :app:stripDebugDebugSymbols
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect UP-TO-DATE
+> Task :app:assembleDebug
+
+BUILD SUCCESSFUL in 24s
+36 actionable tasks: 5 executed, 31 up-to-date

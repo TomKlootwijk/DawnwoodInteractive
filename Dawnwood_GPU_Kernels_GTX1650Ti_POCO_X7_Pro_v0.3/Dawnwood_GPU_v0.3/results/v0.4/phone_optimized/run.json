@@ -1,0 +1,30 @@
+{
+  "run_id": "run_1789555740684010500",
+  "android_before": {
+    "model": "2412DPC0AG",
+    "manufacturer": "Xiaomi",
+    "sdk": 36,
+    "abi": "arm64-v8a",
+    "system_total_ram_bytes": 11861921792,
+    "system_available_ram_bytes": 4102422528,
+    "system_low_memory": false,
+    "android_thermal_status": 0,
+    "battery_temperature_celsius": 34.3
+  },
+  "runtime": {
+    "error": "vkCreateComputePipelines evolve on Mali-G720 MC7 (VkResult -3)"
+  },
+  "elapsed_wall_ms": 2971,
+  "android_after": {
+    "model": "2412DPC0AG",
+    "manufacturer": "Xiaomi",
+    "sdk": 36,
+    "abi": "arm64-v8a",
+    "system_total_ram_bytes": 11861921792,
+    "system_available_ram_bytes": 2869153792,
+    "system_low_memory": false,
+    "android_thermal_status": 0,
+    "battery_temperature_celsius": 34.3
+  },
+  "finished": true
+}

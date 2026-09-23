@@ -1,0 +1,16 @@
+{
+  "name": "phone_probe_process_log_v04",
+  "command": [
+    "C:\\Users\\ietsm\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe",
+    "-s",
+    "XOVSTSHYNREMZ5D6",
+    "logcat",
+    "-d",
+    "--pid=15121"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:41:56.820161+00:00",
+  "exit_code": 0,
+  "wall_seconds": 0.15600000019185245,
+  "validation_environment": {}
+}

@@ -1,0 +1,13 @@
+{
+  "archive": "C:\\DawnwoodInteractive\\output\\Dawnwood_GPU_Kernels_v0.4.zip",
+  "bytes": 2734885,
+  "sha256": "ba69a7bc4f98a5546f8a3962206906e9bbaf34161581cc0b6efc6214ea08ddb8",
+  "manifest_files": 1085,
+  "archive_crc_passed": true,
+  "archive_all_manifest_hashes_passed": true,
+  "omitted": [
+    "build directories and caches",
+    "local.properties",
+    "two initial broad-system phone logs; own-process logs retained"
+  ]
+}

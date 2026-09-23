@@ -1,0 +1,21 @@
+{
+  "name": "android_configure_v04",
+  "command": [
+    "C:\\Users\\ietsm\\AppData\\Local\\Android\\Sdk\\cmake\\3.31.6\\bin\\cmake.exe",
+    "-S",
+    ".",
+    "-B",
+    "build-android",
+    "-G",
+    "Ninja",
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DCMAKE_TOOLCHAIN_FILE=C:/Users/ietsm/AppData/Local/Android/Sdk/ndk/29.0.14206865/build/cmake/android.toolchain.cmake",
+    "-DANDROID_ABI=arm64-v8a",
+    "-DANDROID_PLATFORM=android-28",
+    "-DCMAKE_MAKE_PROGRAM=C:/Users/ietsm/AppData/Local/Android/Sdk/cmake/3.31.6/bin/ninja.exe"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:35:58.540687+00:00",
+  "exit_code": 0,
+  "wall_seconds": 6.6719999997876585
+}

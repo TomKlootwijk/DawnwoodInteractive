@@ -1,0 +1,18 @@
+{
+  "name": "reject_epoch_overflow_v04",
+  "command": [
+    "build/Release/dawnwood.exe",
+    "run",
+    "--backend",
+    "cpu",
+    "--resume",
+    "results/v0.4/near_epoch_limit.dwk",
+    "--steps",
+    "2"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:38:59.814088+00:00",
+  "exit_code": 1,
+  "wall_seconds": 0.04600000008940697,
+  "validation_environment": {}
+}

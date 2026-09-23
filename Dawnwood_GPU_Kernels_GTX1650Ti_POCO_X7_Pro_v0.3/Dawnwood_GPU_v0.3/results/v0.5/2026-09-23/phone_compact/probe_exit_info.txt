@@ -1,0 +1,68 @@
+ACTIVITY MANAGER PROCESS EXIT INFO (dumpsys activity exit-info)
+Last Timestamp of Persistence Into Persistent Storage: 2026-09-23 06:55:17.913
+  package: nl.dawnwood.kernel
+    Historical Process Exit for uid=10432
+        ApplicationExitInfo #0:
+          timestamp=2026-09-23 07:14:59.549 pid=26968 realUid=10432 packageUid=10432 definingUid=10432 user=0
+          process=nl.dawnwood.kernel reason=5 (APP CRASH(NATIVE)) subreason=0 (UNKNOWN) status=6
+          importance=100 pss=0.00 rss=0.00 description=crash state=empty trace=null
+        ApplicationExitInfo #1:
+          timestamp=2026-09-23 07:12:46.204 pid=26967 realUid=10432 packageUid=10432 definingUid=10432 user=0
+          process=nl.dawnwood.kernel reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop nl.dawnwood.kernel due to from process:28067 state=empty trace=null
+        ApplicationExitInfo #2:
+          timestamp=2026-09-23 07:10:09.853 pid=26510 realUid=10432 packageUid=10432 definingUid=10432 user=0
+          process=nl.dawnwood.kernel reason=5 (APP CRASH(NATIVE)) subreason=0 (UNKNOWN) status=6
+          importance=100 pss=0.00 rss=0.00 description=crash state=empty trace=null
+        ApplicationExitInfo #3:
+          timestamp=2026-09-23 07:10:02.620 pid=23778 realUid=10432 packageUid=10432 definingUid=10432 user=0
+          process=nl.dawnwood.kernel reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop nl.dawnwood.kernel due to from process:27015 state=empty trace=null
+        ApplicationExitInfo #4:
+          timestamp=2026-09-23 07:09:56.288 pid=19820 realUid=10432 packageUid=10432 definingUid=10432 user=0
+          process=nl.dawnwood.kernel reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop nl.dawnwood.kernel due to from process:26797 state=empty trace=null
+        ApplicationExitInfo #5:
+          timestamp=2026-09-23 07:09:54.592 pid=18485 realUid=10432 packageUid=10432 definingUid=10432 user=0
+          process=nl.dawnwood.kernel reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop nl.dawnwood.kernel due to from process:26584 state=empty trace=null
+        ApplicationExitInfo #6:
+          timestamp=2026-09-16 12:53:16.849 pid=31485 realUid=10432 packageUid=10432 definingUid=10432 user=0
+          process=nl.dawnwood.kernel reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop nl.dawnwood.kernel due to from process:32033 state=empty trace=null
+        ApplicationExitInfo #7:
+          timestamp=2026-09-16 12:52:09.818 pid=30003 realUid=10432 packageUid=10432 definingUid=10432 user=0
+          process=nl.dawnwood.kernel reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop nl.dawnwood.kernel due to from process:31771 state=empty trace=null
+        ApplicationExitInfo #8:
+          timestamp=2026-09-16 12:52:05.679 pid=29867 realUid=10432 packageUid=10432 definingUid=10432 user=0
+          process=nl.dawnwood.kernel reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop nl.dawnwood.kernel due to from process:31618 state=empty trace=null
+        ApplicationExitInfo #9:
+          timestamp=2026-09-16 12:52:03.674 pid=29866 realUid=10432 packageUid=10432 definingUid=10432 user=0
+          process=nl.dawnwood.kernel reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop nl.dawnwood.kernel due to from process:31514 state=empty trace=null
+        ApplicationExitInfo #10:
+          timestamp=2026-09-16 12:49:28.865 pid=29560 realUid=10432 packageUid=10432 definingUid=10432 user=0
+          process=nl.dawnwood.kernel reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop nl.dawnwood.kernel due to from process:30041 state=empty trace=null
+        ApplicationExitInfo #11:
+          timestamp=2026-09-16 12:49:00.829 pid=28698 realUid=10432 packageUid=10432 definingUid=10432 user=0
+          process=nl.dawnwood.kernel reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop nl.dawnwood.kernel due to from process:29888 state=empty trace=null
+        ApplicationExitInfo #12:
+          timestamp=2026-09-16 12:48:56.629 pid=28697 realUid=10432 packageUid=10432 definingUid=10432 user=0
+          process=nl.dawnwood.kernel reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop nl.dawnwood.kernel due to from process:29745 state=empty trace=null
+        ApplicationExitInfo #13:
+          timestamp=2026-09-16 12:48:54.731 pid=28390 realUid=10432 packageUid=10432 definingUid=10432 user=0
+          process=nl.dawnwood.kernel reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop nl.dawnwood.kernel due to from process:29584 state=empty trace=null
+        ApplicationExitInfo #14:
+          timestamp=2026-09-16 12:45:56.914 pid=25762 realUid=10432 packageUid=10432 definingUid=10432 user=0
+          process=nl.dawnwood.kernel reason=5 (APP CRASH(NATIVE)) subreason=0 (UNKNOWN) status=6
+          importance=100 pss=0.00 rss=0.00 description=crash state=empty trace=null
+        ApplicationExitInfo #15:
+          timestamp=2026-09-16 12:45:51.910 pid=25761 realUid=10432 packageUid=10432 definingUid=10432 user=0
+          process=nl.dawnwood.kernel reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop nl.dawnwood.kernel due to from process:28575 state=empty trace=null

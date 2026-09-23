@@ -1,0 +1,24 @@
+{
+  "utc": "2026-09-23T05:12:48.781909+00:00",
+  "stage": "Pre-compaction desktop measured artifact; retained independently of subsequent source changes.",
+  "artifacts": [
+    {
+      "source": "build/Release/dawnwood.exe",
+      "retained_copy": "dawnwood.exe",
+      "sha256": "20b944a181d52e105150196b1f7e2a4f309b79cc478ebd9185f161e9686085e0",
+      "bytes": 565248
+    },
+    {
+      "source": "shaders/mutate.spv",
+      "retained_copy": "mutate.spv",
+      "sha256": "974dd54b1d61cdf6400441e34bdd7bf44e4c772b501a547cc07c40ac0624898a",
+      "bytes": 65468
+    },
+    {
+      "source": "shaders/evolve.spv",
+      "retained_copy": "evolve.spv",
+      "sha256": "a9f35b74444ca6f124bddd2fe447a4fddab69b0d73100513fcd68ac97d3aef14",
+      "bytes": 315372
+    }
+  ]
+}

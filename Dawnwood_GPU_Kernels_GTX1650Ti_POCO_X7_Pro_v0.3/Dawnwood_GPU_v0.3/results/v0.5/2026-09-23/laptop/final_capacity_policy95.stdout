@@ -1,0 +1,29 @@
+Advancing 65,536 complete states for 2 epochs; policy target 12,244,544
+Completed: 65,536 states, 0.084445 kernel seconds
+Advancing 131,072 complete states for 2 epochs; policy target 12,244,544
+Completed: 131,072 states, 0.156177 kernel seconds
+Advancing 262,144 complete states for 2 epochs; policy target 12,244,544
+Completed: 262,144 states, 0.326295 kernel seconds
+Advancing 524,288 complete states for 2 epochs; policy target 12,244,544
+Completed: 524,288 states, 0.631579 kernel seconds
+Advancing 1,048,576 complete states for 2 epochs; policy target 12,244,544
+Completed: 1,048,576 states, 1.265658 kernel seconds
+Advancing 2,097,152 complete states for 2 epochs; policy target 12,244,544
+Completed: 2,097,152 states, 2.502529 kernel seconds
+Advancing 4,194,304 complete states for 2 epochs; policy target 12,244,544
+Completed: 4,194,304 states, 5.052934 kernel seconds
+Advancing 8,388,608 complete states for 2 epochs; policy target 12,244,544
+Completed: 8,388,608 states, 10.024816 kernel seconds
+Advancing 12,244,544 complete states for 2 epochs; policy target 12,244,544
+Completed: 12,244,544 states, 14.089905 kernel seconds
+Dawnwood full-state capacity measurement
+
+Highest completed population: 12,244,544 states.
+Every counted state advanced 2 epochs; full readback health and digests were required.
+Stopping condition: Current memory policy boundary reached.
+This is a current-budget policy result, not an absolute hardware maximum.
+State payload: 1494.70 MiB; two GPU copies: 2989.39 MiB.
+Kernel time: 14.089905 s (Vulkan device timestamps); 1,738,059 state updates/s.
+Whole process: 36.485 s, including setup and readback.
+Kernel timing follows the recorded device timer; initialization and readback are outside its scope.
+Memory capacity does not establish bandwidth, cache residence, occupancy, or CPU/GPU numerical equivalence.

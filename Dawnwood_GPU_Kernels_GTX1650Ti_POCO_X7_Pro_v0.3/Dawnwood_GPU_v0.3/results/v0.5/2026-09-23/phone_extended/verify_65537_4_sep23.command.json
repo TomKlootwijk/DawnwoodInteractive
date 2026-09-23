@@ -1,0 +1,32 @@
+{
+  "command": [
+    "C:\\Users\\ietsm\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe",
+    "-s",
+    "XOVSTSHYNREMZ5D6",
+    "shell",
+    "am",
+    "start",
+    "-n",
+    "nl.dawnwood.kernel/.MainActivity",
+    "--ez",
+    "autorun",
+    "true",
+    "--es",
+    "command",
+    "verify",
+    "--es",
+    "run_id",
+    "verify_65537_4_sep23",
+    "--ei",
+    "count",
+    "65537",
+    "--ei",
+    "steps",
+    "4",
+    "--ei",
+    "batch",
+    "1"
+  ],
+  "apk_sha256": "8c86dbcd791a824b1402a5561c3ef3926a8f539900d0dcdf95b1563d89726430",
+  "utc": "2026-09-23T05:26:02.4902889Z"
+}

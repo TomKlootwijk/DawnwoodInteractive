@@ -1,0 +1,12 @@
+{
+  "name": "nvidia_identity_v04",
+  "command": [
+    "nvidia-smi",
+    "--query-gpu=name,driver_version,memory.total",
+    "--format=csv"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:36:17.761611+00:00",
+  "exit_code": 0,
+  "wall_seconds": 0.1559999999590218
+}

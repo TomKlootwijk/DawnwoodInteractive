@@ -1,0 +1,13 @@
+{
+  "name": "shaders_rk_loop_v04",
+  "command": [
+    "python",
+    "tools/build_shaders.py",
+    "--optimize"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:51:03.188294+00:00",
+  "exit_code": 0,
+  "wall_seconds": 1.4060000001918525,
+  "validation_environment": {}
+}

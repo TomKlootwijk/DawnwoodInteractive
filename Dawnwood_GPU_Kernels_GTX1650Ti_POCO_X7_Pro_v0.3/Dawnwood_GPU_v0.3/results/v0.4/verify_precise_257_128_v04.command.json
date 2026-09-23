@@ -1,0 +1,21 @@
+{
+  "name": "verify_precise_257_128_v04",
+  "command": [
+    "build/Release/dawnwood.exe",
+    "verify",
+    "--device",
+    "1650 Ti",
+    "--count",
+    "257",
+    "--steps",
+    "128"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T10:39:48.320554+00:00",
+  "exit_code": 2,
+  "wall_seconds": 7.515000000130385,
+  "validation_environment": {
+    "DAWNWOOD_VALIDATION": "1",
+    "VK_LAYER_PATH": "C:\\DawnwoodInteractive\\tmp\\validation_v04\\layers"
+  }
+}

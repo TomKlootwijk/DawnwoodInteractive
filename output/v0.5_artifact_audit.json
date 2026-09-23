@@ -1,0 +1,75 @@
+{
+  "kind": "Read-only final artifact audit",
+  "artifacts": {
+    "windows_exe": true,
+    "android_apk": true,
+    "android_library": true,
+    "source_fingerprint": true
+  },
+  "shader_payloads": [
+    {
+      "shader": "combine.spv",
+      "hash_matches": true,
+      "windows_embedded": true,
+      "android_embedded": true
+    },
+    {
+      "shader": "evolve.spv",
+      "hash_matches": true,
+      "windows_embedded": true,
+      "android_embedded": true
+    },
+    {
+      "shader": "finish.spv",
+      "hash_matches": true,
+      "windows_embedded": true,
+      "android_embedded": true
+    },
+    {
+      "shader": "geometry.spv",
+      "hash_matches": true,
+      "windows_embedded": true,
+      "android_embedded": true
+    },
+    {
+      "shader": "mutate.spv",
+      "hash_matches": true,
+      "windows_embedded": true,
+      "android_embedded": true
+    },
+    {
+      "shader": "prepare.spv",
+      "hash_matches": true,
+      "windows_embedded": true,
+      "android_embedded": true
+    },
+    {
+      "shader": "slope.spv",
+      "hash_matches": true,
+      "windows_embedded": true,
+      "android_embedded": true
+    }
+  ],
+  "unchanged_source_pdfs": [
+    {
+      "file": "double-slit-theory.pdf",
+      "original_sha256": "e3cf7d49e6a4942c7ccad4805f6a2a07e1c817753ff8d384b1f2e37791ebbe27",
+      "source_copy_identical": true
+    },
+    {
+      "file": "Dawnwood_Interactive_Unified_v0.2.pdf",
+      "original_sha256": "0d0ec4cde5d6de20426ec06baf3faed287283408eab7c544e41794638a8b82e9",
+      "source_copy_identical": true
+    }
+  ],
+  "archive_hash_matches_receipt": true,
+  "pdf_hash_matches_receipt": true,
+  "packaged_pdf_identical": true,
+  "zip_manifest_entries": 2195,
+  "zip_bad_hashes": [],
+  "zip_missing_entries": [],
+  "zip_unlisted_entries": [],
+  "archive_sha256": "ab25225f42e8a136464f591f9eabbbe388c750af065a279b2bc290c0e1078c46",
+  "audited_utc": "2026-09-23T05:48:38.163846+00:00",
+  "completion_audit": "Dawnwood_v0.5_completion_audit.md"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "lut_seed_v05",
+  "command": [
+    "build\\Release\\dawnwood.exe",
+    "run",
+    "--backend",
+    "cpu",
+    "--count",
+    "65",
+    "--operators",
+    "511",
+    "--depth",
+    "8",
+    "--steps",
+    "0",
+    "--checkpoint",
+    "results\\v0.5\\lut_seed.dwk"
+  ],
+  "cwd": "C:\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-16T11:56:54.611388+00:00",
+  "exit_code": 0,
+  "wall_seconds": 0.03100000019185245,
+  "validation_environment": {}
+}

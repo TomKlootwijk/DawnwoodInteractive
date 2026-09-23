@@ -1,0 +1,38 @@
+{
+  "utc": "2026-09-23T05:17:16.613633+00:00",
+  "stage": "Compacted shared equations plus preserved function boundaries; clean successful rebuild.",
+  "artifacts": [
+    {
+      "source": "build/Release/dawnwood.exe",
+      "retained_copy": "dawnwood.exe",
+      "sha256": "fd3da2704959dc2bf4aa8e1e22bc33e210bca754b238c0d719fa78da2a0bc08f",
+      "bytes": 308224
+    },
+    {
+      "source": "shaders/mutate.spv",
+      "retained_copy": "mutate.spv",
+      "sha256": "66ca0d7a044f4b7370fd9cccfd396ebf7141120d5d2f268639ac4a6e45b66b8f",
+      "bytes": 46636,
+      "complete_spirv_payload_found_in_executable": true
+    },
+    {
+      "source": "shaders/evolve.spv",
+      "retained_copy": "evolve.spv",
+      "sha256": "e21dee428e61ed9d8e9e2d53493a3d408a24057c5dfed5a62b6fce2d726ece22",
+      "bytes": 74920,
+      "complete_spirv_payload_found_in_executable": true
+    },
+    {
+      "source": "include/numeric_types.inc",
+      "retained_copy": "numeric_types.inc",
+      "sha256": "4aa589d30453112d40b71868d7d87fed6de843bab01057acc92516ba01a65d53",
+      "bytes": 8976
+    },
+    {
+      "source": "include/numeric_evolve.inc",
+      "retained_copy": "numeric_evolve.inc",
+      "sha256": "b0bd9cc75737d40a7207de897d53168b710365e83dc97b634c75be59ac5ddebd",
+      "bytes": 6944
+    }
+  ]
+}

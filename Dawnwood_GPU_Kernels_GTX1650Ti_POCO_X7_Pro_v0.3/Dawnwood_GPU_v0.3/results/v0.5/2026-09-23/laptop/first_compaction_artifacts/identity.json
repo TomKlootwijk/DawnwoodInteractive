@@ -1,0 +1,37 @@
+{
+  "utc": "2026-09-23T05:15:48.139310+00:00",
+  "stage": "Ambiguous intermediate build during concurrent shader regeneration; NOT accepted validation or performance artifact.",
+  "artifacts": [
+    {
+      "source": "build/Release/dawnwood.exe",
+      "retained_copy": "dawnwood.exe",
+      "sha256": "9221fc2dd5aeedb7324575a3d9cd8a1f7ef0c21908b0dacf3bd8a9d34d69efdb",
+      "bytes": 413696
+    },
+    {
+      "source": "shaders/mutate.spv",
+      "retained_copy": "mutate.spv",
+      "sha256": "4a755881a5fcb91f0832629f5d72ba8a675557aad302b2866765027e6ec7bdbf",
+      "bytes": 76380
+    },
+    {
+      "source": "shaders/evolve.spv",
+      "retained_copy": "evolve.spv",
+      "sha256": "1e024c7653b3e792dcdc03cc46f63b6a08ab3e0119b369717dc5340c92d7ec59",
+      "bytes": 164448
+    },
+    {
+      "source": "include/numeric_types.inc",
+      "retained_copy": "numeric_types.inc",
+      "sha256": "4aa589d30453112d40b71868d7d87fed6de843bab01057acc92516ba01a65d53",
+      "bytes": 8976
+    },
+    {
+      "source": "include/numeric_evolve.inc",
+      "retained_copy": "numeric_evolve.inc",
+      "sha256": "b0bd9cc75737d40a7207de897d53168b710365e83dc97b634c75be59ac5ddebd",
+      "bytes": 6944
+    }
+  ],
+  "warning": "Retained SPV files were captured during regeneration and are not asserted to match this executable. Replaced by a clean subsequent incremental build."
+}
