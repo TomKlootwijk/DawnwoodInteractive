@@ -1,0 +1,124 @@
+{
+  "scope": "Direct numerical math diagnostic; not source-cycle integration.",
+  "files": {
+    "cases.json": {
+      "bytes": 3978681,
+      "sha256": "f441362fb0097c73f43d0805f53b59968ddfea859d86efadbce5e2d8208b20d3"
+    },
+    "cpu.bin": {
+      "bytes": 3814200,
+      "sha256": "306b7d1f3d07f075c1c2140888ecd1a3db89cb7c655a495a4bbc9eb48f57932e"
+    },
+    "cpu.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cpu.stdout.log": {
+      "bytes": 1119,
+      "sha256": "dc3cc43abb69b24d05904a0311db0240672ca3b77a0e970b4f3d247cce37a0ec"
+    },
+    "cpu_accuracy_build.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cpu_accuracy_build.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cpu_accuracy_build_receipt.json": {
+      "bytes": 876,
+      "sha256": "b6f09b000d84679e0ba947d13eb8e84db876c8de2d7d97cfbb8b12942fcc6da5"
+    },
+    "cpu_accuracy_sweep.json": {
+      "bytes": 1886,
+      "sha256": "e6ea3236d1d2cfa42a6c2d6d4c5178f0f227d5c3874cbc6779d5119a762ff13b"
+    },
+    "cpu_accuracy_sweep.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cpu_accuracy_sweep.stdout.log": {
+      "bytes": 709,
+      "sha256": "7a2227c6f843bbbfd5a77c828538b9651c184c11f234406f37fba21ac4249369"
+    },
+    "cpu_accuracy_sweep_receipt.json": {
+      "bytes": 251,
+      "sha256": "f7af479e2277a895d67f17617f5b0829603fc795ab0721da009b94f456ee1985"
+    },
+    "definition.json": {
+      "bytes": 5029103,
+      "sha256": "80dd483f4f3d05d4f2508822decea3778322ee304635e249c04d37ae1b1f7d0e"
+    },
+    "execution_receipts.json": {
+      "bytes": 1912,
+      "sha256": "f991f03c24d765285c4a7b2888086280b62a226d2f9c11ce6413d849b04f7b8d"
+    },
+    "gpu_math_audit.json": {
+      "bytes": 2862,
+      "sha256": "8f0bbf0139ad7d11fd2bf890a9e8061d65856d7e2ceacf2dc6433847a94d1ac2"
+    },
+    "manifest.json": {
+      "bytes": 9353,
+      "sha256": "52575c443d2213a8e41126effed813046e96527dca70763bfede6183d413cab9"
+    },
+    "program.bin": {
+      "bytes": 3814200,
+      "sha256": "b2a23ee7b842a5fd783844484a79a25467dc20b4959ea03cc0ec1e6457d3fd37"
+    },
+    "resident_build-0.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "resident_build-0.stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "resident_build-1.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "resident_build-1.stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "resident_build-2.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "resident_build-2.stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "resident_build.json": {
+      "bytes": 3458,
+      "sha256": "4b7fb8c8691e3a0fcef57258043ec2a8a250bb4341973c39644a0e77374852b8"
+    },
+    "source_model.json": {
+      "bytes": 13654,
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9"
+    },
+    "vulkan.bin": {
+      "bytes": 3814200,
+      "sha256": "306b7d1f3d07f075c1c2140888ecd1a3db89cb7c655a495a4bbc9eb48f57932e"
+    },
+    "vulkan.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "vulkan.stdout.log": {
+      "bytes": 1253,
+      "sha256": "ca3627c7377b08983565b8ab11dce4fb0bd9753a3cf03f056b9dd1f7d40825c5"
+    }
+  },
+  "sources_at_audit": {
+    "local_lab/source_ir_v2.py": {
+      "sha256": "3e7f528c14bbcb59b2e2df877b1b47c2adedaa37b2d454305bcebf1a03befe2a"
+    },
+    "local_lab/source_resident_v2.py": {
+      "sha256": "311206687ae0c1b9b1a76dfdaec295761836a2f6e1c4f0afac4994de1c6070d7"
+    },
+    "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/include/source_math_v2.inc": {
+      "sha256": "41334180da91e9a6782a189c3805f725a30617c64877d54513a0755e023072e9"
+    }
+  }
+}

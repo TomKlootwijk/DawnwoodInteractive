@@ -129,3 +129,7 @@ python3 tools/readout.py state.dwk --out returned_channels.csv
 | `MANIFEST.sha256` | Integrity hashes for the shipped files. |
 
 The full package includes the original source and supplied personal attribution. Review those before any public redistribution.
+
+## Typed resident execution v0.2
+
+`bin/windows-resident-v2/dawnwood-resident-v2.exe` executes `DWRD0002` typed body families, strict computed source-index lookup and the additional portable log/atan2 operations. It is a separate finite evaluator; application behavior resides in its authored bank and tapes. See the root `docs/RESIDENT_V2_ABI.md` contract and `output/source_cycle_2026-09-24/RUNTIME_REPORT.md` for measured CPU/RTX 5070 Ti agreement, rollback and checkpoint results. Prior profile artifacts remain unchanged.

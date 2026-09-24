@@ -1,0 +1,36 @@
+{
+  "case": "family_method_bad_function",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "49a1994e59efaf8b651d514d70ec35e5d307bd06f51db680c6ac839cd78d1b16",
+  "word_edits_after_magic": {
+    "234": 9
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "families[0]: roles must be increasing and function handles valid"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_method_bad_function.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_method_bad_function.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.012506600000051549
+  },
+  "artifacts": {
+    "input": "family_method_bad_function.bin",
+    "python": "family_method_bad_function.python.json",
+    "stdout": "family_method_bad_function.stdout.json",
+    "stderr": "family_method_bad_function.stderr.txt"
+  }
+}

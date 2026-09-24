@@ -1,0 +1,38 @@
+{
+  "case": "static_body_role_signature_mismatch",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "8a8e1c512f806fe3f9c9fbaf63e5e3b9a64c83468965f5c9660198427f16767b",
+  "word_edits_after_magic": {
+    "303": 4,
+    "304": 0,
+    "310": 0
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "action_plan[3]: role/signature does not match the selected immutable slot"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\static_body_role_signature_mismatch.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\static_body_role_signature_mismatch.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.012626599997020094
+  },
+  "artifacts": {
+    "input": "static_body_role_signature_mismatch.bin",
+    "python": "static_body_role_signature_mismatch.python.json",
+    "stdout": "static_body_role_signature_mismatch.stdout.json",
+    "stderr": "static_body_role_signature_mismatch.stderr.txt"
+  }
+}

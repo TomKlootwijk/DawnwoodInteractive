@@ -1,0 +1,5 @@
+{
+  "rejected": true,
+  "error_type": "ValueError",
+  "error": "action_plan[1]: unused instruction words must be zero"
+}

@@ -1,0 +1,5 @@
+{
+  "rejected": true,
+  "error_type": "ValueError",
+  "error": "families[0].method_count: expected an integer in 1..32"
+}

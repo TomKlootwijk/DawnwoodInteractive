@@ -1,0 +1,40 @@
+{
+  "case": "status9_bad_phase",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "a5e23f8858f48f78a911428b5e6f81221a4beb7974d3d318379d6deddca55244",
+  "word_edits_after_magic": {
+    "328": 9,
+    "329": 3,
+    "330": 4294967295,
+    "331": 3,
+    "332": 0
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "instances[0]: runtime failure must name mutation or action phase"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status9_bad_phase.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status9_bad_phase.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.012821699998312397
+  },
+  "artifacts": {
+    "input": "status9_bad_phase.bin",
+    "python": "status9_bad_phase.python.json",
+    "stdout": "status9_bad_phase.stdout.json",
+    "stderr": "status9_bad_phase.stderr.txt"
+  }
+}

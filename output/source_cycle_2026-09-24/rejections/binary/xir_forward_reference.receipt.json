@@ -1,0 +1,36 @@
+{
+  "case": "xir_forward_reference",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "37178bee6564170fef9c617fd007add64abc28342afc50bcea64025bc3e68c2f",
+  "word_edits_after_magic": {
+    "95": 2
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "functions[0].instructions[2]: operands must reference earlier instructions"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\xir_forward_reference.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\xir_forward_reference.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.01453390000096988
+  },
+  "artifacts": {
+    "input": "xir_forward_reference.bin",
+    "python": "xir_forward_reference.python.json",
+    "stdout": "xir_forward_reference.stdout.json",
+    "stderr": "xir_forward_reference.stderr.txt"
+  }
+}

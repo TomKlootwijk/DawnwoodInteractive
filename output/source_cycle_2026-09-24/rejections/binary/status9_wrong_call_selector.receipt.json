@@ -1,0 +1,40 @@
+{
+  "case": "status9_wrong_call_selector",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "3f45bcbc517cdb01401c7c2973fce8e7a68844e1052dba098b1dc0d1007cd8a8",
+  "word_edits_after_magic": {
+    "328": 9,
+    "329": 2,
+    "330": 4294967295,
+    "331": 3,
+    "332": 255
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "instances[0]: failure detail 255 is inconsistent with status 9 and its plan step"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status9_wrong_call_selector.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status9_wrong_call_selector.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.012843799999245675
+  },
+  "artifacts": {
+    "input": "status9_wrong_call_selector.bin",
+    "python": "status9_wrong_call_selector.python.json",
+    "stdout": "status9_wrong_call_selector.stdout.json",
+    "stderr": "status9_wrong_call_selector.stderr.txt"
+  }
+}

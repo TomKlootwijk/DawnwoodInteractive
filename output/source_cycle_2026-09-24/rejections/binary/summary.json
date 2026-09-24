@@ -1,0 +1,2225 @@
+{
+  "profile": "DWI-RESIDENT-0.2",
+  "scope": "Direct malformed binary loader checks; no execution equivalence or source-fidelity claim",
+  "base": "output\\source_cycle_2026-09-24\\dispatch\\program.bin",
+  "base_sha256": "909e23883c58ce37b82484954f4418883ca973f855de0d441a3a94a4ef7b4d02",
+  "executable_sha256": "d6e08b44edf484571ad5d49954a8b3797c71e5bfc80ec4ce8cde795e8d865d29",
+  "python_decoder_sha256": "311206687ae0c1b9b1a76dfdaec295761836a2f6e1c4f0afac4994de1c6070d7",
+  "cases": 60,
+  "rejection_cases": 59,
+  "all_matched": true,
+  "unexpected": [],
+  "results": [
+    {
+      "case": "valid_control",
+      "expected": "accept",
+      "matched_expectation": true,
+      "input_sha256": "909e23883c58ce37b82484954f4418883ca973f855de0d441a3a94a4ef7b4d02",
+      "word_edits_after_magic": {},
+      "python": {
+        "rejected": false,
+        "error_type": null,
+        "error": null,
+        "profile": "DWI-RESIDENT-0.2"
+      },
+      "native": {
+        "exit_code": 0,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\valid_control.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\valid_control.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012596399999893038
+      },
+      "artifacts": {
+        "input": "valid_control.bin",
+        "python": "valid_control.python.json",
+        "stdout": "valid_control.stdout.json",
+        "stderr": "valid_control.stderr.txt"
+      }
+    },
+    {
+      "case": "family_reserved",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "9e1e6ed53b7dd616146b51e7e8fabf37f721095041304ed9d057ad4db6d84a89",
+      "word_edits_after_magic": {
+        "77": 1
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "families[0]: reserved word must be zero"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_reserved.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_reserved.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012601599999470636
+      },
+      "artifacts": {
+        "input": "family_reserved.bin",
+        "python": "family_reserved.python.json",
+        "stdout": "family_reserved.stdout.json",
+        "stderr": "family_reserved.stderr.txt"
+      }
+    },
+    {
+      "case": "family_count_zero",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "337997abdd26a81e76994ff011f221fb98c77e1fe92a0e6d6e4c1dad46afda09",
+      "word_edits_after_magic": {
+        "76": 0
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "families[0].method_count: expected an integer in 1..32"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_count_zero.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_count_zero.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012796900002285838
+      },
+      "artifacts": {
+        "input": "family_count_zero.bin",
+        "python": "family_count_zero.python.json",
+        "stdout": "family_count_zero.stdout.json",
+        "stderr": "family_count_zero.stderr.txt"
+      }
+    },
+    {
+      "case": "family_count_over_limit",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "403ca04c781cfcd06ddc6205864638412ad20cb9af54853fde6d36fbdbe50055",
+      "word_edits_after_magic": {
+        "76": 33
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "families[0].method_count: expected an integer in 1..32"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_count_over_limit.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_count_over_limit.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.013030500002059853
+      },
+      "artifacts": {
+        "input": "family_count_over_limit.bin",
+        "python": "family_count_over_limit.python.json",
+        "stdout": "family_count_over_limit.stdout.json",
+        "stderr": "family_count_over_limit.stderr.txt"
+      }
+    },
+    {
+      "case": "family_methods_offset_outside_heap",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "1fbafd6f8464426928553569b092fbd973993618aa7188f7020d0c53b77037ba",
+      "word_edits_after_magic": {
+        "75": 161
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "families[0].methods: range [161, 167) exceeds 161 words"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_methods_offset_outside_heap.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_methods_offset_outside_heap.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.013324600000487408
+      },
+      "artifacts": {
+        "input": "family_methods_offset_outside_heap.bin",
+        "python": "family_methods_offset_outside_heap.python.json",
+        "stdout": "family_methods_offset_outside_heap.stdout.json",
+        "stderr": "family_methods_offset_outside_heap.stderr.txt"
+      }
+    },
+    {
+      "case": "family_method_bad_function",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "49a1994e59efaf8b651d514d70ec35e5d307bd06f51db680c6ac839cd78d1b16",
+      "word_edits_after_magic": {
+        "234": 9
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "families[0]: roles must be increasing and function handles valid"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_method_bad_function.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_method_bad_function.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012506600000051549
+      },
+      "artifacts": {
+        "input": "family_method_bad_function.bin",
+        "python": "family_method_bad_function.python.json",
+        "stdout": "family_method_bad_function.stdout.json",
+        "stderr": "family_method_bad_function.stderr.txt"
+      }
+    },
+    {
+      "case": "family_duplicate_roles",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "a47cd2412de28373b5bb19a7dc563d485d0ad045ecb7a4f624020e312d39e695",
+      "word_edits_after_magic": {
+        "235": 0
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "families[0]: roles must be increasing and function handles valid"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_duplicate_roles.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_duplicate_roles.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012225099999341182
+      },
+      "artifacts": {
+        "input": "family_duplicate_roles.bin",
+        "python": "family_duplicate_roles.python.json",
+        "stdout": "family_duplicate_roles.stdout.json",
+        "stderr": "family_duplicate_roles.stderr.txt"
+      }
+    },
+    {
+      "case": "family_unsorted_roles",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "179a5ff087ce1bd22ea892c986cf586c9afbb333dd757af89db4c3747ca81c30",
+      "word_edits_after_magic": {
+        "237": 6
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "families[0]: roles must be increasing and function handles valid"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_unsorted_roles.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_unsorted_roles.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.013392999997449806
+      },
+      "artifacts": {
+        "input": "family_unsorted_roles.bin",
+        "python": "family_unsorted_roles.python.json",
+        "stdout": "family_unsorted_roles.stdout.json",
+        "stderr": "family_unsorted_roles.stderr.txt"
+      }
+    },
+    {
+      "case": "family_interface_contract_mismatch",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "9de7ef9dbd070356c0c1985a378dbb065e4cc830a72766382e3b5cb1f6cb7c7f",
+      "word_edits_after_magic": {
+        "240": 3
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "families[1]: families sharing an interface must have identical role/signature sets"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_interface_contract_mismatch.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_interface_contract_mismatch.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012651600001845509
+      },
+      "artifacts": {
+        "input": "family_interface_contract_mismatch.bin",
+        "python": "family_interface_contract_mismatch.python.json",
+        "stdout": "family_interface_contract_mismatch.stdout.json",
+        "stderr": "family_interface_contract_mismatch.stderr.txt"
+      }
+    },
+    {
+      "case": "family_interface_zero",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "603d7a0f431a97a1012e05a6a933a5f5f632aac10fb61325d7778340a6a498a3",
+      "word_edits_after_magic": {
+        "74": 0
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "families[0].interface: expected an integer in 1..4294967295"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_interface_zero.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_interface_zero.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.014002399999299087
+      },
+      "artifacts": {
+        "input": "family_interface_zero.bin",
+        "python": "family_interface_zero.python.json",
+        "stdout": "family_interface_zero.stdout.json",
+        "stderr": "family_interface_zero.stderr.txt"
+      }
+    },
+    {
+      "case": "metadata_unknown_body_interface",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "c1b514139c0603ad6ed6c50ba1c335f8d9b534f35a740c0068f940ebf186285f",
+      "word_edits_after_magic": {
+        "9": 999
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "metadata[0]: unknown body interface or slot signature"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\metadata_unknown_body_interface.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\metadata_unknown_body_interface.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.013942600002337713
+      },
+      "artifacts": {
+        "input": "metadata_unknown_body_interface.bin",
+        "python": "metadata_unknown_body_interface.python.json",
+        "stdout": "metadata_unknown_body_interface.stdout.json",
+        "stderr": "metadata_unknown_body_interface.stderr.txt"
+      }
+    },
+    {
+      "case": "metadata_unknown_field_signature",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "3ceb2d1a449f88d59fc81c92eb0e4fe6378738684154a63042f06a99780cb5ac",
+      "word_edits_after_magic": {
+        "10": 999
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "metadata[0]: unknown body interface or slot signature"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\metadata_unknown_field_signature.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\metadata_unknown_field_signature.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012494400001742179
+      },
+      "artifacts": {
+        "input": "metadata_unknown_field_signature.bin",
+        "python": "metadata_unknown_field_signature.python.json",
+        "stdout": "metadata_unknown_field_signature.stdout.json",
+        "stderr": "metadata_unknown_field_signature.stderr.txt"
+      }
+    },
+    {
+      "case": "metadata_unknown_placement_signature",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "02fe28bde8e9f145e628614b7db88be485dbaab00cc902f06682ef94e8d37b73",
+      "word_edits_after_magic": {
+        "11": 999
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "metadata[0]: unknown body interface or slot signature"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\metadata_unknown_placement_signature.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\metadata_unknown_placement_signature.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012671600001340266
+      },
+      "artifacts": {
+        "input": "metadata_unknown_placement_signature.bin",
+        "python": "metadata_unknown_placement_signature.python.json",
+        "stdout": "metadata_unknown_placement_signature.stdout.json",
+        "stderr": "metadata_unknown_placement_signature.stderr.txt"
+      }
+    },
+    {
+      "case": "metadata_duplicate_source_index",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "3d5d452284ed9180e1139295233da5c2717cfb3460d12fc21dccc2f1ec0d9909",
+      "word_edits_after_magic": {
+        "12": 1
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "Source indices must be unique"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\metadata_duplicate_source_index.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\metadata_duplicate_source_index.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.013378700001339894
+      },
+      "artifacts": {
+        "input": "metadata_duplicate_source_index.bin",
+        "python": "metadata_duplicate_source_index.python.json",
+        "stdout": "metadata_duplicate_source_index.stdout.json",
+        "stderr": "metadata_duplicate_source_index.stderr.txt"
+      }
+    },
+    {
+      "case": "metadata_source_above_exact_limit",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "2aad02e168c175f36a14747df923be01ef5c75b8616a3b3637493108ee00e066",
+      "word_edits_after_magic": {
+        "8": 16777216
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "metadata[0].source_index: expected an integer in 0..16777215"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\metadata_source_above_exact_limit.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\metadata_source_above_exact_limit.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012892100003227824
+      },
+      "artifacts": {
+        "input": "metadata_source_above_exact_limit.bin",
+        "python": "metadata_source_above_exact_limit.python.json",
+        "stdout": "metadata_source_above_exact_limit.stdout.json",
+        "stderr": "metadata_source_above_exact_limit.stderr.txt"
+      }
+    },
+    {
+      "case": "body_handle_outside_family_bank",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "d6799c583e730b61a6bd596e4e6597efd1df01b128f65cf10c7082a09b4ed42f",
+      "word_edits_after_magic": {
+        "339": 3
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "instances[0].records[0].body: family/function handle is outside the bank"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\body_handle_outside_family_bank.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\body_handle_outside_family_bank.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.0133094999982859
+      },
+      "artifacts": {
+        "input": "body_handle_outside_family_bank.bin",
+        "python": "body_handle_outside_family_bank.python.json",
+        "stdout": "body_handle_outside_family_bank.stdout.json",
+        "stderr": "body_handle_outside_family_bank.stderr.txt"
+      }
+    },
+    {
+      "case": "body_handle_wrong_interface",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "91d0b7a1f143d6462ae1281710689e87ff9c62d7290a9fcebb6496739a2d2b47",
+      "word_edits_after_magic": {
+        "339": 2
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "instances[0].records[0].body: handle has the wrong slot interface/signature"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\body_handle_wrong_interface.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\body_handle_wrong_interface.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012323399998422246
+      },
+      "artifacts": {
+        "input": "body_handle_wrong_interface.bin",
+        "python": "body_handle_wrong_interface.python.json",
+        "stdout": "body_handle_wrong_interface.stdout.json",
+        "stderr": "body_handle_wrong_interface.stderr.txt"
+      }
+    },
+    {
+      "case": "field_handle_outside_function_bank",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "e9ed57df8d9c6580e9577cd262b1f4711ad1104c0511aaa4d5d3b744913a2ced",
+      "word_edits_after_magic": {
+        "340": 9
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "instances[0].records[0].field: family/function handle is outside the bank"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\field_handle_outside_function_bank.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\field_handle_outside_function_bank.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.013072000001557171
+      },
+      "artifacts": {
+        "input": "field_handle_outside_function_bank.bin",
+        "python": "field_handle_outside_function_bank.python.json",
+        "stdout": "field_handle_outside_function_bank.stdout.json",
+        "stderr": "field_handle_outside_function_bank.stderr.txt"
+      }
+    },
+    {
+      "case": "op11_uninitialized_selector",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "1bcad5759a5a50a947850c222f12fdd1682899e13ecdfbf52a0d710d053f962a",
+      "word_edits_after_magic": {
+        "304": 255
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "action_plan[3].source_index: reads an uninitialized frame register"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_uninitialized_selector.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_uninitialized_selector.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012217900002724491
+      },
+      "artifacts": {
+        "input": "op11_uninitialized_selector.bin",
+        "python": "op11_uninitialized_selector.python.json",
+        "stdout": "op11_uninitialized_selector.stdout.json",
+        "stderr": "op11_uninitialized_selector.stderr.txt"
+      }
+    },
+    {
+      "case": "op11_invalid_slot",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "40a1efd4b0271bca545210bb46ef5fcd7b2dc6d46d968f31542a4b4f72ce2470",
+      "word_edits_after_magic": {
+        "305": 3
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "action_plan[3]: record slot must be 0body, 1field or 2placement"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_invalid_slot.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_invalid_slot.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012568300000566524
+      },
+      "artifacts": {
+        "input": "op11_invalid_slot.bin",
+        "python": "op11_invalid_slot.python.json",
+        "stdout": "op11_invalid_slot.stdout.json",
+        "stderr": "op11_invalid_slot.stderr.txt"
+      }
+    },
+    {
+      "case": "op11_action_old_bank",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "a58902f5ba65f325f6b38d1575a55396a1fb29d797a9919a16922633d229f804",
+      "word_edits_after_magic": {
+        "306": 0
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "action_plan[3]: mutation calls bank0; action calls bank1"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_action_old_bank.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_action_old_bank.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012233399997057859
+      },
+      "artifacts": {
+        "input": "op11_action_old_bank.bin",
+        "python": "op11_action_old_bank.python.json",
+        "stdout": "op11_action_old_bank.stdout.json",
+        "stderr": "op11_action_old_bank.stderr.txt"
+      }
+    },
+    {
+      "case": "op11_unknown_signature",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "c5adcbf5953c416f42528412722198d12bfa785a308cc7cf4edaa780e9a9388d",
+      "word_edits_after_magic": {
+        "309": 999
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "action_plan[3]: call signature is not present in the function bank"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_unknown_signature.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_unknown_signature.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.013131700001395075
+      },
+      "artifacts": {
+        "input": "op11_unknown_signature.bin",
+        "python": "op11_unknown_signature.python.json",
+        "stdout": "op11_unknown_signature.stdout.json",
+        "stderr": "op11_unknown_signature.stderr.txt"
+      }
+    },
+    {
+      "case": "op11_nonzero_field_role",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "092103d11e8bb10a3ea8f514a472d93904a2932ab73f2d3a59fbabcdb1ca248c",
+      "word_edits_after_magic": {
+        "305": 1
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "action_plan[3]: field and placement roles must be zero"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_nonzero_field_role.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_nonzero_field_role.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012916799998492934
+      },
+      "artifacts": {
+        "input": "op11_nonzero_field_role.bin",
+        "python": "op11_nonzero_field_role.python.json",
+        "stdout": "op11_nonzero_field_role.stdout.json",
+        "stderr": "op11_nonzero_field_role.stderr.txt"
+      }
+    },
+    {
+      "case": "op11_nonzero_placement_role",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "1de1e4f4692e3fbd9b4b07e140136910abdbecdca119740cc6add459e3c39d15",
+      "word_edits_after_magic": {
+        "305": 2
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "action_plan[3]: field and placement roles must be zero"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_nonzero_placement_role.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_nonzero_placement_role.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.014316700002382277
+      },
+      "artifacts": {
+        "input": "op11_nonzero_placement_role.bin",
+        "python": "op11_nonzero_placement_role.python.json",
+        "stdout": "op11_nonzero_placement_role.stdout.json",
+        "stderr": "op11_nonzero_placement_role.stderr.txt"
+      }
+    },
+    {
+      "case": "op11_uninitialized_argument",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "c4ed211391fc660e56a89d7e0a991f1d0507172b9f7846778980e3ea78f5f44a",
+      "word_edits_after_magic": {
+        "307": 200
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "action_plan[3].inputs: reads an uninitialized frame register"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_uninitialized_argument.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_uninitialized_argument.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.016755300002841977
+      },
+      "artifacts": {
+        "input": "op11_uninitialized_argument.bin",
+        "python": "op11_uninitialized_argument.python.json",
+        "stdout": "op11_uninitialized_argument.stdout.json",
+        "stderr": "op11_uninitialized_argument.stderr.txt"
+      }
+    },
+    {
+      "case": "op11_output_outside_frame",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "7829b145c9d71b1c99c77bb957bf5aca355aa4fcc3f93e02e0f78067824fcb32",
+      "word_edits_after_magic": {
+        "308": 256
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "action_plan[3].outputs: range [256, 257) exceeds 256 words"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_output_outside_frame.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_output_outside_frame.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.013132600000972161
+      },
+      "artifacts": {
+        "input": "op11_output_outside_frame.bin",
+        "python": "op11_output_outside_frame.python.json",
+        "stdout": "op11_output_outside_frame.stdout.json",
+        "stderr": "op11_output_outside_frame.stderr.txt"
+      }
+    },
+    {
+      "case": "op12_uninitialized_selector",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "3baae15481ef94cf9be88e8e8214b6445d71f6d2bdc36f52606770785e6d1cc1",
+      "word_edits_after_magic": {
+        "289": 255
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "action_plan[1].source_index: reads an uninitialized frame register"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_uninitialized_selector.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_uninitialized_selector.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.013424300002952805
+      },
+      "artifacts": {
+        "input": "op12_uninitialized_selector.bin",
+        "python": "op12_uninitialized_selector.python.json",
+        "stdout": "op12_uninitialized_selector.stdout.json",
+        "stderr": "op12_uninitialized_selector.stderr.txt"
+      }
+    },
+    {
+      "case": "op12_selector_outside_frame",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "f8da1545e931614bf69b646941c1670435b202bf38696909f3a9d1e1d2680d38",
+      "word_edits_after_magic": {
+        "289": 256
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "action_plan[1].source_index: range [256, 257) exceeds 256 words"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_selector_outside_frame.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_selector_outside_frame.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.020012200002383906
+      },
+      "artifacts": {
+        "input": "op12_selector_outside_frame.bin",
+        "python": "op12_selector_outside_frame.python.json",
+        "stdout": "op12_selector_outside_frame.stdout.json",
+        "stderr": "op12_selector_outside_frame.stderr.txt"
+      }
+    },
+    {
+      "case": "op12_invalid_bank",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "42021851a0067ac759aff8f76049b9d9194e7061f46d42bd1585fd47ca664e70",
+      "word_edits_after_magic": {
+        "292": 2
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "action_plan[1]: mutation reads bank0; action reads bank0 or bank1"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_invalid_bank.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_invalid_bank.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.015264999998180429
+      },
+      "artifacts": {
+        "input": "op12_invalid_bank.bin",
+        "python": "op12_invalid_bank.python.json",
+        "stdout": "op12_invalid_bank.stdout.json",
+        "stderr": "op12_invalid_bank.stderr.txt"
+      }
+    },
+    {
+      "case": "op12_reserved_word",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "1b7d3c26dfe707b19eb83603b7c593fd2f1b08d34a1ab47e867b1b7a347f2c20",
+      "word_edits_after_magic": {
+        "293": 1
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "action_plan[1]: unused instruction words must be zero"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_reserved_word.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_reserved_word.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.013317700002517086
+      },
+      "artifacts": {
+        "input": "op12_reserved_word.bin",
+        "python": "op12_reserved_word.python.json",
+        "stdout": "op12_reserved_word.stdout.json",
+        "stderr": "op12_reserved_word.stderr.txt"
+      }
+    },
+    {
+      "case": "op12_record_word_outside_record",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "1b5dbb98561d6ecacf78dc55c01414132d0bc05fc9d14bb53dd83bf7df48d2fd",
+      "word_edits_after_magic": {
+        "290": 24
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "action_plan[1].record: range [24, 25) exceeds 24 words"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_record_word_outside_record.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_record_word_outside_record.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.013489500001014676
+      },
+      "artifacts": {
+        "input": "op12_record_word_outside_record.bin",
+        "python": "op12_record_word_outside_record.python.json",
+        "stdout": "op12_record_word_outside_record.stdout.json",
+        "stderr": "op12_record_word_outside_record.stderr.txt"
+      }
+    },
+    {
+      "case": "op12_output_outside_frame",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "3468e4ff1ac7cb7c5c21bb613ac7a31ac7d043eeef78f0f4f6112003ca489272",
+      "word_edits_after_magic": {
+        "288": 256
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "action_plan[1].destination: range [256, 257) exceeds 256 words"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_output_outside_frame.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_output_outside_frame.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.013321999998879619
+      },
+      "artifacts": {
+        "input": "op12_output_outside_frame.bin",
+        "python": "op12_output_outside_frame.python.json",
+        "stdout": "op12_output_outside_frame.stdout.json",
+        "stderr": "op12_output_outside_frame.stderr.txt"
+      }
+    },
+    {
+      "case": "op12_zero_width",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "104dcc0ad0fb01eb6710e1113a42f12f31a88e8a763335800e298fb197e431b7",
+      "word_edits_after_magic": {
+        "291": 0
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "action_plan[1].record: range [0, 0) exceeds 24 words"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_zero_width.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_zero_width.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.013240100000984967
+      },
+      "artifacts": {
+        "input": "op12_zero_width.bin",
+        "python": "op12_zero_width.python.json",
+        "stdout": "op12_zero_width.stdout.json",
+        "stderr": "op12_zero_width.stderr.txt"
+      }
+    },
+    {
+      "case": "static_body_role_missing",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "5dae24fb0395ced66cabb4d35f1660d90f0da9287b6cb9780ebe32d1830e7cb0",
+      "word_edits_after_magic": {
+        "303": 4,
+        "304": 0,
+        "310": 6
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "action_plan[3]: role/signature does not match the selected immutable slot"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\static_body_role_missing.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\static_body_role_missing.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.01295390000086627
+      },
+      "artifacts": {
+        "input": "static_body_role_missing.bin",
+        "python": "static_body_role_missing.python.json",
+        "stdout": "static_body_role_missing.stdout.json",
+        "stderr": "static_body_role_missing.stderr.txt"
+      }
+    },
+    {
+      "case": "static_body_role_signature_mismatch",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "8a8e1c512f806fe3f9c9fbaf63e5e3b9a64c83468965f5c9660198427f16767b",
+      "word_edits_after_magic": {
+        "303": 4,
+        "304": 0,
+        "310": 0
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "action_plan[3]: role/signature does not match the selected immutable slot"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\static_body_role_signature_mismatch.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\static_body_role_signature_mismatch.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012626599997020094
+      },
+      "artifacts": {
+        "input": "static_body_role_signature_mismatch.bin",
+        "python": "static_body_role_signature_mismatch.python.json",
+        "stdout": "static_body_role_signature_mismatch.stdout.json",
+        "stderr": "static_body_role_signature_mismatch.stderr.txt"
+      }
+    },
+    {
+      "case": "unknown_plan_opcode",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "aa7d4f109fde6e69c5ed32fb76f63f5bab3b929d72405e7d59fd8adb2faa66f5",
+      "word_edits_after_magic": {
+        "287": 13
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "action_plan[1]: unsupported opcode 13"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\unknown_plan_opcode.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\unknown_plan_opcode.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.016215999999985797
+      },
+      "artifacts": {
+        "input": "unknown_plan_opcode.bin",
+        "python": "unknown_plan_opcode.python.json",
+        "stdout": "unknown_plan_opcode.stdout.json",
+        "stderr": "unknown_plan_opcode.stderr.txt"
+      }
+    },
+    {
+      "case": "unknown_xir_opcode",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "675eb5cdb32b3ea3399cf99eb2fc205900fbc7bb2cb3c42ab1da00a9c5dc57b7",
+      "word_edits_after_magic": {
+        "86": 20
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "functions[0].instructions[0]: unsupported opcode 20"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\unknown_xir_opcode.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\unknown_xir_opcode.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.01244589999987511
+      },
+      "artifacts": {
+        "input": "unknown_xir_opcode.bin",
+        "python": "unknown_xir_opcode.python.json",
+        "stdout": "unknown_xir_opcode.stdout.json",
+        "stderr": "unknown_xir_opcode.stderr.txt"
+      }
+    },
+    {
+      "case": "xir_forward_reference",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "37178bee6564170fef9c617fd007add64abc28342afc50bcea64025bc3e68c2f",
+      "word_edits_after_magic": {
+        "95": 2
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "functions[0].instructions[2]: operands must reference earlier instructions"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\xir_forward_reference.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\xir_forward_reference.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.01453390000096988
+      },
+      "artifacts": {
+        "input": "xir_forward_reference.bin",
+        "python": "xir_forward_reference.python.json",
+        "stdout": "xir_forward_reference.stdout.json",
+        "stderr": "xir_forward_reference.stderr.txt"
+      }
+    },
+    {
+      "case": "xir_log_unused_operand",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "5ba34d091c3a438036190356fc8cc1cf3e1b0e444f5e9053d54fc3ef915d6121",
+      "word_edits_after_magic": {
+        "94": 18,
+        "96": 1
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "functions[0].instructions[2]: unused operand words must be zero"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\xir_log_unused_operand.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\xir_log_unused_operand.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012582399998791516
+      },
+      "artifacts": {
+        "input": "xir_log_unused_operand.bin",
+        "python": "xir_log_unused_operand.python.json",
+        "stdout": "xir_log_unused_operand.stdout.json",
+        "stderr": "xir_log_unused_operand.stderr.txt"
+      }
+    },
+    {
+      "case": "xir_atan2_unused_operand",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "a8024070bbe5af3cded3c671773cdb2b88ddc62b940828172d091c7e5fd38869",
+      "word_edits_after_magic": {
+        "94": 19,
+        "97": 1
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "functions[0].instructions[2]: unused operand words must be zero"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\xir_atan2_unused_operand.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\xir_atan2_unused_operand.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.01326619999963441
+      },
+      "artifacts": {
+        "input": "xir_atan2_unused_operand.bin",
+        "python": "xir_atan2_unused_operand.python.json",
+        "stdout": "xir_atan2_unused_operand.stdout.json",
+        "stderr": "xir_atan2_unused_operand.stderr.txt"
+      }
+    },
+    {
+      "case": "nonfinite_state",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "2330cb8f0b94a2df21bb54655de9e0d401fec7f1fad547d1f1b3e44d37c0477c",
+      "word_edits_after_magic": {
+        "333": 2139095040
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "instances[0].state[0]: nonfinite FP32 word"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\nonfinite_state.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\nonfinite_state.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012691399999312125
+      },
+      "artifacts": {
+        "input": "nonfinite_state.bin",
+        "python": "nonfinite_state.python.json",
+        "stdout": "nonfinite_state.stdout.json",
+        "stderr": "nonfinite_state.stderr.txt"
+      }
+    },
+    {
+      "case": "nonfinite_record_parameter",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "55449220e59c4df8514cb83743ac0adb0fb0d35862fde94a9f3d03ae6c9c755f",
+      "word_edits_after_magic": {
+        "343": 2143289344
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "instances[0].records[0].values[0]: nonfinite FP32 word"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\nonfinite_record_parameter.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\nonfinite_record_parameter.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012955099999089725
+      },
+      "artifacts": {
+        "input": "nonfinite_record_parameter.bin",
+        "python": "nonfinite_record_parameter.python.json",
+        "stdout": "nonfinite_record_parameter.stdout.json",
+        "stderr": "nonfinite_record_parameter.stderr.txt"
+      }
+    },
+    {
+      "case": "legacy_magic",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "eab4509b0b7c919378e4d0314791ee1663a07e342ced7416d030dd83c004b182",
+      "word_edits_after_magic": {},
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "Checkpoint requires DWRD0002 and its eight-word header"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\legacy_magic.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\legacy_magic.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012923300000693416
+      },
+      "artifacts": {
+        "input": "legacy_magic.bin",
+        "python": "legacy_magic.python.json",
+        "stdout": "legacy_magic.stdout.json",
+        "stderr": "legacy_magic.stderr.txt"
+      }
+    },
+    {
+      "case": "trailing_byte",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "31815243fa824555bda12a9115462f71b11e996dd97af29bcb95e6fd655b32bb",
+      "word_edits_after_magic": {},
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "Checkpoint length mismatch: expected 3668 bytes, received 3669"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\trailing_byte.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\trailing_byte.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012962600001628743
+      },
+      "artifacts": {
+        "input": "trailing_byte.bin",
+        "python": "trailing_byte.python.json",
+        "stdout": "trailing_byte.stdout.json",
+        "stderr": "trailing_byte.stderr.txt"
+      }
+    },
+    {
+      "case": "truncated_payload",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "9ff919423b453f6efef9f52f8f05fc5ce87bd5435b312067725ed04a83136b95",
+      "word_edits_after_magic": {},
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "Checkpoint length mismatch: expected 3668 bytes, received 3664"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\truncated_payload.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\truncated_payload.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.01238540000122157
+      },
+      "artifacts": {
+        "input": "truncated_payload.bin",
+        "python": "truncated_payload.python.json",
+        "stdout": "truncated_payload.stdout.json",
+        "stderr": "truncated_payload.stderr.txt"
+      }
+    },
+    {
+      "case": "header_family_count_zero",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "b61dc3a494836c1634274b32b7b03c617d4262426428d334d08572f18ab3ac62",
+      "word_edits_after_magic": {
+        "7": 0
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "familyCount: expected an integer in 1..256"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\header_family_count_zero.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\header_family_count_zero.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.01459170000089216
+      },
+      "artifacts": {
+        "input": "header_family_count_zero.bin",
+        "python": "header_family_count_zero.python.json",
+        "stdout": "header_family_count_zero.stdout.json",
+        "stderr": "header_family_count_zero.stderr.txt"
+      }
+    },
+    {
+      "case": "header_family_count_over_limit",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "10f5bf6f1a735d8d894c0a61aa2a68ec201b81b03e4ca2b5aa429d7e5f06542d",
+      "word_edits_after_magic": {
+        "7": 257
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "familyCount: expected an integer in 1..256"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\header_family_count_over_limit.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\header_family_count_over_limit.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.014125399997283239
+      },
+      "artifacts": {
+        "input": "header_family_count_over_limit.bin",
+        "python": "header_family_count_over_limit.python.json",
+        "stdout": "header_family_count_over_limit.stdout.json",
+        "stderr": "header_family_count_over_limit.stderr.txt"
+      }
+    },
+    {
+      "case": "status9_wrong_call_selector",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "3f45bcbc517cdb01401c7c2973fce8e7a68844e1052dba098b1dc0d1007cd8a8",
+      "word_edits_after_magic": {
+        "328": 9,
+        "329": 2,
+        "330": 4294967295,
+        "331": 3,
+        "332": 255
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "instances[0]: failure detail 255 is inconsistent with status 9 and its plan step"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status9_wrong_call_selector.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status9_wrong_call_selector.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012843799999245675
+      },
+      "artifacts": {
+        "input": "status9_wrong_call_selector.bin",
+        "python": "status9_wrong_call_selector.python.json",
+        "stdout": "status9_wrong_call_selector.stdout.json",
+        "stderr": "status9_wrong_call_selector.stderr.txt"
+      }
+    },
+    {
+      "case": "status9_wrong_read_selector",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "e2a1b8978b61c4d8b53a1be4ed28159717a9d8e689443b0bea9c06fbff130cd1",
+      "word_edits_after_magic": {
+        "328": 9,
+        "329": 2,
+        "330": 4294967295,
+        "331": 1,
+        "332": 1
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "instances[0]: failure detail 1 is inconsistent with status 9 and its plan step"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status9_wrong_read_selector.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status9_wrong_read_selector.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.013290799997776048
+      },
+      "artifacts": {
+        "input": "status9_wrong_read_selector.bin",
+        "python": "status9_wrong_read_selector.python.json",
+        "stdout": "status9_wrong_read_selector.stdout.json",
+        "stderr": "status9_wrong_read_selector.stderr.txt"
+      }
+    },
+    {
+      "case": "status9_wrong_opcode",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "b44747d19201afb1db555e4167b1d1faf10d808ca345260c756fd1bad116bd49",
+      "word_edits_after_magic": {
+        "328": 9,
+        "329": 2,
+        "330": 4294967295,
+        "331": 0,
+        "332": 0
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "instances[0]: failure detail 0 is inconsistent with status 9 and its plan step"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status9_wrong_opcode.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status9_wrong_opcode.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.013226200000644894
+      },
+      "artifacts": {
+        "input": "status9_wrong_opcode.bin",
+        "python": "status9_wrong_opcode.python.json",
+        "stdout": "status9_wrong_opcode.stdout.json",
+        "stderr": "status9_wrong_opcode.stderr.txt"
+      }
+    },
+    {
+      "case": "status9_bad_phase",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "a5e23f8858f48f78a911428b5e6f81221a4beb7974d3d318379d6deddca55244",
+      "word_edits_after_magic": {
+        "328": 9,
+        "329": 3,
+        "330": 4294967295,
+        "331": 3,
+        "332": 0
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "instances[0]: runtime failure must name mutation or action phase"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status9_bad_phase.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status9_bad_phase.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012821699998312397
+      },
+      "artifacts": {
+        "input": "status9_bad_phase.bin",
+        "python": "status9_bad_phase.python.json",
+        "stdout": "status9_bad_phase.stdout.json",
+        "stderr": "status9_bad_phase.stderr.txt"
+      }
+    },
+    {
+      "case": "status10_existing_source",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "8a2b196879589786fa601c1eea954a0fe03f8386b7e8ede6c45c8ea972dc547e",
+      "word_edits_after_magic": {
+        "328": 10,
+        "329": 2,
+        "330": 4294967295,
+        "331": 1,
+        "332": 1
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "instances[0]: failure detail 1 is inconsistent with status 10 and its plan step"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status10_existing_source.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status10_existing_source.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.013298699999722885
+      },
+      "artifacts": {
+        "input": "status10_existing_source.bin",
+        "python": "status10_existing_source.python.json",
+        "stdout": "status10_existing_source.stdout.json",
+        "stderr": "status10_existing_source.stderr.txt"
+      }
+    },
+    {
+      "case": "status10_source_above_bound",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "e77c5e59b0f7d05a0f644f81eb0d3ecad688dcd39d5bde6aea4e5e1016e6830f",
+      "word_edits_after_magic": {
+        "328": 10,
+        "329": 2,
+        "330": 4294967295,
+        "331": 1,
+        "332": 16777216
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "instances[0]: failure detail 16777216 is inconsistent with status 10 and its plan step"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status10_source_above_bound.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status10_source_above_bound.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012798399999155663
+      },
+      "artifacts": {
+        "input": "status10_source_above_bound.bin",
+        "python": "status10_source_above_bound.python.json",
+        "stdout": "status10_source_above_bound.stdout.json",
+        "stderr": "status10_source_above_bound.stderr.txt"
+      }
+    },
+    {
+      "case": "status10_wrong_opcode",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "10193db17360faa3e1924d8dd4ff10ae73524da40b721eaa216e4e7500cd5cb2",
+      "word_edits_after_magic": {
+        "328": 10,
+        "329": 2,
+        "330": 4294967295,
+        "331": 0,
+        "332": 123
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "instances[0]: failure detail 123 is inconsistent with status 10 and its plan step"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status10_wrong_opcode.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status10_wrong_opcode.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012843299999076407
+      },
+      "artifacts": {
+        "input": "status10_wrong_opcode.bin",
+        "python": "status10_wrong_opcode.python.json",
+        "stdout": "status10_wrong_opcode.stdout.json",
+        "stderr": "status10_wrong_opcode.stderr.txt"
+      }
+    },
+    {
+      "case": "status11_wrong_signature_detail",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "0ef40568faffaec0afb3282a1f5215f1c359621d385128ff8364011966b32d6e",
+      "word_edits_after_magic": {
+        "328": 11,
+        "329": 2,
+        "330": 4294967295,
+        "331": 3,
+        "332": 4
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "instances[0]: failure detail 4 is inconsistent with status 11 and its plan step"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status11_wrong_signature_detail.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status11_wrong_signature_detail.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012285799999517621
+      },
+      "artifacts": {
+        "input": "status11_wrong_signature_detail.bin",
+        "python": "status11_wrong_signature_detail.python.json",
+        "stdout": "status11_wrong_signature_detail.stdout.json",
+        "stderr": "status11_wrong_signature_detail.stderr.txt"
+      }
+    },
+    {
+      "case": "status11_wrong_opcode",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "43b731b02a9b70413ac62b678b7da3bd6b1dae8c133a5c2b838fee002f173d67",
+      "word_edits_after_magic": {
+        "328": 11,
+        "329": 2,
+        "330": 4294967295,
+        "331": 1,
+        "332": 2
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "instances[0]: failure detail 2 is inconsistent with status 11 and its plan step"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status11_wrong_opcode.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status11_wrong_opcode.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.013295400000060908
+      },
+      "artifacts": {
+        "input": "status11_wrong_opcode.bin",
+        "python": "status11_wrong_opcode.python.json",
+        "stdout": "status11_wrong_opcode.stdout.json",
+        "stderr": "status11_wrong_opcode.stderr.txt"
+      }
+    },
+    {
+      "case": "status11_action_target_not_sentinel",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "456aaa014e3a16dfa6d7bb149a83cb3f0aedf1b80a7ca9bd6aba691a594508d5",
+      "word_edits_after_magic": {
+        "328": 11,
+        "329": 2,
+        "330": 0,
+        "331": 3,
+        "332": 2
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "instances[0]: invalid action failure target or step"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status11_action_target_not_sentinel.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status11_action_target_not_sentinel.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012460199999623
+      },
+      "artifacts": {
+        "input": "status11_action_target_not_sentinel.bin",
+        "python": "status11_action_target_not_sentinel.python.json",
+        "stdout": "status11_action_target_not_sentinel.stdout.json",
+        "stderr": "status11_action_target_not_sentinel.stderr.txt"
+      }
+    },
+    {
+      "case": "unknown_failure_status",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "da3b93fe9346a9cb9e26c70cc3df6c497322cd1f9bd4299a74158f8523b10416",
+      "word_edits_after_magic": {
+        "328": 12,
+        "329": 2,
+        "330": 4294967295,
+        "331": 3,
+        "332": 2
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "instances[0]: unknown failure status 12"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\unknown_failure_status.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\unknown_failure_status.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.012611900001502363
+      },
+      "artifacts": {
+        "input": "unknown_failure_status.bin",
+        "python": "unknown_failure_status.python.json",
+        "stdout": "unknown_failure_status.stdout.json",
+        "stderr": "unknown_failure_status.stderr.txt"
+      }
+    },
+    {
+      "case": "log_reason_on_nonlog_instruction",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "e6baad3dcf04a2b167162356d7bdb658e78b55dec4643aa639af463c27dab9e1",
+      "word_edits_after_magic": {
+        "328": 1,
+        "329": 2,
+        "330": 4294967295,
+        "331": 3,
+        "332": 65541
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "instances[0]: failure detail 65541 is inconsistent with status 1 and its plan step"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\log_reason_on_nonlog_instruction.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\log_reason_on_nonlog_instruction.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.014153599997371202
+      },
+      "artifacts": {
+        "input": "log_reason_on_nonlog_instruction.bin",
+        "python": "log_reason_on_nonlog_instruction.python.json",
+        "stdout": "log_reason_on_nonlog_instruction.stdout.json",
+        "stderr": "log_reason_on_nonlog_instruction.stderr.txt"
+      }
+    },
+    {
+      "case": "atan2_reason_on_nonatan_instruction",
+      "expected": "reject",
+      "matched_expectation": true,
+      "input_sha256": "66120a982da6621c727717353a824afe3a8bd786b8e92286b6140c312feb9be6",
+      "word_edits_after_magic": {
+        "328": 1,
+        "329": 2,
+        "330": 4294967295,
+        "331": 3,
+        "332": 65542
+      },
+      "python": {
+        "rejected": true,
+        "error_type": "ValueError",
+        "error": "instances[0]: failure detail 65542 is inconsistent with status 1 and its plan step"
+      },
+      "native": {
+        "exit_code": 2,
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+          "run",
+          "--input",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\atan2_reason_on_nonatan_instruction.bin",
+          "--output",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\atan2_reason_on_nonatan_instruction.output.bin",
+          "--backend",
+          "cpu",
+          "--epochs",
+          "0"
+        ],
+        "elapsed_seconds": 0.013010999999096384
+      },
+      "artifacts": {
+        "input": "atan2_reason_on_nonatan_instruction.bin",
+        "python": "atan2_reason_on_nonatan_instruction.python.json",
+        "stdout": "atan2_reason_on_nonatan_instruction.stdout.json",
+        "stderr": "atan2_reason_on_nonatan_instruction.stderr.txt"
+      }
+    }
+  ]
+}

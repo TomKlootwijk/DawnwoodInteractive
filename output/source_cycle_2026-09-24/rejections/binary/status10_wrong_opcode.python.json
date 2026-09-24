@@ -1,0 +1,5 @@
+{
+  "rejected": true,
+  "error_type": "ValueError",
+  "error": "instances[0]: failure detail 123 is inconsistent with status 10 and its plan step"
+}

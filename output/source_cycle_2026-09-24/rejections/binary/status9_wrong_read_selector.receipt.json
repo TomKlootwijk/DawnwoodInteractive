@@ -1,0 +1,40 @@
+{
+  "case": "status9_wrong_read_selector",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "e2a1b8978b61c4d8b53a1be4ed28159717a9d8e689443b0bea9c06fbff130cd1",
+  "word_edits_after_magic": {
+    "328": 9,
+    "329": 2,
+    "330": 4294967295,
+    "331": 1,
+    "332": 1
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "instances[0]: failure detail 1 is inconsistent with status 9 and its plan step"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status9_wrong_read_selector.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status9_wrong_read_selector.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.013290799997776048
+  },
+  "artifacts": {
+    "input": "status9_wrong_read_selector.bin",
+    "python": "status9_wrong_read_selector.python.json",
+    "stdout": "status9_wrong_read_selector.stdout.json",
+    "stderr": "status9_wrong_read_selector.stderr.txt"
+  }
+}

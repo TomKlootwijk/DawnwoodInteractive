@@ -1,0 +1,34 @@
+{
+  "case": "trailing_byte",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "31815243fa824555bda12a9115462f71b11e996dd97af29bcb95e6fd655b32bb",
+  "word_edits_after_magic": {},
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "Checkpoint length mismatch: expected 3668 bytes, received 3669"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\trailing_byte.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\trailing_byte.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.012962600001628743
+  },
+  "artifacts": {
+    "input": "trailing_byte.bin",
+    "python": "trailing_byte.python.json",
+    "stdout": "trailing_byte.stdout.json",
+    "stderr": "trailing_byte.stderr.txt"
+  }
+}

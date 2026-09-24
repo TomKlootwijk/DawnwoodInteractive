@@ -1,0 +1,36 @@
+{
+  "case": "body_handle_wrong_interface",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "91d0b7a1f143d6462ae1281710689e87ff9c62d7290a9fcebb6496739a2d2b47",
+  "word_edits_after_magic": {
+    "339": 2
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "instances[0].records[0].body: handle has the wrong slot interface/signature"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\body_handle_wrong_interface.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\body_handle_wrong_interface.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.012323399998422246
+  },
+  "artifacts": {
+    "input": "body_handle_wrong_interface.bin",
+    "python": "body_handle_wrong_interface.python.json",
+    "stdout": "body_handle_wrong_interface.stdout.json",
+    "stderr": "body_handle_wrong_interface.stderr.txt"
+  }
+}

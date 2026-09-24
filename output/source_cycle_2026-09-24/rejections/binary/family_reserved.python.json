@@ -1,0 +1,5 @@
+{
+  "rejected": true,
+  "error_type": "ValueError",
+  "error": "families[0]: reserved word must be zero"
+}

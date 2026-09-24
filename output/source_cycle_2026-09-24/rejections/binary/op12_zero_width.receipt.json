@@ -1,0 +1,36 @@
+{
+  "case": "op12_zero_width",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "104dcc0ad0fb01eb6710e1113a42f12f31a88e8a763335800e298fb197e431b7",
+  "word_edits_after_magic": {
+    "291": 0
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "action_plan[1].record: range [0, 0) exceeds 24 words"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_zero_width.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_zero_width.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.013240100000984967
+  },
+  "artifacts": {
+    "input": "op12_zero_width.bin",
+    "python": "op12_zero_width.python.json",
+    "stdout": "op12_zero_width.stdout.json",
+    "stderr": "op12_zero_width.stderr.txt"
+  }
+}

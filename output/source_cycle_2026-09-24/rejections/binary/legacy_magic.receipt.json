@@ -1,0 +1,34 @@
+{
+  "case": "legacy_magic",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "eab4509b0b7c919378e4d0314791ee1663a07e342ced7416d030dd83c004b182",
+  "word_edits_after_magic": {},
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "Checkpoint requires DWRD0002 and its eight-word header"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\legacy_magic.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\legacy_magic.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.012923300000693416
+  },
+  "artifacts": {
+    "input": "legacy_magic.bin",
+    "python": "legacy_magic.python.json",
+    "stdout": "legacy_magic.stdout.json",
+    "stderr": "legacy_magic.stderr.txt"
+  }
+}

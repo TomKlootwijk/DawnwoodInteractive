@@ -1,0 +1,40 @@
+{
+  "case": "log_reason_on_nonlog_instruction",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "e6baad3dcf04a2b167162356d7bdb658e78b55dec4643aa639af463c27dab9e1",
+  "word_edits_after_magic": {
+    "328": 1,
+    "329": 2,
+    "330": 4294967295,
+    "331": 3,
+    "332": 65541
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "instances[0]: failure detail 65541 is inconsistent with status 1 and its plan step"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\log_reason_on_nonlog_instruction.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\log_reason_on_nonlog_instruction.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.014153599997371202
+  },
+  "artifacts": {
+    "input": "log_reason_on_nonlog_instruction.bin",
+    "python": "log_reason_on_nonlog_instruction.python.json",
+    "stdout": "log_reason_on_nonlog_instruction.stdout.json",
+    "stderr": "log_reason_on_nonlog_instruction.stderr.txt"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "rejected": true,
+  "error_type": "ValueError",
+  "error": "families[1]: families sharing an interface must have identical role/signature sets"
+}

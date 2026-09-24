@@ -1,0 +1,36 @@
+{
+  "case": "metadata_source_above_exact_limit",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "2aad02e168c175f36a14747df923be01ef5c75b8616a3b3637493108ee00e066",
+  "word_edits_after_magic": {
+    "8": 16777216
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "metadata[0].source_index: expected an integer in 0..16777215"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\metadata_source_above_exact_limit.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\metadata_source_above_exact_limit.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.012892100003227824
+  },
+  "artifacts": {
+    "input": "metadata_source_above_exact_limit.bin",
+    "python": "metadata_source_above_exact_limit.python.json",
+    "stdout": "metadata_source_above_exact_limit.stdout.json",
+    "stderr": "metadata_source_above_exact_limit.stderr.txt"
+  }
+}

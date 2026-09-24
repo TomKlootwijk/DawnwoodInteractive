@@ -1,0 +1,5 @@
+{
+  "rejected": true,
+  "error_type": "ValueError",
+  "error": "action_plan[3]: call signature is not present in the function bank"
+}

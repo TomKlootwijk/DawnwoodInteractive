@@ -1,0 +1,5 @@
+{
+  "rejected": true,
+  "error_type": "ValueError",
+  "error": "metadata[0].source_index: expected an integer in 0..16777215"
+}

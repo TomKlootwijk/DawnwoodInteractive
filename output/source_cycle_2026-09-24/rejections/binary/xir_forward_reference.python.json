@@ -1,0 +1,5 @@
+{
+  "rejected": true,
+  "error_type": "ValueError",
+  "error": "functions[0].instructions[2]: operands must reference earlier instructions"
+}

@@ -1,0 +1,35 @@
+{
+  "case": "valid_control",
+  "expected": "accept",
+  "matched_expectation": true,
+  "input_sha256": "909e23883c58ce37b82484954f4418883ca973f855de0d441a3a94a4ef7b4d02",
+  "word_edits_after_magic": {},
+  "python": {
+    "rejected": false,
+    "error_type": null,
+    "error": null,
+    "profile": "DWI-RESIDENT-0.2"
+  },
+  "native": {
+    "exit_code": 0,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\valid_control.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\valid_control.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.012596399999893038
+  },
+  "artifacts": {
+    "input": "valid_control.bin",
+    "python": "valid_control.python.json",
+    "stdout": "valid_control.stdout.json",
+    "stderr": "valid_control.stderr.txt"
+  }
+}

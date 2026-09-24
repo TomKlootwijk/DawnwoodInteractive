@@ -1,0 +1,5 @@
+{
+  "rejected": true,
+  "error_type": "ValueError",
+  "error": "instances[0].records[0].values[0]: nonfinite FP32 word"
+}

@@ -1,0 +1,36 @@
+{
+  "case": "unknown_xir_opcode",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "675eb5cdb32b3ea3399cf99eb2fc205900fbc7bb2cb3c42ab1da00a9c5dc57b7",
+  "word_edits_after_magic": {
+    "86": 20
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "functions[0].instructions[0]: unsupported opcode 20"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\unknown_xir_opcode.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\unknown_xir_opcode.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.01244589999987511
+  },
+  "artifacts": {
+    "input": "unknown_xir_opcode.bin",
+    "python": "unknown_xir_opcode.python.json",
+    "stdout": "unknown_xir_opcode.stdout.json",
+    "stderr": "unknown_xir_opcode.stderr.txt"
+  }
+}

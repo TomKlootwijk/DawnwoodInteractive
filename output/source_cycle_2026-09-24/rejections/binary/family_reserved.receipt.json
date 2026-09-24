@@ -1,0 +1,36 @@
+{
+  "case": "family_reserved",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "9e1e6ed53b7dd616146b51e7e8fabf37f721095041304ed9d057ad4db6d84a89",
+  "word_edits_after_magic": {
+    "77": 1
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "families[0]: reserved word must be zero"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_reserved.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_reserved.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.012601599999470636
+  },
+  "artifacts": {
+    "input": "family_reserved.bin",
+    "python": "family_reserved.python.json",
+    "stdout": "family_reserved.stdout.json",
+    "stderr": "family_reserved.stderr.txt"
+  }
+}

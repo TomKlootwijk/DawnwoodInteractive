@@ -1,0 +1,5 @@
+{
+  "rejected": true,
+  "error_type": "ValueError",
+  "error": "action_plan[1]: mutation reads bank0; action reads bank0 or bank1"
+}

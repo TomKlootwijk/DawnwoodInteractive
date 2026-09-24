@@ -1,0 +1,36 @@
+{
+  "case": "op12_output_outside_frame",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "3468e4ff1ac7cb7c5c21bb613ac7a31ac7d043eeef78f0f4f6112003ca489272",
+  "word_edits_after_magic": {
+    "288": 256
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "action_plan[1].destination: range [256, 257) exceeds 256 words"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_output_outside_frame.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_output_outside_frame.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.013321999998879619
+  },
+  "artifacts": {
+    "input": "op12_output_outside_frame.bin",
+    "python": "op12_output_outside_frame.python.json",
+    "stdout": "op12_output_outside_frame.stdout.json",
+    "stderr": "op12_output_outside_frame.stderr.txt"
+  }
+}

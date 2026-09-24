@@ -1,0 +1,40 @@
+{
+  "case": "atan2_reason_on_nonatan_instruction",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "66120a982da6621c727717353a824afe3a8bd786b8e92286b6140c312feb9be6",
+  "word_edits_after_magic": {
+    "328": 1,
+    "329": 2,
+    "330": 4294967295,
+    "331": 3,
+    "332": 65542
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "instances[0]: failure detail 65542 is inconsistent with status 1 and its plan step"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\atan2_reason_on_nonatan_instruction.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\atan2_reason_on_nonatan_instruction.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.013010999999096384
+  },
+  "artifacts": {
+    "input": "atan2_reason_on_nonatan_instruction.bin",
+    "python": "atan2_reason_on_nonatan_instruction.python.json",
+    "stdout": "atan2_reason_on_nonatan_instruction.stdout.json",
+    "stderr": "atan2_reason_on_nonatan_instruction.stderr.txt"
+  }
+}

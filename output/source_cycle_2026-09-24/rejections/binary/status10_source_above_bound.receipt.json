@@ -1,0 +1,40 @@
+{
+  "case": "status10_source_above_bound",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "e77c5e59b0f7d05a0f644f81eb0d3ecad688dcd39d5bde6aea4e5e1016e6830f",
+  "word_edits_after_magic": {
+    "328": 10,
+    "329": 2,
+    "330": 4294967295,
+    "331": 1,
+    "332": 16777216
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "instances[0]: failure detail 16777216 is inconsistent with status 10 and its plan step"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status10_source_above_bound.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status10_source_above_bound.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.012798399999155663
+  },
+  "artifacts": {
+    "input": "status10_source_above_bound.bin",
+    "python": "status10_source_above_bound.python.json",
+    "stdout": "status10_source_above_bound.stdout.json",
+    "stderr": "status10_source_above_bound.stderr.txt"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "rejected": true,
+  "error_type": "ValueError",
+  "error": "Checkpoint length mismatch: expected 3668 bytes, received 3669"
+}

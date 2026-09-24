@@ -1,0 +1,5 @@
+{
+  "rejected": true,
+  "error_type": "ValueError",
+  "error": "action_plan[3].outputs: range [256, 257) exceeds 256 words"
+}

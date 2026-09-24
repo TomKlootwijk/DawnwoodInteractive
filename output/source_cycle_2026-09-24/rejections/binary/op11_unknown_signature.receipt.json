@@ -1,0 +1,36 @@
+{
+  "case": "op11_unknown_signature",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "c5adcbf5953c416f42528412722198d12bfa785a308cc7cf4edaa780e9a9388d",
+  "word_edits_after_magic": {
+    "309": 999
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "action_plan[3]: call signature is not present in the function bank"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_unknown_signature.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_unknown_signature.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.013131700001395075
+  },
+  "artifacts": {
+    "input": "op11_unknown_signature.bin",
+    "python": "op11_unknown_signature.python.json",
+    "stdout": "op11_unknown_signature.stdout.json",
+    "stderr": "op11_unknown_signature.stderr.txt"
+  }
+}

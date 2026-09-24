@@ -1,0 +1,21 @@
+{
+  "command": [
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\llvm-mingw-20260922-ucrt-x86_64\\bin\\clang++.exe",
+    "-std=c++17",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-static",
+    "-IC:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\include",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\source_math_v2_audit.cpp",
+    "-o",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\source_math_v2_audit.exe"
+  ],
+  "exit_code": 0,
+  "source_sha256": "6df5c56b3b4523b487cd9788e7f2fd560de84f1b2ed560b13539b27954f3c023",
+  "math_include_sha256": "41334180da91e9a6782a189c3805f725a30617c64877d54513a0755e023072e9",
+  "compiler_sha256": "20ba1856942744291a6aaaf9f2c94f6d0cd7cac5aa9557fce96471dc7ef25d6f"
+}

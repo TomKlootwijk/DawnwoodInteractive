@@ -1,0 +1,88 @@
+{
+  "scope": "Generic log/atan2 numerical diagnostic only; not a source-cycle binding.",
+  "count": 27240,
+  "cpu_gpu_checkpoint_byte_identical": true,
+  "cpu_gpu_changed_words": 0,
+  "accuracy": {
+    "log": {
+      "count": 27220,
+      "max_absolute_error": 3.836931327327875e-06,
+      "max_ulp_vs_rounded_binary64": 1,
+      "absolute_worst": {
+        "index": 7310,
+        "label": "normal_random",
+        "inputs": [
+          1.6293697551660138e+37,
+          -9810713.0,
+          -4.27055086113203e-16
+        ],
+        "actual": 85.683837890625,
+        "reference": 85.68384172755633,
+        "actual_bits": 1118527008,
+        "rounded_reference_bits": 1118527009
+      },
+      "ulp_worst": {
+        "index": 190,
+        "label": "normal_random",
+        "inputs": [
+          1.9569653308924625e+20,
+          370.3643798828125,
+          3.467901981163125e-29
+        ],
+        "actual": 46.72309875488281,
+        "reference": 46.723096832702296,
+        "actual_bits": 1111155828,
+        "rounded_reference_bits": 1111155827
+      }
+    },
+    "atan2": {
+      "count": 27220,
+      "max_absolute_error": 2.575875290844465e-07,
+      "max_ulp_vs_rounded_binary64": 2,
+      "absolute_worst": {
+        "index": 18680,
+        "label": "ratio_grid",
+        "inputs": [
+          1.0,
+          -0.578125,
+          -1.0
+        ],
+        "actual": -2.617413282394409,
+        "reference": -2.61741302480688,
+        "actual_bits": 3223815091,
+        "rounded_reference_bits": 3223815090
+      },
+      "ulp_worst": {
+        "index": 2622,
+        "label": "normal_random",
+        "inputs": [
+          5.403243372677639e+23,
+          -2.3084252651536371e+24,
+          5.473936988518023e+24
+        ],
+        "actual": -0.39908239245414734,
+        "reference": -0.3990824431177598,
+        "actual_bits": 3201062023,
+        "rounded_reference_bits": 3201062025
+      }
+    }
+  },
+  "reason_counts": {
+    "0": 27220,
+    "5": 8,
+    "6": 12
+  },
+  "exact_rollback_count": 20,
+  "explicit_signed_axis_count": 8,
+  "successful_subnormal_atan2_outputs": 394,
+  "successful_zero_atan2_outputs": 379,
+  "failures": [],
+  "reference": "Python math.log/math.atan2 binary64 on exact checkpoint FP32 values, compared to actual Vulkan outputs; ULP measured against binary64 result rounded to FP32. Sampled, not proof of global bound.",
+  "random_seed": "0xD02A724",
+  "binary_sha256": "d6e08b44edf484571ad5d49954a8b3797c71e5bfc80ec4ce8cde795e8d865d29",
+  "shader_sha256": "9e90c89135a93a115db1ceaea5475338a389f8ab41ab7e64165751d4410f6098",
+  "program_sha256": "b2a23ee7b842a5fd783844484a79a25467dc20b4959ea03cc0ec1e6457d3fd37",
+  "cpu_sha256": "306b7d1f3d07f075c1c2140888ecd1a3db89cb7c655a495a4bbc9eb48f57932e",
+  "vulkan_sha256": "306b7d1f3d07f075c1c2140888ecd1a3db89cb7c655a495a4bbc9eb48f57932e",
+  "cpu_accuracy_rerun_matches": true
+}

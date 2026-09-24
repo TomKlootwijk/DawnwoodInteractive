@@ -1,0 +1,36 @@
+{
+  "case": "family_interface_contract_mismatch",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "9de7ef9dbd070356c0c1985a378dbb065e4cc830a72766382e3b5cb1f6cb7c7f",
+  "word_edits_after_magic": {
+    "240": 3
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "families[1]: families sharing an interface must have identical role/signature sets"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_interface_contract_mismatch.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_interface_contract_mismatch.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.012651600001845509
+  },
+  "artifacts": {
+    "input": "family_interface_contract_mismatch.bin",
+    "python": "family_interface_contract_mismatch.python.json",
+    "stdout": "family_interface_contract_mismatch.stdout.json",
+    "stderr": "family_interface_contract_mismatch.stderr.txt"
+  }
+}

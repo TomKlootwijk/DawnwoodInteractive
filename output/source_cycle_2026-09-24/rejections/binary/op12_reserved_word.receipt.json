@@ -1,0 +1,36 @@
+{
+  "case": "op12_reserved_word",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "1b7d3c26dfe707b19eb83603b7c593fd2f1b08d34a1ab47e867b1b7a347f2c20",
+  "word_edits_after_magic": {
+    "293": 1
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "action_plan[1]: unused instruction words must be zero"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_reserved_word.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_reserved_word.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.013317700002517086
+  },
+  "artifacts": {
+    "input": "op12_reserved_word.bin",
+    "python": "op12_reserved_word.python.json",
+    "stdout": "op12_reserved_word.stdout.json",
+    "stderr": "op12_reserved_word.stderr.txt"
+  }
+}

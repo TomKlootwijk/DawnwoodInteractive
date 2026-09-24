@@ -1,0 +1,36 @@
+{
+  "case": "metadata_unknown_field_signature",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "3ceb2d1a449f88d59fc81c92eb0e4fe6378738684154a63042f06a99780cb5ac",
+  "word_edits_after_magic": {
+    "10": 999
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "metadata[0]: unknown body interface or slot signature"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\metadata_unknown_field_signature.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\metadata_unknown_field_signature.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.012494400001742179
+  },
+  "artifacts": {
+    "input": "metadata_unknown_field_signature.bin",
+    "python": "metadata_unknown_field_signature.python.json",
+    "stdout": "metadata_unknown_field_signature.stdout.json",
+    "stderr": "metadata_unknown_field_signature.stderr.txt"
+  }
+}

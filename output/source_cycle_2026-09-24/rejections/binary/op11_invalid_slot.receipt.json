@@ -1,0 +1,36 @@
+{
+  "case": "op11_invalid_slot",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "40a1efd4b0271bca545210bb46ef5fcd7b2dc6d46d968f31542a4b4f72ce2470",
+  "word_edits_after_magic": {
+    "305": 3
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "action_plan[3]: record slot must be 0body, 1field or 2placement"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_invalid_slot.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_invalid_slot.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.012568300000566524
+  },
+  "artifacts": {
+    "input": "op11_invalid_slot.bin",
+    "python": "op11_invalid_slot.python.json",
+    "stdout": "op11_invalid_slot.stdout.json",
+    "stderr": "op11_invalid_slot.stderr.txt"
+  }
+}

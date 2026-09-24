@@ -1,0 +1,36 @@
+{
+  "case": "family_count_over_limit",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "403ca04c781cfcd06ddc6205864638412ad20cb9af54853fde6d36fbdbe50055",
+  "word_edits_after_magic": {
+    "76": 33
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "families[0].method_count: expected an integer in 1..32"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_count_over_limit.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_count_over_limit.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.013030500002059853
+  },
+  "artifacts": {
+    "input": "family_count_over_limit.bin",
+    "python": "family_count_over_limit.python.json",
+    "stdout": "family_count_over_limit.stdout.json",
+    "stderr": "family_count_over_limit.stderr.txt"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "case": "op11_nonzero_placement_role",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "1de1e4f4692e3fbd9b4b07e140136910abdbecdca119740cc6add459e3c39d15",
+  "word_edits_after_magic": {
+    "305": 2
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "action_plan[3]: field and placement roles must be zero"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_nonzero_placement_role.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_nonzero_placement_role.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.014316700002382277
+  },
+  "artifacts": {
+    "input": "op11_nonzero_placement_role.bin",
+    "python": "op11_nonzero_placement_role.python.json",
+    "stdout": "op11_nonzero_placement_role.stdout.json",
+    "stderr": "op11_nonzero_placement_role.stderr.txt"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "rejected": true,
+  "error_type": "ValueError",
+  "error": "metadata[0]: unknown body interface or slot signature"
+}

@@ -1,0 +1,36 @@
+{
+  "case": "op11_action_old_bank",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "a58902f5ba65f325f6b38d1575a55396a1fb29d797a9919a16922633d229f804",
+  "word_edits_after_magic": {
+    "306": 0
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "action_plan[3]: mutation calls bank0; action calls bank1"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_action_old_bank.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_action_old_bank.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.012233399997057859
+  },
+  "artifacts": {
+    "input": "op11_action_old_bank.bin",
+    "python": "op11_action_old_bank.python.json",
+    "stdout": "op11_action_old_bank.stdout.json",
+    "stderr": "op11_action_old_bank.stderr.txt"
+  }
+}

@@ -77,6 +77,13 @@ remain open.
 .\Dawnwood-Resident.cmd inspect output/my_resident/after_8.bin --manifest output/my_resident/manifest.json
 ```
 
+The [typed resident v2 runtime](docs/RESIDENT_V2_ABI.md) adds complete body-family
+replacement, computed source-index routing and portable log/phase arithmetic.
+Its [CPU/GPU campaign](output/source_cycle_2026-09-24/RUNTIME_REPORT.md) verifies
+typed execution, strict route failures, rollback and exact continuation. Use
+`Dawnwood-Resident2.cmd` for its separate `DWRD0002` checkpoints. Full-cycle
+fidelity requires the authored application binding in addition to this machine.
+
 ## Run the D1 constraint-repair experiment
 
 From the repository root, using Python 3.10 or newer:

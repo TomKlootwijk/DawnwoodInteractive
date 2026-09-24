@@ -1,0 +1,37 @@
+{
+  "case": "xir_log_unused_operand",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "5ba34d091c3a438036190356fc8cc1cf3e1b0e444f5e9053d54fc3ef915d6121",
+  "word_edits_after_magic": {
+    "94": 18,
+    "96": 1
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "functions[0].instructions[2]: unused operand words must be zero"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\xir_log_unused_operand.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\xir_log_unused_operand.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.012582399998791516
+  },
+  "artifacts": {
+    "input": "xir_log_unused_operand.bin",
+    "python": "xir_log_unused_operand.python.json",
+    "stdout": "xir_log_unused_operand.stdout.json",
+    "stderr": "xir_log_unused_operand.stderr.txt"
+  }
+}

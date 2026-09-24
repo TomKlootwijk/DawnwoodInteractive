@@ -1,0 +1,48 @@
+[
+  {
+    "name": "dispatch_old_mutation_failure",
+    "bit_identical": true,
+    "rollback_all": true,
+    "statuses": [
+      1,
+      1,
+      11,
+      10,
+      9,
+      9,
+      9
+    ],
+    "failure_phases": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "name": "dispatch_new_action_failure",
+    "bit_identical": true,
+    "rollback_all": true,
+    "statuses": [
+      1,
+      1,
+      11,
+      10,
+      9,
+      9,
+      9
+    ],
+    "failure_phases": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  }
+]

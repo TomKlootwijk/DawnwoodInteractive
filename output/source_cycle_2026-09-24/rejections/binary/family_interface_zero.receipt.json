@@ -1,0 +1,36 @@
+{
+  "case": "family_interface_zero",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "603d7a0f431a97a1012e05a6a933a5f5f632aac10fb61325d7778340a6a498a3",
+  "word_edits_after_magic": {
+    "74": 0
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "families[0].interface: expected an integer in 1..4294967295"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_interface_zero.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_interface_zero.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.014002399999299087
+  },
+  "artifacts": {
+    "input": "family_interface_zero.bin",
+    "python": "family_interface_zero.python.json",
+    "stdout": "family_interface_zero.stdout.json",
+    "stderr": "family_interface_zero.stderr.txt"
+  }
+}

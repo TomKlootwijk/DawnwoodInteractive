@@ -1,0 +1,36 @@
+{
+  "case": "metadata_duplicate_source_index",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "3d5d452284ed9180e1139295233da5c2717cfb3460d12fc21dccc2f1ec0d9909",
+  "word_edits_after_magic": {
+    "12": 1
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "Source indices must be unique"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\metadata_duplicate_source_index.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\metadata_duplicate_source_index.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.013378700001339894
+  },
+  "artifacts": {
+    "input": "metadata_duplicate_source_index.bin",
+    "python": "metadata_duplicate_source_index.python.json",
+    "stdout": "metadata_duplicate_source_index.stdout.json",
+    "stderr": "metadata_duplicate_source_index.stderr.txt"
+  }
+}

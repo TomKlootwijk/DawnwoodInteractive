@@ -1,0 +1,5 @@
+{
+  "rejected": true,
+  "error_type": "ValueError",
+  "error": "action_plan[1].record: range [24, 25) exceeds 24 words"
+}

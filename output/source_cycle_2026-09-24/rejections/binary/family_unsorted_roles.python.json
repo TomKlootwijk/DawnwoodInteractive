@@ -1,0 +1,5 @@
+{
+  "rejected": true,
+  "error_type": "ValueError",
+  "error": "families[0]: roles must be increasing and function handles valid"
+}

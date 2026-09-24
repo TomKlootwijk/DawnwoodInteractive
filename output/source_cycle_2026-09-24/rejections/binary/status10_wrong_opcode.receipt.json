@@ -1,0 +1,40 @@
+{
+  "case": "status10_wrong_opcode",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "10193db17360faa3e1924d8dd4ff10ae73524da40b721eaa216e4e7500cd5cb2",
+  "word_edits_after_magic": {
+    "328": 10,
+    "329": 2,
+    "330": 4294967295,
+    "331": 0,
+    "332": 123
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "instances[0]: failure detail 123 is inconsistent with status 10 and its plan step"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status10_wrong_opcode.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status10_wrong_opcode.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.012843299999076407
+  },
+  "artifacts": {
+    "input": "status10_wrong_opcode.bin",
+    "python": "status10_wrong_opcode.python.json",
+    "stdout": "status10_wrong_opcode.stdout.json",
+    "stderr": "status10_wrong_opcode.stderr.txt"
+  }
+}

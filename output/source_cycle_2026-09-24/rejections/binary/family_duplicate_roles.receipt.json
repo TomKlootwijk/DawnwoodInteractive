@@ -1,0 +1,36 @@
+{
+  "case": "family_duplicate_roles",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "a47cd2412de28373b5bb19a7dc563d485d0ad045ecb7a4f624020e312d39e695",
+  "word_edits_after_magic": {
+    "235": 0
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "families[0]: roles must be increasing and function handles valid"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_duplicate_roles.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_duplicate_roles.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.012225099999341182
+  },
+  "artifacts": {
+    "input": "family_duplicate_roles.bin",
+    "python": "family_duplicate_roles.python.json",
+    "stdout": "family_duplicate_roles.stdout.json",
+    "stderr": "family_duplicate_roles.stderr.txt"
+  }
+}

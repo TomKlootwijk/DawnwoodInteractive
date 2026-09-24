@@ -1,0 +1,40 @@
+{
+  "case": "status11_action_target_not_sentinel",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "456aaa014e3a16dfa6d7bb149a83cb3f0aedf1b80a7ca9bd6aba691a594508d5",
+  "word_edits_after_magic": {
+    "328": 11,
+    "329": 2,
+    "330": 0,
+    "331": 3,
+    "332": 2
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "instances[0]: invalid action failure target or step"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status11_action_target_not_sentinel.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status11_action_target_not_sentinel.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.012460199999623
+  },
+  "artifacts": {
+    "input": "status11_action_target_not_sentinel.bin",
+    "python": "status11_action_target_not_sentinel.python.json",
+    "stdout": "status11_action_target_not_sentinel.stdout.json",
+    "stderr": "status11_action_target_not_sentinel.stderr.txt"
+  }
+}

@@ -1,0 +1,16 @@
+#version 450
+#extension GL_GOOGLE_include_directive : require
+#extension GL_EXT_control_flow_attributes : require
+layout(local_size_x=64) in;
+layout(std430,binding=0) readonly buffer Configuration {uint configWords[];};
+layout(std430,binding=1) readonly buffer OldInstances {uint oldWords[];};
+layout(std430,binding=2) buffer NewInstances {uint newWords[];};
+layout(push_constant) uniform Parameters {
+ uint count;uint base;uint reverseTargets;uint unused;
+};
+#include "resident_v2.inc"
+void main(){
+ uint lane=base+gl_GlobalInvocationID.x;
+ if(lane>=count)return;
+ dw_resident_step(lane,reverseTargets);
+}

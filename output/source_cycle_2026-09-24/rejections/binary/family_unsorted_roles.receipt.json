@@ -1,0 +1,36 @@
+{
+  "case": "family_unsorted_roles",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "179a5ff087ce1bd22ea892c986cf586c9afbb333dd757af89db4c3747ca81c30",
+  "word_edits_after_magic": {
+    "237": 6
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "families[0]: roles must be increasing and function handles valid"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_unsorted_roles.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_unsorted_roles.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.013392999997449806
+  },
+  "artifacts": {
+    "input": "family_unsorted_roles.bin",
+    "python": "family_unsorted_roles.python.json",
+    "stdout": "family_unsorted_roles.stdout.json",
+    "stderr": "family_unsorted_roles.stderr.txt"
+  }
+}

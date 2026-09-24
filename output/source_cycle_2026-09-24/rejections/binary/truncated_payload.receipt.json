@@ -1,0 +1,34 @@
+{
+  "case": "truncated_payload",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "9ff919423b453f6efef9f52f8f05fc5ce87bd5435b312067725ed04a83136b95",
+  "word_edits_after_magic": {},
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "Checkpoint length mismatch: expected 3668 bytes, received 3664"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\truncated_payload.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\truncated_payload.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.01238540000122157
+  },
+  "artifacts": {
+    "input": "truncated_payload.bin",
+    "python": "truncated_payload.python.json",
+    "stdout": "truncated_payload.stdout.json",
+    "stderr": "truncated_payload.stderr.txt"
+  }
+}

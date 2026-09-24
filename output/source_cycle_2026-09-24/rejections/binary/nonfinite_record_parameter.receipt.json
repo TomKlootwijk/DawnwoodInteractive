@@ -1,0 +1,36 @@
+{
+  "case": "nonfinite_record_parameter",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "55449220e59c4df8514cb83743ac0adb0fb0d35862fde94a9f3d03ae6c9c755f",
+  "word_edits_after_magic": {
+    "343": 2143289344
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "instances[0].records[0].values[0]: nonfinite FP32 word"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\nonfinite_record_parameter.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\nonfinite_record_parameter.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.012955099999089725
+  },
+  "artifacts": {
+    "input": "nonfinite_record_parameter.bin",
+    "python": "nonfinite_record_parameter.python.json",
+    "stdout": "nonfinite_record_parameter.stdout.json",
+    "stderr": "nonfinite_record_parameter.stderr.txt"
+  }
+}

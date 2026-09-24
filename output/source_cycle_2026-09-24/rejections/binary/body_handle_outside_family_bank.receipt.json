@@ -1,0 +1,36 @@
+{
+  "case": "body_handle_outside_family_bank",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "d6799c583e730b61a6bd596e4e6597efd1df01b128f65cf10c7082a09b4ed42f",
+  "word_edits_after_magic": {
+    "339": 3
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "instances[0].records[0].body: family/function handle is outside the bank"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\body_handle_outside_family_bank.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\body_handle_outside_family_bank.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.0133094999982859
+  },
+  "artifacts": {
+    "input": "body_handle_outside_family_bank.bin",
+    "python": "body_handle_outside_family_bank.python.json",
+    "stdout": "body_handle_outside_family_bank.stdout.json",
+    "stderr": "body_handle_outside_family_bank.stderr.txt"
+  }
+}

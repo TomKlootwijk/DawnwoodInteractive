@@ -1,0 +1,5 @@
+{
+  "rejected": true,
+  "error_type": "ValueError",
+  "error": "families[0].interface: expected an integer in 1..4294967295"
+}

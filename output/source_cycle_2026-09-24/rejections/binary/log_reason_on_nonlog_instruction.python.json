@@ -1,0 +1,5 @@
+{
+  "rejected": true,
+  "error_type": "ValueError",
+  "error": "instances[0]: failure detail 65541 is inconsistent with status 1 and its plan step"
+}

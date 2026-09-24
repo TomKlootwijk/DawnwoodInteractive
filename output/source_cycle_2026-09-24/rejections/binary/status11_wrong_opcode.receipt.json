@@ -1,0 +1,40 @@
+{
+  "case": "status11_wrong_opcode",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "43b731b02a9b70413ac62b678b7da3bd6b1dae8c133a5c2b838fee002f173d67",
+  "word_edits_after_magic": {
+    "328": 11,
+    "329": 2,
+    "330": 4294967295,
+    "331": 1,
+    "332": 2
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "instances[0]: failure detail 2 is inconsistent with status 11 and its plan step"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status11_wrong_opcode.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\status11_wrong_opcode.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.013295400000060908
+  },
+  "artifacts": {
+    "input": "status11_wrong_opcode.bin",
+    "python": "status11_wrong_opcode.python.json",
+    "stdout": "status11_wrong_opcode.stdout.json",
+    "stderr": "status11_wrong_opcode.stderr.txt"
+  }
+}

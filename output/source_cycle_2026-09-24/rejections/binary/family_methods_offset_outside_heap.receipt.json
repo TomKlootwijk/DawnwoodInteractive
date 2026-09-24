@@ -1,0 +1,36 @@
+{
+  "case": "family_methods_offset_outside_heap",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "1fbafd6f8464426928553569b092fbd973993618aa7188f7020d0c53b77037ba",
+  "word_edits_after_magic": {
+    "75": 161
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "families[0].methods: range [161, 167) exceeds 161 words"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_methods_offset_outside_heap.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\family_methods_offset_outside_heap.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.013324600000487408
+  },
+  "artifacts": {
+    "input": "family_methods_offset_outside_heap.bin",
+    "python": "family_methods_offset_outside_heap.python.json",
+    "stdout": "family_methods_offset_outside_heap.stdout.json",
+    "stderr": "family_methods_offset_outside_heap.stderr.txt"
+  }
+}

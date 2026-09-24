@@ -1,0 +1,5 @@
+{
+  "rejected": true,
+  "error_type": "ValueError",
+  "error": "Checkpoint requires DWRD0002 and its eight-word header"
+}

@@ -1,0 +1,5 @@
+{
+  "rejected": true,
+  "error_type": "ValueError",
+  "error": "action_plan[3]: record slot must be 0body, 1field or 2placement"
+}

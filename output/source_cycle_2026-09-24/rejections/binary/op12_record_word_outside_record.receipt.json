@@ -1,0 +1,36 @@
+{
+  "case": "op12_record_word_outside_record",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "1b5dbb98561d6ecacf78dc55c01414132d0bc05fc9d14bb53dd83bf7df48d2fd",
+  "word_edits_after_magic": {
+    "290": 24
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "action_plan[1].record: range [24, 25) exceeds 24 words"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_record_word_outside_record.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_record_word_outside_record.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.013489500001014676
+  },
+  "artifacts": {
+    "input": "op12_record_word_outside_record.bin",
+    "python": "op12_record_word_outside_record.python.json",
+    "stdout": "op12_record_word_outside_record.stdout.json",
+    "stderr": "op12_record_word_outside_record.stderr.txt"
+  }
+}

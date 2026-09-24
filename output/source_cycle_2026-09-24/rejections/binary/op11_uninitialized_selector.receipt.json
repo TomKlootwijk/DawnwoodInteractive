@@ -1,0 +1,36 @@
+{
+  "case": "op11_uninitialized_selector",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "1bcad5759a5a50a947850c222f12fdd1682899e13ecdfbf52a0d710d053f962a",
+  "word_edits_after_magic": {
+    "304": 255
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "action_plan[3].source_index: reads an uninitialized frame register"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_uninitialized_selector.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op11_uninitialized_selector.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.012217900002724491
+  },
+  "artifacts": {
+    "input": "op11_uninitialized_selector.bin",
+    "python": "op11_uninitialized_selector.python.json",
+    "stdout": "op11_uninitialized_selector.stdout.json",
+    "stderr": "op11_uninitialized_selector.stderr.txt"
+  }
+}

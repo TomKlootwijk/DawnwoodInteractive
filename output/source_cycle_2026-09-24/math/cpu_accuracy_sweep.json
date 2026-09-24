@@ -1,0 +1,60 @@
+{
+  "log": {
+    "count": 12485252,
+    "max_absolute_error": 3.865695589411189e-06,
+    "max_ulp_vs_rounded_binary64": 2,
+    "absolute_worst": {
+      "x": 1.0784922728381887e+35,
+      "y": 0,
+      "actual": 80.66604614257812,
+      "reference": 80.66604227688254
+    },
+    "ulp_worst": {
+      "x": 0.6715506911277771,
+      "y": 0,
+      "actual": -0.39816582202911377,
+      "reference": -0.39816577647446333
+    }
+  },
+  "atan2": {
+    "count": 18001604,
+    "max_absolute_error": 2.8106670857397376e-07,
+    "max_ulp_vs_rounded_binary64": 2,
+    "absolute_worst": {
+      "x": -1,
+      "y": -0.5511065125465393,
+      "actual": -2.6379005908966064,
+      "reference": -2.637900309829898
+    },
+    "ulp_worst": {
+      "x": 3.0830644772720528e-27,
+      "y": 1.6821303245871444e-27,
+      "actual": 0.4994613528251648,
+      "reference": 0.49946140264347927
+    }
+  },
+  "guard_failures": 0,
+  "signed_axis_failures": 0,
+  "frontend": {
+    "nested_extended_ops": true,
+    "legacy_program_identical": true,
+    "v1_globals_unchanged": true,
+    "malformed_ast_cases_rejected": 7
+  },
+  "reference": "Host std::log(double) and std::atan2(double,double), actual input FP32 values promoted exactly; sampled errors only, not exhaustive correctness proof.",
+  "compile_flags": [
+    "-std=c++17",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-static"
+  ],
+  "source_hashes": {
+    "tmp/source_math_v2_audit.cpp": "6df5c56b3b4523b487cd9788e7f2fd560de84f1b2ed560b13539b27954f3c023",
+    "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/include/source_math_v2.inc": "41334180da91e9a6782a189c3805f725a30617c64877d54513a0755e023072e9",
+    "local_lab/source_ir_v2.py": "3e7f528c14bbcb59b2e2df877b1b47c2adedaa37b2d454305bcebf1a03befe2a"
+  }
+}

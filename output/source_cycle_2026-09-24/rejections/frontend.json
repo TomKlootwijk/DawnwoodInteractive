@@ -1,0 +1,93 @@
+[
+  {
+    "name": "empty_families",
+    "rejected": true,
+    "error": "families: expected an ordered mapping of 1..256 body families"
+  },
+  {
+    "name": "missing_family_role",
+    "rejected": true,
+    "error": "families[1]: families sharing an interface must have identical role/signature sets"
+  },
+  {
+    "name": "changed_family_role_signature",
+    "rejected": true,
+    "error": "families[1]: families sharing an interface must have identical role/signature sets"
+  },
+  {
+    "name": "family_unknown_function",
+    "rejected": true,
+    "error": "families['A']: method names an unknown function"
+  },
+  {
+    "name": "noncanonical_role",
+    "rejected": true,
+    "error": "families['A']: role keys must be canonical decimal uint32 strings"
+  },
+  {
+    "name": "family_zero_interface",
+    "rejected": true,
+    "error": "families['A'].interface: expected an integer in 1..4294967295"
+  },
+  {
+    "name": "unknown_body_family",
+    "rejected": true,
+    "error": "records[0].body: expected a declared family/function name"
+  },
+  {
+    "name": "override_wrong_interface",
+    "rejected": true,
+    "error": "instances[0].records['hadamard'].body: handle has the wrong slot interface/signature"
+  },
+  {
+    "name": "dynamic_read_uninitialized_index",
+    "rejected": true,
+    "error": "action_plan[1].source_index: reads an uninitialized frame register"
+  },
+  {
+    "name": "dynamic_call_uninitialized_index",
+    "rejected": true,
+    "error": "action_plan[3].source_index: reads an uninitialized frame register"
+  },
+  {
+    "name": "dynamic_call_unknown_signature",
+    "rejected": true,
+    "error": "action_plan[3]: call signature is not present in the function bank"
+  },
+  {
+    "name": "dynamic_call_invalid_slot",
+    "rejected": true,
+    "error": "action_plan[3]: record slot must be 0body, 1field or 2placement"
+  },
+  {
+    "name": "dynamic_call_field_nonzero_role",
+    "rejected": true,
+    "error": "action_plan[3]: field and placement roles must be zero"
+  },
+  {
+    "name": "dynamic_action_call_old_bank",
+    "rejected": true,
+    "error": "action_plan[3]: mutation calls bank0; action calls bank1"
+  },
+  {
+    "name": "dynamic_read_nonzero_reserved",
+    "rejected": true,
+    "error": "action_plan[1]: unused instruction words must be zero"
+  },
+  {
+    "name": "static_call_missing_role",
+    "rejected": true,
+    "error": "action_plan[3]: role/signature does not match the selected immutable slot",
+    "experiment_correction": "Initial selector0 actually had role7; corrected selector2 names the heterogeneous record without that role."
+  },
+  {
+    "name": "source_body_changed_without_binding",
+    "rejected": true,
+    "error": "records[0].source_slots.body: asserted source declaration does not match the selected model; supply an explicit binding for the changed definition"
+  },
+  {
+    "name": "duplicate_output_write",
+    "rejected": true,
+    "error": "action_plan[6]: each destination word must be written exactly once"
+  }
+]

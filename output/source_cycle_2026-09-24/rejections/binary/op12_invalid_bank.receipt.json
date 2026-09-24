@@ -1,0 +1,36 @@
+{
+  "case": "op12_invalid_bank",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "42021851a0067ac759aff8f76049b9d9194e7061f46d42bd1585fd47ca664e70",
+  "word_edits_after_magic": {
+    "292": 2
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "action_plan[1]: mutation reads bank0; action reads bank0 or bank1"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_invalid_bank.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\op12_invalid_bank.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.015264999998180429
+  },
+  "artifacts": {
+    "input": "op12_invalid_bank.bin",
+    "python": "op12_invalid_bank.python.json",
+    "stdout": "op12_invalid_bank.stdout.json",
+    "stderr": "op12_invalid_bank.stderr.txt"
+  }
+}

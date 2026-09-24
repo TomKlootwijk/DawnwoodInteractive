@@ -1,0 +1,36 @@
+{
+  "case": "unknown_plan_opcode",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "aa7d4f109fde6e69c5ed32fb76f63f5bab3b929d72405e7d59fd8adb2faa66f5",
+  "word_edits_after_magic": {
+    "287": 13
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "action_plan[1]: unsupported opcode 13"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\unknown_plan_opcode.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\unknown_plan_opcode.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.016215999999985797
+  },
+  "artifacts": {
+    "input": "unknown_plan_opcode.bin",
+    "python": "unknown_plan_opcode.python.json",
+    "stdout": "unknown_plan_opcode.stdout.json",
+    "stderr": "unknown_plan_opcode.stderr.txt"
+  }
+}

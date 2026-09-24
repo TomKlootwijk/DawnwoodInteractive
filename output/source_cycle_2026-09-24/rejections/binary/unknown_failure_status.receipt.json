@@ -1,0 +1,40 @@
+{
+  "case": "unknown_failure_status",
+  "expected": "reject",
+  "matched_expectation": true,
+  "input_sha256": "da3b93fe9346a9cb9e26c70cc3df6c497322cd1f9bd4299a74158f8523b10416",
+  "word_edits_after_magic": {
+    "328": 12,
+    "329": 2,
+    "330": 4294967295,
+    "331": 3,
+    "332": 2
+  },
+  "python": {
+    "rejected": true,
+    "error_type": "ValueError",
+    "error": "instances[0]: unknown failure status 12"
+  },
+  "native": {
+    "exit_code": 2,
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\unknown_failure_status.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\rejections\\binary\\unknown_failure_status.output.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "0"
+    ],
+    "elapsed_seconds": 0.012611900001502363
+  },
+  "artifacts": {
+    "input": "unknown_failure_status.bin",
+    "python": "unknown_failure_status.python.json",
+    "stdout": "unknown_failure_status.stdout.json",
+    "stderr": "unknown_failure_status.stderr.txt"
+  }
+}
