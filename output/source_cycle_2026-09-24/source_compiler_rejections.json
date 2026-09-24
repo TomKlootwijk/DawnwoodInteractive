@@ -1,0 +1,82 @@
+[
+  {
+    "name": "unknown_phase",
+    "rejected": true,
+    "error": "Unknown, duplicate, missing or unexecutable source phase"
+  },
+  {
+    "name": "missing_phase",
+    "rejected": true,
+    "error": "Unknown, duplicate, missing or unexecutable source phase"
+  },
+  {
+    "name": "duplicate_phase",
+    "rejected": true,
+    "error": "Unknown, duplicate, missing or unexecutable source phase"
+  },
+  {
+    "name": "invalid_order",
+    "rejected": true,
+    "error": "Cycle phase surface_return precedes required dependencies ['geometry_divergence', 'log_polar', 'operator_mutation', 'rgba_crystal', 'rk4_four_slots', 'selected_operator', 'split_and_hinge']"
+  },
+  {
+    "name": "negative_Yup",
+    "rejected": true,
+    "error": "Bounded Y-up count must be an integer in0..8"
+  },
+  {
+    "name": "fractional_Yup",
+    "rejected": true,
+    "error": "Bounded Y-up count must be an integer in0..8"
+  },
+  {
+    "name": "bool_Yup",
+    "rejected": true,
+    "error": "Bounded Y-up count must be an integer in0..8"
+  },
+  {
+    "name": "changed_body",
+    "rejected": true,
+    "error": "Unbound changed source declaration: hadamard.body"
+  },
+  {
+    "name": "changed_field",
+    "rejected": true,
+    "error": "Unbound changed source declaration: hadamard.field"
+  },
+  {
+    "name": "changed_placement",
+    "rejected": true,
+    "error": "Unbound changed source declaration: hadamard.placement"
+  },
+  {
+    "name": "unknown_parameters",
+    "rejected": true,
+    "error": "Source numerical parameters for hadamard need an explicit edition binding"
+  },
+  {
+    "name": "changed_source_index",
+    "rejected": true,
+    "error": "Source record 1 has an unbound index/key change"
+  },
+  {
+    "name": "temperature_inverse_role",
+    "rejected": true,
+    "error": "This edition binds T as an actual2x2 transformation, not temperature or another role"
+  },
+  {
+    "name": "zero_seed_pair",
+    "rejected": true,
+    "error": "Each source complex seed must be nonzero for PHI"
+  },
+  {
+    "name": "short_seed",
+    "rejected": true,
+    "error": "Source seed.wavefront must contain exactly four finite real components"
+  },
+  {
+    "name": "boolean_seed",
+    "rejected": true,
+    "error": "source seed.wavefront: expected a finite numeric value, not a Boolean or other type"
+  }
+]

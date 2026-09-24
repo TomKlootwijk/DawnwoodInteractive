@@ -1,0 +1,128 @@
+{
+  "scope": "Actual frozen cycle_v0.1 body expressions independently checked by mathematical component diagnostics; situated field/placement and full action tape intentionally outside these probes.",
+  "source_cycle_sha256": "c0d3586844c5787784447f60944effa782d90868a5785399f114c245f4d8424c",
+  "groups": {
+    "inverse": {
+      "lanes": 516,
+      "cpu_gpu_byte_identical": true,
+      "all_status_ok": true,
+      "failures": 0,
+      "max_absolute_error": 1.340238193758836e-07,
+      "max_scaled_error": 0.004339809707078632,
+      "max_identity_residual": 1.5096284045057473e-07
+    },
+    "rk4_y_up_disabled": {
+      "lanes": 259,
+      "cpu_gpu_byte_identical": true,
+      "all_status_ok": true,
+      "failures": 0,
+      "max_absolute_error": 1.2913112268364557e-07,
+      "max_scaled_error": 0.003338354413673886
+    },
+    "rk4_y_up_twice": {
+      "lanes": 259,
+      "cpu_gpu_byte_identical": true,
+      "all_status_ok": true,
+      "failures": 0,
+      "max_absolute_error": 1.2913112268364557e-07,
+      "max_scaled_error": 0.003905550664814324
+    },
+    "pinion_forward": {
+      "lanes": 212,
+      "cpu_gpu_byte_identical": true,
+      "all_status_ok": true,
+      "failures": 0,
+      "max_absolute_error": 1.1848766812150302e-07,
+      "max_scaled_error": 0.011565974062546272,
+      "all_chart_and_orientation_valid": true
+    },
+    "pinion_reverse": {
+      "lanes": 212,
+      "cpu_gpu_byte_identical": true,
+      "all_status_ok": true,
+      "failures": 0,
+      "max_absolute_error": 1.1848766812150302e-07,
+      "max_scaled_error": 0.009436089227731304,
+      "all_chart_and_orientation_valid": true
+    },
+    "geometry": {
+      "lanes": 1669,
+      "cpu_gpu_byte_identical": true,
+      "all_status_ok": true,
+      "failures": 0,
+      "max_absolute_error": 2.4612869231610546e-07,
+      "max_scaled_error": 0.007850633743085013
+    },
+    "transform_inverse": {
+      "lanes": 257,
+      "cpu_gpu_byte_identical": true,
+      "all_status_ok": true,
+      "failures": 0,
+      "max_absolute_error": 1.2652596226292445e-07,
+      "max_scaled_error": 0.004511484429326203,
+      "max_identity_residual": 1.0809242301235145e-07
+    }
+  },
+  "source_cycle_unchanged": true,
+  "binary_sha256": "d6e08b44edf484571ad5d49954a8b3797c71e5bfc80ec4ce8cde795e8d865d29",
+  "shader_sha256": "9e90c89135a93a115db1ceaea5475338a389f8ab41ab7e64165751d4410f6098",
+  "random_seed": "0xD51D2026",
+  "vulkan_validation": [
+    {
+      "group": "geometry",
+      "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "group": "inverse",
+      "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "group": "pinion_forward",
+      "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "group": "pinion_reverse",
+      "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "group": "rk4_y_up_disabled",
+      "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "group": "rk4_y_up_twice",
+      "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "group": "transform_inverse",
+      "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    }
+  ],
+  "all_actual_function_asts_match_final_cycle_definition": true,
+  "final_cycle_definition_sha256": "edaa069c7f019e105ce13c2ccc72b766d2c76a740b8006163a6aad74e17c911e",
+  "rk_event_comparison": {
+    "first_three_slopes_all_bitwise_equal": true,
+    "lanes_with_changed_k4": 259,
+    "lanes_with_changed_result": 259
+  }
+}

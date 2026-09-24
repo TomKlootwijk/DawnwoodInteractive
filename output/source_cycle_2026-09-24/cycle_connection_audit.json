@@ -1,0 +1,83 @@
+{
+  "Y_up_zero_is_declared_intervention": true,
+  "actual_cycle_k1_k2_k3_unchanged": true,
+  "actual_cycle_k4_changed_instances": 17,
+  "returned_chart_to_next_K_active": true,
+  "equivalent_Klein_representatives": 15,
+  "equivalent_returned_images_exact": true,
+  "routes_and_faults": [
+    {
+      "status": 0,
+      "selected": 7
+    },
+    {
+      "status": 0,
+      "selected": 7
+    },
+    {
+      "status": 0,
+      "selected": 8
+    },
+    {
+      "status": 0,
+      "selected": 8
+    },
+    {
+      "status": 0,
+      "selected": 9
+    },
+    {
+      "status": 0,
+      "selected": 9
+    },
+    {
+      "status": 0,
+      "selected": 10
+    },
+    {
+      "status": 0,
+      "selected": 10
+    },
+    {
+      "status": 0,
+      "selected": 11
+    },
+    {
+      "status": 0,
+      "selected": 11
+    },
+    {
+      "status": 0,
+      "selected": 12
+    },
+    {
+      "status": 0,
+      "selected": 12
+    },
+    {
+      "kind": "unsupported_role",
+      "status": 11,
+      "phase": 2
+    },
+    {
+      "kind": "invalid_depth",
+      "status": 1,
+      "phase": 2
+    },
+    {
+      "kind": "zero_complex",
+      "status": 1,
+      "phase": 2
+    },
+    {
+      "kind": "zero_interval",
+      "status": 1,
+      "phase": 1
+    },
+    {
+      "kind": "invalid_jitter",
+      "status": 1,
+      "phase": 1
+    }
+  ]
+}

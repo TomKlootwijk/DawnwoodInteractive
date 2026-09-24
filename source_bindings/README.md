@@ -1,5 +1,23 @@
 # Explicit numerical source bindings
 
+[cycle_v0.1.json](cycle_v0.1.json) contains the **authored eight-stage source
+cycle** for DWI-RESIDENT-0.2: 31 resident records, 34 body families and 55 explicit
+expression functions. `Dawnwood-Cycle.cmd compile --output output/my_cycle`
+reads the actual source catalogue, cycle and wavefront seed, validates their
+supported meanings, and produces a complete executable checkpoint. `run` and
+`inspect` use the same launcher. [The edition contract](../docs/SOURCE_CYCLE_BINDING.md)
+and [source audit](../output/source_cycle_2026-09-24/SOURCE_FIDELITY_AUDIT.md)
+state the equations, direct dependencies and limits. The
+[cycle campaign](../output/source_cycle_2026-09-24/REPORT.md) records actual
+CPU/GPU results. Domain specialization remains the next application layer.
+
+The large generated JSON is deliberately explicit; the compact authoring source
+is [source_cycle.py](../local_lab/source_cycle.py). Editing a generated function
+body and compiling it with `Dawnwood-Resident2.cmd` changes executable behavior.
+Use `Dawnwood-Cycle.cmd generate` to regenerate the declared edition, which
+replaces its named generated JSON. Unsupported source-slot edits are rejected;
+they do not silently acquire an old numerical law.
+
 [resident_v0.1.json](resident_v0.1.json) adds **DWI-RESIDENT-0.1**. Its selected
 Hadamard, pinion and mutation records retain live executable handles, parameters
 and anchors. The old controllers compute replacements, including the mutator's
@@ -21,8 +39,7 @@ states the formulas, units, source relationships and measured limits.
 .\Dawnwood-Apply.cmd inspect output/my_situated/gpu.bin --manifest output/my_situated/manifest.json
 ```
 
-This composes one situated action. The source cycle and resident mutation still
-need integration. The body-only command below retains its narrower scope.
+This composes one situated action. The full authored cycle above supplies recurrence and resident mutation. The body-only command below retains its narrower scope.
 
 [xir_v0.1.json](xir_v0.1.json) contains executable expression definitions for
 three source-named body overloads. These expressions compile to the same finite

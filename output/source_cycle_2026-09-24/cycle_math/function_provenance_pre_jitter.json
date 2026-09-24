@@ -1,0 +1,110 @@
+[
+  {
+    "group": "geometry",
+    "function": "T_shape_role0",
+    "matches_final_cycle_definition": true,
+    "function_sha256": "880bc0f40241d2d63b18781e5c51aa4bef6bb6a680a3b7cd75c981e7b080b881"
+  },
+  {
+    "group": "geometry",
+    "function": "pyramid_role0",
+    "matches_final_cycle_definition": true,
+    "function_sha256": "8f667e33279cccec556c15fb4b00acdbcd650078c7b6727390d0c3a8915ffb95"
+  },
+  {
+    "group": "geometry",
+    "function": "circle_role0",
+    "matches_final_cycle_definition": true,
+    "function_sha256": "a122d9f31094412677e921717c2df62d1e39917a6eba90c89c16542aa62ef2eb"
+  },
+  {
+    "group": "geometry",
+    "function": "cone_role0",
+    "matches_final_cycle_definition": true,
+    "function_sha256": "77b9aca4ded3021269c1bb928cc0ce9d30c0be8e427fcdc503fae3c1482f12ab"
+  },
+  {
+    "group": "geometry",
+    "function": "sphere_role0",
+    "matches_final_cycle_definition": true,
+    "function_sha256": "1c0f9bd770eb91e0d312eaa6229bf3f3e1f5e4bae2a4cc1047da2ed9d9eea13f"
+  },
+  {
+    "group": "geometry",
+    "function": "apex_role0",
+    "matches_final_cycle_definition": true,
+    "function_sha256": "515a88ee12f6a12141fcbe539961e37722a17fce68909f19f894d5b9e06a4051"
+  },
+  {
+    "group": "inverse",
+    "function": "inverse_T_role0",
+    "matches_final_cycle_definition": true,
+    "function_sha256": "acd7b51f017f3230504148622f42aa95f42b93e17a460a6107584ef65f96aece"
+  },
+  {
+    "group": "pinion_forward",
+    "function": "pinion_role0",
+    "matches_final_cycle_definition": true,
+    "function_sha256": "c9e491a789b4232e5bccd27da26e95cfc02de3f30fe1d08b2b1a55dfb9cfa798"
+  },
+  {
+    "group": "pinion_reverse",
+    "function": "pinion_reverse_role0",
+    "matches_final_cycle_definition": true,
+    "function_sha256": "feff9a0d1156353ab0663ca7164bdb5cce6a6cdef76939babe2cd7f0dfc52b2a"
+  },
+  {
+    "group": "rk4_y_up_disabled",
+    "function": "rk4_role1",
+    "matches_final_cycle_definition": true,
+    "function_sha256": "299814556ea1108e53c19a54f22d3991502c864caee8e2fd8404ca96c6b019eb"
+  },
+  {
+    "group": "rk4_y_up_disabled",
+    "function": "rk4_role2",
+    "matches_final_cycle_definition": true,
+    "function_sha256": "1d204f49497643da12da7d7e7a08c148adec994a13bca0b83d1db08bc38365fb"
+  },
+  {
+    "group": "rk4_y_up_disabled",
+    "function": "rk_stage",
+    "matches_final_cycle_definition": true,
+    "function_sha256": "e0ae5594721e3c06d6b9fd3f57041729e25ffe5de2c2468207b18732cdfb609b"
+  },
+  {
+    "group": "rk4_y_up_twice",
+    "function": "rk4_role1",
+    "matches_final_cycle_definition": true,
+    "function_sha256": "299814556ea1108e53c19a54f22d3991502c864caee8e2fd8404ca96c6b019eb"
+  },
+  {
+    "group": "rk4_y_up_twice",
+    "function": "rk4_role2",
+    "matches_final_cycle_definition": true,
+    "function_sha256": "1d204f49497643da12da7d7e7a08c148adec994a13bca0b83d1db08bc38365fb"
+  },
+  {
+    "group": "rk4_y_up_twice",
+    "function": "rk_stage",
+    "matches_final_cycle_definition": true,
+    "function_sha256": "e0ae5594721e3c06d6b9fd3f57041729e25ffe5de2c2468207b18732cdfb609b"
+  },
+  {
+    "group": "rk4_y_up_twice",
+    "function": "y_up_role0",
+    "matches_final_cycle_definition": true,
+    "function_sha256": "c47a025bb5df21963beeebdf2af15437bd70371dafb34144a641a71200750eb3"
+  },
+  {
+    "group": "transform_inverse",
+    "function": "T_transform_role0",
+    "matches_final_cycle_definition": true,
+    "function_sha256": "936258186c47b2fc95c5357bea6298877d109d80d5b2d1fec4ffc99caa92533a"
+  },
+  {
+    "group": "transform_inverse",
+    "function": "inverse_T_role0",
+    "matches_final_cycle_definition": true,
+    "function_sha256": "acd7b51f017f3230504148622f42aa95f42b93e17a460a6107584ef65f96aece"
+  }
+]

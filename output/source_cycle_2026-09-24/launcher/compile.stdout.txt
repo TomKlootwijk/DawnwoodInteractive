@@ -1,0 +1,8 @@
+{
+  "output": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\launcher\\compiled",
+  "profile": "DWI-RESIDENT-0.2",
+  "program_sha256": "f746ede446a773057084dc6a01f296100c35531fa676a1a71ea41863c4501dc5",
+  "bytes": 133860,
+  "source_cycle_lowered": true,
+  "domain_application_implemented": false
+}

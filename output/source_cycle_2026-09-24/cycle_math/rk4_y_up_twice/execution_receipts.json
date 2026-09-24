@@ -1,0 +1,48 @@
+[
+  {
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\cycle_math\\rk4_y_up_twice\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\cycle_math\\rk4_y_up_twice\\cpu.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "1"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.01847672462463379,
+    "binary_sha256": "d6e08b44edf484571ad5d49954a8b3797c71e5bfc80ec4ce8cde795e8d865d29",
+    "shader_sha256": "9e90c89135a93a115db1ceaea5475338a389f8ab41ab7e64165751d4410f6098",
+    "validation_env": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin"
+    }
+  },
+  {
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\cycle_math\\rk4_y_up_twice\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_cycle_2026-09-24\\cycle_math\\rk4_y_up_twice\\vulkan.bin",
+      "--backend",
+      "vulkan",
+      "--epochs",
+      "1",
+      "--device",
+      "5070 Ti"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.2715938091278076,
+    "binary_sha256": "d6e08b44edf484571ad5d49954a8b3797c71e5bfc80ec4ce8cde795e8d865d29",
+    "shader_sha256": "9e90c89135a93a115db1ceaea5475338a389f8ab41ab7e64165751d4410f6098",
+    "validation_env": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin"
+    }
+  }
+]

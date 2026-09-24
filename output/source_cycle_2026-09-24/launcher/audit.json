@@ -1,0 +1,23 @@
+{
+  "compile_command": [
+    "cmd",
+    "/c",
+    "Dawnwood-Cycle.cmd",
+    "compile",
+    "--output",
+    "output\\source_cycle_2026-09-24\\launcher\\compiled"
+  ],
+  "compile_exit": 0,
+  "compiled_program_equals_final_baseline": true,
+  "inspect_command": [
+    "cmd",
+    "/c",
+    "Dawnwood-Cycle.cmd",
+    "inspect",
+    "output\\source_cycle_2026-09-24\\cycle_runs\\epochs_1\\cpu.bin",
+    "--manifest",
+    "output\\source_cycle_2026-09-24\\launcher\\compiled\\manifest.json"
+  ],
+  "inspect_exit": 0,
+  "named_states_and_record_definitions_present": true
+}

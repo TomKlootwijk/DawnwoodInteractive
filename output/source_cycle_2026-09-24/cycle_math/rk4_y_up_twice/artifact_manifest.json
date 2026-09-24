@@ -1,0 +1,56 @@
+{
+  "files": {
+    "cpu.bin": {
+      "bytes": 90376,
+      "sha256": "98d19c0e7a9102985a9dbc268a2c134e705df0b9f9697cc483c845d411bac6ed"
+    },
+    "cpu.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cpu.stdout.log": {
+      "bytes": 1103,
+      "sha256": "cac7ebff6f962e9c2db4d013c5d5dd649cfbcede57057eead953323e06758331"
+    },
+    "definition.json": {
+      "bytes": 213023,
+      "sha256": "fa25ea81aaf4ce258dfee5c7c832ae596e292a595c40b6c02da5050d6c7aefe2"
+    },
+    "execution_receipts.json": {
+      "bytes": 2001,
+      "sha256": "e41e6b18b2367ecc0a2cf1140be93b666ad56f0bd9c31855cf65be97c1f3cf82"
+    },
+    "independent_audit.json": {
+      "bytes": 10817,
+      "sha256": "003948f2e5a1bc3314c3fd6c200807324414085a28dacef57990c19bec24e956"
+    },
+    "independent_binary64_references.json": {
+      "bytes": 138240,
+      "sha256": "ea71c20c18175bedc3a6cbb55480774b968aca99575d2f125ebcc0b40b9b6d5d"
+    },
+    "manifest.json": {
+      "bytes": 45340,
+      "sha256": "d4c60114c13a123eb29a712675897a77cd548a7f56f6860533ef441e8223e4ba"
+    },
+    "program.bin": {
+      "bytes": 90376,
+      "sha256": "06ad80be50cc0c295aa0f17c0783aebb971dfe941835cedc885d6228da9485cf"
+    },
+    "source_model.json": {
+      "bytes": 13654,
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9"
+    },
+    "vulkan.bin": {
+      "bytes": 90376,
+      "sha256": "98d19c0e7a9102985a9dbc268a2c134e705df0b9f9697cc483c845d411bac6ed"
+    },
+    "vulkan.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "vulkan.stdout.log": {
+      "bytes": 1234,
+      "sha256": "8f800c351f40d6aa13d3f9c0adc2abfa95024c0436fd9c66e0e7e388677c5f24"
+    }
+  }
+}

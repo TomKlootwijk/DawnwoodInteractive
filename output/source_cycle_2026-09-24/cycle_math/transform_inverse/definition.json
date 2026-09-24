@@ -1,0 +1,6081 @@
+{
+  "profile": "DWI-RESIDENT-0.2",
+  "functions": {
+    "diagnostic_next_generation": {
+      "signature": 900001,
+      "binding": {
+        "inputs": [
+          "g"
+        ],
+        "outputs": {
+          "g": {
+            "op": "add",
+            "args": [
+              {
+                "input": "g"
+              },
+              1
+            ]
+          }
+        }
+      }
+    },
+    "diagnostic_uncalled_slot": {
+      "signature": 900002,
+      "binding": {
+        "inputs": [],
+        "outputs": {
+          "zero": 0
+        }
+      }
+    },
+    "T_transform_role0": {
+      "signature": 122,
+      "binding": {
+        "inputs": [
+          "ar",
+          "ai",
+          "br",
+          "bi",
+          "crystal_ar",
+          "field_distance"
+        ],
+        "outputs": {
+          "t00": {
+            "op": "add",
+            "args": [
+              1,
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "op": "mul",
+                    "args": [
+                      0.1,
+                      {
+                        "op": "mul",
+                        "args": [
+                          {
+                            "op": "max",
+                            "args": [
+                              {
+                                "op": "abs",
+                                "args": [
+                                  {
+                                    "input": "ar"
+                                  }
+                                ]
+                              },
+                              {
+                                "op": "abs",
+                                "args": [
+                                  {
+                                    "input": "ai"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "op": "sqrt",
+                            "args": [
+                              {
+                                "op": "add",
+                                "args": [
+                                  1,
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      {
+                                        "op": "div",
+                                        "args": [
+                                          {
+                                            "op": "min",
+                                            "args": [
+                                              {
+                                                "op": "abs",
+                                                "args": [
+                                                  {
+                                                    "input": "ar"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "abs",
+                                                "args": [
+                                                  {
+                                                    "input": "ai"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "op": "select",
+                                            "args": [
+                                              {
+                                                "op": "less",
+                                                "args": [
+                                                  0,
+                                                  {
+                                                    "op": "max",
+                                                    "args": [
+                                                      {
+                                                        "op": "abs",
+                                                        "args": [
+                                                          {
+                                                            "input": "ar"
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "op": "abs",
+                                                        "args": [
+                                                          {
+                                                            "input": "ai"
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "max",
+                                                "args": [
+                                                  {
+                                                    "op": "abs",
+                                                    "args": [
+                                                      {
+                                                        "input": "ar"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "op": "abs",
+                                                    "args": [
+                                                      {
+                                                        "input": "ai"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              1
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "op": "div",
+                                        "args": [
+                                          {
+                                            "op": "min",
+                                            "args": [
+                                              {
+                                                "op": "abs",
+                                                "args": [
+                                                  {
+                                                    "input": "ar"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "abs",
+                                                "args": [
+                                                  {
+                                                    "input": "ai"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "op": "select",
+                                            "args": [
+                                              {
+                                                "op": "less",
+                                                "args": [
+                                                  0,
+                                                  {
+                                                    "op": "max",
+                                                    "args": [
+                                                      {
+                                                        "op": "abs",
+                                                        "args": [
+                                                          {
+                                                            "input": "ar"
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "op": "abs",
+                                                        "args": [
+                                                          {
+                                                            "input": "ai"
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "max",
+                                                "args": [
+                                                  {
+                                                    "op": "abs",
+                                                    "args": [
+                                                      {
+                                                        "input": "ar"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "op": "abs",
+                                                    "args": [
+                                                      {
+                                                        "input": "ai"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              1
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      0.01,
+                      {
+                        "op": "abs",
+                        "args": [
+                          {
+                            "input": "field_distance"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "t01": {
+            "op": "mul",
+            "args": [
+              0.02,
+              {
+                "op": "sin",
+                "args": [
+                  {
+                    "input": "crystal_ar"
+                  }
+                ]
+              }
+            ]
+          },
+          "t10": {
+            "op": "mul",
+            "args": [
+              0.02,
+              {
+                "op": "sin",
+                "args": [
+                  {
+                    "input": "crystal_ar"
+                  }
+                ]
+              }
+            ]
+          },
+          "t11": {
+            "op": "add",
+            "args": [
+              1,
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "op": "mul",
+                    "args": [
+                      0.1,
+                      {
+                        "op": "mul",
+                        "args": [
+                          {
+                            "op": "max",
+                            "args": [
+                              {
+                                "op": "abs",
+                                "args": [
+                                  {
+                                    "input": "br"
+                                  }
+                                ]
+                              },
+                              {
+                                "op": "abs",
+                                "args": [
+                                  {
+                                    "input": "bi"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "op": "sqrt",
+                            "args": [
+                              {
+                                "op": "add",
+                                "args": [
+                                  1,
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      {
+                                        "op": "div",
+                                        "args": [
+                                          {
+                                            "op": "min",
+                                            "args": [
+                                              {
+                                                "op": "abs",
+                                                "args": [
+                                                  {
+                                                    "input": "br"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "abs",
+                                                "args": [
+                                                  {
+                                                    "input": "bi"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "op": "select",
+                                            "args": [
+                                              {
+                                                "op": "less",
+                                                "args": [
+                                                  0,
+                                                  {
+                                                    "op": "max",
+                                                    "args": [
+                                                      {
+                                                        "op": "abs",
+                                                        "args": [
+                                                          {
+                                                            "input": "br"
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "op": "abs",
+                                                        "args": [
+                                                          {
+                                                            "input": "bi"
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "max",
+                                                "args": [
+                                                  {
+                                                    "op": "abs",
+                                                    "args": [
+                                                      {
+                                                        "input": "br"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "op": "abs",
+                                                    "args": [
+                                                      {
+                                                        "input": "bi"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              1
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "op": "div",
+                                        "args": [
+                                          {
+                                            "op": "min",
+                                            "args": [
+                                              {
+                                                "op": "abs",
+                                                "args": [
+                                                  {
+                                                    "input": "br"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "abs",
+                                                "args": [
+                                                  {
+                                                    "input": "bi"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "op": "select",
+                                            "args": [
+                                              {
+                                                "op": "less",
+                                                "args": [
+                                                  0,
+                                                  {
+                                                    "op": "max",
+                                                    "args": [
+                                                      {
+                                                        "op": "abs",
+                                                        "args": [
+                                                          {
+                                                            "input": "br"
+                                                          }
+                                                        ]
+                                                      },
+                                                      {
+                                                        "op": "abs",
+                                                        "args": [
+                                                          {
+                                                            "input": "bi"
+                                                          }
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "max",
+                                                "args": [
+                                                  {
+                                                    "op": "abs",
+                                                    "args": [
+                                                      {
+                                                        "input": "br"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "op": "abs",
+                                                    "args": [
+                                                      {
+                                                        "input": "bi"
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              1
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      0.01,
+                      {
+                        "op": "abs",
+                        "args": [
+                          {
+                            "input": "field_distance"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "source": "Unified v0.2 source relationship; explicitly authored cycle_v0.1 numerical binding",
+        "meaning": "Explicit symmetric positive-definite2x2 transformation; diagonals>=1, absolute off-diagonal<=.02.",
+        "status": "Authored numerical law; execution evidence recorded separately."
+      }
+    },
+    "inverse_T_role0": {
+      "signature": 123,
+      "binding": {
+        "inputs": [
+          "t00",
+          "t01",
+          "t10",
+          "t11",
+          "field_distance"
+        ],
+        "outputs": {
+          "a00": {
+            "op": "select",
+            "args": [
+              {
+                "op": "less",
+                "args": [
+                  {
+                    "input": "field_distance"
+                  },
+                  0
+                ]
+              },
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "input": "t11"
+                  },
+                  {
+                    "op": "sub",
+                    "args": [
+                      {
+                        "op": "mul",
+                        "args": [
+                          {
+                            "input": "t00"
+                          },
+                          {
+                            "input": "t11"
+                          }
+                        ]
+                      },
+                      {
+                        "op": "mul",
+                        "args": [
+                          {
+                            "input": "t01"
+                          },
+                          {
+                            "input": "t10"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "op": "div",
+                    "args": [
+                      1,
+                      {
+                        "input": "t00"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "div",
+                    "args": [
+                      {
+                        "op": "mul",
+                        "args": [
+                          {
+                            "input": "t01"
+                          },
+                          {
+                            "input": "t10"
+                          }
+                        ]
+                      },
+                      {
+                        "op": "mul",
+                        "args": [
+                          {
+                            "op": "mul",
+                            "args": [
+                              {
+                                "input": "t00"
+                              },
+                              {
+                                "input": "t00"
+                              }
+                            ]
+                          },
+                          {
+                            "op": "sub",
+                            "args": [
+                              {
+                                "input": "t11"
+                              },
+                              {
+                                "op": "div",
+                                "args": [
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      {
+                                        "input": "t10"
+                                      },
+                                      {
+                                        "input": "t01"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "input": "t00"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "a01": {
+            "op": "select",
+            "args": [
+              {
+                "op": "less",
+                "args": [
+                  {
+                    "input": "field_distance"
+                  },
+                  0
+                ]
+              },
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "neg",
+                    "args": [
+                      {
+                        "input": "t01"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "sub",
+                    "args": [
+                      {
+                        "op": "mul",
+                        "args": [
+                          {
+                            "input": "t00"
+                          },
+                          {
+                            "input": "t11"
+                          }
+                        ]
+                      },
+                      {
+                        "op": "mul",
+                        "args": [
+                          {
+                            "input": "t01"
+                          },
+                          {
+                            "input": "t10"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "neg",
+                    "args": [
+                      {
+                        "input": "t01"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "input": "t00"
+                      },
+                      {
+                        "op": "sub",
+                        "args": [
+                          {
+                            "input": "t11"
+                          },
+                          {
+                            "op": "div",
+                            "args": [
+                              {
+                                "op": "mul",
+                                "args": [
+                                  {
+                                    "input": "t10"
+                                  },
+                                  {
+                                    "input": "t01"
+                                  }
+                                ]
+                              },
+                              {
+                                "input": "t00"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "a10": {
+            "op": "select",
+            "args": [
+              {
+                "op": "less",
+                "args": [
+                  {
+                    "input": "field_distance"
+                  },
+                  0
+                ]
+              },
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "neg",
+                    "args": [
+                      {
+                        "input": "t10"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "sub",
+                    "args": [
+                      {
+                        "op": "mul",
+                        "args": [
+                          {
+                            "input": "t00"
+                          },
+                          {
+                            "input": "t11"
+                          }
+                        ]
+                      },
+                      {
+                        "op": "mul",
+                        "args": [
+                          {
+                            "input": "t01"
+                          },
+                          {
+                            "input": "t10"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "op": "neg",
+                    "args": [
+                      {
+                        "input": "t10"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "input": "t00"
+                      },
+                      {
+                        "op": "sub",
+                        "args": [
+                          {
+                            "input": "t11"
+                          },
+                          {
+                            "op": "div",
+                            "args": [
+                              {
+                                "op": "mul",
+                                "args": [
+                                  {
+                                    "input": "t10"
+                                  },
+                                  {
+                                    "input": "t01"
+                                  }
+                                ]
+                              },
+                              {
+                                "input": "t00"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "a11": {
+            "op": "select",
+            "args": [
+              {
+                "op": "less",
+                "args": [
+                  {
+                    "input": "field_distance"
+                  },
+                  0
+                ]
+              },
+              {
+                "op": "div",
+                "args": [
+                  {
+                    "input": "t00"
+                  },
+                  {
+                    "op": "sub",
+                    "args": [
+                      {
+                        "op": "mul",
+                        "args": [
+                          {
+                            "input": "t00"
+                          },
+                          {
+                            "input": "t11"
+                          }
+                        ]
+                      },
+                      {
+                        "op": "mul",
+                        "args": [
+                          {
+                            "input": "t01"
+                          },
+                          {
+                            "input": "t10"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "div",
+                "args": [
+                  1,
+                  {
+                    "op": "sub",
+                    "args": [
+                      {
+                        "input": "t11"
+                      },
+                      {
+                        "op": "div",
+                        "args": [
+                          {
+                            "op": "mul",
+                            "args": [
+                              {
+                                "input": "t10"
+                              },
+                              {
+                                "input": "t01"
+                              }
+                            ]
+                          },
+                          {
+                            "input": "t00"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "source": "Unified v0.2 source relationship; explicitly authored cycle_v0.1 numerical binding",
+        "meaning": "Actual2x2 inverse. Field selects adjugate or Schur evaluation, mathematically the same inverse; eager branches require positive pivot/determinant.",
+        "status": "Authored numerical law; execution evidence recorded separately.",
+        "requires": [
+          {
+            "op": "less",
+            "args": [
+              1e-06,
+              {
+                "input": "t00"
+              }
+            ]
+          },
+          {
+            "op": "less",
+            "args": [
+              1e-06,
+              {
+                "op": "sub",
+                "args": [
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "input": "t00"
+                      },
+                      {
+                        "input": "t11"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "input": "t01"
+                      },
+                      {
+                        "input": "t10"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "op": "less",
+            "args": [
+              1e-06,
+              {
+                "op": "sub",
+                "args": [
+                  {
+                    "input": "t11"
+                  },
+                  {
+                    "op": "div",
+                    "args": [
+                      {
+                        "op": "mul",
+                        "args": [
+                          {
+                            "input": "t10"
+                          },
+                          {
+                            "input": "t01"
+                          }
+                        ]
+                      },
+                      {
+                        "input": "t00"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "families": {
+    "diagnostic_T_transform": {
+      "interface": 1,
+      "methods": {
+        "0": "T_transform_role0"
+      }
+    },
+    "diagnostic_inverse_T": {
+      "interface": 2,
+      "methods": {
+        "0": "inverse_T_role0"
+      }
+    }
+  },
+  "records": [
+    {
+      "key": "T_transform",
+      "body": "diagnostic_T_transform",
+      "field": "diagnostic_uncalled_slot",
+      "placement": "diagnostic_uncalled_slot",
+      "source_slots": {
+        "body": {
+          "symbol": "T_transformation"
+        },
+        "field": {
+          "symbol": "T_transformation_SDF"
+        },
+        "placement": {
+          "symbol": "Phyllotaxis_on_Klein"
+        }
+      },
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "key": "inverse_T",
+      "body": "diagnostic_inverse_T",
+      "field": "diagnostic_uncalled_slot",
+      "placement": "diagnostic_uncalled_slot",
+      "source_slots": {
+        "body": {
+          "symbol": "Inverse_T"
+        },
+        "field": {
+          "symbol": "Inverse_T_SDF"
+        },
+        "placement": {
+          "symbol": "Phyllotaxis_on_Klein"
+        }
+      },
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "state_names": [
+    "ar",
+    "ai",
+    "br",
+    "bi",
+    "crystal_ar",
+    "field_distance",
+    "t00",
+    "t01",
+    "t10",
+    "t11",
+    "a00",
+    "a01",
+    "a10",
+    "a11"
+  ],
+  "mutation_plan": [
+    [
+      2,
+      0,
+      4294967295,
+      0,
+      24,
+      0,
+      0,
+      0
+    ],
+    [
+      3,
+      0,
+      3,
+      32,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      5,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      5,
+      3,
+      32,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      5,
+      4,
+      4,
+      20,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "action_plan": [
+    [
+      1,
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      200,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      201,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      202,
+      2,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      203,
+      3,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      204,
+      4,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      205,
+      5,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      4,
+      0,
+      0,
+      1,
+      200,
+      32,
+      122,
+      0
+    ],
+    [
+      10,
+      200,
+      32,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      201,
+      33,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      202,
+      34,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      203,
+      35,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      204,
+      5,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      4,
+      1,
+      0,
+      1,
+      200,
+      40,
+      123,
+      0
+    ],
+    [
+      6,
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      6,
+      32,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      7,
+      33,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      8,
+      34,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      9,
+      35,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      10,
+      40,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      11,
+      41,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      12,
+      42,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      13,
+      43,
+      1,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "instances": [
+    {
+      "state": {
+        "ar": -0.04117413888206123,
+        "ai": 0.9062492437441056,
+        "br": -0.847234421640986,
+        "bi": 1.2936312377917978,
+        "crystal_ar": 1.4080738353018427,
+        "field_distance": 0.6462106486285473,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.790174158697655,
+        "ai": 1.648651520206243,
+        "br": -0.5402221374691814,
+        "bi": -1.0709638264208272,
+        "crystal_ar": -2.5645165079478556,
+        "field_distance": -0.019130843575675183,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.2442975717788758,
+        "ai": 1.568817743363395,
+        "br": 1.7033467793497978,
+        "bi": 1.2891420419570148,
+        "crystal_ar": 0.7351105965491398,
+        "field_distance": -1.997226182898535,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.035365570616712194,
+        "ai": 1.435491422306033,
+        "br": -0.1762893086456394,
+        "bi": 1.372578859463402,
+        "crystal_ar": -1.2681071177642809,
+        "field_distance": 1.3881945289922855,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.4173710147091967,
+        "ai": -1.5188910594071503,
+        "br": 0.895103036702507,
+        "bi": -0.541398497821945,
+        "crystal_ar": -1.0719907502055275,
+        "field_distance": -0.3252800665041815,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.8057813268721099,
+        "ai": -1.1717696382327611,
+        "br": 0.2750815059126559,
+        "bi": 1.6495563738116577,
+        "crystal_ar": -1.2766474617639636,
+        "field_distance": -0.06131320865952805,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.02211714040594126,
+        "ai": -1.0696081465369511,
+        "br": 1.3284743572805708,
+        "bi": -1.827295698625976,
+        "crystal_ar": 0.8465812847622611,
+        "field_distance": -1.206976870855347,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.7579815878791276,
+        "ai": -1.7485934117510764,
+        "br": 0.1931795204122313,
+        "bi": 0.11477567565696845,
+        "crystal_ar": 1.1760898228135994,
+        "field_distance": 1.110837772030905,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.28975905314162,
+        "ai": -1.6595454238288152,
+        "br": -0.6176539702363604,
+        "bi": 1.723042431008372,
+        "crystal_ar": 1.2697534689935661,
+        "field_distance": 0.11255932317777662,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.430131024781642,
+        "ai": 0.4797791930893598,
+        "br": 1.7181438947041268,
+        "bi": 1.7895639883113774,
+        "crystal_ar": -1.2500242406600834,
+        "field_distance": -0.11344102690458291,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.5105717369494402,
+        "ai": -0.9112892299015973,
+        "br": 1.3984128046178625,
+        "bi": 0.7634550409528944,
+        "crystal_ar": 2.750082980583728,
+        "field_distance": -0.8731595799811522,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.6487118386162853,
+        "ai": -0.3517369284770284,
+        "br": 0.2952699505542635,
+        "bi": -0.11103664237358313,
+        "crystal_ar": -2.2725406892997926,
+        "field_distance": -1.5432529541729005,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.42330545484733806,
+        "ai": 1.0952964368591447,
+        "br": 1.6722656338438942,
+        "bi": 0.7801852184493892,
+        "crystal_ar": 2.4398666595428917,
+        "field_distance": -1.0326519434051686,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.632917363463359,
+        "ai": 1.5228348868800432,
+        "br": -0.6587946268588318,
+        "bi": 1.2568236756088913,
+        "crystal_ar": -0.5612711397361987,
+        "field_distance": 1.0988500107927939,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.6325882447885758,
+        "ai": 0.7216051950002438,
+        "br": -0.30558819754317357,
+        "bi": -0.5059871822237834,
+        "crystal_ar": 1.469350703656532,
+        "field_distance": -0.09530696143729633,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.6431294784373311,
+        "ai": -1.0868861352286645,
+        "br": -1.0101838518132449,
+        "bi": -1.7741190836327405,
+        "crystal_ar": 1.963116692427274,
+        "field_distance": 1.8907328529031067,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.09161787077284966,
+        "ai": 1.7818382302157296,
+        "br": 1.5155883671042472,
+        "bi": -0.4680499871780457,
+        "crystal_ar": -0.4663890665030921,
+        "field_distance": 1.1203525948354196,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.418962298489185,
+        "ai": -1.8415117635109945,
+        "br": -0.7125512828729845,
+        "bi": 0.33581959435861597,
+        "crystal_ar": 2.1088466525342797,
+        "field_distance": -1.2932679889482124,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.0927191049370388,
+        "ai": -1.995569371488874,
+        "br": -1.1295140855780637,
+        "bi": -1.702321422910524,
+        "crystal_ar": -1.131884560460447,
+        "field_distance": -0.7465659351618559,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.5586797867372257,
+        "ai": -0.27198202755058354,
+        "br": -0.3045183719915503,
+        "bi": 0.5402661886464339,
+        "crystal_ar": -1.4701065744786141,
+        "field_distance": -0.8617481908535498,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.18719585290594587,
+        "ai": -1.0794936615095256,
+        "br": 0.13092127009426946,
+        "bi": -0.4004264039766854,
+        "crystal_ar": -1.5218822504536595,
+        "field_distance": 0.665669025201872,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.2845357815670146,
+        "ai": -0.8063118060196781,
+        "br": -1.3486052706841751,
+        "bi": 0.6124701471144256,
+        "crystal_ar": 2.5099894205429205,
+        "field_distance": -1.733257322342404,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.734473411576214,
+        "ai": 1.8094073696732553,
+        "br": 1.4368573136931646,
+        "bi": -1.782478182342628,
+        "crystal_ar": 1.0961900582025959,
+        "field_distance": 1.314090497162757,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.4071844959675617,
+        "ai": -1.25580483233627,
+        "br": 0.3125157945237169,
+        "bi": -0.570621394670459,
+        "crystal_ar": -2.8620234827436537,
+        "field_distance": -0.32101919191758777,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.37648737284832867,
+        "ai": -1.3948262466465127,
+        "br": 0.22661130016420472,
+        "bi": -1.1947414205474671,
+        "crystal_ar": -0.19550503783535733,
+        "field_distance": -0.9078059559299385,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.9620503846295585,
+        "ai": 0.2467911171515933,
+        "br": 0.5155016476784602,
+        "bi": -0.34250083128688935,
+        "crystal_ar": 1.9123481167943281,
+        "field_distance": 1.7191715174047921,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.2004129988870238,
+        "ai": -0.03618778320960603,
+        "br": -1.8340287082548374,
+        "bi": 1.0113579438093216,
+        "crystal_ar": -2.7811669277769777,
+        "field_distance": 1.6272087898676797,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.3555763418708464,
+        "ai": -1.288197970676622,
+        "br": -1.278334219916439,
+        "bi": -0.02125295492348478,
+        "crystal_ar": -0.10752960103267717,
+        "field_distance": 0.6323195186812343,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.6790939302693872,
+        "ai": 0.5991068383293094,
+        "br": -1.1785509721165064,
+        "bi": 0.8161237615217831,
+        "crystal_ar": -0.008529958050356168,
+        "field_distance": -1.503473339958624,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.4501936057212745,
+        "ai": -1.3556218239442988,
+        "br": -0.09745143102540732,
+        "bi": 0.8173752747142107,
+        "crystal_ar": 1.7077454607504838,
+        "field_distance": -1.5037025112724702,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.5963581825244413,
+        "ai": 1.9074760677556397,
+        "br": -0.1756542614121921,
+        "bi": 0.5834253972865033,
+        "crystal_ar": 2.431037724953673,
+        "field_distance": 0.5856296098493505,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.987568504673189,
+        "ai": -0.30613728181547994,
+        "br": -1.8935465197720127,
+        "bi": -0.12754348615781463,
+        "crystal_ar": -1.3501133033465276,
+        "field_distance": 1.0467970264955238,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.3271134268560227,
+        "ai": 0.6524902129598393,
+        "br": 0.06674558825018861,
+        "bi": -1.9104917980933753,
+        "crystal_ar": 1.542157631128983,
+        "field_distance": -1.5242277804558428,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.2676554975824885,
+        "ai": -1.7027949965894673,
+        "br": 1.2465558627715865,
+        "bi": 0.8948550615921782,
+        "crystal_ar": 2.6552562933066604,
+        "field_distance": 0.9074740267106849,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.3789920329421745,
+        "ai": 0.717753094516731,
+        "br": 1.5546827040452023,
+        "bi": 1.5834541880780026,
+        "crystal_ar": -2.6241908694726854,
+        "field_distance": -1.3906566400200835,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.5039245284006637,
+        "ai": 0.12857685195263624,
+        "br": 1.257842660063702,
+        "bi": 0.41486316219392894,
+        "crystal_ar": -0.9885892256633502,
+        "field_distance": -1.2898508619566473,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.8691621163916734,
+        "ai": 1.4447848092785511,
+        "br": -1.566023333430437,
+        "bi": -0.21698458882032678,
+        "crystal_ar": -2.742119986538388,
+        "field_distance": -1.560435361846765,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.9627711615665095,
+        "ai": -1.1279264871053134,
+        "br": -0.9660806745342794,
+        "bi": 0.5111755169575294,
+        "crystal_ar": -0.3496152670540751,
+        "field_distance": 1.7078148561485316,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.681949566700129,
+        "ai": 1.5122979973474702,
+        "br": 1.079028624879617,
+        "bi": 1.8739808343432833,
+        "crystal_ar": 2.680394966984203,
+        "field_distance": -1.6851291998138622,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.746854030271535,
+        "ai": -0.9835093739369012,
+        "br": 0.07314225596058499,
+        "bi": 1.2258235745445774,
+        "crystal_ar": -2.2742740625251656,
+        "field_distance": -1.5339173608764476,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.08072987433483636,
+        "ai": -0.4840633369633518,
+        "br": -1.2596405217293656,
+        "bi": -1.1845631272929205,
+        "crystal_ar": -2.629028335209731,
+        "field_distance": 1.3306409247007194,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.7527512417461217,
+        "ai": 0.9334464514433374,
+        "br": -0.431627407287138,
+        "bi": -1.1878055472847615,
+        "crystal_ar": -2.2259928194054703,
+        "field_distance": 0.6637414252697846,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.6870417257692134,
+        "ai": -1.2188922564358968,
+        "br": -0.8499422446522367,
+        "bi": -0.874775142730726,
+        "crystal_ar": 1.4816752916309865,
+        "field_distance": -1.0257404601434779,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.31927701902454064,
+        "ai": 0.3178344546212548,
+        "br": -1.7559162837272289,
+        "bi": -1.16873924960636,
+        "crystal_ar": 2.3751970836785983,
+        "field_distance": 1.5476275345846053,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.93593233561274,
+        "ai": 0.5832527860825931,
+        "br": -1.0716136334887811,
+        "bi": -0.48458704203543634,
+        "crystal_ar": 2.53103846427766,
+        "field_distance": -0.16071547883877724,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.23282524361065837,
+        "ai": 1.3563084723565786,
+        "br": 0.38146667187352135,
+        "bi": 1.499115131804587,
+        "crystal_ar": -1.5825651012792357,
+        "field_distance": 1.2424442434754952,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.6049640454796346,
+        "ai": -0.4317114435730596,
+        "br": -0.9892395234103071,
+        "bi": 1.420238654994503,
+        "crystal_ar": -2.285330375058969,
+        "field_distance": 1.9587868180027228,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.8859761805443958,
+        "ai": 1.9627213809564958,
+        "br": 0.0785005506544958,
+        "bi": -0.8120289161810827,
+        "crystal_ar": 2.1183597305346904,
+        "field_distance": 0.4163866615255074,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.2996423072473973,
+        "ai": 1.6741526689281754,
+        "br": -1.3010326437718143,
+        "bi": 1.5350739834644584,
+        "crystal_ar": 2.0023898520782324,
+        "field_distance": -1.7041516528833625,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.2411097507549993,
+        "ai": 0.7259031331708399,
+        "br": -1.0159714353055809,
+        "bi": -0.19552666966015142,
+        "crystal_ar": 2.2763371881023815,
+        "field_distance": 0.18577147175497855,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.0214785251467728,
+        "ai": 1.8064702398688088,
+        "br": 1.291662068321823,
+        "bi": 1.7817339020258394,
+        "crystal_ar": -2.131705356477286,
+        "field_distance": 1.2035362452520673,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.775696880437756,
+        "ai": 0.9563612913124175,
+        "br": -0.010872398270266093,
+        "bi": -0.577416893305116,
+        "crystal_ar": -1.9398822166152394,
+        "field_distance": 1.7799247106968217,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.9139414251245652,
+        "ai": 0.08874491643951732,
+        "br": -1.1802698935107037,
+        "bi": 1.6990012792628186,
+        "crystal_ar": -1.9779897959899584,
+        "field_distance": 1.1189909656579151,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.14871699101426827,
+        "ai": -1.4623067686552034,
+        "br": -1.592292536822594,
+        "bi": 1.3271802446177476,
+        "crystal_ar": 0.05424997668447751,
+        "field_distance": -1.1985579500621237,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.534657070762024,
+        "ai": 0.8262070029996442,
+        "br": 0.3719537616748698,
+        "bi": -0.6466217988037042,
+        "crystal_ar": -2.652654259075115,
+        "field_distance": 1.3659960897550443,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.7608142231282113,
+        "ai": -0.7613544515391757,
+        "br": 0.5377710077546589,
+        "bi": 0.2718265355591263,
+        "crystal_ar": 2.4255591568799213,
+        "field_distance": 1.1195377555946031,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.1340875364909193,
+        "ai": 0.15233032728521367,
+        "br": 1.3546373921814512,
+        "bi": -1.0024092435564578,
+        "crystal_ar": -0.07661127331456807,
+        "field_distance": -0.18319239458208036,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.118444475783408,
+        "ai": -0.010235040487238667,
+        "br": 0.48933094129294297,
+        "bi": 0.7091917393877796,
+        "crystal_ar": -2.442752271564712,
+        "field_distance": 0.507465040152244,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.9404560716642854,
+        "ai": -1.3196913104822197,
+        "br": -0.89522894169929,
+        "bi": -0.915841888795399,
+        "crystal_ar": 2.874062726648616,
+        "field_distance": 1.8778001637568384,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.8251244753996301,
+        "ai": -0.4305981514479349,
+        "br": -1.0366273906085128,
+        "bi": 1.4735020653635909,
+        "crystal_ar": -0.8981860369474695,
+        "field_distance": -0.23879523076361542,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.5037183700016739,
+        "ai": -0.6779439937355556,
+        "br": -0.6014391252525004,
+        "bi": 0.6460552879098329,
+        "crystal_ar": 1.986418563920709,
+        "field_distance": 1.9083978068138645,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.1637947549711436,
+        "ai": -1.3347503259066182,
+        "br": 1.565335510962088,
+        "bi": -1.5523550673114173,
+        "crystal_ar": -1.9923280307432956,
+        "field_distance": 0.5427653939017931,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.283599518519674,
+        "ai": 0.996169730527448,
+        "br": 1.131096356070676,
+        "bi": -0.6285646173180486,
+        "crystal_ar": -0.4286679332505676,
+        "field_distance": -1.563717133783347,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.6189518329185559,
+        "ai": -1.827600768257966,
+        "br": -0.4406915248755432,
+        "bi": -1.29766835949308,
+        "crystal_ar": 2.3646214859216306,
+        "field_distance": 1.4596685412315078,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.7202194971336016,
+        "ai": -0.9786670682911844,
+        "br": -0.6910061184778296,
+        "bi": -0.9886624767484293,
+        "crystal_ar": -2.306695189712941,
+        "field_distance": -1.9126451635201764,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.8919897004785287,
+        "ai": -0.8039499328527806,
+        "br": -1.8721119267512076,
+        "bi": 0.816042059438777,
+        "crystal_ar": 0.663385700425978,
+        "field_distance": -0.12592611984225766,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.3067450534629779,
+        "ai": 1.7428103029268662,
+        "br": 0.6971675312922967,
+        "bi": -0.6838608014714791,
+        "crystal_ar": 0.40656864600533127,
+        "field_distance": 1.1142415159093164,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.459719589045994,
+        "ai": -0.2949816112087933,
+        "br": 1.3108870323986248,
+        "bi": 1.8945716510285155,
+        "crystal_ar": 0.4841760306748666,
+        "field_distance": 0.46502966762494546,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.4469984583139923,
+        "ai": 1.615922518114521,
+        "br": 0.10950471310171572,
+        "bi": -0.7646756219549999,
+        "crystal_ar": 2.2047534409411105,
+        "field_distance": 0.6094982238153559,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.379852334945578,
+        "ai": -1.2141774873188163,
+        "br": -1.0228053371328656,
+        "bi": -1.3624167670668785,
+        "crystal_ar": -2.8893525780451186,
+        "field_distance": -0.8450759616465837,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.5644200223473654,
+        "ai": -0.07834543903684787,
+        "br": -0.16753566163460665,
+        "bi": -0.8537918941434253,
+        "crystal_ar": -0.7043424319205362,
+        "field_distance": -0.5485404567045693,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.5389268166189574,
+        "ai": -1.984277206926091,
+        "br": 1.138067305183728,
+        "bi": 0.11276393119065764,
+        "crystal_ar": -1.8088736771772178,
+        "field_distance": 0.921172179327229,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.230772653643335,
+        "ai": -1.0465695502556978,
+        "br": 1.1626620402752543,
+        "bi": -1.8575811056205644,
+        "crystal_ar": -1.6791195095462894,
+        "field_distance": -1.8982325184066777,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.779793475646255,
+        "ai": -0.0032819777572874465,
+        "br": 1.4175024098354707,
+        "bi": -0.532502550882139,
+        "crystal_ar": -2.3031698863773435,
+        "field_distance": 1.2576106138577643,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.407401510666479,
+        "ai": -0.5082073847413908,
+        "br": 0.5557945709825609,
+        "bi": -1.8676772183049013,
+        "crystal_ar": -1.3402251732044765,
+        "field_distance": -1.9819566973493177,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.8101821286895521,
+        "ai": -0.5350048656773692,
+        "br": 1.6304998483832467,
+        "bi": -0.5199618619427331,
+        "crystal_ar": 1.4237311111897641,
+        "field_distance": 1.6594154417810416,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.128853119825859,
+        "ai": -0.8356532934712395,
+        "br": -0.5768475781531657,
+        "bi": -0.7211547154227156,
+        "crystal_ar": 2.749962430505369,
+        "field_distance": 0.006559563881323616,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.7505856620290792,
+        "ai": 0.16650786926290495,
+        "br": -0.8757475968378854,
+        "bi": -1.232367591994099,
+        "crystal_ar": 2.576529290259949,
+        "field_distance": -0.10167904063606148,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.7061959846052868,
+        "ai": -0.9684908012188198,
+        "br": -1.724978860646365,
+        "bi": -0.5395624183402665,
+        "crystal_ar": 1.9447764915160248,
+        "field_distance": -0.521101404282875,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.717872816733288,
+        "ai": -1.4083415315890613,
+        "br": 1.1798895034533228,
+        "bi": -0.9541955194017557,
+        "crystal_ar": -2.6155315051458228,
+        "field_distance": 1.210573571914889,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.6561905362050835,
+        "ai": -0.0879098019056812,
+        "br": -0.37776907997498244,
+        "bi": -1.1719360330573267,
+        "crystal_ar": -1.638243053715421,
+        "field_distance": 0.9757068313205655,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.14485279486315372,
+        "ai": -0.34258902358089793,
+        "br": -1.6125420515799371,
+        "bi": 1.8494795983449435,
+        "crystal_ar": 1.3869056508041164,
+        "field_distance": -0.1318520848547,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.681827806355785,
+        "ai": 1.777897834692714,
+        "br": 0.6833407521943293,
+        "bi": -0.7514900723457987,
+        "crystal_ar": 1.4969277953578064,
+        "field_distance": -1.856832023748877,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.8999614589536025,
+        "ai": -0.8052823858330189,
+        "br": 0.787745937735135,
+        "bi": 1.071375992252852,
+        "crystal_ar": -0.916999037865702,
+        "field_distance": 0.4957203842427629,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.3340572015498644,
+        "ai": -1.5122985803543214,
+        "br": -0.9819195577997828,
+        "bi": 0.6380479895103472,
+        "crystal_ar": 1.158917581112698,
+        "field_distance": -1.5988238903209147,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.09750901548005064,
+        "ai": -0.5107519126132729,
+        "br": 1.1239235233915288,
+        "bi": -1.038452999187506,
+        "crystal_ar": -2.8525056382301077,
+        "field_distance": -0.889438571192795,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.6225160859732841,
+        "ai": 1.4458959773997826,
+        "br": -1.7730124016287516,
+        "bi": 1.9620546031056185,
+        "crystal_ar": 0.3521788211823722,
+        "field_distance": -0.6752248468686495,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.00980021374370299,
+        "ai": 0.4602670052755462,
+        "br": -1.1385792299470343,
+        "bi": -1.2047517691914784,
+        "crystal_ar": -1.6715156490988972,
+        "field_distance": -1.7345653876768847,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.3846810864314625,
+        "ai": 0.14369500911622568,
+        "br": -0.02927336740485975,
+        "bi": 1.9569927220873415,
+        "crystal_ar": 1.5534601467825033,
+        "field_distance": -1.9783452482132948,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.2460719829698768,
+        "ai": 1.1259082424437534,
+        "br": 0.7274510816707678,
+        "bi": -1.3032067308294297,
+        "crystal_ar": -2.2298749002897673,
+        "field_distance": -1.4981840776062971,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.408143542306588,
+        "ai": 0.23673840227411702,
+        "br": 0.729815002898277,
+        "bi": -0.9317447634090934,
+        "crystal_ar": -0.30752546739084696,
+        "field_distance": 1.117839184563476,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.742540196894538,
+        "ai": -1.8140656549805407,
+        "br": -1.4988312956379115,
+        "bi": -0.6156191715733046,
+        "crystal_ar": -1.355185586850277,
+        "field_distance": 0.575785437617244,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.5708813256310834,
+        "ai": -1.0249999406673393,
+        "br": -1.3520584820685233,
+        "bi": 1.1056379130346707,
+        "crystal_ar": 1.952480870945006,
+        "field_distance": 0.837180414161538,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.4999646646849247,
+        "ai": 1.4238425720110213,
+        "br": -0.005381522897256907,
+        "bi": -0.4515934597907747,
+        "crystal_ar": -2.6098809583120346,
+        "field_distance": 1.3236684384377067,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.750857322735487,
+        "ai": -1.5607617126019928,
+        "br": -1.0113281256337188,
+        "bi": -0.761319949095062,
+        "crystal_ar": 0.35325700375463565,
+        "field_distance": 1.928861725775303,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.7711153945004376,
+        "ai": 1.7398880060347,
+        "br": -1.5212458957368309,
+        "bi": 1.3032141670346813,
+        "crystal_ar": 2.339872655578357,
+        "field_distance": -1.2187170515524888,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.44301472578434753,
+        "ai": -0.5015128461242662,
+        "br": 0.031218127238626714,
+        "bi": 1.043816923361069,
+        "crystal_ar": -2.560497207369054,
+        "field_distance": 1.125442751610903,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.6478372613704213,
+        "ai": -1.1176980441026494,
+        "br": 0.46956119610036007,
+        "bi": 0.3539439490490759,
+        "crystal_ar": -2.4655538548414646,
+        "field_distance": 0.6482062469164309,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.7178819679345851,
+        "ai": 1.9945339388202346,
+        "br": -0.33880228476163055,
+        "bi": 0.17530054971369324,
+        "crystal_ar": -2.7469460183778667,
+        "field_distance": 0.4860614166376336,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.4493037186705755,
+        "ai": -0.4908393077665103,
+        "br": -0.3812088517652614,
+        "bi": -0.39912584315396815,
+        "crystal_ar": -2.243113253109902,
+        "field_distance": -0.42535460752389875,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.22501032725812609,
+        "ai": 0.850920192763212,
+        "br": 0.21459943663758585,
+        "bi": 0.27309050339813945,
+        "crystal_ar": 2.1528336726822097,
+        "field_distance": 0.930323725773607,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.0346473990433798,
+        "ai": 0.28830738759613395,
+        "br": -0.16373974333918007,
+        "bi": -0.5895358996661537,
+        "crystal_ar": 1.7579815796808802,
+        "field_distance": -0.9405379810665719,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.1452946368333694,
+        "ai": 1.4589720118921354,
+        "br": -0.580777442618094,
+        "bi": -1.6639168452935431,
+        "crystal_ar": 0.8406923399911634,
+        "field_distance": -0.08595543408148698,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.2276174020179904,
+        "ai": -1.2504310605394866,
+        "br": 0.8859566553210416,
+        "bi": -0.8386397542565613,
+        "crystal_ar": 0.26202806977176407,
+        "field_distance": -0.44007729202191515,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.8904902421627616,
+        "ai": -0.9602885647306727,
+        "br": 1.6524832538730432,
+        "bi": -0.012646533651669678,
+        "crystal_ar": 1.0146141853246058,
+        "field_distance": -1.6467589635672617,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.8339118980599736,
+        "ai": -0.4545480434810125,
+        "br": 1.735791899796387,
+        "bi": 1.5822363946109625,
+        "crystal_ar": 0.670087042486899,
+        "field_distance": -1.0330389077274513,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.07536241932103271,
+        "ai": 0.45131500123054025,
+        "br": 0.4063558675828616,
+        "bi": -1.2361366490019643,
+        "crystal_ar": -0.8915223955207476,
+        "field_distance": -1.063557964410447,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.5490940173650691,
+        "ai": 0.9132139260816028,
+        "br": 0.1569983148565144,
+        "bi": 0.7575885113700385,
+        "crystal_ar": -1.5898253197194678,
+        "field_distance": -1.5298346250282004,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.7880437026031002,
+        "ai": 1.1309503686959346,
+        "br": -1.1697791434874714,
+        "bi": -0.8752928043157056,
+        "crystal_ar": -0.9800185104346004,
+        "field_distance": 0.2823686203401916,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.8311478291963659,
+        "ai": -0.5782718843772852,
+        "br": 1.392127574576945,
+        "bi": -1.8726075115334244,
+        "crystal_ar": 2.5849176734379604,
+        "field_distance": -1.5406451611449286,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.580217998650399,
+        "ai": 0.3174698203413362,
+        "br": 0.19874336561236428,
+        "bi": -0.40824052605028793,
+        "crystal_ar": -1.1114527611323066,
+        "field_distance": 1.2959914270043553,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.4063319358826143,
+        "ai": 0.01030315358502909,
+        "br": -0.32983585105381463,
+        "bi": 1.70940077569625,
+        "crystal_ar": -1.3741204638840618,
+        "field_distance": 0.2527208296962309,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.671203070450742,
+        "ai": -1.228982916290355,
+        "br": -1.4064033536271179,
+        "bi": 0.2951069766553971,
+        "crystal_ar": -1.5330206681173513,
+        "field_distance": -0.06022963597852726,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.559753166770136,
+        "ai": -0.9922488823677593,
+        "br": 1.67247144738067,
+        "bi": -1.5004196795803564,
+        "crystal_ar": 0.7580358815618435,
+        "field_distance": -0.18191210293385618,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.5498669386032136,
+        "ai": 1.36159645004662,
+        "br": 0.17722321152204712,
+        "bi": 0.5354904338162134,
+        "crystal_ar": -0.7950359797203774,
+        "field_distance": 0.1513134877993454,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.9369368583699487,
+        "ai": 0.4964491485399023,
+        "br": -1.7707823466925952,
+        "bi": 1.4825718880698497,
+        "crystal_ar": 1.137926216720922,
+        "field_distance": -0.38280156123801357,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.7183900744965945,
+        "ai": 1.3918159247745896,
+        "br": 1.5148494693929226,
+        "bi": 1.4679432923811642,
+        "crystal_ar": 1.375778321651953,
+        "field_distance": -1.335441470912127,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.35826228433262,
+        "ai": -1.9189049130514517,
+        "br": -0.10354178990813923,
+        "bi": 0.8433727332328171,
+        "crystal_ar": 1.9319803305230945,
+        "field_distance": 1.2978532888649363,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.07601346312167223,
+        "ai": -0.5530428043029403,
+        "br": 0.9767952243844662,
+        "bi": -0.9144717047417843,
+        "crystal_ar": -0.7244968470097619,
+        "field_distance": -1.7479737442152898,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.6453693873005428,
+        "ai": -1.1074659137544298,
+        "br": 1.1240844090513664,
+        "bi": 1.0134999653987045,
+        "crystal_ar": 2.927731342842229,
+        "field_distance": -1.0238423022626506,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.9787238495743082,
+        "ai": 0.7173644917366029,
+        "br": 0.409614682544563,
+        "bi": -0.4767062628503145,
+        "crystal_ar": 1.174749868558212,
+        "field_distance": -0.6410231887159048,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.7625768944488898,
+        "ai": 0.4530384177822184,
+        "br": -0.23838729756372112,
+        "bi": 0.4504411242140658,
+        "crystal_ar": 2.6710885755565767,
+        "field_distance": 0.20690380977891065,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.6326964237672081,
+        "ai": -0.1798775142900393,
+        "br": 1.495362782432696,
+        "bi": 1.7961622796798133,
+        "crystal_ar": 0.19646132230990965,
+        "field_distance": -1.6043153973387878,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.7085941967130833,
+        "ai": -1.5362686920085924,
+        "br": -1.8016141266351462,
+        "bi": 0.3224957445871137,
+        "crystal_ar": -1.9126558162920548,
+        "field_distance": -0.5375907437888539,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.5984190616509961,
+        "ai": 1.4534629293487238,
+        "br": 0.24304747745701327,
+        "bi": 0.45082448797554475,
+        "crystal_ar": 2.3483904719935067,
+        "field_distance": 0.6064784974765929,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.4583757686823997,
+        "ai": 0.6959196619221686,
+        "br": -0.288974539987632,
+        "bi": -1.3051345039319817,
+        "crystal_ar": -1.2388230537188114,
+        "field_distance": 0.7939301767189915,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.28233724978552077,
+        "ai": 0.9984291770066314,
+        "br": -1.2260735116351391,
+        "bi": -0.3413945462051826,
+        "crystal_ar": 1.2902935915020508,
+        "field_distance": -0.11193613218143339,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.3672670008900796,
+        "ai": 0.4183506703554647,
+        "br": -0.1989300841115873,
+        "bi": 0.8084348765498781,
+        "crystal_ar": -2.1262638293773444,
+        "field_distance": -1.4368315029038325,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.07619742020914932,
+        "ai": 1.545728294202236,
+        "br": 1.9820704005282384,
+        "bi": 1.1877754164802834,
+        "crystal_ar": -1.70798838750109,
+        "field_distance": -0.831077709664775,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.5135764222029984,
+        "ai": 1.2793816803631288,
+        "br": 0.12442253859323404,
+        "bi": -1.049700473577634,
+        "crystal_ar": -1.0830502138984213,
+        "field_distance": -0.30769587462697023,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.8152792869838241,
+        "ai": 1.8404923165039508,
+        "br": -0.6913817289577389,
+        "bi": -1.599609905141988,
+        "crystal_ar": -1.1253001357735517,
+        "field_distance": 0.26225500102116905,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.1729276783645943,
+        "ai": -0.9803823584150497,
+        "br": -0.7069466064192227,
+        "bi": 0.9206582458371568,
+        "crystal_ar": -0.09670547465304224,
+        "field_distance": -1.625950766636655,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.7113168460031107,
+        "ai": 0.1535291682301727,
+        "br": -1.9940929422982974,
+        "bi": -0.4965773039229986,
+        "crystal_ar": 0.01569079878161972,
+        "field_distance": -1.5535880337212156,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.007635746770280782,
+        "ai": 0.19905196595631214,
+        "br": 0.7060487174641459,
+        "bi": -0.32967482340473175,
+        "crystal_ar": 0.061582164454969,
+        "field_distance": -0.011719326792492435,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.5336493190234903,
+        "ai": -0.3804874800781932,
+        "br": -1.841040072170498,
+        "bi": 1.471464932235342,
+        "crystal_ar": 2.946641346033279,
+        "field_distance": 0.683001784991653,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.8333142922210133,
+        "ai": 0.0402726922544594,
+        "br": 0.744283142830795,
+        "bi": 1.7421807861597909,
+        "crystal_ar": 1.827095275578005,
+        "field_distance": 1.2651185528860283,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.7108689163704369,
+        "ai": 1.8071815517575125,
+        "br": -1.7460936025715852,
+        "bi": 1.1979161436153736,
+        "crystal_ar": -2.862046037281281,
+        "field_distance": -1.563533806920629,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.2016546927043925,
+        "ai": 0.5268928622461524,
+        "br": 0.43275861090023593,
+        "bi": 1.3831840012683094,
+        "crystal_ar": 1.331254862453165,
+        "field_distance": -1.1528931710226171,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.1967646351971437,
+        "ai": -1.5016064185455438,
+        "br": 1.151949819383443,
+        "bi": -0.7521365262564359,
+        "crystal_ar": 2.2467264275809806,
+        "field_distance": -1.2671667317780062,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.8848456397610103,
+        "ai": -1.9040640095988173,
+        "br": 0.4829086501027682,
+        "bi": 0.024851783322723975,
+        "crystal_ar": -1.3128900490389595,
+        "field_distance": -0.6224486789010601,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.04150452164474716,
+        "ai": -1.649788490449788,
+        "br": 0.07206295818651709,
+        "bi": 1.6825206330153946,
+        "crystal_ar": 2.114469871059565,
+        "field_distance": -1.4989487719742924,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.2694407309808837,
+        "ai": -1.7874987224231091,
+        "br": -1.7882541406601415,
+        "bi": 0.6134345275161182,
+        "crystal_ar": 0.07324867873344543,
+        "field_distance": -1.9495309260023053,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.5013018851523672,
+        "ai": 1.8893248278705315,
+        "br": 0.355173787926073,
+        "bi": 0.13038965730171048,
+        "crystal_ar": 2.7555857747296626,
+        "field_distance": 0.8882190890810064,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.0204941064053803,
+        "ai": -0.12159687001523478,
+        "br": 0.8819823338102286,
+        "bi": -0.9719916157790811,
+        "crystal_ar": 2.6680565444329893,
+        "field_distance": -1.8952978042218604,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.167211834795737,
+        "ai": 0.8542253006852656,
+        "br": 1.2451023464950315,
+        "bi": -1.8268073509404106,
+        "crystal_ar": -1.7842310967967157,
+        "field_distance": -0.40356203092663945,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.4223468267098873,
+        "ai": 1.9894915642915296,
+        "br": 0.5901172444797846,
+        "bi": 1.8766620024338083,
+        "crystal_ar": 1.0346305275965932,
+        "field_distance": -1.1032323493305194,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.013857586970616342,
+        "ai": 1.4564082299575913,
+        "br": -1.2325682769048703,
+        "bi": -1.3611980502011418,
+        "crystal_ar": 1.571599067675581,
+        "field_distance": -0.08392576815255559,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.5198748700135747,
+        "ai": -1.9100380118728082,
+        "br": 1.7817718902576352,
+        "bi": 0.28960625679521756,
+        "crystal_ar": -1.2699715975005643,
+        "field_distance": 0.3865296557888027,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.20254106683086004,
+        "ai": 1.4707361463947737,
+        "br": -1.4939721787551092,
+        "bi": -1.082730211983438,
+        "crystal_ar": -1.6625208462625976,
+        "field_distance": 0.8377331657963687,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.570368167882163,
+        "ai": -1.087262108643967,
+        "br": -1.473596684867445,
+        "bi": -0.00029140964872498287,
+        "crystal_ar": -1.4169162449492936,
+        "field_distance": 0.18808502311496644,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.34198646621573836,
+        "ai": -0.33926508979803716,
+        "br": -1.4682368535526034,
+        "bi": 1.586713686533387,
+        "crystal_ar": -1.5775570930338694,
+        "field_distance": -0.3158548160481609,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.5947185879446186,
+        "ai": 0.327962707786563,
+        "br": -0.15977903083432698,
+        "bi": 0.965028862957698,
+        "crystal_ar": 1.1051745785961375,
+        "field_distance": -1.782307703399351,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.34316615371012116,
+        "ai": -0.2786573847860696,
+        "br": 1.6357320264457877,
+        "bi": -1.1670628580007532,
+        "crystal_ar": 0.7330646894249919,
+        "field_distance": 0.7751910267907718,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.39767940157381254,
+        "ai": -1.3188766770927782,
+        "br": -1.6218859723433559,
+        "bi": -1.9280724967707594,
+        "crystal_ar": -1.3609890770973803,
+        "field_distance": 1.8734835937203083,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.2384405671070429,
+        "ai": -0.3683314730692757,
+        "br": 1.073988297521156,
+        "bi": -1.9344281292281615,
+        "crystal_ar": 1.99111107262417,
+        "field_distance": -0.4568281937923535,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.9097141121796235,
+        "ai": -1.4168712037751852,
+        "br": 0.5759204887653389,
+        "bi": 1.8332181385691544,
+        "crystal_ar": 0.9348562903487279,
+        "field_distance": 0.2954355591960818,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.4605188027104594,
+        "ai": -0.9426734950888451,
+        "br": -0.5157573776501172,
+        "bi": -0.18888247366620314,
+        "crystal_ar": -0.129628098284706,
+        "field_distance": 1.99751046479699,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.1270175064899357,
+        "ai": -0.3430655413915433,
+        "br": 0.02691813778983887,
+        "bi": -1.1335524895318754,
+        "crystal_ar": 0.02541210243110048,
+        "field_distance": 1.3552528045217311,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.2101711579905201,
+        "ai": -0.16591753851762503,
+        "br": -0.6294402815519438,
+        "bi": -1.129203146152891,
+        "crystal_ar": -0.7784803630513311,
+        "field_distance": -0.15975537644076443,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.1364118944903132,
+        "ai": 1.9038461788187764,
+        "br": 1.1737009162519536,
+        "bi": -1.61542010483775,
+        "crystal_ar": 0.056857880093774904,
+        "field_distance": 1.8426903766316398,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.2907807045106088,
+        "ai": 0.26451685343303266,
+        "br": 1.5379464149795914,
+        "bi": 0.08796140753295667,
+        "crystal_ar": 0.04861042370517765,
+        "field_distance": 1.1443281370770095,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.48003570946817176,
+        "ai": -1.2565089229284578,
+        "br": -0.4204255159826187,
+        "bi": 1.1242352073574442,
+        "crystal_ar": 0.4299279316494786,
+        "field_distance": -1.855547056836027,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.9271564865945012,
+        "ai": -1.455791275056146,
+        "br": 0.29330078657618275,
+        "bi": 1.4837774818395801,
+        "crystal_ar": -2.2912416734316494,
+        "field_distance": -0.5677623384475194,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.3425831860740103,
+        "ai": -0.16779441676133544,
+        "br": 1.9484056396397982,
+        "bi": 0.3252917864235725,
+        "crystal_ar": -0.28500200127706066,
+        "field_distance": -0.5093402327398864,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.6665033573554324,
+        "ai": 1.5449469405132406,
+        "br": 1.5122866614882322,
+        "bi": 0.8575345542796962,
+        "crystal_ar": 2.0779234717929347,
+        "field_distance": -1.1722463751615328,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.0029191924470475,
+        "ai": -0.31185055402201334,
+        "br": 1.4401367005305246,
+        "bi": 0.6298199639398372,
+        "crystal_ar": 2.061145310905023,
+        "field_distance": -0.3269009841685899,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.00498784599775,
+        "ai": -0.80546635369469,
+        "br": -1.0929213868298002,
+        "bi": -0.11817829619887643,
+        "crystal_ar": 1.7783812438395659,
+        "field_distance": 0.54399914964505,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.5353854980084245,
+        "ai": 1.0374240947520486,
+        "br": 1.9633807025827927,
+        "bi": -1.4492760845162693,
+        "crystal_ar": 0.7162696774239683,
+        "field_distance": -1.6906359743786252,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.3031038778480402,
+        "ai": -0.956062607373207,
+        "br": 1.4804521276310374,
+        "bi": 0.6441175543561961,
+        "crystal_ar": -2.204864761665646,
+        "field_distance": 1.0064853867882655,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.3250152354999027,
+        "ai": 0.000717730875132716,
+        "br": -0.0007998895132770301,
+        "bi": 1.8936291877543838,
+        "crystal_ar": 2.268574999618166,
+        "field_distance": -0.7271118175789204,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.5791403139034226,
+        "ai": -0.009391881524805079,
+        "br": 0.8201322265961557,
+        "bi": 0.5868590643670117,
+        "crystal_ar": 2.504134259012356,
+        "field_distance": -1.0399251924855486,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.330006769937191,
+        "ai": 0.26753820463202915,
+        "br": -0.6114380405004107,
+        "bi": 1.9021740726693892,
+        "crystal_ar": 1.9582740914072156,
+        "field_distance": -1.6463761344612258,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.7519338058133704,
+        "ai": -0.8591834036441064,
+        "br": 1.1163077719452392,
+        "bi": 1.6870944069737064,
+        "crystal_ar": 0.43604607598463496,
+        "field_distance": -1.3341582309630735,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.1403017649170093,
+        "ai": -0.9643440262118199,
+        "br": 1.0810627063367115,
+        "bi": -1.1536190364374268,
+        "crystal_ar": -1.6941357938365407,
+        "field_distance": -1.6897389276690231,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.26120055666281683,
+        "ai": 1.0400929453241985,
+        "br": -0.418938673309047,
+        "bi": -0.33727238098819656,
+        "crystal_ar": 0.5833766413952286,
+        "field_distance": 1.748717581336249,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.2425067860429952,
+        "ai": -0.20060888648171904,
+        "br": 1.3573301851636925,
+        "bi": 1.8203486148705172,
+        "crystal_ar": 1.856214395041467,
+        "field_distance": -1.6468084413580781,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.25827366959983067,
+        "ai": -1.4091847039426315,
+        "br": 0.8208823366897691,
+        "bi": 1.1884337024594998,
+        "crystal_ar": 1.5076328654887317,
+        "field_distance": -1.7598008698461198,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.1010093981863007,
+        "ai": 0.14152163087706082,
+        "br": 0.08936498302244544,
+        "bi": -0.0439941620119928,
+        "crystal_ar": 2.818616929418396,
+        "field_distance": 1.148957334814933,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.4080827606001862,
+        "ai": 0.8921943241615704,
+        "br": -0.6780573031497346,
+        "bi": 0.9231809519137473,
+        "crystal_ar": 0.11049811973550838,
+        "field_distance": 0.2716070022076309,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.9990340318175122,
+        "ai": 1.0589029561306358,
+        "br": 1.8087590977656105,
+        "bi": 0.3021683844395886,
+        "crystal_ar": 1.1345191319313934,
+        "field_distance": 1.422044951625248,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.8834098155843702,
+        "ai": 1.1051542691346508,
+        "br": -0.16558115395673045,
+        "bi": 1.9563277381818676,
+        "crystal_ar": -0.15944422897297716,
+        "field_distance": 0.652130965670604,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.1850213246714811,
+        "ai": -1.9249012379891286,
+        "br": 1.0112137910269787,
+        "bi": -0.8693171187140116,
+        "crystal_ar": -2.4064742657844795,
+        "field_distance": -0.16460400126845132,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.5841823822988848,
+        "ai": 1.782760073180433,
+        "br": -0.6172256256881918,
+        "bi": 0.011505690755816644,
+        "crystal_ar": -2.070593007524317,
+        "field_distance": 0.052979156069395295,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.6150183966256311,
+        "ai": -0.48778636625163907,
+        "br": -1.4157833894572889,
+        "bi": 1.900856275738549,
+        "crystal_ar": 1.6880318689436666,
+        "field_distance": -0.30584721627190525,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.8514354561921005,
+        "ai": 0.4601468406754683,
+        "br": -1.2678143342338073,
+        "bi": 0.6092256557974736,
+        "crystal_ar": 0.05911945499617621,
+        "field_distance": 1.2075264990858918,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.028749123306242907,
+        "ai": 0.13412764090259977,
+        "br": 1.2710783926163054,
+        "bi": 1.2348996663049951,
+        "crystal_ar": 2.3250381137082634,
+        "field_distance": -1.335080946712067,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.6020967675862905,
+        "ai": 1.7906664983938736,
+        "br": 1.5393401309875756,
+        "bi": 1.9694662317441067,
+        "crystal_ar": 2.936061529737242,
+        "field_distance": -1.5676471540621741,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.9707938517152295,
+        "ai": 0.33654307310974074,
+        "br": -0.026017192843580172,
+        "bi": -1.285181143512164,
+        "crystal_ar": 1.1919699763153362,
+        "field_distance": -1.6314798774633341,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.938351105684648,
+        "ai": -0.47053609623615333,
+        "br": -0.174655122872577,
+        "bi": -0.06748381514865942,
+        "crystal_ar": -2.2123297975118854,
+        "field_distance": -1.09483698752525,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.3452709554733904,
+        "ai": -1.1474797908928633,
+        "br": -1.880548417624634,
+        "bi": -0.08311386571325352,
+        "crystal_ar": 0.1833842847402416,
+        "field_distance": 1.094435502140898,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.6185748510089168,
+        "ai": -0.9365204287663493,
+        "br": -1.902949446099135,
+        "bi": -0.06800319606233707,
+        "crystal_ar": 0.5091855700466363,
+        "field_distance": -0.6280189412830546,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.6652203726523105,
+        "ai": -0.7788454201107209,
+        "br": -1.7263091241423818,
+        "bi": -1.998327463814456,
+        "crystal_ar": -2.5477597541503165,
+        "field_distance": -1.3204266659480175,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.9963225414613528,
+        "ai": -1.816754092445791,
+        "br": -1.6521131788571064,
+        "bi": -1.5131726408847301,
+        "crystal_ar": -1.7863113543292306,
+        "field_distance": -0.4335774133859456,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.1993383970690932,
+        "ai": 1.0905317907185297,
+        "br": -1.1873435900871074,
+        "bi": 1.11103165761909,
+        "crystal_ar": -1.6080564347575732,
+        "field_distance": -1.5654095103839776,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.4901976275057693,
+        "ai": 1.6189868135936871,
+        "br": -0.3517889148060984,
+        "bi": -1.7960181695359871,
+        "crystal_ar": 1.3145876511547634,
+        "field_distance": -1.5834120167831185,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.8042318508192947,
+        "ai": -0.21066792825297442,
+        "br": -0.46108290956033127,
+        "bi": -1.116299670584945,
+        "crystal_ar": 1.8419378292137185,
+        "field_distance": 0.18922547740417572,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.8832646672167432,
+        "ai": 1.0765705040090379,
+        "br": 1.8298171674600106,
+        "bi": 1.7427736356709587,
+        "crystal_ar": 1.1417914908435334,
+        "field_distance": -0.4212141467373618,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.235706977999544,
+        "ai": -1.8025261449835388,
+        "br": 1.2905284269644466,
+        "bi": 0.8362487093513624,
+        "crystal_ar": -0.9960313705713488,
+        "field_distance": 0.9558155394463337,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.692679233570411,
+        "ai": 1.39323295213403,
+        "br": 0.9097652638451694,
+        "bi": -0.7430727273169517,
+        "crystal_ar": -0.4000618425946285,
+        "field_distance": 0.38927029282845504,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.784465592123548,
+        "ai": 0.5831134180841206,
+        "br": -1.534766685704727,
+        "bi": -1.2004115647986708,
+        "crystal_ar": -1.5893696429473732,
+        "field_distance": 1.1103066742184224,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.5620658985679632,
+        "ai": -1.6361045767725577,
+        "br": 0.43701438701985396,
+        "bi": 1.1478040671052199,
+        "crystal_ar": -0.0783122288950433,
+        "field_distance": -0.24241439428733935,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.6901865904558178,
+        "ai": 1.380046910251759,
+        "br": 1.3238105524583461,
+        "bi": 1.0265662865424288,
+        "crystal_ar": -2.2368685115420632,
+        "field_distance": 0.5662803576870226,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.6296474215879244,
+        "ai": -1.058463668733963,
+        "br": 1.535645199559922,
+        "bi": -0.2251865576209071,
+        "crystal_ar": -2.549829581939435,
+        "field_distance": -0.7761430476273286,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.23767567972866432,
+        "ai": 0.6612176115951813,
+        "br": -0.5220054540224179,
+        "bi": -1.0848537753956795,
+        "crystal_ar": 0.03669008025888543,
+        "field_distance": 1.9813598608934586,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.7574061031958883,
+        "ai": 0.977128614687083,
+        "br": 0.5289844358584408,
+        "bi": -1.7612674652033138,
+        "crystal_ar": -0.6911037464157261,
+        "field_distance": 0.1613904624113669,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.8860850942207388,
+        "ai": 1.4560913428225395,
+        "br": 0.9186480416645662,
+        "bi": -0.11429950967024682,
+        "crystal_ar": -0.2635023371134231,
+        "field_distance": 0.011526152719704807,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.08686961588731013,
+        "ai": -1.0590113571854558,
+        "br": -0.5236948603196501,
+        "bi": 0.7731767571436428,
+        "crystal_ar": 2.965044311814064,
+        "field_distance": 1.7236389930986604,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.963784337577049,
+        "ai": -1.2266651748599227,
+        "br": -0.08091786988439331,
+        "bi": -1.2990821410535416,
+        "crystal_ar": -1.8925928308670634,
+        "field_distance": -0.9386762260749024,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.4358126999287135,
+        "ai": -0.6099716717460515,
+        "br": -1.9553964450898782,
+        "bi": 1.129837626468765,
+        "crystal_ar": 2.10002078183152,
+        "field_distance": 0.36184536902690523,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.6100420292957431,
+        "ai": 0.3135988001661949,
+        "br": -1.6187686295563806,
+        "bi": 0.054841094165502646,
+        "crystal_ar": -2.5728162531016228,
+        "field_distance": -0.39688836675778516,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.5521455526571524,
+        "ai": 0.9597146193723836,
+        "br": -1.3179491011440803,
+        "bi": 0.14514362491395794,
+        "crystal_ar": -2.5550920771386174,
+        "field_distance": 1.035341570267414,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.44926491580846006,
+        "ai": 1.8912797411658708,
+        "br": -1.5390421995013068,
+        "bi": -0.5378474599437615,
+        "crystal_ar": 1.674906640524423,
+        "field_distance": -1.005431446945857,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.5852286658816443,
+        "ai": -0.754377114631716,
+        "br": 1.0794131068914186,
+        "bi": 1.0546713451435163,
+        "crystal_ar": -1.5666226498958769,
+        "field_distance": -0.7890293814402467,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.9706973754769992,
+        "ai": 1.8471693265267697,
+        "br": 1.5255909879970182,
+        "bi": 0.11711321493136584,
+        "crystal_ar": -1.9820971826217808,
+        "field_distance": 0.5266940238665914,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.861913768283686,
+        "ai": -1.336533913467913,
+        "br": 0.22591256506555402,
+        "bi": -1.0934689847144274,
+        "crystal_ar": 0.0474659834180442,
+        "field_distance": 1.2267106702650508,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.408388501578374,
+        "ai": -1.5003831788157576,
+        "br": 0.4000490099115548,
+        "bi": -1.2233697302149338,
+        "crystal_ar": -2.3834309591176015,
+        "field_distance": 0.2678583139680448,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.021448449318548,
+        "ai": -0.5867365951627126,
+        "br": 0.7659743642523087,
+        "bi": 0.39373765289601526,
+        "crystal_ar": -1.2737358773041938,
+        "field_distance": 0.6466138907170351,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.5727062077812892,
+        "ai": 1.8116929406424251,
+        "br": 1.671928645897069,
+        "bi": 1.022768060057055,
+        "crystal_ar": 0.8356152264007042,
+        "field_distance": -1.529876823470814,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.4750533797319827,
+        "ai": -0.02734692346847689,
+        "br": -0.8606104172174209,
+        "bi": 0.3340339777471244,
+        "crystal_ar": -1.9341914012030264,
+        "field_distance": -1.6305626512200204,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.911598710937433,
+        "ai": -1.1955871788277728,
+        "br": 0.8228231529527243,
+        "bi": -1.5937071837927501,
+        "crystal_ar": -1.3385536672631526,
+        "field_distance": 1.0887452223831282,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.040728994647727834,
+        "ai": 0.6784276666861686,
+        "br": 1.150600373979159,
+        "bi": 0.9579872815358899,
+        "crystal_ar": -1.2447545964734643,
+        "field_distance": -0.15980315727252936,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.2103788683648076,
+        "ai": -0.5734923198298967,
+        "br": 0.36534277996449394,
+        "bi": -1.1742922673725023,
+        "crystal_ar": 0.8220991460020577,
+        "field_distance": -1.2507337102942797,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.5609574523626395,
+        "ai": -0.5520932219378958,
+        "br": -0.18253023540344104,
+        "bi": -1.1624645750252456,
+        "crystal_ar": -0.10478725553135071,
+        "field_distance": 0.5370981089487774,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.18419037911827285,
+        "ai": -0.1746639450712788,
+        "br": -1.8593333722841723,
+        "bi": -1.4155251760944476,
+        "crystal_ar": -2.778616307613692,
+        "field_distance": 1.3155690473985189,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.09466884382593,
+        "ai": -1.5571442088542167,
+        "br": 1.8537974130122907,
+        "bi": 1.6325759120269354,
+        "crystal_ar": -1.168744530266119,
+        "field_distance": 0.24299990394541648,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.48627161430732935,
+        "ai": 1.9871682777629904,
+        "br": 0.8210892670081873,
+        "bi": 0.6177204993292764,
+        "crystal_ar": -1.3449632156540905,
+        "field_distance": -0.1492775063563192,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.9551653619355269,
+        "ai": -0.30974509105144143,
+        "br": -0.4602158530266873,
+        "bi": -1.624230305248413,
+        "crystal_ar": -1.3422916793791264,
+        "field_distance": -0.12933261279032626,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.47617800885742856,
+        "ai": -0.7676530387811367,
+        "br": -1.5284802702693763,
+        "bi": 0.9134518672242145,
+        "crystal_ar": 1.5945221396168114,
+        "field_distance": 0.06701086722977134,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.8876371451522322,
+        "ai": 0.06225263349690069,
+        "br": -1.9848315162747565,
+        "bi": -0.29882900719126093,
+        "crystal_ar": 1.4389206104556795,
+        "field_distance": 1.2966022921070723,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.1181575765233087,
+        "ai": -0.9049869920634683,
+        "br": -0.6754854409920736,
+        "bi": -1.5649529209905375,
+        "crystal_ar": -1.1393729888425697,
+        "field_distance": 0.23157833641136838,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.8373651752820104,
+        "ai": 0.9590282831972767,
+        "br": -0.21053988465341034,
+        "bi": 0.05177657583187578,
+        "crystal_ar": 2.308587130882427,
+        "field_distance": -0.7330307817150721,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.7643928438241239,
+        "ai": 0.6818584952371065,
+        "br": 0.2185907968500196,
+        "bi": -0.23737514910133717,
+        "crystal_ar": 2.5813120568301238,
+        "field_distance": -1.6059193476870517,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.7318515821581011,
+        "ai": -1.3550200591492958,
+        "br": 0.7308836382809072,
+        "bi": -1.1978650476829262,
+        "crystal_ar": 1.5928556277058175,
+        "field_distance": -1.7988074119540487,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.8864921523250548,
+        "ai": 0.29822471180128574,
+        "br": 1.0453997330654317,
+        "bi": -0.4680698795372815,
+        "crystal_ar": -1.6516490191699864,
+        "field_distance": -0.261534384919782,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.5290524208860132,
+        "ai": -0.6092324107089375,
+        "br": -0.7910095463998017,
+        "bi": 1.5390473074899553,
+        "crystal_ar": -0.6611035803186514,
+        "field_distance": -1.9466566768996212,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.24867777670057523,
+        "ai": 1.890906340044237,
+        "br": 0.1112679755122894,
+        "bi": -0.8435792157180089,
+        "crystal_ar": 1.4826353658443197,
+        "field_distance": 1.0358274076343452,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.0936512276637225,
+        "ai": -0.07293040238114923,
+        "br": -1.7099656331464903,
+        "bi": -1.8534021065776396,
+        "crystal_ar": -1.9467794187167085,
+        "field_distance": -1.7254881081362372,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.48069376672754327,
+        "ai": 0.578349091352798,
+        "br": 1.7571352394393696,
+        "bi": -0.22304107836543396,
+        "crystal_ar": -0.23798272869416026,
+        "field_distance": -1.940141782406188,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.5264263958656619,
+        "ai": -0.17964477311142968,
+        "br": -0.6932733899085131,
+        "bi": 0.577069932675998,
+        "crystal_ar": 2.4950302898211953,
+        "field_distance": 1.745835854148177,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.3125642805647417,
+        "ai": -1.2582875681990444,
+        "br": 0.40731612703601794,
+        "bi": 0.5087243748176742,
+        "crystal_ar": -2.939607135843793,
+        "field_distance": 0.5442600022079325,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.9762961439398605,
+        "ai": 0.03736928304589959,
+        "br": -0.7151494534981211,
+        "bi": -0.432010029999053,
+        "crystal_ar": 2.2143512976691064,
+        "field_distance": 1.9279833916749394,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.353169339786234,
+        "ai": 1.2833140505229221,
+        "br": -0.8905580962112585,
+        "bi": 0.8786709253250522,
+        "crystal_ar": 1.4700606721411018,
+        "field_distance": 1.2912756321426144,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.29830426273647026,
+        "ai": -1.1981869051976775,
+        "br": -1.892601510002633,
+        "bi": -0.7973149841334553,
+        "crystal_ar": 2.455749923402971,
+        "field_distance": 1.0237982834831483,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.9389276251791809,
+        "ai": -1.3279174370679532,
+        "br": -0.8691054908362821,
+        "bi": 0.3976154050934766,
+        "crystal_ar": 0.31763149366258947,
+        "field_distance": 0.9091280851358436,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.510298746072158,
+        "ai": -1.722596796794535,
+        "br": 0.8862443456944264,
+        "bi": -1.6454964074658593,
+        "crystal_ar": 0.4768335319849448,
+        "field_distance": -1.6706455645705263,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 0.3000224180748785,
+        "ai": -0.16958991007452084,
+        "br": -1.6350862505744788,
+        "bi": -0.8781829797295693,
+        "crystal_ar": 1.0009857501827641,
+        "field_distance": 0.3600482107094951,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.5558907303215541,
+        "ai": -1.0167037494687148,
+        "br": 1.5429092099698196,
+        "bi": 1.404481263888341,
+        "crystal_ar": -1.5966210287570817,
+        "field_distance": 1.453024302604037,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.5627697369960356,
+        "ai": -0.8904375866615335,
+        "br": 1.9033475163586422,
+        "bi": 0.44045153549891225,
+        "crystal_ar": -2.1421310283511623,
+        "field_distance": -0.7368704415405198,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.5008309963487467,
+        "ai": 0.03318111387720668,
+        "br": 0.4668980364916462,
+        "bi": 0.21004827150968275,
+        "crystal_ar": -0.9165582161886894,
+        "field_distance": 1.1767958659720583,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.41976996287759727,
+        "ai": 0.19458889763893739,
+        "br": -1.1450715831815197,
+        "bi": 1.9971224924407505,
+        "crystal_ar": 1.8073239795289133,
+        "field_distance": -0.25524149824671927,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.198397729412127,
+        "ai": -0.11135677868982086,
+        "br": 0.7952570530929348,
+        "bi": -1.4637559856780884,
+        "crystal_ar": -1.346837344241566,
+        "field_distance": -1.4104987717247486,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.2967653542819924,
+        "ai": -0.21499089154446072,
+        "br": 1.616499798258193,
+        "bi": -0.8115930217242195,
+        "crystal_ar": -1.3123785180295182,
+        "field_distance": 1.1366346205775022,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.111384475222033,
+        "ai": -1.6941016216613782,
+        "br": 0.08020084527263771,
+        "bi": 0.14870240596924722,
+        "crystal_ar": 1.6555657691970453,
+        "field_distance": 0.5353931459104961,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": 1.2304732182356193,
+        "ai": 0.33722484485522,
+        "br": 0.7302981034958655,
+        "bi": 1.443659971886364,
+        "crystal_ar": 1.2344281545917326,
+        "field_distance": -1.1307738378229608,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.23074485620478935,
+        "ai": -0.7384178906250485,
+        "br": 1.7095246435943148,
+        "bi": 1.4566941669648181,
+        "crystal_ar": 0.274115746116687,
+        "field_distance": 1.5351852687459533,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -1.1409150872864409,
+        "ai": -1.4332860975482427,
+        "br": -0.46672420929386904,
+        "bi": 0.26343689474078147,
+        "crystal_ar": -0.17288913730046174,
+        "field_distance": 0.003392700080258937,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    },
+    {
+      "state": {
+        "ar": -0.12298926304914426,
+        "ai": 1.8936069870288437,
+        "br": 1.2887504355577595,
+        "bi": -0.6815560463286232,
+        "crystal_ar": 0.4063660134046545,
+        "field_distance": -1.701214764522669,
+        "t00": 0,
+        "t01": 0,
+        "t10": 0,
+        "t11": 0,
+        "a00": 0,
+        "a01": 0,
+        "a10": 0,
+        "a11": 0
+      }
+    }
+  ],
+  "source": {
+    "cycle_author_file": "local_lab/source_cycle.py",
+    "cycle_author_sha256": "c0d3586844c5787784447f60944effa782d90868a5785399f114c245f4d8424c",
+    "function_names": [
+      "diagnostic_next_generation",
+      "diagnostic_uncalled_slot",
+      "T_transform_role0",
+      "inverse_T_role0"
+    ],
+    "status": "Actual authored body ASTs with direct explicit numerical inputs; original situated field/placement calls and full cycle excluded from this component diagnostic."
+  },
+  "meaning": "Independent mathematical component audit, not a full-cycle replacement."
+}

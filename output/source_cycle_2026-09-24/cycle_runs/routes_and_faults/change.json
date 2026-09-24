@@ -1,0 +1,128 @@
+{
+  "baseline_definition": "../../full_cycle/definition.json",
+  "changes": {
+    "cases": [
+      {
+        "status": 0,
+        "selected": 7
+      },
+      {
+        "status": 0,
+        "selected": 7
+      },
+      {
+        "status": 0,
+        "selected": 8
+      },
+      {
+        "status": 0,
+        "selected": 8
+      },
+      {
+        "status": 0,
+        "selected": 9
+      },
+      {
+        "status": 0,
+        "selected": 9
+      },
+      {
+        "status": 0,
+        "selected": 10
+      },
+      {
+        "status": 0,
+        "selected": 10
+      },
+      {
+        "status": 0,
+        "selected": 11
+      },
+      {
+        "status": 0,
+        "selected": 11
+      },
+      {
+        "status": 0,
+        "selected": 12
+      },
+      {
+        "status": 0,
+        "selected": 12
+      },
+      {
+        "kind": "unsupported_role",
+        "status": 11,
+        "phase": 2
+      },
+      {
+        "kind": "invalid_depth",
+        "status": 1,
+        "phase": 2
+      },
+      {
+        "kind": "zero_complex",
+        "status": 1,
+        "phase": 2
+      },
+      {
+        "kind": "zero_interval",
+        "status": 1,
+        "phase": 1
+      },
+      {
+        "kind": "invalid_jitter",
+        "status": 1,
+        "phase": 1
+      }
+    ]
+  },
+  "program_sha256": "adcbe20517bef139a051e8f04da20aa4388d38a40269a71764f6c9bc41e0de28",
+  "configuration_sha256": "10dbf9dc3d1729d90934e01b223332e80e8b180e08e406201558bfdb8b1a801e",
+  "state_names": [
+    "u",
+    "v",
+    "orientation",
+    "ar",
+    "ai",
+    "br",
+    "bi",
+    "phase",
+    "dt",
+    "jitter",
+    "previous_ar",
+    "previous_ai",
+    "previous_br",
+    "previous_bi",
+    "surface_u",
+    "surface_v",
+    "neck",
+    "route_depth",
+    "route_b0",
+    "route_b1",
+    "route_b2",
+    "route_b3",
+    "K_orientation",
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "phase_previous",
+    "phase_previous2",
+    "T00",
+    "T01",
+    "T10",
+    "T11",
+    "A00",
+    "A01",
+    "A10",
+    "A11",
+    "Rr",
+    "Ri",
+    "Gr",
+    "Gi",
+    "selected_index",
+    "last_field",
+    "energy"
+  ]
+}

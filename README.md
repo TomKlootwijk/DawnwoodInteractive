@@ -31,30 +31,43 @@ execution; live body and mutation-definition edits propagate through the
 returned expression state. Read the
 [source application reproduction](output/source_application_2026-09-24/REPORT.md).
 
-**The original application constructs symbolic expressions. The numerical
-components now execute explicit compiled bindings; the original complete cycle
-and expression graph are not yet lowered.** Nine numerical meanings are
-unbound in the source application; the later native profiles make their own
-explicit choices. The numerical integration is unfinished. D1's fixed projection
-algorithm with a mutable controller is an experiment, not fulfillment of the
-literal resident application language.
+**The authored numerical edition now executes all eight source stages through
+resident body/field/placement definitions on CPU and Vulkan.** Its 31 records,
+typed body families, old-snapshot mutation, dependent four-stage update, complex
+streams, finite history, inverse matrix and Klein return are documented in the
+[source-cycle binding](docs/SOURCE_CYCLE_BINDING.md) and
+[source fidelity audit](output/source_cycle_2026-09-24/SOURCE_FIDELITY_AUDIT.md).
+The source's open numerical laws are explicitly chosen bindings. This is a
+bounded numerical edition, not an unrestricted compiler for every symbolic
+expression or a completed biochemical application.
 
-The first numerical integration component is now available:
+```powershell
+.\Dawnwood-Cycle.cmd compile --output output/my_cycle
+.\Dawnwood-Cycle.cmd run --backend vulkan --device "RTX 5070 Ti" --input output/my_cycle/program.bin --output output/my_cycle/after_64.bin --epochs 64
+.\Dawnwood-Cycle.cmd inspect output/my_cycle/after_64.bin --manifest output/my_cycle/manifest.json
+```
+
+Use a fresh compilation directory. The [recorded cycle campaign](output/source_cycle_2026-09-24/REPORT.md)
+separates complete-cycle comparisons, deliberate body interventions, independent
+mathematical checks and hardware saturation. Selected-action adapters currently
+cover six geometric records; optional Bayer layout and BC5 encoding are not
+implemented by this edition. The next application milestone is independently
+checked domain work through these resident definitions.
+
+The earlier numerical components remain available:
 [DWI-XIR expression bindings](source_bindings/README.md). It compiles a selected
 source operator's declared numerical body into the same instructions for CPU
 and Vulkan. The early formalization's two-Hadamard formula is one implemented
 binding. [Measured component results](output/source_ir_2026-09-24/REPORT.md)
 include independent analytic comparisons and executable body edits. The
 [integration ledger](docs/SOURCE_NUMERICAL_INTEGRATION.md) retains all remaining
-operator, stage and whole-state requirements; this body evaluator does not yet
-execute the complete source application.
+operator, stage and whole-state requirements; this isolated body evaluator has a narrower scope than the authored cycle above.
 
 The next component, [situated Apply](docs/SITUATED_APPLICATION.md), executes a
 selected source record's **placement → Klein-local SDF → two-Hadamard body**
 as one numerical program. Each definition can be replaced by an executable
 expression. Independent placement, field and body edits change the measured
-action on both CPU and GPU. The complete authored phase recurrence remains
-unfinished.
+action on both CPU and GPU. The complete authored recurrence is supplied by `Dawnwood-Cycle.cmd` above.
 
 ```powershell
 .\Dawnwood-Apply.cmd compile --bindings source_bindings/situated_v0.1.json --operator hadamard --inputs source_bindings/examples/situated_inputs.json --output output/my_situated
@@ -68,8 +81,8 @@ body/field/anchor records, including their own, and subsequent action executes
 those records. The three-record component preserves all programs and live state
 in a resumable checkpoint. Its self-mutation, feedback, old-snapshot ordering and
 rollback have [CPU/GPU evidence](output/resident_definition_2026-09-24/REPORT.md).
-This is a finite authored program bank; full catalogue and cycle integration
-remain open.
+This three-record fixture remains a regression reference for the larger finite
+source-cycle bank above.
 
 ```powershell
 .\Dawnwood-Resident.cmd compile --definition source_bindings/resident_v0.1.json --output output/my_resident

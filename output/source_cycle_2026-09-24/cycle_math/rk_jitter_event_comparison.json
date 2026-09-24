@@ -1,0 +1,13 @@
+{
+  "lanes": 518,
+  "jitter_bits": [
+    0,
+    1
+  ],
+  "first_three_slopes_all_bitwise_equal": true,
+  "lanes_with_changed_k4": 518,
+  "lanes_with_changed_result": 518,
+  "jitter_pair_count": 259,
+  "jitter_pairs_with_changed_k1": 259,
+  "jitter_pairs_with_changed_result": 259
+}

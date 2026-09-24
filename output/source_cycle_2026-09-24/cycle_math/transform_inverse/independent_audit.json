@@ -1,0 +1,931 @@
+{
+  "scope": "Actual authored body ASTs with direct explicit numerical inputs; original situated field/placement calls and full cycle excluded from this component diagnostic.",
+  "lanes": 257,
+  "source_cycle_sha256": "c0d3586844c5787784447f60944effa782d90868a5785399f114c245f4d8424c",
+  "cpu_gpu_byte_identical": true,
+  "changed_bytes": 0,
+  "all_status_ok": true,
+  "component_errors": {
+    "t00": {
+      "count": 257,
+      "max_absolute_error": 8.733910483726959e-08,
+      "max_scaled_error": 0.0025784933518400153,
+      "worst": {
+        "index": 233,
+        "inputs": [
+          1.886492133140564,
+          0.29822471737861633,
+          1.045399785041809,
+          -0.4680698812007904,
+          -1.651648998260498,
+          -0.2615343928337097
+        ],
+        "actual": 1.1936073303222656,
+        "reference": 1.1936072429831608
+      }
+    },
+    "t01": {
+      "count": 257,
+      "max_absolute_error": 1.7499773054263645e-09,
+      "max_scaled_error": 0.00016833693831060374,
+      "worst": {
+        "index": 75,
+        "inputs": [
+          0.8101821541786194,
+          -0.5350048542022705,
+          1.6304998397827148,
+          -0.5199618339538574,
+          1.4237310886383057,
+          1.6594154834747314
+        ],
+        "actual": 0.01978410594165325,
+        "reference": 0.019784107691630557
+      }
+    },
+    "t10": {
+      "count": 257,
+      "max_absolute_error": 1.7499773054263645e-09,
+      "max_scaled_error": 0.00016833693831060374,
+      "worst": {
+        "index": 75,
+        "inputs": [
+          0.8101821541786194,
+          -0.5350048542022705,
+          1.6304998397827148,
+          -0.5199618339538574,
+          1.4237310886383057,
+          1.6594154834747314
+        ],
+        "actual": 0.01978410594165325,
+        "reference": 0.019784107691630557
+      }
+    },
+    "t11": {
+      "count": 257,
+      "max_absolute_error": 8.680896823598516e-08,
+      "max_scaled_error": 0.002577209680969993,
+      "worst": {
+        "index": 8,
+        "inputs": [
+          1.2897590398788452,
+          -1.6595454216003418,
+          -0.6176539659500122,
+          1.7230424880981445,
+          1.2697534561157227,
+          0.11255932599306107
+        ],
+        "actual": 1.1841657161712646,
+        "reference": 1.1841658029802329
+      }
+    },
+    "a00": {
+      "count": 257,
+      "max_absolute_error": 1.0297431218830866e-07,
+      "max_scaled_error": 0.0038983691914180954,
+      "worst": {
+        "index": 190,
+        "inputs": [
+          1.618574857711792,
+          -0.9365204572677612,
+          -1.9029494524002075,
+          -0.06800319254398346,
+          0.5091855525970459,
+          -0.6280189156532288
+        ],
+        "actual": 0.8380826711654663,
+        "reference": 0.8380827741397785
+      }
+    },
+    "a01": {
+      "count": 257,
+      "max_absolute_error": 2.8646249296271353e-09,
+      "max_scaled_error": 0.00027921114675416857,
+      "worst": {
+        "index": 116,
+        "inputs": [
+          -1.7183901071548462,
+          1.3918159008026123,
+          1.5148494243621826,
+          1.4679433107376099,
+          1.375778317451477,
+          -1.3354414701461792
+        ],
+        "actual": -0.012985413894057274,
+        "reference": -0.012985416758682203
+      }
+    },
+    "a10": {
+      "count": 257,
+      "max_absolute_error": 2.864624931361859e-09,
+      "max_scaled_error": 0.00027921114692324974,
+      "worst": {
+        "index": 116,
+        "inputs": [
+          -1.7183901071548462,
+          1.3918159008026123,
+          1.5148494243621826,
+          1.4679433107376099,
+          1.375778317451477,
+          -1.3354414701461792
+        ],
+        "actual": -0.012985413894057274,
+        "reference": -0.012985416758682205
+      }
+    },
+    "a11": {
+      "count": 257,
+      "max_absolute_error": 1.2652596226292445e-07,
+      "max_scaled_error": 0.004511484429326203,
+      "worst": {
+        "index": 218,
+        "inputs": [
+          -1.4750534296035767,
+          -0.02734692394733429,
+          -0.8606104254722595,
+          0.3340339660644531,
+          -1.934191346168518,
+          -1.630562663078308
+        ],
+        "actual": 0.9022653102874756,
+        "reference": 0.9022651837615133
+      }
+    }
+  },
+  "failures": [],
+  "tolerance": "Unchanged repository numerical threshold: 1e-5 + 2e-5*max(abs(actual),abs(reference)); measured errors separately retained.",
+  "reference_file": "independent_binary64_references.json",
+  "oracle": "Independent mathematical formulas in binary64 on packed FP32 inputs; no recursive evaluation of source AST.",
+  "extra_checks": [
+    {
+      "max_identity_residual": 2.8962943376953376e-08
+    },
+    {
+      "max_identity_residual": 4.8995813295427126e-08
+    },
+    {
+      "max_identity_residual": 1.8964270154242513e-08
+    },
+    {
+      "max_identity_residual": 3.636661205508318e-08
+    },
+    {
+      "max_identity_residual": 5.961789684150176e-08
+    },
+    {
+      "max_identity_residual": 5.3325689752803385e-08
+    },
+    {
+      "max_identity_residual": 1.286629669472461e-08
+    },
+    {
+      "max_identity_residual": 6.744287162074869e-08
+    },
+    {
+      "max_identity_residual": 3.927680602977546e-08
+    },
+    {
+      "max_identity_residual": 4.153459665090509e-08
+    },
+    {
+      "max_identity_residual": 8.729181355526805e-08
+    },
+    {
+      "max_identity_residual": 8.224498615483355e-08
+    },
+    {
+      "max_identity_residual": 3.162105355336564e-08
+    },
+    {
+      "max_identity_residual": 2.3481080413390032e-08
+    },
+    {
+      "max_identity_residual": 7.809455304652602e-09
+    },
+    {
+      "max_identity_residual": 3.927110348023177e-08
+    },
+    {
+      "max_identity_residual": 5.118960832994901e-08
+    },
+    {
+      "max_identity_residual": 6.779828010117228e-08
+    },
+    {
+      "max_identity_residual": 6.401087748741929e-08
+    },
+    {
+      "max_identity_residual": 6.424622900347288e-08
+    },
+    {
+      "max_identity_residual": 2.5048742080535646e-08
+    },
+    {
+      "max_identity_residual": 6.979711431043256e-08
+    },
+    {
+      "max_identity_residual": 5.394952262705033e-08
+    },
+    {
+      "max_identity_residual": 5.004523184748422e-08
+    },
+    {
+      "max_identity_residual": 3.076176247063245e-08
+    },
+    {
+      "max_identity_residual": 1.6530685931215316e-08
+    },
+    {
+      "max_identity_residual": 5.624742538401506e-08
+    },
+    {
+      "max_identity_residual": 2.7300294247467605e-08
+    },
+    {
+      "max_identity_residual": 8.599352219196277e-08
+    },
+    {
+      "max_identity_residual": 5.147673376448836e-08
+    },
+    {
+      "max_identity_residual": 2.806608878636041e-08
+    },
+    {
+      "max_identity_residual": 3.625809719132178e-08
+    },
+    {
+      "max_identity_residual": 1.1964793933394446e-08
+    },
+    {
+      "max_identity_residual": 1.5362803251761648e-08
+    },
+    {
+      "max_identity_residual": 5.117231016704693e-08
+    },
+    {
+      "max_identity_residual": 1.3587251546098855e-08
+    },
+    {
+      "max_identity_residual": 7.809187363427839e-08
+    },
+    {
+      "max_identity_residual": 5.3495336160835905e-08
+    },
+    {
+      "max_identity_residual": 8.177739685422125e-08
+    },
+    {
+      "max_identity_residual": 1.6041142192335656e-08
+    },
+    {
+      "max_identity_residual": 6.103858951611585e-08
+    },
+    {
+      "max_identity_residual": 1.970134211326524e-08
+    },
+    {
+      "max_identity_residual": 5.374937694924142e-08
+    },
+    {
+      "max_identity_residual": 5.043659023762359e-08
+    },
+    {
+      "max_identity_residual": 1.5559774690920847e-08
+    },
+    {
+      "max_identity_residual": 1.8066999007970708e-08
+    },
+    {
+      "max_identity_residual": 4.245724860574285e-08
+    },
+    {
+      "max_identity_residual": 5.005300873772711e-08
+    },
+    {
+      "max_identity_residual": 7.531838241980893e-08
+    },
+    {
+      "max_identity_residual": 5.280475900981685e-08
+    },
+    {
+      "max_identity_residual": 4.2696486568516434e-08
+    },
+    {
+      "max_identity_residual": 7.385078348853824e-08
+    },
+    {
+      "max_identity_residual": 1.89419795404433e-08
+    },
+    {
+      "max_identity_residual": 3.651854219022255e-08
+    },
+    {
+      "max_identity_residual": 2.4944636023427336e-08
+    },
+    {
+      "max_identity_residual": 4.177893186962933e-08
+    },
+    {
+      "max_identity_residual": 3.590729824587413e-08
+    },
+    {
+      "max_identity_residual": 3.3258946596781414e-08
+    },
+    {
+      "max_identity_residual": 2.8352312941848368e-08
+    },
+    {
+      "max_identity_residual": 6.80560897636795e-08
+    },
+    {
+      "max_identity_residual": 4.446081280917724e-08
+    },
+    {
+      "max_identity_residual": 2.0127258526514424e-08
+    },
+    {
+      "max_identity_residual": 6.456212031658026e-08
+    },
+    {
+      "max_identity_residual": 3.1821027812739544e-08
+    },
+    {
+      "max_identity_residual": 4.620503313290669e-08
+    },
+    {
+      "max_identity_residual": 3.211308263750823e-08
+    },
+    {
+      "max_identity_residual": 2.447238167668786e-08
+    },
+    {
+      "max_identity_residual": 3.7271824848694735e-08
+    },
+    {
+      "max_identity_residual": 4.828133670642387e-09
+    },
+    {
+      "max_identity_residual": 2.2234630137063505e-08
+    },
+    {
+      "max_identity_residual": 4.272001885574639e-08
+    },
+    {
+      "max_identity_residual": 8.12352486390111e-08
+    },
+    {
+      "max_identity_residual": 2.981738145280133e-08
+    },
+    {
+      "max_identity_residual": 5.230338784301125e-08
+    },
+    {
+      "max_identity_residual": 3.317764663002265e-08
+    },
+    {
+      "max_identity_residual": 5.715653950133515e-09
+    },
+    {
+      "max_identity_residual": 3.134279258354411e-08
+    },
+    {
+      "max_identity_residual": 3.131025083646932e-08
+    },
+    {
+      "max_identity_residual": 2.3776930979657607e-08
+    },
+    {
+      "max_identity_residual": 2.7404290614541083e-08
+    },
+    {
+      "max_identity_residual": 3.765157319257639e-08
+    },
+    {
+      "max_identity_residual": 4.494778937935706e-08
+    },
+    {
+      "max_identity_residual": 1.8635401444200284e-08
+    },
+    {
+      "max_identity_residual": 5.44168310412374e-08
+    },
+    {
+      "max_identity_residual": 9.239238085712032e-08
+    },
+    {
+      "max_identity_residual": 1.9572086173980097e-08
+    },
+    {
+      "max_identity_residual": 1.2610532396095664e-08
+    },
+    {
+      "max_identity_residual": 7.648779254409988e-08
+    },
+    {
+      "max_identity_residual": 7.599087004095395e-08
+    },
+    {
+      "max_identity_residual": 3.240305668228416e-08
+    },
+    {
+      "max_identity_residual": 2.5297911543376017e-08
+    },
+    {
+      "max_identity_residual": 6.093319859790114e-08
+    },
+    {
+      "max_identity_residual": 4.046967039261773e-08
+    },
+    {
+      "max_identity_residual": 2.14413924393142e-08
+    },
+    {
+      "max_identity_residual": 5.920144896531809e-08
+    },
+    {
+      "max_identity_residual": 7.499155241230682e-08
+    },
+    {
+      "max_identity_residual": 5.4618051970045656e-08
+    },
+    {
+      "max_identity_residual": 4.169014067301191e-08
+    },
+    {
+      "max_identity_residual": 5.55162582571711e-08
+    },
+    {
+      "max_identity_residual": 3.283011351662424e-08
+    },
+    {
+      "max_identity_residual": 1.547579786542741e-08
+    },
+    {
+      "max_identity_residual": 5.411325798565514e-08
+    },
+    {
+      "max_identity_residual": 5.077777198714273e-08
+    },
+    {
+      "max_identity_residual": 1.518184511439813e-08
+    },
+    {
+      "max_identity_residual": 3.524385161490784e-08
+    },
+    {
+      "max_identity_residual": 4.394104546889821e-08
+    },
+    {
+      "max_identity_residual": 2.403355181535005e-08
+    },
+    {
+      "max_identity_residual": 1.6487313847513008e-08
+    },
+    {
+      "max_identity_residual": 1.581152897500715e-08
+    },
+    {
+      "max_identity_residual": 2.5486382670969476e-08
+    },
+    {
+      "max_identity_residual": 4.3349469458497936e-08
+    },
+    {
+      "max_identity_residual": 4.852608670447012e-08
+    },
+    {
+      "max_identity_residual": 5.5518587060987556e-08
+    },
+    {
+      "max_identity_residual": 2.4508011953194853e-08
+    },
+    {
+      "max_identity_residual": 2.203284021895513e-08
+    },
+    {
+      "max_identity_residual": 4.474993731129473e-08
+    },
+    {
+      "max_identity_residual": 7.135274526781643e-08
+    },
+    {
+      "max_identity_residual": 5.610767628283497e-08
+    },
+    {
+      "max_identity_residual": 2.5383593893479883e-08
+    },
+    {
+      "max_identity_residual": 5.120418022919182e-08
+    },
+    {
+      "max_identity_residual": 2.179421709769258e-08
+    },
+    {
+      "max_identity_residual": 4.2344297290775046e-08
+    },
+    {
+      "max_identity_residual": 6.210687120145053e-08
+    },
+    {
+      "max_identity_residual": 3.27331792782104e-08
+    },
+    {
+      "max_identity_residual": 2.5122543934053e-08
+    },
+    {
+      "max_identity_residual": 2.174413715749779e-08
+    },
+    {
+      "max_identity_residual": 3.640833257101406e-08
+    },
+    {
+      "max_identity_residual": 1.4810771165052472e-08
+    },
+    {
+      "max_identity_residual": 7.406423496725267e-08
+    },
+    {
+      "max_identity_residual": 9.685519253288533e-08
+    },
+    {
+      "max_identity_residual": 1.8781924238098213e-08
+    },
+    {
+      "max_identity_residual": 1.0805963013282849e-08
+    },
+    {
+      "max_identity_residual": 4.2356958829259383e-08
+    },
+    {
+      "max_identity_residual": 5.329261654196671e-08
+    },
+    {
+      "max_identity_residual": 2.3176669805557992e-08
+    },
+    {
+      "max_identity_residual": 5.075497222506442e-08
+    },
+    {
+      "max_identity_residual": 2.595943671135359e-08
+    },
+    {
+      "max_identity_residual": 1.5826493671156072e-08
+    },
+    {
+      "max_identity_residual": 8.83355588676693e-09
+    },
+    {
+      "max_identity_residual": 1.1805061816971829e-08
+    },
+    {
+      "max_identity_residual": 5.1373106435548266e-08
+    },
+    {
+      "max_identity_residual": 3.896546774129206e-08
+    },
+    {
+      "max_identity_residual": 4.828762678599219e-08
+    },
+    {
+      "max_identity_residual": 1.948441608057294e-08
+    },
+    {
+      "max_identity_residual": 1.5763796934464835e-08
+    },
+    {
+      "max_identity_residual": 3.3109007757659015e-08
+    },
+    {
+      "max_identity_residual": 3.225730205169697e-08
+    },
+    {
+      "max_identity_residual": 3.288798411382743e-08
+    },
+    {
+      "max_identity_residual": 4.157811916982723e-08
+    },
+    {
+      "max_identity_residual": 3.0004389861559844e-08
+    },
+    {
+      "max_identity_residual": 6.506459704347378e-08
+    },
+    {
+      "max_identity_residual": 2.1628150603802965e-08
+    },
+    {
+      "max_identity_residual": 1.9345538948556396e-08
+    },
+    {
+      "max_identity_residual": 4.9573000149294444e-08
+    },
+    {
+      "max_identity_residual": 7.331781182173813e-08
+    },
+    {
+      "max_identity_residual": 6.281049313994203e-08
+    },
+    {
+      "max_identity_residual": 4.1829423480521655e-08
+    },
+    {
+      "max_identity_residual": 5.7169677214474746e-08
+    },
+    {
+      "max_identity_residual": 2.9337433371523503e-08
+    },
+    {
+      "max_identity_residual": 3.3850052760797666e-08
+    },
+    {
+      "max_identity_residual": 1.5127459840336144e-08
+    },
+    {
+      "max_identity_residual": 6.50415186154163e-08
+    },
+    {
+      "max_identity_residual": 4.6781802320872146e-08
+    },
+    {
+      "max_identity_residual": 3.364350364964963e-08
+    },
+    {
+      "max_identity_residual": 1.910737679189367e-08
+    },
+    {
+      "max_identity_residual": 9.34908560568104e-08
+    },
+    {
+      "max_identity_residual": 5.6160987860209843e-08
+    },
+    {
+      "max_identity_residual": 7.74565194205934e-08
+    },
+    {
+      "max_identity_residual": 3.64877019709553e-08
+    },
+    {
+      "max_identity_residual": 3.856954933212364e-08
+    },
+    {
+      "max_identity_residual": 1.0809242301235145e-07
+    },
+    {
+      "max_identity_residual": 2.5697880934316686e-08
+    },
+    {
+      "max_identity_residual": 6.017880682662735e-08
+    },
+    {
+      "max_identity_residual": 4.8276148856274403e-08
+    },
+    {
+      "max_identity_residual": 1.236232938239823e-08
+    },
+    {
+      "max_identity_residual": 3.563960171426572e-08
+    },
+    {
+      "max_identity_residual": 6.668529606290718e-08
+    },
+    {
+      "max_identity_residual": 3.628563227664472e-08
+    },
+    {
+      "max_identity_residual": 5.2359101276877595e-08
+    },
+    {
+      "max_identity_residual": 2.511515817538168e-08
+    },
+    {
+      "max_identity_residual": 5.317211182465087e-08
+    },
+    {
+      "max_identity_residual": 5.2678800654959446e-08
+    },
+    {
+      "max_identity_residual": 3.298047501765211e-08
+    },
+    {
+      "max_identity_residual": 7.562010617689907e-08
+    },
+    {
+      "max_identity_residual": 5.434743344245874e-08
+    },
+    {
+      "max_identity_residual": 5.1051139760005526e-08
+    },
+    {
+      "max_identity_residual": 6.253150441892785e-08
+    },
+    {
+      "max_identity_residual": 1.7693245868422025e-08
+    },
+    {
+      "max_identity_residual": 3.0410218676557577e-08
+    },
+    {
+      "max_identity_residual": 4.6966036837403635e-08
+    },
+    {
+      "max_identity_residual": 9.073451223695628e-08
+    },
+    {
+      "max_identity_residual": 1.4415024174319058e-08
+    },
+    {
+      "max_identity_residual": 3.354028521584951e-08
+    },
+    {
+      "max_identity_residual": 4.7422446747269476e-08
+    },
+    {
+      "max_identity_residual": 3.233752132736356e-08
+    },
+    {
+      "max_identity_residual": 4.691520616439959e-08
+    },
+    {
+      "max_identity_residual": 4.3884478939659743e-08
+    },
+    {
+      "max_identity_residual": 2.530253828680884e-08
+    },
+    {
+      "max_identity_residual": 3.924209379668753e-08
+    },
+    {
+      "max_identity_residual": 3.927708491779924e-08
+    },
+    {
+      "max_identity_residual": 6.998231372179475e-08
+    },
+    {
+      "max_identity_residual": 2.1407586148214364e-08
+    },
+    {
+      "max_identity_residual": 6.740249969272583e-08
+    },
+    {
+      "max_identity_residual": 2.4326680225783548e-08
+    },
+    {
+      "max_identity_residual": 4.411795095915494e-08
+    },
+    {
+      "max_identity_residual": 1.0352219637077553e-08
+    },
+    {
+      "max_identity_residual": 2.2257106824241646e-08
+    },
+    {
+      "max_identity_residual": 2.8875778324000123e-08
+    },
+    {
+      "max_identity_residual": 2.191813064378323e-08
+    },
+    {
+      "max_identity_residual": 2.562662893001999e-08
+    },
+    {
+      "max_identity_residual": 3.9372428650708e-08
+    },
+    {
+      "max_identity_residual": 3.6576135786781094e-08
+    },
+    {
+      "max_identity_residual": 2.338010551827807e-08
+    },
+    {
+      "max_identity_residual": 1.7770186877541505e-08
+    },
+    {
+      "max_identity_residual": 5.321051377293884e-08
+    },
+    {
+      "max_identity_residual": 3.334578990710213e-08
+    },
+    {
+      "max_identity_residual": 4.2409248335317784e-08
+    },
+    {
+      "max_identity_residual": 3.677066207075086e-08
+    },
+    {
+      "max_identity_residual": 1.0363920677214367e-07
+    },
+    {
+      "max_identity_residual": 1.57366226716249e-08
+    },
+    {
+      "max_identity_residual": 4.458711133636939e-08
+    },
+    {
+      "max_identity_residual": 2.5017929727866317e-08
+    },
+    {
+      "max_identity_residual": 3.905537082626864e-08
+    },
+    {
+      "max_identity_residual": 2.2930239707008582e-08
+    },
+    {
+      "max_identity_residual": 4.0771054199417733e-08
+    },
+    {
+      "max_identity_residual": 8.573445464676865e-08
+    },
+    {
+      "max_identity_residual": 8.614890245617346e-09
+    },
+    {
+      "max_identity_residual": 3.0577725684821644e-08
+    },
+    {
+      "max_identity_residual": 2.4223138161971747e-08
+    },
+    {
+      "max_identity_residual": 6.918236827857527e-08
+    },
+    {
+      "max_identity_residual": 4.622973237555783e-08
+    },
+    {
+      "max_identity_residual": 4.5841165974280784e-08
+    },
+    {
+      "max_identity_residual": 4.190565006112479e-08
+    },
+    {
+      "max_identity_residual": 4.4368823948204295e-08
+    },
+    {
+      "max_identity_residual": 5.174210215841413e-08
+    },
+    {
+      "max_identity_residual": 3.038940310506888e-08
+    },
+    {
+      "max_identity_residual": 1.4383224167247022e-08
+    },
+    {
+      "max_identity_residual": 8.927509520528787e-08
+    },
+    {
+      "max_identity_residual": 4.450610235906538e-08
+    },
+    {
+      "max_identity_residual": 1.670491811545105e-08
+    },
+    {
+      "max_identity_residual": 3.8746825081759084e-08
+    },
+    {
+      "max_identity_residual": 4.904255745952213e-08
+    },
+    {
+      "max_identity_residual": 1.7701896393162997e-08
+    },
+    {
+      "max_identity_residual": 6.562427956602335e-08
+    },
+    {
+      "max_identity_residual": 8.018924768649072e-08
+    },
+    {
+      "max_identity_residual": 5.5727722880760666e-08
+    },
+    {
+      "max_identity_residual": 2.0669605360623677e-08
+    },
+    {
+      "max_identity_residual": 3.9917849359305535e-08
+    },
+    {
+      "max_identity_residual": 4.827817612351737e-08
+    },
+    {
+      "max_identity_residual": 2.6767257521598253e-08
+    },
+    {
+      "max_identity_residual": 5.073680431344485e-08
+    },
+    {
+      "max_identity_residual": 1.5019742116706425e-08
+    },
+    {
+      "max_identity_residual": 4.5315938557166646e-08
+    },
+    {
+      "max_identity_residual": 6.517092532298818e-08
+    },
+    {
+      "max_identity_residual": 2.4348326133072362e-08
+    },
+    {
+      "max_identity_residual": 3.771441070554715e-08
+    },
+    {
+      "max_identity_residual": 3.5460581804258595e-08
+    }
+  ]
+}

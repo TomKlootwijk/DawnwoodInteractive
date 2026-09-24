@@ -1,0 +1,4309 @@
+{
+  "scope": "New final and explicitly labelled historical source-cycle evidence; committed runtime evidence has its own inventory. This file and final_provenance_verification.json are excluded to avoid a self-hash cycle.",
+  "files": {
+    "cycle_additional_summary.json": {
+      "bytes": 12587,
+      "sha256": "b887dfc36981caeaa8ea05d6282b341585ee277a23e764783b9c1c6e7f2675b8"
+    },
+    "cycle_baseline_summary.json": {
+      "bytes": 8229,
+      "sha256": "1807910f532c936b08a846c7121c17c187bbdc2acfb1b32a7078994699b8386b"
+    },
+    "cycle_connection_audit.json": {
+      "bytes": 1410,
+      "sha256": "3fa697cc5aff67ce0436cfc67708217433d13f3eb64ed8cb3f6fe04d827c5d79"
+    },
+    "cycle_intervention_summary.json": {
+      "bytes": 84233,
+      "sha256": "a9a67e3f49326c4f1730c12858e583291917011ef526394c65ec499e27f252ba"
+    },
+    "cycle_math/artifact_manifest.json": {
+      "bytes": 21482,
+      "sha256": "6f162bbce20d05df365c40e866da7c27146b1c985933c8266bd7f26819dae7aa"
+    },
+    "cycle_math/artifact_manifest_pre_jitter.json": {
+      "bytes": 16067,
+      "sha256": "7a42958024eac5515ea519604db3b8a2d94f0738a829e9562fb9f08218ca3510"
+    },
+    "cycle_math/function_provenance.json": {
+      "bytes": 3727,
+      "sha256": "15a9a69453860e87182ef16ab0a47a93b53b418bd2daacb9efea762d82c52c51"
+    },
+    "cycle_math/function_provenance_pre_jitter.json": {
+      "bytes": 3788,
+      "sha256": "f62231712ded517a0f06c5642c149351728c2240bfa918280d0643defb1f41d9"
+    },
+    "cycle_math/geometry/artifact_manifest.json": {
+      "bytes": 1821,
+      "sha256": "ba64ec35405a9e3d4527449b42dcd7776721f1ba285b798f50c5b2e2137ec653"
+    },
+    "cycle_math/geometry/cpu.bin": {
+      "bytes": 1083148,
+      "sha256": "d8096867070607619da2540166416b817dbde2e41ebfc1c51108d431ee4e0bb0"
+    },
+    "cycle_math/geometry/cpu.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_math/geometry/cpu.stdout.log": {
+      "bytes": 1106,
+      "sha256": "0b70257ecc79f29af4a07d0caf30b45e71d52c5f14a863ebf5d85814afb8cdd3"
+    },
+    "cycle_math/geometry/definition.json": {
+      "bytes": 3319548,
+      "sha256": "bebd139ce4729d8b398002e678ce77ec77d9c16346c8ac7a489379f9744260b0"
+    },
+    "cycle_math/geometry/execution_receipts.json": {
+      "bytes": 1976,
+      "sha256": "446fc98399a2b8fcacbebf2d4eff440daf180663c4eac1f316864c7e0c04cd9f"
+    },
+    "cycle_math/geometry/independent_audit.json": {
+      "bytes": 3357,
+      "sha256": "ce2596a0e9360e5a549dca954e1d18ee26bf5921b95911aad3c739774b35398d"
+    },
+    "cycle_math/geometry/independent_binary64_references.json": {
+      "bytes": 250454,
+      "sha256": "cdf1a03a37360e0932833910b01c0e160a9552572ce91dc390a11cdc586c77ee"
+    },
+    "cycle_math/geometry/manifest.json": {
+      "bytes": 2820360,
+      "sha256": "a0d8a6d4bc2f0899d0499d0851f4487f592d8c4ce47bf11acca2e0c33be33a54"
+    },
+    "cycle_math/geometry/program.bin": {
+      "bytes": 1083148,
+      "sha256": "08c353b1f67a9a11f79aef2e50f7975feef87216d866078caf8dfff4381575bc"
+    },
+    "cycle_math/geometry/source_model.json": {
+      "bytes": 13654,
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9"
+    },
+    "cycle_math/geometry/vulkan.bin": {
+      "bytes": 1083148,
+      "sha256": "d8096867070607619da2540166416b817dbde2e41ebfc1c51108d431ee4e0bb0"
+    },
+    "cycle_math/geometry/vulkan.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_math/geometry/vulkan.stdout.log": {
+      "bytes": 1239,
+      "sha256": "176059c904f476b6347be3b36e18cc96019153c1eb07eec2d9b31ad251f4700d"
+    },
+    "cycle_math/geometry_known_fixtures.json": {
+      "bytes": 3914,
+      "sha256": "624306f88c84a3a4cecb29faeb391ae8ba1aade9e0bb575d820f17e4d9ff0628"
+    },
+    "cycle_math/inverse/artifact_manifest.json": {
+      "bytes": 1812,
+      "sha256": "8a5b951bc2c08ed3d522fbe8f99afc04b6103821d61c7e2fba2db9c78528c1e8"
+    },
+    "cycle_math/inverse/cpu.bin": {
+      "bytes": 81920,
+      "sha256": "1bf833644050023f465c505bba7d5979fc350bbd5ee2c18293aabd48f1108575"
+    },
+    "cycle_math/inverse/cpu.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_math/inverse/cpu.stdout.log": {
+      "bytes": 1102,
+      "sha256": "9ee8f2352ef5d6d2324c464cfe4e41821b74e2b4b9489279c204f2768c0c086e"
+    },
+    "cycle_math/inverse/definition.json": {
+      "bytes": 163490,
+      "sha256": "53f0c878494520e47cfe0e6b76da041116a7dd80c076d80bdfa0d10d76844592"
+    },
+    "cycle_math/inverse/execution_receipts.json": {
+      "bytes": 1972,
+      "sha256": "139d47d93f5b016675c02b02c355d79dc03a47b9bab4b689a0ccf0a00635f8c5"
+    },
+    "cycle_math/inverse/independent_audit.json": {
+      "bytes": 36633,
+      "sha256": "b39c72c07cbf1e77e6e470e7a656fdf8149c45fa46e76771f723aceca86ff2cf"
+    },
+    "cycle_math/inverse/independent_binary64_references.json": {
+      "bytes": 55301,
+      "sha256": "95f47ee647b5c425da9f412b5c7b6aa1db347646dbf297afc4832789651b2eae"
+    },
+    "cycle_math/inverse/manifest.json": {
+      "bytes": 23879,
+      "sha256": "9c8ad2a470d14d2e48909a602dd4aad1e82cbbb5f5c076345a19aa6c87c235e2"
+    },
+    "cycle_math/inverse/program.bin": {
+      "bytes": 81920,
+      "sha256": "ebcf55e9f4ffd42ebf045d8ed7cf1948e6f53f4046883f9fd0fac7970afa010a"
+    },
+    "cycle_math/inverse/source_model.json": {
+      "bytes": 13654,
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9"
+    },
+    "cycle_math/inverse/vulkan.bin": {
+      "bytes": 81920,
+      "sha256": "1bf833644050023f465c505bba7d5979fc350bbd5ee2c18293aabd48f1108575"
+    },
+    "cycle_math/inverse/vulkan.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_math/inverse/vulkan.stdout.log": {
+      "bytes": 1232,
+      "sha256": "0a0fee974dc5f376b49107e910841c97cc601fe56d97b190082ecf2071f90319"
+    },
+    "cycle_math/pinion_forward/artifact_manifest.json": {
+      "bytes": 1813,
+      "sha256": "b446d7d44ce6390edce50ca74722011f630c0539a161f2175030ba6a6f892b02"
+    },
+    "cycle_math/pinion_forward/cpu.bin": {
+      "bytes": 47388,
+      "sha256": "6ada04136ce0ac83f48765e679256dbae634435556b6930d425a1380d8e1d35b"
+    },
+    "cycle_math/pinion_forward/cpu.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_math/pinion_forward/cpu.stdout.log": {
+      "bytes": 1102,
+      "sha256": "e424e8b16101c5d86f4e6417be4bdc6925f60ebfc3a5d316463e613d5525ea07"
+    },
+    "cycle_math/pinion_forward/definition.json": {
+      "bytes": 340419,
+      "sha256": "31f4f6e5e706f1548e901cae493f00dcff71f717b2c52ca9fdc1ef9f6a5d17ba"
+    },
+    "cycle_math/pinion_forward/execution_receipts.json": {
+      "bytes": 2003,
+      "sha256": "1a6ac3db16604022d42b42ae73abd7116923be6c9510a3222c080de201711cdb"
+    },
+    "cycle_math/pinion_forward/independent_audit.json": {
+      "bytes": 21106,
+      "sha256": "4f933d61f2795c9ad7209a7151ccffb4099b3f3ee0e62a44b01aa203356b70c7"
+    },
+    "cycle_math/pinion_forward/independent_binary64_references.json": {
+      "bytes": 35131,
+      "sha256": "56cf0eae56288eb8828e22086af33ac9027d3dccb60c818312d76f00bf1f9f61"
+    },
+    "cycle_math/pinion_forward/manifest.json": {
+      "bytes": 215386,
+      "sha256": "d459552e8dfc8db4b07449d841fd43566e071595a9a1541b1f4dfa5c4fda307a"
+    },
+    "cycle_math/pinion_forward/program.bin": {
+      "bytes": 47388,
+      "sha256": "539db30b1d5a2aed7e454a25576a94f99b3eb623fad420dd3c91c12014ebbca0"
+    },
+    "cycle_math/pinion_forward/source_model.json": {
+      "bytes": 13654,
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9"
+    },
+    "cycle_math/pinion_forward/vulkan.bin": {
+      "bytes": 47388,
+      "sha256": "6ada04136ce0ac83f48765e679256dbae634435556b6930d425a1380d8e1d35b"
+    },
+    "cycle_math/pinion_forward/vulkan.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_math/pinion_forward/vulkan.stdout.log": {
+      "bytes": 1233,
+      "sha256": "285c2c8398dbed066a55aea12c6bff707df2e26b9dfac7936aff3583ac461dad"
+    },
+    "cycle_math/pinion_reverse/artifact_manifest.json": {
+      "bytes": 1813,
+      "sha256": "44768b42b58c8097dd247e69912f6fd59d18f142e30cdecca36b698d818e4ed2"
+    },
+    "cycle_math/pinion_reverse/cpu.bin": {
+      "bytes": 47388,
+      "sha256": "b3c2431cb8a4a27918e8b946ede7e737c96bfd300578b484a572e79181b225a0"
+    },
+    "cycle_math/pinion_reverse/cpu.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_math/pinion_reverse/cpu.stdout.log": {
+      "bytes": 1102,
+      "sha256": "ac9f0ce0c3209e2447588e787e089a8f6bb372b58c17bbe540819d9f6a7bdf90"
+    },
+    "cycle_math/pinion_reverse/definition.json": {
+      "bytes": 340519,
+      "sha256": "c4cd8958b3db1205bbef55dd2a0ead379822872cc868b60ca9200bad461a5b2e"
+    },
+    "cycle_math/pinion_reverse/execution_receipts.json": {
+      "bytes": 2002,
+      "sha256": "5ad35c6c9d2a8707cf0451942636103dfd9fea34487b8c2f5caba9d3069b91ef"
+    },
+    "cycle_math/pinion_reverse/independent_audit.json": {
+      "bytes": 21083,
+      "sha256": "48e67f7c85275044230e1e5a1293aae3d7a6bf58b6aa536946cc7b30e8f67f78"
+    },
+    "cycle_math/pinion_reverse/independent_binary64_references.json": {
+      "bytes": 34999,
+      "sha256": "28effbc5067d7f13c8f2c0bbe25ef39d3de75db1f43ab3ca25c638e80aeb9768"
+    },
+    "cycle_math/pinion_reverse/manifest.json": {
+      "bytes": 215486,
+      "sha256": "577968ac276f28489e084f9070d8c92ef2bd6eb3745673e5115d9cdba5f930c1"
+    },
+    "cycle_math/pinion_reverse/program.bin": {
+      "bytes": 47388,
+      "sha256": "1b3092848c412198d341676f667c0d3d91436ea8bbff61cc0fcd87481ce3ab71"
+    },
+    "cycle_math/pinion_reverse/source_model.json": {
+      "bytes": 13654,
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9"
+    },
+    "cycle_math/pinion_reverse/vulkan.bin": {
+      "bytes": 47388,
+      "sha256": "b3c2431cb8a4a27918e8b946ede7e737c96bfd300578b484a572e79181b225a0"
+    },
+    "cycle_math/pinion_reverse/vulkan.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_math/pinion_reverse/vulkan.stdout.log": {
+      "bytes": 1233,
+      "sha256": "273820e14c7a1398b728e2f49c419cee6cfa587c05dce59afac3a7a5eccbecb2"
+    },
+    "cycle_math/REPORT.md": {
+      "bytes": 8006,
+      "sha256": "65aaa12da4d562a86c03899bf0985a2de3b0c28fd978dcda58ad3d7cc1817bba"
+    },
+    "cycle_math/REPORT_pre_jitter.md": {
+      "bytes": 6203,
+      "sha256": "f916206bcc1784d1b99bab86a0b773f33315d982dc2f9695f6cf1fa7ebce5676"
+    },
+    "cycle_math/rk4_jitter_y_up_disabled/artifact_manifest.json": {
+      "bytes": 1816,
+      "sha256": "0c51fd4d633d2114c868e988a3a607d38db74e33ec8659ee1894701dc6dec526"
+    },
+    "cycle_math/rk4_jitter_y_up_disabled/cpu.bin": {
+      "bytes": 126364,
+      "sha256": "dfd42359a8d60c6adde14c6d5a2a9f4d6f1e7c2a0c56fa6fc9beafbbedf31c54"
+    },
+    "cycle_math/rk4_jitter_y_up_disabled/cpu.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_math/rk4_jitter_y_up_disabled/cpu.stdout.log": {
+      "bytes": 1102,
+      "sha256": "18de8becdc97a48e8e867c7773e90a1c56ea38bbc1fcd2f024337ef59859a8eb"
+    },
+    "cycle_math/rk4_jitter_y_up_disabled/definition.json": {
+      "bytes": 402170,
+      "sha256": "30c8f6c97d0660046396424a7b77970e431c326dcb25f7a1ffeab103cb49c6b2"
+    },
+    "cycle_math/rk4_jitter_y_up_disabled/execution_receipts.json": {
+      "bytes": 2042,
+      "sha256": "501ca563ae6448b8b2d868e037d9c0e7c3807d11c6ebaa36fad927cfc134b147"
+    },
+    "cycle_math/rk4_jitter_y_up_disabled/independent_audit.json": {
+      "bytes": 11141,
+      "sha256": "0ec7dad6fa7f6023610d281e203d618672322604789fc165494043be093330c1"
+    },
+    "cycle_math/rk4_jitter_y_up_disabled/independent_binary64_references.json": {
+      "bytes": 276650,
+      "sha256": "35347cc9aa88a1bd658ced95e3641b83545d80fd7c7dba047604a16698f92859"
+    },
+    "cycle_math/rk4_jitter_y_up_disabled/manifest.json": {
+      "bytes": 45775,
+      "sha256": "0c582a98fc6694afbbcc84c2302ddbf4a6cb118558fc4d6d4e0b003cee48a2d8"
+    },
+    "cycle_math/rk4_jitter_y_up_disabled/program.bin": {
+      "bytes": 126364,
+      "sha256": "ff874f9f51ebc5ec2e569cd65210e43706f62735d2e906aaa8365f09ae345a39"
+    },
+    "cycle_math/rk4_jitter_y_up_disabled/source_model.json": {
+      "bytes": 13654,
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9"
+    },
+    "cycle_math/rk4_jitter_y_up_disabled/vulkan.bin": {
+      "bytes": 126364,
+      "sha256": "dfd42359a8d60c6adde14c6d5a2a9f4d6f1e7c2a0c56fa6fc9beafbbedf31c54"
+    },
+    "cycle_math/rk4_jitter_y_up_disabled/vulkan.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_math/rk4_jitter_y_up_disabled/vulkan.stdout.log": {
+      "bytes": 1236,
+      "sha256": "3b7ab5badf0a1e6897d60c5ad0f415aa261625f85928e8725bee6a9d06795186"
+    },
+    "cycle_math/rk4_jitter_y_up_twice/artifact_manifest.json": {
+      "bytes": 1816,
+      "sha256": "0728aa6da0420aea55f617d52810cb49728421a2786b88986a7a23cb2b3a8234"
+    },
+    "cycle_math/rk4_jitter_y_up_twice/cpu.bin": {
+      "bytes": 176764,
+      "sha256": "c673e880014d2d40325cdd009574c716a206e5a55045c0ae35be38f7ba27c355"
+    },
+    "cycle_math/rk4_jitter_y_up_twice/cpu.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_math/rk4_jitter_y_up_twice/cpu.stdout.log": {
+      "bytes": 1104,
+      "sha256": "73a963afcc429f0b0083b700e14ab045084fadb6e257f0dd497c289238d4303d"
+    },
+    "cycle_math/rk4_jitter_y_up_twice/definition.json": {
+      "bytes": 406188,
+      "sha256": "6f82abc07477ce9ede592b324c46c36dce27ff724faf45b01ad2f06b86d78926"
+    },
+    "cycle_math/rk4_jitter_y_up_twice/execution_receipts.json": {
+      "bytes": 2030,
+      "sha256": "aedbf156cf61a0097616b107ccff9a3683ed1a55157a943638a541f3c5553a78"
+    },
+    "cycle_math/rk4_jitter_y_up_twice/independent_audit.json": {
+      "bytes": 11141,
+      "sha256": "13ec4cb118c9bebf73ed6cce4c91fe6e2e5466976e5711bb4707a0f7804cb853"
+    },
+    "cycle_math/rk4_jitter_y_up_twice/independent_binary64_references.json": {
+      "bytes": 276662,
+      "sha256": "3bc086b949919d9dc28ef37c7a905d1439b17e4c5804b3eaabbde494f6ef4ec8"
+    },
+    "cycle_math/rk4_jitter_y_up_twice/manifest.json": {
+      "bytes": 51221,
+      "sha256": "442d4db8997b4b3f4ebbf85e5dff9eb9d0e04aa993fc477795631e6f324e6db5"
+    },
+    "cycle_math/rk4_jitter_y_up_twice/program.bin": {
+      "bytes": 176764,
+      "sha256": "bd0ecfcb5ee45e748a300dc0a3ea90552c305ddd7093278ccb396df1dbab3df0"
+    },
+    "cycle_math/rk4_jitter_y_up_twice/source_model.json": {
+      "bytes": 13654,
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9"
+    },
+    "cycle_math/rk4_jitter_y_up_twice/vulkan.bin": {
+      "bytes": 176764,
+      "sha256": "c673e880014d2d40325cdd009574c716a206e5a55045c0ae35be38f7ba27c355"
+    },
+    "cycle_math/rk4_jitter_y_up_twice/vulkan.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_math/rk4_jitter_y_up_twice/vulkan.stdout.log": {
+      "bytes": 1236,
+      "sha256": "c0a9cf8dfc6ef0f526d5188212a3b7ac33c7eea83ca4dfb0857723c6762ed2bb"
+    },
+    "cycle_math/rk4_y_up_disabled/artifact_manifest.json": {
+      "bytes": 1813,
+      "sha256": "fef153887839697714ea80203d178107a55f9b652cc91719fa48594e219d47d7"
+    },
+    "cycle_math/rk4_y_up_disabled/cpu.bin": {
+      "bytes": 64840,
+      "sha256": "b65ee181765c1aa1e1ecc4cc1c6ed0ecec4b6c3836f40f741e6a99b5c38a1a4e"
+    },
+    "cycle_math/rk4_y_up_disabled/cpu.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_math/rk4_y_up_disabled/cpu.stdout.log": {
+      "bytes": 1104,
+      "sha256": "344b5639e73b5f05822b16b0fe30ac57d9a288e1f6765a964e183a2b3171485c"
+    },
+    "cycle_math/rk4_y_up_disabled/definition.json": {
+      "bytes": 209005,
+      "sha256": "f36609bf307ba703362ada569d5c92c446960a7f467afc018cf5d2624d0e5314"
+    },
+    "cycle_math/rk4_y_up_disabled/execution_receipts.json": {
+      "bytes": 2015,
+      "sha256": "c50cf09aa56270dad6fccbfa0265489c945738dbb2e1dc068fe5804f650d6cc7"
+    },
+    "cycle_math/rk4_y_up_disabled/independent_audit.json": {
+      "bytes": 10820,
+      "sha256": "43130905a8600a1341cdffe7d18a4f393039a4ca3f1c58236c9937bb6e455d12"
+    },
+    "cycle_math/rk4_y_up_disabled/independent_binary64_references.json": {
+      "bytes": 138259,
+      "sha256": "74494e77421b422a9e86eae0bd3920315c3fabbb69d97cda97488330a91d1771"
+    },
+    "cycle_math/rk4_y_up_disabled/manifest.json": {
+      "bytes": 39894,
+      "sha256": "407778311f5723d688110aa278d9ba7febabd2a62ca88a1f1c3e1a99d2de50e2"
+    },
+    "cycle_math/rk4_y_up_disabled/program.bin": {
+      "bytes": 64840,
+      "sha256": "cf1cd1284f28383eb592b35cccfe15f3ad24d55835c9587728ba390662fc07f5"
+    },
+    "cycle_math/rk4_y_up_disabled/source_model.json": {
+      "bytes": 13654,
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9"
+    },
+    "cycle_math/rk4_y_up_disabled/vulkan.bin": {
+      "bytes": 64840,
+      "sha256": "b65ee181765c1aa1e1ecc4cc1c6ed0ecec4b6c3836f40f741e6a99b5c38a1a4e"
+    },
+    "cycle_math/rk4_y_up_disabled/vulkan.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_math/rk4_y_up_disabled/vulkan.stdout.log": {
+      "bytes": 1234,
+      "sha256": "d0e746979bf9cdece550f4a3c387d9bdc74cab2e9e752bc956dc61642b5524d9"
+    },
+    "cycle_math/rk4_y_up_twice/artifact_manifest.json": {
+      "bytes": 1813,
+      "sha256": "2db9a6c835742139ba282331fa117a80d14ca4445a9f2732f811adbbb9e56bed"
+    },
+    "cycle_math/rk4_y_up_twice/cpu.bin": {
+      "bytes": 90376,
+      "sha256": "98d19c0e7a9102985a9dbc268a2c134e705df0b9f9697cc483c845d411bac6ed"
+    },
+    "cycle_math/rk4_y_up_twice/cpu.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_math/rk4_y_up_twice/cpu.stdout.log": {
+      "bytes": 1103,
+      "sha256": "cac7ebff6f962e9c2db4d013c5d5dd649cfbcede57057eead953323e06758331"
+    },
+    "cycle_math/rk4_y_up_twice/definition.json": {
+      "bytes": 213023,
+      "sha256": "fa25ea81aaf4ce258dfee5c7c832ae596e292a595c40b6c02da5050d6c7aefe2"
+    },
+    "cycle_math/rk4_y_up_twice/execution_receipts.json": {
+      "bytes": 2001,
+      "sha256": "e41e6b18b2367ecc0a2cf1140be93b666ad56f0bd9c31855cf65be97c1f3cf82"
+    },
+    "cycle_math/rk4_y_up_twice/independent_audit.json": {
+      "bytes": 10817,
+      "sha256": "003948f2e5a1bc3314c3fd6c200807324414085a28dacef57990c19bec24e956"
+    },
+    "cycle_math/rk4_y_up_twice/independent_binary64_references.json": {
+      "bytes": 138240,
+      "sha256": "ea71c20c18175bedc3a6cbb55480774b968aca99575d2f125ebcc0b40b9b6d5d"
+    },
+    "cycle_math/rk4_y_up_twice/manifest.json": {
+      "bytes": 45340,
+      "sha256": "d4c60114c13a123eb29a712675897a77cd548a7f56f6860533ef441e8223e4ba"
+    },
+    "cycle_math/rk4_y_up_twice/program.bin": {
+      "bytes": 90376,
+      "sha256": "06ad80be50cc0c295aa0f17c0783aebb971dfe941835cedc885d6228da9485cf"
+    },
+    "cycle_math/rk4_y_up_twice/source_model.json": {
+      "bytes": 13654,
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9"
+    },
+    "cycle_math/rk4_y_up_twice/vulkan.bin": {
+      "bytes": 90376,
+      "sha256": "98d19c0e7a9102985a9dbc268a2c134e705df0b9f9697cc483c845d411bac6ed"
+    },
+    "cycle_math/rk4_y_up_twice/vulkan.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_math/rk4_y_up_twice/vulkan.stdout.log": {
+      "bytes": 1234,
+      "sha256": "8f800c351f40d6aa13d3f9c0adc2abfa95024c0436fd9c66e0e7e388677c5f24"
+    },
+    "cycle_math/rk_event_comparison.json": {
+      "bytes": 119,
+      "sha256": "92d96c55eabe1da508c2f540904279b8be83a74d517aa54eb2b7e4905b3e7bc6"
+    },
+    "cycle_math/rk_jitter_event_comparison.json": {
+      "bytes": 282,
+      "sha256": "494d558446b50c631210882c6fbba9a00776be18be91f29e94288f0971a72fea"
+    },
+    "cycle_math/summary.json": {
+      "bytes": 4688,
+      "sha256": "12b841fafd1bf8ccbd160cdf363cbf8f1f9ad11fe7a35b8ad622f6d3051de397"
+    },
+    "cycle_math/summary_pre_jitter.json": {
+      "bytes": 4118,
+      "sha256": "37f706cc4c21ea3e989ed15df280730168967c5885a88143e37f23d746644ad6"
+    },
+    "cycle_math/transform_inverse/artifact_manifest.json": {
+      "bytes": 1812,
+      "sha256": "1d40da51bebfd5613207f08a480aff9a49ea80b6054345e818257a63644757db"
+    },
+    "cycle_math/transform_inverse/cpu.bin": {
+      "bytes": 72448,
+      "sha256": "fd43d2c665646d8f7f0b116790293e668c752c4eefd45e84b7e503a39e97a4c2"
+    },
+    "cycle_math/transform_inverse/cpu.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_math/transform_inverse/cpu.stdout.log": {
+      "bytes": 1102,
+      "sha256": "f0ad44f15ca8fcb2690206ae32321d25447fec14251ced3263b42f1b6a454a0c"
+    },
+    "cycle_math/transform_inverse/definition.json": {
+      "bytes": 148116,
+      "sha256": "3524ef7c3114840fbe4a2aace1e530a2ea81915da2255b6e6ec5113a1cdd9560"
+    },
+    "cycle_math/transform_inverse/execution_receipts.json": {
+      "bytes": 2014,
+      "sha256": "d6afa266cf0855b6bb1f3cf6e054a995f2f7638ecd8e16cf8731d190993d5d26"
+    },
+    "cycle_math/transform_inverse/independent_audit.json": {
+      "bytes": 21644,
+      "sha256": "ae8dcee80b4bcbb516782a007f00c61c40b6de502363e37a3173f7f747816dcd"
+    },
+    "cycle_math/transform_inverse/independent_binary64_references.json": {
+      "bytes": 53638,
+      "sha256": "f468dd9ffc983d700a9164ecc86442e46e519b151e2c469214fdd3cc8cf2f6ac"
+    },
+    "cycle_math/transform_inverse/manifest.json": {
+      "bytes": 50784,
+      "sha256": "d1e0b756783fd9fb7949d36b12ea5400d22dea04039f9d5571ea8495943b5395"
+    },
+    "cycle_math/transform_inverse/program.bin": {
+      "bytes": 72448,
+      "sha256": "88ac22904023d19b20805aa5b355ac58d8ef0ab9b1521af34ce6ad7064bbb506"
+    },
+    "cycle_math/transform_inverse/source_model.json": {
+      "bytes": 13654,
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9"
+    },
+    "cycle_math/transform_inverse/vulkan.bin": {
+      "bytes": 72448,
+      "sha256": "fd43d2c665646d8f7f0b116790293e668c752c4eefd45e84b7e503a39e97a4c2"
+    },
+    "cycle_math/transform_inverse/vulkan.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_math/transform_inverse/vulkan.stdout.log": {
+      "bytes": 1233,
+      "sha256": "8436df7bd87c246f5365166605e5ee027dc2bbae2e895c4d9867ce4c91ded69e"
+    },
+    "cycle_runs/body_apex_0/change.json": {
+      "bytes": 1077,
+      "sha256": "7a01dc75dd5e88255c8d6a8e75efa2e293cb363d3d7c252afc0ce55de4d1a135"
+    },
+    "cycle_runs/body_apex_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "544b7503ba4fcd3f768bb677950dfc2423f82d6bd366356b834c053781424403"
+    },
+    "cycle_runs/body_apex_0/cpu.execution.json": {
+      "bytes": 2075,
+      "sha256": "b34eae01f881e006a65418cc99088cd1ca8287a64e7f8b756d9389d9c6005d14"
+    },
+    "cycle_runs/body_apex_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_apex_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "2e736067306f9c15488c27a79d661f8736623191b74400cd052e7eb59d277927"
+    },
+    "cycle_runs/body_apex_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "af7a8081388d3bccb582c56f9bbcb907fe343b4ae6906dde839c2b1f42ea9bbe"
+    },
+    "cycle_runs/body_apex_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "544b7503ba4fcd3f768bb677950dfc2423f82d6bd366356b834c053781424403"
+    },
+    "cycle_runs/body_apex_0/vulkan.execution.json": {
+      "bytes": 2249,
+      "sha256": "f5ab2aad6f9abe00b624cf50be91e5c0567fefd55a81bb525f8f362638be6f5e"
+    },
+    "cycle_runs/body_apex_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_apex_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "119fa8bfd252850cae6cc0fd6bcbf08993a03c023d3fe61fb4ab49717e7169db"
+    },
+    "cycle_runs/body_blend_0/change.json": {
+      "bytes": 1075,
+      "sha256": "f01ce9a3fd4750236f629c9e6e7c2a71ec02c57f9fcf8547c72d8e2def952bde"
+    },
+    "cycle_runs/body_blend_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "3cf4bddc9bf878b5503cfea8a12c5ee0591745a01eda050d7fc3e603668819c7"
+    },
+    "cycle_runs/body_blend_0/cpu.execution.json": {
+      "bytes": 2077,
+      "sha256": "24cbf9d6814edd134f86a65aca7bbd747c167a1e10c6cf6f84d67281358bcc7a"
+    },
+    "cycle_runs/body_blend_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_blend_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "0d77c794b203c9accf9a27a8e9f33861d0c4fa8c76c5a6b66296b8e7c63a5599"
+    },
+    "cycle_runs/body_blend_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "86df808f12d025e1aead009c9b4db4b45d43568e20b8f20e04db4e4a97906d76"
+    },
+    "cycle_runs/body_blend_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "3cf4bddc9bf878b5503cfea8a12c5ee0591745a01eda050d7fc3e603668819c7"
+    },
+    "cycle_runs/body_blend_0/vulkan.execution.json": {
+      "bytes": 2251,
+      "sha256": "234a76cbb9d632b4d6661b7469241662c36ec721c9c4372b19e5827958835c55"
+    },
+    "cycle_runs/body_blend_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_blend_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "1db0ef5234ee28274f805c10aceb0857841664a16c2ea3f48476eb3aaddad520"
+    },
+    "cycle_runs/body_bst_0/change.json": {
+      "bytes": 1084,
+      "sha256": "3e2648048c9bfb3147ce394f268b0a4f38febaf3c3babff89d28c8adcfe9ad72"
+    },
+    "cycle_runs/body_bst_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "96c2e4a51a03c1613e2d9dc1ba45d61206325e9352d9947ccc66ebaf8f6e38c4"
+    },
+    "cycle_runs/body_bst_0/cpu.execution.json": {
+      "bytes": 2073,
+      "sha256": "cdad64c465ea3818d3006f82d67b091ad9a1ccd45aa23943320d18eed950dd4d"
+    },
+    "cycle_runs/body_bst_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_bst_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "7ef61adf7cb7bb338b9c0a9e62d9d4c700fb35d3880402d3f5390d47b6a77631"
+    },
+    "cycle_runs/body_bst_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "d87890f711b02df76dd09596d1096f48b29182a1bbdff8548ac1d43ef855a926"
+    },
+    "cycle_runs/body_bst_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "96c2e4a51a03c1613e2d9dc1ba45d61206325e9352d9947ccc66ebaf8f6e38c4"
+    },
+    "cycle_runs/body_bst_0/vulkan.execution.json": {
+      "bytes": 2247,
+      "sha256": "6c0064dbc3fce89ef2a5c4e5595dd5801740dc2edf4a73d387eddcbdd424275d"
+    },
+    "cycle_runs/body_bst_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_bst_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "553a4994905f051644d519a98fbaf373e108621a8d66e204632eb63d5e359d50"
+    },
+    "cycle_runs/body_circle_0/change.json": {
+      "bytes": 1079,
+      "sha256": "31eefab0bf2df37ce19c77fb1576d3c7ae39d314e7049b11ee1686d18fdee095"
+    },
+    "cycle_runs/body_circle_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "a0d91f9855c3932e2a7525d96daa267c6465afc8435e3490e6239cf86bef1600"
+    },
+    "cycle_runs/body_circle_0/cpu.execution.json": {
+      "bytes": 2079,
+      "sha256": "1c7fb2e275cee575a162421b940b2269361823b2ffa8ff50148602c9036c143d"
+    },
+    "cycle_runs/body_circle_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_circle_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "58ad2ff8c9c2d1bf18f9a4c8eb51b186f06c6f19789a375f0c75bca9873210c8"
+    },
+    "cycle_runs/body_circle_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "bb0dbb4b80d995dd856cf265f9d6e00bf9d61db669bd5a212d60f67b68c60c52"
+    },
+    "cycle_runs/body_circle_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "a0d91f9855c3932e2a7525d96daa267c6465afc8435e3490e6239cf86bef1600"
+    },
+    "cycle_runs/body_circle_0/vulkan.execution.json": {
+      "bytes": 2253,
+      "sha256": "9c31810a27a70f2484c290d629fdecece7e1ef9bcdc0d0179269dbb0df0df69e"
+    },
+    "cycle_runs/body_circle_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_circle_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "a408b970dc26f86b1e5b5262a9d8a111bb11f932f5e29d20810b60f4f1f372d4"
+    },
+    "cycle_runs/body_circle_99/change.json": {
+      "bytes": 1077,
+      "sha256": "70cd50ef28575a05a68db290129ada8c747a8d7bcd9dda319b1f6328e870fdcd"
+    },
+    "cycle_runs/body_circle_99/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "8a9348f487484da1e316de39b8581a14999f7e8fdd7fb090479c52a9552d9d43"
+    },
+    "cycle_runs/body_circle_99/cpu.execution.json": {
+      "bytes": 2081,
+      "sha256": "2816430bdce04b1dafbae8f0127d5054cc3343ced206b948d12d886a149c74a3"
+    },
+    "cycle_runs/body_circle_99/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_circle_99/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "09c6e433bec5909a2e0aebf2f455d635f809c5a631df907af97b3deca2c0593e"
+    },
+    "cycle_runs/body_circle_99/program.bin": {
+      "bytes": 133892,
+      "sha256": "a0787bc00c27002a4b0ea05a40f2c60c6a6d9647c64d45935fb222f6ea26e57a"
+    },
+    "cycle_runs/body_circle_99/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "8a9348f487484da1e316de39b8581a14999f7e8fdd7fb090479c52a9552d9d43"
+    },
+    "cycle_runs/body_circle_99/vulkan.execution.json": {
+      "bytes": 2255,
+      "sha256": "aa3b5ae270624842665e5b77dd66182c380d9fc572f31e131c23c7955182cd29"
+    },
+    "cycle_runs/body_circle_99/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_circle_99/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "5e9709cb26c3cbcde24de6f9f5242b11112d4dd37c9eaea229078fd2e10b1bb4"
+    },
+    "cycle_runs/body_cone_0/change.json": {
+      "bytes": 1077,
+      "sha256": "6958179c30df357ca0b01d3b066e21bd740508101607b1a1ff16c7d1103a939b"
+    },
+    "cycle_runs/body_cone_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "bb63a20b001254d2a660eb2d8961f11ad92ad606934d6a3c86cb885ac7078e29"
+    },
+    "cycle_runs/body_cone_0/cpu.execution.json": {
+      "bytes": 2075,
+      "sha256": "a222f6e33432ac2bcec0021257c011c57178c5ba3a226432c698e6d6293e8790"
+    },
+    "cycle_runs/body_cone_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_cone_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "40330d6661850ff242e39e0bdc75a31ec6369744bcec5ee7365e99fe7e4976b6"
+    },
+    "cycle_runs/body_cone_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "245d152af458db9faf6ef986175ded7a83b25128c0d834f599fba8569f373fcb"
+    },
+    "cycle_runs/body_cone_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "bb63a20b001254d2a660eb2d8961f11ad92ad606934d6a3c86cb885ac7078e29"
+    },
+    "cycle_runs/body_cone_0/vulkan.execution.json": {
+      "bytes": 2249,
+      "sha256": "748e1891ab953269e45d28ffa7d6df084bf3a868f5acd5183b53c4aa18e59645"
+    },
+    "cycle_runs/body_cone_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_cone_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "6464abd4f9f1aed3a1f0d38368993c7de95b6e81fe79644212e70b9819d280e3"
+    },
+    "cycle_runs/body_crystal_0/change.json": {
+      "bytes": 1077,
+      "sha256": "060d60c4cba76ba997c7eda6ba05a08e555fc5e1393e81065aaf4bf4599b6aee"
+    },
+    "cycle_runs/body_crystal_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "3bdd7507ca1e4fb1c317bf82ef720827e978d6fb1c04334db18d12f29c29954c"
+    },
+    "cycle_runs/body_crystal_0/cpu.execution.json": {
+      "bytes": 2081,
+      "sha256": "f550141d460e44d21035d625dd6b2d22fef2a769c8f45eec762e517b30740707"
+    },
+    "cycle_runs/body_crystal_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_crystal_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "6627c7e347473d7f353b162d68464bbbec80a6cd47834d8a3f898ea371f0cbce"
+    },
+    "cycle_runs/body_crystal_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "6a91a8dfa3bd637759d7323dfc3fe5499d473989706af19ed607a99040cc086d"
+    },
+    "cycle_runs/body_crystal_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "3bdd7507ca1e4fb1c317bf82ef720827e978d6fb1c04334db18d12f29c29954c"
+    },
+    "cycle_runs/body_crystal_0/vulkan.execution.json": {
+      "bytes": 2255,
+      "sha256": "1fb7ec578774cce39b49f39367f8dfa8c2919154d620d8ef9c4fb6350caa454e"
+    },
+    "cycle_runs/body_crystal_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_crystal_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "8b4dddb1c9c91d6f0c552d92038d345992d42ea7e069b27ac4e7f8f3e208e85d"
+    },
+    "cycle_runs/body_delta_phi_0/change.json": {
+      "bytes": 1082,
+      "sha256": "6032d5b988b2f29ac794a4cedebcea44ca64f95faa7a64b0d031b499f3f645ff"
+    },
+    "cycle_runs/body_delta_phi_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "5f9b1a5193739ea4eb98f311305f3f2b99a6333a3dedd4eb9e7969d7ebfd7dca"
+    },
+    "cycle_runs/body_delta_phi_0/cpu.execution.json": {
+      "bytes": 2085,
+      "sha256": "862830f6c523228bdf36eb9f3d3cfbe32a245b192bf3cc1ef98acdce55845bef"
+    },
+    "cycle_runs/body_delta_phi_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_delta_phi_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "8eac111cdc1ea7811d7fa22c9198727b812414ffd0c2a0d5d8148cae9b0afe2f"
+    },
+    "cycle_runs/body_delta_phi_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "5a5473f1576eeffe3488cd069404ecb2dd477ff4a563ba5c39d5201d1d897b4a"
+    },
+    "cycle_runs/body_delta_phi_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "5f9b1a5193739ea4eb98f311305f3f2b99a6333a3dedd4eb9e7969d7ebfd7dca"
+    },
+    "cycle_runs/body_delta_phi_0/vulkan.execution.json": {
+      "bytes": 2259,
+      "sha256": "b377337704edef17045b47cb1ff121952e4a2308a6aeb4cd302a45e18891cf6a"
+    },
+    "cycle_runs/body_delta_phi_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_delta_phi_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "6afba2c94a412862a5b1bbeab65453bc9139e888f87e83d412ee52ea38576219"
+    },
+    "cycle_runs/body_dichromatic_0/change.json": {
+      "bytes": 1081,
+      "sha256": "b7126c0098a9ef4c3bc32bbdab20b9f40712e3a619cf2eeaa319332109572914"
+    },
+    "cycle_runs/body_dichromatic_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "7e5ed96a1da64aa827a6e90c2ef43194b8cad1027c31240c27921515660569a9"
+    },
+    "cycle_runs/body_dichromatic_0/cpu.execution.json": {
+      "bytes": 2089,
+      "sha256": "8fd07dda0b4cad17af283bcd34ad8fcd86eff48345a5ed9f4ac8bbbc9d86bc56"
+    },
+    "cycle_runs/body_dichromatic_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_dichromatic_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "315827ae5bac1bdaa27ade690298b63f0dd915a7b18f7d4a496306bf1494bed9"
+    },
+    "cycle_runs/body_dichromatic_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "ef2d3b938f43ab0af64c5a8cdc71beec6d9a60f6274655f78a88bea3ffac204f"
+    },
+    "cycle_runs/body_dichromatic_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "7e5ed96a1da64aa827a6e90c2ef43194b8cad1027c31240c27921515660569a9"
+    },
+    "cycle_runs/body_dichromatic_0/vulkan.execution.json": {
+      "bytes": 2263,
+      "sha256": "e27135b407880238c5ebb5052165de80598504aa2b357eac75d9023ae008acfc"
+    },
+    "cycle_runs/body_dichromatic_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_dichromatic_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "c3311c64fa080311647620ae12f2c586e1b25637e502013dc1ed4084cf0dcf11"
+    },
+    "cycle_runs/body_double_dot_0/change.json": {
+      "bytes": 1083,
+      "sha256": "a73db324a1a05d7b291859b526c1b9f694085be9e32b04b143be2d4ce64da1a2"
+    },
+    "cycle_runs/body_double_dot_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "b9fccd39a95f527b0c1a2ed836f4eff30f9ea5b7885118f5fd6b338233bb0989"
+    },
+    "cycle_runs/body_double_dot_0/cpu.execution.json": {
+      "bytes": 2087,
+      "sha256": "11537b39d3c047385055ab29113d1b3125c572f4da7425ba901ef0f3f3c51af2"
+    },
+    "cycle_runs/body_double_dot_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_double_dot_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "556e51fd72d36fdf53cde6aea553be0f1e68b903b28e15903e2f1dcba32ff3ef"
+    },
+    "cycle_runs/body_double_dot_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "caedd6f57f101ce68ed95ece6ce32de3b3589b3ed51ac21d2fdd21a6b75236f2"
+    },
+    "cycle_runs/body_double_dot_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "b9fccd39a95f527b0c1a2ed836f4eff30f9ea5b7885118f5fd6b338233bb0989"
+    },
+    "cycle_runs/body_double_dot_0/vulkan.execution.json": {
+      "bytes": 2261,
+      "sha256": "5a70a7ce3ab4cded5c2d24618563d5cb109f201144ff670a178e59b960e6dc48"
+    },
+    "cycle_runs/body_double_dot_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_double_dot_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "6d2dc2a25b75a26be1097807527df2893a61505da72d82746c14b9a551e401a2"
+    },
+    "cycle_runs/body_hadamard_1/change.json": {
+      "bytes": 1078,
+      "sha256": "99bdd47105c9059f2396d886ce8bc09099da654895ba6786f5db38551259219a"
+    },
+    "cycle_runs/body_hadamard_1/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "6e6902a72f91dc46cfcd64c94f31f76a1837c5a2dec085458e855e567e31054b"
+    },
+    "cycle_runs/body_hadamard_1/cpu.execution.json": {
+      "bytes": 2083,
+      "sha256": "d8437130f18cee617f22720743cdb8f46121fdb4552a8b53c28f133702f3ee9a"
+    },
+    "cycle_runs/body_hadamard_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_hadamard_1/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "8ccedb42e451d0bc5734cc64adacf4633114a7520a2ef085e335cfea1ac0fc40"
+    },
+    "cycle_runs/body_hadamard_1/program.bin": {
+      "bytes": 133892,
+      "sha256": "bd70c42a6da3305507c907604d212707bb7460af648dc3e242695739f8776a6a"
+    },
+    "cycle_runs/body_hadamard_1/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "6e6902a72f91dc46cfcd64c94f31f76a1837c5a2dec085458e855e567e31054b"
+    },
+    "cycle_runs/body_hadamard_1/vulkan.execution.json": {
+      "bytes": 2257,
+      "sha256": "48ada9069ce565666765d01dba53ffd3d7903f445ee72ad3e355c0d6e2e69925"
+    },
+    "cycle_runs/body_hadamard_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_hadamard_1/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "13588284febc84f30611f0091ced729148a4a51fa23d409d9f419e92f53d2335"
+    },
+    "cycle_runs/body_inverse_T_0/change.json": {
+      "bytes": 1080,
+      "sha256": "4708551cab608c7dfdd80e303cb6b56b93064725ea9c1fcdbfcd4f4ea7ad1aae"
+    },
+    "cycle_runs/body_inverse_T_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "440eeb62b5d90fcd31865a6c143257cc84ae2df86c6616c11ab424d60135e9c6"
+    },
+    "cycle_runs/body_inverse_T_0/cpu.execution.json": {
+      "bytes": 2085,
+      "sha256": "fff51a17dbedeff86b6261539873de970325277f95f69a87d5bda658d1052780"
+    },
+    "cycle_runs/body_inverse_T_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_inverse_T_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "634ac7b54900396033f61364336101e2c9755d7219ea7524fb09431ecf5abb3f"
+    },
+    "cycle_runs/body_inverse_T_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "792850e4f5bc4dc0a03ad293a79cc1bb8b244f87fe8ceb9efa06ef06ea001e01"
+    },
+    "cycle_runs/body_inverse_T_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "440eeb62b5d90fcd31865a6c143257cc84ae2df86c6616c11ab424d60135e9c6"
+    },
+    "cycle_runs/body_inverse_T_0/vulkan.execution.json": {
+      "bytes": 2259,
+      "sha256": "f80ab06010931c2c061a8557e060a408d279cce7bcbc096d6651669e8f4e6ec0"
+    },
+    "cycle_runs/body_inverse_T_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_inverse_T_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "17d174ca5d4921eee71312f3f28df01d0b3360a165d178fe9dabecd398934b97"
+    },
+    "cycle_runs/body_klein_0/change.json": {
+      "bytes": 1075,
+      "sha256": "8dfdc6190e98e6f95993782de0e7075db6a4fb33dffca8a03485b0331eac41f6"
+    },
+    "cycle_runs/body_klein_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "93dc1040b787b7dd59bfca53d3b11dcabc48cd2dcfb03162de5dcd755f9ab6b1"
+    },
+    "cycle_runs/body_klein_0/cpu.execution.json": {
+      "bytes": 2077,
+      "sha256": "b1700a8055d3388f535ee84e2e59e7671cbab415ef110b62b90915e9dada7352"
+    },
+    "cycle_runs/body_klein_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_klein_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "e280c0d6d32511c0ef197c916e26e9ae13ab6b34bc4dd446decd10544011801f"
+    },
+    "cycle_runs/body_klein_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "ca035e0a4a769b2c36da1c0155b6eb728c7058d432d3383bf1d4862fd8d1be53"
+    },
+    "cycle_runs/body_klein_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "93dc1040b787b7dd59bfca53d3b11dcabc48cd2dcfb03162de5dcd755f9ab6b1"
+    },
+    "cycle_runs/body_klein_0/vulkan.execution.json": {
+      "bytes": 2250,
+      "sha256": "1e402f44ec4d6fb788cc25938942251b272cf9b74c16d6be5b671e43b22870f0"
+    },
+    "cycle_runs/body_klein_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_klein_0/vulkan.stdout.txt": {
+      "bytes": 1235,
+      "sha256": "fa1e840415104e53318acf7831ecdeaa1166392fce99fd381d0b7e342e40bfce"
+    },
+    "cycle_runs/body_parity_0/change.json": {
+      "bytes": 1079,
+      "sha256": "86d3ac85a5d70cb8edf60b6e491eea44503b3baf4ae8553183a41558ff7dc8ab"
+    },
+    "cycle_runs/body_parity_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "9157355e962179201341596f96cf59079c5506a870bbef0789ae49dbaf925d49"
+    },
+    "cycle_runs/body_parity_0/cpu.execution.json": {
+      "bytes": 2079,
+      "sha256": "ca3797eea312f7e555041fd4e823b2adf7c5ca3e749ef80a2f2f8d6f0242e234"
+    },
+    "cycle_runs/body_parity_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_parity_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "848b51e04f44c97916d67f90f3c85ccf6e4f6ac9e99a9f78313982d72eec62cb"
+    },
+    "cycle_runs/body_parity_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "8efebad3b73d42035d65765ef69419c670947221b2172c0c8da6b24c88fe45af"
+    },
+    "cycle_runs/body_parity_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "9157355e962179201341596f96cf59079c5506a870bbef0789ae49dbaf925d49"
+    },
+    "cycle_runs/body_parity_0/vulkan.execution.json": {
+      "bytes": 2251,
+      "sha256": "780167ed5ea07a3a461dd57a89f4bd55f282088c32d80dc09c46fa50bcdc43e5"
+    },
+    "cycle_runs/body_parity_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_parity_0/vulkan.stdout.txt": {
+      "bytes": 1234,
+      "sha256": "da2b82811aaabb4436dc1e385b3872307f4df1c5cd0b34974a0ac2b8e77c3917"
+    },
+    "cycle_runs/body_phase_history_0/change.json": {
+      "bytes": 1083,
+      "sha256": "5207272ebe769f8c3a516968277977c885ad424bd8d6987d6a8411861acc67aa"
+    },
+    "cycle_runs/body_phase_history_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "72bcc3b0aa59a98ba8c68e58948a30f6d9d171263626499b05186ef7da6ba759"
+    },
+    "cycle_runs/body_phase_history_0/cpu.execution.json": {
+      "bytes": 2093,
+      "sha256": "897dab054810e10c0eeae36e42116ec31240d5dad4713121c9169305fd39cc94"
+    },
+    "cycle_runs/body_phase_history_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_phase_history_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "4f304129f849d806b7d3b98b996b6f209df11890b2578437931672719f66ee7e"
+    },
+    "cycle_runs/body_phase_history_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "8f69a2d4326a842fe608f3e4b36665986244985914d9353b74a7fcb5b66eca2f"
+    },
+    "cycle_runs/body_phase_history_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "72bcc3b0aa59a98ba8c68e58948a30f6d9d171263626499b05186ef7da6ba759"
+    },
+    "cycle_runs/body_phase_history_0/vulkan.execution.json": {
+      "bytes": 2266,
+      "sha256": "fadeb0a1ffea5ce03019405804aa286eb2df7deef08e5054bc3bb1b8b7063f8a"
+    },
+    "cycle_runs/body_phase_history_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_phase_history_0/vulkan.stdout.txt": {
+      "bytes": 1235,
+      "sha256": "78fee203995ae0384f20f34282703e8971463c10c58340e025f2e9ad5ed5ce31"
+    },
+    "cycle_runs/body_phi_0/change.json": {
+      "bytes": 1075,
+      "sha256": "1511ac233211bcb0c473d0a827d0682b186722b4019cad5f473b72630d8c076e"
+    },
+    "cycle_runs/body_phi_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "db8e4c9160db3c0ddd30d76cdbc2687bb6ca711f2b3919a6da7d858494033621"
+    },
+    "cycle_runs/body_phi_0/cpu.execution.json": {
+      "bytes": 2073,
+      "sha256": "f98885b5ca6de54f9377ff49cd28cf5fba7d9ac25a2035d6f94e746ffc2a9d76"
+    },
+    "cycle_runs/body_phi_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_phi_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "3b33c0b6ada63f042bf0e7cb89e8b56fdaa9be9a61f38c906c769c8f5a10daf4"
+    },
+    "cycle_runs/body_phi_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "0695cb2ffd3b35f1a6c81c48347e409141afc315bd14c7731a88d60386f3804d"
+    },
+    "cycle_runs/body_phi_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "db8e4c9160db3c0ddd30d76cdbc2687bb6ca711f2b3919a6da7d858494033621"
+    },
+    "cycle_runs/body_phi_0/vulkan.execution.json": {
+      "bytes": 2247,
+      "sha256": "3c02e758e23d4fcfd9d03a3ffb4c4a83ab5dcfabcbd94fe7eaa57edff1ddfb68"
+    },
+    "cycle_runs/body_phi_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_phi_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "5b639a6b1fb1ab5399f488cf80cda8cb264ac7a308557403963f32eff9c4f837"
+    },
+    "cycle_runs/body_phyllotaxis_0/change.json": {
+      "bytes": 1081,
+      "sha256": "6e4472d91132766e4d0df4e38bdc85ad3ee0710171813b513f36734aa5959a70"
+    },
+    "cycle_runs/body_phyllotaxis_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "5ffd4caec21d4182997368d579eeeb1e4163033650e500c26477dfb04291384e"
+    },
+    "cycle_runs/body_phyllotaxis_0/cpu.execution.json": {
+      "bytes": 2089,
+      "sha256": "9947934f5131c3c8826da930a097da9e64cee5f623d2ef9cacc08bb5eacc68d3"
+    },
+    "cycle_runs/body_phyllotaxis_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_phyllotaxis_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "9560e6b03f32397e3a37796dde44ae9431bbf5897cc64f40451b6ef325f51742"
+    },
+    "cycle_runs/body_phyllotaxis_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "c440063aa181031911c6c8df393f228d622d4de3419e9d519f4647a92639b0a9"
+    },
+    "cycle_runs/body_phyllotaxis_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "5ffd4caec21d4182997368d579eeeb1e4163033650e500c26477dfb04291384e"
+    },
+    "cycle_runs/body_phyllotaxis_0/vulkan.execution.json": {
+      "bytes": 2263,
+      "sha256": "bdacf5553b2031b64ea56ac304dd00c85c16f83c1a190ec45d222c003b1318ca"
+    },
+    "cycle_runs/body_phyllotaxis_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_phyllotaxis_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "40cb092aff5939e0bfdd676f1fa85dc2f972767f18dd366b7b950fd9994c8695"
+    },
+    "cycle_runs/body_pinion_0/change.json": {
+      "bytes": 1076,
+      "sha256": "98520815889218eb77fc1dffc406079336052ed52434102f5406fe1e44ed007c"
+    },
+    "cycle_runs/body_pinion_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "b998d88d6e0f411a3b3984139e8bb22e84a3b7f6d58c983e27ac39ccf39af435"
+    },
+    "cycle_runs/body_pinion_0/cpu.execution.json": {
+      "bytes": 2079,
+      "sha256": "6be848c49af240eeb45e8be3b8e7bcca9e4f52cec04e3bff444a6f489a24d386"
+    },
+    "cycle_runs/body_pinion_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_pinion_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "7c6f9a5a22f7782cda840da291f60817d1c6aeaec23b78ce35d81fa826c71ee1"
+    },
+    "cycle_runs/body_pinion_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "78ab163a3a4753a51ad96f02239c767d70be509922fe0ed1b89410f86cad6a28"
+    },
+    "cycle_runs/body_pinion_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "b998d88d6e0f411a3b3984139e8bb22e84a3b7f6d58c983e27ac39ccf39af435"
+    },
+    "cycle_runs/body_pinion_0/vulkan.execution.json": {
+      "bytes": 2253,
+      "sha256": "9423398dffdbc18cfd12bb8dc013b0a5974b2245d973eb812fff4b874cf95465"
+    },
+    "cycle_runs/body_pinion_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_pinion_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "706bb03604d1f00bc6ecb904733e267d878f10b09ed315a49d032fb4e3f0d323"
+    },
+    "cycle_runs/body_psi_0/change.json": {
+      "bytes": 1073,
+      "sha256": "7821902d38ec11d03569eacc5916ca0971539217d3dbf81cc5a93b412e06cd97"
+    },
+    "cycle_runs/body_psi_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "3466ce7da064be159fad0529adb8c4e69ac9f6f45affc8520ee9fe5582eeb222"
+    },
+    "cycle_runs/body_psi_0/cpu.execution.json": {
+      "bytes": 2073,
+      "sha256": "04113fc8255823822a058f61e2d70d44d35fc06109ef2635bccb24e866d05e77"
+    },
+    "cycle_runs/body_psi_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_psi_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "4a55a5fedb41d4175048d6362af6294f62a248cc72acd590cb6a330432d25cd1"
+    },
+    "cycle_runs/body_psi_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "8e4df1745bf18cf34829b8629f2090921c4515dc6230f94fdd9fe6bcad5736dd"
+    },
+    "cycle_runs/body_psi_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "3466ce7da064be159fad0529adb8c4e69ac9f6f45affc8520ee9fe5582eeb222"
+    },
+    "cycle_runs/body_psi_0/vulkan.execution.json": {
+      "bytes": 2247,
+      "sha256": "1ceea24dc33b96333f71d097430e70a0f0ca6d509492a2395ac1663a30d74342"
+    },
+    "cycle_runs/body_psi_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_psi_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "c4bac1e4b102b4b966dfeed9685c5ccc00ae15e8314e80d73a5ddb3e1451c784"
+    },
+    "cycle_runs/body_pyramid_0/change.json": {
+      "bytes": 1080,
+      "sha256": "7b369062bd38872ba5e28488f02fd1cadc3ed8dc8d4005204eebfb1f446a95a2"
+    },
+    "cycle_runs/body_pyramid_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "6177f841534e57fd78233805c86d1e2d020c6f661a58deabc3ef06d65c6a5516"
+    },
+    "cycle_runs/body_pyramid_0/cpu.execution.json": {
+      "bytes": 2081,
+      "sha256": "2ddb0a9c04494bc32b122eab4f31bb1c1b0ce762829925d340c6c8f41a374f54"
+    },
+    "cycle_runs/body_pyramid_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_pyramid_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "553fbceeeb23bc0d6d6ba979a16c70ccc569827487a8d5323cd09bd94d647342"
+    },
+    "cycle_runs/body_pyramid_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "ad43088cca42b2ca13e15a36cb759f6f97e8813790dac5f03905c7923a761f20"
+    },
+    "cycle_runs/body_pyramid_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "6177f841534e57fd78233805c86d1e2d020c6f661a58deabc3ef06d65c6a5516"
+    },
+    "cycle_runs/body_pyramid_0/vulkan.execution.json": {
+      "bytes": 2254,
+      "sha256": "509902dd87d23d59cebdbafae78cb5cb0e14a3d787d6c5da55fc10ff3dc40325"
+    },
+    "cycle_runs/body_pyramid_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_pyramid_0/vulkan.stdout.txt": {
+      "bytes": 1235,
+      "sha256": "0b4342fffc515ac336f4e257916aa4272d25e745a0708d359ef6ec82b8b34a72"
+    },
+    "cycle_runs/body_return_0/change.json": {
+      "bytes": 1076,
+      "sha256": "f0b70a2b0a68e6d1665e2e82c05d3bd0f6e01964c28bba91a76d8afb286f71bf"
+    },
+    "cycle_runs/body_return_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "f2a0bb4d29d615ca523eb0d28707d9a3796834c47ca86e96e78a0ed887ef1d47"
+    },
+    "cycle_runs/body_return_0/cpu.execution.json": {
+      "bytes": 2079,
+      "sha256": "2071f3b8e1b9072e45d5f3d0642309225f6f1ac3e037468dc903d83bed957819"
+    },
+    "cycle_runs/body_return_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_return_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "a85bec721527b9ba8016f4604bfdcc62cf531332b490aaa89762bdeaecd45334"
+    },
+    "cycle_runs/body_return_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "7f74a82a12466c981939fc0856c6aef2ebca0a8b5520e4336ec41477340ae9c4"
+    },
+    "cycle_runs/body_return_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "f2a0bb4d29d615ca523eb0d28707d9a3796834c47ca86e96e78a0ed887ef1d47"
+    },
+    "cycle_runs/body_return_0/vulkan.execution.json": {
+      "bytes": 2252,
+      "sha256": "8e1d83f29c53d66d90a50b19f77f09f74f6e5f04ea1614ac0646177c953ac8bb"
+    },
+    "cycle_runs/body_return_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_return_0/vulkan.stdout.txt": {
+      "bytes": 1235,
+      "sha256": "019ee773c7abf13c2ddb4395497a2fb0e5afc9992a4f44a32af8d28a702fd835"
+    },
+    "cycle_runs/body_rk4_1/change.json": {
+      "bytes": 1073,
+      "sha256": "6f3e86531ecf10551aff9720a636ff308917ad92ff3f3365f0634d61787be124"
+    },
+    "cycle_runs/body_rk4_1/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "55b77d9943f36ea860bef099d9e804ab5d4223d25d3187359ace69a0ab0f67f0"
+    },
+    "cycle_runs/body_rk4_1/cpu.execution.json": {
+      "bytes": 2073,
+      "sha256": "8c30f47c83658fa57dc3e0527f55f0a843371da0825d801a9c94abd33c30a1e8"
+    },
+    "cycle_runs/body_rk4_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_rk4_1/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "09d652d70936d8e9502d0c5bb5ba04685a657671497b1c49b8f02d359dc41eed"
+    },
+    "cycle_runs/body_rk4_1/program.bin": {
+      "bytes": 133892,
+      "sha256": "698136703c42714da32f640892cbb83d2f6557c367ba3b9c376d3b4db193f373"
+    },
+    "cycle_runs/body_rk4_1/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "55b77d9943f36ea860bef099d9e804ab5d4223d25d3187359ace69a0ab0f67f0"
+    },
+    "cycle_runs/body_rk4_1/vulkan.execution.json": {
+      "bytes": 2246,
+      "sha256": "b32f695a7770ef2e697147e7ea118d3ec6a78cd93464d2bc51153ef3da7bc159"
+    },
+    "cycle_runs/body_rk4_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_rk4_1/vulkan.stdout.txt": {
+      "bytes": 1235,
+      "sha256": "19de2b498047d662f8e4e28cac5a57b011f1c87f634e117dc928f4cf84d0ce7b"
+    },
+    "cycle_runs/body_rk4_2/change.json": {
+      "bytes": 1073,
+      "sha256": "bd922462e149a57056938b6f6b7e84fa002346df544ee6de81ff05d6eacd28a0"
+    },
+    "cycle_runs/body_rk4_2/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "14b00a4accbc00dbb20e79963a3b355e3904dd1ece1621ddab016351edd2638f"
+    },
+    "cycle_runs/body_rk4_2/cpu.execution.json": {
+      "bytes": 2073,
+      "sha256": "855fecb4638ffeea29084c9b96bcf624861b75a5004afeae0ecf7d9a0cc9490d"
+    },
+    "cycle_runs/body_rk4_2/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_rk4_2/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "f57daef2cf68a3de898f9f4325311e3e2b3b0259bc91c5a5957c7097b0bffcc4"
+    },
+    "cycle_runs/body_rk4_2/program.bin": {
+      "bytes": 133892,
+      "sha256": "373dc83e59131e774b10c4c692ca7e0329a2aad7ab7b24f8a7a113c5dd954448"
+    },
+    "cycle_runs/body_rk4_2/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "14b00a4accbc00dbb20e79963a3b355e3904dd1ece1621ddab016351edd2638f"
+    },
+    "cycle_runs/body_rk4_2/vulkan.execution.json": {
+      "bytes": 2247,
+      "sha256": "3fa40d46a7ae9370adea51626e14e5c65eb4db709777bb7c89334d434f34f4a2"
+    },
+    "cycle_runs/body_rk4_2/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_rk4_2/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "f734acb3738563c29a421ba225274be799f39339ddd019acc1c36cf91de7241d"
+    },
+    "cycle_runs/body_sphere_0/change.json": {
+      "bytes": 1079,
+      "sha256": "6aaadf7e75b45b91341f963a6f2373d1b41c2a314d60d27cf6646ab4fc084132"
+    },
+    "cycle_runs/body_sphere_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "f8cd4ddc8f44c288363bc6159e107d4132e24225fc221093581f2e18ed03fed7"
+    },
+    "cycle_runs/body_sphere_0/cpu.execution.json": {
+      "bytes": 2079,
+      "sha256": "6cba46c848c55c00896c313384c76b9caf14e61032c68a4b677c17bcac62ab8d"
+    },
+    "cycle_runs/body_sphere_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_sphere_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "5fc665ee888e0007336f27eeef3c34e8ba1433b42e954941ea3f734bbdcb9231"
+    },
+    "cycle_runs/body_sphere_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "7258a46ab997a79a0b229363c00ebd781a6c0bdf5d4bae51c4c91129a63aa05b"
+    },
+    "cycle_runs/body_sphere_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "f8cd4ddc8f44c288363bc6159e107d4132e24225fc221093581f2e18ed03fed7"
+    },
+    "cycle_runs/body_sphere_0/vulkan.execution.json": {
+      "bytes": 2252,
+      "sha256": "1129e9136bfa27059432693bdf4c14122bbc613a1b69d08c1e54f8301aebc740"
+    },
+    "cycle_runs/body_sphere_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_sphere_0/vulkan.stdout.txt": {
+      "bytes": 1235,
+      "sha256": "31993f6ba9336368c1f76f352fec660517883286707600650fe9517c5ac33d7a"
+    },
+    "cycle_runs/body_split_0/change.json": {
+      "bytes": 1079,
+      "sha256": "94777c0725dfaa02accfc222b0dd64a4fdabcac2b89d10eb6b7dcfb4eca92139"
+    },
+    "cycle_runs/body_split_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "2330617c78199fc77c7ccf5b5afcb2033ab36894d2cf479f59e9139fa9c6b965"
+    },
+    "cycle_runs/body_split_0/cpu.execution.json": {
+      "bytes": 2077,
+      "sha256": "00e7653442775bc4938ab949f5e566e2922ae7adc1ecb113c6993009ad1c21bc"
+    },
+    "cycle_runs/body_split_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_split_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "d63b367c20510967a8f5270795fed4772cedf357a8303438b54a82078bb3e03f"
+    },
+    "cycle_runs/body_split_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "5f57614b565b63da4e938480c6c33b86e118bc7868fd2bf9fb44c1683c90ec0d"
+    },
+    "cycle_runs/body_split_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "2330617c78199fc77c7ccf5b5afcb2033ab36894d2cf479f59e9139fa9c6b965"
+    },
+    "cycle_runs/body_split_0/vulkan.execution.json": {
+      "bytes": 2251,
+      "sha256": "2b12cf840d0c22c4f72cd0d3a2cc92d54b8ea636f013ac99a6572ffe54a00e7c"
+    },
+    "cycle_runs/body_split_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_split_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "dbfc380639e76b81cf7126854de45afeeffbcc40f5e67a4b1ac2f101c3a44c1c"
+    },
+    "cycle_runs/body_T_shape_0/change.json": {
+      "bytes": 1080,
+      "sha256": "0dfc6144c7682d83c8f115e5580a72866af2679baf3a0dd1dd6d99196755d04d"
+    },
+    "cycle_runs/body_T_shape_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "e3ba066d7275d1eb080a92b376dbc5fe32337bae6bcef89ae20f620b16b39802"
+    },
+    "cycle_runs/body_T_shape_0/cpu.execution.json": {
+      "bytes": 2080,
+      "sha256": "054256169a5b7b61a307cd8310b3a65af39edcc1528b80bf4886773e7853984e"
+    },
+    "cycle_runs/body_T_shape_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_T_shape_0/cpu.stdout.txt": {
+      "bytes": 1104,
+      "sha256": "c82d68bb039cb7f9715a98b579682048e4a37d36890bcf6c9c6c3375bb8245fc"
+    },
+    "cycle_runs/body_T_shape_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "db3ad0293449585f7e89aa0dc1407a7e15b1af8ae9d7790010b1912f31cee6d3"
+    },
+    "cycle_runs/body_T_shape_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "e3ba066d7275d1eb080a92b376dbc5fe32337bae6bcef89ae20f620b16b39802"
+    },
+    "cycle_runs/body_T_shape_0/vulkan.execution.json": {
+      "bytes": 2255,
+      "sha256": "079ff28ec533a88f78855d4e20294a7f254175a94224c492bd8012ceb4205660"
+    },
+    "cycle_runs/body_T_shape_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_T_shape_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "c32218a195176d8f79168711612050c8ada8644238537c73c4529cd8d2cb910b"
+    },
+    "cycle_runs/body_T_transform_0/change.json": {
+      "bytes": 1082,
+      "sha256": "a59a6c55c0ec3d859fc58b0b27b91663729a3249c4aa0a98f0869aac0afe800f"
+    },
+    "cycle_runs/body_T_transform_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "5520a252d73fe1748f2fc2c367e7c9a0913459dcf7005decf5d7207c3cf32367"
+    },
+    "cycle_runs/body_T_transform_0/cpu.execution.json": {
+      "bytes": 2089,
+      "sha256": "f2962d5c73783562ee18c51199d152f58107c821d59b56b2f2197101c08329cf"
+    },
+    "cycle_runs/body_T_transform_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_T_transform_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "64ffd6af33b85083911b7a465c25b8415856d0625298f1a76e74fee9e3f8552b"
+    },
+    "cycle_runs/body_T_transform_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "81c5905939053e96a803f597719c513181d588c7db9827cd9e6a0107f93cd23a"
+    },
+    "cycle_runs/body_T_transform_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "5520a252d73fe1748f2fc2c367e7c9a0913459dcf7005decf5d7207c3cf32367"
+    },
+    "cycle_runs/body_T_transform_0/vulkan.execution.json": {
+      "bytes": 2263,
+      "sha256": "8aaf9f3e5d14c1cfff7d00e8b8e80d96143e1ca5de70cd74006a293a3400ec44"
+    },
+    "cycle_runs/body_T_transform_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_T_transform_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "996b855ddf0b1d462975e41400502a8466879b47e66f2033a354dfb7b22f473b"
+    },
+    "cycle_runs/body_y_up_0/change.json": {
+      "bytes": 1074,
+      "sha256": "9bb996218bee17cb877cfa3d62e4c40a41bd327be81a65637ec9ef6965434ab3"
+    },
+    "cycle_runs/body_y_up_0/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "9afea057ad46c318103e933fc80cbdb6dac72997bdfc3b836aa30bad4920ea27"
+    },
+    "cycle_runs/body_y_up_0/cpu.execution.json": {
+      "bytes": 2075,
+      "sha256": "61831bdcf92ddbd8c8da9b7e2fcf8e84d91217b3384d66fcbbadf9c47f0f40bd"
+    },
+    "cycle_runs/body_y_up_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_y_up_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "e3014b0b831c209dbe9960db02cc14e762a5b320a2572c94125fa12d6683ebde"
+    },
+    "cycle_runs/body_y_up_0/program.bin": {
+      "bytes": 133892,
+      "sha256": "4ca33111ca6dd3f9ac28c071ec73dd1549b9ecc9066944c4a5e90fa1b2570559"
+    },
+    "cycle_runs/body_y_up_0/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "9afea057ad46c318103e933fc80cbdb6dac72997bdfc3b836aa30bad4920ea27"
+    },
+    "cycle_runs/body_y_up_0/vulkan.execution.json": {
+      "bytes": 2249,
+      "sha256": "a257293af3da1646bcb24d309c7d4683742f93800ff9d480057357e80bdb73ce"
+    },
+    "cycle_runs/body_y_up_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/body_y_up_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "1e9bdfb912106a9125beb1b39aa8364dbfca59f20d77a146ad2a2356fc86aa0e"
+    },
+    "cycle_runs/carrier_field/change.json": {
+      "bytes": 1034,
+      "sha256": "3037ddc09dfba41083a7a6f159335829e58b69322e8884387552e8673f064e55"
+    },
+    "cycle_runs/carrier_field/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "e8f36eb70b9ef12ffeb1d82766002a6458c4c9b89a2a85c02e17de8524d732cb"
+    },
+    "cycle_runs/carrier_field/cpu.execution.json": {
+      "bytes": 2079,
+      "sha256": "f0e143aa37cfa3f9f7a01114415e85608cc4c7bd6b939a812eb9551f3a5a4438"
+    },
+    "cycle_runs/carrier_field/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/carrier_field/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "41cddf58ce9c934a92e2ace7df95b89799ad47544ca626f0208a818f096b780e"
+    },
+    "cycle_runs/carrier_field/program.bin": {
+      "bytes": 133892,
+      "sha256": "79728a511caec5f217385756a79865c47c9aa4d9c8a2c14a970315a26bbb3a81"
+    },
+    "cycle_runs/carrier_field/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "e8f36eb70b9ef12ffeb1d82766002a6458c4c9b89a2a85c02e17de8524d732cb"
+    },
+    "cycle_runs/carrier_field/vulkan.execution.json": {
+      "bytes": 2253,
+      "sha256": "5c991c25107507746546f985db9acced530eae6f7a47214529c6e7dec19e0e51"
+    },
+    "cycle_runs/carrier_field/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/carrier_field/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "49fe0da241e3cb13faeb6c2bd6d4443b2166e11c4e925450dc78a5017fbecc47"
+    },
+    "cycle_runs/carrier_placement/change.json": {
+      "bytes": 1042,
+      "sha256": "a1eb774a9b8cac27a1ba6fe79ff9b5e0794db4351ed2ae929828efc0fce71635"
+    },
+    "cycle_runs/carrier_placement/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "aee8f294129ddb0c25cf4dbe524d4284f32fa7c47f0020e495542b61cc913605"
+    },
+    "cycle_runs/carrier_placement/cpu.execution.json": {
+      "bytes": 2087,
+      "sha256": "378207f83b8ffdfbbcc0bfe99344335e8f04239a75d28e064334cf4915067f6d"
+    },
+    "cycle_runs/carrier_placement/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/carrier_placement/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "1cc0b5764b82e080d6d84da9ab17fee902879a794d293ad4670c0652f2c4c8ff"
+    },
+    "cycle_runs/carrier_placement/program.bin": {
+      "bytes": 133892,
+      "sha256": "769e443e752ec162959b84a3ed71177e92bdcfc03791524167b693489bc3e657"
+    },
+    "cycle_runs/carrier_placement/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "aee8f294129ddb0c25cf4dbe524d4284f32fa7c47f0020e495542b61cc913605"
+    },
+    "cycle_runs/carrier_placement/vulkan.execution.json": {
+      "bytes": 2261,
+      "sha256": "17078a1acf6257b9b85949d64b9cd5fb50cc7c6772e3317ac263ff6559fb8485"
+    },
+    "cycle_runs/carrier_placement/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/carrier_placement/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "165c0a3942cea21a4f37f3d0dfabe8f09074b15c6c7f957ebaec1c72bf880a2f"
+    },
+    "cycle_runs/cycle_zero_yup/change.json": {
+      "bytes": 1006,
+      "sha256": "425fab34af7cdab4404c6d660116c183f755fd10a48fc8b7b4c99147feefd5b3"
+    },
+    "cycle_runs/cycle_zero_yup/cpu.bin": {
+      "bytes": 132388,
+      "sha256": "7ebbafb4da88ac25a77ef272ffc06ce6dc6ef12a638e965c81af64eb23a07973"
+    },
+    "cycle_runs/cycle_zero_yup/cpu.execution.json": {
+      "bytes": 2081,
+      "sha256": "0945d4f34b62c0837f7949f520cf108be84e301b389bab91539611e0348df0d9"
+    },
+    "cycle_runs/cycle_zero_yup/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/cycle_zero_yup/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "e885e8b86d5c39f208d4a4f6322016713f35cfe2f99a7e34f93b48c4da4392a6"
+    },
+    "cycle_runs/cycle_zero_yup/program.bin": {
+      "bytes": 132388,
+      "sha256": "8038a2de5952a0d5d5ae1c6b8a2f0f277878a2c95eda39ef6a8a004742e1de04"
+    },
+    "cycle_runs/cycle_zero_yup/vulkan.bin": {
+      "bytes": 132388,
+      "sha256": "7ebbafb4da88ac25a77ef272ffc06ce6dc6ef12a638e965c81af64eb23a07973"
+    },
+    "cycle_runs/cycle_zero_yup/vulkan.execution.json": {
+      "bytes": 2255,
+      "sha256": "518fb57b18f28a14204ef5238dcad24d5cf69194440303190131a9c3f50c09c8"
+    },
+    "cycle_runs/cycle_zero_yup/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/cycle_zero_yup/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "ffbf82db92bda9e31d7573a87bb04c0ef80838a2bc8ec0725288719758219948"
+    },
+    "cycle_runs/epochs_1/cpu.bin": {
+      "bytes": 133860,
+      "sha256": "2812049743cbe8d9692e59639390a1224385ee604745964193bb8c8fdbe03e13"
+    },
+    "cycle_runs/epochs_1/cpu.execution.json": {
+      "bytes": 2059,
+      "sha256": "d78aa258c3a35137ba93c80b01b9b2feb7e25ec135125540e04ad6e6da7f4d47"
+    },
+    "cycle_runs/epochs_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/epochs_1/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "694a2633a052457b24fa2cee68cd782b7f78e166ce90da59dd3ebe54ffa3df75"
+    },
+    "cycle_runs/epochs_1/vulkan.bin": {
+      "bytes": 133860,
+      "sha256": "2812049743cbe8d9692e59639390a1224385ee604745964193bb8c8fdbe03e13"
+    },
+    "cycle_runs/epochs_1/vulkan.execution.json": {
+      "bytes": 2232,
+      "sha256": "a3655fa82cf8b33c654cd790e8f5db46435cdf11d822eadef82836f83655f826"
+    },
+    "cycle_runs/epochs_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/epochs_1/vulkan.stdout.txt": {
+      "bytes": 1235,
+      "sha256": "504f82b8b3add84fd21636ce6991427d4b818927c400489f723984a16c534829"
+    },
+    "cycle_runs/epochs_2/cpu.bin": {
+      "bytes": 133860,
+      "sha256": "cacb842725f093198a88450d00e4712a92e377805d7a60bea525af2542760225"
+    },
+    "cycle_runs/epochs_2/cpu.execution.json": {
+      "bytes": 2059,
+      "sha256": "a5036d46bc60cda9fccd4ce31879cff2c52f1e38678145efb8256012dd18a62f"
+    },
+    "cycle_runs/epochs_2/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/epochs_2/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "58914b3ed33b53ac557f450fa4c81f5974559346c46db16bf3b55e8444f5a403"
+    },
+    "cycle_runs/epochs_2/vulkan.bin": {
+      "bytes": 133860,
+      "sha256": "cacb842725f093198a88450d00e4712a92e377805d7a60bea525af2542760225"
+    },
+    "cycle_runs/epochs_2/vulkan.execution.json": {
+      "bytes": 2233,
+      "sha256": "bf1217bd4c9ea3334d7f70f82a08c31d10dd6e9f350a3b8f747738c901c1d720"
+    },
+    "cycle_runs/epochs_2/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/epochs_2/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "1bad9b2298f5ebcfa11127f87d719f70463cb8a270d9037ed688a6db8d29cf70"
+    },
+    "cycle_runs/epochs_64/cpu.bin": {
+      "bytes": 133860,
+      "sha256": "e00a65dc762308857f6b41780479e20c89435d1e28165fafc0d3d8c8078ee8ab"
+    },
+    "cycle_runs/epochs_64/cpu.execution.json": {
+      "bytes": 2066,
+      "sha256": "ff820d056a9006c9f2abc24c7ec0d4b4a9abb25d8c78b4a676d24fbd41d22d56"
+    },
+    "cycle_runs/epochs_64/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/epochs_64/cpu.stdout.txt": {
+      "bytes": 1110,
+      "sha256": "3e11de626763ee8e3e15eb64877eea1e32bc85c5615f7910bcd55fd46f28228a"
+    },
+    "cycle_runs/epochs_64/vulkan.bin": {
+      "bytes": 133860,
+      "sha256": "e00a65dc762308857f6b41780479e20c89435d1e28165fafc0d3d8c8078ee8ab"
+    },
+    "cycle_runs/epochs_64/vulkan.execution.json": {
+      "bytes": 2241,
+      "sha256": "9eabe6310500c24a53b55ade6f4919e528384c129d954f234788d29fe1691893"
+    },
+    "cycle_runs/epochs_64/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/epochs_64/vulkan.stdout.txt": {
+      "bytes": 1242,
+      "sha256": "21f275167b73bdea46b9c56c47f7555fac7a1d7b649373780a741a3f48e248b2"
+    },
+    "cycle_runs/epochs_8/cpu.bin": {
+      "bytes": 133860,
+      "sha256": "2aa370a7c252cfbb04dafd2365e4a3afe7d1790031d01ca5f844e302c238d29b"
+    },
+    "cycle_runs/epochs_8/cpu.execution.json": {
+      "bytes": 2060,
+      "sha256": "db10d3da0adeebd07a819a0e909b4a9647764396737b2b0de0b287d8d7926fd5"
+    },
+    "cycle_runs/epochs_8/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/epochs_8/cpu.stdout.txt": {
+      "bytes": 1106,
+      "sha256": "872ad581b15c658bf56fade6699d4a32302b723874af50a49afd3d5f7c679719"
+    },
+    "cycle_runs/epochs_8/vulkan.bin": {
+      "bytes": 133860,
+      "sha256": "2aa370a7c252cfbb04dafd2365e4a3afe7d1790031d01ca5f844e302c238d29b"
+    },
+    "cycle_runs/epochs_8/vulkan.execution.json": {
+      "bytes": 2234,
+      "sha256": "ad39eea9921bc0f33b4b5739f9fd007c37fb567bfc7a41b81af53fa17b0db1fc"
+    },
+    "cycle_runs/epochs_8/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/epochs_8/vulkan.stdout.txt": {
+      "bytes": 1237,
+      "sha256": "e22a974941458c1debcff2df8b0877b9d886b6e55298c52da5e22778d7c70a0f"
+    },
+    "cycle_runs/equivalent_returned_charts/change.json": {
+      "bytes": 1026,
+      "sha256": "01bca13c8dea34b48c91c98614f27254583bfee15ff377acf67f823f71013277"
+    },
+    "cycle_runs/equivalent_returned_charts/cpu.bin": {
+      "bytes": 127508,
+      "sha256": "081205346f47a5106b53516ae19ce75f799899973bc441255d179b2d42fba1ec"
+    },
+    "cycle_runs/equivalent_returned_charts/cpu.execution.json": {
+      "bytes": 2105,
+      "sha256": "6b22158a9f146dae7cce5dc2ef34d295e47830befccd7959d5d2790c6846d49f"
+    },
+    "cycle_runs/equivalent_returned_charts/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/equivalent_returned_charts/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "fec902b4e2cdc1af9341d19a488f8653d68f11997c5bef4a2ff2cf172b3863f7"
+    },
+    "cycle_runs/equivalent_returned_charts/program.bin": {
+      "bytes": 127508,
+      "sha256": "70ff9face7032dfe25dfcefef0a920d278bbc788f86f6c267bfb2730b629850c"
+    },
+    "cycle_runs/equivalent_returned_charts/vulkan.bin": {
+      "bytes": 127508,
+      "sha256": "081205346f47a5106b53516ae19ce75f799899973bc441255d179b2d42fba1ec"
+    },
+    "cycle_runs/equivalent_returned_charts/vulkan.execution.json": {
+      "bytes": 2279,
+      "sha256": "94f7ca5862ec5f3170c30cdf3301198f4d7bfc9241fd1ef5a72741f4d2b3263f"
+    },
+    "cycle_runs/equivalent_returned_charts/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/equivalent_returned_charts/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "bea2ceb86ef09e7c7dcc2acff35146fe97b096cbaefbceac97fcf1733aa1b211"
+    },
+    "cycle_runs/freeze_mutator/change.json": {
+      "bytes": 1055,
+      "sha256": "3ac99cbc4905b8bb7030576ba324f2c51d0687b919beed7e6e2a7e718f7a3ada"
+    },
+    "cycle_runs/freeze_mutator/program.bin": {
+      "bytes": 133876,
+      "sha256": "0276ef0a590445ea04c091488adf14b3a3ab71e0b0209aaa455c491b939cc370"
+    },
+    "cycle_runs/freeze_mutator_1/cpu.bin": {
+      "bytes": 133876,
+      "sha256": "eec18e8a18bda20be826abecb902cb967367ecee09a17b6b998de0bccc3088eb"
+    },
+    "cycle_runs/freeze_mutator_1/cpu.execution.json": {
+      "bytes": 2083,
+      "sha256": "b63395e7ae1153fec8dc66be31886906097818232cb62d6e6200d6fa5891a1e0"
+    },
+    "cycle_runs/freeze_mutator_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/freeze_mutator_1/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "553e56a95e8eaa371bc1f3eb306012df18d3d31f42328074ac49f1e917be63ad"
+    },
+    "cycle_runs/freeze_mutator_1/vulkan.bin": {
+      "bytes": 133876,
+      "sha256": "eec18e8a18bda20be826abecb902cb967367ecee09a17b6b998de0bccc3088eb"
+    },
+    "cycle_runs/freeze_mutator_1/vulkan.execution.json": {
+      "bytes": 2257,
+      "sha256": "a7cf51e2d3f144f092f2deddc7315a7fbac9d554e502862c4ec7d530a8a8b53c"
+    },
+    "cycle_runs/freeze_mutator_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/freeze_mutator_1/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "1253357d2e936d225ccd3168c6d661b32eed54a6aba10f0a7c92a3cf21073f9d"
+    },
+    "cycle_runs/freeze_mutator_2/cpu.bin": {
+      "bytes": 133876,
+      "sha256": "060a849977053bc2cdbc3b725decaa6704d640fbd3ec6bb4f8d5b58d8714ab4f"
+    },
+    "cycle_runs/freeze_mutator_2/cpu.execution.json": {
+      "bytes": 2083,
+      "sha256": "ac3f852dafd150e3eb22ad5fb279c8030932dcc5cdca4c827bc3d6a860fba65e"
+    },
+    "cycle_runs/freeze_mutator_2/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/freeze_mutator_2/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "4730cd15693d1823ce916f592d6efc937cdd399af53a24092bf6ddf41b55db79"
+    },
+    "cycle_runs/freeze_mutator_2/vulkan.bin": {
+      "bytes": 133876,
+      "sha256": "060a849977053bc2cdbc3b725decaa6704d640fbd3ec6bb4f8d5b58d8714ab4f"
+    },
+    "cycle_runs/freeze_mutator_2/vulkan.execution.json": {
+      "bytes": 2257,
+      "sha256": "170cb619547c1b7e4c7b2e4617d939a96738310fdc8ea271d26d63794da7fb54"
+    },
+    "cycle_runs/freeze_mutator_2/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/freeze_mutator_2/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "f360febf9ab0068871dc9b19d67a5b40e8eb7cbc89a76d1771de2aaa97de2bbc"
+    },
+    "cycle_runs/history_B/change.json": {
+      "bytes": 1006,
+      "sha256": "395198749009c4caf6ee61e0ef3dd8109f2062b295478af49ffa367dd582da15"
+    },
+    "cycle_runs/history_B/cpu.bin": {
+      "bytes": 133860,
+      "sha256": "2a0afc167ebf02f108a4546598d5923c74aa366fe11992e42041ccc661c1ed0d"
+    },
+    "cycle_runs/history_B/cpu.execution.json": {
+      "bytes": 2071,
+      "sha256": "af1f63dd37db9c3f85c840b7733c303da7369dfdb65daae489464a822ec1a49c"
+    },
+    "cycle_runs/history_B/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/history_B/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "149470014fb3dd83a52634c916aebc7fd0688e19f045ce4f87688b123f1c80ae"
+    },
+    "cycle_runs/history_B/program.bin": {
+      "bytes": 133860,
+      "sha256": "7e139515998ed0db772140cd41949483c8e378ea59bcfbdc0ad0640f77abf719"
+    },
+    "cycle_runs/history_B/vulkan.bin": {
+      "bytes": 133860,
+      "sha256": "2a0afc167ebf02f108a4546598d5923c74aa366fe11992e42041ccc661c1ed0d"
+    },
+    "cycle_runs/history_B/vulkan.execution.json": {
+      "bytes": 2245,
+      "sha256": "cbfc7f45944cdb8c0f564b13da903ccf7dd420193906c08536a4a69fb4a80703"
+    },
+    "cycle_runs/history_B/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/history_B/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "e839d1c21b7234ec6cb9bdfa93c8eb71abc3174a76d72d5371a8d1398f536ce3"
+    },
+    "cycle_runs/history_phase/change.json": {
+      "bytes": 1018,
+      "sha256": "9b26ce4bd22e3ae6974a602a44c44cb82bf3342f8861b51bcaacca06af6f80f7"
+    },
+    "cycle_runs/history_phase/cpu.bin": {
+      "bytes": 133860,
+      "sha256": "bfc3aa927a71492b62fef692d23550510c49578c90867a6415f80a377b9970f8"
+    },
+    "cycle_runs/history_phase/cpu.execution.json": {
+      "bytes": 2079,
+      "sha256": "106e7a6ba1bb8177c976d287b39e736ae5cd187546ce356ddcabff9459bbaf8c"
+    },
+    "cycle_runs/history_phase/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/history_phase/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "4f491e1c9a17544bd0bef1de9e7d8314396cbc77a152d2d8d8d46644bf24ca47"
+    },
+    "cycle_runs/history_phase/program.bin": {
+      "bytes": 133860,
+      "sha256": "a49f71987d0b3bf3acb39e85c822de9485fc840d1122e707bd6967ec85ed696b"
+    },
+    "cycle_runs/history_phase/vulkan.bin": {
+      "bytes": 133860,
+      "sha256": "bfc3aa927a71492b62fef692d23550510c49578c90867a6415f80a377b9970f8"
+    },
+    "cycle_runs/history_phase/vulkan.execution.json": {
+      "bytes": 2253,
+      "sha256": "ede5745b136e6e2cb82864fe79e47e68640eb5c4c24d8d62b85113dc261fe294"
+    },
+    "cycle_runs/history_phase/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/history_phase/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "6aa1dab7207fa1619b293a4b2ec8983fd36e69dd6027056092a5b1fae1a54ed2"
+    },
+    "cycle_runs/old_pinion_transport/change.json": {
+      "bytes": 1039,
+      "sha256": "5367cdcb16a4ba916b07fa3c12b5d141704202a4c0f3b56440a01a9d8eabe348"
+    },
+    "cycle_runs/old_pinion_transport/cpu.bin": {
+      "bytes": 133892,
+      "sha256": "0edbac6ce40f61ac5cff71b2f660b1d3c65bc9e14ae26bec138e6135ce13d84f"
+    },
+    "cycle_runs/old_pinion_transport/cpu.execution.json": {
+      "bytes": 2093,
+      "sha256": "8dbf6b0f4b09f00bc02039ce6798262606d7acbe79d26738805d697079afeed3"
+    },
+    "cycle_runs/old_pinion_transport/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/old_pinion_transport/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "dc77e571c9cf65f9d83eb04741d55fbc59088cf793679e1694bf8b93bf277b2f"
+    },
+    "cycle_runs/old_pinion_transport/program.bin": {
+      "bytes": 133892,
+      "sha256": "5e4fe39543a70f7afb0e29e002cc0fe8a0d18482e21501502458aa1303909ba5"
+    },
+    "cycle_runs/old_pinion_transport/vulkan.bin": {
+      "bytes": 133892,
+      "sha256": "0edbac6ce40f61ac5cff71b2f660b1d3c65bc9e14ae26bec138e6135ce13d84f"
+    },
+    "cycle_runs/old_pinion_transport/vulkan.execution.json": {
+      "bytes": 2267,
+      "sha256": "4b094ba6f731fbdccde1af6fb28b29240d07ea6344c00077d76efd79d9e6c727"
+    },
+    "cycle_runs/old_pinion_transport/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/old_pinion_transport/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "c041b7c93cd535e142e509f582ff256297f8f2270a83f77df92473b05c87e96e"
+    },
+    "cycle_runs/population_257_65/change.json": {
+      "bytes": 971,
+      "sha256": "a56bff80bc89b5ec4bea80eb666f1a6ac1f46dd1273cb25ef5446c9039a83eef"
+    },
+    "cycle_runs/population_257_65/cpu.bin": {
+      "bytes": 896100,
+      "sha256": "ab7a52e8ccb46b753735da83524b2e0de8a2b9aae789313cc011492f884f49a8"
+    },
+    "cycle_runs/population_257_65/cpu.execution.json": {
+      "bytes": 2096,
+      "sha256": "ced0d7ccec8f333386d48f97d766a00f1a273920de7c5ea5cbacf9511df36f5d"
+    },
+    "cycle_runs/population_257_65/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/population_257_65/cpu.stdout.txt": {
+      "bytes": 1113,
+      "sha256": "4f3207fe1d89392c7e6c6de1761415868fa2e1e30349fab8d646faaee6683bb6"
+    },
+    "cycle_runs/population_257_65/program.bin": {
+      "bytes": 896100,
+      "sha256": "c60ea7538eebff8cce9fa1e4bd59d8b3a2f9e09e730819e62a53cf15a0a5b912"
+    },
+    "cycle_runs/population_257_65/vulkan.bin": {
+      "bytes": 896100,
+      "sha256": "ab7a52e8ccb46b753735da83524b2e0de8a2b9aae789313cc011492f884f49a8"
+    },
+    "cycle_runs/population_257_65/vulkan.execution.json": {
+      "bytes": 2272,
+      "sha256": "7c7e100a65d634ee00f77cc1e821cf2ebe088eb689eb94689379c2ebcb514da3"
+    },
+    "cycle_runs/population_257_65/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/population_257_65/vulkan.stdout.txt": {
+      "bytes": 1246,
+      "sha256": "cff3ad6c842095e149ccf9becdd43139fdbd83dcd5ccfaac3d6cbf935e12146b"
+    },
+    "cycle_runs/resume_1_plus_63/cpu.bin": {
+      "bytes": 133860,
+      "sha256": "e00a65dc762308857f6b41780479e20c89435d1e28165fafc0d3d8c8078ee8ab"
+    },
+    "cycle_runs/resume_1_plus_63/cpu.execution.json": {
+      "bytes": 2079,
+      "sha256": "d5fa44ac4ba4f63f683e63e5c2a92d12db9e5913585bdccbd21d6beb0c1829a4"
+    },
+    "cycle_runs/resume_1_plus_63/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/resume_1_plus_63/cpu.stdout.txt": {
+      "bytes": 1110,
+      "sha256": "fde3d49c2dda4b21bcd2d95f0d781a1c8e37e61cb56b157a1ed7d3e7c342da71"
+    },
+    "cycle_runs/resume_1_plus_63/vulkan.bin": {
+      "bytes": 133860,
+      "sha256": "e00a65dc762308857f6b41780479e20c89435d1e28165fafc0d3d8c8078ee8ab"
+    },
+    "cycle_runs/resume_1_plus_63/vulkan.execution.json": {
+      "bytes": 2254,
+      "sha256": "2104faf4b3821149e8bcbdac13fd165ff75767ceb76f0f8e823c820ae8cec5de"
+    },
+    "cycle_runs/resume_1_plus_63/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/resume_1_plus_63/vulkan.stdout.txt": {
+      "bytes": 1242,
+      "sha256": "499b59387c115bbb4f1ae05bad7a3cb353c4410f69eb254cdaa93e178a67993e"
+    },
+    "cycle_runs/returned_chart_feedback/change.json": {
+      "bytes": 986,
+      "sha256": "4fd6ad1df9609b3899dc3fcf829f1bea74873c218e82ea755dd06b8687f500b6"
+    },
+    "cycle_runs/returned_chart_feedback/cpu.bin": {
+      "bytes": 133860,
+      "sha256": "8ec3c1b19fa9666905134da654cbf65e16f89f575abd9dc8eb8ed030ed12037b"
+    },
+    "cycle_runs/returned_chart_feedback/cpu.execution.json": {
+      "bytes": 2098,
+      "sha256": "2a2ad5492829bb0960a7d21d90f915f06128f4556b9aa98b0f6405cd4d29ec6c"
+    },
+    "cycle_runs/returned_chart_feedback/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/returned_chart_feedback/cpu.stdout.txt": {
+      "bytes": 1104,
+      "sha256": "5cf560c75a091e25d9e13e0a949a48b8c5690c5e2ab28ef6cb1bf1e99316389c"
+    },
+    "cycle_runs/returned_chart_feedback/program.bin": {
+      "bytes": 133860,
+      "sha256": "cdc7d30eb50e8a2329e667f9a6a3655faabf5ad66986e3e7faab73c7c80bc897"
+    },
+    "cycle_runs/returned_chart_feedback/vulkan.bin": {
+      "bytes": 133860,
+      "sha256": "8ec3c1b19fa9666905134da654cbf65e16f89f575abd9dc8eb8ed030ed12037b"
+    },
+    "cycle_runs/returned_chart_feedback/vulkan.execution.json": {
+      "bytes": 2273,
+      "sha256": "e671af808acc674d51185e0a8db96b3c80fbf14839aa84b27c6d7e20c9d4070b"
+    },
+    "cycle_runs/returned_chart_feedback/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/returned_chart_feedback/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "e528a24e654ba799381cb50d3ab324462dc5fa8a2f0917d4e42a900c9174fc5b"
+    },
+    "cycle_runs/reverse_64/cpu.bin": {
+      "bytes": 133860,
+      "sha256": "e00a65dc762308857f6b41780479e20c89435d1e28165fafc0d3d8c8078ee8ab"
+    },
+    "cycle_runs/reverse_64/cpu.execution.json": {
+      "bytes": 2090,
+      "sha256": "44611ea97826ea93ed6b4649130fa713bf58d8dfa09ac61e7d7bae438b1e7dce"
+    },
+    "cycle_runs/reverse_64/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/reverse_64/cpu.stdout.txt": {
+      "bytes": 1107,
+      "sha256": "f5331c98ac355550b308c04e58ad0395c100d36f395c55640bf4cc29b557437e"
+    },
+    "cycle_runs/reverse_64/vulkan.bin": {
+      "bytes": 133860,
+      "sha256": "e00a65dc762308857f6b41780479e20c89435d1e28165fafc0d3d8c8078ee8ab"
+    },
+    "cycle_runs/reverse_64/vulkan.execution.json": {
+      "bytes": 2265,
+      "sha256": "db33f731c0598ea827b201aa26c50cf68d8eb3375e4b53b06a94c580508b2ed2"
+    },
+    "cycle_runs/reverse_64/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/reverse_64/vulkan.stdout.txt": {
+      "bytes": 1239,
+      "sha256": "be4cf935ace9b95ebf40b6fe31de1d3afba491bdb6f1ecff30350f1cae4c9f91"
+    },
+    "cycle_runs/rk_prefix_two_yup/change.json": {
+      "bytes": 1092,
+      "sha256": "6fa7df360cae748a16d7c69437ec37d7ce02c150ba9f6fe23e08b0a7cf0d9f92"
+    },
+    "cycle_runs/rk_prefix_two_yup/cpu.bin": {
+      "bytes": 119332,
+      "sha256": "22ad01119af2fa8891d643282b7eff1e289b192a2438b0f68175b6e6b89cc346"
+    },
+    "cycle_runs/rk_prefix_two_yup/cpu.execution.json": {
+      "bytes": 2086,
+      "sha256": "b37d62ce22f9bea34f3378dcc2f9db21ab10b549f8863bd8461631d833925ffa"
+    },
+    "cycle_runs/rk_prefix_two_yup/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/rk_prefix_two_yup/cpu.stdout.txt": {
+      "bytes": 1104,
+      "sha256": "b774ec59dd8f1097799716df68f7a8a7d34de14102584cec14505453e40c606a"
+    },
+    "cycle_runs/rk_prefix_two_yup/program.bin": {
+      "bytes": 119332,
+      "sha256": "f7c44c781223cd091ea443bb9960d813f9646fd373295eec73e6bcc7172b5e8d"
+    },
+    "cycle_runs/rk_prefix_two_yup/vulkan.bin": {
+      "bytes": 119332,
+      "sha256": "22ad01119af2fa8891d643282b7eff1e289b192a2438b0f68175b6e6b89cc346"
+    },
+    "cycle_runs/rk_prefix_two_yup/vulkan.execution.json": {
+      "bytes": 2260,
+      "sha256": "616a4122d5f952392d5293912e3ea171aaffcf9996bb1d1b8b9450cc711cfa41"
+    },
+    "cycle_runs/rk_prefix_two_yup/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/rk_prefix_two_yup/vulkan.stdout.txt": {
+      "bytes": 1235,
+      "sha256": "5ee5ce819209fb6d64aae1079aa4cdbc04cb2e91f73683feca46e6eb32ffa1d1"
+    },
+    "cycle_runs/rk_prefix_zero_yup/change.json": {
+      "bytes": 1092,
+      "sha256": "8d5f750aa69903cda2627589de2a53ec0346d0732e4e20d49b32298a0bc067bc"
+    },
+    "cycle_runs/rk_prefix_zero_yup/cpu.bin": {
+      "bytes": 117860,
+      "sha256": "218908e77651294613a1621c750c2be4283e86bd045fee929ccb13b0733a7ef7"
+    },
+    "cycle_runs/rk_prefix_zero_yup/cpu.execution.json": {
+      "bytes": 2088,
+      "sha256": "5bcc503f155deb2d4437c6b452532d865706c7721f0565288ddff42a0b68877d"
+    },
+    "cycle_runs/rk_prefix_zero_yup/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/rk_prefix_zero_yup/cpu.stdout.txt": {
+      "bytes": 1104,
+      "sha256": "fe4cbe0a2f8d5f649c2e16156626c7f93ed0d0d61d1a26b4c3dc5b274d38e11d"
+    },
+    "cycle_runs/rk_prefix_zero_yup/program.bin": {
+      "bytes": 117860,
+      "sha256": "54447c1409c4abe7638ee1cfa2351df3c8989f83e516d9ba5ae87e36d993a43f"
+    },
+    "cycle_runs/rk_prefix_zero_yup/vulkan.bin": {
+      "bytes": 117860,
+      "sha256": "218908e77651294613a1621c750c2be4283e86bd045fee929ccb13b0733a7ef7"
+    },
+    "cycle_runs/rk_prefix_zero_yup/vulkan.execution.json": {
+      "bytes": 2262,
+      "sha256": "269298de01d20d771dd4fdd2c3a8d5791c4992abd73c68ccd50e79f87cdec336"
+    },
+    "cycle_runs/rk_prefix_zero_yup/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/rk_prefix_zero_yup/vulkan.stdout.txt": {
+      "bytes": 1235,
+      "sha256": "7771b79815fde8273385a4b181f76f1abfb90122493d34a733cb747a15cc5809"
+    },
+    "cycle_runs/routes_and_faults/change.json": {
+      "bytes": 2224,
+      "sha256": "d73412353f07a6d1e3bdcd70c608279e15a8d820ad7e1398db6b19d5793f6cee"
+    },
+    "cycle_runs/routes_and_faults/cpu.bin": {
+      "bytes": 133860,
+      "sha256": "ba46f5d43c903c29e9be657e3b0851ded11a2d8e95be58a27e2142c31a09032e"
+    },
+    "cycle_runs/routes_and_faults/cpu.execution.json": {
+      "bytes": 2097,
+      "sha256": "7aaabb186f61207ef46736f6bff89e4f4137cffcf162b4572cdd424820fd955e"
+    },
+    "cycle_runs/routes_and_faults/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/routes_and_faults/cpu.stdout.txt": {
+      "bytes": 1115,
+      "sha256": "40ba389ef87e5ab4c67b8d59d0aae0c9f52c59d911a1985d8cfe3cc32b58e9de"
+    },
+    "cycle_runs/routes_and_faults/program.bin": {
+      "bytes": 133860,
+      "sha256": "adcbe20517bef139a051e8f04da20aa4388d38a40269a71764f6c9bc41e0de28"
+    },
+    "cycle_runs/routes_and_faults/vulkan.bin": {
+      "bytes": 133860,
+      "sha256": "ba46f5d43c903c29e9be657e3b0851ded11a2d8e95be58a27e2142c31a09032e"
+    },
+    "cycle_runs/routes_and_faults/vulkan.execution.json": {
+      "bytes": 2271,
+      "sha256": "d93fcf329638f8ff22d4e8095561b28a91e5cbbbd9133fe7c3b67b40ceb49d19"
+    },
+    "cycle_runs/routes_and_faults/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "cycle_runs/routes_and_faults/vulkan.stdout.txt": {
+      "bytes": 1246,
+      "sha256": "1cb8f6c29586545d8ab61d59cd2fe22342687161a68d1df40aac4b562ffaf392"
+    },
+    "FINAL_SUMMARY.json": {
+      "bytes": 2837,
+      "sha256": "7daaaa28a2668d652d16ccaad299c050dc013848566e928f341043011ae8867a"
+    },
+    "full_cycle/definition.json": {
+      "bytes": 18766460,
+      "sha256": "027cfc70d68114aacbb2d11c0221a8c538b16ef783a0449eec35dd041a92a970"
+    },
+    "full_cycle/manifest.json": {
+      "bytes": 18819445,
+      "sha256": "8449ebd0cb75fcce1edc2e44741853d8fcb5804f9c3a8be0bf1a5e3dee2455ad"
+    },
+    "full_cycle/program.bin": {
+      "bytes": 133860,
+      "sha256": "f746ede446a773057084dc6a01f296100c35531fa676a1a71ea41863c4501dc5"
+    },
+    "full_cycle/resident_binding_dependency.json": {
+      "bytes": 886455,
+      "sha256": "5373231ef7a4381ec71ba598979ca6bb404f6386e2734cddb8d05cc891976587"
+    },
+    "full_cycle/source_cycle.json": {
+      "bytes": 541,
+      "sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4"
+    },
+    "full_cycle/source_cycle_generator.py": {
+      "bytes": 42804,
+      "sha256": "b8bb4255b19e0e53d664449addc984b6c0c44ed795a3f78bfa8190d848ab9f51"
+    },
+    "full_cycle/source_model.json": {
+      "bytes": 13654,
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9"
+    },
+    "launcher/audit.json": {
+      "bytes": 588,
+      "sha256": "a1146217c925011edc93d93396810ce4263a621c1e893678ca0d8e8974400a0f"
+    },
+    "launcher/compile.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "launcher/compile.stdout.txt": {
+      "bytes": 339,
+      "sha256": "5fa1d9e9f560c5f1bd9497510ade24a1897e77802de8960c2830ab674a9cc98e"
+    },
+    "launcher/compiled/definition.json": {
+      "bytes": 18766460,
+      "sha256": "027cfc70d68114aacbb2d11c0221a8c538b16ef783a0449eec35dd041a92a970"
+    },
+    "launcher/compiled/manifest.json": {
+      "bytes": 18819445,
+      "sha256": "8449ebd0cb75fcce1edc2e44741853d8fcb5804f9c3a8be0bf1a5e3dee2455ad"
+    },
+    "launcher/compiled/program.bin": {
+      "bytes": 133860,
+      "sha256": "f746ede446a773057084dc6a01f296100c35531fa676a1a71ea41863c4501dc5"
+    },
+    "launcher/compiled/resident_binding_dependency.json": {
+      "bytes": 886455,
+      "sha256": "5373231ef7a4381ec71ba598979ca6bb404f6386e2734cddb8d05cc891976587"
+    },
+    "launcher/compiled/source_cycle.json": {
+      "bytes": 541,
+      "sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4"
+    },
+    "launcher/compiled/source_cycle_generator.py": {
+      "bytes": 42804,
+      "sha256": "b8bb4255b19e0e53d664449addc984b6c0c44ed795a3f78bfa8190d848ab9f51"
+    },
+    "launcher/compiled/source_model.json": {
+      "bytes": 13654,
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9"
+    },
+    "launcher/inspect.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "launcher/inspect.stdout.json": {
+      "bytes": 1739974,
+      "sha256": "e4ef27006090df4e8bf6627078f2b20f1fbc0618eda60ef8816536c582835ca9"
+    },
+    "pre_direct_edges/full_cycle/definition.json": {
+      "bytes": 18719522,
+      "sha256": "edaa069c7f019e105ce13c2ccc72b766d2c76a740b8006163a6aad74e17c911e"
+    },
+    "pre_direct_edges/full_cycle/manifest.json": {
+      "bytes": 18772208,
+      "sha256": "ec093d6215dc18c8e63c285cdea22e5f3fb9c1664d4aaa92b9198721cf51fd26"
+    },
+    "pre_direct_edges/full_cycle/program.bin": {
+      "bytes": 132068,
+      "sha256": "66c058f322a586b22ce72a3805a8350fc4e48060b94ad17147f445ecbe52beae"
+    },
+    "pre_direct_edges/full_cycle/resident_binding_dependency.json": {
+      "bytes": 886455,
+      "sha256": "5373231ef7a4381ec71ba598979ca6bb404f6386e2734cddb8d05cc891976587"
+    },
+    "pre_direct_edges/full_cycle/source_cycle.json": {
+      "bytes": 541,
+      "sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4"
+    },
+    "pre_direct_edges/full_cycle/source_cycle_generator.py": {
+      "bytes": 41714,
+      "sha256": "c0d3586844c5787784447f60944effa782d90868a5785399f114c245f4d8424c"
+    },
+    "pre_direct_edges/full_cycle/source_model.json": {
+      "bytes": 13654,
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9"
+    },
+    "pre_guard/cycle_baseline_summary.json": {
+      "bytes": 7344,
+      "sha256": "3e1d410c8422452000b871bb13826debfd22b8c22023cc1f7457e03a708cb5f0"
+    },
+    "pre_guard/cycle_intervention_summary.json": {
+      "bytes": 84231,
+      "sha256": "3220d83eafe00e3a9ef6ce063123b8041341e32ac30eebf5eefc50513182aa82"
+    },
+    "pre_guard/cycle_runs/body_apex_0/change.json": {
+      "bytes": 1077,
+      "sha256": "e52d64feb9f4684c277494d2bfe0e70a3951f601048298de1a7d638cd7ca735e"
+    },
+    "pre_guard/cycle_runs/body_apex_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "d730534727ebdb96b6bb5f9319c54d6669e7f64ca3fb732c6f6ee291534741f7"
+    },
+    "pre_guard/cycle_runs/body_apex_0/cpu.execution.json": {
+      "bytes": 2075,
+      "sha256": "eed2f77ed56d4c48e2de2754d153717928379ae37345bacb37ff9f70ccd0da54"
+    },
+    "pre_guard/cycle_runs/body_apex_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_apex_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "2dbf93998b77d1cb6de93eb2fb0d69c95b64037882a8619886fa0b59a9e81231"
+    },
+    "pre_guard/cycle_runs/body_apex_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "efee34faa0918ba9e3dadfa1583e9543172665fd3f49f610a5839b773aa1c5ab"
+    },
+    "pre_guard/cycle_runs/body_apex_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "d730534727ebdb96b6bb5f9319c54d6669e7f64ca3fb732c6f6ee291534741f7"
+    },
+    "pre_guard/cycle_runs/body_apex_0/vulkan.execution.json": {
+      "bytes": 2249,
+      "sha256": "b044908d0a54ad9364548e37b09385363a25608840fbedd6356c75b0d005098c"
+    },
+    "pre_guard/cycle_runs/body_apex_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_apex_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "91f73e29c35b3e499711fb3e1a26534d7a6e31278ac9f9fff2a3c6f351585401"
+    },
+    "pre_guard/cycle_runs/body_blend_0/change.json": {
+      "bytes": 1075,
+      "sha256": "27a8a3cafde88dd8c6ab467489b10277699c220e3cea1ce0c5db8729ec43087d"
+    },
+    "pre_guard/cycle_runs/body_blend_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "7d913a38574709adbf8ded96ce2a8279386825d0a2c620b44950609ce0f8d0e6"
+    },
+    "pre_guard/cycle_runs/body_blend_0/cpu.execution.json": {
+      "bytes": 2077,
+      "sha256": "8eefeb4a4247d7146c11e92b6a1f72ffc285b85be5aa7ce1cf92788b674e7e64"
+    },
+    "pre_guard/cycle_runs/body_blend_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_blend_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "8128930a1b1a224819cc7101f19006a2e6e40b5890933703c469a27e00f6f2d4"
+    },
+    "pre_guard/cycle_runs/body_blend_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "4028a9ab25a1f9fb58c5236cddfbb60da2420e04dbeef5e2db6c3f9e1a18fe79"
+    },
+    "pre_guard/cycle_runs/body_blend_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "7d913a38574709adbf8ded96ce2a8279386825d0a2c620b44950609ce0f8d0e6"
+    },
+    "pre_guard/cycle_runs/body_blend_0/vulkan.execution.json": {
+      "bytes": 2251,
+      "sha256": "fbe80283ce21ed68d4be1f5251698434fc926253b2488ae3789ffeb6ef146947"
+    },
+    "pre_guard/cycle_runs/body_blend_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_blend_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "b88455376d9ca505b2ddefc4566c9ffe0f6758cf0ae74083113e667d0f6dea53"
+    },
+    "pre_guard/cycle_runs/body_bst_0/change.json": {
+      "bytes": 1084,
+      "sha256": "a39d2d14841a85fe3b60b5ced8d953311ff6a8da2bfec8b8493d7e0914721c21"
+    },
+    "pre_guard/cycle_runs/body_bst_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "e0850e3dcdc4c1e085a0e1b2cbd66c14c1c8f27c5df576eac2ced7bed9fc0d61"
+    },
+    "pre_guard/cycle_runs/body_bst_0/cpu.execution.json": {
+      "bytes": 2073,
+      "sha256": "cd233610805603b267b4928eba8ef63a5f28db340962a9d468293328b611337c"
+    },
+    "pre_guard/cycle_runs/body_bst_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_bst_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "fc7ac5feb930b213d37af08cc203aa01deaa11507b1d26a599dd1fa3caf3c5e3"
+    },
+    "pre_guard/cycle_runs/body_bst_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "30862d942f5bcb64a770e4cc29265d2c8d0d2405dff94d384f8743e8d3bc76eb"
+    },
+    "pre_guard/cycle_runs/body_bst_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "e0850e3dcdc4c1e085a0e1b2cbd66c14c1c8f27c5df576eac2ced7bed9fc0d61"
+    },
+    "pre_guard/cycle_runs/body_bst_0/vulkan.execution.json": {
+      "bytes": 2247,
+      "sha256": "684a2e853ddb10a1d5e6fd2f62ef1941c9ef01fd478c8587a34895650029fbe3"
+    },
+    "pre_guard/cycle_runs/body_bst_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_bst_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "ca7a8f8ae88d17d392c6acf04464c35e3717cae7d0bb4a7613b0b9cd6ed13148"
+    },
+    "pre_guard/cycle_runs/body_circle_0/change.json": {
+      "bytes": 1079,
+      "sha256": "13536abe1be9400d86d6b83864b18b75ef0395e940bcedaaaa60a424c4d09fd9"
+    },
+    "pre_guard/cycle_runs/body_circle_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "06b39827435575cbea964cca428f98b02341045d3d892dd973753b1fad6f3248"
+    },
+    "pre_guard/cycle_runs/body_circle_0/cpu.execution.json": {
+      "bytes": 2079,
+      "sha256": "f34ad328b7396abcaf389fc28042db2bc47e0ed84ece1dbf7bd388cbae905ae3"
+    },
+    "pre_guard/cycle_runs/body_circle_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_circle_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "c55d4aa8e4224fa382928db5594d47aa6ac3daa2003b6b55b0c45c48f482551d"
+    },
+    "pre_guard/cycle_runs/body_circle_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "39acc67945a6c7b921b107515d8e34ba06c20df84cd049df28b52353c5c600bb"
+    },
+    "pre_guard/cycle_runs/body_circle_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "06b39827435575cbea964cca428f98b02341045d3d892dd973753b1fad6f3248"
+    },
+    "pre_guard/cycle_runs/body_circle_0/vulkan.execution.json": {
+      "bytes": 2252,
+      "sha256": "57d7cac5eb32fc2f1512d538ea07b2e496cc6fa660519a25d4b29c8bd0fd502b"
+    },
+    "pre_guard/cycle_runs/body_circle_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_circle_0/vulkan.stdout.txt": {
+      "bytes": 1235,
+      "sha256": "4a122abffa587fae6aaa9f6f6fe327fd75f650911e5ab2e693e8be3d3e75c89f"
+    },
+    "pre_guard/cycle_runs/body_circle_99/change.json": {
+      "bytes": 1077,
+      "sha256": "d3c7de79e326c4f721227be7a9c0578e257a06c0fdcbe960eaa8e0f9d5450a08"
+    },
+    "pre_guard/cycle_runs/body_circle_99/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "55d41903b40b5905fa048d6bd686d48004e6b478716d014c3b2bf81d6f5f4672"
+    },
+    "pre_guard/cycle_runs/body_circle_99/cpu.execution.json": {
+      "bytes": 2081,
+      "sha256": "fb259058eeb165b185317a6aef90e4329e121d5a23bf947749f83c52fa52ee76"
+    },
+    "pre_guard/cycle_runs/body_circle_99/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_circle_99/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "e353f2302d064a2db96f7a6a6ec02d68c782c9be1a6fac4b0366684490a0ba1d"
+    },
+    "pre_guard/cycle_runs/body_circle_99/program.bin": {
+      "bytes": 131748,
+      "sha256": "e32b97c206dffc2cf71e778937363275002deb23fa5f6c56a387a91b3a96d744"
+    },
+    "pre_guard/cycle_runs/body_circle_99/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "55d41903b40b5905fa048d6bd686d48004e6b478716d014c3b2bf81d6f5f4672"
+    },
+    "pre_guard/cycle_runs/body_circle_99/vulkan.execution.json": {
+      "bytes": 2255,
+      "sha256": "271963af9dbd73b8cd821370d7f7c44cb65fe341b9046ce62b9bd978865d4cfe"
+    },
+    "pre_guard/cycle_runs/body_circle_99/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_circle_99/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "6de896a63fbaac476d3f3196e8cbfbf210d2c54369b65de626c38bf303726537"
+    },
+    "pre_guard/cycle_runs/body_cone_0/change.json": {
+      "bytes": 1077,
+      "sha256": "7ea9fd60507e6673a8844742ae7546ad0645c9737a102124664090b95f8ba2b0"
+    },
+    "pre_guard/cycle_runs/body_cone_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "4bc71ff3e210740024efa8e7d9ba49ff05b2f71a530f5057c78e22f991ff4d64"
+    },
+    "pre_guard/cycle_runs/body_cone_0/cpu.execution.json": {
+      "bytes": 2075,
+      "sha256": "2134904d1828dd8a03c9cf592760dce62749bbf58a91883a17e409692a9e4ad0"
+    },
+    "pre_guard/cycle_runs/body_cone_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_cone_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "71ee1556fc7656d74b7d7ef179463cf01f4ffc590316d67f5650adc5d0bc70c7"
+    },
+    "pre_guard/cycle_runs/body_cone_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "aa31d44fa849a32143361cbd11d56e4ad07e2fe0aaf783a94a14710618e9feed"
+    },
+    "pre_guard/cycle_runs/body_cone_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "4bc71ff3e210740024efa8e7d9ba49ff05b2f71a530f5057c78e22f991ff4d64"
+    },
+    "pre_guard/cycle_runs/body_cone_0/vulkan.execution.json": {
+      "bytes": 2249,
+      "sha256": "0850b80f0e4989090e99b79bcf3a9a4ad79a3a712299159fd6c76bde9a5ba16a"
+    },
+    "pre_guard/cycle_runs/body_cone_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_cone_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "0e4cf95b3ca14ea4b0535d9a42896d13af61b8186490c9f7f3f6f325d6e31547"
+    },
+    "pre_guard/cycle_runs/body_crystal_0/change.json": {
+      "bytes": 1077,
+      "sha256": "cbf3f926c37de4608ee314298cf7dc47f1e1ac68069b9180b9231ba78b84300f"
+    },
+    "pre_guard/cycle_runs/body_crystal_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "0a3c4f11d6765ee8daff6e90153e311ea7dff3af7e83e2568a5a8800de7e98e7"
+    },
+    "pre_guard/cycle_runs/body_crystal_0/cpu.execution.json": {
+      "bytes": 2081,
+      "sha256": "c4b45ce97f8484b3a2ef774dbc0db1099428ca71f99ba1738fab5cea1ad899c0"
+    },
+    "pre_guard/cycle_runs/body_crystal_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_crystal_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "03527b350b99e8e520e00f1844997441518020472b77c4447c2eae1f26c5a279"
+    },
+    "pre_guard/cycle_runs/body_crystal_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "ecb8eab9a0365f7a3b71cebabce2db5801b52bdf250b0e408bdfcf8acc2a1caf"
+    },
+    "pre_guard/cycle_runs/body_crystal_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "0a3c4f11d6765ee8daff6e90153e311ea7dff3af7e83e2568a5a8800de7e98e7"
+    },
+    "pre_guard/cycle_runs/body_crystal_0/vulkan.execution.json": {
+      "bytes": 2255,
+      "sha256": "a371df148d733a5d8b42c4caa31fbeaba1ac5f17deb60b1535a96b030a72c945"
+    },
+    "pre_guard/cycle_runs/body_crystal_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_crystal_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "489311ca694f5caf12d5de47f738af1f157a22b4e90efdbec4ea0761bdd9acb9"
+    },
+    "pre_guard/cycle_runs/body_delta_phi_0/change.json": {
+      "bytes": 1082,
+      "sha256": "434011f913b93e656478447d8efc2fad93bcfe27a2747441512260c144510b6f"
+    },
+    "pre_guard/cycle_runs/body_delta_phi_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "bb66bd388542cc9b97381f13f147281bff5176ef7a2e4c22ed83e2799a71229c"
+    },
+    "pre_guard/cycle_runs/body_delta_phi_0/cpu.execution.json": {
+      "bytes": 2085,
+      "sha256": "50d363a2b05b98e13e2b70f8ce72918ea58117fb5c4631c100abd61e0c17f3af"
+    },
+    "pre_guard/cycle_runs/body_delta_phi_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_delta_phi_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "f3b02c7b459d832fc5c7a10e12169dffb833ffbe001a5d7475ba70994420d2dc"
+    },
+    "pre_guard/cycle_runs/body_delta_phi_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "47ad02d101db8f09ab22ac02a56679527866111f0db3d4124da24f4a9029b87e"
+    },
+    "pre_guard/cycle_runs/body_delta_phi_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "bb66bd388542cc9b97381f13f147281bff5176ef7a2e4c22ed83e2799a71229c"
+    },
+    "pre_guard/cycle_runs/body_delta_phi_0/vulkan.execution.json": {
+      "bytes": 2259,
+      "sha256": "615048d98d8ffb773cbcdb2036c770dac2b1ea69e6f5e5691c4f93f2b949ffc0"
+    },
+    "pre_guard/cycle_runs/body_delta_phi_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_delta_phi_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "156c269ff1597f6e1352b0f87f7fc029c826e317b23ee13ef9502cfa7f4a08f3"
+    },
+    "pre_guard/cycle_runs/body_dichromatic_0/change.json": {
+      "bytes": 1081,
+      "sha256": "868d85449407b8c611bc0e8805357b7e687806459918ea6ec7bc63d9d62c535d"
+    },
+    "pre_guard/cycle_runs/body_dichromatic_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "1d710a762087ec4922e14452d044ac96be497590b649d8e2c469f11c39350348"
+    },
+    "pre_guard/cycle_runs/body_dichromatic_0/cpu.execution.json": {
+      "bytes": 2089,
+      "sha256": "3bab8a7e903bc1aa835b1103f7c2cffab666295658719c7ba586fa2237726c5e"
+    },
+    "pre_guard/cycle_runs/body_dichromatic_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_dichromatic_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "416db2167885bfadea606ed4ad9cc500a13d1d48fa78b6c7495e797d2dc326ff"
+    },
+    "pre_guard/cycle_runs/body_dichromatic_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "bc7c1348c6c0f5826b2d6cc8bb985244e38142154f93ddf5ccbf1399b068fdb5"
+    },
+    "pre_guard/cycle_runs/body_dichromatic_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "1d710a762087ec4922e14452d044ac96be497590b649d8e2c469f11c39350348"
+    },
+    "pre_guard/cycle_runs/body_dichromatic_0/vulkan.execution.json": {
+      "bytes": 2262,
+      "sha256": "7ad224b7df2e8ef2b3bfcf3167ecefcde01b386b7455bc6d4368b2278fa13ca1"
+    },
+    "pre_guard/cycle_runs/body_dichromatic_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_dichromatic_0/vulkan.stdout.txt": {
+      "bytes": 1235,
+      "sha256": "5deff479996753852365b442147f69efd0c9356ab92b8b676f3fe7fc32c9e967"
+    },
+    "pre_guard/cycle_runs/body_double_dot_0/change.json": {
+      "bytes": 1083,
+      "sha256": "5c66f7e7bc662f13e6ddb861ac957b7ac17f414f29e4a0daa22a1b3b45a30aeb"
+    },
+    "pre_guard/cycle_runs/body_double_dot_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "d666a7ff8516dfb8422a1b594008c91ab43191a674fff68bcd1dbf32fb7fa45d"
+    },
+    "pre_guard/cycle_runs/body_double_dot_0/cpu.execution.json": {
+      "bytes": 2086,
+      "sha256": "de98cc7e2931520b67bf786a5efec406c22811edc1e31295485b59e86b710b88"
+    },
+    "pre_guard/cycle_runs/body_double_dot_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_double_dot_0/cpu.stdout.txt": {
+      "bytes": 1104,
+      "sha256": "eec53f25854d284b3093168692b3130e990158e0da1436d74b641a60399f7fb9"
+    },
+    "pre_guard/cycle_runs/body_double_dot_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "4742e8b80ebbd48ceba4903cecc9a5104be1d3fbc302795e0ee8d51fdba119ff"
+    },
+    "pre_guard/cycle_runs/body_double_dot_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "d666a7ff8516dfb8422a1b594008c91ab43191a674fff68bcd1dbf32fb7fa45d"
+    },
+    "pre_guard/cycle_runs/body_double_dot_0/vulkan.execution.json": {
+      "bytes": 2260,
+      "sha256": "b0b5e3decc3dd9dbf93e96712dbb7068e441f250627bcee31b14e9fb718f2d77"
+    },
+    "pre_guard/cycle_runs/body_double_dot_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_double_dot_0/vulkan.stdout.txt": {
+      "bytes": 1235,
+      "sha256": "32b412288aeac297f932d78f8cf66733d8b26f497fb4f7a2069ea3737d78d074"
+    },
+    "pre_guard/cycle_runs/body_hadamard_1/change.json": {
+      "bytes": 1078,
+      "sha256": "d62779e1c088f5f04c5439ae9656120328efba9493e6c2b6c0b630e7d2480709"
+    },
+    "pre_guard/cycle_runs/body_hadamard_1/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "ba78fd1bb47e1a04dea150db64d287db62fabbb464bc396c2a319e8dabf5daf9"
+    },
+    "pre_guard/cycle_runs/body_hadamard_1/cpu.execution.json": {
+      "bytes": 2083,
+      "sha256": "282a204de8178843964b782a79efb353678c5a5f76033f54fc1861efdb34926b"
+    },
+    "pre_guard/cycle_runs/body_hadamard_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_hadamard_1/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "4a58bc244acd8c0a81f8d96341f157a8c23c96d0bd98a5fb23e3a5198a46910c"
+    },
+    "pre_guard/cycle_runs/body_hadamard_1/program.bin": {
+      "bytes": 131748,
+      "sha256": "839284a608e21aca2d1a0a975a986a378872c20df01080f6a4ecc295494a56ce"
+    },
+    "pre_guard/cycle_runs/body_hadamard_1/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "ba78fd1bb47e1a04dea150db64d287db62fabbb464bc396c2a319e8dabf5daf9"
+    },
+    "pre_guard/cycle_runs/body_hadamard_1/vulkan.execution.json": {
+      "bytes": 2257,
+      "sha256": "b4e805fe29fdf7c2eca9fb7809a1b36bdb9c92ab094d7ec7285790e4a225dd5a"
+    },
+    "pre_guard/cycle_runs/body_hadamard_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_hadamard_1/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "58607c27b3ad503cc0250bc8c6eeadf8ddaed39c1e54c6c9561ac1918132b514"
+    },
+    "pre_guard/cycle_runs/body_inverse_T_0/change.json": {
+      "bytes": 1080,
+      "sha256": "4ebdea2e5be13b312f9ccee8f3f113e4b4c7741a1b5923d1c19749b53fe4a281"
+    },
+    "pre_guard/cycle_runs/body_inverse_T_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "c3aae6147c761cb87668ba6db162e0382dd55eaedd7f89f6fbd0ccd1f40639af"
+    },
+    "pre_guard/cycle_runs/body_inverse_T_0/cpu.execution.json": {
+      "bytes": 2084,
+      "sha256": "1d3acafdc9caefc0db10bb6bc2f1b0a960e944de66c61474e5a285760dd6c8e5"
+    },
+    "pre_guard/cycle_runs/body_inverse_T_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_inverse_T_0/cpu.stdout.txt": {
+      "bytes": 1104,
+      "sha256": "791dd97ae3fb17a141fde8b3a9ddea1a1141b9096f7abf43228ce1b797247e8e"
+    },
+    "pre_guard/cycle_runs/body_inverse_T_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "6d4ccb2c701260036d65f751a9364041625516d1a69caa91472fc54995f0bbc8"
+    },
+    "pre_guard/cycle_runs/body_inverse_T_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "c3aae6147c761cb87668ba6db162e0382dd55eaedd7f89f6fbd0ccd1f40639af"
+    },
+    "pre_guard/cycle_runs/body_inverse_T_0/vulkan.execution.json": {
+      "bytes": 2259,
+      "sha256": "c5cfb65088cb655709e5f408caf907b6ca527e10cc8337a68c811d2c40b6d9a1"
+    },
+    "pre_guard/cycle_runs/body_inverse_T_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_inverse_T_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "7d0c29169d54567add90a26cad8fc8fb40663bc696121d1caf1a8f0eee69dfa9"
+    },
+    "pre_guard/cycle_runs/body_klein_0/change.json": {
+      "bytes": 1075,
+      "sha256": "11a3c45f564911de09a5ea5fbea7b1ec3ea9dbec44205881bd70c605d30a4682"
+    },
+    "pre_guard/cycle_runs/body_klein_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "8321837ebfd1f62878d97080c3d031a9fef51fdd2b0d2d85ce1d58d577182e4c"
+    },
+    "pre_guard/cycle_runs/body_klein_0/cpu.execution.json": {
+      "bytes": 2077,
+      "sha256": "470913ab21d78a596933025d39727e228d18023594032030e890fdb564d482b0"
+    },
+    "pre_guard/cycle_runs/body_klein_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_klein_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "72b7f76b9f52441bcddfaa60d923c0b5022754d59375b90920bfcc8ccbb31aba"
+    },
+    "pre_guard/cycle_runs/body_klein_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "a03aff01b729e00073e996672d18dd3c6917ac2595c333c8e6726f72728cd194"
+    },
+    "pre_guard/cycle_runs/body_klein_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "8321837ebfd1f62878d97080c3d031a9fef51fdd2b0d2d85ce1d58d577182e4c"
+    },
+    "pre_guard/cycle_runs/body_klein_0/vulkan.execution.json": {
+      "bytes": 2251,
+      "sha256": "94873de17075ca537083bf489ce50974972cab587cb5d700ba1df73d618df2c6"
+    },
+    "pre_guard/cycle_runs/body_klein_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_klein_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "e028b84c10d3e7775b50dab940b761a587c4f618d55707141fe38a0768b34e52"
+    },
+    "pre_guard/cycle_runs/body_parity_0/change.json": {
+      "bytes": 1079,
+      "sha256": "b47de15d02c21752d3e9b99dc6dddf332680ca8388af7f4d1f5e1449fd58128e"
+    },
+    "pre_guard/cycle_runs/body_parity_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "5d7116549d1525d8d32afaec502b561e2825e469fcea7ed4e1873a91e8bc38f5"
+    },
+    "pre_guard/cycle_runs/body_parity_0/cpu.execution.json": {
+      "bytes": 2079,
+      "sha256": "4b92f31c488c5e93c899878bf746b020c470ff25d3ce2dd65a5f30770ede3342"
+    },
+    "pre_guard/cycle_runs/body_parity_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_parity_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "416013450079c6e24b087ddf309e2ef7c77bbd31306fb34965d6a703297c20e9"
+    },
+    "pre_guard/cycle_runs/body_parity_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "010c685bcf67b8dba55b0a0ffa4448618dad2d6fcece8d698a53eefb65cad429"
+    },
+    "pre_guard/cycle_runs/body_parity_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "5d7116549d1525d8d32afaec502b561e2825e469fcea7ed4e1873a91e8bc38f5"
+    },
+    "pre_guard/cycle_runs/body_parity_0/vulkan.execution.json": {
+      "bytes": 2253,
+      "sha256": "6ce1c26a7a3d0cce5df74710026f358adef6b688b8631e397111f9f9b536b94d"
+    },
+    "pre_guard/cycle_runs/body_parity_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_parity_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "663d7449c224c42b46ac103b1d8cd908f217660e8328d1a2b49e4e497eccb2c2"
+    },
+    "pre_guard/cycle_runs/body_phase_history_0/change.json": {
+      "bytes": 1083,
+      "sha256": "5685a4706d76b190b35782499991adfb980338b0c61a9a9f1555fb5927da494a"
+    },
+    "pre_guard/cycle_runs/body_phase_history_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "2539d2dbd8317b7d57a6370af8c9e41d57a4d3ddc5009cd29a1f5763441f1001"
+    },
+    "pre_guard/cycle_runs/body_phase_history_0/cpu.execution.json": {
+      "bytes": 2093,
+      "sha256": "9df0fb9aeb4afd452bb32c6a70f1ccd27db7312d3eb9dff4a3ec63e144776ba6"
+    },
+    "pre_guard/cycle_runs/body_phase_history_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_phase_history_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "08d1b2b0afac73f17bedf525ceb064061e21a592e982904361b6c167529099c1"
+    },
+    "pre_guard/cycle_runs/body_phase_history_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "7925b6980ed677d24702ecd6d3d517458a7442bca7ff24eb58b988275c3eac01"
+    },
+    "pre_guard/cycle_runs/body_phase_history_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "2539d2dbd8317b7d57a6370af8c9e41d57a4d3ddc5009cd29a1f5763441f1001"
+    },
+    "pre_guard/cycle_runs/body_phase_history_0/vulkan.execution.json": {
+      "bytes": 2266,
+      "sha256": "fca59508315fb7c24185aeaedf4f30fceade0cf0db61e419571b12b85335afb6"
+    },
+    "pre_guard/cycle_runs/body_phase_history_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_phase_history_0/vulkan.stdout.txt": {
+      "bytes": 1235,
+      "sha256": "faf50a62ecf6eb256c29263bd701f76af9769571263272b8ff2774a8ef3ed20e"
+    },
+    "pre_guard/cycle_runs/body_phi_0/change.json": {
+      "bytes": 1075,
+      "sha256": "688f9b024df5e3f43706bee120c336ae908a9e7a80a4beb78a4c6799284dac7f"
+    },
+    "pre_guard/cycle_runs/body_phi_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "51ec73436efff37db5289251c4bfc8e9df229abdd4c892753637a1a89b3dda21"
+    },
+    "pre_guard/cycle_runs/body_phi_0/cpu.execution.json": {
+      "bytes": 2072,
+      "sha256": "1eb47639c4063fe47b22e8c0040c3f9a0c90acb8bda9cc417ac3a8ac5af2e1d6"
+    },
+    "pre_guard/cycle_runs/body_phi_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_phi_0/cpu.stdout.txt": {
+      "bytes": 1104,
+      "sha256": "e92d9965fae2b845f6146292a968d9273191c0d868f30987e939167a72c0d09f"
+    },
+    "pre_guard/cycle_runs/body_phi_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "35e18505a210a6e5d80f07f398926c5a119e6aa49d02ca35e840f18793c65878"
+    },
+    "pre_guard/cycle_runs/body_phi_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "51ec73436efff37db5289251c4bfc8e9df229abdd4c892753637a1a89b3dda21"
+    },
+    "pre_guard/cycle_runs/body_phi_0/vulkan.execution.json": {
+      "bytes": 2246,
+      "sha256": "69dc30454e1b2ec099a4ed0a8a8667336dc13d3d954f7dd7c3f42b543f4d453d"
+    },
+    "pre_guard/cycle_runs/body_phi_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_phi_0/vulkan.stdout.txt": {
+      "bytes": 1235,
+      "sha256": "96854c3e653ce6ad61a905c9f56df04e98f1cedf2d68c747b616ed189a4cdc52"
+    },
+    "pre_guard/cycle_runs/body_phyllotaxis_0/change.json": {
+      "bytes": 1081,
+      "sha256": "4813fa7209e0fa14730263436315e55c832719aca413ac901131dba7754f7268"
+    },
+    "pre_guard/cycle_runs/body_phyllotaxis_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "44421a33a29612a3fb20ef146a488348d015bd0cb91d7800508cd1b8791c5a52"
+    },
+    "pre_guard/cycle_runs/body_phyllotaxis_0/cpu.execution.json": {
+      "bytes": 2089,
+      "sha256": "dfdf292565c0c449f3b7c3c4dfdaf44abcbc47f384b20386f232a6235692e289"
+    },
+    "pre_guard/cycle_runs/body_phyllotaxis_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_phyllotaxis_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "1e51a09e7b9657c4c31c9d4367000a46edcf9eb2098e359bddf4a8d930f4c35f"
+    },
+    "pre_guard/cycle_runs/body_phyllotaxis_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "cab36c416aa8a633573e29ed47866740c550dc2c5a05510c7f78481825b9b953"
+    },
+    "pre_guard/cycle_runs/body_phyllotaxis_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "44421a33a29612a3fb20ef146a488348d015bd0cb91d7800508cd1b8791c5a52"
+    },
+    "pre_guard/cycle_runs/body_phyllotaxis_0/vulkan.execution.json": {
+      "bytes": 2263,
+      "sha256": "065eb60ea716db4c151478a3d33bf5c6d6d240569943d43d9108c07448a288c6"
+    },
+    "pre_guard/cycle_runs/body_phyllotaxis_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_phyllotaxis_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "f4f7849bd6f3607769a8dadbc08200f9ed41627bdd33fe4cea78a75358636673"
+    },
+    "pre_guard/cycle_runs/body_pinion_0/change.json": {
+      "bytes": 1076,
+      "sha256": "524fbda4cea599fd685de410918abe53889d683f14e65c68fc8b9316ca448b95"
+    },
+    "pre_guard/cycle_runs/body_pinion_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "e4fbdc8efe672cf6819841d6d993ee5ce71dc36d99252b884160cfd25f907c1f"
+    },
+    "pre_guard/cycle_runs/body_pinion_0/cpu.execution.json": {
+      "bytes": 2079,
+      "sha256": "d1c23ed3266a64bb074d790673334796322616f16713c606a0fdc637229297cb"
+    },
+    "pre_guard/cycle_runs/body_pinion_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_pinion_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "b834a816db149b93f20c1b4959659648a030d4b51793479b459f8e8097cf4ce4"
+    },
+    "pre_guard/cycle_runs/body_pinion_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "8e69c6f8f2ceed88aabe8f68b24fd78dbc471ebbdf49f57566be200064ef8512"
+    },
+    "pre_guard/cycle_runs/body_pinion_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "e4fbdc8efe672cf6819841d6d993ee5ce71dc36d99252b884160cfd25f907c1f"
+    },
+    "pre_guard/cycle_runs/body_pinion_0/vulkan.execution.json": {
+      "bytes": 2253,
+      "sha256": "9d38156403a7bfcfb7065bf3a6a1a9ef3b244ece663fff2cfe1cafe67dec1cca"
+    },
+    "pre_guard/cycle_runs/body_pinion_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_pinion_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "92c541681d2c5854b741fd5aa270eb55a09e337b7eae476c10137a79e606d5d0"
+    },
+    "pre_guard/cycle_runs/body_psi_0/change.json": {
+      "bytes": 1073,
+      "sha256": "174928c8dff782dd8de135e7a8e572bbb7bb1e20fceb5278c559a6ff628970e4"
+    },
+    "pre_guard/cycle_runs/body_psi_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "3c27f85f2f28afe5d8cae1eeb98d4380986367d9c7841ca9d59c12ba3e2540b5"
+    },
+    "pre_guard/cycle_runs/body_psi_0/cpu.execution.json": {
+      "bytes": 2072,
+      "sha256": "881a13b7806077ba6539f6485d2d587482ad48ff163a8f8f6a4319bf84c250b3"
+    },
+    "pre_guard/cycle_runs/body_psi_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_psi_0/cpu.stdout.txt": {
+      "bytes": 1104,
+      "sha256": "f1d58cd33bf5cd191751c19a3af5b83ffb346b4538e07cb9ffb97ae0b4b746de"
+    },
+    "pre_guard/cycle_runs/body_psi_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "c33764b825e85ed5fd093fd438894e4a0216830b6522105ef8994c3ec8cdbc30"
+    },
+    "pre_guard/cycle_runs/body_psi_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "3c27f85f2f28afe5d8cae1eeb98d4380986367d9c7841ca9d59c12ba3e2540b5"
+    },
+    "pre_guard/cycle_runs/body_psi_0/vulkan.execution.json": {
+      "bytes": 2247,
+      "sha256": "8fd399c2fe510cd6d141612e91deb996173c0c53616d5da1a4ae4457ef59deaa"
+    },
+    "pre_guard/cycle_runs/body_psi_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_psi_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "627cbc4033df743212c4c4ca7db5b6a96865b63ef1a5d1714203552a9329ce9a"
+    },
+    "pre_guard/cycle_runs/body_pyramid_0/change.json": {
+      "bytes": 1080,
+      "sha256": "6140d702107e92feee8346e9d94499e141524c6c7774f387a6b5cfdf78f3c211"
+    },
+    "pre_guard/cycle_runs/body_pyramid_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "4304c89950d305133a7dc5336c7ae43a94fdaf815ca2baa3e3d3c1f8708d5007"
+    },
+    "pre_guard/cycle_runs/body_pyramid_0/cpu.execution.json": {
+      "bytes": 2081,
+      "sha256": "bc532656cd9f1c37c644261fbe4448502bae608cd8d9ce29cd8c90bf564f1b88"
+    },
+    "pre_guard/cycle_runs/body_pyramid_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_pyramid_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "17ac1ca56702c8ee84cc524e0926d38c6d5ac7b776cb4c2bd54d51ed40fed854"
+    },
+    "pre_guard/cycle_runs/body_pyramid_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "3c6a520205de168ec1059411ac9eb120e0678acbbf480190de0076f34851e19f"
+    },
+    "pre_guard/cycle_runs/body_pyramid_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "4304c89950d305133a7dc5336c7ae43a94fdaf815ca2baa3e3d3c1f8708d5007"
+    },
+    "pre_guard/cycle_runs/body_pyramid_0/vulkan.execution.json": {
+      "bytes": 2255,
+      "sha256": "8cc5a9479f6b4fa70ab6cc619236a6fe8d4512b86c2863d710f1e36c0adf55c5"
+    },
+    "pre_guard/cycle_runs/body_pyramid_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_pyramid_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "9c5e218d2d8b92c03deb69d64876dd489cf2b15c77375d14ce5208152b1f9903"
+    },
+    "pre_guard/cycle_runs/body_return_0/change.json": {
+      "bytes": 1076,
+      "sha256": "1ff287a64fbd78964fa03617f142fd1663122adbad6edc5cad721cd271b1a427"
+    },
+    "pre_guard/cycle_runs/body_return_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "4721446d0955358926a201aec30d76b462cc9ce526431b278f9c61f6e80c6ed3"
+    },
+    "pre_guard/cycle_runs/body_return_0/cpu.execution.json": {
+      "bytes": 2079,
+      "sha256": "9b5ced464d3cc5bc388c2d959adce1c1dc3492aa6c8ca2393ee44f61d16b171f"
+    },
+    "pre_guard/cycle_runs/body_return_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_return_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "8eea10b39af5587e3a4a0cca9ece6a89e8ebfb9bab3ca6b9023def8083129c5b"
+    },
+    "pre_guard/cycle_runs/body_return_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "a2ab6b744957134c7a24a024f00dbcfab471f7bdaed03fed576ae9c59ae7ab31"
+    },
+    "pre_guard/cycle_runs/body_return_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "4721446d0955358926a201aec30d76b462cc9ce526431b278f9c61f6e80c6ed3"
+    },
+    "pre_guard/cycle_runs/body_return_0/vulkan.execution.json": {
+      "bytes": 2253,
+      "sha256": "97f309617aaa41956d7f252d547d137038b256d1d27ff063cb307f68e2e070e1"
+    },
+    "pre_guard/cycle_runs/body_return_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_return_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "252f311ad1e7359db8825b8a6a4c6aff767ce215ac5b990b679c756b6cd3b2c8"
+    },
+    "pre_guard/cycle_runs/body_rk4_1/change.json": {
+      "bytes": 1073,
+      "sha256": "c6e12a8d676ff479a6b2285c5007a5695983d59421d91de2428db753188a55a7"
+    },
+    "pre_guard/cycle_runs/body_rk4_1/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "e273225afef38d1c3c414e9623e9518438a6d4d099797a857fa4144e2bf67b6f"
+    },
+    "pre_guard/cycle_runs/body_rk4_1/cpu.execution.json": {
+      "bytes": 2073,
+      "sha256": "8466b211b0dab553bfeab1ba068ca4be24c4b3a28c39a85b082129e746a4e557"
+    },
+    "pre_guard/cycle_runs/body_rk4_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_rk4_1/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "cf820a2937bafdaf3663ae6af39d98006489e039fce1a4ba05a9c4f192ff7ca2"
+    },
+    "pre_guard/cycle_runs/body_rk4_1/program.bin": {
+      "bytes": 131748,
+      "sha256": "707893d0948bde77d456422727d2f98ea416f2300696ea90b8738a5c926ba2ed"
+    },
+    "pre_guard/cycle_runs/body_rk4_1/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "e273225afef38d1c3c414e9623e9518438a6d4d099797a857fa4144e2bf67b6f"
+    },
+    "pre_guard/cycle_runs/body_rk4_1/vulkan.execution.json": {
+      "bytes": 2246,
+      "sha256": "cc567279175b7bdbf1be08ea76ae06e2158174c47ae7e44fb16b529668a7967d"
+    },
+    "pre_guard/cycle_runs/body_rk4_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_rk4_1/vulkan.stdout.txt": {
+      "bytes": 1235,
+      "sha256": "86a725ff147a2a7716a80b7df456ac4c4b60c0cc782bb793d6657f78baa17eba"
+    },
+    "pre_guard/cycle_runs/body_rk4_2/change.json": {
+      "bytes": 1073,
+      "sha256": "ceabacdac0fcd277b7c2171c09790c9db4d2409ace039bb2ec14438f2005d9cc"
+    },
+    "pre_guard/cycle_runs/body_rk4_2/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "5825725ad32dac24c9233a11f2186b6e062bc182d2f54b1f30f578f3f31641e2"
+    },
+    "pre_guard/cycle_runs/body_rk4_2/cpu.execution.json": {
+      "bytes": 2073,
+      "sha256": "d94a844dff912b74a67ac9bcf7e762ce4f0c6a3bb9e107d253c2b50d0589fadf"
+    },
+    "pre_guard/cycle_runs/body_rk4_2/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_rk4_2/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "b2437bbdc38e7adff09b3510bb63794c70656f773e423fcb25da2a22fa2dffc0"
+    },
+    "pre_guard/cycle_runs/body_rk4_2/program.bin": {
+      "bytes": 131748,
+      "sha256": "608ff709f470e0b2706ab33813db3283c8700449c715cd5af132e1eea2e19f9c"
+    },
+    "pre_guard/cycle_runs/body_rk4_2/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "5825725ad32dac24c9233a11f2186b6e062bc182d2f54b1f30f578f3f31641e2"
+    },
+    "pre_guard/cycle_runs/body_rk4_2/vulkan.execution.json": {
+      "bytes": 2246,
+      "sha256": "89eeaf5cd4d22c78b7b0d9958d6b3409140009b10faf9f747690f4e16cb52a55"
+    },
+    "pre_guard/cycle_runs/body_rk4_2/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_rk4_2/vulkan.stdout.txt": {
+      "bytes": 1235,
+      "sha256": "54f752d5d05908691bfafaa85b4717e96e560cccb6db221737d240b12557fafe"
+    },
+    "pre_guard/cycle_runs/body_sphere_0/change.json": {
+      "bytes": 1079,
+      "sha256": "f04b8b0078203648a9f3ea2367881643209db1a2677d15b8b599834e4c3689c4"
+    },
+    "pre_guard/cycle_runs/body_sphere_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "74579d65ee17bb066842a80083b0247340a7e5c14d3edef4837399bfbf70be0a"
+    },
+    "pre_guard/cycle_runs/body_sphere_0/cpu.execution.json": {
+      "bytes": 2079,
+      "sha256": "e04068c432672e811fcd93093cc24d5d8543dfa36876fddfc2767b1b68be0596"
+    },
+    "pre_guard/cycle_runs/body_sphere_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_sphere_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "03439c503898bbd9a6ab6d605cbde4b2ecc8d63021be7fdbcfe9a067cf3cd89d"
+    },
+    "pre_guard/cycle_runs/body_sphere_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "ae7ad1c578dd903cd0430a45fc6bc2bf0acbf64812c87ffbe8824ce1da6afc26"
+    },
+    "pre_guard/cycle_runs/body_sphere_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "74579d65ee17bb066842a80083b0247340a7e5c14d3edef4837399bfbf70be0a"
+    },
+    "pre_guard/cycle_runs/body_sphere_0/vulkan.execution.json": {
+      "bytes": 2253,
+      "sha256": "7cdd4dfeed58e2b512738c6af667e03cc581b2a403c0f673c7a6d0d2db8c73cd"
+    },
+    "pre_guard/cycle_runs/body_sphere_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_sphere_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "765b23b070c75798e58e0a3ec7c57491cf4c7d589c2bb0fff68d6d0868c48994"
+    },
+    "pre_guard/cycle_runs/body_split_0/change.json": {
+      "bytes": 1079,
+      "sha256": "a201b4ffa98a2d33089fc09c3b0514934124def2b522059c7339985473e60133"
+    },
+    "pre_guard/cycle_runs/body_split_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "7cab5726c62599b566bac20bdd986d1544aadec43c67a7d75d39df361fbb2082"
+    },
+    "pre_guard/cycle_runs/body_split_0/cpu.execution.json": {
+      "bytes": 2077,
+      "sha256": "6e08ab5f8b928341696cca62c8bb4f335486641c66b7e2277adb11d1d041bc4a"
+    },
+    "pre_guard/cycle_runs/body_split_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_split_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "0f234096de77ad0a12e5ff18686e5db61138106051048ace873343f70c635cd9"
+    },
+    "pre_guard/cycle_runs/body_split_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "3376a87cd67873e7aaa1311461eaf88b7a4c491d92e322f1aef8f8d4e0f986c9"
+    },
+    "pre_guard/cycle_runs/body_split_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "7cab5726c62599b566bac20bdd986d1544aadec43c67a7d75d39df361fbb2082"
+    },
+    "pre_guard/cycle_runs/body_split_0/vulkan.execution.json": {
+      "bytes": 2251,
+      "sha256": "5ebb92f703904d3d5b0af92f85b7d3a683c8a6783ad2ce72a8705a61eae5b3bb"
+    },
+    "pre_guard/cycle_runs/body_split_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_split_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "9a6c54d902d6107d9220cdca42cfed99e27b9ef0db4a381c469ee28dfc545707"
+    },
+    "pre_guard/cycle_runs/body_T_shape_0/change.json": {
+      "bytes": 1080,
+      "sha256": "aceee23cd5c3db1ab13a06816c173b578e38210e25eef5c9adf9b8f6920917ec"
+    },
+    "pre_guard/cycle_runs/body_T_shape_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "db8f03eb9e2a9f60973c2ca2019dc5f0369d0be11877190de8e49f4fffedbc53"
+    },
+    "pre_guard/cycle_runs/body_T_shape_0/cpu.execution.json": {
+      "bytes": 2081,
+      "sha256": "4336ac7a8d8fb425cec82b19bbd736ca770bf51fc712d1581210ea4eacfd54bf"
+    },
+    "pre_guard/cycle_runs/body_T_shape_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_T_shape_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "f40f411d1c60df18a208c06166b982276288d9e86c40c45a201cc0a45890e542"
+    },
+    "pre_guard/cycle_runs/body_T_shape_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "25e7e128c580b777523382dd04ca35bea01cf239446122cb13df1a97ecde4e30"
+    },
+    "pre_guard/cycle_runs/body_T_shape_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "db8f03eb9e2a9f60973c2ca2019dc5f0369d0be11877190de8e49f4fffedbc53"
+    },
+    "pre_guard/cycle_runs/body_T_shape_0/vulkan.execution.json": {
+      "bytes": 2254,
+      "sha256": "6b76abd3d3502d54dcb14c7d1e4d41b2e829d990f4557177bab3ff4d207554a8"
+    },
+    "pre_guard/cycle_runs/body_T_shape_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_T_shape_0/vulkan.stdout.txt": {
+      "bytes": 1235,
+      "sha256": "a1a45de400f23bc67d071e26f46910632e97856f1db2894ee81e153279d3ee45"
+    },
+    "pre_guard/cycle_runs/body_T_transform_0/change.json": {
+      "bytes": 1082,
+      "sha256": "6f5c070ed879a8c4c37bd8081aaf600b492fe0ef44b06e606ec793229b2848d3"
+    },
+    "pre_guard/cycle_runs/body_T_transform_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "e8911e719e9f81ac96a6d254c6d8445a4f574faef390856729dc6eb7c6558a7a"
+    },
+    "pre_guard/cycle_runs/body_T_transform_0/cpu.execution.json": {
+      "bytes": 2089,
+      "sha256": "3e2480b40127b41a8ea45aebb92cec4e0b047bf335aa58cbbba962ed65843de8"
+    },
+    "pre_guard/cycle_runs/body_T_transform_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_T_transform_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "b47463ebe3fbe6cf3f580273922197cda3cc86af39f2b0a395bc6976cb7db377"
+    },
+    "pre_guard/cycle_runs/body_T_transform_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "de65cbbccca91cbfa8e914f2c80e68e336a59b2ddedb99a2c070df7b83eddf72"
+    },
+    "pre_guard/cycle_runs/body_T_transform_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "e8911e719e9f81ac96a6d254c6d8445a4f574faef390856729dc6eb7c6558a7a"
+    },
+    "pre_guard/cycle_runs/body_T_transform_0/vulkan.execution.json": {
+      "bytes": 2263,
+      "sha256": "4d8a9a877c64f502a1e000084690f02e299bca364082370c8b727851e9e481ba"
+    },
+    "pre_guard/cycle_runs/body_T_transform_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_T_transform_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "5bb521393a1da3322ff4913f090cffe18ca46474e33b7a09005f359edde4c36f"
+    },
+    "pre_guard/cycle_runs/body_y_up_0/change.json": {
+      "bytes": 1074,
+      "sha256": "c8d922c78476e5c879d9bc36fff16a0b2020d1bd0fcab12d01c2a1913b78693c"
+    },
+    "pre_guard/cycle_runs/body_y_up_0/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "5c5432fd74bbe5197414733ab1ea4852da0444ae4f729ddc562808c70f0a94df"
+    },
+    "pre_guard/cycle_runs/body_y_up_0/cpu.execution.json": {
+      "bytes": 2075,
+      "sha256": "09206a4c383207d800d2228bb2735643245af404b2b394f25c1df9c1c161e0e1"
+    },
+    "pre_guard/cycle_runs/body_y_up_0/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_y_up_0/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "6c76a3027c0b5965f4b8d2c9f74f197f193147b16ca1d7f3aa4a4cb32366f9b3"
+    },
+    "pre_guard/cycle_runs/body_y_up_0/program.bin": {
+      "bytes": 131748,
+      "sha256": "0c4c80a38d65152d5f79af1a4c437e02a92c88bd14bf669943fcd2f6f59aaa82"
+    },
+    "pre_guard/cycle_runs/body_y_up_0/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "5c5432fd74bbe5197414733ab1ea4852da0444ae4f729ddc562808c70f0a94df"
+    },
+    "pre_guard/cycle_runs/body_y_up_0/vulkan.execution.json": {
+      "bytes": 2249,
+      "sha256": "80dcd5f53ed578e1df22cae5fbac291c26196a85a81a998239d6fe056732f624"
+    },
+    "pre_guard/cycle_runs/body_y_up_0/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/body_y_up_0/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "bc1439c82e5a102ebcd9d16cec7c29257a7b59df390544f07bd5fac3053451ba"
+    },
+    "pre_guard/cycle_runs/carrier_field/change.json": {
+      "bytes": 1034,
+      "sha256": "f4250912f80e66b52674a246906e505ef339fc94de82e197b58de6aa333a726b"
+    },
+    "pre_guard/cycle_runs/carrier_field/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "e56f191ddbea94737e9e32e975e4e0e52a69eec235bdd782ffe00d8d8eb1acf4"
+    },
+    "pre_guard/cycle_runs/carrier_field/cpu.execution.json": {
+      "bytes": 2079,
+      "sha256": "12577363c644baf2ebf1beae185915ea7966d2cda1d738bf208f3584a51459e7"
+    },
+    "pre_guard/cycle_runs/carrier_field/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/carrier_field/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "e94515de61aecd692b5bced90c1b5ca2a321f5ccce82938cfe4c0506d4ad8c5a"
+    },
+    "pre_guard/cycle_runs/carrier_field/program.bin": {
+      "bytes": 131748,
+      "sha256": "d3c613c545d0e060a1fa4fec7433fbb9b337e108e650bb5f116412bfda2788d6"
+    },
+    "pre_guard/cycle_runs/carrier_field/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "e56f191ddbea94737e9e32e975e4e0e52a69eec235bdd782ffe00d8d8eb1acf4"
+    },
+    "pre_guard/cycle_runs/carrier_field/vulkan.execution.json": {
+      "bytes": 2253,
+      "sha256": "ee1457849c81f9d2f1fe65382f17f17023b00b79cd468df836b692e150aebed2"
+    },
+    "pre_guard/cycle_runs/carrier_field/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/carrier_field/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "daf5204c2767cb91c24904ab2a5b56975c8d192117ad8c5ed1f5880516cc7f69"
+    },
+    "pre_guard/cycle_runs/carrier_placement/change.json": {
+      "bytes": 1042,
+      "sha256": "b907e4f568a48d6e2b316241e8d940a47a67c95e415d27dcd1e5ec6e28272230"
+    },
+    "pre_guard/cycle_runs/carrier_placement/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "5b9d3bdca058396cd0df71500d88fc4d7152c8467d655328d9022585f9de3a5d"
+    },
+    "pre_guard/cycle_runs/carrier_placement/cpu.execution.json": {
+      "bytes": 2086,
+      "sha256": "d8963b731b19b886d948afe1565ebc564ec27f2d8d8200524ec01d0bef2cc494"
+    },
+    "pre_guard/cycle_runs/carrier_placement/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/carrier_placement/cpu.stdout.txt": {
+      "bytes": 1104,
+      "sha256": "2d01e8eef945588ba685d33316b30267f42fecd136679fd6406f747b29b3923d"
+    },
+    "pre_guard/cycle_runs/carrier_placement/program.bin": {
+      "bytes": 131748,
+      "sha256": "a4377750a7fe7684df20d4823ce335994e8aed6f254ae995b936d96c9248a778"
+    },
+    "pre_guard/cycle_runs/carrier_placement/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "5b9d3bdca058396cd0df71500d88fc4d7152c8467d655328d9022585f9de3a5d"
+    },
+    "pre_guard/cycle_runs/carrier_placement/vulkan.execution.json": {
+      "bytes": 2261,
+      "sha256": "348cd5504e018282f58555016ddf34c28716d7bda0e4aee6b7f18969c1749391"
+    },
+    "pre_guard/cycle_runs/carrier_placement/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/carrier_placement/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "f23b936f9d057e39f67bc26702d41b0fb68bd5e5c3cf81a3496afd6d3aea2021"
+    },
+    "pre_guard/cycle_runs/epochs_1/cpu.bin": {
+      "bytes": 131716,
+      "sha256": "1107a5aeff1e63746da5c3eabdcbd5a16a4fe1c644f35da4bdafd6b46c3b1dc0"
+    },
+    "pre_guard/cycle_runs/epochs_1/cpu.execution.json": {
+      "bytes": 2058,
+      "sha256": "e39cfbfa9f49566d388e64d0bfb51277d94dcbe2cb851fb08c5ad5c0008b60f2"
+    },
+    "pre_guard/cycle_runs/epochs_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/epochs_1/cpu.stdout.txt": {
+      "bytes": 1104,
+      "sha256": "6f34eddce649714d8186b44d198ddf97519f40119fbfc0cb720d5df7efe45246"
+    },
+    "pre_guard/cycle_runs/epochs_1/vulkan.bin": {
+      "bytes": 131716,
+      "sha256": "1107a5aeff1e63746da5c3eabdcbd5a16a4fe1c644f35da4bdafd6b46c3b1dc0"
+    },
+    "pre_guard/cycle_runs/epochs_1/vulkan.execution.json": {
+      "bytes": 2232,
+      "sha256": "887b9e0e2382f8afffbf086a951b045d42e016dc90f262bf507910a2fa351573"
+    },
+    "pre_guard/cycle_runs/epochs_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/epochs_1/vulkan.stdout.txt": {
+      "bytes": 1235,
+      "sha256": "d53549265c572e63e14a54ecede5f9815efa218a145e903357631c2342b61348"
+    },
+    "pre_guard/cycle_runs/epochs_2/cpu.bin": {
+      "bytes": 131716,
+      "sha256": "7138aa073def3c0da911cea313f1075f86216aab62f998e3e6ae5b2b5fc50ce5"
+    },
+    "pre_guard/cycle_runs/epochs_2/cpu.execution.json": {
+      "bytes": 2059,
+      "sha256": "8890dcf218b9febfd5bb232bee964c6f0e20b251cfb304d4f569f42a05a8ecfb"
+    },
+    "pre_guard/cycle_runs/epochs_2/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/epochs_2/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "76d2a0f4a1e2d18eeb9b9cb4a1d0832057f1e5d01fcc8ac52f4d3f23019ec348"
+    },
+    "pre_guard/cycle_runs/epochs_2/vulkan.bin": {
+      "bytes": 131716,
+      "sha256": "7138aa073def3c0da911cea313f1075f86216aab62f998e3e6ae5b2b5fc50ce5"
+    },
+    "pre_guard/cycle_runs/epochs_2/vulkan.execution.json": {
+      "bytes": 2233,
+      "sha256": "d683d3edb3db6a4c352e08bac64d2d48794e5ef218408e978d1eae35e7dbb1d2"
+    },
+    "pre_guard/cycle_runs/epochs_2/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/epochs_2/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "c5e82fb96c0848e752d24501c4855ed2178df9d45c0209b2c9999d9e94d1e867"
+    },
+    "pre_guard/cycle_runs/epochs_64/cpu.bin": {
+      "bytes": 131716,
+      "sha256": "5697e31e27ca0e3f9d39233835d6b424894cb596c1d4d9dc97bbb6ea7466dcee"
+    },
+    "pre_guard/cycle_runs/epochs_64/cpu.execution.json": {
+      "bytes": 2066,
+      "sha256": "07eb0f1cdc0c5644b32fdb6116c6bc7343f64318c131bfc4a16c770a3cf15add"
+    },
+    "pre_guard/cycle_runs/epochs_64/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/epochs_64/cpu.stdout.txt": {
+      "bytes": 1110,
+      "sha256": "0efd119ab0214d27fdcaab663abe09a9522c1ca3d99f0e878762ef9429f6496a"
+    },
+    "pre_guard/cycle_runs/epochs_64/vulkan.bin": {
+      "bytes": 131716,
+      "sha256": "5697e31e27ca0e3f9d39233835d6b424894cb596c1d4d9dc97bbb6ea7466dcee"
+    },
+    "pre_guard/cycle_runs/epochs_64/vulkan.execution.json": {
+      "bytes": 2241,
+      "sha256": "5e03cd24a63034e63b27d4f2cc3afc90c35728dc4bcf33bb06753bf71d9d78c9"
+    },
+    "pre_guard/cycle_runs/epochs_64/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/epochs_64/vulkan.stdout.txt": {
+      "bytes": 1242,
+      "sha256": "27727d88f3d3d5fc263317ecb7660d12c32f53450a6ebbc2893904d655335eb8"
+    },
+    "pre_guard/cycle_runs/epochs_8/cpu.bin": {
+      "bytes": 131716,
+      "sha256": "0a13b2a919ddfff6d3469158dbf566b46681b961d8c2c27d2be94a1eac9035a7"
+    },
+    "pre_guard/cycle_runs/epochs_8/cpu.execution.json": {
+      "bytes": 2060,
+      "sha256": "c4560fe272d8e55719ed3360fb23fa0019965ec5db1dd86fb7f57db9846467e8"
+    },
+    "pre_guard/cycle_runs/epochs_8/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/epochs_8/cpu.stdout.txt": {
+      "bytes": 1106,
+      "sha256": "d857f32bf79d472668a258f83d4462523958d9dc45e43c7293a2f1c9b7d95af0"
+    },
+    "pre_guard/cycle_runs/epochs_8/vulkan.bin": {
+      "bytes": 131716,
+      "sha256": "0a13b2a919ddfff6d3469158dbf566b46681b961d8c2c27d2be94a1eac9035a7"
+    },
+    "pre_guard/cycle_runs/epochs_8/vulkan.execution.json": {
+      "bytes": 2234,
+      "sha256": "aa40aa9d7c5f3d1769a5b92bf652a795e372dbcc8958506e27137e4766a6073f"
+    },
+    "pre_guard/cycle_runs/epochs_8/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/epochs_8/vulkan.stdout.txt": {
+      "bytes": 1237,
+      "sha256": "9cc1f5c6f3598c125f0e5f1be6310a4d3b311c48b9d47015ae010382642956ee"
+    },
+    "pre_guard/cycle_runs/freeze_mutator/change.json": {
+      "bytes": 1055,
+      "sha256": "72ac50fbe3db84a3b7bfec660987efca3d0acf8898ef8ca1cf07ee1fd0e22103"
+    },
+    "pre_guard/cycle_runs/freeze_mutator/program.bin": {
+      "bytes": 131732,
+      "sha256": "7ce246bfec34098835d85ca351521edfa96047a3bf9777c531f5a76be61f3ff4"
+    },
+    "pre_guard/cycle_runs/freeze_mutator_1/cpu.bin": {
+      "bytes": 131732,
+      "sha256": "f2c55b11765d476c7471752ffbc626da54cfc16e483ec9660e66f179d1f9fb62"
+    },
+    "pre_guard/cycle_runs/freeze_mutator_1/cpu.execution.json": {
+      "bytes": 2083,
+      "sha256": "809939e6de1b8a3b0a0301286da436be7f2df380b3fd9efba4e9fbbee44522bf"
+    },
+    "pre_guard/cycle_runs/freeze_mutator_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/freeze_mutator_1/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "6d998927f9df5765bcb7267f940efb661b5ff1e6c068fd84412ddba20391cdc9"
+    },
+    "pre_guard/cycle_runs/freeze_mutator_1/vulkan.bin": {
+      "bytes": 131732,
+      "sha256": "f2c55b11765d476c7471752ffbc626da54cfc16e483ec9660e66f179d1f9fb62"
+    },
+    "pre_guard/cycle_runs/freeze_mutator_1/vulkan.execution.json": {
+      "bytes": 2257,
+      "sha256": "b677be292bff6ba9d625e20c4bddc924a767d34fe3f603945dd79cad42aa345e"
+    },
+    "pre_guard/cycle_runs/freeze_mutator_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/freeze_mutator_1/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "732bb7da17cbb08db3e91f9c57f8dbbe7fd08657adf30a6b6a74ad8010059468"
+    },
+    "pre_guard/cycle_runs/freeze_mutator_2/cpu.bin": {
+      "bytes": 131732,
+      "sha256": "36f25174598d389d71c69ab7690223232b0a7a1c0b6881901feb89000fd420ed"
+    },
+    "pre_guard/cycle_runs/freeze_mutator_2/cpu.execution.json": {
+      "bytes": 2083,
+      "sha256": "214bfc9bac4a572c8d6863668f22bd5215b125110c0488abda4f1d80202edfff"
+    },
+    "pre_guard/cycle_runs/freeze_mutator_2/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/freeze_mutator_2/cpu.stdout.txt": {
+      "bytes": 1105,
+      "sha256": "e829468af84968843ed30651bd5e1f6c469e82ed7326fc69977f8a3587d254ba"
+    },
+    "pre_guard/cycle_runs/freeze_mutator_2/vulkan.bin": {
+      "bytes": 131732,
+      "sha256": "36f25174598d389d71c69ab7690223232b0a7a1c0b6881901feb89000fd420ed"
+    },
+    "pre_guard/cycle_runs/freeze_mutator_2/vulkan.execution.json": {
+      "bytes": 2257,
+      "sha256": "c4a280ef6fc11e866675923a01350a37c316b38e7e1cbed56c25f20ed97b26ff"
+    },
+    "pre_guard/cycle_runs/freeze_mutator_2/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/freeze_mutator_2/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "def68dee823e4131c02db47c0513382c090a8008c1132fef3b757cc704efd234"
+    },
+    "pre_guard/cycle_runs/history_B/change.json": {
+      "bytes": 1006,
+      "sha256": "dbedf3584636d89d22578d9bc1852fa76a704ed71a61c432e23fb64b7bcf6839"
+    },
+    "pre_guard/cycle_runs/history_B/cpu.bin": {
+      "bytes": 131716,
+      "sha256": "78e678ca8385dec67c986e089d3217143d57755b29c932f40480098f56924fb6"
+    },
+    "pre_guard/cycle_runs/history_B/cpu.execution.json": {
+      "bytes": 2069,
+      "sha256": "671f5f8a3f9a16435b37bcbe0248d4da25121f1a8dc5fbef32aab093dfe34306"
+    },
+    "pre_guard/cycle_runs/history_B/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/history_B/cpu.stdout.txt": {
+      "bytes": 1103,
+      "sha256": "0e9390237976875a0597a661453adc4ec758515a39d4b54d612ec7b8a681ea26"
+    },
+    "pre_guard/cycle_runs/history_B/program.bin": {
+      "bytes": 131716,
+      "sha256": "fc581f29007a71ccc9904d3373d45f7b214239b8a6b42275e942e1ca5561a324"
+    },
+    "pre_guard/cycle_runs/history_B/vulkan.bin": {
+      "bytes": 131716,
+      "sha256": "78e678ca8385dec67c986e089d3217143d57755b29c932f40480098f56924fb6"
+    },
+    "pre_guard/cycle_runs/history_B/vulkan.execution.json": {
+      "bytes": 2245,
+      "sha256": "6db0bd50f31140825504dd583120ce5a63cb1e145a57060731abb890ff1f6e31"
+    },
+    "pre_guard/cycle_runs/history_B/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/history_B/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "56fd84deb15caae9c1e5ad233e2bc3feeaa3d907ea69ef5f9300e388eeaa2879"
+    },
+    "pre_guard/cycle_runs/history_phase/change.json": {
+      "bytes": 1018,
+      "sha256": "adf266a508c2480499e12e88a7b610f88805263751f3d11301329be3c4f4178f"
+    },
+    "pre_guard/cycle_runs/history_phase/cpu.bin": {
+      "bytes": 131716,
+      "sha256": "5018686670382c76ce128118a06137e1bb70ef36916ab8611b6a3c70dcd7024e"
+    },
+    "pre_guard/cycle_runs/history_phase/cpu.execution.json": {
+      "bytes": 2078,
+      "sha256": "ede299bbd34192b3945e9d933474aa7f02972ef7c026195f765804e0fa61bd1f"
+    },
+    "pre_guard/cycle_runs/history_phase/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/history_phase/cpu.stdout.txt": {
+      "bytes": 1104,
+      "sha256": "af9aa47a08eec8ffcf1608f92704a16dd31390661b73150820d9405887d42cb8"
+    },
+    "pre_guard/cycle_runs/history_phase/program.bin": {
+      "bytes": 131716,
+      "sha256": "f76504ed383e2fe417fcc6d676d8f53d3fa00734d3e43b86b490a400729eda44"
+    },
+    "pre_guard/cycle_runs/history_phase/vulkan.bin": {
+      "bytes": 131716,
+      "sha256": "5018686670382c76ce128118a06137e1bb70ef36916ab8611b6a3c70dcd7024e"
+    },
+    "pre_guard/cycle_runs/history_phase/vulkan.execution.json": {
+      "bytes": 2252,
+      "sha256": "a4496962eed02d48b54287f41d764b3a5a5e1180201d58de7c6744a5b7e5d6f3"
+    },
+    "pre_guard/cycle_runs/history_phase/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/history_phase/vulkan.stdout.txt": {
+      "bytes": 1235,
+      "sha256": "e3bd14010b49ae9ef8fe84246a9ec53f8e6fe57586d345300c508ab728fff5c1"
+    },
+    "pre_guard/cycle_runs/old_pinion_transport/change.json": {
+      "bytes": 1039,
+      "sha256": "48a8c2b48653297d970d1378b628cd6e876bd47e5ee8448b5ace9922d5b32d1a"
+    },
+    "pre_guard/cycle_runs/old_pinion_transport/cpu.bin": {
+      "bytes": 131748,
+      "sha256": "1a8d7fa5b4b10e2a51a719041eead6385fab8e9c0f5207038f04fc56da86aa3e"
+    },
+    "pre_guard/cycle_runs/old_pinion_transport/cpu.execution.json": {
+      "bytes": 2092,
+      "sha256": "affc5e1f77b52143bc0690592a842bd14b05b96defaa71bd6e56c49c72f03cba"
+    },
+    "pre_guard/cycle_runs/old_pinion_transport/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/old_pinion_transport/cpu.stdout.txt": {
+      "bytes": 1104,
+      "sha256": "508e681155f5468ddb113d4af250de8cb432694cb99d4c19fb78ab08e88128c7"
+    },
+    "pre_guard/cycle_runs/old_pinion_transport/program.bin": {
+      "bytes": 131748,
+      "sha256": "8d34968d688bd89c73f1353f759a17a687554c6ffc8e7e453a5c36704d8c8640"
+    },
+    "pre_guard/cycle_runs/old_pinion_transport/vulkan.bin": {
+      "bytes": 131748,
+      "sha256": "1a8d7fa5b4b10e2a51a719041eead6385fab8e9c0f5207038f04fc56da86aa3e"
+    },
+    "pre_guard/cycle_runs/old_pinion_transport/vulkan.execution.json": {
+      "bytes": 2267,
+      "sha256": "699e2eecc3d492ee2c901f58ba710e906473a9db82d16e37b5721bada516c289"
+    },
+    "pre_guard/cycle_runs/old_pinion_transport/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/old_pinion_transport/vulkan.stdout.txt": {
+      "bytes": 1236,
+      "sha256": "12fe8d30261ef43b9c54f493d4d464487be2c8a9aaccef4060f2fd1f96cc24ad"
+    },
+    "pre_guard/cycle_runs/population_257_65/change.json": {
+      "bytes": 971,
+      "sha256": "0c38e5472b26a5d06692146e03badfad51c5d8e71a6ce061770a070a791eb194"
+    },
+    "pre_guard/cycle_runs/population_257_65/cpu.bin": {
+      "bytes": 893956,
+      "sha256": "590eeb847959c9f7faddefe846905a7f0381c39a6d22f302c8a8bfa2a5f00bf3"
+    },
+    "pre_guard/cycle_runs/population_257_65/cpu.execution.json": {
+      "bytes": 2096,
+      "sha256": "a26b4988a919a0c17432eeda2d082fd428bbd77d46c4244d881b4626b3ff83df"
+    },
+    "pre_guard/cycle_runs/population_257_65/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/population_257_65/cpu.stdout.txt": {
+      "bytes": 1113,
+      "sha256": "1f3b91400855d94380e8513a97c23a27d0533babc7b6ed666071c4ef0ca5d18f"
+    },
+    "pre_guard/cycle_runs/population_257_65/program.bin": {
+      "bytes": 893956,
+      "sha256": "41fae683f5f202859d056eef5d4c1f40af75ec4ff53e0887c8e8a4ab2fa3f79c"
+    },
+    "pre_guard/cycle_runs/population_257_65/vulkan.bin": {
+      "bytes": 893956,
+      "sha256": "590eeb847959c9f7faddefe846905a7f0381c39a6d22f302c8a8bfa2a5f00bf3"
+    },
+    "pre_guard/cycle_runs/population_257_65/vulkan.execution.json": {
+      "bytes": 2271,
+      "sha256": "7e8c3d577ccded86274f20a3ef855c03d4d8aa5e9bfcc8fbc353b54ac7980599"
+    },
+    "pre_guard/cycle_runs/population_257_65/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/population_257_65/vulkan.stdout.txt": {
+      "bytes": 1245,
+      "sha256": "7d73d58eff3cf35f77ba6205b4aebd3e117e99b15d8717c303b806e45011a5cf"
+    },
+    "pre_guard/cycle_runs/resume_1_plus_63/cpu.bin": {
+      "bytes": 131716,
+      "sha256": "5697e31e27ca0e3f9d39233835d6b424894cb596c1d4d9dc97bbb6ea7466dcee"
+    },
+    "pre_guard/cycle_runs/resume_1_plus_63/cpu.execution.json": {
+      "bytes": 2079,
+      "sha256": "a1cbce873553404c780ddb5732f8c54523f5e3793889ff9ebeb6c814f72cda9f"
+    },
+    "pre_guard/cycle_runs/resume_1_plus_63/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/resume_1_plus_63/cpu.stdout.txt": {
+      "bytes": 1110,
+      "sha256": "6b6521fc99d11302bdfba2768f6dba270075894a1d9c8b6f83ca447e6698c932"
+    },
+    "pre_guard/cycle_runs/resume_1_plus_63/vulkan.bin": {
+      "bytes": 131716,
+      "sha256": "5697e31e27ca0e3f9d39233835d6b424894cb596c1d4d9dc97bbb6ea7466dcee"
+    },
+    "pre_guard/cycle_runs/resume_1_plus_63/vulkan.execution.json": {
+      "bytes": 2253,
+      "sha256": "55093af30b77167a850dd4766fa68fd7b13aef75fca840d3e1eb3ec59e8a6dbe"
+    },
+    "pre_guard/cycle_runs/resume_1_plus_63/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/resume_1_plus_63/vulkan.stdout.txt": {
+      "bytes": 1241,
+      "sha256": "32dc88ec5a8787e9e770e8a41e00e54be05ba0b5721b7a9460911b8536e6e83a"
+    },
+    "pre_guard/cycle_runs/reverse_64/cpu.bin": {
+      "bytes": 131716,
+      "sha256": "5697e31e27ca0e3f9d39233835d6b424894cb596c1d4d9dc97bbb6ea7466dcee"
+    },
+    "pre_guard/cycle_runs/reverse_64/cpu.execution.json": {
+      "bytes": 2091,
+      "sha256": "bca88d66b103325ab26ec15193e17dd79cf7e542f092732bbefa8ed669511a29"
+    },
+    "pre_guard/cycle_runs/reverse_64/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/reverse_64/cpu.stdout.txt": {
+      "bytes": 1108,
+      "sha256": "dc5f44d46dfddbad3d69e0824fb4d4db0506f59879af76f6f00e60292740128a"
+    },
+    "pre_guard/cycle_runs/reverse_64/vulkan.bin": {
+      "bytes": 131716,
+      "sha256": "5697e31e27ca0e3f9d39233835d6b424894cb596c1d4d9dc97bbb6ea7466dcee"
+    },
+    "pre_guard/cycle_runs/reverse_64/vulkan.execution.json": {
+      "bytes": 2267,
+      "sha256": "836276e5a3803fb036ea01db0d2bcccc47e3010ef24eed193ac0b6a305864601"
+    },
+    "pre_guard/cycle_runs/reverse_64/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_guard/cycle_runs/reverse_64/vulkan.stdout.txt": {
+      "bytes": 1241,
+      "sha256": "0d2f644d404168f7a7c2eb7cb43e8e33c24fd89065fbbcb58ae247cc5f29061a"
+    },
+    "pre_guard/full_cycle/definition.json": {
+      "bytes": 18714366,
+      "sha256": "156a6838bbdf362113135b8f96d3ce458a0630c78d68f31c83bfb1f50bfddbf9"
+    },
+    "pre_guard/full_cycle/manifest.json": {
+      "bytes": 18766881,
+      "sha256": "8a0481d2855a7e9722398892c6cf13ee88bac54968289d429c23d3354756a5d3"
+    },
+    "pre_guard/full_cycle/program.bin": {
+      "bytes": 131716,
+      "sha256": "883e91d4ef38853041cd405b0f7310033d6f40b3d6bb47d275a2e355bbb5cd00"
+    },
+    "pre_guard/full_cycle/resident_binding_dependency.json": {
+      "bytes": 886455,
+      "sha256": "5373231ef7a4381ec71ba598979ca6bb404f6386e2734cddb8d05cc891976587"
+    },
+    "pre_guard/full_cycle/source_cycle.json": {
+      "bytes": 541,
+      "sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4"
+    },
+    "pre_guard/full_cycle/source_cycle_generator.py": {
+      "bytes": 41602,
+      "sha256": "da7f2e3d49d99d7407aaf35ba1376c1a8915309a64d993699449cbe55d9ca9f1"
+    },
+    "pre_guard/full_cycle/source_model.json": {
+      "bytes": 13654,
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9"
+    },
+    "REPORT.md": {
+      "bytes": 11526,
+      "sha256": "90b049326eb048d2c6646b99c8ead2ba5905223baaea051a26c9183bfe0649c5"
+    },
+    "saturation/cpu.execution.json": {
+      "bytes": 2091,
+      "sha256": "4ba2fd27e12ff5e8bf18209c894eeea2b77d36ae7e99577cce782940d960d18d"
+    },
+    "saturation/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "saturation/cpu.stdout.txt": {
+      "bytes": 1116,
+      "sha256": "d6d72580cb572efe1afef62f53a2fcc67af7c05a189b44ffa1d543476d67f753"
+    },
+    "saturation/cpu_templates.bin": {
+      "bytes": 896100,
+      "sha256": "65cee3e42917ff5cdd9ddeffa5c11d35c0cc5b715502ec05fc3fb3ac25278955"
+    },
+    "saturation/input.bin.xz": {
+      "bytes": 22344,
+      "sha256": "0eb5207e3b56a1d90ceb31483bc32574792902c9c8d362d608449d65d78fc1d3"
+    },
+    "saturation/output.bin.xz": {
+      "bytes": 116520,
+      "sha256": "9aa26be5cdd3e1be24f2bc930dcf788a41aed27becaec3c9cf33e7761e1a5678"
+    },
+    "saturation/summary.json": {
+      "bytes": 1775,
+      "sha256": "9700e2b42b4bab7f59452182f1830b75ea18733e467c1254c3a1412be0c434e5"
+    },
+    "saturation/telemetry.csv": {
+      "bytes": 2216,
+      "sha256": "0e0a2ea8ee311e17bf8d548277fd1dada2ab309d10b7207d7b820b08b2a6014d"
+    },
+    "saturation/telemetry.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "saturation/vulkan.execution.json": {
+      "bytes": 2534,
+      "sha256": "76bb00734e64d9da0e6b8d563aed316c92b95b267b3cb351989086636ae8e9ee"
+    },
+    "saturation/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "saturation/vulkan.stdout.txt": {
+      "bytes": 1263,
+      "sha256": "2610b74cc77c5696e90c02dc2afd6444dc2c5c9b18b402a5b9c9da38961d13d3"
+    },
+    "saturation_sustained/cpu.execution.json": {
+      "bytes": 2108,
+      "sha256": "3624f718abc894c399109d1e2a40127d61fd8652ccef4e04e0cc3eb3dc6fdf79"
+    },
+    "saturation_sustained/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "saturation_sustained/cpu.stdout.txt": {
+      "bytes": 1122,
+      "sha256": "8e0279f5b37d0cbe6603681682e7bae307e848a5e1674db36eaa721be2c49f3d"
+    },
+    "saturation_sustained/cpu_templates.bin": {
+      "bytes": 896100,
+      "sha256": "400bf70c4c4acce0bc9777429f5a74e593961032fbfb6de1d79fb06f3351ec1d"
+    },
+    "saturation_sustained/input.bin.xz": {
+      "bytes": 22344,
+      "sha256": "0eb5207e3b56a1d90ceb31483bc32574792902c9c8d362d608449d65d78fc1d3"
+    },
+    "saturation_sustained/output.bin.xz": {
+      "bytes": 122952,
+      "sha256": "e6f8da01f467654f464301bc14511b99d853675b7cfa3e69712296a6fec93c03"
+    },
+    "saturation_sustained/summary.json": {
+      "bytes": 1778,
+      "sha256": "ba7fc6fc13a09fd241d7b81ffdfbffedff8724061ed5ff482e63ee8c708941a4"
+    },
+    "saturation_sustained/telemetry.csv": {
+      "bytes": 11054,
+      "sha256": "1782bdd2cf26b38a7f777a554c6858bf549e0d1be2502651c163061acd71dc1c"
+    },
+    "saturation_sustained/telemetry.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "saturation_sustained/vulkan.execution.json": {
+      "bytes": 2540,
+      "sha256": "dde673ec5b8c3a058d69a64117ea93f49156f3b0836fd1d23bacb9d22bbe404c"
+    },
+    "saturation_sustained/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "saturation_sustained/vulkan.stdout.txt": {
+      "bytes": 1269,
+      "sha256": "d661fe71d22686d9b62244e39dfb66e97835305b45942b13eefd09f334fdfd5c"
+    },
+    "source_compiler_rejections.json": {
+      "bytes": 2368,
+      "sha256": "ea2b83e92aeb76c59106957faa94fc2f7ee44803a00cac708b1a4d9ca9387d03"
+    },
+    "SOURCE_FIDELITY_AUDIT.md": {
+      "bytes": 11286,
+      "sha256": "5372722708c1614e2ea5d23cbc9c8b1eece7d586a50dae89a8177597d5671c73"
+    }
+  }
+}

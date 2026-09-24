@@ -1,0 +1,1037 @@
+{
+  "scope": "Actual authored body ASTs with direct explicit numerical inputs; original situated field/placement calls and full cycle excluded from this component diagnostic.",
+  "lanes": 212,
+  "source_cycle_sha256": "c0d3586844c5787784447f60944effa782d90868a5785399f114c245f4d8424c",
+  "cpu_gpu_byte_identical": true,
+  "changed_bytes": 0,
+  "all_status_ok": true,
+  "component_errors": {
+    "out_ar": {
+      "count": 212,
+      "max_absolute_error": 6.640729455220651e-08,
+      "max_scaled_error": 0.0021809689159181,
+      "worst": {
+        "index": 192,
+        "inputs": [
+          1.1764432191848755,
+          2.658172607421875,
+          0.0,
+          0.9509567618370056,
+          0.9667932987213135,
+          0.6051809191703796,
+          0.7344513535499573,
+          0.5572311878204346,
+          0.49080589413642883,
+          0.7991415858268738,
+          -0.8186007738113403,
+          1.0,
+          0.10000000149011612,
+          -0.05000000074505806,
+          0.800000011920929,
+          0.19304519891738892
+        ],
+        "actual": 1.0224263668060303,
+        "reference": 1.0224264332133248
+      }
+    },
+    "out_ai": {
+      "count": 212,
+      "max_absolute_error": 7.673271196217968e-08,
+      "max_scaled_error": 0.00253470725267056,
+      "worst": {
+        "index": 192,
+        "inputs": [
+          1.1764432191848755,
+          2.658172607421875,
+          0.0,
+          0.9509567618370056,
+          0.9667932987213135,
+          0.6051809191703796,
+          0.7344513535499573,
+          0.5572311878204346,
+          0.49080589413642883,
+          0.7991415858268738,
+          -0.8186007738113403,
+          1.0,
+          0.10000000149011612,
+          -0.05000000074505806,
+          0.800000011920929,
+          0.19304519891738892
+        ],
+        "actual": 1.0498614311218262,
+        "reference": 1.0498615078545381
+      }
+    },
+    "out_br": {
+      "count": 212,
+      "max_absolute_error": 7.005229840650884e-08,
+      "max_scaled_error": 0.0031091640503828413,
+      "worst": {
+        "index": 169,
+        "inputs": [
+          -2.739431619644165,
+          -3.450108051300049,
+          1.0,
+          0.12390297651290894,
+          -0.820181131362915,
+          0.7938312292098999,
+          0.3585752844810486,
+          -0.42675235867500305,
+          0.2642935812473297,
+          -0.09745950996875763,
+          0.7778290510177612,
+          1.0,
+          0.10000000149011612,
+          -0.05000000074505806,
+          0.800000011920929,
+          0.3751753270626068
+        ],
+        "actual": 0.6265455484390259,
+        "reference": 0.6265454783867275
+      }
+    },
+    "out_bi": {
+      "count": 212,
+      "max_absolute_error": 7.14616421593206e-08,
+      "max_scaled_error": 0.0031503043517245102,
+      "worst": {
+        "index": 87,
+        "inputs": [
+          0.2385440170764923,
+          2.751101493835449,
+          1.0,
+          -0.01394595392048359,
+          0.17677368223667145,
+          0.6851995587348938,
+          0.823185384273529,
+          0.19373556971549988,
+          -0.27113914489746094,
+          -0.2672065198421478,
+          -0.7973641157150269,
+          1.0,
+          0.10000000149011612,
+          -0.05000000074505806,
+          0.800000011920929,
+          -0.43984347581863403
+        ],
+        "actual": 0.6342021226882935,
+        "reference": 0.6342021941499356
+      }
+    },
+    "out_u": {
+      "count": 212,
+      "max_absolute_error": 1.1848766812150302e-07,
+      "max_scaled_error": 0.009436089227731304,
+      "worst": {
+        "index": 129,
+        "inputs": [
+          2.4406232833862305,
+          -3.8480985164642334,
+          1.0,
+          -0.7988755106925964,
+          0.8284664750099182,
+          0.2663781940937042,
+          -0.1196620985865593,
+          0.3360964357852936,
+          0.5253695249557495,
+          0.716321587562561,
+          0.5785355567932129,
+          1.0,
+          0.10000000149011612,
+          -0.05000000074505806,
+          0.800000011920929,
+          -0.14854487776756287
+        ],
+        "actual": 0.4426889419555664,
+        "reference": 0.4426890604432345
+      }
+    },
+    "out_v": {
+      "count": 212,
+      "max_absolute_error": 1.1683270439988291e-07,
+      "max_scaled_error": 0.008040226615035747,
+      "worst": {
+        "index": 179,
+        "inputs": [
+          -1.3880345821380615,
+          -2.492246150970459,
+          1.0,
+          -0.5827416181564331,
+          0.1031951829791069,
+          -0.3304934501647949,
+          0.20731717348098755,
+          0.6662638187408447,
+          0.1620061695575714,
+          -0.5304139256477356,
+          -0.8924874067306519,
+          1.0,
+          0.10000000149011612,
+          -0.05000000074505806,
+          0.800000011920929,
+          0.9596783518791199
+        ],
+        "actual": 0.5077223777770996,
+        "reference": 0.507722494609804
+      }
+    },
+    "out_orientation": {
+      "count": 212,
+      "max_absolute_error": 0.0,
+      "max_scaled_error": 0.0
+    }
+  },
+  "failures": [],
+  "tolerance": "Unchanged repository numerical threshold: 1e-5 + 2e-5*max(abs(actual),abs(reference)); measured errors separately retained.",
+  "reference_file": "independent_binary64_references.json",
+  "oracle": "Independent mathematical formulas in binary64 on packed FP32 inputs; no recursive evaluation of source AST.",
+  "extra_checks": [
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    },
+    {
+      "canonical_chart": true,
+      "orientation_bit": true
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "cycle_manifest": 6,
+    "runtime_artifacts": 413,
+    "math_artifacts": 136,
+    "final_source_hashes": 3,
+    "native_build_sources": 8,
+    "native_artifacts": 2,
+    "native_manifest": 2242,
+    "exact_source_snapshots": 2,
+    "original_source_manifest": 39,
+    "new_cycle_inventory_files": 1076,
+    "new_cycle_inventory_bytes": 213762751
+  },
+  "errors": [],
+  "all_passed": true
+}

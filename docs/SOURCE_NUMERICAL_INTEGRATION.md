@@ -1,8 +1,15 @@
 # Numerical integration of the source application
 
-**Profiles: DWI-XIR-0.1, DWI-APPLY-0.1 and DWI-RESIDENT-0.1. Status: numerical bodies, situated action and a bounded three-record resident-definition transition verified on CPU and the RTX 5070 Ti Laptop GPU for the recorded experiments; full source-application integration remains incomplete.**
+**Profiles: DWI-XIR-0.1, DWI-APPLY-0.1, DWI-RESIDENT-0.1 and DWI-RESIDENT-0.2. The authored `cycle_v0.1` edition now executes the complete eight-stage core through resident definitions on CPU and the RTX 5070 Ti Laptop GPU. It remains an explicit finite numerical binding, with a six-record selected-action interface and declared optional/unrestricted boundaries. Domain specialization is still pending.**
 
-The target remains the source application's complete situated-operator recurrence. DWI-XIR supplies a shared CPU/GPU expression evaluator with explicit numerical body bindings. DWI-APPLY composes one selected record's placement, field and body. DWI-RESIDENT adds in-run executable-definition selection for the Hadamard, pinion and mutation records: old controllers read a common preceding snapshot, produce new records including their own, and action executes the new definitions. The full catalogue and eight-stage cycle remain unfinished. These components must not be presented as the complete numerical Dawnwood application.
+The [source-cycle binding](SOURCE_CYCLE_BINDING.md) documents 31 resident records,
+34 typed body families, 55 expression functions and the connected numerical
+return. Its [source audit](../output/source_cycle_2026-09-24/SOURCE_FIDELITY_AUDIT.md)
+maps each original stage to the executed definition and separates source laws
+from authored choices. [Recorded execution evidence](../output/source_cycle_2026-09-24/REPORT.md)
+includes body/field/placement interventions, delayed mutator self-change,
+checkpoint continuation, independent mathematics and actual hardware load.
+Earlier component profiles retain their original narrower scopes and artifacts.
 
 The [literal application contract](LITERAL_APPLICATION_CONTRACT.md) defines the broader acceptance conditions. This document preserves their implementation scope and records the types and dependencies that later lowering must respect.
 
@@ -15,7 +22,7 @@ These are separate records:
 | Source relationship | The [original discussion](../double-slit-theory.pdf), especially author statements on physical pp12 and 14, asks for the operators themselves to be SDF operations in the common Klein-bottle/LUT/BST recurrence. |
 | Unified application | The [Unified v0.2 PDF](../Dawnwood_Interactive_Unified_v0.2.pdf), pp5-16, and [restored workbench](../source_workbench/Dawnwood_Interactive_v0.2/README.md) express connected bodies, fields, anchors, routing, history and return. Its numerical gaps remain explicit. |
 | Chosen numerical binding | The [early formalization](../Dawnwood_Interactive_Formalization.pdf), physical p6 Eq7, proposes `H * diag(1,exp(i*phi)) * H`. DWI-XIR's first body chooses that formula in response to the requested double-Hadamard interpretation. It is a proposed source binding, not a numerical equation present in the original conversation. |
-| Implementation | DWI-XIR-0.1 is the current CPU/GPU FP32 expression-VM work. A compiled expression body is one component needed by the source application. The status ledger below prevents that component from standing in for the whole architecture. |
+| Implementation | DWI-RESIDENT-0.2 executes typed current definitions and their call tapes; cycle_v0.1 supplies the eight-stage authored application. Earlier XIR/Apply/resident-v1 profiles remain component references. The ledger preserves their distinct scope. |
 | Evidence | Recorded CPU/GPU outputs, an independent binary64 mathematical audit, body-edit experiments and rejection checks support the body-component results below. Expression hashes identify definitions; they do not replace this numerical evidence. |
 
 The source workbench's [binding inventory](../source_workbench/Dawnwood_Interactive_v0.2/model/bindings.json) contains null numerical bindings. It is an inventory, not a plug-in loader. The [kernel](../source_workbench/Dawnwood_Interactive_v0.2/src/dawnwood/kernel.py) builds `Apply_SDF_operator`, mutation and surface-position graph nodes from live records. Supplying a JSON body changes that graph but does not automatically evaluate the body numerically.
@@ -25,18 +32,18 @@ The source workbench's [binding inventory](../source_workbench/Dawnwood_Interact
 | Capability | Current status | Recorded evidence or remaining requirement |
 |---|---|---|
 | Original authoring model, symbolic records and cycle | Restored source reference | Source files and original workbench behavior; this is symbolic evidence. |
-| Generic FP32 expression compilation | Verified for recorded fixtures | Source-record/binding resolution, all 18 opcodes, a constant-only program and 22 malformed-input rejections. |
-| Shared CPU/GPU expression evaluation | Verified for 11 recorded final-build experiments | Bitwise-equal CPU/GPU outputs and statuses on the identified laptop, including intentional arithmetic failures. |
+| Generic FP32 expression compilation | Verified for recorded fixtures | Original 18-opcode evidence plus isolated v2 log/atan2 compilation and measured domain/signed-axis behavior; unsupported vocabulary is rejected. |
+| Shared CPU/GPU expression evaluation | Verified for identified component and cycle workloads | Complete checkpoint bytes agree in the recorded v2 cycle and arithmetic campaigns, including explicit failures. This is a finite hardware result, not all-device equivalence. |
 | Early Eq7 double-Hadamard body | Verified for 257 input rows | Independent closed-matrix reference, known-phase checks and maximum component error `3.6433394e-7`. |
 | Sphere and matrix-contraction body bindings | Verified for supplied fixtures | Four sphere results and one contraction result match the reference exactly; a separate radius-guard failure was exercised. |
 | Numerical body edits | External edit and recompilation verified | Negating output `ar` changes 256/257 rows numerically and matches the declared change exactly. No resident mutation runs in this experiment. |
-| Source `body + field + anchor` application | One situated Hadamard call verified | DWI-APPLY composes all three actual source slots; independent slot edits affect numerical action. This is external recompilation, not resident mutation. |
-| Source phase sequence and typed overloads | Not yet lowered | The authored cycle controls execution with validated dependencies and no hidden substitute schedule. |
-| Resident mutation and metarule self-action | Verified finite three-record component | The preceding situated mutator selects new executable bodies, including its successor; old pinion transports anchors; field rebinding precedes publication. Arbitrary expression synthesis and the full catalogue remain open. |
-| Component checkpoint continuation | Verified for recorded resident runs | Full bank, plans, live handles, anchors and component state survive continuation; this is not yet a full source-state checkpoint. |
-| Full paired-stream/geometry/RGBA/return recurrence | Not yet lowered | Whole-state continuation with all declared dependencies numerically active. |
-| Domain application expressed through that recurrence | Pending full integration | A complete resident application and independently checked domain result. Existing D1 feasibility results do not fill this row. |
-| Full-profile performance and saturation | Pending full integration | Correctness-established source profile executed at the stated population and interval count. A body benchmark measures only the body workload. |
+| Source `body + field + anchor` application | Component and eight-stage cycle evidence | DWI-APPLY establishes an isolated call; cycle_v0.1 repeatedly resolves live slots and verifies independent body, field and placement interventions. |
+| Source phase sequence and typed overloads | Implemented in the bounded authored edition | Actual cycle order and Y-up count are consumed; typed resident pinion/RK4 roles and computed source-index calls execute on both backends. |
+| Resident mutation and metarule self-action | Verified finite 31-record edition | All records receive old-snapshot mutation/rebinding; three body interfaces have authored alternate families. The mutator selects its own successor, whose later action is causally verified. Arbitrary expression synthesis remains outside this profile. |
+| Numerical-cycle checkpoint continuation | Verified for recorded resident runs | Full bank, typed families, tapes, live handles, anchors and all 44 state words survive exact continuation; source snapshots and stage ranges accompany compilation. |
+| Paired-stream/geometry/RGBA/return recurrence | Implemented and exercised in the authored edition | Two complex channels, four finite history values and the complete inverse matrix return through current pinion/return definitions. Current K and preceding returned chart both have measured effects. |
+| Domain application expressed through that recurrence | Pending application specialization | The executable cycle is available; a useful resident domain procedure and independently checked domain result are still required. Existing fixed D1 feasibility results do not fill this row. |
+| Authored-cycle compute saturation | Measured on the laptop | Complete-cycle replica populations reach 100% reported GPU utilization and receive all-word CPU-reference comparisons. Maximum VRAM capacity and application speedup remain separate, unmeasured claims for this edition. |
 
 No row is completed by a changed symbolic-state hash, successful shader compilation alone or timing an unrelated profile. The [N1/D1 implementation mapping](SOURCE_TO_KERNEL.md) and [D1 results](DOMAIN_KERNEL.md) retain their own meanings.
 
@@ -50,7 +57,7 @@ reverse target-order independence, checkpoint continuation and epoch rollback.
 The independent 51-transition reference has maximum state error `7.475228e-8`
 and no handle/generation disagreements. See [the component contract](RESIDENT_DEFINITIONS.md)
 for its explicit finite bank, three-record scope and independent-instance
-interpretation. The source `cycle.json` is still not consumed by this runtime.
+interpretation. That v1 component does not consume `cycle.json`; the separate v2 cycle compiler now does.
 
 The later [situated-Apply campaign](../output/situated_apply_2026-09-24/REPORT.md)
 records 11 composed workloads, 6,177 lanes and 98,832 bitwise-equal CPU/GPU output

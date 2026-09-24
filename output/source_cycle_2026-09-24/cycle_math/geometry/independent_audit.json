@@ -1,0 +1,116 @@
+{
+  "scope": "Actual authored body ASTs with direct explicit numerical inputs; original situated field/placement calls and full cycle excluded from this component diagnostic.",
+  "lanes": 1669,
+  "source_cycle_sha256": "c0d3586844c5787784447f60944effa782d90868a5785399f114c245f4d8424c",
+  "cpu_gpu_byte_identical": true,
+  "changed_bytes": 0,
+  "all_status_ok": true,
+  "component_errors": {
+    "T_shape": {
+      "count": 1669,
+      "max_absolute_error": 1.1897809559791028e-07,
+      "max_scaled_error": 0.004649162011372015,
+      "worst": {
+        "index": 1447,
+        "inputs": [
+          -1.303324818611145,
+          -1.3209357261657715,
+          -0.7613469362258911,
+          0.0,
+          -3.045017957687378
+        ],
+        "actual": 1.457777500152588,
+        "reference": 1.4577776191306835
+      }
+    },
+    "pyramid": {
+      "count": 1669,
+      "max_absolute_error": 1.6769775545988352e-07,
+      "max_scaled_error": 0.004526865760296513,
+      "worst": {
+        "index": 650,
+        "inputs": [
+          -1.3051159381866455,
+          0.24724091589450836,
+          -1.094356894493103,
+          0.0,
+          1.0783860683441162
+        ],
+        "actual": 1.3522499799728394,
+        "reference": 1.3522501476705948
+      }
+    },
+    "circle": {
+      "count": 1669,
+      "max_absolute_error": 2.1625467061525683e-07,
+      "max_scaled_error": 0.006960355933643416,
+      "worst": {
+        "index": 1493,
+        "inputs": [
+          -1.374537467956543,
+          -1.3370684385299683,
+          -0.3809088468551636,
+          0.0,
+          0.7197343111038208
+        ],
+        "actual": 1.4103808403015137,
+        "reference": 1.410380624046843
+      }
+    },
+    "cone": {
+      "count": 1669,
+      "max_absolute_error": 2.4612869231610546e-07,
+      "max_scaled_error": 0.007850633743085013,
+      "worst": {
+        "index": 1580,
+        "inputs": [
+          -1.1903061866760254,
+          0.9560167789459229,
+          -0.062027499079704285,
+          0.0,
+          -3.9073894023895264
+        ],
+        "actual": 1.0675718784332275,
+        "reference": 1.0675721245619199
+      }
+    },
+    "sphere": {
+      "count": 1669,
+      "max_absolute_error": 2.235268161676629e-07,
+      "max_scaled_error": 0.0055975209297437324,
+      "worst": {
+        "index": 1447,
+        "inputs": [
+          -1.303324818611145,
+          -1.3209357261657715,
+          -0.7613469362258911,
+          0.0,
+          -3.045017957687378
+        ],
+        "actual": 1.5362355709075928,
+        "reference": 1.536235794434409
+      }
+    },
+    "apex": {
+      "count": 1669,
+      "max_absolute_error": 1.9481005564259135e-07,
+      "max_scaled_error": 0.0038950674769968087,
+      "worst": {
+        "index": 1163,
+        "inputs": [
+          -1.010779619216919,
+          1.4234986305236816,
+          -0.9333491921424866,
+          0.0,
+          4.061084270477295
+        ],
+        "actual": 2.000727415084839,
+        "reference": 2.0007276098948945
+      }
+    }
+  },
+  "failures": [],
+  "tolerance": "Unchanged repository numerical threshold: 1e-5 + 2e-5*max(abs(actual),abs(reference)); measured errors separately retained.",
+  "reference_file": "independent_binary64_references.json",
+  "oracle": "Independent mathematical formulas in binary64 on packed FP32 inputs; no recursive evaluation of source AST."
+}

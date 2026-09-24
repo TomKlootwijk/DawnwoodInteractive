@@ -1,0 +1,2736 @@
+{
+  "profile": "DWI-RESIDENT-0.2",
+  "format": "DWRD0002",
+  "scope": "typed_resident_definition_execution",
+  "status": "application_semantics_require_separate_binding_and_evidence",
+  "complete_application_lowered": false,
+  "count": 518,
+  "record_count": 2,
+  "state_width": 28,
+  "function_count": 6,
+  "heap_words": 613,
+  "mutation_steps": 5,
+  "action_steps": 125,
+  "state_names": [
+    "ar",
+    "ai",
+    "br",
+    "bi",
+    "dt",
+    "jitter",
+    "field_distance",
+    "k1_0",
+    "k1_1",
+    "k1_2",
+    "k1_3",
+    "k2_0",
+    "k2_1",
+    "k2_2",
+    "k2_3",
+    "k3_0",
+    "k3_1",
+    "k3_2",
+    "k3_3",
+    "k4_0",
+    "k4_1",
+    "k4_2",
+    "k4_3",
+    "result_ar",
+    "result_ai",
+    "result_br",
+    "result_bi",
+    "effective_h"
+  ],
+  "record_value_names": [
+    "value_0",
+    "value_1",
+    "value_2",
+    "value_3",
+    "value_4",
+    "value_5",
+    "value_6",
+    "value_7",
+    "value_8",
+    "value_9",
+    "value_10",
+    "value_11",
+    "value_12",
+    "value_13",
+    "value_14",
+    "value_15",
+    "value_16",
+    "value_17",
+    "value_18",
+    "value_19"
+  ],
+  "selected_records": [
+    {
+      "ordinal": 0,
+      "key": "rk4",
+      "source_index": 3,
+      "source_record": {
+        "index": 3,
+        "key": "rk4",
+        "label": "RK4 fourth timeslot",
+        "head": "RK4",
+        "role": "Gather the four kinematic slots into the next wavefront.",
+        "source_pages": "7",
+        "body": {
+          "symbol": "RK4"
+        },
+        "field": {
+          "symbol": "RK4_SDF"
+        },
+        "placement": {
+          "symbol": "Phyllotaxis_on_Klein"
+        }
+      },
+      "asserted_source_slots": {
+        "body": {
+          "symbol": "RK4"
+        },
+        "field": {
+          "symbol": "RK4_SDF"
+        },
+        "placement": {
+          "symbol": "Phyllotaxis_on_Klein"
+        }
+      },
+      "initial_slot_bindings": {
+        "body": {
+          "definition": "diagnostic_rk4",
+          "handle": 0,
+          "interface": 1
+        },
+        "field": {
+          "definition": "diagnostic_uncalled_slot",
+          "handle": 1,
+          "signature": 900002
+        },
+        "placement": {
+          "definition": "diagnostic_uncalled_slot",
+          "handle": 1,
+          "signature": 900002
+        }
+      },
+      "resolution": "Explicit numerical function assignment bound to structurally checked source-slot declarations; unmatched model edits are rejected rather than silently retaining the old binding. Original slot expressions are not automatically lowered as XIR."
+    },
+    {
+      "ordinal": 1,
+      "key": "y_up",
+      "source_index": 16,
+      "source_record": {
+        "index": 16,
+        "key": "y_up",
+        "label": "Y up",
+        "head": "Y_up",
+        "role": "Apply twice in the fourth RK4 timeslot.",
+        "source_pages": "7",
+        "body": {
+          "symbol": "Y_up"
+        },
+        "field": {
+          "symbol": "Y_up_SDF"
+        },
+        "placement": {
+          "symbol": "Phyllotaxis_on_Klein"
+        }
+      },
+      "asserted_source_slots": {
+        "body": {
+          "symbol": "Y_up"
+        },
+        "field": {
+          "symbol": "Y_up_SDF"
+        },
+        "placement": {
+          "symbol": "Phyllotaxis_on_Klein"
+        }
+      },
+      "initial_slot_bindings": {
+        "body": {
+          "definition": "diagnostic_y_up",
+          "handle": 1,
+          "interface": 2
+        },
+        "field": {
+          "definition": "diagnostic_uncalled_slot",
+          "handle": 1,
+          "signature": 900002
+        },
+        "placement": {
+          "definition": "diagnostic_uncalled_slot",
+          "handle": 1,
+          "signature": 900002
+        }
+      },
+      "resolution": "Explicit numerical function assignment bound to structurally checked source-slot declarations; unmatched model edits are rejected rather than silently retaining the old binding. Original slot expressions are not automatically lowered as XIR."
+    }
+  ],
+  "functions": [
+    {
+      "handle": 0,
+      "name": "diagnostic_next_generation",
+      "signature": 900001,
+      "input_names": [
+        "g"
+      ],
+      "output_names": [
+        "g"
+      ],
+      "requirement_registers": [],
+      "binding": {
+        "inputs": [
+          "g"
+        ],
+        "outputs": {
+          "g": {
+            "op": "add",
+            "args": [
+              {
+                "input": "g"
+              },
+              1
+            ]
+          }
+        }
+      },
+      "code_offset": 0,
+      "output_register_offset": 12,
+      "instruction_count": 3,
+      "input_width": 1,
+      "output_width": 1,
+      "output_registers": [
+        2
+      ]
+    },
+    {
+      "handle": 1,
+      "name": "diagnostic_uncalled_slot",
+      "signature": 900002,
+      "input_names": [],
+      "output_names": [
+        "zero"
+      ],
+      "requirement_registers": [],
+      "binding": {
+        "inputs": [],
+        "outputs": {
+          "zero": 0
+        }
+      },
+      "code_offset": 13,
+      "output_register_offset": 17,
+      "instruction_count": 1,
+      "input_width": 0,
+      "output_width": 1,
+      "output_registers": [
+        0
+      ]
+    },
+    {
+      "handle": 2,
+      "name": "rk4_role1",
+      "signature": 105,
+      "input_names": [
+        "ar",
+        "ai",
+        "br",
+        "bi",
+        "dt",
+        "jitter",
+        "field_distance"
+      ],
+      "output_names": [
+        "ar",
+        "ai",
+        "br",
+        "bi",
+        "h"
+      ],
+      "requirement_registers": [
+        3,
+        15
+      ],
+      "binding": {
+        "inputs": [
+          "ar",
+          "ai",
+          "br",
+          "bi",
+          "dt",
+          "jitter",
+          "field_distance"
+        ],
+        "outputs": {
+          "ar": {
+            "op": "sub",
+            "args": [
+              {
+                "op": "mul",
+                "args": [
+                  -1,
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "op": "add",
+                        "args": [
+                          {
+                            "op": "add",
+                            "args": [
+                              0.2,
+                              {
+                                "op": "mul",
+                                "args": [
+                                  0.01,
+                                  {
+                                    "input": "field_distance"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "op": "mul",
+                            "args": [
+                              0.005,
+                              {
+                                "op": "sub",
+                                "args": [
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      2,
+                                      {
+                                        "input": "jitter"
+                                      }
+                                    ]
+                                  },
+                                  1
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "input": "ai"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "mul",
+                "args": [
+                  0.02,
+                  {
+                    "input": "ar"
+                  }
+                ]
+              }
+            ]
+          },
+          "ai": {
+            "op": "sub",
+            "args": [
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "add",
+                    "args": [
+                      {
+                        "op": "add",
+                        "args": [
+                          0.2,
+                          {
+                            "op": "mul",
+                            "args": [
+                              0.01,
+                              {
+                                "input": "field_distance"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "op": "mul",
+                        "args": [
+                          0.005,
+                          {
+                            "op": "sub",
+                            "args": [
+                              {
+                                "op": "mul",
+                                "args": [
+                                  2,
+                                  {
+                                    "input": "jitter"
+                                  }
+                                ]
+                              },
+                              1
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "input": "ar"
+                  }
+                ]
+              },
+              {
+                "op": "mul",
+                "args": [
+                  0.02,
+                  {
+                    "input": "ai"
+                  }
+                ]
+              }
+            ]
+          },
+          "br": {
+            "op": "sub",
+            "args": [
+              {
+                "op": "mul",
+                "args": [
+                  -1,
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "op": "add",
+                        "args": [
+                          {
+                            "op": "add",
+                            "args": [
+                              0.2,
+                              {
+                                "op": "mul",
+                                "args": [
+                                  0.01,
+                                  {
+                                    "input": "field_distance"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "op": "mul",
+                            "args": [
+                              0.005,
+                              {
+                                "op": "sub",
+                                "args": [
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      2,
+                                      {
+                                        "input": "jitter"
+                                      }
+                                    ]
+                                  },
+                                  1
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "input": "bi"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "mul",
+                "args": [
+                  0.02,
+                  {
+                    "input": "br"
+                  }
+                ]
+              }
+            ]
+          },
+          "bi": {
+            "op": "sub",
+            "args": [
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "add",
+                    "args": [
+                      {
+                        "op": "add",
+                        "args": [
+                          0.2,
+                          {
+                            "op": "mul",
+                            "args": [
+                              0.01,
+                              {
+                                "input": "field_distance"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "op": "mul",
+                        "args": [
+                          0.005,
+                          {
+                            "op": "sub",
+                            "args": [
+                              {
+                                "op": "mul",
+                                "args": [
+                                  2,
+                                  {
+                                    "input": "jitter"
+                                  }
+                                ]
+                              },
+                              1
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "input": "br"
+                  }
+                ]
+              },
+              {
+                "op": "mul",
+                "args": [
+                  0.02,
+                  {
+                    "input": "bi"
+                  }
+                ]
+              }
+            ]
+          },
+          "h": {
+            "op": "div",
+            "args": [
+              {
+                "input": "dt"
+              },
+              {
+                "op": "add",
+                "args": [
+                  1,
+                  {
+                    "op": "mul",
+                    "args": [
+                      0.001,
+                      {
+                        "op": "abs",
+                        "args": [
+                          {
+                            "input": "field_distance"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "source": "Unified v0.2 source relationship; explicitly authored cycle_v0.1 numerical binding",
+        "meaning": "Linear complex rotation/damping derivative with explicit supplied-jitter frequency term and field-dependent positive interval; role1 is derivative evaluation.",
+        "status": "Authored numerical law; execution evidence recorded separately.",
+        "requires": [
+          {
+            "op": "less",
+            "args": [
+              0,
+              {
+                "input": "dt"
+              }
+            ]
+          },
+          {
+            "op": "select",
+            "args": [
+              {
+                "op": "sub",
+                "args": [
+                  1,
+                  {
+                    "op": "less",
+                    "args": [
+                      0,
+                      {
+                        "op": "abs",
+                        "args": [
+                          {
+                            "op": "sub",
+                            "args": [
+                              {
+                                "input": "jitter"
+                              },
+                              0
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              1,
+              {
+                "op": "sub",
+                "args": [
+                  1,
+                  {
+                    "op": "less",
+                    "args": [
+                      0,
+                      {
+                        "op": "abs",
+                        "args": [
+                          {
+                            "op": "sub",
+                            "args": [
+                              {
+                                "input": "jitter"
+                              },
+                              1
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "code_offset": 18,
+      "output_register_offset": 226,
+      "instruction_count": 52,
+      "input_width": 7,
+      "output_width": 5,
+      "output_registers": [
+        34,
+        37,
+        43,
+        46,
+        51
+      ]
+    },
+    {
+      "handle": 3,
+      "name": "rk4_role2",
+      "signature": 106,
+      "input_names": [
+        "ar",
+        "ai",
+        "br",
+        "bi",
+        "dt",
+        "k1_0",
+        "k1_1",
+        "k1_2",
+        "k1_3",
+        "k2_0",
+        "k2_1",
+        "k2_2",
+        "k2_3",
+        "k3_0",
+        "k3_1",
+        "k3_2",
+        "k3_3",
+        "k4_0",
+        "k4_1",
+        "k4_2",
+        "k4_3",
+        "field_distance"
+      ],
+      "output_names": [
+        "ar",
+        "ai",
+        "br",
+        "bi"
+      ],
+      "requirement_registers": [],
+      "binding": {
+        "inputs": [
+          "ar",
+          "ai",
+          "br",
+          "bi",
+          "dt",
+          "k1_0",
+          "k1_1",
+          "k1_2",
+          "k1_3",
+          "k2_0",
+          "k2_1",
+          "k2_2",
+          "k2_3",
+          "k3_0",
+          "k3_1",
+          "k3_2",
+          "k3_3",
+          "k4_0",
+          "k4_1",
+          "k4_2",
+          "k4_3",
+          "field_distance"
+        ],
+        "outputs": {
+          "ar": {
+            "op": "add",
+            "args": [
+              {
+                "input": "ar"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "div",
+                    "args": [
+                      {
+                        "op": "div",
+                        "args": [
+                          {
+                            "input": "dt"
+                          },
+                          {
+                            "op": "add",
+                            "args": [
+                              1,
+                              {
+                                "op": "mul",
+                                "args": [
+                                  0.001,
+                                  {
+                                    "op": "abs",
+                                    "args": [
+                                      {
+                                        "input": "field_distance"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      6
+                    ]
+                  },
+                  {
+                    "op": "add",
+                    "args": [
+                      {
+                        "op": "add",
+                        "args": [
+                          {
+                            "input": "k1_0"
+                          },
+                          {
+                            "op": "mul",
+                            "args": [
+                              2,
+                              {
+                                "input": "k2_0"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "op": "add",
+                        "args": [
+                          {
+                            "op": "mul",
+                            "args": [
+                              2,
+                              {
+                                "input": "k3_0"
+                              }
+                            ]
+                          },
+                          {
+                            "input": "k4_0"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "ai": {
+            "op": "add",
+            "args": [
+              {
+                "input": "ai"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "div",
+                    "args": [
+                      {
+                        "op": "div",
+                        "args": [
+                          {
+                            "input": "dt"
+                          },
+                          {
+                            "op": "add",
+                            "args": [
+                              1,
+                              {
+                                "op": "mul",
+                                "args": [
+                                  0.001,
+                                  {
+                                    "op": "abs",
+                                    "args": [
+                                      {
+                                        "input": "field_distance"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      6
+                    ]
+                  },
+                  {
+                    "op": "add",
+                    "args": [
+                      {
+                        "op": "add",
+                        "args": [
+                          {
+                            "input": "k1_1"
+                          },
+                          {
+                            "op": "mul",
+                            "args": [
+                              2,
+                              {
+                                "input": "k2_1"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "op": "add",
+                        "args": [
+                          {
+                            "op": "mul",
+                            "args": [
+                              2,
+                              {
+                                "input": "k3_1"
+                              }
+                            ]
+                          },
+                          {
+                            "input": "k4_1"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "br": {
+            "op": "add",
+            "args": [
+              {
+                "input": "br"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "div",
+                    "args": [
+                      {
+                        "op": "div",
+                        "args": [
+                          {
+                            "input": "dt"
+                          },
+                          {
+                            "op": "add",
+                            "args": [
+                              1,
+                              {
+                                "op": "mul",
+                                "args": [
+                                  0.001,
+                                  {
+                                    "op": "abs",
+                                    "args": [
+                                      {
+                                        "input": "field_distance"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      6
+                    ]
+                  },
+                  {
+                    "op": "add",
+                    "args": [
+                      {
+                        "op": "add",
+                        "args": [
+                          {
+                            "input": "k1_2"
+                          },
+                          {
+                            "op": "mul",
+                            "args": [
+                              2,
+                              {
+                                "input": "k2_2"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "op": "add",
+                        "args": [
+                          {
+                            "op": "mul",
+                            "args": [
+                              2,
+                              {
+                                "input": "k3_2"
+                              }
+                            ]
+                          },
+                          {
+                            "input": "k4_2"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "bi": {
+            "op": "add",
+            "args": [
+              {
+                "input": "bi"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "div",
+                    "args": [
+                      {
+                        "op": "div",
+                        "args": [
+                          {
+                            "input": "dt"
+                          },
+                          {
+                            "op": "add",
+                            "args": [
+                              1,
+                              {
+                                "op": "mul",
+                                "args": [
+                                  0.001,
+                                  {
+                                    "op": "abs",
+                                    "args": [
+                                      {
+                                        "input": "field_distance"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      6
+                    ]
+                  },
+                  {
+                    "op": "add",
+                    "args": [
+                      {
+                        "op": "add",
+                        "args": [
+                          {
+                            "input": "k1_3"
+                          },
+                          {
+                            "op": "mul",
+                            "args": [
+                              2,
+                              {
+                                "input": "k2_3"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "op": "add",
+                        "args": [
+                          {
+                            "op": "mul",
+                            "args": [
+                              2,
+                              {
+                                "input": "k3_3"
+                              }
+                            ]
+                          },
+                          {
+                            "input": "k4_3"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "source": "Unified v0.2 source relationship; explicitly authored cycle_v0.1 numerical binding",
+        "meaning": "RK4-weighted combination of genuinely dependent slopes. Two authored Y-up events modify k4; fourth-order accuracy is not claimed with events.",
+        "status": "Authored numerical law; execution evidence recorded separately."
+      },
+      "code_offset": 231,
+      "output_register_offset": 467,
+      "instruction_count": 59,
+      "input_width": 22,
+      "output_width": 4,
+      "output_registers": [
+        22,
+        34,
+        46,
+        58
+      ]
+    },
+    {
+      "handle": 4,
+      "name": "rk_stage",
+      "signature": 107,
+      "input_names": [
+        "ar",
+        "ai",
+        "br",
+        "bi",
+        "k0",
+        "k1",
+        "k2",
+        "k3",
+        "h",
+        "fraction"
+      ],
+      "output_names": [
+        "ar",
+        "ai",
+        "br",
+        "bi"
+      ],
+      "requirement_registers": [],
+      "binding": {
+        "inputs": [
+          "ar",
+          "ai",
+          "br",
+          "bi",
+          "k0",
+          "k1",
+          "k2",
+          "k3",
+          "h",
+          "fraction"
+        ],
+        "outputs": {
+          "ar": {
+            "op": "add",
+            "args": [
+              {
+                "input": "ar"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "input": "h"
+                      },
+                      {
+                        "input": "fraction"
+                      }
+                    ]
+                  },
+                  {
+                    "input": "k0"
+                  }
+                ]
+              }
+            ]
+          },
+          "ai": {
+            "op": "add",
+            "args": [
+              {
+                "input": "ai"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "input": "h"
+                      },
+                      {
+                        "input": "fraction"
+                      }
+                    ]
+                  },
+                  {
+                    "input": "k1"
+                  }
+                ]
+              }
+            ]
+          },
+          "br": {
+            "op": "add",
+            "args": [
+              {
+                "input": "br"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "input": "h"
+                      },
+                      {
+                        "input": "fraction"
+                      }
+                    ]
+                  },
+                  {
+                    "input": "k2"
+                  }
+                ]
+              }
+            ]
+          },
+          "bi": {
+            "op": "add",
+            "args": [
+              {
+                "input": "bi"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "input": "h"
+                      },
+                      {
+                        "input": "fraction"
+                      }
+                    ]
+                  },
+                  {
+                    "input": "k3"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "source": "Unified v0.2 source relationship; explicitly authored cycle_v0.1 numerical binding",
+        "meaning": "Explicit RK intermediate-state algebra.",
+        "status": "Authored numerical law; execution evidence recorded separately."
+      },
+      "code_offset": 471,
+      "output_register_offset": 547,
+      "instruction_count": 19,
+      "input_width": 10,
+      "output_width": 4,
+      "output_registers": [
+        6,
+        10,
+        14,
+        18
+      ]
+    },
+    {
+      "handle": 5,
+      "name": "y_up_role0",
+      "signature": 108,
+      "input_names": [
+        "ar",
+        "ai",
+        "br",
+        "bi",
+        "field_distance"
+      ],
+      "output_names": [
+        "ar",
+        "ai",
+        "br",
+        "bi"
+      ],
+      "requirement_registers": [],
+      "binding": {
+        "inputs": [
+          "ar",
+          "ai",
+          "br",
+          "bi",
+          "field_distance"
+        ],
+        "outputs": {
+          "ar": {
+            "input": "ar"
+          },
+          "ai": {
+            "op": "add",
+            "args": [
+              {
+                "input": "ai"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "add",
+                    "args": [
+                      0.02,
+                      {
+                        "op": "mul",
+                        "args": [
+                          0.001,
+                          {
+                            "input": "field_distance"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "input": "ar"
+                  }
+                ]
+              }
+            ]
+          },
+          "br": {
+            "input": "br"
+          },
+          "bi": {
+            "op": "add",
+            "args": [
+              {
+                "input": "bi"
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "op": "add",
+                    "args": [
+                      0.02,
+                      {
+                        "op": "mul",
+                        "args": [
+                          0.001,
+                          {
+                            "input": "field_distance"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "input": "br"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "source": "Unified v0.2 source relationship; explicitly authored cycle_v0.1 numerical binding",
+        "meaning": "Non-cancelling vertical shear applied twice to k4 only: ai+=eta*ar, bi+=eta*br, eta=.02+.001*field.",
+        "status": "Authored numerical law; execution evidence recorded separately."
+      },
+      "code_offset": 551,
+      "output_register_offset": 603,
+      "instruction_count": 13,
+      "input_width": 5,
+      "output_width": 4,
+      "output_registers": [
+        0,
+        8,
+        9,
+        12
+      ]
+    }
+  ],
+  "families": [
+    {
+      "handle": 0,
+      "name": "diagnostic_rk4",
+      "interface": 1,
+      "method_functions": {
+        "1": "rk4_role1",
+        "2": "rk4_role2"
+      },
+      "methods_offset": 607,
+      "method_count": 2,
+      "methods": {
+        "1": 2,
+        "2": 3
+      }
+    },
+    {
+      "handle": 1,
+      "name": "diagnostic_y_up",
+      "interface": 2,
+      "method_functions": {
+        "0": "y_up_role0"
+      },
+      "methods_offset": 611,
+      "method_count": 1,
+      "methods": {
+        "0": 5
+      }
+    }
+  ],
+  "family_count": 2,
+  "mutation_plan": [
+    [
+      2,
+      0,
+      4294967295,
+      0,
+      24,
+      0,
+      0,
+      0
+    ],
+    [
+      3,
+      0,
+      3,
+      32,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      5,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      5,
+      3,
+      32,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      5,
+      4,
+      4,
+      20,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "action_plan": [
+    [
+      1,
+      0,
+      0,
+      7,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      180,
+      1056964608,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      181,
+      1065353216,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      200,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      201,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      202,
+      2,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      203,
+      3,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      204,
+      4,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      205,
+      5,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      206,
+      6,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      4,
+      0,
+      0,
+      1,
+      200,
+      32,
+      105,
+      1
+    ],
+    [
+      10,
+      200,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      201,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      202,
+      2,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      203,
+      3,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      204,
+      32,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      205,
+      33,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      206,
+      34,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      207,
+      35,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      208,
+      36,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      209,
+      180,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      3,
+      4,
+      200,
+      72,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      200,
+      72,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      201,
+      73,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      202,
+      74,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      203,
+      75,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      204,
+      4,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      205,
+      5,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      206,
+      6,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      4,
+      0,
+      0,
+      1,
+      200,
+      40,
+      105,
+      1
+    ],
+    [
+      10,
+      200,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      201,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      202,
+      2,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      203,
+      3,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      204,
+      40,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      205,
+      41,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      206,
+      42,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      207,
+      43,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      208,
+      36,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      209,
+      180,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      3,
+      4,
+      200,
+      72,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      200,
+      72,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      201,
+      73,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      202,
+      74,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      203,
+      75,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      204,
+      4,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      205,
+      5,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      206,
+      6,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      4,
+      0,
+      0,
+      1,
+      200,
+      48,
+      105,
+      1
+    ],
+    [
+      10,
+      200,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      201,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      202,
+      2,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      203,
+      3,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      204,
+      48,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      205,
+      49,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      206,
+      50,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      207,
+      51,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      208,
+      36,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      209,
+      181,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      3,
+      4,
+      200,
+      72,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      200,
+      72,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      201,
+      73,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      202,
+      74,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      203,
+      75,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      204,
+      4,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      205,
+      5,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      206,
+      6,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      4,
+      0,
+      0,
+      1,
+      200,
+      56,
+      105,
+      1
+    ],
+    [
+      10,
+      200,
+      56,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      201,
+      57,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      202,
+      58,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      203,
+      59,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      204,
+      6,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      4,
+      1,
+      0,
+      1,
+      200,
+      56,
+      108,
+      0
+    ],
+    [
+      10,
+      200,
+      56,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      201,
+      57,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      202,
+      58,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      203,
+      59,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      204,
+      6,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      4,
+      1,
+      0,
+      1,
+      200,
+      56,
+      108,
+      0
+    ],
+    [
+      10,
+      200,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      201,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      202,
+      2,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      203,
+      3,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      204,
+      4,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      205,
+      32,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      206,
+      33,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      207,
+      34,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      208,
+      35,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      209,
+      40,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      210,
+      41,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      211,
+      42,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      212,
+      43,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      213,
+      48,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      214,
+      49,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      215,
+      50,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      216,
+      51,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      217,
+      56,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      218,
+      57,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      219,
+      58,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      220,
+      59,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      221,
+      6,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      4,
+      0,
+      0,
+      1,
+      200,
+      64,
+      106,
+      2
+    ],
+    [
+      6,
+      0,
+      0,
+      7,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      7,
+      32,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      8,
+      33,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      9,
+      34,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      10,
+      35,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      11,
+      40,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      12,
+      41,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      13,
+      42,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      14,
+      43,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      15,
+      48,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      16,
+      49,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      17,
+      50,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      18,
+      51,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      19,
+      56,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      20,
+      57,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      21,
+      58,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      22,
+      59,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      23,
+      64,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      24,
+      65,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      25,
+      66,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      26,
+      67,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      27,
+      36,
+      1,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "configuration_sha256": "bf172b3560c6f5e59c8798373158ac782be5437c65107daf2ceee2b402526e07",
+  "program_sha256": "bd0ecfcb5ee45e748a300dc0a3ea90552c305ddd7093278ccb396df1dbab3df0",
+  "instance_words": 82,
+  "source_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+  "definition_semantic_sha256": "6f82abc07477ce9ede592b324c46c36dce27ff724faf45b01ad2f06b86d78926",
+  "definition_metadata": {
+    "source": {
+      "cycle_author_file": "local_lab/source_cycle.py",
+      "cycle_author_sha256": "b8bb4255b19e0e53d664449addc984b6c0c44ed795a3f78bfa8190d848ab9f51",
+      "function_names": [
+        "diagnostic_next_generation",
+        "diagnostic_uncalled_slot",
+        "rk4_role1",
+        "rk4_role2",
+        "rk_stage",
+        "y_up_role0"
+      ],
+      "status": "Actual authored body ASTs with direct explicit numerical inputs; original situated field/placement calls and full cycle excluded from this component diagnostic."
+    },
+    "meaning": "Independent mathematical component audit, not a full-cycle replacement."
+  },
+  "binding_contract": {
+    "function_bank": "Immutable validated expressions; mutable resident handles and values select and parameterize the expressions that execute.",
+    "source_identity": "Record keys and source indices are checked against the selected source model. Each required source_slots declaration must match the actual body/field/placement JSON tree, ignoring object-key order and preserving scalar types. Numerical function assignments and call plans are explicit authored bindings; this guard is not unrestricted inline source-expression lowering.",
+    "mutation_order": "Every mutation target reads the same old state and old record table. Candidate records publish together before action. Mutated controller handles govern the next mutation transaction.",
+    "source_dependency_evidence": "Plan memory/call validity does not prove old-mutator, old-pinion, field-rebinding, or numerical sensitivity obligations. Inspect the authored plan and numerical intervention evidence.",
+    "transaction": "Any lane failure rolls back all provisional state and record changes and retains failure metadata; successful action commits epoch+1.",
+    "instance_semantics": "Each lane is an independent substrate instance with its own LUT and state; lanes do not share one operator field.",
+    "continuation": "DWRD0002 checkpoints include the complete static bank and plans plus every instance state and live record word.",
+    "arbitrary_expression_synthesis": false,
+    "catalogue_growth": false,
+    "complete_31_operator_catalogue_claimed": false,
+    "cycle_input": "The generic definition compiler executes explicit plans; a separate application compiler must establish their source-cycle relationship.",
+    "not_lowered": [
+      "automatic lowering of unselected source records",
+      "unrestricted expression or catalogue editing",
+      "implicit scientific/domain application semantics"
+    ]
+  },
+  "limits": {
+    "records": 32,
+    "state_floats": 64,
+    "functions": 256,
+    "families": 256,
+    "methods_per_family": 32,
+    "plan_steps_each": 4096,
+    "frame_floats": 256,
+    "xir_instructions_per_function": 256,
+    "xir_inputs_per_function": 64,
+    "xir_outputs_per_function": 32,
+    "record_value_floats": 20,
+    "maximum_epoch_and_generation": 16777215
+  },
+  "numeric_policy": "Finite numeric inputs and constants are packed to IEEE FP32; negative-zero bits are retained. Integer handles, generations and headers remain uint32 words. XIR select is eager.",
+  "instance_input_fp32_rounding": {
+    "value_count": 35224,
+    "changed_value_count": 3084,
+    "max_absolute_difference": 5.950581716263059e-08
+  }
+}

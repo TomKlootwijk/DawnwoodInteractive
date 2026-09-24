@@ -4,12 +4,18 @@ The target is an application whose acting definitions belong to the circulating 
 
 Page references below are physical PDF pages. The sources are the 24-page [original discussion](../double-slit-theory.pdf), the 18-page [Unified v0.2 definition](../Dawnwood_Interactive_Unified_v0.2.pdf), and the 20-page [early formalization](../Dawnwood_Interactive_Formalization.pdf). The original application is preserved in [the source archive](../Dawnwood_Interactive_Unified_v0.2.zip) and its restored [workbench directory](../source_workbench/Dawnwood_Interactive_v0.2/README.md).
 
+The bounded [cycle_v0.1 numerical edition](SOURCE_CYCLE_BINDING.md) now executes
+these eight-stage core relationships through resident definitions. Its
+[source audit](../output/source_cycle_2026-09-24/SOURCE_FIDELITY_AUDIT.md) and
+[recorded campaign](../output/source_cycle_2026-09-24/REPORT.md) identify the
+implemented relationships and explicit limits. Useful domain specialization,
+unrestricted authoring and optional output packing remain separate requirements.
+
 ## What the source actually requires
 
 The [numerical integration ledger](SOURCE_NUMERICAL_INTEGRATION.md) tracks the
-implementation against this contract. Its first verified component compiles
-selected numerical bodies for CPU/GPU execution; complete situated application
-and recurrent closure remain open requirements.
+implementation against this contract. It now separates verified components,
+the bounded complete-cycle edition, and remaining application requirements.
 
 The author's corrections in the original discussion determine the architectural scope. On p12 the author places rasterization, raymarching, raytracing and square output fields outside the core. On p14 the author asks about self-referential computing with operators "defined and packed as SDF operations": the double pinion holds them on the Klein-bottle surface while one-bit jitter acts on the operators in the LUT/BST at interval PSI. Graphics is optional downstream observation.
 

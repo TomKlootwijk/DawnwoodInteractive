@@ -1,0 +1,144 @@
+{
+  "scope": "Final active mathematics evidence: five unchanged-body groups retained by exact final-AST verification; RK groups rerun with final jitter input. Component diagnostics exclude the full situated cycle.",
+  "final_source_cycle_sha256": "b8bb4255b19e0e53d664449addc984b6c0c44ed795a3f78bfa8190d848ab9f51",
+  "final_cycle_definition_sha256": "027cfc70d68114aacbb2d11c0221a8c538b16ef783a0449eec35dd041a92a970",
+  "full_cycle_program_sha256_supplied_by_root": "f746ede446a773057084dc6a01f296100c35531fa676a1a71ea41863c4501dc5",
+  "groups": {
+    "inverse": {
+      "lanes": 516,
+      "cpu_gpu_byte_identical": true,
+      "all_status_ok": true,
+      "failures": 0,
+      "max_absolute_error": 1.340238193758836e-07,
+      "max_scaled_error": 0.004339809707078632,
+      "max_identity_residual": 1.5096284045057473e-07
+    },
+    "pinion_forward": {
+      "lanes": 212,
+      "cpu_gpu_byte_identical": true,
+      "all_status_ok": true,
+      "failures": 0,
+      "max_absolute_error": 1.1848766812150302e-07,
+      "max_scaled_error": 0.011565974062546272,
+      "all_chart_and_orientation_valid": true
+    },
+    "pinion_reverse": {
+      "lanes": 212,
+      "cpu_gpu_byte_identical": true,
+      "all_status_ok": true,
+      "failures": 0,
+      "max_absolute_error": 1.1848766812150302e-07,
+      "max_scaled_error": 0.009436089227731304,
+      "all_chart_and_orientation_valid": true
+    },
+    "geometry": {
+      "lanes": 1669,
+      "cpu_gpu_byte_identical": true,
+      "all_status_ok": true,
+      "failures": 0,
+      "max_absolute_error": 2.4612869231610546e-07,
+      "max_scaled_error": 0.007850633743085013
+    },
+    "transform_inverse": {
+      "lanes": 257,
+      "cpu_gpu_byte_identical": true,
+      "all_status_ok": true,
+      "failures": 0,
+      "max_absolute_error": 1.2652596226292445e-07,
+      "max_scaled_error": 0.004511484429326203,
+      "max_identity_residual": 1.0809242301235145e-07
+    },
+    "rk4_jitter_y_up_disabled": {
+      "lanes": 518,
+      "cpu_gpu_byte_identical": true,
+      "all_status_ok": true,
+      "failures": 0,
+      "max_absolute_error": 1.469080324056904e-07,
+      "max_scaled_error": 0.0036498990504975656
+    },
+    "rk4_jitter_y_up_twice": {
+      "lanes": 518,
+      "cpu_gpu_byte_identical": true,
+      "all_status_ok": true,
+      "failures": 0,
+      "max_absolute_error": 1.401671392287085e-07,
+      "max_scaled_error": 0.0040931957843823715
+    }
+  },
+  "active_lane_count": 3902,
+  "historical_pre_jitter_rk_groups": [
+    "rk4_y_up_disabled",
+    "rk4_y_up_twice"
+  ],
+  "historical_pre_jitter_lane_count": 518,
+  "historical_aggregate": "summary_pre_jitter.json",
+  "vulkan_validation": [
+    {
+      "group": "inverse",
+      "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "group": "pinion_forward",
+      "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "group": "pinion_reverse",
+      "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "group": "geometry",
+      "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "group": "transform_inverse",
+      "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "group": "rk4_jitter_y_up_disabled",
+      "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "group": "rk4_jitter_y_up_twice",
+      "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    }
+  ],
+  "all_actual_function_asts_match_final_cycle_definition": true,
+  "rk_event_comparison": {
+    "lanes": 518,
+    "jitter_bits": [
+      0,
+      1
+    ],
+    "first_three_slopes_all_bitwise_equal": true,
+    "lanes_with_changed_k4": 518,
+    "lanes_with_changed_result": 518,
+    "jitter_pair_count": 259,
+    "jitter_pairs_with_changed_k1": 259,
+    "jitter_pairs_with_changed_result": 259
+  },
+  "source_cycle_unchanged_during_refresh": true,
+  "binary_sha256": "d6e08b44edf484571ad5d49954a8b3797c71e5bfc80ec4ce8cde795e8d865d29",
+  "shader_sha256": "9e90c89135a93a115db1ceaea5475338a389f8ab41ab7e64165751d4410f6098",
+  "row_generation": "Original 259 packed-input test scenarios duplicated for jitter0/1; exact inputs retained in each definition and initial checkpoint."
+}
