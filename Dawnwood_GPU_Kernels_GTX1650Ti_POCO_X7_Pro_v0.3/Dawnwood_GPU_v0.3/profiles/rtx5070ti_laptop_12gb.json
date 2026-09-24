@@ -1,0 +1,21 @@
+{
+  "edition": "0.5.1-rtx1",
+  "numerical_profile": "DWI-N1-0.5",
+  "owner_target": "MSI Vector 16 HX AI A2XWHG / RTX 5070 Ti Laptop GPU",
+  "backend": "vulkan",
+  "device_filter": "RTX 5070 Ti",
+  "vendor_id": 4318,
+  "device_id": 12056,
+  "allow_software": false,
+  "workgroup_size": 32,
+  "state_dispatch_limit": 1048576,
+  "split_evolution": false,
+  "streamed_host_state_for_large_runs": true,
+  "starting_state_count": 1048576,
+  "steps": 64,
+  "batch": 8,
+  "capacity_budget_fraction": 0.98,
+  "capacity_reserve_mib": 32,
+  "saturation_temperature_stop_celsius": 88,
+  "advertised_memory_is_not_allocation_budget": true
+}

@@ -1,0 +1,91 @@
+{
+  "command": [
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-build\\dawnwood-rtx.exe",
+    "run",
+    "--device",
+    "RTX 5070 Ti",
+    "--stream",
+    "--budget-fraction",
+    ".98",
+    "--count",
+    "43609664",
+    "--steps",
+    "4",
+    "--batch",
+    "8"
+  ],
+  "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+  "utc": "2026-09-24T08:55:31.240379+00:00",
+  "environment": {
+    "DAWNWOOD_STATE_PAGE_RECORDS": "25165824",
+    "DAWNWOOD_VALIDATION": "1",
+    "VK_LAYER_PATH": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin",
+    "VK_LAYER_VALIDATE_SYNC": "1"
+  },
+  "executable_sha256": "cb6b069a2082b2ee55cdf57a8332d4c1904f2190ba4061a416f63c6d83911015",
+  "exit_code": 0,
+  "process_wall_seconds": 56.533800500000325,
+  "telemetry": {
+    "sample_count": 54,
+    "sample_interval_ms": 1000,
+    "scope": "Whole command including setup and readback; device-wide NVML observations",
+    "temperature_stop_celsius": 88,
+    "utilization.gpu": {
+      "min": 0.0,
+      "max": 100.0,
+      "mean": 33.7962962962963
+    },
+    "utilization.memory": {
+      "min": 0.0,
+      "max": 31.0,
+      "mean": 8.351851851851851
+    },
+    "memory.used": {
+      "min": 0.0,
+      "max": 10935.0,
+      "mean": 10598.703703703704
+    },
+    "memory.total": {
+      "min": 12227.0,
+      "max": 12227.0,
+      "mean": 12227.0
+    },
+    "temperature.gpu": {
+      "min": 49.0,
+      "max": 67.0,
+      "mean": 56.388888888888886
+    },
+    "power.draw": {
+      "min": 11.12,
+      "max": 120.71,
+      "mean": 43.74240740740741
+    },
+    "power.limit": null,
+    "clocks.current.sm": {
+      "min": 0.0,
+      "max": 2587.0,
+      "mean": 1144.0740740740741
+    },
+    "clocks.current.memory": {
+      "min": 405.0,
+      "max": 14001.0,
+      "mean": 5321.611111111111
+    },
+    "clocks_event_reasons.sw_power_cap": {
+      "active_samples": 15
+    },
+    "clocks_event_reasons.sw_thermal_slowdown": {
+      "active_samples": 0
+    },
+    "clocks_event_reasons.hw_thermal_slowdown": {
+      "active_samples": 0
+    }
+  },
+  "process_memory": {
+    "source": "Windows GetProcessMemoryInfo for the measured child process",
+    "sample_count": 54,
+    "peak_working_set_bytes": 158674944,
+    "max_sampled_private_commit_bytes": 11642187776
+  },
+  "report_passed": true
+}

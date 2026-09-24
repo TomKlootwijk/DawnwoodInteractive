@@ -11,13 +11,14 @@
 #include <functional>
 #include <cstdio>
 #include <utility>
-void validate_snapshot(const Snapshot& s){
- validate_config(s.cfg);
- if(s.states.size()!=s.cfg.count||s.ops.size()!=s.cfg.opCount)throw std::runtime_error("Snapshot record counts do not match configuration");
- for(size_t i=0;i<s.states.size();++i){const auto& a=s.states[i];std::array<uint,32> words{};std::memcpy(words.data(),&a,sizeof(a));
+void validate_state(const State& a,uint i,const Config& cfg){std::array<uint,32> words{};std::memcpy(words.data(),&a,sizeof(a));
   for(uint k=0;k<32;++k)if(k<24||k>=28){float x;std::memcpy(&x,&words[k],sizeof(x));if(!std::isfinite(x))throw std::runtime_error("Nonfinite state["+std::to_string(i)+"].word["+std::to_string(k)+"]");}
-  if(!(a.u>=0&&a.u<1&&a.v>=0&&a.v<1)||a.orientation>1||a.route>=s.cfg.opCount||a.alpha_ref!=i||!(a.lastJitter==0||a.lastJitter==1))throw std::runtime_error("Invalid chart, orientation, route, inverse reference or jitter in state["+std::to_string(i)+"]");
+  if(!(a.u>=0&&a.u<1&&a.v>=0&&a.v<1)||a.orientation>1||a.route>=cfg.opCount||a.alpha_ref!=i||!(a.lastJitter==0||a.lastJitter==1))throw std::runtime_error("Invalid chart, orientation, route, inverse reference or jitter in state["+std::to_string(i)+"]");
  }
+void validate_snapshot(const Snapshot& s,bool statesRequired){
+ validate_config(s.cfg);
+ if((statesRequired?s.states.size()!=s.cfg.count:!s.states.empty())||s.ops.size()!=s.cfg.opCount)throw std::runtime_error("Snapshot record counts do not match configuration");
+ for(uint i=0;i<s.states.size();++i)validate_state(s.states[i],i,s.cfg);
  for(size_t i=0;i<s.ops.size();++i){const auto& a=s.ops[i];std::array<float,12> fields{};std::memcpy(fields.data(),&a,sizeof(fields));
   for(float x:fields)if(!std::isfinite(x))throw std::runtime_error("Nonfinite operator["+std::to_string(i)+"]");
   if(!(a.u>=0&&a.u<1&&a.v>=0&&a.v<1&&a.radius>0&&a.height>0))throw std::runtime_error("Invalid chart or shape dimensions in operator["+std::to_string(i)+"]");
@@ -43,7 +44,24 @@ Comparison compare(const Snapshot& a,const Snapshot& b,double atol=1e-5,double r
  for(size_t i=0;i<a.ops.size();++i){std::array<uint,16>x{},y{};std::memcpy(x.data(),&a.ops[i],64);std::memcpy(y.data(),&b.ops[i],64);for(uint k=0;k<16;++k){if(x[k]!=y[k])++c.bitwiseMismatch;std::string where="operator["+std::to_string(i)+"].word["+std::to_string(k)+"]";if(k>=12){if(x[k]!=y[k]){++c.integerMismatch;if(c.first.empty())c.first=where;}}else{float xx,yy;std::memcpy(&xx,&x[k],4);std::memcpy(&yy,&y[k],4);scalar(xx,yy,where);}}}
  return c;}
 std::string comparison_json(const Comparison& c){std::ostringstream o;o<<std::setprecision(10)<<"{\"passed\":"<<(c.pass()?"true":"false")<<",\"bitwise_word_mismatches\":"<<c.bitwiseMismatch<<",\"bitwise_equal\":"<<(c.bitwiseMismatch==0&&c.invalidSnapshots==0?"true":"false")<<",\"float_mismatches\":"<<c.floatMismatch<<",\"integer_mismatches\":"<<c.integerMismatch<<",\"nonfinite_values\":"<<c.nonfinite<<",\"invalid_snapshots\":"<<c.invalidSnapshots<<",\"worst_scaled_error\":"<<c.worstScaled<<",\"max_absolute_error\":"<<c.maxAbsolute<<",\"first_mismatch\":"<<json_escape(c.first)<<"}";return o.str();}
-std::string health(const Snapshot& s){uint64_t nonfinite=0,badChart=0;double maxEnergy=0;bool energyFinite=true;for(auto& a:s.states){uint words[32];std::memcpy(words,&a,128);for(uint k=0;k<32;++k)if(k<24||k>=28){float x;std::memcpy(&x,&words[k],4);if(!std::isfinite(x))++nonfinite;}if(!(a.u>=0&&a.u<1&&a.v>=0&&a.v<1))++badChart;if(std::isfinite(a.energy))maxEnergy=std::max(maxEnergy,std::abs(double(a.energy)-5));else energyFinite=false;}std::string failure;try{validate_snapshot(s);}catch(const std::exception& e){failure=e.what();}std::ostringstream o;o<<"{\"passed\":"<<(failure.empty()?"true":"false")<<",\"first_invalid_record\":"<<json_escape(failure)<<",\"nonfinite_state_values\":"<<nonfinite<<",\"out_of_chart_states\":"<<badChart<<",\"max_energy_error_from_source_seed_5\":";if(energyFinite)o<<maxEnergy;else o<<"null";o<<"}";return o.str();}
+struct StateHealth {
+ uint64_t nonfinite=0,badChart=0,checked=0;double maxEnergy=0;bool energyFinite=true;std::string failure;
+ void add(const State* data,uint base,uint count,const Config& cfg){
+  for(uint i=0;i<count;++i){const auto& a=data[i];uint words[32];std::memcpy(words,&a,128);
+   for(uint k=0;k<32;++k)if(k<24||k>=28){float x;std::memcpy(&x,&words[k],4);if(!std::isfinite(x))++nonfinite;}
+   if(!(a.u>=0&&a.u<1&&a.v>=0&&a.v<1))++badChart;
+   if(std::isfinite(a.energy))maxEnergy=std::max(maxEnergy,std::abs(double(a.energy)-5));else energyFinite=false;
+   try{validate_state(a,base+i,cfg);}catch(const std::exception& e){if(failure.empty())failure=e.what();}
+  }checked+=count;
+ }
+ std::string report(uint expected){if(checked!=expected&&failure.empty())failure="Incomplete state readback";std::ostringstream o;
+  o<<"{\"passed\":"<<(failure.empty()?"true":"false")<<",\"first_invalid_record\":"<<json_escape(failure)<<",\"checked_state_records\":"<<checked<<",\"nonfinite_state_values\":"<<nonfinite<<",\"out_of_chart_states\":"<<badChart<<",\"max_energy_error_from_source_seed_5\":";
+  if(energyFinite)o<<maxEnergy;else o<<"null";o<<"}";return o.str();
+ }
+};
+std::string health(const Snapshot& s){StateHealth value;try{validate_snapshot(s);}catch(const std::exception& e){value.failure=e.what();}value.add(s.states.data(),0,uint(s.states.size()),s.cfg);return value.report(s.cfg.count);}
+std::string hash_text(uint64_t value){std::ostringstream o;o<<std::hex<<std::setw(16)<<std::setfill('0')<<value;return o.str();}
+
 struct Test {std::string name;bool pass;std::string detail;};
 std::string selftests(){std::vector<Test> tests;auto test=[&](std::string n,std::function<bool()> f,std::string detail=""){bool p=false;try{p=f();}catch(const std::exception& e){detail=e.what();}tests.push_back({n,p,detail});};
  test("source_7_54_population_parity",[]{return dw_parity(7)==1&&dw_parity(54)==0;});
@@ -77,35 +95,43 @@ std::string selftests(){std::vector<Test> tests;auto test=[&](std::string n,std:
  test("fixed_bit_store_cardinality",[]{return (uint64_t(1)<<8)<257u;},"A 256-pattern store cannot injectively encode 257 arbitrary distinct messages.");
  test("raw_GB_and_GiB_accounting",[]{return uint64_t(4)*1000000000ull!=uint64_t(4)*(1ull<<30)&&sizeof(State)>1;});
  bool pass=true;std::ostringstream o;o<<"{\"profile\":\"DWI-N1-0.5\",\"backend\":\"CPU\",\"tests\":[";for(size_t i=0;i<tests.size();++i){if(i)o<<",";auto& t=tests[i];pass&=t.pass;o<<"{\"name\":"<<json_escape(t.name)<<",\"passed\":"<<(t.pass?"true":"false")<<",\"detail\":"<<json_escape(t.detail)<<"}";}o<<"],\"tests_run\":"<<tests.size()<<",\"passed\":"<<(pass?"true":"false")<<"}";return o.str();}
-struct Options {std::string command="verify",backend="vulkan",device,out,resume,checkpoint;bool allowSoftware=false;uint count=256,ops=31,steps=16,batch=32,depth=4;float dt=.01f,yup=.0005f,mutation=1,budgetFraction=.8f;uint jitter=1,feedback=1;std::vector<std::pair<uint,uint>> edits;};
+struct Options {std::string command="verify",backend="vulkan",device,out,resume,checkpoint;bool allowSoftware=false,stream=false;uint count=256,ops=31,steps=16,batch=32,depth=4;float dt=.01f,yup=.0005f,mutation=1,budgetFraction=.8f;uint jitter=1,feedback=1;std::vector<std::pair<uint,uint>> edits;};
 uint number(const std::string& s){if(s.empty()||s[0]<'0'||s[0]>'9')throw std::runtime_error("Expected uint32: "+s);size_t pos=0;auto x=std::stoull(s,&pos,0);if(pos!=s.size()||x>UINT32_MAX)throw std::runtime_error("Expected uint32: "+s);return uint(x);}
 float real_number(const std::string& s){size_t pos=0;float x=std::stof(s,&pos);if(pos!=s.size()||!std::isfinite(x))throw std::runtime_error("Expected finite floating-point value: "+s);return x;}
-Options parse(const std::vector<std::string>& args){Options o;size_t i=0;if(!args.empty()&&args[0].rfind("--",0)!=0){o.command=args[0];i=1;}for(;i<args.size();++i){auto k=args[i];if(k=="--allow-software"){o.allowSoftware=true;continue;}if(i+1>=args.size())throw std::runtime_error("Missing value for "+k);auto v=args[++i];if(k=="--budget-fraction")o.budgetFraction=real_number(v);else if(k=="--backend")o.backend=v;else if(k=="--device")o.device=v;else if(k=="--out")o.out=v;else if(k=="--resume")o.resume=v;else if(k=="--checkpoint")o.checkpoint=v;else if(k=="--count")o.count=number(v);else if(k=="--operators")o.ops=number(v);else if(k=="--steps")o.steps=number(v);else if(k=="--batch")o.batch=number(v);else if(k=="--depth")o.depth=number(v);else if(k=="--dt")o.dt=real_number(v);else if(k=="--yup")o.yup=real_number(v);else if(k=="--mutation")o.mutation=real_number(v);else if(k=="--jitter")o.jitter=number(v);else if(k=="--feedback")o.feedback=number(v);else if(k=="--program"){auto sep=v.find(':');if(sep==std::string::npos)throw std::runtime_error("Use --program index:0xHEX");uint index=number(v.substr(0,sep)),code=number(v.substr(sep+1));for(uint j=0;j<8;++j)if(((code>>(4*j))&15)>8)throw std::runtime_error("Bytecode instruction must be 0..8");o.edits.emplace_back(index,code);}else throw std::runtime_error("Unknown option: "+k);}if(!(o.budgetFraction>0&&o.budgetFraction<=.98f))throw std::runtime_error("Budget fraction must be greater than zero and at most 0.98");if(o.command=="verify"&&!o.steps)throw std::runtime_error("Verification requires at least one epoch");if(!o.batch||o.jitter>1||o.feedback>1)throw std::runtime_error("Batch must be positive; jitter and feedback must be 0 or 1");if(o.backend!="cpu"&&o.backend!="vulkan")throw std::runtime_error("Backend must be cpu or vulkan");return o;}
+Options parse(const std::vector<std::string>& args){Options o;size_t i=0;if(!args.empty()&&args[0].rfind("--",0)!=0){o.command=args[0];i=1;}for(;i<args.size();++i){auto k=args[i];if(k=="--allow-software"){o.allowSoftware=true;continue;}if(k=="--stream"){o.stream=true;continue;}if(i+1>=args.size())throw std::runtime_error("Missing value for "+k);auto v=args[++i];if(k=="--budget-fraction")o.budgetFraction=real_number(v);else if(k=="--backend")o.backend=v;else if(k=="--device")o.device=v;else if(k=="--out")o.out=v;else if(k=="--resume")o.resume=v;else if(k=="--checkpoint")o.checkpoint=v;else if(k=="--count")o.count=number(v);else if(k=="--operators")o.ops=number(v);else if(k=="--steps")o.steps=number(v);else if(k=="--batch")o.batch=number(v);else if(k=="--depth")o.depth=number(v);else if(k=="--dt")o.dt=real_number(v);else if(k=="--yup")o.yup=real_number(v);else if(k=="--mutation")o.mutation=real_number(v);else if(k=="--jitter")o.jitter=number(v);else if(k=="--feedback")o.feedback=number(v);else if(k=="--program"){auto sep=v.find(':');if(sep==std::string::npos)throw std::runtime_error("Use --program index:0xHEX");uint index=number(v.substr(0,sep)),code=number(v.substr(sep+1));for(uint j=0;j<8;++j)if(((code>>(4*j))&15)>8)throw std::runtime_error("Bytecode instruction must be 0..8");o.edits.emplace_back(index,code);}else throw std::runtime_error("Unknown option: "+k);}if(!(o.budgetFraction>0&&o.budgetFraction<=.98f))throw std::runtime_error("Budget fraction must be greater than zero and at most 0.98");if(o.command=="verify"&&!o.steps)throw std::runtime_error("Verification requires at least one epoch");if(!o.batch||o.jitter>1||o.feedback>1)throw std::runtime_error("Batch must be positive; jitter and feedback must be 0 or 1");if(o.stream&&(o.command!="run"||o.backend!="vulkan"||!o.resume.empty()))throw std::runtime_error("--stream requires a fresh Vulkan run; resume uses the normal checkpoint path");if(o.backend!="cpu"&&o.backend!="vulkan")throw std::runtime_error("Backend must be cpu or vulkan");return o;}
 }
 std::string execute(const std::vector<std::string>& args){auto o=parse(args);std::string result;
  if(o.command=="selftest")result=selftests();
- else {Config c=default_config(o.count,o.ops);c.depth=o.depth;c.dt=o.dt;c.yup=o.yup;c.mutation=o.mutation;c.jitter=o.jitter;c.feedback=o.feedback;Snapshot initial=o.resume.empty()?initialize(c):read_checkpoint(o.resume);for(auto e:o.edits){if(e.first>=initial.ops.size())throw std::runtime_error("Operator edit outside catalogue");initial.ops[e.first].program=e.second;}validate_snapshot(initial);c=initial.cfg;if((o.command=="run"||o.command=="verify")&&uint64_t(c.epoch)+o.steps>UINT32_MAX)throw std::runtime_error("Requested epochs exceed the uint32 epoch ABI");
+ else {Config c=default_config(o.count,o.ops);c.depth=o.depth;c.dt=o.dt;c.yup=o.yup;c.mutation=o.mutation;c.jitter=o.jitter;c.feedback=o.feedback;Snapshot initial=o.resume.empty()?initialize(c,!o.stream):read_checkpoint(o.resume);for(auto e:o.edits){if(e.first>=initial.ops.size())throw std::runtime_error("Operator edit outside catalogue");initial.ops[e.first].program=e.second;}validate_snapshot(initial,!o.stream);c=initial.cfg;if((o.command=="run"||o.command=="verify")&&uint64_t(c.epoch)+o.steps>UINT32_MAX)throw std::runtime_error("Requested epochs exceed the uint32 epoch ABI");
   if(o.command=="probe"){VulkanRuntime gpu(initial,o.device,o.allowSoftware,o.budgetFraction);result="{\"profile\":\"DWI-N1-0.5\",\"device\":"+gpu.device_json()+"}";}
   else if(o.command=="verify"){VulkanRuntime gpu(initial,o.device,o.allowSoftware,o.budgetFraction);auto cpu=initial;Comparison total;uint checked=0;std::ostringstream trace;trace<<"[";for(uint k=0;k<o.steps;++k){cpu_step(cpu);gpu.advance(1);auto actual=gpu.download();auto comp=compare(cpu,actual);total.worstScaled=std::max(total.worstScaled,comp.worstScaled);total.maxAbsolute=std::max(total.maxAbsolute,comp.maxAbsolute);total.bitwiseMismatch+=comp.bitwiseMismatch;total.floatMismatch+=comp.floatMismatch;total.integerMismatch+=comp.integerMismatch;total.nonfinite+=comp.nonfinite;total.invalidSnapshots+=comp.invalidSnapshots;if(total.first.empty()&&!comp.first.empty())total.first="epoch "+std::to_string(cpu.cfg.epoch)+" "+comp.first;if(k)trace<<",";trace<<"{\"epoch\":"<<cpu.cfg.epoch<<",\"comparison\":"<<comparison_json(comp)<<"}";++checked;if(!comp.pass())break;}trace<<"]";std::ostringstream r;r<<"{\"profile\":\"DWI-N1-0.5\",\"kind\":\"CPU versus Vulkan every epoch, all state and operator words\",\"config\":"<<config_json(c)<<",\"epochs_requested\":"<<o.steps<<",\"epochs_checked\":"<<checked<<",\"atol\":0.00001,\"rtol\":0.00002,\"passed\":"<<((total.pass()&&checked==o.steps)?"true":"false")<<",\"aggregate\":"<<comparison_json(total)<<",\"device\":"<<gpu.device_json()<<",\"trace\":"<<trace.str()<<"}";result=r.str();}
   else if(o.command=="run"){
    using Clock=std::chrono::steady_clock;
    auto elapsed=[](Clock::time_point start){return std::chrono::duration<double>(Clock::now()-start).count();};
-   Snapshot final;double seconds=0,setupSeconds=0,advanceWallSeconds=0,readbackSeconds=0;std::string device="null";
+   Snapshot final;double seconds=0,setupSeconds=0,advanceWallSeconds=0,readbackSeconds=0,analysisSeconds=0;std::string device="null",fullDigest,stateDigest,healthReport;
    if(o.backend=="cpu"){
     final=std::move(initial);auto start=Clock::now();
     for(uint k=0;k<o.steps;++k)cpu_step(final);
     seconds=advanceWallSeconds=elapsed(start);
    }else{
-    auto start=Clock::now();VulkanRuntime gpu(initial,o.device,o.allowSoftware,o.budgetFraction);setupSeconds=elapsed(start);
+    auto start=Clock::now();VulkanRuntime gpu(initial,o.device,o.allowSoftware,o.budgetFraction,o.stream);setupSeconds=elapsed(start);
     // Upload owns the device copy now. Release the source before allocating readback.
     initial=Snapshot{};start=Clock::now();
     for(uint done=0;done<o.steps;){uint batch=std::min(o.batch,o.steps-done);gpu.advance(batch);seconds+=gpu.last_seconds();done+=batch;}
-    advanceWallSeconds=elapsed(start);start=Clock::now();final=gpu.download();readbackSeconds=elapsed(start);device=gpu.device_json();
+    advanceWallSeconds=elapsed(start);start=Clock::now();
+    if(o.stream){
+     final=gpu.download_metadata();validate_snapshot(final,false);StateHealth stateHealth;uint64_t stateHash=14695981039346656037ull;
+     std::ofstream checkpoint;std::string partial=o.checkpoint+".partial";
+     if(!o.checkpoint.empty()){checkpoint.open(partial,std::ios::binary);if(!checkpoint)throw std::runtime_error("Cannot open streamed checkpoint");const char magic[8]={'D','W','K','N','0','0','0','3'};uint sizes[2]={sizeof(State),sizeof(Operator)};checkpoint.write(magic,8);checkpoint.write(reinterpret_cast<char*>(sizes),8);checkpoint.write(reinterpret_cast<const char*>(&final.cfg),sizeof(Config));}
+     gpu.visit_states([&](const State* data,uint base,uint count){auto inspectionStart=Clock::now();stateHash=hash_bytes(data,size_t(count)*sizeof(State),stateHash);stateHealth.add(data,base,count,final.cfg);analysisSeconds+=elapsed(inspectionStart);if(checkpoint.is_open()){checkpoint.write(reinterpret_cast<const char*>(data),std::streamsize(count)*sizeof(State));if(!checkpoint)throw std::runtime_error("Streamed checkpoint state write failed");}});
+     stateDigest=hash_text(stateHash);fullDigest=hash_text(hash_bytes(final.ops.data(),final.ops.size()*sizeof(Operator),stateHash));healthReport=stateHealth.report(final.cfg.count);
+     if(checkpoint.is_open()){checkpoint.write(reinterpret_cast<const char*>(final.ops.data()),std::streamsize(final.ops.size())*sizeof(Operator));checkpoint.close();if(!checkpoint)throw std::runtime_error("Streamed checkpoint operator write failed");if(!stateHealth.failure.empty())throw std::runtime_error("Streamed checkpoint health failed: "+stateHealth.failure);if(std::rename(partial.c_str(),o.checkpoint.c_str()))throw std::runtime_error("Cannot commit streamed checkpoint; destination must not exist");}
+    }else final=gpu.download();
+    readbackSeconds=elapsed(start);device=gpu.device_json();
    }
-   if(!o.checkpoint.empty())write_checkpoint(o.checkpoint,final);
-   auto analysisStart=Clock::now();auto fullDigest=digest(final),stateDigest=state_digest(final),healthReport=health(final);double analysisSeconds=elapsed(analysisStart);
+   if(!o.stream){if(!o.checkpoint.empty())write_checkpoint(o.checkpoint,final);auto analysisStart=Clock::now();fullDigest=digest(final);stateDigest=state_digest(final);healthReport=health(final);analysisSeconds=elapsed(analysisStart);}
    std::ostringstream r;r<<std::setprecision(10)<<"{\"profile\":\"DWI-N1-0.5\",\"backend\":"<<json_escape(o.backend)
-    <<",\"config\":"<<config_json(final.cfg)<<",\"new_epochs\":"<<o.steps<<",\"seconds\":"<<seconds
+    <<",\"streamed_host_state\":"<<(o.stream?"true":"false")<<",\"readback_includes_analysis\":"<<(o.stream?"true":"false")<<",\"config\":"<<config_json(final.cfg)<<",\"new_epochs\":"<<o.steps<<",\"seconds\":"<<seconds
     <<",\"state_epochs_per_second\":"<<(seconds>0?double(c.count)*o.steps/seconds:0)
     <<",\"mean_epoch_milliseconds\":"<<(o.steps?seconds*1000/o.steps:0)
     <<",\"timing\":{\"runtime_setup_upload_seconds\":"<<setupSeconds<<",\"advance_wall_seconds\":"<<advanceWallSeconds
@@ -114,5 +140,6 @@ std::string execute(const std::vector<std::string>& args){auto o=parse(args);std
     <<",\"health\":"<<healthReport<<",\"device\":"<<device<<"}";result=r.str();
   }
   else throw std::runtime_error("Commands: selftest, probe, verify, run");}
+ result.insert(1,"\"runtime_version\":\"0.5.1-rtx1\",");
  if(!o.out.empty()){std::ofstream f(o.out);if(!f)throw std::runtime_error("Cannot write report: "+o.out);f<<result<<"\n";f.close();if(!f)throw std::runtime_error("Report write failed: "+o.out);}return result;
 }

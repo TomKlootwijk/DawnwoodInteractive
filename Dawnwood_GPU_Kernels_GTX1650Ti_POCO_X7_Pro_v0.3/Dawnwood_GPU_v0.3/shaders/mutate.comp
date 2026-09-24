@@ -3,12 +3,11 @@
 #extension GL_EXT_control_flow_attributes : require
 #include "numeric_types.inc"
 layout(local_size_x=64,local_size_x_id=0) in;
-layout(std430,binding=0) readonly buffer SIn { State stateIn[]; };
-layout(std430,binding=1) writeonly buffer SOut { State stateOut[]; };
+#include "state_buffers.inc"
 #define DW_MUTATION_PASS
 #include "operator_texture.inc"
 layout(push_constant) uniform Parameters {Config cfg;};
 void main(){dw_stage_operators();uint i=gl_GlobalInvocationID.x;if(i>=cfg.opCount)return;
  uint a=dw_feedback_index(i,17u,cfg.epoch,0u,cfg.count),b=dw_feedback_index(i,31u,cfg.epoch,1u,cfg.count);
- dw_store_operator(i,dw_mutate(dw_texture_operator(opInTexture,i),dw_mutation_controls[1],dw_mutation_controls[0],stateIn[a],stateIn[b],cfg));
+ dw_store_operator(i,dw_mutate(dw_texture_operator(opInTexture,i),dw_mutation_controls[1],dw_mutation_controls[0],dw_state_in(a),dw_state_in(b),cfg));
 }

@@ -1,0 +1,84 @@
+{
+  "command": [
+    "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\tools\\measure_capacity.py",
+    "--binary",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-build\\dawnwood-rtx.exe",
+    "--device",
+    "RTX 5070 Ti",
+    "--out",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\rtx5070ti_laptop_2026-09-24\\capacity",
+    "--stream",
+    "--budget-fraction",
+    ".98",
+    "--reserve-mib",
+    "32",
+    "--steps",
+    "4",
+    "--timeout",
+    "600"
+  ],
+  "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+  "utc": "2026-09-24T08:51:36.224241+00:00",
+  "environment": {},
+  "executable_sha256": "b7a12c3af0b4db44191eec14ea095eba731b7328917f570806183093d19ddca2",
+  "exit_code": 0,
+  "process_wall_seconds": 148.41603849999956,
+  "telemetry": {
+    "sample_count": 148,
+    "sample_interval_ms": 1000,
+    "scope": "Whole command including setup and readback; device-wide NVML observations",
+    "temperature_stop_celsius": 88,
+    "utilization.gpu": {
+      "min": 0.0,
+      "max": 100.0,
+      "mean": 29.64864864864865
+    },
+    "utilization.memory": {
+      "min": 0.0,
+      "max": 34.0,
+      "mean": 7.635135135135135
+    },
+    "memory.used": {
+      "min": 0.0,
+      "max": 10935.0,
+      "mean": 7402.8175675675675
+    },
+    "memory.total": {
+      "min": 12227.0,
+      "max": 12227.0,
+      "mean": 12227.0
+    },
+    "temperature.gpu": {
+      "min": 51.0,
+      "max": 72.0,
+      "mean": 58.317567567567565
+    },
+    "power.draw": {
+      "min": 10.96,
+      "max": 124.93,
+      "mean": 41.63445945945946
+    },
+    "power.limit": null,
+    "clocks.current.sm": {
+      "min": 232.0,
+      "max": 2767.0,
+      "mean": 1115.1486486486488
+    },
+    "clocks.current.memory": {
+      "min": 405.0,
+      "max": 14001.0,
+      "mean": 5717.858108108108
+    },
+    "clocks_event_reasons.sw_power_cap": {
+      "active_samples": 44
+    },
+    "clocks_event_reasons.sw_thermal_slowdown": {
+      "active_samples": 0
+    },
+    "clocks_event_reasons.hw_thermal_slowdown": {
+      "active_samples": 0
+    }
+  }
+}

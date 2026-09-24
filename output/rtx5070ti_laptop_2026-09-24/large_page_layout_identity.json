@@ -1,0 +1,12 @@
+{
+  "count": 43609664,
+  "epochs": 4,
+  "default_page_records": 33554431,
+  "alternate_page_records": 25165824,
+  "identical_full_population_digest": true,
+  "digest": "16e2288d63d935ff",
+  "alternate_validation": true,
+  "alternate_sync_validation": true,
+  "errors": 0,
+  "warnings": 0
+}

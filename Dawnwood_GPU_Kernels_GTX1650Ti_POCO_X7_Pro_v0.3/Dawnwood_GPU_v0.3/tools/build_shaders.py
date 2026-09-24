@@ -56,7 +56,7 @@ def main():
         rows.append({'shader':name,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'spirv_validation_executed':bool(validator),'preserved_math_functions':preserved})
     if not args.validate_only:
         (ROOT/'src/spirv.hpp').write_text(''.join(arrays))
-        source_paths=['include/numeric_types.inc','include/numeric_math.inc','include/numeric_evolve.inc','shaders/mutate.comp','shaders/evolve.comp','shaders/operator_texture.inc','shaders/evolution_pass.inc','shaders/prepare.comp','shaders/slope.comp','shaders/combine.comp','shaders/geometry.comp','shaders/finish.comp']
+        source_paths=['include/numeric_types.inc','include/numeric_math.inc','include/numeric_evolve.inc','shaders/mutate.comp','shaders/evolve.comp','shaders/operator_texture.inc','shaders/state_buffers.inc','shaders/evolution_pass.inc','shaders/prepare.comp','shaders/slope.comp','shaders/combine.comp','shaders/geometry.comp','shaders/finish.comp']
         fingerprint=hashlib.sha256(''.join(hashlib.sha256((ROOT/x).read_bytes()).hexdigest() for x in source_paths).encode()).hexdigest()
         (ROOT/'shaders/source.sha256').write_text(fingerprint+'\n')
     (ROOT/'results/shader_build.json').write_text(json.dumps({'compiler':compiler,'validator':validator,'optimizer':optimizer,'offline_optimization_requested':args.optimize,'preserve_math_functions':args.preserve_math_functions,'preserve_interpreter_functions':args.preserve_interpreter_functions,'validation_only':args.validate_only,'shaders':rows},indent=2)+'\n')

@@ -1,0 +1,63 @@
+{
+  "name": "body_01",
+  "command": [
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-build\\dawnwood-rtx.exe",
+    "run",
+    "--backend",
+    "cpu",
+    "--count",
+    "16",
+    "--steps",
+    "8",
+    "--program",
+    "1:0x2"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 0.01599999999962165,
+  "report": {
+    "runtime_version": "0.5.1-rtx1",
+    "profile": "DWI-N1-0.5",
+    "backend": "cpu",
+    "streamed_host_state": false,
+    "readback_includes_analysis": false,
+    "config": {
+      "count": 16,
+      "operators": 31,
+      "epoch": 8,
+      "depth": 4,
+      "dt": 0.00999999978,
+      "yup": 0.000500000024,
+      "epsilon": 0.125,
+      "mutation": 1,
+      "jitter": 1,
+      "feedback": 1,
+      "phaseRate": 0.125,
+      "radialRate": 0.00999999978,
+      "historyWeight": 0.75,
+      "fieldScale": 0.00499999989,
+      "state_bytes": 128,
+      "operator_bytes": 64
+    },
+    "new_epochs": 8,
+    "seconds": 0.0009416,
+    "state_epochs_per_second": 135938.8275,
+    "mean_epoch_milliseconds": 0.1177,
+    "timing": {
+      "runtime_setup_upload_seconds": 0,
+      "advance_wall_seconds": 0.0009416,
+      "readback_seconds": 0,
+      "digest_and_health_seconds": 6.21e-05
+    },
+    "state_and_operator_fnv1a64": "3721459833862288",
+    "state_only_fnv1a64": "f76b091547514cc0",
+    "health": {
+      "passed": true,
+      "first_invalid_record": "",
+      "checked_state_records": 16,
+      "nonfinite_state_values": 0,
+      "out_of_chart_states": 0,
+      "max_energy_error_from_source_seed_5": 3.8147e-06
+    },
+    "device": null
+  }
+}

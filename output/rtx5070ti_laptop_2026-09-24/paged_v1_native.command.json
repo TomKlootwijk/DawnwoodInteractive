@@ -1,0 +1,27 @@
+{
+  "command": [
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\llvm-mingw-20260922-ucrt-x86_64\\bin\\clang++.exe",
+    "-std=c++17",
+    "-O2",
+    "-ffp-contract=off",
+    "-fno-fast-math",
+    "-static",
+    "-I",
+    "include",
+    "-I",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Include",
+    "src/main.cpp",
+    "src/cpu.cpp",
+    "src/vulkan.cpp",
+    "src/driver.cpp",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Lib\\vulkan-1.lib",
+    "-o",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-build\\dawnwood-paged.exe"
+  ],
+  "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3",
+  "utc": "2026-09-24T08:42:55.907261+00:00",
+  "environment": {},
+  "executable_sha256": "20ba1856942744291a6aaaf9f2c94f6d0cd7cac5aa9557fce96471dc7ef25d6f",
+  "exit_code": 0,
+  "process_wall_seconds": 3.0228131000003486
+}

@@ -1,0 +1,149 @@
+timestamp, name, utilization.gpu [%], utilization.memory [%], memory.used [MiB], memory.total [MiB], temperature.gpu, power.draw [W], power.limit [W], clocks.current.sm [MHz], clocks.current.memory [MHz], pstate, clocks_event_reasons.sw_power_cap, clocks_event_reasons.sw_thermal_slowdown, clocks_event_reasons.hw_thermal_slowdown
+2026/09/24 10:51:36.360, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 23, 0, 0, 12227, 52, 20.61, [N/A], 2250, 11001, P2, Not Active, Not Active, Not Active
+2026/09/24 10:51:37.374, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 29, 6, 325, 12227, 51, 25.72, [N/A], 1702, 11001, P2, Not Active, Not Active, Not Active
+2026/09/24 10:51:38.375, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 0, 12227, 56, 27.12, [N/A], 1680, 11001, P2, Not Active, Not Active, Not Active
+2026/09/24 10:51:39.391, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 66, 14, 14, 12227, 54, 52.37, [N/A], 2377, 14001, P0, Not Active, Not Active, Not Active
+2026/09/24 10:51:40.404, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 549, 12227, 53, 59.99, [N/A], 1717, 14001, P0, Not Active, Not Active, Not Active
+2026/09/24 10:51:41.417, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 0, 0, 805, 12227, 51, 20.06, [N/A], 1560, 11001, P2, Not Active, Not Active, Not Active
+2026/09/24 10:51:42.417, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 13, 4, 805, 12227, 56, 102.41, [N/A], 2182, 9001, P4, Not Active, Not Active, Not Active
+2026/09/24 10:51:43.427, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 805, 12227, 52, 21.00, [N/A], 1545, 11001, P2, Not Active, Not Active, Not Active
+2026/09/24 10:51:44.436, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 0, 0, 1317, 12227, 52, 18.08, [N/A], 1485, 11001, P2, Not Active, Not Active, Not Active
+2026/09/24 10:51:45.443, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 34, 1317, 12227, 66, 88.47, [N/A], 2752, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:51:46.445, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 0, 0, 1317, 12227, 55, 94.09, [N/A], 1567, 9001, P4, Not Active, Not Active, Not Active
+2026/09/24 10:51:47.447, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 1317, 12227, 52, 16.38, [N/A], 262, 9001, P4, Not Active, Not Active, Not Active
+2026/09/24 10:51:48.450, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 1317, 12227, 52, 14.30, [N/A], 255, 9001, P4, Not Active, Not Active, Not Active
+2026/09/24 10:51:49.459, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 1317, 12227, 52, 14.36, [N/A], 247, 9001, P4, Not Active, Not Active, Not Active
+2026/09/24 10:51:50.472, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 8, 0, 2341, 12227, 52, 18.66, [N/A], 1875, 11001, P2, Not Active, Not Active, Not Active
+2026/09/24 10:51:51.486, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 22, 2341, 12227, 65, 93.22, [N/A], 2722, 11001, P2, Active, Not Active, Not Active
+2026/09/24 10:51:52.486, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 33, 2341, 12227, 65, 121.35, [N/A], 2707, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:51:53.491, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 33, 2341, 12227, 66, 118.80, [N/A], 2662, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:51:54.500, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 2341, 12227, 54, 36.07, [N/A], 300, 9001, P4, Not Active, Not Active, Not Active
+2026/09/24 10:51:55.508, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 2341, 12227, 53, 14.37, [N/A], 285, 9001, P4, Not Active, Not Active, Not Active
+2026/09/24 10:51:56.514, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 2341, 12227, 53, 14.34, [N/A], 240, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:51:57.520, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 2341, 12227, 53, 14.39, [N/A], 255, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:51:58.524, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 2341, 12227, 52, 14.48, [N/A], 240, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:51:59.531, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 2341, 12227, 52, 14.44, [N/A], 262, 9001, P4, Not Active, Not Active, Not Active
+2026/09/24 10:52:00.536, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 5, 0, 2341, 12227, 52, 14.45, [N/A], 360, 810, P5, Not Active, Not Active, Not Active
+2026/09/24 10:52:01.551, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 8, 0, 4389, 12227, 53, 18.92, [N/A], 1875, 11001, P2, Not Active, Not Active, Not Active
+2026/09/24 10:52:02.556, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 8, 0, 4389, 12227, 55, 23.58, [N/A], 1875, 11001, P2, Not Active, Not Active, Not Active
+2026/09/24 10:52:03.565, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 28, 4389, 12227, 62, 124.93, [N/A], 2295, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:52:04.577, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 29, 4389, 12227, 63, 116.87, [N/A], 2377, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:52:05.589, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 29, 4389, 12227, 65, 117.58, [N/A], 2437, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:52:06.591, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 30, 4389, 12227, 65, 118.28, [N/A], 2475, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:52:07.603, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 30, 4389, 12227, 66, 119.92, [N/A], 2505, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:52:08.605, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 4389, 12227, 57, 92.83, [N/A], 300, 9001, P4, Not Active, Not Active, Not Active
+2026/09/24 10:52:09.609, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 4389, 12227, 55, 15.86, [N/A], 307, 9001, P4, Not Active, Not Active, Not Active
+2026/09/24 10:52:10.622, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 4389, 12227, 54, 14.45, [N/A], 247, 9001, P4, Not Active, Not Active, Not Active
+2026/09/24 10:52:11.633, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 4389, 12227, 54, 14.62, [N/A], 255, 9001, P4, Not Active, Not Active, Not Active
+2026/09/24 10:52:12.636, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 4389, 12227, 54, 14.61, [N/A], 232, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:52:13.648, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 4389, 12227, 54, 14.55, [N/A], 262, 9001, P4, Not Active, Not Active, Not Active
+2026/09/24 10:52:14.664, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 4389, 12227, 54, 14.47, [N/A], 240, 810, P5, Active, Not Active, Not Active
+2026/09/24 10:52:15.668, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 3, 0, 4389, 12227, 54, 14.59, [N/A], 352, 810, P5, Not Active, Not Active, Not Active
+2026/09/24 10:52:16.669, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 4389, 12227, 54, 13.90, [N/A], 427, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:52:17.676, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 4389, 12227, 53, 11.07, [N/A], 435, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:52:18.679, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 4389, 12227, 53, 11.11, [N/A], 442, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:52:19.683, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 4389, 12227, 53, 11.18, [N/A], 442, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:52:20.699, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 4389, 12227, 53, 11.06, [N/A], 435, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:52:21.703, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 4389, 12227, 53, 11.05, [N/A], 435, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:52:22.708, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 0, 12227, 53, 11.10, [N/A], 427, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:52:23.717, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 0, 0, 92, 12227, 53, 14.35, [N/A], 1507, 11001, P2, Not Active, Not Active, Not Active
+2026/09/24 10:52:24.731, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 7, 0, 8481, 12227, 54, 21.65, [N/A], 1867, 11001, P2, Not Active, Not Active, Not Active
+2026/09/24 10:52:25.734, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 7, 0, 8481, 12227, 54, 23.55, [N/A], 1852, 11001, P2, Not Active, Not Active, Not Active
+2026/09/24 10:52:26.747, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 7, 0, 8481, 12227, 54, 23.18, [N/A], 885, 9001, P4, Not Active, Not Active, Not Active
+2026/09/24 10:52:27.760, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 33, 8481, 12227, 68, 84.98, [N/A], 2767, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:52:28.768, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 27, 8481, 12227, 68, 120.68, [N/A], 2730, 11001, P2, Active, Not Active, Not Active
+2026/09/24 10:52:29.778, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 27, 8481, 12227, 68, 118.81, [N/A], 2700, 11001, P2, Active, Not Active, Not Active
+2026/09/24 10:52:30.789, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 26, 8481, 12227, 68, 119.13, [N/A], 2655, 11001, P2, Active, Not Active, Not Active
+2026/09/24 10:52:31.804, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 26, 8481, 12227, 68, 119.32, [N/A], 2632, 11001, P2, Active, Not Active, Not Active
+2026/09/24 10:52:32.813, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 26, 8481, 12227, 68, 119.39, [N/A], 2617, 11001, P2, Active, Not Active, Not Active
+2026/09/24 10:52:33.828, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 26, 8481, 12227, 68, 119.37, [N/A], 2602, 11001, P2, Active, Not Active, Not Active
+2026/09/24 10:52:34.844, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 26, 8481, 12227, 69, 119.63, [N/A], 2587, 11001, P2, Active, Not Active, Not Active
+2026/09/24 10:52:35.857, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 26, 8481, 12227, 69, 119.49, [N/A], 2587, 11001, P2, Active, Not Active, Not Active
+2026/09/24 10:52:36.866, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 26, 8481, 12227, 69, 119.70, [N/A], 2580, 11001, P2, Active, Not Active, Not Active
+2026/09/24 10:52:37.868, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 26, 8481, 12227, 69, 119.65, [N/A], 2580, 11001, P2, Active, Not Active, Not Active
+2026/09/24 10:52:38.876, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 26, 8481, 12227, 70, 116.31, [N/A], 2580, 11001, P2, Active, Not Active, Not Active
+2026/09/24 10:52:39.884, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 8481, 12227, 58, 24.13, [N/A], 255, 9001, P4, Not Active, Not Active, Not Active
+2026/09/24 10:52:40.890, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 2, 0, 8481, 12227, 57, 16.07, [N/A], 232, 9001, P4, Not Active, Not Active, Not Active
+2026/09/24 10:52:41.897, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 8481, 12227, 57, 15.01, [N/A], 240, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:52:42.912, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 8481, 12227, 57, 14.86, [N/A], 247, 9001, P4, Not Active, Not Active, Not Active
+2026/09/24 10:52:43.918, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 8481, 12227, 56, 14.91, [N/A], 247, 9001, P4, Not Active, Not Active, Not Active
+2026/09/24 10:52:44.927, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 5, 0, 8481, 12227, 56, 14.87, [N/A], 367, 810, P5, Not Active, Not Active, Not Active
+2026/09/24 10:52:45.932, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 5, 0, 8481, 12227, 56, 14.90, [N/A], 322, 810, P5, Not Active, Not Active, Not Active
+2026/09/24 10:52:46.941, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 8481, 12227, 56, 12.11, [N/A], 442, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:52:47.948, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 8481, 12227, 56, 11.34, [N/A], 495, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:52:48.949, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 7, 1, 8481, 12227, 56, 11.37, [N/A], 442, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:52:49.964, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 10, 8481, 12227, 56, 11.49, [N/A], 442, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:52:50.979, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 8481, 12227, 55, 11.32, [N/A], 502, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:52:51.994, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 8481, 12227, 55, 11.06, [N/A], 510, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:52:52.999, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 8481, 12227, 55, 11.36, [N/A], 472, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:52:54.012, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 8481, 12227, 55, 11.14, [N/A], 502, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:52:55.015, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 8481, 12227, 55, 11.26, [N/A], 510, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:52:56.017, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 8481, 12227, 55, 11.23, [N/A], 442, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:52:57.030, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 7, 1, 8481, 12227, 55, 11.09, [N/A], 435, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:52:58.041, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 8481, 12227, 55, 11.34, [N/A], 502, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:52:59.053, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 8481, 12227, 55, 11.43, [N/A], 480, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:00.068, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 8481, 12227, 55, 11.30, [N/A], 435, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:01.074, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 8, 1, 8481, 12227, 55, 11.29, [N/A], 442, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:02.079, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 7, 1, 8481, 12227, 55, 11.26, [N/A], 442, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:03.084, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 8481, 12227, 54, 11.12, [N/A], 442, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:04.088, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 8481, 12227, 55, 11.29, [N/A], 435, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:05.092, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 8481, 12227, 54, 11.11, [N/A], 502, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:06.101, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 6, 1, 8481, 12227, 54, 11.16, [N/A], 435, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:07.116, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 8, 1, 8481, 12227, 54, 11.22, [N/A], 442, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:08.131, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 3, 0, 292, 12227, 54, 10.96, [N/A], 390, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:09.132, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 7, 0, 10935, 12227, 55, 20.24, [N/A], 1800, 11001, P2, Not Active, Not Active, Not Active
+2026/09/24 10:53:10.144, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 7, 0, 10935, 12227, 55, 23.78, [N/A], 1867, 11001, P2, Not Active, Not Active, Not Active
+2026/09/24 10:53:11.149, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 6, 0, 10935, 12227, 55, 24.03, [N/A], 1005, 9001, P4, Not Active, Not Active, Not Active
+2026/09/24 10:53:12.156, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 7, 0, 10935, 12227, 55, 22.24, [N/A], 900, 9001, P5, Not Active, Not Active, Not Active
+2026/09/24 10:53:13.167, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 27, 10935, 12227, 68, 92.03, [N/A], 2752, 11001, P2, Active, Not Active, Not Active
+2026/09/24 10:53:14.170, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 97, 26, 10935, 12227, 69, 121.19, [N/A], 2737, 11001, P2, Active, Not Active, Not Active
+2026/09/24 10:53:15.174, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 26, 10935, 12227, 69, 119.09, [N/A], 2700, 11001, P2, Active, Not Active, Not Active
+2026/09/24 10:53:16.189, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 26, 10935, 12227, 69, 119.08, [N/A], 2670, 11001, P2, Active, Not Active, Not Active
+2026/09/24 10:53:17.202, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 99, 31, 10935, 12227, 70, 119.59, [N/A], 2640, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:53:18.206, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 31, 10935, 12227, 70, 119.36, [N/A], 2625, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:53:19.221, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 31, 10935, 12227, 70, 119.43, [N/A], 2610, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:53:20.230, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 31, 10935, 12227, 70, 119.63, [N/A], 2602, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:53:21.240, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 31, 10935, 12227, 70, 119.59, [N/A], 2587, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:53:22.252, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 31, 10935, 12227, 71, 119.69, [N/A], 2587, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:53:23.263, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 31, 10935, 12227, 71, 119.65, [N/A], 2580, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:53:24.273, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 31, 10935, 12227, 71, 119.78, [N/A], 2580, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:53:25.279, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 31, 10935, 12227, 71, 119.81, [N/A], 2572, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:53:26.281, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 31, 10935, 12227, 71, 119.81, [N/A], 2565, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:53:27.286, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 100, 31, 10935, 12227, 72, 119.80, [N/A], 2565, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:53:28.292, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 10935, 12227, 61, 52.64, [N/A], 255, 9001, P4, Not Active, Not Active, Not Active
+2026/09/24 10:53:29.294, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 10935, 12227, 60, 16.07, [N/A], 247, 9001, P4, Not Active, Not Active, Not Active
+2026/09/24 10:53:30.304, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 10935, 12227, 59, 15.36, [N/A], 255, 9001, P4, Not Active, Not Active, Not Active
+2026/09/24 10:53:31.315, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 10935, 12227, 59, 15.16, [N/A], 232, 9001, P4, Not Active, Not Active, Not Active
+2026/09/24 10:53:32.321, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 10935, 12227, 59, 15.10, [N/A], 247, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:53:33.324, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 10935, 12227, 58, 15.09, [N/A], 255, 9001, P4, Active, Not Active, Not Active
+2026/09/24 10:53:34.326, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 5, 1, 10935, 12227, 58, 15.36, [N/A], 337, 810, P5, Not Active, Not Active, Not Active
+2026/09/24 10:53:35.340, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 5, 1, 10935, 12227, 58, 14.98, [N/A], 375, 810, P5, Not Active, Not Active, Not Active
+2026/09/24 10:53:36.350, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 10935, 12227, 58, 13.16, [N/A], 435, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:37.355, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 10935, 12227, 58, 11.44, [N/A], 502, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:38.359, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 10935, 12227, 58, 11.63, [N/A], 502, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:39.363, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 8, 1, 10935, 12227, 57, 11.52, [N/A], 435, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:40.376, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 10935, 12227, 57, 11.42, [N/A], 442, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:41.389, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 10935, 12227, 57, 11.78, [N/A], 435, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:42.395, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 10935, 12227, 57, 11.52, [N/A], 435, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:43.396, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 10935, 12227, 57, 11.44, [N/A], 442, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:44.410, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 10935, 12227, 57, 11.53, [N/A], 435, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:45.425, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 10935, 12227, 57, 11.38, [N/A], 442, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:46.426, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 5, 1, 10935, 12227, 57, 11.13, [N/A], 442, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:47.438, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 10935, 12227, 57, 11.27, [N/A], 450, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:48.451, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 5, 1, 10935, 12227, 56, 11.26, [N/A], 442, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:49.452, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 5, 1, 10935, 12227, 56, 11.24, [N/A], 442, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:50.462, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 10935, 12227, 56, 11.38, [N/A], 442, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:51.463, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 10935, 12227, 56, 11.50, [N/A], 502, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:52.472, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 10935, 12227, 56, 11.80, [N/A], 502, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:53.485, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 10935, 12227, 56, 11.78, [N/A], 502, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:54.496, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 6, 1, 10935, 12227, 56, 11.58, [N/A], 510, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:55.498, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 10935, 12227, 56, 11.69, [N/A], 502, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:56.502, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 10935, 12227, 56, 11.69, [N/A], 517, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:57.504, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 10935, 12227, 56, 11.63, [N/A], 502, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:58.516, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 10935, 12227, 56, 11.79, [N/A], 502, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:53:59.517, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 10935, 12227, 56, 11.59, [N/A], 502, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:54:00.520, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 1, 10935, 12227, 56, 11.65, [N/A], 502, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:54:01.522, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 7, 1, 10935, 12227, 55, 11.60, [N/A], 502, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:54:02.527, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 6, 1, 10935, 12227, 55, 11.59, [N/A], 495, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:54:03.532, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 10, 4, 10935, 12227, 56, 11.82, [N/A], 442, 405, P8, Not Active, Not Active, Not Active
+2026/09/24 10:54:04.533, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 3, 0, 0, 12227, 55, 11.26, [N/A], 345, 405, P8, Not Active, Not Active, Not Active

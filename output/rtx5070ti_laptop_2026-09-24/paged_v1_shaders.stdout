@@ -1,0 +1,140 @@
+C:\TOMWERKPLEKTORENTJE\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\shaders\mutate.comp
+C:\TOMWERKPLEKTORENTJE\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\shaders\evolve.comp
+C:\TOMWERKPLEKTORENTJE\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\shaders\prepare.comp
+C:\TOMWERKPLEKTORENTJE\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\shaders\slope.comp
+C:\TOMWERKPLEKTORENTJE\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\shaders\combine.comp
+C:\TOMWERKPLEKTORENTJE\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\shaders\geometry.comp
+C:\TOMWERKPLEKTORENTJE\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\shaders\finish.comp
+[
+  {
+    "shader": "mutate",
+    "bytes": 50848,
+    "sha256": "93347d6b6dbed4391a66364e632c086e2a54cf57c7d76e33bb6764652c7be96e",
+    "spirv_validation_executed": true,
+    "preserved_math_functions": [
+      "dw_div(f1;f1;",
+      "dw_sqrt(f1;",
+      "dw_trig_reduce(f1;u1;",
+      "dw_sin(f1;",
+      "dw_cos(f1;",
+      "dw_exp(f1;",
+      "dw_shape(u1;f1;f1;f1;f1;f1;",
+      "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;",
+      "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;",
+      "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;"
+    ]
+  },
+  {
+    "shader": "evolve",
+    "bytes": 85680,
+    "sha256": "b927d508ab682d4875872fcdd43cbcc88a132f470ebfbf1023575ec1a3b98374",
+    "spirv_validation_executed": true,
+    "preserved_math_functions": [
+      "dw_div(f1;f1;",
+      "dw_sqrt(f1;",
+      "dw_trig_reduce(f1;u1;",
+      "dw_sin(f1;",
+      "dw_cos(f1;",
+      "dw_exp(f1;",
+      "dw_shape(u1;f1;f1;f1;f1;f1;",
+      "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;",
+      "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;",
+      "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;",
+      "dw_geometry(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;",
+      "dw_derivative(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Config-u1-u1-u1-u1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;u1;"
+    ]
+  },
+  {
+    "shader": "prepare",
+    "bytes": 49344,
+    "sha256": "2ab56307a8b6845a4fb6683a6d2ab4028b862298fa54d848f6423152a4a72cc5",
+    "spirv_validation_executed": true,
+    "preserved_math_functions": [
+      "dw_div(f1;f1;",
+      "dw_sqrt(f1;",
+      "dw_trig_reduce(f1;u1;",
+      "dw_sin(f1;",
+      "dw_cos(f1;",
+      "dw_exp(f1;",
+      "dw_shape(u1;f1;f1;f1;f1;f1;",
+      "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;",
+      "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;",
+      "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;"
+    ]
+  },
+  {
+    "shader": "slope",
+    "bytes": 68596,
+    "sha256": "7d2d16d04c4dff39f0868dcc2f2ba2395ba532605236025119b191badc6cb0d7",
+    "spirv_validation_executed": true,
+    "preserved_math_functions": [
+      "dw_div(f1;f1;",
+      "dw_sqrt(f1;",
+      "dw_trig_reduce(f1;u1;",
+      "dw_sin(f1;",
+      "dw_cos(f1;",
+      "dw_exp(f1;",
+      "dw_shape(u1;f1;f1;f1;f1;f1;",
+      "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;",
+      "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;",
+      "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;",
+      "dw_geometry(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;",
+      "dw_derivative(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Config-u1-u1-u1-u1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;u1;"
+    ]
+  },
+  {
+    "shader": "combine",
+    "bytes": 50104,
+    "sha256": "34cf23d5f234900150e34bf02ad448599d406e95e5fea6282ab08d2bd9b718c2",
+    "spirv_validation_executed": true,
+    "preserved_math_functions": [
+      "dw_div(f1;f1;",
+      "dw_sqrt(f1;",
+      "dw_trig_reduce(f1;u1;",
+      "dw_sin(f1;",
+      "dw_cos(f1;",
+      "dw_exp(f1;",
+      "dw_shape(u1;f1;f1;f1;f1;f1;",
+      "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;",
+      "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;",
+      "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;"
+    ]
+  },
+  {
+    "shader": "geometry",
+    "bytes": 47432,
+    "sha256": "1dbaf8ad87ca584815d0e0568cf0368a2ff46a4b56d6c1601817ed89fd3ff243",
+    "spirv_validation_executed": true,
+    "preserved_math_functions": [
+      "dw_div(f1;f1;",
+      "dw_sqrt(f1;",
+      "dw_trig_reduce(f1;u1;",
+      "dw_sin(f1;",
+      "dw_cos(f1;",
+      "dw_exp(f1;",
+      "dw_shape(u1;f1;f1;f1;f1;f1;",
+      "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;",
+      "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;",
+      "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;",
+      "dw_geometry(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;"
+    ]
+  },
+  {
+    "shader": "finish",
+    "bytes": 56668,
+    "sha256": "afb21dc7ea7c5d60d8d9d566f374d75a8fd7b3b662bef02ecb4c48e2810d63c1",
+    "spirv_validation_executed": true,
+    "preserved_math_functions": [
+      "dw_div(f1;f1;",
+      "dw_sqrt(f1;",
+      "dw_trig_reduce(f1;u1;",
+      "dw_sin(f1;",
+      "dw_cos(f1;",
+      "dw_exp(f1;",
+      "dw_shape(u1;f1;f1;f1;f1;f1;",
+      "dw_body(f1;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;",
+      "dw_field(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;u1;",
+      "dw_apply(struct-State-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u1-f1-f1-f1-f11;struct-Operator-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-f1-u1-u1-u1-u11;f1;"
+    ]
+  }
+]

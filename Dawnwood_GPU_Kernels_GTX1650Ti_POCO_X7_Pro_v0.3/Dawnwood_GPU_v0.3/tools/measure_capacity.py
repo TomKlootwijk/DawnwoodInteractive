@@ -46,7 +46,7 @@ def available_memory():
             "source": "/proc/meminfo MemAvailable"}
 
 
-def policy(device, host, fraction, reserve, granularity):
+def policy(device, host, fraction, reserve, granularity, streamed=False):
     heaps = {int(h["index"]): h for h in device["heaps"]}
     indices = device.get("state_buffer_heaps")
     inferred = False
@@ -73,7 +73,7 @@ def policy(device, host, fraction, reserve, granularity):
         # Future candidates can be larger than the one-state probe. Reserve the
         # full bounded scratch payload, even for candidates below this limit.
         scratch_allowance = scratch_record_bytes * scratch_dispatch_limit
-    limits = {"storage_buffer_range": int(device["max_storage_buffer_range"]) // 128,
+    limits = {"state_addressing": int(device.get("max_state_records", int(device["max_storage_buffer_range"]) // 128)),
               "uint32_state_count": (1 << 32) - 1}
     allocation_limit = device.get("max_memory_allocation_size")
     if allocation_limit:
@@ -92,15 +92,19 @@ def policy(device, host, fraction, reserve, granularity):
                           "evolution_scratch_allowance_bytes": scratch_allowance})
     # Two GPU records plus one transient CPU snapshot on UMA; only the CPU
     # snapshot on discrete hardware. Runtime uses a bounded 16 MiB staging area.
-    host_bytes_per_state = 384 if unified else 128
+    host_bytes_per_state = (256 if unified else 0) if streamed else (384 if unified else 128)
     host_scratch_allowance = scratch_allowance if unified else 0
     host_usable = max(0, int(.85 * host["available_bytes"]) - reserve - 16 * MIB - host_scratch_allowance)
-    limits["physical_host_memory"] = host_usable // host_bytes_per_state
+    host_chunk_allowance = 8 * MIB if streamed else 0
+    host_usable = max(0, host_usable - host_chunk_allowance)
+    limits["physical_host_memory"] = (host_usable // host_bytes_per_state if host_bytes_per_state
+                                      else ((1 << 32) - 1 if host_usable else 0))
     target = min(limits.values()) // 64 * 64
     return {"target_count": target, "limiting_factor": min(limits, key=limits.get),
             "count_limits": limits, "state_heaps": indices, "heap_selection_inferred": inferred,
             "unified_memory_accounting": unified, "device_type": device_type,
             "host_bytes_per_state_at_peak": host_bytes_per_state, "host_memory": host,
+            "streamed_host_state": streamed, "host_state_chunk_allowance_bytes": host_chunk_allowance,
             "heap_policy": heap_rows, "gpu_budget_fraction": fraction,
             "host_available_fraction": .85, "reserve_bytes": reserve,
             "staging_allowance_bytes": 16 * MIB, "refinement_count_granularity": granularity,
@@ -150,6 +154,7 @@ def main():
     parser.add_argument("--steps", type=int, default=2)
     parser.add_argument("--granularity", type=int, default=65536, help="Refinement resolution in full states")
     parser.add_argument("--timeout", type=float, default=600, help="Per-process seconds; timeout stops measurement")
+    parser.add_argument("--stream", action="store_true", help="Use bounded host initialization and complete streamed readback")
     args = parser.parse_args()
     if not (0 < args.budget_fraction <= .98) or args.reserve_mib < 0 or args.steps < 1 or args.steps > 0xffffffff:
         parser.error("Require 0 < budget fraction <= .98, reserve >= 0, and 1..UINT32_MAX steps")
@@ -168,7 +173,7 @@ def main():
                "numerical_equivalence_claimed": False, "requested_epochs_per_candidate": args.steps,
                "binary": binary, "binary_sha256": binary_hash,
                "started_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
-               "device_selector": args.device, "points": points, "policies": policies}
+               "device_selector": args.device, "streamed_host_state": args.stream, "points": points, "policies": policies}
 
     def run(name, command):
         full_command = [binary] + command + common
@@ -208,7 +213,9 @@ def main():
                 fatal, stop = True, "Physical-device probe failed; see raw evidence"
                 break
             host = available_memory()
-            current = policy(device, host, args.budget_fraction, args.reserve_mib * MIB, args.granularity)
+            if args.stream and "host_state_chunk_bytes" not in device:
+                raise RuntimeError("This executable does not report support for bounded host state streaming")
+            current = policy(device, host, args.budget_fraction, args.reserve_mib * MIB, args.granularity, args.stream)
             policies.append(current)
             target = current["target_count"]
             if upper is not None:
@@ -224,7 +231,7 @@ def main():
                 break
             print(f"Advancing {candidate:,} complete states for {args.steps} epochs; policy target {target:,}", flush=True)
             record = run(f"run_{attempt:03d}_{candidate}", ["run", "--backend", "vulkan", "--count", str(candidate),
-                         "--steps", str(args.steps), "--batch", "1"])
+                         "--steps", str(args.steps), "--batch", "1"] + (["--stream"] if args.stream else []))
             if completed(record, candidate, args.steps):
                 report, best = record["report"], candidate
                 points.append({"count": candidate, "epochs": args.steps, "state_payload_bytes": 128 * candidate,

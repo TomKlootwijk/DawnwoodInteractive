@@ -5,6 +5,7 @@ Each name is immutable so a later attempt cannot overwrite a failed observation.
 """
 import argparse
 import csv
+import ctypes
 import datetime
 import hashlib
 import json
@@ -44,6 +45,7 @@ def main():
     hidden = subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0
     monitor = None
     samples = []
+    process_memory = []
     stop_reason = []
     telemetry_fields = ["timestamp", "name", "utilization.gpu", "utilization.memory",
                         "memory.used", "memory.total", "temperature.gpu", "power.draw",
@@ -72,6 +74,22 @@ def main():
                             continue
                         sample = dict(zip(telemetry_fields, row))
                         samples.append(sample)
+                        if os.name == "nt" and process.poll() is None:
+                            class MemoryCounters(ctypes.Structure):
+                                _fields_ = [("cb", ctypes.c_uint32), ("faults", ctypes.c_uint32)] + [
+                                    (name, ctypes.c_size_t) for name in ("peak_working_set", "working_set",
+                                        "peak_paged_pool", "paged_pool", "peak_nonpaged_pool", "nonpaged_pool",
+                                        "commit", "peak_commit", "private_commit")]
+                            counters = MemoryCounters()
+                            counters.cb = ctypes.sizeof(counters)
+                            query = ctypes.windll.psapi.GetProcessMemoryInfo
+                            query.argtypes = [ctypes.c_void_p, ctypes.c_void_p, ctypes.c_uint32]
+                            query.restype = ctypes.c_int
+                            if query(int(process._handle), ctypes.byref(counters), counters.cb):
+                                process_memory.append({"timestamp": sample["timestamp"],
+                                    "working_set_bytes": counters.working_set,
+                                    "lifetime_peak_working_set_bytes": counters.peak_working_set,
+                                    "private_commit_bytes": counters.private_commit})
                         try:
                             if float(sample["temperature.gpu"]) >= args.temperature_stop and process.poll() is None:
                                 stop_reason.append("GPU temperature reached the configured stop threshold")
@@ -111,6 +129,12 @@ def main():
         for key in telemetry_fields[12:]:
             summary[key] = {"active_samples": sum(row[key] == "Active" for row in samples)}
         record["telemetry"] = summary
+        if process_memory:
+            record["process_memory"] = {
+                "source": "Windows GetProcessMemoryInfo for the measured child process",
+                "sample_count": len(process_memory),
+                "peak_working_set_bytes": max(x["lifetime_peak_working_set_bytes"] for x in process_memory),
+                "max_sampled_private_commit_bytes": max(x["private_commit_bytes"] for x in process_memory)}
     try:
         report = json.loads(stem.with_suffix(".stdout").read_text(encoding="utf-8"))
         record["report_passed"] = report.get("passed", report.get("health", {}).get("passed"))

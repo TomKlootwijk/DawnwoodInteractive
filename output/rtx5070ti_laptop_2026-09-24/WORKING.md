@@ -19,10 +19,31 @@ Completed evidence:
   digests (`tuning_sweep.json`). These are exploratory timings, not a final
   paired speedup measurement.
 
-Remaining: address single-buffer and host-snapshot capacity constraints, retain
-only measured tuning improvements, validate changed paths and boundary cases,
-run sustained high-load and capacity campaigns, package the identified binary,
-and publish a final report with the raw evidence and reproduction commands.
+Further completed evidence:
+
+- Paired 1,048,576-state × 64-epoch comparison: median device time falls from
+  6.396526464 s to 5.786616128 s (10.54% higher throughput), with matching full
+  output digests. RTX defaults are now 32 lanes and 1,048,576 states/dispatch.
+- Two physical pages preserve one logical population. Bounded initialization
+  and complete readback use an 8 MiB host-state chunk. Normal, streamed and
+  preceding-build checkpoints for 8,190 states × 16 epochs are byte-identical.
+- Final runtime 0.5.1-rtx1 passes the existing suite and bitwise per-epoch
+  comparisons at 257 × 4,096, 4,096 × 256 and 1,048,577 × 2; forced page splits
+  and both schedules also pass. Core and explicitly enabled synchronization
+  validation report zero errors and warnings.
+- The final capacity campaign completes 43,609,664 states × four epochs with
+  complete readback. A second page layout gives the same whole-population
+  digest with core/synchronization validation enabled. This reaches the current
+  98%-budget-minus-32-MiB policy, not an absolute hardware maximum.
+- The first final-suite attempt exposed the old Python memory-accounting
+  helper's 65,536-dispatch cap. Its bound now matches the configurable runtime;
+  `final_claims_r2/` passes. The failed attempt remains preserved.
+
+Remaining: finish the running 43,609,664-state × 177-epoch sustained campaign,
+inspect its full readback, package the exact binary, and publish the final
+report, provenance, manifests and reproduction commands. The sustained process
+was launched by the ignored `tmp/rtx-build/sustain.py`; no result is assumed
+while it is running.
 
 Build dependencies (workspace-local, ignored under `tmp/`):
 

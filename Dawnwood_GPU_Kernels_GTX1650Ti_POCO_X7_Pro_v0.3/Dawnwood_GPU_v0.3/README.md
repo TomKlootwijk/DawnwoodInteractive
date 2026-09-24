@@ -1,4 +1,15 @@
-# Dawnwood Interactive — Numerical GPU Kernel, v0.5.0
+# Dawnwood Interactive — Numerical GPU Runtime, v0.5.1 RTX edition
+
+The current Windows edition is **0.5.1-rtx1**, for the **RTX 5070 Ti Laptop GPU**.
+It keeps numerical profile **DWI-N1-0.5** and adds measured workgroup/dispatch
+tuning, two-page state buffers and bounded host-state streaming. Read
+[`docs/RTX5070TI_v0.5.1.md`](docs/RTX5070TI_v0.5.1.md) for the changed runtime,
+commands and compatibility limits. The dated campaign lives in the repository's
+`output/rtx5070ti_laptop_2026-09-24/`; the standalone RTX package includes it as
+`evidence/`. The supplied old Windows and Android binaries remain identified
+v0.5 artifacts; the new binary is `bin/windows-rtx5070ti/dawnwood.exe`.
+
+## Historical v0.5 numerical campaign
 
 **Numerical validation: pass for the recorded workloads on both physical devices, 23 September 2026.** Current GTX and POCO CPU/GPU comparisons have zero bitwise differences at unchanged tolerances, including 257 states over 1,024 epochs on both. The POCO also passes 4,096 × 256 and 65,537 × four; initial Mali pipeline failures remain recorded. Read **`docs/VALIDATION_v0.5.md`** for artifact identities, exact scope, performance costs and the quick claim table. The source's full self-defining architecture and stronger physical/universality claims remain unestablished.
 

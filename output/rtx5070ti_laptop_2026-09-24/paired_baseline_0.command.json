@@ -1,0 +1,24 @@
+{
+  "command": [
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-build\\dawnwood-baseline.exe",
+    "run",
+    "--device",
+    "RTX 5070 Ti",
+    "--count",
+    "1048576",
+    "--steps",
+    "64",
+    "--batch",
+    "8"
+  ],
+  "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+  "utc": "2026-09-24T08:45:46.826285+00:00",
+  "environment": {
+    "DAWNWOOD_DISPATCH_STATES": "65536",
+    "DAWNWOOD_WORKGROUP_SIZE": "64"
+  },
+  "executable_sha256": "f58c4bc0a9676a5d0aee983eb05c1d8a937360293a2de6971f23928a6524d570",
+  "exit_code": 0,
+  "process_wall_seconds": 8.4639016000001,
+  "report_passed": true
+}

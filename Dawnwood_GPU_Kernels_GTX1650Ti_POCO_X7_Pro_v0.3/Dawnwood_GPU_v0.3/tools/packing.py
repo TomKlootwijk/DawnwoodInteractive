@@ -59,18 +59,20 @@ def memory_model(count:int,operators:int=31)->dict:
 
 def memory_model_v05(count:int,operators:int=31,*,max_image_dimension_2d:int|None=None,
                      split_evolution:bool=False,state_dispatch_limit:int=65536)->dict:
-    """v0.5 resource payload arithmetic, not measured Vulkan allocations.
+    """v0.5-compatible resource payload arithmetic, not measured allocations.
 
     Match the runtime's four RGBA32_UINT texels per operator, at most 256
     operators per row, reusable staging capped at 16 MiB, and optional bounded
     split-evolution scratch (96 bytes per active chunk state). Supplying the
     probed image dimension applies that limit; omitting it models the normal
-    256-record row cap without asserting device capability.
+    256-record row cap without asserting device capability. Version 0.5.1 can
+    configure up to 4,194,304 states per dispatch; the legacy default remains
+    65,536. Paging changes allocation count, not the two logical state payloads.
     """
     if type(count) is not int or type(operators) is not int or count<=0 or operators<31:
         raise ValueError('Positive integer count and at least 31 integer operators required')
-    if type(split_evolution) is not bool or type(state_dispatch_limit) is not int or not 0<state_dispatch_limit<=65536:
-        raise ValueError('Split evolution requires a bool; state dispatch limit must be 1..65536')
+    if type(split_evolution) is not bool or type(state_dispatch_limit) is not int or not 0<state_dispatch_limit<=4194304:
+        raise ValueError('Split evolution requires a bool; state dispatch limit must be 1..4194304')
     per_row=min(256,operators)
     if max_image_dimension_2d is not None:
         if type(max_image_dimension_2d) is not int or max_image_dimension_2d<4:

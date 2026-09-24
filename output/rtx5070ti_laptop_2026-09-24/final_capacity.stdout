@@ -1,0 +1,33 @@
+Advancing 65,536 complete states for 4 epochs; policy target 43,609,664
+Completed: 65,536 states, 0.022225 kernel seconds
+Advancing 131,072 complete states for 4 epochs; policy target 43,609,664
+Completed: 131,072 states, 0.042642 kernel seconds
+Advancing 262,144 complete states for 4 epochs; policy target 43,609,664
+Completed: 262,144 states, 0.083590 kernel seconds
+Advancing 524,288 complete states for 4 epochs; policy target 43,609,664
+Completed: 524,288 states, 0.168032 kernel seconds
+Advancing 1,048,576 complete states for 4 epochs; policy target 43,609,664
+Completed: 1,048,576 states, 0.430537 kernel seconds
+Advancing 2,097,152 complete states for 4 epochs; policy target 43,609,664
+Completed: 2,097,152 states, 0.661846 kernel seconds
+Advancing 4,194,304 complete states for 4 epochs; policy target 43,609,664
+Completed: 4,194,304 states, 1.405367 kernel seconds
+Advancing 8,388,608 complete states for 4 epochs; policy target 43,609,664
+Completed: 8,388,608 states, 2.834775 kernel seconds
+Advancing 16,777,216 complete states for 4 epochs; policy target 43,609,664
+Completed: 16,777,216 states, 5.663133 kernel seconds
+Advancing 33,554,432 complete states for 4 epochs; policy target 43,609,664
+Completed: 33,554,432 states, 11.625932 kernel seconds
+Advancing 43,609,664 complete states for 4 epochs; policy target 43,609,664
+Completed: 43,609,664 states, 14.997189 kernel seconds
+Dawnwood full-state capacity measurement
+
+Highest completed population: 43,609,664 states.
+Every counted state advanced 4 epochs; full readback health and digests were required.
+Stopping condition: Current memory policy boundary reached.
+This is a current-budget policy result, not an absolute hardware maximum.
+State payload: 5323.45 MiB; two GPU copies: 10646.89 MiB.
+Kernel time: 14.997189 s (Vulkan device timestamps); 11,631,424 state updates/s.
+Whole process: 56.250 s, including setup and readback.
+Kernel timing follows the recorded device timer; initialization and readback are outside its scope.
+Memory capacity does not establish bandwidth, cache residence, occupancy, or CPU/GPU numerical equivalence.

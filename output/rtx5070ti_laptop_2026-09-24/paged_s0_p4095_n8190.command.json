@@ -1,0 +1,27 @@
+{
+  "command": [
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-build\\dawnwood-paged.exe",
+    "verify",
+    "--device",
+    "RTX 5070 Ti",
+    "--count",
+    "8190",
+    "--steps",
+    "16"
+  ],
+  "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+  "utc": "2026-09-24T08:44:19.370501+00:00",
+  "environment": {
+    "DAWNWOOD_DISPATCH_STATES": "256",
+    "DAWNWOOD_SPLIT_EVOLUTION": "0",
+    "DAWNWOOD_STATE_PAGE_RECORDS": "4095",
+    "DAWNWOOD_VALIDATION": "1",
+    "DAWNWOOD_WORKGROUP_SIZE": "32",
+    "VK_LAYER_PATH": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin",
+    "VK_LAYER_VALIDATE_SYNC": "1"
+  },
+  "executable_sha256": "424d181c695466e23c832776a1aa02b4b9a37d9f2a36a3b78de71310fc6ff6e2",
+  "exit_code": 0,
+  "process_wall_seconds": 2.7097577000004094,
+  "report_passed": true
+}

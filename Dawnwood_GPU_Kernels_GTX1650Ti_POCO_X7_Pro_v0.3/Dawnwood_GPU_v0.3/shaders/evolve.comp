@@ -3,10 +3,9 @@
 #extension GL_EXT_control_flow_attributes : require
 #include "numeric_types.inc"
 layout(local_size_x=64,local_size_x_id=0) in;
-layout(std430,binding=0) readonly buffer SIn { State stateIn[]; };
-layout(std430,binding=1) writeonly buffer SOut { State stateOut[]; };
+#include "state_buffers.inc"
 #include "operator_texture.inc"
 layout(push_constant) uniform Parameters {Config cfg;};
 #define DW_OP_ARGUMENT
 #include "numeric_evolve.inc"
-void main(){dw_stage_operators();uint i=cfg.reserved0+gl_GlobalInvocationID.x;if(i>=cfg.count)return;stateOut[i]=dw_evolve(stateIn[i],cfg,i);}
+void main(){dw_stage_operators();uint i=cfg.reserved0+gl_GlobalInvocationID.x;if(i>=cfg.count)return;dw_state_out(i,dw_evolve(dw_state_in(i),cfg,i));}

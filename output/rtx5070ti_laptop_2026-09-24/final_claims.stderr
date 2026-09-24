@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\TOMWERKPLEKTORENTJE\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\tools\run_claims.py", line 77, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\TOMWERKPLEKTORENTJE\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\tools\run_claims.py", line 54, in main
+    current_memory=memory_model_v05(4096,max_image_dimension_2d=device.get('max_image_dimension_2d'),split_evolution=device.get('split_evolution',False),state_dispatch_limit=device.get('state_dispatch_limit',65536))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\TOMWERKPLEKTORENTJE\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\tools\packing.py", line 73, in memory_model_v05
+    raise ValueError('Split evolution requires a bool; state dispatch limit must be 1..65536')
+ValueError: Split evolution requires a bool; state dispatch limit must be 1..65536

@@ -1,0 +1,143 @@
+[
+  {
+    "name": "paired_baseline_0",
+    "variant": "baseline",
+    "seconds": 6.25612176,
+    "advance_wall_seconds": 6.3801017,
+    "process_wall_seconds": 8.4639016000001,
+    "digest": "d6079c7ee66453f0",
+    "health": {
+      "passed": true,
+      "first_invalid_record": "",
+      "nonfinite_state_values": 0,
+      "out_of_chart_states": 0,
+      "max_energy_error_from_source_seed_5": 2.76566e-05
+    }
+  },
+  {
+    "name": "paired_rtx262k_0",
+    "variant": "rtx262k",
+    "seconds": 5.801544032,
+    "advance_wall_seconds": 5.8400255,
+    "process_wall_seconds": 7.8294120000000476,
+    "digest": "d6079c7ee66453f0",
+    "health": {
+      "passed": true,
+      "first_invalid_record": "",
+      "checked_state_records": 1048576,
+      "nonfinite_state_values": 0,
+      "out_of_chart_states": 0,
+      "max_energy_error_from_source_seed_5": 2.76566e-05
+    }
+  },
+  {
+    "name": "paired_rtx1m_0",
+    "variant": "rtx1m",
+    "seconds": 5.786616128,
+    "advance_wall_seconds": 5.7975278,
+    "process_wall_seconds": 7.112060999999812,
+    "digest": "d6079c7ee66453f0",
+    "health": {
+      "passed": true,
+      "first_invalid_record": "",
+      "checked_state_records": 1048576,
+      "nonfinite_state_values": 0,
+      "out_of_chart_states": 0,
+      "max_energy_error_from_source_seed_5": 2.76566e-05
+    }
+  },
+  {
+    "name": "paired_rtx1m_1",
+    "variant": "rtx1m",
+    "seconds": 5.793856576,
+    "advance_wall_seconds": 5.8051569,
+    "process_wall_seconds": 7.106181900000593,
+    "digest": "d6079c7ee66453f0",
+    "health": {
+      "passed": true,
+      "first_invalid_record": "",
+      "checked_state_records": 1048576,
+      "nonfinite_state_values": 0,
+      "out_of_chart_states": 0,
+      "max_energy_error_from_source_seed_5": 2.76566e-05
+    }
+  },
+  {
+    "name": "paired_rtx262k_1",
+    "variant": "rtx262k",
+    "seconds": 5.848387136,
+    "advance_wall_seconds": 5.8876064,
+    "process_wall_seconds": 7.207942000000003,
+    "digest": "d6079c7ee66453f0",
+    "health": {
+      "passed": true,
+      "first_invalid_record": "",
+      "checked_state_records": 1048576,
+      "nonfinite_state_values": 0,
+      "out_of_chart_states": 0,
+      "max_energy_error_from_source_seed_5": 2.76566e-05
+    }
+  },
+  {
+    "name": "paired_baseline_1",
+    "variant": "baseline",
+    "seconds": 6.408430048,
+    "advance_wall_seconds": 6.5262399,
+    "process_wall_seconds": 7.857289099999434,
+    "digest": "d6079c7ee66453f0",
+    "health": {
+      "passed": true,
+      "first_invalid_record": "",
+      "nonfinite_state_values": 0,
+      "out_of_chart_states": 0,
+      "max_energy_error_from_source_seed_5": 2.76566e-05
+    }
+  },
+  {
+    "name": "paired_baseline_2",
+    "variant": "baseline",
+    "seconds": 6.396526464,
+    "advance_wall_seconds": 6.5114651,
+    "process_wall_seconds": 7.811530599999969,
+    "digest": "d6079c7ee66453f0",
+    "health": {
+      "passed": true,
+      "first_invalid_record": "",
+      "nonfinite_state_values": 0,
+      "out_of_chart_states": 0,
+      "max_energy_error_from_source_seed_5": 2.76566e-05
+    }
+  },
+  {
+    "name": "paired_rtx262k_2",
+    "variant": "rtx262k",
+    "seconds": 5.791138016,
+    "advance_wall_seconds": 5.828972,
+    "process_wall_seconds": 7.26497130000007,
+    "digest": "d6079c7ee66453f0",
+    "health": {
+      "passed": true,
+      "first_invalid_record": "",
+      "checked_state_records": 1048576,
+      "nonfinite_state_values": 0,
+      "out_of_chart_states": 0,
+      "max_energy_error_from_source_seed_5": 2.76566e-05
+    }
+  },
+  {
+    "name": "paired_rtx1m_2",
+    "variant": "rtx1m",
+    "seconds": 5.77615344,
+    "advance_wall_seconds": 5.790132,
+    "process_wall_seconds": 8.303700899999967,
+    "digest": "d6079c7ee66453f0",
+    "health": {
+      "passed": true,
+      "first_invalid_record": "",
+      "checked_state_records": 1048576,
+      "nonfinite_state_values": 0,
+      "out_of_chart_states": 0,
+      "max_energy_error_from_source_seed_5": 2.76566e-05
+    }
+  }
+]
