@@ -1,0 +1,14 @@
+{
+  "id": "spatial_clearance",
+  "name": "Point clearance from a sphere and an axis-aligned box",
+  "domain": "Euclidean geometry",
+  "description": "Check an explicit point against two ideal obstacles with a common minimum clearance, returning separate nearest-boundary witnesses.",
+  "values": {"x": 3.0, "y": 0.0, "z": 0.0},
+  "parameters": {"sphere_center": [0.0,0.0,0.0], "sphere_radius": 1.0, "box_center": [0.0,3.0,0.0], "box_half_extents": [1.0,1.0,1.0], "clearance_m": 0.25},
+  "value_units": {"x": "m", "y": "m", "z": "m"},
+  "parameter_units": {"sphere_center": "m", "sphere_radius": "m", "box_center": "m", "box_half_extents": "m", "clearance_m": "m"},
+  "assumptions": ["Ideal rigid sphere and axis-aligned box in Cartesian metre coordinates; obstacles and clearance are illustrative authored geometry.", "The moving object is a point, or clearance represents the radius of a spherical moving object.", "Box clearance uses its rounded Euclidean offset, not expansion of every box extent followed by a different shape.", "Each field is an exact analytic SDF of the allowed complement. Their conjunction is not presented as an exact distance to the combined feasible region.", "A nearest-boundary point for one obstacle need not satisfy the other constraint and is not a collision-free trajectory."],
+  "source_ids": [],
+  "field_definitions": ["sphere_radius+clearance_m-norm(point-sphere_center)", "clearance_m-(norm(max(abs(point-box_center)-box_half_extents,0))+min(max(abs(point-box_center)-box_half_extents),0))"],
+  "metric": "Euclidean R^3 in metres; negative fields indicate adequate clearance, zero indicates its boundary."
+}

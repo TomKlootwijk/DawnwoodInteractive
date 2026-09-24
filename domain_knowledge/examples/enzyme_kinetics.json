@@ -1,0 +1,14 @@
+{
+  "id": "enzyme_kinetics",
+  "name": "Michaelis-Menten initial-rate consistency",
+  "domain": "biochemical kinetics residual",
+  "description": "Check a supplied initial rate against a declared saturation-law model, explicitly as a residual rather than an SDF.",
+  "values": {"substrate_uM": 10.0, "rate_uM_per_s": 0.5},
+  "parameters": {"Km_uM": 10.0, "Vmax_uM_per_s": 1.0, "residual_tolerance": 0.01},
+  "value_units": {"substrate_uM": "uM", "rate_uM_per_s": "uM/s"},
+  "parameter_units": {"Km_uM": "uM", "Vmax_uM_per_s": "uM/s", "residual_tolerance": "fraction of Vmax"},
+  "assumptions": ["Km and Vmax are illustrative model parameters, not measured constants for a named enzyme.", "A nonnegative substrate concentration and positive Km/Vmax are required.", "Apply only when the specified initial-rate Michaelis-Menten law is appropriate at fixed experimental conditions; no inhibition, cooperativity or reversibility model is inferred.", "Vmax is a limiting rate and Km is not generally an equilibrium dissociation constant.", "The tolerance is an authored consistency threshold, not an estimated measurement uncertainty.", "A small residual neither identifies a mechanism nor validates an enzyme model against experiments."],
+  "source_ids": ["iupac_kinetics", "iupac_mechanism"],
+  "field_definitions": ["rate/Vmax - substrate/(Km+substrate): non-SDF residual", "-rate/Vmax", "rate/Vmax-1"],
+  "metric": "Residual reported in normalized rate units. For its derivative coordinates x=substrate/Km and y=rate/Vmax; gradient=(-1/(1+x)^2,1), which is not unit length."
+}

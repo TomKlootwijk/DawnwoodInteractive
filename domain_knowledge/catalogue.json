@@ -1,0 +1,59 @@
+{
+  "profile": "DW-Domain-0.1 CPU bindings",
+  "version": "0.1",
+  "execution": "Standard-library Python float64 reference evaluation. This evaluator does not compile or execute DWI-N1 GPU shaders; native integration has its own profile and evidence.",
+  "exactness": "exact_sdf labels an analytic Euclidean distance formula in the declared coordinates, evaluated with finite floating-point arithmetic. It does not claim an exact biochemical model or exact machine arithmetic.",
+  "composition": "All fields are checked separately. The boolean conjunction is not advertised as an exact SDF of the intersection. Boundary witnesses project onto one field only.",
+  "examples": ["enzyme_pool", "buffer_window", "enzyme_kinetics", "gpu_resource_budget", "spatial_clearance"],
+  "sources": {
+    "iupac_mechanism": {
+      "title": "IUPAC Gold Book: Michaelis-Menten mechanism",
+      "url": "https://goldbook.iupac.org/terms/view/M03893",
+      "supports": "The explicit E+S reversible binding to ES, followed by regeneration of E and product formation. Pool hyperplanes are derived for this stated mechanism under additional closed-system assumptions.",
+      "checked": "2026-09-24"
+    },
+    "iupac_kinetics": {
+      "title": "IUPAC Gold Book: Michaelis-Menten kinetics",
+      "url": "https://goldbook.iupac.org/terms/view/M03892",
+      "supports": "Initial-rate equation v=V*S/(Km+S), parameter meaning and limited kinetic conditions; no actual enzyme constants supplied by this catalogue.",
+      "checked": "2026-09-24"
+    },
+    "iupac_hh": {
+      "title": "IUPAC Gold Book: Henderson-Hasselbalch equation",
+      "url": "https://goldbook.iupac.org/terms/view/H02781",
+      "supports": "The acid/base ratio relation. The catalogue's log-activity form follows the activity equilibrium definition; concentration substitution needs an additional activity approximation.",
+      "checked": "2026-09-24"
+    },
+    "iupac_ph": {
+      "title": "IUPAC Gold Book: pH",
+      "url": "https://goldbook.iupac.org/terms/view/P04524",
+      "supports": "pH is defined using hydrogen-ion activity, with experimental conventions and uncertainty.",
+      "checked": "2026-09-24"
+    },
+    "iupac_acidity": {
+      "title": "IUPAC Gold Book: acidity constant",
+      "url": "https://goldbook.iupac.org/terms/view/A00080",
+      "supports": "Acid dissociation equilibrium and definition of Ka. Parameter pKa is illustrative unless replaced with an identified value at declared conditions.",
+      "checked": "2026-09-24"
+    },
+    "nist_thermodynamics": {
+      "title": "NIST: Recommendations for Terminology and Databases for Biochemical Thermodynamics",
+      "url": "https://www.nist.gov/publications/recommendations-terminology-and-databases-biochemical-thermodynamics",
+      "supports": "Distinguishes specific ionic species balances from transformed biochemical equations at fixed pH or other buffered conditions.",
+      "checked": "2026-09-24"
+    },
+    "vulkan_budget": {
+      "title": "Khronos: VkPhysicalDeviceMemoryBudgetPropertiesEXT",
+      "url": "https://docs.vulkan.org/refpages/latest/refpages/source/VkPhysicalDeviceMemoryBudgetPropertiesEXT.html",
+      "supports": "Budget and usage are driver estimates for heaps, not a promise of successful allocations. The example's inputs are authored values, not live device queries.",
+      "checked": "2026-09-24"
+    }
+  },
+  "mathematical_provenance": {
+    "halfspace": "Orthogonal projection: d=(a dot x-b)/norm(a), nearest boundary x-d*a/norm(a).",
+    "slab": "For low<=a dot x<=high: d=(abs(a dot x-(low+high)/2)-(high-low)/2)/norm(a).",
+    "sphere": "Euclidean sphere: d=norm(x-center)-radius.",
+    "box": "With q=abs(x-center)-half_extents: d=norm(max(q,0))+min(max(q),0).",
+    "authors_note": "The metric bindings and analytic projection derivations are explicit implementation mathematics, not formulas attributed to the chemical terminology sources. See docs/DOMAIN_FIELDS.md."
+  }
+}

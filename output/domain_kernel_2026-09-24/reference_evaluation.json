@@ -1,0 +1,1242 @@
+{
+  "cases": [
+    {
+      "name": "enzyme_pool",
+      "feasible": true,
+      "fields": [
+        {
+          "id": "enzyme_conservation",
+          "label": "Enzyme-moiety conservation",
+          "value": 0.0,
+          "kind": "exact_sdf",
+          "unit": "normalized concentration coordinate",
+          "inside": true,
+          "passes": true,
+          "constraint": "abs(value) <= tolerance",
+          "relation": "eq",
+          "tolerance": 1e-09,
+          "formula": "(E+ES-E_total)/(scale*sqrt(2))",
+          "metric": {
+            "axes": [
+              "E/scale",
+              "ES/scale",
+              "S/scale",
+              "P/scale"
+            ],
+            "point": [
+              0.4,
+              0.6,
+              8.4,
+              1.0
+            ],
+            "scale_uM": 1.0,
+            "type": "Euclidean"
+          },
+          "assumptions": [
+            "Illustrative species concentrations, not measured data.",
+            "Fixed volume; closed enzyme and substrate-moiety pools; no synthesis, degradation, inlet, outlet, or additional bound species.",
+            "One substrate moiety in ES and one in P; catalytic turnover regenerates E.",
+            "Species-level bookkeeping: this is not a complete elemental, charge, thermodynamic or kinetic model.",
+            "Buffered pH and transformed sums of species require a separate declared conservation model; do not impose hydrogen-ion conservation on a chemostatted pH buffer."
+          ],
+          "source_urls": [
+            "https://goldbook.iupac.org/terms/view/M03893",
+            "https://www.nist.gov/publications/recommendations-terminology-and-databases-biochemical-thermodynamics"
+          ],
+          "gradient": [
+            0.7071067811865475,
+            0.7071067811865475,
+            0.0,
+            0.0
+          ],
+          "gradient_norm": 0.9999999999999999,
+          "nearest_boundary": {
+            "point": [
+              0.4,
+              0.6,
+              8.4,
+              1.0
+            ],
+            "distance": 0.0,
+            "coordinates": [
+              "E/scale",
+              "ES/scale",
+              "S/scale",
+              "P/scale"
+            ],
+            "scope": "This individual field only; other constraints may fail."
+          }
+        },
+        {
+          "id": "substrate_conservation",
+          "label": "Substrate-moiety conservation",
+          "value": 0.0,
+          "kind": "exact_sdf",
+          "unit": "normalized concentration coordinate",
+          "inside": true,
+          "passes": true,
+          "constraint": "abs(value) <= tolerance",
+          "relation": "eq",
+          "tolerance": 1e-09,
+          "formula": "(ES+S+P-S_total)/(scale*sqrt(3))",
+          "metric": {
+            "axes": [
+              "E/scale",
+              "ES/scale",
+              "S/scale",
+              "P/scale"
+            ],
+            "point": [
+              0.4,
+              0.6,
+              8.4,
+              1.0
+            ],
+            "scale_uM": 1.0,
+            "type": "Euclidean"
+          },
+          "assumptions": [
+            "Illustrative species concentrations, not measured data.",
+            "Fixed volume; closed enzyme and substrate-moiety pools; no synthesis, degradation, inlet, outlet, or additional bound species.",
+            "One substrate moiety in ES and one in P; catalytic turnover regenerates E.",
+            "Species-level bookkeeping: this is not a complete elemental, charge, thermodynamic or kinetic model.",
+            "Buffered pH and transformed sums of species require a separate declared conservation model; do not impose hydrogen-ion conservation on a chemostatted pH buffer."
+          ],
+          "source_urls": [
+            "https://goldbook.iupac.org/terms/view/M03893",
+            "https://www.nist.gov/publications/recommendations-terminology-and-databases-biochemical-thermodynamics"
+          ],
+          "gradient": [
+            0.0,
+            0.5773502691896258,
+            0.5773502691896258,
+            0.5773502691896258
+          ],
+          "gradient_norm": 1.0000000000000002,
+          "nearest_boundary": {
+            "point": [
+              0.4,
+              0.6,
+              8.4,
+              1.0
+            ],
+            "distance": 0.0,
+            "coordinates": [
+              "E/scale",
+              "ES/scale",
+              "S/scale",
+              "P/scale"
+            ],
+            "scope": "This individual field only; other constraints may fail."
+          }
+        },
+        {
+          "id": "nonnegative_E",
+          "label": "E nonnegative",
+          "value": -0.4,
+          "kind": "exact_sdf",
+          "unit": "normalized concentration coordinate",
+          "inside": true,
+          "passes": true,
+          "constraint": "value <= tolerance",
+          "relation": "le",
+          "tolerance": 0.0,
+          "formula": "-E/scale",
+          "metric": {
+            "axes": [
+              "E/scale",
+              "ES/scale",
+              "S/scale",
+              "P/scale"
+            ],
+            "point": [
+              0.4,
+              0.6,
+              8.4,
+              1.0
+            ],
+            "scale_uM": 1.0,
+            "type": "Euclidean"
+          },
+          "assumptions": [
+            "Illustrative species concentrations, not measured data.",
+            "Fixed volume; closed enzyme and substrate-moiety pools; no synthesis, degradation, inlet, outlet, or additional bound species.",
+            "One substrate moiety in ES and one in P; catalytic turnover regenerates E.",
+            "Species-level bookkeeping: this is not a complete elemental, charge, thermodynamic or kinetic model.",
+            "Buffered pH and transformed sums of species require a separate declared conservation model; do not impose hydrogen-ion conservation on a chemostatted pH buffer."
+          ],
+          "source_urls": [
+            "https://goldbook.iupac.org/terms/view/M03893",
+            "https://www.nist.gov/publications/recommendations-terminology-and-databases-biochemical-thermodynamics"
+          ],
+          "gradient": [
+            -1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gradient_norm": 1.0,
+          "nearest_boundary": {
+            "point": [
+              0.0,
+              0.6,
+              8.4,
+              1.0
+            ],
+            "distance": 0.4,
+            "coordinates": [
+              "E/scale",
+              "ES/scale",
+              "S/scale",
+              "P/scale"
+            ],
+            "scope": "This individual field only; other constraints may fail."
+          }
+        },
+        {
+          "id": "nonnegative_ES",
+          "label": "ES nonnegative",
+          "value": -0.6,
+          "kind": "exact_sdf",
+          "unit": "normalized concentration coordinate",
+          "inside": true,
+          "passes": true,
+          "constraint": "value <= tolerance",
+          "relation": "le",
+          "tolerance": 0.0,
+          "formula": "-ES/scale",
+          "metric": {
+            "axes": [
+              "E/scale",
+              "ES/scale",
+              "S/scale",
+              "P/scale"
+            ],
+            "point": [
+              0.4,
+              0.6,
+              8.4,
+              1.0
+            ],
+            "scale_uM": 1.0,
+            "type": "Euclidean"
+          },
+          "assumptions": [
+            "Illustrative species concentrations, not measured data.",
+            "Fixed volume; closed enzyme and substrate-moiety pools; no synthesis, degradation, inlet, outlet, or additional bound species.",
+            "One substrate moiety in ES and one in P; catalytic turnover regenerates E.",
+            "Species-level bookkeeping: this is not a complete elemental, charge, thermodynamic or kinetic model.",
+            "Buffered pH and transformed sums of species require a separate declared conservation model; do not impose hydrogen-ion conservation on a chemostatted pH buffer."
+          ],
+          "source_urls": [
+            "https://goldbook.iupac.org/terms/view/M03893",
+            "https://www.nist.gov/publications/recommendations-terminology-and-databases-biochemical-thermodynamics"
+          ],
+          "gradient": [
+            0.0,
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "gradient_norm": 1.0,
+          "nearest_boundary": {
+            "point": [
+              0.4,
+              0.0,
+              8.4,
+              1.0
+            ],
+            "distance": 0.6,
+            "coordinates": [
+              "E/scale",
+              "ES/scale",
+              "S/scale",
+              "P/scale"
+            ],
+            "scope": "This individual field only; other constraints may fail."
+          }
+        },
+        {
+          "id": "nonnegative_S",
+          "label": "S nonnegative",
+          "value": -8.4,
+          "kind": "exact_sdf",
+          "unit": "normalized concentration coordinate",
+          "inside": true,
+          "passes": true,
+          "constraint": "value <= tolerance",
+          "relation": "le",
+          "tolerance": 0.0,
+          "formula": "-S/scale",
+          "metric": {
+            "axes": [
+              "E/scale",
+              "ES/scale",
+              "S/scale",
+              "P/scale"
+            ],
+            "point": [
+              0.4,
+              0.6,
+              8.4,
+              1.0
+            ],
+            "scale_uM": 1.0,
+            "type": "Euclidean"
+          },
+          "assumptions": [
+            "Illustrative species concentrations, not measured data.",
+            "Fixed volume; closed enzyme and substrate-moiety pools; no synthesis, degradation, inlet, outlet, or additional bound species.",
+            "One substrate moiety in ES and one in P; catalytic turnover regenerates E.",
+            "Species-level bookkeeping: this is not a complete elemental, charge, thermodynamic or kinetic model.",
+            "Buffered pH and transformed sums of species require a separate declared conservation model; do not impose hydrogen-ion conservation on a chemostatted pH buffer."
+          ],
+          "source_urls": [
+            "https://goldbook.iupac.org/terms/view/M03893",
+            "https://www.nist.gov/publications/recommendations-terminology-and-databases-biochemical-thermodynamics"
+          ],
+          "gradient": [
+            0.0,
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "gradient_norm": 1.0,
+          "nearest_boundary": {
+            "point": [
+              0.4,
+              0.6,
+              0.0,
+              1.0
+            ],
+            "distance": 8.4,
+            "coordinates": [
+              "E/scale",
+              "ES/scale",
+              "S/scale",
+              "P/scale"
+            ],
+            "scope": "This individual field only; other constraints may fail."
+          }
+        },
+        {
+          "id": "nonnegative_P",
+          "label": "P nonnegative",
+          "value": -1.0,
+          "kind": "exact_sdf",
+          "unit": "normalized concentration coordinate",
+          "inside": true,
+          "passes": true,
+          "constraint": "value <= tolerance",
+          "relation": "le",
+          "tolerance": 0.0,
+          "formula": "-P/scale",
+          "metric": {
+            "axes": [
+              "E/scale",
+              "ES/scale",
+              "S/scale",
+              "P/scale"
+            ],
+            "point": [
+              0.4,
+              0.6,
+              8.4,
+              1.0
+            ],
+            "scale_uM": 1.0,
+            "type": "Euclidean"
+          },
+          "assumptions": [
+            "Illustrative species concentrations, not measured data.",
+            "Fixed volume; closed enzyme and substrate-moiety pools; no synthesis, degradation, inlet, outlet, or additional bound species.",
+            "One substrate moiety in ES and one in P; catalytic turnover regenerates E.",
+            "Species-level bookkeeping: this is not a complete elemental, charge, thermodynamic or kinetic model.",
+            "Buffered pH and transformed sums of species require a separate declared conservation model; do not impose hydrogen-ion conservation on a chemostatted pH buffer."
+          ],
+          "source_urls": [
+            "https://goldbook.iupac.org/terms/view/M03893",
+            "https://www.nist.gov/publications/recommendations-terminology-and-databases-biochemical-thermodynamics"
+          ],
+          "gradient": [
+            0.0,
+            0.0,
+            0.0,
+            -1.0
+          ],
+          "gradient_norm": 1.0,
+          "nearest_boundary": {
+            "point": [
+              0.4,
+              0.6,
+              8.4,
+              0.0
+            ],
+            "distance": 1.0,
+            "coordinates": [
+              "E/scale",
+              "ES/scale",
+              "S/scale",
+              "P/scale"
+            ],
+            "scope": "This individual field only; other constraints may fail."
+          }
+        }
+      ]
+    },
+    {
+      "name": "buffer_window",
+      "feasible": true,
+      "fields": [
+        {
+          "id": "pH_window",
+          "label": "Specified pH interval",
+          "value": -0.14142135623730961,
+          "kind": "exact_sdf",
+          "unit": "log10-activity coordinate",
+          "inside": true,
+          "passes": true,
+          "constraint": "value <= tolerance",
+          "relation": "le",
+          "tolerance": 0.0,
+          "formula": "(abs(pKa+log10_base_activity-log10_acid_activity-(pH_min+pH_max)/2)-(pH_max-pH_min)/2)/sqrt(2)",
+          "metric": {
+            "axes": [
+              "log10_acid_activity",
+              "log10_base_activity"
+            ],
+            "point": [
+              -3.0,
+              -3.0
+            ],
+            "type": "Euclidean in logarithmic activities"
+          },
+          "assumptions": [
+            "pKa=7 is illustrative; no actual acid, buffer, temperature or ionic-strength measurement is asserted.",
+            "Single declared acid dissociation at equilibrium; thermodynamic Ka and dimensionless activities use compatible standard states.",
+            "pH=pKa+log10(a_base)-log10(a_acid); the evaluator accepts logarithmic activities directly.",
+            "Replacing activities with concentrations requires an explicitly justified activity-coefficient approximation.",
+            "The field is exact in the stated log-coordinate metric, not Euclidean concentration space. It does not calculate buffer capacity, solve electroneutrality or predict missing species."
+          ],
+          "source_urls": [
+            "https://goldbook.iupac.org/terms/view/H02781",
+            "https://goldbook.iupac.org/terms/view/P04524",
+            "https://goldbook.iupac.org/terms/view/A00080"
+          ],
+          "gradient": null,
+          "nearest_boundary": {
+            "point": [
+              -3.1,
+              -2.9
+            ],
+            "distance": 0.14142135623730961,
+            "coordinates": [
+              "log10_acid_activity",
+              "log10_base_activity"
+            ],
+            "scope": "This individual field only; other constraints may fail."
+          }
+        }
+      ]
+    },
+    {
+      "name": "enzyme_kinetics",
+      "feasible": true,
+      "fields": [
+        {
+          "id": "kinetic_consistency",
+          "label": "Initial-rate law residual",
+          "value": 0.0,
+          "kind": "residual",
+          "unit": "fraction of Vmax",
+          "inside": true,
+          "passes": true,
+          "constraint": "abs(value) <= tolerance",
+          "relation": "eq",
+          "tolerance": 0.01,
+          "formula": "rate/Vmax - substrate/(Km+substrate)",
+          "metric": {
+            "axes": [
+              "substrate/Km",
+              "rate/Vmax"
+            ],
+            "point": [
+              1.0,
+              0.5
+            ],
+            "type": "Euclidean in normalized concentration/rate coordinates; kinetic residual is not distance"
+          },
+          "assumptions": [
+            "Km and Vmax are illustrative model parameters, not measured constants for a named enzyme.",
+            "A nonnegative substrate concentration and positive Km/Vmax are required.",
+            "Apply only when the specified initial-rate Michaelis-Menten law is appropriate at fixed experimental conditions; no inhibition, cooperativity or reversibility model is inferred.",
+            "Vmax is a limiting rate and Km is not generally an equilibrium dissociation constant.",
+            "The tolerance is an authored consistency threshold, not an estimated measurement uncertainty.",
+            "A small residual neither identifies a mechanism nor validates an enzyme model against experiments."
+          ],
+          "source_urls": [
+            "https://goldbook.iupac.org/terms/view/M03892",
+            "https://goldbook.iupac.org/terms/view/M03893"
+          ],
+          "gradient": [
+            -0.25,
+            1.0
+          ],
+          "gradient_norm": 1.0307764064044151,
+          "nearest_boundary": null
+        },
+        {
+          "id": "rate_nonnegative",
+          "label": "Nonnegative rate",
+          "value": -0.5,
+          "kind": "exact_sdf",
+          "unit": "normalized rate coordinate",
+          "inside": true,
+          "passes": true,
+          "constraint": "value <= tolerance",
+          "relation": "le",
+          "tolerance": 0.0,
+          "formula": "-rate/Vmax",
+          "metric": {
+            "axes": [
+              "substrate/Km",
+              "rate/Vmax"
+            ],
+            "point": [
+              1.0,
+              0.5
+            ],
+            "type": "Euclidean in normalized concentration/rate coordinates; kinetic residual is not distance"
+          },
+          "assumptions": [
+            "Km and Vmax are illustrative model parameters, not measured constants for a named enzyme.",
+            "A nonnegative substrate concentration and positive Km/Vmax are required.",
+            "Apply only when the specified initial-rate Michaelis-Menten law is appropriate at fixed experimental conditions; no inhibition, cooperativity or reversibility model is inferred.",
+            "Vmax is a limiting rate and Km is not generally an equilibrium dissociation constant.",
+            "The tolerance is an authored consistency threshold, not an estimated measurement uncertainty.",
+            "A small residual neither identifies a mechanism nor validates an enzyme model against experiments."
+          ],
+          "source_urls": [
+            "https://goldbook.iupac.org/terms/view/M03892",
+            "https://goldbook.iupac.org/terms/view/M03893"
+          ],
+          "gradient": [
+            0.0,
+            -1.0
+          ],
+          "gradient_norm": 1.0,
+          "nearest_boundary": {
+            "point": [
+              1.0,
+              0.0
+            ],
+            "distance": 0.5,
+            "coordinates": [
+              "substrate/Km",
+              "rate/Vmax"
+            ],
+            "scope": "This individual field only; other constraints may fail."
+          }
+        },
+        {
+          "id": "rate_limit",
+          "label": "Rate no larger than limiting rate",
+          "value": -0.5,
+          "kind": "exact_sdf",
+          "unit": "normalized rate coordinate",
+          "inside": true,
+          "passes": true,
+          "constraint": "value <= tolerance",
+          "relation": "le",
+          "tolerance": 0.0,
+          "formula": "rate/Vmax-1",
+          "metric": {
+            "axes": [
+              "substrate/Km",
+              "rate/Vmax"
+            ],
+            "point": [
+              1.0,
+              0.5
+            ],
+            "type": "Euclidean in normalized concentration/rate coordinates; kinetic residual is not distance"
+          },
+          "assumptions": [
+            "Km and Vmax are illustrative model parameters, not measured constants for a named enzyme.",
+            "A nonnegative substrate concentration and positive Km/Vmax are required.",
+            "Apply only when the specified initial-rate Michaelis-Menten law is appropriate at fixed experimental conditions; no inhibition, cooperativity or reversibility model is inferred.",
+            "Vmax is a limiting rate and Km is not generally an equilibrium dissociation constant.",
+            "The tolerance is an authored consistency threshold, not an estimated measurement uncertainty.",
+            "A small residual neither identifies a mechanism nor validates an enzyme model against experiments."
+          ],
+          "source_urls": [
+            "https://goldbook.iupac.org/terms/view/M03892",
+            "https://goldbook.iupac.org/terms/view/M03893"
+          ],
+          "gradient": [
+            0.0,
+            1.0
+          ],
+          "gradient_norm": 1.0,
+          "nearest_boundary": {
+            "point": [
+              1.0,
+              1.0
+            ],
+            "distance": 0.5,
+            "coordinates": [
+              "substrate/Km",
+              "rate/Vmax"
+            ],
+            "scope": "This individual field only; other constraints may fail."
+          }
+        }
+      ]
+    },
+    {
+      "name": "gpu_resource_budget",
+      "feasible": true,
+      "fields": [
+        {
+          "id": "memory_budget",
+          "label": "Modeled memory within declared budget",
+          "value": -2.538944,
+          "kind": "exact_sdf",
+          "unit": "normalized state-count coordinate",
+          "inside": true,
+          "passes": true,
+          "constraint": "value <= tolerance",
+          "relation": "le",
+          "tolerance": 0.0,
+          "formula": "states/state_scale - (budget_mib-reserve_mib-overhead_mib)*1048576/(state_bytes*copies*state_scale)",
+          "metric": {
+            "axes": [
+              "states/state_scale",
+              "epoch_ms/time_scale_ms"
+            ],
+            "point": [
+              1.0,
+              5.0
+            ],
+            "type": "Euclidean in declared normalized resource coordinates"
+          },
+          "assumptions": [
+            "All budget, overhead and epoch-time values are authored inputs; none are current laptop telemetry.",
+            "The 128-byte state and two copies match DWI-N1 persistent state payload only. Images, page allocations, staging, driver resources and host memory require their own measured accounting.",
+            "Feasibility is conditional on the supplied budget/overhead/time and does not guarantee allocation or future deadline compliance.",
+            "Distances use a continuous relaxation of record count; actual supplied counts are nonnegative integers."
+          ],
+          "source_urls": [
+            "https://docs.vulkan.org/refpages/latest/refpages/source/VkPhysicalDeviceMemoryBudgetPropertiesEXT.html"
+          ],
+          "gradient": [
+            1.0,
+            0.0
+          ],
+          "gradient_norm": 1.0,
+          "nearest_boundary": {
+            "point": [
+              3.538944,
+              5.0
+            ],
+            "distance": 2.538944,
+            "coordinates": [
+              "states/state_scale",
+              "epoch_ms/time_scale_ms"
+            ],
+            "scope": "This individual field only; other constraints may fail."
+          }
+        },
+        {
+          "id": "time_budget",
+          "label": "Supplied epoch time within deadline",
+          "value": -11.0,
+          "kind": "exact_sdf",
+          "unit": "normalized time coordinate",
+          "inside": true,
+          "passes": true,
+          "constraint": "value <= tolerance",
+          "relation": "le",
+          "tolerance": 0.0,
+          "formula": "(epoch_ms-deadline_ms)/time_scale_ms",
+          "metric": {
+            "axes": [
+              "states/state_scale",
+              "epoch_ms/time_scale_ms"
+            ],
+            "point": [
+              1.0,
+              5.0
+            ],
+            "type": "Euclidean in declared normalized resource coordinates"
+          },
+          "assumptions": [
+            "All budget, overhead and epoch-time values are authored inputs; none are current laptop telemetry.",
+            "The 128-byte state and two copies match DWI-N1 persistent state payload only. Images, page allocations, staging, driver resources and host memory require their own measured accounting.",
+            "Feasibility is conditional on the supplied budget/overhead/time and does not guarantee allocation or future deadline compliance.",
+            "Distances use a continuous relaxation of record count; actual supplied counts are nonnegative integers."
+          ],
+          "source_urls": [
+            "https://docs.vulkan.org/refpages/latest/refpages/source/VkPhysicalDeviceMemoryBudgetPropertiesEXT.html"
+          ],
+          "gradient": [
+            0.0,
+            1.0
+          ],
+          "gradient_norm": 1.0,
+          "nearest_boundary": {
+            "point": [
+              1.0,
+              16.0
+            ],
+            "distance": 11.0,
+            "coordinates": [
+              "states/state_scale",
+              "epoch_ms/time_scale_ms"
+            ],
+            "scope": "This individual field only; other constraints may fail."
+          }
+        }
+      ]
+    },
+    {
+      "name": "spatial_clearance",
+      "feasible": true,
+      "fields": [
+        {
+          "id": "sphere_clearance",
+          "label": "Clearance from sphere",
+          "value": -1.75,
+          "kind": "exact_sdf",
+          "unit": "m",
+          "inside": true,
+          "passes": true,
+          "constraint": "value <= tolerance",
+          "relation": "le",
+          "tolerance": 0.0,
+          "formula": "sphere_radius+clearance-norm(point-sphere_center)",
+          "metric": {
+            "axes": [
+              "x_m",
+              "y_m",
+              "z_m"
+            ],
+            "point": [
+              3.0,
+              0.0,
+              0.0
+            ],
+            "type": "Euclidean"
+          },
+          "assumptions": [
+            "Ideal rigid sphere and axis-aligned box in Cartesian metre coordinates; obstacles and clearance are illustrative authored geometry.",
+            "The moving object is a point, or clearance represents the radius of a spherical moving object.",
+            "Box clearance uses its rounded Euclidean offset, not expansion of every box extent followed by a different shape.",
+            "Each field is an exact analytic SDF of the allowed complement. Their conjunction is not presented as an exact distance to the combined feasible region.",
+            "A nearest-boundary point for one obstacle need not satisfy the other constraint and is not a collision-free trajectory."
+          ],
+          "source_urls": [],
+          "gradient": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "gradient_norm": 1.0,
+          "nearest_boundary": {
+            "point": [
+              1.25,
+              0.0,
+              0.0
+            ],
+            "distance": 1.75,
+            "coordinates": [
+              "x_m",
+              "y_m",
+              "z_m"
+            ],
+            "scope": "This individual field only; other constraints may fail."
+          }
+        },
+        {
+          "id": "box_clearance",
+          "label": "Clearance from box",
+          "value": -2.5784271247461903,
+          "kind": "exact_sdf",
+          "unit": "m",
+          "inside": true,
+          "passes": true,
+          "constraint": "value <= tolerance",
+          "relation": "le",
+          "tolerance": 0.0,
+          "formula": "clearance-box_sdf(point)",
+          "metric": {
+            "axes": [
+              "x_m",
+              "y_m",
+              "z_m"
+            ],
+            "point": [
+              3.0,
+              0.0,
+              0.0
+            ],
+            "type": "Euclidean"
+          },
+          "assumptions": [
+            "Ideal rigid sphere and axis-aligned box in Cartesian metre coordinates; obstacles and clearance are illustrative authored geometry.",
+            "The moving object is a point, or clearance represents the radius of a spherical moving object.",
+            "Box clearance uses its rounded Euclidean offset, not expansion of every box extent followed by a different shape.",
+            "Each field is an exact analytic SDF of the allowed complement. Their conjunction is not presented as an exact distance to the combined feasible region.",
+            "A nearest-boundary point for one obstacle need not satisfy the other constraint and is not a collision-free trajectory."
+          ],
+          "source_urls": [],
+          "gradient": [
+            -0.7071067811865475,
+            0.7071067811865475,
+            -0.0
+          ],
+          "gradient_norm": 0.9999999999999999,
+          "nearest_boundary": {
+            "point": [
+              1.176776695296637,
+              1.823223304703363,
+              0.0
+            ],
+            "distance": 2.5784271247461903,
+            "coordinates": [
+              "x_m",
+              "y_m",
+              "z_m"
+            ],
+            "scope": "This individual field only; other constraints may fail."
+          }
+        }
+      ]
+    },
+    {
+      "name": "enzyme_pool_known_one_unit_excess",
+      "result": {
+        "profile": "DW-Domain-0.1 CPU bindings",
+        "name": "Closed enzyme and substrate-moiety pools",
+        "example": "enzyme_pool",
+        "domain": "biochemical conservation",
+        "values": {
+          "E": 8.0,
+          "ES": 3.0,
+          "S": 78.0,
+          "P": 20.0
+        },
+        "parameters": {
+          "E_total": 10,
+          "S_total": 100,
+          "concentration_scale_uM": 1,
+          "equality_tolerance": 1e-09
+        },
+        "fields": [
+          {
+            "id": "enzyme_conservation",
+            "label": "Enzyme-moiety conservation",
+            "value": 0.7071067811865475,
+            "kind": "exact_sdf",
+            "unit": "normalized concentration coordinate",
+            "inside": false,
+            "passes": false,
+            "constraint": "abs(value) <= tolerance",
+            "relation": "eq",
+            "tolerance": 1e-09,
+            "formula": "(E+ES-E_total)/(scale*sqrt(2))",
+            "metric": {
+              "axes": [
+                "E/scale",
+                "ES/scale",
+                "S/scale",
+                "P/scale"
+              ],
+              "point": [
+                8.0,
+                3.0,
+                78.0,
+                20.0
+              ],
+              "scale_uM": 1.0,
+              "type": "Euclidean"
+            },
+            "assumptions": [
+              "Illustrative species concentrations, not measured data.",
+              "Fixed volume; closed enzyme and substrate-moiety pools; no synthesis, degradation, inlet, outlet, or additional bound species.",
+              "One substrate moiety in ES and one in P; catalytic turnover regenerates E.",
+              "Species-level bookkeeping: this is not a complete elemental, charge, thermodynamic or kinetic model.",
+              "Buffered pH and transformed sums of species require a separate declared conservation model; do not impose hydrogen-ion conservation on a chemostatted pH buffer."
+            ],
+            "source_urls": [
+              "https://goldbook.iupac.org/terms/view/M03893",
+              "https://www.nist.gov/publications/recommendations-terminology-and-databases-biochemical-thermodynamics"
+            ],
+            "gradient": [
+              0.7071067811865475,
+              0.7071067811865475,
+              0.0,
+              0.0
+            ],
+            "gradient_norm": 0.9999999999999999,
+            "nearest_boundary": {
+              "point": [
+                7.5,
+                2.5,
+                78.0,
+                20.0
+              ],
+              "distance": 0.7071067811865475,
+              "coordinates": [
+                "E/scale",
+                "ES/scale",
+                "S/scale",
+                "P/scale"
+              ],
+              "scope": "This individual field only; other constraints may fail."
+            }
+          },
+          {
+            "id": "substrate_conservation",
+            "label": "Substrate-moiety conservation",
+            "value": 0.5773502691896258,
+            "kind": "exact_sdf",
+            "unit": "normalized concentration coordinate",
+            "inside": false,
+            "passes": false,
+            "constraint": "abs(value) <= tolerance",
+            "relation": "eq",
+            "tolerance": 1e-09,
+            "formula": "(ES+S+P-S_total)/(scale*sqrt(3))",
+            "metric": {
+              "axes": [
+                "E/scale",
+                "ES/scale",
+                "S/scale",
+                "P/scale"
+              ],
+              "point": [
+                8.0,
+                3.0,
+                78.0,
+                20.0
+              ],
+              "scale_uM": 1.0,
+              "type": "Euclidean"
+            },
+            "assumptions": [
+              "Illustrative species concentrations, not measured data.",
+              "Fixed volume; closed enzyme and substrate-moiety pools; no synthesis, degradation, inlet, outlet, or additional bound species.",
+              "One substrate moiety in ES and one in P; catalytic turnover regenerates E.",
+              "Species-level bookkeeping: this is not a complete elemental, charge, thermodynamic or kinetic model.",
+              "Buffered pH and transformed sums of species require a separate declared conservation model; do not impose hydrogen-ion conservation on a chemostatted pH buffer."
+            ],
+            "source_urls": [
+              "https://goldbook.iupac.org/terms/view/M03893",
+              "https://www.nist.gov/publications/recommendations-terminology-and-databases-biochemical-thermodynamics"
+            ],
+            "gradient": [
+              0.0,
+              0.5773502691896258,
+              0.5773502691896258,
+              0.5773502691896258
+            ],
+            "gradient_norm": 1.0000000000000002,
+            "nearest_boundary": {
+              "point": [
+                8.0,
+                2.6666666666666665,
+                77.66666666666667,
+                19.666666666666668
+              ],
+              "distance": 0.5773502691896258,
+              "coordinates": [
+                "E/scale",
+                "ES/scale",
+                "S/scale",
+                "P/scale"
+              ],
+              "scope": "This individual field only; other constraints may fail."
+            }
+          },
+          {
+            "id": "nonnegative_E",
+            "label": "E nonnegative",
+            "value": -8.0,
+            "kind": "exact_sdf",
+            "unit": "normalized concentration coordinate",
+            "inside": true,
+            "passes": true,
+            "constraint": "value <= tolerance",
+            "relation": "le",
+            "tolerance": 0.0,
+            "formula": "-E/scale",
+            "metric": {
+              "axes": [
+                "E/scale",
+                "ES/scale",
+                "S/scale",
+                "P/scale"
+              ],
+              "point": [
+                8.0,
+                3.0,
+                78.0,
+                20.0
+              ],
+              "scale_uM": 1.0,
+              "type": "Euclidean"
+            },
+            "assumptions": [
+              "Illustrative species concentrations, not measured data.",
+              "Fixed volume; closed enzyme and substrate-moiety pools; no synthesis, degradation, inlet, outlet, or additional bound species.",
+              "One substrate moiety in ES and one in P; catalytic turnover regenerates E.",
+              "Species-level bookkeeping: this is not a complete elemental, charge, thermodynamic or kinetic model.",
+              "Buffered pH and transformed sums of species require a separate declared conservation model; do not impose hydrogen-ion conservation on a chemostatted pH buffer."
+            ],
+            "source_urls": [
+              "https://goldbook.iupac.org/terms/view/M03893",
+              "https://www.nist.gov/publications/recommendations-terminology-and-databases-biochemical-thermodynamics"
+            ],
+            "gradient": [
+              -1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "gradient_norm": 1.0,
+            "nearest_boundary": {
+              "point": [
+                0.0,
+                3.0,
+                78.0,
+                20.0
+              ],
+              "distance": 8.0,
+              "coordinates": [
+                "E/scale",
+                "ES/scale",
+                "S/scale",
+                "P/scale"
+              ],
+              "scope": "This individual field only; other constraints may fail."
+            }
+          },
+          {
+            "id": "nonnegative_ES",
+            "label": "ES nonnegative",
+            "value": -3.0,
+            "kind": "exact_sdf",
+            "unit": "normalized concentration coordinate",
+            "inside": true,
+            "passes": true,
+            "constraint": "value <= tolerance",
+            "relation": "le",
+            "tolerance": 0.0,
+            "formula": "-ES/scale",
+            "metric": {
+              "axes": [
+                "E/scale",
+                "ES/scale",
+                "S/scale",
+                "P/scale"
+              ],
+              "point": [
+                8.0,
+                3.0,
+                78.0,
+                20.0
+              ],
+              "scale_uM": 1.0,
+              "type": "Euclidean"
+            },
+            "assumptions": [
+              "Illustrative species concentrations, not measured data.",
+              "Fixed volume; closed enzyme and substrate-moiety pools; no synthesis, degradation, inlet, outlet, or additional bound species.",
+              "One substrate moiety in ES and one in P; catalytic turnover regenerates E.",
+              "Species-level bookkeeping: this is not a complete elemental, charge, thermodynamic or kinetic model.",
+              "Buffered pH and transformed sums of species require a separate declared conservation model; do not impose hydrogen-ion conservation on a chemostatted pH buffer."
+            ],
+            "source_urls": [
+              "https://goldbook.iupac.org/terms/view/M03893",
+              "https://www.nist.gov/publications/recommendations-terminology-and-databases-biochemical-thermodynamics"
+            ],
+            "gradient": [
+              0.0,
+              -1.0,
+              0.0,
+              0.0
+            ],
+            "gradient_norm": 1.0,
+            "nearest_boundary": {
+              "point": [
+                8.0,
+                0.0,
+                78.0,
+                20.0
+              ],
+              "distance": 3.0,
+              "coordinates": [
+                "E/scale",
+                "ES/scale",
+                "S/scale",
+                "P/scale"
+              ],
+              "scope": "This individual field only; other constraints may fail."
+            }
+          },
+          {
+            "id": "nonnegative_S",
+            "label": "S nonnegative",
+            "value": -78.0,
+            "kind": "exact_sdf",
+            "unit": "normalized concentration coordinate",
+            "inside": true,
+            "passes": true,
+            "constraint": "value <= tolerance",
+            "relation": "le",
+            "tolerance": 0.0,
+            "formula": "-S/scale",
+            "metric": {
+              "axes": [
+                "E/scale",
+                "ES/scale",
+                "S/scale",
+                "P/scale"
+              ],
+              "point": [
+                8.0,
+                3.0,
+                78.0,
+                20.0
+              ],
+              "scale_uM": 1.0,
+              "type": "Euclidean"
+            },
+            "assumptions": [
+              "Illustrative species concentrations, not measured data.",
+              "Fixed volume; closed enzyme and substrate-moiety pools; no synthesis, degradation, inlet, outlet, or additional bound species.",
+              "One substrate moiety in ES and one in P; catalytic turnover regenerates E.",
+              "Species-level bookkeeping: this is not a complete elemental, charge, thermodynamic or kinetic model.",
+              "Buffered pH and transformed sums of species require a separate declared conservation model; do not impose hydrogen-ion conservation on a chemostatted pH buffer."
+            ],
+            "source_urls": [
+              "https://goldbook.iupac.org/terms/view/M03893",
+              "https://www.nist.gov/publications/recommendations-terminology-and-databases-biochemical-thermodynamics"
+            ],
+            "gradient": [
+              0.0,
+              0.0,
+              -1.0,
+              0.0
+            ],
+            "gradient_norm": 1.0,
+            "nearest_boundary": {
+              "point": [
+                8.0,
+                3.0,
+                0.0,
+                20.0
+              ],
+              "distance": 78.0,
+              "coordinates": [
+                "E/scale",
+                "ES/scale",
+                "S/scale",
+                "P/scale"
+              ],
+              "scope": "This individual field only; other constraints may fail."
+            }
+          },
+          {
+            "id": "nonnegative_P",
+            "label": "P nonnegative",
+            "value": -20.0,
+            "kind": "exact_sdf",
+            "unit": "normalized concentration coordinate",
+            "inside": true,
+            "passes": true,
+            "constraint": "value <= tolerance",
+            "relation": "le",
+            "tolerance": 0.0,
+            "formula": "-P/scale",
+            "metric": {
+              "axes": [
+                "E/scale",
+                "ES/scale",
+                "S/scale",
+                "P/scale"
+              ],
+              "point": [
+                8.0,
+                3.0,
+                78.0,
+                20.0
+              ],
+              "scale_uM": 1.0,
+              "type": "Euclidean"
+            },
+            "assumptions": [
+              "Illustrative species concentrations, not measured data.",
+              "Fixed volume; closed enzyme and substrate-moiety pools; no synthesis, degradation, inlet, outlet, or additional bound species.",
+              "One substrate moiety in ES and one in P; catalytic turnover regenerates E.",
+              "Species-level bookkeeping: this is not a complete elemental, charge, thermodynamic or kinetic model.",
+              "Buffered pH and transformed sums of species require a separate declared conservation model; do not impose hydrogen-ion conservation on a chemostatted pH buffer."
+            ],
+            "source_urls": [
+              "https://goldbook.iupac.org/terms/view/M03893",
+              "https://www.nist.gov/publications/recommendations-terminology-and-databases-biochemical-thermodynamics"
+            ],
+            "gradient": [
+              0.0,
+              0.0,
+              0.0,
+              -1.0
+            ],
+            "gradient_norm": 1.0,
+            "nearest_boundary": {
+              "point": [
+                8.0,
+                3.0,
+                78.0,
+                0.0
+              ],
+              "distance": 20.0,
+              "coordinates": [
+                "E/scale",
+                "ES/scale",
+                "S/scale",
+                "P/scale"
+              ],
+              "scope": "This individual field only; other constraints may fail."
+            }
+          }
+        ],
+        "feasible": false,
+        "notes": [
+          "This report is CPU reference evaluation; it does not load or run GPU operators.",
+          "Exactness is analytic in the declared metric; evaluation uses float64.",
+          "Conjunction checks all fields separately, without claiming an exact intersection SDF.",
+          "A conservation hyperplane uses an equality constraint; its sign identifies a side, not a permitted concentration region."
+        ],
+        "assumptions": [
+          "Illustrative species concentrations, not measured data.",
+          "Fixed volume; closed enzyme and substrate-moiety pools; no synthesis, degradation, inlet, outlet, or additional bound species.",
+          "One substrate moiety in ES and one in P; catalytic turnover regenerates E.",
+          "Species-level bookkeeping: this is not a complete elemental, charge, thermodynamic or kinetic model.",
+          "Buffered pH and transformed sums of species require a separate declared conservation model; do not impose hydrogen-ion conservation on a chemostatted pH buffer."
+        ],
+        "derived": {
+          "enzyme_total_uM": 11.0,
+          "substrate_moiety_total_uM": 101.0
+        }
+      }
+    }
+  ],
+  "rejected_inputs": [
+    "values.E must be finite with absolute value <= 1e+12",
+    "Unknown values: unknown",
+    "radius must be >= 1e-12"
+  ],
+  "passed": true
+}

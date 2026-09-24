@@ -1,0 +1,14 @@
+{
+  "id": "gpu_resource_budget",
+  "name": "Declared memory and epoch-time envelope",
+  "domain": "resource constraints",
+  "description": "Check a count and measured-or-assumed epoch duration against an explicit payload model and budget. No hardware probing or timing prediction occurs.",
+  "values": {"states": 1000000, "epoch_ms": 5.0},
+  "parameters": {"budget_mib": 1024.0, "reserve_mib": 128.0, "overhead_mib": 32.0, "state_bytes": 128, "copies": 2, "deadline_ms": 16.0, "state_scale": 1000000.0, "time_scale_ms": 1.0},
+  "value_units": {"states": "records", "epoch_ms": "ms"},
+  "parameter_units": {"budget_mib": "MiB", "reserve_mib": "MiB", "overhead_mib": "MiB", "state_bytes": "bytes/record", "copies": "copies", "deadline_ms": "ms", "state_scale": "records", "time_scale_ms": "ms"},
+  "assumptions": ["All budget, overhead and epoch-time values are authored inputs; none are current laptop telemetry.", "The 128-byte state and two copies match DWI-N1 persistent state payload only. Images, page allocations, staging, driver resources and host memory require their own measured accounting.", "Feasibility is conditional on the supplied budget/overhead/time and does not guarantee allocation or future deadline compliance.", "Distances use a continuous relaxation of record count; actual supplied counts are nonnegative integers."],
+  "source_ids": ["vulkan_budget"],
+  "field_definitions": ["(states*state_bytes*copies/1048576+overhead_mib+reserve_mib-budget_mib)/(state_bytes*copies*state_scale/1048576)", "(epoch_ms-deadline_ms)/time_scale_ms"],
+  "metric": "Euclidean distance in (states/state_scale, epoch_ms/time_scale_ms). Changing scales changes this metric and its distances."
+}

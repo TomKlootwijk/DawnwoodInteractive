@@ -1,0 +1,14 @@
+{
+  "id": "enzyme_pool",
+  "name": "Closed enzyme and substrate-moiety pools",
+  "domain": "biochemical conservation",
+  "description": "Check E+ES=E_total and S+ES+P=S_total for the declared E+S<=>ES->E+P mechanism, plus species nonnegativity.",
+  "values": {"E": 0.4, "ES": 0.6, "S": 8.4, "P": 1.0},
+  "parameters": {"E_total": 1.0, "S_total": 10.0, "concentration_scale_uM": 1.0, "equality_tolerance": 1e-9},
+  "value_units": {"E": "uM", "ES": "uM", "S": "uM", "P": "uM"},
+  "parameter_units": {"E_total": "uM", "S_total": "uM", "concentration_scale_uM": "uM", "equality_tolerance": "normalized concentration distance"},
+  "assumptions": ["Illustrative species concentrations, not measured data.", "Fixed volume; closed enzyme and substrate-moiety pools; no synthesis, degradation, inlet, outlet, or additional bound species.", "One substrate moiety in ES and one in P; catalytic turnover regenerates E.", "Species-level bookkeeping: this is not a complete elemental, charge, thermodynamic or kinetic model.", "Buffered pH and transformed sums of species require a separate declared conservation model; do not impose hydrogen-ion conservation on a chemostatted pH buffer."],
+  "source_ids": ["iupac_mechanism", "nist_thermodynamics"],
+  "field_definitions": ["(E+ES-E_total)/(concentration_scale_uM*sqrt(2))", "(S+ES+P-S_total)/(concentration_scale_uM*sqrt(3))", "-concentration/concentration_scale_uM for each species"],
+  "metric": "Euclidean distance in x=(E,ES,S,P)/concentration_scale_uM. Pool fields are oriented exact distances to hyperplanes; equality, not either halfspace, is the constraint."
+}

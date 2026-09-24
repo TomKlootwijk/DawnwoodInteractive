@@ -1,0 +1,14 @@
+{
+  "id": "buffer_window",
+  "name": "Acid/base activity pH window",
+  "domain": "acid-base equilibrium binding",
+  "description": "An exact target slab in two log10-activity coordinates under a declared single acid/conjugate-base equilibrium.",
+  "values": {"log10_acid_activity": -3.0, "log10_base_activity": -3.0},
+  "parameters": {"pKa": 7.0, "pH_min": 6.8, "pH_max": 7.2},
+  "value_units": {"log10_acid_activity": "log10 dimensionless activity", "log10_base_activity": "log10 dimensionless activity"},
+  "parameter_units": {"pKa": "dimensionless", "pH_min": "dimensionless", "pH_max": "dimensionless"},
+  "assumptions": ["pKa=7 is illustrative; no actual acid, buffer, temperature or ionic-strength measurement is asserted.", "Single declared acid dissociation at equilibrium; thermodynamic Ka and dimensionless activities use compatible standard states.", "pH=pKa+log10(a_base)-log10(a_acid); the evaluator accepts logarithmic activities directly.", "Replacing activities with concentrations requires an explicitly justified activity-coefficient approximation.", "The field is exact in the stated log-coordinate metric, not Euclidean concentration space. It does not calculate buffer capacity, solve electroneutrality or predict missing species."],
+  "source_ids": ["iupac_hh", "iupac_ph", "iupac_acidity"],
+  "field_definitions": ["(abs(pKa+log10_base_activity-log10_acid_activity-midpoint_pH)-halfwidth_pH)/sqrt(2)"],
+  "metric": "Euclidean distance in (log10 acid activity, log10 base activity); distance units are log10-activity coordinates, not pH error alone."
+}
