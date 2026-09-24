@@ -1,0 +1,84 @@
+[
+  {
+    "name": "lower_margin_rounding",
+    "guards": {
+      "validate_code": {
+        "valid": 1.0
+      },
+      "validate_geometry_boxes": {
+        "valid_boxes": 1.0
+      },
+      "validate_geometry_separation": {
+        "valid_separation": 1.0
+      },
+      "combined_geometry": 1.0
+    },
+    "exact": {
+      "actual_domain": true,
+      "full_margin": false,
+      "lower_x": 9.999999565479811e-05,
+      "upper_sum": 0.22014399450017663,
+      "upper_excess_over_full_margin": -0.7797560055023496
+    }
+  },
+  {
+    "name": "upper_margin_rounding",
+    "guards": {
+      "validate_code": {
+        "valid": 1.0
+      },
+      "validate_geometry_boxes": {
+        "valid_boxes": 1.0
+      },
+      "validate_geometry_separation": {
+        "valid_separation": 1.0
+      },
+      "combined_geometry": 1.0
+    },
+    "exact": {
+      "actual_domain": true,
+      "full_margin": false,
+      "lower_x": 14.7298469170928,
+      "upper_sum": 15.999900057911873,
+      "upper_excess_over_full_margin": 5.790934665128589e-08
+    }
+  },
+  {
+    "name": "quota_cap_is_essential",
+    "guards": {
+      "validate_code": {
+        "valid": 1.0
+      },
+      "validate_geometry_boxes": {
+        "valid_boxes": 0.0
+      },
+      "validate_geometry_separation": {
+        "valid_separation": 1.0
+      },
+      "combined_geometry": 0.0
+    },
+    "exact": {
+      "actual_domain": false,
+      "full_margin": false,
+      "lower_x": 2047.9999800000005,
+      "upper_sum": 4096.000039999999,
+      "upper_excess_over_full_margin": 0.00013999999646330252
+    }
+  },
+  {
+    "name": "valid_three_leaf_control",
+    "guards": {
+      "validate_code": {
+        "valid": 1.0
+      },
+      "validate_geometry_boxes": {
+        "valid_boxes": 1.0
+      },
+      "validate_geometry_separation": {
+        "valid_separation": 1.0
+      },
+      "combined_geometry": 1.0
+    },
+    "exact_library_admissible": true
+  }
+]

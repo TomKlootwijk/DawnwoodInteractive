@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-09-24T23:32:00.345784+00:00",
+  "source_sha256": "538edbdc2a02be244185f5f28e5d318d7121c8b886e6c80234d09e6e160567cb",
+  "reference_counterexamples": 3,
+  "reference_corner_samples": 6000,
+  "actual_source_program_probes": 4,
+  "one_margin_protects_actual_domain_under_stated_bounds": true,
+  "two_margin_implies_exact_library_margin_under_stated_bounds": true,
+  "native_executed": false,
+  "gpu_executed": false,
+  "sampling_is_not_the_universal_proof": true,
+  "scope": "Exact analytical bound, RTE FP32 reference probes and current source-expression inspection. Separate native validation is still required."
+}

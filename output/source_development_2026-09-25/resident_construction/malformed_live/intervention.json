@@ -1,0 +1,8 @@
+{
+  "source": "baseline_8_vulkan/checkpoint.bin",
+  "source_sha256": "c1074458cee7875905503665caad43e3cc57e3666d49aec4404bcf5cfecbc723",
+  "changed_state": "sdf_op0",
+  "value": 1.5,
+  "lanes": 129,
+  "purpose": "Invalid live operator opcode encoding must fail after attempted old-snapshot mutation and retain the exact malformed old image, never truncate or repair it."
+}

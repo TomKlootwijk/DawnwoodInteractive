@@ -1,0 +1,33 @@
+{
+  "counts": {
+    "1": {
+      "sampled": 6000,
+      "admitted": 4514,
+      "actual_domain_failures": 0,
+      "full_margin_failures": 24
+    },
+    "2": {
+      "sampled": 6000,
+      "admitted": 1485,
+      "actual_domain_failures": 0,
+      "full_margin_failures": 0
+    }
+  },
+  "first_full_margin_mismatch": {
+    "box": [
+      2.7181732654571533,
+      11.868111610412598,
+      1.0658519268035889,
+      0.347763329744339
+    ],
+    "quota": 16.0,
+    "exact": {
+      "actual_domain": true,
+      "full_margin": false,
+      "lower_x": 1.6523213386535645,
+      "upper_sum": 15.999900132417679,
+      "upper_excess_over_full_margin": 1.3241515262052417e-07
+    }
+  },
+  "scope": "RTE binary32 simulation of the written guards against exact rational packed geometry."
+}

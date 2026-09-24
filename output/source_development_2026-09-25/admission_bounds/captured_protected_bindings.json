@@ -1,0 +1,3396 @@
+{
+  "validate_code": {
+    "inputs": {
+      "node_count": "program_size",
+      "root": "program_index",
+      "revision": "program_revision",
+      "op0": "program_opcode",
+      "a0": "program_index",
+      "b0": "program_index",
+      "op1": "program_opcode",
+      "a1": "program_index",
+      "b1": "program_index",
+      "op2": "program_opcode",
+      "a2": "program_index",
+      "b2": "program_index",
+      "op3": "program_opcode",
+      "a3": "program_index",
+      "b3": "program_index",
+      "op4": "program_opcode",
+      "a4": "program_index",
+      "b4": "program_index",
+      "op5": "program_opcode",
+      "a5": "program_index",
+      "b5": "program_index",
+      "op6": "program_opcode",
+      "a6": "program_index",
+      "b6": "program_index"
+    },
+    "outputs": {
+      "valid": "bit"
+    },
+    "binding": {
+      "inputs": [
+        "node_count",
+        "root",
+        "revision",
+        "op0",
+        "a0",
+        "b0",
+        "op1",
+        "a1",
+        "b1",
+        "op2",
+        "a2",
+        "b2",
+        "op3",
+        "a3",
+        "b3",
+        "op4",
+        "a4",
+        "b4",
+        "op5",
+        "a5",
+        "b5",
+        "op6",
+        "a6",
+        "b6"
+      ],
+      "outputs": {
+        "valid": {
+          "op": "mul",
+          "args": [
+            {
+              "op": "mul",
+              "args": [
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "mul",
+                              "args": [
+                                {
+                                  "op": "mul",
+                                  "args": [
+                                    {
+                                      "op": "mul",
+                                      "args": [
+                                        {
+                                          "op": "mul",
+                                          "args": [
+                                            {
+                                              "op": "mul",
+                                              "args": [
+                                                {
+                                                  "op": "mul",
+                                                  "args": [
+                                                    {
+                                                      "op": "mul",
+                                                      "args": [
+                                                        {
+                                                          "op": "mul",
+                                                          "args": [
+                                                            {
+                                                              "op": "mul",
+                                                              "args": [
+                                                                {
+                                                                  "op": "mul",
+                                                                  "args": [
+                                                                    {
+                                                                      "op": "mul",
+                                                                      "args": [
+                                                                        {
+                                                                          "op": "mul",
+                                                                          "args": [
+                                                                            {
+                                                                              "op": "mul",
+                                                                              "args": [
+                                                                                {
+                                                                                  "op": "mul",
+                                                                                  "args": [
+                                                                                    {
+                                                                                      "op": "mul",
+                                                                                      "args": [
+                                                                                        {
+                                                                                          "op": "mul",
+                                                                                          "args": [
+                                                                                            {
+                                                                                              "op": "mul",
+                                                                                              "args": [
+                                                                                                {
+                                                                                                  "op": "mul",
+                                                                                                  "args": [
+                                                                                                    {
+                                                                                                      "op": "mul",
+                                                                                                      "args": [
+                                                                                                        {
+                                                                                                          "op": "mul",
+                                                                                                          "args": [
+                                                                                                            {
+                                                                                                              "op": "mul",
+                                                                                                              "args": [
+                                                                                                                1,
+                                                                                                                {
+                                                                                                                  "op": "min",
+                                                                                                                  "args": [
+                                                                                                                    1,
+                                                                                                                    {
+                                                                                                                      "op": "add",
+                                                                                                                      "args": [
+                                                                                                                        {
+                                                                                                                          "op": "add",
+                                                                                                                          "args": [
+                                                                                                                            {
+                                                                                                                              "op": "add",
+                                                                                                                              "args": [
+                                                                                                                                {
+                                                                                                                                  "op": "add",
+                                                                                                                                  "args": [
+                                                                                                                                    0,
+                                                                                                                                    {
+                                                                                                                                      "op": "sub",
+                                                                                                                                      "args": [
+                                                                                                                                        1,
+                                                                                                                                        {
+                                                                                                                                          "op": "less",
+                                                                                                                                          "args": [
+                                                                                                                                            0,
+                                                                                                                                            {
+                                                                                                                                              "op": "abs",
+                                                                                                                                              "args": [
+                                                                                                                                                {
+                                                                                                                                                  "op": "sub",
+                                                                                                                                                  "args": [
+                                                                                                                                                    {
+                                                                                                                                                      "input": "node_count"
+                                                                                                                                                    },
+                                                                                                                                                    1
+                                                                                                                                                  ]
+                                                                                                                                                }
+                                                                                                                                              ]
+                                                                                                                                            }
+                                                                                                                                          ]
+                                                                                                                                        }
+                                                                                                                                      ]
+                                                                                                                                    }
+                                                                                                                                  ]
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                  "op": "sub",
+                                                                                                                                  "args": [
+                                                                                                                                    1,
+                                                                                                                                    {
+                                                                                                                                      "op": "less",
+                                                                                                                                      "args": [
+                                                                                                                                        0,
+                                                                                                                                        {
+                                                                                                                                          "op": "abs",
+                                                                                                                                          "args": [
+                                                                                                                                            {
+                                                                                                                                              "op": "sub",
+                                                                                                                                              "args": [
+                                                                                                                                                {
+                                                                                                                                                  "input": "node_count"
+                                                                                                                                                },
+                                                                                                                                                3
+                                                                                                                                              ]
+                                                                                                                                            }
+                                                                                                                                          ]
+                                                                                                                                        }
+                                                                                                                                      ]
+                                                                                                                                    }
+                                                                                                                                  ]
+                                                                                                                                }
+                                                                                                                              ]
+                                                                                                                            },
+                                                                                                                            {
+                                                                                                                              "op": "sub",
+                                                                                                                              "args": [
+                                                                                                                                1,
+                                                                                                                                {
+                                                                                                                                  "op": "less",
+                                                                                                                                  "args": [
+                                                                                                                                    0,
+                                                                                                                                    {
+                                                                                                                                      "op": "abs",
+                                                                                                                                      "args": [
+                                                                                                                                        {
+                                                                                                                                          "op": "sub",
+                                                                                                                                          "args": [
+                                                                                                                                            {
+                                                                                                                                              "input": "node_count"
+                                                                                                                                            },
+                                                                                                                                            5
+                                                                                                                                          ]
+                                                                                                                                        }
+                                                                                                                                      ]
+                                                                                                                                    }
+                                                                                                                                  ]
+                                                                                                                                }
+                                                                                                                              ]
+                                                                                                                            }
+                                                                                                                          ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                          "op": "sub",
+                                                                                                                          "args": [
+                                                                                                                            1,
+                                                                                                                            {
+                                                                                                                              "op": "less",
+                                                                                                                              "args": [
+                                                                                                                                0,
+                                                                                                                                {
+                                                                                                                                  "op": "abs",
+                                                                                                                                  "args": [
+                                                                                                                                    {
+                                                                                                                                      "op": "sub",
+                                                                                                                                      "args": [
+                                                                                                                                        {
+                                                                                                                                          "input": "node_count"
+                                                                                                                                        },
+                                                                                                                                        7
+                                                                                                                                      ]
+                                                                                                                                    }
+                                                                                                                                  ]
+                                                                                                                                }
+                                                                                                                              ]
+                                                                                                                            }
+                                                                                                                          ]
+                                                                                                                        }
+                                                                                                                      ]
+                                                                                                                    }
+                                                                                                                  ]
+                                                                                                                }
+                                                                                                              ]
+                                                                                                            },
+                                                                                                            {
+                                                                                                              "op": "sub",
+                                                                                                              "args": [
+                                                                                                                1,
+                                                                                                                {
+                                                                                                                  "op": "less",
+                                                                                                                  "args": [
+                                                                                                                    0,
+                                                                                                                    {
+                                                                                                                      "op": "abs",
+                                                                                                                      "args": [
+                                                                                                                        {
+                                                                                                                          "op": "sub",
+                                                                                                                          "args": [
+                                                                                                                            {
+                                                                                                                              "input": "root"
+                                                                                                                            },
+                                                                                                                            {
+                                                                                                                              "op": "sub",
+                                                                                                                              "args": [
+                                                                                                                                {
+                                                                                                                                  "input": "node_count"
+                                                                                                                                },
+                                                                                                                                1
+                                                                                                                              ]
+                                                                                                                            }
+                                                                                                                          ]
+                                                                                                                        }
+                                                                                                                      ]
+                                                                                                                    }
+                                                                                                                  ]
+                                                                                                                }
+                                                                                                              ]
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                          "op": "sub",
+                                                                                                          "args": [
+                                                                                                            1,
+                                                                                                            {
+                                                                                                              "op": "less",
+                                                                                                              "args": [
+                                                                                                                {
+                                                                                                                  "input": "revision"
+                                                                                                                },
+                                                                                                                0
+                                                                                                              ]
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    },
+                                                                                                    {
+                                                                                                      "op": "sub",
+                                                                                                      "args": [
+                                                                                                        1,
+                                                                                                        {
+                                                                                                          "op": "less",
+                                                                                                          "args": [
+                                                                                                            0,
+                                                                                                            {
+                                                                                                              "op": "abs",
+                                                                                                              "args": [
+                                                                                                                {
+                                                                                                                  "op": "sub",
+                                                                                                                  "args": [
+                                                                                                                    {
+                                                                                                                      "input": "revision"
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                      "op": "floor",
+                                                                                                                      "args": [
+                                                                                                                        {
+                                                                                                                          "input": "revision"
+                                                                                                                        }
+                                                                                                                      ]
+                                                                                                                    }
+                                                                                                                  ]
+                                                                                                                }
+                                                                                                              ]
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    }
+                                                                                                  ]
+                                                                                                },
+                                                                                                {
+                                                                                                  "op": "sub",
+                                                                                                  "args": [
+                                                                                                    1,
+                                                                                                    {
+                                                                                                      "op": "less",
+                                                                                                      "args": [
+                                                                                                        16777215,
+                                                                                                        {
+                                                                                                          "input": "revision"
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    }
+                                                                                                  ]
+                                                                                                }
+                                                                                              ]
+                                                                                            },
+                                                                                            {
+                                                                                              "op": "sub",
+                                                                                              "args": [
+                                                                                                1,
+                                                                                                {
+                                                                                                  "op": "less",
+                                                                                                  "args": [
+                                                                                                    0,
+                                                                                                    {
+                                                                                                      "op": "abs",
+                                                                                                      "args": [
+                                                                                                        {
+                                                                                                          "op": "sub",
+                                                                                                          "args": [
+                                                                                                            {
+                                                                                                              "input": "op0"
+                                                                                                            },
+                                                                                                            {
+                                                                                                              "op": "select",
+                                                                                                              "args": [
+                                                                                                                {
+                                                                                                                  "op": "less",
+                                                                                                                  "args": [
+                                                                                                                    0,
+                                                                                                                    {
+                                                                                                                      "input": "node_count"
+                                                                                                                    }
+                                                                                                                  ]
+                                                                                                                },
+                                                                                                                1,
+                                                                                                                0
+                                                                                                              ]
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    }
+                                                                                                  ]
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        },
+                                                                                        {
+                                                                                          "op": "sub",
+                                                                                          "args": [
+                                                                                            1,
+                                                                                            {
+                                                                                              "op": "less",
+                                                                                              "args": [
+                                                                                                0,
+                                                                                                {
+                                                                                                  "op": "abs",
+                                                                                                  "args": [
+                                                                                                    {
+                                                                                                      "op": "sub",
+                                                                                                      "args": [
+                                                                                                        {
+                                                                                                          "input": "a0"
+                                                                                                        },
+                                                                                                        {
+                                                                                                          "op": "select",
+                                                                                                          "args": [
+                                                                                                            {
+                                                                                                              "op": "less",
+                                                                                                              "args": [
+                                                                                                                0,
+                                                                                                                {
+                                                                                                                  "input": "node_count"
+                                                                                                                }
+                                                                                                              ]
+                                                                                                            },
+                                                                                                            0,
+                                                                                                            0
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    }
+                                                                                                  ]
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      ]
+                                                                                    },
+                                                                                    {
+                                                                                      "op": "sub",
+                                                                                      "args": [
+                                                                                        1,
+                                                                                        {
+                                                                                          "op": "less",
+                                                                                          "args": [
+                                                                                            0,
+                                                                                            {
+                                                                                              "op": "abs",
+                                                                                              "args": [
+                                                                                                {
+                                                                                                  "op": "sub",
+                                                                                                  "args": [
+                                                                                                    {
+                                                                                                      "input": "b0"
+                                                                                                    },
+                                                                                                    {
+                                                                                                      "op": "select",
+                                                                                                      "args": [
+                                                                                                        {
+                                                                                                          "op": "less",
+                                                                                                          "args": [
+                                                                                                            0,
+                                                                                                            {
+                                                                                                              "input": "node_count"
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        },
+                                                                                                        0,
+                                                                                                        0
+                                                                                                      ]
+                                                                                                    }
+                                                                                                  ]
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                },
+                                                                                {
+                                                                                  "op": "sub",
+                                                                                  "args": [
+                                                                                    1,
+                                                                                    {
+                                                                                      "op": "less",
+                                                                                      "args": [
+                                                                                        0,
+                                                                                        {
+                                                                                          "op": "abs",
+                                                                                          "args": [
+                                                                                            {
+                                                                                              "op": "sub",
+                                                                                              "args": [
+                                                                                                {
+                                                                                                  "input": "op1"
+                                                                                                },
+                                                                                                {
+                                                                                                  "op": "select",
+                                                                                                  "args": [
+                                                                                                    {
+                                                                                                      "op": "less",
+                                                                                                      "args": [
+                                                                                                        1,
+                                                                                                        {
+                                                                                                          "input": "node_count"
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    },
+                                                                                                    1,
+                                                                                                    0
+                                                                                                  ]
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            },
+                                                                            {
+                                                                              "op": "sub",
+                                                                              "args": [
+                                                                                1,
+                                                                                {
+                                                                                  "op": "less",
+                                                                                  "args": [
+                                                                                    0,
+                                                                                    {
+                                                                                      "op": "abs",
+                                                                                      "args": [
+                                                                                        {
+                                                                                          "op": "sub",
+                                                                                          "args": [
+                                                                                            {
+                                                                                              "input": "a1"
+                                                                                            },
+                                                                                            {
+                                                                                              "op": "select",
+                                                                                              "args": [
+                                                                                                {
+                                                                                                  "op": "less",
+                                                                                                  "args": [
+                                                                                                    1,
+                                                                                                    {
+                                                                                                      "input": "node_count"
+                                                                                                    }
+                                                                                                  ]
+                                                                                                },
+                                                                                                1,
+                                                                                                0
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        },
+                                                                        {
+                                                                          "op": "sub",
+                                                                          "args": [
+                                                                            1,
+                                                                            {
+                                                                              "op": "less",
+                                                                              "args": [
+                                                                                0,
+                                                                                {
+                                                                                  "op": "abs",
+                                                                                  "args": [
+                                                                                    {
+                                                                                      "op": "sub",
+                                                                                      "args": [
+                                                                                        {
+                                                                                          "input": "b1"
+                                                                                        },
+                                                                                        {
+                                                                                          "op": "select",
+                                                                                          "args": [
+                                                                                            {
+                                                                                              "op": "less",
+                                                                                              "args": [
+                                                                                                1,
+                                                                                                {
+                                                                                                  "input": "node_count"
+                                                                                                }
+                                                                                              ]
+                                                                                            },
+                                                                                            0,
+                                                                                            0
+                                                                                          ]
+                                                                                        }
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    },
+                                                                    {
+                                                                      "op": "sub",
+                                                                      "args": [
+                                                                        1,
+                                                                        {
+                                                                          "op": "less",
+                                                                          "args": [
+                                                                            0,
+                                                                            {
+                                                                              "op": "abs",
+                                                                              "args": [
+                                                                                {
+                                                                                  "op": "sub",
+                                                                                  "args": [
+                                                                                    {
+                                                                                      "input": "op2"
+                                                                                    },
+                                                                                    {
+                                                                                      "op": "select",
+                                                                                      "args": [
+                                                                                        {
+                                                                                          "op": "less",
+                                                                                          "args": [
+                                                                                            2,
+                                                                                            {
+                                                                                              "input": "node_count"
+                                                                                            }
+                                                                                          ]
+                                                                                        },
+                                                                                        2,
+                                                                                        0
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "op": "sub",
+                                                                  "args": [
+                                                                    1,
+                                                                    {
+                                                                      "op": "less",
+                                                                      "args": [
+                                                                        0,
+                                                                        {
+                                                                          "op": "abs",
+                                                                          "args": [
+                                                                            {
+                                                                              "op": "sub",
+                                                                              "args": [
+                                                                                {
+                                                                                  "input": "a2"
+                                                                                },
+                                                                                {
+                                                                                  "op": "select",
+                                                                                  "args": [
+                                                                                    {
+                                                                                      "op": "less",
+                                                                                      "args": [
+                                                                                        2,
+                                                                                        {
+                                                                                          "input": "node_count"
+                                                                                        }
+                                                                                      ]
+                                                                                    },
+                                                                                    0,
+                                                                                    0
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            },
+                                                            {
+                                                              "op": "sub",
+                                                              "args": [
+                                                                1,
+                                                                {
+                                                                  "op": "less",
+                                                                  "args": [
+                                                                    0,
+                                                                    {
+                                                                      "op": "abs",
+                                                                      "args": [
+                                                                        {
+                                                                          "op": "sub",
+                                                                          "args": [
+                                                                            {
+                                                                              "input": "b2"
+                                                                            },
+                                                                            {
+                                                                              "op": "select",
+                                                                              "args": [
+                                                                                {
+                                                                                  "op": "less",
+                                                                                  "args": [
+                                                                                    2,
+                                                                                    {
+                                                                                      "input": "node_count"
+                                                                                    }
+                                                                                  ]
+                                                                                },
+                                                                                1,
+                                                                                0
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "op": "sub",
+                                                          "args": [
+                                                            1,
+                                                            {
+                                                              "op": "less",
+                                                              "args": [
+                                                                0,
+                                                                {
+                                                                  "op": "abs",
+                                                                  "args": [
+                                                                    {
+                                                                      "op": "sub",
+                                                                      "args": [
+                                                                        {
+                                                                          "input": "op3"
+                                                                        },
+                                                                        {
+                                                                          "op": "select",
+                                                                          "args": [
+                                                                            {
+                                                                              "op": "less",
+                                                                              "args": [
+                                                                                3,
+                                                                                {
+                                                                                  "input": "node_count"
+                                                                                }
+                                                                              ]
+                                                                            },
+                                                                            1,
+                                                                            0
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "op": "sub",
+                                                      "args": [
+                                                        1,
+                                                        {
+                                                          "op": "less",
+                                                          "args": [
+                                                            0,
+                                                            {
+                                                              "op": "abs",
+                                                              "args": [
+                                                                {
+                                                                  "op": "sub",
+                                                                  "args": [
+                                                                    {
+                                                                      "input": "a3"
+                                                                    },
+                                                                    {
+                                                                      "op": "select",
+                                                                      "args": [
+                                                                        {
+                                                                          "op": "less",
+                                                                          "args": [
+                                                                            3,
+                                                                            {
+                                                                              "input": "node_count"
+                                                                            }
+                                                                          ]
+                                                                        },
+                                                                        2,
+                                                                        0
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "op": "sub",
+                                                  "args": [
+                                                    1,
+                                                    {
+                                                      "op": "less",
+                                                      "args": [
+                                                        0,
+                                                        {
+                                                          "op": "abs",
+                                                          "args": [
+                                                            {
+                                                              "op": "sub",
+                                                              "args": [
+                                                                {
+                                                                  "input": "b3"
+                                                                },
+                                                                {
+                                                                  "op": "select",
+                                                                  "args": [
+                                                                    {
+                                                                      "op": "less",
+                                                                      "args": [
+                                                                        3,
+                                                                        {
+                                                                          "input": "node_count"
+                                                                        }
+                                                                      ]
+                                                                    },
+                                                                    0,
+                                                                    0
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "op": "sub",
+                                              "args": [
+                                                1,
+                                                {
+                                                  "op": "less",
+                                                  "args": [
+                                                    0,
+                                                    {
+                                                      "op": "abs",
+                                                      "args": [
+                                                        {
+                                                          "op": "sub",
+                                                          "args": [
+                                                            {
+                                                              "input": "op4"
+                                                            },
+                                                            {
+                                                              "op": "select",
+                                                              "args": [
+                                                                {
+                                                                  "op": "less",
+                                                                  "args": [
+                                                                    4,
+                                                                    {
+                                                                      "input": "node_count"
+                                                                    }
+                                                                  ]
+                                                                },
+                                                                2,
+                                                                0
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "op": "sub",
+                                          "args": [
+                                            1,
+                                            {
+                                              "op": "less",
+                                              "args": [
+                                                0,
+                                                {
+                                                  "op": "abs",
+                                                  "args": [
+                                                    {
+                                                      "op": "sub",
+                                                      "args": [
+                                                        {
+                                                          "input": "a4"
+                                                        },
+                                                        {
+                                                          "op": "select",
+                                                          "args": [
+                                                            {
+                                                              "op": "less",
+                                                              "args": [
+                                                                4,
+                                                                {
+                                                                  "input": "node_count"
+                                                                }
+                                                              ]
+                                                            },
+                                                            2,
+                                                            0
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        1,
+                                        {
+                                          "op": "less",
+                                          "args": [
+                                            0,
+                                            {
+                                              "op": "abs",
+                                              "args": [
+                                                {
+                                                  "op": "sub",
+                                                  "args": [
+                                                    {
+                                                      "input": "b4"
+                                                    },
+                                                    {
+                                                      "op": "select",
+                                                      "args": [
+                                                        {
+                                                          "op": "less",
+                                                          "args": [
+                                                            4,
+                                                            {
+                                                              "input": "node_count"
+                                                            }
+                                                          ]
+                                                        },
+                                                        3,
+                                                        0
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    1,
+                                    {
+                                      "op": "less",
+                                      "args": [
+                                        0,
+                                        {
+                                          "op": "abs",
+                                          "args": [
+                                            {
+                                              "op": "sub",
+                                              "args": [
+                                                {
+                                                  "input": "op5"
+                                                },
+                                                {
+                                                  "op": "select",
+                                                  "args": [
+                                                    {
+                                                      "op": "less",
+                                                      "args": [
+                                                        5,
+                                                        {
+                                                          "input": "node_count"
+                                                        }
+                                                      ]
+                                                    },
+                                                    1,
+                                                    0
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "op": "sub",
+                              "args": [
+                                1,
+                                {
+                                  "op": "less",
+                                  "args": [
+                                    0,
+                                    {
+                                      "op": "abs",
+                                      "args": [
+                                        {
+                                          "op": "sub",
+                                          "args": [
+                                            {
+                                              "input": "a5"
+                                            },
+                                            {
+                                              "op": "select",
+                                              "args": [
+                                                {
+                                                  "op": "less",
+                                                  "args": [
+                                                    5,
+                                                    {
+                                                      "input": "node_count"
+                                                    }
+                                                  ]
+                                                },
+                                                3,
+                                                0
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "op": "sub",
+                          "args": [
+                            1,
+                            {
+                              "op": "less",
+                              "args": [
+                                0,
+                                {
+                                  "op": "abs",
+                                  "args": [
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        {
+                                          "input": "b5"
+                                        },
+                                        {
+                                          "op": "select",
+                                          "args": [
+                                            {
+                                              "op": "less",
+                                              "args": [
+                                                5,
+                                                {
+                                                  "input": "node_count"
+                                                }
+                                              ]
+                                            },
+                                            0,
+                                            0
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "sub",
+                      "args": [
+                        1,
+                        {
+                          "op": "less",
+                          "args": [
+                            0,
+                            {
+                              "op": "abs",
+                              "args": [
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    {
+                                      "input": "op6"
+                                    },
+                                    {
+                                      "op": "select",
+                                      "args": [
+                                        {
+                                          "op": "less",
+                                          "args": [
+                                            6,
+                                            {
+                                              "input": "node_count"
+                                            }
+                                          ]
+                                        },
+                                        2,
+                                        0
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "op": "sub",
+                  "args": [
+                    1,
+                    {
+                      "op": "less",
+                      "args": [
+                        0,
+                        {
+                          "op": "abs",
+                          "args": [
+                            {
+                              "op": "sub",
+                              "args": [
+                                {
+                                  "input": "a6"
+                                },
+                                {
+                                  "op": "select",
+                                  "args": [
+                                    {
+                                      "op": "less",
+                                      "args": [
+                                        6,
+                                        {
+                                          "input": "node_count"
+                                        }
+                                      ]
+                                    },
+                                    4,
+                                    0
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "op": "sub",
+              "args": [
+                1,
+                {
+                  "op": "less",
+                  "args": [
+                    0,
+                    {
+                      "op": "abs",
+                      "args": [
+                        {
+                          "op": "sub",
+                          "args": [
+                            {
+                              "input": "b6"
+                            },
+                            {
+                              "op": "select",
+                              "args": [
+                                {
+                                  "op": "less",
+                                  "args": [
+                                    6,
+                                    {
+                                      "input": "node_count"
+                                    }
+                                  ]
+                                },
+                                5,
+                                0
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "requires": [],
+      "source": "DWI-SDF-DEVELOPMENT-BINDINGS-0.1",
+      "meaning": "Validate the generated canonical postorder grammar, active node count, root, inactive zero words and exact revision. Invalid live code must fail a protected guard before interpretation.",
+      "status": "Authored numerical binding; resident integration and independent execution evidence required."
+    }
+  },
+  "validate_geometry_boxes": {
+    "inputs": {
+      "cx0": "resource_coordinate",
+      "cy0": "resource_coordinate",
+      "hx0": "resource_coordinate",
+      "hy0": "resource_coordinate",
+      "cx1": "resource_coordinate",
+      "cy1": "resource_coordinate",
+      "hx1": "resource_coordinate",
+      "hy1": "resource_coordinate",
+      "cx2": "resource_coordinate",
+      "cy2": "resource_coordinate",
+      "hx2": "resource_coordinate",
+      "hy2": "resource_coordinate",
+      "cx3": "resource_coordinate",
+      "cy3": "resource_coordinate",
+      "hx3": "resource_coordinate",
+      "hy3": "resource_coordinate",
+      "node_count": "program_size",
+      "quota": "resource_coordinate"
+    },
+    "outputs": {
+      "valid_boxes": "bit"
+    },
+    "binding": {
+      "inputs": [
+        "cx0",
+        "cy0",
+        "hx0",
+        "hy0",
+        "cx1",
+        "cy1",
+        "hx1",
+        "hy1",
+        "cx2",
+        "cy2",
+        "hx2",
+        "hy2",
+        "cx3",
+        "cy3",
+        "hx3",
+        "hy3",
+        "node_count",
+        "quota"
+      ],
+      "outputs": {
+        "valid_boxes": {
+          "op": "mul",
+          "args": [
+            {
+              "op": "mul",
+              "args": [
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "mul",
+                              "args": [
+                                1,
+                                {
+                                  "op": "less",
+                                  "args": [
+                                    0.0008,
+                                    {
+                                      "input": "quota"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "op": "sub",
+                              "args": [
+                                1,
+                                {
+                                  "op": "less",
+                                  "args": [
+                                    16,
+                                    {
+                                      "input": "quota"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "op": "select",
+                          "args": [
+                            {
+                              "op": "less",
+                              "args": [
+                                0,
+                                {
+                                  "op": "mul",
+                                  "args": [
+                                    0.5,
+                                    {
+                                      "op": "add",
+                                      "args": [
+                                        {
+                                          "input": "node_count"
+                                        },
+                                        1
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "op": "mul",
+                              "args": [
+                                {
+                                  "op": "mul",
+                                  "args": [
+                                    {
+                                      "op": "mul",
+                                      "args": [
+                                        {
+                                          "op": "mul",
+                                          "args": [
+                                            {
+                                              "op": "mul",
+                                              "args": [
+                                                1,
+                                                {
+                                                  "op": "less",
+                                                  "args": [
+                                                    1e-05,
+                                                    {
+                                                      "input": "hx0"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "op": "less",
+                                              "args": [
+                                                1e-05,
+                                                {
+                                                  "input": "hy0"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "op": "sub",
+                                          "args": [
+                                            1,
+                                            {
+                                              "op": "less",
+                                              "args": [
+                                                {
+                                                  "op": "sub",
+                                                  "args": [
+                                                    {
+                                                      "input": "cx0"
+                                                    },
+                                                    {
+                                                      "input": "hx0"
+                                                    }
+                                                  ]
+                                                },
+                                                0.0001
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        1,
+                                        {
+                                          "op": "less",
+                                          "args": [
+                                            {
+                                              "op": "sub",
+                                              "args": [
+                                                {
+                                                  "input": "cy0"
+                                                },
+                                                {
+                                                  "input": "hy0"
+                                                }
+                                              ]
+                                            },
+                                            0.0001
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    1,
+                                    {
+                                      "op": "less",
+                                      "args": [
+                                        {
+                                          "op": "sub",
+                                          "args": [
+                                            {
+                                              "input": "quota"
+                                            },
+                                            0.0001
+                                          ]
+                                        },
+                                        {
+                                          "op": "add",
+                                          "args": [
+                                            {
+                                              "op": "add",
+                                              "args": [
+                                                {
+                                                  "input": "cx0"
+                                                },
+                                                {
+                                                  "input": "hx0"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "op": "add",
+                                              "args": [
+                                                {
+                                                  "input": "cy0"
+                                                },
+                                                {
+                                                  "input": "hy0"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "op": "mul",
+                              "args": [
+                                {
+                                  "op": "mul",
+                                  "args": [
+                                    {
+                                      "op": "mul",
+                                      "args": [
+                                        {
+                                          "op": "mul",
+                                          "args": [
+                                            1,
+                                            {
+                                              "op": "sub",
+                                              "args": [
+                                                1,
+                                                {
+                                                  "op": "less",
+                                                  "args": [
+                                                    0,
+                                                    {
+                                                      "op": "abs",
+                                                      "args": [
+                                                        {
+                                                          "op": "sub",
+                                                          "args": [
+                                                            {
+                                                              "input": "cx0"
+                                                            },
+                                                            0
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "op": "sub",
+                                          "args": [
+                                            1,
+                                            {
+                                              "op": "less",
+                                              "args": [
+                                                0,
+                                                {
+                                                  "op": "abs",
+                                                  "args": [
+                                                    {
+                                                      "op": "sub",
+                                                      "args": [
+                                                        {
+                                                          "input": "cy0"
+                                                        },
+                                                        0
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        1,
+                                        {
+                                          "op": "less",
+                                          "args": [
+                                            0,
+                                            {
+                                              "op": "abs",
+                                              "args": [
+                                                {
+                                                  "op": "sub",
+                                                  "args": [
+                                                    {
+                                                      "input": "hx0"
+                                                    },
+                                                    0
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    1,
+                                    {
+                                      "op": "less",
+                                      "args": [
+                                        0,
+                                        {
+                                          "op": "abs",
+                                          "args": [
+                                            {
+                                              "op": "sub",
+                                              "args": [
+                                                {
+                                                  "input": "hy0"
+                                                },
+                                                0
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "select",
+                      "args": [
+                        {
+                          "op": "less",
+                          "args": [
+                            1,
+                            {
+                              "op": "mul",
+                              "args": [
+                                0.5,
+                                {
+                                  "op": "add",
+                                  "args": [
+                                    {
+                                      "input": "node_count"
+                                    },
+                                    1
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "mul",
+                              "args": [
+                                {
+                                  "op": "mul",
+                                  "args": [
+                                    {
+                                      "op": "mul",
+                                      "args": [
+                                        {
+                                          "op": "mul",
+                                          "args": [
+                                            1,
+                                            {
+                                              "op": "less",
+                                              "args": [
+                                                1e-05,
+                                                {
+                                                  "input": "hx1"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "op": "less",
+                                          "args": [
+                                            1e-05,
+                                            {
+                                              "input": "hy1"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        1,
+                                        {
+                                          "op": "less",
+                                          "args": [
+                                            {
+                                              "op": "sub",
+                                              "args": [
+                                                {
+                                                  "input": "cx1"
+                                                },
+                                                {
+                                                  "input": "hx1"
+                                                }
+                                              ]
+                                            },
+                                            0.0001
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    1,
+                                    {
+                                      "op": "less",
+                                      "args": [
+                                        {
+                                          "op": "sub",
+                                          "args": [
+                                            {
+                                              "input": "cy1"
+                                            },
+                                            {
+                                              "input": "hy1"
+                                            }
+                                          ]
+                                        },
+                                        0.0001
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "op": "sub",
+                              "args": [
+                                1,
+                                {
+                                  "op": "less",
+                                  "args": [
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        {
+                                          "input": "quota"
+                                        },
+                                        0.0001
+                                      ]
+                                    },
+                                    {
+                                      "op": "add",
+                                      "args": [
+                                        {
+                                          "op": "add",
+                                          "args": [
+                                            {
+                                              "input": "cx1"
+                                            },
+                                            {
+                                              "input": "hx1"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "op": "add",
+                                          "args": [
+                                            {
+                                              "input": "cy1"
+                                            },
+                                            {
+                                              "input": "hy1"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "mul",
+                              "args": [
+                                {
+                                  "op": "mul",
+                                  "args": [
+                                    {
+                                      "op": "mul",
+                                      "args": [
+                                        1,
+                                        {
+                                          "op": "sub",
+                                          "args": [
+                                            1,
+                                            {
+                                              "op": "less",
+                                              "args": [
+                                                0,
+                                                {
+                                                  "op": "abs",
+                                                  "args": [
+                                                    {
+                                                      "op": "sub",
+                                                      "args": [
+                                                        {
+                                                          "input": "cx1"
+                                                        },
+                                                        0
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        1,
+                                        {
+                                          "op": "less",
+                                          "args": [
+                                            0,
+                                            {
+                                              "op": "abs",
+                                              "args": [
+                                                {
+                                                  "op": "sub",
+                                                  "args": [
+                                                    {
+                                                      "input": "cy1"
+                                                    },
+                                                    0
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    1,
+                                    {
+                                      "op": "less",
+                                      "args": [
+                                        0,
+                                        {
+                                          "op": "abs",
+                                          "args": [
+                                            {
+                                              "op": "sub",
+                                              "args": [
+                                                {
+                                                  "input": "hx1"
+                                                },
+                                                0
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "op": "sub",
+                              "args": [
+                                1,
+                                {
+                                  "op": "less",
+                                  "args": [
+                                    0,
+                                    {
+                                      "op": "abs",
+                                      "args": [
+                                        {
+                                          "op": "sub",
+                                          "args": [
+                                            {
+                                              "input": "hy1"
+                                            },
+                                            0
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "op": "select",
+                  "args": [
+                    {
+                      "op": "less",
+                      "args": [
+                        2,
+                        {
+                          "op": "mul",
+                          "args": [
+                            0.5,
+                            {
+                              "op": "add",
+                              "args": [
+                                {
+                                  "input": "node_count"
+                                },
+                                1
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "mul",
+                              "args": [
+                                {
+                                  "op": "mul",
+                                  "args": [
+                                    {
+                                      "op": "mul",
+                                      "args": [
+                                        1,
+                                        {
+                                          "op": "less",
+                                          "args": [
+                                            1e-05,
+                                            {
+                                              "input": "hx2"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "op": "less",
+                                      "args": [
+                                        1e-05,
+                                        {
+                                          "input": "hy2"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    1,
+                                    {
+                                      "op": "less",
+                                      "args": [
+                                        {
+                                          "op": "sub",
+                                          "args": [
+                                            {
+                                              "input": "cx2"
+                                            },
+                                            {
+                                              "input": "hx2"
+                                            }
+                                          ]
+                                        },
+                                        0.0001
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "op": "sub",
+                              "args": [
+                                1,
+                                {
+                                  "op": "less",
+                                  "args": [
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        {
+                                          "input": "cy2"
+                                        },
+                                        {
+                                          "input": "hy2"
+                                        }
+                                      ]
+                                    },
+                                    0.0001
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "op": "sub",
+                          "args": [
+                            1,
+                            {
+                              "op": "less",
+                              "args": [
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    {
+                                      "input": "quota"
+                                    },
+                                    0.0001
+                                  ]
+                                },
+                                {
+                                  "op": "add",
+                                  "args": [
+                                    {
+                                      "op": "add",
+                                      "args": [
+                                        {
+                                          "input": "cx2"
+                                        },
+                                        {
+                                          "input": "hx2"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "op": "add",
+                                      "args": [
+                                        {
+                                          "input": "cy2"
+                                        },
+                                        {
+                                          "input": "hy2"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "mul",
+                              "args": [
+                                {
+                                  "op": "mul",
+                                  "args": [
+                                    1,
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        1,
+                                        {
+                                          "op": "less",
+                                          "args": [
+                                            0,
+                                            {
+                                              "op": "abs",
+                                              "args": [
+                                                {
+                                                  "op": "sub",
+                                                  "args": [
+                                                    {
+                                                      "input": "cx2"
+                                                    },
+                                                    0
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    1,
+                                    {
+                                      "op": "less",
+                                      "args": [
+                                        0,
+                                        {
+                                          "op": "abs",
+                                          "args": [
+                                            {
+                                              "op": "sub",
+                                              "args": [
+                                                {
+                                                  "input": "cy2"
+                                                },
+                                                0
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "op": "sub",
+                              "args": [
+                                1,
+                                {
+                                  "op": "less",
+                                  "args": [
+                                    0,
+                                    {
+                                      "op": "abs",
+                                      "args": [
+                                        {
+                                          "op": "sub",
+                                          "args": [
+                                            {
+                                              "input": "hx2"
+                                            },
+                                            0
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "op": "sub",
+                          "args": [
+                            1,
+                            {
+                              "op": "less",
+                              "args": [
+                                0,
+                                {
+                                  "op": "abs",
+                                  "args": [
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        {
+                                          "input": "hy2"
+                                        },
+                                        0
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "op": "select",
+              "args": [
+                {
+                  "op": "less",
+                  "args": [
+                    3,
+                    {
+                      "op": "mul",
+                      "args": [
+                        0.5,
+                        {
+                          "op": "add",
+                          "args": [
+                            {
+                              "input": "node_count"
+                            },
+                            1
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "mul",
+                              "args": [
+                                {
+                                  "op": "mul",
+                                  "args": [
+                                    1,
+                                    {
+                                      "op": "less",
+                                      "args": [
+                                        1e-05,
+                                        {
+                                          "input": "hx3"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "op": "less",
+                                  "args": [
+                                    1e-05,
+                                    {
+                                      "input": "hy3"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "op": "sub",
+                              "args": [
+                                1,
+                                {
+                                  "op": "less",
+                                  "args": [
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        {
+                                          "input": "cx3"
+                                        },
+                                        {
+                                          "input": "hx3"
+                                        }
+                                      ]
+                                    },
+                                    0.0001
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "op": "sub",
+                          "args": [
+                            1,
+                            {
+                              "op": "less",
+                              "args": [
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    {
+                                      "input": "cy3"
+                                    },
+                                    {
+                                      "input": "hy3"
+                                    }
+                                  ]
+                                },
+                                0.0001
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "sub",
+                      "args": [
+                        1,
+                        {
+                          "op": "less",
+                          "args": [
+                            {
+                              "op": "sub",
+                              "args": [
+                                {
+                                  "input": "quota"
+                                },
+                                0.0001
+                              ]
+                            },
+                            {
+                              "op": "add",
+                              "args": [
+                                {
+                                  "op": "add",
+                                  "args": [
+                                    {
+                                      "input": "cx3"
+                                    },
+                                    {
+                                      "input": "hx3"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "op": "add",
+                                  "args": [
+                                    {
+                                      "input": "cy3"
+                                    },
+                                    {
+                                      "input": "hy3"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "mul",
+                              "args": [
+                                1,
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    1,
+                                    {
+                                      "op": "less",
+                                      "args": [
+                                        0,
+                                        {
+                                          "op": "abs",
+                                          "args": [
+                                            {
+                                              "op": "sub",
+                                              "args": [
+                                                {
+                                                  "input": "cx3"
+                                                },
+                                                0
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "op": "sub",
+                              "args": [
+                                1,
+                                {
+                                  "op": "less",
+                                  "args": [
+                                    0,
+                                    {
+                                      "op": "abs",
+                                      "args": [
+                                        {
+                                          "op": "sub",
+                                          "args": [
+                                            {
+                                              "input": "cy3"
+                                            },
+                                            0
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "op": "sub",
+                          "args": [
+                            1,
+                            {
+                              "op": "less",
+                              "args": [
+                                0,
+                                {
+                                  "op": "abs",
+                                  "args": [
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        {
+                                          "input": "hx3"
+                                        },
+                                        0
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "sub",
+                      "args": [
+                        1,
+                        {
+                          "op": "less",
+                          "args": [
+                            0,
+                            {
+                              "op": "abs",
+                              "args": [
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    {
+                                      "input": "hy3"
+                                    },
+                                    0
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "requires": [],
+      "source": "DWI-SDF-DEVELOPMENT-BINDINGS-0.1",
+      "meaning": "First protected geometry stage: check positive extents, nonnegative resource demand, conservative quota corners and inactive zero boxes. Combine this result with validate_geometry_separation before using a candidate.",
+      "status": "Authored numerical binding; resident integration and independent execution evidence required."
+    }
+  },
+  "validate_geometry_separation": {
+    "inputs": {
+      "cx0": "resource_coordinate",
+      "cy0": "resource_coordinate",
+      "hx0": "resource_coordinate",
+      "hy0": "resource_coordinate",
+      "cx1": "resource_coordinate",
+      "cy1": "resource_coordinate",
+      "hx1": "resource_coordinate",
+      "hy1": "resource_coordinate",
+      "cx2": "resource_coordinate",
+      "cy2": "resource_coordinate",
+      "hx2": "resource_coordinate",
+      "hy2": "resource_coordinate",
+      "cx3": "resource_coordinate",
+      "cy3": "resource_coordinate",
+      "hx3": "resource_coordinate",
+      "hy3": "resource_coordinate",
+      "node_count": "program_size"
+    },
+    "outputs": {
+      "valid_separation": "bit"
+    },
+    "binding": {
+      "inputs": [
+        "cx0",
+        "cy0",
+        "hx0",
+        "hy0",
+        "cx1",
+        "cy1",
+        "hx1",
+        "hy1",
+        "cx2",
+        "cy2",
+        "hx2",
+        "hy2",
+        "cx3",
+        "cy3",
+        "hx3",
+        "hy3",
+        "node_count"
+      ],
+      "outputs": {
+        "valid_separation": {
+          "op": "mul",
+          "args": [
+            {
+              "op": "mul",
+              "args": [
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "mul",
+                              "args": [
+                                1,
+                                {
+                                  "op": "select",
+                                  "args": [
+                                    {
+                                      "op": "less",
+                                      "args": [
+                                        1,
+                                        {
+                                          "op": "mul",
+                                          "args": [
+                                            0.5,
+                                            {
+                                              "op": "add",
+                                              "args": [
+                                                {
+                                                  "input": "node_count"
+                                                },
+                                                1
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "op": "less",
+                                      "args": [
+                                        0.0001,
+                                        {
+                                          "op": "max",
+                                          "args": [
+                                            {
+                                              "op": "sub",
+                                              "args": [
+                                                {
+                                                  "op": "abs",
+                                                  "args": [
+                                                    {
+                                                      "op": "sub",
+                                                      "args": [
+                                                        {
+                                                          "input": "cx1"
+                                                        },
+                                                        {
+                                                          "input": "cx0"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "op": "add",
+                                                  "args": [
+                                                    {
+                                                      "input": "hx1"
+                                                    },
+                                                    {
+                                                      "input": "hx0"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "op": "sub",
+                                              "args": [
+                                                {
+                                                  "op": "abs",
+                                                  "args": [
+                                                    {
+                                                      "op": "sub",
+                                                      "args": [
+                                                        {
+                                                          "input": "cy1"
+                                                        },
+                                                        {
+                                                          "input": "cy0"
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "op": "add",
+                                                  "args": [
+                                                    {
+                                                      "input": "hy1"
+                                                    },
+                                                    {
+                                                      "input": "hy0"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    1
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "op": "select",
+                              "args": [
+                                {
+                                  "op": "less",
+                                  "args": [
+                                    2,
+                                    {
+                                      "op": "mul",
+                                      "args": [
+                                        0.5,
+                                        {
+                                          "op": "add",
+                                          "args": [
+                                            {
+                                              "input": "node_count"
+                                            },
+                                            1
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "op": "less",
+                                  "args": [
+                                    0.0001,
+                                    {
+                                      "op": "max",
+                                      "args": [
+                                        {
+                                          "op": "sub",
+                                          "args": [
+                                            {
+                                              "op": "abs",
+                                              "args": [
+                                                {
+                                                  "op": "sub",
+                                                  "args": [
+                                                    {
+                                                      "input": "cx2"
+                                                    },
+                                                    {
+                                                      "input": "cx0"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "op": "add",
+                                              "args": [
+                                                {
+                                                  "input": "hx2"
+                                                },
+                                                {
+                                                  "input": "hx0"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "op": "sub",
+                                          "args": [
+                                            {
+                                              "op": "abs",
+                                              "args": [
+                                                {
+                                                  "op": "sub",
+                                                  "args": [
+                                                    {
+                                                      "input": "cy2"
+                                                    },
+                                                    {
+                                                      "input": "cy0"
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "op": "add",
+                                              "args": [
+                                                {
+                                                  "input": "hy2"
+                                                },
+                                                {
+                                                  "input": "hy0"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                1
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "op": "select",
+                          "args": [
+                            {
+                              "op": "less",
+                              "args": [
+                                2,
+                                {
+                                  "op": "mul",
+                                  "args": [
+                                    0.5,
+                                    {
+                                      "op": "add",
+                                      "args": [
+                                        {
+                                          "input": "node_count"
+                                        },
+                                        1
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "op": "less",
+                              "args": [
+                                0.0001,
+                                {
+                                  "op": "max",
+                                  "args": [
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        {
+                                          "op": "abs",
+                                          "args": [
+                                            {
+                                              "op": "sub",
+                                              "args": [
+                                                {
+                                                  "input": "cx2"
+                                                },
+                                                {
+                                                  "input": "cx1"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "op": "add",
+                                          "args": [
+                                            {
+                                              "input": "hx2"
+                                            },
+                                            {
+                                              "input": "hx1"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        {
+                                          "op": "abs",
+                                          "args": [
+                                            {
+                                              "op": "sub",
+                                              "args": [
+                                                {
+                                                  "input": "cy2"
+                                                },
+                                                {
+                                                  "input": "cy1"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "op": "add",
+                                          "args": [
+                                            {
+                                              "input": "hy2"
+                                            },
+                                            {
+                                              "input": "hy1"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            1
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "select",
+                      "args": [
+                        {
+                          "op": "less",
+                          "args": [
+                            3,
+                            {
+                              "op": "mul",
+                              "args": [
+                                0.5,
+                                {
+                                  "op": "add",
+                                  "args": [
+                                    {
+                                      "input": "node_count"
+                                    },
+                                    1
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "op": "less",
+                          "args": [
+                            0.0001,
+                            {
+                              "op": "max",
+                              "args": [
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    {
+                                      "op": "abs",
+                                      "args": [
+                                        {
+                                          "op": "sub",
+                                          "args": [
+                                            {
+                                              "input": "cx3"
+                                            },
+                                            {
+                                              "input": "cx0"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "op": "add",
+                                      "args": [
+                                        {
+                                          "input": "hx3"
+                                        },
+                                        {
+                                          "input": "hx0"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    {
+                                      "op": "abs",
+                                      "args": [
+                                        {
+                                          "op": "sub",
+                                          "args": [
+                                            {
+                                              "input": "cy3"
+                                            },
+                                            {
+                                              "input": "cy0"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "op": "add",
+                                      "args": [
+                                        {
+                                          "input": "hy3"
+                                        },
+                                        {
+                                          "input": "hy0"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        1
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "op": "select",
+                  "args": [
+                    {
+                      "op": "less",
+                      "args": [
+                        3,
+                        {
+                          "op": "mul",
+                          "args": [
+                            0.5,
+                            {
+                              "op": "add",
+                              "args": [
+                                {
+                                  "input": "node_count"
+                                },
+                                1
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "less",
+                      "args": [
+                        0.0001,
+                        {
+                          "op": "max",
+                          "args": [
+                            {
+                              "op": "sub",
+                              "args": [
+                                {
+                                  "op": "abs",
+                                  "args": [
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        {
+                                          "input": "cx3"
+                                        },
+                                        {
+                                          "input": "cx1"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "op": "add",
+                                  "args": [
+                                    {
+                                      "input": "hx3"
+                                    },
+                                    {
+                                      "input": "hx1"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "op": "sub",
+                              "args": [
+                                {
+                                  "op": "abs",
+                                  "args": [
+                                    {
+                                      "op": "sub",
+                                      "args": [
+                                        {
+                                          "input": "cy3"
+                                        },
+                                        {
+                                          "input": "cy1"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "op": "add",
+                                  "args": [
+                                    {
+                                      "input": "hy3"
+                                    },
+                                    {
+                                      "input": "hy1"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    1
+                  ]
+                }
+              ]
+            },
+            {
+              "op": "select",
+              "args": [
+                {
+                  "op": "less",
+                  "args": [
+                    3,
+                    {
+                      "op": "mul",
+                      "args": [
+                        0.5,
+                        {
+                          "op": "add",
+                          "args": [
+                            {
+                              "input": "node_count"
+                            },
+                            1
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "op": "less",
+                  "args": [
+                    0.0001,
+                    {
+                      "op": "max",
+                      "args": [
+                        {
+                          "op": "sub",
+                          "args": [
+                            {
+                              "op": "abs",
+                              "args": [
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    {
+                                      "input": "cx3"
+                                    },
+                                    {
+                                      "input": "cx2"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "op": "add",
+                              "args": [
+                                {
+                                  "input": "hx3"
+                                },
+                                {
+                                  "input": "hx2"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "op": "sub",
+                          "args": [
+                            {
+                              "op": "abs",
+                              "args": [
+                                {
+                                  "op": "sub",
+                                  "args": [
+                                    {
+                                      "input": "cy3"
+                                    },
+                                    {
+                                      "input": "cy2"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "op": "add",
+                              "args": [
+                                {
+                                  "input": "hy3"
+                                },
+                                {
+                                  "input": "hy2"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                1
+              ]
+            }
+          ]
+        }
+      },
+      "requires": [],
+      "source": "DWI-SDF-DEVELOPMENT-BINDINGS-0.1",
+      "meaning": "Second protected geometry stage: check positive pairwise axis separation for active boxes. The structural validator must establish the active count; the box and separation results must both pass.",
+      "status": "Authored numerical binding; resident integration and independent execution evidence required."
+    }
+  },
+  "validate_geometry": {
+    "inputs": {
+      "valid_boxes": "bit",
+      "valid_separation": "bit"
+    },
+    "outputs": {
+      "valid": "bit"
+    },
+    "binding": {
+      "inputs": [
+        "valid_boxes",
+        "valid_separation"
+      ],
+      "outputs": {
+        "valid": {
+          "op": "mul",
+          "args": [
+            {
+              "op": "mul",
+              "args": [
+                1,
+                {
+                  "input": "valid_boxes"
+                }
+              ]
+            },
+            {
+              "input": "valid_separation"
+            }
+          ]
+        }
+      },
+      "requires": [
+        {
+          "op": "select",
+          "args": [
+            {
+              "op": "sub",
+              "args": [
+                1,
+                {
+                  "op": "less",
+                  "args": [
+                    0,
+                    {
+                      "op": "abs",
+                      "args": [
+                        {
+                          "op": "sub",
+                          "args": [
+                            {
+                              "input": "valid_boxes"
+                            },
+                            0
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            1,
+            {
+              "op": "sub",
+              "args": [
+                1,
+                {
+                  "op": "less",
+                  "args": [
+                    0,
+                    {
+                      "op": "abs",
+                      "args": [
+                        {
+                          "op": "sub",
+                          "args": [
+                            {
+                              "input": "valid_boxes"
+                            },
+                            1
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "op": "select",
+          "args": [
+            {
+              "op": "sub",
+              "args": [
+                1,
+                {
+                  "op": "less",
+                  "args": [
+                    0,
+                    {
+                      "op": "abs",
+                      "args": [
+                        {
+                          "op": "sub",
+                          "args": [
+                            {
+                              "input": "valid_separation"
+                            },
+                            0
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            1,
+            {
+              "op": "sub",
+              "args": [
+                1,
+                {
+                  "op": "less",
+                  "args": [
+                    0,
+                    {
+                      "op": "abs",
+                      "args": [
+                        {
+                          "op": "sub",
+                          "args": [
+                            {
+                              "input": "valid_separation"
+                            },
+                            1
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "source": "DWI-SDF-DEVELOPMENT-BINDINGS-0.1",
+      "meaning": "Combine both protected geometry stages. Independent exact-rational packed-constant validation supplies the stronger mathematical certificate.",
+      "status": "Authored numerical binding; resident integration and independent execution evidence required."
+    }
+  }
+}

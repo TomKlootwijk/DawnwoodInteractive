@@ -1,0 +1,56 @@
+[
+  {
+    "name": "lower_margin_rounding",
+    "packed_box": [
+      0.0001219959813170135,
+      0.20000000298023224,
+      2.199598566221539e-05,
+      0.019999999552965164
+    ],
+    "quota": 1.0,
+    "one_margin_admitted": true,
+    "two_margin_admitted": false,
+    "one_margin_without_quota_cap_admitted": true,
+    "actual_domain": true,
+    "full_margin": false,
+    "lower_x": 9.999999565479811e-05,
+    "upper_sum": 0.22014399450017663,
+    "upper_excess_over_full_margin": -0.7797560055023496
+  },
+  {
+    "name": "upper_margin_rounding",
+    "packed_box": [
+      14.76984691619873,
+      1.1500531435012817,
+      0.03999999910593033,
+      0.03999999910593033
+    ],
+    "quota": 16.0,
+    "one_margin_admitted": true,
+    "two_margin_admitted": false,
+    "one_margin_without_quota_cap_admitted": true,
+    "actual_domain": true,
+    "full_margin": false,
+    "lower_x": 14.7298469170928,
+    "upper_sum": 15.999900057911873,
+    "upper_excess_over_full_margin": 5.790934665128589e-08
+  },
+  {
+    "name": "quota_cap_is_essential",
+    "packed_box": [
+      2048.0,
+      2048.0,
+      1.9999999494757503e-05,
+      1.9999999494757503e-05
+    ],
+    "quota": 4096.0,
+    "one_margin_admitted": false,
+    "two_margin_admitted": false,
+    "one_margin_without_quota_cap_admitted": true,
+    "actual_domain": false,
+    "full_margin": false,
+    "lower_x": 2047.9999800000005,
+    "upper_sum": 4096.000039999999,
+    "upper_excess_over_full_margin": 0.00013999999646330252
+  }
+]

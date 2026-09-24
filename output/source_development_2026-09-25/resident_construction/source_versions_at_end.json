@@ -1,0 +1,157 @@
+{
+  "local_lab/source_development.py": {
+    "captured_sha256": "ee8cf0b6654e0feac35523f2ff75ec5d2bc66c8a4920b67534cf18abef9ee380",
+    "current_sha256": "ee8cf0b6654e0feac35523f2ff75ec5d2bc66c8a4920b67534cf18abef9ee380",
+    "matches": true
+  },
+  "local_lab/source_development_bindings.py": {
+    "captured_sha256": "538edbdc2a02be244185f5f28e5d318d7121c8b886e6c80234d09e6e160567cb",
+    "current_sha256": "538edbdc2a02be244185f5f28e5d318d7121c8b886e6c80234d09e6e160567cb",
+    "matches": true
+  },
+  "local_lab/source_development_results.py": {
+    "captured_sha256": "f79019f613328f1bcf78b96a689b7a95a8b4975ff666aa6bfeab7b98f8a0f34d",
+    "current_sha256": "f79019f613328f1bcf78b96a689b7a95a8b4975ff666aa6bfeab7b98f8a0f34d",
+    "matches": true
+  },
+  "local_lab/development_sdf.py": {
+    "captured_sha256": "f7b3d1d35a98b6efda867ae784bce17156adf5a56213ff8c64ddbaf5ed421448",
+    "current_sha256": "f7b3d1d35a98b6efda867ae784bce17156adf5a56213ff8c64ddbaf5ed421448",
+    "matches": true
+  },
+  "local_lab/source_cycle.py": {
+    "captured_sha256": "b8bb4255b19e0e53d664449addc984b6c0c44ed795a3f78bfa8190d848ab9f51",
+    "current_sha256": "b8bb4255b19e0e53d664449addc984b6c0c44ed795a3f78bfa8190d848ab9f51",
+    "matches": true
+  },
+  "local_lab/source_program.py": {
+    "captured_sha256": "c91049fd6eee0c9c89b2489dc2e1d56464f9ee4eec0e69e9b9edb1be10662fa9",
+    "current_sha256": "c91049fd6eee0c9c89b2489dc2e1d56464f9ee4eec0e69e9b9edb1be10662fa9",
+    "matches": true
+  },
+  "local_lab/source_graph.py": {
+    "captured_sha256": "af28152d5a565b24e769ee10c4001f1fd8af6d8b799297e0b22ccb4903dd5ac7",
+    "current_sha256": "af28152d5a565b24e769ee10c4001f1fd8af6d8b799297e0b22ccb4903dd5ac7",
+    "matches": true
+  },
+  "local_lab/source_graph_types.py": {
+    "captured_sha256": "5cefe06ed3d754dfda9813fd7e3d7c8ed943598ee322e1595eebc998fd6b159a",
+    "current_sha256": "5cefe06ed3d754dfda9813fd7e3d7c8ed943598ee322e1595eebc998fd6b159a",
+    "matches": true
+  },
+  "local_lab/source_graph_export.py": {
+    "captured_sha256": "6d9f64d6ab41a01afcf41f604f749025c0da0476a56e628affe0ba836ba6bf56",
+    "current_sha256": "6d9f64d6ab41a01afcf41f604f749025c0da0476a56e628affe0ba836ba6bf56",
+    "matches": true
+  },
+  "local_lab/source_catalogue_extension.py": {
+    "captured_sha256": "c1fb4fe505e5dc1316bb6b30d12f44f185456239fd8931a72ced7054598afddd",
+    "current_sha256": "c1fb4fe505e5dc1316bb6b30d12f44f185456239fd8931a72ced7054598afddd",
+    "matches": true
+  },
+  "local_lab/source_slot_bindings.py": {
+    "captured_sha256": "385016ddda79cf8050d4fbfddb8b6e8e1aeb2bde8981997134e1b8dcd12689db",
+    "current_sha256": "385016ddda79cf8050d4fbfddb8b6e8e1aeb2bde8981997134e1b8dcd12689db",
+    "matches": true
+  },
+  "local_lab/source_resident_v3.py": {
+    "captured_sha256": "725a722d52ccc696a12e18a7926b1ea3c870746160639dee16b0bc1e235467e0",
+    "current_sha256": "725a722d52ccc696a12e18a7926b1ea3c870746160639dee16b0bc1e235467e0",
+    "matches": true
+  },
+  "local_lab/source_ir_v2.py": {
+    "captured_sha256": "3e7f528c14bbcb59b2e2df877b1b47c2adedaa37b2d454305bcebf1a03befe2a",
+    "current_sha256": "3e7f528c14bbcb59b2e2df877b1b47c2adedaa37b2d454305bcebf1a03befe2a",
+    "matches": true
+  },
+  "local_lab/source_ir.py": {
+    "captured_sha256": "6ba9b22f04da0034b2c3b3f2878566907df0353e2dc5ba05326cec0ea656b6b9",
+    "current_sha256": "6ba9b22f04da0034b2c3b3f2878566907df0353e2dc5ba05326cec0ea656b6b9",
+    "matches": true
+  },
+  "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/include/resident_v3.inc": {
+    "captured_sha256": "f6073baeddf7b4fa76048b283126e0de113183a6cff1aeb39d0ad4864713d534",
+    "current_sha256": "f6073baeddf7b4fa76048b283126e0de113183a6cff1aeb39d0ad4864713d534",
+    "matches": true
+  },
+  "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/include/numeric_types.inc": {
+    "captured_sha256": "5f0fbb86d8f0dd54f8b2f7e1f622fb3159ed4530fa673cc6d2621b1494138faa",
+    "current_sha256": "5f0fbb86d8f0dd54f8b2f7e1f622fb3159ed4530fa673cc6d2621b1494138faa",
+    "matches": true
+  },
+  "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/include/source_math_v2.inc": {
+    "captured_sha256": "41334180da91e9a6782a189c3805f725a30617c64877d54513a0755e023072e9",
+    "current_sha256": "41334180da91e9a6782a189c3805f725a30617c64877d54513a0755e023072e9",
+    "matches": true
+  },
+  "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/resident_v3_cli.cpp": {
+    "captured_sha256": "adbfe1daa93000283432fb5f4b447fab4f814f55ca3df92682ee8074832514c9",
+    "current_sha256": "adbfe1daa93000283432fb5f4b447fab4f814f55ca3df92682ee8074832514c9",
+    "matches": true
+  },
+  "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/shaders/resident_v3.comp": {
+    "captured_sha256": "ba32e242f9d955138f1b83333445500ed34caec28fd5bc7c1729b6981d0da166",
+    "current_sha256": "ba32e242f9d955138f1b83333445500ed34caec28fd5bc7c1729b6981d0da166",
+    "matches": true
+  },
+  "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/tools/build_resident_v3.py": {
+    "captured_sha256": "5d48890ad2d589aab8b6332139a0304cd9f85c6542ef7113441cdaad5d3125d8",
+    "current_sha256": "5d48890ad2d589aab8b6332139a0304cd9f85c6542ef7113441cdaad5d3125d8",
+    "matches": true
+  },
+  "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/docs/NUMERICAL_PROFILE.md": {
+    "captured_sha256": "1597757a7af8506331cbf5c3d1dd6450523b5bee2c1b12ad2f03ea69701a8dd1",
+    "current_sha256": "1597757a7af8506331cbf5c3d1dd6450523b5bee2c1b12ad2f03ea69701a8dd1",
+    "matches": true
+  },
+  "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/docs/CLAIMS.md": {
+    "captured_sha256": "6b033af5b0220b64ddefa0e9ad3425d08d28469f647ae0447e30553e9220951c",
+    "current_sha256": "6b033af5b0220b64ddefa0e9ad3425d08d28469f647ae0447e30553e9220951c",
+    "matches": true
+  },
+  "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/bin/windows-resident-v3/build.json": {
+    "captured_sha256": "1657995b487dbdc96142a8e5444920968d232694700d09523879a510547bde20",
+    "current_sha256": "1657995b487dbdc96142a8e5444920968d232694700d09523879a510547bde20",
+    "matches": true
+  },
+  "AGENTS.md": {
+    "captured_sha256": "21e1256a22ef192e0e4d38e26ab26911336eac7f7a4730f22cc6a2be8809c0d8",
+    "current_sha256": "21e1256a22ef192e0e4d38e26ab26911336eac7f7a4730f22cc6a2be8809c0d8",
+    "matches": true
+  },
+  "DAWNWOOD_AGENT.md": {
+    "captured_sha256": "171b6112fdaa83949f50b6ff45df542b1a4b40dbbba3019f7aa6a8cf27b5a108",
+    "current_sha256": "171b6112fdaa83949f50b6ff45df542b1a4b40dbbba3019f7aa6a8cf27b5a108",
+    "matches": true
+  },
+  "docs/RESIDENT_V3_ABI.md": {
+    "captured_sha256": "b5a786e32403b44ffb51630bd689f3a74a9f55a5323bd0eb7ee87fdc5cd72df3",
+    "current_sha256": "b5a786e32403b44ffb51630bd689f3a74a9f55a5323bd0eb7ee87fdc5cd72df3",
+    "matches": true
+  },
+  "source_bindings/graphs/amplitude_v0.1.json": {
+    "captured_sha256": "5ce2fceebafe566221f6ff3d21eca45c2dd0ea26d9479b5f451a2469fa8789bc",
+    "current_sha256": "5ce2fceebafe566221f6ff3d21eca45c2dd0ea26d9479b5f451a2469fa8789bc",
+    "matches": true
+  },
+  "source_workbench/Dawnwood_Interactive_v0.2/model/substrate.json": {
+    "captured_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+    "current_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+    "matches": true
+  },
+  "source_workbench/Dawnwood_Interactive_v0.2/model/cycle.json": {
+    "captured_sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+    "current_sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+    "matches": true
+  },
+  "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/bin/windows-resident-v3/dawnwood-resident-v3.exe": {
+    "captured_sha256": "2843b944d16d4f46873258fc11d828fa8c8c65a6129c79d7f4cce2f7bed00cd1",
+    "current_sha256": "2843b944d16d4f46873258fc11d828fa8c8c65a6129c79d7f4cce2f7bed00cd1",
+    "matches": true
+  },
+  "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/bin/windows-resident-v3/resident_v3.spv": {
+    "captured_sha256": "9e90c89135a93a115db1ceaea5475338a389f8ab41ab7e64165751d4410f6098",
+    "current_sha256": "9e90c89135a93a115db1ceaea5475338a389f8ab41ab7e64165751d4410f6098",
+    "matches": true
+  }
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "name": "baseline_1",
+    "checkpoint_sha256": "ec0f0491cbfede60cee3b8c51fde1fa952cc0568745584775e12b227c1f0e821",
+    "count": 129,
+    "all_assessments_passed": true,
+    "all_runtime_healthy": true,
+    "all_programs_geometrically_admissible": true,
+    "program_node_counts": [
+      1
+    ],
+    "coverage_values": [
+      3.0
+    ],
+    "admission_values": [
+      0.0
+    ],
+    "max_query_error": 6.110676786796887e-08,
+    "max_witness_error": 6.239862471169033e-08,
+    "max_score_error_given_returned_coverage": 1.3723181169211784e-07,
+    "coverage_ambiguous_rows": 0,
+    "unique_program_count": 1,
+    "unique_topology_count": 1,
+    "unique_semantic_region_count": 1
+  },
+  {
+    "name": "baseline_2",
+    "checkpoint_sha256": "af7070b44e044c80495297b538f014c44e2679b444bf74c3d28c9c5721f7cd98",
+    "count": 129,
+    "all_assessments_passed": true,
+    "all_runtime_healthy": true,
+    "all_programs_geometrically_admissible": true,
+    "program_node_counts": [
+      3
+    ],
+    "coverage_values": [
+      6.0
+    ],
+    "admission_values": [
+      1.0
+    ],
+    "max_query_error": 0.0,
+    "max_witness_error": 2.5090063582311473e-08,
+    "max_score_error_given_returned_coverage": 1.7092542670127386e-07,
+    "coverage_ambiguous_rows": 0,
+    "unique_program_count": 129,
+    "unique_topology_count": 1,
+    "unique_semantic_region_count": 129
+  },
+  {
+    "name": "baseline_3",
+    "checkpoint_sha256": "62a4b82afad2f7b2ba9a54b1dbe1a57f97d97fdb3b563008fc3c01b498f0d9cb",
+    "count": 129,
+    "all_assessments_passed": true,
+    "all_runtime_healthy": true,
+    "all_programs_geometrically_admissible": true,
+    "program_node_counts": [
+      5
+    ],
+    "coverage_values": [
+      9.0
+    ],
+    "admission_values": [
+      1.0
+    ],
+    "max_query_error": 0.0,
+    "max_witness_error": 0.0,
+    "max_score_error_given_returned_coverage": 8.471142542987309e-07,
+    "coverage_ambiguous_rows": 0,
+    "unique_program_count": 129,
+    "unique_topology_count": 1,
+    "unique_semantic_region_count": 129
+  },
+  {
+    "name": "baseline_8",
+    "checkpoint_sha256": "c1074458cee7875905503665caad43e3cc57e3666d49aec4404bcf5cfecbc723",
+    "count": 129,
+    "all_assessments_passed": true,
+    "all_runtime_healthy": true,
+    "all_programs_geometrically_admissible": true,
+    "program_node_counts": [
+      5
+    ],
+    "coverage_values": [
+      9.0
+    ],
+    "admission_values": [
+      1.0
+    ],
+    "max_query_error": 0.0,
+    "max_witness_error": 0.0,
+    "max_score_error_given_returned_coverage": 8.471142542987309e-07,
+    "coverage_ambiguous_rows": 0,
+    "unique_program_count": 129,
+    "unique_topology_count": 1,
+    "unique_semantic_region_count": 129
+  },
+  {
+    "name": "baseline_64",
+    "checkpoint_sha256": "eb22035f1f255b7c2c9641b7bce2373a360815c59fa7fd379af9399bc447f9d5",
+    "count": 129,
+    "all_assessments_passed": true,
+    "all_runtime_healthy": true,
+    "all_programs_geometrically_admissible": true,
+    "program_node_counts": [
+      5
+    ],
+    "coverage_values": [
+      9.0
+    ],
+    "admission_values": [
+      1.0
+    ],
+    "max_query_error": 0.0,
+    "max_witness_error": 0.0,
+    "max_score_error_given_returned_coverage": 8.471142542987309e-07,
+    "coverage_ambiguous_rows": 0,
+    "unique_program_count": 129,
+    "unique_topology_count": 1,
+    "unique_semantic_region_count": 129
+  },
+  {
+    "name": "disabled_8",
+    "checkpoint_sha256": "a94454c19dab2871bd2aa9e44eb26c1a4ae4d7448169ce4903a8cfb0f61ef9c4",
+    "count": 129,
+    "all_assessments_passed": true,
+    "all_runtime_healthy": true,
+    "all_programs_geometrically_admissible": true,
+    "program_node_counts": [
+      1
+    ],
+    "coverage_values": [
+      3.0
+    ],
+    "admission_values": [
+      0.0
+    ],
+    "max_query_error": 6.110676786796887e-08,
+    "max_witness_error": 6.239862471169033e-08,
+    "max_score_error_given_returned_coverage": 1.3723181169211784e-07,
+    "coverage_ambiguous_rows": 0,
+    "unique_program_count": 1,
+    "unique_topology_count": 1,
+    "unique_semantic_region_count": 1
+  }
+]

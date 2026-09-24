@@ -1,0 +1,17 @@
+{
+  "recorded_utc": "2026-09-24T23:41:27.416954+00:00",
+  "checkpoint_sha256": "fff1ca1ed34c57fa9c6a967b211330b42c13fc5c37074039f8e41a8aba7a1639",
+  "outcome": "Retain frozen programs unchanged for native holdout execution; no constructor revision selected from this holdout.",
+  "observation": {
+    "initial_one_box": 300,
+    "hand_defined_three_box_reference": 900,
+    "constructed_lane_0": 900,
+    "constructed_lane_1": 900,
+    "constructed_lane_2": 900
+  },
+  "limitations": [
+    "Authored structural resource-admissibility benchmark; not a real allocation trace, allocator, measured speedup or learned hardware safety envelope.",
+    "The hand-defined three-box reference is an independent authored baseline, not an observed true region. Equal coverage does not establish superiority; its area/complexity penalty is reported without adjustment.",
+    "This evaluates the retained packed program on the host. It does not establish native FP32 execution of these heldout queries. The predeclared native-query absolute error limit remains1e-5 for the later native batch."
+  ]
+}

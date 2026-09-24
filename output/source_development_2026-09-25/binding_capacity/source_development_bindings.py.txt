@@ -113,8 +113,7 @@ def unpack_program(values):
     return result
 
 
-def make_bindings(training_points, *, base_half_extent=.045, complexity_cost=.02, area_cost=.005,
-                  admission_margin=PROOF_MARGIN):
+def make_bindings(training_points, *, base_half_extent=.045, complexity_cost=.02, area_cost=.005):
     """Return inspectable typed expressions; all program words are runtime inputs.
 
     The resident constructor appends a new leaf and an explicit union node.
@@ -133,8 +132,6 @@ def make_bindings(training_points, *, base_half_extent=.045, complexity_cost=.02
         points.append(packed)
     if any(not math.isfinite(x) or x <= 0 for x in (base_half_extent, complexity_cost, area_cost)):
         raise ValueError("Policy magnitudes must be finite and positive")
-    if type(admission_margin) not in (int, float) or not math.isfinite(admission_margin) or not PROOF_MARGIN <= admission_margin <= 2 * PROOF_MARGIN:
-        raise ValueError("Admission margin must lie between one and two proof margins")
     result = {}
 
     # The old resident mutator creates an edit descriptor. Geometry/goal feedback
@@ -204,8 +201,8 @@ def make_bindings(training_points, *, base_half_extent=.045, complexity_cost=.02
         active = lt(i, leaves)
         cx, cy, hx, hy = [V(f"{field}{i}") for field in ("cx", "cy", "hx", "hy")]
         legal = both(lt(MIN_HALF_EXTENT, hx), lt(MIN_HALF_EXTENT, hy),
-                     c.le(admission_margin, sub(cx, hx)), c.le(admission_margin, sub(cy, hy)),
-                     c.le(add(add(cx, hx), add(cy, hy)), sub(V("quota"), admission_margin)))
+                     c.le(PROOF_MARGIN, sub(cx, hx)), c.le(PROOF_MARGIN, sub(cy, hy)),
+                     c.le(add(add(cx, hx), add(cy, hy)), sub(V("quota"), PROOF_MARGIN)))
         zero = both(*(eq(V(f"{field}{i}"), 0) for field in ("cx", "cy", "hx", "hy")))
         guards.append(choose(active, legal, zero))
     result["validate_geometry_boxes"] = _entry(inputs, {"valid_boxes": "bit"}, {"valid_boxes": both(*guards)},

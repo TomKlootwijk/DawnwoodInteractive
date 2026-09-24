@@ -1,0 +1,55 @@
+{
+  "files": {
+    "source_model.json": {
+      "path": "baseline/source_model.json",
+      "sha256": "d20f71b01f463ecc190fd2d32a64aca0e2697a6c60d80441afa241007ce8d544",
+      "bytes": 18097,
+      "stored_sha256": "d20f71b01f463ecc190fd2d32a64aca0e2697a6c60d80441afa241007ce8d544",
+      "stored_bytes": 18097
+    },
+    "source_cycle.json": {
+      "path": "baseline/source_cycle.json",
+      "sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+      "bytes": 541,
+      "stored_sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+      "stored_bytes": 541
+    },
+    "development_source.json": {
+      "path": "baseline/development_source.json",
+      "sha256": "1d9c99edea4d7e7e356894656b6c3d81005213d12e25ed56b82ca96c89c29f9b",
+      "bytes": 870552,
+      "stored_sha256": "1d9c99edea4d7e7e356894656b6c3d81005213d12e25ed56b82ca96c89c29f9b",
+      "stored_bytes": 870552
+    },
+    "source_graph.json": {
+      "path": "baseline/source_graph.json",
+      "sha256": "b2d453395bb3a4f1344e42fd78ebeeebafd1fbadc677cdc8b8c23fd457046fac",
+      "bytes": 416723,
+      "stored_sha256": "b2d453395bb3a4f1344e42fd78ebeeebafd1fbadc677cdc8b8c23fd457046fac",
+      "stored_bytes": 416723
+    },
+    "definition.json.xz": {
+      "path": "baseline/definition.json.xz",
+      "sha256": "516ae12a24d99d3366f2965b5e536a1ba8b01d628ec01f4d685fbb97faf9fa7f",
+      "bytes": 22332050,
+      "stored_sha256": "9989c71ea46469e209da3375fb80c5e87337f244a0b1fb88d51c3387faa33b1a",
+      "stored_bytes": 124464
+    },
+    "manifest.json.xz": {
+      "path": "baseline/manifest.json.xz",
+      "sha256": "198f2faa1980348b001184426e58af5aa0ee8bff5af889b03368893d82cd31aa",
+      "bytes": 23234130,
+      "stored_sha256": "03aeb282931b6e2f47886d8111b09d505c908d1be20a63729be4a849f8ba5206",
+      "stored_bytes": 142648
+    }
+  },
+  "program": {
+    "sha256": "b6f51d8008a9526ab4454cf2ab56bfa40359940e7492fcf021700949c88b42b5",
+    "bytes": 622388
+  },
+  "configuration_sha256": "3063f422048d4c40889169f157463cd2340bd032630639a7211a360790d976e6",
+  "state_width": 100,
+  "functions": 81,
+  "mutation_steps": 150,
+  "action_steps": 2718
+}

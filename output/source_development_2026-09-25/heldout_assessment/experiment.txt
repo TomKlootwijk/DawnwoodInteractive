@@ -1,0 +1,203 @@
+"""Direct retained assessment; not a test suite or resident constructor."""
+import hashlib
+import json
+import math
+import pathlib
+import random
+import struct
+import sys
+from datetime import datetime, timezone
+from fractions import Fraction
+
+ROOT = pathlib.Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "local_lab"))
+import development_sdf as sdf
+import source_development_results as readout
+
+OUT = ROOT / "output/source_development_2026-09-25/heldout_assessment"
+SOURCE = ROOT / "tmp/development-first"
+OUT.mkdir(parents=True, exist_ok=False)
+
+def sha(data):
+    return hashlib.sha256(data).hexdigest()
+
+def now():
+    return datetime.now(timezone.utc).isoformat()
+
+def write(name, value):
+    data = (json.dumps(value, indent=2, ensure_ascii=False, allow_nan=False) + "\n").encode("utf-8")
+    (OUT / name).write_bytes(data)
+    return sha(data)
+
+def fp(value):
+    return struct.unpack("<f", struct.pack("<f", value))[0]
+
+def q(value):
+    return Fraction.from_float(value)
+
+source_files = ["gpu8.bin", "cpu8.bin", "program.bin", "manifest.json", "results8.json", "development_source.json"]
+source_bytes = {name: (SOURCE / name).read_bytes() for name in source_files}
+assert source_bytes["gpu8.bin"] == source_bytes["cpu8.bin"]
+manifest = json.loads(source_bytes["manifest.json"].decode("utf-8"))
+frozen = readout.evaluate_results(source_bytes["gpu8.bin"], manifest)
+initial = readout.evaluate_results(source_bytes["program.bin"], manifest)
+assert frozen["count"] == initial["count"] == 3
+assert frozen["all_assessments_passed"]
+protocol_path = ROOT / "output/source_development_2026-09-25/admission_bounds/predeclared_protocol.json"
+protocol_bytes = protocol_path.read_bytes()
+protocol = json.loads(protocol_bytes.decode("utf-8"))
+assert frozen["packed_training_points"] == [[fp(v) for v in p] for p in protocol["training"]]
+assert all(row["program"] == initial["results"][0]["program"] for row in initial["results"])
+assert initial["results"][0]["program"] == sdf.single_box_program(protocol["initial_box"])
+assert all(row["native_diagnostics"]["quota"] == protocol["quota"] for row in frozen["results"])
+
+programs = {"initial_one_box": initial["results"][0]["program"]}
+reference = sdf.single_box_program([.72, .16, .03, .03])
+reference = sdf.append_box_candidate(reference, [.16, .72, .03, .03])
+reference = sdf.append_box_candidate(reference, [.42, .42, .03, .03])
+programs["hand_defined_three_box_reference"] = reference
+for row in frozen["results"]:
+    programs[f"constructed_lane_{row['lane']}"] = row["program"]
+certificates = {name: sdf.validate_program(program) for name, program in programs.items()}
+assert all(c["admissible"] for c in certificates.values())
+frozen_programs_hash = write("frozen_programs.json", programs)
+write("exact_packed_certificates.json", certificates)
+(OUT / "frozen_gpu8.bin").write_bytes(source_bytes["gpu8.bin"])
+(OUT / "initial_program.bin").write_bytes(source_bytes["program.bin"])
+(OUT / "experiment.txt").write_bytes(pathlib.Path(__file__).read_bytes())
+ledger_path = ROOT / "output/source_development_2026-09-25/decision_ledger.jsonl"
+ledger_bytes = ledger_path.read_bytes()
+(OUT / "incoming_decision_ledger_snapshot.jsonl").write_bytes(ledger_bytes)
+freeze = {
+    "frozen_utc": now(), "before_holdout_generation": True,
+    "checkpoint_sha256": sha(source_bytes["gpu8.bin"]),
+    "source_directory": str(SOURCE.relative_to(ROOT)),
+    "source_hashes": {name: sha(data) for name, data in source_bytes.items()},
+    "cpu_checkpoint_byte_identical": True,
+    "protocol_sha256": sha(protocol_bytes), "incoming_ledger_sha256": sha(ledger_bytes),
+    "frozen_programs_json_sha256": frozen_programs_hash,
+    "program_hashes": {name: sdf.program_hashes(program) for name, program in programs.items()},
+    "source_library_hashes": {name: sha((ROOT / "local_lab" / name).read_bytes()) for name in ["development_sdf.py", "source_development_results.py"]},
+    "comparison_declared_before_queries": {
+        "reference_boxes": [[.72,.16,.03,.03],[.16,.72,.03,.03],[.42,.42,.03,.03]],
+        "reference_actor": "Independent hand-authored benchmark reference, not resident construction or a fitted holdout result.",
+        "score": "covered_count - .02 * leaf_count - .005 * union_area; report training and holdout separately",
+        "region_comparison": "Exact pairwise rectangle-intersection area against the fixed reference; no assertion that the reference is a measured true operational region.",
+        "outside_quota_probes": "All points outside x>=0,y>=0,x+y<=1 on a 31x31 grid [-.25,1.25]^2 in .05 steps, plus six near-boundary points.",
+        "host_oracle_error_limit": protocol["fp32_sdf_absolute_error_limit"],
+        "native_holdout_execution": False,
+    },
+    "scope": "Authored structural resource-admissibility benchmark; not a real allocation trace, allocator, measured speedup or learned hardware safety envelope.",
+}
+write("freeze_receipt.json", freeze)
+
+# The first RNG creation and every unseen point occur only after freeze_receipt.json exists.
+rng = random.Random(protocol["holdout"]["seed"])
+queries = []
+labels = []
+for cluster, (cx, cy) in enumerate(protocol["holdout"]["centers"]):
+    for _ in range(protocol["holdout"]["count_per_cluster"]):
+        h = protocol["holdout"]["half_width"]
+        queries.append([cx + rng.uniform(-h, h), cy + rng.uniform(-h, h)])
+        labels.append(cluster)
+query_hash = write("queries.json", queries)
+packed_queries = [[fp(v) for v in p] for p in queries]
+write("queries_packed_fp32.json", packed_queries)
+negative = []
+for i in range(31):
+    for j in range(31):
+        x, y = Fraction(-1,4)+Fraction(i,20), Fraction(-1,4)+Fraction(j,20)
+        if x < 0 or y < 0 or x+y > 1:
+            negative.append([float(x),float(y)])
+negative += [[-1e-6,.5],[.5,-1e-6],[.5,.500001],[-1e-4,0],[0,-1e-4],[1.000001,0]]
+assert all(fp(x)<0 or fp(y)<0 or q(fp(x))+q(fp(y))>1 for x,y in negative)
+negative_hash = write("outside_quota_queries.json", negative)
+write("dataset_receipt.json", {
+    "generated_utc": now(), "freeze_receipt_sha256": sha((OUT/"freeze_receipt.json").read_bytes()),
+    "queries_json_sha256": query_hash, "count": len(queries), "cluster_labels": labels,
+    "protocol": protocol, "rng": "Python random.Random(seed), Mersenne Twister; two independent uniform(-.015,.015) draws per point; cluster-major order",
+    "raw_to_fp32_max_absolute_change": max(abs(raw-packed) for point, pp in zip(queries,packed_queries) for raw,packed in zip(point,pp)),
+    "outside_quota_query_count": len(negative), "outside_quota_queries_sha256": negative_hash,
+    "no_post_holdout_program_or_parameter_change": True,
+})
+
+def rectangles(program):
+    cert = certificates[next(name for name, p in programs.items() if p == program)]
+    result = []
+    for index in cert["leaf_indices"]:
+        cx,cy,hx,hy = map(q,program["boxes"][index])
+        result.append((cx-hx,cx+hx,cy-hy,cy+hy))
+    return result
+
+def area(rects):
+    return sum((ux-lx)*(uy-ly) for lx,ux,ly,uy in rects)
+
+def intersection(left,right):
+    return sum(max(Fraction(0),min(a[1],b[1])-max(a[0],b[0])) * max(Fraction(0),min(a[3],b[3])-max(a[2],b[2])) for a in left for b in right)
+
+threshold = protocol["coverage_threshold"]
+band = protocol["coverage_boundary_ambiguity_band"]
+training = protocol["training"]
+metrics, values = {}, {}
+for name, program in programs.items():
+    datasets = {}
+    values[name] = {}
+    for dataset, points in [("training",training),("holdout",queries),("outside_quota",negative)]:
+        rows = []
+        for index,point in enumerate(points):
+            oracle = sdf.boundary_oracle(program,point)
+            formula = sdf.evaluate_program(program,point)
+            rows.append({"index":index,"oracle_distance":oracle["distance"],"formula_distance":formula,
+                         "absolute_error":abs(formula-oracle["distance"]),
+                         "covered":oracle["distance"]<=threshold,
+                         "inside_or_boundary":oracle["inside_or_boundary"],
+                         "coverage_boundary_ambiguous":abs(oracle["distance"]-threshold)<=band})
+        values[name][dataset] = rows
+        covered = sum(r["covered"] for r in rows)
+        datasets[dataset] = {"count":len(rows),"covered":covered,"coverage_fraction":covered/len(rows),
+            "inside_or_boundary":sum(r["inside_or_boundary"] for r in rows),
+            "coverage_boundary_ambiguous":sum(r["coverage_boundary_ambiguous"] for r in rows),
+            "distance_min":min(r["oracle_distance"] for r in rows),"distance_max":max(r["oracle_distance"] for r in rows),
+            "mean_distance":sum(r["oracle_distance"] for r in rows)/len(rows),
+            "max_formula_vs_edge_oracle_absolute_error":max(r["absolute_error"] for r in rows)}
+        if dataset=="holdout":
+            datasets[dataset]["covered_by_cluster"] = [sum(r["covered"] for r,label in zip(rows,labels) if label==cluster) for cluster in range(3)]
+    rects, refrects = rectangles(program), rectangles(reference)
+    current_area, reference_area = area(rects), area(refrects)
+    overlap = intersection(rects,refrects)
+    leaf_count = len(rects)
+    penalty = .02*leaf_count+.005*float(current_area)
+    for dataset in ["training","holdout"]:
+        datasets[dataset]["count_score"] = datasets[dataset]["covered"]-penalty
+    metrics[name] = {"program_hashes":sdf.program_hashes(program),"exact_certificate_admissible":certificates[name]["admissible"],
+        "leaf_count":leaf_count,"node_count":program["node_count"],"revision":program["revision"],
+        "union_area":float(current_area),"union_area_exact":str(current_area),"fraction_of_quota_triangle_area":float(2*current_area),
+        "complexity_penalty":.02*leaf_count,"area_penalty":.005*float(current_area),"total_penalty":penalty,
+        "reference_intersection_area":float(overlap),"reference_iou":float(overlap/(current_area+reference_area-overlap)),
+        "area_outside_reference":float(current_area-overlap),"reference_area_not_covered":float(reference_area-overlap),
+        "datasets":datasets}
+    print(name, datasets["holdout"]["covered"], "/",len(queries),"area",float(current_area),flush=True)
+write("oracle_values.json", values)
+write("metrics.json", metrics)
+assert all(m["exact_certificate_admissible"] for m in metrics.values())
+assert all(m["datasets"]["outside_quota"]["inside_or_boundary"]==0 for m in metrics.values())
+assert all(d["max_formula_vs_edge_oracle_absolute_error"]<=protocol["fp32_sdf_absolute_error_limit"] for m in metrics.values() for d in m["datasets"].values())
+assert sha((SOURCE/"gpu8.bin").read_bytes())==freeze["checkpoint_sha256"]
+assert all(sdf.program_hashes(p)==freeze["program_hashes"][name] for name,p in programs.items())
+summary = {"completed_utc":now(),"scope":freeze["scope"],"checkpoint_sha256":freeze["checkpoint_sha256"],
+    "queries_json_sha256":query_hash,"frozen_lane_count":3,"holdout_count_per_program":900,"comparison_program_count":5,
+    "outside_quota_count_per_program":len(negative),"native_holdout_executed":False,"gpu_used_in_this_assessment":False,
+    "exact_certificates_all_passed":True,"outside_quota_false_admissions":0,
+    "max_host_formula_vs_rational_edge_oracle_absolute_error":max(d["max_formula_vs_edge_oracle_absolute_error"] for m in metrics.values() for d in m["datasets"].values()),
+    "holdout_coverage":{name:m["datasets"]["holdout"]["covered"] for name,m in metrics.items()},
+    "training_coverage":{name:m["datasets"]["training"]["covered"] for name,m in metrics.items()},
+    "holdout_ambiguous_count":{name:m["datasets"]["holdout"]["coverage_boundary_ambiguous"] for name,m in metrics.items()},
+    "reference_comparison":"The hand-defined three-box reference is an independent authored baseline, not an observed true region. Equal coverage does not establish superiority; its area/complexity penalty is reported without adjustment.",
+    "one_box_upper_bound":"Each cluster-pair requires a containing rectangle with upper-x plus upper-y at least 1.12 (A/C and B/C) or 1.42 (A/B), exceeding quota1. Consequently a safe one-box program covers at most the three training points of one cluster.",
+    "unchanged_checkpoint_and_program_hashes_rechecked":True,"no_host_constructor_or_parameter_changes_after_freeze":True,
+    "oracle":"Exact-rational rectangle-edge projection and membership with one final binary64 square root; compared separately to binary64 postorder box-SDF/min evaluation at the same packed FP32 coordinates.",
+    "numeric_scope":"This evaluates the retained packed program on the host. It does not establish native FP32 execution of these heldout queries. The predeclared native-query absolute error limit remains1e-5 for the later native batch.",
+}
+write("summary.json",summary)
+write("assessment_decision.json", {"recorded_utc":now(),"checkpoint_sha256":freeze["checkpoint_sha256"],"outcome":"Retain frozen programs unchanged for native holdout execution; no constructor revision selected from this holdout.","observation":summary["holdout_coverage"],"limitations":[summary["scope"],summary["reference_comparison"],summary["numeric_scope"]]})
+print(json.dumps(summary,indent=2))

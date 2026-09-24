@@ -1,0 +1,7 @@
+{
+  "graph_change": "Append eager require(false) helper as last surface_return phase node; no final state/record write policy removed.",
+  "starting_mutable_image": "baseline_1_vulkan/checkpoint.bin",
+  "starting_mutable_sha256": "74a94bc6553db442c57411b0639709c4137340dd25377562f6cfd67f796240b3",
+  "configuration_boundary": "Controlled new guard configuration with baseline epoch1 mutable image; not a claim that ordinary checkpoint resume can change immutable code.",
+  "nonfailing_control": "baseline_2_vulkan/checkpoint.bin grows from one to two leaves in the corresponding epoch."
+}

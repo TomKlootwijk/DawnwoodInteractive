@@ -1,0 +1,130 @@
+"""Direct FP32 admission analysis; no GPU and no persistent test suite.
+Run from repository root by piping this text to Python -X utf8 -B -.
+The bound covers adjacent rounding; concrete arithmetic probes use RTE FP32.
+"""
+from pathlib import Path
+from fractions import Fraction as F
+from datetime import datetime, timezone
+import hashlib,json,math,random,struct
+from local_lab import development_sdf as sdf, source_development_bindings as bindings
+
+OUT=Path('output/source_development_2026-09-25/admission_bounds');OUT.mkdir(parents=True,exist_ok=True)
+def save(name,value):
+    (OUT/name).write_text(json.dumps(value,indent=2,allow_nan=False)+'\n',encoding='utf-8')
+def f(x):return struct.unpack('<f',struct.pack('<f',x))[0]
+def q(x):return F.from_float(f(x))
+M=f(1e-4);EPS=F(1,2**23);Q=F(16)
+proof={'epsilon':str(EPS),'packed_margin':M,'quota_upper_bound':16,
+       'separation_error_bound':float(48*EPS+16*EPS*EPS),
+       'strict_exact_gap_lower_bound':float(q(M)-48*EPS-16*EPS*EPS),
+       'box_bounds':[]}
+for multiple in [1,2]:
+    g=multiple*q(M)
+    proof['box_bounds'].append({'guard_margin_multiple':multiple,
+        'exact_lower_coordinate_bound':float(g/(1+EPS)),
+        'exact_quota_slack_bound':float(Q-(Q-g)*(1+EPS)/(1-EPS)**2)})
+save('analytical_bounds.json',proof)
+
+TRAINING=[[.71,.15],[.72,.16],[.73,.17],[.15,.71],[.16,.72],[.17,.73],[.41,.41],[.42,.42],[.43,.43]]
+save('predeclared_protocol.json',{'quota':1,'training':TRAINING,
+    'initial_box':[.72,.16,.03,.03],'one_box_coverage_upper_bound':3,
+    'one_box_impossibility_minimum_upper_sums':{'A_B':1.42,'A_C':1.12,'B_C':1.12},
+    'holdout':{'count_per_cluster':300,'centers':[[.72,.16],[.16,.72],[.42,.42]],
+               'half_width':.015,'seed':202609252,'freeze_candidate_before_generation_or_evaluation':True},
+    'coverage_threshold':-M,'fp32_sdf_absolute_error_limit':1e-5,'query_envelope':[-.25,16],
+    'coverage_boundary_ambiguity_band':1e-5,'exact_packed_certificate_has_no_tolerance':True,
+    'score':{'covered_point_weight':1,'leaf_cost':.02,'area_cost':.005}})
+
+def box_guard(box,quota=1,multiple=1,cap=True):
+    cx,cy,hx,hy=map(f,box);quota=f(quota);g=f(multiple*M)
+    return (quota>f(8*M) and (quota<=16 or not cap) and hx>f(1e-5) and hy>f(1e-5)
+            and f(cx-hx)>=g and f(cy-hy)>=g and f(f(cx+hx)+f(cy+hy))<=f(quota-g))
+def exact(box,quota=1):
+    cx,cy,hx,hy=map(q,box);quota=q(quota)
+    return {'actual_domain':hx>0 and hy>0 and cx-hx>=0 and cy-hy>=0 and cx+hx+cy+hy<=quota,
+            'full_margin':hx>0 and hy>0 and cx-hx>=q(M) and cy-hy>=q(M) and cx+hx+cy+hy<=quota-q(M),
+            'lower_x':float(cx-hx),'upper_sum':float(cx+hx+cy+hy),
+            'upper_excess_over_full_margin':float(cx+hx+cy+hy-(quota-q(M)))}
+
+counterexamples=[
+    ('lower_margin_rounding',[.0001219959813170135,.2,.00002199598566221539,.02],1),
+    ('upper_margin_rounding',[14.76984691619873,1.1500531435012817,.03999999910593033,.03999999910593033],16),
+    ('quota_cap_is_essential',[2048,2048,.00002,.00002],4096)]
+rows=[]
+for name,box,quota in counterexamples:
+    row={'name':name,'packed_box':list(map(f,box)),'quota':f(quota),
+         'one_margin_admitted':box_guard(box,quota),'two_margin_admitted':box_guard(box,quota,2),
+         'one_margin_without_quota_cap_admitted':box_guard(box,quota,cap=False),**exact(box,quota)}
+    if quota<=16:assert row['one_margin_admitted'] and row['actual_domain'] and not row['full_margin'] and not row['two_margin_admitted']
+    else:assert not row['one_margin_admitted'] and row['one_margin_without_quota_cap_admitted'] and not row['actual_domain']
+    rows.append(row)
+save('rounding_counterexamples.json',rows)
+
+# Sample near the two relevant quota boundaries. This is evidence supporting
+# implementation inspection, not the universal proof supplied above.
+rng=random.Random(202609253);counts={k:{'sampled':0,'admitted':0,'actual_domain_failures':0,'full_margin_failures':0} for k in [1,2]}
+first_mismatch=None
+for i in range(6000):
+    quota=f([.001,1,4,16][i%4]);hx=f(rng.uniform(2e-5,quota*.08));hy=f(rng.uniform(2e-5,quota*.08))
+    cx=f(rng.uniform(hx+3*M,max(hx+3*M,quota-hx-2*hy-4*M)))
+    center_margin=(1 if i%2 else 2)*M
+    cy=f(quota-center_margin-cx-hx-hy+rng.uniform(-6e-6,6e-6))
+    box=[cx,cy,hx,hy];truth=exact(box,quota)
+    for multiple in [1,2]:
+        counts[multiple]['sampled']+=1
+        if box_guard(box,quota,multiple):
+            counts[multiple]['admitted']+=1
+            counts[multiple]['actual_domain_failures']+=not truth['actual_domain']
+            counts[multiple]['full_margin_failures']+=not truth['full_margin']
+            if not truth['full_margin'] and first_mismatch is None:first_mismatch={'box':box,'quota':quota,'exact':truth}
+assert all(x['actual_domain_failures']==0 for x in counts.values())
+assert counts[2]['full_margin_failures']==0
+save('sampled_corner_audit.json',{'counts':counts,'first_full_margin_mismatch':first_mismatch,
+                                'scope':'RTE binary32 simulation of the written guards against exact rational packed geometry.'})
+
+# Evaluate the ACTUAL current protected source expressions at representative
+# inputs. This little evaluator supplies FP32 operation semantics, while the
+# independently computed Fraction truth remains the geometric oracle.
+bank=bindings.make_bindings(TRAINING)
+guard_names=['validate_code','validate_geometry_boxes','validate_geometry_separation','validate_geometry']
+save('captured_protected_bindings.json',{name:bank[name] for name in guard_names})
+source_raw=Path(bindings.__file__).read_bytes();(OUT/'source_development_bindings_snapshot.txt').write_bytes(source_raw)
+def expression(expr,values):
+    if type(expr) in (int,float):return f(expr)
+    if 'input' in expr:return f(values[expr['input']])
+    args=[expression(a,values) for a in expr['args']];op=expr['op']
+    if op=='add':value=args[0]+args[1]
+    elif op=='sub':value=args[0]-args[1]
+    elif op=='mul':value=args[0]*args[1]
+    elif op=='abs':value=abs(args[0])
+    elif op=='min':value=min(args)
+    elif op=='max':value=max(args)
+    elif op=='floor':value=math.floor(args[0])
+    elif op=='less':value=int(args[0]<args[1])
+    elif op=='select':value=args[1] if args[0]!=0 else args[2]
+    else:raise AssertionError(op)
+    result=f(value);assert math.isfinite(result);return result
+def actual_guards(program,quota):
+    values=bindings.pack_program(program);values['quota']=f(quota);out={}
+    for name in guard_names[:-1]:
+        entry=bank[name]['binding'];args={key:values[key] for key in entry['inputs']}
+        out[name]={key:expression(ast,args) for key,ast in entry['outputs'].items()}
+    combo={'valid_boxes':out['validate_geometry_boxes']['valid_boxes'],'valid_separation':out['validate_geometry_separation']['valid_separation']}
+    out['combined_geometry']=expression(bank['validate_geometry']['binding']['outputs']['valid'],combo)
+    return out
+actual=[]
+for name,box,quota in counterexamples:
+    p=sdf.single_box_program(box);actual.append({'name':name,'guards':actual_guards(p,quota),'exact':exact(box,quota)})
+p=sdf.single_box_program([.72,.16,.03,.03])
+for box in [[.16,.72,.04,.04],[.42,.42,.04,.04]]:p=sdf.append_box_candidate(p,box)
+actual.append({'name':'valid_three_leaf_control','guards':actual_guards(p,1),
+               'exact_library_admissible':sdf.validate_program(p)['admissible']})
+assert actual[-1]['guards']['combined_geometry']==1
+save('actual_source_guard_evaluations.json',actual)
+save('summary.json',{'created_utc':datetime.now(timezone.utc).isoformat(),'source_sha256':hashlib.sha256(source_raw).hexdigest(),
+  'reference_counterexamples':len(counterexamples),'reference_corner_samples':6000,'actual_source_program_probes':len(actual),
+  'one_margin_protects_actual_domain_under_stated_bounds':True,
+  'two_margin_implies_exact_library_margin_under_stated_bounds':True,
+  'native_executed':False,'gpu_executed':False,'sampling_is_not_the_universal_proof':True,
+  'scope':'Exact analytical bound, RTE FP32 reference probes and current source-expression inspection. Separate native validation is still required.'})
+print(json.dumps({'reference_counts':counts,'actual_source_probes':actual},indent=2))

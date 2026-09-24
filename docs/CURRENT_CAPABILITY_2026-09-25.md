@@ -1,5 +1,53 @@
 # Current capability and source fidelity — 25 September 2026
 
+## Superseding update: resident SDF construction is now measured
+
+**Dawnwood now has a working, bounded program-construction layer inside its numerical source architecture.** The resident runtime creates new SDF expression nodes and child references, evaluates the resulting region, compares it with the incumbent, and retains the accepted executable program as part of the returned state. Its first measured application constructs resource-admissibility regions. This supersedes the earlier assessment below wherever that assessment says resident construction is still unimplemented or unmeasured.
+
+This is stronger than changing a scalar or selecting an existing M0/M1 function. Starting from one box, the GPU constructs `separated_union(box0, box1)` and then `separated_union(separated_union(box0, box1), box2)`. Those new expression edges were not populated in the initial program. The fixed resident interpreter subsequently uses the constructed code and constants to calculate distances and admission decisions. The mathematical guarantee is an exact Euclidean SDF for the permitted, strictly separated boxes in real arithmetic; FP32 execution has separately measured error. The [domain definition](DEVELOPMENT_RESOURCE_DOMAIN.md) and [admission bounds](DEVELOPMENT_ADMISSION_BOUNDS.md) specify the units, metric and protected quota.
+
+### What the new measurements establish
+
+The [resident construction campaign](../output/source_development_2026-09-25/resident_construction/REPORT.json) runs 129 instances. Every instance progresses from one active AST node and coverage 3/9 at epoch 1, to three nodes and coverage 6/9 at epoch 2, to five nodes and coverage 9/9 at epoch 3. The accepted programs remain unchanged through epoch 64. They share a three-leaf topology but have 129 distinct packed semantic regions.
+
+Disabling construction retains the initial program and its task behavior. A checkpoint resumed for 3+5 epochs equals a continuous eight-epoch run; reversing record-mutation traversal also gives the identical checkpoint. Malformed live code and a deliberately introduced late failure preserve all preceding state and record words on rollback. The campaign records nine CPU/Vulkan pairs, 12 exact full-checkpoint comparisons and **1,867,187 compared words with zero differences**, with Vulkan validation reporting zero errors and warnings. The late-failure experiment is an explicit modified-configuration intervention, not ordinary same-configuration continuation.
+
+The later [source integration audit](../output/source_development_2026-09-25/source_audit/REPORT.json) supplements that campaign's originally pending source-audit entry. It accepts the actual graph and a version with every node ID renamed, rejects 15 broken graph relationships and three protected-binding changes, and retains the audited initial-program hash. Its positive program matches the preliminary three-lane CPU/GPU execution. This is evidence for the declared structural obligations; arithmetic validity, numerical sensitivity and runtime behavior are checked separately.
+
+The [frozen holdout assessment](../output/source_development_2026-09-25/heldout_assessment/REPORT.md) evaluates three actual retained programs on 900 points generated after freezing their checkpoint and hashes. Each covers **900/900**, versus **300/900** for the initial one-box program. All exact packed-geometry certificates pass, with zero admissions on 736 outside-quota probes per program. An independently hand-defined three-box reference also covers 900/900 and has a smaller area penalty. Therefore the demonstrated benefit is over the one-box baseline in this authored structural benchmark. It is not an advantage over that fixed three-box solution, a measured allocator benefit, or a learned policy from real workload traces. **These holdout evaluations are currently host-oracle measurements; native execution of the 900 queries is pending.**
+
+### How this corresponds to the original architecture
+
+[Unified v0.2](../Dawnwood_Interactive_Unified_v0.2.pdf), physical p9 equations 21–25, joins body, field and anchor and requires the preceding operator field to govern record changes. Its p13 equation 36 describes returned state becoming the changed operator field that acts next. Its p16 explicitly leaves numerical meanings to be supplied. The implementation realizes a finite numerical edition of these relationships; the specific resource domain, box grammar, objective and construction law are authored specializations, not equations uniquely dictated by the PDF.
+
+In [source_development.py](../local_lab/source_development.py:248), the **old resident mutator** receives the preceding uncovered witness, program count, returned wave, its own situated field and the target field. It writes a construction descriptor into the resource record during common-old mutation. Current situated resource-record methods then construct and check code/box words, evaluate incumbent and candidate programs, and select all 40 retained program words with the same acceptance bit. The selected program's distance, score and witness return with it. The witness can drive a subsequent resident proposal. No host chooses a winning program each epoch.
+
+The existing source graph still contains all eight source phases, current-record dispatch, old-mutator/old-pinion mutation, PHI, the declared double-Hadamard binding, implicit routing, dependent RK slots and Y-up events, geometry/coupling, R/G/history/inverse, pinion and whole return. [source_development_fidelity.py](../local_lab/source_development_fidelity.py:249) checks those core obligations plus the construction/validation/retention paths. Some protected resource-law calls execute after the same record's placement and field evaluation without arithmetically using that carrier-distance value; the audit records this distinction. The biochemical/resource coordinate metric is not silently identified with the Klein carrier metric.
+
+### Which meta-levels exist
+
+These are explanatory distinctions, not an official capability scale from the source.
+
+| Layer | What is present | What remains fixed or unproved |
+|---|---|---|
+| Acting computation | Current situated operators execute numerical definitions and return state. | Chosen finite numerical bindings and FP32 limits. |
+| Definition change | Resident rules change executable records; the mutator's own successor can change later behavior. | The default M0→M1 transition is predetermined, as described in the historical assessment. |
+| Program construction | Resident methods now add new SDF AST operations and references, evaluate their effect, retain accepted programs and resume them. | At most four boxes/seven nodes, with the current constructor appending a box and union. It does not synthesize arbitrary new opcodes. |
+| Policy assessment | Incumbent/candidate comparison, rejection, retained score and uncovered-witness feedback run inside the application. | Quota, exactness gates, training requests, objective, interpreter and constructor arithmetic are fixed during a run. They are not newly reasoned-out laws. |
+| AI-guided reflection | The assisting AI supplies domain knowledge, selects a representation and records decisions from observed evidence. | A second measured AI-guidance comparison is pending here. General semantic explanation, objective invention and scientific reasoning have not been established as kernel-internal abilities. |
+
+A fixed interpreter does not cancel self-reference: changing the interpreted program changes the computation that interpreter executes, and that changed program is carried in the circulating state. Conversely, this does not mean every implementation layer recursively rewrites itself. The current constructor method itself is not being synthesized by the constructed box AST. The [early Formalization](../Dawnwood_Interactive_Formalization.pdf), physical p9 §7.3, p11 §10.3 and p15 §14.2, already distinguishes finite self-reference, self-optimization and a separately required universality construction.
+
+For the user's question about “full meta reasoning”: **there is now actual source-connected self-modification plus bounded SDF program construction and internal task evaluation. General meta-reasoning is a broader, unmeasured claim.** “F8” is not a defined numerical reasoning or fidelity score in the reviewed source documents. Eight executed source stages are not eight demonstrated levels of reasoning, and assigning a fidelity percentage would obscure the concrete implementation boundaries.
+
+Remaining source/device differences include unrestricted symbolic-language execution, runtime catalogue allocation beyond fixed capacity, shared population-wide operator-field semantics, BC5/device texture compression and the proposed on-chip/cache organization. The numerical two-Hadamard law, record packing and transaction buffering are distinct claims; they do not jointly prove every proposed meaning of “double packing.” These boundaries preserve the source's broader proposal while identifying what this edition actually delivers.
+
+The immediate unfinished evidence is the native holdout-query run and a measured second AI-guided construction decision. The active development goal is not marked complete by this assessment. Continue from the [decision ledger](../output/source_development_2026-09-25/decision_ledger.jsonl) and the retained checkpoint rather than treating the historical text below as current status.
+
+## Historical assessment: before the resident-construction campaign
+
+**The remainder is preserved from the earlier assessment on this same local date. Its statements about construction being unimplemented were accurate before the campaign above and are now superseded. Earlier source-cycle and hardware results retain their own scope; they are not retrospectively measurements of the new construction layer.**
+
 Dawnwood currently provides an executable, source-connected, self-referential numerical substrate on the laptop GPU. Current records determine actions, changed records determine later actions, and complete state and records survive checkpoint continuation. It has measured metaprogram effects and bounded scientific/computational applications. General meta-reasoning and resident invention of new useful SDF programs have not yet been demonstrated.
 
 This is a dated assessment, not a completion claim for the active definition-development objective. “F8” is not a defined reasoning scale in the reviewed source documents. Architectural fidelity and reasoning capability require separate evidence; neither has a defensible percentage score here.

@@ -1,0 +1,1373 @@
+{
+  "created_utc": "2026-09-24T23:52:32.526467+00:00",
+  "positive_controls": 2,
+  "adversarial_graph_rejections": [
+    {
+      "name": "live_code_guard_bypassed",
+      "rejected": true,
+      "message": "Source graph fidelity: missing live program fail guard",
+      "graph_sha256": "84af49742f9ed8d074d26d64ea15ec33ecadaa22fa36bc134997c447c16d1171"
+    },
+    {
+      "name": "candidate_geometry_gate_bypassed",
+      "rejected": true,
+      "message": "Source development fidelity: candidate validity loses both geometry gates",
+      "graph_sha256": "ec845d4bfb40bfe9b5922a2e70d61e70d1edde7c2efcdfc875745c1dcded3772"
+    },
+    {
+      "name": "unsafe_candidate_always_selected",
+      "rejected": true,
+      "message": "Source development fidelity: program selector changes acceptance condition",
+      "graph_sha256": "b43f154ce759564326855c015128ab4689f91e599c3482a007d0e609c469ab6d"
+    },
+    {
+      "name": "wrong_retained_word",
+      "rejected": true,
+      "message": "Source development fidelity: program selector loses matching incumbent op0",
+      "graph_sha256": "4d68da59d5b3ac8fef868a657ebf25a68648a91db0acfa16bd42a8386e2a9595"
+    },
+    {
+      "name": "query_uses_old_leaf",
+      "rejected": true,
+      "message": "Source development fidelity: leaf distances: wrong cx0 word",
+      "graph_sha256": "c1bfdd48df9591582fe642a5850bc6cb9e013dba1e8f482575b06eced6d315a7"
+    },
+    {
+      "name": "training_request_changed",
+      "rejected": true,
+      "message": "Source development fidelity: interpreter loses x query",
+      "graph_sha256": "bd7003cebdadb93ee8d89f8a2780d109197617f695e3133a108f93599229792b"
+    },
+    {
+      "name": "wrong_interpreter_prefix",
+      "rejected": true,
+      "message": "Source development fidelity: staged interpreter loses matching prefix output",
+      "graph_sha256": "5bd9cc43d4af626ac2fa41477bb2634871e6a192e537c85b308a92086e3437cb"
+    },
+    {
+      "name": "descriptor_reads_old_bank",
+      "rejected": true,
+      "message": "Source graph fidelity: development_live_code: missing same-record current placement/nearest-lift/field application chain",
+      "graph_sha256": "b222cb6ceb0afa56f5da0d1650c1e37e311d5b45df4a7cee8319f63b222386ca"
+    },
+    {
+      "name": "old_witness_removed",
+      "rejected": true,
+      "message": "Source development fidelity: old construction method loses preceding witness_distance",
+      "graph_sha256": "0e60c9a5b8a112e58c221eee8500fe289b117ca9d55224ba45b4e2f5e470e08a"
+    },
+    {
+      "name": "partial_program_return",
+      "rejected": true,
+      "message": "Source development fidelity: program return mixes selector outputs",
+      "graph_sha256": "44006bf2231ba5c7864574ee0b025ecb9c610a9fba41a9b7318ada81319b4e95"
+    },
+    {
+      "name": "quota_changed_in_return",
+      "rejected": true,
+      "message": "Source development fidelity: return changes protected/configured quota",
+      "graph_sha256": "1832d6af8815bea8d7363eb35fa45692d537afc126e27100882db2201a818085"
+    },
+    {
+      "name": "selector_arithmetic_replaced",
+      "rejected": true,
+      "message": "Source development fidelity: development_select_code: changed protected protocol expression",
+      "graph_sha256": "d847382a08ca90a51f2f7c0ff61dadbd637df0ff68d430e296becbb199f15b25"
+    },
+    {
+      "name": "descriptor_old_words_swapped",
+      "rejected": true,
+      "message": "Source development fidelity: descriptor retention must preserve the matching old target reserved word directly",
+      "graph_sha256": "7366a09ff1577f87a844c8a96c67aafdcd8cb9a2243af01842402ec52baa61e0"
+    },
+    {
+      "name": "missing_core_phase",
+      "rejected": true,
+      "message": "Source graph fidelity: all eight phases must follow the actual source cycle order",
+      "graph_sha256": "c869e4c5b63fa6a9ef76f73b1d2ebe322704c32e443ff3f99034d999a9321105"
+    },
+    {
+      "name": "unaccounted_eager_interpreter",
+      "rejected": true,
+      "message": "Source development fidelity: unaccounted eager interpret call bypasses protected program flow",
+      "graph_sha256": "d6b27d92342c31d9f9a76b80c0ffaae315e63aedd376196967b214aa52b6b6a5"
+    }
+  ],
+  "protected_source_rejections": [
+    {
+      "binding": "validate_code",
+      "rejected": true,
+      "message": "Development numerical declarations differ from this edition; declare and verify a new numerical profile"
+    },
+    {
+      "binding": "validate_geometry_boxes",
+      "rejected": true,
+      "message": "Development numerical declarations differ from this edition; declare and verify a new numerical profile"
+    },
+    {
+      "binding": "score",
+      "rejected": true,
+      "message": "Development numerical declarations differ from this edition; declare and verify a new numerical profile"
+    }
+  ],
+  "baseline_program_sha256": "c3af6851c99c3d1fb4285fedf14d6f45bfb18c096822d8ea92b09981c4daab90",
+  "baseline_fidelity": {
+    "profile": "DWI-SDF-DEVELOPMENT-FIDELITY-0.1",
+    "passed": true,
+    "core": {
+      "profile": "DWI-SOURCE-GRAPH-FIDELITY-0.1",
+      "passed": true,
+      "phases": [
+        "operator_mutation",
+        "log_polar",
+        "split_and_hinge",
+        "selected_operator",
+        "rk4_four_slots",
+        "geometry_divergence",
+        "rgba_crystal",
+        "surface_return"
+      ],
+      "mutation": {
+        "old_mutator": "mutation_mutation_body_role0_10",
+        "old_pinion_transport": "mutation_pinion_body_role1_13",
+        "old_target_placement": "mutation_target_placement_role0_4",
+        "rebind": "mutation_rebind_field_14",
+        "retention": [
+          {
+            "function": "source_extension__preserve_handles",
+            "node": "mutation_source_extension__preserve_handles_16",
+            "slots": [
+              "body",
+              "field",
+              "placement"
+            ],
+            "source_indices": [
+              31
+            ]
+          }
+        ]
+      },
+      "situated_calls": [
+        {
+          "body": "action_operator_mutation_klein_body_role0_8",
+          "placement": "action_operator_mutation_klein_placement_role0_4",
+          "nearest": "action_operator_mutation_nearest_klein_lift_5",
+          "field": "action_operator_mutation_klein_field_role0_7",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_operator_mutation_psi_body_role0_14",
+          "placement": "action_operator_mutation_psi_placement_role0_10",
+          "nearest": "action_operator_mutation_nearest_klein_lift_11",
+          "field": "action_operator_mutation_psi_field_role0_13",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "development_live_code",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_live_boxes",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_live_separation",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_live_geometry",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample0_leaf",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample0_interpret_prefix",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample0_interpret_middle",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample0_interpret",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample1_leaf",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample1_interpret_prefix",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample1_interpret_middle",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample1_interpret",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample2_leaf",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample2_interpret_prefix",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample2_interpret_middle",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample2_interpret",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample3_leaf",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample3_interpret_prefix",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample3_interpret_middle",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample3_interpret",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample4_leaf",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample4_interpret_prefix",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample4_interpret_middle",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample4_interpret",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample5_leaf",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample5_interpret_prefix",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample5_interpret_middle",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample5_interpret",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample6_leaf",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample6_interpret_prefix",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample6_interpret_middle",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample6_interpret",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample7_leaf",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample7_interpret_prefix",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample7_interpret_middle",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample7_interpret",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample8_leaf",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample8_interpret_prefix",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample8_interpret_middle",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_sample8_interpret",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_old_score",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_construct_code",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_construct_boxes",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_code",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_boxes",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_separation",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_geometry",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample0_leaf",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample0_interpret_prefix",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample0_interpret_middle",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample0_interpret",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample1_leaf",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample1_interpret_prefix",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample1_interpret_middle",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample1_interpret",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample2_leaf",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample2_interpret_prefix",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample2_interpret_middle",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample2_interpret",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample3_leaf",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample3_interpret_prefix",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample3_interpret_middle",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample3_interpret",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample4_leaf",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample4_interpret_prefix",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample4_interpret_middle",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample4_interpret",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample5_leaf",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample5_interpret_prefix",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample5_interpret_middle",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample5_interpret",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample6_leaf",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample6_interpret_prefix",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample6_interpret_middle",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample6_interpret",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample7_leaf",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample7_interpret_prefix",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample7_interpret_middle",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample7_interpret",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample8_leaf",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample8_interpret_prefix",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample8_interpret_middle",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_sample8_interpret",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_candidate_score",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_accept",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_query_leaf",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_query_interpret_prefix",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_query_interpret_middle",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "development_query_interpret",
+          "placement": "development_resource_placement",
+          "nearest": "development_resource_nearest",
+          "field": "development_resource_field",
+          "field_dependency": "ordered_execution_only"
+        },
+        {
+          "body": "action_log_polar_phi_body_role0_20",
+          "placement": "action_log_polar_phi_placement_role0_16",
+          "nearest": "action_log_polar_nearest_klein_lift_17",
+          "field": "action_log_polar_phi_field_role0_19",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_split_and_hinge_split_body_role0_26",
+          "placement": "action_split_and_hinge_split_placement_role0_22",
+          "nearest": "action_split_and_hinge_nearest_klein_lift_23",
+          "field": "action_split_and_hinge_split_field_role0_25",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_split_and_hinge_parity_body_role0_32",
+          "placement": "action_split_and_hinge_parity_placement_role0_28",
+          "nearest": "action_split_and_hinge_nearest_klein_lift_29",
+          "field": "action_split_and_hinge_parity_field_role0_31",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_split_and_hinge_hadamard_body_role1_39",
+          "placement": "action_split_and_hinge_hadamard_placement_role0_35",
+          "nearest": "action_split_and_hinge_nearest_klein_lift_36",
+          "field": "action_split_and_hinge_hadamard_field_role0_38",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_selected_operator_bst_body_role0_45",
+          "placement": "action_selected_operator_bst_placement_role0_41",
+          "nearest": "action_selected_operator_nearest_klein_lift_42",
+          "field": "action_selected_operator_bst_field_role0_44",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_selected_operator_selected_body_role99_51",
+          "placement": "action_selected_operator_selected_placement_role0_47",
+          "nearest": "action_selected_operator_nearest_klein_lift_48",
+          "field": "action_selected_operator_selected_field_role0_50",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_selected_operator_psi_body_role0_57",
+          "placement": "action_selected_operator_psi_placement_role0_53",
+          "nearest": "action_selected_operator_nearest_klein_lift_54",
+          "field": "action_selected_operator_psi_field_role0_56",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_rk4_four_slots_rk4_body_role1_63",
+          "placement": "action_rk4_four_slots_rk4_placement_role0_59",
+          "nearest": "action_rk4_four_slots_nearest_klein_lift_60",
+          "field": "action_rk4_four_slots_rk4_field_role0_62",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_rk4_four_slots_rk4_body_role1_70",
+          "placement": "action_rk4_four_slots_rk4_placement_role0_66",
+          "nearest": "action_rk4_four_slots_nearest_klein_lift_67",
+          "field": "action_rk4_four_slots_rk4_field_role0_69",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_rk4_four_slots_rk4_body_role1_77",
+          "placement": "action_rk4_four_slots_rk4_placement_role0_73",
+          "nearest": "action_rk4_four_slots_nearest_klein_lift_74",
+          "field": "action_rk4_four_slots_rk4_field_role0_76",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_rk4_four_slots_rk4_body_role1_84",
+          "placement": "action_rk4_four_slots_rk4_placement_role0_80",
+          "nearest": "action_rk4_four_slots_nearest_klein_lift_81",
+          "field": "action_rk4_four_slots_rk4_field_role0_83",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_rk4_four_slots_y_up_body_role0_90",
+          "placement": "action_rk4_four_slots_y_up_placement_role0_86",
+          "nearest": "action_rk4_four_slots_nearest_klein_lift_87",
+          "field": "action_rk4_four_slots_y_up_field_role0_89",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_rk4_four_slots_y_up_body_role0_96",
+          "placement": "action_rk4_four_slots_y_up_placement_role0_92",
+          "nearest": "action_rk4_four_slots_nearest_klein_lift_93",
+          "field": "action_rk4_four_slots_y_up_field_role0_95",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_rk4_four_slots_rk4_body_role2_102",
+          "placement": "action_rk4_four_slots_rk4_placement_role0_98",
+          "nearest": "action_rk4_four_slots_nearest_klein_lift_99",
+          "field": "action_rk4_four_slots_rk4_field_role0_101",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_geometry_divergence_T_shape_body_role0_108",
+          "placement": "action_geometry_divergence_T_shape_placement_role0_104",
+          "nearest": "action_geometry_divergence_nearest_klein_lift_105",
+          "field": "action_geometry_divergence_T_shape_field_role0_107",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_geometry_divergence_pyramid_body_role0_114",
+          "placement": "action_geometry_divergence_pyramid_placement_role0_110",
+          "nearest": "action_geometry_divergence_nearest_klein_lift_111",
+          "field": "action_geometry_divergence_pyramid_field_role0_113",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_geometry_divergence_circle_body_role0_120",
+          "placement": "action_geometry_divergence_circle_placement_role0_116",
+          "nearest": "action_geometry_divergence_nearest_klein_lift_117",
+          "field": "action_geometry_divergence_circle_field_role0_119",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_geometry_divergence_cone_body_role0_126",
+          "placement": "action_geometry_divergence_cone_placement_role0_122",
+          "nearest": "action_geometry_divergence_nearest_klein_lift_123",
+          "field": "action_geometry_divergence_cone_field_role0_125",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_geometry_divergence_sphere_body_role0_132",
+          "placement": "action_geometry_divergence_sphere_placement_role0_128",
+          "nearest": "action_geometry_divergence_nearest_klein_lift_129",
+          "field": "action_geometry_divergence_sphere_field_role0_131",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_geometry_divergence_apex_body_role0_138",
+          "placement": "action_geometry_divergence_apex_placement_role0_134",
+          "nearest": "action_geometry_divergence_nearest_klein_lift_135",
+          "field": "action_geometry_divergence_apex_field_role0_137",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_geometry_divergence_delta_phi_body_role0_144",
+          "placement": "action_geometry_divergence_delta_phi_placement_role0_140",
+          "nearest": "action_geometry_divergence_nearest_klein_lift_141",
+          "field": "action_geometry_divergence_delta_phi_field_role0_143",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_geometry_divergence_phyllotaxis_body_role0_150",
+          "placement": "action_geometry_divergence_phyllotaxis_placement_role0_146",
+          "nearest": "action_geometry_divergence_nearest_klein_lift_147",
+          "field": "action_geometry_divergence_phyllotaxis_field_role0_149",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_geometry_divergence_double_dot_body_role0_156",
+          "placement": "action_geometry_divergence_double_dot_placement_role0_152",
+          "nearest": "action_geometry_divergence_nearest_klein_lift_153",
+          "field": "action_geometry_divergence_double_dot_field_role0_155",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_geometry_divergence_blend_body_role0_162",
+          "placement": "action_geometry_divergence_blend_placement_role0_158",
+          "nearest": "action_geometry_divergence_nearest_klein_lift_159",
+          "field": "action_geometry_divergence_blend_field_role0_161",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_rgba_crystal_crystal_body_role0_168",
+          "placement": "action_rgba_crystal_crystal_placement_role0_164",
+          "nearest": "action_rgba_crystal_nearest_klein_lift_165",
+          "field": "action_rgba_crystal_crystal_field_role0_167",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_rgba_crystal_dichromatic_body_role0_174",
+          "placement": "action_rgba_crystal_dichromatic_placement_role0_170",
+          "nearest": "action_rgba_crystal_nearest_klein_lift_171",
+          "field": "action_rgba_crystal_dichromatic_field_role0_173",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_rgba_crystal_phase_history_body_role0_180",
+          "placement": "action_rgba_crystal_phase_history_placement_role0_176",
+          "nearest": "action_rgba_crystal_nearest_klein_lift_177",
+          "field": "action_rgba_crystal_phase_history_field_role0_179",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_rgba_crystal_T_transform_body_role0_186",
+          "placement": "action_rgba_crystal_T_transform_placement_role0_182",
+          "nearest": "action_rgba_crystal_nearest_klein_lift_183",
+          "field": "action_rgba_crystal_T_transform_field_role0_185",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_rgba_crystal_inverse_T_body_role0_192",
+          "placement": "action_rgba_crystal_inverse_T_placement_role0_188",
+          "nearest": "action_rgba_crystal_nearest_klein_lift_189",
+          "field": "action_rgba_crystal_inverse_T_field_role0_191",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_surface_return_pinion_body_role0_198",
+          "placement": "action_surface_return_pinion_placement_role0_194",
+          "nearest": "action_surface_return_nearest_klein_lift_195",
+          "field": "action_surface_return_pinion_field_role0_197",
+          "field_dependency": "argument"
+        },
+        {
+          "body": "action_surface_return_return_body_role0_204",
+          "placement": "action_surface_return_return_placement_role0_200",
+          "nearest": "action_surface_return_nearest_klein_lift_201",
+          "field": "action_surface_return_return_field_role0_203",
+          "field_dependency": "argument"
+        }
+      ],
+      "rk_derivatives": [
+        "action_rk4_four_slots_rk4_body_role1_63",
+        "action_rk4_four_slots_rk4_body_role1_70",
+        "action_rk4_four_slots_rk4_body_role1_77",
+        "action_rk4_four_slots_rk4_body_role1_84"
+      ],
+      "k4_y_up_chain": [
+        "action_rk4_four_slots_y_up_body_role0_90",
+        "action_rk4_four_slots_y_up_body_role0_96"
+      ],
+      "surface_return": "action_surface_return_return_body_role0_204",
+      "enzyme": null,
+      "psi": {
+        "initial_executed_guard": "action_operator_mutation_psi_body_role0_14",
+        "effective_interval": "action_selected_operator_psi_body_role0_57"
+      },
+      "scope": "Named structural dependency and execution-order audit. Helpers may transform values; callee arithmetic may ignore supplied inputs. Passing is not numerical causality, scientific correctness, equivalence, convergence, or runtime evidence."
+    },
+    "resource_record": {
+      "key": "resource_definition",
+      "source_index": 31
+    },
+    "program_words": 40,
+    "protocol_helpers": [
+      "development_select_code",
+      "development_select_boxes",
+      "development_select_score",
+      "development_require_live",
+      "development_candidate_valid",
+      "development_descriptor_encode",
+      "development_descriptor_decode",
+      "development_diagnostics"
+    ],
+    "old_mutator": "development_old_mutator_proposal",
+    "descriptor_publication": "development_mutation_descriptor",
+    "descriptor_read": "development_published_descriptor",
+    "live_guard": "development_live_guard",
+    "constructors": [
+      "development_construct_code",
+      "development_construct_boxes"
+    ],
+    "candidate_guard": "development_candidate_guard",
+    "safe_program": [
+      "development_safe_code",
+      "development_safe_boxes"
+    ],
+    "acceptance": "development_accept",
+    "retained_program": [
+      "development_retained_code",
+      "development_retained_boxes"
+    ],
+    "old_samples": [
+      {
+        "leaf": "development_old_sample0_leaf",
+        "prefix": "development_old_sample0_interpret_prefix",
+        "middle": "development_old_sample0_interpret_middle",
+        "final": "development_old_sample0_interpret",
+        "query": {
+          "x": {
+            "literal": 0.71,
+            "type": "resource_coordinate"
+          },
+          "y": {
+            "literal": 0.15,
+            "type": "resource_coordinate"
+          }
+        }
+      },
+      {
+        "leaf": "development_old_sample1_leaf",
+        "prefix": "development_old_sample1_interpret_prefix",
+        "middle": "development_old_sample1_interpret_middle",
+        "final": "development_old_sample1_interpret",
+        "query": {
+          "x": {
+            "literal": 0.72,
+            "type": "resource_coordinate"
+          },
+          "y": {
+            "literal": 0.16,
+            "type": "resource_coordinate"
+          }
+        }
+      },
+      {
+        "leaf": "development_old_sample2_leaf",
+        "prefix": "development_old_sample2_interpret_prefix",
+        "middle": "development_old_sample2_interpret_middle",
+        "final": "development_old_sample2_interpret",
+        "query": {
+          "x": {
+            "literal": 0.73,
+            "type": "resource_coordinate"
+          },
+          "y": {
+            "literal": 0.17,
+            "type": "resource_coordinate"
+          }
+        }
+      },
+      {
+        "leaf": "development_old_sample3_leaf",
+        "prefix": "development_old_sample3_interpret_prefix",
+        "middle": "development_old_sample3_interpret_middle",
+        "final": "development_old_sample3_interpret",
+        "query": {
+          "x": {
+            "literal": 0.15,
+            "type": "resource_coordinate"
+          },
+          "y": {
+            "literal": 0.71,
+            "type": "resource_coordinate"
+          }
+        }
+      },
+      {
+        "leaf": "development_old_sample4_leaf",
+        "prefix": "development_old_sample4_interpret_prefix",
+        "middle": "development_old_sample4_interpret_middle",
+        "final": "development_old_sample4_interpret",
+        "query": {
+          "x": {
+            "literal": 0.16,
+            "type": "resource_coordinate"
+          },
+          "y": {
+            "literal": 0.72,
+            "type": "resource_coordinate"
+          }
+        }
+      },
+      {
+        "leaf": "development_old_sample5_leaf",
+        "prefix": "development_old_sample5_interpret_prefix",
+        "middle": "development_old_sample5_interpret_middle",
+        "final": "development_old_sample5_interpret",
+        "query": {
+          "x": {
+            "literal": 0.17,
+            "type": "resource_coordinate"
+          },
+          "y": {
+            "literal": 0.73,
+            "type": "resource_coordinate"
+          }
+        }
+      },
+      {
+        "leaf": "development_old_sample6_leaf",
+        "prefix": "development_old_sample6_interpret_prefix",
+        "middle": "development_old_sample6_interpret_middle",
+        "final": "development_old_sample6_interpret",
+        "query": {
+          "x": {
+            "literal": 0.41,
+            "type": "resource_coordinate"
+          },
+          "y": {
+            "literal": 0.41,
+            "type": "resource_coordinate"
+          }
+        }
+      },
+      {
+        "leaf": "development_old_sample7_leaf",
+        "prefix": "development_old_sample7_interpret_prefix",
+        "middle": "development_old_sample7_interpret_middle",
+        "final": "development_old_sample7_interpret",
+        "query": {
+          "x": {
+            "literal": 0.42,
+            "type": "resource_coordinate"
+          },
+          "y": {
+            "literal": 0.42,
+            "type": "resource_coordinate"
+          }
+        }
+      },
+      {
+        "leaf": "development_old_sample8_leaf",
+        "prefix": "development_old_sample8_interpret_prefix",
+        "middle": "development_old_sample8_interpret_middle",
+        "final": "development_old_sample8_interpret",
+        "query": {
+          "x": {
+            "literal": 0.43,
+            "type": "resource_coordinate"
+          },
+          "y": {
+            "literal": 0.43,
+            "type": "resource_coordinate"
+          }
+        }
+      }
+    ],
+    "candidate_samples": [
+      {
+        "leaf": "development_candidate_sample0_leaf",
+        "prefix": "development_candidate_sample0_interpret_prefix",
+        "middle": "development_candidate_sample0_interpret_middle",
+        "final": "development_candidate_sample0_interpret",
+        "query": {
+          "x": {
+            "literal": 0.71,
+            "type": "resource_coordinate"
+          },
+          "y": {
+            "literal": 0.15,
+            "type": "resource_coordinate"
+          }
+        }
+      },
+      {
+        "leaf": "development_candidate_sample1_leaf",
+        "prefix": "development_candidate_sample1_interpret_prefix",
+        "middle": "development_candidate_sample1_interpret_middle",
+        "final": "development_candidate_sample1_interpret",
+        "query": {
+          "x": {
+            "literal": 0.72,
+            "type": "resource_coordinate"
+          },
+          "y": {
+            "literal": 0.16,
+            "type": "resource_coordinate"
+          }
+        }
+      },
+      {
+        "leaf": "development_candidate_sample2_leaf",
+        "prefix": "development_candidate_sample2_interpret_prefix",
+        "middle": "development_candidate_sample2_interpret_middle",
+        "final": "development_candidate_sample2_interpret",
+        "query": {
+          "x": {
+            "literal": 0.73,
+            "type": "resource_coordinate"
+          },
+          "y": {
+            "literal": 0.17,
+            "type": "resource_coordinate"
+          }
+        }
+      },
+      {
+        "leaf": "development_candidate_sample3_leaf",
+        "prefix": "development_candidate_sample3_interpret_prefix",
+        "middle": "development_candidate_sample3_interpret_middle",
+        "final": "development_candidate_sample3_interpret",
+        "query": {
+          "x": {
+            "literal": 0.15,
+            "type": "resource_coordinate"
+          },
+          "y": {
+            "literal": 0.71,
+            "type": "resource_coordinate"
+          }
+        }
+      },
+      {
+        "leaf": "development_candidate_sample4_leaf",
+        "prefix": "development_candidate_sample4_interpret_prefix",
+        "middle": "development_candidate_sample4_interpret_middle",
+        "final": "development_candidate_sample4_interpret",
+        "query": {
+          "x": {
+            "literal": 0.16,
+            "type": "resource_coordinate"
+          },
+          "y": {
+            "literal": 0.72,
+            "type": "resource_coordinate"
+          }
+        }
+      },
+      {
+        "leaf": "development_candidate_sample5_leaf",
+        "prefix": "development_candidate_sample5_interpret_prefix",
+        "middle": "development_candidate_sample5_interpret_middle",
+        "final": "development_candidate_sample5_interpret",
+        "query": {
+          "x": {
+            "literal": 0.17,
+            "type": "resource_coordinate"
+          },
+          "y": {
+            "literal": 0.73,
+            "type": "resource_coordinate"
+          }
+        }
+      },
+      {
+        "leaf": "development_candidate_sample6_leaf",
+        "prefix": "development_candidate_sample6_interpret_prefix",
+        "middle": "development_candidate_sample6_interpret_middle",
+        "final": "development_candidate_sample6_interpret",
+        "query": {
+          "x": {
+            "literal": 0.41,
+            "type": "resource_coordinate"
+          },
+          "y": {
+            "literal": 0.41,
+            "type": "resource_coordinate"
+          }
+        }
+      },
+      {
+        "leaf": "development_candidate_sample7_leaf",
+        "prefix": "development_candidate_sample7_interpret_prefix",
+        "middle": "development_candidate_sample7_interpret_middle",
+        "final": "development_candidate_sample7_interpret",
+        "query": {
+          "x": {
+            "literal": 0.42,
+            "type": "resource_coordinate"
+          },
+          "y": {
+            "literal": 0.42,
+            "type": "resource_coordinate"
+          }
+        }
+      },
+      {
+        "leaf": "development_candidate_sample8_leaf",
+        "prefix": "development_candidate_sample8_interpret_prefix",
+        "middle": "development_candidate_sample8_interpret_middle",
+        "final": "development_candidate_sample8_interpret",
+        "query": {
+          "x": {
+            "literal": 0.43,
+            "type": "resource_coordinate"
+          },
+          "y": {
+            "literal": 0.43,
+            "type": "resource_coordinate"
+          }
+        }
+      }
+    ],
+    "selected_score_witness": "development_retained_score",
+    "retained_query": {
+      "leaf": "development_query_leaf",
+      "prefix": "development_query_interpret_prefix",
+      "middle": "development_query_interpret_middle",
+      "final": "development_query_interpret",
+      "query": {
+        "x": {
+          "state": "resource_query_x"
+        },
+        "y": {
+          "state": "resource_query_y"
+        }
+      }
+    },
+    "score_publication": "Matching cached incumbent/candidate score and witness selected by the same accepted bit as every returned program word; not a third score recomputation.",
+    "scope": "Full source-graph obligations plus exact named program-word wiring, fixed protocol-selector/guard expression checks, current situated record dispatch and guarded eager interpreter coverage. Domain binding arithmetic requires independent numerical/geometry validation; this is not evidence of runtime execution, sensitivity, novelty, improvement, learning or unrestricted synthesis."
+  },
+  "renamed_nodes_pass": true,
+  "scope": "Exact source graph and protected-helper checks; numerical/device evidence is separate.",
+  "sources": {
+    "local_lab\\source_development.py": "ee8cf0b6654e0feac35523f2ff75ec5d2bc66c8a4920b67534cf18abef9ee380",
+    "local_lab\\source_development_fidelity.py": "913ba6436947245fbdc1a17eb5fde93194a30b40eee2b1283d9171fe39b5e5b8"
+  }
+}

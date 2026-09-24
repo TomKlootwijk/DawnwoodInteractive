@@ -1,0 +1,18 @@
+{
+  "scope": "Driver launch history; preliminary parse failure occurred before any compilation or native execution.",
+  "attempts": [
+    {
+      "attempt": 0,
+      "outcome": "Python SyntaxError before execution",
+      "line": 360,
+      "recorded_error": "raise SystemExit(0 if report['all_checks_passed'] else1)\nSyntaxError: expected 'else' after 'if' expression",
+      "correction": "Insert the missing space in else 1; no production or numerical code changed."
+    },
+    {
+      "attempt": 1,
+      "outcome": "Completed native campaign; all63 checks passed.",
+      "experiment_sha256": "15958e30c69308a88fbf626a2f2248a94e047ef593e20b89b5c3b9dc851df91c",
+      "report_sha256": "acba5df5f109ca77739b83a901e8544d4c7ed1dbf63fa7b5c07dc495a1ff5c1a"
+    }
+  ]
+}

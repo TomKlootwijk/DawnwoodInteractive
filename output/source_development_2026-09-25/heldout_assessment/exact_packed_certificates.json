@@ -1,0 +1,806 @@
+{
+  "initial_one_box": {
+    "profile": "DWI-DEVELOPMENT-SDF-0.1",
+    "valid_structure": true,
+    "admissible": true,
+    "packed_program": {
+      "nodes": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "boxes": [
+        [
+          0.7200000286102295,
+          0.1599999964237213,
+          0.029999999329447746,
+          0.029999999329447746
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "node_count": 1,
+      "root": 0,
+      "revision": 0
+    },
+    "policy": {
+      "beta": 1.0,
+      "proof_margin": 9.999999747378752e-05,
+      "separation_margin": 0.0
+    },
+    "leaf_indices": [
+      0
+    ],
+    "geometric_gates": [
+      {
+        "name": "box_0_positive_extents",
+        "passed": true,
+        "half_extents_exact": [
+          "16106127/536870912",
+          "16106127/536870912"
+        ]
+      },
+      {
+        "name": "box_0_quota_containment",
+        "passed": true,
+        "lower_x_exact": "370440945/536870912",
+        "lower_y_exact": "69793217/536870912",
+        "upper_sum_exact": "252329335/268435456",
+        "lower_bound_exact": "13743895/137438953472",
+        "upper_sum_bound_exact": "137425209577/137438953472"
+      }
+    ],
+    "input_rounding": [],
+    "program_sha256": "775480cc2282bf2bfdb6a99e76906ab76fb01fd4cca6e59c3b5fe826fbb29168",
+    "topology_sha256": "e17f090dcc66adc5e5ed16f2f1d385fa4fcf886a9314e816e490028a7e14a78f",
+    "semantic_sha256": "0a4c35e54d499bd7bce037b876312733f27de27a6805bc1dbe0b0edb23643796",
+    "expression": "box(center=(0.720000029, 0.159999996), half_extents=(0.0299999993, 0.0299999993))",
+    "canonical_binary_format": "DWI-DEVELOPMENT-SDF-0.1: ASCII DWSDF001, then little-endian uint32 node_count,root,revision; 7 opcode/a/b uint32 triples; 4 cx/cy/hx/hy binary32 quadruples. This is a source-program hash encoding, not a resident VM image.",
+    "canonical_binary_bytes": 168,
+    "exactness": "Exact Euclidean signed distance in the declared normalized memory coordinates in real arithmetic, conditional on all geometric gates; no exact machine-arithmetic claim."
+  },
+  "hand_defined_three_box_reference": {
+    "profile": "DWI-DEVELOPMENT-SDF-0.1",
+    "valid_structure": true,
+    "admissible": true,
+    "packed_program": {
+      "nodes": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          3
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "boxes": [
+        [
+          0.7200000286102295,
+          0.1599999964237213,
+          0.029999999329447746,
+          0.029999999329447746
+        ],
+        [
+          0.1599999964237213,
+          0.7200000286102295,
+          0.029999999329447746,
+          0.029999999329447746
+        ],
+        [
+          0.41999998688697815,
+          0.41999998688697815,
+          0.029999999329447746,
+          0.029999999329447746
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "node_count": 5,
+      "root": 4,
+      "revision": 2
+    },
+    "policy": {
+      "beta": 1.0,
+      "proof_margin": 9.999999747378752e-05,
+      "separation_margin": 0.0
+    },
+    "leaf_indices": [
+      0,
+      1,
+      2
+    ],
+    "geometric_gates": [
+      {
+        "name": "box_0_positive_extents",
+        "passed": true,
+        "half_extents_exact": [
+          "16106127/536870912",
+          "16106127/536870912"
+        ]
+      },
+      {
+        "name": "box_0_quota_containment",
+        "passed": true,
+        "lower_x_exact": "370440945/536870912",
+        "lower_y_exact": "69793217/536870912",
+        "upper_sum_exact": "252329335/268435456",
+        "lower_bound_exact": "13743895/137438953472",
+        "upper_sum_bound_exact": "137425209577/137438953472"
+      },
+      {
+        "name": "box_1_positive_extents",
+        "passed": true,
+        "half_extents_exact": [
+          "16106127/536870912",
+          "16106127/536870912"
+        ]
+      },
+      {
+        "name": "box_1_quota_containment",
+        "passed": true,
+        "lower_x_exact": "69793217/536870912",
+        "lower_y_exact": "370440945/536870912",
+        "upper_sum_exact": "252329335/268435456",
+        "lower_bound_exact": "13743895/137438953472",
+        "upper_sum_bound_exact": "137425209577/137438953472"
+      },
+      {
+        "name": "box_2_positive_extents",
+        "passed": true,
+        "half_extents_exact": [
+          "16106127/536870912",
+          "16106127/536870912"
+        ]
+      },
+      {
+        "name": "box_2_quota_containment",
+        "passed": true,
+        "lower_x_exact": "209379649/536870912",
+        "lower_y_exact": "209379649/536870912",
+        "upper_sum_exact": "241591903/268435456",
+        "lower_bound_exact": "13743895/137438953472",
+        "upper_sum_bound_exact": "137425209577/137438953472"
+      },
+      {
+        "name": "boxes_0_1_strict_separation",
+        "passed": true,
+        "axis_gaps_exact": [
+          "134217737/268435456",
+          "134217737/268435456"
+        ],
+        "distance_squared_exact": "18014400925401169/36028797018963968",
+        "strict_lower_bound_squared_exact": "0"
+      },
+      {
+        "name": "boxes_0_2_strict_separation",
+        "passed": true,
+        "axis_gaps_exact": [
+          "64424521/268435456",
+          "53687089/268435456"
+        ],
+        "distance_squared_exact": "3516411215686681/36028797018963968",
+        "strict_lower_bound_squared_exact": "0"
+      },
+      {
+        "name": "boxes_1_2_strict_separation",
+        "passed": true,
+        "axis_gaps_exact": [
+          "53687089/268435456",
+          "64424521/268435456"
+        ],
+        "distance_squared_exact": "3516411215686681/36028797018963968",
+        "strict_lower_bound_squared_exact": "0"
+      }
+    ],
+    "input_rounding": [],
+    "program_sha256": "85678ed89342b14dd98781b9e909fc6b3470ec2df29687b496eff3899ff891c2",
+    "topology_sha256": "093884d25f0e7655e90c0eba83a5371713afda443e590c39d44bbaa602aeddf0",
+    "semantic_sha256": "fdd2726613593ed1c5af446682d17ad9986be8c47a030483d860372e912857c8",
+    "expression": "separated_union(separated_union(box(center=(0.720000029, 0.159999996), half_extents=(0.0299999993, 0.0299999993)), box(center=(0.159999996, 0.720000029), half_extents=(0.0299999993, 0.0299999993))), box(center=(0.419999987, 0.419999987), half_extents=(0.0299999993, 0.0299999993)))",
+    "canonical_binary_format": "DWI-DEVELOPMENT-SDF-0.1: ASCII DWSDF001, then little-endian uint32 node_count,root,revision; 7 opcode/a/b uint32 triples; 4 cx/cy/hx/hy binary32 quadruples. This is a source-program hash encoding, not a resident VM image.",
+    "canonical_binary_bytes": 168,
+    "exactness": "Exact Euclidean signed distance in the declared normalized memory coordinates in real arithmetic, conditional on all geometric gates; no exact machine-arithmetic claim."
+  },
+  "constructed_lane_0": {
+    "profile": "DWI-DEVELOPMENT-SDF-0.1",
+    "valid_structure": true,
+    "admissible": true,
+    "packed_program": {
+      "nodes": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          3
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "boxes": [
+        [
+          0.7200000286102295,
+          0.1599999964237213,
+          0.029999999329447746,
+          0.029999999329447746
+        ],
+        [
+          0.17000000178813934,
+          0.7300000190734863,
+          0.03992297872900963,
+          0.03992297872900963
+        ],
+        [
+          0.4099999964237213,
+          0.4099999964237213,
+          0.03982652351260185,
+          0.03982652351260185
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "node_count": 5,
+      "root": 4,
+      "revision": 2
+    },
+    "policy": {
+      "beta": 1.0,
+      "proof_margin": 9.999999747378752e-05,
+      "separation_margin": 0.0
+    },
+    "leaf_indices": [
+      0,
+      1,
+      2
+    ],
+    "geometric_gates": [
+      {
+        "name": "box_0_positive_extents",
+        "passed": true,
+        "half_extents_exact": [
+          "16106127/536870912",
+          "16106127/536870912"
+        ]
+      },
+      {
+        "name": "box_0_quota_containment",
+        "passed": true,
+        "lower_x_exact": "370440945/536870912",
+        "lower_y_exact": "69793217/536870912",
+        "upper_sum_exact": "252329335/268435456",
+        "lower_bound_exact": "13743895/137438953472",
+        "upper_sum_bound_exact": "137425209577/137438953472"
+      },
+      {
+        "name": "box_1_positive_extents",
+        "passed": true,
+        "half_extents_exact": [
+          "10716743/268435456",
+          "10716743/268435456"
+        ]
+      },
+      {
+        "name": "box_1_quota_containment",
+        "passed": true,
+        "lower_x_exact": "34917285/268435456",
+        "lower_y_exact": "185241145/268435456",
+        "upper_sum_exact": "131512701/134217728",
+        "lower_bound_exact": "13743895/137438953472",
+        "upper_sum_bound_exact": "137425209577/137438953472"
+      },
+      {
+        "name": "box_2_positive_extents",
+        "passed": true,
+        "half_extents_exact": [
+          "10690851/268435456",
+          "10690851/268435456"
+        ]
+      },
+      {
+        "name": "box_2_quota_containment",
+        "passed": true,
+        "lower_x_exact": "99367685/268435456",
+        "lower_y_exact": "99367685/268435456",
+        "upper_sum_exact": "120749387/134217728",
+        "lower_bound_exact": "13743895/137438953472",
+        "upper_sum_bound_exact": "137425209577/137438953472"
+      },
+      {
+        "name": "boxes_0_1_strict_separation",
+        "passed": true,
+        "axis_gaps_exact": [
+          "257739403/536870912",
+          "268476819/536870912"
+        ],
+        "distance_squared_exact": "69254701099577585/144115188075855872",
+        "strict_lower_bound_squared_exact": "0"
+      },
+      {
+        "name": "boxes_0_2_strict_separation",
+        "passed": true,
+        "axis_gaps_exact": [
+          "128942171/536870912",
+          "96729899/536870912"
+        ],
+        "distance_squared_exact": "12991378411371721/144115188075855872",
+        "strict_lower_bound_squared_exact": "0"
+      },
+      {
+        "name": "boxes_1_2_strict_separation",
+        "passed": true,
+        "axis_gaps_exact": [
+          "21508457/134217728",
+          "32245879/134217728"
+        ],
+        "distance_squared_exact": "751205217501745/9007199254740992",
+        "strict_lower_bound_squared_exact": "0"
+      }
+    ],
+    "input_rounding": [],
+    "program_sha256": "96a6f8f5d2a08840bb64c850b64310f017264b9f0f507cb532cd9ea6fc065f8f",
+    "topology_sha256": "093884d25f0e7655e90c0eba83a5371713afda443e590c39d44bbaa602aeddf0",
+    "semantic_sha256": "94f8de24513a856e7e47b175d11e74a426f4de557ffd3eed5e07482020c302cc",
+    "expression": "separated_union(separated_union(box(center=(0.720000029, 0.159999996), half_extents=(0.0299999993, 0.0299999993)), box(center=(0.170000002, 0.730000019), half_extents=(0.0399229787, 0.0399229787))), box(center=(0.409999996, 0.409999996), half_extents=(0.0398265235, 0.0398265235)))",
+    "canonical_binary_format": "DWI-DEVELOPMENT-SDF-0.1: ASCII DWSDF001, then little-endian uint32 node_count,root,revision; 7 opcode/a/b uint32 triples; 4 cx/cy/hx/hy binary32 quadruples. This is a source-program hash encoding, not a resident VM image.",
+    "canonical_binary_bytes": 168,
+    "exactness": "Exact Euclidean signed distance in the declared normalized memory coordinates in real arithmetic, conditional on all geometric gates; no exact machine-arithmetic claim."
+  },
+  "constructed_lane_1": {
+    "profile": "DWI-DEVELOPMENT-SDF-0.1",
+    "valid_structure": true,
+    "admissible": true,
+    "packed_program": {
+      "nodes": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          3
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "boxes": [
+        [
+          0.7200000286102295,
+          0.1599999964237213,
+          0.029999999329447746,
+          0.029999999329447746
+        ],
+        [
+          0.17000000178813934,
+          0.7300000190734863,
+          0.04012221097946167,
+          0.04012221097946167
+        ],
+        [
+          0.4099999964237213,
+          0.4099999964237213,
+          0.04002539813518524,
+          0.04002539813518524
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "node_count": 5,
+      "root": 4,
+      "revision": 2
+    },
+    "policy": {
+      "beta": 1.0,
+      "proof_margin": 9.999999747378752e-05,
+      "separation_margin": 0.0
+    },
+    "leaf_indices": [
+      0,
+      1,
+      2
+    ],
+    "geometric_gates": [
+      {
+        "name": "box_0_positive_extents",
+        "passed": true,
+        "half_extents_exact": [
+          "16106127/536870912",
+          "16106127/536870912"
+        ]
+      },
+      {
+        "name": "box_0_quota_containment",
+        "passed": true,
+        "lower_x_exact": "370440945/536870912",
+        "lower_y_exact": "69793217/536870912",
+        "upper_sum_exact": "252329335/268435456",
+        "lower_bound_exact": "13743895/137438953472",
+        "upper_sum_bound_exact": "137425209577/137438953472"
+      },
+      {
+        "name": "box_1_positive_extents",
+        "passed": true,
+        "half_extents_exact": [
+          "673139/16777216",
+          "673139/16777216"
+        ]
+      },
+      {
+        "name": "box_1_quota_containment",
+        "passed": true,
+        "lower_x_exact": "8715951/67108864",
+        "lower_y_exact": "11574229/16777216",
+        "upper_sum_exact": "65783091/67108864",
+        "lower_bound_exact": "13743895/137438953472",
+        "upper_sum_bound_exact": "137425209577/137438953472"
+      },
+      {
+        "name": "box_2_positive_extents",
+        "passed": true,
+        "half_extents_exact": [
+          "2686059/67108864",
+          "2686059/67108864"
+        ]
+      },
+      {
+        "name": "box_2_quota_containment",
+        "passed": true,
+        "lower_x_exact": "24828575/67108864",
+        "lower_y_exact": "24828575/67108864",
+        "upper_sum_exact": "30200693/33554432",
+        "lower_bound_exact": "13743895/137438953472",
+        "upper_sum_bound_exact": "137425209577/137438953472"
+      },
+      {
+        "name": "boxes_0_1_strict_separation",
+        "passed": true,
+        "axis_gaps_exact": [
+          "257632441/536870912",
+          "268369857/536870912"
+        ],
+        "distance_squared_exact": "69198427400909465/144115188075855872",
+        "strict_lower_bound_squared_exact": "0"
+      },
+      {
+        "name": "boxes_0_2_strict_separation",
+        "passed": true,
+        "axis_gaps_exact": [
+          "128835401/536870912",
+          "96623129/536870912"
+        ],
+        "distance_squared_exact": "12967294804290721/144115188075855872",
+        "strict_lower_bound_squared_exact": "0"
+      },
+      {
+        "name": "boxes_1_2_strict_separation",
+        "passed": true,
+        "axis_gaps_exact": [
+          "1340939/8388608",
+          "16096223/67108864"
+        ],
+        "distance_squared_exact": "374167908575873/4503599627370496",
+        "strict_lower_bound_squared_exact": "0"
+      }
+    ],
+    "input_rounding": [],
+    "program_sha256": "7f7b09e1e6c6dff4183395b30a24a66cb5345e46cd9ded79271deaa5e407beac",
+    "topology_sha256": "093884d25f0e7655e90c0eba83a5371713afda443e590c39d44bbaa602aeddf0",
+    "semantic_sha256": "8900005a434e3acfb2a5a81bd6e4dfac776fc6ba637e1891eedb445163ac8aa9",
+    "expression": "separated_union(separated_union(box(center=(0.720000029, 0.159999996), half_extents=(0.0299999993, 0.0299999993)), box(center=(0.170000002, 0.730000019), half_extents=(0.040122211, 0.040122211))), box(center=(0.409999996, 0.409999996), half_extents=(0.0400253981, 0.0400253981)))",
+    "canonical_binary_format": "DWI-DEVELOPMENT-SDF-0.1: ASCII DWSDF001, then little-endian uint32 node_count,root,revision; 7 opcode/a/b uint32 triples; 4 cx/cy/hx/hy binary32 quadruples. This is a source-program hash encoding, not a resident VM image.",
+    "canonical_binary_bytes": 168,
+    "exactness": "Exact Euclidean signed distance in the declared normalized memory coordinates in real arithmetic, conditional on all geometric gates; no exact machine-arithmetic claim."
+  },
+  "constructed_lane_2": {
+    "profile": "DWI-DEVELOPMENT-SDF-0.1",
+    "valid_structure": true,
+    "admissible": true,
+    "packed_program": {
+      "nodes": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          3
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "boxes": [
+        [
+          0.7200000286102295,
+          0.1599999964237213,
+          0.029999999329447746,
+          0.029999999329447746
+        ],
+        [
+          0.17000000178813934,
+          0.7300000190734863,
+          0.03992566838860512,
+          0.03992566838860512
+        ],
+        [
+          0.4099999964237213,
+          0.4099999964237213,
+          0.039826925843954086,
+          0.039826925843954086
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "node_count": 5,
+      "root": 4,
+      "revision": 2
+    },
+    "policy": {
+      "beta": 1.0,
+      "proof_margin": 9.999999747378752e-05,
+      "separation_margin": 0.0
+    },
+    "leaf_indices": [
+      0,
+      1,
+      2
+    ],
+    "geometric_gates": [
+      {
+        "name": "box_0_positive_extents",
+        "passed": true,
+        "half_extents_exact": [
+          "16106127/536870912",
+          "16106127/536870912"
+        ]
+      },
+      {
+        "name": "box_0_quota_containment",
+        "passed": true,
+        "lower_x_exact": "370440945/536870912",
+        "lower_y_exact": "69793217/536870912",
+        "upper_sum_exact": "252329335/268435456",
+        "lower_bound_exact": "13743895/137438953472",
+        "upper_sum_bound_exact": "137425209577/137438953472"
+      },
+      {
+        "name": "box_1_positive_extents",
+        "passed": true,
+        "half_extents_exact": [
+          "10717465/268435456",
+          "10717465/268435456"
+        ]
+      },
+      {
+        "name": "box_1_quota_containment",
+        "passed": true,
+        "lower_x_exact": "34916563/268435456",
+        "lower_y_exact": "185240423/268435456",
+        "upper_sum_exact": "131513423/134217728",
+        "lower_bound_exact": "13743895/137438953472",
+        "upper_sum_bound_exact": "137425209577/137438953472"
+      },
+      {
+        "name": "box_2_positive_extents",
+        "passed": true,
+        "half_extents_exact": [
+          "10690959/268435456",
+          "10690959/268435456"
+        ]
+      },
+      {
+        "name": "box_2_quota_containment",
+        "passed": true,
+        "lower_x_exact": "99367577/268435456",
+        "lower_y_exact": "99367577/268435456",
+        "upper_sum_exact": "120749495/134217728",
+        "lower_bound_exact": "13743895/137438953472",
+        "upper_sum_bound_exact": "137425209577/137438953472"
+      },
+      {
+        "name": "boxes_0_1_strict_separation",
+        "passed": true,
+        "axis_gaps_exact": [
+          "257737959/536870912",
+          "268475375/536870912"
+        ],
+        "distance_squared_exact": "69253941245438153/144115188075855872",
+        "strict_lower_bound_squared_exact": "0"
+      },
+      {
+        "name": "boxes_0_2_strict_separation",
+        "passed": true,
+        "axis_gaps_exact": [
+          "128941955/536870912",
+          "96729683/536870912"
+        ],
+        "distance_squared_exact": "12991329666251257/144115188075855872",
+        "strict_lower_bound_squared_exact": "0"
+      },
+      {
+        "name": "boxes_1_2_strict_separation",
+        "passed": true,
+        "axis_gaps_exact": [
+          "10754021/67108864",
+          "4030683/16777216"
+        ],
+        "distance_squared_exact": "375591454812265/4503599627370496",
+        "strict_lower_bound_squared_exact": "0"
+      }
+    ],
+    "input_rounding": [],
+    "program_sha256": "0a3214eba21af7c7c3d9ae64d71b54b4699d7d6a920bb08488ec619ad8f55539",
+    "topology_sha256": "093884d25f0e7655e90c0eba83a5371713afda443e590c39d44bbaa602aeddf0",
+    "semantic_sha256": "f4098b70e0537c76f917d12bfd18330f6491f66063c3bb1ed8b3f45411f6a2d3",
+    "expression": "separated_union(separated_union(box(center=(0.720000029, 0.159999996), half_extents=(0.0299999993, 0.0299999993)), box(center=(0.170000002, 0.730000019), half_extents=(0.0399256684, 0.0399256684))), box(center=(0.409999996, 0.409999996), half_extents=(0.0398269258, 0.0398269258)))",
+    "canonical_binary_format": "DWI-DEVELOPMENT-SDF-0.1: ASCII DWSDF001, then little-endian uint32 node_count,root,revision; 7 opcode/a/b uint32 triples; 4 cx/cy/hx/hy binary32 quadruples. This is a source-program hash encoding, not a resident VM image.",
+    "canonical_binary_bytes": 168,
+    "exactness": "Exact Euclidean signed distance in the declared normalized memory coordinates in real arithmetic, conditional on all geometric gates; no exact machine-arithmetic claim."
+  }
+}

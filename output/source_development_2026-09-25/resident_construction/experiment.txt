@@ -1,0 +1,360 @@
+"""Bounded direct resident-construction campaign, no new test source.
+
+Run from repository root with exec(compile(Path(this_file).read_text(),...)).
+Production code is read-only. All execution inputs and outputs are retained.
+"""
+from pathlib import Path
+from copy import deepcopy
+from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime, timezone
+import hashlib
+import json
+import lzma
+import os
+import struct
+import subprocess
+import time
+
+from local_lab import source_development as development
+from local_lab import source_development_results as results
+from local_lab import source_development_bindings as bindings
+from local_lab import source_resident_v3 as resident
+from local_lab import source_ir_v2 as ir
+from local_lab import source_cycle as cycle_binding
+
+ROOT = Path.cwd()
+OUT = ROOT/'output/source_development_2026-09-25/resident_construction'
+NATIVE = ROOT/'Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3'
+EXE = NATIVE/'bin/windows-resident-v3/dawnwood-resident-v3.exe'
+SHADER = NATIVE/'bin/windows-resident-v3/resident_v3.spv'
+LAYER = ROOT/'tmp/rtx-toolchain/VulkanSDK/Bin'
+OUT.mkdir(parents=True,exist_ok=True)
+if (OUT/'REPORT.json').exists():
+    raise SystemExit('Refusing to overwrite a completed campaign')
+
+checks, receipts, comparisons, assessments = [], [], [], []
+started = datetime.now(timezone.utc).isoformat()
+
+def sha(data):
+    return hashlib.sha256(data).hexdigest()
+
+def save(path,value,*,compressed=False):
+    path = OUT/path
+    path.parent.mkdir(parents=True,exist_ok=True)
+    raw=ir.json_bytes(value)
+    path.write_bytes(lzma.compress(raw,preset=3) if compressed else raw)
+    return {'path':str(path.relative_to(OUT)).replace('\\','/'),'sha256':sha(raw),'bytes':len(raw),
+            'stored_sha256':sha(path.read_bytes()),'stored_bytes':path.stat().st_size}
+
+def check(name,passed,**details):
+    item={'name':name,'passed':bool(passed),**details}
+    checks.append(item)
+    save('checks.json',checks)
+    print(json.dumps({'check':name,'passed':item['passed'],**({'details':details} if not passed else {})}),flush=True)
+    return item['passed']
+
+paths = [ROOT/f'local_lab/{name}.py' for name in (
+    'source_development','source_development_bindings','source_development_results','development_sdf',
+    'source_cycle','source_program','source_graph','source_graph_types','source_graph_export',
+    'source_catalogue_extension','source_slot_bindings','source_resident_v3','source_ir_v2','source_ir')]
+paths += [NATIVE/name for name in (
+    'include/resident_v3.inc','include/numeric_types.inc','include/source_math_v2.inc',
+    'src/resident_v3_cli.cpp','shaders/resident_v3.comp','tools/build_resident_v3.py',
+    'docs/NUMERICAL_PROFILE.md','docs/CLAIMS.md','bin/windows-resident-v3/build.json')]
+paths += [ROOT/name for name in ('AGENTS.md','DAWNWOOD_AGENT.md','docs/RESIDENT_V3_ABI.md',
+    'source_bindings/graphs/amplitude_v0.1.json')]
+paths += [cycle_binding.MODEL,cycle_binding.CYCLE]
+inventory={}
+for path in paths:
+    path=Path(path)
+    relative=str(path.relative_to(ROOT)).replace('\\','/')
+    data=path.read_bytes()
+    snapshot=OUT/'source_snapshots'/(relative+'.txt')
+    snapshot.parent.mkdir(parents=True,exist_ok=True)
+    snapshot.write_bytes(data)
+    inventory[relative]={'sha256':sha(data),'bytes':len(data),
+                         'snapshot':str(snapshot.relative_to(OUT)).replace('\\','/')}
+for path in (EXE,SHADER):
+    inventory[str(path.relative_to(ROOT)).replace('\\','/')]=dict(sha256=sha(path.read_bytes()),bytes=path.stat().st_size)
+save('source_inventory.json',inventory)
+save('campaign_start.json',{'started_utc':started,'instances':129,'baseline_epochs':[1,2,3,8,64],
+    'distance_tolerance':2e-5,'score_tolerance':2e-5,'source_chain_audit':'Pending separate source-chain integration audit; numerical campaign alone does not establish all source relationships.',
+    'gpu_call_budget':11,'device_substring':'RTX 5070 Ti','validation_layer_path':str(LAYER),
+    'source_inventory_sha256':sha((OUT/'source_inventory.json').read_bytes()),
+    'git_head':subprocess.run(['git','rev-parse','HEAD'],capture_output=True,text=True,check=True).stdout.strip()})
+
+model=development.make_model()
+cycle=ir.read_json(cycle_binding.CYCLE)[0]
+spec=development.make_spec()
+
+def compile_case(name,specification,*,graph=None):
+    print('compiling '+name,flush=True)
+    definition,actual_graph,raw,manifest=development.compile_program(model,cycle,specification,129,graph=graph)
+    folder=OUT/name
+    folder.mkdir(parents=True,exist_ok=False)
+    (folder/'program.bin').write_bytes(raw)
+    files={
+        'source_model.json':model,'source_cycle.json':cycle,'development_source.json':specification,
+        'source_graph.json':actual_graph,'definition.json.xz':definition,'manifest.json.xz':manifest,
+    }
+    stored={name:save(folder.relative_to(OUT)/name,obj,compressed=name.endswith('.xz')) for name,obj in files.items()}
+    save(folder.relative_to(OUT)/'artifacts.json',{'files':stored,'program':{'sha256':sha(raw),'bytes':len(raw)},
+        'configuration_sha256':manifest['configuration_sha256'],
+        'state_width':manifest['state_width'],'functions':manifest['function_count'],
+        'mutation_steps':manifest['mutation_steps'],'action_steps':manifest['action_steps']})
+    return {'name':name,'folder':folder,'definition':definition,'graph':actual_graph,'raw':raw,'manifest':manifest,
+            'input':folder/'program.bin'}
+
+baseline=compile_case('baseline',spec)
+disabled_spec=deepcopy(spec)
+disabled_spec['initial']['enabled']=0
+disabled=compile_case('disabled',disabled_spec)
+check('disabled_has_same_immutable_configuration',baseline['manifest']['configuration_sha256']==disabled['manifest']['configuration_sha256'])
+
+def run(label,backend,input_path,epochs,*,reverse=False,expected_exit=0):
+    folder=OUT/label
+    folder.mkdir(parents=True,exist_ok=False)
+    output_path=folder/'checkpoint.bin'
+    command=[str(EXE),'run','--backend',backend,'--input',str(input_path),'--output',str(output_path),'--epochs',str(epochs)]
+    env=dict(os.environ)
+    env.pop('DAWNWOOD_VALIDATION',None)
+    env.pop('VK_LAYER_PATH',None)
+    selected_env={}
+    if backend=='vulkan':
+        command.extend(['--device','RTX 5070 Ti'])
+        selected_env={'DAWNWOOD_VALIDATION':'1','VK_LAYER_PATH':str(LAYER)}
+        env.update(selected_env)
+    if reverse:command.append('--reverse-targets')
+    start=datetime.now(timezone.utc).isoformat()
+    process=subprocess.run(command,env=env,capture_output=True)
+    (folder/'stdout.json').write_bytes(process.stdout)
+    (folder/'stderr.txt').write_bytes(process.stderr)
+    receipt=json.loads(process.stdout)
+    item={'label':label,'command':command,'environment_overrides':selected_env,'started_utc':start,
+          'ended_utc':datetime.now(timezone.utc).isoformat(),'returncode':process.returncode,'expected_exit':expected_exit,
+          'input_path':str(input_path.relative_to(OUT)).replace('\\','/'),'input_sha256':sha(input_path.read_bytes()),
+          'output_path':str(output_path.relative_to(OUT)).replace('\\','/'),
+          'output_sha256':sha(output_path.read_bytes()) if output_path.exists() else None,
+          'executable_sha256':sha(EXE.read_bytes()),'shader_sha256':sha(SHADER.read_bytes()),'receipt':receipt}
+    (folder/'execution.json').write_bytes(ir.json_bytes(item))
+    return item,output_path
+
+def collect(item):
+    receipt,path=item
+    receipts.append(receipt)
+    save('execution_receipts.json',receipts)
+    check(receipt['label']+'_exit',receipt['returncode']==receipt['expected_exit'],
+          actual=receipt['returncode'],expected=receipt['expected_exit'])
+    native=receipt['receipt']
+    if native.get('backend')=='vulkan':
+        check(receipt['label']+'_physical_gpu_validation',native.get('device_type')=='discrete_gpu'
+              and 'RTX 5070 Ti' in native.get('device','') and native.get('validation_enabled') is True
+              and native.get('validation_errors')==0 and native.get('validation_warnings')==0,
+              device=native.get('device'),validation=native.get('validation_enabled'),
+              errors=native.get('validation_errors'),warnings=native.get('validation_warnings'))
+    print(json.dumps({'completed':receipt['label'],'execution_seconds':native.get('execution_seconds'),
+                      'failed_lanes':native.get('failed_lanes')}),flush=True)
+    return path
+
+def compare(name,left,right):
+    a,b=left.read_bytes(),right.read_bytes()
+    changed=sum(x!=y for x,y in zip(struct.unpack('<'+'I'*(len(a)//4),a),struct.unpack('<'+'I'*(len(b)//4),b))) if len(a)==len(b) else None
+    item={'name':name,'left':str(left.relative_to(OUT)).replace('\\','/'),
+          'right':str(right.relative_to(OUT)).replace('\\','/'),'left_sha256':sha(a),'right_sha256':sha(b),
+          'bytes_left':len(a),'bytes_right':len(b),'compared_words':len(a)//4 if len(a)==len(b) else None,
+          'changed_words':changed,'all_bytes_equal':a==b}
+    comparisons.append(item)
+    save('comparisons.json',comparisons)
+    check(name,a==b,changed_words=changed,bytes_left=len(a),bytes_right=len(b))
+
+def pair(name,input_path,epochs,*,expected_exit=0):
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        cpu=pool.submit(run,name+'_cpu','cpu',input_path,epochs,expected_exit=expected_exit)
+        gpu=pool.submit(run,name+'_vulkan','vulkan',input_path,epochs,expected_exit=expected_exit)
+        cpu_path=collect(cpu.result())
+        gpu_path=collect(gpu.result())
+    compare(name+'_cpu_gpu_exact',cpu_path,gpu_path)
+    return cpu_path,gpu_path
+
+def assess(name,path,manifest):
+    report=results.evaluate_results(path.read_bytes(),manifest)
+    save(name+'/independent_results.json.xz',report,compressed=True)
+    rows=report['results']
+    summary={'name':name,'checkpoint_sha256':report['checkpoint_sha256'],'count':report['count'],
+        'all_assessments_passed':report['all_assessments_passed'],
+        'all_runtime_healthy':report['all_runtime_healthy'],
+        'all_programs_geometrically_admissible':report['all_programs_geometrically_admissible'],
+        'program_node_counts':sorted(set(r['program']['node_count'] for r in rows if r['program'])),
+        'coverage_values':sorted(set(r['native_diagnostics']['coverage'] for r in rows)),
+        'admission_values':sorted(set(r['native_diagnostics']['admitted'] for r in rows)),
+        'max_query_error':max((r['independent_readout']['query']['absolute_error'] for r in rows if r['independent_readout']),default=None),
+        'max_witness_error':max((r['independent_readout']['witness']['absolute_error'] for r in rows if r['independent_readout']),default=None),
+        'max_score_error_given_returned_coverage':max((abs(r['independent_readout']['objective']['score_signed_error_given_native_coverage']) for r in rows if r['independent_readout']),default=None),
+        'coverage_ambiguous_rows':sum(bool(r['independent_readout']['objective']['ambiguous_training_indices']) for r in rows if r['independent_readout']),
+        'unique_program_count':report['unique_program_count'],'unique_topology_count':report['unique_topology_count'],
+        'unique_semantic_region_count':report['unique_semantic_region_count']}
+    assessments.append(summary)
+    save('assessment_summaries.json',assessments)
+    check(name+'_independent_assessment',report['all_assessments_passed'])
+    print(json.dumps({'assessment':summary}),flush=True)
+    return report
+
+baseline_paths={}
+baseline_readouts={}
+for epochs in (1,2,3,8,64):
+    name=f'baseline_{epochs}'
+    cpu,gpu=pair(name,baseline['input'],epochs)
+    baseline_paths[epochs]=gpu
+    readout=assess(name,gpu,baseline['manifest'])
+    baseline_readouts[epochs]=readout
+    expected_nodes=1 if epochs==1 else 3 if epochs==2 else 5
+    expected_coverage=3 if epochs==1 else 6 if epochs==2 else 9
+    expected_admitted=0 if epochs==1 else 1
+    check(name+'_expected_growth_coverage_admission',all(
+        r['program'] is not None and r['program']['node_count']==expected_nodes
+        and r['native_diagnostics']['coverage']==expected_coverage
+        and r['native_diagnostics']['admitted']==expected_admitted
+        for r in readout['results']),expected_nodes=expected_nodes,
+        expected_coverage=expected_coverage,expected_admitted=expected_admitted)
+
+growth=[]
+for lane in range(129):
+    rows=[baseline_readouts[e]['results'][lane] for e in (1,2,3)]
+    programs=[row['program'] for row in rows]
+    initial_equal=bindings.pack_program(programs[0])==bindings.pack_program(spec['initial']['program'])
+    edges=all(programs[j]['node_count']==programs[j-1]['node_count']+2
+        and programs[j]['root']==programs[j]['node_count']-1
+        and programs[j]['revision']==programs[j-1]['revision']+1
+        and programs[j]['nodes'][:programs[j-1]['node_count']]==programs[j-1]['nodes'][:programs[j-1]['node_count']]
+        for j in (1,2))
+    changed=all(rows[j]['topology_sha256']!=rows[j-1]['topology_sha256']
+                and rows[j]['semantic_sha256']!=rows[j-1]['semantic_sha256'] for j in (1,2))
+    growth.append({'lane':lane,'initial_program_equal':initial_equal,'append_opcodes_and_backward_edges_verified':edges,
+        'topology_and_region_both_changed':changed,
+        'epochs':[{'epoch':r['epoch'],'program':r['program'],'program_sha256':r['program_sha256'],
+                   'topology_sha256':r['topology_sha256'],'semantic_sha256':r['semantic_sha256'],
+                   'expression':r['expression'],'coverage':r['native_diagnostics']['coverage'],
+                   'query_admitted':r['native_diagnostics']['admitted'],'query_distance':r['native_diagnostics']['distance']}
+                  for r in rows]})
+save('structural_growth.json',growth)
+check('all_lanes_actual_structural_and_region_growth',all(x['initial_program_equal']
+      and x['append_opcodes_and_backward_edges_verified'] and x['topology_and_region_both_changed'] for x in growth))
+check('accepted_program_stable_3_to_64',all(
+    baseline_readouts[3]['results'][lane]['program_word_bits']==baseline_readouts[64]['results'][lane]['program_word_bits']
+    for lane in range(129)))
+
+_,disabled_gpu=pair('disabled_8',disabled['input'],8)
+disabled_readout=assess('disabled_8',disabled_gpu,disabled['manifest'])
+initial_program_bytes=development.sdf.canonical_program_bytes(spec['initial']['program'])
+check('disabled_preserves_initial_program_region_and_task_state',all(
+    development.sdf.canonical_program_bytes(r['program'])==initial_program_bytes
+    and r['native_diagnostics']['coverage']==3 and r['native_diagnostics']['admitted']==0
+    for r in disabled_readout['results']))
+
+resumed=collect(run('resume_3_plus_5','vulkan',baseline_paths[3],5))
+compare('resume_3_plus_5_exactly_equals_8',resumed,baseline_paths[8])
+reversed_path=collect(run('reverse_targets_8','vulkan',baseline['input'],8,reverse=True))
+compare('reverse_targets_8_exactly_equals_forward',reversed_path,baseline_paths[8])
+
+def mutable_rows(raw):
+    decoded=resident.decode_checkpoint(raw)
+    return decoded,[tuple([*lane['state_bits'],*(word for record in lane['records'] for word in record['raw_words'])])
+                    for lane in decoded['instances']]
+
+bad_folder=OUT/'malformed_live'
+bad_folder.mkdir()
+bad=bytearray(baseline_paths[8].read_bytes())
+before=resident.decode_checkpoint(bad)
+op_index=baseline['manifest']['state_names'].index('sdf_op0')
+for lane in range(before['count']):
+    struct.pack_into('<f',bad,before['instances_offset_bytes']+4*(lane*before['instance_words']+6+op_index),1.5)
+bad_input=bad_folder/'program.bin'
+bad_input.write_bytes(bad)
+save('malformed_live/intervention.json',{'source':str(baseline_paths[8].relative_to(OUT)).replace('\\','/'),
+    'source_sha256':sha(baseline_paths[8].read_bytes()),'changed_state':'sdf_op0','value':1.5,'lanes':129,
+    'purpose':'Invalid live operator opcode encoding must fail after attempted old-snapshot mutation and retain the exact malformed old image, never truncate or repair it.'})
+_,bad_gpu=pair('malformed_live_1',bad_input,1,expected_exit=3)
+before_dec,before_mutable=mutable_rows(bytes(bad))
+after_dec,after_mutable=mutable_rows(bad_gpu.read_bytes())
+check('malformed_live_rolls_back_every_state_and_record_word',before_mutable==after_mutable)
+check('malformed_live_retains_epoch_and_failure',all(a['epoch']==b['epoch']==8 and b['status']!=0
+      for a,b in zip(before_dec['instances'],after_dec['instances'])))
+save('malformed_live_1/failures.json',[{k:r[k] for k in ('epoch','status','failure_phase','failure_target_ordinal','failure_step','failure_detail','header_words')}
+                                    for r in after_dec['instances']])
+_,failed_resume_gpu=pair('malformed_failed_resume_3',bad_gpu,3,expected_exit=3)
+compare('failed_resume_keeps_complete_failure_checkpoint',failed_resume_gpu,bad_gpu)
+
+# Guard fires after all application nodes, including actual candidate
+# construction/selection. It executes despite its result having no consumer.
+late_graph=deepcopy(baseline['graph'])
+late_graph['functions']['campaign_require_false']={
+    'inputs':{},'outputs':{'unused':'bit'},
+    'binding':{'inputs':[],'outputs':{'unused':0},'requires':[0],
+        'source':'Direct rollback intervention in retained experiment.txt',
+        'meaning':'Deliberate failure after constructor computation; its unused result must not remove the eager guard.',
+        'status':'Negative validation intervention; never an application solver.'}}
+late_graph['phases'][-1]['nodes'].append({'id':'campaign_last_guard','op':'call_helper',
+    'function':'campaign_require_false','args':{}})
+late=compile_case('late_failure',spec,graph=late_graph)
+old_dec=resident.decode_checkpoint(baseline_paths[1].read_bytes())
+late_dec=resident.decode_checkpoint(late['raw'])
+check('late_failure_preserves_record_identity_and_image_layout',
+      old_dec['record_metadata_words']==late_dec['record_metadata_words']
+      and old_dec['instance_words']==late_dec['instance_words']
+      and old_dec['header_words'][0:3]==late_dec['header_words'][0:3])
+late_input=late['folder']/'input_after_epoch1.bin'
+late_input.write_bytes(late['raw'][:late_dec['instances_offset_bytes']]
+                      +baseline_paths[1].read_bytes()[old_dec['instances_offset_bytes']:])
+resident.decode_checkpoint(late_input.read_bytes())
+save('late_failure/intervention.json',{'graph_change':'Append eager require(false) helper as last surface_return phase node; no final state/record write policy removed.',
+    'starting_mutable_image':str(baseline_paths[1].relative_to(OUT)).replace('\\','/'),
+    'starting_mutable_sha256':sha(baseline_paths[1].read_bytes()[old_dec['instances_offset_bytes']:]),
+    'configuration_boundary':'Controlled new guard configuration with baseline epoch1 mutable image; not a claim that ordinary checkpoint resume can change immutable code.',
+    'nonfailing_control':'baseline_2_vulkan/checkpoint.bin grows from one to two leaves in the corresponding epoch.'})
+_,late_gpu=pair('late_failure_1',late_input,1,expected_exit=3)
+before_dec,before_mutable=mutable_rows(late_input.read_bytes())
+after_dec,after_mutable=mutable_rows(late_gpu.read_bytes())
+check('late_failure_rolls_back_every_state_and_record_word',before_mutable==after_mutable)
+check('late_failure_after_constructor_keeps_epoch1',all(a['epoch']==b['epoch']==1 and b['status']==1
+      and b['failure_phase']==2 and b['failure_detail']&0xffff==4
+      for a,b in zip(before_dec['instances'],after_dec['instances'])))
+save('late_failure_1/failures.json',[{k:r[k] for k in ('epoch','status','failure_phase','failure_target_ordinal','failure_step','failure_detail','header_words')}
+                                   for r in after_dec['instances']])
+
+current={}
+for relative,entry in inventory.items():
+    path=ROOT/relative
+    current[relative]={'captured_sha256':entry['sha256'],'current_sha256':sha(path.read_bytes()),
+                       'matches':entry['sha256']==sha(path.read_bytes())}
+save('source_versions_at_end.json',current)
+report={'profile':'DWI-RESIDENT-CONSTRUCTION-CAMPAIGN-0.1','started_utc':started,
+    'finished_utc':datetime.now(timezone.utc).isoformat(),'instances':129,
+    'scope':'Direct resident SDF construction, independent domain assessment, CPU/Vulkan parity and transactional continuation/failure evidence.',
+    'source_chain_audit':'Pending separate source-chain integration audit; this campaign does not establish every original source relationship.',
+    'all_checks_passed':all(x['passed'] for x in checks),'checks':checks,'comparisons':comparisons,
+    'assessments':assessments,'execution_receipts':'execution_receipts.json','source_inventory':'source_inventory.json',
+    'source_snapshots':'source_snapshots/','structural_growth':'structural_growth.json',
+    'counts':{'checks':len(checks),'checks_passed':sum(x['passed'] for x in checks),
+        'native_invocations':len(receipts),'vulkan_invocations':sum(x['receipt'].get('backend')=='vulkan' for x in receipts),
+        'cpu_vulkan_pairs':sum('_cpu_gpu_exact' in x['name'] for x in comparisons),
+        'exact_full_checkpoint_comparisons':len(comparisons),
+        'compared_words':sum(x['compared_words'] or 0 for x in comparisons),
+        'changed_words':sum(x['changed_words'] or 0 for x in comparisons)},
+    'max_oracle_query_error':max(x['max_query_error'] for x in assessments),
+    'max_oracle_witness_error':max(x['max_witness_error'] for x in assessments),
+    'max_score_error_given_returned_coverage':max(x['max_score_error_given_returned_coverage'] for x in assessments),
+    'captured_source_files_changed_during_run':[k for k,v in current.items() if not v['matches']],
+    'limitations':['The constructor has at most four leaves/seven nodes and uses authored append, evaluation and acceptance methods. It is not unrestricted program synthesis.',
+        'All demand points, quota, metric, grammar and objective were explicitly authored. These outcomes are not discovery of a physical law or a prediction of allocator success.',
+        'The native bank is immutable; the new expression opcodes/edges/constants are complete mutable per-instance state interpreted by resident methods.',
+        'The controlled late failure uses a deliberately new immutable configuration with transplanted epoch1 state, documented as an intervention rather than ordinary same-configuration continuation.',
+        'Numerical tolerance and exact packed-geometry certificates are distinct; no tolerance was relaxed. No GPU saturation was attempted in this bounded campaign.']}
+save('REPORT.json',report)
+save('decision_ledger_entry.json',{'recorded_utc':report['finished_utc'],'parent_task':'Direct bounded campaign authorized before execution',
+    'classification':'Numerical experimental evidence; source-chain acceptance remains independent',
+    'decision_before':'Run129 independent substrates at epochs1/2/3/8/64 and test control, continuation, ordering, malformed-state and late-failure rollback.',
+    'evidence':'REPORT.json','report_sha256':sha((OUT/'REPORT.json').read_bytes()),
+    'outcome':report['counts'],'all_checks_passed':report['all_checks_passed'],
+    'decision_after':'Retain all outcomes and pass them to the parent for source-chain audit and next targeted intervention; do not substitute numerical parity for source fidelity.'})
+print(json.dumps({'final':report['all_checks_passed'],'counts':report['counts'],'report_sha256':sha((OUT/'REPORT.json').read_bytes())}),flush=True)
+raise SystemExit(0 if report['all_checks_passed'] else 1)

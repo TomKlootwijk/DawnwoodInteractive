@@ -1,0 +1,20 @@
+{
+  "recorded_utc": "2026-09-24T23:40:37.166388+00:00",
+  "parent_task": "Direct bounded campaign authorized before execution",
+  "classification": "Numerical experimental evidence; source-chain acceptance remains independent",
+  "decision_before": "Run129 independent substrates at epochs1/2/3/8/64 and test control, continuation, ordering, malformed-state and late-failure rollback.",
+  "evidence": "REPORT.json",
+  "report_sha256": "acba5df5f109ca77739b83a901e8544d4c7ed1dbf63fa7b5c07dc495a1ff5c1a",
+  "outcome": {
+    "checks": 63,
+    "checks_passed": 63,
+    "native_invocations": 20,
+    "vulkan_invocations": 11,
+    "cpu_vulkan_pairs": 9,
+    "exact_full_checkpoint_comparisons": 12,
+    "compared_words": 1867187,
+    "changed_words": 0
+  },
+  "all_checks_passed": true,
+  "decision_after": "Retain all outcomes and pass them to the parent for source-chain audit and next targeted intervention; do not substitute numerical parity for source fidelity."
+}

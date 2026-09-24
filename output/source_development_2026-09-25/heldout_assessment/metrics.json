@@ -1,0 +1,317 @@
+{
+  "initial_one_box": {
+    "program_hashes": {
+      "program_sha256": "775480cc2282bf2bfdb6a99e76906ab76fb01fd4cca6e59c3b5fe826fbb29168",
+      "topology_sha256": "e17f090dcc66adc5e5ed16f2f1d385fa4fcf886a9314e816e490028a7e14a78f",
+      "semantic_sha256": "0a4c35e54d499bd7bce037b876312733f27de27a6805bc1dbe0b0edb23643796"
+    },
+    "exact_certificate_admissible": true,
+    "leaf_count": 1,
+    "node_count": 1,
+    "revision": 0,
+    "union_area": 0.003599999839067461,
+    "union_area_exact": "259407326940129/72057594037927936",
+    "fraction_of_quota_triangle_area": 0.007199999678134922,
+    "complexity_penalty": 0.02,
+    "area_penalty": 1.7999999195337305e-05,
+    "total_penalty": 0.02001799999919534,
+    "reference_intersection_area": 0.003599999839067461,
+    "reference_iou": 0.3333333333333333,
+    "area_outside_reference": 0.0,
+    "reference_area_not_covered": 0.007199999678134922,
+    "datasets": {
+      "training": {
+        "count": 9,
+        "covered": 3,
+        "coverage_fraction": 0.3333333333333333,
+        "inside_or_boundary": 3,
+        "coverage_boundary_ambiguous": 0,
+        "distance_min": -0.029999999329447746,
+        "distance_max": 0.7496666284277913,
+        "mean_distance": 0.3603861720171755,
+        "max_formula_vs_edge_oracle_absolute_error": 0.0,
+        "count_score": 2.979982000000805
+      },
+      "holdout": {
+        "count": 900,
+        "covered": 300,
+        "coverage_fraction": 0.3333333333333333,
+        "inside_or_boundary": 300,
+        "coverage_boundary_ambiguous": 0,
+        "distance_min": -0.029689935967326164,
+        "distance_max": 0.769320068594982,
+        "mean_distance": 0.3616461646492048,
+        "max_formula_vs_edge_oracle_absolute_error": 1.1102230246251565e-16,
+        "covered_by_cluster": [
+          300,
+          0,
+          0
+        ],
+        "count_score": 299.9799820000008
+      },
+      "outside_quota": {
+        "count": 736,
+        "covered": 0,
+        "coverage_fraction": 0.0,
+        "inside_or_boundary": 0,
+        "coverage_boundary_ambiguous": 0,
+        "distance_min": 0.07810248976662114,
+        "distance_max": 1.4167568824788366,
+        "mean_distance": 0.7060453124230917,
+        "max_formula_vs_edge_oracle_absolute_error": 2.220446049250313e-16
+      }
+    }
+  },
+  "hand_defined_three_box_reference": {
+    "program_hashes": {
+      "program_sha256": "85678ed89342b14dd98781b9e909fc6b3470ec2df29687b496eff3899ff891c2",
+      "topology_sha256": "093884d25f0e7655e90c0eba83a5371713afda443e590c39d44bbaa602aeddf0",
+      "semantic_sha256": "fdd2726613593ed1c5af446682d17ad9986be8c47a030483d860372e912857c8"
+    },
+    "exact_certificate_admissible": true,
+    "leaf_count": 3,
+    "node_count": 5,
+    "revision": 2,
+    "union_area": 0.010799999517202383,
+    "union_area_exact": "778221980820387/72057594037927936",
+    "fraction_of_quota_triangle_area": 0.021599999034404765,
+    "complexity_penalty": 0.06,
+    "area_penalty": 5.3999997586011914e-05,
+    "total_penalty": 0.06005399999758601,
+    "reference_intersection_area": 0.010799999517202383,
+    "reference_iou": 1.0,
+    "area_outside_reference": 0.0,
+    "reference_area_not_covered": 0.0,
+    "datasets": {
+      "training": {
+        "count": 9,
+        "covered": 9,
+        "coverage_fraction": 1.0,
+        "inside_or_boundary": 9,
+        "coverage_boundary_ambiguous": 0,
+        "distance_min": -0.029999999329447746,
+        "distance_max": -0.019999949261546135,
+        "mean_distance": -0.02333331915239493,
+        "max_formula_vs_edge_oracle_absolute_error": 0.0,
+        "count_score": 8.939946000002413
+      },
+      "holdout": {
+        "count": 900,
+        "covered": 900,
+        "coverage_fraction": 1.0,
+        "inside_or_boundary": 900,
+        "coverage_boundary_ambiguous": 0,
+        "distance_min": -0.029689935967326164,
+        "distance_max": -0.015000788494944572,
+        "mean_distance": -0.020015742753942807,
+        "max_formula_vs_edge_oracle_absolute_error": 0.0,
+        "covered_by_cluster": [
+          300,
+          300,
+          300
+        ],
+        "count_score": 899.9399460000025
+      },
+      "outside_quota": {
+        "count": 736,
+        "covered": 0,
+        "coverage_fraction": 0.0,
+        "inside_or_boundary": 0,
+        "coverage_boundary_ambiguous": 0,
+        "distance_min": 0.07071141411162689,
+        "distance_max": 1.1313708693913935,
+        "mean_distance": 0.47264885330856005,
+        "max_formula_vs_edge_oracle_absolute_error": 1.1102230246251565e-16
+      }
+    }
+  },
+  "constructed_lane_0": {
+    "program_hashes": {
+      "program_sha256": "96a6f8f5d2a08840bb64c850b64310f017264b9f0f507cb532cd9ea6fc065f8f",
+      "topology_sha256": "093884d25f0e7655e90c0eba83a5371713afda443e590c39d44bbaa602aeddf0",
+      "semantic_sha256": "94f8de24513a856e7e47b175d11e74a426f4de557ffd3eed5e07482020c302cc"
+    },
+    "exact_certificate_admissible": true,
+    "leaf_count": 3,
+    "node_count": 5,
+    "revision": 2,
+    "union_area": 0.016319984661854595,
+    "union_area_exact": "1175978829469129/72057594037927936",
+    "fraction_of_quota_triangle_area": 0.03263996932370919,
+    "complexity_penalty": 0.06,
+    "area_penalty": 8.159992330927298e-05,
+    "total_penalty": 0.06008159992330927,
+    "reference_intersection_area": 0.01076997736495066,
+    "reference_iou": 0.6587139373947314,
+    "area_outside_reference": 0.005550007296903935,
+    "reference_area_not_covered": 3.0022152251722722e-05,
+    "datasets": {
+      "training": {
+        "count": 9,
+        "covered": 9,
+        "coverage_fraction": 1.0,
+        "inside_or_boundary": 9,
+        "coverage_boundary_ambiguous": 0,
+        "distance_min": -0.03992297872900963,
+        "distance_max": -0.019826512783765793,
+        "mean_distance": -0.027694266910354298,
+        "max_formula_vs_edge_oracle_absolute_error": 0.0,
+        "count_score": 8.93991840007669
+      },
+      "holdout": {
+        "count": 900,
+        "covered": 900,
+        "coverage_fraction": 1.0,
+        "inside_or_boundary": 900,
+        "coverage_boundary_ambiguous": 0,
+        "distance_min": -0.03975793346762657,
+        "distance_max": -0.0148475281894207,
+        "mean_distance": -0.0231257903493113,
+        "max_formula_vs_edge_oracle_absolute_error": 0.0,
+        "covered_by_cluster": [
+          300,
+          300,
+          300
+        ],
+        "count_score": 899.9399184000766
+      },
+      "outside_quota": {
+        "count": 736,
+        "covered": 0,
+        "coverage_fraction": 0.0,
+        "inside_or_boundary": 0,
+        "coverage_boundary_ambiguous": 0,
+        "distance_min": 0.050107826423715876,
+        "distance_max": 1.1316161877573292,
+        "mean_distance": 0.46351889415658576,
+        "max_formula_vs_edge_oracle_absolute_error": 1.1102230246251565e-16
+      }
+    }
+  },
+  "constructed_lane_1": {
+    "program_hashes": {
+      "program_sha256": "7f7b09e1e6c6dff4183395b30a24a66cb5345e46cd9ded79271deaa5e407beac",
+      "topology_sha256": "093884d25f0e7655e90c0eba83a5371713afda443e590c39d44bbaa602aeddf0",
+      "semantic_sha256": "8900005a434e3acfb2a5a81bd6e4dfac776fc6ba637e1891eedb445163ac8aa9"
+    },
+    "exact_certificate_admissible": true,
+    "leaf_count": 3,
+    "node_count": 5,
+    "revision": 2,
+    "union_area": 0.01644729707810956,
+    "union_area_exact": "1185152655875617/72057594037927936",
+    "fraction_of_quota_triangle_area": 0.03289459415621912,
+    "complexity_penalty": 0.06,
+    "area_penalty": 8.22364853905478e-05,
+    "total_penalty": 0.060082236485390544,
+    "reference_intersection_area": 0.010799999517202383,
+    "reference_iou": 0.6566428189332448,
+    "area_outside_reference": 0.005647297560907177,
+    "reference_area_not_covered": 0.0,
+    "datasets": {
+      "training": {
+        "count": 9,
+        "covered": 9,
+        "coverage_fraction": 1.0,
+        "inside_or_boundary": 9,
+        "coverage_boundary_ambiguous": 0,
+        "distance_min": -0.04012221097946167,
+        "distance_max": -0.019999949261546135,
+        "mean_distance": -0.027826969201366108,
+        "max_formula_vs_edge_oracle_absolute_error": 0.0,
+        "count_score": 8.93991776351461
+      },
+      "holdout": {
+        "count": 900,
+        "covered": 900,
+        "coverage_fraction": 1.0,
+        "inside_or_boundary": 900,
+        "coverage_boundary_ambiguous": 0,
+        "distance_min": -0.03995716571807861,
+        "distance_max": -0.015035299584269524,
+        "mean_distance": -0.02325849264032311,
+        "max_formula_vs_edge_oracle_absolute_error": 0.0,
+        "covered_by_cluster": [
+          300,
+          300,
+          300
+        ],
+        "count_score": 899.9399177635146
+      },
+      "outside_quota": {
+        "count": 736,
+        "covered": 0,
+        "coverage_fraction": 0.0,
+        "inside_or_boundary": 0,
+        "coverage_boundary_ambiguous": 0,
+        "distance_min": 0.04982890490371161,
+        "distance_max": 1.1313349365688599,
+        "mean_distance": 0.4633517101894073,
+        "max_formula_vs_edge_oracle_absolute_error": 1.1102230246251565e-16
+      }
+    }
+  },
+  "constructed_lane_2": {
+    "program_hashes": {
+      "program_sha256": "0a3214eba21af7c7c3d9ae64d71b54b4699d7d6a920bb08488ec619ad8f55539",
+      "topology_sha256": "093884d25f0e7655e90c0eba83a5371713afda443e590c39d44bbaa602aeddf0",
+      "semantic_sha256": "f4098b70e0537c76f917d12bfd18330f6491f66063c3bb1ed8b3f45411f6a2d3"
+    },
+    "exact_certificate_admissible": true,
+    "leaf_count": 3,
+    "node_count": 5,
+    "revision": 2,
+    "union_area": 0.01632097191289418,
+    "union_area_exact": "1176049968403753/72057594037927936",
+    "fraction_of_quota_triangle_area": 0.03264194382578836,
+    "complexity_penalty": 0.06,
+    "area_penalty": 8.16048595644709e-05,
+    "total_penalty": 0.06008160485956447,
+    "reference_intersection_area": 0.010770347857363215,
+    "reference_iou": 0.6587117493992143,
+    "area_outside_reference": 0.005550624055530966,
+    "reference_area_not_covered": 2.965165983916801e-05,
+    "datasets": {
+      "training": {
+        "count": 9,
+        "covered": 9,
+        "coverage_fraction": 1.0,
+        "inside_or_boundary": 9,
+        "coverage_boundary_ambiguous": 0,
+        "distance_min": -0.03992566838860512,
+        "distance_max": -0.019826915115118027,
+        "mean_distance": -0.027695297574003536,
+        "max_formula_vs_edge_oracle_absolute_error": 0.0,
+        "count_score": 8.939918395140436
+      },
+      "holdout": {
+        "count": 900,
+        "covered": 900,
+        "coverage_fraction": 1.0,
+        "inside_or_boundary": 900,
+        "coverage_boundary_ambiguous": 0,
+        "distance_min": -0.03976062312722206,
+        "distance_max": -0.014847930520772934,
+        "mean_distance": -0.02312682101296054,
+        "max_formula_vs_edge_oracle_absolute_error": 0.0,
+        "covered_by_cluster": [
+          300,
+          300,
+          300
+        ],
+        "count_score": 899.9399183951405
+      },
+      "outside_quota": {
+        "count": 736,
+        "covered": 0,
+        "coverage_fraction": 0.0,
+        "inside_or_boundary": 0,
+        "coverage_boundary_ambiguous": 0,
+        "distance_min": 0.050104060738013045,
+        "distance_max": 1.1316156187748743,
+        "mean_distance": 0.46351743300683623,
+        "max_formula_vs_edge_oracle_absolute_error": 2.220446049250313e-16
+      }
+    }
+  }
+}

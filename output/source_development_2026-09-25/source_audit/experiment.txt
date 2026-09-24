@@ -1,0 +1,83 @@
+"""Retained direct adversarial source audit; no repository test suite."""
+from copy import deepcopy
+from datetime import datetime, timezone
+import hashlib
+import json
+from pathlib import Path
+
+from local_lab import source_development as dev
+from local_lab import source_development_fidelity as fidelity
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT/'output/source_development_2026-09-25/source_audit'
+model = dev.make_model()
+cycle = dev.ir.read_json(dev.cycle_binding.CYCLE)[0]
+spec = dev.make_spec()
+definition, graph, raw, manifest = dev.compile_program(model,cycle,spec,3)
+checks = []
+
+def node(g, name):
+    return next(n for n in g['mutation']['nodes']+[n for p in g['phases'] for n in p['nodes']] if n['id']==name)
+
+def reject(name, change):
+    d,g=deepcopy(definition),deepcopy(graph)
+    change(d,g)
+    try:
+        fidelity.audit_development_graph(d,cycle,g)
+    except ValueError as error:
+        checks.append({'name':name,'rejected':True,'message':str(error),'graph_sha256':dev.ir.sha256(dev.ir.json_bytes(g))})
+    else:
+        raise AssertionError(name+' was not rejected')
+
+reject('live_code_guard_bypassed',lambda d,g: node(g,'development_live_guard')['args'].update(code=dev.literal(1,'bit')))
+reject('candidate_geometry_gate_bypassed',lambda d,g: node(g,'development_candidate_guard')['args'].update(geometry=dev.literal(1,'bit')))
+reject('unsafe_candidate_always_selected',lambda d,g: node(g,'development_safe_code')['args'].update(condition=dev.literal(1,'bit')))
+reject('wrong_retained_word',lambda d,g: node(g,'development_retained_code')['args'].update(old_op0=dev.state('sdf_op1')))
+reject('query_uses_old_leaf',lambda d,g: node(g,'development_query_leaf')['args'].update(cx0=dev.state('sdf_cx0')))
+reject('training_request_changed',lambda d,g: node(g,'development_old_sample0_leaf')['args'].update(x=dev.literal(0,'resource_coordinate')))
+reject('wrong_interpreter_prefix',lambda d,g: node(g,'development_candidate_sample0_interpret_middle')['args'].update(v1=dev.ref('development_candidate_sample0_interpret_prefix','v0')))
+reject('descriptor_reads_old_bank',lambda d,g: node(g,'development_resource_record').update(bank='old'))
+reject('old_witness_removed',lambda d,g: node(g,'development_old_mutator_proposal')['args'].update(witness_distance=dev.literal(0,'resource_distance')))
+reject('partial_program_return',lambda d,g: g['returns'].update(sdf_root=dev.state('sdf_root')))
+reject('quota_changed_in_return',lambda d,g: g['returns'].update(resource_quota=dev.literal(1,'resource_coordinate')))
+reject('selector_arithmetic_replaced',lambda d,g: g['functions']['development_select_code']['binding']['outputs'].update(op0=dev.V('new_op0')))
+reject('descriptor_old_words_swapped',lambda d,g: node(g,'development_mutation_descriptor')['args'].update(old_0=dev.ref('mutation_target_body_1','reserved_1')))
+reject('missing_core_phase',lambda d,g: g['phases'].pop(1))
+
+def extra_interpreter(d,g):
+    n=deepcopy(node(g,'development_query_interpret'))
+    n['id']='unaccounted_eager_interpreter'
+    g['phases'][0]['nodes'].append(n)
+reject('unaccounted_eager_interpreter',extra_interpreter)
+
+renamed=deepcopy(graph)
+names={n['id']:'renamed_'+str(i) for i,n in enumerate(renamed['mutation']['nodes']+[n for p in renamed['phases'] for n in p['nodes']])}
+def rename(value):
+    if isinstance(value,list):
+        for item in value: rename(item)
+    elif isinstance(value,dict):
+        if value.get('id') in names: value['id']=names[value['id']]
+        if value.get('node') in names: value['node']=names[value['node']]
+        for item in value.values(): rename(item)
+rename(renamed)
+fidelity.audit_development_graph(definition,cycle,renamed)
+
+source_rejections=[]
+for name in ('validate_code','validate_geometry_boxes','score'):
+    altered=deepcopy(spec)
+    first=next(iter(altered['bindings'][name]['binding']['outputs']))
+    altered['bindings'][name]['binding']['outputs'][first]=1
+    try: dev.validate_spec(altered)
+    except ValueError as error: source_rejections.append({'binding':name,'rejected':True,'message':str(error)})
+    else: raise AssertionError('Modified protected source accepted')
+
+report={'created_utc':datetime.now(timezone.utc).isoformat(),'positive_controls':2,
+        'adversarial_graph_rejections':checks,'protected_source_rejections':source_rejections,
+        'baseline_program_sha256':dev.ir.sha256(raw),'baseline_fidelity':manifest['binding_contract']['development']['structural_fidelity'],
+        'renamed_nodes_pass':True,'scope':'Exact source graph and protected-helper checks; numerical/device evidence is separate.',
+        'sources':{str(Path(m.__file__).relative_to(ROOT)):hashlib.sha256(Path(m.__file__).read_bytes()).hexdigest() for m in (dev,fidelity)}}
+OUT.mkdir(parents=True,exist_ok=True)
+(OUT/'REPORT.json').write_bytes(dev.ir.json_bytes(report))
+(OUT/'source_graph.json').write_bytes(dev.ir.json_bytes(graph))
+(OUT/'experiment.txt').write_bytes(Path(__file__).read_bytes())
+print(json.dumps({'positive_controls':2,'adversarial_graph_rejections':len(checks),'protected_source_rejections':len(source_rejections)}))

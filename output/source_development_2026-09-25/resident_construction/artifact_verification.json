@@ -1,0 +1,146 @@
+{
+  "all_execution_artifacts_match": true,
+  "executions": [
+    {
+      "label": "baseline_1_cpu",
+      "input_hash_matches": true,
+      "output_hash_matches": true,
+      "raw_stdout_matches_receipt": true,
+      "empty_stderr": true
+    },
+    {
+      "label": "baseline_1_vulkan",
+      "input_hash_matches": true,
+      "output_hash_matches": true,
+      "raw_stdout_matches_receipt": true,
+      "empty_stderr": true
+    },
+    {
+      "label": "baseline_2_cpu",
+      "input_hash_matches": true,
+      "output_hash_matches": true,
+      "raw_stdout_matches_receipt": true,
+      "empty_stderr": true
+    },
+    {
+      "label": "baseline_2_vulkan",
+      "input_hash_matches": true,
+      "output_hash_matches": true,
+      "raw_stdout_matches_receipt": true,
+      "empty_stderr": true
+    },
+    {
+      "label": "baseline_3_cpu",
+      "input_hash_matches": true,
+      "output_hash_matches": true,
+      "raw_stdout_matches_receipt": true,
+      "empty_stderr": true
+    },
+    {
+      "label": "baseline_3_vulkan",
+      "input_hash_matches": true,
+      "output_hash_matches": true,
+      "raw_stdout_matches_receipt": true,
+      "empty_stderr": true
+    },
+    {
+      "label": "baseline_8_cpu",
+      "input_hash_matches": true,
+      "output_hash_matches": true,
+      "raw_stdout_matches_receipt": true,
+      "empty_stderr": true
+    },
+    {
+      "label": "baseline_8_vulkan",
+      "input_hash_matches": true,
+      "output_hash_matches": true,
+      "raw_stdout_matches_receipt": true,
+      "empty_stderr": true
+    },
+    {
+      "label": "baseline_64_cpu",
+      "input_hash_matches": true,
+      "output_hash_matches": true,
+      "raw_stdout_matches_receipt": true,
+      "empty_stderr": true
+    },
+    {
+      "label": "baseline_64_vulkan",
+      "input_hash_matches": true,
+      "output_hash_matches": true,
+      "raw_stdout_matches_receipt": true,
+      "empty_stderr": true
+    },
+    {
+      "label": "disabled_8_cpu",
+      "input_hash_matches": true,
+      "output_hash_matches": true,
+      "raw_stdout_matches_receipt": true,
+      "empty_stderr": true
+    },
+    {
+      "label": "disabled_8_vulkan",
+      "input_hash_matches": true,
+      "output_hash_matches": true,
+      "raw_stdout_matches_receipt": true,
+      "empty_stderr": true
+    },
+    {
+      "label": "resume_3_plus_5",
+      "input_hash_matches": true,
+      "output_hash_matches": true,
+      "raw_stdout_matches_receipt": true,
+      "empty_stderr": true
+    },
+    {
+      "label": "reverse_targets_8",
+      "input_hash_matches": true,
+      "output_hash_matches": true,
+      "raw_stdout_matches_receipt": true,
+      "empty_stderr": true
+    },
+    {
+      "label": "malformed_live_1_cpu",
+      "input_hash_matches": true,
+      "output_hash_matches": true,
+      "raw_stdout_matches_receipt": true,
+      "empty_stderr": true
+    },
+    {
+      "label": "malformed_live_1_vulkan",
+      "input_hash_matches": true,
+      "output_hash_matches": true,
+      "raw_stdout_matches_receipt": true,
+      "empty_stderr": true
+    },
+    {
+      "label": "malformed_failed_resume_3_cpu",
+      "input_hash_matches": true,
+      "output_hash_matches": true,
+      "raw_stdout_matches_receipt": true,
+      "empty_stderr": true
+    },
+    {
+      "label": "malformed_failed_resume_3_vulkan",
+      "input_hash_matches": true,
+      "output_hash_matches": true,
+      "raw_stdout_matches_receipt": true,
+      "empty_stderr": true
+    },
+    {
+      "label": "late_failure_1_cpu",
+      "input_hash_matches": true,
+      "output_hash_matches": true,
+      "raw_stdout_matches_receipt": true,
+      "empty_stderr": true
+    },
+    {
+      "label": "late_failure_1_vulkan",
+      "input_hash_matches": true,
+      "output_hash_matches": true,
+      "raw_stdout_matches_receipt": true,
+      "empty_stderr": true
+    }
+  ],
+  "source_snapshot_hashes_match": true
+}

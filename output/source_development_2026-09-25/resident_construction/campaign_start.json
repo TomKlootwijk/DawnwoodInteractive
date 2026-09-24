@@ -1,0 +1,19 @@
+{
+  "started_utc": "2026-09-24T23:40:15.249132+00:00",
+  "instances": 129,
+  "baseline_epochs": [
+    1,
+    2,
+    3,
+    8,
+    64
+  ],
+  "distance_tolerance": 2e-05,
+  "score_tolerance": 2e-05,
+  "source_chain_audit": "Pending separate source-chain integration audit; numerical campaign alone does not establish all source relationships.",
+  "gpu_call_budget": 11,
+  "device_substring": "RTX 5070 Ti",
+  "validation_layer_path": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin",
+  "source_inventory_sha256": "c938f50cc5204d95ddb4b0ecd4cfc7718d1b5996cee44a9defc2bf3cf8214d77",
+  "git_head": "c83114a1634ade0993d4528f9e87ce88e207003b"
+}

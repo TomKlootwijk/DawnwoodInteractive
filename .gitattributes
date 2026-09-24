@@ -53,3 +53,16 @@ Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/MANIFEST.sha25
 local_lab/source_graph*.py -text
 Dawnwood-Graph.cmd -text
 output/source_graph_2026-09-24/** -text
+
+# Preserve development compiler, runtime and evidence hashes across checkouts.
+local_lab/development_sdf.py -text
+local_lab/source_development*.py -text
+local_lab/source_resident_v3.py -text
+docs/RESIDENT_V3_ABI.md -text
+Dawnwood-Develop.cmd -text
+output/source_development_2026-09-25/** -text
+Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/include/resident_v3.inc -text
+Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/shaders/resident_v3.comp -text
+Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/resident_v3_cli.cpp -text
+Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/tools/build_resident_v3.py -text
+Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/bin/windows-resident-v3/** -text
