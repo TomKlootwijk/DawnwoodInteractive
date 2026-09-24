@@ -1,0 +1,247 @@
+"""Direct bounded component experiment, not a resident-loop demonstration.
+
+Run from repository root with Python exec(Path(this_file).read_text()). The
+existing CPU XIR executable evaluates the newly staged expressions. Host
+orchestration here only connects component probes; no GPU runs or new tests.
+"""
+from pathlib import Path
+from copy import deepcopy
+from datetime import datetime, timezone
+import hashlib
+import json
+import math
+import struct
+import subprocess
+from local_lab import source_development_bindings as b
+from local_lab import source_ir_v2 as ir
+from local_lab import development_sdf as sdf
+
+ROOT = Path.cwd()
+OUT = ROOT / 'output/source_development_2026-09-25/binding_capacity'
+OUT.mkdir(parents=True, exist_ok=True)
+NATIVE = ROOT / 'Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3'
+EXE = NATIVE / 'bin/windows-source/dawnwood-source-ir.exe'
+checks, calls, rejections = [], [], []
+
+def save(name, value):
+    (OUT / name).write_text(json.dumps(value, indent=2, allow_nan=False)+'\n', encoding='utf-8')
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+def check(name, passed, **details):
+    checks.append(dict(name=name, passed=bool(passed), **details))
+
+points = [[.15,.15],[.55,.15],[.15,.55],[.45,.4],[.03,.03],
+          [.73,.09],[.07,.76],[.38,.2],[.2,.38],[.3,.5],[.5,.3],[.06,.36]]
+capacity = {}
+for count in (3,9,12):
+    bank = b.make_bindings(points[:count])
+    capacity[count] = {}
+    for name, entry in bank.items():
+        compiled = ir.compile_binding(entry['binding'], name)
+        capacity[count][name] = dict(inputs=entry['inputs'], outputs=entry['outputs'],
+            instruction_count=len(compiled['instructions']),
+            instruction_sha256=hashlib.sha256(b''.join(struct.pack('<4I',*x) for x in compiled['instructions'])).hexdigest())
+    check(f'capacity_{count}_training', all(len(x['inputs'])<=64 and len(x['outputs'])<=32 and x['instruction_count']<=256 for x in capacity[count].values()))
+save('binding_contracts.json', capacity)
+bank = b.make_bindings(points[:9])
+
+def run(name, rows, *, tag=None, expected_failure=False):
+    entry = bank[name]
+    compiled = ir.compile_binding(entry['binding'], name)
+    assert max(x[0] for x in compiled['instructions']) <= 17, 'Old standalone XIR harness supports only0..17'
+    label = tag or name
+    folder = OUT / label
+    folder.mkdir(exist_ok=True)
+    rounded = [[ir.fp32(row[k],k)[0] for k in compiled['inputs']] for row in rows]
+    raw = bytearray(b'DWIR0001')
+    raw.extend(struct.pack('<4I',len(rows),len(compiled['instructions']),len(compiled['inputs']),len(compiled['output_names'])))
+    for instruction in compiled['instructions']: raw.extend(struct.pack('<4I',*instruction))
+    for register in compiled['output_registers']: raw.extend(struct.pack('<I',register))
+    for row in rounded: raw.extend(struct.pack('<'+'f'*len(row),*row))
+    input_path, output_path = folder/'input.bin', folder/'output.bin'
+    input_path.write_bytes(raw)
+    command = [str(EXE),'run','--backend','cpu','--input',str(input_path),'--output',str(output_path)]
+    process = subprocess.run(command, capture_output=True, text=True)
+    (folder/'stdout.txt').write_text(process.stdout,encoding='utf-8')
+    (folder/'stderr.txt').write_text(process.stderr,encoding='utf-8')
+    result = ir.read_result(output_path)
+    named = [dict(zip(compiled['output_names'],row)) for row in result['outputs']]
+    save(f'{label}/receipt.json', dict(binding=name,command=command,returncode=process.returncode,
+        input_names=compiled['inputs'],output_names=compiled['output_names'],input_rows=rounded,
+        input_sha256=hashlib.sha256(raw).hexdigest(),result=result))
+    calls.append(dict(label=label,binding=name,rows=len(rows),returncode=process.returncode,
+                      failed_rows=sum(s!=0 for s in result['statuses'])))
+    check(label+'_native_status', process.returncode==(3 if expected_failure else 0)
+          and result['all_status_ok']==(not expected_failure), statuses=result['statuses'])
+    return named, result
+
+boxes = [[.15,.15,.03,.04],[.55,.15,.04,.03],[.15,.55,.025,.035],[.45,.4,.03,.03]]
+programs = [sdf.single_box_program(boxes[0])]
+for box in boxes[1:]: programs.append(sdf.append_box_candidate(programs[-1],box))
+check('all_reference_programs_exactly_admitted', all(sdf.validate_program(p)['admissible'] for p in programs))
+
+# Validate canonical code and every geometry stage independently.
+code_rows, code_expect, code_labels = [], [], []
+for n,program in enumerate(programs):
+    code_rows.append(b.pack_program(program)); code_expect.append(1); code_labels.append(f'valid_{n+1}_leaves')
+for label,key,value in [('fractional_count','node_count',1.5),('invalid_count','node_count',2),
+                        ('wrong_root','root',1),('fractional_revision','revision',.5),
+                        ('overflow_revision','revision',16777216),('unknown_opcode','op0',3),
+                        ('forward_reference','a0',1),('inactive_nonzero','op6',1)]:
+    row=b.pack_program(programs[0]); row[key]=value
+    code_rows.append(row); code_expect.append(0); code_labels.append(label)
+code_out,_=run('validate_code',code_rows)
+check('code_admission_expected', [x['valid'] for x in code_out]==code_expect,
+      cases=[dict(name=k,expected=e,actual=o['valid']) for k,e,o in zip(code_labels,code_expect,code_out)])
+
+geometry_rows, geometry_expect, geometry_labels = [], [], []
+for n,program in enumerate(programs):
+    geometry_rows.append(dict(b.pack_program(program),quota=1)); geometry_expect.append(1); geometry_labels.append(f'valid_{n+1}_leaves')
+changes=[('zero_extent',{'hx0':0}),('negative_extent',{'hy0':-.01}),
+         ('below_minimum_extent',{'hx0':b.MIN_HALF_EXTENT*.5}),
+         ('crosses_nonnegative_axis',{'cx0':.01}),('crosses_quota',{'cx0':.9}),
+         ('inactive_box_payload',{'cx1':.5}),('quota_too_small',{'quota':.0005}),
+         ('quota_outside_envelope',{'quota':17})]
+for label,change in changes:
+    row=dict(b.pack_program(programs[0]),quota=1); row.update(change)
+    geometry_rows.append(row);geometry_expect.append(0);geometry_labels.append(label)
+for label,cx in [('overlap',.31),('touch',.375),('separated_but_below_native_margin',.37505)]:
+    program=sdf.single_box_program([.25,.25,.0625,.0625])
+    program=sdf.append_box_candidate(program,[cx,.25,.0625,.0625])
+    geometry_rows.append(dict(b.pack_program(program),quota=1));geometry_expect.append(0);geometry_labels.append(label)
+geometry_boxes,_=run('validate_geometry_boxes',geometry_rows)
+geometry_sep,_=run('validate_geometry_separation',geometry_rows)
+geometry_out,_=run('validate_geometry',[dict(x,**y) for x,y in zip(geometry_boxes,geometry_sep)])
+check('geometry_admission_expected',[x['valid'] for x in geometry_out]==geometry_expect,
+      cases=[dict(name=k,expected=e,actual=o['valid'],**bx,**sp) for k,e,o,bx,sp in zip(geometry_labels,geometry_expect,geometry_out,geometry_boxes,geometry_sep)])
+
+# Batched actual native FP32 node evaluations, compared against the separately
+# implemented exact-rational segment-projection oracle at packed inputs.
+queries = [[i/16,j/16] for i in range(17) for j in range(17)]
+queries += [[-1,-1],[16,16],[.15,.15],[.55,.15],[.15,.55],[.45,.4]]
+distance_rows = [dict(b.pack_program(p),x=q[0],y=q[1]) for p in programs for q in queries]
+leaf_out,_=run('leaf_distances',distance_rows)
+prefix_rows=[dict(r,**d) for r,d in zip(distance_rows,leaf_out)]
+prefix_out,_=run('interpret_prefix',prefix_rows)
+middle_rows=[dict(r,**d) for r,d in zip(prefix_rows,prefix_out)]
+middle_out,_=run('interpret_middle',middle_rows)
+final_rows=[dict(r,**d) for r,d in zip(middle_rows,middle_out)]
+distance_out,_=run('interpret',final_rows)
+oracle_rows=[]
+for i,(row,out,leaf) in enumerate(zip(distance_rows,distance_out,leaf_out)):
+    program=programs[i//len(queries)]
+    query=[row['x'],row['y']]
+    expected=sdf.boundary_oracle(program,query)['distance']
+    actual=out['distance']
+    # All canonical active union nodes choose minima of already-FP32 leaf values.
+    expected_from_leaves=min(leaf[f'd{j}'] for j in range((program['node_count']+1)//2))
+    oracle_rows.append(dict(leaves=(program['node_count']+1)//2,query=query,
+        native_distance=actual,oracle_distance=expected,absolute_error=abs(actual-expected),
+        staged_equals_native_leaf_min_bits=struct.pack('<f',actual)==struct.pack('<f',expected_from_leaves)))
+save('oracle_rows.json',oracle_rows)
+check('staged_interpreter_preserves_native_union_bits',all(x['staged_equals_native_leaf_min_bits'] for x in oracle_rows),rows=len(oracle_rows))
+check('native_distance_matches_independent_oracle',all(x['absolute_error'] <= 2e-5 for x in oracle_rows),
+      rows=len(oracle_rows),tolerance=2e-5,max_absolute_error=max(x['absolute_error'] for x in oracle_rows))
+
+# Existing structural append reference supplies the expected bits. These direct
+# method calls are a component check, not a resident search or host policy run.
+construct_rows=[]
+for i,p in enumerate(programs[:3]):
+    new_box=boxes[i+1]
+    # The authored constructor writes squares; keep that explicit in the oracle.
+    construct_rows.append(dict(b.pack_program(p),x=new_box[0],y=new_box[1],half=new_box[2],valid=1))
+construct_rows += [dict(b.pack_program(p),x=.3,y=.3,half=.02,valid=0) for p in programs]
+code_out,_=run('construct_code',construct_rows)
+box_out,_=run('construct_boxes',construct_rows)
+constructed=[]
+for i,(row,co,bo) in enumerate(zip(construct_rows,code_out,box_out)):
+    actual=b.unpack_program(dict(co,**bo))
+    old=programs[i if i<3 else i-3]
+    expected=sdf.append_box_candidate(old,[row['x'],row['y'],row['half'],row['half']]) if row['valid'] else old
+    equal=sdf.canonical_program_bytes(actual)==sdf.canonical_program_bytes(expected)
+    constructed.append(dict(valid=row['valid'],before=old,after=actual,reference_equal=equal,
+        before_hashes=sdf.program_hashes(old),after_hashes=sdf.program_hashes(actual)))
+save('construction_components.json',constructed)
+check('constructors_match_append_and_invalid_identity',all(x['reference_equal'] for x in constructed))
+check('append_changes_topology',[x['before_hashes']['topology_sha256']!=x['after_hashes']['topology_sha256'] for x in constructed[:3]]==[True]*3)
+
+proposal_base=dict(witness_x=.55,witness_y=.15,witness_distance=.35,node_count=1,quota=1,
+                   control=0,ar=0,field_distance=0,target_field=0)
+proposal_rows=[proposal_base,dict(proposal_base,control=math.pi/2),dict(proposal_base,control=-math.pi/2),
+               dict(proposal_base,node_count=7),dict(proposal_base,witness_distance=-.01),
+               dict(proposal_base,witness_x=.9,witness_y=.3),dict(proposal_base,witness_x=0)]
+proposal_out,_=run('propose_edit',proposal_rows)
+check('proposal_feedback_changes_extent',len({x['half'] for x in proposal_out[:3]})==3)
+check('proposal_rejects_full_inside_quota_axis',[x['valid'] for x in proposal_out]==[1,1,1,0,0,0,0])
+
+score_rows=[]
+for program in programs:
+    row=b.pack_program(program)
+    row.update({f'd{i}':sdf.evaluate_program(program,p) for i,p in enumerate(points[:9])})
+    score_rows.append(row)
+score_out,_=run('score',score_rows)
+check('score_coverage_1_2_3_4',[x['coverage'] for x in score_out]==[1,2,3,4])
+accept_rows=[dict(old_score=0,candidate_score=1,valid=1),dict(old_score=0,candidate_score=1,valid=0),
+             dict(old_score=1,candidate_score=1,valid=1),dict(old_score=1,candidate_score=0,valid=1)]
+accept_out,_=run('accept',accept_rows)
+check('accept_requires_valid_strict_improvement',[x['accepted'] for x in accept_out]==[1,0,0,0])
+
+for fn,rows in [('construct_code',[dict(construct_rows[0],valid=.5)]),
+                ('construct_boxes',[dict(construct_rows[0],valid=.5)]),
+                ('validate_geometry',[dict(valid_boxes=.5,valid_separation=1),dict(valid_boxes=1,valid_separation=2)]),
+                ('accept',[dict(old_score=0,candidate_score=1,valid=.5)])]:
+    _,result=run(fn,rows,tag=fn+'_invalid_bit',expected_failure=True)
+    check(fn+'_guard_reason4',all(s&0xffff==4 for s in result['statuses']))
+
+base=b.pack_program(programs[0])
+bad_words=[('fractional_node_count','node_count',1.5),('fractional_root','root',.25),
+           ('fractional_revision','revision',.5),('fractional_opcode','op0',1.5),
+           ('fractional_near_integer_opcode','op0',1+1e-12),('fractional_child','a0',.5),
+           ('boolean_control','root',False),('negative_control','root',-1),
+           ('huge_integer','revision',10**1000),('nonfinite_control','root',float('nan')),
+           ('unknown_opcode','op0',9),('forward_child','a0',1),('inactive_word','op6',1),
+           ('nonfinite_box','cx0',float('inf')),('boolean_box','hx0',True)]
+for name,key,value in bad_words:
+    row=dict(base);row[key]=value
+    before=deepcopy(row)
+    try:
+        b.unpack_program(row)
+        rejections.append(dict(name=name,passed=False,error='accepted malformed input'))
+    except ValueError as e:
+        unchanged=all((math.isnan(v) and math.isnan(row[k])) if isinstance(v,float) and math.isnan(v) else row[k]==v for k,v in before.items())
+        rejections.append(dict(name=name,passed=unchanged,error=str(e),input_unchanged=unchanged))
+for name,row in [('missing_word',{k:v for k,v in base.items() if k!='op0'}),('unknown_word',dict(base,extra=1))]:
+    try:
+        b.unpack_program(row)
+        rejections.append(dict(name=name,passed=False,error='accepted malformed input'))
+    except ValueError as e:
+        rejections.append(dict(name=name,passed=True,error=str(e)))
+check('all_unpack_rejections',all(x['passed'] for x in rejections),count=len(rejections))
+check('all_program_roundtrips',[b.unpack_program(b.pack_program(p)) for p in programs]==programs)
+
+source_paths=[ROOT/'local_lab/source_development_bindings.py',ROOT/'local_lab/development_sdf.py',
+              ROOT/'local_lab/source_ir_v2.py',ROOT/'local_lab/source_ir.py',
+              NATIVE/'include/source_ir.inc',NATIVE/'include/numeric_types.inc',EXE]
+summary=dict(recorded_utc=datetime.now(timezone.utc).isoformat(),profile=b.PROFILE,
+    scope='Direct native CPU component execution and independent domain oracle; no integrated resident construction loop or GPU claim.',
+    sources={str(p.relative_to(ROOT)).replace('\\','/'):sha(p) for p in source_paths},
+    compiler_limits=dict(instructions=256,inputs=64,outputs=32),training_counts=[3,9,12],
+    checks=checks,rejections=rejections,native_invocations=calls,
+    totals=dict(checks=len(checks),passed=sum(x['passed'] for x in checks),
+                unpack_rejections=len(rejections),unpack_rejections_passed=sum(x['passed'] for x in rejections),
+                native_invocations=len(calls),oracle_rows=len(oracle_rows)),
+    max_oracle_absolute_error=max(x['absolute_error'] for x in oracle_rows),
+    limitations=[
+      'All candidate code and geometry must be checked before live interpretation. Interpreter stages deliberately preserve pure indexed selection, whose out-of-range fallback is zero; they are not standalone admission guards.',
+      'The generated native grammar is canonical left-associated postorder only; the independent source library supports additional valid trees.',
+      'Native geometry uses extents greater than1e-5 and strict axis separation greater than1e-4, conservatively narrower than the independent library default Euclidean separation greater thanzero.',
+      'These FP32 geometry predicates are not an exact-rational certificate near thresholds. The separate packed-constant oracle remains authoritative for mathematical admission.',
+      'Caller composition must use propose_edit.valid, validate candidate structure/geometry and reject or mask invalid candidates before eager evaluation. construct_code alone can exceed seven nodes or revision16777215 if incorrectly given valid=1 at its limits.',
+      'Split bindings pass FP32 node values between explicit calls. These probes use the existing CPU harness and do not establish Vulkan parity, persistent execution, acceptance-loop closure or task improvement.'
+    ])
+summary['all_passed']=all(x['passed'] for x in checks) and all(x['passed'] for x in rejections)
+save('REPORT.json',summary)
+print(json.dumps(dict(all_passed=summary['all_passed'],totals=summary['totals'],max_oracle_absolute_error=summary['max_oracle_absolute_error'],source_sha256=summary['sources']['local_lab/source_development_bindings.py']),indent=2))
+raise SystemExit(0 if summary['all_passed'] else 1)

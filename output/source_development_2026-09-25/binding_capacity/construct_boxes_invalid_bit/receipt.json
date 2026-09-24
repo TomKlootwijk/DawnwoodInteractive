@@ -1,0 +1,132 @@
+{
+  "binding": "construct_boxes",
+  "command": [
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+    "run",
+    "--backend",
+    "cpu",
+    "--input",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\binding_capacity\\construct_boxes_invalid_bit\\input.bin",
+    "--output",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\binding_capacity\\construct_boxes_invalid_bit\\output.bin"
+  ],
+  "returncode": 3,
+  "input_names": [
+    "cx0",
+    "cy0",
+    "hx0",
+    "hy0",
+    "cx1",
+    "cy1",
+    "hx1",
+    "hy1",
+    "cx2",
+    "cy2",
+    "hx2",
+    "hy2",
+    "cx3",
+    "cy3",
+    "hx3",
+    "hy3",
+    "node_count",
+    "x",
+    "y",
+    "half",
+    "valid"
+  ],
+  "output_names": [
+    "cx0",
+    "cy0",
+    "hx0",
+    "hy0",
+    "cx1",
+    "cy1",
+    "hx1",
+    "hy1",
+    "cx2",
+    "cy2",
+    "hx2",
+    "hy2",
+    "cx3",
+    "cy3",
+    "hx3",
+    "hy3"
+  ],
+  "input_rows": [
+    [
+      0.15000000596046448,
+      0.15000000596046448,
+      0.029999999329447746,
+      0.03999999910593033,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.550000011920929,
+      0.15000000596046448,
+      0.03999999910593033,
+      0.5
+    ]
+  ],
+  "input_sha256": "25768b901c5b0a750fca9090f45b2bd43beed3a435879e8f91054d2831b7fd17",
+  "result": {
+    "format": "DWIRO001",
+    "count": 1,
+    "output_width": 16,
+    "statuses": [
+      851972
+    ],
+    "all_status_ok": false,
+    "nonfinite_output_values": 0,
+    "outputs": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "output_bits": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "sha256": "7978a2543373908a4f28ae2bca7be311836baf80b5dc21f84e6326a65425e617"
+  }
+}

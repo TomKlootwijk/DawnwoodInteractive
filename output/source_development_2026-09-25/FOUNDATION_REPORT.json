@@ -50,5 +50,7 @@
     "domain_definition/summary.json": "bb3ad4cd6c69e0d5bdeb5b3f8dabe8d4482419eba639dd0709a738f3a4d17edd",
     "graph_contracts/REPORT.json": "f3e4564ce91503e8a96a5e1a85597481902d4c0c9a8dee5e48df5da407f79768",
     "decision_ledger.jsonl": "6135057556bb57c482ae46401d2bb7113ccfd413e1c2b9c01430f9b569d2e3bb"
-  }
+  },
+  "decision_ledger_prefix_bytes": 4074,
+  "decision_ledger_hash_scope": "Receipt hash covers the immutable initial prefix; later decisions append to this ledger."
 }

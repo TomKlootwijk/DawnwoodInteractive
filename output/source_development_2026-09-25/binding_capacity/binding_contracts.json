@@ -1,0 +1,1130 @@
+{
+  "3": {
+    "propose_edit": {
+      "inputs": {
+        "witness_x": "resource_coordinate",
+        "witness_y": "resource_coordinate",
+        "witness_distance": "resource_distance",
+        "node_count": "program_size",
+        "quota": "resource_coordinate",
+        "control": "control",
+        "ar": "amplitude",
+        "field_distance": "carrier_distance",
+        "target_field": "carrier_distance"
+      },
+      "outputs": {
+        "x": "resource_coordinate",
+        "y": "resource_coordinate",
+        "half": "resource_coordinate",
+        "valid": "bit"
+      },
+      "instruction_count": 45,
+      "instruction_sha256": "e3d382d7a4f20fe5e7dfeb4e4dc93de9dfec8f78660a0effb12dfc1f830dfb75"
+    },
+    "construct_code": {
+      "inputs": {
+        "node_count": "program_size",
+        "root": "program_index",
+        "revision": "program_revision",
+        "op0": "program_opcode",
+        "a0": "program_index",
+        "b0": "program_index",
+        "op1": "program_opcode",
+        "a1": "program_index",
+        "b1": "program_index",
+        "op2": "program_opcode",
+        "a2": "program_index",
+        "b2": "program_index",
+        "op3": "program_opcode",
+        "a3": "program_index",
+        "b3": "program_index",
+        "op4": "program_opcode",
+        "a4": "program_index",
+        "b4": "program_index",
+        "op5": "program_opcode",
+        "a5": "program_index",
+        "b5": "program_index",
+        "op6": "program_opcode",
+        "a6": "program_index",
+        "b6": "program_index",
+        "valid": "bit"
+      },
+      "outputs": {
+        "node_count": "program_size",
+        "root": "program_index",
+        "revision": "program_revision",
+        "op0": "program_opcode",
+        "a0": "program_index",
+        "b0": "program_index",
+        "op1": "program_opcode",
+        "a1": "program_index",
+        "b1": "program_index",
+        "op2": "program_opcode",
+        "a2": "program_index",
+        "b2": "program_index",
+        "op3": "program_opcode",
+        "a3": "program_index",
+        "b3": "program_index",
+        "op4": "program_opcode",
+        "a4": "program_index",
+        "b4": "program_index",
+        "op5": "program_opcode",
+        "a5": "program_index",
+        "b5": "program_index",
+        "op6": "program_opcode",
+        "a6": "program_index",
+        "b6": "program_index"
+      },
+      "instruction_count": 163,
+      "instruction_sha256": "43d8446b76744630ad935110dff9e0e946f24ceea3e07705e8004143478c194e"
+    },
+    "construct_boxes": {
+      "inputs": {
+        "cx0": "resource_coordinate",
+        "cy0": "resource_coordinate",
+        "hx0": "resource_coordinate",
+        "hy0": "resource_coordinate",
+        "cx1": "resource_coordinate",
+        "cy1": "resource_coordinate",
+        "hx1": "resource_coordinate",
+        "hy1": "resource_coordinate",
+        "cx2": "resource_coordinate",
+        "cy2": "resource_coordinate",
+        "hx2": "resource_coordinate",
+        "hy2": "resource_coordinate",
+        "cx3": "resource_coordinate",
+        "cy3": "resource_coordinate",
+        "hx3": "resource_coordinate",
+        "hy3": "resource_coordinate",
+        "node_count": "program_size",
+        "x": "resource_coordinate",
+        "y": "resource_coordinate",
+        "half": "resource_coordinate",
+        "valid": "bit"
+      },
+      "outputs": {
+        "cx0": "resource_coordinate",
+        "cy0": "resource_coordinate",
+        "hx0": "resource_coordinate",
+        "hy0": "resource_coordinate",
+        "cx1": "resource_coordinate",
+        "cy1": "resource_coordinate",
+        "hx1": "resource_coordinate",
+        "hy1": "resource_coordinate",
+        "cx2": "resource_coordinate",
+        "cy2": "resource_coordinate",
+        "hx2": "resource_coordinate",
+        "hy2": "resource_coordinate",
+        "cx3": "resource_coordinate",
+        "cy3": "resource_coordinate",
+        "hx3": "resource_coordinate",
+        "hy3": "resource_coordinate"
+      },
+      "instruction_count": 75,
+      "instruction_sha256": "05694e335a9e5decce8e7058705ff0f2c9c4b46033c26dcdc926213c1f720463"
+    },
+    "validate_code": {
+      "inputs": {
+        "node_count": "program_size",
+        "root": "program_index",
+        "revision": "program_revision",
+        "op0": "program_opcode",
+        "a0": "program_index",
+        "b0": "program_index",
+        "op1": "program_opcode",
+        "a1": "program_index",
+        "b1": "program_index",
+        "op2": "program_opcode",
+        "a2": "program_index",
+        "b2": "program_index",
+        "op3": "program_opcode",
+        "a3": "program_index",
+        "b3": "program_index",
+        "op4": "program_opcode",
+        "a4": "program_index",
+        "b4": "program_index",
+        "op5": "program_opcode",
+        "a5": "program_index",
+        "b5": "program_index",
+        "op6": "program_opcode",
+        "a6": "program_index",
+        "b6": "program_index"
+      },
+      "outputs": {
+        "valid": "bit"
+      },
+      "instruction_count": 202,
+      "instruction_sha256": "f3e5e5c9f105950e1459ab6d2ccd962b729dc1c1cbcf3325f45ffe862dc9a6a3"
+    },
+    "validate_geometry_boxes": {
+      "inputs": {
+        "cx0": "resource_coordinate",
+        "cy0": "resource_coordinate",
+        "hx0": "resource_coordinate",
+        "hy0": "resource_coordinate",
+        "cx1": "resource_coordinate",
+        "cy1": "resource_coordinate",
+        "hx1": "resource_coordinate",
+        "hy1": "resource_coordinate",
+        "cx2": "resource_coordinate",
+        "cy2": "resource_coordinate",
+        "hx2": "resource_coordinate",
+        "hy2": "resource_coordinate",
+        "cx3": "resource_coordinate",
+        "cy3": "resource_coordinate",
+        "hx3": "resource_coordinate",
+        "hy3": "resource_coordinate",
+        "node_count": "program_size",
+        "quota": "resource_coordinate"
+      },
+      "outputs": {
+        "valid_boxes": "bit"
+      },
+      "instruction_count": 199,
+      "instruction_sha256": "7289fc2be4888ede91cf0ee61e7bd513fb88b848d152d2fc1f8805b36ab5e100"
+    },
+    "validate_geometry_separation": {
+      "inputs": {
+        "cx0": "resource_coordinate",
+        "cy0": "resource_coordinate",
+        "hx0": "resource_coordinate",
+        "hy0": "resource_coordinate",
+        "cx1": "resource_coordinate",
+        "cy1": "resource_coordinate",
+        "hx1": "resource_coordinate",
+        "hy1": "resource_coordinate",
+        "cx2": "resource_coordinate",
+        "cy2": "resource_coordinate",
+        "hx2": "resource_coordinate",
+        "hy2": "resource_coordinate",
+        "cx3": "resource_coordinate",
+        "cy3": "resource_coordinate",
+        "hx3": "resource_coordinate",
+        "hy3": "resource_coordinate",
+        "node_count": "program_size"
+      },
+      "outputs": {
+        "valid_separation": "bit"
+      },
+      "instruction_count": 99,
+      "instruction_sha256": "0666b780c7108c1e5a405e1c5f29a460f55fc3e0e9eae3dd7b1c1e53f17e7b60"
+    },
+    "validate_geometry": {
+      "inputs": {
+        "valid_boxes": "bit",
+        "valid_separation": "bit"
+      },
+      "outputs": {
+        "valid": "bit"
+      },
+      "instruction_count": 26,
+      "instruction_sha256": "39b7066d85d32ebd9dfaea602ad05227beac72d8da1f6358110eb9c7c251579c"
+    },
+    "leaf_distances": {
+      "inputs": {
+        "x": "resource_coordinate",
+        "y": "resource_coordinate",
+        "cx0": "resource_coordinate",
+        "cy0": "resource_coordinate",
+        "hx0": "resource_coordinate",
+        "hy0": "resource_coordinate",
+        "cx1": "resource_coordinate",
+        "cy1": "resource_coordinate",
+        "hx1": "resource_coordinate",
+        "hy1": "resource_coordinate",
+        "cx2": "resource_coordinate",
+        "cy2": "resource_coordinate",
+        "hx2": "resource_coordinate",
+        "hy2": "resource_coordinate",
+        "cx3": "resource_coordinate",
+        "cy3": "resource_coordinate",
+        "hx3": "resource_coordinate",
+        "hy3": "resource_coordinate"
+      },
+      "outputs": {
+        "d0": "resource_distance",
+        "d1": "resource_distance",
+        "d2": "resource_distance",
+        "d3": "resource_distance"
+      },
+      "instruction_count": 79,
+      "instruction_sha256": "1a697f41b6116f5bcff10db3da15e4203925e6db6320f3ce9831c9db3bf46ca9"
+    },
+    "interpret_prefix": {
+      "inputs": {
+        "op0": "program_opcode",
+        "a0": "program_index",
+        "b0": "program_index",
+        "op1": "program_opcode",
+        "a1": "program_index",
+        "b1": "program_index",
+        "op2": "program_opcode",
+        "a2": "program_index",
+        "b2": "program_index",
+        "d0": "resource_distance",
+        "d1": "resource_distance",
+        "d2": "resource_distance",
+        "d3": "resource_distance"
+      },
+      "outputs": {
+        "v0": "resource_distance",
+        "v1": "resource_distance",
+        "v2": "resource_distance"
+      },
+      "instruction_count": 126,
+      "instruction_sha256": "ba91cb9a3f0f92a3bd40c1a5d7b93ca5737bc854420f5cda09b96ff8a48dc6b0"
+    },
+    "interpret_middle": {
+      "inputs": {
+        "op3": "program_opcode",
+        "a3": "program_index",
+        "b3": "program_index",
+        "op4": "program_opcode",
+        "a4": "program_index",
+        "b4": "program_index",
+        "d0": "resource_distance",
+        "d1": "resource_distance",
+        "d2": "resource_distance",
+        "d3": "resource_distance",
+        "v0": "resource_distance",
+        "v1": "resource_distance",
+        "v2": "resource_distance"
+      },
+      "outputs": {
+        "v3": "resource_distance",
+        "v4": "resource_distance"
+      },
+      "instruction_count": 121,
+      "instruction_sha256": "7dd371e9bf133663c3b52ec190bc0f42ff4228419024fa52d1608389047b80c9"
+    },
+    "interpret": {
+      "inputs": {
+        "op5": "program_opcode",
+        "a5": "program_index",
+        "b5": "program_index",
+        "op6": "program_opcode",
+        "a6": "program_index",
+        "b6": "program_index",
+        "d0": "resource_distance",
+        "d1": "resource_distance",
+        "d2": "resource_distance",
+        "d3": "resource_distance",
+        "v0": "resource_distance",
+        "v1": "resource_distance",
+        "v2": "resource_distance",
+        "v3": "resource_distance",
+        "v4": "resource_distance",
+        "root": "program_index"
+      },
+      "outputs": {
+        "distance": "resource_distance"
+      },
+      "instruction_count": 198,
+      "instruction_sha256": "36fcebd0516ec816817cea024d26b5b15d5bbe9240490519092e27c0428b5a75"
+    },
+    "score": {
+      "inputs": {
+        "d0": "resource_distance",
+        "d1": "resource_distance",
+        "d2": "resource_distance",
+        "node_count": "program_size",
+        "cx0": "resource_coordinate",
+        "cy0": "resource_coordinate",
+        "hx0": "resource_coordinate",
+        "hy0": "resource_coordinate",
+        "cx1": "resource_coordinate",
+        "cy1": "resource_coordinate",
+        "hx1": "resource_coordinate",
+        "hy1": "resource_coordinate",
+        "cx2": "resource_coordinate",
+        "cy2": "resource_coordinate",
+        "hx2": "resource_coordinate",
+        "hy2": "resource_coordinate",
+        "cx3": "resource_coordinate",
+        "cy3": "resource_coordinate",
+        "hx3": "resource_coordinate",
+        "hy3": "resource_coordinate"
+      },
+      "outputs": {
+        "score": "objective",
+        "coverage": "coefficient",
+        "witness_x": "resource_coordinate",
+        "witness_y": "resource_coordinate",
+        "witness_distance": "resource_distance",
+        "area": "resource_area"
+      },
+      "instruction_count": 66,
+      "instruction_sha256": "a74213255b171c30a64f10187be54dacea87329c32e37e20c81c5e96e8d79750"
+    },
+    "accept": {
+      "inputs": {
+        "old_score": "objective",
+        "candidate_score": "objective",
+        "valid": "bit"
+      },
+      "outputs": {
+        "accepted": "bit",
+        "improvement": "objective"
+      },
+      "instruction_count": 22,
+      "instruction_sha256": "a61b42d681c7721d88921875c699ff8113427c63005c74ae3a9ff041faca176a"
+    }
+  },
+  "9": {
+    "propose_edit": {
+      "inputs": {
+        "witness_x": "resource_coordinate",
+        "witness_y": "resource_coordinate",
+        "witness_distance": "resource_distance",
+        "node_count": "program_size",
+        "quota": "resource_coordinate",
+        "control": "control",
+        "ar": "amplitude",
+        "field_distance": "carrier_distance",
+        "target_field": "carrier_distance"
+      },
+      "outputs": {
+        "x": "resource_coordinate",
+        "y": "resource_coordinate",
+        "half": "resource_coordinate",
+        "valid": "bit"
+      },
+      "instruction_count": 45,
+      "instruction_sha256": "e3d382d7a4f20fe5e7dfeb4e4dc93de9dfec8f78660a0effb12dfc1f830dfb75"
+    },
+    "construct_code": {
+      "inputs": {
+        "node_count": "program_size",
+        "root": "program_index",
+        "revision": "program_revision",
+        "op0": "program_opcode",
+        "a0": "program_index",
+        "b0": "program_index",
+        "op1": "program_opcode",
+        "a1": "program_index",
+        "b1": "program_index",
+        "op2": "program_opcode",
+        "a2": "program_index",
+        "b2": "program_index",
+        "op3": "program_opcode",
+        "a3": "program_index",
+        "b3": "program_index",
+        "op4": "program_opcode",
+        "a4": "program_index",
+        "b4": "program_index",
+        "op5": "program_opcode",
+        "a5": "program_index",
+        "b5": "program_index",
+        "op6": "program_opcode",
+        "a6": "program_index",
+        "b6": "program_index",
+        "valid": "bit"
+      },
+      "outputs": {
+        "node_count": "program_size",
+        "root": "program_index",
+        "revision": "program_revision",
+        "op0": "program_opcode",
+        "a0": "program_index",
+        "b0": "program_index",
+        "op1": "program_opcode",
+        "a1": "program_index",
+        "b1": "program_index",
+        "op2": "program_opcode",
+        "a2": "program_index",
+        "b2": "program_index",
+        "op3": "program_opcode",
+        "a3": "program_index",
+        "b3": "program_index",
+        "op4": "program_opcode",
+        "a4": "program_index",
+        "b4": "program_index",
+        "op5": "program_opcode",
+        "a5": "program_index",
+        "b5": "program_index",
+        "op6": "program_opcode",
+        "a6": "program_index",
+        "b6": "program_index"
+      },
+      "instruction_count": 163,
+      "instruction_sha256": "43d8446b76744630ad935110dff9e0e946f24ceea3e07705e8004143478c194e"
+    },
+    "construct_boxes": {
+      "inputs": {
+        "cx0": "resource_coordinate",
+        "cy0": "resource_coordinate",
+        "hx0": "resource_coordinate",
+        "hy0": "resource_coordinate",
+        "cx1": "resource_coordinate",
+        "cy1": "resource_coordinate",
+        "hx1": "resource_coordinate",
+        "hy1": "resource_coordinate",
+        "cx2": "resource_coordinate",
+        "cy2": "resource_coordinate",
+        "hx2": "resource_coordinate",
+        "hy2": "resource_coordinate",
+        "cx3": "resource_coordinate",
+        "cy3": "resource_coordinate",
+        "hx3": "resource_coordinate",
+        "hy3": "resource_coordinate",
+        "node_count": "program_size",
+        "x": "resource_coordinate",
+        "y": "resource_coordinate",
+        "half": "resource_coordinate",
+        "valid": "bit"
+      },
+      "outputs": {
+        "cx0": "resource_coordinate",
+        "cy0": "resource_coordinate",
+        "hx0": "resource_coordinate",
+        "hy0": "resource_coordinate",
+        "cx1": "resource_coordinate",
+        "cy1": "resource_coordinate",
+        "hx1": "resource_coordinate",
+        "hy1": "resource_coordinate",
+        "cx2": "resource_coordinate",
+        "cy2": "resource_coordinate",
+        "hx2": "resource_coordinate",
+        "hy2": "resource_coordinate",
+        "cx3": "resource_coordinate",
+        "cy3": "resource_coordinate",
+        "hx3": "resource_coordinate",
+        "hy3": "resource_coordinate"
+      },
+      "instruction_count": 75,
+      "instruction_sha256": "05694e335a9e5decce8e7058705ff0f2c9c4b46033c26dcdc926213c1f720463"
+    },
+    "validate_code": {
+      "inputs": {
+        "node_count": "program_size",
+        "root": "program_index",
+        "revision": "program_revision",
+        "op0": "program_opcode",
+        "a0": "program_index",
+        "b0": "program_index",
+        "op1": "program_opcode",
+        "a1": "program_index",
+        "b1": "program_index",
+        "op2": "program_opcode",
+        "a2": "program_index",
+        "b2": "program_index",
+        "op3": "program_opcode",
+        "a3": "program_index",
+        "b3": "program_index",
+        "op4": "program_opcode",
+        "a4": "program_index",
+        "b4": "program_index",
+        "op5": "program_opcode",
+        "a5": "program_index",
+        "b5": "program_index",
+        "op6": "program_opcode",
+        "a6": "program_index",
+        "b6": "program_index"
+      },
+      "outputs": {
+        "valid": "bit"
+      },
+      "instruction_count": 202,
+      "instruction_sha256": "f3e5e5c9f105950e1459ab6d2ccd962b729dc1c1cbcf3325f45ffe862dc9a6a3"
+    },
+    "validate_geometry_boxes": {
+      "inputs": {
+        "cx0": "resource_coordinate",
+        "cy0": "resource_coordinate",
+        "hx0": "resource_coordinate",
+        "hy0": "resource_coordinate",
+        "cx1": "resource_coordinate",
+        "cy1": "resource_coordinate",
+        "hx1": "resource_coordinate",
+        "hy1": "resource_coordinate",
+        "cx2": "resource_coordinate",
+        "cy2": "resource_coordinate",
+        "hx2": "resource_coordinate",
+        "hy2": "resource_coordinate",
+        "cx3": "resource_coordinate",
+        "cy3": "resource_coordinate",
+        "hx3": "resource_coordinate",
+        "hy3": "resource_coordinate",
+        "node_count": "program_size",
+        "quota": "resource_coordinate"
+      },
+      "outputs": {
+        "valid_boxes": "bit"
+      },
+      "instruction_count": 199,
+      "instruction_sha256": "7289fc2be4888ede91cf0ee61e7bd513fb88b848d152d2fc1f8805b36ab5e100"
+    },
+    "validate_geometry_separation": {
+      "inputs": {
+        "cx0": "resource_coordinate",
+        "cy0": "resource_coordinate",
+        "hx0": "resource_coordinate",
+        "hy0": "resource_coordinate",
+        "cx1": "resource_coordinate",
+        "cy1": "resource_coordinate",
+        "hx1": "resource_coordinate",
+        "hy1": "resource_coordinate",
+        "cx2": "resource_coordinate",
+        "cy2": "resource_coordinate",
+        "hx2": "resource_coordinate",
+        "hy2": "resource_coordinate",
+        "cx3": "resource_coordinate",
+        "cy3": "resource_coordinate",
+        "hx3": "resource_coordinate",
+        "hy3": "resource_coordinate",
+        "node_count": "program_size"
+      },
+      "outputs": {
+        "valid_separation": "bit"
+      },
+      "instruction_count": 99,
+      "instruction_sha256": "0666b780c7108c1e5a405e1c5f29a460f55fc3e0e9eae3dd7b1c1e53f17e7b60"
+    },
+    "validate_geometry": {
+      "inputs": {
+        "valid_boxes": "bit",
+        "valid_separation": "bit"
+      },
+      "outputs": {
+        "valid": "bit"
+      },
+      "instruction_count": 26,
+      "instruction_sha256": "39b7066d85d32ebd9dfaea602ad05227beac72d8da1f6358110eb9c7c251579c"
+    },
+    "leaf_distances": {
+      "inputs": {
+        "x": "resource_coordinate",
+        "y": "resource_coordinate",
+        "cx0": "resource_coordinate",
+        "cy0": "resource_coordinate",
+        "hx0": "resource_coordinate",
+        "hy0": "resource_coordinate",
+        "cx1": "resource_coordinate",
+        "cy1": "resource_coordinate",
+        "hx1": "resource_coordinate",
+        "hy1": "resource_coordinate",
+        "cx2": "resource_coordinate",
+        "cy2": "resource_coordinate",
+        "hx2": "resource_coordinate",
+        "hy2": "resource_coordinate",
+        "cx3": "resource_coordinate",
+        "cy3": "resource_coordinate",
+        "hx3": "resource_coordinate",
+        "hy3": "resource_coordinate"
+      },
+      "outputs": {
+        "d0": "resource_distance",
+        "d1": "resource_distance",
+        "d2": "resource_distance",
+        "d3": "resource_distance"
+      },
+      "instruction_count": 79,
+      "instruction_sha256": "1a697f41b6116f5bcff10db3da15e4203925e6db6320f3ce9831c9db3bf46ca9"
+    },
+    "interpret_prefix": {
+      "inputs": {
+        "op0": "program_opcode",
+        "a0": "program_index",
+        "b0": "program_index",
+        "op1": "program_opcode",
+        "a1": "program_index",
+        "b1": "program_index",
+        "op2": "program_opcode",
+        "a2": "program_index",
+        "b2": "program_index",
+        "d0": "resource_distance",
+        "d1": "resource_distance",
+        "d2": "resource_distance",
+        "d3": "resource_distance"
+      },
+      "outputs": {
+        "v0": "resource_distance",
+        "v1": "resource_distance",
+        "v2": "resource_distance"
+      },
+      "instruction_count": 126,
+      "instruction_sha256": "ba91cb9a3f0f92a3bd40c1a5d7b93ca5737bc854420f5cda09b96ff8a48dc6b0"
+    },
+    "interpret_middle": {
+      "inputs": {
+        "op3": "program_opcode",
+        "a3": "program_index",
+        "b3": "program_index",
+        "op4": "program_opcode",
+        "a4": "program_index",
+        "b4": "program_index",
+        "d0": "resource_distance",
+        "d1": "resource_distance",
+        "d2": "resource_distance",
+        "d3": "resource_distance",
+        "v0": "resource_distance",
+        "v1": "resource_distance",
+        "v2": "resource_distance"
+      },
+      "outputs": {
+        "v3": "resource_distance",
+        "v4": "resource_distance"
+      },
+      "instruction_count": 121,
+      "instruction_sha256": "7dd371e9bf133663c3b52ec190bc0f42ff4228419024fa52d1608389047b80c9"
+    },
+    "interpret": {
+      "inputs": {
+        "op5": "program_opcode",
+        "a5": "program_index",
+        "b5": "program_index",
+        "op6": "program_opcode",
+        "a6": "program_index",
+        "b6": "program_index",
+        "d0": "resource_distance",
+        "d1": "resource_distance",
+        "d2": "resource_distance",
+        "d3": "resource_distance",
+        "v0": "resource_distance",
+        "v1": "resource_distance",
+        "v2": "resource_distance",
+        "v3": "resource_distance",
+        "v4": "resource_distance",
+        "root": "program_index"
+      },
+      "outputs": {
+        "distance": "resource_distance"
+      },
+      "instruction_count": 198,
+      "instruction_sha256": "36fcebd0516ec816817cea024d26b5b15d5bbe9240490519092e27c0428b5a75"
+    },
+    "score": {
+      "inputs": {
+        "d0": "resource_distance",
+        "d1": "resource_distance",
+        "d2": "resource_distance",
+        "d3": "resource_distance",
+        "d4": "resource_distance",
+        "d5": "resource_distance",
+        "d6": "resource_distance",
+        "d7": "resource_distance",
+        "d8": "resource_distance",
+        "node_count": "program_size",
+        "cx0": "resource_coordinate",
+        "cy0": "resource_coordinate",
+        "hx0": "resource_coordinate",
+        "hy0": "resource_coordinate",
+        "cx1": "resource_coordinate",
+        "cy1": "resource_coordinate",
+        "hx1": "resource_coordinate",
+        "hy1": "resource_coordinate",
+        "cx2": "resource_coordinate",
+        "cy2": "resource_coordinate",
+        "hx2": "resource_coordinate",
+        "hy2": "resource_coordinate",
+        "cx3": "resource_coordinate",
+        "cy3": "resource_coordinate",
+        "hx3": "resource_coordinate",
+        "hy3": "resource_coordinate"
+      },
+      "outputs": {
+        "score": "objective",
+        "coverage": "coefficient",
+        "witness_x": "resource_coordinate",
+        "witness_y": "resource_coordinate",
+        "witness_distance": "resource_distance",
+        "area": "resource_area"
+      },
+      "instruction_count": 123,
+      "instruction_sha256": "b2c024640cfe9330a2913284fa28e0f8ab519b39b6ae5ad54da7709c15c690bf"
+    },
+    "accept": {
+      "inputs": {
+        "old_score": "objective",
+        "candidate_score": "objective",
+        "valid": "bit"
+      },
+      "outputs": {
+        "accepted": "bit",
+        "improvement": "objective"
+      },
+      "instruction_count": 22,
+      "instruction_sha256": "a61b42d681c7721d88921875c699ff8113427c63005c74ae3a9ff041faca176a"
+    }
+  },
+  "12": {
+    "propose_edit": {
+      "inputs": {
+        "witness_x": "resource_coordinate",
+        "witness_y": "resource_coordinate",
+        "witness_distance": "resource_distance",
+        "node_count": "program_size",
+        "quota": "resource_coordinate",
+        "control": "control",
+        "ar": "amplitude",
+        "field_distance": "carrier_distance",
+        "target_field": "carrier_distance"
+      },
+      "outputs": {
+        "x": "resource_coordinate",
+        "y": "resource_coordinate",
+        "half": "resource_coordinate",
+        "valid": "bit"
+      },
+      "instruction_count": 45,
+      "instruction_sha256": "e3d382d7a4f20fe5e7dfeb4e4dc93de9dfec8f78660a0effb12dfc1f830dfb75"
+    },
+    "construct_code": {
+      "inputs": {
+        "node_count": "program_size",
+        "root": "program_index",
+        "revision": "program_revision",
+        "op0": "program_opcode",
+        "a0": "program_index",
+        "b0": "program_index",
+        "op1": "program_opcode",
+        "a1": "program_index",
+        "b1": "program_index",
+        "op2": "program_opcode",
+        "a2": "program_index",
+        "b2": "program_index",
+        "op3": "program_opcode",
+        "a3": "program_index",
+        "b3": "program_index",
+        "op4": "program_opcode",
+        "a4": "program_index",
+        "b4": "program_index",
+        "op5": "program_opcode",
+        "a5": "program_index",
+        "b5": "program_index",
+        "op6": "program_opcode",
+        "a6": "program_index",
+        "b6": "program_index",
+        "valid": "bit"
+      },
+      "outputs": {
+        "node_count": "program_size",
+        "root": "program_index",
+        "revision": "program_revision",
+        "op0": "program_opcode",
+        "a0": "program_index",
+        "b0": "program_index",
+        "op1": "program_opcode",
+        "a1": "program_index",
+        "b1": "program_index",
+        "op2": "program_opcode",
+        "a2": "program_index",
+        "b2": "program_index",
+        "op3": "program_opcode",
+        "a3": "program_index",
+        "b3": "program_index",
+        "op4": "program_opcode",
+        "a4": "program_index",
+        "b4": "program_index",
+        "op5": "program_opcode",
+        "a5": "program_index",
+        "b5": "program_index",
+        "op6": "program_opcode",
+        "a6": "program_index",
+        "b6": "program_index"
+      },
+      "instruction_count": 163,
+      "instruction_sha256": "43d8446b76744630ad935110dff9e0e946f24ceea3e07705e8004143478c194e"
+    },
+    "construct_boxes": {
+      "inputs": {
+        "cx0": "resource_coordinate",
+        "cy0": "resource_coordinate",
+        "hx0": "resource_coordinate",
+        "hy0": "resource_coordinate",
+        "cx1": "resource_coordinate",
+        "cy1": "resource_coordinate",
+        "hx1": "resource_coordinate",
+        "hy1": "resource_coordinate",
+        "cx2": "resource_coordinate",
+        "cy2": "resource_coordinate",
+        "hx2": "resource_coordinate",
+        "hy2": "resource_coordinate",
+        "cx3": "resource_coordinate",
+        "cy3": "resource_coordinate",
+        "hx3": "resource_coordinate",
+        "hy3": "resource_coordinate",
+        "node_count": "program_size",
+        "x": "resource_coordinate",
+        "y": "resource_coordinate",
+        "half": "resource_coordinate",
+        "valid": "bit"
+      },
+      "outputs": {
+        "cx0": "resource_coordinate",
+        "cy0": "resource_coordinate",
+        "hx0": "resource_coordinate",
+        "hy0": "resource_coordinate",
+        "cx1": "resource_coordinate",
+        "cy1": "resource_coordinate",
+        "hx1": "resource_coordinate",
+        "hy1": "resource_coordinate",
+        "cx2": "resource_coordinate",
+        "cy2": "resource_coordinate",
+        "hx2": "resource_coordinate",
+        "hy2": "resource_coordinate",
+        "cx3": "resource_coordinate",
+        "cy3": "resource_coordinate",
+        "hx3": "resource_coordinate",
+        "hy3": "resource_coordinate"
+      },
+      "instruction_count": 75,
+      "instruction_sha256": "05694e335a9e5decce8e7058705ff0f2c9c4b46033c26dcdc926213c1f720463"
+    },
+    "validate_code": {
+      "inputs": {
+        "node_count": "program_size",
+        "root": "program_index",
+        "revision": "program_revision",
+        "op0": "program_opcode",
+        "a0": "program_index",
+        "b0": "program_index",
+        "op1": "program_opcode",
+        "a1": "program_index",
+        "b1": "program_index",
+        "op2": "program_opcode",
+        "a2": "program_index",
+        "b2": "program_index",
+        "op3": "program_opcode",
+        "a3": "program_index",
+        "b3": "program_index",
+        "op4": "program_opcode",
+        "a4": "program_index",
+        "b4": "program_index",
+        "op5": "program_opcode",
+        "a5": "program_index",
+        "b5": "program_index",
+        "op6": "program_opcode",
+        "a6": "program_index",
+        "b6": "program_index"
+      },
+      "outputs": {
+        "valid": "bit"
+      },
+      "instruction_count": 202,
+      "instruction_sha256": "f3e5e5c9f105950e1459ab6d2ccd962b729dc1c1cbcf3325f45ffe862dc9a6a3"
+    },
+    "validate_geometry_boxes": {
+      "inputs": {
+        "cx0": "resource_coordinate",
+        "cy0": "resource_coordinate",
+        "hx0": "resource_coordinate",
+        "hy0": "resource_coordinate",
+        "cx1": "resource_coordinate",
+        "cy1": "resource_coordinate",
+        "hx1": "resource_coordinate",
+        "hy1": "resource_coordinate",
+        "cx2": "resource_coordinate",
+        "cy2": "resource_coordinate",
+        "hx2": "resource_coordinate",
+        "hy2": "resource_coordinate",
+        "cx3": "resource_coordinate",
+        "cy3": "resource_coordinate",
+        "hx3": "resource_coordinate",
+        "hy3": "resource_coordinate",
+        "node_count": "program_size",
+        "quota": "resource_coordinate"
+      },
+      "outputs": {
+        "valid_boxes": "bit"
+      },
+      "instruction_count": 199,
+      "instruction_sha256": "7289fc2be4888ede91cf0ee61e7bd513fb88b848d152d2fc1f8805b36ab5e100"
+    },
+    "validate_geometry_separation": {
+      "inputs": {
+        "cx0": "resource_coordinate",
+        "cy0": "resource_coordinate",
+        "hx0": "resource_coordinate",
+        "hy0": "resource_coordinate",
+        "cx1": "resource_coordinate",
+        "cy1": "resource_coordinate",
+        "hx1": "resource_coordinate",
+        "hy1": "resource_coordinate",
+        "cx2": "resource_coordinate",
+        "cy2": "resource_coordinate",
+        "hx2": "resource_coordinate",
+        "hy2": "resource_coordinate",
+        "cx3": "resource_coordinate",
+        "cy3": "resource_coordinate",
+        "hx3": "resource_coordinate",
+        "hy3": "resource_coordinate",
+        "node_count": "program_size"
+      },
+      "outputs": {
+        "valid_separation": "bit"
+      },
+      "instruction_count": 99,
+      "instruction_sha256": "0666b780c7108c1e5a405e1c5f29a460f55fc3e0e9eae3dd7b1c1e53f17e7b60"
+    },
+    "validate_geometry": {
+      "inputs": {
+        "valid_boxes": "bit",
+        "valid_separation": "bit"
+      },
+      "outputs": {
+        "valid": "bit"
+      },
+      "instruction_count": 26,
+      "instruction_sha256": "39b7066d85d32ebd9dfaea602ad05227beac72d8da1f6358110eb9c7c251579c"
+    },
+    "leaf_distances": {
+      "inputs": {
+        "x": "resource_coordinate",
+        "y": "resource_coordinate",
+        "cx0": "resource_coordinate",
+        "cy0": "resource_coordinate",
+        "hx0": "resource_coordinate",
+        "hy0": "resource_coordinate",
+        "cx1": "resource_coordinate",
+        "cy1": "resource_coordinate",
+        "hx1": "resource_coordinate",
+        "hy1": "resource_coordinate",
+        "cx2": "resource_coordinate",
+        "cy2": "resource_coordinate",
+        "hx2": "resource_coordinate",
+        "hy2": "resource_coordinate",
+        "cx3": "resource_coordinate",
+        "cy3": "resource_coordinate",
+        "hx3": "resource_coordinate",
+        "hy3": "resource_coordinate"
+      },
+      "outputs": {
+        "d0": "resource_distance",
+        "d1": "resource_distance",
+        "d2": "resource_distance",
+        "d3": "resource_distance"
+      },
+      "instruction_count": 79,
+      "instruction_sha256": "1a697f41b6116f5bcff10db3da15e4203925e6db6320f3ce9831c9db3bf46ca9"
+    },
+    "interpret_prefix": {
+      "inputs": {
+        "op0": "program_opcode",
+        "a0": "program_index",
+        "b0": "program_index",
+        "op1": "program_opcode",
+        "a1": "program_index",
+        "b1": "program_index",
+        "op2": "program_opcode",
+        "a2": "program_index",
+        "b2": "program_index",
+        "d0": "resource_distance",
+        "d1": "resource_distance",
+        "d2": "resource_distance",
+        "d3": "resource_distance"
+      },
+      "outputs": {
+        "v0": "resource_distance",
+        "v1": "resource_distance",
+        "v2": "resource_distance"
+      },
+      "instruction_count": 126,
+      "instruction_sha256": "ba91cb9a3f0f92a3bd40c1a5d7b93ca5737bc854420f5cda09b96ff8a48dc6b0"
+    },
+    "interpret_middle": {
+      "inputs": {
+        "op3": "program_opcode",
+        "a3": "program_index",
+        "b3": "program_index",
+        "op4": "program_opcode",
+        "a4": "program_index",
+        "b4": "program_index",
+        "d0": "resource_distance",
+        "d1": "resource_distance",
+        "d2": "resource_distance",
+        "d3": "resource_distance",
+        "v0": "resource_distance",
+        "v1": "resource_distance",
+        "v2": "resource_distance"
+      },
+      "outputs": {
+        "v3": "resource_distance",
+        "v4": "resource_distance"
+      },
+      "instruction_count": 121,
+      "instruction_sha256": "7dd371e9bf133663c3b52ec190bc0f42ff4228419024fa52d1608389047b80c9"
+    },
+    "interpret": {
+      "inputs": {
+        "op5": "program_opcode",
+        "a5": "program_index",
+        "b5": "program_index",
+        "op6": "program_opcode",
+        "a6": "program_index",
+        "b6": "program_index",
+        "d0": "resource_distance",
+        "d1": "resource_distance",
+        "d2": "resource_distance",
+        "d3": "resource_distance",
+        "v0": "resource_distance",
+        "v1": "resource_distance",
+        "v2": "resource_distance",
+        "v3": "resource_distance",
+        "v4": "resource_distance",
+        "root": "program_index"
+      },
+      "outputs": {
+        "distance": "resource_distance"
+      },
+      "instruction_count": 198,
+      "instruction_sha256": "36fcebd0516ec816817cea024d26b5b15d5bbe9240490519092e27c0428b5a75"
+    },
+    "score": {
+      "inputs": {
+        "d0": "resource_distance",
+        "d1": "resource_distance",
+        "d2": "resource_distance",
+        "d3": "resource_distance",
+        "d4": "resource_distance",
+        "d5": "resource_distance",
+        "d6": "resource_distance",
+        "d7": "resource_distance",
+        "d8": "resource_distance",
+        "d9": "resource_distance",
+        "d10": "resource_distance",
+        "d11": "resource_distance",
+        "node_count": "program_size",
+        "cx0": "resource_coordinate",
+        "cy0": "resource_coordinate",
+        "hx0": "resource_coordinate",
+        "hy0": "resource_coordinate",
+        "cx1": "resource_coordinate",
+        "cy1": "resource_coordinate",
+        "hx1": "resource_coordinate",
+        "hy1": "resource_coordinate",
+        "cx2": "resource_coordinate",
+        "cy2": "resource_coordinate",
+        "hx2": "resource_coordinate",
+        "hy2": "resource_coordinate",
+        "cx3": "resource_coordinate",
+        "cy3": "resource_coordinate",
+        "hx3": "resource_coordinate",
+        "hy3": "resource_coordinate"
+      },
+      "outputs": {
+        "score": "objective",
+        "coverage": "coefficient",
+        "witness_x": "resource_coordinate",
+        "witness_y": "resource_coordinate",
+        "witness_distance": "resource_distance",
+        "area": "resource_area"
+      },
+      "instruction_count": 150,
+      "instruction_sha256": "abb42dda0c5f0ee24f612537b6307c7b7932fc55abfa5832cd4f1527c861b8ec"
+    },
+    "accept": {
+      "inputs": {
+        "old_score": "objective",
+        "candidate_score": "objective",
+        "valid": "bit"
+      },
+      "outputs": {
+        "accepted": "bit",
+        "improvement": "objective"
+      },
+      "instruction_count": 22,
+      "instruction_sha256": "a61b42d681c7721d88921875c699ff8113427c63005c74ae3a9ff041faca176a"
+    }
+  }
+}

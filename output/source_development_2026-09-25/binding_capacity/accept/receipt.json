@@ -1,0 +1,96 @@
+{
+  "binding": "accept",
+  "command": [
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+    "run",
+    "--backend",
+    "cpu",
+    "--input",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\binding_capacity\\accept\\input.bin",
+    "--output",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\binding_capacity\\accept\\output.bin"
+  ],
+  "returncode": 0,
+  "input_names": [
+    "old_score",
+    "candidate_score",
+    "valid"
+  ],
+  "output_names": [
+    "accepted",
+    "improvement"
+  ],
+  "input_rows": [
+    [
+      0.0,
+      1.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "input_sha256": "2b67e71a423f34ba12c1e8e5f83dd2dcd3b9e9b633ea2ada012f330bb29e53d5",
+  "result": {
+    "format": "DWIRO001",
+    "count": 4,
+    "output_width": 2,
+    "statuses": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "all_status_ok": true,
+    "nonfinite_output_values": 0,
+    "outputs": [
+      [
+        1.0,
+        1.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "output_bits": [
+      [
+        1065353216,
+        1065353216
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "sha256": "0f9b5b4841434c5a699ce5cf6df10a3e00e2886f25886a5a58b9917e5dfc6ddd"
+  }
+}
