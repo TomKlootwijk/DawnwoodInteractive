@@ -1,0 +1,5 @@
+In file included from C:\TOMWERKPLEKTORENTJE\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\src\resident_cli.cpp:3:
+C:\TOMWERKPLEKTORENTJE\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\include/resident.inc:109:45: warning: unused parameter 'phase' [-Wunused-parameter]
+  109 |  DwResidentLayout layoutInfo,uint base,uint phase,uint target,uint plan,uint steps,
+      |                                             ^
+1 warning generated.

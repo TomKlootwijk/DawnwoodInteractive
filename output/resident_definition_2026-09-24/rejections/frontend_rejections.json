@@ -1,0 +1,52 @@
+[
+  {
+    "name": "changed_source_body",
+    "rejected": true,
+    "error": "records[0].source_slots.body: asserted source declaration does not match the selected model; supply an explicit binding for the changed definition"
+  },
+  {
+    "name": "missing_slot_assertion",
+    "rejected": true,
+    "error": "records[0]: missing keys ['source_slots']"
+  },
+  {
+    "name": "extra_record_semantic_key",
+    "rejected": true,
+    "error": "records[0]: unsupported keys ['hidden']"
+  },
+  {
+    "name": "bad_source_key",
+    "rejected": true,
+    "error": "Source model has no operator 'unknown'"
+  },
+  {
+    "name": "duplicate_selected_record",
+    "rejected": true,
+    "error": "records[1].key: expected a unique source-model key"
+  },
+  {
+    "name": "instance_changes_signature",
+    "rejected": true,
+    "error": "instances[0].records['hadamard'].body: handle has the wrong slot signature"
+  },
+  {
+    "name": "wrong_input_names",
+    "rejected": true,
+    "error": "instances[0].state: missing keys ['phase']"
+  },
+  {
+    "name": "nonfinite_parameter",
+    "rejected": true,
+    "error": "records[0].values[0]: nonfinite numbers are not supported"
+  },
+  {
+    "name": "unknown_source_override",
+    "rejected": true,
+    "error": "instances[0].records: unsupported keys ['missing']"
+  },
+  {
+    "name": "profile_mismatch",
+    "rejected": true,
+    "error": "definition.profile must be DWI-RESIDENT-0.1"
+  }
+]

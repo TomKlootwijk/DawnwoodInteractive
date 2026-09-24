@@ -1,5 +1,14 @@
 # Explicit numerical source bindings
 
+[resident_v0.1.json](resident_v0.1.json) adds **DWI-RESIDENT-0.1**. Its selected
+Hadamard, pinion and mutation records retain live executable handles, parameters
+and anchors. The old controllers compute replacements, including the mutator's
+own successor, and action dispatches through the newly published records.
+The [resident documentation](../docs/RESIDENT_DEFINITIONS.md) states every
+numerical choice, source dependency, validation result and remaining limitation.
+Use `Dawnwood-Resident.cmd` to compile, run and inspect complete checkpoints.
+This bounded component does not yet execute the full source catalogue or cycle.
+
 [situated_v0.1.json](situated_v0.1.json) adds **DWI-APPLY-0.1**: the selected
 source record's placement, field and body execute together. Its binding joins
 phyllotaxis placement, intrinsic Klein distance and the early two-Hadamard

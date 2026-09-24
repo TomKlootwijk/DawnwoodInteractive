@@ -1,8 +1,8 @@
 # Numerical integration of the source application
 
-**Profiles: DWI-XIR-0.1 and DWI-APPLY-0.1. Status: numerical bodies and one composed situated application verified on CPU and the RTX 5070 Ti Laptop GPU for the recorded experiments; full source-application integration remains incomplete.**
+**Profiles: DWI-XIR-0.1, DWI-APPLY-0.1 and DWI-RESIDENT-0.1. Status: numerical bodies, situated action and a bounded three-record resident-definition transition verified on CPU and the RTX 5070 Ti Laptop GPU for the recorded experiments; full source-application integration remains incomplete.**
 
-The target remains the source application's complete situated-operator recurrence. DWI-XIR supplies a shared CPU/GPU expression evaluator with explicit numerical body bindings. DWI-APPLY now composes the selected record's actual placement, field and body definitions in one program: its Klein-local field affects the phase supplied to its two-Hadamard action. This lowers one situated call; the eight-stage cycle and operator-changing metarules remain unfinished. It must not be presented as the complete numerical Dawnwood application.
+The target remains the source application's complete situated-operator recurrence. DWI-XIR supplies a shared CPU/GPU expression evaluator with explicit numerical body bindings. DWI-APPLY composes one selected record's placement, field and body. DWI-RESIDENT adds in-run executable-definition selection for the Hadamard, pinion and mutation records: old controllers read a common preceding snapshot, produce new records including their own, and action executes the new definitions. The full catalogue and eight-stage cycle remain unfinished. These components must not be presented as the complete numerical Dawnwood application.
 
 The [literal application contract](LITERAL_APPLICATION_CONTRACT.md) defines the broader acceptance conditions. This document preserves their implementation scope and records the types and dependencies that later lowering must respect.
 
@@ -32,7 +32,8 @@ The source workbench's [binding inventory](../source_workbench/Dawnwood_Interact
 | Numerical body edits | External edit and recompilation verified | Negating output `ar` changes 256/257 rows numerically and matches the declared change exactly. No resident mutation runs in this experiment. |
 | Source `body + field + anchor` application | One situated Hadamard call verified | DWI-APPLY composes all three actual source slots; independent slot edits affect numerical action. This is external recompilation, not resident mutation. |
 | Source phase sequence and typed overloads | Not yet lowered | The authored cycle controls execution with validated dependencies and no hidden substitute schedule. |
-| Resident mutation and metarule self-action | Not yet lowered | The preceding mutator definition computes new records, including its own next definition, which subsequently acts. |
+| Resident mutation and metarule self-action | Verified finite three-record component | The preceding situated mutator selects new executable bodies, including its successor; old pinion transports anchors; field rebinding precedes publication. Arbitrary expression synthesis and the full catalogue remain open. |
+| Component checkpoint continuation | Verified for recorded resident runs | Full bank, plans, live handles, anchors and component state survive continuation; this is not yet a full source-state checkpoint. |
 | Full paired-stream/geometry/RGBA/return recurrence | Not yet lowered | Whole-state continuation with all declared dependencies numerically active. |
 | Domain application expressed through that recurrence | Pending full integration | A complete resident application and independently checked domain result. Existing D1 feasibility results do not fill this row. |
 | Full-profile performance and saturation | Pending full integration | Correctness-established source profile executed at the stated population and interval count. A body benchmark measures only the body workload. |
@@ -40,6 +41,16 @@ The source workbench's [binding inventory](../source_workbench/Dawnwood_Interact
 No row is completed by a changed symbolic-state hash, successful shader compilation alone or timing an unrelated profile. The [N1/D1 implementation mapping](SOURCE_TO_KERNEL.md) and [D1 results](DOMAIN_KERNEL.md) retain their own meanings.
 
 ## Recorded body-component evidence
+
+The [resident-definition campaign](../output/resident_definition_2026-09-24/REPORT.md)
+adds 30 paired CPU/GPU workloads with 69,278 returned instance words, all
+bit-identical. It demonstrates delayed mutator/pinion self-change, body-to-wave
+feedback changing later definitions, equal-energy phase-sensitive selection,
+reverse target-order independence, checkpoint continuation and epoch rollback.
+The independent 51-transition reference has maximum state error `7.475228e-8`
+and no handle/generation disagreements. See [the component contract](RESIDENT_DEFINITIONS.md)
+for its explicit finite bank, three-record scope and independent-instance
+interpretation. The source `cycle.json` is still not consumed by this runtime.
 
 The later [situated-Apply campaign](../output/situated_apply_2026-09-24/REPORT.md)
 records 11 composed workloads, 6,177 lanes and 98,832 bitwise-equal CPU/GPU output
@@ -186,8 +197,8 @@ N1 evaluates geometry inside its derivative and applies its amplitude hinge afte
 
 ## Remaining full-application work
 
-After the numerical bodies and one situated call, integration still needs the remaining typed `Apply` forms, valid source-cycle lowering, resident body/field/anchor mutation, full paired-state participation and whole-state checkpoint continuation. A stable interpreter may execute all of these; self-reference concerns the acting definitions and their updates, not overwriting native GPU instructions.
+After the numerical bodies, situated call and three-record resident transition, integration still needs the remaining typed `Apply` forms, valid source-cycle lowering, full-catalogue mutation, full paired-state participation and whole-source-state checkpoint continuation. A stable interpreter may execute all of these; self-reference concerns the acting definitions and their updates, not overwriting native GPU instructions.
 
 A later biochemical application must encode its candidate operations, law evaluation, selection, acceptance/rejection, history and strategy changes through those situated definitions. Authoritative scientific laws may remain immutable while the resident computational strategy changes. A correct standalone distance calculator or fixed projection solver is useful evidence for its own task, but does not supply the missing application program.
 
-The verified results are the DWI-XIR numerical expression foundation and DWI-APPLY's single situated call. Actual source-body, field and placement edits change numerical results on CPU and the identified GPU. The remaining catalogue calls, cycle, resident metarules and complete application remain to be integrated and measured.
+The verified results are the expression foundation, situated call and bounded resident-definition transition. Actual body, field and placement definitions affect numerical action, and a resident mutator's successor changes later mutation behavior. The remaining catalogue calls, full cycle and complete application remain to be integrated and measured.

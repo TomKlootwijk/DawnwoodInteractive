@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident\\dawnwood-resident.exe",
+    "run",
+    "--input",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\resident_definition_2026-09-24\\old_target_placement_variant\\program.bin",
+    "--output",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\resident_definition_2026-09-24\\runs\\old_target_placement_variant\\cpu.bin",
+    "--backend",
+    "cpu",
+    "--epochs",
+    "1"
+  ],
+  "exit_code": 0,
+  "input_sha256": "ed0729d8fd5663b001ba4575c7c1061be19b324c5db1b1e31158eb62c1932717",
+  "exe_sha256": "dacc7de006822bcd37f11efe3afe473336038bf53f3f41d5525cd250d3ba4938",
+  "spv_sha256": "8f1d917f22b0d92f9544019366087df56aa2b089e68a87ce3f0fc8678dd5a2bb"
+}

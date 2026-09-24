@@ -1,0 +1,156 @@
+{
+  "baseline_handle_timeline": [
+    {
+      "epoch": 0,
+      "body_handles": [
+        4,
+        8,
+        6
+      ],
+      "field_handles": [
+        2,
+        2,
+        2
+      ],
+      "placement_handles": [
+        0,
+        0,
+        0
+      ],
+      "same_handle_pattern_all_instances": true
+    },
+    {
+      "epoch": 1,
+      "body_handles": [
+        4,
+        8,
+        7
+      ],
+      "field_handles": [
+        2,
+        2,
+        2
+      ],
+      "placement_handles": [
+        0,
+        0,
+        0
+      ],
+      "same_handle_pattern_all_instances": true
+    },
+    {
+      "epoch": 2,
+      "body_handles": [
+        5,
+        9,
+        7
+      ],
+      "field_handles": [
+        3,
+        2,
+        2
+      ],
+      "placement_handles": [
+        0,
+        0,
+        0
+      ],
+      "same_handle_pattern_all_instances": true
+    },
+    {
+      "epoch": 3,
+      "body_handles": [
+        5,
+        9,
+        7
+      ],
+      "field_handles": [
+        3,
+        2,
+        2
+      ],
+      "placement_handles": [
+        1,
+        1,
+        1
+      ],
+      "same_handle_pattern_all_instances": true
+    }
+  ],
+  "freeze_self_epoch_1": {
+    "instances_with_changed_state": 0,
+    "state_words_changed": 0,
+    "record_words_changed": 17,
+    "hinge_bodies_changed": 0,
+    "anchor_words_changed": 0
+  },
+  "freeze_self_epoch_2": {
+    "instances_with_changed_state": 17,
+    "state_words_changed": 119,
+    "record_words_changed": 102,
+    "hinge_bodies_changed": 17,
+    "anchor_words_changed": 0
+  },
+  "body_feedback_epoch_1": {
+    "instances_with_changed_state": 17,
+    "state_words_changed": 34,
+    "record_words_changed": 0,
+    "hinge_bodies_changed": 0,
+    "anchor_words_changed": 0
+  },
+  "body_feedback_epoch_2": {
+    "instances_with_changed_state": 17,
+    "state_words_changed": 153,
+    "record_words_changed": 179,
+    "hinge_bodies_changed": 13,
+    "anchor_words_changed": 51
+  },
+  "equal_energy_opposite_ai": {
+    "instances_with_changed_state": 17,
+    "state_words_changed": 137,
+    "record_words_changed": 187,
+    "hinge_bodies_changed": 17,
+    "anchor_words_changed": 51,
+    "input_energy_each": 0.75,
+    "positive_ai_body": 4,
+    "negative_ai_body": 5
+  },
+  "old_pinion_intervention": {
+    "instances_with_changed_state": 17,
+    "state_words_changed": 119,
+    "record_words_changed": 221,
+    "hinge_bodies_changed": 0,
+    "anchor_words_changed": 102
+  },
+  "old_field_intervention": {
+    "instances_with_changed_state": 17,
+    "state_words_changed": 119,
+    "record_words_changed": 34,
+    "hinge_bodies_changed": 0,
+    "anchor_words_changed": 0
+  },
+  "old_placement_intervention": {
+    "instances_with_changed_state": 17,
+    "state_words_changed": 119,
+    "record_words_changed": 119,
+    "hinge_bodies_changed": 0,
+    "anchor_words_changed": 34
+  },
+  "reverse_traversal_checkpoint_equal": true,
+  "resume_1_plus_7_checkpoint_equal": true,
+  "totals": {
+    "cpu_gpu_paired_workloads": 30,
+    "returned_instance_observations": 737,
+    "returned_instance_words": 69278,
+    "committed_instance_epochs": 34800,
+    "failed_instance_observations": 123,
+    "previously_failed_observations": 17,
+    "validation_errors": 0,
+    "validation_warnings": 0,
+    "all_gpu_validation_enabled": true,
+    "all_buffers_device_local": true,
+    "per_epoch_host_reads": 0,
+    "per_epoch_host_uploads": 0
+  },
+  "limits": "Independent three-record substrate instances; complete source cycle and arbitrary program synthesis remain unlowered. Returned-instance counts include expected failures and repeated checkpoint observations."
+}

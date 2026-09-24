@@ -1,0 +1,16 @@
+{
+  "reference": "Independent binary64 formulas: wider7x7 Klein deck enumeration, explicit M0/M1 and old-pinion equations, new-body/new-anchor rebind, closed complex H diag(1,exp(+-i phi)) H and explicit component return. Reads actual preceding FP32 checkpoint operands; no bank-bytecode or call-plan interpreter used to calculate expected results. Mathematical decimal coefficients evaluated in binary64; errors include FP32 coefficient conversion and arithmetic.",
+  "comparison_limit": 1e-06,
+  "metrics": {
+    "max_state_error": 7.475227148390218e-08,
+    "max_record_value_error": 5.952283854693263e-08,
+    "max_anchor_error": 2.986344038724553e-08,
+    "max_radius_error": 7.308005645079163e-09,
+    "max_field_diagnostic_error": 5.952283854693263e-08,
+    "max_relative_energy_error": 2.630401866099419e-07,
+    "minimum_mutation_signal_margin": 0.494999997317791,
+    "integer_mismatches": 0,
+    "instance_transitions": 51
+  },
+  "scope": "51 one-epoch transitions using actual preceding checkpoints, not a universal bound or full-source-cycle validation."
+}

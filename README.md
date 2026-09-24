@@ -31,8 +31,9 @@ execution; live body and mutation-definition edits propagate through the
 returned expression state. Read the
 [source application reproduction](output/source_application_2026-09-24/REPORT.md).
 
-**This application constructs symbolic expressions. The native GPU runtime does
-not import its model, cycle or expression graph.** Nine numerical meanings are
+**The original application constructs symbolic expressions. The numerical
+components now execute explicit compiled bindings; the original complete cycle
+and expression graph are not yet lowered.** Nine numerical meanings are
 unbound in the source application; the later native profiles make their own
 explicit choices. The numerical integration is unfinished. D1's fixed projection
 algorithm with a mutable controller is an experiment, not fulfillment of the
@@ -52,13 +53,28 @@ The next component, [situated Apply](docs/SITUATED_APPLICATION.md), executes a
 selected source record's **placement → Klein-local SDF → two-Hadamard body**
 as one numerical program. Each definition can be replaced by an executable
 expression. Independent placement, field and body edits change the measured
-action on both CPU and GPU. The authored phase recurrence and resident mutation
-remain unfinished.
+action on both CPU and GPU. The complete authored phase recurrence remains
+unfinished.
 
 ```powershell
 .\Dawnwood-Apply.cmd compile --bindings source_bindings/situated_v0.1.json --operator hadamard --inputs source_bindings/examples/situated_inputs.json --output output/my_situated
 .\Dawnwood-Apply.cmd run --backend vulkan --device "RTX 5070 Ti" --input output/my_situated/program.bin --output output/my_situated/gpu.bin
 .\Dawnwood-Apply.cmd inspect output/my_situated/gpu.bin --manifest output/my_situated/manifest.json
+```
+
+[Resident definition execution](docs/RESIDENT_DEFINITIONS.md) now adds actual
+in-run program selection: the old situated mutator and pinion produce new
+body/field/anchor records, including their own, and subsequent action executes
+those records. The three-record component preserves all programs and live state
+in a resumable checkpoint. Its self-mutation, feedback, old-snapshot ordering and
+rollback have [CPU/GPU evidence](output/resident_definition_2026-09-24/REPORT.md).
+This is a finite authored program bank; full catalogue and cycle integration
+remain open.
+
+```powershell
+.\Dawnwood-Resident.cmd compile --definition source_bindings/resident_v0.1.json --output output/my_resident
+.\Dawnwood-Resident.cmd run --backend vulkan --device "RTX 5070 Ti" --input output/my_resident/program.bin --output output/my_resident/after_8.bin --epochs 8
+.\Dawnwood-Resident.cmd inspect output/my_resident/after_8.bin --manifest output/my_resident/manifest.json
 ```
 
 ## Run the D1 constraint-repair experiment

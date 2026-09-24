@@ -1,0 +1,7 @@
+{
+  "final_definition_sha256": "5373231ef7a4381ec71ba598979ca6bb404f6386e2734cddb8d05cc891976587",
+  "frontend_sha256": "e1b4e6463dde8fce7d1d2e91b1b60d5ea7b27e6136a08493ecc93131436d748c",
+  "program_matches_executed_baseline": true,
+  "program_sha256": "3b95b2b75cbbedbf3aa58bb8b24654665af5665ba0f1cdfa9a33c52f177bb47f",
+  "change": "Final metadata wording only; numerical program and complete initial image are unchanged."
+}

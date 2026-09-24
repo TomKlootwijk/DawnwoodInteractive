@@ -1,0 +1,20 @@
+{
+  "command": [
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident\\dawnwood-resident.exe",
+    "run",
+    "--input",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\resident_definition_2026-09-24\\equal_energy_-1\\program.bin",
+    "--output",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\resident_definition_2026-09-24\\runs\\equal_energy_-1\\vulkan.bin",
+    "--backend",
+    "vulkan",
+    "--epochs",
+    "1",
+    "--device",
+    "RTX 5070 Ti"
+  ],
+  "exit_code": 0,
+  "input_sha256": "7eec5fa6c399bac4f018078f408813dca956e56b2ddff77830c7de25ba1d363f",
+  "exe_sha256": "dacc7de006822bcd37f11efe3afe473336038bf53f3f41d5525cd250d3ba4938",
+  "spv_sha256": "8f1d917f22b0d92f9544019366087df56aa2b089e68a87ce3f0fc8678dd5a2bb"
+}

@@ -1,0 +1,191 @@
+[
+  {
+    "name": "bad_magic",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Expected DWRD0001 magic",
+    "python_error": "Checkpoint requires DWRD0001 and its eight-word header",
+    "output_created": false
+  },
+  {
+    "name": "truncated",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Input size mismatch: expected 22280, received 22276",
+    "python_error": "Checkpoint length mismatch: expected 22280 bytes, received 22276",
+    "output_created": false
+  },
+  {
+    "name": "trailing_byte",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Input size mismatch: expected 22280, received 22281",
+    "python_error": "Checkpoint length mismatch: expected 22280 bytes, received 22281",
+    "output_created": false
+  },
+  {
+    "name": "huge_count",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Buffer word indices exceed uint32 ABI",
+    "python_error": "instance storage: computed word count exceeds uint32 indexing",
+    "output_created": false
+  },
+  {
+    "name": "reserved_header",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Reserved header word must be zero",
+    "python_error": "Checkpoint reserved header word must be zero",
+    "output_created": false
+  },
+  {
+    "name": "duplicate_source_index",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Duplicate source index",
+    "python_error": "Source indices must be unique",
+    "output_created": false
+  },
+  {
+    "name": "inexact_source_index",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Source index is not exactly representable as FP32",
+    "python_error": "metadata[0].source_index: integer must be represented exactly as FP32",
+    "output_created": false
+  },
+  {
+    "name": "too_many_instructions",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Function 0: instruction count must be 1..256",
+    "python_error": "functions[0].instruction_count: expected an integer in 1..256",
+    "output_created": false
+  },
+  {
+    "name": "too_many_inputs",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Function 0: invalid input/output width",
+    "python_error": "functions[0].input_width: expected an integer in 0..64",
+    "output_created": false
+  },
+  {
+    "name": "zero_outputs",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Function 0: invalid input/output width",
+    "python_error": "functions[0].output_width: expected an integer in 1..32",
+    "output_created": false
+  },
+  {
+    "name": "zero_signature",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Function 0: signature must be positive",
+    "python_error": "functions[0].signature: expected an integer in 1..4294967295",
+    "output_created": false
+  },
+  {
+    "name": "signature_width_conflict",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Functions sharing a signature have different widths",
+    "python_error": "functions[4]: signature 1 has inconsistent input/output widths",
+    "output_created": false
+  },
+  {
+    "name": "unknown_opcode",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Function 0 instruction 0: unknown XIR opcode",
+    "python_error": "functions[0].instructions[0]: unsupported opcode 99",
+    "output_created": false
+  },
+  {
+    "name": "bad_output_register",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Function 0: output register outside program",
+    "python_error": "functions[0]: output register outside the expression program",
+    "output_created": false
+  },
+  {
+    "name": "unknown_plan_opcode",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Mutation plan step 0: unknown opcode",
+    "python_error": "mutation_plan[0]: unsupported opcode 11",
+    "output_created": false
+  },
+  {
+    "name": "reserved_plan_word",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Mutation plan step 0: unused words must be zero",
+    "python_error": "mutation_plan[0]: unused instruction words must be zero",
+    "output_created": false
+  },
+  {
+    "name": "mutation_reads_candidate",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Mutation plan step 0: forbidden record read bank",
+    "python_error": "mutation_plan[0]: mutation reads bank0; action reads bank0 or bank1",
+    "output_created": false
+  },
+  {
+    "name": "incomplete_record_write",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Mutation plan leaves output word 23 unwritten",
+    "python_error": "mutation_plan: missing writes to destination words [23]",
+    "output_created": false
+  },
+  {
+    "name": "unresolved_handle",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Instance 0: unresolved record handle",
+    "python_error": "instances[0].records[0].body: function handle is outside the bank",
+    "output_created": false
+  },
+  {
+    "name": "wrong_record_signature",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Instance 0: record handle signature mismatch",
+    "python_error": "instances[0].records[0].body: handle has the wrong slot signature",
+    "output_created": false
+  },
+  {
+    "name": "nonfinite_state",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Instance 0: nonfinite state word 0",
+    "python_error": "instances[0].state[0]: nonfinite FP32 word",
+    "output_created": false
+  },
+  {
+    "name": "unknown_failure_status",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Instance 0: unknown failure status",
+    "python_error": "instances[0]: unknown failure status 9",
+    "output_created": false
+  },
+  {
+    "name": "success_with_failure_header",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Instance 0: successful image has nonzero failure header",
+    "python_error": "instances[0]: successful image must have zero failure metadata",
+    "output_created": false
+  },
+  {
+    "name": "action_calls_old_bank",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Action plan step 9: forbidden record call bank",
+    "python_error": "action_plan[9]: mutation calls bank0; action calls bank1",
+    "output_created": false
+  },
+  {
+    "name": "uninitialized_frame_read",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Mutation plan step 0: uninitialized frame read at 99",
+    "python_error": "mutation_plan[0].source: reads an uninitialized frame register",
+    "output_created": false
+  },
+  {
+    "name": "duplicate_record_write",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Mutation plan step 91: duplicate destination write",
+    "python_error": "mutation_plan[91]: each destination word must be written exactly once",
+    "output_created": false
+  },
+  {
+    "name": "forward_ssa_reference",
+    "native_exit_code": 2,
+    "native_error": "DWI-RESIDENT-0.1: Function 0 instruction 0: operand a is not a back-reference",
+    "python_error": "functions[0].instructions[0]: operands must reference earlier instructions",
+    "output_created": false
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "profile": "DWI-RESIDENT-0.1",
+  "completed": true,
+  "scope": "Finite resident mutation/action component; not the full eight-stage source cycle",
+  "commands": [
+    {
+      "command": [
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin\\glslc.exe",
+        "--target-env=vulkan1.1",
+        "-IC:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\include",
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\shaders\\resident.comp",
+        "-o",
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident\\resident.spv"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin\\spirv-val.exe",
+        "--target-env",
+        "vulkan1.1",
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident\\resident.spv"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\llvm-mingw-20260922-ucrt-x86_64\\bin\\clang++.exe",
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-ffp-contract=off",
+        "-fno-fast-math",
+        "-static",
+        "-IC:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\include",
+        "-IC:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Include",
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\src\\resident_cli.cpp",
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Lib\\vulkan-1.lib",
+        "-o",
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident\\dawnwood-resident.exe"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    "include/resident.inc": "c04c076b230654a291183233f5f00c907881bedcb57d97c0baaa23843eab752b",
+    "include/numeric_types.inc": "5f0fbb86d8f0dd54f8b2f7e1f622fb3159ed4530fa673cc6d2621b1494138faa",
+    "include/numeric_math.inc": "94beebab74e424648bea93415c2fe7bef12e1eaf0ef1c24635a61c92a0282cdc",
+    "src/resident_cli.cpp": "967159c03d9a416092962e3f48aa47d1bc50cc1cf9aca20ba14c9f17b633c9a0",
+    "shaders/resident.comp": "e9707f5795d2b7e78a77e19059bf7aad5505d5b70ccf020d64f5a965953efd12",
+    "tools/build_resident.py": "8f708aae82def657d60b59059f716232f5de9e91470d667cae55f0d205b0c559",
+    "repo:docs/RESIDENT_ABI.md": "391068c32ee33a2242fe46cd88ff486c5c081b4352c69c3ee6fe8a60819db18e"
+  },
+  "artifacts": {
+    "dawnwood-resident.exe": {
+      "bytes": 1569280,
+      "sha256": "dacc7de006822bcd37f11efe3afe473336038bf53f3f41d5525cd250d3ba4938"
+    },
+    "resident.spv": {
+      "bytes": 62360,
+      "sha256": "8f1d917f22b0d92f9544019366087df56aa2b089e68a87ce3f0fc8678dd5a2bb"
+    }
+  }
+}

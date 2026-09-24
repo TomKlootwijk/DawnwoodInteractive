@@ -1,0 +1,32 @@
+{
+  "orientation_pair_and_positive_negative_seams": [
+    [
+      0.2511960566043854,
+      0.37507104873657227,
+      0.0
+    ],
+    [
+      0.2511960566043854,
+      0.37492895126342773,
+      1.0
+    ],
+    [
+      0.00915217399597168,
+      0.6246036887168884,
+      1.0
+    ],
+    [
+      0.990554690361023,
+      0.6256895065307617,
+      1.0
+    ]
+  ],
+  "orientation_pair_y_sum": 0.75,
+  "copy_overlap_and_epoch_read_expected": [
+    2.5,
+    2.5,
+    2.0
+  ],
+  "plan_require_status": 7,
+  "all_cpu_gpu_bit_identical": true
+}

@@ -1,5 +1,16 @@
 # Dawnwood Interactive — Numerical GPU Runtime
 
+The separate **DWI-RESIDENT-0.1** component is
+`bin/windows-resident/dawnwood-resident.exe`, with adjacent `resident.spv`.
+It executes a validated function bank and explicit call plans through mutable
+body/field/placement handles. The old mutator and pinion update a three-record
+instance, including their own definitions; action then reads the new records.
+Read [the precise scope](../../docs/RESIDENT_DEFINITIONS.md) and
+[measured evidence](../../output/resident_definition_2026-09-24/REPORT.md).
+Its complete `DWRD0001` checkpoints preserve programs and live component state.
+The full source catalogue and eight-stage cycle remain unfinished.
+Build it separately with `python tools/build_resident.py`.
+
 The separate **DWI-XIR-0.1** source-body evaluator is
 `bin/windows-source/dawnwood-source-ir.exe`, with its adjacent `source_ir.spv`.
 It executes compiled numerical expressions from selected source-model bodies,

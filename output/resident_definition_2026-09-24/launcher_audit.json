@@ -1,0 +1,56 @@
+{
+  "commands": [
+    {
+      "name": "compile",
+      "command": [
+        "cmd.exe",
+        "/d",
+        "/c",
+        "Dawnwood-Resident.cmd",
+        "compile",
+        "--definition",
+        "source_bindings/resident_v0.1.json",
+        "--output",
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\resident_definition_2026-09-24\\launcher"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "run",
+      "command": [
+        "cmd.exe",
+        "/d",
+        "/c",
+        "Dawnwood-Resident.cmd",
+        "run",
+        "--input",
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\resident_definition_2026-09-24\\launcher\\program.bin",
+        "--output",
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\resident_definition_2026-09-24\\launcher\\gpu.bin",
+        "--backend",
+        "vulkan",
+        "--device",
+        "RTX 5070 Ti",
+        "--epochs",
+        "2"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "inspect",
+      "command": [
+        "cmd.exe",
+        "/d",
+        "/c",
+        "Dawnwood-Resident.cmd",
+        "inspect",
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\resident_definition_2026-09-24\\launcher\\gpu.bin",
+        "--manifest",
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\resident_definition_2026-09-24\\launcher\\manifest.json"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "compiled_program_matches_baseline": true,
+  "two_epoch_checkpoint_matches_baseline": true
+}

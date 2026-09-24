@@ -1,0 +1,21 @@
+{
+  "native_manifest_entries": 2228,
+  "native_manifest_mismatches": [],
+  "build_source_mismatches": [],
+  "expected_existing_manifest_change": [
+    "README.md"
+  ],
+  "native_profiles_preserved": true,
+  "new_artifacts": {
+    "dawnwood-resident.exe": {
+      "bytes": 1569280,
+      "sha256": "dacc7de006822bcd37f11efe3afe473336038bf53f3f41d5525cd250d3ba4938"
+    },
+    "resident.spv": {
+      "bytes": 62360,
+      "sha256": "8f1d917f22b0d92f9544019366087df56aa2b089e68a87ce3f0fc8678dd5a2bb"
+    }
+  },
+  "frontend_sha256": "e1b4e6463dde8fce7d1d2e91b1b60d5ea7b27e6136a08493ecc93131436d748c",
+  "definition_sha256": "5373231ef7a4381ec71ba598979ca6bb404f6386e2734cddb8d05cc891976587"
+}
