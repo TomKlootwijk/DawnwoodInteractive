@@ -1,4 +1,38 @@
-DW_FN float dw_geometry(State s DW_OP_PARAMETER){DW_PRECISE float total=0.0f;DW_LOOP for(uint k=0u;k<6u;++k)total+=dw_field(s,DW_OP(7u+k),k);DW_RETURN_FLOAT(dw_apply(s,DW_OP(0u),dw_div(total,6.0f)));}
+// Enabled profiles validate the exactly represented law count in op0.reserved,
+// with protected records occupying 31..31+count-1 and routing confined to 0..30.
+DW_FN float dw_domain_mean_violation(State s DW_OP_PARAMETER){
+ uint count=uint(DW_OP(0u).reserved);DW_PRECISE float total=0.0f;
+ DW_LOOP for(uint lawIndex=0u;lawIndex<count;++lawIndex)total+=dw_domain_violation(s,DW_OP(31u+lawIndex));
+ DW_RETURN_FLOAT(dw_div(total,float(count)));
+}
+DW_FN void dw_domain_project(DW_PRECISE DW_INOUT(State) s DW_OP_PARAMETER){
+ uint count=uint(DW_OP(0u).reserved);
+ // One ordered cyclic sweep per epoch. Re-evaluate each law on the coordinates
+ // produced by the preceding projection; do not mutate the stored domain laws.
+ DW_LOOP for(uint lawIndex=0u;lawIndex<count;++lawIndex){
+  DW_PRECISE Operator law=DW_OP(31u+lawIndex);
+  DW_PRECISE float distance=dw_domain_distance(s,law);
+  DW_PRECISE float response=dw_apply(s,DW_OP(30u),distance);
+  DW_PRECISE float relaxation=dw_max(0.25f,dw_min(0.95f,0.6f+0.35f*dw_sin(response)));
+  DW_PRECISE float residual=dw_domain_residual(s,law),excess=residual;
+  if(law.kind==1u)excess=dw_max(residual,0.0f);
+  else if(law.kind==2u){
+   if(residual>law.dv)excess=residual-law.dv;
+   else if(residual<-law.dv)excess=residual+law.dv;
+   else excess=0.0f;
+  }
+  DW_PRECISE float amount=dw_div(relaxation*excess,dw_domain_normal_sq(law));
+  s.px-=amount*law.phase;s.py-=amount*law.gain;s.pz-=amount*law.coupling;s.pw-=amount*law.shear;
+ }
+}
+DW_FN float dw_geometry(State s DW_OP_PARAMETER){
+ DW_PRECISE float total=0.0f;DW_LOOP for(uint k=0u;k<6u;++k)total+=dw_field(s,DW_OP(7u+k),k);
+ if(dw_domain_enabled(DW_OP(0u))){
+  DW_PRECISE float domainInput=dw_div(total,6.0f)+dw_domain_mean_violation(s DW_OP_ARGUMENT);
+  DW_RETURN_FLOAT(dw_apply(s,DW_OP(0u),domainInput));
+ }
+ DW_RETURN_FLOAT(dw_apply(s,DW_OP(0u),dw_div(total,6.0f)));
+}
 DW_FN Motion dw_derivative(State s,Config cfg,uint selected DW_OP_PARAMETER){
  DW_PRECISE Operator pinion=DW_OP(5u),chosen=DW_OP(selected),colon=DW_OP(6u),phi=DW_OP(2u);
  DW_PRECISE float field=dw_geometry(s DW_OP_ARGUMENT);
@@ -122,7 +156,16 @@ DW_FN State dw_finish(State previousState,State combinedState,Config config,Evol
  outState.k1v=k1.v;outState.k2v=k2.v;outState.k3v=k3.v;outState.k4v=k4.v;
  outState.rng=work.rng;outState.route=work.selected;outState.alpha_ref=lane;
  outState.previousPreviousTheta=s.previousTheta;outState.previousTheta=s.theta;outState.lastJitter=float(j);
- dw_embedding(outState);return outState;
+ if(dw_domain_enabled(DW_OP(0u))){
+  // Preserve the full N1 wave/history/transport update above. Only the four
+  // inspection-embedding slots acquire this explicitly versioned domain role.
+  outState.px=s.px;outState.py=s.py;outState.pz=s.pz;outState.pw=s.pw;
+  dw_domain_project(outState DW_OP_ARGUMENT);
+  // Return unresolved domain error to the same state.field consumed by the
+  // next mutation pass, closing the domain/controller feedback connection.
+  outState.field=field+dw_domain_mean_violation(outState DW_OP_ARGUMENT);
+ }else dw_embedding(outState);
+ return outState;
 }
 DW_FN State dw_evolve(State previousState,Config config,uint lane DW_OP_PARAMETER){
  DW_PRECISE EvolutionScratch work=dw_prepare(previousState,config DW_OP_ARGUMENT);

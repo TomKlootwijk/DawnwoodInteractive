@@ -1,5 +1,9 @@
 # DWI-N1 — numerical bindings for the Dawnwood recurrence
 
+This document specifies the preserved N1 path. The optional DWI-D1-0.1 extension
+has separately declared domain coordinates, affine laws, projections and
+checkpoint identity in [DOMAIN_KERNEL.md](../../../docs/DOMAIN_KERNEL.md).
+
 The complete current definition is `FORMALIZATION_v0.5.md`, developed from the supplied unified v0.2 formalization through v0.4. See `CHANGES_v0.5.md` for the arithmetic and texture changes and `VALIDATION_v0.5.md` for measured status. The profile is a discrete recurrence in a canonical Klein chart. Position wrapping does not establish smooth tangent-field covariance across chart transitions; asymmetric operator-frame transport remains an explicit limitation.
 
 **Tom Klootwijk · Dawnwood Interactive · Version 0.5.0 / DWI-N1-0.5**

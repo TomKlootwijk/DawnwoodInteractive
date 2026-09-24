@@ -1,0 +1,14 @@
+{
+  "description": "Changed only operator 30 (mutation) program from 0x00000341 to 0x00000342.",
+  "source_sha256": "17623053933c1aab1940660edfe0c97f6d2a4b541d64497763054073e8ccc0eb",
+  "result_sha256": "372024cbf467985d018435c1fe798e02a5d677c56b17672860947d8ca87fa810",
+  "initial_comparison": {
+    "changed_state_records": 0,
+    "changed_state_words": 0,
+    "changed_amplitude_words": 0,
+    "changed_non_amplitude_state_words": 0,
+    "changed_operator_records": 1,
+    "changed_operator_words": 1,
+    "max_absolute_state_float_difference": 0.0
+  }
+}

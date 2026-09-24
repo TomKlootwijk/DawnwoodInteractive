@@ -41,6 +41,10 @@ inline void dw_mul_wide(uint a,uint b,uint& hi,uint& lo){uint64_t p=uint64_t(a)*
 const float DW_PI=3.14159265358979323846f;
 const float DW_TAU=6.28318530717958647692f;
 const float DW_UNIT_MAX=0.999999940395355224609375f; // Greatest FP32 value below one.
+// DWI-D1-0.1 is an explicit optional domain-coordinate binding. The ordinary
+// DWI-N1 records do not set these bits and retain their original equations.
+const uint DW_DOMAIN_PROFILE_FLAG=0x40000000u;
+const uint DW_DOMAIN_LAW_FLAG=0x80000000u;
 struct State {
  float u,v,rho,theta;
  float ar,ai,br,bi;
@@ -119,6 +123,27 @@ DW_FN float dw_shape(uint kind,float x,float y,float z,float r,float h){
  if(kind==4u)DW_RETURN_FLOAT(dw_len3(x,y,z)-r);
  DW_RETURN_FLOAT(dw_len3(x,y,z));
 }
+// A protected law stores a=(phase,gain,coupling,shear), b=du, and the slab
+// halfwidth in dv. State px/py/pz/pw are domain coordinates only in DWI-D1.
+// These affine laws have exact Euclidean field definitions before FP32 rounding;
+// their program is not an instruction applied to their scientific coefficients.
+// Input validation supplies finite nonzero normals and kinds 0, 1, or 2.
+DW_FN bool dw_domain_enabled(Operator header){return (header.flags&DW_DOMAIN_PROFILE_FLAG)!=0u;}
+DW_FN float dw_domain_normal_sq(Operator law){
+ DW_RETURN_FLOAT(law.phase*law.phase+law.gain*law.gain+law.coupling*law.coupling+law.shear*law.shear);
+}
+DW_FN float dw_domain_residual(State s,Operator law){
+ DW_RETURN_FLOAT(law.phase*s.px+law.gain*s.py+law.coupling*s.pz+law.shear*s.pw-law.du);
+}
+DW_FN float dw_domain_distance(State s,Operator law){
+ DW_PRECISE float residual=dw_domain_residual(s,law);
+ if(law.kind==2u)residual=dw_abs(residual)-law.dv;
+ DW_RETURN_FLOAT(dw_div(residual,dw_sqrt(dw_domain_normal_sq(law))));
+}
+DW_FN float dw_domain_violation(State s,Operator law){
+ DW_PRECISE float distance=dw_domain_distance(s,law);
+ DW_RETURN_FLOAT(law.kind==0u?dw_abs(distance):dw_max(distance,0.0f));
+}
 DW_FN float dw_body(float value,Operator op){
  DW_PRECISE float x=value;
  // Eight four-bit instructions form an editable scalar field expression.
@@ -130,6 +155,7 @@ DW_FN float dw_body(float value,Operator op){
  DW_RETURN_FLOAT(x);
 }
 DW_FN float dw_field(State point,Operator op,uint kind){
+ if((op.flags&DW_DOMAIN_LAW_FLAG)!=0u)DW_RETURN_FLOAT(dw_domain_distance(point,op));
  DW_PRECISE State s=point;
  // RK stages may leave the fundamental chart. Canonicalize this local copy
  // before searching the three neighboring lifts and transporting transverse sign.
@@ -140,9 +166,15 @@ DW_FN float dw_field(State point,Operator op,uint kind){
  DW_PRECISE float z=0.2f*(radius-0.35f); if(s.orientation!=0u)z=-z;
  DW_RETURN_FLOAT(dw_body(dw_shape(kind,x,y,z,op.radius,op.height),op));
 }
-DW_FN float dw_apply(State s,Operator op,float value){DW_RETURN_FLOAT(dw_body(value+0.01f*dw_field(s,op,op.kind%6u),op));}
+DW_FN float dw_apply(State s,Operator op,float value){
+ if((op.flags&DW_DOMAIN_LAW_FLAG)!=0u)DW_RETURN_FLOAT(dw_domain_distance(s,op));
+ DW_RETURN_FLOAT(dw_body(value+0.01f*dw_field(s,op,op.kind%6u),op));
+}
 DW_FN Operator dw_mutate(Operator previousOp,Operator mutationOp,Operator pinion,State sourceState,State neighbour,Config cfg){
  DW_PRECISE Operator op=previousOp;
+ // A factual affine law is immutable, including its seed, body and anchor.
+ // The existing mutable controller determines the solver's relaxation instead.
+ if((op.flags&DW_DOMAIN_LAW_FLAG)!=0u)return op;
  if(cfg.feedback==0u)return op;
  op.seed=dw_rng(op.seed);uint j=(cfg.jitter!=0u)?((op.seed^sourceState.rng^neighbour.route)&1u):0u;
  DW_PRECISE float sign=(j!=0u)?1.0f:-1.0f;

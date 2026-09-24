@@ -1,0 +1,3310 @@
+{
+  "utc": "2026-09-24T12:57:52.006871+00:00",
+  "method": "Read completed GPU checkpoints without GPU execution; evaluate original authored JSON affine laws in float64, separately cross-check enzyme conservation through DW-Domain-0.1 CPU oracle. No new test source.",
+  "runs": [
+    {
+      "run": "enzyme_live",
+      "checkpoint": "output\\domain_kernel_2026-09-24\\enzyme_live\\epoch-000064.dwk",
+      "checkpoint_sha256": "f69a263b2405b35f7c77d638c568b23b3f9cc004bf69f2d9596e5e36a11e3647",
+      "runtime_binary_sha256": "6a682fede4bb7e4437b75754583411fa2509070699a52ccb2e3a280260d76bd0",
+      "count": 257,
+      "final_epoch": 64,
+      "CPU_GPU_verified_epochs": 32,
+      "CPU_GPU_all_trace_bitwise_equal": true,
+      "CPU_GPU_aggregate_bitwise_mismatches": 0,
+      "validation_layers_enabled_in_this_run": false,
+      "raw_protected_law_bytes_unchanged": true,
+      "declared_JSON_laws_feasible_states": 257,
+      "declared_JSON_laws_all_feasible": true,
+      "tolerance": 2e-05,
+      "max_violation_original_JSON_coefficients": 5.506041232963808e-07,
+      "per_law_original_JSON": {
+        "enzyme_pool_10uM": {
+          "max_violation": 1.0536712127723507e-07,
+          "violating_states": 0
+        },
+        "substrate_pool_100uM": {
+          "max_violation": 5.506041232963808e-07,
+          "violating_states": 0
+        },
+        "E_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "ES_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "S_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "P_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "ES_operating_interval_2_to_6uM": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        }
+      },
+      "independent_enzyme_oracle": {
+        "profile": "DW-Domain-0.1 CPU bindings",
+        "scale_uM": 10,
+        "all_feasible": true,
+        "max_distance_discrepancy_from_direct_authored_laws": 0.0,
+        "note": "ES 2..6 uM band is separately checked in the original JSON audit; biochemical oracle checks both pools and four nonnegative species.",
+        "states": [
+          {
+            "lane": 0,
+            "physical_uM": {
+              "E": 7.599998712539673,
+              "ES": 2.4000009894371033,
+              "S": 77.80000686645508,
+              "P": 19.800000190734863
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 4.645722290313213e-07
+          },
+          {
+            "lane": 1,
+            "physical_uM": {
+              "E": 7.668505311012268,
+              "ES": 2.331494837999344,
+              "S": 78.03069591522217,
+              "P": 19.637815952301025
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 1.0536712127723507e-08,
+            "substrate_distance": 3.8714352419276774e-07
+          },
+          {
+            "lane": 2,
+            "physical_uM": {
+              "E": 7.645311951637268,
+              "ES": 2.354687750339508,
+              "S": 77.72773265838623,
+              "P": 19.91758704185486
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 4.301594713252975e-07
+          },
+          {
+            "lane": 3,
+            "physical_uM": {
+              "E": 7.55849301815033,
+              "ES": 2.4415072798728943,
+              "S": 77.72919654846191,
+              "P": 19.829288721084595
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -4.301594713252975e-07
+          },
+          {
+            "lane": 4,
+            "physical_uM": {
+              "E": 7.552987337112427,
+              "ES": 2.4470123648643494,
+              "S": 77.79544353485107,
+              "P": 19.757550954818726
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 3.957467136192737e-07
+          },
+          {
+            "lane": 5,
+            "physical_uM": {
+              "E": 7.6647162437438965,
+              "ES": 2.3352836072444916,
+              "S": 77.88868427276611,
+              "P": 19.7760272026062
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": -2.839052510746963e-07
+          },
+          {
+            "lane": 6,
+            "physical_uM": {
+              "E": 7.440004348754883,
+              "ES": 2.559995949268341,
+              "S": 77.68354415893555,
+              "P": 19.756455421447754
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -2.580956827951785e-07
+          },
+          {
+            "lane": 7,
+            "physical_uM": {
+              "E": 7.689552903175354,
+              "ES": 2.310446798801422,
+              "S": 77.76481628417969,
+              "P": 19.924737215042114
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 1.72063788530119e-08
+          },
+          {
+            "lane": 8,
+            "physical_uM": {
+              "E": 7.4056196212768555,
+              "ES": 2.5943803787231445,
+              "S": 77.73633480072021,
+              "P": 19.669281244277954
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": -2.064765462361428e-07
+          },
+          {
+            "lane": 9,
+            "physical_uM": {
+              "E": 7.817881107330322,
+              "ES": 2.182118743658066,
+              "S": 77.85797595977783,
+              "P": 19.959911108016968
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 3.3552438763373206e-07
+          },
+          {
+            "lane": 10,
+            "physical_uM": {
+              "E": 7.600505352020264,
+              "ES": 2.399495244026184,
+              "S": 77.50762939453125,
+              "P": 20.09286880493164
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 4.214684851089403e-08,
+            "substrate_distance": -3.785403347662618e-07
+          },
+          {
+            "lane": 11,
+            "physical_uM": {
+              "E": 7.611613869667053,
+              "ES": 2.3883861303329468,
+              "S": 77.99955368041992,
+              "P": 19.61206078529358
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 3.44127577060238e-08
+          },
+          {
+            "lane": 12,
+            "physical_uM": {
+              "E": 7.60529637336731,
+              "ES": 2.3947033286094666,
+              "S": 77.68433094024658,
+              "P": 19.920973777770996
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 4.645722290313213e-07
+          },
+          {
+            "lane": 13,
+            "physical_uM": {
+              "E": 7.527797222137451,
+              "ES": 2.4722029268741608,
+              "S": 77.61871814727783,
+              "P": 19.909071922302246
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 1.0536712127723507e-08,
+            "substrate_distance": -4.0434990304577965e-07
+          },
+          {
+            "lane": 14,
+            "physical_uM": {
+              "E": 7.476350665092468,
+              "ES": 2.5236493349075317,
+              "S": 77.76002407073975,
+              "P": 19.716325998306274
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": -3.44127577060238e-08
+          },
+          {
+            "lane": 15,
+            "physical_uM": {
+              "E": 7.596577405929565,
+              "ES": 2.4034222960472107,
+              "S": 77.4718427658081,
+              "P": 20.124740600585938
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 3.269211982072261e-07
+          },
+          {
+            "lane": 16,
+            "physical_uM": {
+              "E": 7.648520469665527,
+              "ES": 2.351479232311249,
+              "S": 77.8347110748291,
+              "P": 19.813809394836426
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": -1.72063788530119e-08
+          },
+          {
+            "lane": 17,
+            "physical_uM": {
+              "E": 7.63148307800293,
+              "ES": 2.3685167729854584,
+              "S": 77.96080589294434,
+              "P": 19.670681953430176
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 2.6669887222168447e-07
+          },
+          {
+            "lane": 18,
+            "physical_uM": {
+              "E": 7.525575757026672,
+              "ES": 2.4744239449501038,
+              "S": 77.62913227081299,
+              "P": 19.89643692970276
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": -3.957467136192737e-07
+          },
+          {
+            "lane": 19,
+            "physical_uM": {
+              "E": 7.568612098693848,
+              "ES": 2.431386560201645,
+              "S": 78.02972793579102,
+              "P": 19.538882970809937
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -9.483040914951157e-08,
+            "substrate_distance": -1.4625422025060114e-07
+          },
+          {
+            "lane": 20,
+            "physical_uM": {
+              "E": 7.523168921470642,
+              "ES": 2.476831078529358,
+              "S": 77.77451992034912,
+              "P": 19.748646020889282
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": -1.72063788530119e-07
+          },
+          {
+            "lane": 21,
+            "physical_uM": {
+              "E": 7.532762289047241,
+              "ES": 2.467237561941147,
+              "S": 77.67467975616455,
+              "P": 19.858087301254272
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 2.6669887222168447e-07
+          },
+          {
+            "lane": 22,
+            "physical_uM": {
+              "E": 7.48125433921814,
+              "ES": 2.5187456607818604,
+              "S": 77.65017986297607,
+              "P": 19.831072092056274
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": -1.376510308240952e-07
+          },
+          {
+            "lane": 23,
+            "physical_uM": {
+              "E": 7.647299766540527,
+              "ES": 2.3527006804943085,
+              "S": 77.82525539398193,
+              "P": 19.822040796279907
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 3.161013638317052e-08,
+            "substrate_distance": -1.8066697795662496e-07
+          },
+          {
+            "lane": 24,
+            "physical_uM": {
+              "E": 7.512763142585754,
+              "ES": 2.4872365593910217,
+              "S": 77.88228511810303,
+              "P": 19.630483388900757
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 2.925084405012023e-07
+          },
+          {
+            "lane": 25,
+            "physical_uM": {
+              "E": 7.523543834686279,
+              "ES": 2.476455867290497,
+              "S": 77.81277656555176,
+              "P": 19.710772037506104
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 2.580956827951785e-07
+          },
+          {
+            "lane": 26,
+            "physical_uM": {
+              "E": 7.3811739683151245,
+              "ES": 2.6188263297080994,
+              "S": 77.79350280761719,
+              "P": 19.58766460418701
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -3.6133395591324993e-07
+          },
+          {
+            "lane": 27,
+            "physical_uM": {
+              "E": 7.56588339805603,
+              "ES": 2.434116303920746,
+              "S": 77.93661594390869,
+              "P": 19.629273414611816
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 3.269211982072261e-07
+          },
+          {
+            "lane": 28,
+            "physical_uM": {
+              "E": 7.536422610282898,
+              "ES": 2.463577091693878,
+              "S": 78.03417205810547,
+              "P": 19.502252340316772
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 8.60318942650595e-08
+          },
+          {
+            "lane": 29,
+            "physical_uM": {
+              "E": 7.7201396226882935,
+              "ES": 2.2798600792884827,
+              "S": 77.90192127227783,
+              "P": 19.818224906921387
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 3.6133395591324993e-07
+          },
+          {
+            "lane": 30,
+            "physical_uM": {
+              "E": 7.596610188484192,
+              "ES": 2.4033895134925842,
+              "S": 77.77307033538818,
+              "P": 19.823545217514038
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 2.925084405012023e-07
+          },
+          {
+            "lane": 31,
+            "physical_uM": {
+              "E": 7.484542727470398,
+              "ES": 2.515456974506378,
+              "S": 77.39682197570801,
+              "P": 20.08772373199463
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 1.548574096771071e-07
+          },
+          {
+            "lane": 32,
+            "physical_uM": {
+              "E": 7.65665590763092,
+              "ES": 2.3433440923690796,
+              "S": 77.81915664672852,
+              "P": 19.837504625320435
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 3.097148193542142e-07
+          },
+          {
+            "lane": 33,
+            "physical_uM": {
+              "E": 7.489333748817444,
+              "ES": 2.510666251182556,
+              "S": 77.78741359710693,
+              "P": 19.70191478729248
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": -3.097148193542142e-07
+          },
+          {
+            "lane": 34,
+            "physical_uM": {
+              "E": 7.513807415962219,
+              "ES": 2.486192286014557,
+              "S": 77.72293090820312,
+              "P": 19.790881872177124
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 2.925084405012023e-07
+          },
+          {
+            "lane": 35,
+            "physical_uM": {
+              "E": 7.552189826965332,
+              "ES": 2.447810024023056,
+              "S": 77.90829658508301,
+              "P": 19.6438992023468
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 3.3552438763373206e-07
+          },
+          {
+            "lane": 36,
+            "physical_uM": {
+              "E": 7.7211689949035645,
+              "ES": 2.2788310050964355,
+              "S": 78.0266809463501,
+              "P": 19.694494009017944
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 3.44127577060238e-07
+          },
+          {
+            "lane": 37,
+            "physical_uM": {
+              "E": 7.733750939369202,
+              "ES": 2.2662487626075745,
+              "S": 77.85691261291504,
+              "P": 19.876846075057983
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 4.301594713252975e-07
+          },
+          {
+            "lane": 38,
+            "physical_uM": {
+              "E": 7.488569617271423,
+              "ES": 2.5114303827285767,
+              "S": 77.6377010345459,
+              "P": 19.850860834121704
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": -4.473658501783094e-07
+          },
+          {
+            "lane": 39,
+            "physical_uM": {
+              "E": 7.434271574020386,
+              "ES": 2.565729022026062,
+              "S": 77.56768703460693,
+              "P": 19.866576194763184
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 4.214684851089403e-08,
+            "substrate_distance": -4.473658501783094e-07
+          },
+          {
+            "lane": 40,
+            "physical_uM": {
+              "E": 7.50767707824707,
+              "ES": 2.492322623729706,
+              "S": 77.95259952545166,
+              "P": 19.55508589744568
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 4.645722290313213e-07
+          },
+          {
+            "lane": 41,
+            "physical_uM": {
+              "E": 7.5338733196258545,
+              "ES": 2.4661263823509216,
+              "S": 77.7716588973999,
+              "P": 19.76220965385437
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": -2.925084405012023e-07
+          },
+          {
+            "lane": 42,
+            "physical_uM": {
+              "E": 7.586871385574341,
+              "ES": 2.4131284654140472,
+              "S": 77.59459018707275,
+              "P": 19.992289543151855
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 4.7317541845782724e-07
+          },
+          {
+            "lane": 43,
+            "physical_uM": {
+              "E": 7.425202131271362,
+              "ES": 2.5747978687286377,
+              "S": 77.65444755554199,
+              "P": 19.77075219154358
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": -1.376510308240952e-07
+          },
+          {
+            "lane": 44,
+            "physical_uM": {
+              "E": 7.783173322677612,
+              "ES": 2.2168266773223877,
+              "S": 77.85493850708008,
+              "P": 19.92824077606201
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 3.44127577060238e-07
+          },
+          {
+            "lane": 45,
+            "physical_uM": {
+              "E": 7.590421438217163,
+              "ES": 2.409578263759613,
+              "S": 77.69541263580322,
+              "P": 19.895013570785522
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 2.580956827951785e-07
+          },
+          {
+            "lane": 46,
+            "physical_uM": {
+              "E": 7.643786668777466,
+              "ES": 2.356213331222534,
+              "S": 78.06879043579102,
+              "P": 19.57499623298645
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 0.0
+          },
+          {
+            "lane": 47,
+            "physical_uM": {
+              "E": 7.621694803237915,
+              "ES": 2.3783056437969208,
+              "S": 77.88222312927246,
+              "P": 19.739471673965454
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 3.161013638317052e-08,
+            "substrate_distance": 2.580956827951785e-08
+          },
+          {
+            "lane": 48,
+            "physical_uM": {
+              "E": 7.788568139076233,
+              "ES": 2.211431562900543,
+              "S": 77.91501998901367,
+              "P": 19.87355351448059
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 2.925084405012023e-07
+          },
+          {
+            "lane": 49,
+            "physical_uM": {
+              "E": 7.539786100387573,
+              "ES": 2.460213601589203,
+              "S": 77.72866725921631,
+              "P": 19.81111168861389
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": -4.301594713252975e-07
+          },
+          {
+            "lane": 50,
+            "physical_uM": {
+              "E": 7.470134496688843,
+              "ES": 2.529866099357605,
+              "S": 77.7318811416626,
+              "P": 19.738253355026245
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 4.214684851089403e-08,
+            "substrate_distance": 3.44127577060238e-08
+          },
+          {
+            "lane": 51,
+            "physical_uM": {
+              "E": 7.468980550765991,
+              "ES": 2.531019449234009,
+              "S": 78.01302433013916,
+              "P": 19.45595383644104
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": -1.376510308240952e-07
+          },
+          {
+            "lane": 52,
+            "physical_uM": {
+              "E": 7.71940290927887,
+              "ES": 2.2805967926979065,
+              "S": 77.86914825439453,
+              "P": 19.850257635116577
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 1.548574096771071e-07
+          },
+          {
+            "lane": 53,
+            "physical_uM": {
+              "E": 7.687222361564636,
+              "ES": 2.31277734041214,
+              "S": 77.91167259216309,
+              "P": 19.77555751800537
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 4.301594713252975e-07
+          },
+          {
+            "lane": 54,
+            "physical_uM": {
+              "E": 7.473692893981934,
+              "ES": 2.5263074040412903,
+              "S": 77.59136199951172,
+              "P": 19.88232135772705
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -5.333977444433689e-07
+          },
+          {
+            "lane": 55,
+            "physical_uM": {
+              "E": 7.5637078285217285,
+              "ES": 2.4362921714782715,
+              "S": 77.79919624328613,
+              "P": 19.764506816864014
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": -2.753020616481904e-07
+          },
+          {
+            "lane": 56,
+            "physical_uM": {
+              "E": 7.591270208358765,
+              "ES": 2.408730238676071,
+              "S": 77.62403964996338,
+              "P": 19.967228174209595
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 3.161013638317052e-08,
+            "substrate_distance": -1.1184146254457734e-07
+          },
+          {
+            "lane": 57,
+            "physical_uM": {
+              "E": 7.562781572341919,
+              "ES": 2.437218427658081,
+              "S": 77.9934024810791,
+              "P": 19.56937313079834
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": -3.44127577060238e-07
+          },
+          {
+            "lane": 58,
+            "physical_uM": {
+              "E": 7.652606964111328,
+              "ES": 2.347392737865448,
+              "S": 77.6787519454956,
+              "P": 19.973864555358887
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 5.333977444433689e-07
+          },
+          {
+            "lane": 59,
+            "physical_uM": {
+              "E": 7.6776474714279175,
+              "ES": 2.3223528265953064,
+              "S": 77.64671325683594,
+              "P": 20.030927658081055
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -3.6133395591324993e-07
+          },
+          {
+            "lane": 60,
+            "physical_uM": {
+              "E": 7.705402970314026,
+              "ES": 2.29459747672081,
+              "S": 77.86599159240723,
+              "P": 19.83940601348877
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 3.161013638317052e-08,
+            "substrate_distance": -2.839052510746963e-07
+          },
+          {
+            "lane": 61,
+            "physical_uM": {
+              "E": 7.617274522781372,
+              "ES": 2.382725179195404,
+              "S": 78.18355083465576,
+              "P": 19.43373203277588
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 4.645722290313213e-07
+          },
+          {
+            "lane": 62,
+            "physical_uM": {
+              "E": 7.707337737083435,
+              "ES": 2.292662262916565,
+              "S": 78.17842483520508,
+              "P": 19.528909921646118
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": -1.72063788530119e-07
+          },
+          {
+            "lane": 63,
+            "physical_uM": {
+              "E": 7.614952921867371,
+              "ES": 2.3850467801094055,
+              "S": 77.66762733459473,
+              "P": 19.94733214378357
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 3.6133395591324993e-07
+          },
+          {
+            "lane": 64,
+            "physical_uM": {
+              "E": 7.59202778339386,
+              "ES": 2.407972812652588,
+              "S": 77.66683101654053,
+              "P": 19.925190210342407
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 4.214684851089403e-08,
+            "substrate_distance": -3.44127577060238e-07
+          },
+          {
+            "lane": 65,
+            "physical_uM": {
+              "E": 7.50027060508728,
+              "ES": 2.4997295439243317,
+              "S": 77.66214847564697,
+              "P": 19.838122129440308
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 1.0536712127723507e-08,
+            "substrate_distance": 8.60318942650595e-09
+          },
+          {
+            "lane": 66,
+            "physical_uM": {
+              "E": 7.540125846862793,
+              "ES": 2.459873855113983,
+              "S": 77.94354438781738,
+              "P": 19.596586227416992
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 2.580956827951785e-07
+          },
+          {
+            "lane": 67,
+            "physical_uM": {
+              "E": 7.7021074295043945,
+              "ES": 2.2978922724723816,
+              "S": 78.12848567962646,
+              "P": 19.573625326156616
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 1.892701673831309e-07
+          },
+          {
+            "lane": 68,
+            "physical_uM": {
+              "E": 7.661135196685791,
+              "ES": 2.338864654302597,
+              "S": 78.08544635772705,
+              "P": 19.575695991516113
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 4.0434990304577965e-07
+          },
+          {
+            "lane": 69,
+            "physical_uM": {
+              "E": 7.740862965583801,
+              "ES": 2.2591370344161987,
+              "S": 77.65779972076416,
+              "P": 20.083067417144775
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 2.408893039421666e-07
+          },
+          {
+            "lane": 70,
+            "physical_uM": {
+              "E": 7.511584758758545,
+              "ES": 2.488414943218231,
+              "S": 78.05100440979004,
+              "P": 19.460586309432983
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 3.269211982072261e-07
+          },
+          {
+            "lane": 71,
+            "physical_uM": {
+              "E": 7.569400668144226,
+              "ES": 2.430599629878998,
+              "S": 77.6668643951416,
+              "P": 19.902530908584595
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -2.925084405012023e-07
+          },
+          {
+            "lane": 72,
+            "physical_uM": {
+              "E": 7.616238594055176,
+              "ES": 2.3837611079216003,
+              "S": 77.88093090057373,
+              "P": 19.735311269760132
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 1.892701673831309e-07
+          },
+          {
+            "lane": 73,
+            "physical_uM": {
+              "E": 7.636522054672241,
+              "ES": 2.3634782433509827,
+              "S": 77.77401924133301,
+              "P": 19.862494468688965
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -4.645722290313213e-07
+          },
+          {
+            "lane": 74,
+            "physical_uM": {
+              "E": 7.593703269958496,
+              "ES": 2.406296581029892,
+              "S": 77.81693935394287,
+              "P": 19.77676272392273
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": -7.742870483855355e-08
+          },
+          {
+            "lane": 75,
+            "physical_uM": {
+              "E": 7.567911744117737,
+              "ES": 2.4320879578590393,
+              "S": 77.7548885345459,
+              "P": 19.813023805618286
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 1.72063788530119e-08
+          },
+          {
+            "lane": 76,
+            "physical_uM": {
+              "E": 7.591314911842346,
+              "ES": 2.40868479013443,
+              "S": 77.8508710861206,
+              "P": 19.740452766418457
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 4.989849867373451e-07
+          },
+          {
+            "lane": 77,
+            "physical_uM": {
+              "E": 7.53917932510376,
+              "ES": 2.4608203768730164,
+              "S": 77.79411315917969,
+              "P": 19.745060205459595
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": -3.6133395591324993e-07
+          },
+          {
+            "lane": 78,
+            "physical_uM": {
+              "E": 7.619566917419434,
+              "ES": 2.3804329335689545,
+              "S": 78.0184555053711,
+              "P": 19.601120948791504
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 5.420009338698748e-07
+          },
+          {
+            "lane": 79,
+            "physical_uM": {
+              "E": 7.5743794441223145,
+              "ES": 2.4256202578544617,
+              "S": 77.8900957107544,
+              "P": 19.684290885925293
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 3.957467136192737e-07
+          },
+          {
+            "lane": 80,
+            "physical_uM": {
+              "E": 7.502413392066956,
+              "ES": 2.4975870549678802,
+              "S": 77.63931274414062,
+              "P": 19.8630952835083
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 3.161013638317052e-08,
+            "substrate_distance": -2.839052510746963e-07
+          },
+          {
+            "lane": 81,
+            "physical_uM": {
+              "E": 7.556996941566467,
+              "ES": 2.443002760410309,
+              "S": 77.57980346679688,
+              "P": 19.977201223373413
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 4.301594713252975e-07
+          },
+          {
+            "lane": 82,
+            "physical_uM": {
+              "E": 7.470014691352844,
+              "ES": 2.5299859046936035,
+              "S": 77.80210494995117,
+              "P": 19.667906761169434
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 4.214684851089403e-08,
+            "substrate_distance": -1.376510308240952e-07
+          },
+          {
+            "lane": 83,
+            "physical_uM": {
+              "E": 7.690781950950623,
+              "ES": 2.3092179000377655,
+              "S": 77.96439170837402,
+              "P": 19.726392030715942
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 9.463508369156545e-08
+          },
+          {
+            "lane": 84,
+            "physical_uM": {
+              "E": 7.542910575866699,
+              "ES": 2.457089126110077,
+              "S": 77.65201568603516,
+              "P": 19.890904426574707
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 5.333977444433689e-07
+          },
+          {
+            "lane": 85,
+            "physical_uM": {
+              "E": 7.73628294467926,
+              "ES": 2.2637172043323517,
+              "S": 77.87499904632568,
+              "P": 19.861292839050293
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 1.0536712127723507e-08,
+            "substrate_distance": 5.247945550168629e-07
+          },
+          {
+            "lane": 86,
+            "physical_uM": {
+              "E": 7.519482970237732,
+              "ES": 2.480516731739044,
+              "S": 77.75876522064209,
+              "P": 19.76071834564209
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 1.72063788530119e-08
+          },
+          {
+            "lane": 87,
+            "physical_uM": {
+              "E": 7.52870500087738,
+              "ES": 2.4712948501110077,
+              "S": 77.68675804138184,
+              "P": 19.841952323913574
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 3.0111162992770824e-07
+          },
+          {
+            "lane": 88,
+            "physical_uM": {
+              "E": 7.583933472633362,
+              "ES": 2.416066527366638,
+              "S": 77.79581546783447,
+              "P": 19.788124561309814
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 3.785403347662618e-07
+          },
+          {
+            "lane": 89,
+            "physical_uM": {
+              "E": 7.5303566455841064,
+              "ES": 2.4696430563926697,
+              "S": 77.48796463012695,
+              "P": 20.04239559173584
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 1.892701673831309e-07
+          },
+          {
+            "lane": 90,
+            "physical_uM": {
+              "E": 7.65623927116394,
+              "ES": 2.3437611758708954,
+              "S": 77.88087368011475,
+              "P": 19.77535843849182
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 3.161013638317052e-08,
+            "substrate_distance": -3.8714352419276774e-07
+          },
+          {
+            "lane": 91,
+            "physical_uM": {
+              "E": 7.604600787162781,
+              "ES": 2.3953989148139954,
+              "S": 78.01330089569092,
+              "P": 19.591307640075684
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 4.301594713252975e-07
+          },
+          {
+            "lane": 92,
+            "physical_uM": {
+              "E": 7.653670310974121,
+              "ES": 2.346329391002655,
+              "S": 77.83280849456787,
+              "P": 19.820865392684937
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 1.892701673831309e-07
+          },
+          {
+            "lane": 93,
+            "physical_uM": {
+              "E": 7.627184987068176,
+              "ES": 2.3728150129318237,
+              "S": 77.56657600402832,
+              "P": 20.0606107711792
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 1.032382731180714e-07
+          },
+          {
+            "lane": 94,
+            "physical_uM": {
+              "E": 7.566003203392029,
+              "ES": 2.4339964985847473,
+              "S": 77.50088214874268,
+              "P": 20.065126419067383
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 2.925084405012023e-07
+          },
+          {
+            "lane": 95,
+            "physical_uM": {
+              "E": 7.5594741106033325,
+              "ES": 2.4405255913734436,
+              "S": 77.90523052215576,
+              "P": 19.654250144958496
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 3.6133395591324993e-07
+          },
+          {
+            "lane": 96,
+            "physical_uM": {
+              "E": 7.569019198417664,
+              "ES": 2.4309805035591125,
+              "S": 77.73231983184814,
+              "P": 19.836705923080444
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 3.6133395591324993e-07
+          },
+          {
+            "lane": 97,
+            "physical_uM": {
+              "E": 7.57050633430481,
+              "ES": 2.429494261741638,
+              "S": 77.4406623840332,
+              "P": 20.12983798980713
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 4.214684851089403e-08,
+            "substrate_distance": -3.097148193542142e-07
+          },
+          {
+            "lane": 98,
+            "physical_uM": {
+              "E": 7.5834739208221436,
+              "ES": 2.4165257811546326,
+              "S": 77.46642112731934,
+              "P": 20.117058753967285
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 3.269211982072261e-07
+          },
+          {
+            "lane": 99,
+            "physical_uM": {
+              "E": 7.686581611633301,
+              "ES": 2.3134180903434753,
+              "S": 77.99817085266113,
+              "P": 19.688420295715332
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 5.333977444433689e-07
+          },
+          {
+            "lane": 100,
+            "physical_uM": {
+              "E": 7.5378865003585815,
+              "ES": 2.462114095687866,
+              "S": 77.85519123077393,
+              "P": 19.682689905166626
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 4.214684851089403e-08,
+            "substrate_distance": -2.753020616481904e-07
+          },
+          {
+            "lane": 101,
+            "physical_uM": {
+              "E": 7.64098584651947,
+              "ES": 2.35901415348053,
+              "S": 77.85762310028076,
+              "P": 19.783366918563843
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 2.408893039421666e-07
+          },
+          {
+            "lane": 102,
+            "physical_uM": {
+              "E": 7.585961222648621,
+              "ES": 2.4140386283397675,
+              "S": 77.72311210632324,
+              "P": 19.862854480743408
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 3.0111162992770824e-07
+          },
+          {
+            "lane": 103,
+            "physical_uM": {
+              "E": 7.467779517173767,
+              "ES": 2.532220780849457,
+              "S": 77.89486885070801,
+              "P": 19.572906494140625
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -2.236829250891547e-07
+          },
+          {
+            "lane": 104,
+            "physical_uM": {
+              "E": 7.527552247047424,
+              "ES": 2.472447454929352,
+              "S": 77.40140914916992,
+              "P": 20.126147270202637
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 2.236829250891547e-07
+          },
+          {
+            "lane": 105,
+            "physical_uM": {
+              "E": 7.602638602256775,
+              "ES": 2.397361248731613,
+              "S": 77.98645496368408,
+              "P": 19.61618661880493
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 1.6346059910361305e-07
+          },
+          {
+            "lane": 106,
+            "physical_uM": {
+              "E": 7.526111006736755,
+              "ES": 2.4738889932632446,
+              "S": 77.6343584060669,
+              "P": 19.891743659973145
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": -5.16191365590357e-07
+          },
+          {
+            "lane": 107,
+            "physical_uM": {
+              "E": 7.525716423988342,
+              "ES": 2.4742840230464935,
+              "S": 77.50540256500244,
+              "P": 20.02030849456787
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 3.161013638317052e-08,
+            "substrate_distance": -2.839052510746963e-07
+          },
+          {
+            "lane": 108,
+            "physical_uM": {
+              "E": 7.662796974182129,
+              "ES": 2.337203174829483,
+              "S": 77.72942543029785,
+              "P": 19.933364391326904
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 1.0536712127723507e-08,
+            "substrate_distance": -4.0434990304577965e-07
+          },
+          {
+            "lane": 109,
+            "physical_uM": {
+              "E": 7.555882930755615,
+              "ES": 2.444116771221161,
+              "S": 78.01653861999512,
+              "P": 19.539350271224976
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 3.269211982072261e-07
+          },
+          {
+            "lane": 110,
+            "physical_uM": {
+              "E": 7.687414288520813,
+              "ES": 2.312585711479187,
+              "S": 77.62235641479492,
+              "P": 20.065059661865234
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 1.032382731180714e-07
+          },
+          {
+            "lane": 111,
+            "physical_uM": {
+              "E": 7.426475882530212,
+              "ES": 2.5735244154930115,
+              "S": 77.68884658813477,
+              "P": 19.737621545791626
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -4.301594713252975e-07
+          },
+          {
+            "lane": 112,
+            "physical_uM": {
+              "E": 7.682093977928162,
+              "ES": 2.3179057240486145,
+              "S": 78.00186157226562,
+              "P": 19.68023657798767
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 2.236829250891547e-07
+          },
+          {
+            "lane": 113,
+            "physical_uM": {
+              "E": 7.54647433757782,
+              "ES": 2.45352566242218,
+              "S": 77.98971652984619,
+              "P": 19.556764364242554
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 3.785403347662618e-07
+          },
+          {
+            "lane": 114,
+            "physical_uM": {
+              "E": 7.5350236892700195,
+              "ES": 2.4649763107299805,
+              "S": 77.68227577209473,
+              "P": 19.852757453918457
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 5.506041232963808e-07
+          },
+          {
+            "lane": 115,
+            "physical_uM": {
+              "E": 7.664322853088379,
+              "ES": 2.335676848888397,
+              "S": 78.2034683227539,
+              "P": 19.460864067077637
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 5.333977444433689e-07
+          },
+          {
+            "lane": 116,
+            "physical_uM": {
+              "E": 7.737529873847961,
+              "ES": 2.2624701261520386,
+              "S": 77.68301963806152,
+              "P": 20.0545072555542
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": -1.72063788530119e-07
+          },
+          {
+            "lane": 117,
+            "physical_uM": {
+              "E": 7.579447031021118,
+              "ES": 2.42055281996727,
+              "S": 77.63288497924805,
+              "P": 19.94657039642334
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 4.7317541845782724e-07
+          },
+          {
+            "lane": 118,
+            "physical_uM": {
+              "E": 7.367690205574036,
+              "ES": 2.6323100924491882,
+              "S": 77.68108367919922,
+              "P": 19.686598777770996
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -4.301594713252975e-07
+          },
+          {
+            "lane": 119,
+            "physical_uM": {
+              "E": 7.612327337265015,
+              "ES": 2.3876725137233734,
+              "S": 77.88295269012451,
+              "P": 19.729379415512085
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 2.6669887222168447e-07
+          },
+          {
+            "lane": 120,
+            "physical_uM": {
+              "E": 7.758398056030273,
+              "ES": 2.2416016459465027,
+              "S": 77.64644145965576,
+              "P": 20.111961364746094
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 2.580956827951785e-07
+          },
+          {
+            "lane": 121,
+            "physical_uM": {
+              "E": 7.440968155860901,
+              "ES": 2.5590315461158752,
+              "S": 77.77905941009521,
+              "P": 19.661916494369507
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 4.301594713252975e-07
+          },
+          {
+            "lane": 122,
+            "physical_uM": {
+              "E": 7.617934346199036,
+              "ES": 2.3820659518241882,
+              "S": 77.97928810119629,
+              "P": 19.638638496398926
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -4.301594713252975e-07
+          },
+          {
+            "lane": 123,
+            "physical_uM": {
+              "E": 7.65496551990509,
+              "ES": 2.3450343310832977,
+              "S": 77.87075996398926,
+              "P": 19.784198999404907
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": -3.8714352419276774e-07
+          },
+          {
+            "lane": 124,
+            "physical_uM": {
+              "E": 7.676515579223633,
+              "ES": 2.3234841227531433,
+              "S": 77.86294460296631,
+              "P": 19.813579320907593
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 4.645722290313213e-07
+          },
+          {
+            "lane": 125,
+            "physical_uM": {
+              "E": 7.597835063934326,
+              "ES": 2.40216463804245,
+              "S": 77.97618389129639,
+              "P": 19.621652364730835
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 5.16191365590357e-08
+          },
+          {
+            "lane": 126,
+            "physical_uM": {
+              "E": 7.647570967674255,
+              "ES": 2.3524291813373566,
+              "S": 77.62458801269531,
+              "P": 20.02297878265381
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 1.0536712127723507e-08,
+            "substrate_distance": -2.3228611451566064e-07
+          },
+          {
+            "lane": 127,
+            "physical_uM": {
+              "E": 7.636475563049316,
+              "ES": 2.3635241389274597,
+              "S": 77.74227619171143,
+              "P": 19.894200563430786
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 5.16191365590357e-08
+          },
+          {
+            "lane": 128,
+            "physical_uM": {
+              "E": 7.627745270729065,
+              "ES": 2.372254431247711,
+              "S": 77.7606725692749,
+              "P": 19.86708164215088
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 4.989849867373451e-07
+          },
+          {
+            "lane": 129,
+            "physical_uM": {
+              "E": 7.684813141822815,
+              "ES": 2.315186560153961,
+              "S": 77.69789695739746,
+              "P": 19.98692035675049
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 2.236829250891547e-07
+          },
+          {
+            "lane": 130,
+            "physical_uM": {
+              "E": 7.748734354972839,
+              "ES": 2.2512656450271606,
+              "S": 77.9209566116333,
+              "P": 19.827779531478882
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 1.032382731180714e-07
+          },
+          {
+            "lane": 131,
+            "physical_uM": {
+              "E": 7.463757395744324,
+              "ES": 2.5362426042556763,
+              "S": 77.9334545135498,
+              "P": 19.530309438705444
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 3.785403347662618e-07
+          },
+          {
+            "lane": 132,
+            "physical_uM": {
+              "E": 7.425603866577148,
+              "ES": 2.5743961334228516,
+              "S": 77.74686813354492,
+              "P": 19.67873215675354
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": -2.064765462361428e-07
+          },
+          {
+            "lane": 133,
+            "physical_uM": {
+              "E": 7.661938667297363,
+              "ES": 2.338061183691025,
+              "S": 78.05895805358887,
+              "P": 19.602982997894287
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 1.2904784139758926e-07
+          },
+          {
+            "lane": 134,
+            "physical_uM": {
+              "E": 7.740444540977478,
+              "ES": 2.259555459022522,
+              "S": 77.8697395324707,
+              "P": 19.87069845199585
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": -3.785403347662618e-07
+          },
+          {
+            "lane": 135,
+            "physical_uM": {
+              "E": 7.626493573188782,
+              "ES": 2.3735061287879944,
+              "S": 77.75167465209961,
+              "P": 19.874825477600098
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 3.6133395591324993e-07
+          },
+          {
+            "lane": 136,
+            "physical_uM": {
+              "E": 7.5659239292144775,
+              "ES": 2.4340757727622986,
+              "S": 78.05242538452148,
+              "P": 19.513505697250366
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 3.957467136192737e-07
+          },
+          {
+            "lane": 137,
+            "physical_uM": {
+              "E": 7.746061086654663,
+              "ES": 2.253938615322113,
+              "S": 77.92238712310791,
+              "P": 19.823678731918335
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 2.580956827951785e-07
+          },
+          {
+            "lane": 138,
+            "physical_uM": {
+              "E": 7.739763259887695,
+              "ES": 2.260236442089081,
+              "S": 78.02655696868896,
+              "P": 19.713212251663208
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 3.269211982072261e-07
+          },
+          {
+            "lane": 139,
+            "physical_uM": {
+              "E": 7.615089416503906,
+              "ES": 2.38491028547287,
+              "S": 77.68092632293701,
+              "P": 19.934169054031372
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 3.269211982072261e-07
+          },
+          {
+            "lane": 140,
+            "physical_uM": {
+              "E": 7.748246192932129,
+              "ES": 2.251753658056259,
+              "S": 77.92472839355469,
+              "P": 19.82352375984192
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 3.3552438763373206e-07
+          },
+          {
+            "lane": 141,
+            "physical_uM": {
+              "E": 7.48901903629303,
+              "ES": 2.5109824538230896,
+              "S": 77.97590255737305,
+              "P": 19.51311707496643
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 1.0536712127723507e-07,
+            "substrate_distance": 1.204446519710833e-07
+          },
+          {
+            "lane": 142,
+            "physical_uM": {
+              "E": 7.577166557312012,
+              "ES": 2.4228334426879883,
+              "S": 77.69084453582764,
+              "P": 19.88632559776306
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 2.064765462361428e-07
+          },
+          {
+            "lane": 143,
+            "physical_uM": {
+              "E": 7.591633200645447,
+              "ES": 2.408367097377777,
+              "S": 77.85183429718018,
+              "P": 19.739795923233032
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -1.548574096771071e-07
+          },
+          {
+            "lane": 144,
+            "physical_uM": {
+              "E": 7.623280882835388,
+              "ES": 2.3767197132110596,
+              "S": 77.82103538513184,
+              "P": 19.802244901657104
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 4.214684851089403e-08,
+            "substrate_distance": 0.0
+          },
+          {
+            "lane": 145,
+            "physical_uM": {
+              "E": 7.578015327453613,
+              "ES": 2.421984374523163,
+              "S": 77.59650707244873,
+              "P": 19.981513023376465
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 2.580956827951785e-07
+          },
+          {
+            "lane": 146,
+            "physical_uM": {
+              "E": 7.682793736457825,
+              "ES": 2.3172059655189514,
+              "S": 77.8253698348999,
+              "P": 19.857429265975952
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 2.925084405012023e-07
+          },
+          {
+            "lane": 147,
+            "physical_uM": {
+              "E": 7.67128050327301,
+              "ES": 2.3287197947502136,
+              "S": 77.64603614807129,
+              "P": 20.02523899078369
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -2.925084405012023e-07
+          },
+          {
+            "lane": 148,
+            "physical_uM": {
+              "E": 7.709060311317444,
+              "ES": 2.2909393906593323,
+              "S": 77.68763542175293,
+              "P": 20.02142906188965
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 2.236829250891547e-07
+          },
+          {
+            "lane": 149,
+            "physical_uM": {
+              "E": 7.624452114105225,
+              "ES": 2.3755478858947754,
+              "S": 78.13210010528564,
+              "P": 19.492344856262207
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": -4.129530924722856e-07
+          },
+          {
+            "lane": 150,
+            "physical_uM": {
+              "E": 7.5008052587509155,
+              "ES": 2.4991950392723083,
+              "S": 77.8632926940918,
+              "P": 19.637504816055298
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -4.301594713252975e-07
+          },
+          {
+            "lane": 151,
+            "physical_uM": {
+              "E": 7.788912653923035,
+              "ES": 2.2110871970653534,
+              "S": 77.96899795532227,
+              "P": 19.819921255111694
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 3.6993714533975583e-07
+          },
+          {
+            "lane": 152,
+            "physical_uM": {
+              "E": 7.5678324699401855,
+              "ES": 2.4321672320365906,
+              "S": 77.49455451965332,
+              "P": 20.073280334472656
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 1.204446519710833e-07
+          },
+          {
+            "lane": 153,
+            "physical_uM": {
+              "E": 7.6370769739151,
+              "ES": 2.362922728061676,
+              "S": 77.90328025817871,
+              "P": 19.73379611968994
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": -5.16191365590357e-08
+          },
+          {
+            "lane": 154,
+            "physical_uM": {
+              "E": 7.545113563537598,
+              "ES": 2.454886883497238,
+              "S": 77.71319389343262,
+              "P": 19.831910133361816
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 3.161013638317052e-08,
+            "substrate_distance": -5.247945550168629e-07
+          },
+          {
+            "lane": 155,
+            "physical_uM": {
+              "E": 7.638213634490967,
+              "ES": 2.361786514520645,
+              "S": 77.67492294311523,
+              "P": 19.963289499282837
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 1.0536712127723507e-08,
+            "substrate_distance": -6.022232598554165e-08
+          },
+          {
+            "lane": 156,
+            "physical_uM": {
+              "E": 7.713831067085266,
+              "ES": 2.286168783903122,
+              "S": 77.8604793548584,
+              "P": 19.853358268737793
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 3.6993714533975583e-07
+          },
+          {
+            "lane": 157,
+            "physical_uM": {
+              "E": 7.650449872016907,
+              "ES": 2.349550426006317,
+              "S": 77.50957489013672,
+              "P": 20.14087200164795
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -1.548574096771071e-07
+          },
+          {
+            "lane": 158,
+            "physical_uM": {
+              "E": 7.5036680698394775,
+              "ES": 2.4963316321372986,
+              "S": 78.02384853363037,
+              "P": 19.47981357574463
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": -3.6133395591324993e-07
+          },
+          {
+            "lane": 159,
+            "physical_uM": {
+              "E": 7.548612952232361,
+              "ES": 2.4513867497444153,
+              "S": 78.0050802230835,
+              "P": 19.543536901474
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 2.236829250891547e-07
+          },
+          {
+            "lane": 160,
+            "physical_uM": {
+              "E": 7.550202012062073,
+              "ES": 2.4497979879379272,
+              "S": 78.10787677764893,
+              "P": 19.442330598831177
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 3.097148193542142e-07
+          },
+          {
+            "lane": 161,
+            "physical_uM": {
+              "E": 7.657196521759033,
+              "ES": 2.342803180217743,
+              "S": 77.91318416595459,
+              "P": 19.74401831626892
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 3.269211982072261e-07
+          },
+          {
+            "lane": 162,
+            "physical_uM": {
+              "E": 7.657268047332764,
+              "ES": 2.3427318036556244,
+              "S": 77.6232099533081,
+              "P": 20.03406524658203
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 4.0434990304577965e-07
+          },
+          {
+            "lane": 163,
+            "physical_uM": {
+              "E": 7.546788454055786,
+              "ES": 2.45321124792099,
+              "S": 77.74811744689941,
+              "P": 19.798671007156372
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": -1.72063788530119e-08
+          },
+          {
+            "lane": 164,
+            "physical_uM": {
+              "E": 7.525290846824646,
+              "ES": 2.47470885515213,
+              "S": 77.73965835571289,
+              "P": 19.785629510879517
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": -1.892701673831309e-07
+          },
+          {
+            "lane": 165,
+            "physical_uM": {
+              "E": 7.4765545129776,
+              "ES": 2.5234454870224,
+              "S": 77.8447675704956,
+              "P": 19.631781578063965
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": -3.097148193542142e-07
+          },
+          {
+            "lane": 166,
+            "physical_uM": {
+              "E": 7.562043070793152,
+              "ES": 2.437956780195236,
+              "S": 78.04937362670898,
+              "P": 19.512676000595093
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 3.6993714533975583e-07
+          },
+          {
+            "lane": 167,
+            "physical_uM": {
+              "E": 7.3899394273757935,
+              "ES": 2.6100608706474304,
+              "S": 77.75537490844727,
+              "P": 19.634556770324707
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -4.301594713252975e-07
+          },
+          {
+            "lane": 168,
+            "physical_uM": {
+              "E": 7.601305842399597,
+              "ES": 2.398693859577179,
+              "S": 77.98112392425537,
+              "P": 19.620176553726196
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": -3.269211982072261e-07
+          },
+          {
+            "lane": 169,
+            "physical_uM": {
+              "E": 7.772094011306763,
+              "ES": 2.2279059886932373,
+              "S": 78.07141780853271,
+              "P": 19.700684547424316
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 4.817786078843332e-07
+          },
+          {
+            "lane": 170,
+            "physical_uM": {
+              "E": 7.597447037696838,
+              "ES": 2.4025535583496094,
+              "S": 77.82930374145508,
+              "P": 19.76813793182373
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 4.214684851089403e-08,
+            "substrate_distance": -2.753020616481904e-07
+          },
+          {
+            "lane": 171,
+            "physical_uM": {
+              "E": 7.560544013977051,
+              "ES": 2.439456582069397,
+              "S": 77.82849311828613,
+              "P": 19.73204493522644
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 4.214684851089403e-08,
+            "substrate_distance": -3.097148193542142e-07
+          },
+          {
+            "lane": 172,
+            "physical_uM": {
+              "E": 7.788299918174744,
+              "ES": 2.2116997838020325,
+              "S": 77.88960933685303,
+              "P": 19.89869475364685
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 2.236829250891547e-07
+          },
+          {
+            "lane": 173,
+            "physical_uM": {
+              "E": 7.678324580192566,
+              "ES": 2.32167512178421,
+              "S": 77.80516147613525,
+              "P": 19.873162508010864
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": -5.16191365590357e-08
+          },
+          {
+            "lane": 174,
+            "physical_uM": {
+              "E": 7.587207555770874,
+              "ES": 2.412792146205902,
+              "S": 78.079514503479,
+              "P": 19.507697820663452
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 2.580956827951785e-07
+          },
+          {
+            "lane": 175,
+            "physical_uM": {
+              "E": 7.470793724060059,
+              "ES": 2.5292065739631653,
+              "S": 77.58538246154785,
+              "P": 19.88540291786194
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -4.645722290313213e-07
+          },
+          {
+            "lane": 176,
+            "physical_uM": {
+              "E": 7.713049054145813,
+              "ES": 2.286951392889023,
+              "S": 77.64707088470459,
+              "P": 20.065975189208984
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 3.161013638317052e-08,
+            "substrate_distance": -1.4625422025060114e-07
+          },
+          {
+            "lane": 177,
+            "physical_uM": {
+              "E": 7.55820631980896,
+              "ES": 2.441794127225876,
+              "S": 77.75595188140869,
+              "P": 19.80225443840027
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 3.161013638317052e-08,
+            "substrate_distance": 2.580956827951785e-08
+          },
+          {
+            "lane": 178,
+            "physical_uM": {
+              "E": 7.781649827957153,
+              "ES": 2.218349874019623,
+              "S": 77.91918754577637,
+              "P": 19.862464666366577
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 1.204446519710833e-07
+          },
+          {
+            "lane": 179,
+            "physical_uM": {
+              "E": 7.492308020591736,
+              "ES": 2.507692277431488,
+              "S": 77.64533519744873,
+              "P": 19.846972227096558
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -1.72063788530119e-08
+          },
+          {
+            "lane": 180,
+            "physical_uM": {
+              "E": 7.574752569198608,
+              "ES": 2.4252474308013916,
+              "S": 78.1187105178833,
+              "P": 19.456048011779785
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 3.44127577060238e-07
+          },
+          {
+            "lane": 181,
+            "physical_uM": {
+              "E": 7.468149662017822,
+              "ES": 2.5318509340286255,
+              "S": 77.82219886779785,
+              "P": 19.645944833755493
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 4.214684851089403e-08,
+            "substrate_distance": -3.097148193542142e-07
+          },
+          {
+            "lane": 182,
+            "physical_uM": {
+              "E": 7.4699485301971436,
+              "ES": 2.5300511717796326,
+              "S": 77.93612957000732,
+              "P": 19.53381896018982
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": -1.72063788530119e-08
+          },
+          {
+            "lane": 183,
+            "physical_uM": {
+              "E": 7.606624364852905,
+              "ES": 2.393375486135483,
+              "S": 77.69151210784912,
+              "P": 19.915117025375366
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 2.6669887222168447e-07
+          },
+          {
+            "lane": 184,
+            "physical_uM": {
+              "E": 7.593278288841248,
+              "ES": 2.4067220091819763,
+              "S": 77.6170015335083,
+              "P": 19.976269006729126
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -4.301594713252975e-07
+          },
+          {
+            "lane": 185,
+            "physical_uM": {
+              "E": 7.5031304359436035,
+              "ES": 2.4968698620796204,
+              "S": 77.64762878417969,
+              "P": 19.85549569129944
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -3.269211982072261e-07
+          },
+          {
+            "lane": 186,
+            "physical_uM": {
+              "E": 7.650043964385986,
+              "ES": 2.3499563336372375,
+              "S": 77.55964279174805,
+              "P": 20.090394020080566
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -3.957467136192737e-07
+          },
+          {
+            "lane": 187,
+            "physical_uM": {
+              "E": 7.662346363067627,
+              "ES": 2.337653934955597,
+              "S": 77.66175270080566,
+              "P": 20.000591278076172
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -1.204446519710833e-07
+          },
+          {
+            "lane": 188,
+            "physical_uM": {
+              "E": 7.687457203865051,
+              "ES": 2.3125427961349487,
+              "S": 77.92273044586182,
+              "P": 19.764732122421265
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 3.097148193542142e-07
+          },
+          {
+            "lane": 189,
+            "physical_uM": {
+              "E": 7.708685398101807,
+              "ES": 2.2913143038749695,
+              "S": 77.69282817840576,
+              "P": 20.015861988067627
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 2.580956827951785e-07
+          },
+          {
+            "lane": 190,
+            "physical_uM": {
+              "E": 7.627826929092407,
+              "ES": 2.372172921895981,
+              "S": 78.06312561035156,
+              "P": 19.564701318740845
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": -8.60318942650595e-09
+          },
+          {
+            "lane": 191,
+            "physical_uM": {
+              "E": 7.572953104972839,
+              "ES": 2.4270474910736084,
+              "S": 77.74593830108643,
+              "P": 19.827009439468384
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 4.214684851089403e-08,
+            "substrate_distance": -2.753020616481904e-07
+          },
+          {
+            "lane": 192,
+            "physical_uM": {
+              "E": 7.64410674571991,
+              "ES": 2.3558929562568665,
+              "S": 77.64862537384033,
+              "P": 19.995484352111816
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 1.548574096771071e-07
+          },
+          {
+            "lane": 193,
+            "physical_uM": {
+              "E": 7.688794136047363,
+              "ES": 2.3112061619758606,
+              "S": 77.53569602966309,
+              "P": 20.153093338012695
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -2.580956827951785e-07
+          },
+          {
+            "lane": 194,
+            "physical_uM": {
+              "E": 7.625269889831543,
+              "ES": 2.374730110168457,
+              "S": 77.90163516998291,
+              "P": 19.72363591194153
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 6.88255154120476e-08
+          },
+          {
+            "lane": 195,
+            "physical_uM": {
+              "E": 7.5709110498428345,
+              "ES": 2.4290886521339417,
+              "S": 77.62654304504395,
+              "P": 19.94437575340271
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 4.301594713252975e-07
+          },
+          {
+            "lane": 196,
+            "physical_uM": {
+              "E": 7.6424044370651245,
+              "ES": 2.3575952649116516,
+              "S": 77.86774635314941,
+              "P": 19.774653911590576
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": -2.580956827951785e-07
+          },
+          {
+            "lane": 197,
+            "physical_uM": {
+              "E": 7.7096158266067505,
+              "ES": 2.2903841733932495,
+              "S": 77.75486946105957,
+              "P": 19.954752922058105
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 3.785403347662618e-07
+          },
+          {
+            "lane": 198,
+            "physical_uM": {
+              "E": 7.557802200317383,
+              "ES": 2.4421975016593933,
+              "S": 77.77888774871826,
+              "P": 19.778923988342285
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 5.333977444433689e-07
+          },
+          {
+            "lane": 199,
+            "physical_uM": {
+              "E": 7.541174292564392,
+              "ES": 2.458825707435608,
+              "S": 77.6287841796875,
+              "P": 19.91238236427307
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": -4.473658501783094e-07
+          },
+          {
+            "lane": 200,
+            "physical_uM": {
+              "E": 7.616172432899475,
+              "ES": 2.383827418088913,
+              "S": 77.84500122070312,
+              "P": 19.77117896080017
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 4.387626607518035e-07
+          },
+          {
+            "lane": 201,
+            "physical_uM": {
+              "E": 7.4853914976119995,
+              "ES": 2.5146090984344482,
+              "S": 77.56141662597656,
+              "P": 19.923969507217407
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 4.214684851089403e-08,
+            "substrate_distance": -2.753020616481904e-07
+          },
+          {
+            "lane": 202,
+            "physical_uM": {
+              "E": 7.530609965324402,
+              "ES": 2.469390034675598,
+              "S": 77.63041496276855,
+              "P": 19.9001944065094
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": -3.44127577060238e-08
+          },
+          {
+            "lane": 203,
+            "physical_uM": {
+              "E": 7.598992586135864,
+              "ES": 2.401007115840912,
+              "S": 77.7718734741211,
+              "P": 19.82711911201477
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": -1.72063788530119e-08
+          },
+          {
+            "lane": 204,
+            "physical_uM": {
+              "E": 7.478408217430115,
+              "ES": 2.521592378616333,
+              "S": 77.65842914581299,
+              "P": 19.819971323013306
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 4.214684851089403e-08,
+            "substrate_distance": -4.129530924722856e-07
+          },
+          {
+            "lane": 205,
+            "physical_uM": {
+              "E": 7.685730457305908,
+              "ES": 2.314269244670868,
+              "S": 77.91402339935303,
+              "P": 19.77171301841736
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 3.269211982072261e-07
+          },
+          {
+            "lane": 206,
+            "physical_uM": {
+              "E": 7.520195841789246,
+              "ES": 2.479804754257202,
+              "S": 77.84567356109619,
+              "P": 19.674516916275024
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 4.214684851089403e-08,
+            "substrate_distance": -2.753020616481904e-07
+          },
+          {
+            "lane": 207,
+            "physical_uM": {
+              "E": 7.490147948265076,
+              "ES": 2.509852349758148,
+              "S": 77.72429943084717,
+              "P": 19.76584792137146
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -1.72063788530119e-08
+          },
+          {
+            "lane": 208,
+            "physical_uM": {
+              "E": 7.606409788131714,
+              "ES": 2.393590360879898,
+              "S": 78.04224491119385,
+              "P": 19.564156532287598
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 1.0536712127723507e-08,
+            "substrate_distance": -4.7317541845782724e-07
+          },
+          {
+            "lane": 209,
+            "physical_uM": {
+              "E": 7.558717131614685,
+              "ES": 2.441282570362091,
+              "S": 77.93280601501465,
+              "P": 19.625916481018066
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 2.925084405012023e-07
+          },
+          {
+            "lane": 210,
+            "physical_uM": {
+              "E": 7.597207427024841,
+              "ES": 2.4027925729751587,
+              "S": 77.83862590789795,
+              "P": 19.758576154708862
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": -3.097148193542142e-07
+          },
+          {
+            "lane": 211,
+            "physical_uM": {
+              "E": 7.576356530189514,
+              "ES": 2.423643320798874,
+              "S": 77.66256332397461,
+              "P": 19.913796186447144
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 1.6346059910361305e-07
+          },
+          {
+            "lane": 212,
+            "physical_uM": {
+              "E": 7.6398420333862305,
+              "ES": 2.3601576685905457,
+              "S": 77.8416109085083,
+              "P": 19.798234701156616
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 1.892701673831309e-07
+          },
+          {
+            "lane": 213,
+            "physical_uM": {
+              "E": 7.522628903388977,
+              "ES": 2.477370798587799,
+              "S": 77.72610187530518,
+              "P": 19.79651927947998
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": -4.645722290313213e-07
+          },
+          {
+            "lane": 214,
+            "physical_uM": {
+              "E": 7.5598931312561035,
+              "ES": 2.4401065707206726,
+              "S": 77.48451709747314,
+              "P": 20.075383186340332
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 3.957467136192737e-07
+          },
+          {
+            "lane": 215,
+            "physical_uM": {
+              "E": 7.433081269264221,
+              "ES": 2.5669193267822266,
+              "S": 77.72954940795898,
+              "P": 19.703526496887207
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 4.214684851089403e-08,
+            "substrate_distance": -2.753020616481904e-07
+          },
+          {
+            "lane": 216,
+            "physical_uM": {
+              "E": 7.63846755027771,
+              "ES": 2.36153244972229,
+              "S": 77.65539646148682,
+              "P": 19.983075857162476
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 2.753020616481904e-07
+          },
+          {
+            "lane": 217,
+            "physical_uM": {
+              "E": 7.440937757492065,
+              "ES": 2.5590622425079346,
+              "S": 77.7023696899414,
+              "P": 19.738565683364868
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": -1.376510308240952e-07
+          },
+          {
+            "lane": 218,
+            "physical_uM": {
+              "E": 7.57337212562561,
+              "ES": 2.4266277253627777,
+              "S": 77.60007381439209,
+              "P": 19.973294734954834
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": -2.1507973566264876e-07
+          },
+          {
+            "lane": 219,
+            "physical_uM": {
+              "E": 7.500300407409668,
+              "ES": 2.499699741601944,
+              "S": 77.95600414276123,
+              "P": 19.54429268836975
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 1.0536712127723507e-08,
+            "substrate_distance": -1.9787335680963685e-07
+          },
+          {
+            "lane": 220,
+            "physical_uM": {
+              "E": 7.541284561157227,
+              "ES": 2.4587155878543854,
+              "S": 77.83055782318115,
+              "P": 19.71072554588318
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 1.0536712127723507e-08,
+            "substrate_distance": -6.022232598554165e-08
+          },
+          {
+            "lane": 221,
+            "physical_uM": {
+              "E": 7.581389546394348,
+              "ES": 2.418610602617264,
+              "S": 77.76026248931885,
+              "P": 19.82113242149353
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 1.0536712127723507e-08,
+            "substrate_distance": 3.1831800878072015e-07
+          },
+          {
+            "lane": 222,
+            "physical_uM": {
+              "E": 7.753627300262451,
+              "ES": 2.246372401714325,
+              "S": 78.06001663208008,
+              "P": 19.69361662864685
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 3.269211982072261e-07
+          },
+          {
+            "lane": 223,
+            "physical_uM": {
+              "E": 7.5684428215026855,
+              "ES": 2.4315570294857025,
+              "S": 77.59501934051514,
+              "P": 19.973424673080444
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 6.022232598554165e-08
+          },
+          {
+            "lane": 224,
+            "physical_uM": {
+              "E": 7.508456707000732,
+              "ES": 2.4915437400341034,
+              "S": 77.69201755523682,
+              "P": 19.81643319129944
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 3.161013638317052e-08,
+            "substrate_distance": -3.1831800878072015e-07
+          },
+          {
+            "lane": 225,
+            "physical_uM": {
+              "E": 7.795000672340393,
+              "ES": 2.204999029636383,
+              "S": 77.92411804199219,
+              "P": 19.870883226394653
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 1.72063788530119e-08
+          },
+          {
+            "lane": 226,
+            "physical_uM": {
+              "E": 7.702012658119202,
+              "ES": 2.2979873418807983,
+              "S": 77.85027503967285,
+              "P": 19.85174536705017
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 4.473658501783094e-07
+          },
+          {
+            "lane": 227,
+            "physical_uM": {
+              "E": 7.6665496826171875,
+              "ES": 2.3334503173828125,
+              "S": 77.74279594421387,
+              "P": 19.923758506774902
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 2.753020616481904e-07
+          },
+          {
+            "lane": 228,
+            "physical_uM": {
+              "E": 7.5136250257492065,
+              "ES": 2.4863746762275696,
+              "S": 77.86774635314941,
+              "P": 19.645885229110718
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 3.6133395591324993e-07
+          },
+          {
+            "lane": 229,
+            "physical_uM": {
+              "E": 7.6173996925354,
+              "ES": 2.3826003074645996,
+              "S": 77.5576114654541,
+              "P": 20.05979061126709
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 1.376510308240952e-07
+          },
+          {
+            "lane": 230,
+            "physical_uM": {
+              "E": 7.6127296686172485,
+              "ES": 2.3872700333595276,
+              "S": 77.62456893920898,
+              "P": 19.98816728591919
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 3.6133395591324993e-07
+          },
+          {
+            "lane": 231,
+            "physical_uM": {
+              "E": 7.494776248931885,
+              "ES": 2.505224049091339,
+              "S": 77.47926235198975,
+              "P": 20.015511512756348
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -1.204446519710833e-07
+          },
+          {
+            "lane": 232,
+            "physical_uM": {
+              "E": 7.7049559354782104,
+              "ES": 2.2950442135334015,
+              "S": 78.1890869140625,
+              "P": 19.51586365699768
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 1.0536712127723507e-08,
+            "substrate_distance": -3.0111162992770824e-07
+          },
+          {
+            "lane": 233,
+            "physical_uM": {
+              "E": 7.639829516410828,
+              "ES": 2.36017107963562,
+              "S": 78.01702499389648,
+              "P": 19.622797966003418
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 4.214684851089403e-08,
+            "substrate_distance": -3.44127577060238e-07
+          },
+          {
+            "lane": 234,
+            "physical_uM": {
+              "E": 7.5115966796875,
+              "ES": 2.4884033203125,
+              "S": 77.66115188598633,
+              "P": 19.850449562072754
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 2.753020616481904e-07
+          },
+          {
+            "lane": 235,
+            "physical_uM": {
+              "E": 7.620251774787903,
+              "ES": 2.3797479271888733,
+              "S": 77.7442216873169,
+              "P": 19.876034259796143
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 2.236829250891547e-07
+          },
+          {
+            "lane": 236,
+            "physical_uM": {
+              "E": 7.618351578712463,
+              "ES": 2.3816485702991486,
+              "S": 78.15063953399658,
+              "P": 19.467720985412598
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 1.0536712127723507e-08,
+            "substrate_distance": 5.247945550168629e-07
+          },
+          {
+            "lane": 237,
+            "physical_uM": {
+              "E": 7.817318439483643,
+              "ES": 2.1826814115047455,
+              "S": 77.82562255859375,
+              "P": 19.991697072982788
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 6.022232598554165e-08
+          },
+          {
+            "lane": 238,
+            "physical_uM": {
+              "E": 7.7097487449646,
+              "ES": 2.2902511060237885,
+              "S": 77.78219223022461,
+              "P": 19.927563667297363
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 4.0434990304577965e-07
+          },
+          {
+            "lane": 239,
+            "physical_uM": {
+              "E": 7.5997233390808105,
+              "ES": 2.4002766609191895,
+              "S": 78.12388896942139,
+              "P": 19.47583556175232
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 6.88255154120476e-08
+          },
+          {
+            "lane": 240,
+            "physical_uM": {
+              "E": 7.624309659004211,
+              "ES": 2.3756903409957886,
+              "S": 77.93356418609619,
+              "P": 19.690746068954468
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 3.44127577060238e-08
+          },
+          {
+            "lane": 241,
+            "physical_uM": {
+              "E": 7.628028988838196,
+              "ES": 2.3719707131385803,
+              "S": 77.92687892913818,
+              "P": 19.701151847839355
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 8.60318942650595e-08
+          },
+          {
+            "lane": 242,
+            "physical_uM": {
+              "E": 7.7295982837677,
+              "ES": 2.270401567220688,
+              "S": 77.73547649383545,
+              "P": 19.99413013458252
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": 4.7317541845782724e-07
+          },
+          {
+            "lane": 243,
+            "physical_uM": {
+              "E": 7.777148485183716,
+              "ES": 2.2228512167930603,
+              "S": 77.788987159729,
+              "P": 19.988168478012085
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 3.957467136192737e-07
+          },
+          {
+            "lane": 244,
+            "physical_uM": {
+              "E": 7.739534378051758,
+              "ES": 2.2604653239250183,
+              "S": 78.13064575195312,
+              "P": 19.60889220237732
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 1.892701673831309e-07
+          },
+          {
+            "lane": 245,
+            "physical_uM": {
+              "E": 7.498278021812439,
+              "ES": 2.501721978187561,
+              "S": 77.59560108184814,
+              "P": 19.90268111228943
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": 2.408893039421666e-07
+          },
+          {
+            "lane": 246,
+            "physical_uM": {
+              "E": 7.848392724990845,
+              "ES": 2.1516069769859314,
+              "S": 77.93513298034668,
+              "P": 19.913266897201538
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 3.957467136192737e-07
+          },
+          {
+            "lane": 247,
+            "physical_uM": {
+              "E": 7.474109530448914,
+              "ES": 2.5258904695510864,
+              "S": 77.8738021850586,
+              "P": 19.600300788879395
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 0.0,
+            "substrate_distance": -3.785403347662618e-07
+          },
+          {
+            "lane": 248,
+            "physical_uM": {
+              "E": 7.499009966850281,
+              "ES": 2.500990629196167,
+              "S": 77.76534080505371,
+              "P": 19.733662605285645
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 4.214684851089403e-08,
+            "substrate_distance": -3.44127577060238e-07
+          },
+          {
+            "lane": 249,
+            "physical_uM": {
+              "E": 7.541841268539429,
+              "ES": 2.458159029483795,
+              "S": 77.75171279907227,
+              "P": 19.79012131690979
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": -3.957467136192737e-07
+          },
+          {
+            "lane": 250,
+            "physical_uM": {
+              "E": 7.571669220924377,
+              "ES": 2.4283304810523987,
+              "S": 77.76510238647461,
+              "P": 19.806567430496216
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 1.72063788530119e-08
+          },
+          {
+            "lane": 251,
+            "physical_uM": {
+              "E": 7.627657651901245,
+              "ES": 2.372342050075531,
+              "S": 77.82052993774414,
+              "P": 19.807132482528687
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 2.580956827951785e-07
+          },
+          {
+            "lane": 252,
+            "physical_uM": {
+              "E": 7.638201713562012,
+              "ES": 2.3617981374263763,
+              "S": 77.7369499206543,
+              "P": 19.901251792907715
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": -8.60318942650595e-09
+          },
+          {
+            "lane": 253,
+            "physical_uM": {
+              "E": 7.533127665519714,
+              "ES": 2.4668721854686737,
+              "S": 77.42375373840332,
+              "P": 20.10936975479126
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -1.0536712127723507e-08,
+            "substrate_distance": -2.4949249336867256e-07
+          },
+          {
+            "lane": 254,
+            "physical_uM": {
+              "E": 7.649034857749939,
+              "ES": 2.350965589284897,
+              "S": 78.10362815856934,
+              "P": 19.545398950576782
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 3.161013638317052e-08,
+            "substrate_distance": -4.2155628189879156e-07
+          },
+          {
+            "lane": 255,
+            "physical_uM": {
+              "E": 7.625748515129089,
+              "ES": 2.3742511868476868,
+              "S": 78.07062149047852,
+              "P": 19.555134773254395
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": -2.1073424255447014e-08,
+            "substrate_distance": 4.301594713252975e-07
+          },
+          {
+            "lane": 256,
+            "physical_uM": {
+              "E": 7.5614893436431885,
+              "ES": 2.4385109543800354,
+              "S": 77.99847602844238,
+              "P": 19.563013315200806
+            },
+            "oracle_feasible": true,
+            "enzyme_distance": 2.1073424255447014e-08,
+            "substrate_distance": 1.72063788530119e-08
+          }
+        ]
+      }
+    },
+    {
+      "run": "buffer_design_live",
+      "checkpoint": "output\\domain_kernel_2026-09-24\\buffer_design_live\\epoch-000128.dwk",
+      "checkpoint_sha256": "d69a1052ee8b45e13ffe1a41bf0f98031b9c7a05b3e2843de52bb30e8c09ceaf",
+      "runtime_binary_sha256": "6a682fede4bb7e4437b75754583411fa2509070699a52ccb2e3a280260d76bd0",
+      "count": 257,
+      "final_epoch": 128,
+      "CPU_GPU_verified_epochs": 32,
+      "CPU_GPU_all_trace_bitwise_equal": true,
+      "CPU_GPU_aggregate_bitwise_mismatches": 0,
+      "validation_layers_enabled_in_this_run": false,
+      "raw_protected_law_bytes_unchanged": true,
+      "declared_JSON_laws_feasible_states": 257,
+      "declared_JSON_laws_all_feasible": true,
+      "tolerance": 2e-05,
+      "max_violation_original_JSON_coefficients": 2.0230487284444086e-07,
+      "per_law_original_JSON": {
+        "pH_7_to_7point4_with_pKa_7point2": {
+          "max_violation": 2.0230487284444086e-07,
+          "violating_states": 0
+        },
+        "acid_log_activity_design_range": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "base_log_activity_design_range": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "unused_coordinate_0": {
+          "max_violation": 1.8427013148738914e-38,
+          "violating_states": 0
+        },
+        "unused_coordinate_1": {
+          "max_violation": 1.8410943057950037e-38,
+          "violating_states": 0
+        }
+      }
+    },
+    {
+      "run": "resource_allocation_live",
+      "checkpoint": "output\\domain_kernel_2026-09-24\\resource_allocation_live\\epoch-000128.dwk",
+      "checkpoint_sha256": "cb387d68c53f61205f919e1a09f72732bd7fbe587e9e143e4c44faf4188346e2",
+      "runtime_binary_sha256": "6a682fede4bb7e4437b75754583411fa2509070699a52ccb2e3a280260d76bd0",
+      "count": 257,
+      "final_epoch": 128,
+      "CPU_GPU_verified_epochs": 32,
+      "CPU_GPU_all_trace_bitwise_equal": true,
+      "CPU_GPU_aggregate_bitwise_mismatches": 0,
+      "validation_layers_enabled_in_this_run": false,
+      "raw_protected_law_bytes_unchanged": true,
+      "declared_JSON_laws_feasible_states": 257,
+      "declared_JSON_laws_all_feasible": true,
+      "tolerance": 2e-05,
+      "max_violation_original_JSON_coefficients": 5.960464477539062e-07,
+      "per_law_original_JSON": {
+        "total_budget_10GiB": {
+          "max_violation": 5.960464477539062e-07,
+          "violating_states": 0
+        },
+        "state_minimum_3GiB": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "operator_minimum_2GiB": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "scratch_minimum_1GiB": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "staging_minimum_1GiB": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "state_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "operator_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "scratch_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "staging_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        }
+      }
+    },
+    {
+      "run": "metabolic_flux_live",
+      "checkpoint": "output\\domain_kernel_2026-09-24\\metabolic_flux_live\\epoch-000128.dwk",
+      "checkpoint_sha256": "a9554ca05c1b65331d0da42a4d23bd3611bbbdaa3e7aceb8031ec3d6ba1e9e88",
+      "runtime_binary_sha256": "6a682fede4bb7e4437b75754583411fa2509070699a52ccb2e3a280260d76bd0",
+      "count": 257,
+      "final_epoch": 128,
+      "CPU_GPU_verified_epochs": 32,
+      "CPU_GPU_all_trace_bitwise_equal": true,
+      "CPU_GPU_aggregate_bitwise_mismatches": 0,
+      "validation_layers_enabled_in_this_run": false,
+      "raw_protected_law_bytes_unchanged": true,
+      "declared_JSON_laws_feasible_states": 257,
+      "declared_JSON_laws_all_feasible": true,
+      "tolerance": 2e-05,
+      "max_violation_original_JSON_coefficients": 6.88255154120476e-08,
+      "per_law_original_JSON": {
+        "internal_pool_X_steady_balance": {
+          "max_violation": 6.88255154120476e-08,
+          "violating_states": 0
+        },
+        "internal_pool_Y_steady_balance": {
+          "max_violation": 5.16191365590357e-08,
+          "violating_states": 0
+        },
+        "inlet_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "branch_A_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "branch_B_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "outlet_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "inlet_capacity_10": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "branch_A_capacity_8": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "branch_B_capacity_6": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "outlet_capacity_10": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "branch_B_minimum_3": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        }
+      }
+    }
+  ],
+  "observations": [
+    "Every completed run independently satisfies its original authored double-precision JSON constraints at the declared normalized tolerance, not only the packed FP32 coefficients.",
+    "The four run verification segments compare all words bitwise, but do not cover every subsequent final epoch.",
+    "Validation layers were disabled in these initial run verifications; their zero message counters are not layer evidence.",
+    "Protected law records are byte-identical from initial to final.",
+    "Domain projection/order and metric laws are native, while mutable situated op30 controls bounded relaxation. The coupled solver does not establish fully geometrically self-defined computation."
+  ]
+}

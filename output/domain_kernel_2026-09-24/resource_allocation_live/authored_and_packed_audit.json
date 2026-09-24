@@ -1,0 +1,129 @@
+{
+  "epoch": 128,
+  "count": 257,
+  "feasible_states": 257,
+  "all_feasible": true,
+  "packed_feasible_states": 257,
+  "authored_feasible_states": 257,
+  "authored_max_violation": 5.960464477539062e-07,
+  "authored_per_constraint": {
+    "total_budget_10GiB": {
+      "max_violation": 5.960464477539062e-07,
+      "violating_states": 0
+    },
+    "state_minimum_3GiB": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "operator_minimum_2GiB": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "scratch_minimum_1GiB": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "staging_minimum_1GiB": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "state_nonnegative": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "operator_nonnegative": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "scratch_nonnegative": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "staging_nonnegative": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    }
+  },
+  "max_violation": 5.960464477539062e-07,
+  "mean_max_violation": 1.3057359925503862e-07,
+  "tolerance": 2e-05,
+  "per_constraint": {
+    "total_budget_10GiB": {
+      "max_violation": 5.960464477539062e-07,
+      "violating_states": 0
+    },
+    "state_minimum_3GiB": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "operator_minimum_2GiB": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "scratch_minimum_1GiB": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "staging_minimum_1GiB": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "state_nonnegative": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "operator_nonnegative": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "scratch_nonnegative": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "staging_nonnegative": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    }
+  },
+  "lane_zero": {
+    "normalized": [
+      4.0,
+      3.000000238418579,
+      2.000000238418579,
+      1.0000003576278687
+    ],
+    "physical": {
+      "state_pool": 4.0,
+      "operator_pool": 3.000000238418579,
+      "scratch_pool": 2.000000238418579,
+      "staging_pool": 1.0000003576278687
+    },
+    "signed_distances": {
+      "total_budget_10GiB": 4.172325134277344e-07,
+      "state_minimum_3GiB": -1.0,
+      "operator_minimum_2GiB": -1.000000238418579,
+      "scratch_minimum_1GiB": -1.000000238418579,
+      "staging_minimum_1GiB": -3.5762786865234375e-07,
+      "state_nonnegative": -4.0,
+      "operator_nonnegative": -3.000000238418579,
+      "scratch_nonnegative": -2.000000238418579,
+      "staging_nonnegative": -1.0000003576278687
+    },
+    "authored_signed_distances": {
+      "total_budget_10GiB": 4.172325134277344e-07,
+      "state_minimum_3GiB": -1.0,
+      "operator_minimum_2GiB": -1.000000238418579,
+      "scratch_minimum_1GiB": -1.000000238418579,
+      "staging_minimum_1GiB": -3.5762786865234375e-07,
+      "state_nonnegative": -4.0,
+      "operator_nonnegative": -3.000000238418579,
+      "scratch_nonnegative": -2.000000238418579,
+      "staging_nonnegative": -1.0000003576278687
+    },
+    "max_violation": 4.172325134277344e-07,
+    "authored_max_violation": 4.172325134277344e-07
+  },
+  "constraint_record_sha256": "472530076685f25a10135f4dcd074b88b0350af3ce47db3e9a25b63e8d4e9665",
+  "core_operator_sha256": "4847a04fdc1a76641d6bfe9752a5b262b6157cbd73540712dcd84dcc15bdf758",
+  "state_sha256": "c08fe3ed335045f046e0e09117b7bed788b9d778d5fd12e1e93254367665ba7a"
+}

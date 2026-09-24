@@ -1,0 +1,19 @@
+{
+  "id": "20260924-143217-7bb33109",
+  "status": "completed",
+  "progress": 1.0,
+  "message": "Complete returned states compared; reports and checkpoints are ready",
+  "created_at": "2026-09-24T12:32:17.945937+00:00",
+  "result_url": "/runs/20260924-143217-7bb33109/result.json",
+  "label": "compare / 257 states",
+  "request": {
+    "count": 257,
+    "epochs": 16,
+    "stride": 4,
+    "mode": "compare",
+    "operator_index": 30,
+    "program": "0x00000342",
+    "shift_u": 0.2,
+    "shift_v": 0.1
+  }
+}

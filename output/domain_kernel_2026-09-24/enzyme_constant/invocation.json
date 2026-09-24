@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "local_lab/specialize.py",
+    "--example",
+    "enzyme_repair",
+    "--controller",
+    "constant",
+    "--count",
+    "257",
+    "--epochs",
+    "16",
+    "--stride",
+    "4",
+    "--verify-steps",
+    "8",
+    "--output",
+    "output/domain_kernel_2026-09-24/enzyme_constant"
+  ],
+  "profile": "DWI-D1-0.1",
+  "controller": "constant",
+  "seed": 756,
+  "source_definition": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\domain_knowledge\\native\\enzyme_repair.json"
+}

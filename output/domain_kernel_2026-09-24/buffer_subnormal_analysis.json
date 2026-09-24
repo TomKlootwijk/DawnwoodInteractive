@@ -1,0 +1,71 @@
+{
+  "first_epoch_with_bitwise_difference": 91,
+  "differing_state_word_counts": {
+    "18": 153,
+    "19": 83
+  },
+  "operator_records_identical": true,
+  "examples": [
+    {
+      "lane": 0,
+      "word": 18,
+      "cpu": 1.001646460741222e-38,
+      "gpu": 0.0
+    },
+    {
+      "lane": 2,
+      "word": 18,
+      "cpu": 1.0648740283604828e-38,
+      "gpu": 0.0
+    },
+    {
+      "lane": 2,
+      "word": 19,
+      "cpu": -8.308763826071996e-39,
+      "gpu": -0.0
+    },
+    {
+      "lane": 3,
+      "word": 18,
+      "cpu": 7.78741773891227e-39,
+      "gpu": 0.0
+    },
+    {
+      "lane": 4,
+      "word": 18,
+      "cpu": 1.1082547255698184e-38,
+      "gpu": 0.0
+    },
+    {
+      "lane": 5,
+      "word": 18,
+      "cpu": 9.988655839387695e-39,
+      "gpu": 0.0
+    },
+    {
+      "lane": 6,
+      "word": 18,
+      "cpu": 5.945995249016921e-39,
+      "gpu": 1.6171152434124108e-38
+    },
+    {
+      "lane": 7,
+      "word": 19,
+      "cpu": -7.354982638015488e-39,
+      "gpu": -0.0
+    },
+    {
+      "lane": 8,
+      "word": 18,
+      "cpu": 6.192710659242877e-39,
+      "gpu": 1.6857065611635677e-38
+    },
+    {
+      "lane": 9,
+      "word": 19,
+      "cpu": -7.985282483373398e-39,
+      "gpu": -0.0
+    }
+  ],
+  "interpretation": "At epoch91, all differing words are the two auxiliary domain coordinates approaching zero. GPU values are signed zero or near the minimum normal magnitude while CPU values remain subnormal, consistent with GPU intermediate flush-to-zero behavior. All operator records are identical. Existing tolerance passes; no tolerance changed."
+}

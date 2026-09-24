@@ -1,0 +1,14 @@
+{
+  "description": "Set Config.feedback=0 in the initial checkpoint; the kernel freezes the entire operator field.",
+  "source_sha256": "17623053933c1aab1940660edfe0c97f6d2a4b541d64497763054073e8ccc0eb",
+  "result_sha256": "bf2f264c7aa9ef8b4debfa70ce24232966bf0cf8e57d445fc8893bfe3ebd060a",
+  "initial_comparison": {
+    "changed_state_records": 0,
+    "changed_state_words": 0,
+    "changed_amplitude_words": 0,
+    "changed_non_amplitude_state_words": 0,
+    "changed_operator_records": 0,
+    "changed_operator_words": 0,
+    "max_absolute_state_float_difference": 0.0
+  }
+}

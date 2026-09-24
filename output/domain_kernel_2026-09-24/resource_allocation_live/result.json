@@ -1,0 +1,1167 @@
+{
+  "profile": "DWI-D1-0.1",
+  "name": "Four-pool memory allocation envelope",
+  "backend": "vulkan",
+  "binary_sha256": "6a682fede4bb7e4437b75754583411fa2509070699a52ccb2e3a280260d76bd0",
+  "controller": "live",
+  "verification": {
+    "runtime_version": "0.6.0-domain1",
+    "profile": "DWI-D1-0.1",
+    "kind": "CPU versus Vulkan every epoch, all state and operator words",
+    "config": {
+      "count": 257,
+      "operators": 40,
+      "epoch": 0,
+      "depth": 4,
+      "dt": 0.00999999978,
+      "yup": 0.000500000024,
+      "epsilon": 0.125,
+      "mutation": 1,
+      "jitter": 1,
+      "feedback": 1,
+      "phaseRate": 0.125,
+      "radialRate": 0.00999999978,
+      "historyWeight": 0.75,
+      "fieldScale": 0.00499999989,
+      "state_bytes": 128,
+      "operator_bytes": 64
+    },
+    "epochs_requested": 32,
+    "epochs_checked": 32,
+    "atol": 1e-05,
+    "rtol": 2e-05,
+    "passed": true,
+    "aggregate": {
+      "passed": true,
+      "bitwise_word_mismatches": 0,
+      "bitwise_equal": true,
+      "float_mismatches": 0,
+      "integer_mismatches": 0,
+      "nonfinite_values": 0,
+      "invalid_snapshots": 0,
+      "worst_scaled_error": 0,
+      "max_absolute_error": 0,
+      "first_mismatch": ""
+    },
+    "device": {
+      "name": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "vendor_id": 4318,
+      "device_id": 12056,
+      "api_version": 4211013,
+      "driver_version": 2479800320,
+      "software_device": false,
+      "validation_layer_enabled": false,
+      "synchronization_validation_enabled": false,
+      "validation_errors": 0,
+      "validation_warnings": 0,
+      "memory_budget_extension": true,
+      "requested_budget_fraction": 0.8,
+      "device_type": 2,
+      "states_heap_index": 0,
+      "state_buffer_heaps": [
+        0,
+        0
+      ],
+      "streamed_initialization": false,
+      "host_state_chunk_bytes": 0,
+      "state_page_capacity": 33554431,
+      "state_pages_per_buffer": 1,
+      "max_state_records": 67108862,
+      "workgroup_size": 32,
+      "state_dispatch_limit": 1048576,
+      "compute_submission_count": 32,
+      "max_submission_seconds": 0.0011097,
+      "split_evolution": false,
+      "evolution_dispatches_per_chunk": 1,
+      "evolution_scratch_record_bytes": 96,
+      "evolution_scratch_bytes": 0,
+      "evolution_scratch_allocated_bytes": 0,
+      "texture_compression_BC": true,
+      "BC5_sampled_image": true,
+      "EAC_RG11_sampled_image": false,
+      "ASTC_4x4_sampled_image": false,
+      "max_compute_shared_memory_bytes": 49152,
+      "max_storage_buffer_range": 4294967295,
+      "max_compute_workgroup_count_x": 2147483647,
+      "max_image_dimension_2d": 32768,
+      "max_memory_allocation_count": 4294967295,
+      "timestamp_valid_bits": 64,
+      "allocated_buffer_bytes": 98688,
+      "allocated_image_bytes": 40960,
+      "allocated_total_bytes": 139648,
+      "staging_bytes": 32896,
+      "allocation_count": 5,
+      "state_ping_pong_payload_bytes": 65792,
+      "operator_lut_payload_bytes": 5120,
+      "operator_lut_format": "RGBA32_UINT",
+      "operator_lut_storage": "sampled_and_storage_VkImage",
+      "operator_lut_width": 160,
+      "operator_lut_height": 1,
+      "operator_lut_texels_per_record": 4,
+      "operator_lut_point_fetch": true,
+      "operator_lut_filtering": false,
+      "operator_lut_parameter_precision_bits": 32,
+      "operator_lut_flag_word_bits": 32,
+      "operator_lut_used_orientation_mask": 1,
+      "operator_bytecode_bits_per_instruction": 4,
+      "evolve_shared_operator_records": 31,
+      "evolve_shared_operator_bytes": 1984,
+      "mutate_shared_operator_bytes": 128,
+      "permanent_texture_cache_residence_proven": false,
+      "upload_bytes": 35456,
+      "download_bytes": 1134592,
+      "completed_epochs": 32,
+      "advance_buffer_copy_commands": 0,
+      "advance_image_copy_commands": 0,
+      "timer": "Vulkan device timestamps",
+      "last_dispatch_seconds": 0.0010912,
+      "last_wall_seconds": 0.0011601,
+      "heaps": [
+        {
+          "index": 0,
+          "size": 12524191744,
+          "runtime_buffer_allocation_bytes": 65792,
+          "runtime_image_allocation_bytes": 40960,
+          "runtime_allocation_bytes": 106752,
+          "device_local": true,
+          "budget_at_start": 11718885376,
+          "usage_at_start": 324575232
+        },
+        {
+          "index": 1,
+          "size": 8279207936,
+          "runtime_buffer_allocation_bytes": 32896,
+          "runtime_image_allocation_bytes": 0,
+          "runtime_allocation_bytes": 32896,
+          "device_local": false,
+          "budget_at_start": 8697946739,
+          "usage_at_start": 12668928
+        }
+      ]
+    },
+    "trace": [
+      {
+        "epoch": 1,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 2,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 3,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 4,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 5,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 6,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 7,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 8,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 9,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 10,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 11,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 12,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 13,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 14,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 15,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 16,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 17,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 18,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 19,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 20,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 21,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 22,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 23,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 24,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 25,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 26,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 27,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 28,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 29,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 30,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 31,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 32,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      }
+    ]
+  },
+  "laws_unchanged": true,
+  "controller_field_changed": true,
+  "initial": {
+    "epoch": 0,
+    "count": 257,
+    "feasible_states": 0,
+    "all_feasible": false,
+    "max_violation": 2.296411871910095,
+    "mean_max_violation": 1.9990481349280835,
+    "tolerance": 2e-05,
+    "per_constraint": {
+      "total_budget_10GiB": {
+        "max_violation": 2.296411871910095,
+        "violating_states": 257
+      },
+      "state_minimum_3GiB": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "operator_minimum_2GiB": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "scratch_minimum_1GiB": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "staging_minimum_1GiB": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "state_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "operator_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "scratch_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "staging_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      }
+    },
+    "lane_zero": {
+      "normalized": [
+        5.0,
+        4.0,
+        3.0,
+        2.0
+      ],
+      "physical": {
+        "state_pool": 5.0,
+        "operator_pool": 4.0,
+        "scratch_pool": 3.0,
+        "staging_pool": 2.0
+      },
+      "signed_distances": {
+        "total_budget_10GiB": 2.0,
+        "state_minimum_3GiB": -2.0,
+        "operator_minimum_2GiB": -2.0,
+        "scratch_minimum_1GiB": -2.0,
+        "staging_minimum_1GiB": -1.0,
+        "state_nonnegative": -5.0,
+        "operator_nonnegative": -4.0,
+        "scratch_nonnegative": -3.0,
+        "staging_nonnegative": -2.0
+      },
+      "max_violation": 2.0
+    },
+    "constraint_record_sha256": "472530076685f25a10135f4dcd074b88b0350af3ce47db3e9a25b63e8d4e9665",
+    "core_operator_sha256": "89ec0ff5d8fe7de0eab1251422e4d5eb6fc30e640bedf82a444caf8f87bc964d",
+    "state_sha256": "337d02bb69d075ae1cd7c0b75a85604709d9a60ab219b7869184c99080cd542a"
+  },
+  "final": {
+    "epoch": 128,
+    "count": 257,
+    "feasible_states": 257,
+    "all_feasible": true,
+    "max_violation": 5.960464477539062e-07,
+    "mean_max_violation": 1.3057359925503862e-07,
+    "tolerance": 2e-05,
+    "per_constraint": {
+      "total_budget_10GiB": {
+        "max_violation": 5.960464477539062e-07,
+        "violating_states": 0
+      },
+      "state_minimum_3GiB": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "operator_minimum_2GiB": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "scratch_minimum_1GiB": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "staging_minimum_1GiB": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "state_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "operator_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "scratch_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "staging_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      }
+    },
+    "lane_zero": {
+      "normalized": [
+        4.0,
+        3.000000238418579,
+        2.000000238418579,
+        1.0000003576278687
+      ],
+      "physical": {
+        "state_pool": 4.0,
+        "operator_pool": 3.000000238418579,
+        "scratch_pool": 2.000000238418579,
+        "staging_pool": 1.0000003576278687
+      },
+      "signed_distances": {
+        "total_budget_10GiB": 4.172325134277344e-07,
+        "state_minimum_3GiB": -1.0,
+        "operator_minimum_2GiB": -1.000000238418579,
+        "scratch_minimum_1GiB": -1.000000238418579,
+        "staging_minimum_1GiB": -3.5762786865234375e-07,
+        "state_nonnegative": -4.0,
+        "operator_nonnegative": -3.000000238418579,
+        "scratch_nonnegative": -2.000000238418579,
+        "staging_nonnegative": -1.0000003576278687
+      },
+      "max_violation": 4.172325134277344e-07
+    },
+    "constraint_record_sha256": "472530076685f25a10135f4dcd074b88b0350af3ce47db3e9a25b63e8d4e9665",
+    "core_operator_sha256": "4847a04fdc1a76641d6bfe9752a5b262b6157cbd73540712dcd84dcc15bdf758",
+    "state_sha256": "c08fe3ed335045f046e0e09117b7bed788b9d778d5fd12e1e93254367665ba7a"
+  },
+  "frames": [
+    {
+      "epoch": 0,
+      "count": 257,
+      "feasible_states": 0,
+      "all_feasible": false,
+      "max_violation": 2.296411871910095,
+      "mean_max_violation": 1.9990481349280835,
+      "tolerance": 2e-05,
+      "per_constraint": {
+        "total_budget_10GiB": {
+          "max_violation": 2.296411871910095,
+          "violating_states": 257
+        },
+        "state_minimum_3GiB": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "operator_minimum_2GiB": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "scratch_minimum_1GiB": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "staging_minimum_1GiB": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "state_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "operator_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "scratch_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "staging_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        }
+      },
+      "lane_zero": {
+        "normalized": [
+          5.0,
+          4.0,
+          3.0,
+          2.0
+        ],
+        "physical": {
+          "state_pool": 5.0,
+          "operator_pool": 4.0,
+          "scratch_pool": 3.0,
+          "staging_pool": 2.0
+        },
+        "signed_distances": {
+          "total_budget_10GiB": 2.0,
+          "state_minimum_3GiB": -2.0,
+          "operator_minimum_2GiB": -2.0,
+          "scratch_minimum_1GiB": -2.0,
+          "staging_minimum_1GiB": -1.0,
+          "state_nonnegative": -5.0,
+          "operator_nonnegative": -4.0,
+          "scratch_nonnegative": -3.0,
+          "staging_nonnegative": -2.0
+        },
+        "max_violation": 2.0
+      },
+      "constraint_record_sha256": "472530076685f25a10135f4dcd074b88b0350af3ce47db3e9a25b63e8d4e9665",
+      "core_operator_sha256": "89ec0ff5d8fe7de0eab1251422e4d5eb6fc30e640bedf82a444caf8f87bc964d",
+      "state_sha256": "337d02bb69d075ae1cd7c0b75a85604709d9a60ab219b7869184c99080cd542a"
+    },
+    {
+      "epoch": 32,
+      "count": 257,
+      "feasible_states": 257,
+      "all_feasible": true,
+      "max_violation": 5.960464477539062e-07,
+      "mean_max_violation": 1.3358862019698444e-07,
+      "tolerance": 2e-05,
+      "per_constraint": {
+        "total_budget_10GiB": {
+          "max_violation": 5.960464477539062e-07,
+          "violating_states": 0
+        },
+        "state_minimum_3GiB": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "operator_minimum_2GiB": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "scratch_minimum_1GiB": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "staging_minimum_1GiB": {
+          "max_violation": 1.1920928955078125e-07,
+          "violating_states": 0
+        },
+        "state_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "operator_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "scratch_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "staging_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        }
+      },
+      "lane_zero": {
+        "normalized": [
+          4.0,
+          3.000000238418579,
+          2.000000238418579,
+          1.0000003576278687
+        ],
+        "physical": {
+          "state_pool": 4.0,
+          "operator_pool": 3.000000238418579,
+          "scratch_pool": 2.000000238418579,
+          "staging_pool": 1.0000003576278687
+        },
+        "signed_distances": {
+          "total_budget_10GiB": 4.172325134277344e-07,
+          "state_minimum_3GiB": -1.0,
+          "operator_minimum_2GiB": -1.000000238418579,
+          "scratch_minimum_1GiB": -1.000000238418579,
+          "staging_minimum_1GiB": -3.5762786865234375e-07,
+          "state_nonnegative": -4.0,
+          "operator_nonnegative": -3.000000238418579,
+          "scratch_nonnegative": -2.000000238418579,
+          "staging_nonnegative": -1.0000003576278687
+        },
+        "max_violation": 4.172325134277344e-07
+      },
+      "constraint_record_sha256": "472530076685f25a10135f4dcd074b88b0350af3ce47db3e9a25b63e8d4e9665",
+      "core_operator_sha256": "a45a00f68bc80688b9144d40a3dad122a7c32f89047a1585cd1a2234b28b876e",
+      "state_sha256": "15b9799c9528d72f4aecfd4545454696ac67fcbf04759b69a802c81e4c720ae3"
+    },
+    {
+      "epoch": 64,
+      "count": 257,
+      "feasible_states": 257,
+      "all_feasible": true,
+      "max_violation": 5.960464477539062e-07,
+      "mean_max_violation": 1.3057359925503862e-07,
+      "tolerance": 2e-05,
+      "per_constraint": {
+        "total_budget_10GiB": {
+          "max_violation": 5.960464477539062e-07,
+          "violating_states": 0
+        },
+        "state_minimum_3GiB": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "operator_minimum_2GiB": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "scratch_minimum_1GiB": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "staging_minimum_1GiB": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "state_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "operator_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "scratch_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "staging_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        }
+      },
+      "lane_zero": {
+        "normalized": [
+          4.0,
+          3.000000238418579,
+          2.000000238418579,
+          1.0000003576278687
+        ],
+        "physical": {
+          "state_pool": 4.0,
+          "operator_pool": 3.000000238418579,
+          "scratch_pool": 2.000000238418579,
+          "staging_pool": 1.0000003576278687
+        },
+        "signed_distances": {
+          "total_budget_10GiB": 4.172325134277344e-07,
+          "state_minimum_3GiB": -1.0,
+          "operator_minimum_2GiB": -1.000000238418579,
+          "scratch_minimum_1GiB": -1.000000238418579,
+          "staging_minimum_1GiB": -3.5762786865234375e-07,
+          "state_nonnegative": -4.0,
+          "operator_nonnegative": -3.000000238418579,
+          "scratch_nonnegative": -2.000000238418579,
+          "staging_nonnegative": -1.0000003576278687
+        },
+        "max_violation": 4.172325134277344e-07
+      },
+      "constraint_record_sha256": "472530076685f25a10135f4dcd074b88b0350af3ce47db3e9a25b63e8d4e9665",
+      "core_operator_sha256": "947e2045716bb748a8ad6dcc5f81a3eacd6d761ca75c2441cbf042603798ffc9",
+      "state_sha256": "eb9f413d0a0f9af3c6d74ce95fb481c0038ebdc9fd17a213a6ab5843399aae21"
+    },
+    {
+      "epoch": 96,
+      "count": 257,
+      "feasible_states": 257,
+      "all_feasible": true,
+      "max_violation": 5.960464477539062e-07,
+      "mean_max_violation": 1.3057359925503862e-07,
+      "tolerance": 2e-05,
+      "per_constraint": {
+        "total_budget_10GiB": {
+          "max_violation": 5.960464477539062e-07,
+          "violating_states": 0
+        },
+        "state_minimum_3GiB": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "operator_minimum_2GiB": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "scratch_minimum_1GiB": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "staging_minimum_1GiB": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "state_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "operator_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "scratch_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "staging_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        }
+      },
+      "lane_zero": {
+        "normalized": [
+          4.0,
+          3.000000238418579,
+          2.000000238418579,
+          1.0000003576278687
+        ],
+        "physical": {
+          "state_pool": 4.0,
+          "operator_pool": 3.000000238418579,
+          "scratch_pool": 2.000000238418579,
+          "staging_pool": 1.0000003576278687
+        },
+        "signed_distances": {
+          "total_budget_10GiB": 4.172325134277344e-07,
+          "state_minimum_3GiB": -1.0,
+          "operator_minimum_2GiB": -1.000000238418579,
+          "scratch_minimum_1GiB": -1.000000238418579,
+          "staging_minimum_1GiB": -3.5762786865234375e-07,
+          "state_nonnegative": -4.0,
+          "operator_nonnegative": -3.000000238418579,
+          "scratch_nonnegative": -2.000000238418579,
+          "staging_nonnegative": -1.0000003576278687
+        },
+        "max_violation": 4.172325134277344e-07
+      },
+      "constraint_record_sha256": "472530076685f25a10135f4dcd074b88b0350af3ce47db3e9a25b63e8d4e9665",
+      "core_operator_sha256": "b0ca2176ad97000328b9d90887e9949e9207babe4c3e839fc99e3d183cde9d6a",
+      "state_sha256": "5b455aa86dec260a8c74dd0c47aa73163d9f0f58c8c4f10aa16cca14bae87213"
+    },
+    {
+      "epoch": 128,
+      "count": 257,
+      "feasible_states": 257,
+      "all_feasible": true,
+      "max_violation": 5.960464477539062e-07,
+      "mean_max_violation": 1.3057359925503862e-07,
+      "tolerance": 2e-05,
+      "per_constraint": {
+        "total_budget_10GiB": {
+          "max_violation": 5.960464477539062e-07,
+          "violating_states": 0
+        },
+        "state_minimum_3GiB": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "operator_minimum_2GiB": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "scratch_minimum_1GiB": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "staging_minimum_1GiB": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "state_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "operator_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "scratch_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "staging_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        }
+      },
+      "lane_zero": {
+        "normalized": [
+          4.0,
+          3.000000238418579,
+          2.000000238418579,
+          1.0000003576278687
+        ],
+        "physical": {
+          "state_pool": 4.0,
+          "operator_pool": 3.000000238418579,
+          "scratch_pool": 2.000000238418579,
+          "staging_pool": 1.0000003576278687
+        },
+        "signed_distances": {
+          "total_budget_10GiB": 4.172325134277344e-07,
+          "state_minimum_3GiB": -1.0,
+          "operator_minimum_2GiB": -1.000000238418579,
+          "scratch_minimum_1GiB": -1.000000238418579,
+          "staging_minimum_1GiB": -3.5762786865234375e-07,
+          "state_nonnegative": -4.0,
+          "operator_nonnegative": -3.000000238418579,
+          "scratch_nonnegative": -2.000000238418579,
+          "staging_nonnegative": -1.0000003576278687
+        },
+        "max_violation": 4.172325134277344e-07
+      },
+      "constraint_record_sha256": "472530076685f25a10135f4dcd074b88b0350af3ce47db3e9a25b63e8d4e9665",
+      "core_operator_sha256": "4847a04fdc1a76641d6bfe9752a5b262b6157cbd73540712dcd84dcc15bdf758",
+      "state_sha256": "c08fe3ed335045f046e0e09117b7bed788b9d778d5fd12e1e93254367665ba7a"
+    }
+  ],
+  "notes": [
+    "Each analytic affine field is an exact SDF in declared normalized coordinates, evaluated in FP32 on device.",
+    "The audit uses float64 on the actually packed FP32 law coefficients.",
+    "Feasibility is measured at the declared tolerance, not proof of dynamics, optimality or physical validity.",
+    "Scientific law records are protected; mutable executable controller records determine relaxation."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "description": "Applied an exact pi phase shift to channel a in every initial state by flipping ar/ai sign bits. Stored energy and all non-amplitude words are unchanged.",
+  "source_sha256": "17623053933c1aab1940660edfe0c97f6d2a4b541d64497763054073e8ccc0eb",
+  "result_sha256": "488fabdadc972aac299486b7b6025c047124adf5decf96f54e81d9edbb58ac1d",
+  "initial_comparison": {
+    "changed_state_records": 257,
+    "changed_state_words": 514,
+    "changed_amplitude_words": 514,
+    "changed_non_amplitude_state_words": 0,
+    "changed_operator_records": 0,
+    "changed_operator_words": 0,
+    "max_absolute_state_float_difference": 4.0
+  }
+}

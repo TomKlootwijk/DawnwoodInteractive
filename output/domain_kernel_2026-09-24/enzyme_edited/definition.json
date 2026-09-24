@@ -1,0 +1,130 @@
+{
+  "name": "Closed enzyme-pool consistency repair",
+  "description": "Find nonnegative E, ES, S and P satisfying two closed-pool conservation laws and an authored ES operating interval. Initial values deliberately violate both pools.",
+  "coordinates": [
+    "E",
+    "ES",
+    "S",
+    "P"
+  ],
+  "unit": "uM",
+  "scale": [
+    10.0,
+    10.0,
+    10.0,
+    10.0
+  ],
+  "initial": [
+    8.0,
+    3.0,
+    78.0,
+    20.0
+  ],
+  "spread": [
+    0.2,
+    0.2,
+    0.4,
+    0.4
+  ],
+  "constraints": [
+    {
+      "id": "enzyme_pool_10uM",
+      "kind": "equality",
+      "normal": [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "offset": 1.0,
+      "halfwidth": 0.0
+    },
+    {
+      "id": "substrate_pool_100uM",
+      "kind": "equality",
+      "normal": [
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "offset": 10.0,
+      "halfwidth": 0.0
+    },
+    {
+      "id": "E_nonnegative",
+      "kind": "halfspace",
+      "normal": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "offset": 0.0,
+      "halfwidth": 0.0
+    },
+    {
+      "id": "ES_nonnegative",
+      "kind": "halfspace",
+      "normal": [
+        0.0,
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "offset": 0.0,
+      "halfwidth": 0.0
+    },
+    {
+      "id": "S_nonnegative",
+      "kind": "halfspace",
+      "normal": [
+        0.0,
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "offset": 0.0,
+      "halfwidth": 0.0
+    },
+    {
+      "id": "P_nonnegative",
+      "kind": "halfspace",
+      "normal": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "offset": 0.0,
+      "halfwidth": 0.0
+    },
+    {
+      "id": "ES_operating_interval_2_to_6uM",
+      "kind": "slab",
+      "normal": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "offset": 0.4,
+      "halfwidth": 0.2
+    }
+  ],
+  "sources": [
+    "https://goldbook.iupac.org/terms/view/M03893",
+    "https://www.nist.gov/publications/recommendations-terminology-and-databases-biochemical-thermodynamics"
+  ],
+  "assumptions": [
+    "Declared mechanism E+S<=>ES->E+P, with one enzyme moiety in E/ES and one substrate moiety in S/ES/P.",
+    "Fixed volume and closed moiety pools; no synthesis, degradation, transport or omitted bound states.",
+    "E_total=10 uM, substrate-moiety total=100 uM and the ES interval 2..6 uM are illustrative authored inputs, not measured biochemical constants.",
+    "q=(E,ES,S,P)/10 uM; normals and offsets act on q. Signed distances and tolerance use this normalized Euclidean concentration metric.",
+    "Pool equalities are conservation laws. The ES interval is an authored operating preference, not an additional physical law.",
+    "A feasible point establishes consistency with these constraints; repair is not a simulated reaction trajectory, kinetic prediction or experimental result.",
+    "This does not impose closed hydrogen-ion conservation on a buffered-pH biochemical system or supply complete elemental/charge balance.",
+    "One explicit feasible witness in physical coordinates is [7,3,77,20]."
+  ],
+  "tolerance": 2e-05
+}

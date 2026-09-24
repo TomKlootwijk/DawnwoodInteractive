@@ -1,0 +1,149 @@
+{
+  "epoch": 128,
+  "count": 257,
+  "feasible_states": 257,
+  "all_feasible": true,
+  "packed_feasible_states": 257,
+  "authored_feasible_states": 257,
+  "authored_max_violation": 6.88255154120476e-08,
+  "authored_per_constraint": {
+    "internal_pool_X_steady_balance": {
+      "max_violation": 6.88255154120476e-08,
+      "violating_states": 0
+    },
+    "internal_pool_Y_steady_balance": {
+      "max_violation": 5.16191365590357e-08,
+      "violating_states": 0
+    },
+    "inlet_nonnegative": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "branch_A_nonnegative": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "branch_B_nonnegative": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "outlet_nonnegative": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "inlet_capacity_10": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "branch_A_capacity_8": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "branch_B_capacity_6": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "outlet_capacity_10": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "branch_B_minimum_3": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    }
+  },
+  "max_violation": 6.88255154120476e-08,
+  "mean_max_violation": 5.563618998775447e-08,
+  "tolerance": 2e-05,
+  "per_constraint": {
+    "internal_pool_X_steady_balance": {
+      "max_violation": 6.88255154120476e-08,
+      "violating_states": 0
+    },
+    "internal_pool_Y_steady_balance": {
+      "max_violation": 5.16191365590357e-08,
+      "violating_states": 0
+    },
+    "inlet_nonnegative": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "branch_A_nonnegative": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "branch_B_nonnegative": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "outlet_nonnegative": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "inlet_capacity_10": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "branch_A_capacity_8": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "branch_B_capacity_6": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "outlet_capacity_10": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "branch_B_minimum_3": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    }
+  },
+  "lane_zero": {
+    "normalized": [
+      0.8334933519363403,
+      0.5330134630203247,
+      0.30047979950904846,
+      0.833493173122406
+    ],
+    "physical": {
+      "v_in": 8.334933519363403,
+      "v_A": 5.330134630203247,
+      "v_B": 3.0047979950904846,
+      "v_out": 8.33493173122406
+    },
+    "signed_distances": {
+      "internal_pool_X_steady_balance": 5.16191365590357e-08,
+      "internal_pool_Y_steady_balance": 5.16191365590357e-08,
+      "inlet_nonnegative": -0.8334933519363403,
+      "branch_A_nonnegative": -0.5330134630203247,
+      "branch_B_nonnegative": -0.30047979950904846,
+      "outlet_nonnegative": -0.833493173122406,
+      "inlet_capacity_10": -0.16650664806365967,
+      "branch_A_capacity_8": -0.26698654890060425,
+      "branch_B_capacity_6": -0.29952022433280945,
+      "outlet_capacity_10": -0.166506826877594,
+      "branch_B_minimum_3": -0.00047978758811950684
+    },
+    "authored_signed_distances": {
+      "internal_pool_X_steady_balance": 5.16191365590357e-08,
+      "internal_pool_Y_steady_balance": 5.16191365590357e-08,
+      "inlet_nonnegative": -0.8334933519363403,
+      "branch_A_nonnegative": -0.5330134630203247,
+      "branch_B_nonnegative": -0.30047979950904846,
+      "outlet_nonnegative": -0.833493173122406,
+      "inlet_capacity_10": -0.16650664806365967,
+      "branch_A_capacity_8": -0.26698653697967534,
+      "branch_B_capacity_6": -0.2995202004909515,
+      "outlet_capacity_10": -0.166506826877594,
+      "branch_B_minimum_3": -0.000479799509048473
+    },
+    "max_violation": 5.16191365590357e-08,
+    "authored_max_violation": 5.16191365590357e-08
+  },
+  "constraint_record_sha256": "7024a3c8cefd456772cbaea2447b1733d60c50f133cd3de44683112744732823",
+  "core_operator_sha256": "f95b15342e5981c87cab5797364e8beadcb7a7ea35ba722ce4a9f7e1afe5aca4",
+  "state_sha256": "43786c3fa072dd3f665d02475a94df6cfb867a7f38115befd8c56e61a9764a28"
+}

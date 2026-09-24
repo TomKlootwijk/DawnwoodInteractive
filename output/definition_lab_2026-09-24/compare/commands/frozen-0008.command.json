@@ -1,0 +1,22 @@
+{
+  "command": [
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-rtx5070ti\\dawnwood.exe",
+    "run",
+    "--device",
+    "RTX 5070 Ti",
+    "--resume",
+    "output\\definition_lab_2026-09-24\\compare\\frozen\\epoch-0004.dwk",
+    "--steps",
+    "4",
+    "--batch",
+    "8",
+    "--checkpoint",
+    "output\\definition_lab_2026-09-24\\compare\\frozen\\epoch-0008.dwk"
+  ],
+  "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+  "utc": "2026-09-24T12:32:22.885495+00:00",
+  "executable_sha256": "cb6b069a2082b2ee55cdf57a8332d4c1904f2190ba4061a416f63c6d83911015",
+  "removed_ambient_overrides": {},
+  "exit_code": 0,
+  "process_wall_seconds": 0.2278030999987095
+}

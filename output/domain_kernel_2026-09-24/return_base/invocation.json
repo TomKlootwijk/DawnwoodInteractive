@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "local_lab/specialize.py",
+    "--example",
+    "enzyme_repair",
+    "--count",
+    "257",
+    "--epochs",
+    "4",
+    "--stride",
+    "1",
+    "--verify-steps",
+    "4",
+    "--output",
+    "output/domain_kernel_2026-09-24/return_base"
+  ],
+  "profile": "DWI-D1-0.1",
+  "controller": "live",
+  "seed": 756,
+  "source_definition": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\domain_knowledge\\native\\enzyme_repair.json",
+  "compiler_sha256": "a5628ec19c9e9dddfc3959a86f67cea0c35dc70fda470bbf451eabfff651d266"
+}

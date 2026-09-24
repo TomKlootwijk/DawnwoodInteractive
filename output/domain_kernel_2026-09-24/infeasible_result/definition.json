@@ -1,0 +1,60 @@
+{
+  "name": "Contradictory constraints witness",
+  "description": "Deliberately unrepresentable offset; packed feasibility must not hide literal violation.",
+  "coordinates": [
+    "x",
+    "y",
+    "z",
+    "w"
+  ],
+  "unit": "dimensionless",
+  "scale": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "initial": [
+    0.5,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "spread": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "constraints": [
+    {
+      "id": "x_le_0",
+      "kind": "halfspace",
+      "normal": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "offset": 0.0,
+      "halfwidth": 0.0
+    },
+    {
+      "id": "x_ge_1",
+      "kind": "halfspace",
+      "normal": [
+        -1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "offset": -1.0,
+      "halfwidth": 0.0
+    }
+  ],
+  "tolerance": 2e-05,
+  "sources": [],
+  "assumptions": [
+    "Numerical authoring counterexample, not physical data."
+  ]
+}

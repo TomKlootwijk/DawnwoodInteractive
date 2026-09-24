@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "local_lab/specialize.py",
+    "--example",
+    "buffer_design",
+    "--count",
+    "257",
+    "--epochs",
+    "128",
+    "--stride",
+    "32",
+    "--verify-steps",
+    "32",
+    "--output",
+    "output/domain_kernel_2026-09-24/buffer_design_live"
+  ],
+  "profile": "DWI-D1-0.1",
+  "controller": "live",
+  "seed": 756,
+  "source_definition": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\domain_knowledge\\native\\buffer_design.json"
+}

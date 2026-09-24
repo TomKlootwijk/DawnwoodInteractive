@@ -1,0 +1,48 @@
+{
+  "name": "FP32 literal equation audit witness",
+  "description": "Deliberately unrepresentable offset; packed feasibility must not hide literal violation.",
+  "coordinates": [
+    "x",
+    "y",
+    "z",
+    "w"
+  ],
+  "unit": "dimensionless",
+  "scale": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "initial": [
+    999999.97,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "spread": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "constraints": [
+    {
+      "id": "literal_x",
+      "kind": "equality",
+      "normal": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "offset": 999999.97,
+      "halfwidth": 0.0
+    }
+  ],
+  "tolerance": 2e-05,
+  "sources": [],
+  "assumptions": [
+    "Numerical authoring counterexample, not physical data."
+  ]
+}

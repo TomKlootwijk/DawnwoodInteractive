@@ -1,0 +1,14 @@
+{
+  "description": "Shifted only operator 30 anchor by (0.2, 0.1), applying the Klein seam/orientation rule.",
+  "source_sha256": "17623053933c1aab1940660edfe0c97f6d2a4b541d64497763054073e8ccc0eb",
+  "result_sha256": "e4151bd19934746382424246691a526af9f887272d5ff78384a2b6742a28b439",
+  "initial_comparison": {
+    "changed_state_records": 0,
+    "changed_state_words": 0,
+    "changed_amplitude_words": 0,
+    "changed_non_amplitude_state_words": 0,
+    "changed_operator_records": 1,
+    "changed_operator_words": 2,
+    "max_absolute_state_float_difference": 0.0
+  }
+}

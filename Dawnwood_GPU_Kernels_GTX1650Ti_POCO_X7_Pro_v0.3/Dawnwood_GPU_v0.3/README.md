@@ -1,4 +1,16 @@
-# Dawnwood Interactive — Numerical GPU Runtime, v0.5.1 RTX edition
+# Dawnwood Interactive — Numerical GPU Runtime
+
+The optional **0.6.0-domain1 / DWI-D1-0.1** executable is
+`bin/windows-domain/dawnwood.exe`. It accepts sourced affine domain laws in
+protected operator records and evolves four task coordinates using the mutable
+controller. Read [the exact domain binding](../../docs/DOMAIN_KERNEL.md),
+[headless usage](../../local_lab/README.md) and
+[RTX measurements](../../output/domain_kernel_2026-09-24/REPORT.md).
+Its `DWKD0001` checkpoints explicitly distinguish task coordinates from N1's
+inspection embedding. The N1 equations remain available in this binary; the
+separate 0.5.1 executable and dated evidence below are preserved.
+
+## Preserved v0.5.1 RTX edition
 
 The current Windows edition is **0.5.1-rtx1**, for the **RTX 5070 Ti Laptop GPU**.
 It keeps numerical profile **DWI-N1-0.5** and adds measured workgroup/dispatch

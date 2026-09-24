@@ -1,0 +1,121 @@
+[
+  {
+    "name": "wrong_profile_magic",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-domain\\dawnwood.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--resume",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\domain_kernel_2026-09-24\\input_validation\\wrong_profile_magic.dwk",
+      "--steps",
+      "0"
+    ],
+    "exit_code": 1,
+    "stderr": "{\"error\":\"Checkpoint magic does not match its numerical profile marker\"}\n",
+    "rejected": true,
+    "binary_sha256": "6a682fede4bb7e4437b75754583411fa2509070699a52ccb2e3a280260d76bd0"
+  },
+  {
+    "name": "zero_normal",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-domain\\dawnwood.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--resume",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\domain_kernel_2026-09-24\\input_validation\\zero_normal.dwk",
+      "--steps",
+      "0"
+    ],
+    "exit_code": 1,
+    "stderr": "{\"error\":\"Domain-law normal squared length must be between 1e-12 and 1e12\"}\n",
+    "rejected": true,
+    "binary_sha256": "6a682fede4bb7e4437b75754583411fa2509070699a52ccb2e3a280260d76bd0"
+  },
+  {
+    "name": "unknown_body",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-domain\\dawnwood.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--resume",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\domain_kernel_2026-09-24\\input_validation\\unknown_body.dwk",
+      "--steps",
+      "0"
+    ],
+    "exit_code": 1,
+    "stderr": "{\"error\":\"Unknown bytecode instruction in operator[30]\"}\n",
+    "rejected": true,
+    "binary_sha256": "6a682fede4bb7e4437b75754583411fa2509070699a52ccb2e3a280260d76bd0"
+  },
+  {
+    "name": "mutable_law_body",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-domain\\dawnwood.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--resume",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\domain_kernel_2026-09-24\\input_validation\\mutable_law_body.dwk",
+      "--steps",
+      "0"
+    ],
+    "exit_code": 1,
+    "stderr": "{\"error\":\"Invalid domain law: protected flag, kind 0..2, identity program and nonnegative halfwidth required\"}\n",
+    "rejected": true,
+    "binary_sha256": "6a682fede4bb7e4437b75754583411fa2509070699a52ccb2e3a280260d76bd0"
+  },
+  {
+    "name": "missing_law_protection",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-domain\\dawnwood.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--resume",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\domain_kernel_2026-09-24\\input_validation\\missing_law_protection.dwk",
+      "--steps",
+      "0"
+    ],
+    "exit_code": 1,
+    "stderr": "{\"error\":\"Invalid domain law: protected flag, kind 0..2, identity program and nonnegative halfwidth required\"}\n",
+    "rejected": true,
+    "binary_sha256": "6a682fede4bb7e4437b75754583411fa2509070699a52ccb2e3a280260d76bd0"
+  },
+  {
+    "name": "law_count_out_of_bounds",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-domain\\dawnwood.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--resume",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\domain_kernel_2026-09-24\\input_validation\\law_count_out_of_bounds.dwk",
+      "--steps",
+      "0"
+    ],
+    "exit_code": 1,
+    "stderr": "{\"error\":\"Domain constraint count must be an exact integer from 1 through 32\"}\n",
+    "rejected": true,
+    "binary_sha256": "6a682fede4bb7e4437b75754583411fa2509070699a52ccb2e3a280260d76bd0"
+  },
+  {
+    "name": "unknown_law_kind",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-domain\\dawnwood.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--resume",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\domain_kernel_2026-09-24\\input_validation\\unknown_law_kind.dwk",
+      "--steps",
+      "0"
+    ],
+    "exit_code": 1,
+    "stderr": "{\"error\":\"Invalid domain law: protected flag, kind 0..2, identity program and nonnegative halfwidth required\"}\n",
+    "rejected": true,
+    "binary_sha256": "6a682fede4bb7e4437b75754583411fa2509070699a52ccb2e3a280260d76bd0"
+  }
+]

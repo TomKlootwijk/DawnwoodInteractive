@@ -1,0 +1,87 @@
+{
+  "command": [
+    "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "local_lab/specialize.py",
+    "--example",
+    "enzyme_repair",
+    "--count",
+    "1048576",
+    "--epochs",
+    "1024",
+    "--stride",
+    "1024",
+    "--verify-steps",
+    "0",
+    "--output",
+    "local_lab/runs/domain_saturation"
+  ],
+  "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+  "utc": "2026-09-24T12:57:55.849753+00:00",
+  "environment": {},
+  "executable_sha256": "b7a12c3af0b4db44191eec14ea095eba731b7328917f570806183093d19ddca2",
+  "exit_code": 0,
+  "process_wall_seconds": 134.39758620000066,
+  "telemetry": {
+    "sample_count": 125,
+    "sample_interval_ms": 1000,
+    "scope": "Whole command including setup and readback; device-wide NVML observations",
+    "temperature_stop_celsius": 88.0,
+    "utilization.gpu": {
+      "min": 0.0,
+      "max": 100.0,
+      "mean": 98.1140350877193
+    },
+    "utilization.memory": {
+      "min": 0.0,
+      "max": 24.0,
+      "mean": 22.517543859649123
+    },
+    "memory.used": {
+      "min": 0.0,
+      "max": 579.0,
+      "mean": 523.416
+    },
+    "memory.total": {
+      "min": 12227.0,
+      "max": 12227.0,
+      "mean": 12227.0
+    },
+    "temperature.gpu": {
+      "min": 45.0,
+      "max": 80.0,
+      "mean": 69.52
+    },
+    "power.draw": {
+      "min": 20.85,
+      "max": 36117.25,
+      "mean": 988.52304
+    },
+    "power.limit": null,
+    "clocks.current.sm": {
+      "min": 0.0,
+      "max": 2595.0,
+      "mean": 2304.304
+    },
+    "clocks.current.memory": {
+      "min": 405.0,
+      "max": 14001.0,
+      "mean": 10100.552
+    },
+    "clocks_event_reasons.sw_power_cap": {
+      "active_samples": 123
+    },
+    "clocks_event_reasons.sw_thermal_slowdown": {
+      "active_samples": 0
+    },
+    "clocks_event_reasons.hw_thermal_slowdown": {
+      "active_samples": 0
+    }
+  },
+  "process_memory": {
+    "source": "Windows GetProcessMemoryInfo for the measured child process",
+    "sample_count": 125,
+    "peak_working_set_bytes": 499396608,
+    "max_sampled_private_commit_bytes": 492212224
+  }
+}

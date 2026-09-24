@@ -1,0 +1,89 @@
+{
+  "epoch": 128,
+  "count": 257,
+  "feasible_states": 257,
+  "all_feasible": true,
+  "packed_feasible_states": 257,
+  "authored_feasible_states": 257,
+  "authored_max_violation": 2.0230487284444086e-07,
+  "authored_per_constraint": {
+    "pH_7_to_7point4_with_pKa_7point2": {
+      "max_violation": 2.0230487284444086e-07,
+      "violating_states": 0
+    },
+    "acid_log_activity_design_range": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "base_log_activity_design_range": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "unused_coordinate_0": {
+      "max_violation": 1.8427013148738914e-38,
+      "violating_states": 0
+    },
+    "unused_coordinate_1": {
+      "max_violation": 1.8410943057950037e-38,
+      "violating_states": 0
+    }
+  },
+  "max_violation": 2.0019753042674663e-07,
+  "mean_max_violation": 1.2016771691189698e-07,
+  "tolerance": 2e-05,
+  "per_constraint": {
+    "pH_7_to_7point4_with_pKa_7point2": {
+      "max_violation": 2.0019753042674663e-07,
+      "violating_states": 0
+    },
+    "acid_log_activity_design_range": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "base_log_activity_design_range": {
+      "max_violation": 0.0,
+      "violating_states": 0
+    },
+    "unused_coordinate_0": {
+      "max_violation": 1.8427013148738914e-38,
+      "violating_states": 0
+    },
+    "unused_coordinate_1": {
+      "max_violation": 1.8410943057950037e-38,
+      "violating_states": 0
+    }
+  },
+  "lane_zero": {
+    "normalized": [
+      -2.8000001907348633,
+      -2.5999999046325684,
+      0.0,
+      -1.2930414317230962e-38
+    ],
+    "physical": {
+      "log10_acid_activity": -2.8000001907348633,
+      "log10_base_activity": -2.5999999046325684,
+      "auxiliary_0": 0.0,
+      "auxiliary_1": -1.2930414317230962e-38
+    },
+    "signed_distances": {
+      "pH_7_to_7point4_with_pKa_7point2": 2.0019753042674663e-07,
+      "acid_log_activity_design_range": -2.8000001907348633,
+      "base_log_activity_design_range": -2.5999999046325684,
+      "unused_coordinate_0": 0.0,
+      "unused_coordinate_1": -1.2930414317230962e-38
+    },
+    "authored_signed_distances": {
+      "pH_7_to_7point4_with_pKa_7point2": 2.0230487284444086e-07,
+      "acid_log_activity_design_range": -2.8000001907348633,
+      "base_log_activity_design_range": -2.5999999046325684,
+      "unused_coordinate_0": 0.0,
+      "unused_coordinate_1": -1.2930414317230962e-38
+    },
+    "max_violation": 2.0019753042674663e-07,
+    "authored_max_violation": 2.0230487284444086e-07
+  },
+  "constraint_record_sha256": "ed8ef13806cd839b435604b2515e1e63081817d7b4715d0f8c42862e11bae321",
+  "core_operator_sha256": "4735c3acc75e3f8cecf3de7e49e3030e8cf1ee46911ba6e6caa0e53606a4db2c",
+  "state_sha256": "27b93be844c6bacf9caf361e7ab8612401d55877f7a290e28e29f8b2ca377425"
+}

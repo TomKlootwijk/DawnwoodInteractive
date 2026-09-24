@@ -1,0 +1,29 @@
+epoch 1024: 1048576/1048576 feasible, max violation 5.5060412e-07
+{
+  "output": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\local_lab\\runs\\domain_saturation",
+  "all_feasible": true,
+  "lane_zero": {
+    "normalized": [
+      0.7599998712539673,
+      0.24000009894371033,
+      7.780000686645508,
+      1.9800000190734863
+    ],
+    "physical": {
+      "E": 7.599998712539673,
+      "ES": 2.4000009894371033,
+      "S": 77.80000686645508,
+      "P": 19.800000190734863
+    },
+    "signed_distances": {
+      "enzyme_pool_10uM": -2.1073424255447014e-08,
+      "substrate_pool_100uM": 4.645722290313213e-07,
+      "E_nonnegative": -0.7599998712539673,
+      "ES_nonnegative": -0.24000009894371033,
+      "S_nonnegative": -7.780000686645508,
+      "P_nonnegative": -1.9800000190734863,
+      "ES_operating_interval_2_to_6uM": -0.04000009596347809
+    },
+    "max_violation": 4.645722290313213e-07
+  }
+}

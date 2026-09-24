@@ -1,0 +1,36 @@
+{
+  "name": "Toy branched steady-state flux feasibility",
+  "description": "Find a feasible nonnegative steady-state flux vector for two internal pools linked by parallel branches, under authored capacities and a branch-B requirement. No optimal flux or organism prediction is claimed.",
+  "coordinates": ["v_in", "v_A", "v_B", "v_out"],
+  "unit": "uM/s",
+  "scale": [10.0, 10.0, 10.0, 10.0],
+  "initial": [9.0, 7.0, 1.0, 6.0],
+  "spread": [0.3, 0.3, 0.3, 0.3],
+  "constraints": [
+    {"id": "internal_pool_X_steady_balance", "kind": "equality", "normal": [1, -1, -1, 0], "offset": 0.0},
+    {"id": "internal_pool_Y_steady_balance", "kind": "equality", "normal": [0, 1, 1, -1], "offset": 0.0},
+    {"id": "inlet_nonnegative", "kind": "halfspace", "normal": [-1, 0, 0, 0], "offset": 0.0},
+    {"id": "branch_A_nonnegative", "kind": "halfspace", "normal": [0, -1, 0, 0], "offset": 0.0},
+    {"id": "branch_B_nonnegative", "kind": "halfspace", "normal": [0, 0, -1, 0], "offset": 0.0},
+    {"id": "outlet_nonnegative", "kind": "halfspace", "normal": [0, 0, 0, -1], "offset": 0.0},
+    {"id": "inlet_capacity_10", "kind": "halfspace", "normal": [1, 0, 0, 0], "offset": 1.0},
+    {"id": "branch_A_capacity_8", "kind": "halfspace", "normal": [0, 1, 0, 0], "offset": 0.8},
+    {"id": "branch_B_capacity_6", "kind": "halfspace", "normal": [0, 0, 1, 0], "offset": 0.6},
+    {"id": "outlet_capacity_10", "kind": "halfspace", "normal": [0, 0, 0, 1], "offset": 1.0},
+    {"id": "branch_B_minimum_3", "kind": "halfspace", "normal": [0, 0, -1, 0], "offset": -0.3}
+  ],
+  "sources": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3108565/",
+    "https://doi.org/10.1038/nbt.1614"
+  ],
+  "assumptions": [
+    "Toy network: inlet supplies internal pool X; branches A and B each transfer one X to one Y; outlet removes Y. Stoichiometric rows are [1,-1,-1,0] and [0,1,1,-1].",
+    "Fixed-volume steady state with no accumulation of the two internal pools; external inlet/outlet are allowed. Conservation constraints are S*v=0, not equality of all individual fluxes.",
+    "Uniform scale 10 uM/s: q=v/10. Capacity offsets 1,0.8,0.6,1 correspond to 10,8,6,10 uM/s. Branch-B minimum offset -0.3 enforces v_B>=3 uM/s.",
+    "All flux limits and initial values are illustrative authored numbers. No real metabolites, organism, measured kinetic constants or reconstructed biological network are identified.",
+    "Nonnegative variables declare irreversible branch directions; thermodynamic feasibility, kinetics and enzyme availability are not inferred from steady-state balance alone.",
+    "This task finds constraint feasibility. It has no biomass, ATP or other linear objective and therefore does not claim a conventional FBA optimum.",
+    "One explicit feasible witness is [9,6,3,9]. The source paper supports the S*v=0 framework; the toy topology and numerical bounds are newly authored."
+  ],
+  "tolerance": 0.00002
+}

@@ -1,0 +1,1038 @@
+{
+  "profile": "DWI-D1-0.1",
+  "name": "Closed enzyme-pool consistency repair",
+  "backend": "vulkan",
+  "binary_sha256": "6a682fede4bb7e4437b75754583411fa2509070699a52ccb2e3a280260d76bd0",
+  "controller": "live",
+  "verification": {
+    "runtime_version": "0.6.0-domain1",
+    "profile": "DWI-D1-0.1",
+    "kind": "CPU versus Vulkan every epoch, all state and operator words",
+    "config": {
+      "count": 257,
+      "operators": 38,
+      "epoch": 0,
+      "depth": 4,
+      "dt": 0.00999999978,
+      "yup": 0.000500000024,
+      "epsilon": 0.125,
+      "mutation": 1,
+      "jitter": 1,
+      "feedback": 1,
+      "phaseRate": 0.125,
+      "radialRate": 0.00999999978,
+      "historyWeight": 0.75,
+      "fieldScale": 0.00499999989,
+      "state_bytes": 128,
+      "operator_bytes": 64
+    },
+    "epochs_requested": 8,
+    "epochs_checked": 8,
+    "atol": 1e-05,
+    "rtol": 2e-05,
+    "passed": true,
+    "aggregate": {
+      "passed": true,
+      "bitwise_word_mismatches": 0,
+      "bitwise_equal": true,
+      "float_mismatches": 0,
+      "integer_mismatches": 0,
+      "nonfinite_values": 0,
+      "invalid_snapshots": 0,
+      "worst_scaled_error": 0,
+      "max_absolute_error": 0,
+      "first_mismatch": ""
+    },
+    "device": {
+      "name": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "vendor_id": 4318,
+      "device_id": 12056,
+      "api_version": 4211013,
+      "driver_version": 2479800320,
+      "software_device": false,
+      "validation_layer_enabled": false,
+      "synchronization_validation_enabled": false,
+      "validation_errors": 0,
+      "validation_warnings": 0,
+      "memory_budget_extension": true,
+      "requested_budget_fraction": 0.8,
+      "device_type": 2,
+      "states_heap_index": 0,
+      "state_buffer_heaps": [
+        0,
+        0
+      ],
+      "streamed_initialization": false,
+      "host_state_chunk_bytes": 0,
+      "state_page_capacity": 33554431,
+      "state_pages_per_buffer": 1,
+      "max_state_records": 67108862,
+      "workgroup_size": 32,
+      "state_dispatch_limit": 1048576,
+      "compute_submission_count": 8,
+      "max_submission_seconds": 0.00106374,
+      "split_evolution": false,
+      "evolution_dispatches_per_chunk": 1,
+      "evolution_scratch_record_bytes": 96,
+      "evolution_scratch_bytes": 0,
+      "evolution_scratch_allocated_bytes": 0,
+      "texture_compression_BC": true,
+      "BC5_sampled_image": true,
+      "EAC_RG11_sampled_image": false,
+      "ASTC_4x4_sampled_image": false,
+      "max_compute_shared_memory_bytes": 49152,
+      "max_storage_buffer_range": 4294967295,
+      "max_compute_workgroup_count_x": 2147483647,
+      "max_image_dimension_2d": 32768,
+      "max_memory_allocation_count": 4294967295,
+      "timestamp_valid_bits": 64,
+      "allocated_buffer_bytes": 98688,
+      "allocated_image_bytes": 38912,
+      "allocated_total_bytes": 137600,
+      "staging_bytes": 32896,
+      "allocation_count": 5,
+      "state_ping_pong_payload_bytes": 65792,
+      "operator_lut_payload_bytes": 4864,
+      "operator_lut_format": "RGBA32_UINT",
+      "operator_lut_storage": "sampled_and_storage_VkImage",
+      "operator_lut_width": 152,
+      "operator_lut_height": 1,
+      "operator_lut_texels_per_record": 4,
+      "operator_lut_point_fetch": true,
+      "operator_lut_filtering": false,
+      "operator_lut_parameter_precision_bits": 32,
+      "operator_lut_flag_word_bits": 32,
+      "operator_lut_used_orientation_mask": 1,
+      "operator_bytecode_bits_per_instruction": 4,
+      "evolve_shared_operator_records": 31,
+      "evolve_shared_operator_bytes": 1984,
+      "mutate_shared_operator_bytes": 128,
+      "permanent_texture_cache_residence_proven": false,
+      "upload_bytes": 35328,
+      "download_bytes": 282624,
+      "completed_epochs": 8,
+      "advance_buffer_copy_commands": 0,
+      "advance_image_copy_commands": 0,
+      "timer": "Vulkan device timestamps",
+      "last_dispatch_seconds": 0.00106093,
+      "last_wall_seconds": 0.0011652,
+      "heaps": [
+        {
+          "index": 0,
+          "size": 12524191744,
+          "runtime_buffer_allocation_bytes": 65792,
+          "runtime_image_allocation_bytes": 38912,
+          "runtime_allocation_bytes": 104704,
+          "device_local": true,
+          "budget_at_start": 11718885376,
+          "usage_at_start": 324575232
+        },
+        {
+          "index": 1,
+          "size": 8279207936,
+          "runtime_buffer_allocation_bytes": 32896,
+          "runtime_image_allocation_bytes": 0,
+          "runtime_allocation_bytes": 32896,
+          "device_local": false,
+          "budget_at_start": 8697946739,
+          "usage_at_start": 12668928
+        }
+      ]
+    },
+    "trace": [
+      {
+        "epoch": 1,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 2,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 3,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 4,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 5,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 6,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 7,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 8,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      }
+    ]
+  },
+  "laws_unchanged": true,
+  "controller_field_changed": true,
+  "initial": {
+    "epoch": 0,
+    "count": 257,
+    "feasible_states": 0,
+    "all_feasible": false,
+    "packed_feasible_states": 0,
+    "authored_feasible_states": 0,
+    "authored_max_violation": 0.10839860378712049,
+    "authored_per_constraint": {
+      "enzyme_pool_10uM": {
+        "max_violation": 0.09376190224606339,
+        "violating_states": 257
+      },
+      "substrate_pool_100uM": {
+        "max_violation": 0.10839860378712049,
+        "violating_states": 257
+      },
+      "E_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "ES_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "S_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "P_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "ES_operating_interval_2_to_6uM": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      }
+    },
+    "max_violation": 0.10839860378712049,
+    "mean_max_violation": 0.07407221278483772,
+    "tolerance": 2e-05,
+    "per_constraint": {
+      "enzyme_pool_10uM": {
+        "max_violation": 0.09376190224606339,
+        "violating_states": 257
+      },
+      "substrate_pool_100uM": {
+        "max_violation": 0.10839860378712049,
+        "violating_states": 257
+      },
+      "E_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "ES_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "S_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "P_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "ES_operating_interval_2_to_6uM": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      }
+    },
+    "lane_zero": {
+      "normalized": [
+        0.800000011920929,
+        0.30000001192092896,
+        7.800000190734863,
+        2.0
+      ],
+      "physical": {
+        "E": 8.00000011920929,
+        "ES": 3.0000001192092896,
+        "S": 78.00000190734863,
+        "P": 20.0
+      },
+      "signed_distances": {
+        "enzyme_pool_10uM": 0.07071069497739416,
+        "substrate_pool_100uM": 0.05773514392233878,
+        "E_nonnegative": -0.800000011920929,
+        "ES_nonnegative": -0.30000001192092896,
+        "S_nonnegative": -7.800000190734863,
+        "P_nonnegative": -2.0,
+        "ES_operating_interval_2_to_6uM": -0.10000000894069672
+      },
+      "authored_signed_distances": {
+        "enzyme_pool_10uM": 0.07071069497739416,
+        "substrate_pool_100uM": 0.05773514392233878,
+        "E_nonnegative": -0.800000011920929,
+        "ES_nonnegative": -0.30000001192092896,
+        "S_nonnegative": -7.800000190734863,
+        "P_nonnegative": -2.0,
+        "ES_operating_interval_2_to_6uM": -0.10000001192092894
+      },
+      "max_violation": 0.07071069497739416,
+      "authored_max_violation": 0.07071069497739416
+    },
+    "constraint_record_sha256": "a823beae9b3886d49f0f6e11b2687a211e0829d5392f9a81a507fe457696ef37",
+    "core_operator_sha256": "377893d264798798cb1e0419c8f9849d32d3f5814136ccdafad0af800c619bdf",
+    "state_sha256": "3f4550a2353d9f002f61689a9ee57fdb951b85c4c0e4f0706cd20cad332e93b5"
+  },
+  "final": {
+    "epoch": 64,
+    "count": 257,
+    "feasible_states": 257,
+    "all_feasible": true,
+    "packed_feasible_states": 257,
+    "authored_feasible_states": 257,
+    "authored_max_violation": 5.506041232963808e-07,
+    "authored_per_constraint": {
+      "enzyme_pool_10uM": {
+        "max_violation": 1.0536712127723507e-07,
+        "violating_states": 0
+      },
+      "substrate_pool_100uM": {
+        "max_violation": 5.506041232963808e-07,
+        "violating_states": 0
+      },
+      "E_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "ES_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "S_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "P_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "ES_operating_interval_2_to_6uM": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      }
+    },
+    "max_violation": 5.506041232963808e-07,
+    "mean_max_violation": 2.7966105134218697e-07,
+    "tolerance": 2e-05,
+    "per_constraint": {
+      "enzyme_pool_10uM": {
+        "max_violation": 1.0536712127723507e-07,
+        "violating_states": 0
+      },
+      "substrate_pool_100uM": {
+        "max_violation": 5.506041232963808e-07,
+        "violating_states": 0
+      },
+      "E_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "ES_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "S_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "P_nonnegative": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "ES_operating_interval_2_to_6uM": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      }
+    },
+    "lane_zero": {
+      "normalized": [
+        0.7599998712539673,
+        0.24000009894371033,
+        7.780000686645508,
+        1.9800000190734863
+      ],
+      "physical": {
+        "E": 7.599998712539673,
+        "ES": 2.4000009894371033,
+        "S": 77.80000686645508,
+        "P": 19.800000190734863
+      },
+      "signed_distances": {
+        "enzyme_pool_10uM": -2.1073424255447014e-08,
+        "substrate_pool_100uM": 4.645722290313213e-07,
+        "E_nonnegative": -0.7599998712539673,
+        "ES_nonnegative": -0.24000009894371033,
+        "S_nonnegative": -7.780000686645508,
+        "P_nonnegative": -1.9800000190734863,
+        "ES_operating_interval_2_to_6uM": -0.04000009596347809
+      },
+      "authored_signed_distances": {
+        "enzyme_pool_10uM": -2.1073424255447014e-08,
+        "substrate_pool_100uM": 4.645722290313213e-07,
+        "E_nonnegative": -0.7599998712539673,
+        "ES_nonnegative": -0.24000009894371033,
+        "S_nonnegative": -7.780000686645508,
+        "P_nonnegative": -1.9800000190734863,
+        "ES_operating_interval_2_to_6uM": -0.040000098943710316
+      },
+      "max_violation": 4.645722290313213e-07,
+      "authored_max_violation": 4.645722290313213e-07
+    },
+    "constraint_record_sha256": "a823beae9b3886d49f0f6e11b2687a211e0829d5392f9a81a507fe457696ef37",
+    "core_operator_sha256": "12278442372ad3ce58d8be197be6204149bc877e5f74acd082489ed66203c5ae",
+    "state_sha256": "d8bfc458ed4c6879f7f1f42bbb1c510a3556ff078f96c1977521351cd0d2c8b2"
+  },
+  "frames": [
+    {
+      "epoch": 0,
+      "count": 257,
+      "feasible_states": 0,
+      "all_feasible": false,
+      "packed_feasible_states": 0,
+      "authored_feasible_states": 0,
+      "authored_max_violation": 0.10839860378712049,
+      "authored_per_constraint": {
+        "enzyme_pool_10uM": {
+          "max_violation": 0.09376190224606339,
+          "violating_states": 257
+        },
+        "substrate_pool_100uM": {
+          "max_violation": 0.10839860378712049,
+          "violating_states": 257
+        },
+        "E_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "ES_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "S_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "P_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "ES_operating_interval_2_to_6uM": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        }
+      },
+      "max_violation": 0.10839860378712049,
+      "mean_max_violation": 0.07407221278483772,
+      "tolerance": 2e-05,
+      "per_constraint": {
+        "enzyme_pool_10uM": {
+          "max_violation": 0.09376190224606339,
+          "violating_states": 257
+        },
+        "substrate_pool_100uM": {
+          "max_violation": 0.10839860378712049,
+          "violating_states": 257
+        },
+        "E_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "ES_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "S_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "P_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "ES_operating_interval_2_to_6uM": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        }
+      },
+      "lane_zero": {
+        "normalized": [
+          0.800000011920929,
+          0.30000001192092896,
+          7.800000190734863,
+          2.0
+        ],
+        "physical": {
+          "E": 8.00000011920929,
+          "ES": 3.0000001192092896,
+          "S": 78.00000190734863,
+          "P": 20.0
+        },
+        "signed_distances": {
+          "enzyme_pool_10uM": 0.07071069497739416,
+          "substrate_pool_100uM": 0.05773514392233878,
+          "E_nonnegative": -0.800000011920929,
+          "ES_nonnegative": -0.30000001192092896,
+          "S_nonnegative": -7.800000190734863,
+          "P_nonnegative": -2.0,
+          "ES_operating_interval_2_to_6uM": -0.10000000894069672
+        },
+        "authored_signed_distances": {
+          "enzyme_pool_10uM": 0.07071069497739416,
+          "substrate_pool_100uM": 0.05773514392233878,
+          "E_nonnegative": -0.800000011920929,
+          "ES_nonnegative": -0.30000001192092896,
+          "S_nonnegative": -7.800000190734863,
+          "P_nonnegative": -2.0,
+          "ES_operating_interval_2_to_6uM": -0.10000001192092894
+        },
+        "max_violation": 0.07071069497739416,
+        "authored_max_violation": 0.07071069497739416
+      },
+      "constraint_record_sha256": "a823beae9b3886d49f0f6e11b2687a211e0829d5392f9a81a507fe457696ef37",
+      "core_operator_sha256": "377893d264798798cb1e0419c8f9849d32d3f5814136ccdafad0af800c619bdf",
+      "state_sha256": "3f4550a2353d9f002f61689a9ee57fdb951b85c4c0e4f0706cd20cad332e93b5"
+    },
+    {
+      "epoch": 16,
+      "count": 257,
+      "feasible_states": 257,
+      "all_feasible": true,
+      "packed_feasible_states": 257,
+      "authored_feasible_states": 257,
+      "authored_max_violation": 8.977278732820428e-06,
+      "authored_per_constraint": {
+        "enzyme_pool_10uM": {
+          "max_violation": 8.977278732820428e-06,
+          "violating_states": 0
+        },
+        "substrate_pool_100uM": {
+          "max_violation": 4.9210243519614035e-06,
+          "violating_states": 0
+        },
+        "E_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "ES_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "S_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "P_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "ES_operating_interval_2_to_6uM": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        }
+      },
+      "max_violation": 8.977278732820428e-06,
+      "mean_max_violation": 2.851047205396585e-06,
+      "tolerance": 2e-05,
+      "per_constraint": {
+        "enzyme_pool_10uM": {
+          "max_violation": 8.977278732820428e-06,
+          "violating_states": 0
+        },
+        "substrate_pool_100uM": {
+          "max_violation": 4.9210243519614035e-06,
+          "violating_states": 0
+        },
+        "E_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "ES_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "S_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "P_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "ES_operating_interval_2_to_6uM": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        }
+      },
+      "lane_zero": {
+        "normalized": [
+          0.7599993944168091,
+          0.23999981582164764,
+          7.780000686645508,
+          1.9800002574920654
+        ],
+        "physical": {
+          "E": 7.599993944168091,
+          "ES": 2.3999981582164764,
+          "S": 77.80000686645508,
+          "P": 19.800002574920654
+        },
+        "signed_distances": {
+          "enzyme_pool_10uM": -5.584457427693459e-07,
+          "substrate_pool_100uM": 4.387626607518035e-07,
+          "E_nonnegative": -0.7599993944168091,
+          "ES_nonnegative": -0.23999981582164764,
+          "S_nonnegative": -7.780000686645508,
+          "P_nonnegative": -1.9800002574920654,
+          "ES_operating_interval_2_to_6uM": -0.039999812841415405
+        },
+        "authored_signed_distances": {
+          "enzyme_pool_10uM": -5.584457427693459e-07,
+          "substrate_pool_100uM": 4.387626607518035e-07,
+          "E_nonnegative": -0.7599993944168091,
+          "ES_nonnegative": -0.23999981582164764,
+          "S_nonnegative": -7.780000686645508,
+          "P_nonnegative": -1.9800002574920654,
+          "ES_operating_interval_2_to_6uM": -0.03999981582164763
+        },
+        "max_violation": 5.584457427693459e-07,
+        "authored_max_violation": 5.584457427693459e-07
+      },
+      "constraint_record_sha256": "a823beae9b3886d49f0f6e11b2687a211e0829d5392f9a81a507fe457696ef37",
+      "core_operator_sha256": "5186856286582813c1fc18544385e71b18f2aef7ea11ceab74a9ecc9bbfedcda",
+      "state_sha256": "23320c7ca548b383f724b85835036067004752e972058c3321e14e301b6aa98c"
+    },
+    {
+      "epoch": 32,
+      "count": 257,
+      "feasible_states": 257,
+      "all_feasible": true,
+      "packed_feasible_states": 257,
+      "authored_feasible_states": 257,
+      "authored_max_violation": 5.506041232963808e-07,
+      "authored_per_constraint": {
+        "enzyme_pool_10uM": {
+          "max_violation": 8.429369702178806e-08,
+          "violating_states": 0
+        },
+        "substrate_pool_100uM": {
+          "max_violation": 5.506041232963808e-07,
+          "violating_states": 0
+        },
+        "E_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "ES_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "S_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "P_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "ES_operating_interval_2_to_6uM": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        }
+      },
+      "max_violation": 5.506041232963808e-07,
+      "mean_max_violation": 2.79560625006469e-07,
+      "tolerance": 2e-05,
+      "per_constraint": {
+        "enzyme_pool_10uM": {
+          "max_violation": 8.429369702178806e-08,
+          "violating_states": 0
+        },
+        "substrate_pool_100uM": {
+          "max_violation": 5.506041232963808e-07,
+          "violating_states": 0
+        },
+        "E_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "ES_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "S_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "P_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "ES_operating_interval_2_to_6uM": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        }
+      },
+      "lane_zero": {
+        "normalized": [
+          0.7599998712539673,
+          0.24000009894371033,
+          7.780000686645508,
+          1.9800000190734863
+        ],
+        "physical": {
+          "E": 7.599998712539673,
+          "ES": 2.4000009894371033,
+          "S": 77.80000686645508,
+          "P": 19.800000190734863
+        },
+        "signed_distances": {
+          "enzyme_pool_10uM": -2.1073424255447014e-08,
+          "substrate_pool_100uM": 4.645722290313213e-07,
+          "E_nonnegative": -0.7599998712539673,
+          "ES_nonnegative": -0.24000009894371033,
+          "S_nonnegative": -7.780000686645508,
+          "P_nonnegative": -1.9800000190734863,
+          "ES_operating_interval_2_to_6uM": -0.04000009596347809
+        },
+        "authored_signed_distances": {
+          "enzyme_pool_10uM": -2.1073424255447014e-08,
+          "substrate_pool_100uM": 4.645722290313213e-07,
+          "E_nonnegative": -0.7599998712539673,
+          "ES_nonnegative": -0.24000009894371033,
+          "S_nonnegative": -7.780000686645508,
+          "P_nonnegative": -1.9800000190734863,
+          "ES_operating_interval_2_to_6uM": -0.040000098943710316
+        },
+        "max_violation": 4.645722290313213e-07,
+        "authored_max_violation": 4.645722290313213e-07
+      },
+      "constraint_record_sha256": "a823beae9b3886d49f0f6e11b2687a211e0829d5392f9a81a507fe457696ef37",
+      "core_operator_sha256": "41b1efeea59733694a60ad2442be721d50e8eeac6e3a174b41c2a749c80b4aab",
+      "state_sha256": "5768cab0ebe19bed25b5bca7d6cc6e20eb3c37fb0183e36aa7cf493f8d8ac9c2"
+    },
+    {
+      "epoch": 48,
+      "count": 257,
+      "feasible_states": 257,
+      "all_feasible": true,
+      "packed_feasible_states": 257,
+      "authored_feasible_states": 257,
+      "authored_max_violation": 5.506041232963808e-07,
+      "authored_per_constraint": {
+        "enzyme_pool_10uM": {
+          "max_violation": 8.429369702178806e-08,
+          "violating_states": 0
+        },
+        "substrate_pool_100uM": {
+          "max_violation": 5.506041232963808e-07,
+          "violating_states": 0
+        },
+        "E_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "ES_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "S_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "P_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "ES_operating_interval_2_to_6uM": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        }
+      },
+      "max_violation": 5.506041232963808e-07,
+      "mean_max_violation": 2.79560625006469e-07,
+      "tolerance": 2e-05,
+      "per_constraint": {
+        "enzyme_pool_10uM": {
+          "max_violation": 8.429369702178806e-08,
+          "violating_states": 0
+        },
+        "substrate_pool_100uM": {
+          "max_violation": 5.506041232963808e-07,
+          "violating_states": 0
+        },
+        "E_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "ES_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "S_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "P_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "ES_operating_interval_2_to_6uM": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        }
+      },
+      "lane_zero": {
+        "normalized": [
+          0.7599998712539673,
+          0.24000009894371033,
+          7.780000686645508,
+          1.9800000190734863
+        ],
+        "physical": {
+          "E": 7.599998712539673,
+          "ES": 2.4000009894371033,
+          "S": 77.80000686645508,
+          "P": 19.800000190734863
+        },
+        "signed_distances": {
+          "enzyme_pool_10uM": -2.1073424255447014e-08,
+          "substrate_pool_100uM": 4.645722290313213e-07,
+          "E_nonnegative": -0.7599998712539673,
+          "ES_nonnegative": -0.24000009894371033,
+          "S_nonnegative": -7.780000686645508,
+          "P_nonnegative": -1.9800000190734863,
+          "ES_operating_interval_2_to_6uM": -0.04000009596347809
+        },
+        "authored_signed_distances": {
+          "enzyme_pool_10uM": -2.1073424255447014e-08,
+          "substrate_pool_100uM": 4.645722290313213e-07,
+          "E_nonnegative": -0.7599998712539673,
+          "ES_nonnegative": -0.24000009894371033,
+          "S_nonnegative": -7.780000686645508,
+          "P_nonnegative": -1.9800000190734863,
+          "ES_operating_interval_2_to_6uM": -0.040000098943710316
+        },
+        "max_violation": 4.645722290313213e-07,
+        "authored_max_violation": 4.645722290313213e-07
+      },
+      "constraint_record_sha256": "a823beae9b3886d49f0f6e11b2687a211e0829d5392f9a81a507fe457696ef37",
+      "core_operator_sha256": "6ad9a32911f14c53d995f89611b9ae946833d3e34c9579723a3b857e92c53d45",
+      "state_sha256": "3d56658ec9198ff422ab15369f0c1f110b3ce4180a1c20d216d2f10c720a173e"
+    },
+    {
+      "epoch": 64,
+      "count": 257,
+      "feasible_states": 257,
+      "all_feasible": true,
+      "packed_feasible_states": 257,
+      "authored_feasible_states": 257,
+      "authored_max_violation": 5.506041232963808e-07,
+      "authored_per_constraint": {
+        "enzyme_pool_10uM": {
+          "max_violation": 1.0536712127723507e-07,
+          "violating_states": 0
+        },
+        "substrate_pool_100uM": {
+          "max_violation": 5.506041232963808e-07,
+          "violating_states": 0
+        },
+        "E_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "ES_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "S_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "P_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "ES_operating_interval_2_to_6uM": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        }
+      },
+      "max_violation": 5.506041232963808e-07,
+      "mean_max_violation": 2.7966105134218697e-07,
+      "tolerance": 2e-05,
+      "per_constraint": {
+        "enzyme_pool_10uM": {
+          "max_violation": 1.0536712127723507e-07,
+          "violating_states": 0
+        },
+        "substrate_pool_100uM": {
+          "max_violation": 5.506041232963808e-07,
+          "violating_states": 0
+        },
+        "E_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "ES_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "S_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "P_nonnegative": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "ES_operating_interval_2_to_6uM": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        }
+      },
+      "lane_zero": {
+        "normalized": [
+          0.7599998712539673,
+          0.24000009894371033,
+          7.780000686645508,
+          1.9800000190734863
+        ],
+        "physical": {
+          "E": 7.599998712539673,
+          "ES": 2.4000009894371033,
+          "S": 77.80000686645508,
+          "P": 19.800000190734863
+        },
+        "signed_distances": {
+          "enzyme_pool_10uM": -2.1073424255447014e-08,
+          "substrate_pool_100uM": 4.645722290313213e-07,
+          "E_nonnegative": -0.7599998712539673,
+          "ES_nonnegative": -0.24000009894371033,
+          "S_nonnegative": -7.780000686645508,
+          "P_nonnegative": -1.9800000190734863,
+          "ES_operating_interval_2_to_6uM": -0.04000009596347809
+        },
+        "authored_signed_distances": {
+          "enzyme_pool_10uM": -2.1073424255447014e-08,
+          "substrate_pool_100uM": 4.645722290313213e-07,
+          "E_nonnegative": -0.7599998712539673,
+          "ES_nonnegative": -0.24000009894371033,
+          "S_nonnegative": -7.780000686645508,
+          "P_nonnegative": -1.9800000190734863,
+          "ES_operating_interval_2_to_6uM": -0.040000098943710316
+        },
+        "max_violation": 4.645722290313213e-07,
+        "authored_max_violation": 4.645722290313213e-07
+      },
+      "constraint_record_sha256": "a823beae9b3886d49f0f6e11b2687a211e0829d5392f9a81a507fe457696ef37",
+      "core_operator_sha256": "12278442372ad3ce58d8be197be6204149bc877e5f74acd082489ed66203c5ae",
+      "state_sha256": "d8bfc458ed4c6879f7f1f42bbb1c510a3556ff078f96c1977521351cd0d2c8b2"
+    }
+  ],
+  "notes": [
+    "Each analytic affine field is an exact SDF in declared normalized coordinates, evaluated in FP32 on device.",
+    "Feasibility requires separate float64 audits of both packed FP32 laws and original authored JSON coefficients to pass.",
+    "Feasibility is measured at the declared tolerance, not proof of dynamics, optimality or physical validity.",
+    "Scientific law records are protected; mutable executable controller records determine relaxation."
+  ]
+}

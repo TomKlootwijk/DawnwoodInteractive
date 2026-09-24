@@ -1,0 +1,214 @@
+{
+  "profile": "DWI-D1-0.1",
+  "name": "FP32 literal equation audit witness",
+  "backend": "cpu",
+  "binary_sha256": "6a682fede4bb7e4437b75754583411fa2509070699a52ccb2e3a280260d76bd0",
+  "controller": "live",
+  "verification": null,
+  "laws_unchanged": true,
+  "controller_field_changed": true,
+  "initial": {
+    "epoch": 0,
+    "count": 1,
+    "feasible_states": 0,
+    "all_feasible": false,
+    "packed_feasible_states": 1,
+    "authored_feasible_states": 0,
+    "authored_max_violation": 0.030000000027939677,
+    "authored_per_constraint": {
+      "literal_x": {
+        "max_violation": 0.030000000027939677,
+        "violating_states": 1
+      }
+    },
+    "max_violation": 0.0,
+    "mean_max_violation": 0.0,
+    "tolerance": 2e-05,
+    "per_constraint": {
+      "literal_x": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      }
+    },
+    "lane_zero": {
+      "normalized": [
+        1000000.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical": {
+        "x": 1000000.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+      },
+      "signed_distances": {
+        "literal_x": 0.0
+      },
+      "authored_signed_distances": {
+        "literal_x": 0.030000000027939677
+      },
+      "max_violation": 0.0,
+      "authored_max_violation": 0.030000000027939677
+    },
+    "constraint_record_sha256": "f8ee5c0ab33ff020906dbd07e206dbd34852cb87dd2c0e98efa81818efe2e4ac",
+    "core_operator_sha256": "1f199d1c29a2c4ecafdedf981f0757bac186bb411d890a2a5346a4bd094d590d",
+    "state_sha256": "3f710015ea4fc4ae7d7b4ed7d878d7e97e7ca837c4df036f13987dc0ad5b2ae8"
+  },
+  "final": {
+    "epoch": 16,
+    "count": 1,
+    "feasible_states": 0,
+    "all_feasible": false,
+    "packed_feasible_states": 1,
+    "authored_feasible_states": 0,
+    "authored_max_violation": 0.030000000027939677,
+    "authored_per_constraint": {
+      "literal_x": {
+        "max_violation": 0.030000000027939677,
+        "violating_states": 1
+      }
+    },
+    "max_violation": 0.0,
+    "mean_max_violation": 0.0,
+    "tolerance": 2e-05,
+    "per_constraint": {
+      "literal_x": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      }
+    },
+    "lane_zero": {
+      "normalized": [
+        1000000.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical": {
+        "x": 1000000.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+      },
+      "signed_distances": {
+        "literal_x": 0.0
+      },
+      "authored_signed_distances": {
+        "literal_x": 0.030000000027939677
+      },
+      "max_violation": 0.0,
+      "authored_max_violation": 0.030000000027939677
+    },
+    "constraint_record_sha256": "f8ee5c0ab33ff020906dbd07e206dbd34852cb87dd2c0e98efa81818efe2e4ac",
+    "core_operator_sha256": "b756242a050fc86b8b23fdb01a98671c10dcdf65fa8fb4f37a46335a2c672e2f",
+    "state_sha256": "b174999c587ab458bff51d5349ef6e84216fa6d56b2d321e147aa3f0231ae105"
+  },
+  "frames": [
+    {
+      "epoch": 0,
+      "count": 1,
+      "feasible_states": 0,
+      "all_feasible": false,
+      "packed_feasible_states": 1,
+      "authored_feasible_states": 0,
+      "authored_max_violation": 0.030000000027939677,
+      "authored_per_constraint": {
+        "literal_x": {
+          "max_violation": 0.030000000027939677,
+          "violating_states": 1
+        }
+      },
+      "max_violation": 0.0,
+      "mean_max_violation": 0.0,
+      "tolerance": 2e-05,
+      "per_constraint": {
+        "literal_x": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        }
+      },
+      "lane_zero": {
+        "normalized": [
+          1000000.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "physical": {
+          "x": 1000000.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "signed_distances": {
+          "literal_x": 0.0
+        },
+        "authored_signed_distances": {
+          "literal_x": 0.030000000027939677
+        },
+        "max_violation": 0.0,
+        "authored_max_violation": 0.030000000027939677
+      },
+      "constraint_record_sha256": "f8ee5c0ab33ff020906dbd07e206dbd34852cb87dd2c0e98efa81818efe2e4ac",
+      "core_operator_sha256": "1f199d1c29a2c4ecafdedf981f0757bac186bb411d890a2a5346a4bd094d590d",
+      "state_sha256": "3f710015ea4fc4ae7d7b4ed7d878d7e97e7ca837c4df036f13987dc0ad5b2ae8"
+    },
+    {
+      "epoch": 16,
+      "count": 1,
+      "feasible_states": 0,
+      "all_feasible": false,
+      "packed_feasible_states": 1,
+      "authored_feasible_states": 0,
+      "authored_max_violation": 0.030000000027939677,
+      "authored_per_constraint": {
+        "literal_x": {
+          "max_violation": 0.030000000027939677,
+          "violating_states": 1
+        }
+      },
+      "max_violation": 0.0,
+      "mean_max_violation": 0.0,
+      "tolerance": 2e-05,
+      "per_constraint": {
+        "literal_x": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        }
+      },
+      "lane_zero": {
+        "normalized": [
+          1000000.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "physical": {
+          "x": 1000000.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 0.0
+        },
+        "signed_distances": {
+          "literal_x": 0.0
+        },
+        "authored_signed_distances": {
+          "literal_x": 0.030000000027939677
+        },
+        "max_violation": 0.0,
+        "authored_max_violation": 0.030000000027939677
+      },
+      "constraint_record_sha256": "f8ee5c0ab33ff020906dbd07e206dbd34852cb87dd2c0e98efa81818efe2e4ac",
+      "core_operator_sha256": "b756242a050fc86b8b23fdb01a98671c10dcdf65fa8fb4f37a46335a2c672e2f",
+      "state_sha256": "b174999c587ab458bff51d5349ef6e84216fa6d56b2d321e147aa3f0231ae105"
+    }
+  ],
+  "notes": [
+    "Each analytic affine field is an exact SDF in declared normalized coordinates, evaluated in FP32 on device.",
+    "Feasibility requires separate float64 audits of both packed FP32 laws and original authored JSON coefficients to pass.",
+    "Feasibility is measured at the declared tolerance, not proof of dynamics, optimality or physical validity.",
+    "Scientific law records are protected; mutable executable controller records determine relaxation."
+  ]
+}

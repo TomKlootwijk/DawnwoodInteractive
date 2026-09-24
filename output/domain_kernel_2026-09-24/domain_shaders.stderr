@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\TOMWERKPLEKTORENTJE\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\tools\build_shaders.py", line 64, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\TOMWERKPLEKTORENTJE\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\tools\build_shaders.py", line 46, in main
+    subprocess.run(command,check=True)
+  File "C:\Users\ietsm\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin\\glslangValidator.EXE', '-V', '--target-env', 'vulkan1.1', '-IC:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\include', 'C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\shaders\\evolve.comp', '-o', 'C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\shaders\\evolve.spv']' returned non-zero exit status 2.

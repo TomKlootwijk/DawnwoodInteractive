@@ -1,0 +1,107 @@
+{
+  "name": "Acid/base activity-window design",
+  "description": "Find two logarithmic acid/base activities consistent with a declared pH target window and authored activity bounds; the two unused native coordinates remain zero.",
+  "coordinates": [
+    "log10_acid_activity",
+    "log10_base_activity",
+    "auxiliary_0",
+    "auxiliary_1"
+  ],
+  "unit": "dimensionless log10 activity; auxiliary coordinates dimensionless",
+  "scale": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "initial": [
+    -3.0,
+    -2.4,
+    0.1,
+    -0.1
+  ],
+  "spread": [
+    0.2,
+    0.2,
+    0.05,
+    0.05
+  ],
+  "constraints": [
+    {
+      "id": "pH_7_to_7point4_with_pKa_7point2",
+      "kind": "slab",
+      "normal": [
+        -1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "offset": 0.0,
+      "halfwidth": 0.2
+    },
+    {
+      "id": "acid_log_activity_design_range",
+      "kind": "slab",
+      "normal": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "offset": -4.0,
+      "halfwidth": 4.0
+    },
+    {
+      "id": "base_log_activity_design_range",
+      "kind": "slab",
+      "normal": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "offset": -4.0,
+      "halfwidth": 4.0
+    },
+    {
+      "id": "unused_coordinate_0",
+      "kind": "equality",
+      "normal": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "offset": 0.0,
+      "halfwidth": 0.0
+    },
+    {
+      "id": "unused_coordinate_1",
+      "kind": "equality",
+      "normal": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "offset": 0.0,
+      "halfwidth": 0.0
+    }
+  ],
+  "sources": [
+    "https://goldbook.iupac.org/terms/view/H02781",
+    "https://goldbook.iupac.org/terms/view/P04524",
+    "https://goldbook.iupac.org/terms/view/A00080"
+  ],
+  "assumptions": [
+    "Single acid/conjugate-base equilibrium with thermodynamic activities and compatible standard states; pH=pKa+log10(a_base)-log10(a_acid).",
+    "pKa=7.2 and target pH 7.0..7.4 are illustrative. No named acid, buffer, temperature, ionic strength or measured constant is asserted.",
+    "The declared pH interval becomes -0.2<=q_base-q_acid<=0.2. Its Euclidean signed distance divides the affine margin by sqrt(2).",
+    "Both log10 activities are restricted to [-8,0] as an authored design domain; this range is not a general thermodynamic bound.",
+    "Activities are dimensionless. Treating them as concentrations requires additional activity-coefficient assumptions absent from this problem.",
+    "The third and fourth coordinates are mathematical padding constrained to zero, not extra chemical species.",
+    "The problem does not solve electroneutrality, buffer capacity, temperature dependence or a multi-acid mixture; a feasible result is conditional on the supplied pKa.",
+    "One explicit feasible witness is [-3,-3,0,0], giving pH 7.2."
+  ],
+  "tolerance": 2e-05
+}

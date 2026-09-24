@@ -1,0 +1,10 @@
+C:\TOMWERKPLEKTORENTJE\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\shaders\mutate.comp
+C:\TOMWERKPLEKTORENTJE\DawnwoodInteractive\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\Dawnwood_GPU_v0.3\shaders\evolve.comp
+ERROR: C:/TOMWERKPLEKTORENTJE/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/include/numeric_evolve.inc:31: 'input' : Reserved word. 
+ERROR: C:/TOMWERKPLEKTORENTJE/DawnwoodInteractive/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/include/numeric_evolve.inc:31: '' : compilation terminated 
+ERROR: 2 compilation errors.  No code generated.
+
+
+ERROR: Linking compute stage: Missing entry point: Each stage requires one entry point
+
+SPIR-V is not generated for failed compile or link

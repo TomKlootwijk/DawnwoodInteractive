@@ -1,0 +1,1027 @@
+{
+  "profile": "DWI-D1-0.1",
+  "name": "Acid/base activity-window design",
+  "backend": "vulkan",
+  "binary_sha256": "6a682fede4bb7e4437b75754583411fa2509070699a52ccb2e3a280260d76bd0",
+  "controller": "live",
+  "verification": {
+    "runtime_version": "0.6.0-domain1",
+    "profile": "DWI-D1-0.1",
+    "kind": "CPU versus Vulkan every epoch, all state and operator words",
+    "config": {
+      "count": 257,
+      "operators": 36,
+      "epoch": 0,
+      "depth": 4,
+      "dt": 0.00999999978,
+      "yup": 0.000500000024,
+      "epsilon": 0.125,
+      "mutation": 1,
+      "jitter": 1,
+      "feedback": 1,
+      "phaseRate": 0.125,
+      "radialRate": 0.00999999978,
+      "historyWeight": 0.75,
+      "fieldScale": 0.00499999989,
+      "state_bytes": 128,
+      "operator_bytes": 64
+    },
+    "epochs_requested": 32,
+    "epochs_checked": 32,
+    "atol": 1e-05,
+    "rtol": 2e-05,
+    "passed": true,
+    "aggregate": {
+      "passed": true,
+      "bitwise_word_mismatches": 0,
+      "bitwise_equal": true,
+      "float_mismatches": 0,
+      "integer_mismatches": 0,
+      "nonfinite_values": 0,
+      "invalid_snapshots": 0,
+      "worst_scaled_error": 0,
+      "max_absolute_error": 0,
+      "first_mismatch": ""
+    },
+    "device": {
+      "name": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "vendor_id": 4318,
+      "device_id": 12056,
+      "api_version": 4211013,
+      "driver_version": 2479800320,
+      "software_device": false,
+      "validation_layer_enabled": false,
+      "synchronization_validation_enabled": false,
+      "validation_errors": 0,
+      "validation_warnings": 0,
+      "memory_budget_extension": true,
+      "requested_budget_fraction": 0.8,
+      "device_type": 2,
+      "states_heap_index": 0,
+      "state_buffer_heaps": [
+        0,
+        0
+      ],
+      "streamed_initialization": false,
+      "host_state_chunk_bytes": 0,
+      "state_page_capacity": 33554431,
+      "state_pages_per_buffer": 1,
+      "max_state_records": 67108862,
+      "workgroup_size": 32,
+      "state_dispatch_limit": 1048576,
+      "compute_submission_count": 32,
+      "max_submission_seconds": 0.00103219,
+      "split_evolution": false,
+      "evolution_dispatches_per_chunk": 1,
+      "evolution_scratch_record_bytes": 96,
+      "evolution_scratch_bytes": 0,
+      "evolution_scratch_allocated_bytes": 0,
+      "texture_compression_BC": true,
+      "BC5_sampled_image": true,
+      "EAC_RG11_sampled_image": false,
+      "ASTC_4x4_sampled_image": false,
+      "max_compute_shared_memory_bytes": 49152,
+      "max_storage_buffer_range": 4294967295,
+      "max_compute_workgroup_count_x": 2147483647,
+      "max_image_dimension_2d": 32768,
+      "max_memory_allocation_count": 4294967295,
+      "timestamp_valid_bits": 64,
+      "allocated_buffer_bytes": 98688,
+      "allocated_image_bytes": 36864,
+      "allocated_total_bytes": 135552,
+      "staging_bytes": 32896,
+      "allocation_count": 5,
+      "state_ping_pong_payload_bytes": 65792,
+      "operator_lut_payload_bytes": 4608,
+      "operator_lut_format": "RGBA32_UINT",
+      "operator_lut_storage": "sampled_and_storage_VkImage",
+      "operator_lut_width": 144,
+      "operator_lut_height": 1,
+      "operator_lut_texels_per_record": 4,
+      "operator_lut_point_fetch": true,
+      "operator_lut_filtering": false,
+      "operator_lut_parameter_precision_bits": 32,
+      "operator_lut_flag_word_bits": 32,
+      "operator_lut_used_orientation_mask": 1,
+      "operator_bytecode_bits_per_instruction": 4,
+      "evolve_shared_operator_records": 31,
+      "evolve_shared_operator_bytes": 1984,
+      "mutate_shared_operator_bytes": 128,
+      "permanent_texture_cache_residence_proven": false,
+      "upload_bytes": 35200,
+      "download_bytes": 1126400,
+      "completed_epochs": 32,
+      "advance_buffer_copy_commands": 0,
+      "advance_image_copy_commands": 0,
+      "timer": "Vulkan device timestamps",
+      "last_dispatch_seconds": 0.00101443,
+      "last_wall_seconds": 0.0011127,
+      "heaps": [
+        {
+          "index": 0,
+          "size": 12524191744,
+          "runtime_buffer_allocation_bytes": 65792,
+          "runtime_image_allocation_bytes": 36864,
+          "runtime_allocation_bytes": 102656,
+          "device_local": true,
+          "budget_at_start": 11718885376,
+          "usage_at_start": 324575232
+        },
+        {
+          "index": 1,
+          "size": 8279207936,
+          "runtime_buffer_allocation_bytes": 32896,
+          "runtime_image_allocation_bytes": 0,
+          "runtime_allocation_bytes": 32896,
+          "device_local": false,
+          "budget_at_start": 8697946739,
+          "usage_at_start": 12668928
+        }
+      ]
+    },
+    "trace": [
+      {
+        "epoch": 1,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 2,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 3,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 4,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 5,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 6,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 7,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 8,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 9,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 10,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 11,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 12,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 13,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 14,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 15,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 16,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 17,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 18,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 19,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 20,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 21,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 22,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 23,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 24,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 25,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 26,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 27,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 28,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 29,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 30,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 31,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      },
+      {
+        "epoch": 32,
+        "comparison": {
+          "passed": true,
+          "bitwise_word_mismatches": 0,
+          "bitwise_equal": true,
+          "float_mismatches": 0,
+          "integer_mismatches": 0,
+          "nonfinite_values": 0,
+          "invalid_snapshots": 0,
+          "worst_scaled_error": 0,
+          "max_absolute_error": 0,
+          "first_mismatch": ""
+        }
+      }
+    ]
+  },
+  "laws_unchanged": true,
+  "controller_field_changed": true,
+  "initial": {
+    "epoch": 0,
+    "count": 257,
+    "feasible_states": 0,
+    "all_feasible": false,
+    "max_violation": 0.552780732177436,
+    "mean_max_violation": 0.28975609965242083,
+    "tolerance": 2e-05,
+    "per_constraint": {
+      "pH_7_to_7point4_with_pKa_7point2": {
+        "max_violation": 0.552780732177436,
+        "violating_states": 257
+      },
+      "acid_log_activity_design_range": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "base_log_activity_design_range": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "unused_coordinate_0": {
+        "max_violation": 0.14986972510814667,
+        "violating_states": 257
+      },
+      "unused_coordinate_1": {
+        "max_violation": 0.14914600551128387,
+        "violating_states": 257
+      }
+    },
+    "lane_zero": {
+      "normalized": [
+        -3.0,
+        -2.4000000953674316,
+        0.10000000149011612,
+        -0.10000000149011612
+      ],
+      "physical": {
+        "log10_acid_activity": -3.0,
+        "log10_base_activity": -2.4000000953674316,
+        "auxiliary_0": 0.10000000149011612,
+        "auxiliary_1": -0.10000000149011612
+      },
+      "signed_distances": {
+        "pH_7_to_7point4_with_pKa_7point2": 0.2828426429323189,
+        "acid_log_activity_design_range": -3.0,
+        "base_log_activity_design_range": -2.4000000953674316,
+        "unused_coordinate_0": 0.10000000149011612,
+        "unused_coordinate_1": -0.10000000149011612
+      },
+      "max_violation": 0.2828426429323189
+    },
+    "constraint_record_sha256": "ed8ef13806cd839b435604b2515e1e63081817d7b4715d0f8c42862e11bae321",
+    "core_operator_sha256": "cbf1e777e1dc0f1a178e088ee411df4aa8a3c1f8842944fb66c225eafafd11c9",
+    "state_sha256": "83b6b38c2d13c761fe709e999750275108c91ed2e0af2c9ec460cc455ce2360b"
+  },
+  "final": {
+    "epoch": 128,
+    "count": 257,
+    "feasible_states": 257,
+    "all_feasible": true,
+    "max_violation": 2.0019753042674663e-07,
+    "mean_max_violation": 1.2016771691189698e-07,
+    "tolerance": 2e-05,
+    "per_constraint": {
+      "pH_7_to_7point4_with_pKa_7point2": {
+        "max_violation": 2.0019753042674663e-07,
+        "violating_states": 0
+      },
+      "acid_log_activity_design_range": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "base_log_activity_design_range": {
+        "max_violation": 0.0,
+        "violating_states": 0
+      },
+      "unused_coordinate_0": {
+        "max_violation": 1.8427013148738914e-38,
+        "violating_states": 0
+      },
+      "unused_coordinate_1": {
+        "max_violation": 1.8410943057950037e-38,
+        "violating_states": 0
+      }
+    },
+    "lane_zero": {
+      "normalized": [
+        -2.8000001907348633,
+        -2.5999999046325684,
+        0.0,
+        -1.2930414317230962e-38
+      ],
+      "physical": {
+        "log10_acid_activity": -2.8000001907348633,
+        "log10_base_activity": -2.5999999046325684,
+        "auxiliary_0": 0.0,
+        "auxiliary_1": -1.2930414317230962e-38
+      },
+      "signed_distances": {
+        "pH_7_to_7point4_with_pKa_7point2": 2.0019753042674663e-07,
+        "acid_log_activity_design_range": -2.8000001907348633,
+        "base_log_activity_design_range": -2.5999999046325684,
+        "unused_coordinate_0": 0.0,
+        "unused_coordinate_1": -1.2930414317230962e-38
+      },
+      "max_violation": 2.0019753042674663e-07
+    },
+    "constraint_record_sha256": "ed8ef13806cd839b435604b2515e1e63081817d7b4715d0f8c42862e11bae321",
+    "core_operator_sha256": "4735c3acc75e3f8cecf3de7e49e3030e8cf1ee46911ba6e6caa0e53606a4db2c",
+    "state_sha256": "27b93be844c6bacf9caf361e7ab8612401d55877f7a290e28e29f8b2ca377425"
+  },
+  "frames": [
+    {
+      "epoch": 0,
+      "count": 257,
+      "feasible_states": 0,
+      "all_feasible": false,
+      "max_violation": 0.552780732177436,
+      "mean_max_violation": 0.28975609965242083,
+      "tolerance": 2e-05,
+      "per_constraint": {
+        "pH_7_to_7point4_with_pKa_7point2": {
+          "max_violation": 0.552780732177436,
+          "violating_states": 257
+        },
+        "acid_log_activity_design_range": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "base_log_activity_design_range": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "unused_coordinate_0": {
+          "max_violation": 0.14986972510814667,
+          "violating_states": 257
+        },
+        "unused_coordinate_1": {
+          "max_violation": 0.14914600551128387,
+          "violating_states": 257
+        }
+      },
+      "lane_zero": {
+        "normalized": [
+          -3.0,
+          -2.4000000953674316,
+          0.10000000149011612,
+          -0.10000000149011612
+        ],
+        "physical": {
+          "log10_acid_activity": -3.0,
+          "log10_base_activity": -2.4000000953674316,
+          "auxiliary_0": 0.10000000149011612,
+          "auxiliary_1": -0.10000000149011612
+        },
+        "signed_distances": {
+          "pH_7_to_7point4_with_pKa_7point2": 0.2828426429323189,
+          "acid_log_activity_design_range": -3.0,
+          "base_log_activity_design_range": -2.4000000953674316,
+          "unused_coordinate_0": 0.10000000149011612,
+          "unused_coordinate_1": -0.10000000149011612
+        },
+        "max_violation": 0.2828426429323189
+      },
+      "constraint_record_sha256": "ed8ef13806cd839b435604b2515e1e63081817d7b4715d0f8c42862e11bae321",
+      "core_operator_sha256": "cbf1e777e1dc0f1a178e088ee411df4aa8a3c1f8842944fb66c225eafafd11c9",
+      "state_sha256": "83b6b38c2d13c761fe709e999750275108c91ed2e0af2c9ec460cc455ce2360b"
+    },
+    {
+      "epoch": 32,
+      "count": 257,
+      "feasible_states": 257,
+      "all_feasible": true,
+      "max_violation": 2.0019753042674663e-07,
+      "mean_max_violation": 1.2016771691189698e-07,
+      "tolerance": 2e-05,
+      "per_constraint": {
+        "pH_7_to_7point4_with_pKa_7point2": {
+          "max_violation": 2.0019753042674663e-07,
+          "violating_states": 0
+        },
+        "acid_log_activity_design_range": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "base_log_activity_design_range": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "unused_coordinate_0": {
+          "max_violation": 2.3785776137336817e-14,
+          "violating_states": 0
+        },
+        "unused_coordinate_1": {
+          "max_violation": 3.5376774887340215e-14,
+          "violating_states": 0
+        }
+      },
+      "lane_zero": {
+        "normalized": [
+          -2.8000001907348633,
+          -2.5999999046325684,
+          1.6042875171764018e-14,
+          -2.070998774761964e-14
+        ],
+        "physical": {
+          "log10_acid_activity": -2.8000001907348633,
+          "log10_base_activity": -2.5999999046325684,
+          "auxiliary_0": 1.6042875171764018e-14,
+          "auxiliary_1": -2.070998774761964e-14
+        },
+        "signed_distances": {
+          "pH_7_to_7point4_with_pKa_7point2": 2.0019753042674663e-07,
+          "acid_log_activity_design_range": -2.8000001907348633,
+          "base_log_activity_design_range": -2.5999999046325684,
+          "unused_coordinate_0": 1.6042875171764018e-14,
+          "unused_coordinate_1": -2.070998774761964e-14
+        },
+        "max_violation": 2.0019753042674663e-07
+      },
+      "constraint_record_sha256": "ed8ef13806cd839b435604b2515e1e63081817d7b4715d0f8c42862e11bae321",
+      "core_operator_sha256": "7d737c2115b49b1e34714b017bb22e85bd7d51414b4659397c6e99bb2aac5420",
+      "state_sha256": "1c6c6d8f1d430d283725c41141974953bc18f38e308960017dfd010f62aeef0d"
+    },
+    {
+      "epoch": 64,
+      "count": 257,
+      "feasible_states": 257,
+      "all_feasible": true,
+      "max_violation": 2.0019753042674663e-07,
+      "mean_max_violation": 1.2016771691189698e-07,
+      "tolerance": 2e-05,
+      "per_constraint": {
+        "pH_7_to_7point4_with_pKa_7point2": {
+          "max_violation": 2.0019753042674663e-07,
+          "violating_states": 0
+        },
+        "acid_log_activity_design_range": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "base_log_activity_design_range": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "unused_coordinate_0": {
+          "max_violation": 2.464869854072916e-27,
+          "violating_states": 0
+        },
+        "unused_coordinate_1": {
+          "max_violation": 3.665135202876296e-27,
+          "violating_states": 0
+        }
+      },
+      "lane_zero": {
+        "normalized": [
+          -2.8000001907348633,
+          -2.5999999046325684,
+          1.5448508085232e-27,
+          -1.9942723388357947e-27
+        ],
+        "physical": {
+          "log10_acid_activity": -2.8000001907348633,
+          "log10_base_activity": -2.5999999046325684,
+          "auxiliary_0": 1.5448508085232e-27,
+          "auxiliary_1": -1.9942723388357947e-27
+        },
+        "signed_distances": {
+          "pH_7_to_7point4_with_pKa_7point2": 2.0019753042674663e-07,
+          "acid_log_activity_design_range": -2.8000001907348633,
+          "base_log_activity_design_range": -2.5999999046325684,
+          "unused_coordinate_0": 1.5448508085232e-27,
+          "unused_coordinate_1": -1.9942723388357947e-27
+        },
+        "max_violation": 2.0019753042674663e-07
+      },
+      "constraint_record_sha256": "ed8ef13806cd839b435604b2515e1e63081817d7b4715d0f8c42862e11bae321",
+      "core_operator_sha256": "954e41a8c2bc7694577a6279a087f760780b7fdca0285e1dbd079e16e1a8d194",
+      "state_sha256": "a4b07b9c93086a543c0bbb90b97b94fa999f7dc60240f609b12268beed2271d1"
+    },
+    {
+      "epoch": 96,
+      "count": 257,
+      "feasible_states": 257,
+      "all_feasible": true,
+      "max_violation": 2.0019753042674663e-07,
+      "mean_max_violation": 1.2016771691189698e-07,
+      "tolerance": 2e-05,
+      "per_constraint": {
+        "pH_7_to_7point4_with_pKa_7point2": {
+          "max_violation": 2.0019753042674663e-07,
+          "violating_states": 0
+        },
+        "acid_log_activity_design_range": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "base_log_activity_design_range": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "unused_coordinate_0": {
+          "max_violation": 1.8427013148738914e-38,
+          "violating_states": 0
+        },
+        "unused_coordinate_1": {
+          "max_violation": 1.8410943057950037e-38,
+          "violating_states": 0
+        }
+      },
+      "lane_zero": {
+        "normalized": [
+          -2.8000001907348633,
+          -2.5999999046325684,
+          0.0,
+          -1.2930414317230962e-38
+        ],
+        "physical": {
+          "log10_acid_activity": -2.8000001907348633,
+          "log10_base_activity": -2.5999999046325684,
+          "auxiliary_0": 0.0,
+          "auxiliary_1": -1.2930414317230962e-38
+        },
+        "signed_distances": {
+          "pH_7_to_7point4_with_pKa_7point2": 2.0019753042674663e-07,
+          "acid_log_activity_design_range": -2.8000001907348633,
+          "base_log_activity_design_range": -2.5999999046325684,
+          "unused_coordinate_0": 0.0,
+          "unused_coordinate_1": -1.2930414317230962e-38
+        },
+        "max_violation": 2.0019753042674663e-07
+      },
+      "constraint_record_sha256": "ed8ef13806cd839b435604b2515e1e63081817d7b4715d0f8c42862e11bae321",
+      "core_operator_sha256": "6eb6760188c5ef7dc74c30970b79730298f47110aa460e99e1dbb2caeb849169",
+      "state_sha256": "9947076b9c9ee537baf4d543e5bb333f69726f44861aaa7b0658efb622e86a37"
+    },
+    {
+      "epoch": 128,
+      "count": 257,
+      "feasible_states": 257,
+      "all_feasible": true,
+      "max_violation": 2.0019753042674663e-07,
+      "mean_max_violation": 1.2016771691189698e-07,
+      "tolerance": 2e-05,
+      "per_constraint": {
+        "pH_7_to_7point4_with_pKa_7point2": {
+          "max_violation": 2.0019753042674663e-07,
+          "violating_states": 0
+        },
+        "acid_log_activity_design_range": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "base_log_activity_design_range": {
+          "max_violation": 0.0,
+          "violating_states": 0
+        },
+        "unused_coordinate_0": {
+          "max_violation": 1.8427013148738914e-38,
+          "violating_states": 0
+        },
+        "unused_coordinate_1": {
+          "max_violation": 1.8410943057950037e-38,
+          "violating_states": 0
+        }
+      },
+      "lane_zero": {
+        "normalized": [
+          -2.8000001907348633,
+          -2.5999999046325684,
+          0.0,
+          -1.2930414317230962e-38
+        ],
+        "physical": {
+          "log10_acid_activity": -2.8000001907348633,
+          "log10_base_activity": -2.5999999046325684,
+          "auxiliary_0": 0.0,
+          "auxiliary_1": -1.2930414317230962e-38
+        },
+        "signed_distances": {
+          "pH_7_to_7point4_with_pKa_7point2": 2.0019753042674663e-07,
+          "acid_log_activity_design_range": -2.8000001907348633,
+          "base_log_activity_design_range": -2.5999999046325684,
+          "unused_coordinate_0": 0.0,
+          "unused_coordinate_1": -1.2930414317230962e-38
+        },
+        "max_violation": 2.0019753042674663e-07
+      },
+      "constraint_record_sha256": "ed8ef13806cd839b435604b2515e1e63081817d7b4715d0f8c42862e11bae321",
+      "core_operator_sha256": "4735c3acc75e3f8cecf3de7e49e3030e8cf1ee46911ba6e6caa0e53606a4db2c",
+      "state_sha256": "27b93be844c6bacf9caf361e7ab8612401d55877f7a290e28e29f8b2ca377425"
+    }
+  ],
+  "notes": [
+    "Each analytic affine field is an exact SDF in declared normalized coordinates, evaluated in FP32 on device.",
+    "The audit uses float64 on the actually packed FP32 law coefficients.",
+    "Feasibility is measured at the declared tolerance, not proof of dynamics, optimality or physical validity.",
+    "Scientific law records are protected; mutable executable controller records determine relaxation."
+  ]
+}
