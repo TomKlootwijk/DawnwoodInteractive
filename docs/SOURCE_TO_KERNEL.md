@@ -13,6 +13,11 @@ and packed checkpoints; it does not load that application model. The table below
 records individual numerical correspondences, not a working compiler for the
 source application. See the [literal application contract](LITERAL_APPLICATION_CONTRACT.md).
 
+The newer [DWI-XIR component](SOURCE_NUMERICAL_INTEGRATION.md) now compiles a
+selected source-model body into actual CPU/GPU instructions. Its verified
+two-Hadamard expression is a separate binding; it does not change N1/D1 or close
+the field/anchor/cycle/metarule integration gap described here.
+
 | Architectural relationship | Source provenance | Current implementation and exact location |
 |---|---|---|
 | Whole state includes mutable definitions | Original pp. 14–16; Unified pp. 3, 9, 12–13 | [Snapshot][runtime] line 7 stores configuration, states and operators. [CPU epoch][cpu] lines 10–12 reads old states/operators, constructs changed operators, evolves states using the changed field, then advances the epoch. |

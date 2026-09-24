@@ -1,0 +1,14 @@
+{
+  "build_source_staged_and_worktree_hash_failures": [
+    "staged:C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\include\\numeric_types.inc",
+    "staged:C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\include\\numeric_math.inc"
+  ],
+  "existing_math_unchanged_except_git_line_ending_preservation": {
+    "include/numeric_types.inc": true,
+    "include/numeric_math.inc": true
+  },
+  "local_document_links_checked": 99,
+  "broken_links": [],
+  "original_source_application_files_checked": 40,
+  "changed_source_application_files": []
+}

@@ -1,0 +1,1 @@
+ValueError: Nonfinite JSON number is not supported: NaN

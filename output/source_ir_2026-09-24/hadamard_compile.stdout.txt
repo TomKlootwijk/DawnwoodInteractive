@@ -1,0 +1,9 @@
+{
+  "output": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\hadamard",
+  "profile": "DWI-XIR-0.1",
+  "scope": "selected_operator_body",
+  "complete_application_lowered": false,
+  "row_count": 257,
+  "instruction_count": 30,
+  "program_sha256": "cf8783beb503e927ec7ae3c2d8cdec9268f5cb4861e572dc1ee92e41f9fb865c"
+}

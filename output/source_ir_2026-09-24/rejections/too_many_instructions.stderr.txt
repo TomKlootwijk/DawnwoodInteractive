@@ -1,0 +1,1 @@
+DWI-XIR-0.1: instructionCount must be in [1,256]

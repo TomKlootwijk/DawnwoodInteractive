@@ -1,0 +1,1223 @@
+[
+  {
+    "name": "hadamard_compile",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "local_lab/source_ir.py",
+      "compile",
+      "--bindings",
+      "source_bindings/xir_v0.1.json",
+      "--operator",
+      "hadamard",
+      "--inputs",
+      "source_bindings/examples/hinge_inputs.json",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\hadamard"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "sphere_compile",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "local_lab/source_ir.py",
+      "compile",
+      "--bindings",
+      "source_bindings/xir_v0.1.json",
+      "--operator",
+      "sphere",
+      "--inputs",
+      "source_bindings/examples/sphere_inputs.json",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\sphere"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "double_dot_compile",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "local_lab/source_ir.py",
+      "compile",
+      "--bindings",
+      "source_bindings/xir_v0.1.json",
+      "--operator",
+      "double_dot",
+      "--inputs",
+      "source_bindings/examples/colon_inputs.json",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\double_dot"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "hadamard_cpu",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\hadamard\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\hadamard\\cpu.bin"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 0.5920976999987033,
+    "environment_overrides": {},
+    "executable_sha256": "157acc93aad5c972757e85dd16cece4d72b313aeaa8c69db06aa58640ed6d7f1",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44"
+  },
+  {
+    "name": "hadamard_vulkan",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "vulkan",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\hadamard\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\hadamard\\vulkan.bin",
+      "--device",
+      "RTX 5070 Ti"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 3.0076182000011613,
+    "environment_overrides": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin"
+    },
+    "executable_sha256": "157acc93aad5c972757e85dd16cece4d72b313aeaa8c69db06aa58640ed6d7f1",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44"
+  },
+  {
+    "name": "sphere_cpu",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\sphere\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\sphere\\cpu.bin"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 0.009596899999451125,
+    "environment_overrides": {},
+    "executable_sha256": "157acc93aad5c972757e85dd16cece4d72b313aeaa8c69db06aa58640ed6d7f1",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44"
+  },
+  {
+    "name": "sphere_vulkan",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "vulkan",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\sphere\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\sphere\\vulkan.bin",
+      "--device",
+      "RTX 5070 Ti"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 0.19953800000075717,
+    "environment_overrides": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin"
+    },
+    "executable_sha256": "157acc93aad5c972757e85dd16cece4d72b313aeaa8c69db06aa58640ed6d7f1",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44"
+  },
+  {
+    "name": "double_dot_cpu",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\double_dot\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\double_dot\\cpu.bin"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 0.00998780000008992,
+    "environment_overrides": {},
+    "executable_sha256": "157acc93aad5c972757e85dd16cece4d72b313aeaa8c69db06aa58640ed6d7f1",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44"
+  },
+  {
+    "name": "double_dot_vulkan",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "vulkan",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\double_dot\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\double_dot\\vulkan.bin",
+      "--device",
+      "RTX 5070 Ti"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 0.20524719999957597,
+    "environment_overrides": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin"
+    },
+    "executable_sha256": "157acc93aad5c972757e85dd16cece4d72b313aeaa8c69db06aa58640ed6d7f1",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44"
+  },
+  {
+    "name": "hadamard_final_cpu",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\hadamard\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\hadamard_final_cpu.bin"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "executable_sha256": "c7f0ab76c3956222f3abbf93b214d0ab3c2d8be6b682ec3f531d1c7c6df68e01",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44",
+    "vulkan_validation_requested": false
+  },
+  {
+    "name": "hadamard_final_vulkan",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "vulkan",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\hadamard\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\hadamard_final_vulkan.bin",
+      "--device",
+      "RTX 5070 Ti"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "executable_sha256": "c7f0ab76c3956222f3abbf93b214d0ab3c2d8be6b682ec3f531d1c7c6df68e01",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44",
+    "vulkan_validation_requested": true
+  },
+  {
+    "name": "sphere_final_cpu",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\sphere\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\sphere_final_cpu.bin"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "executable_sha256": "c7f0ab76c3956222f3abbf93b214d0ab3c2d8be6b682ec3f531d1c7c6df68e01",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44",
+    "vulkan_validation_requested": false
+  },
+  {
+    "name": "sphere_final_vulkan",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "vulkan",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\sphere\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\sphere_final_vulkan.bin",
+      "--device",
+      "RTX 5070 Ti"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "executable_sha256": "c7f0ab76c3956222f3abbf93b214d0ab3c2d8be6b682ec3f531d1c7c6df68e01",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44",
+    "vulkan_validation_requested": true
+  },
+  {
+    "name": "double_dot_final_cpu",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\double_dot\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\double_dot_final_cpu.bin"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "executable_sha256": "c7f0ab76c3956222f3abbf93b214d0ab3c2d8be6b682ec3f531d1c7c6df68e01",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44",
+    "vulkan_validation_requested": false
+  },
+  {
+    "name": "double_dot_final_vulkan",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "vulkan",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\double_dot\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\double_dot_final_vulkan.bin",
+      "--device",
+      "RTX 5070 Ti"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "executable_sha256": "c7f0ab76c3956222f3abbf93b214d0ab3c2d8be6b682ec3f531d1c7c6df68e01",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44",
+    "vulkan_validation_requested": true
+  },
+  {
+    "name": "body_edit_compile",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "local_lab/source_ir.py",
+      "compile",
+      "--model",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\edited_model.json",
+      "--bindings",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\xir_v0.1.json",
+      "--operator",
+      "hadamard",
+      "--inputs",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\examples\\hinge_inputs.json",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\body_edit"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "executable_sha256": null,
+    "shader_sha256": null,
+    "vulkan_validation_requested": false
+  },
+  {
+    "name": "body_edit_cpu",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\body_edit\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\body_edit_cpu.bin"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "executable_sha256": "c7f0ab76c3956222f3abbf93b214d0ab3c2d8be6b682ec3f531d1c7c6df68e01",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44",
+    "vulkan_validation_requested": false
+  },
+  {
+    "name": "body_edit_vulkan",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "vulkan",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\body_edit\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\body_edit_vulkan.bin",
+      "--device",
+      "RTX 5070 Ti"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "executable_sha256": "c7f0ab76c3956222f3abbf93b214d0ab3c2d8be6b682ec3f531d1c7c6df68e01",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44",
+    "vulkan_validation_requested": true
+  },
+  {
+    "name": "instruction_vocabulary_compile",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "local_lab/source_ir.py",
+      "compile",
+      "--model",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\instruction_vocabulary_model.json",
+      "--bindings",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\xir_v0.1.json",
+      "--operator",
+      "hadamard",
+      "--inputs",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\instruction_vocabulary_inputs.json",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\instruction_vocabulary"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "executable_sha256": null,
+    "shader_sha256": null,
+    "vulkan_validation_requested": false
+  },
+  {
+    "name": "instruction_vocabulary_cpu",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\instruction_vocabulary\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\instruction_vocabulary_cpu.bin"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "executable_sha256": "c7f0ab76c3956222f3abbf93b214d0ab3c2d8be6b682ec3f531d1c7c6df68e01",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44",
+    "vulkan_validation_requested": false
+  },
+  {
+    "name": "instruction_vocabulary_vulkan",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "vulkan",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\instruction_vocabulary\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\instruction_vocabulary_vulkan.bin",
+      "--device",
+      "RTX 5070 Ti"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "executable_sha256": "c7f0ab76c3956222f3abbf93b214d0ab3c2d8be6b682ec3f531d1c7c6df68e01",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44",
+    "vulkan_validation_requested": true
+  },
+  {
+    "name": "constant_only_compile",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "local_lab/source_ir.py",
+      "compile",
+      "--model",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\constant_only_model.json",
+      "--bindings",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\xir_v0.1.json",
+      "--operator",
+      "hadamard",
+      "--inputs",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\constant_only_inputs.json",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\constant_only"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "executable_sha256": null,
+    "shader_sha256": null,
+    "vulkan_validation_requested": false
+  },
+  {
+    "name": "constant_only_cpu",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\constant_only\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\constant_only_cpu.bin"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "executable_sha256": "c7f0ab76c3956222f3abbf93b214d0ab3c2d8be6b682ec3f531d1c7c6df68e01",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44",
+    "vulkan_validation_requested": false
+  },
+  {
+    "name": "constant_only_vulkan",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "vulkan",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\constant_only\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\constant_only_vulkan.bin",
+      "--device",
+      "RTX 5070 Ti"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "executable_sha256": "c7f0ab76c3956222f3abbf93b214d0ab3c2d8be6b682ec3f531d1c7c6df68e01",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44",
+    "vulkan_validation_requested": true
+  },
+  {
+    "name": "sqrt_failure_compile",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "local_lab/source_ir.py",
+      "compile",
+      "--model",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\sqrt_failure_model.json",
+      "--bindings",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\xir_v0.1.json",
+      "--operator",
+      "hadamard",
+      "--inputs",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\sqrt_failure_inputs.json",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\sqrt_failure"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "executable_sha256": null,
+    "shader_sha256": null,
+    "vulkan_validation_requested": false
+  },
+  {
+    "name": "sqrt_failure_cpu",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\sqrt_failure\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\sqrt_failure_cpu.bin"
+    ],
+    "exit_code": 3,
+    "expected_exit_code": 3,
+    "executable_sha256": "c7f0ab76c3956222f3abbf93b214d0ab3c2d8be6b682ec3f531d1c7c6df68e01",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44",
+    "vulkan_validation_requested": false
+  },
+  {
+    "name": "sqrt_failure_vulkan",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "vulkan",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\sqrt_failure\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\sqrt_failure_vulkan.bin",
+      "--device",
+      "RTX 5070 Ti"
+    ],
+    "exit_code": 3,
+    "expected_exit_code": 3,
+    "executable_sha256": "c7f0ab76c3956222f3abbf93b214d0ab3c2d8be6b682ec3f531d1c7c6df68e01",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44",
+    "vulkan_validation_requested": true
+  },
+  {
+    "name": "division_failure_compile",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "local_lab/source_ir.py",
+      "compile",
+      "--model",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\division_failure_model.json",
+      "--bindings",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\xir_v0.1.json",
+      "--operator",
+      "hadamard",
+      "--inputs",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\division_failure_inputs.json",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\division_failure"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "executable_sha256": null,
+    "shader_sha256": null,
+    "vulkan_validation_requested": false
+  },
+  {
+    "name": "division_failure_cpu",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\division_failure\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\division_failure_cpu.bin"
+    ],
+    "exit_code": 3,
+    "expected_exit_code": 3,
+    "executable_sha256": "c7f0ab76c3956222f3abbf93b214d0ab3c2d8be6b682ec3f531d1c7c6df68e01",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44",
+    "vulkan_validation_requested": false
+  },
+  {
+    "name": "division_failure_vulkan",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "vulkan",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\division_failure\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\division_failure_vulkan.bin",
+      "--device",
+      "RTX 5070 Ti"
+    ],
+    "exit_code": 3,
+    "expected_exit_code": 3,
+    "executable_sha256": "c7f0ab76c3956222f3abbf93b214d0ab3c2d8be6b682ec3f531d1c7c6df68e01",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44",
+    "vulkan_validation_requested": true
+  },
+  {
+    "name": "overflow_failure_compile",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "local_lab/source_ir.py",
+      "compile",
+      "--model",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\overflow_failure_model.json",
+      "--bindings",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\xir_v0.1.json",
+      "--operator",
+      "hadamard",
+      "--inputs",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\overflow_failure_inputs.json",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\overflow_failure"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "executable_sha256": null,
+    "shader_sha256": null,
+    "vulkan_validation_requested": false
+  },
+  {
+    "name": "overflow_failure_cpu",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\overflow_failure\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\overflow_failure_cpu.bin"
+    ],
+    "exit_code": 3,
+    "expected_exit_code": 3,
+    "executable_sha256": "c7f0ab76c3956222f3abbf93b214d0ab3c2d8be6b682ec3f531d1c7c6df68e01",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44",
+    "vulkan_validation_requested": false
+  },
+  {
+    "name": "overflow_failure_vulkan",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "vulkan",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\overflow_failure\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\overflow_failure_vulkan.bin",
+      "--device",
+      "RTX 5070 Ti"
+    ],
+    "exit_code": 3,
+    "expected_exit_code": 3,
+    "executable_sha256": "c7f0ab76c3956222f3abbf93b214d0ab3c2d8be6b682ec3f531d1c7c6df68e01",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44",
+    "vulkan_validation_requested": true
+  },
+  {
+    "name": "eager_selection_failure_compile",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "local_lab/source_ir.py",
+      "compile",
+      "--model",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\eager_selection_failure_model.json",
+      "--bindings",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\xir_v0.1.json",
+      "--operator",
+      "hadamard",
+      "--inputs",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\eager_selection_failure_inputs.json",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\eager_selection_failure"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "executable_sha256": null,
+    "shader_sha256": null,
+    "vulkan_validation_requested": false
+  },
+  {
+    "name": "eager_selection_failure_cpu",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\eager_selection_failure\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\eager_selection_failure_cpu.bin"
+    ],
+    "exit_code": 3,
+    "expected_exit_code": 3,
+    "executable_sha256": "c7f0ab76c3956222f3abbf93b214d0ab3c2d8be6b682ec3f531d1c7c6df68e01",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44",
+    "vulkan_validation_requested": false
+  },
+  {
+    "name": "eager_selection_failure_vulkan",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "vulkan",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\eager_selection_failure\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\eager_selection_failure_vulkan.bin",
+      "--device",
+      "RTX 5070 Ti"
+    ],
+    "exit_code": 3,
+    "expected_exit_code": 3,
+    "executable_sha256": "c7f0ab76c3956222f3abbf93b214d0ab3c2d8be6b682ec3f531d1c7c6df68e01",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44",
+    "vulkan_validation_requested": true
+  },
+  {
+    "name": "guard_compile",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "local_lab/source_ir.py",
+      "compile",
+      "--bindings",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\xir_v0.1.json",
+      "--operator",
+      "sphere",
+      "--inputs",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\guard_inputs.json",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\guard"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "executable_sha256": null,
+    "shader_sha256": null,
+    "vulkan_validation_requested": false
+  },
+  {
+    "name": "guard_cpu",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\guard\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\guard_cpu.bin"
+    ],
+    "exit_code": 3,
+    "expected_exit_code": 3,
+    "executable_sha256": "c7f0ab76c3956222f3abbf93b214d0ab3c2d8be6b682ec3f531d1c7c6df68e01",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44",
+    "vulkan_validation_requested": false
+  },
+  {
+    "name": "guard_vulkan",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "vulkan",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\guard\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\guard_vulkan.bin",
+      "--device",
+      "RTX 5070 Ti"
+    ],
+    "exit_code": 3,
+    "expected_exit_code": 3,
+    "executable_sha256": "c7f0ab76c3956222f3abbf93b214d0ab3c2d8be6b682ec3f531d1c7c6df68e01",
+    "shader_sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44",
+    "vulkan_validation_requested": true
+  },
+  {
+    "name": "reject_unknown_opcode",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\unknown_opcode.input.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\unknown_opcode.result.bin"
+    ],
+    "exit_code": 2,
+    "expected_exit_code": 2
+  },
+  {
+    "name": "reject_self_reference",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\self_reference.input.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\self_reference.result.bin"
+    ],
+    "exit_code": 2,
+    "expected_exit_code": 2
+  },
+  {
+    "name": "reject_nonzero_unused_operand",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\nonzero_unused_operand.input.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\nonzero_unused_operand.result.bin"
+    ],
+    "exit_code": 2,
+    "expected_exit_code": 2
+  },
+  {
+    "name": "reject_bad_output_register",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\bad_output_register.input.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\bad_output_register.result.bin"
+    ],
+    "exit_code": 2,
+    "expected_exit_code": 2
+  },
+  {
+    "name": "reject_nonfinite_input",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\nonfinite_input.input.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\nonfinite_input.result.bin"
+    ],
+    "exit_code": 2,
+    "expected_exit_code": 2
+  },
+  {
+    "name": "reject_zero_count",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\zero_count.input.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\zero_count.result.bin"
+    ],
+    "exit_code": 2,
+    "expected_exit_code": 2
+  },
+  {
+    "name": "reject_too_many_instructions",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\too_many_instructions.input.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\too_many_instructions.result.bin"
+    ],
+    "exit_code": 2,
+    "expected_exit_code": 2
+  },
+  {
+    "name": "reject_trailing_byte",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\trailing_byte.input.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\trailing_byte.result.bin"
+    ],
+    "exit_code": 2,
+    "expected_exit_code": 2
+  },
+  {
+    "name": "reject_truncated_input",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\truncated_input.input.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\truncated_input.result.bin"
+    ],
+    "exit_code": 2,
+    "expected_exit_code": 2
+  },
+  {
+    "name": "reject_wrong_magic",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\wrong_magic.input.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\wrong_magic.result.bin"
+    ],
+    "exit_code": 2,
+    "expected_exit_code": 2
+  },
+  {
+    "name": "reject_nonfinite_constant",
+    "command": [
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+      "run",
+      "--backend",
+      "cpu",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\nonfinite_constant.input.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\nonfinite_constant.result.bin"
+    ],
+    "exit_code": 2,
+    "expected_exit_code": 2
+  },
+  {
+    "name": "reject_unbound_symbol",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "local_lab/source_ir.py",
+      "compile",
+      "--model",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\unbound_symbol.model.json",
+      "--bindings",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\xir_v0.1.json",
+      "--operator",
+      "hadamard",
+      "--inputs",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\unbound_symbol.inputs.json",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\unbound_symbol.compiled"
+    ],
+    "exit_code": 1,
+    "expected_exit_code": 1
+  },
+  {
+    "name": "reject_symbol_extra_semantics",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "local_lab/source_ir.py",
+      "compile",
+      "--model",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\symbol_extra_semantics.model.json",
+      "--bindings",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\xir_v0.1.json",
+      "--operator",
+      "hadamard",
+      "--inputs",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\symbol_extra_semantics.inputs.json",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\symbol_extra_semantics.compiled"
+    ],
+    "exit_code": 1,
+    "expected_exit_code": 1
+  },
+  {
+    "name": "reject_unknown_operation",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "local_lab/source_ir.py",
+      "compile",
+      "--model",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\unknown_operation.model.json",
+      "--bindings",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\xir_v0.1.json",
+      "--operator",
+      "hadamard",
+      "--inputs",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\unknown_operation.inputs.json",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\unknown_operation.compiled"
+    ],
+    "exit_code": 1,
+    "expected_exit_code": 1
+  },
+  {
+    "name": "reject_boolean_constant",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "local_lab/source_ir.py",
+      "compile",
+      "--model",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\boolean_constant.model.json",
+      "--bindings",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\xir_v0.1.json",
+      "--operator",
+      "hadamard",
+      "--inputs",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\boolean_constant.inputs.json",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\boolean_constant.compiled"
+    ],
+    "exit_code": 1,
+    "expected_exit_code": 1
+  },
+  {
+    "name": "reject_unknown_input",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "local_lab/source_ir.py",
+      "compile",
+      "--model",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\unknown_input.model.json",
+      "--bindings",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\xir_v0.1.json",
+      "--operator",
+      "hadamard",
+      "--inputs",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\unknown_input.inputs.json",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\unknown_input.compiled"
+    ],
+    "exit_code": 1,
+    "expected_exit_code": 1
+  },
+  {
+    "name": "reject_wrong_arity",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "local_lab/source_ir.py",
+      "compile",
+      "--model",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\wrong_arity.model.json",
+      "--bindings",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\xir_v0.1.json",
+      "--operator",
+      "hadamard",
+      "--inputs",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\wrong_arity.inputs.json",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\wrong_arity.compiled"
+    ],
+    "exit_code": 1,
+    "expected_exit_code": 1
+  },
+  {
+    "name": "reject_input_overflow",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "local_lab/source_ir.py",
+      "compile",
+      "--model",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\input_overflow.model.json",
+      "--bindings",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\xir_v0.1.json",
+      "--operator",
+      "hadamard",
+      "--inputs",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\input_overflow.inputs.json",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\input_overflow.compiled"
+    ],
+    "exit_code": 1,
+    "expected_exit_code": 1
+  },
+  {
+    "name": "reject_extra_input",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "local_lab/source_ir.py",
+      "compile",
+      "--model",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\extra_input.model.json",
+      "--bindings",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\xir_v0.1.json",
+      "--operator",
+      "hadamard",
+      "--inputs",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\extra_input.inputs.json",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\extra_input.compiled"
+    ],
+    "exit_code": 1,
+    "expected_exit_code": 1
+  },
+  {
+    "name": "reject_instruction_limit",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "local_lab/source_ir.py",
+      "compile",
+      "--model",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\instruction_limit.model.json",
+      "--bindings",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\xir_v0.1.json",
+      "--operator",
+      "hadamard",
+      "--inputs",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\instruction_limit.inputs.json",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\instruction_limit.compiled"
+    ],
+    "exit_code": 1,
+    "expected_exit_code": 1
+  },
+  {
+    "name": "reject_duplicate_key",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "local_lab/source_ir.py",
+      "compile",
+      "--bindings",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\xir_v0.1.json",
+      "--operator",
+      "hadamard",
+      "--inputs",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\duplicate_key.inputs.json",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\duplicate_key.compiled"
+    ],
+    "exit_code": 1,
+    "expected_exit_code": 1
+  },
+  {
+    "name": "reject_nonfinite_json",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "local_lab/source_ir.py",
+      "compile",
+      "--bindings",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\xir_v0.1.json",
+      "--operator",
+      "hadamard",
+      "--inputs",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\nonfinite_json.inputs.json",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\rejections\\nonfinite_json.compiled"
+    ],
+    "exit_code": 1,
+    "expected_exit_code": 1
+  }
+]

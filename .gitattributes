@@ -1,2 +1,15 @@
 # Preserve the original application and its published manifest byte for byte.
 source_workbench/Dawnwood_Interactive_v0.2/** -text
+# XIR provenance hashes identify exact bytes, including their line endings.
+source_bindings/** -text
+local_lab/source_ir.py -text
+output/source_ir_2026-09-24/** -text
+Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/include/numeric_types.inc -text
+Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/include/numeric_math.inc -text
+Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/include/source_ir.inc -text
+Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/shaders/source_ir.comp -text
+Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/source_ir_cli.cpp -text
+Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/tools/build_source_ir.py -text
+Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/bin/windows-source/** -text
+Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/README.md -text
+Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/MANIFEST.sha256 -text

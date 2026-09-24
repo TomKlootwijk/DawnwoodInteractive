@@ -1,0 +1,9 @@
+{
+  "output": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\division_failure",
+  "profile": "DWI-XIR-0.1",
+  "scope": "selected_operator_body",
+  "complete_application_lowered": false,
+  "row_count": 2,
+  "instruction_count": 3,
+  "program_sha256": "6d0c6f6cecdfd2b51c88f1f95f277ee6d850cffbb7c860fce30366bc42ba14ba"
+}

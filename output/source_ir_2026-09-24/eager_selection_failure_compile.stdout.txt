@@ -1,0 +1,9 @@
+{
+  "output": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\eager_selection_failure",
+  "profile": "DWI-XIR-0.1",
+  "scope": "selected_operator_body",
+  "complete_application_lowered": false,
+  "row_count": 2,
+  "instruction_count": 6,
+  "program_sha256": "5be4c1c96966f04df648d14454cc42c673c525e1b3e51b6279b47f0f1ac48df6"
+}

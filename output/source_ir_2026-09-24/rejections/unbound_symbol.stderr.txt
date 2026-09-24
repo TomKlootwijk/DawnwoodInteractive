@@ -1,0 +1,1 @@
+ValueError: operator['hadamard'].body: source symbol 'Missing_numerical_law' has no explicit numerical binding

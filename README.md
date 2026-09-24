@@ -38,6 +38,16 @@ explicit choices. The numerical integration is unfinished. D1's fixed projection
 algorithm with a mutable controller is an experiment, not fulfillment of the
 literal resident application language.
 
+The first numerical integration component is now available:
+[DWI-XIR expression bindings](source_bindings/README.md). It compiles a selected
+source operator's declared numerical body into the same instructions for CPU
+and Vulkan. The early formalization's two-Hadamard formula is one implemented
+binding. [Measured component results](output/source_ir_2026-09-24/REPORT.md)
+include independent analytic comparisons and executable body edits. The
+[integration ledger](docs/SOURCE_NUMERICAL_INTEGRATION.md) retains all remaining
+operator, stage and whole-state requirements; this body evaluator does not yet
+execute the complete source application.
+
 ## Run the D1 constraint-repair experiment
 
 From the repository root, using Python 3.10 or newer:

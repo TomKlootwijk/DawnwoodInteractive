@@ -1,0 +1,403 @@
+{
+  "profile": "DWI-XIR-0.1",
+  "scope": "selected_operator_body",
+  "complete_application_lowered": false,
+  "status": "partial_lowering",
+  "operator": {
+    "index": 6,
+    "key": "double_dot",
+    "label": "Pinion double dot : product operator",
+    "head": "Pinion_double_dot",
+    "source_pages": "8",
+    "body": {
+      "symbol": "Pinion_double_dot"
+    },
+    "field": {
+      "symbol": "Pinion_double_dot_SDF"
+    },
+    "placement": {
+      "symbol": "Phyllotaxis_on_Klein"
+    }
+  },
+  "binding_resolution": {
+    "kind": "symbol",
+    "name": "Pinion_double_dot"
+  },
+  "selected_binding": {
+    "inputs": [
+      "left_00",
+      "right_00",
+      "left_01",
+      "right_01",
+      "left_10",
+      "right_10",
+      "left_11",
+      "right_11"
+    ],
+    "outputs": {
+      "contraction": {
+        "op": "add",
+        "args": [
+          {
+            "op": "add",
+            "args": [
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "input": "left_00"
+                      },
+                      {
+                        "input": "right_00"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "input": "left_01"
+                      },
+                      {
+                        "input": "right_01"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "op": "mul",
+                "args": [
+                  {
+                    "input": "left_10"
+                  },
+                  {
+                    "input": "right_10"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "op": "mul",
+            "args": [
+              {
+                "input": "left_11"
+              },
+              {
+                "input": "right_11"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "source": "Dawnwood_Interactive_Formalization.pdf physical p9, proposed Frobenius contraction of equal-shaped matrices.",
+    "meaning": "Two real 2x2 matrices -> scalar Frobenius contraction. The expression declares its operand order. Pinion tensor construction and source-cycle context are not lowered in this component.",
+    "status": "Explicit chosen source-body overload; not a general cross product or completed pinion update."
+  },
+  "lowering": {
+    "executed_by_this_component": [
+      "explicit numerical preconditions, then selected scalar-expression outputs over supplied input rows"
+    ],
+    "retained_but_not_executed": [
+      "operator field",
+      "operator placement",
+      "source-model seed and symbol declarations"
+    ],
+    "not_lowered": [
+      "whole application cycle and its schedule",
+      "operator mutation",
+      "routing and surface transport",
+      "whole-state return and feedback",
+      "other operator bodies"
+    ],
+    "cycle_input": "No cycle file is consumed by this body-only compiler.",
+    "metadata": "Binding source, meaning and status are retained provenance; they are not instructions."
+  },
+  "format": "DWIR0001",
+  "row_count": 1,
+  "instruction_count": 15,
+  "input_width": 8,
+  "output_width": 1,
+  "input_names": [
+    "left_00",
+    "right_00",
+    "left_01",
+    "right_01",
+    "left_10",
+    "right_10",
+    "left_11",
+    "right_11"
+  ],
+  "output_names": [
+    "contraction"
+  ],
+  "output_registers": [
+    14
+  ],
+  "requirement_registers": [],
+  "precondition_policy": "Each requires expression emits opcode17 before output expressions; zero fails the lane and any finite nonzero value satisfies the guard.",
+  "instructions": [
+    {
+      "register": 0,
+      "opcode": 1,
+      "operation": "input",
+      "words": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "input": "left_00",
+      "column": 0
+    },
+    {
+      "register": 1,
+      "opcode": 1,
+      "operation": "input",
+      "words": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "input": "right_00",
+      "column": 1
+    },
+    {
+      "register": 2,
+      "opcode": 4,
+      "operation": "mul",
+      "words": [
+        4,
+        0,
+        1,
+        0
+      ],
+      "operands": [
+        0,
+        1
+      ]
+    },
+    {
+      "register": 3,
+      "opcode": 1,
+      "operation": "input",
+      "words": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "input": "left_01",
+      "column": 2
+    },
+    {
+      "register": 4,
+      "opcode": 1,
+      "operation": "input",
+      "words": [
+        1,
+        3,
+        0,
+        0
+      ],
+      "input": "right_01",
+      "column": 3
+    },
+    {
+      "register": 5,
+      "opcode": 4,
+      "operation": "mul",
+      "words": [
+        4,
+        3,
+        4,
+        0
+      ],
+      "operands": [
+        3,
+        4
+      ]
+    },
+    {
+      "register": 6,
+      "opcode": 2,
+      "operation": "add",
+      "words": [
+        2,
+        2,
+        5,
+        0
+      ],
+      "operands": [
+        2,
+        5
+      ]
+    },
+    {
+      "register": 7,
+      "opcode": 1,
+      "operation": "input",
+      "words": [
+        1,
+        4,
+        0,
+        0
+      ],
+      "input": "left_10",
+      "column": 4
+    },
+    {
+      "register": 8,
+      "opcode": 1,
+      "operation": "input",
+      "words": [
+        1,
+        5,
+        0,
+        0
+      ],
+      "input": "right_10",
+      "column": 5
+    },
+    {
+      "register": 9,
+      "opcode": 4,
+      "operation": "mul",
+      "words": [
+        4,
+        7,
+        8,
+        0
+      ],
+      "operands": [
+        7,
+        8
+      ]
+    },
+    {
+      "register": 10,
+      "opcode": 2,
+      "operation": "add",
+      "words": [
+        2,
+        6,
+        9,
+        0
+      ],
+      "operands": [
+        6,
+        9
+      ]
+    },
+    {
+      "register": 11,
+      "opcode": 1,
+      "operation": "input",
+      "words": [
+        1,
+        6,
+        0,
+        0
+      ],
+      "input": "left_11",
+      "column": 6
+    },
+    {
+      "register": 12,
+      "opcode": 1,
+      "operation": "input",
+      "words": [
+        1,
+        7,
+        0,
+        0
+      ],
+      "input": "right_11",
+      "column": 7
+    },
+    {
+      "register": 13,
+      "opcode": 4,
+      "operation": "mul",
+      "words": [
+        4,
+        11,
+        12,
+        0
+      ],
+      "operands": [
+        11,
+        12
+      ]
+    },
+    {
+      "register": 14,
+      "opcode": 2,
+      "operation": "add",
+      "words": [
+        2,
+        10,
+        13,
+        0
+      ],
+      "operands": [
+        10,
+        13
+      ]
+    }
+  ],
+  "numeric_input_policy": "Finite constants and inputs rounded to IEEE FP32 before execution; negative zero bits retained.",
+  "optimization": "Identical instruction tuples are shared; no algebraic rewriting or constant folding.",
+  "compiled_input_rows_fp32": [
+    [
+      1.0,
+      5.0,
+      2.0,
+      6.0,
+      3.0,
+      7.0,
+      4.0,
+      8.0
+    ]
+  ],
+  "program_sha256": "0e5bd152be4d746d9b866aa1f9524df77d0b22a05b8d3479b7a6badda7c53954",
+  "created_at": "2026-09-24T13:59:28.360131+00:00",
+  "sources": {
+    "model": {
+      "path": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_workbench\\Dawnwood_Interactive_v0.2\\model\\substrate.json",
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9"
+    },
+    "bindings": {
+      "path": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\xir_v0.1.json",
+      "sha256": "e0b34d22174e828e9ff3a1cae8b27db28b8dc227d7035c47b44b96e1631bf357"
+    },
+    "inputs": {
+      "path": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\examples\\colon_inputs.json",
+      "sha256": "a9bd16bbe31474cb247dd1f473a816a6ad115d7fdafd131fcc93177550d13ec8"
+    }
+  },
+  "files": {
+    "source_model.json": {
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "bytes": 13654
+    },
+    "bindings.json": {
+      "sha256": "e0b34d22174e828e9ff3a1cae8b27db28b8dc227d7035c47b44b96e1631bf357",
+      "bytes": 17052
+    },
+    "inputs.json": {
+      "sha256": "a9bd16bbe31474cb247dd1f473a816a6ad115d7fdafd131fcc93177550d13ec8",
+      "bytes": 171
+    },
+    "program.bin": {
+      "sha256": "0e5bd152be4d746d9b866aa1f9524df77d0b22a05b8d3479b7a6badda7c53954",
+      "bytes": 300
+    }
+  }
+}

@@ -1,0 +1,547 @@
+{
+  "profile": "DWI-XIR-0.1",
+  "symbols": {
+    "Hadamard_mitosis": {
+      "inputs": [
+        "ar",
+        "ai",
+        "br",
+        "bi",
+        "phase"
+      ],
+      "outputs": {
+        "ar": {
+          "op": "mul",
+          "args": [
+            {
+              "op": "add",
+              "args": [
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "input": "ar"
+                        },
+                        {
+                          "input": "br"
+                        }
+                      ]
+                    },
+                    0.7071067811865475
+                  ]
+                },
+                {
+                  "op": "sub",
+                  "args": [
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "op": "cos",
+                          "args": [
+                            {
+                              "input": "phase"
+                            }
+                          ]
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "sub",
+                              "args": [
+                                {
+                                  "input": "ar"
+                                },
+                                {
+                                  "input": "br"
+                                }
+                              ]
+                            },
+                            0.7071067811865475
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "op": "sin",
+                          "args": [
+                            {
+                              "input": "phase"
+                            }
+                          ]
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "sub",
+                              "args": [
+                                {
+                                  "input": "ai"
+                                },
+                                {
+                                  "input": "bi"
+                                }
+                              ]
+                            },
+                            0.7071067811865475
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            0.7071067811865475
+          ]
+        },
+        "ai": {
+          "op": "mul",
+          "args": [
+            {
+              "op": "add",
+              "args": [
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "input": "ai"
+                        },
+                        {
+                          "input": "bi"
+                        }
+                      ]
+                    },
+                    0.7071067811865475
+                  ]
+                },
+                {
+                  "op": "add",
+                  "args": [
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "op": "sin",
+                          "args": [
+                            {
+                              "input": "phase"
+                            }
+                          ]
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "sub",
+                              "args": [
+                                {
+                                  "input": "ar"
+                                },
+                                {
+                                  "input": "br"
+                                }
+                              ]
+                            },
+                            0.7071067811865475
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "op": "cos",
+                          "args": [
+                            {
+                              "input": "phase"
+                            }
+                          ]
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "sub",
+                              "args": [
+                                {
+                                  "input": "ai"
+                                },
+                                {
+                                  "input": "bi"
+                                }
+                              ]
+                            },
+                            0.7071067811865475
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            0.7071067811865475
+          ]
+        },
+        "br": {
+          "op": "mul",
+          "args": [
+            {
+              "op": "sub",
+              "args": [
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "input": "ar"
+                        },
+                        {
+                          "input": "br"
+                        }
+                      ]
+                    },
+                    0.7071067811865475
+                  ]
+                },
+                {
+                  "op": "sub",
+                  "args": [
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "op": "cos",
+                          "args": [
+                            {
+                              "input": "phase"
+                            }
+                          ]
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "sub",
+                              "args": [
+                                {
+                                  "input": "ar"
+                                },
+                                {
+                                  "input": "br"
+                                }
+                              ]
+                            },
+                            0.7071067811865475
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "op": "sin",
+                          "args": [
+                            {
+                              "input": "phase"
+                            }
+                          ]
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "sub",
+                              "args": [
+                                {
+                                  "input": "ai"
+                                },
+                                {
+                                  "input": "bi"
+                                }
+                              ]
+                            },
+                            0.7071067811865475
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            0.7071067811865475
+          ]
+        },
+        "bi": {
+          "op": "mul",
+          "args": [
+            {
+              "op": "sub",
+              "args": [
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "input": "ai"
+                        },
+                        {
+                          "input": "bi"
+                        }
+                      ]
+                    },
+                    0.7071067811865475
+                  ]
+                },
+                {
+                  "op": "add",
+                  "args": [
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "op": "sin",
+                          "args": [
+                            {
+                              "input": "phase"
+                            }
+                          ]
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "sub",
+                              "args": [
+                                {
+                                  "input": "ar"
+                                },
+                                {
+                                  "input": "br"
+                                }
+                              ]
+                            },
+                            0.7071067811865475
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "op": "cos",
+                          "args": [
+                            {
+                              "input": "phase"
+                            }
+                          ]
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "op": "sub",
+                              "args": [
+                                {
+                                  "input": "ai"
+                                },
+                                {
+                                  "input": "bi"
+                                }
+                              ]
+                            },
+                            0.7071067811865475
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            0.7071067811865475
+          ]
+        }
+      },
+      "source": "Dawnwood_Interactive_Formalization.pdf physical p6, equation (7), explicitly proposed [P]: H diag(1,exp(i*phase)) H. Unified v0.2 p5 keeps the hinge numerical binding open.",
+      "meaning": "ComplexPair and explicit phase -> ComplexPair. The same-epoch expression contains exactly two H applications. Input phase is supplied; carrier/pinion phase construction and circulation are not lowered in this component.",
+      "status": "Explicit chosen source-body overload; FP32 evaluation of analytic formula, not the complete source application."
+    },
+    "SDF_sphere": {
+      "inputs": [
+        "x",
+        "y",
+        "z",
+        "radius"
+      ],
+      "outputs": {
+        "distance": {
+          "op": "sub",
+          "args": [
+            {
+              "op": "sqrt",
+              "args": [
+                {
+                  "op": "add",
+                  "args": [
+                    {
+                      "op": "add",
+                      "args": [
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "input": "x"
+                            },
+                            {
+                              "input": "x"
+                            }
+                          ]
+                        },
+                        {
+                          "op": "mul",
+                          "args": [
+                            {
+                              "input": "y"
+                            },
+                            {
+                              "input": "y"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "input": "z"
+                        },
+                        {
+                          "input": "z"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "input": "radius"
+            }
+          ]
+        }
+      },
+      "source": "Original double-slit-theory.pdf p8 names the sphere. DWI-N1-0.5 numerical primitive uses Euclidean norm minus radius.",
+      "meaning": "Local Euclidean 3D sphere field, radius > 0. Coordinates and radius share a unit. This component does not construct the Klein-local coordinates or anchor; those operands are supplied.",
+      "status": "Explicit primitive-body overload, not full situated Apply.",
+      "requires": [
+        {
+          "op": "less",
+          "args": [
+            0,
+            {
+              "input": "radius"
+            }
+          ]
+        }
+      ]
+    },
+    "Pinion_double_dot": {
+      "inputs": [
+        "left_00",
+        "right_00",
+        "left_01",
+        "right_01",
+        "left_10",
+        "right_10",
+        "left_11",
+        "right_11"
+      ],
+      "outputs": {
+        "contraction": {
+          "op": "add",
+          "args": [
+            {
+              "op": "add",
+              "args": [
+                {
+                  "op": "add",
+                  "args": [
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "input": "left_00"
+                        },
+                        {
+                          "input": "right_00"
+                        }
+                      ]
+                    },
+                    {
+                      "op": "mul",
+                      "args": [
+                        {
+                          "input": "left_01"
+                        },
+                        {
+                          "input": "right_01"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "op": "mul",
+                  "args": [
+                    {
+                      "input": "left_10"
+                    },
+                    {
+                      "input": "right_10"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "op": "mul",
+              "args": [
+                {
+                  "input": "left_11"
+                },
+                {
+                  "input": "right_11"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "source": "Dawnwood_Interactive_Formalization.pdf physical p9, proposed Frobenius contraction of equal-shaped matrices.",
+      "meaning": "Two real 2x2 matrices -> scalar Frobenius contraction. The expression declares its operand order. Pinion tensor construction and source-cycle context are not lowered in this component.",
+      "status": "Explicit chosen source-body overload; not a general cross product or completed pinion update."
+    }
+  }
+}

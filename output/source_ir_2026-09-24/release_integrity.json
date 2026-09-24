@@ -1,0 +1,12 @@
+{
+  "build_source_staged_and_worktree_hash_failures": [],
+  "existing_math_unchanged_except_git_line_ending_preservation": {
+    "include/numeric_types.inc": true,
+    "include/numeric_math.inc": true
+  },
+  "local_document_links_checked": 99,
+  "broken_links": [],
+  "original_source_application_files_checked": 40,
+  "changed_source_application_files": [],
+  "git_preservation_note": "Explicit git add --renormalize was required for two previously tracked arithmetic includes after marking exact-byte source files -text; their numerical text is unchanged."
+}

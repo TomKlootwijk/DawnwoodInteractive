@@ -1,0 +1,9 @@
+{
+  "output": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\guard",
+  "profile": "DWI-XIR-0.1",
+  "scope": "selected_operator_body",
+  "complete_application_lowered": false,
+  "row_count": 2,
+  "instruction_count": 14,
+  "program_sha256": "556cd54804f747f8dbb9ac2dc03bb0239523172942102f4f2709b49cc9ac3878"
+}

@@ -1,5 +1,15 @@
 # Dawnwood Interactive — Numerical GPU Runtime
 
+The separate **DWI-XIR-0.1** source-body evaluator is
+`bin/windows-source/dawnwood-source-ir.exe`, with its adjacent `source_ir.spv`.
+It executes compiled numerical expressions from selected source-model bodies,
+including the early formalization's two-Hadamard binding. See
+[headless commands](../../source_bindings/README.md),
+[component evidence](../../output/source_ir_2026-09-24/REPORT.md) and the
+[full integration ledger](../../docs/SOURCE_NUMERICAL_INTEGRATION.md).
+It does not yet execute the source's complete cycle or resident mutation.
+Build it separately with `python tools/build_source_ir.py`.
+
 The optional **0.6.0-domain1 / DWI-D1-0.1** executable is
 `bin/windows-domain/dawnwood.exe`. It accepts sourced affine domain laws in
 protected operator records and evolves four task coordinates using the mutable

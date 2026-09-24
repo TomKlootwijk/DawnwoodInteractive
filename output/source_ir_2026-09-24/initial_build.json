@@ -1,0 +1,65 @@
+{
+  "profile": "DWI-XIR-0.1",
+  "completed": true,
+  "scope": "Numerical expression evaluator, not the full source circulation",
+  "commands": [
+    {
+      "command": [
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin\\glslc.exe",
+        "--target-env=vulkan1.1",
+        "-IC:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\include",
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\shaders\\source_ir.comp",
+        "-o",
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\source_ir.spv"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin\\spirv-val.exe",
+        "--target-env",
+        "vulkan1.1",
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\source_ir.spv"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\llvm-mingw-20260922-ucrt-x86_64\\bin\\clang++.exe",
+        "-std=c++17",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Wpedantic",
+        "-ffp-contract=off",
+        "-fno-fast-math",
+        "-static",
+        "-IC:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\include",
+        "-IC:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Include",
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\src\\source_ir_cli.cpp",
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Lib\\vulkan-1.lib",
+        "-o",
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    "include\\source_ir.inc": "8549c24dd208b87359cbe03fc2bb34ca39a209a5734d1849e75fea891fb72244",
+    "include\\numeric_types.inc": "5f0fbb86d8f0dd54f8b2f7e1f622fb3159ed4530fa673cc6d2621b1494138faa",
+    "include\\numeric_math.inc": "94beebab74e424648bea93415c2fe7bef12e1eaf0ef1c24635a61c92a0282cdc",
+    "src\\source_ir_cli.cpp": "9cc29cf45ce3a6ec9342e61ca40abeb0feb4ed3315146e9a5d91f41336f47a0d",
+    "shaders\\source_ir.comp": "6f2436eb1cdffc8c0bcf06f59b186439ca35acb8ffe3abe3f2cdd5300516128f",
+    "tools\\build_source_ir.py": "ca837522300d3e03842b174c3486ed8b4a06f0a6383545abeb2b1b55de8616ed"
+  },
+  "artifacts": {
+    "dawnwood-source-ir.exe": {
+      "bytes": 1524736,
+      "sha256": "157acc93aad5c972757e85dd16cece4d72b313aeaa8c69db06aa58640ed6d7f1"
+    },
+    "source_ir.spv": {
+      "bytes": 39312,
+      "sha256": "c2b19ba3901e7fcd8ac1cbd22410de53dfee6e43fca044fd44239b259f782f44"
+    }
+  }
+}

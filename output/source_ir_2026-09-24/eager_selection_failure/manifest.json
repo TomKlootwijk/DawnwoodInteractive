@@ -1,0 +1,255 @@
+{
+  "profile": "DWI-XIR-0.1",
+  "scope": "selected_operator_body",
+  "complete_application_lowered": false,
+  "status": "partial_lowering",
+  "operator": {
+    "index": 1,
+    "key": "hadamard",
+    "label": "Hadamard mitosis hinges",
+    "head": "Hadamard_mitosis",
+    "source_pages": "3-5, 13",
+    "body": {
+      "expression": {
+        "inputs": [
+          "x"
+        ],
+        "outputs": {
+          "value": {
+            "op": "select",
+            "args": [
+              {
+                "op": "less",
+                "args": [
+                  {
+                    "input": "x"
+                  },
+                  0
+                ]
+              },
+              42,
+              {
+                "op": "sqrt",
+                "args": [
+                  {
+                    "input": "x"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "field": {
+      "symbol": "Hadamard_mitosis_SDF"
+    },
+    "placement": {
+      "symbol": "Phyllotaxis_on_Klein"
+    }
+  },
+  "binding_resolution": {
+    "kind": "inline_expression"
+  },
+  "selected_binding": {
+    "inputs": [
+      "x"
+    ],
+    "outputs": {
+      "value": {
+        "op": "select",
+        "args": [
+          {
+            "op": "less",
+            "args": [
+              {
+                "input": "x"
+              },
+              0
+            ]
+          },
+          42,
+          {
+            "op": "sqrt",
+            "args": [
+              {
+                "input": "x"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "lowering": {
+    "executed_by_this_component": [
+      "explicit numerical preconditions, then selected scalar-expression outputs over supplied input rows"
+    ],
+    "retained_but_not_executed": [
+      "operator field",
+      "operator placement",
+      "source-model seed and symbol declarations"
+    ],
+    "not_lowered": [
+      "whole application cycle and its schedule",
+      "operator mutation",
+      "routing and surface transport",
+      "whole-state return and feedback",
+      "other operator bodies"
+    ],
+    "cycle_input": "No cycle file is consumed by this body-only compiler.",
+    "metadata": "Binding source, meaning and status are retained provenance; they are not instructions."
+  },
+  "format": "DWIR0001",
+  "row_count": 2,
+  "instruction_count": 6,
+  "input_width": 1,
+  "output_width": 1,
+  "input_names": [
+    "x"
+  ],
+  "output_names": [
+    "value"
+  ],
+  "output_registers": [
+    5
+  ],
+  "requirement_registers": [],
+  "precondition_policy": "Each requires expression emits opcode17 before output expressions; zero fails the lane and any finite nonzero value satisfies the guard.",
+  "instructions": [
+    {
+      "register": 0,
+      "opcode": 1,
+      "operation": "input",
+      "words": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "input": "x",
+      "column": 0
+    },
+    {
+      "register": 1,
+      "opcode": 0,
+      "operation": "constant",
+      "words": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "value": 0.0,
+      "fp32_bits": "0x00000000"
+    },
+    {
+      "register": 2,
+      "opcode": 15,
+      "operation": "less",
+      "words": [
+        15,
+        0,
+        1,
+        0
+      ],
+      "operands": [
+        0,
+        1
+      ]
+    },
+    {
+      "register": 3,
+      "opcode": 0,
+      "operation": "constant",
+      "words": [
+        0,
+        1109917696,
+        0,
+        0
+      ],
+      "value": 42.0,
+      "fp32_bits": "0x42280000"
+    },
+    {
+      "register": 4,
+      "opcode": 9,
+      "operation": "sqrt",
+      "words": [
+        9,
+        0,
+        0,
+        0
+      ],
+      "operands": [
+        0
+      ]
+    },
+    {
+      "register": 5,
+      "opcode": 16,
+      "operation": "select",
+      "words": [
+        16,
+        2,
+        3,
+        4
+      ],
+      "operands": [
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "numeric_input_policy": "Finite constants and inputs rounded to IEEE FP32 before execution; negative zero bits retained.",
+  "optimization": "Identical instruction tuples are shared; no algebraic rewriting or constant folding.",
+  "compiled_input_rows_fp32": [
+    [
+      -1.0
+    ],
+    [
+      4.0
+    ]
+  ],
+  "source_input_fp32_rounding": {
+    "value_count": 2,
+    "changed_value_count": 0,
+    "max_absolute_difference": 0.0,
+    "reference": "JSON numbers decoded as Python numeric values before packing; compiled_input_rows_fp32 are the actual execution inputs."
+  },
+  "program_sha256": "5be4c1c96966f04df648d14454cc42c673c525e1b3e51b6279b47f0f1ac48df6",
+  "created_at": "2026-09-24T14:04:55.998968+00:00",
+  "sources": {
+    "model": {
+      "path": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\eager_selection_failure_model.json",
+      "sha256": "c1cc4a3f7a5c4f7ac2d592bcca46a356d68a724ba9e38e7fe213dcbb954c8aa6"
+    },
+    "bindings": {
+      "path": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\xir_v0.1.json",
+      "sha256": "e0b34d22174e828e9ff3a1cae8b27db28b8dc227d7035c47b44b96e1631bf357"
+    },
+    "inputs": {
+      "path": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\eager_selection_failure_inputs.json",
+      "sha256": "0b7a68d9b35108cd5386fdff9e44e8e305a945ab7f9e322dabb6a929f673e67c"
+    }
+  },
+  "files": {
+    "source_model.json": {
+      "sha256": "c1cc4a3f7a5c4f7ac2d592bcca46a356d68a724ba9e38e7fe213dcbb954c8aa6",
+      "bytes": 14877
+    },
+    "bindings.json": {
+      "sha256": "e0b34d22174e828e9ff3a1cae8b27db28b8dc227d7035c47b44b96e1631bf357",
+      "bytes": 17052
+    },
+    "inputs.json": {
+      "sha256": "0b7a68d9b35108cd5386fdff9e44e8e305a945ab7f9e322dabb6a929f673e67c",
+      "bytes": 52
+    },
+    "program.bin": {
+      "sha256": "5be4c1c96966f04df648d14454cc42c673c525e1b3e51b6279b47f0f1ac48df6",
+      "bytes": 132
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "git",
+    "-c",
+    "core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol",
+    "diff",
+    "--cached",
+    "--check",
+    "--",
+    ".",
+    ":(exclude)Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/README.md"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "scope": "Treat preserved Windows CRLF as line endings; original native README intentional Markdown hard breaks excluded."
+}

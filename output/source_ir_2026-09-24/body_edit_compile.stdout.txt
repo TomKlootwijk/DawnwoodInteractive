@@ -1,0 +1,9 @@
+{
+  "output": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\body_edit",
+  "profile": "DWI-XIR-0.1",
+  "scope": "selected_operator_body",
+  "complete_application_lowered": false,
+  "row_count": 257,
+  "instruction_count": 31,
+  "program_sha256": "0d332fb1c0f634374a78eba25fedc7da6ee8c5627597c33f03b405d68f240f63"
+}

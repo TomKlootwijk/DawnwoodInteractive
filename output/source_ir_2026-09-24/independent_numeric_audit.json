@@ -1,0 +1,371 @@
+{
+  "created_at": "2026-09-24T14:03:08.352955+00:00",
+  "profile": "DWI-XIR-0.1",
+  "scope": "Independent audit of three explicitly bound numerical source-operator bodies on recorded packed FP32 inputs.",
+  "reference_method": "Read inputs directly from DWIR0001 binary. Hadamard uses the closed complex 2x2 matrix H diag(1,exp(i phase)) H in Python binary64; sphere uses sqrt(x*x+y*y+z*z)-radius; double-dot uses a 2x2 Frobenius contraction. No bytecode interpreter or compiler expression tree is used for reference arithmetic.",
+  "limitations": [
+    "This audit does not execute or validate source fields, placements, cycle scheduling, routing, self-mutation, whole-state return, or the complete architecture.",
+    "Finite sampled agreement is not a universal numerical bound.",
+    "The original mathematical constants and decimal inputs are rounded to FP32 by the frontend. Mathematical references below use actual packed inputs but true binary64 matrix coefficients.",
+    "The recorded workloads are small correctness probes, not GPU saturation or throughput benchmarks.",
+    "Sphere rows have positive radii; these files do not exercise failing precondition guards."
+  ],
+  "cases": {
+    "hadamard": {
+      "operator_key": "hadamard",
+      "row_count": 257,
+      "output_width": 4,
+      "instruction_count": 30,
+      "input_names": [
+        "ar",
+        "ai",
+        "br",
+        "bi",
+        "phase"
+      ],
+      "output_names": [
+        "ar",
+        "ai",
+        "br",
+        "bi"
+      ],
+      "program_sha256": "cf8783beb503e927ec7ae3c2d8cdec9268f5cb4861e572dc1ee92e41f9fb865c",
+      "program_hash_matches_manifest": true,
+      "packed_inputs_match_manifest": true,
+      "source_input_fp32_rounding": null,
+      "cpu_gpu": {
+        "whole_output_files_equal": true,
+        "output_words_compared": 1028,
+        "changed_output_words": 0,
+        "changed_output_rows": 0,
+        "changed_statuses": 0,
+        "cpu_failed_lanes": 0,
+        "vulkan_failed_lanes": 0,
+        "cpu_nonfinite_output_values": 0,
+        "vulkan_nonfinite_output_values": 0,
+        "first_differences": [],
+        "cpu_sha256": "821b45c347f0285be0242a78589d3d58b0c590b0ca7018b54ac0cd2d5776d5a1",
+        "vulkan_sha256": "821b45c347f0285be0242a78589d3d58b0c590b0ca7018b54ac0cd2d5776d5a1"
+      },
+      "reference_comparison": {
+        "cpu": {
+          "max_absolute_component_error": 3.643339403502921e-07,
+          "root_mean_square_component_error": 8.20885222035787e-08,
+          "worst_row": 210,
+          "worst_output": "ai",
+          "worst_actual": 2.8363003730773926,
+          "worst_reference": 2.836300737411333
+        },
+        "vulkan": {
+          "max_absolute_component_error": 3.643339403502921e-07,
+          "root_mean_square_component_error": 8.20885222035787e-08,
+          "worst_row": 210,
+          "worst_output": "ai",
+          "worst_actual": 2.8363003730773926,
+          "worst_reference": 2.836300737411333
+        }
+      },
+      "vulkan_receipt": {
+        "profile": "DWI-XIR-0.1",
+        "backend": "vulkan",
+        "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+        "device_type": "discrete_gpu",
+        "vendor_id": 4318,
+        "device_id": 12056,
+        "driver_version": 2479800320,
+        "api_version": 4211013,
+        "count": 257,
+        "instruction_count": 30,
+        "input_width": 5,
+        "output_width": 4,
+        "status": "ok",
+        "failed_lanes": 0,
+        "execution_seconds": 0.0012034,
+        "total_seconds": 2.9854955,
+        "timing_scope": "host submit-to-fence wait; excludes setup and readback",
+        "validation_enabled": true,
+        "validation_errors": 0,
+        "validation_warnings": 0,
+        "failure_outputs": "zero row; first failure status retained"
+      },
+      "energy": {
+        "max_absolute_preservation_error": 2.8557303011211843e-06,
+        "max_relative_preservation_error": 2.784104912776674e-07,
+        "reference_max_absolute_preservation_error": 1.7763568394002505e-15
+      },
+      "known_phase_checks": [
+        {
+          "label": "phase_zero_identity",
+          "row": 0,
+          "packed_phase": 0.0,
+          "actual": [
+            0.0,
+            1.9999998807907104,
+            0.0,
+            0.9999998807907104
+          ],
+          "closed_matrix_reference": [
+            0.0,
+            2.0,
+            0.0,
+            1.0
+          ],
+          "ideal_identity_or_swap": [
+            0.0,
+            2.0,
+            0.0,
+            1.0
+          ],
+          "max_absolute_error_to_ideal": 1.1920928955078125e-07,
+          "max_absolute_error_to_packed_phase_matrix": 1.1920928955078125e-07
+        },
+        {
+          "label": "packed_positive_pi_near_swap",
+          "row": 2,
+          "packed_phase": 3.1415927410125732,
+          "actual": [
+            4.371139183945161e-08,
+            0.9999998807907104,
+            -4.371139183945161e-08,
+            1.9999998807907104
+          ],
+          "closed_matrix_reference": [
+            4.371139000186237e-08,
+            1.0000000000000018,
+            -4.371139000186237e-08,
+            1.9999999999999982
+          ],
+          "ideal_identity_or_swap": [
+            0.0,
+            1.0,
+            0.0,
+            2.0
+          ],
+          "max_absolute_error_to_ideal": 1.1920928955078125e-07,
+          "max_absolute_error_to_packed_phase_matrix": 1.192092913271381e-07
+        },
+        {
+          "label": "packed_negative_pi_near_swap",
+          "row": 4,
+          "packed_phase": -3.1415927410125732,
+          "actual": [
+            -4.371139183945161e-08,
+            0.9999998807907104,
+            4.371139183945161e-08,
+            1.9999998807907104
+          ],
+          "closed_matrix_reference": [
+            -4.371139000186237e-08,
+            1.0000000000000018,
+            4.371139000186237e-08,
+            1.9999999999999982
+          ],
+          "ideal_identity_or_swap": [
+            0.0,
+            1.0,
+            0.0,
+            2.0
+          ],
+          "max_absolute_error_to_ideal": 1.1920928955078125e-07,
+          "max_absolute_error_to_packed_phase_matrix": 1.192092913271381e-07
+        }
+      ]
+    },
+    "sphere": {
+      "operator_key": "sphere",
+      "row_count": 4,
+      "output_width": 1,
+      "instruction_count": 14,
+      "input_names": [
+        "x",
+        "y",
+        "z",
+        "radius"
+      ],
+      "output_names": [
+        "distance"
+      ],
+      "program_sha256": "5e2492b2b86ba818a012ad719f9708b61a71f983dd52826494cd3ba1298f562a",
+      "program_hash_matches_manifest": true,
+      "packed_inputs_match_manifest": true,
+      "source_input_fp32_rounding": null,
+      "cpu_gpu": {
+        "whole_output_files_equal": true,
+        "output_words_compared": 4,
+        "changed_output_words": 0,
+        "changed_output_rows": 0,
+        "changed_statuses": 0,
+        "cpu_failed_lanes": 0,
+        "vulkan_failed_lanes": 0,
+        "cpu_nonfinite_output_values": 0,
+        "vulkan_nonfinite_output_values": 0,
+        "first_differences": [],
+        "cpu_sha256": "ea5b8b3c12f47fb0fc38a2a31c567f3f9522519b3484dd8aafcda9bfd510a0d5",
+        "vulkan_sha256": "ea5b8b3c12f47fb0fc38a2a31c567f3f9522519b3484dd8aafcda9bfd510a0d5"
+      },
+      "reference_comparison": {
+        "cpu": {
+          "max_absolute_component_error": 0.0,
+          "root_mean_square_component_error": 0.0,
+          "worst_row": 3,
+          "worst_output": "distance",
+          "worst_actual": 1.0,
+          "worst_reference": 1.0
+        },
+        "vulkan": {
+          "max_absolute_component_error": 0.0,
+          "root_mean_square_component_error": 0.0,
+          "worst_row": 3,
+          "worst_output": "distance",
+          "worst_actual": 1.0,
+          "worst_reference": 1.0
+        }
+      },
+      "vulkan_receipt": {
+        "profile": "DWI-XIR-0.1",
+        "backend": "vulkan",
+        "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+        "device_type": "discrete_gpu",
+        "vendor_id": 4318,
+        "device_id": 12056,
+        "driver_version": 2479800320,
+        "api_version": 4211013,
+        "count": 4,
+        "instruction_count": 14,
+        "input_width": 4,
+        "output_width": 1,
+        "status": "ok",
+        "failed_lanes": 0,
+        "execution_seconds": 0.0011665,
+        "total_seconds": 0.1809394,
+        "timing_scope": "host submit-to-fence wait; excludes setup and readback",
+        "validation_enabled": true,
+        "validation_errors": 0,
+        "validation_warnings": 0,
+        "failure_outputs": "zero row; first failure status retained"
+      },
+      "expected_outputs": [
+        [
+          -1.0
+        ],
+        [
+          0.0
+        ],
+        [
+          4.0
+        ],
+        [
+          1.0
+        ]
+      ],
+      "actual_outputs": [
+        [
+          -1.0
+        ],
+        [
+          0.0
+        ],
+        [
+          4.0
+        ],
+        [
+          1.0
+        ]
+      ],
+      "exact_match_to_binary64_reference": true
+    },
+    "double_dot": {
+      "operator_key": "double_dot",
+      "row_count": 1,
+      "output_width": 1,
+      "instruction_count": 15,
+      "input_names": [
+        "left_00",
+        "right_00",
+        "left_01",
+        "right_01",
+        "left_10",
+        "right_10",
+        "left_11",
+        "right_11"
+      ],
+      "output_names": [
+        "contraction"
+      ],
+      "program_sha256": "0e5bd152be4d746d9b866aa1f9524df77d0b22a05b8d3479b7a6badda7c53954",
+      "program_hash_matches_manifest": true,
+      "packed_inputs_match_manifest": true,
+      "source_input_fp32_rounding": null,
+      "cpu_gpu": {
+        "whole_output_files_equal": true,
+        "output_words_compared": 1,
+        "changed_output_words": 0,
+        "changed_output_rows": 0,
+        "changed_statuses": 0,
+        "cpu_failed_lanes": 0,
+        "vulkan_failed_lanes": 0,
+        "cpu_nonfinite_output_values": 0,
+        "vulkan_nonfinite_output_values": 0,
+        "first_differences": [],
+        "cpu_sha256": "464285b0c92db428eba7c6e5c776ea5d7046577d26152c33104684c98b719e43",
+        "vulkan_sha256": "464285b0c92db428eba7c6e5c776ea5d7046577d26152c33104684c98b719e43"
+      },
+      "reference_comparison": {
+        "cpu": {
+          "max_absolute_component_error": 0.0,
+          "root_mean_square_component_error": 0.0,
+          "worst_row": 0,
+          "worst_output": "contraction",
+          "worst_actual": 70.0,
+          "worst_reference": 70.0
+        },
+        "vulkan": {
+          "max_absolute_component_error": 0.0,
+          "root_mean_square_component_error": 0.0,
+          "worst_row": 0,
+          "worst_output": "contraction",
+          "worst_actual": 70.0,
+          "worst_reference": 70.0
+        }
+      },
+      "vulkan_receipt": {
+        "profile": "DWI-XIR-0.1",
+        "backend": "vulkan",
+        "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+        "device_type": "discrete_gpu",
+        "vendor_id": 4318,
+        "device_id": 12056,
+        "driver_version": 2479800320,
+        "api_version": 4211013,
+        "count": 1,
+        "instruction_count": 15,
+        "input_width": 8,
+        "output_width": 1,
+        "status": "ok",
+        "failed_lanes": 0,
+        "execution_seconds": 0.0010841,
+        "total_seconds": 0.1871318,
+        "timing_scope": "host submit-to-fence wait; excludes setup and readback",
+        "validation_enabled": true,
+        "validation_errors": 0,
+        "validation_warnings": 0,
+        "failure_outputs": "zero row; first failure status retained"
+      },
+      "expected_outputs": [
+        [
+          70.0
+        ]
+      ],
+      "actual_outputs": [
+        [
+          70.0
+        ]
+      ],
+      "exact_match_to_binary64_reference": true
+    }
+  },
+  "total_rows": 262,
+  "total_output_words_compared": 1033,
+  "all_cpu_gpu_output_files_identical": true,
+  "all_lane_statuses_zero": true
+}

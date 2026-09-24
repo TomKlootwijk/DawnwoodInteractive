@@ -1,0 +1,162 @@
+{
+  "scope": "Direct malformed-input experiments; shared host validation precedes CPU/GPU dispatch. No new test modules.",
+  "native_rejections": 11,
+  "frontend_rejections": 11,
+  "all_rejected_before_output": true,
+  "results": [
+    {
+      "name": "unknown_opcode",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "output_created": false,
+      "message": "DWI-XIR-0.1: Instruction 0: unknown opcode 18"
+    },
+    {
+      "name": "self_reference",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "output_created": false,
+      "message": "DWI-XIR-0.1: Instruction 0: operand a is not a back-reference"
+    },
+    {
+      "name": "nonzero_unused_operand",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "output_created": false,
+      "message": "DWI-XIR-0.1: Instruction 0: unused operands must be zero"
+    },
+    {
+      "name": "bad_output_register",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "output_created": false,
+      "message": "DWI-XIR-0.1: Output register outside instruction range"
+    },
+    {
+      "name": "nonfinite_input",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "output_created": false,
+      "message": "DWI-XIR-0.1: Nonfinite input at scalar index 0"
+    },
+    {
+      "name": "zero_count",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "output_created": false,
+      "message": "DWI-XIR-0.1: count must be positive"
+    },
+    {
+      "name": "too_many_instructions",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "output_created": false,
+      "message": "DWI-XIR-0.1: instructionCount must be in [1,256]"
+    },
+    {
+      "name": "trailing_byte",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "output_created": false,
+      "message": "DWI-XIR-0.1: Input size mismatch: expected 5660, received 5661"
+    },
+    {
+      "name": "truncated_input",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "output_created": false,
+      "message": "DWI-XIR-0.1: Input size mismatch: expected 5660, received 5659"
+    },
+    {
+      "name": "wrong_magic",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "output_created": false,
+      "message": "DWI-XIR-0.1: Expected DWIR0001 input magic"
+    },
+    {
+      "name": "nonfinite_constant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "output_created": false,
+      "message": "DWI-XIR-0.1: Instruction 0: nonfinite constant"
+    },
+    {
+      "name": "unbound_symbol",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "output_created": false,
+      "message": "ValueError: operator['hadamard'].body: source symbol 'Missing_numerical_law' has no explicit numerical binding"
+    },
+    {
+      "name": "symbol_extra_semantics",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "output_created": false,
+      "message": "ValueError: operator['hadamard'].body: unsupported keys ['operands']"
+    },
+    {
+      "name": "unknown_operation",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "output_created": false,
+      "message": "ValueError: outputs['x']: unsupported operation 'magic'"
+    },
+    {
+      "name": "boolean_constant",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "output_created": false,
+      "message": "ValueError: outputs['x']: expected a number, an input reference or an operation"
+    },
+    {
+      "name": "unknown_input",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "output_created": false,
+      "message": "ValueError: outputs['x']: undeclared input 'missing'"
+    },
+    {
+      "name": "wrong_arity",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "output_created": false,
+      "message": "ValueError: outputs['x']: add requires exactly 2 operands"
+    },
+    {
+      "name": "input_overflow",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "output_created": false,
+      "message": "ValueError: inputs[0]['ar']: value cannot be represented as finite FP32"
+    },
+    {
+      "name": "extra_input",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "output_created": false,
+      "message": "ValueError: inputs[0]: unsupported keys ['unexpected']"
+    },
+    {
+      "name": "instruction_limit",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "output_created": false,
+      "message": "ValueError: Expression program exceeds 256 instructions"
+    },
+    {
+      "name": "duplicate_key",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "output_created": false,
+      "message": "ValueError: Duplicate JSON object key: 'ar'"
+    },
+    {
+      "name": "nonfinite_json",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "output_created": false,
+      "message": "ValueError: Nonfinite JSON number is not supported: NaN"
+    }
+  ]
+}

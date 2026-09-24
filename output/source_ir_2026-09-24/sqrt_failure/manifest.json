@@ -1,0 +1,171 @@
+{
+  "profile": "DWI-XIR-0.1",
+  "scope": "selected_operator_body",
+  "complete_application_lowered": false,
+  "status": "partial_lowering",
+  "operator": {
+    "index": 1,
+    "key": "hadamard",
+    "label": "Hadamard mitosis hinges",
+    "head": "Hadamard_mitosis",
+    "source_pages": "3-5, 13",
+    "body": {
+      "expression": {
+        "inputs": [
+          "x"
+        ],
+        "outputs": {
+          "value": {
+            "op": "sqrt",
+            "args": [
+              {
+                "input": "x"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "field": {
+      "symbol": "Hadamard_mitosis_SDF"
+    },
+    "placement": {
+      "symbol": "Phyllotaxis_on_Klein"
+    }
+  },
+  "binding_resolution": {
+    "kind": "inline_expression"
+  },
+  "selected_binding": {
+    "inputs": [
+      "x"
+    ],
+    "outputs": {
+      "value": {
+        "op": "sqrt",
+        "args": [
+          {
+            "input": "x"
+          }
+        ]
+      }
+    }
+  },
+  "lowering": {
+    "executed_by_this_component": [
+      "explicit numerical preconditions, then selected scalar-expression outputs over supplied input rows"
+    ],
+    "retained_but_not_executed": [
+      "operator field",
+      "operator placement",
+      "source-model seed and symbol declarations"
+    ],
+    "not_lowered": [
+      "whole application cycle and its schedule",
+      "operator mutation",
+      "routing and surface transport",
+      "whole-state return and feedback",
+      "other operator bodies"
+    ],
+    "cycle_input": "No cycle file is consumed by this body-only compiler.",
+    "metadata": "Binding source, meaning and status are retained provenance; they are not instructions."
+  },
+  "format": "DWIR0001",
+  "row_count": 3,
+  "instruction_count": 2,
+  "input_width": 1,
+  "output_width": 1,
+  "input_names": [
+    "x"
+  ],
+  "output_names": [
+    "value"
+  ],
+  "output_registers": [
+    1
+  ],
+  "requirement_registers": [],
+  "precondition_policy": "Each requires expression emits opcode17 before output expressions; zero fails the lane and any finite nonzero value satisfies the guard.",
+  "instructions": [
+    {
+      "register": 0,
+      "opcode": 1,
+      "operation": "input",
+      "words": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "input": "x",
+      "column": 0
+    },
+    {
+      "register": 1,
+      "opcode": 9,
+      "operation": "sqrt",
+      "words": [
+        9,
+        0,
+        0,
+        0
+      ],
+      "operands": [
+        0
+      ]
+    }
+  ],
+  "numeric_input_policy": "Finite constants and inputs rounded to IEEE FP32 before execution; negative zero bits retained.",
+  "optimization": "Identical instruction tuples are shared; no algebraic rewriting or constant folding.",
+  "compiled_input_rows_fp32": [
+    [
+      -1.0
+    ],
+    [
+      0.0
+    ],
+    [
+      4.0
+    ]
+  ],
+  "source_input_fp32_rounding": {
+    "value_count": 3,
+    "changed_value_count": 0,
+    "max_absolute_difference": 0.0,
+    "reference": "JSON numbers decoded as Python numeric values before packing; compiled_input_rows_fp32 are the actual execution inputs."
+  },
+  "program_sha256": "456fb6516b320a85b71e7407ae338ca2205b09b28332bdada84dd974d0be6298",
+  "created_at": "2026-09-24T14:04:54.876498+00:00",
+  "sources": {
+    "model": {
+      "path": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\sqrt_failure_model.json",
+      "sha256": "b4eb1ad7406bf8043f22d87b22e4a9423ef9b5c5d32224aa9e4e358015e375c7"
+    },
+    "bindings": {
+      "path": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\xir_v0.1.json",
+      "sha256": "e0b34d22174e828e9ff3a1cae8b27db28b8dc227d7035c47b44b96e1631bf357"
+    },
+    "inputs": {
+      "path": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\sqrt_failure_inputs.json",
+      "sha256": "9176f15f61110adc182c51a60ce21947f9a72e10629b5d4d60fa7f5c60a7b1ad"
+    }
+  },
+  "files": {
+    "source_model.json": {
+      "sha256": "b4eb1ad7406bf8043f22d87b22e4a9423ef9b5c5d32224aa9e4e358015e375c7",
+      "bytes": 14493
+    },
+    "bindings.json": {
+      "sha256": "e0b34d22174e828e9ff3a1cae8b27db28b8dc227d7035c47b44b96e1631bf357",
+      "bytes": 17052
+    },
+    "inputs.json": {
+      "sha256": "9176f15f61110adc182c51a60ce21947f9a72e10629b5d4d60fa7f5c60a7b1ad",
+      "bytes": 75
+    },
+    "program.bin": {
+      "sha256": "456fb6516b320a85b71e7407ae338ca2205b09b28332bdada84dd974d0be6298",
+      "bytes": 72
+    }
+  }
+}

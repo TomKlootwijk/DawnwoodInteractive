@@ -1,0 +1,9 @@
+{
+  "output": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\sqrt_failure",
+  "profile": "DWI-XIR-0.1",
+  "scope": "selected_operator_body",
+  "complete_application_lowered": false,
+  "row_count": 3,
+  "instruction_count": 2,
+  "program_sha256": "456fb6516b320a85b71e7407ae338ca2205b09b28332bdada84dd974d0be6298"
+}

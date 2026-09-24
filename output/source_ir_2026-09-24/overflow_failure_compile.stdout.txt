@@ -1,0 +1,9 @@
+{
+  "output": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\overflow_failure",
+  "profile": "DWI-XIR-0.1",
+  "scope": "selected_operator_body",
+  "complete_application_lowered": false,
+  "row_count": 2,
+  "instruction_count": 2,
+  "program_sha256": "b18e37bba89df6dc378719c75f7f01b05f657dee13142591fb9ce7f26542a64a"
+}

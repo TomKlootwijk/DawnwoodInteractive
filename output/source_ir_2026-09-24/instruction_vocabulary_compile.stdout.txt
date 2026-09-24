@@ -1,0 +1,9 @@
+{
+  "output": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\instruction_vocabulary",
+  "profile": "DWI-XIR-0.1",
+  "scope": "selected_operator_body",
+  "complete_application_lowered": false,
+  "row_count": 4,
+  "instruction_count": 23,
+  "program_sha256": "45ca1680e26e0118af93567d2ef4345b7d665bd0ad350a17b4392aaa70eea1e8"
+}

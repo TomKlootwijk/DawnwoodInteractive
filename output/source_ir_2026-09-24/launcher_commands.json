@@ -1,0 +1,48 @@
+[
+  {
+    "command": [
+      "cmd",
+      "/c",
+      "Dawnwood-IR.cmd",
+      "compile",
+      "--bindings",
+      "source_bindings/xir_v0.1.json",
+      "--operator",
+      "hadamard",
+      "--inputs",
+      "source_bindings/examples/hinge_inputs.json",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\launcher"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "cmd",
+      "/c",
+      "Dawnwood-IR.cmd",
+      "run",
+      "--backend",
+      "vulkan",
+      "--device",
+      "RTX 5070 Ti",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\launcher\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\launcher\\gpu.bin"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "cmd",
+      "/c",
+      "Dawnwood-IR.cmd",
+      "inspect",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\launcher\\gpu.bin",
+      "--manifest",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\launcher\\manifest.json"
+    ],
+    "exit_code": 0
+  }
+]

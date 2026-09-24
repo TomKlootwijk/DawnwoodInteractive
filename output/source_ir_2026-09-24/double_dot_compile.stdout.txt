@@ -1,0 +1,9 @@
+{
+  "output": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\double_dot",
+  "profile": "DWI-XIR-0.1",
+  "scope": "selected_operator_body",
+  "complete_application_lowered": false,
+  "row_count": 1,
+  "instruction_count": 15,
+  "program_sha256": "0e5bd152be4d746d9b866aa1f9524df77d0b22a05b8d3479b7a6badda7c53954"
+}

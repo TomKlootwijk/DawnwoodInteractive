@@ -1,0 +1,1 @@
+ValueError: outputs['x']: unsupported operation 'magic'

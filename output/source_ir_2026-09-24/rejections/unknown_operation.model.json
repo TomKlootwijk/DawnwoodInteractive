@@ -1,0 +1,1 @@
+{"operators": [{"key": "hadamard", "index": 1, "body": {"expression": {"inputs": [], "outputs": {"x": {"op": "magic", "args": []}}}}}]}

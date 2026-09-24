@@ -6,6 +6,11 @@ Page references below are physical PDF pages. The sources are the 24-page [origi
 
 ## What the source actually requires
 
+The [numerical integration ledger](SOURCE_NUMERICAL_INTEGRATION.md) tracks the
+implementation against this contract. Its first verified component compiles
+selected numerical bodies for CPU/GPU execution; complete situated application
+and recurrent closure remain open requirements.
+
 The author's corrections in the original discussion determine the architectural scope. On p12 the author places rasterization, raymarching, raytracing and square output fields outside the core. On p14 the author asks about self-referential computing with operators "defined and packed as SDF operations": the double pinion holds them on the Klein-bottle surface while one-bit jitter acts on the operators in the LUT/BST at interval PSI. Graphics is optional downstream observation.
 
 Unified p3 expresses the system as:

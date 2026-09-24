@@ -1,0 +1,402 @@
+{
+  "profile": "DWI-XIR-0.1",
+  "scope": "selected_operator_body",
+  "complete_application_lowered": false,
+  "status": "partial_lowering",
+  "operator": {
+    "index": 11,
+    "key": "sphere",
+    "label": "Sphere",
+    "head": "SDF_sphere",
+    "source_pages": "8",
+    "body": {
+      "symbol": "SDF_sphere"
+    },
+    "field": {
+      "symbol": "SDF_sphere_SDF"
+    },
+    "placement": {
+      "symbol": "Phyllotaxis_on_Klein"
+    }
+  },
+  "binding_resolution": {
+    "kind": "symbol",
+    "name": "SDF_sphere"
+  },
+  "selected_binding": {
+    "inputs": [
+      "x",
+      "y",
+      "z",
+      "radius"
+    ],
+    "outputs": {
+      "distance": {
+        "op": "sub",
+        "args": [
+          {
+            "op": "sqrt",
+            "args": [
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "op": "add",
+                    "args": [
+                      {
+                        "op": "mul",
+                        "args": [
+                          {
+                            "input": "x"
+                          },
+                          {
+                            "input": "x"
+                          }
+                        ]
+                      },
+                      {
+                        "op": "mul",
+                        "args": [
+                          {
+                            "input": "y"
+                          },
+                          {
+                            "input": "y"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      {
+                        "input": "z"
+                      },
+                      {
+                        "input": "z"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "input": "radius"
+          }
+        ]
+      }
+    },
+    "source": "Original double-slit-theory.pdf p8 names the sphere. DWI-N1-0.5 numerical primitive uses Euclidean norm minus radius.",
+    "meaning": "Local Euclidean 3D sphere field, radius > 0. Coordinates and radius share a unit. This component does not construct the Klein-local coordinates or anchor; those operands are supplied.",
+    "status": "Explicit primitive-body overload, not full situated Apply.",
+    "requires": [
+      {
+        "op": "less",
+        "args": [
+          0,
+          {
+            "input": "radius"
+          }
+        ]
+      }
+    ]
+  },
+  "lowering": {
+    "executed_by_this_component": [
+      "explicit numerical preconditions, then selected scalar-expression outputs over supplied input rows"
+    ],
+    "retained_but_not_executed": [
+      "operator field",
+      "operator placement",
+      "source-model seed and symbol declarations"
+    ],
+    "not_lowered": [
+      "whole application cycle and its schedule",
+      "operator mutation",
+      "routing and surface transport",
+      "whole-state return and feedback",
+      "other operator bodies"
+    ],
+    "cycle_input": "No cycle file is consumed by this body-only compiler.",
+    "metadata": "Binding source, meaning and status are retained provenance; they are not instructions."
+  },
+  "format": "DWIR0001",
+  "row_count": 2,
+  "instruction_count": 14,
+  "input_width": 4,
+  "output_width": 1,
+  "input_names": [
+    "x",
+    "y",
+    "z",
+    "radius"
+  ],
+  "output_names": [
+    "distance"
+  ],
+  "output_registers": [
+    13
+  ],
+  "requirement_registers": [
+    3
+  ],
+  "precondition_policy": "Each requires expression emits opcode17 before output expressions; zero fails the lane and any finite nonzero value satisfies the guard.",
+  "instructions": [
+    {
+      "register": 0,
+      "opcode": 0,
+      "operation": "constant",
+      "words": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "value": 0.0,
+      "fp32_bits": "0x00000000"
+    },
+    {
+      "register": 1,
+      "opcode": 1,
+      "operation": "input",
+      "words": [
+        1,
+        3,
+        0,
+        0
+      ],
+      "input": "radius",
+      "column": 3
+    },
+    {
+      "register": 2,
+      "opcode": 15,
+      "operation": "less",
+      "words": [
+        15,
+        0,
+        1,
+        0
+      ],
+      "operands": [
+        0,
+        1
+      ]
+    },
+    {
+      "register": 3,
+      "opcode": 17,
+      "operation": "require",
+      "words": [
+        17,
+        2,
+        0,
+        0
+      ],
+      "operands": [
+        2
+      ]
+    },
+    {
+      "register": 4,
+      "opcode": 1,
+      "operation": "input",
+      "words": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "input": "x",
+      "column": 0
+    },
+    {
+      "register": 5,
+      "opcode": 4,
+      "operation": "mul",
+      "words": [
+        4,
+        4,
+        4,
+        0
+      ],
+      "operands": [
+        4,
+        4
+      ]
+    },
+    {
+      "register": 6,
+      "opcode": 1,
+      "operation": "input",
+      "words": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "input": "y",
+      "column": 1
+    },
+    {
+      "register": 7,
+      "opcode": 4,
+      "operation": "mul",
+      "words": [
+        4,
+        6,
+        6,
+        0
+      ],
+      "operands": [
+        6,
+        6
+      ]
+    },
+    {
+      "register": 8,
+      "opcode": 2,
+      "operation": "add",
+      "words": [
+        2,
+        5,
+        7,
+        0
+      ],
+      "operands": [
+        5,
+        7
+      ]
+    },
+    {
+      "register": 9,
+      "opcode": 1,
+      "operation": "input",
+      "words": [
+        1,
+        2,
+        0,
+        0
+      ],
+      "input": "z",
+      "column": 2
+    },
+    {
+      "register": 10,
+      "opcode": 4,
+      "operation": "mul",
+      "words": [
+        4,
+        9,
+        9,
+        0
+      ],
+      "operands": [
+        9,
+        9
+      ]
+    },
+    {
+      "register": 11,
+      "opcode": 2,
+      "operation": "add",
+      "words": [
+        2,
+        8,
+        10,
+        0
+      ],
+      "operands": [
+        8,
+        10
+      ]
+    },
+    {
+      "register": 12,
+      "opcode": 9,
+      "operation": "sqrt",
+      "words": [
+        9,
+        11,
+        0,
+        0
+      ],
+      "operands": [
+        11
+      ]
+    },
+    {
+      "register": 13,
+      "opcode": 3,
+      "operation": "sub",
+      "words": [
+        3,
+        12,
+        1,
+        0
+      ],
+      "operands": [
+        12,
+        1
+      ]
+    }
+  ],
+  "numeric_input_policy": "Finite constants and inputs rounded to IEEE FP32 before execution; negative zero bits retained.",
+  "optimization": "Identical instruction tuples are shared; no algebraic rewriting or constant folding.",
+  "compiled_input_rows_fp32": [
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source_input_fp32_rounding": {
+    "value_count": 8,
+    "changed_value_count": 0,
+    "max_absolute_difference": 0.0,
+    "reference": "JSON numbers decoded as Python numeric values before packing; compiled_input_rows_fp32 are the actual execution inputs."
+  },
+  "program_sha256": "556cd54804f747f8dbb9ac2dc03bb0239523172942102f4f2709b49cc9ac3878",
+  "created_at": "2026-09-24T14:04:56.368915+00:00",
+  "sources": {
+    "model": {
+      "path": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_workbench\\Dawnwood_Interactive_v0.2\\model\\substrate.json",
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9"
+    },
+    "bindings": {
+      "path": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\xir_v0.1.json",
+      "sha256": "e0b34d22174e828e9ff3a1cae8b27db28b8dc227d7035c47b44b96e1631bf357"
+    },
+    "inputs": {
+      "path": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_ir_2026-09-24\\guard_inputs.json",
+      "sha256": "08ffbfdb16c7ecc488958c246f2bd3dda5bb35f0b47a2d8f47c02d567afb091a"
+    }
+  },
+  "files": {
+    "source_model.json": {
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "bytes": 13654
+    },
+    "bindings.json": {
+      "sha256": "e0b34d22174e828e9ff3a1cae8b27db28b8dc227d7035c47b44b96e1631bf357",
+      "bytes": 17052
+    },
+    "inputs.json": {
+      "sha256": "08ffbfdb16c7ecc488958c246f2bd3dda5bb35f0b47a2d8f47c02d567afb091a",
+      "bytes": 139
+    },
+    "program.bin": {
+      "sha256": "556cd54804f747f8dbb9ac2dc03bb0239523172942102f4f2709b49cc9ac3878",
+      "bytes": 284
+    }
+  }
+}

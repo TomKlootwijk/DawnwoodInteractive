@@ -1,0 +1,121 @@
+{
+  "final_build_matches_initial_numeric_results": {
+    "hadamard": true,
+    "sphere": true,
+    "double_dot": true
+  },
+  "instruction_vocabulary_maximum_absolute_error": 1.0681886131180818e-07,
+  "instruction_vocabulary_reference": "Python math elementary functions on recorded packed FP32 inputs; acceptance 1e-5 + 2e-5*max(abs(actual),abs(reference)), unchanged from native comparison defaults.",
+  "instruction_vocabulary_rows": [
+    {
+      "row": 0,
+      "maximum_absolute_error": 2.4203234305630872e-08,
+      "negative_zero_bits_preserved": true
+    },
+    {
+      "row": 1,
+      "maximum_absolute_error": 0.0,
+      "negative_zero_bits_preserved": true
+    },
+    {
+      "row": 2,
+      "maximum_absolute_error": 5.2590997334789336e-08,
+      "negative_zero_bits_preserved": true
+    },
+    {
+      "row": 3,
+      "maximum_absolute_error": 1.0681886131180818e-07,
+      "negative_zero_bits_preserved": true
+    }
+  ],
+  "executed_opcode_set": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "all_18_opcodes_executed": true,
+  "final_vulkan_validation": [
+    {
+      "file": "body_edit_vulkan.stdout.txt",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "constant_only_vulkan.stdout.txt",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "division_failure_vulkan.stdout.txt",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "double_dot_final_vulkan.stdout.txt",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "eager_selection_failure_vulkan.stdout.txt",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "guard_vulkan.stdout.txt",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "hadamard_final_vulkan.stdout.txt",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "instruction_vocabulary_vulkan.stdout.txt",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "overflow_failure_vulkan.stdout.txt",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "sphere_final_vulkan.stdout.txt",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "sqrt_failure_vulkan.stdout.txt",
+      "validation_enabled": true,
+      "errors": 0,
+      "warnings": 0
+    }
+  ],
+  "compiler_warnings": ""
+}
