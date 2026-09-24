@@ -48,6 +48,19 @@ include independent analytic comparisons and executable body edits. The
 operator, stage and whole-state requirements; this body evaluator does not yet
 execute the complete source application.
 
+The next component, [situated Apply](docs/SITUATED_APPLICATION.md), executes a
+selected source record's **placement → Klein-local SDF → two-Hadamard body**
+as one numerical program. Each definition can be replaced by an executable
+expression. Independent placement, field and body edits change the measured
+action on both CPU and GPU. The authored phase recurrence and resident mutation
+remain unfinished.
+
+```powershell
+.\Dawnwood-Apply.cmd compile --bindings source_bindings/situated_v0.1.json --operator hadamard --inputs source_bindings/examples/situated_inputs.json --output output/my_situated
+.\Dawnwood-Apply.cmd run --backend vulkan --device "RTX 5070 Ti" --input output/my_situated/program.bin --output output/my_situated/gpu.bin
+.\Dawnwood-Apply.cmd inspect output/my_situated/gpu.bin --manifest output/my_situated/manifest.json
+```
+
 ## Run the D1 constraint-repair experiment
 
 From the repository root, using Python 3.10 or newer:

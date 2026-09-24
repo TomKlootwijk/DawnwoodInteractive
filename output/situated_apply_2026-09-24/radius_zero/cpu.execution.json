@@ -1,0 +1,15 @@
+{
+  "command": [
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-source\\dawnwood-source-ir.exe",
+    "run",
+    "--backend",
+    "cpu",
+    "--input",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\situated_apply_2026-09-24\\radius_zero\\program.bin",
+    "--output",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\situated_apply_2026-09-24\\radius_zero\\cpu.bin"
+  ],
+  "exit_code": 3,
+  "validation_requested": true,
+  "executable_sha256": "c7f0ab76c3956222f3abbf93b214d0ab3c2d8be6b682ec3f531d1c7c6df68e01"
+}

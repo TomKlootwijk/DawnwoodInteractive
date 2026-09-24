@@ -1,0 +1,101 @@
+[
+  {
+    "name": "baseline",
+    "rows": 1028,
+    "instructions": 207,
+    "outputs": 16,
+    "bit_identical": true,
+    "failed_lanes": 0,
+    "native_exit_code": 0
+  },
+  {
+    "name": "placement_edit",
+    "rows": 1028,
+    "instructions": 209,
+    "outputs": 16,
+    "bit_identical": true,
+    "failed_lanes": 0,
+    "native_exit_code": 0
+  },
+  {
+    "name": "field_edit",
+    "rows": 1028,
+    "instructions": 209,
+    "outputs": 16,
+    "bit_identical": true,
+    "failed_lanes": 0,
+    "native_exit_code": 0
+  },
+  {
+    "name": "body_edit",
+    "rows": 1028,
+    "instructions": 208,
+    "outputs": 16,
+    "bit_identical": true,
+    "failed_lanes": 0,
+    "native_exit_code": 0
+  },
+  {
+    "name": "zero_gain_base",
+    "rows": 1028,
+    "instructions": 207,
+    "outputs": 16,
+    "bit_identical": true,
+    "failed_lanes": 0,
+    "native_exit_code": 0
+  },
+  {
+    "name": "zero_gain_shift",
+    "rows": 1028,
+    "instructions": 208,
+    "outputs": 16,
+    "bit_identical": true,
+    "failed_lanes": 0,
+    "native_exit_code": 0
+  },
+  {
+    "name": "klein_witness",
+    "rows": 3,
+    "instructions": 208,
+    "outputs": 16,
+    "bit_identical": true,
+    "failed_lanes": 0,
+    "native_exit_code": 0
+  },
+  {
+    "name": "radius_zero",
+    "rows": 1,
+    "instructions": 206,
+    "outputs": 16,
+    "bit_identical": true,
+    "failed_lanes": 1,
+    "native_exit_code": 3
+  },
+  {
+    "name": "radius_half",
+    "rows": 1,
+    "instructions": 206,
+    "outputs": 16,
+    "bit_identical": true,
+    "failed_lanes": 1,
+    "native_exit_code": 3
+  },
+  {
+    "name": "negative_scale",
+    "rows": 1,
+    "instructions": 207,
+    "outputs": 16,
+    "bit_identical": true,
+    "failed_lanes": 1,
+    "native_exit_code": 3
+  },
+  {
+    "name": "invalid_orientation",
+    "rows": 3,
+    "instructions": 207,
+    "outputs": 16,
+    "bit_identical": true,
+    "failed_lanes": 1,
+    "native_exit_code": 3
+  }
+]

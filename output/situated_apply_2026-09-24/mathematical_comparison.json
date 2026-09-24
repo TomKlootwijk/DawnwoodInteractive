@@ -1,0 +1,94 @@
+{
+  "reference": "Independent Python binary64 closed complex matrix H diag(1,exp(i phase)) H and wider 7x7 deck enumeration using packed FP32 inputs/parameters. Golden-angle literal packed to FP32; libm binary64 anchor reference.",
+  "metrics": {
+    "max_anchor_error": 1.9972320686179046e-08,
+    "max_field_error": 6.879503089418648e-08,
+    "max_action_error": 8.989368327494418e-08,
+    "max_action_error_given_returned_phase": 8.575936993882038e-08,
+    "max_relative_norm_error": 2.2246852641553494e-07,
+    "quotient_numeric_equal_rows": 771,
+    "quotient_bit_equal_rows": 771
+  },
+  "interventions": {
+    "placement_edit": {
+      "anchor_changed_rows": 1028,
+      "field_changed_rows": 1028,
+      "action_changed_rows": 1028,
+      "phase_changed_rows": 1028
+    },
+    "field_edit": {
+      "anchor_changed_rows": 0,
+      "field_changed_rows": 1028,
+      "action_changed_rows": 1028,
+      "phase_changed_rows": 1028
+    },
+    "body_edit": {
+      "anchor_changed_rows": 0,
+      "field_changed_rows": 0,
+      "action_changed_rows": 1028,
+      "phase_changed_rows": 0
+    },
+    "zero_gain_control": {
+      "action_changed_rows": 0,
+      "field_changed_rows": 1028
+    }
+  },
+  "klein_witness": [
+    {
+      "anchor_u": 0.875,
+      "anchor_v": 0.75,
+      "anchor_orientation": 0.0,
+      "query_u": 0.125,
+      "query_v": 0.25,
+      "query_orientation": 0.0,
+      "local_dx": 0.25,
+      "local_dy": 0.0,
+      "local_lift_m": -1.0,
+      "local_anchor_frame_y": -0.0,
+      "field_distance": 0.125,
+      "effective_phase": 0.25,
+      "ar": 0.5192676186561584,
+      "ai": 0.3466624319553375,
+      "br": -0.26926761865615845,
+      "bi": 0.4033375382423401
+    },
+    {
+      "anchor_u": 0.875,
+      "anchor_v": 0.75,
+      "anchor_orientation": 0.0,
+      "query_u": 0.125,
+      "query_v": 0.375,
+      "query_orientation": 0.0,
+      "local_dx": 0.25,
+      "local_dy": 0.125,
+      "local_lift_m": -1.0,
+      "local_anchor_frame_y": -0.125,
+      "field_distance": 0.15450850129127502,
+      "effective_phase": 0.279508501291275,
+      "ar": 0.5199320912361145,
+      "ai": 0.3583073019981384,
+      "br": -0.2699320614337921,
+      "bi": 0.3916926681995392
+    },
+    {
+      "anchor_u": 0.875,
+      "anchor_v": 0.75,
+      "anchor_orientation": 0.0,
+      "query_u": 0.125,
+      "query_v": 0.375,
+      "query_orientation": 0.0,
+      "local_dx": 0.25,
+      "local_dy": 0.125,
+      "local_lift_m": -1.0,
+      "local_anchor_frame_y": -0.125,
+      "field_distance": 0.15450850129127502,
+      "effective_phase": 0.279508501291275,
+      "ar": 0.5199320912361145,
+      "ai": 0.3583073019981384,
+      "br": -0.2699320614337921,
+      "bi": 0.3916926681995392
+    }
+  ],
+  "comparison_limit": 1e-06,
+  "scope": "situated Apply only; external model edits/recompilation, no resident mutation or cycle"
+}

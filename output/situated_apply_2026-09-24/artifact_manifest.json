@@ -1,0 +1,856 @@
+{
+  "algorithm": "sha256",
+  "excludes": [
+    "artifact_manifest.json"
+  ],
+  "files": {
+    "baseline/bindings.json": {
+      "sha256": "45bce9fdb33ec09d95b9d410fcffc487ffe6bc31664332333949f52a126cfff2",
+      "bytes": 483634
+    },
+    "baseline/cpu.bin": {
+      "sha256": "77f29bd7a5ebe27f4be0dd0473825ed8f33e7d30438770f769f152d029b45d03",
+      "bytes": 69920
+    },
+    "baseline/cpu.execution.json": {
+      "sha256": "ea08dbe4fec3f5bb475ef13029dea3633f0696d41839071202fe40993e5610f9",
+      "bytes": 614
+    },
+    "baseline/cpu.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "baseline/cpu.stdout.log": {
+      "sha256": "d53be0beb31c22838d86f2b44d5be3cce56a197c9f999168d845683746c8a89b",
+      "bytes": 468
+    },
+    "baseline/inputs.json": {
+      "sha256": "515c333f100b56001f393cadf7530b61ec14647f21d9db7e1d642a3b27138327",
+      "bytes": 150322
+    },
+    "baseline/manifest.json": {
+      "sha256": "d09fce9b1f8a6aea3067131c1ec09a13ebbdbc33b23a7bbebe32a1ef6aecf182",
+      "bytes": 3125963
+    },
+    "baseline/program.bin": {
+      "sha256": "5776ff9efb3f6f80bd158a2a030f2af385c3e7b07e86a0d3b92be10a3302daf6",
+      "bytes": 36296
+    },
+    "baseline/source_model.json": {
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "bytes": 13654
+    },
+    "baseline/vulkan.bin": {
+      "sha256": "77f29bd7a5ebe27f4be0dd0473825ed8f33e7d30438770f769f152d029b45d03",
+      "bytes": 69920
+    },
+    "baseline/vulkan.execution.json": {
+      "sha256": "e4ae94acc02489a6194b0088aa097717b57a38ef8c4bfd9bca4a11bb60cdd71c",
+      "bytes": 655
+    },
+    "baseline/vulkan.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "baseline/vulkan.stdout.log": {
+      "sha256": "f891980d24abc1137c505ce03bd6efbf585b335f18d4619259eda617c6608174",
+      "bytes": 571
+    },
+    "baseline_bindings.json": {
+      "sha256": "45bce9fdb33ec09d95b9d410fcffc487ffe6bc31664332333949f52a126cfff2",
+      "bytes": 483634
+    },
+    "baseline_inputs.json": {
+      "sha256": "515c333f100b56001f393cadf7530b61ec14647f21d9db7e1d642a3b27138327",
+      "bytes": 150322
+    },
+    "baseline_model.json": {
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "bytes": 13654
+    },
+    "body_edit/bindings.json": {
+      "sha256": "45bce9fdb33ec09d95b9d410fcffc487ffe6bc31664332333949f52a126cfff2",
+      "bytes": 483634
+    },
+    "body_edit/cpu.bin": {
+      "sha256": "26aa229d87ebe901ffa01e2fc1150dab94b59c391216ae20eded373194f34bd8",
+      "bytes": 69920
+    },
+    "body_edit/cpu.execution.json": {
+      "sha256": "deb9652c1a419ad1fd6468e18266a1419592a938b766565b614f53497bd01545",
+      "bytes": 616
+    },
+    "body_edit/cpu.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "body_edit/cpu.stdout.log": {
+      "sha256": "50ca7e73ef23e626971dd2b1324d94968fc96070999ca171aa41b90705ba8f22",
+      "bytes": 469
+    },
+    "body_edit/inputs.json": {
+      "sha256": "515c333f100b56001f393cadf7530b61ec14647f21d9db7e1d642a3b27138327",
+      "bytes": 150322
+    },
+    "body_edit/manifest.json": {
+      "sha256": "d950199590e7a9caa6eeb7144abb44301925195582f15f4fb1415bc2d77f8cb4",
+      "bytes": 3156442
+    },
+    "body_edit/program.bin": {
+      "sha256": "4c7c4ea3072b3c797c8babcd5f6e903c2ef97a7ad55b2950e1989cde0d4e29a0",
+      "bytes": 36312
+    },
+    "body_edit/source_model.json": {
+      "sha256": "8e4a14e9c1f6fcd0ba2f5886989ca042514802cc9eb802e5f7e84fe24b655108",
+      "bytes": 27618
+    },
+    "body_edit/vulkan.bin": {
+      "sha256": "26aa229d87ebe901ffa01e2fc1150dab94b59c391216ae20eded373194f34bd8",
+      "bytes": 69920
+    },
+    "body_edit/vulkan.execution.json": {
+      "sha256": "237f69542a03c7efe95cbcade61ef81506650d46d548703b0bec08453abddf86",
+      "bytes": 657
+    },
+    "body_edit/vulkan.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "body_edit/vulkan.stdout.log": {
+      "sha256": "663167103bd45ab2e57023f8c2d91dbfc1dbf6d8f8d00b3c17ab45002a014426",
+      "bytes": 571
+    },
+    "body_edit_bindings.json": {
+      "sha256": "45bce9fdb33ec09d95b9d410fcffc487ffe6bc31664332333949f52a126cfff2",
+      "bytes": 483634
+    },
+    "body_edit_inputs.json": {
+      "sha256": "515c333f100b56001f393cadf7530b61ec14647f21d9db7e1d642a3b27138327",
+      "bytes": 150322
+    },
+    "body_edit_model.json": {
+      "sha256": "8e4a14e9c1f6fcd0ba2f5886989ca042514802cc9eb802e5f7e84fe24b655108",
+      "bytes": 27618
+    },
+    "boundary/bindings.json": {
+      "sha256": "bb71c6dddace3d42a31c886853debb58eac8ad017a68c481ac75f425228d4b72",
+      "bytes": 494468
+    },
+    "boundary/cpu.bin": {
+      "sha256": "2ecc46aa53e2581824cbebc63d4a7960ae666891681f332fae81fc64179c7607",
+      "bytes": 220
+    },
+    "boundary/cpu.execution.json": {
+      "sha256": "505dc9404e65c89e00705abdfd89b56e3f525e3d8ea51d5742f5115cc8b6343d",
+      "bytes": 614
+    },
+    "boundary/cpu.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "boundary/cpu.stdout.log": {
+      "sha256": "552fd547ce8c0136c4d83b008c5cae9b5d37ab032e5721355a054a1d310fed85",
+      "bytes": 464
+    },
+    "boundary/inputs.json": {
+      "sha256": "68cf8365854fbbd77ef8b314d79ea4d183901ff5e04e0b2148c8be97f45d08ac",
+      "bytes": 427
+    },
+    "boundary/manifest.json": {
+      "sha256": "c6d7181a75fc9415e92d1d1f49522e613bf58942f5d37045ce7244fdcc6f2487",
+      "bytes": 3013003
+    },
+    "boundary/program.bin": {
+      "sha256": "f7cf79a7a441cf1f25ee04a100330365284068e1c7b7eefe9ead9bdb59020606",
+      "bytes": 3496
+    },
+    "boundary/source_model.json": {
+      "sha256": "0d0906b70fa21994339178caececc576d6adb0986bc4ffcb60a33b93d0f34a75",
+      "bytes": 13786
+    },
+    "boundary/vulkan.bin": {
+      "sha256": "2ecc46aa53e2581824cbebc63d4a7960ae666891681f332fae81fc64179c7607",
+      "bytes": 220
+    },
+    "boundary/vulkan.execution.json": {
+      "sha256": "d7eb8372122c7ee596b27ea6be9aa54bf5c8c978fc6987680f9426f92de51ca8",
+      "bytes": 655
+    },
+    "boundary/vulkan.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "boundary/vulkan.stdout.log": {
+      "sha256": "e6d885a9fb7ef02a7a92f31627ca5bd4814b5cb170a62b6ceda4f7829db34566",
+      "bytes": 568
+    },
+    "boundary_comparison.json": {
+      "sha256": "8e7dfd3d32cd94bc402d262fdad7f0cf0cd596072c7f4c4781022c0b2d50bf8d",
+      "bytes": 1650
+    },
+    "boundary_inputs.json": {
+      "sha256": "68cf8365854fbbd77ef8b314d79ea4d183901ff5e04e0b2148c8be97f45d08ac",
+      "bytes": 427
+    },
+    "boundary_model.json": {
+      "sha256": "0d0906b70fa21994339178caececc576d6adb0986bc4ffcb60a33b93d0f34a75",
+      "bytes": 13786
+    },
+    "campaign_inputs.json": {
+      "sha256": "515c333f100b56001f393cadf7530b61ec14647f21d9db7e1d642a3b27138327",
+      "bytes": 150322
+    },
+    "compile_launcher.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "compile_launcher.stdout.log": {
+      "sha256": "a7df3ec35962917aae95d24fb88d0f7747cd638bfba1a5e94121dfe69f5fc5a6",
+      "bytes": 528
+    },
+    "compiler_provenance_audit.json": {
+      "sha256": "bcfdafa0b99c8278ffeb32ef98246b0584d4237d593b397e5a54a99ac6406e32",
+      "bytes": 3629
+    },
+    "execution_summary.json": {
+      "sha256": "9448864af44afb436b2b66c084cf411c0181574a0883c20bca0c70a1dfdd9c5b",
+      "bytes": 1919
+    },
+    "field_edit/bindings.json": {
+      "sha256": "45bce9fdb33ec09d95b9d410fcffc487ffe6bc31664332333949f52a126cfff2",
+      "bytes": 483634
+    },
+    "field_edit/cpu.bin": {
+      "sha256": "34759fa0abbf66dc1dc62d58fb732f1d6c1938a88d7903d0a857f7179112eecc",
+      "bytes": 69920
+    },
+    "field_edit/cpu.execution.json": {
+      "sha256": "c21c0ed0817c082c0b8ac613b336ffd4b22a05559a1b6b57b16583005d1cd465",
+      "bytes": 618
+    },
+    "field_edit/cpu.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "field_edit/cpu.stdout.log": {
+      "sha256": "bf96e006f80d1d766e4e1615af817804407a05bb9af40c51e923b673cf02e74b",
+      "bytes": 469
+    },
+    "field_edit/inputs.json": {
+      "sha256": "515c333f100b56001f393cadf7530b61ec14647f21d9db7e1d642a3b27138327",
+      "bytes": 150322
+    },
+    "field_edit/manifest.json": {
+      "sha256": "ef07ba739e92d80a225dd8042d904c275db73509c6895dbc9b7f6520ecfe4649",
+      "bytes": 3135389
+    },
+    "field_edit/program.bin": {
+      "sha256": "39895d312371523a3998fb7edb2e4050348b3156cbf3cccd9171c58fdaa939f1",
+      "bytes": 36328
+    },
+    "field_edit/source_model.json": {
+      "sha256": "b8d927ea4c7461023cd586c18a70707ad747643062bc077cfe434b32c9a46f10",
+      "bytes": 16750
+    },
+    "field_edit/vulkan.bin": {
+      "sha256": "34759fa0abbf66dc1dc62d58fb732f1d6c1938a88d7903d0a857f7179112eecc",
+      "bytes": 69920
+    },
+    "field_edit/vulkan.execution.json": {
+      "sha256": "6cc7b68b26ba5a516c8a1e35f18937e1c7924640f5d7c28dde9f8772efcf5d63",
+      "bytes": 659
+    },
+    "field_edit/vulkan.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "field_edit/vulkan.stdout.log": {
+      "sha256": "cdd8eaa68e96dfdc0d1f68cc550efe02db8b2a61e5d83d532abc22e628fe7b11",
+      "bytes": 571
+    },
+    "field_edit_bindings.json": {
+      "sha256": "45bce9fdb33ec09d95b9d410fcffc487ffe6bc31664332333949f52a126cfff2",
+      "bytes": 483634
+    },
+    "field_edit_inputs.json": {
+      "sha256": "515c333f100b56001f393cadf7530b61ec14647f21d9db7e1d642a3b27138327",
+      "bytes": 150322
+    },
+    "field_edit_model.json": {
+      "sha256": "b8d927ea4c7461023cd586c18a70707ad747643062bc077cfe434b32c9a46f10",
+      "bytes": 16750
+    },
+    "frontend_rejections.json": {
+      "sha256": "18f813ecaea933e27edab24bda71d63a7f671684c64f90f78b6b44b7e576020f",
+      "bytes": 3484
+    },
+    "hardware.txt": {
+      "sha256": "26dba6a37d2f8166015778db620468760d52c35ce1865685b900439e6eadfd9a",
+      "bytes": 100
+    },
+    "inspect_launcher.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "inspect_launcher.stdout.log": {
+      "sha256": "57e94c62a19de8023afe67b58892147ea0c25e1885416d7bd92b61685fc1c4ab",
+      "bytes": 5846
+    },
+    "invalid_orientation/bindings.json": {
+      "sha256": "45bce9fdb33ec09d95b9d410fcffc487ffe6bc31664332333949f52a126cfff2",
+      "bytes": 483634
+    },
+    "invalid_orientation/cpu.bin": {
+      "sha256": "d163d7a67a7820f4717e171b44aaf70ab99fea775885f7d8ae4dd4f089895fc0",
+      "bytes": 220
+    },
+    "invalid_orientation/cpu.execution.json": {
+      "sha256": "75102476bf06134f060777beed2ccebb9c5809f463a1f70118b2baab15874a3b",
+      "bytes": 636
+    },
+    "invalid_orientation/cpu.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "invalid_orientation/cpu.stdout.log": {
+      "sha256": "9334803dfce9fdb8f7f7d4f787ba6165e6905c36542503d7376ce4f7c59bf57e",
+      "bytes": 472
+    },
+    "invalid_orientation/inputs.json": {
+      "sha256": "b3c66c83ba1472a8a141c2ee447fcf4c677c411971bd538891e9b2ae242dac61",
+      "bytes": 438
+    },
+    "invalid_orientation/manifest.json": {
+      "sha256": "c1ee5e861ab083d0524981ec0710528c26b869b4a3a403086338fff77ba58dea",
+      "bytes": 3013001
+    },
+    "invalid_orientation/program.bin": {
+      "sha256": "d1cf19305f4bdfc69a8dc8df386a34d83f8be343a72617768b4b6b547f72e193",
+      "bytes": 3496
+    },
+    "invalid_orientation/source_model.json": {
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "bytes": 13654
+    },
+    "invalid_orientation/vulkan.bin": {
+      "sha256": "d163d7a67a7820f4717e171b44aaf70ab99fea775885f7d8ae4dd4f089895fc0",
+      "bytes": 220
+    },
+    "invalid_orientation/vulkan.execution.json": {
+      "sha256": "1d0841bd6a41dbd225272471aa9d3da9ec90c0e8e948e6843ed26e8a42aba2c7",
+      "bytes": 677
+    },
+    "invalid_orientation/vulkan.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "invalid_orientation/vulkan.stdout.log": {
+      "sha256": "a14aa0b983033d32acd0b4a64e56787c5e5de0e1424e48aef3a2aaee469022b4",
+      "bytes": 578
+    },
+    "invalid_orientation_bindings.json": {
+      "sha256": "45bce9fdb33ec09d95b9d410fcffc487ffe6bc31664332333949f52a126cfff2",
+      "bytes": 483634
+    },
+    "invalid_orientation_inputs.json": {
+      "sha256": "b3c66c83ba1472a8a141c2ee447fcf4c677c411971bd538891e9b2ae242dac61",
+      "bytes": 438
+    },
+    "invalid_orientation_model.json": {
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "bytes": 13654
+    },
+    "klein_witness/bindings.json": {
+      "sha256": "45bce9fdb33ec09d95b9d410fcffc487ffe6bc31664332333949f52a126cfff2",
+      "bytes": 483634
+    },
+    "klein_witness/cpu.bin": {
+      "sha256": "3202487209d2e8a25322dffed98288416661a78aaba057987d0536985ce59f26",
+      "bytes": 220
+    },
+    "klein_witness/cpu.execution.json": {
+      "sha256": "fa109cfbb7d5c52436884b2551eb6a8c43ff6df8301b7fb45c23b83564d393c6",
+      "bytes": 624
+    },
+    "klein_witness/cpu.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "klein_witness/cpu.stdout.log": {
+      "sha256": "3e4ee5c89240ef3de6017c2ec467d8a34c87c73dbf2add13c89a2885ef8a6837",
+      "bytes": 464
+    },
+    "klein_witness/inputs.json": {
+      "sha256": "07ddf518f74a49b7a5e3026fddf6f02f11cf4dc732901b548c7511811eaeff4f",
+      "bytes": 438
+    },
+    "klein_witness/manifest.json": {
+      "sha256": "4b4b2f41e7a753ffaff288722b47b16ec77bbe9aa2b05594ecd0cd1a156791d3",
+      "bytes": 3013469
+    },
+    "klein_witness/program.bin": {
+      "sha256": "c1a8f9d3d2a78fa7686ef484f57cf634103b1951432725f714a2008f2c9da238",
+      "bytes": 3512
+    },
+    "klein_witness/source_model.json": {
+      "sha256": "703b25085fd4a162bb601966fe05b6ef5e3cb96ce2960694356684ce345cd17d",
+      "bytes": 13790
+    },
+    "klein_witness/vulkan.bin": {
+      "sha256": "3202487209d2e8a25322dffed98288416661a78aaba057987d0536985ce59f26",
+      "bytes": 220
+    },
+    "klein_witness/vulkan.execution.json": {
+      "sha256": "7675d699139de8d201dd95c46877ce46d9879bfce43575dacbe38b55952cfa7c",
+      "bytes": 665
+    },
+    "klein_witness/vulkan.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "klein_witness/vulkan.stdout.log": {
+      "sha256": "0435beae0bde41bf973055a2a818be93bd7c4610f162e925975a45634b952dd0",
+      "bytes": 568
+    },
+    "klein_witness_bindings.json": {
+      "sha256": "45bce9fdb33ec09d95b9d410fcffc487ffe6bc31664332333949f52a126cfff2",
+      "bytes": 483634
+    },
+    "klein_witness_inputs.json": {
+      "sha256": "07ddf518f74a49b7a5e3026fddf6f02f11cf4dc732901b548c7511811eaeff4f",
+      "bytes": 438
+    },
+    "klein_witness_model.json": {
+      "sha256": "703b25085fd4a162bb601966fe05b6ef5e3cb96ce2960694356684ce345cd17d",
+      "bytes": 13790
+    },
+    "launcher/bindings.json": {
+      "sha256": "bb71c6dddace3d42a31c886853debb58eac8ad017a68c481ac75f425228d4b72",
+      "bytes": 494468
+    },
+    "launcher/gpu.bin": {
+      "sha256": "65aad95ba7aa287dad8d2910753b2cc7184f320a7d449eb4274788cca272474d",
+      "bytes": 288
+    },
+    "launcher/inputs.json": {
+      "sha256": "ddc226af8d3d27bc368193ae606b40db385dd332ea77a4b58d1a288b69975b49",
+      "bytes": 583
+    },
+    "launcher/manifest.json": {
+      "sha256": "029a2e359bcff93feaac68b7326dfb63e4062b91acf8b126dbab0eff9a03c6b8",
+      "bytes": 3013061
+    },
+    "launcher/program.bin": {
+      "sha256": "d52fbb6d981918f49fc1ca4948988f57aa98b08690bf24b9150e8e54cc3b98e6",
+      "bytes": 3528
+    },
+    "launcher/source_model.json": {
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "bytes": 13654
+    },
+    "launcher_and_artifact_audit.json": {
+      "sha256": "715fccb0bed0663750e716d82a38ad1e0c4a96ac5f401c0dee23eef864ca7544",
+      "bytes": 1449
+    },
+    "mathematical_comparison.json": {
+      "sha256": "22afcbfdc88a7ff61d550f739f380c592ea04b50f5d9005f8b03d2f2580143b5",
+      "bytes": 2844
+    },
+    "negative_scale/bindings.json": {
+      "sha256": "45bce9fdb33ec09d95b9d410fcffc487ffe6bc31664332333949f52a126cfff2",
+      "bytes": 483634
+    },
+    "negative_scale/cpu.bin": {
+      "sha256": "f04ac2559b73c5a172291bebed257577517468fc64658ab7bc782f55340b3c6c",
+      "bytes": 84
+    },
+    "negative_scale/cpu.execution.json": {
+      "sha256": "c79b434f13fd50cd2fa0897eb1430c846fa6cff4ab09cfdb66c76d7c1a55b3a3",
+      "bytes": 626
+    },
+    "negative_scale/cpu.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "negative_scale/cpu.stdout.log": {
+      "sha256": "c6dc8c418f69ec6c407a38ffbe35a55b0317c41f77f7739372923e0af7940ad8",
+      "bytes": 474
+    },
+    "negative_scale/inputs.json": {
+      "sha256": "c0cbf5466453a1b2e716bca1ee3612c70204d250025bea9299c5576b0e0fc1e8",
+      "bytes": 145
+    },
+    "negative_scale/manifest.json": {
+      "sha256": "699ef440b9624cb5754299b28a24fef145066b5134b054a7adf5672954478479",
+      "bytes": 3012826
+    },
+    "negative_scale/program.bin": {
+      "sha256": "25478faec9a712c29053fd7da1b5e42080488a4678748d7d5035f97a238daf2a",
+      "bytes": 3432
+    },
+    "negative_scale/source_model.json": {
+      "sha256": "1a71711c17a4e81f89cfb4970354833700aa4a8b64c0c89453cf76a2b45e9101",
+      "bytes": 13717
+    },
+    "negative_scale/vulkan.bin": {
+      "sha256": "f04ac2559b73c5a172291bebed257577517468fc64658ab7bc782f55340b3c6c",
+      "bytes": 84
+    },
+    "negative_scale/vulkan.execution.json": {
+      "sha256": "61a64c6c16ddd4ca863bc38e951438dfd97d984e6f862d6384b87d65af302a1a",
+      "bytes": 667
+    },
+    "negative_scale/vulkan.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "negative_scale/vulkan.stdout.log": {
+      "sha256": "33f874b748c6b70b0df27c7d8beb29fe94352bfee16cc291ca6a046b5f8e719f",
+      "bytes": 578
+    },
+    "negative_scale_bindings.json": {
+      "sha256": "45bce9fdb33ec09d95b9d410fcffc487ffe6bc31664332333949f52a126cfff2",
+      "bytes": 483634
+    },
+    "negative_scale_inputs.json": {
+      "sha256": "c0cbf5466453a1b2e716bca1ee3612c70204d250025bea9299c5576b0e0fc1e8",
+      "bytes": 145
+    },
+    "negative_scale_model.json": {
+      "sha256": "1a71711c17a4e81f89cfb4970354833700aa4a8b64c0c89453cf76a2b45e9101",
+      "bytes": 13717
+    },
+    "placement_edit/bindings.json": {
+      "sha256": "45bce9fdb33ec09d95b9d410fcffc487ffe6bc31664332333949f52a126cfff2",
+      "bytes": 483634
+    },
+    "placement_edit/cpu.bin": {
+      "sha256": "b37770feac5f04096d4deb7383b2acde2a8a4c09daa1fead7304fe6a433e31bc",
+      "bytes": 69920
+    },
+    "placement_edit/cpu.execution.json": {
+      "sha256": "a32cfc414a84319065c13a668bb30fc63288c785eb70c412bf38c58950f8663d",
+      "bytes": 626
+    },
+    "placement_edit/cpu.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "placement_edit/cpu.stdout.log": {
+      "sha256": "9fe654452340e1901476d8b4a6db111de172f7c7e85cb56cc2f0eb92c34a375b",
+      "bytes": 469
+    },
+    "placement_edit/inputs.json": {
+      "sha256": "515c333f100b56001f393cadf7530b61ec14647f21d9db7e1d642a3b27138327",
+      "bytes": 150322
+    },
+    "placement_edit/manifest.json": {
+      "sha256": "2b1ffa4f4b20557850920268aaeeebfa157395a77456a2c7b38123af71680512",
+      "bytes": 3358789
+    },
+    "placement_edit/program.bin": {
+      "sha256": "3186176abe379a00d07248934924916e33843ca5745cb577b12de944c4711902",
+      "bytes": 36328
+    },
+    "placement_edit/source_model.json": {
+      "sha256": "fb7eda5cee38b0ced4f90fb7971c4ec89f20a01ecb8a79a40fd7c1206c7d75d0",
+      "bytes": 119027
+    },
+    "placement_edit/vulkan.bin": {
+      "sha256": "b37770feac5f04096d4deb7383b2acde2a8a4c09daa1fead7304fe6a433e31bc",
+      "bytes": 69920
+    },
+    "placement_edit/vulkan.execution.json": {
+      "sha256": "83141148995d8e90f43fd6f2638fd68386c8fdf568543209e7ef3387dcbf1721",
+      "bytes": 667
+    },
+    "placement_edit/vulkan.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "placement_edit/vulkan.stdout.log": {
+      "sha256": "ea26c206a81bc5cf087c9e17845c96c86b752c43e403495e7fa60336bbaf11af",
+      "bytes": 571
+    },
+    "placement_edit_bindings.json": {
+      "sha256": "45bce9fdb33ec09d95b9d410fcffc487ffe6bc31664332333949f52a126cfff2",
+      "bytes": 483634
+    },
+    "placement_edit_inputs.json": {
+      "sha256": "515c333f100b56001f393cadf7530b61ec14647f21d9db7e1d642a3b27138327",
+      "bytes": 150322
+    },
+    "placement_edit_model.json": {
+      "sha256": "fb7eda5cee38b0ced4f90fb7971c4ec89f20a01ecb8a79a40fd7c1206c7d75d0",
+      "bytes": 119027
+    },
+    "radius_half/bindings.json": {
+      "sha256": "45bce9fdb33ec09d95b9d410fcffc487ffe6bc31664332333949f52a126cfff2",
+      "bytes": 483634
+    },
+    "radius_half/cpu.bin": {
+      "sha256": "4d59120d967e45d0388ade49aef7fe7bbcce904873d590cfaf9c1aa98682ccbc",
+      "bytes": 84
+    },
+    "radius_half/cpu.execution.json": {
+      "sha256": "23ee9d4b8b706541319a8594cdc8e27dff2aadae4348695f59ab0cf5d307b6ce",
+      "bytes": 620
+    },
+    "radius_half/cpu.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "radius_half/cpu.stdout.log": {
+      "sha256": "a584cd6826c4548018e789e0095c7d44bd03b70b3c7f2ccb5f053265a853a971",
+      "bytes": 474
+    },
+    "radius_half/inputs.json": {
+      "sha256": "c0cbf5466453a1b2e716bca1ee3612c70204d250025bea9299c5576b0e0fc1e8",
+      "bytes": 145
+    },
+    "radius_half/manifest.json": {
+      "sha256": "b1a5d603c4139bdfc6a0e5dd5edc52b84125cb483888b25d2dc65d30ecf79ea6",
+      "bytes": 3012346
+    },
+    "radius_half/program.bin": {
+      "sha256": "d9fde328221dfa0362c49c86f4be170bde30cf9e1470ea438ec5a0af997ee8f6",
+      "bytes": 3416
+    },
+    "radius_half/source_model.json": {
+      "sha256": "53d6d669edba84c5e9ca4900f623949adeb56f1497d9638f538f0b919ff815c4",
+      "bytes": 13707
+    },
+    "radius_half/vulkan.bin": {
+      "sha256": "4d59120d967e45d0388ade49aef7fe7bbcce904873d590cfaf9c1aa98682ccbc",
+      "bytes": 84
+    },
+    "radius_half/vulkan.execution.json": {
+      "sha256": "cb89c73d445a9142118d861654602d795756cdc570dab53542bc38cbcc0a299a",
+      "bytes": 661
+    },
+    "radius_half/vulkan.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "radius_half/vulkan.stdout.log": {
+      "sha256": "8386a227c5c1ee09d8d734ddc77e31be65a260ed0c06334bbbbd6cf56709754a",
+      "bytes": 578
+    },
+    "radius_half_bindings.json": {
+      "sha256": "45bce9fdb33ec09d95b9d410fcffc487ffe6bc31664332333949f52a126cfff2",
+      "bytes": 483634
+    },
+    "radius_half_inputs.json": {
+      "sha256": "c0cbf5466453a1b2e716bca1ee3612c70204d250025bea9299c5576b0e0fc1e8",
+      "bytes": 145
+    },
+    "radius_half_model.json": {
+      "sha256": "53d6d669edba84c5e9ca4900f623949adeb56f1497d9638f538f0b919ff815c4",
+      "bytes": 13707
+    },
+    "radius_zero/bindings.json": {
+      "sha256": "45bce9fdb33ec09d95b9d410fcffc487ffe6bc31664332333949f52a126cfff2",
+      "bytes": 483634
+    },
+    "radius_zero/cpu.bin": {
+      "sha256": "bc068a5b8e66a11202051e0509fe4d4d256a2d68ab1d2c638454fc48887bdae4",
+      "bytes": 84
+    },
+    "radius_zero/cpu.execution.json": {
+      "sha256": "019910399017ea06caf50309d917876aaca270fdcf4c186474fe61c934a49e83",
+      "bytes": 620
+    },
+    "radius_zero/cpu.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "radius_zero/cpu.stdout.log": {
+      "sha256": "2d504ac1038652873b0fee5be9460608fe78055f2c28bd044414aa5b21e7faee",
+      "bytes": 471
+    },
+    "radius_zero/inputs.json": {
+      "sha256": "c0cbf5466453a1b2e716bca1ee3612c70204d250025bea9299c5576b0e0fc1e8",
+      "bytes": 145
+    },
+    "radius_zero/manifest.json": {
+      "sha256": "9f14ed6b068c2c6f1dcc264b1c34b505ecd7251e38ad2d241e8e2982a3979363",
+      "bytes": 3012331
+    },
+    "radius_zero/program.bin": {
+      "sha256": "8c96c21741c496fd1c9a143f5cf7aa07d125e1109635d5afcb811aeca33f1e19",
+      "bytes": 3416
+    },
+    "radius_zero/source_model.json": {
+      "sha256": "3aaba5131b6d4cfc84ec48b2e6560416c570ff0376fec607bcf68e56b0aa735a",
+      "bytes": 13705
+    },
+    "radius_zero/vulkan.bin": {
+      "sha256": "bc068a5b8e66a11202051e0509fe4d4d256a2d68ab1d2c638454fc48887bdae4",
+      "bytes": 84
+    },
+    "radius_zero/vulkan.execution.json": {
+      "sha256": "ab4a1e0535ecaeece40a0c2d8f0cdf63425a9483e698eedc1dcb478f4375136f",
+      "bytes": 661
+    },
+    "radius_zero/vulkan.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "radius_zero/vulkan.stdout.log": {
+      "sha256": "8a9812f41e6551d9fb6a61732e4632d567a0f7d62ce10f868ba0afb45ad4fc65",
+      "bytes": 578
+    },
+    "radius_zero_bindings.json": {
+      "sha256": "45bce9fdb33ec09d95b9d410fcffc487ffe6bc31664332333949f52a126cfff2",
+      "bytes": 483634
+    },
+    "radius_zero_inputs.json": {
+      "sha256": "c0cbf5466453a1b2e716bca1ee3612c70204d250025bea9299c5576b0e0fc1e8",
+      "bytes": 145
+    },
+    "radius_zero_model.json": {
+      "sha256": "3aaba5131b6d4cfc84ec48b2e6560416c570ff0376fec607bcf68e56b0aa735a",
+      "bytes": 13705
+    },
+    "REPORT.md": {
+      "sha256": "2992fc667f3fbd032eff79fa77cf10436029b17d0bf189895455265d8a9106b1",
+      "bytes": 6858
+    },
+    "run_launcher.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "run_launcher.stdout.log": {
+      "sha256": "7d3a07b8213f936caaeeec3c008dacccc58ba60fd2ed589052e467432b12f07d",
+      "bytes": 568
+    },
+    "zero_gain_base/bindings.json": {
+      "sha256": "45bce9fdb33ec09d95b9d410fcffc487ffe6bc31664332333949f52a126cfff2",
+      "bytes": 483634
+    },
+    "zero_gain_base/cpu.bin": {
+      "sha256": "718e3df39c1a2bb62d69ab3d243ac240d7afa04d9234d1fc6f4ec167e6727508",
+      "bytes": 69920
+    },
+    "zero_gain_base/cpu.execution.json": {
+      "sha256": "11d5492285cad8edc4a814950a400b4a6ab904dde798f0d308de0f1a2e30327e",
+      "bytes": 626
+    },
+    "zero_gain_base/cpu.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "zero_gain_base/cpu.stdout.log": {
+      "sha256": "89fab2c12cbc512f7a019b33f9593aa10b33023ebaa4892898ce22a9d7a52ee0",
+      "bytes": 469
+    },
+    "zero_gain_base/inputs.json": {
+      "sha256": "515c333f100b56001f393cadf7530b61ec14647f21d9db7e1d642a3b27138327",
+      "bytes": 150322
+    },
+    "zero_gain_base/manifest.json": {
+      "sha256": "107d0dbf1a5bd219c988ef0f47b81f4ddd4fc67a66c5373bab1bebd88ffad40d",
+      "bytes": 3126042
+    },
+    "zero_gain_base/program.bin": {
+      "sha256": "6ec281e243ee8ee51d773a21f3740f166015ec309b31c32b3221c85506acf069",
+      "bytes": 36296
+    },
+    "zero_gain_base/source_model.json": {
+      "sha256": "7fd514c83cf0767eab8642c31a3f3c1ddb0f6b35bb43a66e186164998885b515",
+      "bytes": 13731
+    },
+    "zero_gain_base/vulkan.bin": {
+      "sha256": "718e3df39c1a2bb62d69ab3d243ac240d7afa04d9234d1fc6f4ec167e6727508",
+      "bytes": 69920
+    },
+    "zero_gain_base/vulkan.execution.json": {
+      "sha256": "7e5f33733324c4a85e75a8ce9987e4618b66bcedb75741004108d8da13750696",
+      "bytes": 667
+    },
+    "zero_gain_base/vulkan.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "zero_gain_base/vulkan.stdout.log": {
+      "sha256": "032b4e91a1b55c71476b396da6edfe896f5a52e96777f42038302ff643183805",
+      "bytes": 571
+    },
+    "zero_gain_base_bindings.json": {
+      "sha256": "45bce9fdb33ec09d95b9d410fcffc487ffe6bc31664332333949f52a126cfff2",
+      "bytes": 483634
+    },
+    "zero_gain_base_inputs.json": {
+      "sha256": "515c333f100b56001f393cadf7530b61ec14647f21d9db7e1d642a3b27138327",
+      "bytes": 150322
+    },
+    "zero_gain_base_model.json": {
+      "sha256": "7fd514c83cf0767eab8642c31a3f3c1ddb0f6b35bb43a66e186164998885b515",
+      "bytes": 13731
+    },
+    "zero_gain_shift/bindings.json": {
+      "sha256": "45bce9fdb33ec09d95b9d410fcffc487ffe6bc31664332333949f52a126cfff2",
+      "bytes": 483634
+    },
+    "zero_gain_shift/cpu.bin": {
+      "sha256": "952261a1f1a8f5fe184fdaf32d2797aacae7dab402a3557cd3a41f7ff9b4be79",
+      "bytes": 69920
+    },
+    "zero_gain_shift/cpu.execution.json": {
+      "sha256": "f5c972e716985a7e949073fd1137722e0c4f796608c5135757c7ada9198ebfa0",
+      "bytes": 628
+    },
+    "zero_gain_shift/cpu.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "zero_gain_shift/cpu.stdout.log": {
+      "sha256": "97d9e8968297067c6a0c6458aebb0f5d235775ce03e31ef203787b4177d617c5",
+      "bytes": 469
+    },
+    "zero_gain_shift/inputs.json": {
+      "sha256": "515c333f100b56001f393cadf7530b61ec14647f21d9db7e1d642a3b27138327",
+      "bytes": 150322
+    },
+    "zero_gain_shift/manifest.json": {
+      "sha256": "a75c03d7efc8554aa533ea2207d3dee145c4cb6b47cacf8fa87d3981751817a7",
+      "bytes": 3126479
+    },
+    "zero_gain_shift/program.bin": {
+      "sha256": "5f1195e8474a69315f921d4e93f4a06097583eba55603acf4d6dcb10372195c2",
+      "bytes": 36312
+    },
+    "zero_gain_shift/source_model.json": {
+      "sha256": "05b23fcbb779ceaf0c3073ee38a3e1ae650ef61ccce36646c3a160d2a41530c3",
+      "bytes": 13736
+    },
+    "zero_gain_shift/vulkan.bin": {
+      "sha256": "952261a1f1a8f5fe184fdaf32d2797aacae7dab402a3557cd3a41f7ff9b4be79",
+      "bytes": 69920
+    },
+    "zero_gain_shift/vulkan.execution.json": {
+      "sha256": "a89205be72d7b742bfd10ac040b91c69d2de99d37163ff7c59999ada97a62aad",
+      "bytes": 669
+    },
+    "zero_gain_shift/vulkan.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "zero_gain_shift/vulkan.stdout.log": {
+      "sha256": "e2d2cccb9262fd1d833c44383e576f3783a67ea0f2d0f888fe444b7f58a58238",
+      "bytes": 571
+    },
+    "zero_gain_shift_bindings.json": {
+      "sha256": "45bce9fdb33ec09d95b9d410fcffc487ffe6bc31664332333949f52a126cfff2",
+      "bytes": 483634
+    },
+    "zero_gain_shift_inputs.json": {
+      "sha256": "515c333f100b56001f393cadf7530b61ec14647f21d9db7e1d642a3b27138327",
+      "bytes": 150322
+    },
+    "zero_gain_shift_model.json": {
+      "sha256": "05b23fcbb779ceaf0c3073ee38a3e1ae650ef61ccce36646c3a160d2a41530c3",
+      "bytes": 13736
+    }
+  }
+}

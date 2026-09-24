@@ -1,0 +1,61 @@
+{
+  "compile": {
+    "command": [
+      "cmd.exe",
+      "/d",
+      "/c",
+      "Dawnwood-Apply.cmd",
+      "compile",
+      "--bindings",
+      "source_bindings/situated_v0.1.json",
+      "--operator",
+      "hadamard",
+      "--inputs",
+      "source_bindings/examples/situated_inputs.json",
+      "--output",
+      "output\\situated_apply_2026-09-24\\launcher"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "2328f700f7fc4d8b060184cec97139b8feac23c224c4c897108cc1388b556bed"
+  },
+  "run": {
+    "command": [
+      "cmd.exe",
+      "/d",
+      "/c",
+      "Dawnwood-Apply.cmd",
+      "run",
+      "--backend",
+      "vulkan",
+      "--device",
+      "RTX 5070 Ti",
+      "--input",
+      "output\\situated_apply_2026-09-24\\launcher\\program.bin",
+      "--output",
+      "output\\situated_apply_2026-09-24\\launcher\\gpu.bin"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "bc63ae3bc24632ff61da87d108a4bad5f0861d9e2406b6ad62e1725d66e3c51d"
+  },
+  "inspect": {
+    "command": [
+      "cmd.exe",
+      "/d",
+      "/c",
+      "Dawnwood-Apply.cmd",
+      "inspect",
+      "output\\situated_apply_2026-09-24\\launcher\\gpu.bin",
+      "--manifest",
+      "output\\situated_apply_2026-09-24\\launcher\\manifest.json"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "f9fd6af6665aa3028de79054e8d377bdcbd79d41a0a44e287f11e4bd9b017dba"
+  },
+  "hardware": {
+    "exit_code": 0
+  },
+  "native_manifest": {
+    "entries": 2215,
+    "mismatches": []
+  }
+}

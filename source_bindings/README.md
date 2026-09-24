@@ -1,5 +1,20 @@
 # Explicit numerical source bindings
 
+[situated_v0.1.json](situated_v0.1.json) adds **DWI-APPLY-0.1**: the selected
+source record's placement, field and body execute together. Its binding joins
+phyllotaxis placement, intrinsic Klein distance and the early two-Hadamard
+body through an explicit phase law. [Situated application documentation](../docs/SITUATED_APPLICATION.md)
+states the formulas, units, source relationships and measured limits.
+
+```powershell
+.\Dawnwood-Apply.cmd compile --bindings source_bindings/situated_v0.1.json --operator hadamard --inputs source_bindings/examples/situated_inputs.json --output output/my_situated
+.\Dawnwood-Apply.cmd run --backend vulkan --device "RTX 5070 Ti" --input output/my_situated/program.bin --output output/my_situated/gpu.bin
+.\Dawnwood-Apply.cmd inspect output/my_situated/gpu.bin --manifest output/my_situated/manifest.json
+```
+
+This composes one situated action. The source cycle and resident mutation still
+need integration. The body-only command below retains its narrower scope.
+
 [xir_v0.1.json](xir_v0.1.json) contains executable expression definitions for
 three source-named body overloads. These expressions compile to the same finite
 instruction representation for CPU and Vulkan. They are numerical components

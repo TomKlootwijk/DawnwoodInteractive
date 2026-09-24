@@ -1,0 +1,20 @@
+{
+  "output": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\situated_apply_2026-09-24\\launcher",
+  "profile": "DWI-APPLY-0.1",
+  "scope": "situated_apply",
+  "complete_application_lowered": false,
+  "row_count": 4,
+  "instruction_count": 207,
+  "action_source_slots": {
+    "numeric": [
+      "body",
+      "field",
+      "placement"
+    ],
+    "control": [
+      "placement"
+    ],
+    "guard_only": []
+  },
+  "program_sha256": "d52fbb6d981918f49fc1ca4948988f57aa98b08690bf24b9150e8e54cc3b98e6"
+}

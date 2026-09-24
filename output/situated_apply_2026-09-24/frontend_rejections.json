@@ -1,0 +1,112 @@
+[
+  {
+    "name": "unknown_field_symbol",
+    "rejected": true,
+    "error": "operator['hadamard'].field: symbol 'undefined' has no explicit numerical binding"
+  },
+  {
+    "name": "unsupported_slot_semantic_key",
+    "rejected": true,
+    "error": "operator['hadamard'].placement: unsupported keys ['hidden_rule']"
+  },
+  {
+    "name": "forward_reference",
+    "rejected": true,
+    "error": "application.calls[0].arguments['shift_u']: unknown or forward call output ['field', 'distance']"
+  },
+  {
+    "name": "duplicate_call_id",
+    "rejected": true,
+    "error": "application.calls[1].id: expected a unique nonempty name"
+  },
+  {
+    "name": "missing_argument",
+    "rejected": true,
+    "error": "application.calls[0].arguments: missing keys ['shift_u']"
+  },
+  {
+    "name": "extra_argument",
+    "rejected": true,
+    "error": "application.calls[0].arguments: unsupported keys ['hidden']"
+  },
+  {
+    "name": "wrong_slot",
+    "rejected": true,
+    "error": "application.calls[0].record_slot: expected placement, field or body"
+  },
+  {
+    "name": "both_slot_and_symbol",
+    "rejected": true,
+    "error": "application.calls[0]: specify exactly one of record_slot or symbol"
+  },
+  {
+    "name": "unknown_helper",
+    "rejected": true,
+    "error": "application.calls[1]: symbol 'undefined' has no explicit numerical binding"
+  },
+  {
+    "name": "unused_parameter",
+    "rejected": true,
+    "error": "Operator parameters do not contribute to returned outputs or their guards: ['hidden']"
+  },
+  {
+    "name": "wrong_profile",
+    "rejected": true,
+    "error": "Bindings profile must be DWI-APPLY-0.1"
+  },
+  {
+    "name": "wrong_input_keys",
+    "rejected": true,
+    "error": "inputs[0]: missing keys ['u']"
+  },
+  {
+    "name": "nonfinite_input",
+    "rejected": true,
+    "error": "inputs[0]['u']: nonfinite numbers are not supported"
+  },
+  {
+    "name": "nonfinite_parameter",
+    "rejected": true,
+    "error": "selected operator parameter 'radius': nonfinite numbers are not supported"
+  },
+  {
+    "name": "disconnected_field_action",
+    "rejected": true,
+    "error": "Situated Apply action_outputs do not depend on source slots ['placement', 'field']; diagnostic outputs alone do not qualify"
+  },
+  {
+    "name": "disconnected_placement_action",
+    "rejected": true,
+    "error": "Situated Apply action_outputs do not depend on source slots ['placement']; diagnostic outputs alone do not qualify"
+  },
+  {
+    "name": "undeclared_output_reference",
+    "rejected": true,
+    "error": "application.outputs['ar']: unknown or forward call output ['body', 'missing']"
+  },
+  {
+    "name": "empty_action_outputs",
+    "rejected": true,
+    "error": "applications['hadamard'].action_outputs: expected unique names from outputs"
+  },
+  {
+    "name": "unused_callee_input_cannot_supply_field_ancestry",
+    "rejected": true,
+    "error": "Situated Apply action_outputs do not depend on source slots ['placement', 'field']; diagnostic outputs alone do not qualify"
+  },
+  {
+    "name": "dead_failing_guard_call",
+    "rejected": true,
+    "error": "Calls do not contribute to returned outputs or their guards: ['dead']"
+  },
+  {
+    "name": "dead_call_with_shared_registers",
+    "rejected": true,
+    "error": "Calls do not contribute to returned outputs or their guards: ['unused_body']"
+  },
+  {
+    "name": "ambiguous_dotted_call_output_names",
+    "rejected": true,
+    "error": "Calls do not contribute to returned outputs or their guards: ['body.ar']"
+  }
+]

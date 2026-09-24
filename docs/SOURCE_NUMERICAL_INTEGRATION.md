@@ -1,8 +1,8 @@
 # Numerical integration of the source application
 
-**Profile: DWI-XIR-0.1. Status: numerical body components verified on CPU and the RTX 5070 Ti Laptop GPU for the recorded experiments; full source-application integration remains incomplete.**
+**Profiles: DWI-XIR-0.1 and DWI-APPLY-0.1. Status: numerical bodies and one composed situated application verified on CPU and the RTX 5070 Ti Laptop GPU for the recorded experiments; full source-application integration remains incomplete.**
 
-The target remains the source application's complete situated-operator recurrence. The first implementation step is a general expression evaluator shared by CPU and GPU, with executed bindings for a two-Hadamard body, a sphere field body and a matrix-contraction body. The compiler reads the selected record from the original source model and resolves its declared body through an explicit numerical binding. This step does not yet lower the situated source fields, anchors, eight-stage cycle or operator-changing metarules. It must not be presented as the complete numerical Dawnwood application.
+The target remains the source application's complete situated-operator recurrence. DWI-XIR supplies a shared CPU/GPU expression evaluator with explicit numerical body bindings. DWI-APPLY now composes the selected record's actual placement, field and body definitions in one program: its Klein-local field affects the phase supplied to its two-Hadamard action. This lowers one situated call; the eight-stage cycle and operator-changing metarules remain unfinished. It must not be presented as the complete numerical Dawnwood application.
 
 The [literal application contract](LITERAL_APPLICATION_CONTRACT.md) defines the broader acceptance conditions. This document preserves their implementation scope and records the types and dependencies that later lowering must respect.
 
@@ -30,7 +30,7 @@ The source workbench's [binding inventory](../source_workbench/Dawnwood_Interact
 | Early Eq7 double-Hadamard body | Verified for 257 input rows | Independent closed-matrix reference, known-phase checks and maximum component error `3.6433394e-7`. |
 | Sphere and matrix-contraction body bindings | Verified for supplied fixtures | Four sphere results and one contraction result match the reference exactly; a separate radius-guard failure was exercised. |
 | Numerical body edits | External edit and recompilation verified | Negating output `ar` changes 256/257 rows numerically and matches the declared change exactly. No resident mutation runs in this experiment. |
-| Source `body + field + anchor` application | Not yet lowered | A current record's field and placement participate in numerical action through declared bindings. |
+| Source `body + field + anchor` application | One situated Hadamard call verified | DWI-APPLY composes all three actual source slots; independent slot edits affect numerical action. This is external recompilation, not resident mutation. |
 | Source phase sequence and typed overloads | Not yet lowered | The authored cycle controls execution with validated dependencies and no hidden substitute schedule. |
 | Resident mutation and metarule self-action | Not yet lowered | The preceding mutator definition computes new records, including its own next definition, which subsequently acts. |
 | Full paired-stream/geometry/RGBA/return recurrence | Not yet lowered | Whole-state continuation with all declared dependencies numerically active. |
@@ -40,6 +40,17 @@ The source workbench's [binding inventory](../source_workbench/Dawnwood_Interact
 No row is completed by a changed symbolic-state hash, successful shader compilation alone or timing an unrelated profile. The [N1/D1 implementation mapping](SOURCE_TO_KERNEL.md) and [D1 results](DOMAIN_KERNEL.md) retain their own meanings.
 
 ## Recorded body-component evidence
+
+The later [situated-Apply campaign](../output/situated_apply_2026-09-24/REPORT.md)
+records 11 composed workloads, 6,177 lanes and 98,832 bitwise-equal CPU/GPU output
+values, including four intended lane failures. All 771 equivalent dyadic Klein
+representatives return bitwise-equal rows. Independent placement, field and body
+edits each change action outputs on all 1,028 supplied rows; zero phase gain
+suppresses the action response while the field still changes. Maximum observed
+field and action errors against independent binary64 mathematics are
+`6.879504e-8` and `8.989369e-8`. These are sampled component results. See
+[the declared composition](SITUATED_APPLICATION.md) for the exact metric,
+coupling choice and remaining full-application scope.
 
 The [independent numerical audit](../output/source_ir_2026-09-24/independent_numeric_audit.json) reads the actual packed FP32 inputs from each program binary. Its reference calculations use the closed complex matrix for the hinge, Euclidean norm minus radius for the sphere and a matrix Frobenius contraction. The reference does not reuse the bytecode interpreter or compiler AST. All initial **262 lanes and 1,033 output values** have bitwise-identical CPU/GPU output files and zero lane statuses.
 
@@ -112,7 +123,7 @@ The full application needs semantic types beyond a scalar-expression VM: bits an
 
 ## Complete catalogue: numerical dispatch requirements
 
-The table specifies intended call contracts and decisions still needed. The hinge, sphere and contraction bodies have the limited numerical evidence above; the complete situated calls in these rows are not yet lowered. Existing N1 helpers can support explicit bindings; their presence does not make the source call compiled.
+The table specifies intended call contracts and decisions still needed. The hinge, sphere and contraction bodies have the limited numerical evidence above; one situated hinge call additionally has the DWI-APPLY evidence. The remaining call forms are not yet lowered. Existing N1 helpers can support explicit bindings; their presence does not make the source call compiled.
 
 | Index / key | Typed numerical operands and action | Binding or reuse boundary |
 |---|---|---|
@@ -175,8 +186,8 @@ N1 evaluates geometry inside its derivative and applies its amplitude hinge afte
 
 ## Remaining full-application work
 
-After the first numerical body is independently checked, integration still needs executable field and anchor bindings, typed `Apply` forms, valid source-cycle lowering, resident body/field/anchor mutation, phase-sensitive paired-state participation and whole-state checkpoint continuation. A stable interpreter may execute all of these; self-reference concerns the acting definitions and their updates, not overwriting native GPU instructions.
+After the numerical bodies and one situated call, integration still needs the remaining typed `Apply` forms, valid source-cycle lowering, resident body/field/anchor mutation, full paired-state participation and whole-state checkpoint continuation. A stable interpreter may execute all of these; self-reference concerns the acting definitions and their updates, not overwriting native GPU instructions.
 
 A later biochemical application must encode its candidate operations, law evaluation, selection, acceptance/rejection, history and strategy changes through those situated definitions. Authoritative scientific laws may remain immutable while the resident computational strategy changes. A correct standalone distance calculator or fixed projection solver is useful evidence for its own task, but does not supply the missing application program.
 
-The verified result of DWI-XIR-0.1 is a numerical expression-body foundation: declared source-body bindings execute on CPU and the identified GPU, externally recompiled body edits change numerical results, and the recorded validation/failure cases behave as specified. The situated fields, anchors, cycle, resident metarules and complete application remain to be integrated and measured.
+The verified results are the DWI-XIR numerical expression foundation and DWI-APPLY's single situated call. Actual source-body, field and placement edits change numerical results on CPU and the identified GPU. The remaining catalogue calls, cycle, resident metarules and complete application remain to be integrated and measured.
