@@ -1,0 +1,133 @@
+{
+  "edition": "0.5.1-rtx1",
+  "profile": "DWI-N1-0.5",
+  "binary_sha256": "cb6b069a2082b2ee55cdf57a8332d4c1904f2190ba4061a416f63c6d83911015",
+  "shader_source_fingerprint": "987876327c465410afb8b702d50a42ad030d1fa26028ca14805278c32dc37a7b",
+  "embedded_shader_hashes": {
+    "mutate": "93347d6b6dbed4391a66364e632c086e2a54cf57c7d76e33bb6764652c7be96e",
+    "evolve": "b927d508ab682d4875872fcdd43cbcc88a132f470ebfbf1023575ec1a3b98374",
+    "prepare": "2ab56307a8b6845a4fb6683a6d2ab4028b862298fa54d848f6423152a4a72cc5",
+    "slope": "7d2d16d04c4dff39f0868dcc2f2ba2395ba532605236025119b191badc6cb0d7",
+    "combine": "34cf23d5f234900150e34bf02ad448599d406e95e5fea6282ab08d2bd9b718c2",
+    "geometry": "1dbaf8ad87ca584815d0e0568cf0368a2ff46a4b56d6c1601817ed89fd3ff243",
+    "finish": "afb21dc7ea7c5d60d8d9d566f374d75a8fd7b3b662bef02ecb4c48e2810d63c1"
+  },
+  "final_launcher_checkpoint_sha256": "1a28a23308cafbc63f92d82ae92b7d4cfd80311a70114da90387a3629a42629c",
+  "validation": [
+    {
+      "name": "final_verify_257_4096",
+      "count": 257,
+      "operators": 31,
+      "epochs": 4096,
+      "bitwise_equal": true
+    },
+    {
+      "name": "final_verify_4096_256",
+      "count": 4096,
+      "operators": 31,
+      "epochs": 256,
+      "bitwise_equal": true
+    },
+    {
+      "name": "final_verify_1048577_2",
+      "count": 1048577,
+      "operators": 31,
+      "epochs": 2,
+      "bitwise_equal": true
+    },
+    {
+      "name": "final_verify_paged_lut",
+      "count": 257,
+      "operators": 511,
+      "epochs": 128,
+      "bitwise_equal": true
+    },
+    {
+      "name": "final_verify_paged_split",
+      "count": 257,
+      "operators": 31,
+      "epochs": 128,
+      "bitwise_equal": true
+    }
+  ],
+  "capacity_count": 43609664,
+  "capacity_state_payload_bytes": 5582036992,
+  "capacity_ping_pong_bytes": 11164073984,
+  "capacity_policy": "Current memory policy boundary reached",
+  "sustained_epochs": 177,
+  "sustained_state_updates": 7718910528,
+  "sustained_gpu_seconds": 768.7219655,
+  "sustained_process_seconds": 809.1745983000001,
+  "sustained_updates_per_second": 10041225.4,
+  "telemetry": {
+    "sample_count": 802,
+    "sample_interval_ms": 1000,
+    "scope": "Whole command including setup and readback; device-wide NVML observations",
+    "temperature_stop_celsius": 88,
+    "utilization.gpu": {
+      "min": 0.0,
+      "max": 100.0,
+      "mean": 95.56109725685785
+    },
+    "utilization.memory": {
+      "min": 0.0,
+      "max": 34.0,
+      "mean": 25.841645885286784
+    },
+    "memory.used": {
+      "min": 0.0,
+      "max": 10935.0,
+      "mean": 10921.365336658355
+    },
+    "memory.total": {
+      "min": 12227.0,
+      "max": 12227.0,
+      "mean": 12227.0
+    },
+    "temperature.gpu": {
+      "min": 53.0,
+      "max": 87.0,
+      "mean": 84.43017456359102
+    },
+    "power.draw": {
+      "min": 10.59,
+      "max": 121.7,
+      "mean": 91.99543640897755
+    },
+    "power.limit": null,
+    "clocks.current.sm": {
+      "min": 232.0,
+      "max": 2760.0,
+      "mean": 2145.8840399002493
+    },
+    "clocks.current.memory": {
+      "min": 405.0,
+      "max": 11001.0,
+      "mean": 8667.518703241894
+    },
+    "clocks_event_reasons.sw_power_cap": {
+      "active_samples": 144
+    },
+    "clocks_event_reasons.sw_thermal_slowdown": {
+      "active_samples": 623
+    },
+    "clocks_event_reasons.hw_thermal_slowdown": {
+      "active_samples": 0
+    }
+  },
+  "busy_samples_95_percent_or_more": 763,
+  "busy_sample_mean_utilization": 99.99868938401049,
+  "process_memory": {
+    "source": "Windows GetProcessMemoryInfo for the measured child process",
+    "sample_count": 802,
+    "peak_working_set_bytes": 91115520,
+    "max_sampled_private_commit_bytes": 11596107776
+  },
+  "benchmark_medians_seconds": {
+    "baseline": 6.306470176,
+    "rtx": 5.749777888
+  },
+  "throughput_improvement_percent": 9.681979005864516,
+  "previous_candidate_improvement_percent": 10.54001721401208,
+  "all_release_gates_passed": true
+}

@@ -60,3 +60,7 @@ Command receipts preserve executable hashes, environment, exit codes and wall
 times. `.stdout`/`.stderr` remain raw. Device timestamps exclude setup/readback;
 NVIDIA telemetry is device-wide and includes setup/readback. Failed attempts
 must remain recorded. No new test source is introduced.
+
+## Completion
+
+The sustained run completed. `REPORT.md` and `completion_audit.json` supersede the in-progress status above and identify the finished results.

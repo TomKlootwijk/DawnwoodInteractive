@@ -1,0 +1,83 @@
+{
+  "command": [
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-build\\dawnwood-baseline.exe",
+    "run",
+    "--device",
+    "RTX 5070 Ti",
+    "--count",
+    "1048576",
+    "--steps",
+    "64",
+    "--batch",
+    "8"
+  ],
+  "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+  "utc": "2026-09-24T09:13:23.732182+00:00",
+  "environment": {},
+  "executable_sha256": "f58c4bc0a9676a5d0aee983eb05c1d8a937360293a2de6971f23928a6524d570",
+  "exit_code": 0,
+  "process_wall_seconds": 7.7895620999997846,
+  "telemetry": {
+    "sample_count": 8,
+    "sample_interval_ms": 1000,
+    "scope": "Whole command including setup and readback; device-wide NVML observations",
+    "temperature_stop_celsius": 88,
+    "utilization.gpu": {
+      "min": 0.0,
+      "max": 98.0,
+      "mean": 73.375
+    },
+    "utilization.memory": {
+      "min": 0.0,
+      "max": 59.0,
+      "mean": 36.875
+    },
+    "memory.used": {
+      "min": 0.0,
+      "max": 572.0,
+      "mean": 500.5
+    },
+    "memory.total": {
+      "min": 12227.0,
+      "max": 12227.0,
+      "mean": 12227.0
+    },
+    "temperature.gpu": {
+      "min": 61.0,
+      "max": 73.0,
+      "mean": 70.0
+    },
+    "power.draw": {
+      "min": 42.83,
+      "max": 121.38,
+      "mean": 97.7025
+    },
+    "power.limit": null,
+    "clocks.current.sm": {
+      "min": 247.0,
+      "max": 2557.0,
+      "mean": 1946.0
+    },
+    "clocks.current.memory": {
+      "min": 9001.0,
+      "max": 14001.0,
+      "mean": 11126.0
+    },
+    "clocks_event_reasons.sw_power_cap": {
+      "active_samples": 7
+    },
+    "clocks_event_reasons.sw_thermal_slowdown": {
+      "active_samples": 0
+    },
+    "clocks_event_reasons.hw_thermal_slowdown": {
+      "active_samples": 0
+    }
+  },
+  "process_memory": {
+    "source": "Windows GetProcessMemoryInfo for the measured child process",
+    "sample_count": 8,
+    "peak_working_set_bytes": 218255360,
+    "max_sampled_private_commit_bytes": 833818624
+  },
+  "report_passed": true
+}

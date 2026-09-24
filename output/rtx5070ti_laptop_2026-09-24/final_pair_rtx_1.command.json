@@ -1,0 +1,83 @@
+{
+  "command": [
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-rtx5070ti\\dawnwood.exe",
+    "run",
+    "--device",
+    "RTX 5070 Ti",
+    "--count",
+    "1048576",
+    "--steps",
+    "64",
+    "--batch",
+    "8"
+  ],
+  "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+  "utc": "2026-09-24T09:13:16.519900+00:00",
+  "environment": {},
+  "executable_sha256": "cb6b069a2082b2ee55cdf57a8332d4c1904f2190ba4061a416f63c6d83911015",
+  "exit_code": 0,
+  "process_wall_seconds": 7.121646600000531,
+  "telemetry": {
+    "sample_count": 7,
+    "sample_interval_ms": 1000,
+    "scope": "Whole command including setup and readback; device-wide NVML observations",
+    "temperature_stop_celsius": 88,
+    "utilization.gpu": {
+      "min": 0.0,
+      "max": 100.0,
+      "mean": 85.71428571428571
+    },
+    "utilization.memory": {
+      "min": 0.0,
+      "max": 33.0,
+      "mean": 25.428571428571427
+    },
+    "memory.used": {
+      "min": 0.0,
+      "max": 549.0,
+      "mean": 470.57142857142856
+    },
+    "memory.total": {
+      "min": 12227.0,
+      "max": 12227.0,
+      "mean": 12227.0
+    },
+    "temperature.gpu": {
+      "min": 59.0,
+      "max": 73.0,
+      "mean": 70.71428571428571
+    },
+    "power.draw": {
+      "min": 26.0,
+      "max": 121.92,
+      "mean": 100.09142857142857
+    },
+    "power.limit": null,
+    "clocks.current.sm": {
+      "min": 210.0,
+      "max": 2707.0,
+      "mean": 2262.5714285714284
+    },
+    "clocks.current.memory": {
+      "min": 9001.0,
+      "max": 14001.0,
+      "mean": 9715.285714285714
+    },
+    "clocks_event_reasons.sw_power_cap": {
+      "active_samples": 7
+    },
+    "clocks_event_reasons.sw_thermal_slowdown": {
+      "active_samples": 0
+    },
+    "clocks_event_reasons.hw_thermal_slowdown": {
+      "active_samples": 0
+    }
+  },
+  "process_memory": {
+    "source": "Windows GetProcessMemoryInfo for the measured child process",
+    "sample_count": 7,
+    "peak_working_set_bytes": 218320896,
+    "max_sampled_private_commit_bytes": 808595456
+  },
+  "report_passed": true
+}

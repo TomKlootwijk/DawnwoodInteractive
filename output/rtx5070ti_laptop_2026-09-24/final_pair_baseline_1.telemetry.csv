@@ -1,0 +1,9 @@
+timestamp, name, utilization.gpu [%], utilization.memory [%], memory.used [MiB], memory.total [MiB], temperature.gpu, power.draw [W], power.limit [W], clocks.current.sm [MHz], clocks.current.memory [MHz], pstate, clocks_event_reasons.sw_power_cap, clocks_event_reasons.sw_thermal_slowdown, clocks_event_reasons.hw_thermal_slowdown
+2026/09/24 11:13:23.908, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 0, 0, 0, 12227, 61, 42.83, [N/A], 247, 9001, P4, Active, Not Active, Not Active
+2026/09/24 11:13:24.915, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 97, 39, 572, 12227, 71, 49.60, [N/A], 2557, 14001, P0, Active, Not Active, Not Active
+2026/09/24 11:13:25.920, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 98, 50, 572, 12227, 72, 120.31, [N/A], 2152, 11001, P2, Active, Not Active, Not Active
+2026/09/24 11:13:26.934, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 97, 59, 572, 12227, 73, 120.44, [N/A], 2310, 11001, P2, Active, Not Active, Not Active
+2026/09/24 11:13:27.942, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 98, 49, 572, 12227, 73, 121.38, [N/A], 2325, 11001, P2, Active, Not Active, Not Active
+2026/09/24 11:13:28.949, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 98, 49, 572, 12227, 73, 121.14, [N/A], 2415, 11001, P2, Active, Not Active, Not Active
+2026/09/24 11:13:29.953, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 98, 49, 572, 12227, 73, 120.23, [N/A], 2452, 11001, P2, Active, Not Active, Not Active
+2026/09/24 11:13:30.967, NVIDIA GeForce RTX 5070 Ti Laptop GPU, 1, 0, 572, 12227, 64, 85.69, [N/A], 1110, 11001, P2, Not Active, Not Active, Not Active

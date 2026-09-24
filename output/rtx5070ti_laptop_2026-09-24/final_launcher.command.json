@@ -1,0 +1,20 @@
+{
+  "command": [
+    "powershell",
+    "-NoProfile",
+    "-NonInteractive",
+    "-File",
+    "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/scripts/run_rtx5070ti.ps1",
+    "-Count",
+    "8190",
+    "-Steps",
+    "16",
+    "-Checkpoint",
+    "tmp/rtx-build/final-launcher.dwk"
+  ],
+  "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+  "utc": "2026-09-24T09:14:17.042394+00:00",
+  "environment": {},
+  "exit_code": 1,
+  "process_wall_seconds": 0.8719764000006762
+}

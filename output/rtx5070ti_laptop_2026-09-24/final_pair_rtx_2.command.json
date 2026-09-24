@@ -1,0 +1,83 @@
+{
+  "command": [
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-rtx5070ti\\dawnwood.exe",
+    "run",
+    "--device",
+    "RTX 5070 Ti",
+    "--count",
+    "1048576",
+    "--steps",
+    "64",
+    "--batch",
+    "8"
+  ],
+  "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+  "utc": "2026-09-24T09:13:39.352671+00:00",
+  "environment": {},
+  "executable_sha256": "cb6b069a2082b2ee55cdf57a8332d4c1904f2190ba4061a416f63c6d83911015",
+  "exit_code": 0,
+  "process_wall_seconds": 6.99629620000087,
+  "telemetry": {
+    "sample_count": 7,
+    "sample_interval_ms": 1000,
+    "scope": "Whole command including setup and readback; device-wide NVML observations",
+    "temperature_stop_celsius": 88,
+    "utilization.gpu": {
+      "min": 0.0,
+      "max": 100.0,
+      "mean": 85.71428571428571
+    },
+    "utilization.memory": {
+      "min": 0.0,
+      "max": 31.0,
+      "mean": 25.857142857142858
+    },
+    "memory.used": {
+      "min": 0.0,
+      "max": 549.0,
+      "mean": 470.57142857142856
+    },
+    "memory.total": {
+      "min": 12227.0,
+      "max": 12227.0,
+      "mean": 12227.0
+    },
+    "temperature.gpu": {
+      "min": 63.0,
+      "max": 76.0,
+      "mean": 73.85714285714286
+    },
+    "power.draw": {
+      "min": 21.35,
+      "max": 119.25,
+      "mean": 103.51285714285714
+    },
+    "power.limit": null,
+    "clocks.current.sm": {
+      "min": 202.0,
+      "max": 2700.0,
+      "mean": 2298.0
+    },
+    "clocks.current.memory": {
+      "min": 9001.0,
+      "max": 11001.0,
+      "mean": 9286.714285714286
+    },
+    "clocks_event_reasons.sw_power_cap": {
+      "active_samples": 6
+    },
+    "clocks_event_reasons.sw_thermal_slowdown": {
+      "active_samples": 0
+    },
+    "clocks_event_reasons.hw_thermal_slowdown": {
+      "active_samples": 0
+    }
+  },
+  "process_memory": {
+    "source": "Windows GetProcessMemoryInfo for the measured child process",
+    "sample_count": 7,
+    "peak_working_set_bytes": 218374144,
+    "max_sampled_private_commit_bytes": 808366080
+  },
+  "report_passed": true
+}

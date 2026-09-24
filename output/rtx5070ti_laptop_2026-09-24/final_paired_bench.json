@@ -1,0 +1,95 @@
+[
+  {
+    "name": "final_pair_baseline_0",
+    "variant": "baseline",
+    "seconds": 6.273671168,
+    "advance_wall_seconds": 6.4014002,
+    "process_wall_seconds": 9.967025499999181,
+    "digest": "d6079c7ee66453f0",
+    "health": {
+      "passed": true,
+      "first_invalid_record": "",
+      "nonfinite_state_values": 0,
+      "out_of_chart_states": 0,
+      "max_energy_error_from_source_seed_5": 2.76566e-05
+    }
+  },
+  {
+    "name": "final_pair_rtx_0",
+    "variant": "rtx",
+    "seconds": 5.682408416,
+    "advance_wall_seconds": 5.6951105,
+    "process_wall_seconds": 7.686274200000298,
+    "digest": "d6079c7ee66453f0",
+    "health": {
+      "passed": true,
+      "first_invalid_record": "",
+      "checked_state_records": 1048576,
+      "nonfinite_state_values": 0,
+      "out_of_chart_states": 0,
+      "max_energy_error_from_source_seed_5": 2.76566e-05
+    }
+  },
+  {
+    "name": "final_pair_rtx_1",
+    "variant": "rtx",
+    "seconds": 5.801280832,
+    "advance_wall_seconds": 5.813917,
+    "process_wall_seconds": 7.121646600000531,
+    "digest": "d6079c7ee66453f0",
+    "health": {
+      "passed": true,
+      "first_invalid_record": "",
+      "checked_state_records": 1048576,
+      "nonfinite_state_values": 0,
+      "out_of_chart_states": 0,
+      "max_energy_error_from_source_seed_5": 2.76566e-05
+    }
+  },
+  {
+    "name": "final_pair_baseline_1",
+    "variant": "baseline",
+    "seconds": 6.39200496,
+    "advance_wall_seconds": 6.5246994,
+    "process_wall_seconds": 7.7895620999997846,
+    "digest": "d6079c7ee66453f0",
+    "health": {
+      "passed": true,
+      "first_invalid_record": "",
+      "nonfinite_state_values": 0,
+      "out_of_chart_states": 0,
+      "max_energy_error_from_source_seed_5": 2.76566e-05
+    }
+  },
+  {
+    "name": "final_pair_baseline_2",
+    "variant": "baseline",
+    "seconds": 6.306470176,
+    "advance_wall_seconds": 6.4215508,
+    "process_wall_seconds": 7.647870400000102,
+    "digest": "d6079c7ee66453f0",
+    "health": {
+      "passed": true,
+      "first_invalid_record": "",
+      "nonfinite_state_values": 0,
+      "out_of_chart_states": 0,
+      "max_energy_error_from_source_seed_5": 2.76566e-05
+    }
+  },
+  {
+    "name": "final_pair_rtx_2",
+    "variant": "rtx",
+    "seconds": 5.749777888,
+    "advance_wall_seconds": 5.7615155,
+    "process_wall_seconds": 6.99629620000087,
+    "digest": "d6079c7ee66453f0",
+    "health": {
+      "passed": true,
+      "first_invalid_record": "",
+      "checked_state_records": 1048576,
+      "nonfinite_state_values": 0,
+      "out_of_chart_states": 0,
+      "max_energy_error_from_source_seed_5": 2.76566e-05
+    }
+  }
+]
