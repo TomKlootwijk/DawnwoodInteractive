@@ -1,0 +1,463 @@
+{
+  "profile": "DWI-RESIDENT-0.3",
+  "created_utc": "2026-09-24T23:02:36.927637+00:00",
+  "scope": "Bounded runtime ABI capacity/compatibility/rollback validation; this does not implement or prove runtime SDF-expression construction.",
+  "limits": {
+    "state": 128,
+    "xir_inputs": 64,
+    "xir_outputs": 32,
+    "xir_instructions": 256,
+    "frame": 256
+  },
+  "core_compatibility": [
+    {
+      "epochs": 1,
+      "all_mutable_words_identical": true
+    },
+    {
+      "epochs": 2,
+      "all_mutable_words_identical": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "compatibility_program_only_magic_differs",
+      "passed": true
+    },
+    {
+      "name": "core_v2_cpu_gpu_epoch1",
+      "passed": true
+    },
+    {
+      "name": "core_v3_cpu_gpu_epoch1",
+      "passed": true
+    },
+    {
+      "name": "core_v2_v3_mutable_words_epoch1",
+      "passed": true,
+      "compared_words": 13498
+    },
+    {
+      "name": "core_v2_cpu_gpu_epoch2",
+      "passed": true
+    },
+    {
+      "name": "core_v3_cpu_gpu_epoch2",
+      "passed": true
+    },
+    {
+      "name": "core_v2_v3_mutable_words_epoch2",
+      "passed": true,
+      "compared_words": 13498
+    },
+    {
+      "name": "state128_cpu_gpu_identical",
+      "passed": true
+    },
+    {
+      "name": "state127_increment_lane0",
+      "passed": true
+    },
+    {
+      "name": "extra_state44_to126_preserved_lane0",
+      "passed": true
+    },
+    {
+      "name": "state127_increment_lane1",
+      "passed": true
+    },
+    {
+      "name": "extra_state44_to126_preserved_lane1",
+      "passed": true
+    },
+    {
+      "name": "state127_increment_lane2",
+      "passed": true
+    },
+    {
+      "name": "extra_state44_to126_preserved_lane2",
+      "passed": true
+    },
+    {
+      "name": "state127_increment_lane3",
+      "passed": true
+    },
+    {
+      "name": "extra_state44_to126_preserved_lane3",
+      "passed": true
+    },
+    {
+      "name": "state127_increment_lane4",
+      "passed": true
+    },
+    {
+      "name": "extra_state44_to126_preserved_lane4",
+      "passed": true
+    },
+    {
+      "name": "state127_increment_lane5",
+      "passed": true
+    },
+    {
+      "name": "extra_state44_to126_preserved_lane5",
+      "passed": true
+    },
+    {
+      "name": "state127_increment_lane6",
+      "passed": true
+    },
+    {
+      "name": "extra_state44_to126_preserved_lane6",
+      "passed": true
+    },
+    {
+      "name": "state127_increment_lane7",
+      "passed": true
+    },
+    {
+      "name": "extra_state44_to126_preserved_lane7",
+      "passed": true
+    },
+    {
+      "name": "state127_increment_lane8",
+      "passed": true
+    },
+    {
+      "name": "extra_state44_to126_preserved_lane8",
+      "passed": true
+    },
+    {
+      "name": "state127_increment_lane9",
+      "passed": true
+    },
+    {
+      "name": "extra_state44_to126_preserved_lane9",
+      "passed": true
+    },
+    {
+      "name": "state127_increment_lane10",
+      "passed": true
+    },
+    {
+      "name": "extra_state44_to126_preserved_lane10",
+      "passed": true
+    },
+    {
+      "name": "state127_increment_lane11",
+      "passed": true
+    },
+    {
+      "name": "extra_state44_to126_preserved_lane11",
+      "passed": true
+    },
+    {
+      "name": "state127_increment_lane12",
+      "passed": true
+    },
+    {
+      "name": "extra_state44_to126_preserved_lane12",
+      "passed": true
+    },
+    {
+      "name": "state127_increment_lane13",
+      "passed": true
+    },
+    {
+      "name": "extra_state44_to126_preserved_lane13",
+      "passed": true
+    },
+    {
+      "name": "state127_increment_lane14",
+      "passed": true
+    },
+    {
+      "name": "extra_state44_to126_preserved_lane14",
+      "passed": true
+    },
+    {
+      "name": "state127_increment_lane15",
+      "passed": true
+    },
+    {
+      "name": "extra_state44_to126_preserved_lane15",
+      "passed": true
+    },
+    {
+      "name": "state127_increment_lane16",
+      "passed": true
+    },
+    {
+      "name": "extra_state44_to126_preserved_lane16",
+      "passed": true
+    },
+    {
+      "name": "state128_resume_1_plus_1_equals_2",
+      "passed": true
+    },
+    {
+      "name": "state128_reverse_targets_equal",
+      "passed": true
+    },
+    {
+      "name": "state128_failure_cpu_gpu_identical",
+      "passed": true
+    },
+    {
+      "name": "whole_epoch_rollback_lane0",
+      "passed": true
+    },
+    {
+      "name": "whole_epoch_rollback_lane1",
+      "passed": true
+    },
+    {
+      "name": "whole_epoch_rollback_lane2",
+      "passed": true
+    },
+    {
+      "name": "whole_epoch_rollback_lane3",
+      "passed": true
+    },
+    {
+      "name": "whole_epoch_rollback_lane4",
+      "passed": true
+    },
+    {
+      "name": "whole_epoch_rollback_lane5",
+      "passed": true
+    },
+    {
+      "name": "whole_epoch_rollback_lane6",
+      "passed": true
+    },
+    {
+      "name": "whole_epoch_rollback_lane7",
+      "passed": true
+    },
+    {
+      "name": "whole_epoch_rollback_lane8",
+      "passed": true
+    },
+    {
+      "name": "whole_epoch_rollback_lane9",
+      "passed": true
+    },
+    {
+      "name": "whole_epoch_rollback_lane10",
+      "passed": true
+    },
+    {
+      "name": "whole_epoch_rollback_lane11",
+      "passed": true
+    },
+    {
+      "name": "whole_epoch_rollback_lane12",
+      "passed": true
+    },
+    {
+      "name": "whole_epoch_rollback_lane13",
+      "passed": true
+    },
+    {
+      "name": "whole_epoch_rollback_lane14",
+      "passed": true
+    },
+    {
+      "name": "whole_epoch_rollback_lane15",
+      "passed": true
+    },
+    {
+      "name": "whole_epoch_rollback_lane16",
+      "passed": true
+    },
+    {
+      "name": "failed_image_freezes_on_resume",
+      "passed": true
+    },
+    {
+      "name": "all_v2_inputs_preserved_byte_for_byte",
+      "passed": true,
+      "files": 8
+    }
+  ],
+  "rejections": [
+    {
+      "name": "python_reject_state129_source",
+      "passed": true,
+      "exception": "ValueError",
+      "message": "state_names: expected 1..128 names"
+    },
+    {
+      "name": "python_reject_missing_state127_write",
+      "passed": true,
+      "exception": "ValueError",
+      "message": "action_plan: missing writes to destination words [127]"
+    },
+    {
+      "name": "python_reject_duplicate_state127_write",
+      "passed": true,
+      "exception": "ValueError",
+      "message": "action_plan[1105]: each destination word must be written exactly once"
+    },
+    {
+      "name": "python_preserves_xir_input_limit64",
+      "passed": true,
+      "exception": "ValueError",
+      "message": "functions['runtime_increment_last'].binding.inputs: expected at most 64 names"
+    },
+    {
+      "name": "python_binary_state129",
+      "passed": true,
+      "exception": "ValueError",
+      "message": "stateWidth: expected an integer in 1..128"
+    },
+    {
+      "name": "native_binary_state129",
+      "passed": true
+    },
+    {
+      "name": "python_binary_missing_state127_write",
+      "passed": true,
+      "exception": "ValueError",
+      "message": "action_plan: missing writes to destination words [127]"
+    },
+    {
+      "name": "native_binary_missing_state127_write",
+      "passed": true
+    },
+    {
+      "name": "python_binary_duplicate_state127_write",
+      "passed": true,
+      "exception": "ValueError",
+      "message": "action_plan[1105]: each destination word must be written exactly once"
+    },
+    {
+      "name": "native_binary_duplicate_state127_write",
+      "passed": true
+    },
+    {
+      "name": "python_binary_xir_input65",
+      "passed": true,
+      "exception": "ValueError",
+      "message": "functions[0].input_width: expected an integer in 0..64"
+    },
+    {
+      "name": "native_binary_xir_input65",
+      "passed": true
+    },
+    {
+      "name": "python_v2_rejects_v3_magic",
+      "passed": true,
+      "exception": "ValueError",
+      "message": "Checkpoint requires DWRD0002 and its eight-word header"
+    },
+    {
+      "name": "python_v3_rejects_v2_magic",
+      "passed": true,
+      "exception": "ValueError",
+      "message": "Checkpoint requires DWRD0003 and its eight-word header"
+    },
+    {
+      "name": "native_v2_rejects_v3_magic",
+      "passed": true
+    },
+    {
+      "name": "native_v3_rejects_v2_magic",
+      "passed": true
+    }
+  ],
+  "native_receipts": "execution_receipts.json",
+  "build": {
+    "profile": "DWI-RESIDENT-0.3",
+    "completed": true,
+    "scope": "Finite resident mutation/action component; not the full eight-stage source cycle",
+    "commands": [
+      {
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin\\glslc.exe",
+          "--target-env=vulkan1.1",
+          "-IC:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\include",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\shaders\\resident_v3.comp",
+          "-o",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v3\\resident_v3.spv"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin\\spirv-val.exe",
+          "--target-env",
+          "vulkan1.1",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v3\\resident_v3.spv"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\llvm-mingw-20260922-ucrt-x86_64\\bin\\clang++.exe",
+          "-std=c++17",
+          "-O2",
+          "-Wall",
+          "-Wextra",
+          "-Wpedantic",
+          "-ffp-contract=off",
+          "-fno-fast-math",
+          "-static",
+          "-IC:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\include",
+          "-IC:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Include",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\src\\resident_v3_cli.cpp",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Lib\\vulkan-1.lib",
+          "-o",
+          "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v3\\dawnwood-resident-v3.exe"
+        ],
+        "exit_code": 0
+      }
+    ],
+    "source_sha256": {
+      "include/resident_v3.inc": "f6073baeddf7b4fa76048b283126e0de113183a6cff1aeb39d0ad4864713d534",
+      "include/source_math_v2.inc": "41334180da91e9a6782a189c3805f725a30617c64877d54513a0755e023072e9",
+      "include/numeric_types.inc": "5f0fbb86d8f0dd54f8b2f7e1f622fb3159ed4530fa673cc6d2621b1494138faa",
+      "include/numeric_math.inc": "94beebab74e424648bea93415c2fe7bef12e1eaf0ef1c24635a61c92a0282cdc",
+      "src/resident_v3_cli.cpp": "adbfe1daa93000283432fb5f4b447fab4f814f55ca3df92682ee8074832514c9",
+      "shaders/resident_v3.comp": "ba32e242f9d955138f1b83333445500ed34caec28fd5bc7c1729b6981d0da166",
+      "tools/build_resident_v3.py": "5d48890ad2d589aab8b6332139a0304cd9f85c6542ef7113441cdaad5d3125d8",
+      "repo:docs/RESIDENT_V3_ABI.md": "b5a786e32403b44ffb51630bd689f3a74a9f55a5323bd0eb7ee87fdc5cd72df3"
+    },
+    "artifacts": {
+      "dawnwood-resident-v3.exe": {
+        "bytes": 1582592,
+        "sha256": "2843b944d16d4f46873258fc11d828fa8c8c65a6129c79d7f4cce2f7bed00cd1"
+      },
+      "resident_v3.spv": {
+        "bytes": 78352,
+        "sha256": "9e90c89135a93a115db1ceaea5475338a389f8ab41ab7e64165751d4410f6098"
+      }
+    }
+  },
+  "build_stderr": {
+    "build-0.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "build-1.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "build-2.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "python_frontend_sha256": "725a722d52ccc696a12e18a7926b1ea3c870746160639dee16b0bc1e235467e0",
+  "experiment_sha256": "78510ee7dbfed535266b234e8e8aca80a89550323e88873a6a31e4a10d7cc242",
+  "all_v2_inputs_unchanged": true,
+  "summary": {
+    "checks": 64,
+    "checks_passed": 64,
+    "rejections": 16,
+    "rejections_passed": 16,
+    "native_invocations": 22,
+    "vulkan_invocations": 10,
+    "all_passed": true
+  }
+}

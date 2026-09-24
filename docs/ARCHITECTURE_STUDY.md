@@ -1,5 +1,7 @@
 # Dawnwood architecture study
 
+For the later implemented source-graph edition and the distinction between self-reference and demonstrated meta-reasoning, see the [25 September capability assessment](CURRENT_CAPABILITY_2026-09-25.md). This study retains the implementation boundaries of its original research stage; subsequent numerical integration is documented separately.
+
 24 September 2026. This study reads the proposal as a computing architecture: the evolving object includes executable operators, their spatial definitions, their locations, routing and recurrent state. Its purpose is to preserve that object while making the implementation and evidence inspectable. The accompanying [source-to-kernel map](SOURCE_TO_KERNEL.md) identifies the current numerical choices and remaining differences.
 
 ## The source documents have different roles

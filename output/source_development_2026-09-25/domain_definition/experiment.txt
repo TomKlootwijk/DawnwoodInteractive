@@ -1,0 +1,131 @@
+"""Direct source-library experiment; retained evidence, not a test-suite file.
+Run from repository root by piping this text to Python -X utf8 -B -.
+No native or GPU execution; no search or learned-program claim.
+"""
+from pathlib import Path
+from copy import deepcopy
+from datetime import datetime, timezone
+import hashlib, json, math, random
+from local_lab import development_sdf as d
+
+OUT=Path('output/source_development_2026-09-25/domain_definition')
+OUT.mkdir(parents=True,exist_ok=True)
+def save(name,value):
+    (OUT/name).write_text(json.dumps(value,indent=2,allow_nan=False)+'\n',encoding='utf-8')
+
+programs=[d.single_box_program([.72,.16,.04,.04])]
+for box in [[.16,.72,.04,.04],[.42,.42,.04,.04],[.10,.10,.025,.025]]:
+    programs.append(d.append_box_candidate(programs[-1],box))
+valid=[]
+for index,p in enumerate(programs):
+    report=d.validate_program(p)
+    assert report['admissible'] and report['packed_program']['node_count']==2*index+1
+    assert len(d.canonical_program_bytes(p))==168
+    valid.append(report)
+save('valid_programs.json',valid)
+
+format_results=[]
+def malformed(name,edit,base=programs[1]):
+    p=deepcopy(base);edit(p)
+    try:d.validate_program(p)
+    except d.ProgramFormatError as error:
+        format_results.append({'name':name,'classification':'malformed_program','exception':type(error).__name__,'message':str(error),'passed':True})
+    else:raise AssertionError('Expected format rejection: '+name)
+
+malformed('unknown_key',lambda p:p.update(unbound=1))
+malformed('missing_root',lambda p:p.pop('root'))
+malformed('bool_count',lambda p:p.update(node_count=True))
+malformed('wrong_root',lambda p:p.update(root=0))
+malformed('revision_overflow',lambda p:p.update(revision=d.MAX_REVISION+1))
+malformed('bool_coordinate',lambda p:p['boxes'][0].__setitem__(0,True))
+malformed('nan_coordinate',lambda p:p['boxes'][0].__setitem__(0,float('nan')))
+malformed('infinite_coordinate',lambda p:p['boxes'][0].__setitem__(0,float('inf')))
+malformed('fp32_overflow',lambda p:p['boxes'][0].__setitem__(0,1e100))
+malformed('inactive_active_node',lambda p:p['nodes'].__setitem__(0,[0,0,0]))
+malformed('unknown_opcode',lambda p:p['nodes'][0].__setitem__(0,3))
+malformed('forward_reference',lambda p:p['nodes'][2].__setitem__(1,3))
+malformed('fractional_reference',lambda p:p['nodes'][2].__setitem__(1,.5))
+malformed('duplicate_leaf',lambda p:p['nodes'][1].__setitem__(1,0))
+malformed('overlapping_support_sets',lambda p:p['nodes'][2].__setitem__(2,0))
+malformed('nonzero_inactive_node',lambda p:p['nodes'].__setitem__(6,[1,3,0]))
+malformed('nonzero_unused_box',lambda p:p['boxes'].__setitem__(3,[.1,.1,.01,.01]))
+malformed('bad_node_array_length',lambda p:p['nodes'].pop())
+malformed('bad_box_array_length',lambda p:p['boxes'].pop())
+malformed('nonzero_box_operand_b',lambda p:p['nodes'][0].__setitem__(2,1))
+def unreachable(p):
+    p.update(nodes=[[1,0,0],[1,1,0],[1,2,0],[2,0,1],[0,0,0],[0,0,0],[0,0,0]],node_count=4,root=3)
+malformed('unreachable_active_leaf',unreachable,programs[2])
+for name,call in [
+    ('underflowing_policy_margin',lambda:d.validate_program(programs[0],proof_margin=1e-100)),
+    ('negative_separation_margin',lambda:d.validate_program(programs[0],separation_margin=-1)),
+    ('too_many_appended_boxes',lambda:d.append_box_candidate(programs[-1],[.1,.1,.01,.01])),
+    ('revision_increment_overflow',lambda:d.append_box_candidate(dict(programs[0],revision=d.MAX_REVISION),[.1,.1,.01,.01]))]:
+    try:call()
+    except d.ProgramFormatError as error:format_results.append({'name':name,'classification':'malformed_program_or_policy','exception':type(error).__name__,'message':str(error),'passed':True})
+    else:raise AssertionError(name)
+save('format_rejections.json',format_results)
+
+gates=[]
+def invalid_candidate(name,p):
+    report=d.validate_program(p)
+    assert report['valid_structure'] and not report['admissible']
+    for evaluator in [d.evaluate_program,d.boundary_oracle]:
+        try:evaluator(p,[.2,.2])
+        except d.CandidateGeometryError as error:assert not error.report['admissible']
+        else:raise AssertionError(name+' evaluator accepted invalid geometry')
+    gates.append({'name':name,'classification':'well_formed_rejected_candidate','report':report,'both_evaluators_refuse':True})
+for name,box in [('zero_extent',[.2,.2,0,.02]),('negative_extent',[.2,.2,-.01,.02]),
+                 ('packed_underflow_extent',[.2,.2,1e-100,.02]),('lower_quota',[.02,.2,.03,.02]),
+                 ('upper_quota',[.6,.5,.05,.05])]:invalid_candidate(name,d.single_box_program(box))
+base=d.single_box_program([.25,.125,.125,.0625])
+invalid_candidate('touching_closed_boxes',d.append_box_candidate(base,[.5,.125,.125,.0625]))
+invalid_candidate('overlapping_boxes',d.append_box_candidate(base,[.4,.125,.125,.0625]))
+save('geometric_rejections.json',gates)
+
+# Threshold declared before comparison. The formula and oracle each pack the
+# query; the oracle projects onto rational edges, never calling the formula.
+threshold=2e-15
+save('thresholds.json',{'maximum_scaled_error':threshold,'definition':'abs(formula-oracle)/max(1,abs(oracle))','scope':'binary64 reference formula versus rational-edge oracle, not GPU'})
+rng=random.Random(202609251)
+points=[[rng.uniform(-.25,1.25),rng.uniform(-.25,1.25)] for _ in range(768)]
+points.extend([[0,0],[1,1],[-.1,.4],[1e6,-1e6]])
+for report in valid:
+    for index in report['leaf_indices']:
+        cx,cy,hx,hy=report['packed_program']['boxes'][index]
+        points.append([cx,cy])
+        for sx,sy in [(1,1),(1,-1),(-1,1),(-1,-1)]:
+            for eps in [-2**-22,0,2**-22]:points.append([cx+sx*(hx+eps),cy+sy*(hy+eps)])
+rows=[]
+for program_index,p in enumerate(programs):
+    for point in points:
+        formula=d.evaluate_program(p,point);oracle=d.boundary_oracle(p,point)
+        error=abs(formula-oracle['distance'])/max(1,abs(oracle['distance']))
+        assert error<=threshold,(program_index,point,formula,oracle,error)
+        rows.append({'program_boxes':program_index+1,'query':point,'packed_query':oracle['packed_query'],
+                     'formula':formula,'oracle':oracle['distance'],'scaled_error':error,
+                     'inside_or_boundary':oracle['inside_or_boundary'],'boundary':oracle['boundary'],
+                     'box_index':oracle['box_index'],'edge_index':oracle['edge_index']})
+save('oracle_comparisons.json',rows)
+
+# Identity controls: revision is not semantics; swapped children are not new
+# topology; a balanced four-leaf union changes nesting but not the region.
+p=deepcopy(programs[1]);p['revision']+=1
+a,b=d.program_hashes(programs[1]),d.program_hashes(p)
+assert a['program_sha256']!=b['program_sha256'] and a['semantic_sha256']==b['semantic_sha256'] and a['topology_sha256']==b['topology_sha256']
+p=deepcopy(programs[1]);p['nodes'][2][1:]=list(reversed(p['nodes'][2][1:]))
+b=d.program_hashes(p);assert a['semantic_sha256']==b['semantic_sha256'] and a['topology_sha256']==b['topology_sha256']
+p=deepcopy(programs[3]);p['nodes']=[[1,0,0],[1,1,0],[2,0,1],[1,2,0],[1,3,0],[2,3,4],[2,2,5]]
+assert d.validate_program(p)['admissible']
+a,b=d.program_hashes(programs[3]),d.program_hashes(p)
+assert a['semantic_sha256']==b['semantic_sha256'] and a['topology_sha256']!=b['topology_sha256']
+save('identity_controls.json',{'revision_not_semantics':True,'child_swap_not_topological_innovation':True,
+ 'binary_reassociation_changes_topology_but_not_region':True,'balanced_four_leaf_program':p,
+ 'added_leaf_changes_both_topology_and_region':all(valid[i]['topology_sha256']!=valid[i-1]['topology_sha256'] and valid[i]['semantic_sha256']!=valid[i-1]['semantic_sha256'] for i in range(1,4))})
+summary={'created_utc':datetime.now(timezone.utc).isoformat(),'profile':d.PROFILE,
+ 'library_sha256':hashlib.sha256(Path(d.__file__).read_bytes()).hexdigest(),
+ 'format_rejections':len(format_results),'geometric_candidate_rejections':len(gates),
+ 'valid_programs':len(valid),'formula_oracle_comparisons':len(rows),'maximum_scaled_error':max(x['scaled_error'] for x in rows),
+ 'all_within_predeclared_threshold':True,'gpu_executed':False,'resident_constructor_executed':False,
+ 'scope':'Direct bounded source-format, exact packed-geometry and independent rational-edge checks only.'}
+save('summary.json',summary)
+print(json.dumps(summary,indent=2))

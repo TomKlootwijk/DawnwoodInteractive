@@ -1,0 +1,177 @@
+[
+  {
+    "name": "unknown_key",
+    "classification": "malformed_program",
+    "exception": "ProgramFormatError",
+    "message": "Program requires exactly nodes, boxes, node_count, root, revision",
+    "passed": true
+  },
+  {
+    "name": "missing_root",
+    "classification": "malformed_program",
+    "exception": "ProgramFormatError",
+    "message": "Program requires exactly nodes, boxes, node_count, root, revision",
+    "passed": true
+  },
+  {
+    "name": "bool_count",
+    "classification": "malformed_program",
+    "exception": "ProgramFormatError",
+    "message": "node_count: expected integer in 1..7",
+    "passed": true
+  },
+  {
+    "name": "wrong_root",
+    "classification": "malformed_program",
+    "exception": "ProgramFormatError",
+    "message": "Root must be the last active postorder node",
+    "passed": true
+  },
+  {
+    "name": "revision_overflow",
+    "classification": "malformed_program",
+    "exception": "ProgramFormatError",
+    "message": "revision: expected integer in 0..16777215",
+    "passed": true
+  },
+  {
+    "name": "bool_coordinate",
+    "classification": "malformed_program",
+    "exception": "ProgramFormatError",
+    "message": "boxes[0][0]: expected a finite real number, not a boolean",
+    "passed": true
+  },
+  {
+    "name": "nan_coordinate",
+    "classification": "malformed_program",
+    "exception": "ProgramFormatError",
+    "message": "boxes[0][0]: expected finite binary32",
+    "passed": true
+  },
+  {
+    "name": "infinite_coordinate",
+    "classification": "malformed_program",
+    "exception": "ProgramFormatError",
+    "message": "boxes[0][0]: expected finite binary32",
+    "passed": true
+  },
+  {
+    "name": "fp32_overflow",
+    "classification": "malformed_program",
+    "exception": "ProgramFormatError",
+    "message": "boxes[0][0]: not representable as finite binary32",
+    "passed": true
+  },
+  {
+    "name": "inactive_active_node",
+    "classification": "malformed_program",
+    "exception": "ProgramFormatError",
+    "message": "nodes[0]: active opcode must be box(1) or separated_union(2)",
+    "passed": true
+  },
+  {
+    "name": "unknown_opcode",
+    "classification": "malformed_program",
+    "exception": "ProgramFormatError",
+    "message": "nodes[0]: active opcode must be box(1) or separated_union(2)",
+    "passed": true
+  },
+  {
+    "name": "forward_reference",
+    "classification": "malformed_program",
+    "exception": "ProgramFormatError",
+    "message": "nodes[2]: union references must precede their parent",
+    "passed": true
+  },
+  {
+    "name": "fractional_reference",
+    "classification": "malformed_program",
+    "exception": "ProgramFormatError",
+    "message": "nodes[2][1]: expected integer in 0..4294967295",
+    "passed": true
+  },
+  {
+    "name": "duplicate_leaf",
+    "classification": "malformed_program",
+    "exception": "ProgramFormatError",
+    "message": "nodes[1]: duplicate box leaf index 0",
+    "passed": true
+  },
+  {
+    "name": "overlapping_support_sets",
+    "classification": "malformed_program",
+    "exception": "ProgramFormatError",
+    "message": "nodes[2]: union children reuse overlapping leaf supports",
+    "passed": true
+  },
+  {
+    "name": "nonzero_inactive_node",
+    "classification": "malformed_program",
+    "exception": "ProgramFormatError",
+    "message": "nodes[6]: inactive padding must be [0,0,0]",
+    "passed": true
+  },
+  {
+    "name": "nonzero_unused_box",
+    "classification": "malformed_program",
+    "exception": "ProgramFormatError",
+    "message": "boxes[3]: unused box slots must be zero",
+    "passed": true
+  },
+  {
+    "name": "bad_node_array_length",
+    "classification": "malformed_program",
+    "exception": "ProgramFormatError",
+    "message": "nodes must contain exactly 7 triples",
+    "passed": true
+  },
+  {
+    "name": "bad_box_array_length",
+    "classification": "malformed_program",
+    "exception": "ProgramFormatError",
+    "message": "boxes must contain exactly 4 quadruples",
+    "passed": true
+  },
+  {
+    "name": "nonzero_box_operand_b",
+    "classification": "malformed_program",
+    "exception": "ProgramFormatError",
+    "message": "nodes[0]: box requires index 0..3 and b=0",
+    "passed": true
+  },
+  {
+    "name": "unreachable_active_leaf",
+    "classification": "malformed_program",
+    "exception": "ProgramFormatError",
+    "message": "All active nodes must be reachable from the root",
+    "passed": true
+  },
+  {
+    "name": "underflowing_policy_margin",
+    "classification": "malformed_program_or_policy",
+    "exception": "ProgramFormatError",
+    "message": "Policy requires 0 < packed proof_margin < packed beta",
+    "passed": true
+  },
+  {
+    "name": "negative_separation_margin",
+    "classification": "malformed_program_or_policy",
+    "exception": "ProgramFormatError",
+    "message": "Policy requires packed separation_margin >= 0",
+    "passed": true
+  },
+  {
+    "name": "too_many_appended_boxes",
+    "classification": "malformed_program_or_policy",
+    "exception": "ProgramFormatError",
+    "message": "Appending a box exceeds the four-box/seven-node limit",
+    "passed": true
+  },
+  {
+    "name": "revision_increment_overflow",
+    "classification": "malformed_program_or_policy",
+    "exception": "ProgramFormatError",
+    "message": "Revision increment exceeds exact resident integer range",
+    "passed": true
+  }
+]

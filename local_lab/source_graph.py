@@ -1,4 +1,4 @@
-"""Lower a named, typed source recurrence graph to resident-v2 call plans.
+"""Lower a named, typed source recurrence graph to versioned resident call plans.
 
 Graph nodes own both old-snapshot mutation wiring and published-record action
 wiring. Register allocation and argument packing are compiler details, never
@@ -34,8 +34,9 @@ def _name(value, where):
     return value
 
 
-def _type(value, where):
-    if value not in nominal.TYPES:
+def _type(value, where, profile=nominal.TYPE_PROFILE):
+    kinds = nominal.EXTENDED_TYPES if profile == nominal.EXTENDED_TYPE_PROFILE else nominal.TYPES
+    if value not in kinds:
         raise ValueError(f"{where}: unknown nominal type {value!r}")
     return value
 
@@ -45,9 +46,10 @@ def _pointer(value):
 
 
 class Lowering:
-    def __init__(self, definition, graph, mutation, extra_contracts):
+    def __init__(self, definition, graph, mutation, extra_contracts, resident_backend=resident):
         self.definition, self.graph, self.mutation = definition, graph, mutation
         self.extra_contracts = extra_contracts
+        self.resident_backend = resident_backend
         self.states = nominal.state_types(definition)
         self.record_fields = nominal.record_types(definition)
         self.records = {record["key"]: (index, record) for index, record in enumerate(definition["records"])}
@@ -68,7 +70,7 @@ class Lowering:
         if len(args) > 7:
             raise ValueError("Internal graph lowering error: too many plan operands")
         self.words.append([op, *args, *([0] * (7 - len(args)))])
-        if len(self.words) > resident.MAX_STEPS:
+        if len(self.words) > self.resident_backend.MAX_STEPS:
             raise ValueError("Source graph exceeds the resident plan-instruction limit")
 
     def allocate(self, width):
@@ -97,11 +99,12 @@ class Lowering:
                 raise ValueError(f"{where}: unknown/future node output {node!r}.{output!r}")
             kind = self.values[key]["type"]
         elif set(ref) == {"literal", "type"}:
-            kind = _type(ref["type"], where + ".type")
+            kind = _type(ref["type"], where + ".type", self.graph["type_profile"])
             value, bits = ir.fp32(ref["literal"], where + ".literal")
             if kind == "bit" and value not in (0, 1):
                 raise ValueError(f"{where}: a bit literal must be zero or one")
-            if kind in {"index", "body_handle", "field_handle", "placement_handle", "generation"}:
+            if kind in {"index", "body_handle", "field_handle", "placement_handle", "generation",
+                        "program_opcode", "program_index", "program_size", "program_revision"}:
                 if not 0 <= value <= resident.EXACT_LIMIT or int(value) != value:
                     raise ValueError(f"{where}: this literal requires an exact bounded nonnegative integer")
             key = ("literal", kind, bits)
@@ -225,7 +228,7 @@ class Lowering:
         node["outputs"] = []
         for name, kind in outputs.items():
             key = ("node", identity, name)
-            self.values[key] = {"type": _type(kind, path + ".output type"),
+            self.values[key] = {"type": _type(kind, path + ".output type", self.graph["type_profile"]),
                                 "reference": {"node": identity, "output": name}}
             node["outputs"].append(key)
         self.by_id[identity] = node
@@ -397,12 +400,16 @@ def _refresh_source_layout(definition, mutation, action, structural, action_meta
         }
 
 
-def apply_graph(definition, cycle, graph):
+def apply_graph(definition, cycle, graph, *, resident_backend=resident):
     """Atomically replace BOTH final plans using only the supplied source graph."""
     keys = {"profile", "type_profile", "functions", "mutation", "phases", "returns", "source", "meaning", "status"}
     ir.exact_keys(graph, keys, keys - {"source", "meaning", "status"}, "source graph")
-    if graph["profile"] != PROFILE or graph["type_profile"] != nominal.TYPE_PROFILE:
+    if graph["profile"] != PROFILE or graph["type_profile"] not in {nominal.TYPE_PROFILE, nominal.EXTENDED_TYPE_PROFILE}:
         raise ValueError("Unknown source graph or nominal type profile")
+    if definition.get("source", {}).get("graph_type_contracts") is not None and graph["type_profile"] != nominal.EXTENDED_TYPE_PROFILE:
+        raise ValueError("Additional state/function declarations require the explicit extended type profile")
+    if len(definition["state_names"]) > getattr(resident_backend, "MAX_STATES", resident_backend.ir.MAX_INPUTS):
+        raise ValueError("Source graph state exceeds the selected resident backend")
     ir.exact_keys(graph["mutation"], {"nodes", "returns"}, {"nodes", "returns"}, "graph.mutation")
     if not isinstance(graph["mutation"]["nodes"], list):
         raise ValueError("graph.mutation.nodes must be an array")
@@ -423,7 +430,7 @@ def apply_graph(definition, cycle, graph):
                 or list(entry["inputs"]) != entry["binding"]["inputs"]
                 or list(entry["outputs"]) != list(entry["binding"]["outputs"])):
             raise ValueError("Graph helper type contract must match its exact ordered numerical inputs and outputs")
-        for kind in [*entry["inputs"].values(), *entry["outputs"].values()]: _type(kind, "graph helper type")
+        for kind in [*entry["inputs"].values(), *entry["outputs"].values()]: _type(kind, "graph helper type", graph["type_profile"])
         compiler = ir.ExpressionCompiler(entry["binding"]["inputs"])
         for index, guard in enumerate(entry["binding"].get("requires", [])):
             compiler._emit(17, compiler.expression(guard, f"graph.functions.{name}.requires[{index}]"))
@@ -432,10 +439,10 @@ def apply_graph(definition, cycle, graph):
         extras[name] = {"inputs": deepcopy(entry["inputs"]), "outputs": deepcopy(entry["outputs"])}
         signature = max(f["signature"] for f in working["functions"].values()) + 1
         working["functions"][name] = {"signature": signature, "binding": deepcopy(entry["binding"])}
-    if len(working["functions"]) > resident.MAX_FUNCTIONS:
+    if len(working["functions"]) > resident_backend.MAX_FUNCTIONS:
         raise ValueError("Graph helper declarations exceed the resident function-bank limit")
-    mutation = Lowering(working, graph, True, extras)
-    action = Lowering(working, graph, False, extras)
+    mutation = Lowering(working, graph, True, extras, resident_backend)
+    action = Lowering(working, graph, False, extras, resident_backend)
     for index, node in enumerate(graph["mutation"]["nodes"]):
         mutation.collect(node, f"/mutation/nodes/{index}", "old_snapshot_mutation")
     for phase_index, phase in enumerate(phases):
@@ -452,7 +459,7 @@ def apply_graph(definition, cycle, graph):
     working["source"]["mutation_calls"], working["source"]["action_calls"] = mutation.calls, action.calls
     working["source"]["stage_boundaries"] = action.phase_ranges
     _refresh_source_layout(working, mutation, action, structural, action_metadata)
-    metadata = {"profile": PROFILE, "type_profile": nominal.TYPE_PROFILE,
+    metadata = {"profile": PROFILE, "type_profile": graph["type_profile"],
                 "graph_sha256": ir.sha256(ir.json_bytes(graph)), "graph": deepcopy(graph),
                 "mutation": mutation_metadata, "action": action_metadata, "structural_fidelity": structural,
                 "compiler_sha256": ir.sha256(Path(__file__).read_bytes()),
@@ -461,6 +468,9 @@ def apply_graph(definition, cycle, graph):
                 "scope": "Both call plans and every final record/state write are lowered from named source graph references. Numerical function/record banks and initial data remain explicit edition/source bindings. All nodes execute in declaration order; unused outputs do not remove calls or their guards.",
                 "allocation": "At most192 live value registers plus a separate64-value argument window; no registers appear in source graph operands.",
                 "typing": "Nominal wiring contracts distinguish representations and roles; they are not a proof of dimensional consistency or physical validity of authored arithmetic."}
+    if graph["type_profile"] == nominal.EXTENDED_TYPE_PROFILE:
+        metadata["resident_profile"] = resident_backend.PROFILE
+        metadata["additional_contracts"] = deepcopy(nominal.extension_contracts(working))
     working["source"]["application_graph"] = metadata
     definition.clear()
     definition.update(working)

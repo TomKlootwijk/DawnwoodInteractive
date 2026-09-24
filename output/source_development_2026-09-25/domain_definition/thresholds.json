@@ -1,0 +1,5 @@
+{
+  "maximum_scaled_error": 2e-15,
+  "definition": "abs(formula-oracle)/max(1,abs(oracle))",
+  "scope": "binary64 reference formula versus rational-edge oracle, not GPU"
+}

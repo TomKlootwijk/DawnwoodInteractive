@@ -1,0 +1,54 @@
+{
+  "profile": "DWI-DEVELOPMENT-FOUNDATION-0.1",
+  "created_utc": "2026-09-24T23:18:36.073140+00:00",
+  "decision_ledger": "decision_ledger.jsonl",
+  "status": "foundation_complete_resident_application_pending",
+  "scope": "Versioned capacity and nominal contracts, exact-distance source language and reference oracle, and agent/source-fidelity documentation.",
+  "runtime": {
+    "checks": 64,
+    "checks_passed": 64,
+    "rejections": 16,
+    "rejections_passed": 16,
+    "native_invocations": 22,
+    "vulkan_invocations": 10,
+    "all_passed": true
+  },
+  "domain": {
+    "valid_programs": 4,
+    "format_rejections": 25,
+    "geometric_candidate_rejections": 7,
+    "formula_oracle_comparisons": 3608,
+    "maximum_scaled_error": 2.2178962325635776e-16,
+    "all_within_predeclared_threshold": true
+  },
+  "graph": {
+    "preserved_editions": 4,
+    "valid_state_width": 128,
+    "atomic_rejections": 11
+  },
+  "pending": [
+    "Resident constructor application graph and current-record use",
+    "New executable topology plus semantic witness",
+    "Resident acceptance/rejection and feedback interventions",
+    "Retained constructed-program checkpoint and resume",
+    "Evidence-informed next AI definition decision",
+    "Useful task baseline and actual laptop workload validation"
+  ],
+  "file_hashes": {
+    "DAWNWOOD_AGENT.md": "171b6112fdaa83949f50b6ff45df542b1a4b40dbbba3019f7aa6a8cf27b5a108",
+    "local_lab/development_sdf.py": "f7b3d1d35a98b6efda867ae784bce17156adf5a56213ff8c64ddbaf5ed421448",
+    "local_lab/source_resident_v3.py": "725a722d52ccc696a12e18a7926b1ea3c870746160639dee16b0bc1e235467e0",
+    "local_lab/source_graph.py": "af28152d5a565b24e769ee10c4001f1fd8af6d8b799297e0b22ccb4903dd5ac7",
+    "local_lab/source_graph_types.py": "5cefe06ed3d754dfda9813fd7e3d7c8ed943598ee322e1595eebc998fd6b159a",
+    "docs/CURRENT_CAPABILITY_2026-09-25.md": "9e5c4833e506264354a71191478585b1650c89480650c23a7e08f0453bb72730",
+    "docs/DEVELOPMENT_RESOURCE_DOMAIN.md": "6b532252aac955798bd8c9c36992e2335154862a827a5a60907bc533d2ff9f05",
+    "docs/DEVELOPMENT_GRAPH_TYPES.md": "28dae9a0d1eb1b9f7caab0bee79cb676f7f33036023f79839128c700f47c6cef",
+    "docs/RESIDENT_V3_ABI.md": "b5a786e32403b44ffb51630bd689f3a74a9f55a5323bd0eb7ee87fdc5cd72df3"
+  },
+  "receipt_hashes": {
+    "runtime_v3/REPORT.json": "8820e599a32e923f6520500a7e11d436a7efebef1da9d453728301cca0a75e1b",
+    "domain_definition/summary.json": "bb3ad4cd6c69e0d5bdeb5b3f8dabe8d4482419eba639dd0709a738f3a4d17edd",
+    "graph_contracts/REPORT.json": "f3e4564ce91503e8a96a5e1a85597481902d4c0c9a8dee5e48df5da407f79768",
+    "decision_ledger.jsonl": "6135057556bb57c482ae46401d2bb7113ccfd413e1c2b9c01430f9b569d2e3bb"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "reject_v3_loader_v2_magic",
+  "command": [
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v3\\dawnwood-resident-v3.exe",
+    "run",
+    "--input",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\runtime_v3\\core_v2\\program.bin",
+    "--output",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\runtime_v3\\reject_v3_loader_v2_magic\\checkpoint.bin",
+    "--backend",
+    "cpu",
+    "--epochs",
+    "0"
+  ],
+  "returncode": 2,
+  "expected_returncode": 2,
+  "wall_seconds": 0.009583099999872502,
+  "input_sha256": "c6053e5df31fc3f315cb8dcdbd1fe92558da1d9237721aa01a54670abea9bd31",
+  "output_sha256": null,
+  "report": {
+    "profile": "DWI-RESIDENT-0.3",
+    "status": "error",
+    "error": "Expected DWRD0003 magic"
+  }
+}

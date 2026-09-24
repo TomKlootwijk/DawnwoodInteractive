@@ -1,0 +1,849 @@
+[
+  {
+    "name": "zero_extent",
+    "classification": "well_formed_rejected_candidate",
+    "report": {
+      "profile": "DWI-DEVELOPMENT-SDF-0.1",
+      "valid_structure": true,
+      "admissible": false,
+      "packed_program": {
+        "nodes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "boxes": [
+          [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.0,
+            0.019999999552965164
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "node_count": 1,
+        "root": 0,
+        "revision": 0
+      },
+      "policy": {
+        "beta": 1.0,
+        "proof_margin": 9.999999747378752e-05,
+        "separation_margin": 0.0
+      },
+      "leaf_indices": [
+        0
+      ],
+      "geometric_gates": [
+        {
+          "name": "box_0_positive_extents",
+          "passed": false,
+          "half_extents_exact": [
+            "0",
+            "5368709/268435456"
+          ]
+        },
+        {
+          "name": "box_0_quota_containment",
+          "passed": true,
+          "lower_x_exact": "13421773/67108864",
+          "lower_y_exact": "48318383/268435456",
+          "upper_sum_exact": "112742893/268435456",
+          "lower_bound_exact": "13743895/137438953472",
+          "upper_sum_bound_exact": "137425209577/137438953472"
+        }
+      ],
+      "input_rounding": [],
+      "program_sha256": "24c10ce9e21d285e72b15eb26e7d613e99cb93296f5fa78f8b43c88cf2616fbe",
+      "topology_sha256": "e17f090dcc66adc5e5ed16f2f1d385fa4fcf886a9314e816e490028a7e14a78f",
+      "semantic_sha256": "79fcfa453cb2c9e3278ee2ded45c6937997aa2207794244b8db52f05ece89525",
+      "expression": "box(center=(0.200000003, 0.200000003), half_extents=(0, 0.0199999996))",
+      "canonical_binary_format": "DWI-DEVELOPMENT-SDF-0.1: ASCII DWSDF001, then little-endian uint32 node_count,root,revision; 7 opcode/a/b uint32 triples; 4 cx/cy/hx/hy binary32 quadruples. This is a source-program hash encoding, not a resident VM image.",
+      "canonical_binary_bytes": 168,
+      "exactness": "Exact Euclidean signed distance in the declared normalized memory coordinates in real arithmetic, conditional on all geometric gates; no exact machine-arithmetic claim."
+    },
+    "both_evaluators_refuse": true
+  },
+  {
+    "name": "negative_extent",
+    "classification": "well_formed_rejected_candidate",
+    "report": {
+      "profile": "DWI-DEVELOPMENT-SDF-0.1",
+      "valid_structure": true,
+      "admissible": false,
+      "packed_program": {
+        "nodes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "boxes": [
+          [
+            0.20000000298023224,
+            0.20000000298023224,
+            -0.009999999776482582,
+            0.019999999552965164
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "node_count": 1,
+        "root": 0,
+        "revision": 0
+      },
+      "policy": {
+        "beta": 1.0,
+        "proof_margin": 9.999999747378752e-05,
+        "separation_margin": 0.0
+      },
+      "leaf_indices": [
+        0
+      ],
+      "geometric_gates": [
+        {
+          "name": "box_0_positive_extents",
+          "passed": false,
+          "half_extents_exact": [
+            "-5368709/536870912",
+            "5368709/268435456"
+          ]
+        },
+        {
+          "name": "box_0_quota_containment",
+          "passed": true,
+          "lower_x_exact": "112742893/536870912",
+          "lower_y_exact": "48318383/268435456",
+          "upper_sum_exact": "220117077/536870912",
+          "lower_bound_exact": "13743895/137438953472",
+          "upper_sum_bound_exact": "137425209577/137438953472"
+        }
+      ],
+      "input_rounding": [],
+      "program_sha256": "6fe268334eca015981bb6261843862a44be9df8356e694223345c30d0fa6e593",
+      "topology_sha256": "e17f090dcc66adc5e5ed16f2f1d385fa4fcf886a9314e816e490028a7e14a78f",
+      "semantic_sha256": "18b8fbf0998baccf8f39cac2db5860bebc752e7d15fd9ca91907312f4d4a6eb4",
+      "expression": "box(center=(0.200000003, 0.200000003), half_extents=(-0.00999999978, 0.0199999996))",
+      "canonical_binary_format": "DWI-DEVELOPMENT-SDF-0.1: ASCII DWSDF001, then little-endian uint32 node_count,root,revision; 7 opcode/a/b uint32 triples; 4 cx/cy/hx/hy binary32 quadruples. This is a source-program hash encoding, not a resident VM image.",
+      "canonical_binary_bytes": 168,
+      "exactness": "Exact Euclidean signed distance in the declared normalized memory coordinates in real arithmetic, conditional on all geometric gates; no exact machine-arithmetic claim."
+    },
+    "both_evaluators_refuse": true
+  },
+  {
+    "name": "packed_underflow_extent",
+    "classification": "well_formed_rejected_candidate",
+    "report": {
+      "profile": "DWI-DEVELOPMENT-SDF-0.1",
+      "valid_structure": true,
+      "admissible": false,
+      "packed_program": {
+        "nodes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "boxes": [
+          [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.0,
+            0.019999999552965164
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "node_count": 1,
+        "root": 0,
+        "revision": 0
+      },
+      "policy": {
+        "beta": 1.0,
+        "proof_margin": 9.999999747378752e-05,
+        "separation_margin": 0.0
+      },
+      "leaf_indices": [
+        0
+      ],
+      "geometric_gates": [
+        {
+          "name": "box_0_positive_extents",
+          "passed": false,
+          "half_extents_exact": [
+            "0",
+            "5368709/268435456"
+          ]
+        },
+        {
+          "name": "box_0_quota_containment",
+          "passed": true,
+          "lower_x_exact": "13421773/67108864",
+          "lower_y_exact": "48318383/268435456",
+          "upper_sum_exact": "112742893/268435456",
+          "lower_bound_exact": "13743895/137438953472",
+          "upper_sum_bound_exact": "137425209577/137438953472"
+        }
+      ],
+      "input_rounding": [],
+      "program_sha256": "24c10ce9e21d285e72b15eb26e7d613e99cb93296f5fa78f8b43c88cf2616fbe",
+      "topology_sha256": "e17f090dcc66adc5e5ed16f2f1d385fa4fcf886a9314e816e490028a7e14a78f",
+      "semantic_sha256": "79fcfa453cb2c9e3278ee2ded45c6937997aa2207794244b8db52f05ece89525",
+      "expression": "box(center=(0.200000003, 0.200000003), half_extents=(0, 0.0199999996))",
+      "canonical_binary_format": "DWI-DEVELOPMENT-SDF-0.1: ASCII DWSDF001, then little-endian uint32 node_count,root,revision; 7 opcode/a/b uint32 triples; 4 cx/cy/hx/hy binary32 quadruples. This is a source-program hash encoding, not a resident VM image.",
+      "canonical_binary_bytes": 168,
+      "exactness": "Exact Euclidean signed distance in the declared normalized memory coordinates in real arithmetic, conditional on all geometric gates; no exact machine-arithmetic claim."
+    },
+    "both_evaluators_refuse": true
+  },
+  {
+    "name": "lower_quota",
+    "classification": "well_formed_rejected_candidate",
+    "report": {
+      "profile": "DWI-DEVELOPMENT-SDF-0.1",
+      "valid_structure": true,
+      "admissible": false,
+      "packed_program": {
+        "nodes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "boxes": [
+          [
+            0.019999999552965164,
+            0.20000000298023224,
+            0.029999999329447746,
+            0.019999999552965164
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "node_count": 1,
+        "root": 0,
+        "revision": 0
+      },
+      "policy": {
+        "beta": 1.0,
+        "proof_margin": 9.999999747378752e-05,
+        "separation_margin": 0.0
+      },
+      "leaf_indices": [
+        0
+      ],
+      "geometric_gates": [
+        {
+          "name": "box_0_positive_extents",
+          "passed": true,
+          "half_extents_exact": [
+            "16106127/536870912",
+            "5368709/268435456"
+          ]
+        },
+        {
+          "name": "box_0_quota_containment",
+          "passed": false,
+          "lower_x_exact": "-5368709/536870912",
+          "lower_y_exact": "48318383/268435456",
+          "upper_sum_exact": "144955147/536870912",
+          "lower_bound_exact": "13743895/137438953472",
+          "upper_sum_bound_exact": "137425209577/137438953472"
+        }
+      ],
+      "input_rounding": [],
+      "program_sha256": "1ec08c547eb125509d7b28cd4259545f6332b9535b6a2ebe7af98a45253c22ba",
+      "topology_sha256": "e17f090dcc66adc5e5ed16f2f1d385fa4fcf886a9314e816e490028a7e14a78f",
+      "semantic_sha256": "576b353013f873ad5fd7e90b72c9b6daf185a780f345fc766a56f115dd303777",
+      "expression": "box(center=(0.0199999996, 0.200000003), half_extents=(0.0299999993, 0.0199999996))",
+      "canonical_binary_format": "DWI-DEVELOPMENT-SDF-0.1: ASCII DWSDF001, then little-endian uint32 node_count,root,revision; 7 opcode/a/b uint32 triples; 4 cx/cy/hx/hy binary32 quadruples. This is a source-program hash encoding, not a resident VM image.",
+      "canonical_binary_bytes": 168,
+      "exactness": "Exact Euclidean signed distance in the declared normalized memory coordinates in real arithmetic, conditional on all geometric gates; no exact machine-arithmetic claim."
+    },
+    "both_evaluators_refuse": true
+  },
+  {
+    "name": "upper_quota",
+    "classification": "well_formed_rejected_candidate",
+    "report": {
+      "profile": "DWI-DEVELOPMENT-SDF-0.1",
+      "valid_structure": true,
+      "admissible": false,
+      "packed_program": {
+        "nodes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "boxes": [
+          [
+            0.6000000238418579,
+            0.5,
+            0.05000000074505806,
+            0.05000000074505806
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "node_count": 1,
+        "root": 0,
+        "revision": 0
+      },
+      "policy": {
+        "beta": 1.0,
+        "proof_margin": 9.999999747378752e-05,
+        "separation_margin": 0.0
+      },
+      "leaf_indices": [
+        0
+      ],
+      "geometric_gates": [
+        {
+          "name": "box_0_positive_extents",
+          "passed": true,
+          "half_extents_exact": [
+            "13421773/268435456",
+            "13421773/268435456"
+          ]
+        },
+        {
+          "name": "box_0_quota_containment",
+          "passed": false,
+          "lower_x_exact": "147639507/268435456",
+          "lower_y_exact": "120795955/268435456",
+          "upper_sum_exact": "161061277/134217728",
+          "lower_bound_exact": "13743895/137438953472",
+          "upper_sum_bound_exact": "137425209577/137438953472"
+        }
+      ],
+      "input_rounding": [],
+      "program_sha256": "99be4c0c6b0ea1a298abd787d55203dcd9b7128a4c8a71a0afc7f72e0854904a",
+      "topology_sha256": "e17f090dcc66adc5e5ed16f2f1d385fa4fcf886a9314e816e490028a7e14a78f",
+      "semantic_sha256": "2b43c84193673b3186710456d38102147507ab21055a31449a7c898be299a9db",
+      "expression": "box(center=(0.600000024, 0.5), half_extents=(0.0500000007, 0.0500000007))",
+      "canonical_binary_format": "DWI-DEVELOPMENT-SDF-0.1: ASCII DWSDF001, then little-endian uint32 node_count,root,revision; 7 opcode/a/b uint32 triples; 4 cx/cy/hx/hy binary32 quadruples. This is a source-program hash encoding, not a resident VM image.",
+      "canonical_binary_bytes": 168,
+      "exactness": "Exact Euclidean signed distance in the declared normalized memory coordinates in real arithmetic, conditional on all geometric gates; no exact machine-arithmetic claim."
+    },
+    "both_evaluators_refuse": true
+  },
+  {
+    "name": "touching_closed_boxes",
+    "classification": "well_formed_rejected_candidate",
+    "report": {
+      "profile": "DWI-DEVELOPMENT-SDF-0.1",
+      "valid_structure": true,
+      "admissible": false,
+      "packed_program": {
+        "nodes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "boxes": [
+          [
+            0.25,
+            0.125,
+            0.125,
+            0.0625
+          ],
+          [
+            0.5,
+            0.125,
+            0.125,
+            0.0625
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "node_count": 3,
+        "root": 2,
+        "revision": 1
+      },
+      "policy": {
+        "beta": 1.0,
+        "proof_margin": 9.999999747378752e-05,
+        "separation_margin": 0.0
+      },
+      "leaf_indices": [
+        0,
+        1
+      ],
+      "geometric_gates": [
+        {
+          "name": "box_0_positive_extents",
+          "passed": true,
+          "half_extents_exact": [
+            "1/8",
+            "1/16"
+          ]
+        },
+        {
+          "name": "box_0_quota_containment",
+          "passed": true,
+          "lower_x_exact": "1/8",
+          "lower_y_exact": "1/16",
+          "upper_sum_exact": "9/16",
+          "lower_bound_exact": "13743895/137438953472",
+          "upper_sum_bound_exact": "137425209577/137438953472"
+        },
+        {
+          "name": "box_1_positive_extents",
+          "passed": true,
+          "half_extents_exact": [
+            "1/8",
+            "1/16"
+          ]
+        },
+        {
+          "name": "box_1_quota_containment",
+          "passed": true,
+          "lower_x_exact": "3/8",
+          "lower_y_exact": "1/16",
+          "upper_sum_exact": "13/16",
+          "lower_bound_exact": "13743895/137438953472",
+          "upper_sum_bound_exact": "137425209577/137438953472"
+        },
+        {
+          "name": "boxes_0_1_strict_separation",
+          "passed": false,
+          "axis_gaps_exact": [
+            "0",
+            "0"
+          ],
+          "distance_squared_exact": "0",
+          "strict_lower_bound_squared_exact": "0"
+        }
+      ],
+      "input_rounding": [],
+      "program_sha256": "f156a8901013788464728c78f93a13d574e0484dbdd3c163e52fbc99e134b5a9",
+      "topology_sha256": "aaac46c4b439d165a43bbb93aa2653a8fd7fef5fd25592256b1e3914c554dab6",
+      "semantic_sha256": "d4f0b55079a80f7fe9a81658d6a7ae1ab1f34af2702f9b97537d5bc6d87c4d78",
+      "expression": "separated_union(box(center=(0.25, 0.125), half_extents=(0.125, 0.0625)), box(center=(0.5, 0.125), half_extents=(0.125, 0.0625)))",
+      "canonical_binary_format": "DWI-DEVELOPMENT-SDF-0.1: ASCII DWSDF001, then little-endian uint32 node_count,root,revision; 7 opcode/a/b uint32 triples; 4 cx/cy/hx/hy binary32 quadruples. This is a source-program hash encoding, not a resident VM image.",
+      "canonical_binary_bytes": 168,
+      "exactness": "Exact Euclidean signed distance in the declared normalized memory coordinates in real arithmetic, conditional on all geometric gates; no exact machine-arithmetic claim."
+    },
+    "both_evaluators_refuse": true
+  },
+  {
+    "name": "overlapping_boxes",
+    "classification": "well_formed_rejected_candidate",
+    "report": {
+      "profile": "DWI-DEVELOPMENT-SDF-0.1",
+      "valid_structure": true,
+      "admissible": false,
+      "packed_program": {
+        "nodes": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "boxes": [
+          [
+            0.25,
+            0.125,
+            0.125,
+            0.0625
+          ],
+          [
+            0.4000000059604645,
+            0.125,
+            0.125,
+            0.0625
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "node_count": 3,
+        "root": 2,
+        "revision": 1
+      },
+      "policy": {
+        "beta": 1.0,
+        "proof_margin": 9.999999747378752e-05,
+        "separation_margin": 0.0
+      },
+      "leaf_indices": [
+        0,
+        1
+      ],
+      "geometric_gates": [
+        {
+          "name": "box_0_positive_extents",
+          "passed": true,
+          "half_extents_exact": [
+            "1/8",
+            "1/16"
+          ]
+        },
+        {
+          "name": "box_0_quota_containment",
+          "passed": true,
+          "lower_x_exact": "1/8",
+          "lower_y_exact": "1/16",
+          "upper_sum_exact": "9/16",
+          "lower_bound_exact": "13743895/137438953472",
+          "upper_sum_bound_exact": "137425209577/137438953472"
+        },
+        {
+          "name": "box_1_positive_extents",
+          "passed": true,
+          "half_extents_exact": [
+            "1/8",
+            "1/16"
+          ]
+        },
+        {
+          "name": "box_1_quota_containment",
+          "passed": true,
+          "lower_x_exact": "9227469/33554432",
+          "lower_y_exact": "1/16",
+          "upper_sum_exact": "23907533/33554432",
+          "lower_bound_exact": "13743895/137438953472",
+          "upper_sum_bound_exact": "137425209577/137438953472"
+        },
+        {
+          "name": "boxes_0_1_strict_separation",
+          "passed": false,
+          "axis_gaps_exact": [
+            "0",
+            "0"
+          ],
+          "distance_squared_exact": "0",
+          "strict_lower_bound_squared_exact": "0"
+        }
+      ],
+      "input_rounding": [],
+      "program_sha256": "9665e2524c238cb6c89155780e771947e3d4de331da7823d5fbd3855be5781e7",
+      "topology_sha256": "aaac46c4b439d165a43bbb93aa2653a8fd7fef5fd25592256b1e3914c554dab6",
+      "semantic_sha256": "d176993d3d3dc6e5937ddff42f7f699ee51436f70178cadad142657a2b15138a",
+      "expression": "separated_union(box(center=(0.25, 0.125), half_extents=(0.125, 0.0625)), box(center=(0.400000006, 0.125), half_extents=(0.125, 0.0625)))",
+      "canonical_binary_format": "DWI-DEVELOPMENT-SDF-0.1: ASCII DWSDF001, then little-endian uint32 node_count,root,revision; 7 opcode/a/b uint32 triples; 4 cx/cy/hx/hy binary32 quadruples. This is a source-program hash encoding, not a resident VM image.",
+      "canonical_binary_bytes": 168,
+      "exactness": "Exact Euclidean signed distance in the declared normalized memory coordinates in real arithmetic, conditional on all geometric gates; no exact machine-arithmetic claim."
+    },
+    "both_evaluators_refuse": true
+  }
+]

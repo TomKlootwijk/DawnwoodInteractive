@@ -1,0 +1,109 @@
+{
+  "scope": "Compilation compatibility and explicit additional nominal contracts; no SDF constructor run.",
+  "old_editions": [
+    {
+      "name": "core",
+      "v2_program_unchanged": true,
+      "v3_recompiled_payload_unchanged": true,
+      "program_sha256": "5d0c2c75ab5676e51e736c195293cf2ccc792498cb3cd2a78a54fdef9878889f"
+    },
+    {
+      "name": "enzyme",
+      "v2_program_unchanged": true,
+      "v3_recompiled_payload_unchanged": true,
+      "program_sha256": "b5107decf854ac482790a3608cc0c805543c4328a1be4f7aba9941c7021480dd"
+    },
+    {
+      "name": "amplitude",
+      "v2_program_unchanged": true,
+      "v3_recompiled_payload_unchanged": true,
+      "program_sha256": "8c12baf5c4143c939c9a0f7f46addde923472fc00434d71d2222dfcb81030367"
+    },
+    {
+      "name": "authored_hadamard",
+      "v2_program_unchanged": true,
+      "v3_recompiled_payload_unchanged": true,
+      "program_sha256": "739e07de65bd45806d99753288d7f326b21c78694f676b796bf3029cba7165e3"
+    }
+  ],
+  "valid_128_state_extension": {
+    "state_width": 128,
+    "mutation_steps": 112,
+    "action_steps": 1107,
+    "program_sha256": "84bd147743dba010beb27975f565ee9082d370a200c49566ba8256a227498e77"
+  },
+  "atomic_rejections": [
+    {
+      "name": "v2_state_capacity",
+      "rejected": true,
+      "atomic": true,
+      "error": "Source graph state exceeds the selected resident backend"
+    },
+    {
+      "name": "extension_with_old_type_profile",
+      "rejected": true,
+      "atomic": true,
+      "error": "Additional state/function declarations require the explicit extended type profile"
+    },
+    {
+      "name": "existing_state_relabel",
+      "rejected": true,
+      "atomic": true,
+      "error": "Additional contracts cannot replace an existing state's meaning"
+    },
+    {
+      "name": "unused_state_contract",
+      "rejected": true,
+      "atomic": true,
+      "error": "Unused additional state contracts"
+    },
+    {
+      "name": "unknown_state_type",
+      "rejected": true,
+      "atomic": true,
+      "error": "Invalid additional state name/type"
+    },
+    {
+      "name": "missing_function",
+      "rejected": true,
+      "atomic": true,
+      "error": "Additional function contract has no numerical definition"
+    },
+    {
+      "name": "function_operand_mismatch",
+      "rejected": true,
+      "atomic": true,
+      "error": "Additional contract differs from numerical binding's ordered operands"
+    },
+    {
+      "name": "established_role_relabel",
+      "rejected": true,
+      "atomic": true,
+      "error": "Additional contracts cannot replace an established source role"
+    },
+    {
+      "name": "fractional_program_index",
+      "rejected": true,
+      "atomic": true,
+      "error": "/phases/7/nodes/13/args/x: this literal requires an exact bounded nonnegative integer"
+    },
+    {
+      "name": "distance_as_program_index",
+      "rejected": true,
+      "atomic": true,
+      "error": "/phases/7/nodes/13/args/x: nominal type 'resource_distance' does not match 'program_index'"
+    },
+    {
+      "name": "129_states",
+      "rejected": true,
+      "atomic": true,
+      "error": "Source graph state exceeds the selected resident backend"
+    }
+  ],
+  "source_hashes": {
+    "local_lab\\source_graph.py": "af28152d5a565b24e769ee10c4001f1fd8af6d8b799297e0b22ccb4903dd5ac7",
+    "local_lab\\source_graph_types.py": "5cefe06ed3d754dfda9813fd7e3d7c8ed943598ee322e1595eebc998fd6b159a",
+    "local_lab\\source_resident_v2.py": "311206687ae0c1b9b1a76dfdaec295761836a2f6e1c4f0afac4994de1c6070d7",
+    "local_lab\\source_resident_v3.py": "725a722d52ccc696a12e18a7926b1ea3c870746160639dee16b0bc1e235467e0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-09-24T23:05:58.109051+00:00",
+  "profile": "DWI-DEVELOPMENT-SDF-0.1",
+  "library_sha256": "f7b3d1d35a98b6efda867ae784bce17156adf5a56213ff8c64ddbaf5ed421448",
+  "format_rejections": 25,
+  "geometric_candidate_rejections": 7,
+  "valid_programs": 4,
+  "formula_oracle_comparisons": 3608,
+  "maximum_scaled_error": 2.2178962325635776e-16,
+  "all_within_predeclared_threshold": true,
+  "gpu_executed": false,
+  "resident_constructor_executed": false,
+  "scope": "Direct bounded source-format, exact packed-geometry and independent rational-edge checks only."
+}

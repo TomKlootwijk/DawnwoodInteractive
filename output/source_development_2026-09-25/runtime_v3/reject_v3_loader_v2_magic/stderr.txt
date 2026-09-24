@@ -1,0 +1,1 @@
+DWI-RESIDENT-0.3: Expected DWRD0003 magic

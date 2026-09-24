@@ -9,6 +9,7 @@ needs an explicit graph contract rather than inference from its expression.
 from __future__ import annotations
 
 TYPE_PROFILE = "DWI-GRAPH-TYPES-0.1"
+EXTENDED_TYPE_PROFILE = "DWI-GRAPH-TYPES-0.2"
 TYPES = frozenset({
     "amplitude", "log_radius", "phase", "interval", "bit", "index",
     "body_handle", "field_handle", "placement_handle", "generation",
@@ -19,6 +20,45 @@ TYPES = frozenset({
     "normalized_concentration", "physical_concentration", "objective",
     "coefficient", "control", "reserved_scalar",
 })
+EXTENDED_TYPES = TYPES | frozenset({
+    "program_opcode", "program_index", "program_size", "program_revision",
+    "resource_coordinate", "resource_distance", "resource_area",
+})
+
+
+def extension_contracts(definition):
+    """Explicit additional state/function contracts; existing laws cannot be relabeled."""
+    extension = definition.get("source", {}).get("graph_type_contracts")
+    if extension is None:
+        return {"states": {}, "functions": {}}
+    if (not isinstance(extension, dict) or set(extension) != {"profile", "states", "functions"}
+            or extension["profile"] != EXTENDED_TYPE_PROFILE):
+        raise ValueError("Expected a DWI-GRAPH-TYPES-0.2 state/function contract declaration")
+    states, functions = extension["states"], extension["functions"]
+    if not isinstance(states, dict) or not isinstance(functions, dict):
+        raise ValueError("Additional state/function contracts must be named mappings")
+    if set(states).intersection(_STATE):
+        raise ValueError("Additional contracts cannot replace an existing state's meaning")
+    if set(states).difference(definition["state_names"]):
+        raise ValueError("Unused additional state contracts")
+    for name, kind in states.items():
+        if not isinstance(name, str) or not name or kind not in EXTENDED_TYPES:
+            raise ValueError("Invalid additional state name/type")
+    for name, contract in functions.items():
+        function = definition["functions"].get(name)
+        if function is None:
+            raise ValueError("Additional function contract has no numerical definition")
+        if _special_contract(name) is not None or function.get("signature") in _CONTRACTS:
+            raise ValueError("Additional contracts cannot replace an established source role")
+        if not isinstance(contract, dict) or set(contract) != {"inputs", "outputs"}:
+            raise ValueError("Additional function needs ordered input/output type maps")
+        for direction in ("inputs", "outputs"):
+            mapping = contract[direction]
+            if not isinstance(mapping, dict) or any(not isinstance(n, str) or not n or t not in EXTENDED_TYPES for n, t in mapping.items()):
+                raise ValueError("Invalid additional function name/type")
+            if list(mapping) != list(function["binding"][direction]):
+                raise ValueError("Additional contract differs from numerical binding's ordered operands")
+    return extension
 
 _PAIR = ("ar", "ai", "br", "bi")
 _POLAR = ("rho0", "theta0", "rho1", "theta1")
@@ -98,7 +138,7 @@ def _ordered_names(names, known, where):
 
 def state_types(definition):
     """Return named state types in the actual definition's word order."""
-    return _ordered_names(definition["state_names"], _STATE, "state_names")
+    return _ordered_names(definition["state_names"], _join(_STATE, extension_contracts(definition)["states"]), "state_names")
 
 
 def record_types(definition):
@@ -218,6 +258,9 @@ def function_contract(definition, function_name):
     if type(signature) is not int or signature <= 0:
         raise ValueError(f"Function {function_name}: expected a positive integer signature")
     binding = function["binding"]
+    additional = extension_contracts(definition)["functions"].get(function_name)
+    if additional is not None:
+        return _contract(additional["inputs"], additional["outputs"])
     expected = _special_contract(function_name)
     if expected is None:
         expected = _CONTRACTS.get(signature)

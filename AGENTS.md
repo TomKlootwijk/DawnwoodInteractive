@@ -4,3 +4,4 @@
 - Commit and push frequently after each coherent, completed change or milestone. Use descriptive commit messages and push the current working branch to its configured remote. Do not accumulate completed work locally; report a push failure if one prevents synchronization.
 - Do not write new tests. Use existing checks and direct validation where appropriate.
 - Do not compile Unity projects. In Unity 6.3, never use bootstraps; integrate into an existing editable scene or create an editable scene.
+- For computational definitions, domain specialization or agent-guided development, read [DAWNWOOD_AGENT.md](DAWNWOOD_AGENT.md) and the current decision ledger. Keep the user's current objective authoritative.

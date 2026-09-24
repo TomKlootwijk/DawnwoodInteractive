@@ -1,0 +1,86 @@
+[
+  {
+    "name": "python_reject_state129_source",
+    "passed": true,
+    "exception": "ValueError",
+    "message": "state_names: expected 1..128 names"
+  },
+  {
+    "name": "python_reject_missing_state127_write",
+    "passed": true,
+    "exception": "ValueError",
+    "message": "action_plan: missing writes to destination words [127]"
+  },
+  {
+    "name": "python_reject_duplicate_state127_write",
+    "passed": true,
+    "exception": "ValueError",
+    "message": "action_plan[1105]: each destination word must be written exactly once"
+  },
+  {
+    "name": "python_preserves_xir_input_limit64",
+    "passed": true,
+    "exception": "ValueError",
+    "message": "functions['runtime_increment_last'].binding.inputs: expected at most 64 names"
+  },
+  {
+    "name": "python_binary_state129",
+    "passed": true,
+    "exception": "ValueError",
+    "message": "stateWidth: expected an integer in 1..128"
+  },
+  {
+    "name": "native_binary_state129",
+    "passed": true
+  },
+  {
+    "name": "python_binary_missing_state127_write",
+    "passed": true,
+    "exception": "ValueError",
+    "message": "action_plan: missing writes to destination words [127]"
+  },
+  {
+    "name": "native_binary_missing_state127_write",
+    "passed": true
+  },
+  {
+    "name": "python_binary_duplicate_state127_write",
+    "passed": true,
+    "exception": "ValueError",
+    "message": "action_plan[1105]: each destination word must be written exactly once"
+  },
+  {
+    "name": "native_binary_duplicate_state127_write",
+    "passed": true
+  },
+  {
+    "name": "python_binary_xir_input65",
+    "passed": true,
+    "exception": "ValueError",
+    "message": "functions[0].input_width: expected an integer in 0..64"
+  },
+  {
+    "name": "native_binary_xir_input65",
+    "passed": true
+  },
+  {
+    "name": "python_v2_rejects_v3_magic",
+    "passed": true,
+    "exception": "ValueError",
+    "message": "Checkpoint requires DWRD0002 and its eight-word header"
+  },
+  {
+    "name": "python_v3_rejects_v2_magic",
+    "passed": true,
+    "exception": "ValueError",
+    "message": "Checkpoint requires DWRD0003 and its eight-word header"
+  },
+  {
+    "name": "native_v2_rejects_v3_magic",
+    "passed": true
+  },
+  {
+    "name": "native_v3_rejects_v2_magic",
+    "passed": true
+  }
+]

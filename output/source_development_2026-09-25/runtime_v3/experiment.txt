@@ -1,0 +1,168 @@
+"""Bounded resident-v3 direct validation; no new test-suite source.
+Run from repository root through Python -u -X utf8 -B -.
+Physical GPU work is restricted to17-lane,1/2-epoch checks, not saturation.
+"""
+from copy import deepcopy
+from datetime import datetime,timezone
+from pathlib import Path
+import json,lzma,os,struct,subprocess,time
+from local_lab import source_resident_v2 as v2,source_resident_v3 as v3
+
+ROOT=Path.cwd();OUT=ROOT/'output/source_development_2026-09-25/runtime_v3'
+NATIVE=ROOT/'Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3'
+EXES={2:NATIVE/'bin/windows-resident-v2/dawnwood-resident-v2.exe',3:NATIVE/'bin/windows-resident-v3/dawnwood-resident-v3.exe'}
+ir=v3.ir
+read=lambda p:json.loads(lzma.decompress(Path(p).read_bytes()) if str(p).endswith('.xz') else Path(p).read_bytes())
+sha=ir.sha256
+write=lambda name,data:(OUT/name).write_bytes(ir.json_bytes(data))
+env=os.environ.copy();env['DAWNWOOD_VALIDATION']='1';env['VK_LAYER_PATH']=str(ROOT/'tmp/rtx-toolchain/VulkanSDK/Bin')
+receipts=[];checks=[]
+
+def save_program(name,definition,version=3):
+    folder=OUT/name;folder.mkdir(exist_ok=False)
+    backend=v3 if version==3 else v2
+    raw,manifest=backend.compile_definition(model,definition)
+    (folder/'program.bin').write_bytes(raw)
+    for filename,obj in [('definition.json.xz',definition),('manifest.json.xz',manifest)]:
+        (folder/filename).write_bytes(lzma.compress(ir.json_bytes(obj)))
+    return folder/'program.bin',raw
+
+def run(name,path,backend,epochs,version=3,expected=0,reverse=False):
+    folder=OUT/name;folder.mkdir(exist_ok=False);output=folder/'checkpoint.bin'
+    command=[str(EXES[version]),'run','--input',str(path),'--output',str(output),'--backend',backend,'--epochs',str(epochs)]
+    if backend=='vulkan':command+=['--device','RTX 5070 Ti']
+    if reverse:command+=['--reverse-targets']
+    started=time.perf_counter();result=subprocess.run(command,capture_output=True,env=env)
+    (folder/'stdout.json').write_bytes(result.stdout);(folder/'stderr.txt').write_bytes(result.stderr)
+    receipt={'name':name,'command':command,'returncode':result.returncode,'expected_returncode':expected,
+             'wall_seconds':time.perf_counter()-started,'input_sha256':sha(Path(path).read_bytes()),
+             'output_sha256':sha(output.read_bytes()) if output.exists() else None}
+    try:receipt['report']=json.loads(result.stdout)
+    except Exception:receipt['report']=None
+    receipts.append(receipt);(folder/'execution.json').write_bytes(ir.json_bytes(receipt));write('execution_receipts.json',receipts)
+    assert result.returncode==expected,receipt
+    if backend=='vulkan' and expected in (0,3):
+        report=receipt['report'];assert report['validation_enabled'] and report['validation_errors']==report['validation_warnings']==0,receipt
+        assert report['device_type']=='discrete_gpu' and '5070 Ti' in report['device'],receipt
+    print(json.dumps({'name':name,'exit_code':result.returncode,'passed':True}),flush=True)
+    if expected==2:return None,receipt
+    raw=output.read_bytes();decoded=(v3 if version==3 else v2).decode_checkpoint(raw)
+    return (raw,decoded,output),receipt
+
+def check(name,condition,**details):
+    row={'name':name,'passed':bool(condition),**details};checks.append(row);write('checks.json',checks)
+    assert condition,row
+
+def same_images(left,right):
+    return left[0][left[1]['instances_offset_bytes']:]==right[0][right[1]['instances_offset_bytes']:]
+
+model=read(ROOT/'output/source_graph_2026-09-24/core/source_model.json')
+old=read(ROOT/'output/source_graph_2026-09-24/core/definition.json.xz')
+old['instances']=old['instances'][:17]
+new=deepcopy(old);new['profile']=v3.PROFILE
+p2,raw2=save_program('core_v2',old,2);p3,raw3=save_program('core_v3',new,3)
+check('compatibility_program_only_magic_differs',raw2[8:]==raw3[8:] and raw2[:8]==v2.MAGIC and raw3[:8]==v3.MAGIC)
+compatibility=[]
+for epoch in (1,2):
+    results={}
+    for version,path in ((2,p2),(3,p3)):
+        for backend in ('cpu','vulkan'):
+            results[(version,backend)],_=run(f'core_v{version}_{backend}_{epoch}',path,backend,epoch,version)
+        check(f'core_v{version}_cpu_gpu_epoch{epoch}',results[(version,'cpu')][0]==results[(version,'vulkan')][0])
+    equality=same_images(results[(2,'cpu')],results[(3,'cpu')])
+    check(f'core_v2_v3_mutable_words_epoch{epoch}',equality,compared_words=len(old['instances'])*results[(3,'cpu')][1]['instance_words'])
+    compatibility.append({'epochs':epoch,'all_mutable_words_identical':equality})
+
+# Extend the complete archived graph with explicit writes to every added state.
+large=deepcopy(new);original_width=len(large['state_names'])
+large['state_names'] += [f'runtime_extra_{i:03d}' for i in range(original_width,128)]
+for lane,instance in enumerate(large['instances']):
+    for i in range(original_width,128):instance['state'][large['state_names'][i]]=lane+i/512
+signature=max(f['signature'] for f in large['functions'].values())+1
+large['functions']['runtime_increment_last']={'signature':signature,'binding':{'inputs':['x'],'outputs':{'y':{'op':'add','args':[{'input':'x'},.5]}}}}
+handle=list(large['functions']).index('runtime_increment_last')
+for index in range(original_width,127):
+    large['action_plan'] += [[1,200,index,1,0,0,0,0],[6,index,200,1,0,0,0,0]]
+large['action_plan'] += [[1,200,127,1,0,0,0,0],[3,handle,200,201,0,0,0,0],[6,127,201,1,0,0,0,0]]
+# Historical graph metadata describes the original prefix only. This is an ABI
+# capacity fixture with explicitly derived extra writes, not a new domain app.
+large['source']['runtime_v3_fixture']={'base_state_width':original_width,'purpose':'state128 boundary coverage and exact increment at state127; old graph prefix unchanged'}
+plarge,rawlarge=save_program('state128',large)
+state_runs={}
+for backend in ('cpu','vulkan'):
+    state_runs[backend],_=run('state128_'+backend+'_2',plarge,backend,2)
+check('state128_cpu_gpu_identical',state_runs['cpu'][0]==state_runs['vulkan'][0])
+for lane,item in enumerate(state_runs['cpu'][1]['instances']):
+    check(f'state127_increment_lane{lane}',item['state'][127]==large['instances'][lane]['state'][large['state_names'][127]]+1)
+    check(f'extra_state44_to126_preserved_lane{lane}',all(item['state'][i]==large['instances'][lane]['state'][large['state_names'][i]] for i in range(original_width,127)))
+one,_=run('state128_vulkan_1',plarge,'vulkan',1)
+resumed,_=run('state128_vulkan_resume1',one[2],'vulkan',1)
+check('state128_resume_1_plus_1_equals_2',resumed[0]==state_runs['vulkan'][0])
+reverse,_=run('state128_vulkan_reverse2',plarge,'vulkan',2,reverse=True)
+check('state128_reverse_targets_equal',reverse[0]==state_runs['vulkan'][0])
+
+# Force an action failure AFTER all provisional state writes to witness rollback
+# of both the extended state and the preceding complete record mutation.
+failed=deepcopy(large);fn='runtime_failure_after_writes'
+failed['functions'][fn]={'signature':signature+1,'binding':{'inputs':['x'],'requires':[{'input':'x'}],'outputs':{'x':{'input':'x'}}}}
+fhandle=list(failed['functions']).index(fn)
+failed['action_plan'] += [[0,200,0,0,0,0,0,0],[3,fhandle,200,201,0,0,0,0]]
+pfail,rawfail=save_program('state128_failure',failed)
+failure_runs={}
+for backend in ('cpu','vulkan'):
+    failure_runs[backend],_=run('state128_failure_'+backend,pfail,backend,1,expected=3)
+check('state128_failure_cpu_gpu_identical',failure_runs['cpu'][0]==failure_runs['vulkan'][0])
+initial=v3.decode_checkpoint(rawfail)
+for lane,(before,after) in enumerate(zip(initial['instances'],failure_runs['cpu'][1]['instances'])):
+    check(f'whole_epoch_rollback_lane{lane}',before['state_bits']==after['state_bits'] and before['records']==after['records'] and after['epoch']==0 and after['status']==1 and after['failure_phase']==2)
+frozen,_=run('state128_failed_resume2',failure_runs['vulkan'][2],'vulkan',2,expected=3)
+check('failed_image_freezes_on_resume',frozen[0]==failure_runs['vulkan'][0])
+
+# Direct invalid-source and invalid-binary probes. Retain every raw payload,
+# rejection message and native receipt. No mutation is made to a historical file.
+rejections=[];rejectdir=OUT/'rejections';rejectdir.mkdir(exist_ok=False)
+def python_reject(name,operation):
+    try:operation()
+    except (ValueError,TypeError) as error:rejections.append({'name':name,'passed':True,'exception':type(error).__name__,'message':str(error)});return
+    rejections.append({'name':name,'passed':False});raise AssertionError(name)
+too_wide=deepcopy(large);too_wide['state_names'].append('runtime_extra_128')
+for instance in too_wide['instances']:instance['state']['runtime_extra_128']=0
+python_reject('python_reject_state129_source',lambda:v3.compile_definition(model,too_wide))
+missing=deepcopy(large);missing['action_plan'].pop()
+python_reject('python_reject_missing_state127_write',lambda:v3.compile_definition(model,missing))
+duplicate=deepcopy(large);duplicate['action_plan'][-4][1]=127
+python_reject('python_reject_duplicate_state127_write',lambda:v3.compile_definition(model,duplicate))
+fnwide=deepcopy(large);fnwide['functions']['runtime_increment_last']['binding']['inputs']=[f'x{i}' for i in range(65)]
+python_reject('python_preserves_xir_input_limit64',lambda:v3.compile_definition(model,fnwide))
+malformed={}
+data=bytearray(rawlarge);struct.pack_into('<I',data,16,129);malformed['state129']=bytes(data)
+decoded=v3.decode_checkpoint(rawlarge);action_offset=decoded['instances_offset_bytes']-decoded['action_steps']*32
+data=bytearray(rawlarge);struct.pack_into('<8I',data,action_offset+(decoded['action_steps']-1)*32,1,202,127,1,0,0,0,0);malformed['missing_state127_write']=bytes(data)
+data=bytearray(rawlarge);struct.pack_into('<I',data,action_offset+(decoded['action_steps']-4)*32+4,127);malformed['duplicate_state127_write']=bytes(data)
+data=bytearray(rawlarge);struct.pack_into('<I',data,40+16*decoded['record_count']+12,65);malformed['xir_input65']=bytes(data)
+for name,payload in malformed.items():
+    path=rejectdir/(name+'.bin');path.write_bytes(payload)
+    python_reject('python_binary_'+name,lambda payload=payload:v3.decode_checkpoint(payload))
+    _,receipt=run('reject_'+name,path,'cpu',0,expected=2)
+    rejections.append({'name':'native_binary_'+name,'passed':receipt['returncode']==2})
+python_reject('python_v2_rejects_v3_magic',lambda:v2.decode_checkpoint(rawlarge))
+python_reject('python_v3_rejects_v2_magic',lambda:v3.decode_checkpoint(raw2))
+_,receipt=run('reject_v2_loader_v3_magic',plarge,'cpu',0,version=2,expected=2)
+rejections.append({'name':'native_v2_rejects_v3_magic','passed':receipt['returncode']==2})
+_,receipt=run('reject_v3_loader_v2_magic',p2,'cpu',0,expected=2)
+rejections.append({'name':'native_v3_rejects_v2_magic','passed':receipt['returncode']==2})
+write('rejections.json',rejections)
+preserved=read(OUT/'preserved_v2_inputs.json');v2_unchanged=all(sha((ROOT/path).read_bytes())==digest for path,digest in preserved.items())
+check('all_v2_inputs_preserved_byte_for_byte',v2_unchanged,files=len(preserved))
+build=read(NATIVE/'bin/windows-resident-v3/build.json')
+build_logs={p.name:{'bytes':p.stat().st_size,'sha256':sha(p.read_bytes())} for p in (NATIVE/'bin/windows-resident-v3').glob('build-*.stderr.txt')}
+report={'profile':v3.PROFILE,'created_utc':datetime.now(timezone.utc).isoformat(),'scope':'Bounded runtime ABI capacity/compatibility/rollback validation; this does not implement or prove runtime SDF-expression construction.',
+        'limits':{'state':v3.MAX_STATES,'xir_inputs':v3.ir.MAX_INPUTS,'xir_outputs':v3.ir.MAX_OUTPUTS,'xir_instructions':v3.ir.MAX_INSTRUCTIONS,'frame':v3.FRAME_WORDS},
+        'core_compatibility':compatibility,'checks':checks,'rejections':rejections,'native_receipts':'execution_receipts.json',
+        'build':build,'build_stderr':build_logs,'python_frontend_sha256':sha(Path(v3.__file__).read_bytes()),
+        'experiment_sha256':sha((OUT/'experiment.txt').read_bytes()),'all_v2_inputs_unchanged':v2_unchanged,
+        'summary':{'checks':len(checks),'checks_passed':sum(x['passed'] for x in checks),'rejections':len(rejections),'rejections_passed':sum(x['passed'] for x in rejections),
+                   'native_invocations':len(receipts),'vulkan_invocations':sum(x['report'] is not None and x['report'].get('backend')=='vulkan' for x in receipts),
+                   'all_passed':all(x['passed'] for x in checks+rejections)}}
+write('REPORT.json',report)
+print(json.dumps(report['summary'],indent=2),flush=True)

@@ -1,0 +1,25 @@
+{
+  "name": "reject_xir_input65",
+  "command": [
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v3\\dawnwood-resident-v3.exe",
+    "run",
+    "--input",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\runtime_v3\\rejections\\xir_input65.bin",
+    "--output",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\runtime_v3\\reject_xir_input65\\checkpoint.bin",
+    "--backend",
+    "cpu",
+    "--epochs",
+    "0"
+  ],
+  "returncode": 2,
+  "expected_returncode": 2,
+  "wall_seconds": 0.014479400000709575,
+  "input_sha256": "b9126c186e83d48346dde8fe2b41f8fa1180cc9013e0d297b4d6fa4c68468276",
+  "output_sha256": null,
+  "report": {
+    "profile": "DWI-RESIDENT-0.3",
+    "status": "error",
+    "error": "Function 0: invalid input/output width"
+  }
+}

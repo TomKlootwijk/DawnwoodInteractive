@@ -1,0 +1,92 @@
+"""Direct compatibility/contract experiment, not a repository test suite."""
+from copy import deepcopy
+import hashlib
+import json
+import lzma
+from pathlib import Path
+
+from local_lab import source_graph as graph_compiler
+from local_lab import source_graph_types as types
+from local_lab import source_resident_v2 as v2
+from local_lab import source_resident_v3 as v3
+
+ROOT = Path(__file__).resolve().parents[1]
+BASE = ROOT / 'output/source_graph_2026-09-24'
+OUT = ROOT / 'output/source_development_2026-09-25/graph_contracts'
+CYCLE = json.loads((BASE / 'fidelity_audit/source_cycle.json').read_text('utf-8'))
+rows = []
+
+def load(name):
+    folder = BASE / name
+    return (json.loads(lzma.decompress((folder / 'definition.json.xz').read_bytes())),
+            json.loads((folder / 'source_graph.json').read_text('utf-8')),
+            json.loads((folder / 'source_model.json').read_text('utf-8')))
+
+for name in ('core', 'enzyme', 'amplitude', 'authored_hadamard'):
+    definition, graph, model = load(name)
+    graph_compiler.apply_graph(definition, CYCLE, graph)
+    raw, _ = v2.compile_definition(model, definition)
+    old = (BASE / name / 'program.bin').read_bytes()
+    definition['profile'] = v3.PROFILE
+    raw3, _ = v3.compile_definition(model, definition)
+    rows.append({'name': name, 'v2_program_unchanged': raw == old,
+                 'v3_recompiled_payload_unchanged': raw3[8:] == raw[8:],
+                 'program_sha256': hashlib.sha256(raw).hexdigest()})
+assert all(row['v2_program_unchanged'] and row['v3_recompiled_payload_unchanged'] for row in rows)
+
+definition, graph, model = load('core')
+definition['profile'] = v3.PROFILE
+graph['type_profile'] = types.EXTENDED_TYPE_PROFILE
+extra = {f'development_word_{i}': 'program_index' for i in range(128-len(definition['state_names']))}
+definition['state_names'].extend(extra)
+for instance in definition['instances']:
+    instance['state'].update(dict.fromkeys(extra, 0))
+graph['returns'].update({name: {'state': name} for name in extra})
+entry = {'inputs': ['x'], 'outputs': {'y': {'input': 'x'}}, 'requires': []}
+definition['functions']['development_identity'] = {'signature': 10000, 'binding': entry}
+definition['source']['graph_type_contracts'] = {
+    'profile': types.EXTENDED_TYPE_PROFILE, 'states': extra,
+    'functions': {'development_identity': {
+        'inputs': {'x': 'program_index'}, 'outputs': {'y': 'program_index'}}}}
+graph['phases'][-1]['nodes'].append({'id': 'development_identity_probe', 'op': 'call_helper',
+    'function': 'development_identity', 'args': {'x': {'state': next(iter(extra))}}})
+graph['returns'][next(iter(extra))] = {'node': 'development_identity_probe', 'output': 'y'}
+graph_compiler.apply_graph(definition, CYCLE, graph, resident_backend=v3)
+raw, manifest = v3.compile_definition(model, definition)
+assert len(definition['state_names']) == 128
+valid = {'state_width': len(definition['state_names']), 'mutation_steps': len(definition['mutation_plan']),
+         'action_steps': len(definition['action_plan']), 'program_sha256': hashlib.sha256(raw).hexdigest()}
+
+rejections = []
+def reject(name, change, backend=v3):
+    d, g = deepcopy(definition), deepcopy(graph)
+    change(d, g)
+    before = deepcopy(d)
+    try:
+        graph_compiler.apply_graph(d, CYCLE, g, resident_backend=backend)
+    except (ValueError, TypeError) as error:
+        assert d == before, 'A rejected graph modified the caller definition'
+        rejections.append({'name': name, 'rejected': True, 'atomic': True, 'error': str(error)})
+    else:
+        raise AssertionError(f'{name} unexpectedly accepted')
+
+reject('v2_state_capacity', lambda d,g: None, v2)
+reject('extension_with_old_type_profile', lambda d,g: g.update(type_profile=types.TYPE_PROFILE))
+reject('existing_state_relabel', lambda d,g: d['source']['graph_type_contracts']['states'].update(ar='resource_coordinate'))
+reject('unused_state_contract', lambda d,g: d['source']['graph_type_contracts']['states'].update(not_a_state='program_index'))
+reject('unknown_state_type', lambda d,g: d['source']['graph_type_contracts']['states'].update({next(iter(extra)): 'untyped'}))
+reject('missing_function', lambda d,g: d['source']['graph_type_contracts']['functions'].update(not_a_function={'inputs': {}, 'outputs': {}}))
+reject('function_operand_mismatch', lambda d,g: d['source']['graph_type_contracts']['functions']['development_identity']['inputs'].update(z='program_index'))
+reject('established_role_relabel', lambda d,g: d['source']['graph_type_contracts']['functions'].update(placement_canonical={'inputs': {}, 'outputs': {}}))
+reject('fractional_program_index', lambda d,g: g['phases'][-1]['nodes'][-1]['args'].update(x={'literal': .5, 'type': 'program_index'}))
+reject('distance_as_program_index', lambda d,g: g['phases'][-1]['nodes'][-1]['args'].update(x={'literal': .5, 'type': 'resource_distance'}))
+reject('129_states', lambda d,g: d['state_names'].append('one_too_many'))
+
+OUT.mkdir(parents=True, exist_ok=True)
+report = {'scope': 'Compilation compatibility and explicit additional nominal contracts; no SDF constructor run.',
+          'old_editions': rows, 'valid_128_state_extension': valid, 'atomic_rejections': rejections,
+          'source_hashes': {str(Path(module.__file__).relative_to(ROOT)): hashlib.sha256(Path(module.__file__).read_bytes()).hexdigest()
+                            for module in (graph_compiler, types, v2, v3)}}
+(OUT / 'REPORT.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
+(OUT / 'experiment.py.txt').write_bytes(Path(__file__).read_bytes())
+print(json.dumps({'compatible_editions': len(rows), 'valid_128_state_extension': valid, 'atomic_rejections': len(rejections)}, indent=2))
