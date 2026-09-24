@@ -1,0 +1,13 @@
+{
+  "kind": "symbolic substrate execution",
+  "epochs": 16,
+  "new_steps": 8,
+  "operators": 31,
+  "expression_nodes": 3335,
+  "state_sha256": "31d4c1e11eea5a4327d511599d8f48d1c05207e0e52ba143955ce81464bfe28a",
+  "files": [
+    "trace.jsonl",
+    "snapshot.json",
+    "summary.json"
+  ]
+}

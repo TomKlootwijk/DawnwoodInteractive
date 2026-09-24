@@ -1,0 +1,31 @@
+  0  klein            Self-referential Klein bottle SDF
+  1  hadamard         Hadamard mitosis hinges
+  2  phi              Log-encoded polar radius PHI
+  3  rk4              RK4 fourth timeslot
+  4  phyllotaxis      Fibonacci phyllotaxis
+  5  pinion           Double pinion
+  6  double_dot       Pinion double dot : product operator
+  7  T_shape          T geometry
+  8  pyramid          Side view of the pyramid
+  9  circle           Circle
+ 10  cone             Cone
+ 11  sphere           Sphere
+ 12  apex             Apex
+ 13  delta_phi        Lowercase delta delta phi
+ 14  blend            Math blend operator
+ 15  wavefront        Wavefront FT vector
+ 16  y_up             Y up
+ 17  crystal          Crystal bifurcation of RGBA values
+ 18  inverse_T        A means inverse T
+ 19  T_transform      T transformation
+ 20  jitter           1bit jitter
+ 21  bst              1bit BST
+ 22  return           Non-orientable return
+ 23  phase_history    B phase history
+ 24  dichromatic      Dichromatic operators
+ 25  bayer            Optional Bayer matrix
+ 26  bc5              BC5 packing
+ 27  split            0-order bit-shifted even/odd split
+ 28  parity           1-bit parity
+ 29  psi              Interval PSI
+ 30  mutation         Operator self-mutation

@@ -1,0 +1,8 @@
+{
+  "kind": "symbolic expression reproduction",
+  "steps": 16,
+  "shipped": "8962b81354a8af8e9dd63a779177ffbe1dd67cbb50f2b6cad7e213e08c2f0a57",
+  "fresh": "8962b81354a8af8e9dd63a779177ffbe1dd67cbb50f2b6cad7e213e08c2f0a57",
+  "checkpointed": "8962b81354a8af8e9dd63a779177ffbe1dd67cbb50f2b6cad7e213e08c2f0a57",
+  "matches": true
+}

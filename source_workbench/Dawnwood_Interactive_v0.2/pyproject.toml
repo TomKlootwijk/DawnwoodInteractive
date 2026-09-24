@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dawnwood-interactive"
+version = "0.2.0"
+description = "Unified source-native symbolic substrate workbench"
+requires-python = ">=3.10"
+authors = [{name = "Tom Klootwijk"}]
+
+[tool.setuptools.packages.find]
+where = ["src"]

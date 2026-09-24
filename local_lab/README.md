@@ -6,6 +6,13 @@
 preserved **DWI-N1-0.5** executable. Both use Python 3.10+ and the standard
 library. Run commands from the repository root.
 
+These are numerical experiments, not the original source application. That
+application is restored under [source_workbench](../source_workbench/README.md).
+D1's fixed projection algorithm does not execute the source's editable
+body/field/anchor application model; the
+[literal application contract](../docs/LITERAL_APPLICATION_CONTRACT.md) identifies
+the missing integration.
+
 ## Native domain run
 
 ```powershell

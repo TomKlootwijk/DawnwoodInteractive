@@ -1,0 +1,52 @@
+{
+  "operator": {
+    "index": 6,
+    "key": "double_dot",
+    "label": "Pinion double dot : product operator",
+    "body": 3167,
+    "field": 3169,
+    "anchor": 3168,
+    "record": 3170
+  },
+  "body_node": {
+    "id": 3167,
+    "kind": "call",
+    "head": "Mutate_operator_body",
+    "args": [
+      3074,
+      2975,
+      2977,
+      3142,
+      3106,
+      13,
+      0
+    ],
+    "sha256": "e042b74364f6d69ba2105a5e35485370fe4580e52f199fc4ed26b9c4e42b57a6"
+  },
+  "field_node": {
+    "id": 3169,
+    "kind": "call",
+    "head": "Mutate_operator_SDF",
+    "args": [
+      2977,
+      3167,
+      3168,
+      3107
+    ],
+    "sha256": "e29e4eef532991f910c46481009cb587cb4cdffb7e16ce2dcf6429c929f3b4ab"
+  },
+  "anchor_node": {
+    "id": 3168,
+    "kind": "call",
+    "head": "Double_pinion_surface_position",
+    "args": [
+      2974,
+      3107,
+      2976,
+      3142,
+      13,
+      0
+    ],
+    "sha256": "0f90d063e2172f3ed6227ef7274f488814ad154add369ad0bd2af0513a4631d6"
+  }
+}

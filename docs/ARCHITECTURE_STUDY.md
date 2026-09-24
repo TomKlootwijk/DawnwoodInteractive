@@ -4,6 +4,13 @@
 
 ## The source documents have different roles
 
+The source also supplies an executable **authoring application**, now restored
+under [source_workbench](../source_workbench/README.md). Its editable model and
+cycle are not consumed by the current native runtime. The
+[literal application contract](LITERAL_APPLICATION_CONTRACT.md) connects the
+document requirements to that application and identifies the missing numerical
+integration.
+
 Page numbers below mean **physical PDF pages**, counting the cover. The early formalization's printed page number is one lower after its cover.
 
 | Document | What it contributes | How to read it |

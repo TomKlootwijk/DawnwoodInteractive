@@ -1,0 +1,24 @@
+{
+  "source_pages": [
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "owner_target": "RTX 5070 Ti laptop edition, 12 GB VRAM",
+  "architecture_roles": {
+    "on_chip": "1-bit LUT and mutable operator state",
+    "VRAM": "packed textures and recurrent substrate state",
+    "host": "initial loading and requested downstream exchange"
+  },
+  "objectives": [
+    "resident texture working set",
+    "reuse of allocated substrate",
+    "no mandatory texture hot-swap in the recurrence"
+  ],
+  "packing_name": "BC5 dichromatic",
+  "execution_organization": "phyllotaxis-neighbouring work organized together",
+  "byte_budget": 12884901888,
+  "byte_budget_note": "Calculator input 12 * 2**30 reproduces the scale of the source rounded counts."
+}

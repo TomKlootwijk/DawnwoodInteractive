@@ -1,0 +1,41 @@
+test_call_interning (test_substrate.ExpressionGraph.test_call_interning) ... ok
+test_content_identity (test_substrate.ExpressionGraph.test_content_identity) ... ok
+test_graph_hash_check (test_substrate.ExpressionGraph.test_graph_hash_check) ... ok
+test_graph_round_trip (test_substrate.ExpressionGraph.test_graph_round_trip) ... ok
+test_literal_interning (test_substrate.ExpressionGraph.test_literal_interning) ... ok
+test_literal_ownership (test_substrate.ExpressionGraph.test_literal_ownership) ... ok
+test_symbol_interning (test_substrate.ExpressionGraph.test_symbol_interning) ... ok
+test_bit_type (test_substrate.NativeRelations.test_bit_type) ... ok
+test_deep_route (test_substrate.NativeRelations.test_deep_route) ... ok
+test_large_integer_index (test_substrate.NativeRelations.test_large_integer_index) ... ok
+test_root (test_substrate.NativeRelations.test_root) ... ok
+test_route_and_reversal (test_substrate.NativeRelations.test_route_and_reversal) ... ok
+test_source_child_formula (test_substrate.NativeRelations.test_source_child_formula) ... ok
+test_source_even_odd (test_substrate.NativeRelations.test_source_even_odd) ... ok
+test_source_parity (test_substrate.NativeRelations.test_source_parity) ... ok
+test_two_named_relations (test_substrate.NativeRelations.test_two_named_relations) ... ok
+test_addition_and_body_edit_survive_snapshot (test_substrate.UnifiedCycle.test_addition_and_body_edit_survive_snapshot) ... ok
+test_arbitrary_operator_body_and_large_address (test_substrate.UnifiedCycle.test_arbitrary_operator_body_and_large_address) ... ok
+test_bayer_is_downstream (test_substrate.UnifiedCycle.test_bayer_is_downstream) ... ok
+test_epoch_has_no_fixed_width_wrap (test_substrate.UnifiedCycle.test_epoch_has_no_fixed_width_wrap) ... ok
+test_feedback_is_whole_returned_state (test_substrate.UnifiedCycle.test_feedback_is_whole_returned_state) ... ok
+test_full_catalogue (test_substrate.UnifiedCycle.test_full_catalogue) ... ok
+test_history_contains_previous_history (test_substrate.UnifiedCycle.test_history_contains_previous_history) ... ok
+test_inverse_T_in_state (test_substrate.UnifiedCycle.test_inverse_T_in_state) ... ok
+test_inverse_role_is_editable (test_substrate.UnifiedCycle.test_inverse_role_is_editable) ... ok
+test_live_body_edit_changes_returned_state (test_substrate.UnifiedCycle.test_live_body_edit_changes_returned_state) ... ok
+test_mutation_record_references_prior_field (test_substrate.UnifiedCycle.test_mutation_record_references_prior_field) ... ok
+test_operator_body_field_anchor_mutate_together (test_substrate.UnifiedCycle.test_operator_body_field_anchor_mutate_together) ... ok
+test_operator_field_in_returned_state (test_substrate.UnifiedCycle.test_operator_field_in_returned_state) ... ok
+test_reversal_changes_route (test_substrate.UnifiedCycle.test_reversal_changes_route) ... ok
+test_route_selects_current_record (test_substrate.UnifiedCycle.test_route_selects_current_record) ... ok
+test_snapshot_continue (test_substrate.UnifiedCycle.test_snapshot_continue) ... ok
+test_source_primitives_are_applied (test_substrate.UnifiedCycle.test_source_primitives_are_applied) ... ok
+test_source_seed (test_substrate.UnifiedCycle.test_source_seed) ... ok
+test_two_y_up_actions_in_fourth_slot (test_substrate.UnifiedCycle.test_two_y_up_actions_in_fourth_slot) ... ok
+test_unbound_address_remains_named (test_substrate.UnifiedCycle.test_unbound_address_remains_named) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 0.106s
+
+OK

@@ -10,7 +10,35 @@ shared C++/Vulkan equations, hardware evidence and **headless native
 specialization tools**. Source intent, chosen equations, executable behavior and
 measured results remain distinct.
 
-## Run a domain specialization
+## The source application and the numerical gap
+
+The [literal application contract](docs/LITERAL_APPLICATION_CONTRACT.md) is the
+reference for implementing the requested architecture. The application must act
+through its resident body/field/anchor definitions, including the definition
+that changes other definitions, and return them with the state.
+
+The original unified application is now available directly in
+[source_workbench](source_workbench/README.md), restored byte for byte from the
+supplied archive. Its headless authoring path is:
+
+```powershell
+.\Dawnwood-Source.cmd catalogue
+.\Dawnwood-Source.cmd run --steps 8 --out output/my_source_08
+```
+
+Its 36 original checks pass. Saved continuation exactly reproduces uninterrupted
+execution; live body and mutation-definition edits propagate through the
+returned expression state. Read the
+[source application reproduction](output/source_application_2026-09-24/REPORT.md).
+
+**This application constructs symbolic expressions. The native GPU runtime does
+not import its model, cycle or expression graph.** Nine numerical meanings are
+unbound in the source application; the later native profiles make their own
+explicit choices. The numerical integration is unfinished. D1's fixed projection
+algorithm with a mutable controller is an experiment, not fulfillment of the
+literal resident application language.
+
+## Run the D1 constraint-repair experiment
 
 From the repository root, using Python 3.10 or newer:
 

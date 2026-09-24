@@ -6,6 +6,14 @@ give that circulation a concrete input, allowed rule changes and checkable
 output. The current headless work takes a first explicit step in the native
 recurrence; it does not replace the project with a separate learning model.
 
+**The next architectural milestone is source-application integration.** The
+[original application](../source_workbench/README.md) is restored and reproducible,
+but its model/cycle/expressions are not inputs to the numerical runtime. The
+[literal application contract](LITERAL_APPLICATION_CONTRACT.md) specifies the
+required resident application definitions and acceptance evidence. Additional
+D1 domain examples would not close that gap. D1 remains an independently useful
+constraint-repair experiment, not the implementation target for the full language.
+
 ## Implemented binding: finite domain constraint repair
 
 **DWI-D1-0.1** adds four domain coordinates and one to 32 protected affine laws

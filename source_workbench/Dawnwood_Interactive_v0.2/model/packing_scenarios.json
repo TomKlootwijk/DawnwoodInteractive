@@ -1,0 +1,45 @@
+{
+  "source_pages": [
+    20,
+    21,
+    22
+  ],
+  "kind": "hypothetical packing scenarios recorded in the source",
+  "rows": [
+    {
+      "name": "RGBA32F",
+      "bytes_per_element": 16,
+      "source_approximate_count": 805000000
+    },
+    {
+      "name": "RGBA8",
+      "bytes_per_element": 4,
+      "source_approximate_count": 3220000000
+    },
+    {
+      "name": "Dichromatic BC5",
+      "bytes_per_element": 1,
+      "source_approximate_count": 12880000000
+    }
+  ],
+  "implicit_tree_source_range": {
+    "minimum": 24000000000,
+    "maximum": 48000000000,
+    "meaning": "operational states, source page 22",
+    "bytes_per_operational_state": null
+  },
+  "complexity_labels": [
+    {
+      "operation": "static log-polar LUT lookup",
+      "source_order": "O(1)"
+    },
+    {
+      "operation": "one-bit shared operator-control change",
+      "source_order": "O(1)"
+    },
+    {
+      "operation": "implicit binary route",
+      "source_order": "O(log2 N)"
+    }
+  ]
+}

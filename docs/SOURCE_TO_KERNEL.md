@@ -6,6 +6,13 @@ Source page references use physical PDF pages: [original discussion](../double-s
 
 ## Executable correspondence
 
+**Application integration is missing.** The restored
+[original workbench](../source_workbench/README.md) consumes editable catalogue,
+cycle and expression definitions. The native runtime consumes numeric options
+and packed checkpoints; it does not load that application model. The table below
+records individual numerical correspondences, not a working compiler for the
+source application. See the [literal application contract](LITERAL_APPLICATION_CONTRACT.md).
+
 | Architectural relationship | Source provenance | Current implementation and exact location |
 |---|---|---|
 | Whole state includes mutable definitions | Original pp. 14–16; Unified pp. 3, 9, 12–13 | [Snapshot][runtime] line 7 stores configuration, states and operators. [CPU epoch][cpu] lines 10–12 reads old states/operators, constructs changed operators, evolves states using the changed field, then advances the epoch. |
@@ -71,7 +78,7 @@ The campaign's per-epoch CPU/GPU comparisons establish agreement for the exercis
 
 [DWI-D1-0.1](DOMAIN_KERNEL.md) now gives four state slots an identified task meaning and appends protected affine laws to the same LUT. The [domain helpers][domain] at `numeric_types.inc` lines 131–146 evaluate exact analytic affine fields in normalized coordinates. The [projection and coupling functions][domain_evolve] at `numeric_evolve.inc` lines 3–34 use the current mutable operator 30 to regulate correction; lines 159–167 return residual error to `state.field` instead of overwriting task coordinates with the N1 inspection embedding. Its `DWKD0001` checkpoint identity separates that binding from N1.
 
-This adds a practical native constraint specialization and a domain-to-controller feedback path. It does not replace the fixed evaluator with an entirely self-defined algorithm, introduce the earlier two-H mixer, or establish every broader architectural claim. [Measured domain results and their numerical limits](DOMAIN_KERNEL.md#recorded-domain-validation) belong to D1's own evidence; the previous N1 saturation figures remain attributed to N1.
+This adds a practical native constraint specialization and a domain-to-controller feedback path. The application algorithm remains native rather than composed from the source application's acting records. The source permits a stable evaluator; the missing part is executable representation of the application definitions, not self-rewriting host instructions. D1 also does not introduce the earlier two-H mixer. [Measured domain results and their numerical limits](DOMAIN_KERNEL.md#recorded-domain-validation) belong to D1's own evidence; the previous N1 saturation figures remain attributed to N1.
 
 [runtime]: ../Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/include/runtime.hpp#L7
 [cpu]: ../Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/cpu.cpp#L10

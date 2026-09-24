@@ -1,0 +1,25 @@
+{
+  "description": "Editable workbench inputs; one-bit sequences and routes below are example values.",
+  "jitter_bits": [
+    0,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    1
+  ],
+  "route_bits": [
+    0,
+    1
+  ],
+  "neck_bits": [
+    0,
+    0,
+    1,
+    0
+  ],
+  "psi_label": "PSI",
+  "bayer": false
+}

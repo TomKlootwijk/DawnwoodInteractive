@@ -1,0 +1,12 @@
+{
+  "key": "double_dot",
+  "body": {
+    "symbol": "My_double_dot_body",
+    "operands": [
+      "left_pinion",
+      "right_pinion",
+      "local_SDF"
+    ],
+    "description": "Replace this expression with the coupling definition used in your development."
+  }
+}

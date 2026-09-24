@@ -1,0 +1,166 @@
+[
+  {
+    "name": "manifest",
+    "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_workbench\\Dawnwood_Interactive_v0.2",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "tools/verify_manifest.py"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "existing_checks",
+    "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_workbench\\Dawnwood_Interactive_v0.2",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "catalogue",
+    "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_workbench\\Dawnwood_Interactive_v0.2",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "run.py",
+      "catalogue"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "full16",
+    "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_workbench\\Dawnwood_Interactive_v0.2",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "run.py",
+      "run",
+      "--steps",
+      "16",
+      "--out",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_application_2026-09-24\\full16"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "split8",
+    "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_workbench\\Dawnwood_Interactive_v0.2",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "run.py",
+      "run",
+      "--steps",
+      "8",
+      "--out",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_application_2026-09-24\\split8"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "resume8",
+    "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_workbench\\Dawnwood_Interactive_v0.2",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "run.py",
+      "run",
+      "--steps",
+      "8",
+      "--resume",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_application_2026-09-24\\split8\\snapshot.json",
+      "--out",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_application_2026-09-24\\resume8"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "edited8",
+    "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_workbench\\Dawnwood_Interactive_v0.2",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "run.py",
+      "run",
+      "--steps",
+      "8",
+      "--resume",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_application_2026-09-24\\split8\\snapshot.json",
+      "--body-edit",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_workbench\\Dawnwood_Interactive_v0.2\\examples\\body_edit.json",
+      "--out",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_application_2026-09-24\\edited8"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "inspect_double_dot",
+    "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_workbench\\Dawnwood_Interactive_v0.2",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "run.py",
+      "inspect",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_application_2026-09-24\\edited8\\snapshot.json",
+      "--operator",
+      "double_dot"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "mutation_edited8",
+    "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_workbench\\Dawnwood_Interactive_v0.2",
+    "command": [
+      "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "run.py",
+      "run",
+      "--steps",
+      "8",
+      "--resume",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_application_2026-09-24\\split8\\snapshot.json",
+      "--body-edit",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_application_2026-09-24\\mutation_body_edit.json",
+      "--out",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_application_2026-09-24\\mutation_edited8"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "launcher_catalogue",
+    "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+    "command": [
+      "cmd",
+      "/c",
+      "Dawnwood-Source.cmd",
+      "catalogue"
+    ],
+    "exit_code": 0
+  }
+]

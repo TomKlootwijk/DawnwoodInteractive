@@ -1,0 +1,2 @@
+# Preserve the original application and its published manifest byte for byte.
+source_workbench/Dawnwood_Interactive_v0.2/** -text

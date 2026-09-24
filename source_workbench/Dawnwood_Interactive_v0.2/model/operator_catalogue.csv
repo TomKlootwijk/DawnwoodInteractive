@@ -1,0 +1,32 @@
+index,key,label,head,role,source_pages
+0,klein,Self-referential Klein bottle SDF,SDF_Klein,"Surface, return and the common field of data and operators.",12-16
+1,hadamard,Hadamard mitosis hinges,Hadamard_mitosis,Split the wavefront into the twin pinion streams.,"3-5, 13"
+2,phi,Log-encoded polar radius PHI,Log_polar_PHI,Encode the radius/phase position used by the LUT.,"3-4, 11"
+3,rk4,RK4 fourth timeslot,RK4,Gather the four kinematic slots into the next wavefront.,7
+4,phyllotaxis,Fibonacci phyllotaxis,Fibonacci_phyllotaxis,Arrange divergence and operator placement along the BST.,"8-9, 15, 21"
+5,pinion,Double pinion,Double_pinion,Drive the twin streams and hold operator flow to the Klein surface.,"3-5, 14-16"
+6,double_dot,Pinion double dot : product operator,Pinion_double_dot,Couple the geometric and kinematic operator values.,8
+7,T_shape,T geometry,SDF_T,The T primitive in the geometric LUT.,8
+8,pyramid,Side view of the pyramid,SDF_pyramid_side,The pyramid-side primitive in the geometric LUT.,8
+9,circle,Circle,SDF_circle,The circle primitive in the geometric LUT.,8
+10,cone,Cone,SDF_cone,The cone primitive in the geometric LUT.,8
+11,sphere,Sphere,SDF_sphere,The sphere primitive in the geometric LUT.,8
+12,apex,Apex,SDF_apex,The apex associated with the double-dot pinion operator.,8
+13,delta_phi,Lowercase delta delta phi,delta_delta_phi,Phase divergence paired with the Fibonacci phyllotaxis blend.,8-9
+14,blend,Math blend operator,Math_blend,Bring the branching geometric streams into the shared field.,8-9
+15,wavefront,Wavefront FT vector,FT_wavefront,"Carry the source vector [0, 2, 0, 1].",6
+16,y_up,Y up,Y_up,Apply twice in the fourth RK4 timeslot.,7
+17,crystal,Crystal bifurcation of RGBA values,Crystal_bifurcation,Express the circulating wavefront through the RGBA state.,9-11
+18,inverse_T,A means inverse T,Inverse_T,Preserve the inverse-T role of A.,9-12
+19,T_transform,T transformation,T_transformation,The transformation reading of T used by the later inverse loop.,10-12
+20,jitter,1bit jitter,One_bit_jitter,Move and change the LUT operators at interval PSI.,"6, 14-16"
+21,bst,1bit BST,BST,Route by the binary spatial/operator relationships.,"8-9, 13-15, 22"
+22,return,Non-orientable return,Nonorientable_return,"Return output as input, carrying the path/parity reversal.",13-17
+23,phase_history,B phase history,Phase_history,Carry the jitter and RK4 history in the texture state.,11-12
+24,dichromatic,Dichromatic operators,Dichromatic,Keep the two active pinion channels distinct within RGBA.,11-12
+25,bayer,Optional Bayer matrix,Bayer_output,Read out downstream from the already-circulating state.,12-14
+26,bc5,BC5 packing,BC5_pack,The named dichromatic packing route in the GPU design.,19-22
+27,split,0-order bit-shifted even/odd split,Bitshift_split,Express the twin paths in the source one-bit notation.,4-5
+28,parity,1-bit parity,Parity,Carry the source parity relationship at the split and return.,"4-5, 15"
+29,psi,Interval PSI,PSI_interval,Advance the operator-changing circulation.,"8-9, 14-16"
+30,mutation,Operator self-mutation,Operator_mutation,Let previous state and one-bit jitter change the current operator field.,14-16

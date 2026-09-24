@@ -1,0 +1,29 @@
+{
+  "calculation": "floor(byte_budget / bytes_per_element)",
+  "rows": [
+    {
+      "name": "RGBA32F",
+      "byte_budget": 12884901888,
+      "bytes_per_element": 16,
+      "element_count": 805306368
+    },
+    {
+      "name": "RGBA8",
+      "byte_budget": 12884901888,
+      "bytes_per_element": 4,
+      "element_count": 3221225472
+    },
+    {
+      "name": "Dichromatic BC5",
+      "byte_budget": 12884901888,
+      "bytes_per_element": 1,
+      "element_count": 12884901888
+    }
+  ],
+  "source_implicit_range": {
+    "minimum": 24000000000,
+    "maximum": 48000000000,
+    "meaning": "operational states, source page 22",
+    "bytes_per_operational_state": null
+  }
+}

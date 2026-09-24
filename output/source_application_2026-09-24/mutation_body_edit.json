@@ -1,0 +1,12 @@
+{
+  "key": "mutation",
+  "body": {
+    "symbol": "Mutation_body_dependency_probe",
+    "operands": [
+      "previous_operator",
+      "local_SDF",
+      "whole_returned_state"
+    ],
+    "scope": "symbolic dependency intervention; not a numerical mutation formula"
+  }
+}
