@@ -1,0 +1,19 @@
+{
+  "default_binary_identical": true,
+  "registry_and_inline_binary_identical": true,
+  "paired_runs": 28,
+  "compared_instance_words": 2134788,
+  "instance_epoch_steps_per_backend": 350302,
+  "slot_programs_retained_after_mutation": true,
+  "old_snapshot_reverse_order_exact": true,
+  "checkpoint_resume_exact": true,
+  "protected_enzyme_law_functions_identical": true,
+  "actual_added_source_indices_reached": [
+    31,
+    32,
+    62
+  ],
+  "all_checkpoint_bytes_identical": true,
+  "validation_errors": 0,
+  "validation_warnings": 0
+}

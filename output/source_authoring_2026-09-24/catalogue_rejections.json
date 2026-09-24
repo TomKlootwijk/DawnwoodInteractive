@@ -1,0 +1,835 @@
+{
+  "profile": "DWI-SOURCE-EXTENSION-0.1",
+  "timestamp_utc": "2026-09-24T17:03:35.006610+00:00",
+  "source_sha256": "c1fb4fe505e5dc1316bb6b30d12f44f185456239fd8931a72ced7054598afddd",
+  "source_sha256_after": "c1fb4fe505e5dc1316bb6b30d12f44f185456239fd8931a72ced7054598afddd",
+  "source_unchanged": true,
+  "model_sha256": "82e867f1462c482076edad4836c4d4ba43a6517de03dc37abfde8efa8a83e080",
+  "rejection_count": 37,
+  "case_count": 37,
+  "all_expected_rejections": true,
+  "cases": [
+    {
+      "name": "33_records",
+      "description": "More than one added record",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "This source edition supports the original31 records and at most one explicit addition"
+    },
+    {
+      "name": "30_records",
+      "description": "Original catalogue truncated",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "This source edition supports the original31 records and at most one explicit addition"
+    },
+    {
+      "name": "index_below31",
+      "description": "Added index overlaps original range",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "added source index: expected an integer in 31..62"
+    },
+    {
+      "name": "index_above62",
+      "description": "Added index requires six route bits",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "added source index: expected an integer in 31..62"
+    },
+    {
+      "name": "boolean_index",
+      "description": "Boolean source index",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "added source index: expected an integer in 31..62"
+    },
+    {
+      "name": "duplicate_key",
+      "description": "Occupied source key",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Added source record duplicates an occupied key or index"
+    },
+    {
+      "name": "unknown_record_key",
+      "description": "Unsupported added-record property",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "added source record: unsupported keys ['hidden_default']"
+    },
+    {
+      "name": "missing_parameter",
+      "description": "All20 parameters required",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "added source parameters: missing keys ['radius']"
+    },
+    {
+      "name": "unknown_parameter",
+      "description": "Unknown parameter name",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "added source parameters: unsupported keys ['unused_new_knob']"
+    },
+    {
+      "name": "boolean_parameter",
+      "description": "Boolean instead of finite scalar",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "added source parameters.radius: expected a finite numeric value, not a Boolean or other type"
+    },
+    {
+      "name": "nonfinite_parameter",
+      "description": "Nonfinite scalar",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "added source parameters.radius: nonfinite numbers are not supported"
+    },
+    {
+      "name": "symbol_only_body",
+      "description": "Added body must be an explicit numerical declaration",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "added source record amplitude_budget.body: unsupported keys ['symbol']"
+    },
+    {
+      "name": "wrong_body_kind",
+      "description": "Added body uses selected_body contract",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "added source record amplitude_budget.body: expected kind='selected_body' and mutation_policy='preserve_family'"
+    },
+    {
+      "name": "wrong_body_policy",
+      "description": "Undeclared body mutation policy",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "added source record amplitude_budget.body: expected kind='selected_body' and mutation_policy='preserve_family'"
+    },
+    {
+      "name": "wrong_field_policy",
+      "description": "Field program policy not preserve_program",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "added source record amplitude_budget.field: expected kind='field' and mutation_policy='preserve_program'"
+    },
+    {
+      "name": "wrong_place_kind",
+      "description": "Placement kind mismatch",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "added source record amplitude_budget.placement: expected kind='placement' and mutation_policy='preserve_program'"
+    },
+    {
+      "name": "body_wrong_input_order",
+      "description": "Ordered selected-body input contract changed",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "added source record amplitude_budget.body: ordered contract must be ['ar', 'ai', 'br', 'bi', 'routing_phase', 'field_distance'] -> ['ar', 'ai', 'br', 'bi']"
+    },
+    {
+      "name": "body_missing_output",
+      "description": "Missing complex output component",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "added source record amplitude_budget.body: ordered contract must be ['ar', 'ai', 'br', 'bi', 'routing_phase', 'field_distance'] -> ['ar', 'ai', 'br', 'bi']"
+    },
+    {
+      "name": "field_wrong_inputs",
+      "description": "Carrier field operand names mismatch",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "added source record amplitude_budget.field: ordered contract must be ['dx', 'dy', 'radius'] -> ['distance']"
+    },
+    {
+      "name": "placement_missing_orientation",
+      "description": "Missing placement orientation output",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "added source record amplitude_budget.placement: ordered contract must be ['u', 'v', 'orientation'] -> ['u', 'v', 'orientation']"
+    },
+    {
+      "name": "body_unknown_opcode",
+      "description": "Unsupported body arithmetic",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "added source record amplitude_budget.body.outputs['ar']: unsupported operation 'unknown'"
+    },
+    {
+      "name": "body_unknown_key",
+      "description": "No silently invented wave adapter",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "added source record amplitude_budget.body.function: unsupported keys ['implicit_wave_adapter']"
+    },
+    {
+      "name": "extension_and_BST_body_override",
+      "description": "Do not silently replace an explicitly bound BST body",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "A catalogue addition cannot currently combine with a source-owned BST body override"
+    },
+    {
+      "name": "enzyme64_with_extension",
+      "description": "Enzyme already occupies64 state words",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "The enzyme profile uses all64 state words; its catalogue extension requires a separately declared routing layout"
+    },
+    {
+      "name": "empty_routes",
+      "description": "Checked source routing declaration",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "routes must contain one broadcast entry or one entry per instance"
+    },
+    {
+      "name": "wrong_route_count",
+      "description": "Checked source routing declaration",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "routes must contain one broadcast entry or one entry per instance"
+    },
+    {
+      "name": "both_route_forms",
+      "description": "Checked source routing declaration",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "routes[0]: provide exactly one of index or bits"
+    },
+    {
+      "name": "missing_route_form",
+      "description": "Checked source routing declaration",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "routes[0]: provide exactly one of index or bits"
+    },
+    {
+      "name": "boolean_route_index",
+      "description": "Checked source routing declaration",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "routes[0].index: expected an integer in 0..16777215"
+    },
+    {
+      "name": "unoccupied_target",
+      "description": "Checked source routing declaration",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "routes[0]: source index 32 is not an occupied record; no alias is applied"
+    },
+    {
+      "name": "existing_incompatible_target",
+      "description": "Checked source routing declaration",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "routes[0]: record 'klein', family 'klein' lacks the declared selected-body role99 contract"
+    },
+    {
+      "name": "route_too_deep",
+      "description": "Checked source routing declaration",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "routes[0]: route exceeds this edition's 5-bit limit"
+    },
+    {
+      "name": "raw_boolean_bit",
+      "description": "Checked source routing declaration",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "routes[0].bits must be an array of integer bits"
+    },
+    {
+      "name": "raw_nonbit",
+      "description": "Checked source routing declaration",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "routes[0].bits must be an array of integer bits"
+    },
+    {
+      "name": "raw_six_bits",
+      "description": "Checked source routing declaration",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "routes[0]: route exceeds this edition's 5-bit limit"
+    },
+    {
+      "name": "unknown_route_key",
+      "description": "Checked source routing declaration",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "routes[0]: unsupported keys ['path']"
+    },
+    {
+      "name": "late_bad_route_atomic",
+      "description": "Second per-instance route is invalid; entire definition must remain unchanged",
+      "expected": "reject",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "routes[1]: record 'klein', family 'klein' lacks the declared selected-body role99 contract"
+    }
+  ],
+  "late_invalid_route_atomic": true,
+  "actual_CPU_route_checks": [
+    {
+      "source_index": 31,
+      "route_metadata": {
+        "max_depth": 5,
+        "inputs": [
+          {
+            "index": 31
+          }
+        ],
+        "resolved": [
+          {
+            "instance": 0,
+            "source_index": 31,
+            "record_key": "amplitude_budget",
+            "raw_bits": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "neck": 0,
+            "effective_bits": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "instance": 1,
+            "source_index": 31,
+            "record_key": "amplitude_budget",
+            "raw_bits": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "neck": 1,
+            "effective_bits": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "semantics": "Index form is inverse implicit routing adjusted for current neck. Bits form is raw before neck XOR. Missing or incompatible targets reject; no modulo alias."
+      },
+      "program_sha256": "e9cf18d9e0f15e115086a1221639485dacb8faaa529cb8f1fa90f6129c3bcae4",
+      "checkpoint_sha256": "6ec3d8e2bd23d2c169714adad050b5e0893ec2a50ba79a19aa693ce6016cfd38",
+      "receipt": {
+        "profile": "DWI-RESIDENT-0.2",
+        "backend": "cpu",
+        "device": "CPU",
+        "device_type": "cpu",
+        "vendor_id": 0,
+        "device_id": 0,
+        "driver_version": 0,
+        "api_version": 0,
+        "count": 2,
+        "record_count": 32,
+        "state_width": 45,
+        "function_count": 60,
+        "family_count": 35,
+        "mutation_steps": 100,
+        "action_steps": 957,
+        "epochs_requested": 2,
+        "committed_instance_epochs": 4,
+        "minimum_final_epoch": 2,
+        "maximum_final_epoch": 2,
+        "reverse_targets": false,
+        "status": "ok",
+        "failed_lanes": 0,
+        "previously_failed_lanes": 0,
+        "status_counts": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "execution_seconds": 0.0002206,
+        "total_seconds": 0.0082313,
+        "timing_scope": "CPU epoch evaluation loop",
+        "validation_enabled": false,
+        "validation_errors": 0,
+        "validation_warnings": 0,
+        "upload_bytes": 0,
+        "download_bytes": 0,
+        "dispatches": 0,
+        "submissions": 0,
+        "all_buffers_device_local": false,
+        "per_epoch_host_reads": 0,
+        "per_epoch_host_uploads": 0,
+        "transfer_counter_scope": "explicit host/device buffer uploads and readbacks; not CPU memory accesses or device bus traffic",
+        "instance_model": "independent substrate per lane",
+        "failure_policy": "rollback full epoch; retain first failure and freeze instance",
+        "checkpoint_format": "DWRD0002"
+      },
+      "lanes": [
+        {
+          "lane": 0,
+          "neck": 0.0,
+          "selected_index": 31.0,
+          "route_depth": 5.0,
+          "route_b4": 0.0,
+          "selected_expected": true,
+          "status": 0,
+          "source_index": 31,
+          "generation": 2,
+          "all_added_handles_retained": true,
+          "anchor_changed": true
+        },
+        {
+          "lane": 1,
+          "neck": 1.0,
+          "selected_index": 31.0,
+          "route_depth": 5.0,
+          "route_b4": 1.0,
+          "selected_expected": true,
+          "status": 0,
+          "source_index": 31,
+          "generation": 2,
+          "all_added_handles_retained": true,
+          "anchor_changed": true
+        }
+      ],
+      "all_expected": true
+    },
+    {
+      "source_index": 47,
+      "route_metadata": {
+        "max_depth": 5,
+        "inputs": [
+          {
+            "index": 47
+          }
+        ],
+        "resolved": [
+          {
+            "instance": 0,
+            "source_index": 47,
+            "record_key": "amplitude_budget",
+            "raw_bits": [
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "neck": 0,
+            "effective_bits": [
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "instance": 1,
+            "source_index": 47,
+            "record_key": "amplitude_budget",
+            "raw_bits": [
+              0,
+              1,
+              1,
+              1,
+              1
+            ],
+            "neck": 1,
+            "effective_bits": [
+              1,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "semantics": "Index form is inverse implicit routing adjusted for current neck. Bits form is raw before neck XOR. Missing or incompatible targets reject; no modulo alias."
+      },
+      "program_sha256": "a389f81885b255aa2f221e6ec9508d425704fdce9e33efca043a256a49e37a69",
+      "checkpoint_sha256": "09ea8d0933f769dbebdfa32de79694bf8aa5cd4c2abf8c7082a927d7b9c73165",
+      "receipt": {
+        "profile": "DWI-RESIDENT-0.2",
+        "backend": "cpu",
+        "device": "CPU",
+        "device_type": "cpu",
+        "vendor_id": 0,
+        "device_id": 0,
+        "driver_version": 0,
+        "api_version": 0,
+        "count": 2,
+        "record_count": 32,
+        "state_width": 45,
+        "function_count": 60,
+        "family_count": 35,
+        "mutation_steps": 100,
+        "action_steps": 957,
+        "epochs_requested": 2,
+        "committed_instance_epochs": 4,
+        "minimum_final_epoch": 2,
+        "maximum_final_epoch": 2,
+        "reverse_targets": false,
+        "status": "ok",
+        "failed_lanes": 0,
+        "previously_failed_lanes": 0,
+        "status_counts": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "execution_seconds": 0.000305,
+        "total_seconds": 0.0100682,
+        "timing_scope": "CPU epoch evaluation loop",
+        "validation_enabled": false,
+        "validation_errors": 0,
+        "validation_warnings": 0,
+        "upload_bytes": 0,
+        "download_bytes": 0,
+        "dispatches": 0,
+        "submissions": 0,
+        "all_buffers_device_local": false,
+        "per_epoch_host_reads": 0,
+        "per_epoch_host_uploads": 0,
+        "transfer_counter_scope": "explicit host/device buffer uploads and readbacks; not CPU memory accesses or device bus traffic",
+        "instance_model": "independent substrate per lane",
+        "failure_policy": "rollback full epoch; retain first failure and freeze instance",
+        "checkpoint_format": "DWRD0002"
+      },
+      "lanes": [
+        {
+          "lane": 0,
+          "neck": 0.0,
+          "selected_index": 47.0,
+          "route_depth": 5.0,
+          "route_b4": 0.0,
+          "selected_expected": true,
+          "status": 0,
+          "source_index": 47,
+          "generation": 2,
+          "all_added_handles_retained": true,
+          "anchor_changed": true
+        },
+        {
+          "lane": 1,
+          "neck": 1.0,
+          "selected_index": 47.0,
+          "route_depth": 5.0,
+          "route_b4": 1.0,
+          "selected_expected": true,
+          "status": 0,
+          "source_index": 47,
+          "generation": 2,
+          "all_added_handles_retained": true,
+          "anchor_changed": true
+        }
+      ],
+      "all_expected": true
+    },
+    {
+      "source_index": 62,
+      "route_metadata": {
+        "max_depth": 5,
+        "inputs": [
+          {
+            "index": 62
+          }
+        ],
+        "resolved": [
+          {
+            "instance": 0,
+            "source_index": 62,
+            "record_key": "amplitude_budget",
+            "raw_bits": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "neck": 0,
+            "effective_bits": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "instance": 1,
+            "source_index": 62,
+            "record_key": "amplitude_budget",
+            "raw_bits": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "neck": 1,
+            "effective_bits": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "semantics": "Index form is inverse implicit routing adjusted for current neck. Bits form is raw before neck XOR. Missing or incompatible targets reject; no modulo alias."
+      },
+      "program_sha256": "22ca25d7346b12e9968ddbd93544c9304b1984f43185e645c084305a11cf41e5",
+      "checkpoint_sha256": "e708f7ffacec1623f07a531a607b86901c281eb1831db2b9eb6c33a204a78969",
+      "receipt": {
+        "profile": "DWI-RESIDENT-0.2",
+        "backend": "cpu",
+        "device": "CPU",
+        "device_type": "cpu",
+        "vendor_id": 0,
+        "device_id": 0,
+        "driver_version": 0,
+        "api_version": 0,
+        "count": 2,
+        "record_count": 32,
+        "state_width": 45,
+        "function_count": 60,
+        "family_count": 35,
+        "mutation_steps": 100,
+        "action_steps": 957,
+        "epochs_requested": 2,
+        "committed_instance_epochs": 4,
+        "minimum_final_epoch": 2,
+        "maximum_final_epoch": 2,
+        "reverse_targets": false,
+        "status": "ok",
+        "failed_lanes": 0,
+        "previously_failed_lanes": 0,
+        "status_counts": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "execution_seconds": 0.000185,
+        "total_seconds": 0.0097542,
+        "timing_scope": "CPU epoch evaluation loop",
+        "validation_enabled": false,
+        "validation_errors": 0,
+        "validation_warnings": 0,
+        "upload_bytes": 0,
+        "download_bytes": 0,
+        "dispatches": 0,
+        "submissions": 0,
+        "all_buffers_device_local": false,
+        "per_epoch_host_reads": 0,
+        "per_epoch_host_uploads": 0,
+        "transfer_counter_scope": "explicit host/device buffer uploads and readbacks; not CPU memory accesses or device bus traffic",
+        "instance_model": "independent substrate per lane",
+        "failure_policy": "rollback full epoch; retain first failure and freeze instance",
+        "checkpoint_format": "DWRD0002"
+      },
+      "lanes": [
+        {
+          "lane": 0,
+          "neck": 0.0,
+          "selected_index": 62.0,
+          "route_depth": 5.0,
+          "route_b4": 1.0,
+          "selected_expected": true,
+          "status": 0,
+          "source_index": 62,
+          "generation": 2,
+          "all_added_handles_retained": true,
+          "anchor_changed": true
+        },
+        {
+          "lane": 1,
+          "neck": 1.0,
+          "selected_index": 62.0,
+          "route_depth": 5.0,
+          "route_b4": 0.0,
+          "selected_expected": true,
+          "status": 0,
+          "source_index": 62,
+          "generation": 2,
+          "all_added_handles_retained": true,
+          "anchor_changed": true
+        }
+      ],
+      "all_expected": true
+    }
+  ],
+  "raw_bits_neck_semantics_checked": true,
+  "raw_route": {
+    "max_depth": 5,
+    "inputs": [
+      {
+        "bits": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "resolved": [
+      {
+        "instance": 0,
+        "source_index": 62,
+        "record_key": "amplitude_budget",
+        "raw_bits": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "neck": 1,
+        "effective_bits": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "semantics": "Index form is inverse implicit routing adjusted for current neck. Bits form is raw before neck XOR. Missing or incompatible targets reject; no modulo alias."
+  },
+  "no_extension_program_bytes_equal_base": true,
+  "custom_existing_field_plus_extension": {
+    "passed": true,
+    "program_sha256": "cc2ab89ebd44493007bfeccceff66503db381e07089c16f4c47b485ed32b5199",
+    "receipt": {
+      "profile": "DWI-RESIDENT-0.2",
+      "backend": "cpu",
+      "device": "CPU",
+      "device_type": "cpu",
+      "vendor_id": 0,
+      "device_id": 0,
+      "driver_version": 0,
+      "api_version": 0,
+      "count": 1,
+      "record_count": 32,
+      "state_width": 45,
+      "function_count": 62,
+      "family_count": 35,
+      "mutation_steps": 104,
+      "action_steps": 957,
+      "epochs_requested": 2,
+      "committed_instance_epochs": 2,
+      "minimum_final_epoch": 2,
+      "maximum_final_epoch": 2,
+      "reverse_targets": false,
+      "status": "ok",
+      "failed_lanes": 0,
+      "previously_failed_lanes": 0,
+      "status_counts": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "execution_seconds": 0.0001014,
+      "total_seconds": 0.0104672,
+      "timing_scope": "CPU epoch evaluation loop",
+      "validation_enabled": false,
+      "validation_errors": 0,
+      "validation_warnings": 0,
+      "upload_bytes": 0,
+      "download_bytes": 0,
+      "dispatches": 0,
+      "submissions": 0,
+      "all_buffers_device_local": false,
+      "per_epoch_host_reads": 0,
+      "per_epoch_host_uploads": 0,
+      "transfer_counter_scope": "explicit host/device buffer uploads and readbacks; not CPU memory accesses or device bus traffic",
+      "instance_model": "independent substrate per lane",
+      "failure_policy": "rollback full epoch; retain first failure and freeze instance",
+      "checkpoint_format": "DWRD0002"
+    }
+  },
+  "scope": "Representative authoring rejections plus CPU execution of index31/47/62 under both neck values and composed retention. No GPU execution, independent shape-math claim or full regression suite is implied."
+}

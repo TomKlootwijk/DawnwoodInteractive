@@ -1,0 +1,430 @@
+{
+  "profile": "DWI-SOURCE-SLOTS-0.1",
+  "experiment": "Direct in-process preparation, final-bank binding, binary compilation and rejection/atomicity checks; no GPU execution.",
+  "module_sha256": "385016ddda79cf8050d4fbfddb8b6e8e1aeb2bde8981997134e1b8dcd12689db",
+  "script_sha256": "4473bee94b1062cb5661b7dcb15078595795ff81e8751e6c602cceb9eaa2a67b",
+  "cases": 37,
+  "accepted": 11,
+  "rejected": 26,
+  "passed": 37,
+  "all_passed": true,
+  "results": [
+    {
+      "case": "default_core_program_bytes",
+      "expected": "accepted",
+      "result": {
+        "program_sha256": "a65b5ab5d618dbfff53a19b77258e96c8081875b7f9cc7805e3bdc176c47fc62",
+        "functions": 55,
+        "families": 34,
+        "mutation_steps": 92,
+        "resolutions": 0,
+        "retention": [],
+        "original_program_sha256": "a65b5ab5d618dbfff53a19b77258e96c8081875b7f9cc7805e3bdc176c47fc62",
+        "identical": true
+      },
+      "observed": "accepted",
+      "passed": true
+    },
+    {
+      "case": "default_enzyme_program_bytes",
+      "expected": "accepted",
+      "result": {
+        "program_sha256": "135a0b53891bec314c1e8c6a9f62e16f737dbc9d88575f8988dfc6f2c1a93c4a",
+        "functions": 61,
+        "families": 35,
+        "mutation_steps": 95,
+        "resolutions": 0,
+        "retention": [],
+        "original_program_sha256": "135a0b53891bec314c1e8c6a9f62e16f737dbc9d88575f8988dfc6f2c1a93c4a",
+        "identical": true
+      },
+      "observed": "accepted",
+      "passed": true
+    },
+    {
+      "case": "unresolved_symbol",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "circle.body: changed declaration has no explicit resident binding",
+      "passed": true
+    },
+    {
+      "case": "unresolved_field_json",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "circle.field: changed declaration has no explicit resident binding",
+      "passed": true
+    },
+    {
+      "case": "unbound_record_parameters",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "Source record circle: record parameters need a separate explicit edition binding",
+      "passed": true
+    },
+    {
+      "case": "exact_registry_binding",
+      "expected": "accepted",
+      "result": {
+        "program_sha256": "ac54cfb6fedc87b67e9031a0f9b2e3168b5bc48816518147cf55f9c7b14003db",
+        "functions": 56,
+        "families": 34,
+        "mutation_steps": 92,
+        "resolutions": 1,
+        "retention": []
+      },
+      "observed": "accepted",
+      "passed": true
+    },
+    {
+      "case": "registry_declaration_mismatch",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "circle.body: registry declaration does not exactly match the source",
+      "passed": true
+    },
+    {
+      "case": "registry_duplicate",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "slot registry.entries[1]: duplicate binding for circle.body",
+      "passed": true
+    },
+    {
+      "case": "registry_unused",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "Unused slot registry entries: [('unoccupied_author_record', 'body')]",
+      "passed": true
+    },
+    {
+      "case": "inline_registry_ambiguity",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "circle.body: inline and external bindings are ambiguous",
+      "passed": true
+    },
+    {
+      "case": "inline_body",
+      "expected": "accepted",
+      "result": {
+        "program_sha256": "ac54cfb6fedc87b67e9031a0f9b2e3168b5bc48816518147cf55f9c7b14003db",
+        "functions": 56,
+        "families": 34,
+        "mutation_steps": 92,
+        "resolutions": 1,
+        "retention": []
+      },
+      "observed": "accepted",
+      "passed": true
+    },
+    {
+      "case": "inline_field",
+      "expected": "accepted",
+      "result": {
+        "program_sha256": "830334b72f980b42bc8b164efc97c92b0b72d4d6039331491418d1f025891715",
+        "functions": 57,
+        "families": 34,
+        "mutation_steps": 96,
+        "resolutions": 1,
+        "retention": [
+          {
+            "slot": "field",
+            "source_indices": [
+              9
+            ],
+            "function": "source_slot__preserve_field",
+            "step": 94,
+            "inputs": [
+              65,
+              141,
+              195
+            ],
+            "argument_base": 253,
+            "output_base": 141
+          }
+        ]
+      },
+      "observed": "accepted",
+      "passed": true
+    },
+    {
+      "case": "inline_placement",
+      "expected": "accepted",
+      "result": {
+        "program_sha256": "39337f42942fa50f57aaeec0195719658950b802624c0ec4b8b4a4bda9150ca2",
+        "functions": 57,
+        "families": 34,
+        "mutation_steps": 96,
+        "resolutions": 1,
+        "retention": [
+          {
+            "slot": "placement",
+            "source_indices": [
+              9
+            ],
+            "function": "source_slot__preserve_placement",
+            "step": 94,
+            "inputs": [
+              66,
+              142,
+              195
+            ],
+            "argument_base": 253,
+            "output_base": 142
+          }
+        ]
+      },
+      "observed": "accepted",
+      "passed": true
+    },
+    {
+      "case": "wrong_ordered_inputs",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "circle.circle.role0: ordered input names must match ['ar', 'ai', 'br', 'bi', 'field_distance']",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "case": "wrong_ordered_outputs",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "hadamard.hadamard.role1: ordered output names must match ['ar', 'ai', 'br', 'bi']",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "case": "removed_original_guards",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "mutation.mutation.role0: original ordered numerical guards must remain an unchanged prefix",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "case": "reordered_original_guards",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "mutation.mutation.role0: original ordered numerical guards must remain an unchanged prefix",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "case": "partial_roles_without_explicit_inheritance",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "circle.circle: every role needs a definition unless inherit is explicitly true",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "case": "unknown_role",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "circle.circle: undeclared roles ['500']",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "case": "hadamard_all_variants",
+      "expected": "accepted",
+      "result": {
+        "program_sha256": "2f0163ad92a592c099cc4ec12631593f414650a39b9c4b2d5d33c510864339c0",
+        "functions": 57,
+        "families": 34,
+        "mutation_steps": 92,
+        "resolutions": 1,
+        "retention": []
+      },
+      "observed": "accepted",
+      "passed": true
+    },
+    {
+      "case": "hadamard_missing_variant",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "hadamard.body: explicitly account for all compatible variants ['hadamard', 'hadamard_conjugate']",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "case": "pinion_all_variants",
+      "expected": "accepted",
+      "result": {
+        "program_sha256": "721b0003aabd3e253175b16a3dc728220868bc65def5cefd623d245c89946751",
+        "functions": 57,
+        "families": 34,
+        "mutation_steps": 92,
+        "resolutions": 1,
+        "retention": []
+      },
+      "observed": "accepted",
+      "passed": true
+    },
+    {
+      "case": "pinion_missing_variant",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "pinion.body: explicitly account for all compatible variants ['pinion', 'pinion_reverse']",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "case": "mutation_all_variants",
+      "expected": "accepted",
+      "result": {
+        "program_sha256": "f25659c83156d094ec47b48b0104419c0cd13b250bb9b92a789042af4d7b098b",
+        "functions": 57,
+        "families": 34,
+        "mutation_steps": 92,
+        "resolutions": 1,
+        "retention": []
+      },
+      "observed": "accepted",
+      "passed": true
+    },
+    {
+      "case": "mutation_missing_variant",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "mutation.body: explicitly account for all compatible variants ['mutation', 'mutation_successor']",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "case": "enzyme_proposal100_allowed",
+      "expected": "accepted",
+      "result": {
+        "program_sha256": "2ae572c045e6f6f20fbe67c8fcf78d19dd8f0b619a84b4ea142fb27ea65fde8e",
+        "functions": 63,
+        "families": 35,
+        "mutation_steps": 95,
+        "resolutions": 1,
+        "retention": []
+      },
+      "observed": "accepted",
+      "passed": true
+    },
+    {
+      "case": "enzyme_extended_mutator_allowed",
+      "expected": "accepted",
+      "result": {
+        "program_sha256": "badad43ab18314bea141cad45d48dbdd2cac19167256bb9fb624bc6907ffa37c",
+        "functions": 63,
+        "families": 35,
+        "mutation_steps": 95,
+        "resolutions": 1,
+        "retention": []
+      },
+      "observed": "accepted",
+      "passed": true
+    },
+    {
+      "case": "enzyme_rejects_core_mutator_contract",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "mutation.mutation.role0: ordered input names must match ['old_body', 'target_index', 'field_distance', 'ar', 'ai', 'br', 'bi', 'jitter', 'old_control', 'mutator_control', 'target_field', 'dt', 'domain_trial_sdf', 'domain_improvement', 'domain_accepted']",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "case": "enzyme_protected_role0",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "blend.blend: enzyme roles0/101..104 must inherit protected laws",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "case": "enzyme_protected_role101",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "blend.blend: enzyme roles0/101..104 must inherit protected laws",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "case": "enzyme_protected_role102",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "blend.blend: enzyme roles0/101..104 must inherit protected laws",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "case": "enzyme_protected_role103",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "blend.blend: enzyme roles0/101..104 must inherit protected laws",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "case": "enzyme_protected_role104",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "blend.blend: enzyme roles0/101..104 must inherit protected laws",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "case": "late_failure_keeps_definition_unchanged",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "sphere.field.function: ordered input names must match ['dx', 'dy', 'radius']",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "case": "direct_apply_cannot_bypass_resolution",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "circle.body: actual source declaration has not been resolved",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "case": "inline_resolution_cannot_diverge_from_source",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "circle.body: inline resolution differs from the source binding",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "case": "source_seed_cannot_change_after_generation",
+      "expected": "rejected",
+      "observed": "rejected",
+      "exception": "ValueError",
+      "message": "Generated definition does not identify the canonical form of this actual source model",
+      "definition_unchanged": true,
+      "passed": true
+    }
+  ]
+}

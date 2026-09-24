@@ -1,0 +1,1138 @@
+{
+  "title": "Dawnwood Interactive — Unified Substrate Definition",
+  "version": "0.2",
+  "author": {
+    "name": "Tom Klootwijk",
+    "project": "Dawnwood Interactive",
+    "identifier": "NL200678942",
+    "date_of_birth": "10-07-1990",
+    "telephone": "+31655954068"
+  },
+  "source": "source/double-slit-theory.pdf",
+  "notation": "Named operators preserve source relationships. The cycle order and record layout are editable working notation.",
+  "seed": {
+    "timestamp_label": "07:56 / 756",
+    "wavefront": [
+      0,
+      2,
+      0,
+      1
+    ],
+    "split_example": {
+      "left": 7,
+      "right": 54
+    }
+  },
+  "symbols": {
+    "PSI": {
+      "symbol": "PSI"
+    },
+    "phi": {
+      "symbol": "phi"
+    },
+    "delta_delta_phi": {
+      "symbol": "delta_delta_phi"
+    },
+    "T_inverse_role": "transformation"
+  },
+  "operators": [
+    {
+      "index": 0,
+      "key": "klein",
+      "label": "Self-referential Klein bottle SDF",
+      "head": "SDF_Klein",
+      "role": "Surface, return and the common field of data and operators.",
+      "source_pages": "12-16",
+      "body": {
+        "symbol": "SDF_Klein"
+      },
+      "field": {
+        "symbol": "SDF_Klein_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 1,
+      "key": "hadamard",
+      "label": "Hadamard mitosis hinges",
+      "head": "Hadamard_mitosis",
+      "role": "Split the wavefront into the twin pinion streams.",
+      "source_pages": "3-5, 13",
+      "body": {
+        "symbol": "Hadamard_mitosis"
+      },
+      "field": {
+        "symbol": "Hadamard_mitosis_SDF"
+      },
+      "placement": {
+        "resident_binding": {
+          "kind": "placement",
+          "function": {
+            "inputs": [
+              "u",
+              "v",
+              "orientation"
+            ],
+            "requires": [
+              {
+                "op": "add",
+                "args": [
+                  {
+                    "op": "sub",
+                    "args": [
+                      1,
+                      {
+                        "op": "add",
+                        "args": [
+                          {
+                            "op": "less",
+                            "args": [
+                              {
+                                "input": "orientation"
+                              },
+                              0
+                            ]
+                          },
+                          {
+                            "op": "less",
+                            "args": [
+                              0,
+                              {
+                                "input": "orientation"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "op": "sub",
+                    "args": [
+                      1,
+                      {
+                        "op": "add",
+                        "args": [
+                          {
+                            "op": "less",
+                            "args": [
+                              {
+                                "input": "orientation"
+                              },
+                              1
+                            ]
+                          },
+                          {
+                            "op": "less",
+                            "args": [
+                              1,
+                              {
+                                "input": "orientation"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "outputs": {
+              "u": {
+                "op": "select",
+                "args": [
+                  {
+                    "op": "less",
+                    "args": [
+                      {
+                        "op": "sub",
+                        "args": [
+                          {
+                            "op": "add",
+                            "args": [
+                              {
+                                "input": "u"
+                              },
+                              0.03125
+                            ]
+                          },
+                          {
+                            "op": "floor",
+                            "args": [
+                              {
+                                "op": "add",
+                                "args": [
+                                  {
+                                    "input": "u"
+                                  },
+                                  0.03125
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      1
+                    ]
+                  },
+                  {
+                    "op": "sub",
+                    "args": [
+                      {
+                        "op": "add",
+                        "args": [
+                          {
+                            "input": "u"
+                          },
+                          0.03125
+                        ]
+                      },
+                      {
+                        "op": "floor",
+                        "args": [
+                          {
+                            "op": "add",
+                            "args": [
+                              {
+                                "input": "u"
+                              },
+                              0.03125
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  0.9999999403953552
+                ]
+              },
+              "v": {
+                "op": "select",
+                "args": [
+                  {
+                    "op": "less",
+                    "args": [
+                      {
+                        "op": "sub",
+                        "args": [
+                          {
+                            "op": "select",
+                            "args": [
+                              {
+                                "op": "sub",
+                                "args": [
+                                  {
+                                    "op": "floor",
+                                    "args": [
+                                      {
+                                        "op": "add",
+                                        "args": [
+                                          {
+                                            "input": "u"
+                                          },
+                                          0.03125
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      2,
+                                      {
+                                        "op": "floor",
+                                        "args": [
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              0.5,
+                                              {
+                                                "op": "floor",
+                                                "args": [
+                                                  {
+                                                    "op": "add",
+                                                    "args": [
+                                                      {
+                                                        "input": "u"
+                                                      },
+                                                      0.03125
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "op": "neg",
+                                "args": [
+                                  {
+                                    "input": "v"
+                                  }
+                                ]
+                              },
+                              {
+                                "input": "v"
+                              }
+                            ]
+                          },
+                          {
+                            "op": "floor",
+                            "args": [
+                              {
+                                "op": "select",
+                                "args": [
+                                  {
+                                    "op": "sub",
+                                    "args": [
+                                      {
+                                        "op": "floor",
+                                        "args": [
+                                          {
+                                            "op": "add",
+                                            "args": [
+                                              {
+                                                "input": "u"
+                                              },
+                                              0.03125
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "op": "mul",
+                                        "args": [
+                                          2,
+                                          {
+                                            "op": "floor",
+                                            "args": [
+                                              {
+                                                "op": "mul",
+                                                "args": [
+                                                  0.5,
+                                                  {
+                                                    "op": "floor",
+                                                    "args": [
+                                                      {
+                                                        "op": "add",
+                                                        "args": [
+                                                          {
+                                                            "input": "u"
+                                                          },
+                                                          0.03125
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "neg",
+                                    "args": [
+                                      {
+                                        "input": "v"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "input": "v"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      1
+                    ]
+                  },
+                  {
+                    "op": "sub",
+                    "args": [
+                      {
+                        "op": "select",
+                        "args": [
+                          {
+                            "op": "sub",
+                            "args": [
+                              {
+                                "op": "floor",
+                                "args": [
+                                  {
+                                    "op": "add",
+                                    "args": [
+                                      {
+                                        "input": "u"
+                                      },
+                                      0.03125
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "op": "mul",
+                                "args": [
+                                  2,
+                                  {
+                                    "op": "floor",
+                                    "args": [
+                                      {
+                                        "op": "mul",
+                                        "args": [
+                                          0.5,
+                                          {
+                                            "op": "floor",
+                                            "args": [
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "input": "u"
+                                                  },
+                                                  0.03125
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "op": "neg",
+                            "args": [
+                              {
+                                "input": "v"
+                              }
+                            ]
+                          },
+                          {
+                            "input": "v"
+                          }
+                        ]
+                      },
+                      {
+                        "op": "floor",
+                        "args": [
+                          {
+                            "op": "select",
+                            "args": [
+                              {
+                                "op": "sub",
+                                "args": [
+                                  {
+                                    "op": "floor",
+                                    "args": [
+                                      {
+                                        "op": "add",
+                                        "args": [
+                                          {
+                                            "input": "u"
+                                          },
+                                          0.03125
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      2,
+                                      {
+                                        "op": "floor",
+                                        "args": [
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              0.5,
+                                              {
+                                                "op": "floor",
+                                                "args": [
+                                                  {
+                                                    "op": "add",
+                                                    "args": [
+                                                      {
+                                                        "input": "u"
+                                                      },
+                                                      0.03125
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "op": "neg",
+                                "args": [
+                                  {
+                                    "input": "v"
+                                  }
+                                ]
+                              },
+                              {
+                                "input": "v"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  0.9999999403953552
+                ]
+              },
+              "orientation": {
+                "op": "sub",
+                "args": [
+                  {
+                    "op": "add",
+                    "args": [
+                      {
+                        "input": "orientation"
+                      },
+                      {
+                        "op": "sub",
+                        "args": [
+                          {
+                            "op": "floor",
+                            "args": [
+                              {
+                                "op": "add",
+                                "args": [
+                                  {
+                                    "input": "u"
+                                  },
+                                  0.03125
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "op": "mul",
+                            "args": [
+                              2,
+                              {
+                                "op": "floor",
+                                "args": [
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      0.5,
+                                      {
+                                        "op": "floor",
+                                        "args": [
+                                          {
+                                            "op": "add",
+                                            "args": [
+                                              {
+                                                "input": "u"
+                                              },
+                                              0.03125
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "op": "mul",
+                    "args": [
+                      2,
+                      {
+                        "op": "mul",
+                        "args": [
+                          {
+                            "input": "orientation"
+                          },
+                          {
+                            "op": "sub",
+                            "args": [
+                              {
+                                "op": "floor",
+                                "args": [
+                                  {
+                                    "op": "add",
+                                    "args": [
+                                      {
+                                        "input": "u"
+                                      },
+                                      0.03125
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "op": "mul",
+                                "args": [
+                                  2,
+                                  {
+                                    "op": "floor",
+                                    "args": [
+                                      {
+                                        "op": "mul",
+                                        "args": [
+                                          0.5,
+                                          {
+                                            "op": "floor",
+                                            "args": [
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "input": "u"
+                                                  },
+                                                  0.03125
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "source": "DWI-SOURCE-PROGRAM-0.1 explicit example model declaration",
+            "meaning": "Translate the supplied anchor u by0.03125 then canonicalize the Klein chart, retaining the declared seam orientation rule.",
+            "status": "Authored numerical definition; validation is recorded separately."
+          },
+          "mutation_policy": "preserve_program"
+        }
+      }
+    },
+    {
+      "index": 2,
+      "key": "phi",
+      "label": "Log-encoded polar radius PHI",
+      "head": "Log_polar_PHI",
+      "role": "Encode the radius/phase position used by the LUT.",
+      "source_pages": "3-4, 11",
+      "body": {
+        "symbol": "Log_polar_PHI"
+      },
+      "field": {
+        "symbol": "Log_polar_PHI_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 3,
+      "key": "rk4",
+      "label": "RK4 fourth timeslot",
+      "head": "RK4",
+      "role": "Gather the four kinematic slots into the next wavefront.",
+      "source_pages": "7",
+      "body": {
+        "symbol": "RK4"
+      },
+      "field": {
+        "symbol": "RK4_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 4,
+      "key": "phyllotaxis",
+      "label": "Fibonacci phyllotaxis",
+      "head": "Fibonacci_phyllotaxis",
+      "role": "Arrange divergence and operator placement along the BST.",
+      "source_pages": "8-9, 15, 21",
+      "body": {
+        "symbol": "Fibonacci_phyllotaxis"
+      },
+      "field": {
+        "symbol": "Fibonacci_phyllotaxis_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 5,
+      "key": "pinion",
+      "label": "Double pinion",
+      "head": "Double_pinion",
+      "role": "Drive the twin streams and hold operator flow to the Klein surface.",
+      "source_pages": "3-5, 14-16",
+      "body": {
+        "symbol": "Double_pinion"
+      },
+      "field": {
+        "symbol": "Double_pinion_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 6,
+      "key": "double_dot",
+      "label": "Pinion double dot : product operator",
+      "head": "Pinion_double_dot",
+      "role": "Couple the geometric and kinematic operator values.",
+      "source_pages": "8",
+      "body": {
+        "symbol": "Pinion_double_dot"
+      },
+      "field": {
+        "symbol": "Pinion_double_dot_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 7,
+      "key": "T_shape",
+      "label": "T geometry",
+      "head": "SDF_T",
+      "role": "The T primitive in the geometric LUT.",
+      "source_pages": "8",
+      "body": {
+        "symbol": "SDF_T"
+      },
+      "field": {
+        "symbol": "SDF_T_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 8,
+      "key": "pyramid",
+      "label": "Side view of the pyramid",
+      "head": "SDF_pyramid_side",
+      "role": "The pyramid-side primitive in the geometric LUT.",
+      "source_pages": "8",
+      "body": {
+        "symbol": "SDF_pyramid_side"
+      },
+      "field": {
+        "symbol": "SDF_pyramid_side_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 9,
+      "key": "circle",
+      "label": "Circle",
+      "head": "SDF_circle",
+      "role": "The circle primitive in the geometric LUT.",
+      "source_pages": "8",
+      "body": {
+        "symbol": "SDF_circle"
+      },
+      "field": {
+        "symbol": "SDF_circle_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 10,
+      "key": "cone",
+      "label": "Cone",
+      "head": "SDF_cone",
+      "role": "The cone primitive in the geometric LUT.",
+      "source_pages": "8",
+      "body": {
+        "symbol": "SDF_cone"
+      },
+      "field": {
+        "symbol": "SDF_cone_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 11,
+      "key": "sphere",
+      "label": "Sphere",
+      "head": "SDF_sphere",
+      "role": "The sphere primitive in the geometric LUT.",
+      "source_pages": "8",
+      "body": {
+        "symbol": "SDF_sphere"
+      },
+      "field": {
+        "symbol": "SDF_sphere_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 12,
+      "key": "apex",
+      "label": "Apex",
+      "head": "SDF_apex",
+      "role": "The apex associated with the double-dot pinion operator.",
+      "source_pages": "8",
+      "body": {
+        "symbol": "SDF_apex"
+      },
+      "field": {
+        "symbol": "SDF_apex_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 13,
+      "key": "delta_phi",
+      "label": "Lowercase delta delta phi",
+      "head": "delta_delta_phi",
+      "role": "Phase divergence paired with the Fibonacci phyllotaxis blend.",
+      "source_pages": "8-9",
+      "body": {
+        "symbol": "delta_delta_phi"
+      },
+      "field": {
+        "symbol": "delta_delta_phi_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 14,
+      "key": "blend",
+      "label": "Math blend operator",
+      "head": "Math_blend",
+      "role": "Bring the branching geometric streams into the shared field.",
+      "source_pages": "8-9",
+      "body": {
+        "symbol": "Math_blend"
+      },
+      "field": {
+        "symbol": "Math_blend_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 15,
+      "key": "wavefront",
+      "label": "Wavefront FT vector",
+      "head": "FT_wavefront",
+      "role": "Carry the source vector [0, 2, 0, 1].",
+      "source_pages": "6",
+      "body": {
+        "symbol": "FT_wavefront"
+      },
+      "field": {
+        "symbol": "FT_wavefront_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 16,
+      "key": "y_up",
+      "label": "Y up",
+      "head": "Y_up",
+      "role": "Apply twice in the fourth RK4 timeslot.",
+      "source_pages": "7",
+      "body": {
+        "symbol": "Y_up"
+      },
+      "field": {
+        "symbol": "Y_up_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 17,
+      "key": "crystal",
+      "label": "Crystal bifurcation of RGBA values",
+      "head": "Crystal_bifurcation",
+      "role": "Express the circulating wavefront through the RGBA state.",
+      "source_pages": "9-11",
+      "body": {
+        "symbol": "Crystal_bifurcation"
+      },
+      "field": {
+        "symbol": "Crystal_bifurcation_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 18,
+      "key": "inverse_T",
+      "label": "A means inverse T",
+      "head": "Inverse_T",
+      "role": "Preserve the inverse-T role of A.",
+      "source_pages": "9-12",
+      "body": {
+        "symbol": "Inverse_T"
+      },
+      "field": {
+        "symbol": "Inverse_T_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 19,
+      "key": "T_transform",
+      "label": "T transformation",
+      "head": "T_transformation",
+      "role": "The transformation reading of T used by the later inverse loop.",
+      "source_pages": "10-12",
+      "body": {
+        "symbol": "T_transformation"
+      },
+      "field": {
+        "symbol": "T_transformation_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 20,
+      "key": "jitter",
+      "label": "1bit jitter",
+      "head": "One_bit_jitter",
+      "role": "Move and change the LUT operators at interval PSI.",
+      "source_pages": "6, 14-16",
+      "body": {
+        "symbol": "One_bit_jitter"
+      },
+      "field": {
+        "symbol": "One_bit_jitter_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 21,
+      "key": "bst",
+      "label": "1bit BST",
+      "head": "BST",
+      "role": "Route by the binary spatial/operator relationships.",
+      "source_pages": "8-9, 13-15, 22",
+      "body": {
+        "symbol": "BST"
+      },
+      "field": {
+        "symbol": "BST_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 22,
+      "key": "return",
+      "label": "Non-orientable return",
+      "head": "Nonorientable_return",
+      "role": "Return output as input, carrying the path/parity reversal.",
+      "source_pages": "13-17",
+      "body": {
+        "symbol": "Nonorientable_return"
+      },
+      "field": {
+        "symbol": "Nonorientable_return_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 23,
+      "key": "phase_history",
+      "label": "B phase history",
+      "head": "Phase_history",
+      "role": "Carry the jitter and RK4 history in the texture state.",
+      "source_pages": "11-12",
+      "body": {
+        "symbol": "Phase_history"
+      },
+      "field": {
+        "symbol": "Phase_history_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 24,
+      "key": "dichromatic",
+      "label": "Dichromatic operators",
+      "head": "Dichromatic",
+      "role": "Keep the two active pinion channels distinct within RGBA.",
+      "source_pages": "11-12",
+      "body": {
+        "symbol": "Dichromatic"
+      },
+      "field": {
+        "symbol": "Dichromatic_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 25,
+      "key": "bayer",
+      "label": "Optional Bayer matrix",
+      "head": "Bayer_output",
+      "role": "Read out downstream from the already-circulating state.",
+      "source_pages": "12-14",
+      "body": {
+        "symbol": "Bayer_output"
+      },
+      "field": {
+        "symbol": "Bayer_output_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 26,
+      "key": "bc5",
+      "label": "BC5 packing",
+      "head": "BC5_pack",
+      "role": "The named dichromatic packing route in the GPU design.",
+      "source_pages": "19-22",
+      "body": {
+        "symbol": "BC5_pack"
+      },
+      "field": {
+        "symbol": "BC5_pack_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 27,
+      "key": "split",
+      "label": "0-order bit-shifted even/odd split",
+      "head": "Bitshift_split",
+      "role": "Express the twin paths in the source one-bit notation.",
+      "source_pages": "4-5",
+      "body": {
+        "symbol": "Bitshift_split"
+      },
+      "field": {
+        "symbol": "Bitshift_split_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 28,
+      "key": "parity",
+      "label": "1-bit parity",
+      "head": "Parity",
+      "role": "Carry the source parity relationship at the split and return.",
+      "source_pages": "4-5, 15",
+      "body": {
+        "symbol": "Parity"
+      },
+      "field": {
+        "symbol": "Parity_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 29,
+      "key": "psi",
+      "label": "Interval PSI",
+      "head": "PSI_interval",
+      "role": "Advance the operator-changing circulation.",
+      "source_pages": "8-9, 14-16",
+      "body": {
+        "symbol": "PSI_interval"
+      },
+      "field": {
+        "symbol": "PSI_interval_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    },
+    {
+      "index": 30,
+      "key": "mutation",
+      "label": "Operator self-mutation",
+      "head": "Operator_mutation",
+      "role": "Let previous state and one-bit jitter change the current operator field.",
+      "source_pages": "14-16",
+      "body": {
+        "symbol": "Operator_mutation"
+      },
+      "field": {
+        "symbol": "Operator_mutation_SDF"
+      },
+      "placement": {
+        "symbol": "Phyllotaxis_on_Klein"
+      }
+    }
+  ]
+}

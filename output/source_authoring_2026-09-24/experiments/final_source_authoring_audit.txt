@@ -1,0 +1,57 @@
+from pathlib import Path
+from copy import deepcopy
+import json,hashlib,subprocess,sys,os
+sys.path.insert(0,str(Path.cwd()))
+from local_lab import source_cycle as c,source_program as p,source_resident_v2 as r,source_enzyme as e
+
+BASE=Path('output/source_authoring_2026-09-24').resolve()
+cycle,_=c.ir.read_json(c.CYCLE);inputs,_=c.ir.read_json(e.DEFAULT_INPUTS)
+results=[]
+for name in ['baseline','hadamard_body','hadamard_field','hadamard_placement','hadamard_combined','enzyme_original','enzyme_authored','amplitude_budget','route_32','route_62']:
+    folder=BASE/name;model,_=c.ir.read_json(folder/'source_model.json');old,_=c.ir.read_json(folder/'definition.json')
+    d=p.build_definition(model,cycle,len(old['instances']),enzyme_inputs=inputs if name.startswith('enzyme_') else None)
+    if name.startswith('route_'):
+        for lane in d['instances']:lane['state']['neck']=1
+        p.catalogue.set_routes(d,[{'index':int(name.split('_')[1])}])
+    program,manifest=r.compile_definition(model,d)
+    assert program==(folder/'program.bin').read_bytes(),name
+    results.append({'case':name,'final_compiler_reproduces_executed_program_bytes':True,'sha256':c.ir.sha256(program)})
+for cli,case in [('cli_amplitude','amplitude_budget'),('cli_hadamard','hadamard_combined'),('cli_enzyme','enzyme_authored')]:
+    assert (BASE/cli/'program.bin').read_bytes()==(BASE/case/'program.bin').read_bytes()
+    manifest,_=c.ir.read_json(BASE/cli/'manifest.json')
+    for filename,expected in manifest['files'].items():
+        data=(BASE/cli/filename).read_bytes();assert len(data)==expected['bytes'] and c.ir.sha256(data)==expected['sha256']
+        if filename.startswith('compiler/'):
+            assert data==(Path('local_lab')/Path(filename).name).read_bytes()
+    results.append({'case':cli,'final_cli_program_matches_campaign':True,'files_verified':len(manifest['files'])})
+
+env=os.environ.copy();env['DAWNWOOD_VALIDATION']='1';env['VK_LAYER_PATH']=str(Path('tmp/rtx-toolchain/VulkanSDK/Bin').resolve())
+commands=[
+    ['Dawnwood-Author.cmd','run','--backend','vulkan','--device','RTX 5070 Ti','--input',str(BASE/'cli_amplitude/program.bin'),'--output',str(BASE/'cli_amplitude/after_1.bin'),'--epochs','1'],
+    ['Dawnwood-Author.cmd','inspect',str(BASE/'runs/amplitude_64/vulkan.bin'),'--manifest',str(BASE/'cli_amplitude/manifest.json')],
+]
+for number,args in enumerate(commands):
+    # These are fixed trusted local .cmd launchers and literal argument paths;
+    # no composed filesystem command is passed across shells.
+    run=subprocess.run(args,capture_output=True,text=True,encoding='utf-8',env=env)
+    (BASE/f'cli_command_{number}.stdout.json').write_text(run.stdout,encoding='utf-8')
+    (BASE/f'cli_command_{number}.stderr.txt').write_text(run.stderr,encoding='utf-8')
+    assert run.returncode==0,(args,run.stderr)
+    payload=json.loads(run.stdout)
+    if number==0:
+        assert payload['failed_lanes']==0 and payload['validation_enabled'] and payload['validation_errors']==payload['validation_warnings']==0
+        assert (BASE/'cli_amplitude/after_1.bin').read_bytes()==(BASE/'runs/amplitude_1/vulkan.bin').read_bytes()
+    else:assert payload['all_status_ok']
+    results.append({'command':args,'exit_code':run.returncode,'stdout_sha256':c.ir.sha256(run.stdout.encode('utf-8'))})
+
+protected=['Dawnwood-Source.cmd','local_lab/source_cycle.py','local_lab/source_enzyme.py',
+           'source_workbench/Dawnwood_Interactive_v0.2/model/substrate.json',
+           'source_workbench/Dawnwood_Interactive_v0.2/model/cycle.json']
+for name in protected:assert Path(name).read_bytes()==subprocess.check_output(['git','show','HEAD:'+name])
+root=Path('Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/bin/windows-resident-v2')
+runtime={name:c.ir.sha256((root/name).read_bytes()) for name in ['dawnwood-resident-v2.exe','resident_v2.spv']}
+summary={'all_passed':True,'final_code_program_equivalence':results,'unchanged_baseline_files':protected,'runtime_sha256':runtime,
+         'source_compiler_sha256':{name:c.ir.sha256((Path('local_lab')/name).read_bytes()) for name in ['source_program.py','source_slot_bindings.py','source_catalogue_extension.py']},
+         'provenance_note':'Initial experiment definitions retain compiler hashes from their construction time. The final code adds stricter authoring rejection/provenance checks. Each final compilation above independently reproduces the exact executed program bytes; metadata changes are not silently substituted into historical records.'}
+(BASE/'final_recompilation_audit.json').write_bytes(c.ir.json_bytes(summary))
+print(json.dumps({'all_passed':True,'checks':len(results),'runtime_sha256':runtime}),flush=True)

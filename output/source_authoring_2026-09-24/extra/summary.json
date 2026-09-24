@@ -1,0 +1,135 @@
+{
+  "paired_healthy_runs": [
+    {
+      "name": "body_identity_run",
+      "epochs": 1,
+      "count": 129,
+      "all_checkpoint_bytes_identical": true,
+      "all_status_ok": true,
+      "compared_instance_words": 105651,
+      "gpu_validation_enabled": true,
+      "gpu_validation_errors": 0,
+      "gpu_validation_warnings": 0
+    },
+    {
+      "name": "field_shift_run",
+      "epochs": 1,
+      "count": 129,
+      "all_checkpoint_bytes_identical": true,
+      "all_status_ok": true,
+      "compared_instance_words": 105651,
+      "gpu_validation_enabled": true,
+      "gpu_validation_errors": 0,
+      "gpu_validation_warnings": 0
+    },
+    {
+      "name": "placement_shift_run",
+      "epochs": 1,
+      "count": 129,
+      "all_checkpoint_bytes_identical": true,
+      "all_status_ok": true,
+      "compared_instance_words": 105651,
+      "gpu_validation_enabled": true,
+      "gpu_validation_errors": 0,
+      "gpu_validation_warnings": 0
+    },
+    {
+      "name": "existing_edits_and_extension_run",
+      "epochs": 1,
+      "count": 129,
+      "all_checkpoint_bytes_identical": true,
+      "all_status_ok": true,
+      "compared_instance_words": 105651,
+      "gpu_validation_enabled": true,
+      "gpu_validation_errors": 0,
+      "gpu_validation_warnings": 0
+    }
+  ],
+  "effects": [
+    {
+      "case": "body_identity",
+      "changed_state_words": 2967,
+      "changed_added_record_words": 0
+    },
+    {
+      "case": "field_shift",
+      "changed_state_words": 0,
+      "changed_added_record_words": 129
+    },
+    {
+      "case": "placement_shift",
+      "changed_state_words": 0,
+      "changed_added_record_words": 774
+    },
+    {
+      "case": "existing_edits_and_extension",
+      "changed_state_words": 2967,
+      "changed_added_record_words": 258
+    }
+  ],
+  "runtime_failures": [
+    {
+      "case": "missing_index_32",
+      "status": 10,
+      "lanes": 3,
+      "requested_epochs": 8,
+      "commits": 0,
+      "all_checkpoint_bytes_identical": true,
+      "whole_epoch_rollback_exact": true
+    },
+    {
+      "case": "incompatible_index_0",
+      "status": 11,
+      "lanes": 3,
+      "requested_epochs": 8,
+      "commits": 0,
+      "all_checkpoint_bytes_identical": true,
+      "whole_epoch_rollback_exact": true
+    },
+    {
+      "case": "invalid_depth_6",
+      "status": 1,
+      "lanes": 3,
+      "requested_epochs": 8,
+      "commits": 0,
+      "all_checkpoint_bytes_identical": true,
+      "whole_epoch_rollback_exact": true
+    },
+    {
+      "case": "authored_precondition",
+      "status": 1,
+      "lanes": 3,
+      "requested_epochs": 8,
+      "commits": 0,
+      "all_checkpoint_bytes_identical": true,
+      "whole_epoch_rollback_exact": true
+    }
+  ],
+  "body_variant_coverage": {
+    "combined_1": {
+      "hadamard_body_handles": [
+        1
+      ],
+      "mutator_body_handles": [
+        33
+      ]
+    },
+    "combined_2": {
+      "hadamard_body_handles": [
+        31
+      ],
+      "mutator_body_handles": [
+        33
+      ]
+    },
+    "combined_64": {
+      "hadamard_body_handles": [
+        31
+      ],
+      "mutator_body_handles": [
+        33
+      ]
+    }
+  },
+  "experiment_correction": "The first harness expected exit0 for an intentional lane failure and conflated plan require status7 with an XIR precondition. The runtime correctly returned documented exit3; XIR errors use outer status1 with an encoded reason. Those harness expectations were corrected after reading the ABI and runtime. Already-completed receipts were reused only after byte/status verification. No runtime code or tolerance changed."
+}

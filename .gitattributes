@@ -10,6 +10,9 @@ local_lab/source_ir_v2.py -text
 local_lab/source_cycle.py -text
 local_lab/source_enzyme.py -text
 local_lab/source_enzyme_results.py -text
+local_lab/source_program.py -text
+local_lab/source_slot_bindings.py -text
+local_lab/source_catalogue_extension.py -text
 docs/RESIDENT_ABI.md -text
 docs/RESIDENT_V2_ABI.md -text
 docs/SOURCE_MATH_V2.md -text
@@ -18,11 +21,13 @@ Dawnwood-Resident.cmd -text
 Dawnwood-Resident2.cmd -text
 Dawnwood-Cycle.cmd -text
 Dawnwood-Enzyme.cmd -text
+Dawnwood-Author.cmd -text
 output/source_ir_2026-09-24/** -text
 output/situated_apply_2026-09-24/** -text
 output/resident_definition_2026-09-24/** -text
 output/source_cycle_2026-09-24/** -text
 output/resident_enzyme_2026-09-24/** -text
+output/source_authoring_2026-09-24/** -text
 Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/include/numeric_types.inc -text
 Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/include/numeric_math.inc -text
 Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/include/source_ir.inc -text

@@ -1,0 +1,161 @@
+from copy import deepcopy
+from pathlib import Path
+from datetime import datetime, timezone
+import json, subprocess
+from local_lab import source_catalogue_extension as ext
+from local_lab import source_program as program
+from local_lab import source_cycle as base
+from local_lab import source_enzyme as enzyme
+from local_lab import source_resident_v2 as resident
+
+root=Path.cwd()
+out=root/'output/source_authoring_2026-09-24'
+out.mkdir(parents=True,exist_ok=True)
+scratch=root/'tmp/source_catalogue_direct_20260924'
+scratch.mkdir(parents=True,exist_ok=False)
+actual,raw=ext.ir.read_json(root/'source_bindings/examples/amplitude_budget_model.json')
+original,_=ext.ir.read_json(base.MODEL)
+cycle,_=ext.ir.read_json(base.CYCLE)
+enzyme_inputs,_=ext.ir.read_json(enzyme.DEFAULT_INPUTS)
+source_hash=ext.ir.sha256(Path(ext.__file__).read_bytes())
+cases=[]
+
+def reject(name,operation,description):
+    result={'name':name,'description':description,'expected':'reject'}
+    try:operation()
+    except (ValueError,TypeError,KeyError,OverflowError) as error:
+        result.update(rejected=True,error_type=type(error).__name__,message=str(error))
+    except Exception as error:
+        result.update(rejected=False,unexpected_exception=type(error).__name__,message=str(error))
+    else:result.update(rejected=False,message='Unexpected acceptance')
+    cases.append(result)
+
+def altered(name,edit,description):
+    value=deepcopy(actual);edit(value)
+    reject(name,lambda:ext.prepare_extended_model(value),description)
+
+altered('33_records',lambda m:m['operators'].append(deepcopy(m['operators'][-1])),'More than one added record')
+altered('30_records',lambda m:m.update(operators=m['operators'][:30]),'Original catalogue truncated')
+altered('index_below31',lambda m:m['operators'][-1].update(index=30),'Added index overlaps original range')
+altered('index_above62',lambda m:m['operators'][-1].update(index=63),'Added index requires six route bits')
+altered('boolean_index',lambda m:m['operators'][-1].update(index=True),'Boolean source index')
+altered('duplicate_key',lambda m:m['operators'][-1].update(key='circle'),'Occupied source key')
+altered('unknown_record_key',lambda m:m['operators'][-1].update(hidden_default=1),'Unsupported added-record property')
+altered('missing_parameter',lambda m:m['operators'][-1]['parameters'].pop('radius'),'All20 parameters required')
+altered('unknown_parameter',lambda m:m['operators'][-1]['parameters'].update(unused_new_knob=1),'Unknown parameter name')
+altered('boolean_parameter',lambda m:m['operators'][-1]['parameters'].update(radius=True),'Boolean instead of finite scalar')
+altered('nonfinite_parameter',lambda m:m['operators'][-1]['parameters'].update(radius=float('nan')),'Nonfinite scalar')
+altered('symbol_only_body',lambda m:m['operators'][-1].update(body={'symbol':'unbound'}),'Added body must be an explicit numerical declaration')
+altered('wrong_body_kind',lambda m:m['operators'][-1]['body']['resident_binding'].update(kind='body'),'Added body uses selected_body contract')
+altered('wrong_body_policy',lambda m:m['operators'][-1]['body']['resident_binding'].update(mutation_policy='anything'),'Undeclared body mutation policy')
+altered('wrong_field_policy',lambda m:m['operators'][-1]['field']['resident_binding'].update(mutation_policy='mutable'),'Field program policy not preserve_program')
+altered('wrong_place_kind',lambda m:m['operators'][-1]['placement']['resident_binding'].update(kind='field'),'Placement kind mismatch')
+altered('body_wrong_input_order',lambda m:m['operators'][-1]['body']['resident_binding']['function']['inputs'].reverse(),'Ordered selected-body input contract changed')
+altered('body_missing_output',lambda m:m['operators'][-1]['body']['resident_binding']['function']['outputs'].pop('bi'),'Missing complex output component')
+altered('field_wrong_inputs',lambda m:m['operators'][-1]['field']['resident_binding']['function'].update(inputs=['x','y','radius']),'Carrier field operand names mismatch')
+altered('placement_missing_orientation',lambda m:m['operators'][-1]['placement']['resident_binding']['function']['outputs'].pop('orientation'),'Missing placement orientation output')
+altered('body_unknown_opcode',lambda m:m['operators'][-1]['body']['resident_binding']['function']['outputs'].update(ar={'op':'unknown','args':[1]}),'Unsupported body arithmetic')
+altered('body_unknown_key',lambda m:m['operators'][-1]['body']['resident_binding']['function'].update(implicit_wave_adapter=True),'No silently invented wave adapter')
+
+# Explicit source-owned BST override with identical numerical content still
+# rejects combination with the separate five-bit extension policy.
+def bst_override():
+    m=deepcopy(actual)
+    seed=base.build_definition(original,cycle,3)
+    original_binding=seed['functions']['bst_role0']['binding']
+    m['operators'][21]['body']={'resident_binding':{'kind':'body','variants':{'bst':{'inherit':True,'roles':{'0':deepcopy(original_binding)}}},'mutation_policy':'declared_variants'}}
+    return program.build_definition(m,cycle,3)
+reject('extension_and_BST_body_override',bst_override,'Do not silently replace an explicitly bound BST body')
+reject('enzyme64_with_extension',lambda:program.build_definition(actual,cycle,enzyme_inputs=enzyme_inputs),'Enzyme already occupies64 state words')
+
+base_definition=program.build_definition(actual,cycle,3)
+for name,routes in [
+ ('empty_routes',[]),('wrong_route_count',[{'index':31},{'index':31}]),
+ ('both_route_forms',[{'index':31,'bits':[0]*5}]),('missing_route_form',[{}]),
+ ('boolean_route_index',[{'index':True}]),('unoccupied_target',[{'index':32}]),
+ ('existing_incompatible_target',[{'index':0}]),('route_too_deep',[{'index':63}]),
+ ('raw_boolean_bit',[{'bits':[False]*5}]),('raw_nonbit',[{'bits':[0,0,0,0,2]}]),
+ ('raw_six_bits',[{'bits':[0]*6}]),('unknown_route_key',[{'path':[0]*5}]),
+]:
+    d=deepcopy(base_definition)
+    reject(name,lambda d=d,routes=routes:ext.set_routes(d,routes),'Checked source routing declaration')
+atomic=deepcopy(base_definition)
+before=ext.ir.sha256(ext.ir.json_bytes(atomic))
+reject('late_bad_route_atomic',lambda:ext.set_routes(atomic,[{'index':31},{'index':0},{'index':31}]),'Second per-instance route is invalid; entire definition must remain unchanged')
+atomic_unchanged=before==ext.ir.sha256(ext.ir.json_bytes(atomic))
+
+# Direct actual CPU execution is limited to the route and added-record contract.
+# This is not a repeat of the full-cycle mathematical/GPU campaigns.
+exe=root/'Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/bin/windows-resident-v2/dawnwood-resident-v2.exe'
+valid=[]
+for index in (31,47,62):
+    m=deepcopy(actual);m['operators'][-1]['index']=index
+    d=program.build_definition(m,cycle,2)
+    d['instances'][0]['state']['neck']=0
+    d['instances'][1]['state']['neck']=1
+    route=ext.set_routes(d,[{'index':index}])
+    binary,manifest=resident.compile_definition(m,d)
+    input_path=scratch/f'index{index}.bin';output_path=scratch/f'index{index}_cpu2.bin'
+    input_path.write_bytes(binary)
+    command=[str(exe),'run','--backend','cpu','--epochs','2','--input',str(input_path),'--output',str(output_path)]
+    result=subprocess.run(command,capture_output=True,text=True,encoding='utf-8')
+    if result.returncode:raise RuntimeError(result.stdout+result.stderr)
+    receipt=json.loads(result.stdout)
+    checkpoint=resident.decode_checkpoint(output_path.read_bytes())
+    initial=resident.decode_checkpoint(binary)
+    lanes=[]
+    for ordinal,(lane,start) in enumerate(zip(checkpoint['instances'],initial['instances'])):
+        rec=lane['records'][31];old=start['records'][31]
+        handles=['body_handle','field_handle','placement_handle']
+        lanes.append({'lane':ordinal,'neck':lane['state'][16],'selected_index':lane['state'][41],
+                      'route_depth':lane['state'][17],'route_b4':lane['state'][44],
+                      'selected_expected':lane['state'][41]==index,'status':lane['status'],
+                      'source_index':rec['source_index'],'generation':rec['generation'],
+                      'all_added_handles_retained':all(rec[name]==old[name] for name in handles),
+                      'anchor_changed':rec['values'][:3]!=old['values'][:3]})
+    valid.append({'source_index':index,'route_metadata':route,'program_sha256':ext.ir.sha256(binary),
+                  'checkpoint_sha256':checkpoint['sha256'],'receipt':receipt,'lanes':lanes,
+                  'all_expected':all(lane['selected_expected'] and lane['status']==0 and lane['all_added_handles_retained'] and lane['generation']==2 for lane in lanes)})
+
+# A raw-bit route differs from index form: both lanes receive00000, so neck1
+# targets62 and must reject when the only extension is31. Verify that distinction.
+raw_model=deepcopy(actual)
+raw_model['operators'][-1]['index']=62
+raw_def=program.build_definition(raw_model,cycle,1)
+raw_def['instances'][0]['state']['neck']=1
+raw_route=ext.set_routes(raw_def,[{'bits':[0]*5}])
+raw_valid=raw_route['resolved'][0]['source_index']==62
+
+# No additions, edits or route overrides preserves the existing executable bytes.
+plain=base.build_definition(original,cycle,3)
+plain_binary,_=resident.compile_definition(original,plain)
+authored,authored_binary,_=program.compile_program(original,cycle,3)
+no_extension_equal=plain_binary==authored_binary
+
+# Custom existing-slot retention and the added-record retention allocate separate
+# scratch spans; compile and run their actual combined plan once.
+combined_model=deepcopy(actual)
+combined_model['operators'][9]['field']={'resident_binding':{
+ 'kind':'field','function':deepcopy(actual['operators'][-1]['field']['resident_binding']['function']),
+ 'mutation_policy':'preserve_program'}}
+combined=program.build_definition(combined_model,cycle,1)
+combined_binary,_=resident.compile_definition(combined_model,combined)
+combined_input=scratch/'combined.bin';combined_output=scratch/'combined_cpu2.bin'
+combined_input.write_bytes(combined_binary)
+result=subprocess.run([str(exe),'run','--backend','cpu','--epochs','2','--input',str(combined_input),'--output',str(combined_output)],capture_output=True,text=True,encoding='utf-8')
+if result.returncode:raise RuntimeError(result.stdout+result.stderr)
+combined_after=resident.decode_checkpoint(combined_output.read_bytes())
+combined_before=resident.decode_checkpoint(combined_binary)
+combined_ok=combined_after['all_status_ok'] and combined_after['instances'][0]['records'][9]['field_handle']==combined_before['instances'][0]['records'][9]['field_handle'] and all(combined_after['instances'][0]['records'][31][name]==combined_before['instances'][0]['records'][31][name] for name in ['body_handle','field_handle','placement_handle'])
+
+summary={'profile':ext.PROFILE,'timestamp_utc':datetime.now(timezone.utc).isoformat(),
+ 'source_sha256':source_hash,'source_sha256_after':ext.ir.sha256(Path(ext.__file__).read_bytes()),
+ 'source_unchanged':source_hash==ext.ir.sha256(Path(ext.__file__).read_bytes()),
+ 'model_sha256':ext.ir.sha256(raw),'rejection_count':sum(c['rejected'] for c in cases),'case_count':len(cases),
+ 'all_expected_rejections':all(c['rejected'] for c in cases),'cases':cases,'late_invalid_route_atomic':atomic_unchanged,
+ 'actual_CPU_route_checks':valid,'raw_bits_neck_semantics_checked':raw_valid,'raw_route':raw_route,
+ 'no_extension_program_bytes_equal_base':no_extension_equal,
+ 'custom_existing_field_plus_extension':{'passed':combined_ok,'program_sha256':ext.ir.sha256(combined_binary),'receipt':json.loads(result.stdout)},
+ 'scope':'Representative authoring rejections plus CPU execution of index31/47/62 under both neck values and composed retention. No GPU execution, independent shape-math claim or full regression suite is implied.'}
+(out/'catalogue_rejections.json').write_bytes(ext.ir.json_bytes(summary))
+print(json.dumps({'case_count':len(cases),'all_rejected':summary['all_expected_rejections'],'all_route_checks_pass':all(row['all_expected'] for row in valid),'late_invalid_route_atomic':atomic_unchanged,'raw_bits_neck_semantics':raw_valid,'base_byte_identity':no_extension_equal,'composed_retention':combined_ok,'source_unchanged':summary['source_unchanged'],'source_sha256':source_hash},indent=2))

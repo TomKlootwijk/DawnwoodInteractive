@@ -13,6 +13,12 @@ now adds an independently checked consistency task inside that cycle.
 Unrestricted authoring, optional output packing and broader application claims
 remain separate requirements.
 
+The later [source-authoring interface](SOURCE_PROGRAM_AUTHORING.md) binds actual
+edited slot declarations and one new routed record to acting resident functions.
+Its [evidence](../output/source_authoring_2026-09-24/REPORT.md) covers that bounded
+authoring milestone. The stage/application call graph still comes from explicit
+versioned builders, so general source-owned application composition remains open.
+
 ## What the source actually requires
 
 The [numerical integration ledger](SOURCE_NUMERICAL_INTEGRATION.md) tracks the

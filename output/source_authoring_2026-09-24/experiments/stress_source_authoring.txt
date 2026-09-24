@@ -1,0 +1,68 @@
+import json,os,subprocess,time,hashlib,lzma,struct,shutil
+from pathlib import Path
+base=Path("output/source_authoring_2026-09-24").resolve();out=base/"saturation";out.mkdir(exist_ok=False)
+exe=Path("Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/bin/windows-resident-v2/dawnwood-resident-v2.exe").resolve()
+src=base/"amplitude_budget/program.bin";raw=src.read_bytes();h=struct.unpack_from("<8I",raw,8);count,R,S,F,H,M,A,B=h
+staticwords=8+4*R+6*F+4*B+H+8*(M+A);offset=8+4*staticwords;stride=6+S+24*R
+assert count==129 and len(raw)-offset==count*stride*4
+repeat=256;large_count=count*repeat;epochs=2048
+large=bytearray(raw[:offset]);struct.pack_into("<I",large,8,large_count);pattern=raw[offset:]
+input_path=Path("tmp/source_authoring_saturation_input.bin").resolve();output_path=Path("tmp/source_authoring_saturation_output.bin").resolve()
+with input_path.open("wb") as f:
+ f.write(large)
+ for _ in range(repeat):f.write(pattern)
+env=os.environ.copy();env["DAWNWOOD_VALIDATION"]="1";env["VK_LAYER_PATH"]=str(Path("tmp/rtx-toolchain/VulkanSDK/Bin").resolve())
+def command(backend,inp,output):
+ args=[str(exe),"run","--input",str(inp),"--output",str(output),"--backend",backend,"--epochs",str(epochs)]
+ if backend=="vulkan":args += ["--device","RTX 5070 Ti"]
+ return args
+cpu_checkpoint=base/"runs/amplitude_2048/cpu.bin"
+shutil.copyfile(cpu_checkpoint,out/"cpu_templates.bin")
+cpureport=json.loads((base/"runs/amplitude_2048/cpu.stdout.json").read_text(encoding="utf-8"))
+shutil.copyfile(base/"runs/amplitude_2048/cpu.execution.json",out/"cpu.execution.json")
+assert cpureport["failed_lanes"]==0
+print(json.dumps({"phase":"existing_CPU_reference_validated","template_count":count,"epochs":epochs,"GPU_count":large_count}),flush=True)
+query=["nvidia-smi","--query-gpu=timestamp,name,utilization.gpu,utilization.memory,memory.used,temperature.gpu,power.draw,clocks.sm,clocks.mem","--format=csv,noheader,nounits","-lms","500"]
+telemetry_file=(out/"telemetry.csv").open("w");telemetry_err=(out/"telemetry.stderr.txt").open("w")
+telemetry=subprocess.Popen(query,stdout=telemetry_file,stderr=telemetry_err,creationflags=0x08000000)
+gpuargs=command("vulkan",input_path,output_path);stdout=(out/"vulkan.stdout.txt").open("w");stderr=(out/"vulkan.stderr.txt").open("w")
+start=time.monotonic();gpu=subprocess.Popen(gpuargs,env=env,stdout=stdout,stderr=stderr,creationflags=0x08000000)
+last=-10;thermal_stop=False
+try:
+ while gpu.poll() is None:
+  elapsed=time.monotonic()-start
+  if elapsed-last>=10:
+   last=elapsed;lines=(out/"telemetry.csv").read_text(encoding='utf-8').splitlines();lastline=lines[-1] if lines else "waiting for first sample"
+   print(json.dumps({"phase":"GPU_running","elapsed_seconds":round(elapsed,1),"latest_telemetry":lastline}),flush=True)
+  lines=(out/"telemetry.csv").read_text(encoding='utf-8').splitlines()
+  if lines:
+   cols=[c.strip() for c in lines[-1].split(",")]
+   if len(cols)==9:
+    try:temp=float(cols[5])
+    except ValueError:temp=0
+    if temp>=90:
+     thermal_stop=True;gpu.terminate();break
+  time.sleep(.5)
+ gpu.wait()
+finally:
+ telemetry.terminate();telemetry.wait();telemetry_file.close();telemetry_err.close();stdout.close();stderr.close()
+receipt={"command":gpuargs,"exit_code":gpu.returncode,"thermal_stop_at_90_C":thermal_stop,"wall_seconds":time.monotonic()-start,"telemetry_command":query}
+if gpu.returncode!=0 or thermal_stop:
+ (out/"vulkan.execution.json").write_text(json.dumps(receipt,indent=2)+"\n");raise RuntimeError(receipt)
+report=json.loads((out/"vulkan.stdout.txt").read_text(encoding='utf-8'));receipt["report"]=report;(out/"vulkan.execution.json").write_text(json.dumps(receipt,indent=2)+"\n")
+assert report["failed_lanes"]==0 and report["validation_enabled"] and report["validation_errors"]==report["validation_warnings"]==0
+ref=(out/"cpu_templates.bin").read_bytes()[offset:];actual=output_path.read_bytes();assert len(actual)==offset+repeat*len(ref)
+mismatches=[]
+for i in range(repeat):
+ if actual[offset+i*len(ref):offset+(i+1)*len(ref)]!=ref:mismatches.append(i)
+assert not mismatches,mismatches
+samples=[]
+for line in (out/"telemetry.csv").read_text(encoding='utf-8').splitlines():
+ c=[x.strip() for x in line.split(",")]
+ try:samples.append({"timestamp":c[0],"device":c[1],"gpu_percent":float(c[2]),"memory_utilization_percent":float(c[3]),"memory_used_MiB":float(c[4]),"temperature_C":float(c[5]),"power_W":float(c[6]),"SM_clock_MHz":float(c[7]),"memory_clock_MHz":float(c[8])})
+ except (ValueError,IndexError):pass
+assert samples
+summary={"profile":"DWI-RESIDENT-0.2","source_binding":"DWI-SOURCE-PROGRAM-0.1 amplitude_budget_model","instances":large_count,"distinct_template_instances":count,"template_repetitions":repeat,"epochs":epochs,"instance_words":stride,"logical_instance_bytes":4*stride,"two_state_buffer_bytes":2*large_count*stride*4,"all_mutable_words_compared":large_count*stride,"word_differences":0,"comparison":"Every full returned GPU instance image equals its corresponding 2048-epoch CPU template, repeated 256 times; this is a saturation population of independent replicas, not 33024 distinct initial scientific cases.","telemetry_samples":len(samples),"maximum_GPU_percent":max(x["gpu_percent"] for x in samples),"samples_at_100_percent":sum(x["gpu_percent"]==100 for x in samples),"maximum_temperature_C":max(x["temperature_C"] for x in samples),"maximum_power_W":max(x["power_W"] for x in samples),"maximum_memory_used_MiB":max(x["memory_used_MiB"] for x in samples),"GPU_execution_seconds":report["execution_seconds"],"GPU_timing_scope":report["timing_scope"],"validation_errors":report["validation_errors"],"validation_warnings":report["validation_warnings"],"per_epoch_host_reads":report["per_epoch_host_reads"],"per_epoch_host_uploads":report["per_epoch_host_uploads"],"thermal_stop":thermal_stop,"capacity_claim":"Compute saturation workload; not a maximum VRAM capacity measurement."}
+for name,path in [("input",input_path),("output",output_path)]:
+ data=path.read_bytes();archive=out/(name+".bin.xz");archive.write_bytes(lzma.compress(data,preset=6));assert lzma.decompress(archive.read_bytes())==data;summary[name]={"uncompressed_bytes":len(data),"uncompressed_sha256":hashlib.sha256(data).hexdigest(),"archive":archive.name,"archive_bytes":archive.stat().st_size,"archive_sha256":hashlib.sha256(archive.read_bytes()).hexdigest()}
+(out/"summary.json").write_text(json.dumps(summary,indent=2)+"\n");print(json.dumps(summary,indent=2),flush=True)

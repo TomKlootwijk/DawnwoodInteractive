@@ -1,0 +1,20 @@
+{
+  "name": "Unified PSI circulation",
+  "version": "0.2",
+  "ordering": "Editable working ordering of source relationships",
+  "phases": [
+    "operator_mutation",
+    "log_polar",
+    "split_and_hinge",
+    "selected_operator",
+    "rk4_four_slots",
+    "geometry_divergence",
+    "rgba_crystal",
+    "surface_return"
+  ],
+  "feedback": "next input is the preceding whole returned state; operator mutation reads preceding feedback",
+  "fourth_rk4_slot": {
+    "y_up_applications": 2
+  },
+  "readout": "optional Bayer after state return"
+}

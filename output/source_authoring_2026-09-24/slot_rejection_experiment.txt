@@ -1,0 +1,224 @@
+"""Direct source-slot authoring experiment; retained as evidence, not a test module."""
+from copy import deepcopy
+from pathlib import Path
+import hashlib
+import json
+import traceback
+from local_lab import source_slot_bindings as slots
+from local_lab import source_cycle as base
+from local_lab import source_enzyme as enzyme
+from local_lab import source_resident_v2 as resident
+
+ROOT = Path.cwd()
+OUT = ROOT / "output/source_authoring_2026-09-24"
+model, _ = base.ir.read_json(base.MODEL)
+cycle, _ = base.ir.read_json(base.CYCLE)
+inputs, _ = base.ir.read_json(enzyme.DEFAULT_INPUTS)
+inputs = deepcopy(inputs)
+inputs["observations"] = inputs["observations"][:1]
+core = base.build_definition(model, cycle, 1)
+chemical = enzyme.build_definition(model, cycle, inputs)
+rows = []
+
+
+def digest(value):
+    return hashlib.sha256(base.ir.json_bytes(value)).hexdigest()
+
+
+def record(definition, key):
+    return next(row for row in definition["records"] if row["key"] == key)
+
+
+def slot_binding(definition, key, slot, role="0"):
+    r = record(definition, key)
+    if slot != "body":
+        fn = deepcopy(definition["functions"][r[slot]]["binding"])
+        name = next(iter(fn["outputs"]))
+        fn["outputs"][name] = {"op": "add", "args": [fn["outputs"][name], .0001]}
+        return {"kind": slot, "function": fn, "mutation_policy": "preserve_program"}
+    interface = definition["families"][r["body"]]["interface"]
+    variants = {}
+    for name, family in definition["families"].items():
+        if family["interface"] != interface:
+            continue
+        fn = deepcopy(definition["functions"][family["methods"][role]]["binding"])
+        output = "control" if key == "mutation" else next(iter(fn["outputs"]))
+        fn["outputs"][output] = {"op": "add", "args": [fn["outputs"][output], .0001]}
+        variants[name] = {"inherit": True, "roles": {role: fn}}
+    return {"kind": "body", "variants": variants, "mutation_policy": "declared_variants"}
+
+
+def edited(key="circle", slot="body", definition=core, role="0"):
+    source = deepcopy(model)
+    binding = slot_binding(definition, key, slot, role)
+    source["operators"][base.INDEX[key]][slot] = {"resident_binding": binding}
+    return source, binding
+
+
+def execute(source, registry=None, chemical_profile=False):
+    canonical, resolutions = slots.prepare_model(source, registry)
+    definition = (enzyme.build_definition(canonical, cycle, inputs) if chemical_profile
+                  else base.build_definition(canonical, cycle, 1))
+    before = digest(definition)
+    try:
+        provenance = slots.apply_resolutions(source, definition, resolutions)
+    except Exception as error:
+        error.definition_unchanged = before == digest(definition)
+        raise
+    program, manifest = resident.compile_definition(source, definition)
+    return {"program_sha256": hashlib.sha256(program).hexdigest(),
+            "functions": len(definition["functions"]), "families": len(definition["families"]),
+            "mutation_steps": len(definition["mutation_plan"]),
+            "resolutions": len(provenance["resolutions"]),
+            "retention": provenance["mutation_program_retention"]}
+
+
+def probe(name, expected, function):
+    row = {"case": name, "expected": expected}
+    try:
+        row["result"] = function()
+        row["observed"] = "accepted"
+    except (ValueError, TypeError, KeyError, RecursionError) as error:
+        row.update(observed="rejected", exception=type(error).__name__, message=str(error))
+        if hasattr(error, "definition_unchanged"):
+            row["definition_unchanged"] = error.definition_unchanged
+    except Exception as error:
+        row.update(observed="unexpected_exception", exception=type(error).__name__,
+                   message=str(error), traceback=traceback.format_exc())
+    row["passed"] = row["observed"] == expected and row.get("definition_unchanged", True)
+    rows.append(row)
+
+
+def default_bytes(definition, chemical_profile=False):
+    initial, _ = resident.compile_definition(model, deepcopy(definition))
+    result = execute(model, chemical_profile=chemical_profile)
+    result["original_program_sha256"] = hashlib.sha256(initial).hexdigest()
+    result["identical"] = result["program_sha256"] == result["original_program_sha256"]
+    if not result["identical"]:
+        raise RuntimeError("Default program bytes changed")
+    return result
+
+
+probe("default_core_program_bytes", "accepted", lambda: default_bytes(core))
+probe("default_enzyme_program_bytes", "accepted", lambda: default_bytes(chemical, True))
+
+source = deepcopy(model); source["operators"][9]["body"] = {"symbol": "author_unknown"}
+probe("unresolved_symbol", "rejected", lambda: execute(source))
+source = deepcopy(model); source["operators"][9]["field"] = {"literal_unknown": [1, 2, 3]}
+probe("unresolved_field_json", "rejected", lambda: execute(source))
+source = deepcopy(model); source["operators"][9]["parameters"] = {"radius": .1}
+probe("unbound_record_parameters", "rejected", lambda: execute(source))
+
+source = deepcopy(model); source["operators"][9]["body"] = {"symbol": "author_circle"}
+entry = {"key": "circle", "slot": "body", "declaration": source["operators"][9]["body"],
+         "binding": slot_binding(core, "circle", "body")}
+registry = {"profile": slots.PROFILE, "entries": [entry]}
+probe("exact_registry_binding", "accepted", lambda: execute(source, registry))
+bad = deepcopy(registry); bad["entries"][0]["declaration"] = {"symbol": "wrong"}
+probe("registry_declaration_mismatch", "rejected", lambda: execute(source, bad))
+bad = deepcopy(registry); bad["entries"].append(deepcopy(entry))
+probe("registry_duplicate", "rejected", lambda: execute(source, bad))
+bad = deepcopy(registry); bad["entries"][0]["key"] = "unoccupied_author_record"
+probe("registry_unused", "rejected", lambda: execute(model, bad))
+source, _ = edited()
+bad = {"profile": slots.PROFILE, "entries": [{**entry, "declaration": source["operators"][9]["body"]}]}
+probe("inline_registry_ambiguity", "rejected", lambda: execute(source, bad))
+
+for slot in ("body", "field", "placement"):
+    source, _ = edited(slot=slot)
+    probe("inline_" + slot, "accepted", lambda source=source: execute(source))
+
+source, binding = edited()
+binding["variants"]["circle"]["roles"]["0"]["inputs"].reverse()
+probe("wrong_ordered_inputs", "rejected", lambda: execute(source))
+source, binding = edited("hadamard", role="1")
+function = binding["variants"]["hadamard"]["roles"]["1"]
+function["outputs"] = dict(reversed(list(function["outputs"].items())))
+probe("wrong_ordered_outputs", "rejected", lambda: execute(source))
+source, binding = edited("mutation")
+binding["variants"]["mutation"]["roles"]["0"]["requires"] = []
+probe("removed_original_guards", "rejected", lambda: execute(source))
+source, binding = edited("mutation")
+binding["variants"]["mutation"]["roles"]["0"]["requires"].reverse()
+probe("reordered_original_guards", "rejected", lambda: execute(source))
+source, binding = edited()
+binding["variants"]["circle"]["inherit"] = False
+probe("partial_roles_without_explicit_inheritance", "rejected", lambda: execute(source))
+source, binding = edited()
+binding["variants"]["circle"]["roles"]["500"] = deepcopy(binding["variants"]["circle"]["roles"]["0"])
+probe("unknown_role", "rejected", lambda: execute(source))
+
+for key, role, omitted in (("hadamard", "1", "hadamard_conjugate"),
+                           ("pinion", "0", "pinion_reverse"),
+                           ("mutation", "0", "mutation_successor")):
+    source, binding = edited(key, role=role)
+    probe(key + "_all_variants", "accepted", lambda source=source: execute(source))
+    del binding["variants"][omitted]
+    probe(key + "_missing_variant", "rejected", lambda source=source: execute(source))
+
+source, _ = edited("blend", definition=chemical, role="100")
+probe("enzyme_proposal100_allowed", "accepted", lambda: execute(source, chemical_profile=True))
+source, _ = edited("mutation", definition=chemical)
+probe("enzyme_extended_mutator_allowed", "accepted", lambda: execute(source, chemical_profile=True))
+source, _ = edited("mutation", definition=core)
+probe("enzyme_rejects_core_mutator_contract", "rejected", lambda: execute(source, chemical_profile=True))
+for role in ("0", "101", "102", "103", "104"):
+    source, _ = edited("blend", definition=chemical, role=role)
+    probe("enzyme_protected_role" + role, "rejected", lambda source=source: execute(source, chemical_profile=True))
+
+source, _ = edited("circle")
+source["operators"][11]["field"] = {"resident_binding": slot_binding(core, "sphere", "field")}
+source["operators"][11]["field"]["resident_binding"]["function"]["inputs"].reverse()
+probe("late_failure_keeps_definition_unchanged", "rejected", lambda: execute(source))
+
+def bypass_unresolved():
+    source = deepcopy(model); source["operators"][9]["body"] = {"symbol": "not_resolved"}
+    definition = deepcopy(core); before = digest(definition)
+    try:
+        slots.apply_resolutions(source, definition, [])
+    except Exception as error:
+        error.definition_unchanged = before == digest(definition)
+        raise
+
+
+probe("direct_apply_cannot_bypass_resolution", "rejected", bypass_unresolved)
+
+
+def tamper_inline():
+    source, _ = edited()
+    canonical, resolutions = slots.prepare_model(source)
+    resolutions[0]["binding"]["variants"]["circle"]["roles"]["0"]["outputs"]["value"] = 0
+    definition = base.build_definition(canonical, cycle, 1); before = digest(definition)
+    try:
+        slots.apply_resolutions(source, definition, resolutions)
+    except Exception as error:
+        error.definition_unchanged = before == digest(definition)
+        raise
+
+
+probe("inline_resolution_cannot_diverge_from_source", "rejected", tamper_inline)
+
+
+def tamper_seed():
+    canonical, resolutions = slots.prepare_model(model)
+    definition = base.build_definition(canonical, cycle, 1); before = digest(definition)
+    source = deepcopy(model); source["seed"]["wavefront"][1] = 3
+    try:
+        slots.apply_resolutions(source, definition, resolutions)
+    except Exception as error:
+        error.definition_unchanged = before == digest(definition)
+        raise
+
+
+probe("source_seed_cannot_change_after_generation", "rejected", tamper_seed)
+summary = {"profile": slots.PROFILE, "experiment": "Direct in-process preparation, final-bank binding, binary compilation and rejection/atomicity checks; no GPU execution.",
+           "module_sha256": hashlib.sha256(Path(slots.__file__).read_bytes()).hexdigest(),
+           "script_sha256": hashlib.sha256((OUT / "slot_rejection_experiment.txt").read_bytes()).hexdigest(),
+           "cases": len(rows), "accepted": sum(r["observed"] == "accepted" for r in rows),
+           "rejected": sum(r["observed"] == "rejected" for r in rows),
+           "passed": sum(r["passed"] for r in rows), "all_passed": all(r["passed"] for r in rows), "results": rows}
+(OUT / "slot_rejections.json").write_text(json.dumps(summary, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+print(json.dumps({k: v for k, v in summary.items() if k != "results"}, indent=2))
+if not summary["all_passed"]:
+    print(json.dumps([r for r in rows if not r["passed"]], indent=2))
+    raise SystemExit(1)

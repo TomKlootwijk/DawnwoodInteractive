@@ -1,0 +1,83 @@
+from pathlib import Path
+from copy import deepcopy
+import json,subprocess,sys
+sys.path.insert(0,str(Path.cwd()));sys.path.insert(0,str(Path.cwd()/'tmp'))
+from local_lab import source_cycle as c,source_program as p,source_resident_v2 as r
+from run_resident_enzyme_campaign import paired,EXE,ENV
+
+BASE=Path('output/source_authoring_2026-09-24').resolve();OUT=BASE/'extra';OUT.mkdir(exist_ok=True)
+MODEL,_=c.ir.read_json(Path('source_bindings/examples/amplitude_budget_model.json'));CYCLE,_=c.ir.read_json(c.CYCLE)
+rows=[];effects=[]
+def save(name,model,d):
+    folder=OUT/name;folder.mkdir(exist_ok=True)
+    raw,manifest=r.compile_definition(model,d)
+    (folder/'source_model.json').write_bytes(c.ir.json_bytes(model))
+    if (folder/'program.bin').exists():assert (folder/'program.bin').read_bytes()==raw
+    else:(folder/'program.bin').write_bytes(raw)
+    (folder/'manifest.json').write_bytes(c.ir.json_bytes(manifest))
+    return folder/'program.bin',raw
+
+reference=r.read_checkpoint(BASE/'runs/amplitude_1/cpu.bin')
+for variant in ['body_identity','field_shift','placement_shift','existing_edits_and_extension']:
+    model=deepcopy(MODEL)
+    if variant=='body_identity':model['operators'][31]['body']['resident_binding']['function']['outputs']={k:c.V(k) for k in c.PAIR}
+    elif variant=='field_shift':
+        out=model['operators'][31]['field']['resident_binding']['function']['outputs'];out['distance']=c.add(out['distance'],.025)
+    elif variant=='placement_shift':
+        binding=model['operators'][31]['placement']['resident_binding']['function']
+        binding['outputs']=dict(zip(binding['outputs'],c.canonical(c.add(c.V('u'),.125),c.V('v'),c.V('orientation'))))
+    else:
+        authored,_=c.ir.read_json(Path('source_bindings/examples/authored_hadamard_model.json'))
+        model['operators'][1]=authored['operators'][1]
+    d=p.build_definition(model,CYCLE,129);source,_=save(variant,model,d)
+    if (OUT/(variant+'_run')).exists():
+        runfolder=OUT/(variant+'_run');raw=(runfolder/'cpu.bin').read_bytes();assert raw==(runfolder/'vulkan.bin').read_bytes()
+        dec=r.decode_checkpoint(raw);report=json.loads((runfolder/'vulkan.stdout.json').read_text(encoding='utf-8'))
+        assert dec['all_status_ok'] and report['validation_enabled'] and report['validation_errors']==report['validation_warnings']==0
+        row={'name':variant+'_run','epochs':1,'count':dec['count'],'all_checkpoint_bytes_identical':True,'all_status_ok':True,'compared_instance_words':dec['count']*dec['instance_words'],'gpu_validation_enabled':True,'gpu_validation_errors':0,'gpu_validation_warnings':0}
+    else:row,dec,raw=paired(OUT,variant+'_run',source,1)
+    rows.append(row)
+    state_words=sum(a!=b for x,y in zip(dec['instances'],reference['instances']) for a,b in zip(x['state_bits'],y['state_bits']))
+    record_words=sum(a!=b for x,y in zip(dec['instances'],reference['instances']) for a,b in zip(x['records'][31]['raw_words'],y['records'][31]['raw_words']))
+    effects.append({'case':variant,'changed_state_words':state_words,'changed_added_record_words':record_words})
+    assert state_words>0 if variant in ['body_identity','existing_edits_and_extension'] else record_words>0
+
+failures=[]
+for name,status in [('missing_index_32',10),('incompatible_index_0',11),('invalid_depth_6',1),('authored_precondition',1)]:
+    model=deepcopy(MODEL)
+    if name=='authored_precondition':model['operators'][31]['body']['resident_binding']['function']['requires']=[0]
+    d=p.build_definition(model,CYCLE,3)
+    for lane in d['instances']:
+        if name=='missing_index_32':lane['state']['route_b4']=1
+        if name=='incompatible_index_0':lane['state']['route_depth']=0
+        if name=='invalid_depth_6':lane['state']['route_depth']=6
+    source,initial=save(name,model,d);before=r.decode_checkpoint(initial);returned=[]
+    for backend in ['cpu','vulkan']:
+        destination=OUT/name/(backend+'.bin')
+        args=[str(EXE),'run','--input',str(source),'--output',str(destination),'--backend',backend,'--epochs','8']
+        if backend=='vulkan':args+=['--device','RTX 5070 Ti']
+        receipt_path=OUT/name/(backend+'.execution.json')
+        if receipt_path.exists():receipt=json.loads(receipt_path.read_text(encoding='utf-8'))
+        else:
+            run=subprocess.run(args,capture_output=True,text=True,env=ENV);report=json.loads(run.stdout)
+            receipt={'command':args,'exit_code':run.returncode,'report':report}
+            receipt_path.write_bytes(c.ir.json_bytes(receipt))
+            (OUT/name/(backend+'.stderr.txt')).write_text(run.stderr,encoding='utf-8')
+        report=receipt['report']
+        assert receipt['exit_code']==3 and report['failed_lanes']==3 and report['committed_instance_epochs']==0
+        if backend=='vulkan':assert report['validation_enabled'] and report['validation_errors']==report['validation_warnings']==0
+        raw=destination.read_bytes();returned.append(raw);after=r.decode_checkpoint(raw)
+        assert all(i['status']==status and i['epoch']==0 for i in after['instances'])
+        for x,y in zip(before['instances'],after['instances']):
+            assert x['state_bits']==y['state_bits']
+            assert [z['raw_words'] for z in x['records']]==[z['raw_words'] for z in y['records']]
+    assert returned[0]==returned[1]
+    failures.append({'case':name,'status':status,'lanes':3,'requested_epochs':8,'commits':0,'all_checkpoint_bytes_identical':True,'whole_epoch_rollback_exact':True})
+
+coverage={}
+for name in ['combined_1','combined_2','combined_64']:
+    dec=r.read_checkpoint(BASE/'runs'/name/'cpu.bin')
+    coverage[name]={'hadamard_body_handles':sorted({i['records'][1]['body_handle'] for i in dec['instances']}),
+                    'mutator_body_handles':sorted({i['records'][30]['body_handle'] for i in dec['instances']})}
+(OUT/'summary.json').write_bytes(c.ir.json_bytes({'paired_healthy_runs':rows,'effects':effects,'runtime_failures':failures,'body_variant_coverage':coverage,'experiment_correction':'The first harness expected exit0 for an intentional lane failure and conflated plan require status7 with an XIR precondition. The runtime correctly returned documented exit3; XIR errors use outer status1 with an encoded reason. Those harness expectations were corrected after reading the ABI and runtime. Already-completed receipts were reused only after byte/status verification. No runtime code or tolerance changed.'}))
+print(json.dumps({'healthy_pairs':len(rows),'failure_pairs':len(failures),'effects':effects,'coverage':coverage}),flush=True)

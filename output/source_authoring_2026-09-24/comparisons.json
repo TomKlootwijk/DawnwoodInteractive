@@ -1,0 +1,206 @@
+[
+  {
+    "name": "body_causality_1",
+    "left": "body_1",
+    "right": "baseline_1",
+    "state_indices": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "changed_instances": 129,
+    "changed_words": 516
+  },
+  {
+    "name": "body_causality_64",
+    "left": "body_64",
+    "right": "baseline_64",
+    "state_indices": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "changed_instances": 129,
+    "changed_words": 516
+  },
+  {
+    "name": "field_causality_1",
+    "left": "field_1",
+    "right": "baseline_1",
+    "state_indices": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "changed_instances": 129,
+    "changed_words": 516
+  },
+  {
+    "name": "field_causality_64",
+    "left": "field_64",
+    "right": "baseline_64",
+    "state_indices": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "changed_instances": 129,
+    "changed_words": 516
+  },
+  {
+    "name": "placement_causality_1",
+    "left": "placement_1",
+    "right": "baseline_1",
+    "state_indices": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "changed_instances": 129,
+    "changed_words": 516
+  },
+  {
+    "name": "placement_causality_64",
+    "left": "placement_64",
+    "right": "baseline_64",
+    "state_indices": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "changed_instances": 129,
+    "changed_words": 516
+  },
+  {
+    "name": "combined_causality_1",
+    "left": "combined_1",
+    "right": "baseline_1",
+    "state_indices": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "changed_instances": 129,
+    "changed_words": 516
+  },
+  {
+    "name": "combined_causality_2",
+    "left": "combined_2",
+    "right": "baseline_2",
+    "state_indices": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "changed_instances": 129,
+    "changed_words": 516
+  },
+  {
+    "name": "combined_causality_64",
+    "left": "combined_64",
+    "right": "baseline_64",
+    "state_indices": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "changed_instances": 129,
+    "changed_words": 516
+  },
+  {
+    "name": "enzyme_proposal_edit_1",
+    "left": "enzyme_authored_1",
+    "right": "enzyme_original_1",
+    "state_indices": [
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "changed_instances": 8,
+    "changed_words": 90
+  },
+  {
+    "name": "enzyme_proposal_edit_8",
+    "left": "enzyme_authored_8",
+    "right": "enzyme_original_8",
+    "state_indices": [
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "changed_instances": 8,
+    "changed_words": 96
+  },
+  {
+    "name": "enzyme_proposal_edit_128",
+    "left": "enzyme_authored_128",
+    "right": "enzyme_original_128",
+    "state_indices": [
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "changed_instances": 8,
+    "changed_words": 63
+  }
+]

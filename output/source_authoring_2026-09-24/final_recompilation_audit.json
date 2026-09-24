@@ -1,0 +1,116 @@
+{
+  "all_passed": true,
+  "final_code_program_equivalence": [
+    {
+      "case": "baseline",
+      "final_compiler_reproduces_executed_program_bytes": true,
+      "sha256": "a9abfadb9284b6ed323b3d85e51e4db381b554dbb0ab776847c20c5304fb5636"
+    },
+    {
+      "case": "hadamard_body",
+      "final_compiler_reproduces_executed_program_bytes": true,
+      "sha256": "1fa1ef1eb9193cb649cc64ba9cfe71fd39a43a27aa7f7a1b61973b5971fa8c0f"
+    },
+    {
+      "case": "hadamard_field",
+      "final_compiler_reproduces_executed_program_bytes": true,
+      "sha256": "872bfc09f76d14330db00c4626c8e80290835322f51747eadbdb40181c644625"
+    },
+    {
+      "case": "hadamard_placement",
+      "final_compiler_reproduces_executed_program_bytes": true,
+      "sha256": "fc9f0c40e6664dfe40ebf2e18e7f817b040e571f33b1c926741942232ff91db2"
+    },
+    {
+      "case": "hadamard_combined",
+      "final_compiler_reproduces_executed_program_bytes": true,
+      "sha256": "73b51f74bd0c05e0af80943b5da7b17897a88e8bf28d5ddb783b07b8b089da4f"
+    },
+    {
+      "case": "enzyme_original",
+      "final_compiler_reproduces_executed_program_bytes": true,
+      "sha256": "70ed6bd93119d53a52f587c9c41dc4f0756fa4bd438ec5234f067411c9613bec"
+    },
+    {
+      "case": "enzyme_authored",
+      "final_compiler_reproduces_executed_program_bytes": true,
+      "sha256": "d35ad7dc23fea52497493dab956aa64458e84037a8cb67d6c0f7b272c2cc1659"
+    },
+    {
+      "case": "amplitude_budget",
+      "final_compiler_reproduces_executed_program_bytes": true,
+      "sha256": "8843c384311acc8d30e52e27cbf7769a101665744a4f3c172e2adf38ccea351f"
+    },
+    {
+      "case": "route_32",
+      "final_compiler_reproduces_executed_program_bytes": true,
+      "sha256": "ea64bed7b13b90d575f5c11178e317ec1e749bfcef1c498d783ba14f14530dc1"
+    },
+    {
+      "case": "route_62",
+      "final_compiler_reproduces_executed_program_bytes": true,
+      "sha256": "0eb116d70d1de0ead57446f6398ca85484e4c581c44d8483f1e01b46be5dea23"
+    },
+    {
+      "case": "cli_amplitude",
+      "final_cli_program_matches_campaign": true,
+      "files_verified": 13
+    },
+    {
+      "case": "cli_hadamard",
+      "final_cli_program_matches_campaign": true,
+      "files_verified": 13
+    },
+    {
+      "case": "cli_enzyme",
+      "final_cli_program_matches_campaign": true,
+      "files_verified": 14
+    },
+    {
+      "command": [
+        "Dawnwood-Author.cmd",
+        "run",
+        "--backend",
+        "vulkan",
+        "--device",
+        "RTX 5070 Ti",
+        "--input",
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_authoring_2026-09-24\\cli_amplitude\\program.bin",
+        "--output",
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_authoring_2026-09-24\\cli_amplitude\\after_1.bin",
+        "--epochs",
+        "1"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "a284a9c5c6a2e89732938a2b013ea33979468e2c92643f7d38764c94059c029a"
+    },
+    {
+      "command": [
+        "Dawnwood-Author.cmd",
+        "inspect",
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_authoring_2026-09-24\\runs\\amplitude_64\\vulkan.bin",
+        "--manifest",
+        "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_authoring_2026-09-24\\cli_amplitude\\manifest.json"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "9aa8175a7c89c019671a2da72844e8c71aa81ead97f70398c64402d2595cd437"
+    }
+  ],
+  "unchanged_baseline_files": [
+    "Dawnwood-Source.cmd",
+    "local_lab/source_cycle.py",
+    "local_lab/source_enzyme.py",
+    "source_workbench/Dawnwood_Interactive_v0.2/model/substrate.json",
+    "source_workbench/Dawnwood_Interactive_v0.2/model/cycle.json"
+  ],
+  "runtime_sha256": {
+    "dawnwood-resident-v2.exe": "d6e08b44edf484571ad5d49954a8b3797c71e5bfc80ec4ce8cde795e8d865d29",
+    "resident_v2.spv": "9e90c89135a93a115db1ceaea5475338a389f8ab41ab7e64165751d4410f6098"
+  },
+  "source_compiler_sha256": {
+    "source_program.py": "c91049fd6eee0c9c89b2489dc2e1d56464f9ee4eec0e69e9b9edb1be10662fa9",
+    "source_slot_bindings.py": "385016ddda79cf8050d4fbfddb8b6e8e1aeb2bde8981997134e1b8dcd12689db",
+    "source_catalogue_extension.py": "c1fb4fe505e5dc1316bb6b30d12f44f185456239fd8931a72ced7054598afddd"
+  },
+  "provenance_note": "Initial experiment definitions retain compiler hashes from their construction time. The final code adds stricter authoring rejection/provenance checks. Each final compilation above independently reproduces the exact executed program bytes; metadata changes are not silently substituted into historical records."
+}

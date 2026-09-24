@@ -1,0 +1,76 @@
+from copy import deepcopy
+from pathlib import Path
+import sys
+sys.path.insert(0,str(Path.cwd()))
+from local_lab import source_cycle as c, source_enzyme as e
+
+root=Path('source_bindings/examples')
+model,_=c.ir.read_json(c.MODEL);cycle,_=c.ir.read_json(c.CYCLE)
+baseline=c.build_definition(model,cycle)
+
+def binding_metadata(binding,meaning):
+    binding['source']='DWI-SOURCE-PROGRAM-0.1 explicit example model declaration'
+    binding['meaning']=meaning
+    binding['status']='Authored numerical definition; validation is recorded separately.'
+    return binding
+
+def replace_input(value,name,expression):
+    if value=={'input':name}:return deepcopy(expression)
+    if isinstance(value,dict):return {k:replace_input(v,name,expression) for k,v in value.items()}
+    if isinstance(value,list):return [replace_input(v,name,expression) for v in value]
+    return value
+
+edited=deepcopy(model);variants={}
+for family in ['hadamard','hadamard_conjugate']:
+    role=deepcopy(baseline['functions'][baseline['families'][family]['methods']['1']]['binding'])
+    role['outputs']=replace_input(role['outputs'],'phase',c.add(c.V('phase'),.125))
+    binding_metadata(role,'Same typed log-polar double-Hadamard formula with an explicitly authored +0.125 radian phase offset; existing complex role0 is inherited.')
+    variants[family]={'inherit':True,'roles':{'1':role}}
+edited['operators'][1]['body']={'resident_binding':{'kind':'body','mutation_policy':'declared_variants','variants':variants}}
+field=deepcopy(baseline['functions']['disk']['binding'])
+field['outputs']={'distance':c.sub(c.norm2(c.sub(c.V('dx'),.025),c.add(c.V('dy'),.03125)),c.V('radius'))}
+binding_metadata(field,'Exact Euclidean disk SDF in the supplied local carrier coordinates with center(+0.025,-0.03125); radius remains resident. This shifted local disk is an authored carrier field, not a global geodesic-distance claim.')
+edited['operators'][1]['field']={'resident_binding':{'kind':'field','function':field,'mutation_policy':'preserve_program'}}
+placement=deepcopy(baseline['functions']['placement_canonical']['binding'])
+placement['outputs']=dict(zip(placement['outputs'],c.canonical(c.add(c.V('u'),.03125),c.V('v'),c.V('orientation'))))
+binding_metadata(placement,'Translate the supplied anchor u by0.03125 then canonicalize the Klein chart, retaining the declared seam orientation rule.')
+edited['operators'][1]['placement']={'resident_binding':{'kind':'placement','function':placement,'mutation_policy':'preserve_program'}}
+(root/'authored_hadamard_model.json').write_bytes(c.ir.json_bytes(edited))
+
+doc,_=c.ir.read_json(e.DEFAULT_INPUTS)
+ed=e.build_definition(model,cycle,doc);chemical=deepcopy(model);variants={}
+for family in ['blend','blend_enzyme_cautious']:
+    role=deepcopy(ed['functions'][ed['families'][family]['methods']['100']]['binding'])
+    old=role['outputs']
+    role['outputs']={
+        'trial_y0':c.add(c.V('y0'),c.mul(.5,c.sub(old['trial_y0'],c.V('y0')))),
+        'trial_y1':c.add(c.V('y1'),c.mul(.5,c.sub(old['trial_y1'],c.V('y1')))),
+        'step':c.mul(.5,old['step'])}
+    binding_metadata(role,'Explicit half-step proposal using every original wave/history/inverse/interval/carrier contribution. This example binds normalized E_total=1,S_total=10, matching enzyme_inputs.json. Protected scientific roles are inherited; the proposal is not chemical kinetics.')
+    variants[family]={'inherit':True,'roles':{'100':role}}
+chemical['operators'][14]['body']={'resident_binding':{'kind':'body','mutation_policy':'declared_variants','variants':variants}}
+(root/'authored_enzyme_model.json').write_bytes(c.ir.json_bytes(chemical))
+
+amplitude=deepcopy(model)
+w=[c.V(k) for k in c.PAIR]
+norm=c.norm2(c.norm2(w[0],w[1]),c.norm2(w[2],w[3]))
+distance=c.sub(norm,1)
+denom=c.add(1,c.op('max',0,distance))
+body={'inputs':[*c.PAIR,'routing_phase','field_distance'],
+      'outputs':{k:c.div(c.V(k),denom) for k in c.PAIR},
+      'requires':[],
+      'source':'DWI-SOURCE-PROGRAM-0.1 authored amplitude-budget operator; Euclidean projection onto the closed unit ball in C^2=R^4',
+      'meaning':'Compute the exact-arithmetic signed distance d=||w||_2-1, then project w/(1+max(0,d)). Negative means inside; this preserves the relative complex amplitudes. The selected overload explicitly ignores routing_phase and carrier distance; those retain carrier/controller roles elsewhere. The cap applies at selected application, before later cycle stages, not to the final returned wave.',
+      'status':'Exact real-arithmetic distance and projection law; portable FP32 implementation requires measured error. Dimensionless computational amplitude, not physical wattage or quantum hardware.'}
+field=deepcopy(baseline['functions']['disk']['binding']);place=deepcopy(baseline['functions']['placement_canonical']['binding'])
+parameters=dict(zip(baseline['record_value_names'],baseline['records'][9]['values']))
+parameters['anchor_u']=.375;parameters['anchor_v']=.625
+parameters['previous_body_handle']=34
+new={'key':'amplitude_budget','index':31,
+     'body':{'resident_binding':{'kind':'selected_body','function':body,'mutation_policy':'preserve_family'}},
+     'field':{'resident_binding':{'kind':'field','function':field,'mutation_policy':'preserve_program'}},
+     'placement':{'resident_binding':{'kind':'placement','function':place,'mutation_policy':'preserve_program'}},
+     'parameters':parameters}
+amplitude['operators'].append(new)
+(root/'amplitude_budget_model.json').write_bytes(c.ir.json_bytes(amplitude))
+print({'examples':[str(root/name) for name in ['authored_hadamard_model.json','authored_enzyme_model.json','amplitude_budget_model.json']], 'record_value_names':baseline['record_value_names']})

@@ -39,7 +39,10 @@ streams, finite history, inverse matrix and Klein return are documented in the
 [source fidelity audit](output/source_cycle_2026-09-24/SOURCE_FIDELITY_AUDIT.md).
 The source's open numerical laws are explicitly chosen bindings. This is a
 bounded numerical edition with explicit source and arithmetic limits. A resident
-enzyme-pool application now specializes this cycle, as described below.
+enzyme-pool application now specializes this cycle, as described below. The
+[source-authoring interface](docs/SOURCE_PROGRAM_AUTHORING.md) additionally
+compiles explicit body/field/placement edits and one newly routed situated
+operator into this same cycle.
 
 ```powershell
 .\Dawnwood-Cycle.cmd compile --output output/my_cycle
@@ -55,6 +58,18 @@ implemented by this edition. Its saturation and mathematical results belong to
 the source-cycle campaign; application-specific evidence is recorded separately.
 
 ## Run the resident enzyme application
+
+To author the acting definitions directly, see [source-program authoring](docs/SOURCE_PROGRAM_AUTHORING.md).
+For example:
+
+```powershell
+.\Dawnwood-Author.cmd compile --model source_bindings/examples/amplitude_budget_model.json --output output/my_authored_program
+```
+
+The [authoring campaign](output/source_authoring_2026-09-24/REPORT.md) records
+source-slot causality, added-record routing, independent distance/projection
+checks and a new GPU saturation run. Application-call composition remains an
+explicit open requirement.
 
 [DWI-ENZYME-0.1](docs/RESIDENT_ENZYME_BINDING.md) reconciles supplied enzyme,
 substrate, complex and product concentrations against two conserved pools. Its

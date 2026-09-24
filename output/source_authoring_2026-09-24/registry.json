@@ -1,0 +1,2212 @@
+{
+  "profile": "DWI-SOURCE-SLOTS-0.1",
+  "entries": [
+    {
+      "key": "hadamard",
+      "slot": "body",
+      "declaration": {
+        "symbol": "User_authored_double_H_phase"
+      },
+      "binding": {
+        "kind": "body",
+        "mutation_policy": "declared_variants",
+        "variants": {
+          "hadamard": {
+            "inherit": true,
+            "roles": {
+              "1": {
+                "inputs": [
+                  "rho0",
+                  "theta0",
+                  "rho1",
+                  "theta1",
+                  "phase",
+                  "parity",
+                  "field_distance"
+                ],
+                "outputs": {
+                  "ar": {
+                    "op": "mul",
+                    "args": [
+                      0.7071067811865476,
+                      {
+                        "op": "add",
+                        "args": [
+                          {
+                            "op": "mul",
+                            "args": [
+                              0.7071067811865476,
+                              {
+                                "op": "add",
+                                "args": [
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      {
+                                        "op": "exp",
+                                        "args": [
+                                          {
+                                            "input": "rho0"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "op": "cos",
+                                        "args": [
+                                          {
+                                            "input": "theta0"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      {
+                                        "op": "exp",
+                                        "args": [
+                                          {
+                                            "input": "rho1"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "op": "cos",
+                                        "args": [
+                                          {
+                                            "input": "theta1"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "op": "sub",
+                            "args": [
+                              {
+                                "op": "mul",
+                                "args": [
+                                  {
+                                    "op": "cos",
+                                    "args": [
+                                      {
+                                        "op": "mul",
+                                        "args": [
+                                          1,
+                                          {
+                                            "op": "add",
+                                            "args": [
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "input": "phase"
+                                                  },
+                                                  0.125
+                                                ]
+                                              },
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "op": "mul",
+                                                    "args": [
+                                                      0.05,
+                                                      {
+                                                        "input": "parity"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "input": "field_distance"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      0.7071067811865476,
+                                      {
+                                        "op": "sub",
+                                        "args": [
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho0"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "cos",
+                                                "args": [
+                                                  {
+                                                    "input": "theta0"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho1"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "cos",
+                                                "args": [
+                                                  {
+                                                    "input": "theta1"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "op": "mul",
+                                "args": [
+                                  {
+                                    "op": "sin",
+                                    "args": [
+                                      {
+                                        "op": "mul",
+                                        "args": [
+                                          1,
+                                          {
+                                            "op": "add",
+                                            "args": [
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "input": "phase"
+                                                  },
+                                                  0.125
+                                                ]
+                                              },
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "op": "mul",
+                                                    "args": [
+                                                      0.05,
+                                                      {
+                                                        "input": "parity"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "input": "field_distance"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      0.7071067811865476,
+                                      {
+                                        "op": "sub",
+                                        "args": [
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho0"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "sin",
+                                                "args": [
+                                                  {
+                                                    "input": "theta0"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho1"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "sin",
+                                                "args": [
+                                                  {
+                                                    "input": "theta1"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "ai": {
+                    "op": "mul",
+                    "args": [
+                      0.7071067811865476,
+                      {
+                        "op": "add",
+                        "args": [
+                          {
+                            "op": "mul",
+                            "args": [
+                              0.7071067811865476,
+                              {
+                                "op": "add",
+                                "args": [
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      {
+                                        "op": "exp",
+                                        "args": [
+                                          {
+                                            "input": "rho0"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "op": "sin",
+                                        "args": [
+                                          {
+                                            "input": "theta0"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      {
+                                        "op": "exp",
+                                        "args": [
+                                          {
+                                            "input": "rho1"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "op": "sin",
+                                        "args": [
+                                          {
+                                            "input": "theta1"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "op": "add",
+                            "args": [
+                              {
+                                "op": "mul",
+                                "args": [
+                                  {
+                                    "op": "sin",
+                                    "args": [
+                                      {
+                                        "op": "mul",
+                                        "args": [
+                                          1,
+                                          {
+                                            "op": "add",
+                                            "args": [
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "input": "phase"
+                                                  },
+                                                  0.125
+                                                ]
+                                              },
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "op": "mul",
+                                                    "args": [
+                                                      0.05,
+                                                      {
+                                                        "input": "parity"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "input": "field_distance"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      0.7071067811865476,
+                                      {
+                                        "op": "sub",
+                                        "args": [
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho0"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "cos",
+                                                "args": [
+                                                  {
+                                                    "input": "theta0"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho1"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "cos",
+                                                "args": [
+                                                  {
+                                                    "input": "theta1"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "op": "mul",
+                                "args": [
+                                  {
+                                    "op": "cos",
+                                    "args": [
+                                      {
+                                        "op": "mul",
+                                        "args": [
+                                          1,
+                                          {
+                                            "op": "add",
+                                            "args": [
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "input": "phase"
+                                                  },
+                                                  0.125
+                                                ]
+                                              },
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "op": "mul",
+                                                    "args": [
+                                                      0.05,
+                                                      {
+                                                        "input": "parity"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "input": "field_distance"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      0.7071067811865476,
+                                      {
+                                        "op": "sub",
+                                        "args": [
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho0"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "sin",
+                                                "args": [
+                                                  {
+                                                    "input": "theta0"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho1"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "sin",
+                                                "args": [
+                                                  {
+                                                    "input": "theta1"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "br": {
+                    "op": "mul",
+                    "args": [
+                      0.7071067811865476,
+                      {
+                        "op": "sub",
+                        "args": [
+                          {
+                            "op": "mul",
+                            "args": [
+                              0.7071067811865476,
+                              {
+                                "op": "add",
+                                "args": [
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      {
+                                        "op": "exp",
+                                        "args": [
+                                          {
+                                            "input": "rho0"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "op": "cos",
+                                        "args": [
+                                          {
+                                            "input": "theta0"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      {
+                                        "op": "exp",
+                                        "args": [
+                                          {
+                                            "input": "rho1"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "op": "cos",
+                                        "args": [
+                                          {
+                                            "input": "theta1"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "op": "sub",
+                            "args": [
+                              {
+                                "op": "mul",
+                                "args": [
+                                  {
+                                    "op": "cos",
+                                    "args": [
+                                      {
+                                        "op": "mul",
+                                        "args": [
+                                          1,
+                                          {
+                                            "op": "add",
+                                            "args": [
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "input": "phase"
+                                                  },
+                                                  0.125
+                                                ]
+                                              },
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "op": "mul",
+                                                    "args": [
+                                                      0.05,
+                                                      {
+                                                        "input": "parity"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "input": "field_distance"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      0.7071067811865476,
+                                      {
+                                        "op": "sub",
+                                        "args": [
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho0"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "cos",
+                                                "args": [
+                                                  {
+                                                    "input": "theta0"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho1"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "cos",
+                                                "args": [
+                                                  {
+                                                    "input": "theta1"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "op": "mul",
+                                "args": [
+                                  {
+                                    "op": "sin",
+                                    "args": [
+                                      {
+                                        "op": "mul",
+                                        "args": [
+                                          1,
+                                          {
+                                            "op": "add",
+                                            "args": [
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "input": "phase"
+                                                  },
+                                                  0.125
+                                                ]
+                                              },
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "op": "mul",
+                                                    "args": [
+                                                      0.05,
+                                                      {
+                                                        "input": "parity"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "input": "field_distance"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      0.7071067811865476,
+                                      {
+                                        "op": "sub",
+                                        "args": [
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho0"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "sin",
+                                                "args": [
+                                                  {
+                                                    "input": "theta0"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho1"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "sin",
+                                                "args": [
+                                                  {
+                                                    "input": "theta1"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "bi": {
+                    "op": "mul",
+                    "args": [
+                      0.7071067811865476,
+                      {
+                        "op": "sub",
+                        "args": [
+                          {
+                            "op": "mul",
+                            "args": [
+                              0.7071067811865476,
+                              {
+                                "op": "add",
+                                "args": [
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      {
+                                        "op": "exp",
+                                        "args": [
+                                          {
+                                            "input": "rho0"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "op": "sin",
+                                        "args": [
+                                          {
+                                            "input": "theta0"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      {
+                                        "op": "exp",
+                                        "args": [
+                                          {
+                                            "input": "rho1"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "op": "sin",
+                                        "args": [
+                                          {
+                                            "input": "theta1"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "op": "add",
+                            "args": [
+                              {
+                                "op": "mul",
+                                "args": [
+                                  {
+                                    "op": "sin",
+                                    "args": [
+                                      {
+                                        "op": "mul",
+                                        "args": [
+                                          1,
+                                          {
+                                            "op": "add",
+                                            "args": [
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "input": "phase"
+                                                  },
+                                                  0.125
+                                                ]
+                                              },
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "op": "mul",
+                                                    "args": [
+                                                      0.05,
+                                                      {
+                                                        "input": "parity"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "input": "field_distance"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      0.7071067811865476,
+                                      {
+                                        "op": "sub",
+                                        "args": [
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho0"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "cos",
+                                                "args": [
+                                                  {
+                                                    "input": "theta0"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho1"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "cos",
+                                                "args": [
+                                                  {
+                                                    "input": "theta1"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "op": "mul",
+                                "args": [
+                                  {
+                                    "op": "cos",
+                                    "args": [
+                                      {
+                                        "op": "mul",
+                                        "args": [
+                                          1,
+                                          {
+                                            "op": "add",
+                                            "args": [
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "input": "phase"
+                                                  },
+                                                  0.125
+                                                ]
+                                              },
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "op": "mul",
+                                                    "args": [
+                                                      0.05,
+                                                      {
+                                                        "input": "parity"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "input": "field_distance"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      0.7071067811865476,
+                                      {
+                                        "op": "sub",
+                                        "args": [
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho0"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "sin",
+                                                "args": [
+                                                  {
+                                                    "input": "theta0"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho1"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "sin",
+                                                "args": [
+                                                  {
+                                                    "input": "theta1"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "source": "DWI-SOURCE-PROGRAM-0.1 explicit example model declaration",
+                "meaning": "Same typed log-polar double-Hadamard formula with an explicitly authored +0.125 radian phase offset; existing complex role0 is inherited.",
+                "status": "Authored numerical definition; validation is recorded separately."
+              }
+            }
+          },
+          "hadamard_conjugate": {
+            "inherit": true,
+            "roles": {
+              "1": {
+                "inputs": [
+                  "rho0",
+                  "theta0",
+                  "rho1",
+                  "theta1",
+                  "phase",
+                  "parity",
+                  "field_distance"
+                ],
+                "outputs": {
+                  "ar": {
+                    "op": "mul",
+                    "args": [
+                      0.7071067811865476,
+                      {
+                        "op": "add",
+                        "args": [
+                          {
+                            "op": "mul",
+                            "args": [
+                              0.7071067811865476,
+                              {
+                                "op": "add",
+                                "args": [
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      {
+                                        "op": "exp",
+                                        "args": [
+                                          {
+                                            "input": "rho0"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "op": "cos",
+                                        "args": [
+                                          {
+                                            "input": "theta0"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      {
+                                        "op": "exp",
+                                        "args": [
+                                          {
+                                            "input": "rho1"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "op": "cos",
+                                        "args": [
+                                          {
+                                            "input": "theta1"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "op": "sub",
+                            "args": [
+                              {
+                                "op": "mul",
+                                "args": [
+                                  {
+                                    "op": "cos",
+                                    "args": [
+                                      {
+                                        "op": "mul",
+                                        "args": [
+                                          -1,
+                                          {
+                                            "op": "add",
+                                            "args": [
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "input": "phase"
+                                                  },
+                                                  0.125
+                                                ]
+                                              },
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "op": "mul",
+                                                    "args": [
+                                                      0.05,
+                                                      {
+                                                        "input": "parity"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "input": "field_distance"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      0.7071067811865476,
+                                      {
+                                        "op": "sub",
+                                        "args": [
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho0"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "cos",
+                                                "args": [
+                                                  {
+                                                    "input": "theta0"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho1"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "cos",
+                                                "args": [
+                                                  {
+                                                    "input": "theta1"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "op": "mul",
+                                "args": [
+                                  {
+                                    "op": "sin",
+                                    "args": [
+                                      {
+                                        "op": "mul",
+                                        "args": [
+                                          -1,
+                                          {
+                                            "op": "add",
+                                            "args": [
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "input": "phase"
+                                                  },
+                                                  0.125
+                                                ]
+                                              },
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "op": "mul",
+                                                    "args": [
+                                                      0.05,
+                                                      {
+                                                        "input": "parity"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "input": "field_distance"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      0.7071067811865476,
+                                      {
+                                        "op": "sub",
+                                        "args": [
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho0"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "sin",
+                                                "args": [
+                                                  {
+                                                    "input": "theta0"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho1"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "sin",
+                                                "args": [
+                                                  {
+                                                    "input": "theta1"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "ai": {
+                    "op": "mul",
+                    "args": [
+                      0.7071067811865476,
+                      {
+                        "op": "add",
+                        "args": [
+                          {
+                            "op": "mul",
+                            "args": [
+                              0.7071067811865476,
+                              {
+                                "op": "add",
+                                "args": [
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      {
+                                        "op": "exp",
+                                        "args": [
+                                          {
+                                            "input": "rho0"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "op": "sin",
+                                        "args": [
+                                          {
+                                            "input": "theta0"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      {
+                                        "op": "exp",
+                                        "args": [
+                                          {
+                                            "input": "rho1"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "op": "sin",
+                                        "args": [
+                                          {
+                                            "input": "theta1"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "op": "add",
+                            "args": [
+                              {
+                                "op": "mul",
+                                "args": [
+                                  {
+                                    "op": "sin",
+                                    "args": [
+                                      {
+                                        "op": "mul",
+                                        "args": [
+                                          -1,
+                                          {
+                                            "op": "add",
+                                            "args": [
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "input": "phase"
+                                                  },
+                                                  0.125
+                                                ]
+                                              },
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "op": "mul",
+                                                    "args": [
+                                                      0.05,
+                                                      {
+                                                        "input": "parity"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "input": "field_distance"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      0.7071067811865476,
+                                      {
+                                        "op": "sub",
+                                        "args": [
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho0"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "cos",
+                                                "args": [
+                                                  {
+                                                    "input": "theta0"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho1"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "cos",
+                                                "args": [
+                                                  {
+                                                    "input": "theta1"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "op": "mul",
+                                "args": [
+                                  {
+                                    "op": "cos",
+                                    "args": [
+                                      {
+                                        "op": "mul",
+                                        "args": [
+                                          -1,
+                                          {
+                                            "op": "add",
+                                            "args": [
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "input": "phase"
+                                                  },
+                                                  0.125
+                                                ]
+                                              },
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "op": "mul",
+                                                    "args": [
+                                                      0.05,
+                                                      {
+                                                        "input": "parity"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "input": "field_distance"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      0.7071067811865476,
+                                      {
+                                        "op": "sub",
+                                        "args": [
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho0"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "sin",
+                                                "args": [
+                                                  {
+                                                    "input": "theta0"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho1"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "sin",
+                                                "args": [
+                                                  {
+                                                    "input": "theta1"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "br": {
+                    "op": "mul",
+                    "args": [
+                      0.7071067811865476,
+                      {
+                        "op": "sub",
+                        "args": [
+                          {
+                            "op": "mul",
+                            "args": [
+                              0.7071067811865476,
+                              {
+                                "op": "add",
+                                "args": [
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      {
+                                        "op": "exp",
+                                        "args": [
+                                          {
+                                            "input": "rho0"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "op": "cos",
+                                        "args": [
+                                          {
+                                            "input": "theta0"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      {
+                                        "op": "exp",
+                                        "args": [
+                                          {
+                                            "input": "rho1"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "op": "cos",
+                                        "args": [
+                                          {
+                                            "input": "theta1"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "op": "sub",
+                            "args": [
+                              {
+                                "op": "mul",
+                                "args": [
+                                  {
+                                    "op": "cos",
+                                    "args": [
+                                      {
+                                        "op": "mul",
+                                        "args": [
+                                          -1,
+                                          {
+                                            "op": "add",
+                                            "args": [
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "input": "phase"
+                                                  },
+                                                  0.125
+                                                ]
+                                              },
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "op": "mul",
+                                                    "args": [
+                                                      0.05,
+                                                      {
+                                                        "input": "parity"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "input": "field_distance"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      0.7071067811865476,
+                                      {
+                                        "op": "sub",
+                                        "args": [
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho0"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "cos",
+                                                "args": [
+                                                  {
+                                                    "input": "theta0"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho1"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "cos",
+                                                "args": [
+                                                  {
+                                                    "input": "theta1"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "op": "mul",
+                                "args": [
+                                  {
+                                    "op": "sin",
+                                    "args": [
+                                      {
+                                        "op": "mul",
+                                        "args": [
+                                          -1,
+                                          {
+                                            "op": "add",
+                                            "args": [
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "input": "phase"
+                                                  },
+                                                  0.125
+                                                ]
+                                              },
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "op": "mul",
+                                                    "args": [
+                                                      0.05,
+                                                      {
+                                                        "input": "parity"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "input": "field_distance"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      0.7071067811865476,
+                                      {
+                                        "op": "sub",
+                                        "args": [
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho0"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "sin",
+                                                "args": [
+                                                  {
+                                                    "input": "theta0"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho1"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "sin",
+                                                "args": [
+                                                  {
+                                                    "input": "theta1"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "bi": {
+                    "op": "mul",
+                    "args": [
+                      0.7071067811865476,
+                      {
+                        "op": "sub",
+                        "args": [
+                          {
+                            "op": "mul",
+                            "args": [
+                              0.7071067811865476,
+                              {
+                                "op": "add",
+                                "args": [
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      {
+                                        "op": "exp",
+                                        "args": [
+                                          {
+                                            "input": "rho0"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "op": "sin",
+                                        "args": [
+                                          {
+                                            "input": "theta0"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      {
+                                        "op": "exp",
+                                        "args": [
+                                          {
+                                            "input": "rho1"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "op": "sin",
+                                        "args": [
+                                          {
+                                            "input": "theta1"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "op": "add",
+                            "args": [
+                              {
+                                "op": "mul",
+                                "args": [
+                                  {
+                                    "op": "sin",
+                                    "args": [
+                                      {
+                                        "op": "mul",
+                                        "args": [
+                                          -1,
+                                          {
+                                            "op": "add",
+                                            "args": [
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "input": "phase"
+                                                  },
+                                                  0.125
+                                                ]
+                                              },
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "op": "mul",
+                                                    "args": [
+                                                      0.05,
+                                                      {
+                                                        "input": "parity"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "input": "field_distance"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      0.7071067811865476,
+                                      {
+                                        "op": "sub",
+                                        "args": [
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho0"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "cos",
+                                                "args": [
+                                                  {
+                                                    "input": "theta0"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho1"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "cos",
+                                                "args": [
+                                                  {
+                                                    "input": "theta1"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "op": "mul",
+                                "args": [
+                                  {
+                                    "op": "cos",
+                                    "args": [
+                                      {
+                                        "op": "mul",
+                                        "args": [
+                                          -1,
+                                          {
+                                            "op": "add",
+                                            "args": [
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "input": "phase"
+                                                  },
+                                                  0.125
+                                                ]
+                                              },
+                                              {
+                                                "op": "add",
+                                                "args": [
+                                                  {
+                                                    "op": "mul",
+                                                    "args": [
+                                                      0.05,
+                                                      {
+                                                        "input": "parity"
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "input": "field_distance"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "op": "mul",
+                                    "args": [
+                                      0.7071067811865476,
+                                      {
+                                        "op": "sub",
+                                        "args": [
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho0"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "sin",
+                                                "args": [
+                                                  {
+                                                    "input": "theta0"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "op": "mul",
+                                            "args": [
+                                              {
+                                                "op": "exp",
+                                                "args": [
+                                                  {
+                                                    "input": "rho1"
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "op": "sin",
+                                                "args": [
+                                                  {
+                                                    "input": "theta1"
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "source": "DWI-SOURCE-PROGRAM-0.1 explicit example model declaration",
+                "meaning": "Same typed log-polar double-Hadamard formula with an explicitly authored +0.125 radian phase offset; existing complex role0 is inherited.",
+                "status": "Authored numerical definition; validation is recorded separately."
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

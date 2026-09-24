@@ -1,0 +1,98 @@
+"""Retained direct experiment; no repository test suite or source edits."""
+from pathlib import Path
+import os,sys,json,hashlib,subprocess,time,math,random,copy,shutil,struct
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT));sys.stdout.reconfigure(encoding='utf-8')
+from local_lab import source_program as author,source_resident_v2 as resident,source_ir_v2 as ir
+from enzyme_probe_runtime import Probe
+OUT=ROOT/'output/source_authoring_2026-09-24/amplitude_math';OUT.mkdir(parents=True,exist_ok=False)
+EXE=ROOT/'Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/bin/windows-resident-v2/dawnwood-resident-v2.exe'
+MODEL_PATH=ROOT/'source_bindings/examples/amplitude_budget_model.json';MODEL=json.loads(MODEL_PATH.read_text(encoding='utf-8'));CYCLE=json.loads(author.cycle_binding.CYCLE.read_text(encoding='utf-8'))
+def save(path,obj):Path(path).write_bytes(ir.json_bytes(obj))
+def sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+def step(*w):return [*w,*([0]*(8-len(w)))]
+def fp(v):return ir.fp32(v,'fixture')[0]
+TOL={'projection_component_absolute':1e-6,'output_norm_overshoot':1e-6,'sdf_scale_aware_absolute_factor':1e-6,'unchanged_inside_absolute':1e-6}
+SOURCE_FILES=[MODEL_PATH,author.cycle_binding.CYCLE,*[Path(m.__file__) for m in (author,author.catalogue,author.slots,author.cycle_binding,resident,ir)]]
+PROVENANCE={str(p.relative_to(ROOT)).replace('\\','/'):sha(p) for p in SOURCE_FILES}
+for p in SOURCE_FILES:
+ dest=OUT/'source'/p.relative_to(ROOT);dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(p,dest)
+R=random.Random(624913);n=257
+definition=author.build_definition(MODEL,CYCLE,n)
+seeds=[]
+for i,item in enumerate(definition['instances']):
+ if i==0:w=[0,2,0,1]
+ else:
+  norm=10**R.uniform(-4,4) if i%5 else (1+R.choice((-1,1))*1e-6)
+  direction=[R.gauss(0,1) for _ in range(4)];dn=math.hypot(*direction);w=[v*norm/dn for v in direction]
+ assert math.hypot(*w[:2])>0 and math.hypot(*w[2:])>0
+ state=item['state'];state.update(dict(zip(('ar','ai','br','bi'),w)));state['neck']=i%2;state['jitter']=(i//2)%2
+ seeds.append({'case':i,'authored_amplitudes':w,'neck':state['neck'],'jitter':state['jitter']})
+author.catalogue.set_routes(definition,[{'index':MODEL['operators'][-1]['index']}])
+full_program,full_manifest=resident.compile_definition(MODEL,definition);(OUT/'full_program_unexecuted.bin').write_bytes(full_program);save(OUT/'full_definition.json',definition);save(OUT/'full_manifest.json',full_manifest);save(OUT/'input_cases.json',seeds)
+matches=[i for i,row in enumerate(definition['action_plan']) if row[0]==11 and row[2]==0 and row[7]==99]
+assert len(matches)==1;site=matches[0];call=definition['action_plan'][site];assert call[5]==64
+REPORT={'scope':'Independent numerical amplitude-budget audit. Full-cycle mutation and preceding action phases are retained in explicitly clipped diagnostic prefixes. Full-cycle completion or final-return amplitude bound is not claimed.','source_hashes_at_start':PROVENANCE,'tolerances_declared_before_execution':TOL,'capture_call_step':site,'capture_call_instruction':call,'groups':{}}
+env=os.environ.copy();env['DAWNWOOD_VALIDATION']='1';env['VK_LAYER_PATH']=str(ROOT/'tmp/rtx-toolchain/VulkanSDK/Bin')
+def run(group,d):
+ folder=OUT/group;folder.mkdir();program,manifest=resident.compile_definition(MODEL,d);(folder/'program.bin').write_bytes(program);save(folder/'definition.json',d);save(folder/'manifest.json',manifest)
+ receipts=[];results={}
+ for backend in ('cpu','vulkan'):
+  cmd=[str(EXE),'run','--input',str(folder/'program.bin'),'--output',str(folder/(backend+'.bin')),'--backend',backend,'--epochs','1']
+  if backend=='vulkan':cmd+=['--device','5070 Ti']
+  start=time.time();r=subprocess.run(cmd,capture_output=True,env=env);(folder/(backend+'.stdout.log')).write_bytes(r.stdout);(folder/(backend+'.stderr.log')).write_bytes(r.stderr)
+  receipts.append({'command':cmd,'exit_code':r.returncode,'wall_seconds':time.time()-start,'binary_sha256':sha(EXE),'shader_sha256':sha(EXE.with_name('resident_v2.spv')),'validation_env':{k:env[k] for k in ('DAWNWOOD_VALIDATION','VK_LAYER_PATH')}});save(folder/'execution_receipts.json',receipts)
+  if not (folder/(backend+'.bin')).exists():raise RuntimeError(r.stdout.decode()+r.stderr.decode())
+  results[backend]=resident.decode_checkpoint((folder/(backend+'.bin')).read_bytes());print(group,backend,r.returncode,flush=True)
+ same=(folder/'cpu.bin').read_bytes()==(folder/'vulkan.bin').read_bytes();assert same
+ assert all(x['status']==0 for x in results['vulkan']['instances'])
+ results['initial']=resident.decode_checkpoint(program)
+ REPORT['groups'][group]={'count':results['vulkan']['count'],'cpu_gpu_complete_checkpoint_byte_identical':same,'all_status_zero':True,'vulkan_receipt':json.loads((folder/'vulkan.stdout.log').read_text(encoding='utf-8'))}
+ return results
+captured={}
+for label,cut in [('selected_input_prefix',site),('selected_output_prefix',site+1)]:
+ d=copy.deepcopy(definition);d['action_plan']=d['action_plan'][:cut]
+ assert not any(row[0]==6 for row in d['action_plan'])
+ # Restore only scratch0..44 from old state; selected wave64..67 and index80 remain.
+ d['action_plan'].append(step(1,0,0,len(d['state_names'])))
+ for i,name in enumerate(d['state_names']):
+  reg={'ar':64,'ai':65,'br':66,'bi':67,'selected_index':80}.get(name,i);d['action_plan'].append(step(6,i,reg,1))
+ d['source']['diagnostic_prefix']={'label':label,'original_full_program_sha256':hashlib.sha256(full_program).hexdigest(),'retained_action_steps':cut,'full_action_steps':len(definition['action_plan']),'captured_state_mapping':{'ar':64,'ai':65,'br':66,'bi':67,'selected_index':80},'other_state_values':'original old state; restored only for this diagnostic checkpoint','whole_cycle_completed':False}
+ d['source']['stage_boundaries']=[{**x,'action_step_end_exclusive':min(x['action_step_end_exclusive'],cut)} for x in d['source']['stage_boundaries'] if x['action_step_start']<cut]
+ d['source']['action_calls']=[x for x in d['source']['action_calls'] if x['step']<cut]
+ captured[label]=run(label,d)
+sid={name:i for i,name in enumerate(definition['state_names'])};comparisons=[]
+for before,after in zip(captured['selected_input_prefix']['vulkan']['instances'],captured['selected_output_prefix']['vulkan']['instances']):
+ w=[before['state'][sid[x]] for x in ('ar','ai','br','bi')];out=[after['state'][sid[x]] for x in ('ar','ai','br','bi')];norm=math.hypot(*w);ref=[v/max(1.,norm) for v in w];err=max(abs(a-b) for a,b in zip(out,ref));onorm=math.hypot(*out)
+ assert before['records']==after['records'];assert before['state'][sid['selected_index']]==31 and after['state'][sid['selected_index']]==31
+ comparisons.append({'case':len(comparisons),'input':w,'actual_output':out,'reference_output':ref,'input_norm':norm,'reference_signed_distance':norm-1,'actual_output_norm':onorm,'max_component_absolute_error':err,'max_component_scale_normalized_error':err/max(1.,max(map(abs,ref))),'projection_displacement_error':abs(math.dist(w,out)-max(0.,norm-1)),'norm_overshoot':max(0.,onorm-1),'absolute_tolerance_passed':err<=TOL['projection_component_absolute'] and onorm<=1+TOL['output_norm_overshoot']})
+save(OUT/'prefix_reference_comparisons.json',comparisons)
+REPORT['prefix_projection_summary']={'cases':len(comparisons),'selected_source_index':31,'input_norm_range':[min(x['input_norm'] for x in comparisons),max(x['input_norm'] for x in comparisons)],'inside_count':sum(x['input_norm']<=1 for x in comparisons),'outside_count':sum(x['input_norm']>1 for x in comparisons),'max_component_absolute_error':max(x['max_component_absolute_error'] for x in comparisons),'max_output_norm':max(x['actual_output_norm'] for x in comparisons),'max_projection_displacement_error':max(x['projection_displacement_error'] for x in comparisons),'all_declared_tolerances_passed':all(x['absolute_tolerance_passed'] for x in comparisons),'record_tables_identical_across_capture_prefixes':True}
+save(OUT/'independent_numeric_audit.json',REPORT)
+# Isolate the exact source body, exposing its already-used signed-distance
+# subexpression as one additional diagnostic output. All four projection ASTs unchanged.
+actual=MODEL['operators'][-1]['body']['resident_binding']['function'];den=actual['outputs']['ar']['args'][1]
+assert den['op']=='add' and den['args'][0]==1 and den['args'][1]['op']=='max' and den['args'][1]['args'][0]==0
+distance=den['args'][1]['args'][1];assert distance['op']=='sub' and distance['args'][1]==1
+for expr in actual['outputs'].values():assert expr['op']=='div' and expr['args'][1]==den
+instrument=copy.deepcopy(actual);instrument['outputs']['signed_distance']=copy.deepcopy(distance)
+fns={'actual_projection_instrumented':{'signature':900003,'binding':instrument}};d={'functions':fns}
+isolated=[]
+for w in ([0,0,0,0],[1,0,0,0],[-1,0,0,0],[0,1,0,0],[0,0,-1,0],[0,0,0,1],[.5,.5,.5,.5],[.1,-.2,.3,-.4],[3,4,0,0],[0,0,-3,4],[1e20,1e20,-1e20,1e20]):isolated.append([*w,0,0])
+for axis in range(4):
+ for scale in (1-2**-22,1-2**-23,1,1+2**-23,1+2**-22):
+  w=[0]*4;w[axis]=scale;isolated.append([*w,.5,-.25])
+for i in range(512):
+ scale=10**R.uniform(-20,20);v=[R.gauss(0,1) for _ in range(4)];norm=math.hypot(*v);isolated.append([*(x*scale/norm for x in v),R.uniform(-1,1),R.uniform(-1,1)])
+p=Probe(OUT,'isolated_source_expression',d,MODEL,['actual_projection_instrumented'],{99:'actual_projection_instrumented'},'amplitude_budget',actual['inputs'],[*actual['outputs'],'signed_distance'],isolated)
+p.definition['source']['instrumentation']='Original authored four projection-output ASTs unchanged. Their shared distance subexpression is exposed as an additional diagnostic output, with a fresh diagnostic signature. This is an isolated component, not full source-cycle execution.'
+p.call('actual_projection_instrumented',list(range(6)),32,99);result=p.run(list(range(32,37)));assert result['checkpoint_byte_identical'];assert all(x['status']==0 for x in result['vulkan']['instances'])
+details=[]
+for item in result['vulkan']['instances']:
+ s=item['state'];w=s[:4];o=s[6:];norm=math.hypot(*w);ref=[x/max(1.,norm) for x in w];err=max(abs(a-b) for a,b in zip(o[:4],ref));derr=abs(o[4]-(norm-1));onorm=math.hypot(*o[:4]);ds=derr/max(1.,norm)
+ details.append({'case':len(details),'input':w,'input_norm':norm,'reference_signed_distance':norm-1,'actual_signed_distance':o[4],'actual_output':o[:4],'actual_output_norm':onorm,'max_component_absolute_error':err,'signed_distance_absolute_error':derr,'signed_distance_scale_normalized_error':ds,'inside_unchanged_absolute_error':max(abs(a-b) for a,b in zip(w,o[:4])) if norm<=1 else None,'declared_tolerances_passed':err<=1e-6 and ds<=1e-6 and onorm<=1+1e-6})
+save(p.directory/'reference_comparisons.json',details)
+REPORT['groups']['isolated_source_expression']={'count':len(details),'cpu_gpu_complete_checkpoint_byte_identical':result['checkpoint_byte_identical'],'all_status_zero':True,'vulkan_receipt':result['vulkan_receipt'],'max_component_absolute_error':max(x['max_component_absolute_error'] for x in details),'max_signed_distance_scale_normalized_error':max(x['signed_distance_scale_normalized_error'] for x in details),'max_output_norm':max(x['actual_output_norm'] for x in details),'all_declared_tolerances_passed':all(x['declared_tolerances_passed'] for x in details),'inside_count':sum(x['input_norm']<1 for x in details),'exact_boundary_count':sum(x['input_norm']==1 for x in details),'outside_count':sum(x['input_norm']>1 for x in details)}
+REPORT['source_hashes_at_end']={str(p.relative_to(ROOT)).replace('\\','/'):sha(p) for p in SOURCE_FILES};REPORT['source_files_unchanged_during_experiment']=PROVENANCE==REPORT['source_hashes_at_end'];REPORT['scope_limit']='Projection bound is local to selected-body output. Later source-cycle phases are not included in these prefixes and may exceed the unit ball.'
+save(OUT/'independent_numeric_audit.json',REPORT)
+shutil.copyfile(Path(__file__),OUT/'experiment_script.py.txt');shutil.copyfile(ROOT/'tmp/enzyme_probe_runtime.py',OUT/'component_runtime_script.py.txt')
+print(json.dumps({'prefix':REPORT['prefix_projection_summary'],'isolated':{k:v for k,v in REPORT['groups']['isolated_source_expression'].items() if k!='vulkan_receipt'},'source_unchanged':REPORT['source_files_unchanged_during_experiment']},indent=2),flush=True)
