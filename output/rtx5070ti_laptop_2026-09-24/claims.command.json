@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "command": "python -B tools/run_claims.py --binary bin/windows-x64/dawnwood.exe --device RTX 5070 Ti --out output/rtx5070ti_laptop_2026-09-24/claims",
+  "utc": "2026-09-24T08:12:49.3981678Z"
+}

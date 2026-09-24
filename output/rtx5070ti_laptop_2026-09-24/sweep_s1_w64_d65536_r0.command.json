@@ -1,0 +1,25 @@
+{
+  "command": [
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-build\\dawnwood-tunable.exe",
+    "run",
+    "--device",
+    "RTX 5070 Ti",
+    "--count",
+    "1048576",
+    "--steps",
+    "16",
+    "--batch",
+    "8"
+  ],
+  "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+  "utc": "2026-09-24T08:36:15.317188+00:00",
+  "environment": {
+    "DAWNWOOD_DISPATCH_STATES": "65536",
+    "DAWNWOOD_SPLIT_EVOLUTION": "1",
+    "DAWNWOOD_WORKGROUP_SIZE": "64"
+  },
+  "executable_sha256": "5b7d916a5b16dd9fb3d7d38a4b86835f7727b639bd8c2192b50d322442716564",
+  "exit_code": 0,
+  "process_wall_seconds": 4.429838699999891,
+  "report_passed": true
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-build\\dawnwood-tunable.exe",
+    "verify",
+    "--device",
+    "RTX 5070 Ti",
+    "--count",
+    "257",
+    "--steps",
+    "64"
+  ],
+  "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+  "utc": "2026-09-24T08:34:45.842600+00:00",
+  "environment": {
+    "DAWNWOOD_DISPATCH_STATES": "1048576",
+    "DAWNWOOD_VALIDATION": "1",
+    "DAWNWOOD_WORKGROUP_SIZE": "64",
+    "VK_LAYER_PATH": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin",
+    "VK_LAYER_VALIDATE_SYNC": "1"
+  },
+  "executable_sha256": "5b7d916a5b16dd9fb3d7d38a4b86835f7727b639bd8c2192b50d322442716564",
+  "exit_code": 0,
+  "process_wall_seconds": 1.2127618000004077,
+  "report_passed": true
+}

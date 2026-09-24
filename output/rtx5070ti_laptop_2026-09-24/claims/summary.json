@@ -1,0 +1,259 @@
+{
+  "profile": "DWI-N1-0.5",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "python_tests": {
+    "tests_run": 17,
+    "failures": 0,
+    "errors": 0,
+    "passed": true
+  },
+  "cpu_tests_passed": true,
+  "vulkan_device": {
+    "name": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+    "vendor_id": 4318,
+    "device_id": 12056,
+    "api_version": 4211013,
+    "driver_version": 2479800320,
+    "software_device": false,
+    "validation_layer_enabled": false,
+    "validation_errors": 0,
+    "validation_warnings": 0,
+    "memory_budget_extension": true,
+    "requested_budget_fraction": 0.8,
+    "device_type": 2,
+    "states_heap_index": 0,
+    "state_buffer_heaps": [
+      0,
+      0
+    ],
+    "state_dispatch_limit": 65536,
+    "compute_submission_count": 0,
+    "max_submission_seconds": 0,
+    "split_evolution": false,
+    "evolution_dispatches_per_chunk": 1,
+    "evolution_scratch_record_bytes": 96,
+    "evolution_scratch_bytes": 0,
+    "evolution_scratch_allocated_bytes": 0,
+    "texture_compression_BC": true,
+    "BC5_sampled_image": true,
+    "EAC_RG11_sampled_image": false,
+    "ASTC_4x4_sampled_image": false,
+    "max_compute_shared_memory_bytes": 49152,
+    "max_storage_buffer_range": 4294967295,
+    "max_compute_workgroup_count_x": 2147483647,
+    "max_image_dimension_2d": 32768,
+    "max_memory_allocation_count": 4294967295,
+    "timestamp_valid_bits": 64,
+    "allocated_buffer_bytes": 2240,
+    "allocated_image_bytes": 31744,
+    "allocated_total_bytes": 33984,
+    "staging_bytes": 1984,
+    "allocation_count": 5,
+    "state_ping_pong_payload_bytes": 256,
+    "operator_lut_payload_bytes": 3968,
+    "operator_lut_format": "RGBA32_UINT",
+    "operator_lut_storage": "sampled_and_storage_VkImage",
+    "operator_lut_width": 124,
+    "operator_lut_height": 1,
+    "operator_lut_texels_per_record": 4,
+    "operator_lut_point_fetch": true,
+    "operator_lut_filtering": false,
+    "operator_lut_parameter_precision_bits": 32,
+    "operator_lut_flag_word_bits": 32,
+    "operator_lut_used_orientation_mask": 1,
+    "operator_bytecode_bits_per_instruction": 4,
+    "evolve_shared_operator_records": 31,
+    "evolve_shared_operator_bytes": 1984,
+    "mutate_shared_operator_bytes": 128,
+    "permanent_texture_cache_residence_proven": false,
+    "upload_bytes": 2112,
+    "download_bytes": 0,
+    "completed_epochs": 0,
+    "advance_buffer_copy_commands": 0,
+    "advance_image_copy_commands": 0,
+    "timer": "Vulkan device timestamps",
+    "last_dispatch_seconds": 0,
+    "last_wall_seconds": 0,
+    "heaps": [
+      {
+        "index": 0,
+        "size": 12524191744,
+        "runtime_buffer_allocation_bytes": 256,
+        "runtime_image_allocation_bytes": 31744,
+        "runtime_allocation_bytes": 32000,
+        "device_local": true,
+        "budget_at_start": 11718885376,
+        "usage_at_start": 317628416
+      },
+      {
+        "index": 1,
+        "size": 8279207936,
+        "runtime_buffer_allocation_bytes": 1984,
+        "runtime_image_allocation_bytes": 0,
+        "runtime_allocation_bytes": 1984,
+        "device_local": false,
+        "budget_at_start": 8697946739,
+        "usage_at_start": 12668928
+      }
+    ]
+  },
+  "vulkan_comparison_executed": true,
+  "vulkan_comparison_passed": true,
+  "checkpoint_replay_passed": true,
+  "body_coverage_passed": true,
+  "body_coverage": [
+    {
+      "operator_index": 0,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 1,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 2,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 3,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 4,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 5,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 6,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 7,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 8,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 9,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 10,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 11,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 12,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 13,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 14,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 15,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 16,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 17,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 18,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 19,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 20,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 21,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 22,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 23,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 24,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 27,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 28,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 29,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    },
+    {
+      "operator_index": 30,
+      "body_edit_record_changed": true,
+      "numerical_state_changed": true
+    }
+  ],
+  "packing_rmse": 9.440333572453023,
+  "real_GTX_1650_Ti_test": false,
+  "real_GTX_1650_Ti_passed": false,
+  "real_POCO_test": false,
+  "phone_note": "Only tools/test_phone.py can populate a connected-phone report; no phone result is inferred from shader compilation."
+}

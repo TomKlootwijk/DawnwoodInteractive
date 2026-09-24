@@ -1,0 +1,23 @@
+{
+  "command": [
+    ".\\Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-x64\\dawnwood.exe",
+    "verify",
+    "--device",
+    "RTX 5070 Ti",
+    "--count",
+    "257",
+    "--steps",
+    "1024"
+  ],
+  "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+  "utc": "2026-09-24T08:31:08.375686+00:00",
+  "environment": {
+    "DAWNWOOD_VALIDATION": "1",
+    "VK_LAYER_PATH": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin",
+    "VK_LAYER_VALIDATE_SYNC": "1"
+  },
+  "executable_sha256": "f208a48e4cd6c4cad9403736cbbba398c8d283649c1a025418521c3d9de1bb10",
+  "exit_code": 0,
+  "process_wall_seconds": 10.182007500000509,
+  "report_passed": true
+}

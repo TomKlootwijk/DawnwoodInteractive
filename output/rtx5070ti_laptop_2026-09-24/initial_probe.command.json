@@ -1,0 +1,5 @@
+{
+  "utc": "2026-09-24T08:11:06.2744444Z",
+  "exit_code": 0,
+  "command": "dawnwood.exe probe --device RTX 5070 Ti --count 1"
+}

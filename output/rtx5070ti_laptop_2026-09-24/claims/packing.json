@@ -1,0 +1,69 @@
+{
+  "kind": "CPU BC5 format/approximation experiment",
+  "encoded_block_bytes": 16,
+  "two_raw_UNORM8_channels_bytes": 32,
+  "rmse_UNORM8_units": 9.440333572453023,
+  "arbitrary_input_lossless": false,
+  "bc5_4096_base_bytes": 16777216,
+  "working_set_4096": {
+    "model": "v0.5_integer_LUT_and_bounded_staging_payload",
+    "current_runtime_model": true,
+    "measured_allocation": false,
+    "state_record_bytes": 128,
+    "operator_record_bytes": 64,
+    "two_state_buffers": 1048576,
+    "two_operator_record_payloads": 3968,
+    "operator_lut_format": "RGBA32_UINT",
+    "operator_lut_width": 124,
+    "operator_lut_height": 1,
+    "operator_lut_texels_per_record": 4,
+    "max_image_dimension_2d": 32768,
+    "two_operator_image_texel_payloads": 3968,
+    "two_operator_images_unused_row_texel_bytes": 0,
+    "reused_host_visible_staging": 524288,
+    "staging_cap_bytes": 16777216,
+    "split_evolution": false,
+    "state_dispatch_limit": 65536,
+    "evolution_scratch_record_bytes": 96,
+    "evolution_scratch_bytes": 0,
+    "buffer_payload_total": 1572864,
+    "image_texel_payload_total": 3968,
+    "resource_payload_total": 1576832,
+    "one_host_snapshot_payload": 526272,
+    "host_snapshot_note": "Separate CPU vector payload, excluded from resource total; run releases the initial snapshot before readback. Verification retains additional snapshots.",
+    "implicit_child_pointer_bytes": 0,
+    "comparison_two_uint32_child_pointers_per_operator": 248,
+    "excluded": "Vulkan allocation alignment and image tiling, driver/compiler/pipeline memory, command buffers, host snapshots, runtime, OS and other applications",
+    "authority": "Use actual device allocated_buffer_bytes, allocated_image_bytes, allocated_total_bytes and per-heap reports for measured Vulkan allocation; this model does not prove fit."
+  },
+  "legacy_working_set_4096": {
+    "model": "legacy_v0.3_v0.4_buffer_payload",
+    "current_runtime_model": false,
+    "state_record_bytes": 128,
+    "operator_record_bytes": 64,
+    "two_state_buffers": 1048576,
+    "two_operator_buffers": 3968,
+    "reused_host_visible_staging": 524288,
+    "buffer_payload_total": 1576832,
+    "implicit_child_pointer_bytes": 0,
+    "comparison_two_uint32_child_pointers_per_operator": 248,
+    "excluded": "driver allocation padding, pipelines, command buffers, runtime, OS and other applications"
+  },
+  "raw_budget_examples": {
+    "4000000000": {
+      "rgba32f_elements": 250000000,
+      "rgba8_elements": 1000000000,
+      "bc5_aligned_average_texels": 4000000000
+    },
+    "4294967296": {
+      "rgba32f_elements": 268435456,
+      "rgba8_elements": 1073741824,
+      "bc5_aligned_average_texels": 4294967296
+    },
+    "12884901888": {
+      "rgba32f_elements": 805306368,
+      "rgba8_elements": 3221225472,
+      "bc5_aligned_average_texels": 12884901888
+    }
+  }
+}
