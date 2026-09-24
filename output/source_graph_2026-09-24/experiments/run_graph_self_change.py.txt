@@ -1,0 +1,44 @@
+from pathlib import Path
+from copy import deepcopy
+import json,sys
+sys.path.insert(0,str(Path.cwd()));sys.path.insert(0,str(Path.cwd()/'tmp'))
+from run_source_graph_campaign import save,MODEL,CYCLE,instance_bytes
+from run_resident_enzyme_campaign import inputs,paired
+from local_lab import source_cycle as c,source_graph_program as gp,source_resident_v2 as r
+BASE=Path('output/source_graph_2026-09-24').resolve()
+graph,_=c.ir.read_json(Path('source_bindings/graphs/enzyme_v0.1.json'))
+fn='graph_freeze_mutator_successor'
+graph['functions'][fn]={'inputs':{'index':'index','old_body':'body_handle','proposed_body':'body_handle'},'outputs':{'body':'body_handle'},'binding':{'inputs':['index','old_body','proposed_body'],'outputs':{'body':c.choose(c.eq(c.V('index'),30),c.V('old_body'),c.V('proposed_body'))},'meaning':'Deliberate self-change ablation: retain only target30 old body; every other proposed body and every other returned record field retain the full mutation graph.'}}
+read=next(n for n in graph['mutation']['nodes'] if n['op']=='read_record' and n['record']=={'target':True} and 'body' in n['fields'])
+node={'id':'freeze_only_mutator_successor','op':'call_helper','function':fn,'args':{'index':{'target_index':True},'old_body':{'node':read['id'],'output':'body'},'proposed_body':deepcopy(graph['mutation']['returns']['body'])}}
+graph['mutation']['nodes'].append(node);graph['mutation']['returns']['body']={'node':node['id'],'output':'body'}
+graph['source']={'authoring':'Explicit complete enzyme graph with a source-only mutator successor ablation','scope':'Diagnostic comparison of delayed resident self-change; not the normal self-changing application.'}
+Path('source_bindings/graphs/freeze_mutator_successor_v0.1.json').write_bytes(c.ir.json_bytes(graph))
+d=gp.build_definition(MODEL,CYCLE,graph,129,enzyme_inputs=inputs());src=BASE/'freeze_mutator_successor/program.bin'
+if not src.exists():src=save('freeze_mutator_successor',MODEL,graph,d)
+else:assert src.read_bytes()==gp.compile_definition(MODEL,d)[0]
+def run(name,source,epochs):
+ folder=BASE/'runs'/name
+ if not folder.exists():return paired(BASE/'runs',name,source,epochs)
+ raw=(folder/'cpu.bin').read_bytes();assert raw==(folder/'vulkan.bin').read_bytes()
+ report=json.loads((folder/'vulkan.execution.json').read_bytes())['report'];assert report['validation_enabled'] and report['validation_errors']==report['validation_warnings']==0
+ dec=r.decode_checkpoint(raw);assert dec['all_status_ok']
+ return {'name':name,'epochs':epochs,'count':dec['count'],'all_checkpoint_bytes_identical':True,'all_status_ok':True,'compared_instance_words':dec['count']*dec['instance_words'],'gpu_validation_enabled':True,'gpu_validation_errors':0,'gpu_validation_warnings':0},dec,raw
+rows=[];effects=[]
+for epochs in [1,2,64]:
+ row,decoded,raw=run('freeze_mutator_successor_'+str(epochs),src,epochs);rows.append(row)
+ baseline=r.read_checkpoint(BASE/'runs'/('enzyme_'+str(epochs))/'cpu.bin')
+ changed={n:sum(x['state'][i]!=y['state'][i] for x,y in zip(decoded['instances'],baseline['instances'])) for i,n in enumerate(d['state_names'])}
+ wave=sum(any(x['state'][i]!=y['state'][i] for i in [3,4,5,6]) for x,y in zip(decoded['instances'],baseline['instances']))
+ chemical_indices=[d['state_names'].index('enzyme_'+s+'_uM') for s in ['E','S','ES','P']]
+ chem=sum(any(x['state'][i]!=y['state'][i] for i in chemical_indices) for x,y in zip(decoded['instances'],baseline['instances']))
+ intrinsic=sum(any(x['state'][i]!=y['state'][i] for i in [48,49]) for x,y in zip(decoded['instances'],baseline['instances']))
+ effects.append({'epochs':epochs,'changed_wave_instances':wave,'changed_returned_physical_compositions':chem,'changed_accepted_intrinsic_coordinates':intrinsic,'changed_instances_per_state_field':changed})
+ if epochs==1:assert not any(changed.values())
+ if epochs==2:assert wave==129 and chem>0 and intrinsic>0
+control=deepcopy(graph);control['functions'][fn]['binding']['outputs']['body']=c.V('proposed_body')
+d0=gp.build_definition(MODEL,CYCLE,control,129,enzyme_inputs=inputs());src0=save('freeze_mutator_identity_control',MODEL,control,d0)
+row,decoded,raw=run('freeze_mutator_identity_control_64',src0,64);rows.append(row)
+assert instance_bytes(raw)==instance_bytes((BASE/'runs/enzyme_64/cpu.bin').read_bytes())
+result={'healthy_pairs':len(rows),'compared_instance_words':sum(x['compared_instance_words'] for x in rows),'instance_epochs_per_backend':sum(x['epochs']*x['count'] for x in rows),'paired_runs':rows,'effects':effects,'identity_control_complete_mutable_images_equal':True,'scope':'Only graph body-return composition changes. All existing numerical functions, current old-mutator calls and other returned fields remain. Epoch1 state equality and epoch2 differences demonstrate delayed execution of the changed resident successor.'}
+(BASE/'self_change.json').write_bytes(c.ir.json_bytes(result));print(json.dumps(result),flush=True)

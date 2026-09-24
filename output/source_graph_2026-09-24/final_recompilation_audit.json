@@ -1,0 +1,2065 @@
+{
+  "profile": "DWI-SOURCE-GRAPH-0.1",
+  "created_utc": "2026-09-24T17:51:38.658204+00:00",
+  "scope": "Final current-code recompilation and provenance audit. Complete input-program bytes are compared; no native or GPU workload is rerun.",
+  "selection_policy": "Top-level folders captured at audit start with retained model, graph, compressed definition and program; concurrent cli* folders excluded. Matrix applications, historical retry, negative routes and diagnostic instrumentation are reported separately.",
+  "source_snapshot_inventory": {
+    "local_lab/source_catalogue_extension.py": {
+      "sha256": "c1fb4fe505e5dc1316bb6b30d12f44f185456239fd8931a72ced7054598afddd",
+      "bytes": 22973,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_catalogue_extension.py"
+    },
+    "local_lab/source_cycle.py": {
+      "sha256": "b8bb4255b19e0e53d664449addc984b6c0c44ed795a3f78bfa8190d848ab9f51",
+      "bytes": 42804,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_cycle.py"
+    },
+    "local_lab/source_enzyme.py": {
+      "sha256": "2875592287d4905881422da819e55068cab9b4b2b20e985a1b673168a6419911",
+      "bytes": 26480,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_enzyme.py"
+    },
+    "local_lab/source_graph.py": {
+      "sha256": "428f47db32022dc6f3200327bd74e0ecc7b12d4f4d11754443ebc37978ab7549",
+      "bytes": 27164,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_graph.py"
+    },
+    "local_lab/source_graph_fidelity.py": {
+      "sha256": "40bb8ada4863f3db861faaae274d42c3d694cddedaa862eea1cdfd8afdd764bf",
+      "bytes": 33894,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_graph_fidelity.py"
+    },
+    "local_lab/source_graph_program.py": {
+      "sha256": "6264470048504142292ae3e5f88fc5e5052204a8ba9b0297d4d8a55bac341635",
+      "bytes": 6093,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_graph_program.py"
+    },
+    "local_lab/source_graph_types.py": {
+      "sha256": "1efb287d32f93004e438cb5c6938da9eaa7d06d682329d926c9cbeb7e6fedb0b",
+      "bytes": 16553,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_graph_types.py"
+    },
+    "local_lab/source_ir.py": {
+      "sha256": "6ba9b22f04da0034b2c3b3f2878566907df0353e2dc5ba05326cec0ea656b6b9",
+      "bytes": 20076,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_ir.py"
+    },
+    "local_lab/source_ir_v2.py": {
+      "sha256": "3e7f528c14bbcb59b2e2df877b1b47c2adedaa37b2d454305bcebf1a03befe2a",
+      "bytes": 3722,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_ir_v2.py"
+    },
+    "local_lab/source_program.py": {
+      "sha256": "c91049fd6eee0c9c89b2489dc2e1d56464f9ee4eec0e69e9b9edb1be10662fa9",
+      "bytes": 8199,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_program.py"
+    },
+    "local_lab/source_resident_v2.py": {
+      "sha256": "311206687ae0c1b9b1a76dfdaec295761836a2f6e1c4f0afac4994de1c6070d7",
+      "bytes": 45624,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_resident_v2.py"
+    },
+    "local_lab/source_slot_bindings.py": {
+      "sha256": "385016ddda79cf8050d4fbfddb8b6e8e1aeb2bde8981997134e1b8dcd12689db",
+      "bytes": 26678,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_slot_bindings.py"
+    },
+    "output/source_graph_2026-09-24/final_recompilation_experiment.txt": {
+      "sha256": "23aa1a5b08620ec1096c2c68d5b390f99fc792b1990ce399cf7a582ab4d31672",
+      "bytes": 16948,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/output/source_graph_2026-09-24/final_recompilation_experiment.txt"
+    },
+    "source_bindings/resident_v0.1.json": {
+      "sha256": "5373231ef7a4381ec71ba598979ca6bb404f6386e2734cddb8d05cc891976587",
+      "bytes": 886455,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/source_bindings/resident_v0.1.json"
+    }
+  },
+  "source_snapshot_inventory_file": "output/source_graph_2026-09-24/final_recompilation_compiler/inventory.json",
+  "current_sources_unchanged_during_audit": true,
+  "historical_inputs_unchanged_during_audit": true,
+  "top_level_cases": [
+    {
+      "case": "output/source_graph_2026-09-24/amplitude",
+      "classification": "source_graph_application",
+      "count": 129,
+      "input_files": {
+        "definition.json.xz": {
+          "sha256": "340592e83e5e9299328a89d139f0b359511260925512a8cadb33958ac5dcc54c",
+          "bytes": 96180
+        },
+        "manifest.json.xz": {
+          "sha256": "003e9f593bb5fece7a3170ef18c0ef325f8c229ed4a445bde12acf2a573cddcc",
+          "bytes": 104028
+        },
+        "program.bin": {
+          "sha256": "8c12baf5c4143c939c9a0f7f46addde923472fc00434d71d2222dfcb81030367",
+          "bytes": 507260
+        },
+        "source_model.json": {
+          "sha256": "82e867f1462c482076edad4836c4d4ba43a6517de03dc37abfde8efa8a83e080",
+          "bytes": 1079110
+        },
+        "source_graph.json": {
+          "sha256": "5ce2fceebafe566221f6ff3d21eca45c2dd0ea26d9479b5f451a2469fa8789bc",
+          "bytes": 166990
+        }
+      },
+      "source_model_semantic_sha256": "82e867f1462c482076edad4836c4d4ba43a6517de03dc37abfde8efa8a83e080",
+      "source_graph_semantic_sha256": "5ce2fceebafe566221f6ff3d21eca45c2dd0ea26d9479b5f451a2469fa8789bc",
+      "source_cycle_semantic_sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+      "enzyme_inputs_semantic_sha256": null,
+      "instance_policy": "Current builder with inferred archived count and exact retained enzyme observations.",
+      "builder_initializers_equal_archive_before_override": true,
+      "current_definition_semantic_sha256": "8d1724816371ae7fb7dbc34bed828a25f1704f5b6419d9ada3889ec1a29fbfac",
+      "current_manifest_semantic_sha256": "71ce9576007af6864fdd3aac369bbb11d3b343e5eb3e0c4c78b3488d79d2ebed",
+      "live_layout_audit": {
+        "passed": true,
+        "call_mappings_checked": [
+          {
+            "plan": "mutation",
+            "node": "mutation_source_extension__preserve_handles_16",
+            "call_step": 94
+          },
+          {
+            "plan": "action",
+            "node": "action_selected_operator_bst_body_role0_45",
+            "call_step": 196
+          },
+          {
+            "plan": "mutation",
+            "node": "mutation_source_extension__preserve_handles_16",
+            "call_step": 94
+          },
+          {
+            "plan": "action",
+            "node": "action_selected_operator_bst_body_role0_45",
+            "call_step": 196
+          }
+        ],
+        "enzyme_return_writes_checked": [],
+        "duplicated_authoring_policies_equal": true,
+        "both_current_plan_hashes_match": true
+      },
+      "current_manifest": {
+        "passed": true,
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": false,
+        "program_sha256": "8c12baf5c4143c939c9a0f7f46addde923472fc00434d71d2222dfcb81030367",
+        "configuration_sha256": "48d5d2570710e0c671cc464a8f43d31020bd0456eb7a0ec5ef5f48d002fb8d4e"
+      },
+      "historical_manifest": {
+        "scope": "typed_resident_definition_execution",
+        "status": "application_semantics_require_separate_binding_and_evidence",
+        "complete_application_lowered": false,
+        "source_cycle_lowered": null,
+        "source_graph_lowered": null,
+        "source_graph_profile": null,
+        "domain_application_implemented": null,
+        "program_sha256": "8c12baf5c4143c939c9a0f7f46addde923472fc00434d71d2222dfcb81030367",
+        "configuration_sha256": "48d5d2570710e0c671cc464a8f43d31020bd0456eb7a0ec5ef5f48d002fb8d4e"
+      },
+      "complete_program_bytes_equal": true,
+      "current_program_sha256": "8c12baf5c4143c939c9a0f7f46addde923472fc00434d71d2222dfcb81030367",
+      "archived_program_sha256": "8c12baf5c4143c939c9a0f7f46addde923472fc00434d71d2222dfcb81030367",
+      "current_bytes": 507260,
+      "archived_bytes": 507260,
+      "passed": true
+    },
+    {
+      "case": "output/source_graph_2026-09-24/authored_hadamard",
+      "classification": "source_graph_application",
+      "count": 129,
+      "input_files": {
+        "definition.json.xz": {
+          "sha256": "c0605f20228e95380c4d5180f62e54a3a9f667f94b5239ab77d25f5d1a5a02eb",
+          "bytes": 90400
+        },
+        "manifest.json.xz": {
+          "sha256": "7c3fb5c601ab2717522157624f4c933cc4c109407176c52676d8ea0fa92cfe4c",
+          "bytes": 95864
+        },
+        "program.bin": {
+          "sha256": "739e07de65bd45806d99753288d7f326b21c78694f676b796bf3029cba7165e3",
+          "bytes": 493004
+        },
+        "source_model.json": {
+          "sha256": "fcb2d8d14234f8b65fe4cba3fb24d1e7e564d1e3d6b21b30a078d6e84d202ba9",
+          "bytes": 162004
+        },
+        "source_graph.json": {
+          "sha256": "9c7fceeda8345714782658aa48e452475db36945a18af5637c4c33d151f4dc38",
+          "bytes": 166767
+        }
+      },
+      "source_model_semantic_sha256": "fcb2d8d14234f8b65fe4cba3fb24d1e7e564d1e3d6b21b30a078d6e84d202ba9",
+      "source_graph_semantic_sha256": "9c7fceeda8345714782658aa48e452475db36945a18af5637c4c33d151f4dc38",
+      "source_cycle_semantic_sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+      "enzyme_inputs_semantic_sha256": null,
+      "instance_policy": "Current builder with inferred archived count and exact retained enzyme observations.",
+      "builder_initializers_equal_archive_before_override": true,
+      "current_definition_semantic_sha256": "93684adbd47d9faae9b318d76834715e5c8a1372a91058b182bed5ef3cbda5b6",
+      "current_manifest_semantic_sha256": "d1d1a05d1f6de52a2b4efbd95453cc763ab18de8c77081bf93a70c7303663f7f",
+      "live_layout_audit": {
+        "passed": true,
+        "call_mappings_checked": [
+          {
+            "plan": "mutation",
+            "node": "mutation_source_slot__preserve_field_16",
+            "call_step": 90
+          },
+          {
+            "plan": "mutation",
+            "node": "mutation_source_slot__preserve_placement_17",
+            "call_step": 94
+          },
+          {
+            "plan": "mutation",
+            "node": "mutation_source_slot__preserve_field_16",
+            "call_step": 90
+          },
+          {
+            "plan": "mutation",
+            "node": "mutation_source_slot__preserve_placement_17",
+            "call_step": 94
+          }
+        ],
+        "enzyme_return_writes_checked": [],
+        "duplicated_authoring_policies_equal": true,
+        "both_current_plan_hashes_match": true
+      },
+      "current_manifest": {
+        "passed": true,
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": false,
+        "program_sha256": "739e07de65bd45806d99753288d7f326b21c78694f676b796bf3029cba7165e3",
+        "configuration_sha256": "4f739e1b4f9e14fa64dad71529c0f90831e2885afabea7cca9bd037a3615e5d2"
+      },
+      "historical_manifest": {
+        "scope": "typed_resident_definition_execution",
+        "status": "application_semantics_require_separate_binding_and_evidence",
+        "complete_application_lowered": false,
+        "source_cycle_lowered": null,
+        "source_graph_lowered": null,
+        "source_graph_profile": null,
+        "domain_application_implemented": null,
+        "program_sha256": "739e07de65bd45806d99753288d7f326b21c78694f676b796bf3029cba7165e3",
+        "configuration_sha256": "4f739e1b4f9e14fa64dad71529c0f90831e2885afabea7cca9bd037a3615e5d2"
+      },
+      "complete_program_bytes_equal": true,
+      "current_program_sha256": "739e07de65bd45806d99753288d7f326b21c78694f676b796bf3029cba7165e3",
+      "archived_program_sha256": "739e07de65bd45806d99753288d7f326b21c78694f676b796bf3029cba7165e3",
+      "current_bytes": 493004,
+      "archived_bytes": 493004,
+      "passed": true
+    },
+    {
+      "case": "output/source_graph_2026-09-24/conservative_enzyme",
+      "classification": "source_graph_application",
+      "count": 129,
+      "input_files": {
+        "definition.json.xz": {
+          "sha256": "fb5ae8796f3a4c6fdf8a20b55514614ca495e704fd1819b78a1f46f2692aa459",
+          "bytes": 112340
+        },
+        "manifest.json.xz": {
+          "sha256": "7adb84374a53cd16633e4479f9e982c126f7fbd30e3cdcc2808ff89e3e529555",
+          "bytes": 126160
+        },
+        "program.bin": {
+          "sha256": "a864e569dd3536d1223d51fcf2d8f98a9e17c4540ed2961f0ea3343449a411c6",
+          "bytes": 516640
+        },
+        "source_model.json": {
+          "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+          "bytes": 13654
+        },
+        "source_graph.json": {
+          "sha256": "652d5709ea885911f8523c9bb49c3a99f6a540c311b73d66ee3b67df1ee36b24",
+          "bytes": 195510
+        }
+      },
+      "source_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "source_graph_semantic_sha256": "652d5709ea885911f8523c9bb49c3a99f6a540c311b73d66ee3b67df1ee36b24",
+      "source_cycle_semantic_sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+      "enzyme_inputs_semantic_sha256": "709331debdad384074aae2a62e6f0ec54d608206a2fb057ddaf4b8fae77ed0cb",
+      "instance_policy": "Current builder with inferred archived count and exact retained enzyme observations.",
+      "builder_initializers_equal_archive_before_override": true,
+      "current_definition_semantic_sha256": "e41632e8b1ca2afab9bd4126c7470fd8a7684c9ac62fb52a2c42181ea632a12c",
+      "current_manifest_semantic_sha256": "c5558ad31fe88456aa91bdbaaba71410b57869bcc4cda9f872fd653bcdf6e3f6",
+      "live_layout_audit": {
+        "passed": true,
+        "call_mappings_checked": [
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role100_211",
+            "call_step": 935
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role101_217",
+            "call_step": 960
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role102_223",
+            "call_step": 986
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role104_229",
+            "call_step": 1009
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role103_235",
+            "call_step": 1036
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role104_241",
+            "call_step": 1059
+          }
+        ],
+        "enzyme_return_writes_checked": [
+          {
+            "field": "obs_E_normalized",
+            "step": 1104
+          },
+          {
+            "field": "obs_S_normalized",
+            "step": 1105
+          },
+          {
+            "field": "obs_ES_normalized",
+            "step": 1106
+          },
+          {
+            "field": "obs_P_normalized",
+            "step": 1107
+          },
+          {
+            "field": "enzyme_y0",
+            "step": 1108
+          },
+          {
+            "field": "enzyme_y1",
+            "step": 1109
+          },
+          {
+            "field": "enzyme_objective",
+            "step": 1110
+          },
+          {
+            "field": "enzyme_trial_sdf",
+            "step": 1111
+          },
+          {
+            "field": "enzyme_improvement",
+            "step": 1112
+          },
+          {
+            "field": "enzyme_accepted",
+            "step": 1113
+          },
+          {
+            "field": "enzyme_E_uM",
+            "step": 1114
+          },
+          {
+            "field": "enzyme_S_uM",
+            "step": 1115
+          },
+          {
+            "field": "enzyme_ES_uM",
+            "step": 1116
+          },
+          {
+            "field": "enzyme_P_uM",
+            "step": 1117
+          },
+          {
+            "field": "enzyme_gap_estimate",
+            "step": 1118
+          },
+          {
+            "field": "enzyme_step",
+            "step": 1119
+          },
+          {
+            "field": "enzyme_trial_y0",
+            "step": 1120
+          },
+          {
+            "field": "enzyme_trial_y1",
+            "step": 1121
+          },
+          {
+            "field": "enzyme_projection_distance",
+            "step": 1122
+          },
+          {
+            "field": "enzyme_previous_objective",
+            "step": 1123
+          }
+        ],
+        "duplicated_authoring_policies_equal": true,
+        "both_current_plan_hashes_match": true
+      },
+      "current_manifest": {
+        "passed": true,
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": true,
+        "program_sha256": "a864e569dd3536d1223d51fcf2d8f98a9e17c4540ed2961f0ea3343449a411c6",
+        "configuration_sha256": "8883699ea9ab5ef08d9b479a1b92bbd3a1400d1985df5fb1fb5bb41cda80945e"
+      },
+      "historical_manifest": {
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": true,
+        "program_sha256": "a864e569dd3536d1223d51fcf2d8f98a9e17c4540ed2961f0ea3343449a411c6",
+        "configuration_sha256": "8883699ea9ab5ef08d9b479a1b92bbd3a1400d1985df5fb1fb5bb41cda80945e"
+      },
+      "complete_program_bytes_equal": true,
+      "current_program_sha256": "a864e569dd3536d1223d51fcf2d8f98a9e17c4540ed2961f0ea3343449a411c6",
+      "archived_program_sha256": "a864e569dd3536d1223d51fcf2d8f98a9e17c4540ed2961f0ea3343449a411c6",
+      "current_bytes": 516640,
+      "archived_bytes": 516640,
+      "passed": true
+    },
+    {
+      "case": "output/source_graph_2026-09-24/conservative_enzyme_identity_control",
+      "classification": "source_graph_application",
+      "count": 129,
+      "input_files": {
+        "definition.json.xz": {
+          "sha256": "7af4f60f9dc9a99f1065ab75396a52f4ba97b22b1c95f28f7fde1b51a1f4f618",
+          "bytes": 112248
+        },
+        "manifest.json.xz": {
+          "sha256": "2a10fd972bdc9dea815313b5bcb029fa71c4e56a098e5152b87074278f26f3eb",
+          "bytes": 125988
+        },
+        "program.bin": {
+          "sha256": "0e75233ab03436d4512b4abe1f472f54021ed13c0648c3763282e040bb4c7a33",
+          "bytes": 516480
+        },
+        "source_model.json": {
+          "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+          "bytes": 13654
+        },
+        "source_graph.json": {
+          "sha256": "1ab9a4d75d44cdfd17019f3d9bb3db6ee49154ad3eac46fd5a50c424d01009e1",
+          "bytes": 194330
+        }
+      },
+      "source_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "source_graph_semantic_sha256": "1ab9a4d75d44cdfd17019f3d9bb3db6ee49154ad3eac46fd5a50c424d01009e1",
+      "source_cycle_semantic_sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+      "enzyme_inputs_semantic_sha256": "709331debdad384074aae2a62e6f0ec54d608206a2fb057ddaf4b8fae77ed0cb",
+      "instance_policy": "Current builder with inferred archived count and exact retained enzyme observations.",
+      "builder_initializers_equal_archive_before_override": true,
+      "current_definition_semantic_sha256": "0cca97b3105f8ecb707ca63a0d6aacbbbba7f568e7ca75502da055f9703f3820",
+      "current_manifest_semantic_sha256": "2385d9763ac99c88b06a916e5c4bd4efdd60d41764e99a14aef171bf87dc8f99",
+      "live_layout_audit": {
+        "passed": true,
+        "call_mappings_checked": [
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role100_211",
+            "call_step": 935
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role101_217",
+            "call_step": 960
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role102_223",
+            "call_step": 986
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role104_229",
+            "call_step": 1009
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role103_235",
+            "call_step": 1036
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role104_241",
+            "call_step": 1059
+          }
+        ],
+        "enzyme_return_writes_checked": [
+          {
+            "field": "obs_E_normalized",
+            "step": 1104
+          },
+          {
+            "field": "obs_S_normalized",
+            "step": 1105
+          },
+          {
+            "field": "obs_ES_normalized",
+            "step": 1106
+          },
+          {
+            "field": "obs_P_normalized",
+            "step": 1107
+          },
+          {
+            "field": "enzyme_y0",
+            "step": 1108
+          },
+          {
+            "field": "enzyme_y1",
+            "step": 1109
+          },
+          {
+            "field": "enzyme_objective",
+            "step": 1110
+          },
+          {
+            "field": "enzyme_trial_sdf",
+            "step": 1111
+          },
+          {
+            "field": "enzyme_improvement",
+            "step": 1112
+          },
+          {
+            "field": "enzyme_accepted",
+            "step": 1113
+          },
+          {
+            "field": "enzyme_E_uM",
+            "step": 1114
+          },
+          {
+            "field": "enzyme_S_uM",
+            "step": 1115
+          },
+          {
+            "field": "enzyme_ES_uM",
+            "step": 1116
+          },
+          {
+            "field": "enzyme_P_uM",
+            "step": 1117
+          },
+          {
+            "field": "enzyme_gap_estimate",
+            "step": 1118
+          },
+          {
+            "field": "enzyme_step",
+            "step": 1119
+          },
+          {
+            "field": "enzyme_trial_y0",
+            "step": 1120
+          },
+          {
+            "field": "enzyme_trial_y1",
+            "step": 1121
+          },
+          {
+            "field": "enzyme_projection_distance",
+            "step": 1122
+          },
+          {
+            "field": "enzyme_previous_objective",
+            "step": 1123
+          }
+        ],
+        "duplicated_authoring_policies_equal": true,
+        "both_current_plan_hashes_match": true
+      },
+      "current_manifest": {
+        "passed": true,
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": true,
+        "program_sha256": "0e75233ab03436d4512b4abe1f472f54021ed13c0648c3763282e040bb4c7a33",
+        "configuration_sha256": "d6f132f1476e84920b4c504087280a0c95680f084c4a991b446428721fc8f209"
+      },
+      "historical_manifest": {
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": true,
+        "program_sha256": "0e75233ab03436d4512b4abe1f472f54021ed13c0648c3763282e040bb4c7a33",
+        "configuration_sha256": "d6f132f1476e84920b4c504087280a0c95680f084c4a991b446428721fc8f209"
+      },
+      "complete_program_bytes_equal": true,
+      "current_program_sha256": "0e75233ab03436d4512b4abe1f472f54021ed13c0648c3763282e040bb4c7a33",
+      "archived_program_sha256": "0e75233ab03436d4512b4abe1f472f54021ed13c0648c3763282e040bb4c7a33",
+      "current_bytes": 516480,
+      "archived_bytes": 516480,
+      "passed": true
+    },
+    {
+      "case": "output/source_graph_2026-09-24/core",
+      "classification": "source_graph_application",
+      "count": 129,
+      "input_files": {
+        "definition.json.xz": {
+          "sha256": "3a3289144e9c809eb8f784a60be14f124be782f1b6f71a6b27e2c2a78a2215cf",
+          "bytes": 83348
+        },
+        "manifest.json.xz": {
+          "sha256": "fc9228dd0b05f3e4e1092d112887963f2ad1cb3151e30728c1beecb3b7f0789e",
+          "bytes": 87624
+        },
+        "program.bin": {
+          "sha256": "5d0c2c75ab5676e51e736c195293cf2ccc792498cb3cd2a78a54fdef9878889f",
+          "bytes": 489636
+        },
+        "source_model.json": {
+          "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+          "bytes": 13654
+        },
+        "source_graph.json": {
+          "sha256": "8e7c5bc8431d5568705f53a12d698b0ec1b2c71aa1c05dba547de6e124963d22",
+          "bytes": 165828
+        }
+      },
+      "source_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "source_graph_semantic_sha256": "8e7c5bc8431d5568705f53a12d698b0ec1b2c71aa1c05dba547de6e124963d22",
+      "source_cycle_semantic_sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+      "enzyme_inputs_semantic_sha256": null,
+      "instance_policy": "Current builder with inferred archived count and exact retained enzyme observations.",
+      "builder_initializers_equal_archive_before_override": true,
+      "current_definition_semantic_sha256": "e4845e45fe9cd280c54a1347c39ea17ab1ae9a11f2ab481a361ece45f03829a0",
+      "current_manifest_semantic_sha256": "ee9d9d84df1eb245e0ba8bad61991a48e6cc932e1c4820699e6759a7e0234ca9",
+      "live_layout_audit": {
+        "passed": true,
+        "call_mappings_checked": [],
+        "enzyme_return_writes_checked": [],
+        "duplicated_authoring_policies_equal": true,
+        "both_current_plan_hashes_match": true
+      },
+      "current_manifest": {
+        "passed": true,
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": false,
+        "program_sha256": "5d0c2c75ab5676e51e736c195293cf2ccc792498cb3cd2a78a54fdef9878889f",
+        "configuration_sha256": "aa2b612233c56c2e627242db5df82d9607d902c4db4133edc439031cf4ac842f"
+      },
+      "historical_manifest": {
+        "scope": "typed_resident_definition_execution",
+        "status": "application_semantics_require_separate_binding_and_evidence",
+        "complete_application_lowered": false,
+        "source_cycle_lowered": null,
+        "source_graph_lowered": null,
+        "source_graph_profile": null,
+        "domain_application_implemented": null,
+        "program_sha256": "5d0c2c75ab5676e51e736c195293cf2ccc792498cb3cd2a78a54fdef9878889f",
+        "configuration_sha256": "aa2b612233c56c2e627242db5df82d9607d902c4db4133edc439031cf4ac842f"
+      },
+      "complete_program_bytes_equal": true,
+      "current_program_sha256": "5d0c2c75ab5676e51e736c195293cf2ccc792498cb3cd2a78a54fdef9878889f",
+      "archived_program_sha256": "5d0c2c75ab5676e51e736c195293cf2ccc792498cb3cd2a78a54fdef9878889f",
+      "current_bytes": 489636,
+      "archived_bytes": 489636,
+      "passed": true
+    },
+    {
+      "case": "output/source_graph_2026-09-24/enzyme",
+      "classification": "source_graph_application",
+      "count": 129,
+      "input_files": {
+        "definition.json.xz": {
+          "sha256": "9c7636be25fd39ac2738f1cf785e7e2f6dfa57383f58e62271d489fd80fcd8df",
+          "bytes": 112088
+        },
+        "manifest.json.xz": {
+          "sha256": "df55dbe777084813b4799673c6d08eeaeebd9a6b39976ff75bd325af7e8fcadd",
+          "bytes": 111820
+        },
+        "program.bin": {
+          "sha256": "b5107decf854ac482790a3608cc0c805543c4328a1be4f7aba9941c7021480dd",
+          "bytes": 516204
+        },
+        "source_model.json": {
+          "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+          "bytes": 13654
+        },
+        "source_graph.json": {
+          "sha256": "2dbd8f7f1494cb3f0140be38597183bef3861a7eff7cf0d9c602ffbca7bcb0ab",
+          "bytes": 193230
+        },
+        "enzyme_inputs.json": {
+          "sha256": "709331debdad384074aae2a62e6f0ec54d608206a2fb057ddaf4b8fae77ed0cb",
+          "bytes": 22215
+        }
+      },
+      "source_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "source_graph_semantic_sha256": "2dbd8f7f1494cb3f0140be38597183bef3861a7eff7cf0d9c602ffbca7bcb0ab",
+      "source_cycle_semantic_sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+      "enzyme_inputs_semantic_sha256": "709331debdad384074aae2a62e6f0ec54d608206a2fb057ddaf4b8fae77ed0cb",
+      "instance_policy": "Current builder with inferred archived count and exact retained enzyme observations.",
+      "builder_initializers_equal_archive_before_override": true,
+      "current_definition_semantic_sha256": "55fc668c38f9fe23b57568275a70215ed6099fa74551026c20e61b8e3e23d982",
+      "current_manifest_semantic_sha256": "cb0e3134d1b6528fda74caf7c835315a910a93107b4cc39f6aee0ab127281f3b",
+      "live_layout_audit": {
+        "passed": true,
+        "call_mappings_checked": [
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role100_211",
+            "call_step": 935
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role101_217",
+            "call_step": 954
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role102_223",
+            "call_step": 980
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role104_229",
+            "call_step": 1003
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role103_235",
+            "call_step": 1030
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role104_241",
+            "call_step": 1053
+          }
+        ],
+        "enzyme_return_writes_checked": [
+          {
+            "field": "obs_E_normalized",
+            "step": 1098
+          },
+          {
+            "field": "obs_S_normalized",
+            "step": 1099
+          },
+          {
+            "field": "obs_ES_normalized",
+            "step": 1100
+          },
+          {
+            "field": "obs_P_normalized",
+            "step": 1101
+          },
+          {
+            "field": "enzyme_y0",
+            "step": 1102
+          },
+          {
+            "field": "enzyme_y1",
+            "step": 1103
+          },
+          {
+            "field": "enzyme_objective",
+            "step": 1104
+          },
+          {
+            "field": "enzyme_trial_sdf",
+            "step": 1105
+          },
+          {
+            "field": "enzyme_improvement",
+            "step": 1106
+          },
+          {
+            "field": "enzyme_accepted",
+            "step": 1107
+          },
+          {
+            "field": "enzyme_E_uM",
+            "step": 1108
+          },
+          {
+            "field": "enzyme_S_uM",
+            "step": 1109
+          },
+          {
+            "field": "enzyme_ES_uM",
+            "step": 1110
+          },
+          {
+            "field": "enzyme_P_uM",
+            "step": 1111
+          },
+          {
+            "field": "enzyme_gap_estimate",
+            "step": 1112
+          },
+          {
+            "field": "enzyme_step",
+            "step": 1113
+          },
+          {
+            "field": "enzyme_trial_y0",
+            "step": 1114
+          },
+          {
+            "field": "enzyme_trial_y1",
+            "step": 1115
+          },
+          {
+            "field": "enzyme_projection_distance",
+            "step": 1116
+          },
+          {
+            "field": "enzyme_previous_objective",
+            "step": 1117
+          }
+        ],
+        "duplicated_authoring_policies_equal": true,
+        "both_current_plan_hashes_match": true
+      },
+      "current_manifest": {
+        "passed": true,
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": true,
+        "program_sha256": "b5107decf854ac482790a3608cc0c805543c4328a1be4f7aba9941c7021480dd",
+        "configuration_sha256": "70650129968b44ebfb8e83db0a3ab6645c4a4337159b6592df3cfe2032fd7f92"
+      },
+      "historical_manifest": {
+        "scope": "typed_resident_definition_execution",
+        "status": "application_semantics_require_separate_binding_and_evidence",
+        "complete_application_lowered": false,
+        "source_cycle_lowered": null,
+        "source_graph_lowered": null,
+        "source_graph_profile": null,
+        "domain_application_implemented": null,
+        "program_sha256": "b5107decf854ac482790a3608cc0c805543c4328a1be4f7aba9941c7021480dd",
+        "configuration_sha256": "70650129968b44ebfb8e83db0a3ab6645c4a4337159b6592df3cfe2032fd7f92"
+      },
+      "complete_program_bytes_equal": true,
+      "current_program_sha256": "b5107decf854ac482790a3608cc0c805543c4328a1be4f7aba9941c7021480dd",
+      "archived_program_sha256": "b5107decf854ac482790a3608cc0c805543c4328a1be4f7aba9941c7021480dd",
+      "current_bytes": 516204,
+      "archived_bytes": 516204,
+      "passed": true
+    },
+    {
+      "case": "output/source_graph_2026-09-24/freeze_mutator_identity_control",
+      "classification": "source_graph_application",
+      "count": 129,
+      "input_files": {
+        "definition.json.xz": {
+          "sha256": "64e12850cf464acfca3e3cf1b385ad520ce42992059803bd4ef12bef3d9b37c7",
+          "bytes": 112528
+        },
+        "manifest.json.xz": {
+          "sha256": "b7c58e63e1165e628ab485e75b2b9d5c1d7947057972c4bcd330851285ee0d96",
+          "bytes": 126220
+        },
+        "program.bin": {
+          "sha256": "831886586d2dea32ede8039a5961720ea6a453d620e0ad4bd09faa9549eee5ae",
+          "bytes": 516376
+        },
+        "source_model.json": {
+          "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+          "bytes": 13654
+        },
+        "source_graph.json": {
+          "sha256": "a66ca8b4264575b393a53657ca55ed291fb105b73f6d5e071f992860834bea32",
+          "bytes": 193666
+        }
+      },
+      "source_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "source_graph_semantic_sha256": "a66ca8b4264575b393a53657ca55ed291fb105b73f6d5e071f992860834bea32",
+      "source_cycle_semantic_sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+      "enzyme_inputs_semantic_sha256": "709331debdad384074aae2a62e6f0ec54d608206a2fb057ddaf4b8fae77ed0cb",
+      "instance_policy": "Current builder with inferred archived count and exact retained enzyme observations.",
+      "builder_initializers_equal_archive_before_override": true,
+      "current_definition_semantic_sha256": "d127c52130eda0b7487c082ea38849d9de27086799b0d4a2e31dd283233f1130",
+      "current_manifest_semantic_sha256": "c5d8966594430d72115579926964a73b82e96558bc2adef77d22289b93dc6ed6",
+      "live_layout_audit": {
+        "passed": true,
+        "call_mappings_checked": [
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role100_211",
+            "call_step": 935
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role101_217",
+            "call_step": 954
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role102_223",
+            "call_step": 980
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role104_229",
+            "call_step": 1003
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role103_235",
+            "call_step": 1030
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role104_241",
+            "call_step": 1053
+          }
+        ],
+        "enzyme_return_writes_checked": [
+          {
+            "field": "obs_E_normalized",
+            "step": 1098
+          },
+          {
+            "field": "obs_S_normalized",
+            "step": 1099
+          },
+          {
+            "field": "obs_ES_normalized",
+            "step": 1100
+          },
+          {
+            "field": "obs_P_normalized",
+            "step": 1101
+          },
+          {
+            "field": "enzyme_y0",
+            "step": 1102
+          },
+          {
+            "field": "enzyme_y1",
+            "step": 1103
+          },
+          {
+            "field": "enzyme_objective",
+            "step": 1104
+          },
+          {
+            "field": "enzyme_trial_sdf",
+            "step": 1105
+          },
+          {
+            "field": "enzyme_improvement",
+            "step": 1106
+          },
+          {
+            "field": "enzyme_accepted",
+            "step": 1107
+          },
+          {
+            "field": "enzyme_E_uM",
+            "step": 1108
+          },
+          {
+            "field": "enzyme_S_uM",
+            "step": 1109
+          },
+          {
+            "field": "enzyme_ES_uM",
+            "step": 1110
+          },
+          {
+            "field": "enzyme_P_uM",
+            "step": 1111
+          },
+          {
+            "field": "enzyme_gap_estimate",
+            "step": 1112
+          },
+          {
+            "field": "enzyme_step",
+            "step": 1113
+          },
+          {
+            "field": "enzyme_trial_y0",
+            "step": 1114
+          },
+          {
+            "field": "enzyme_trial_y1",
+            "step": 1115
+          },
+          {
+            "field": "enzyme_projection_distance",
+            "step": 1116
+          },
+          {
+            "field": "enzyme_previous_objective",
+            "step": 1117
+          }
+        ],
+        "duplicated_authoring_policies_equal": true,
+        "both_current_plan_hashes_match": true
+      },
+      "current_manifest": {
+        "passed": true,
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": true,
+        "program_sha256": "831886586d2dea32ede8039a5961720ea6a453d620e0ad4bd09faa9549eee5ae",
+        "configuration_sha256": "0e8780cb1dd2fbe64b1a76bf4700bdc78c9f91f4f550b1afb59007200364fed2"
+      },
+      "historical_manifest": {
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": true,
+        "program_sha256": "831886586d2dea32ede8039a5961720ea6a453d620e0ad4bd09faa9549eee5ae",
+        "configuration_sha256": "0e8780cb1dd2fbe64b1a76bf4700bdc78c9f91f4f550b1afb59007200364fed2"
+      },
+      "complete_program_bytes_equal": true,
+      "current_program_sha256": "831886586d2dea32ede8039a5961720ea6a453d620e0ad4bd09faa9549eee5ae",
+      "archived_program_sha256": "831886586d2dea32ede8039a5961720ea6a453d620e0ad4bd09faa9549eee5ae",
+      "current_bytes": 516376,
+      "archived_bytes": 516376,
+      "passed": true
+    },
+    {
+      "case": "output/source_graph_2026-09-24/freeze_mutator_successor",
+      "classification": "source_graph_application",
+      "count": 129,
+      "input_files": {
+        "definition.json.xz": {
+          "sha256": "5119ed8f215217f1af1aae8714be511f2f6129dd53908dda29d0997ea5b9ea16",
+          "bytes": 112680
+        },
+        "manifest.json.xz": {
+          "sha256": "686c124d5c175bbbd74897ab661238105f7facdc6fc213e9d8e927b566f62a32",
+          "bytes": 126436
+        },
+        "program.bin": {
+          "sha256": "f3647e1c79704263a4223c5bc23240e5699778084d144636ef5fa80b75a23a0c",
+          "bytes": 516536
+        },
+        "source_model.json": {
+          "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+          "bytes": 13654
+        },
+        "source_graph.json": {
+          "sha256": "35c8ac16ea051ee64c91c87d9400abbee29dd85b697468c49dc79e4675d9c5a6",
+          "bytes": 194570
+        }
+      },
+      "source_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "source_graph_semantic_sha256": "35c8ac16ea051ee64c91c87d9400abbee29dd85b697468c49dc79e4675d9c5a6",
+      "source_cycle_semantic_sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+      "enzyme_inputs_semantic_sha256": "709331debdad384074aae2a62e6f0ec54d608206a2fb057ddaf4b8fae77ed0cb",
+      "instance_policy": "Current builder with inferred archived count and exact retained enzyme observations.",
+      "builder_initializers_equal_archive_before_override": true,
+      "current_definition_semantic_sha256": "6e4a29d470b30909727483d66438658a60c4351e780db486bea24f4ac0ceb868",
+      "current_manifest_semantic_sha256": "a090f4ac49334f8f970b5daede2c4a8f5b9ee0a7fa2cc014caa0e487f869c1f4",
+      "live_layout_audit": {
+        "passed": true,
+        "call_mappings_checked": [
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role100_211",
+            "call_step": 935
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role101_217",
+            "call_step": 954
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role102_223",
+            "call_step": 980
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role104_229",
+            "call_step": 1003
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role103_235",
+            "call_step": 1030
+          },
+          {
+            "plan": "action",
+            "node": "action_surface_return_blend_body_role104_241",
+            "call_step": 1053
+          }
+        ],
+        "enzyme_return_writes_checked": [
+          {
+            "field": "obs_E_normalized",
+            "step": 1098
+          },
+          {
+            "field": "obs_S_normalized",
+            "step": 1099
+          },
+          {
+            "field": "obs_ES_normalized",
+            "step": 1100
+          },
+          {
+            "field": "obs_P_normalized",
+            "step": 1101
+          },
+          {
+            "field": "enzyme_y0",
+            "step": 1102
+          },
+          {
+            "field": "enzyme_y1",
+            "step": 1103
+          },
+          {
+            "field": "enzyme_objective",
+            "step": 1104
+          },
+          {
+            "field": "enzyme_trial_sdf",
+            "step": 1105
+          },
+          {
+            "field": "enzyme_improvement",
+            "step": 1106
+          },
+          {
+            "field": "enzyme_accepted",
+            "step": 1107
+          },
+          {
+            "field": "enzyme_E_uM",
+            "step": 1108
+          },
+          {
+            "field": "enzyme_S_uM",
+            "step": 1109
+          },
+          {
+            "field": "enzyme_ES_uM",
+            "step": 1110
+          },
+          {
+            "field": "enzyme_P_uM",
+            "step": 1111
+          },
+          {
+            "field": "enzyme_gap_estimate",
+            "step": 1112
+          },
+          {
+            "field": "enzyme_step",
+            "step": 1113
+          },
+          {
+            "field": "enzyme_trial_y0",
+            "step": 1114
+          },
+          {
+            "field": "enzyme_trial_y1",
+            "step": 1115
+          },
+          {
+            "field": "enzyme_projection_distance",
+            "step": 1116
+          },
+          {
+            "field": "enzyme_previous_objective",
+            "step": 1117
+          }
+        ],
+        "duplicated_authoring_policies_equal": true,
+        "both_current_plan_hashes_match": true
+      },
+      "current_manifest": {
+        "passed": true,
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": true,
+        "program_sha256": "f3647e1c79704263a4223c5bc23240e5699778084d144636ef5fa80b75a23a0c",
+        "configuration_sha256": "0d8566057d9d2520f13ee5c036c142c0a8ee85b2c5d910a8cf39265afe052c5b"
+      },
+      "historical_manifest": {
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": true,
+        "program_sha256": "f3647e1c79704263a4223c5bc23240e5699778084d144636ef5fa80b75a23a0c",
+        "configuration_sha256": "0d8566057d9d2520f13ee5c036c142c0a8ee85b2c5d910a8cf39265afe052c5b"
+      },
+      "complete_program_bytes_equal": true,
+      "current_program_sha256": "f3647e1c79704263a4223c5bc23240e5699778084d144636ef5fa80b75a23a0c",
+      "archived_program_sha256": "f3647e1c79704263a4223c5bc23240e5699778084d144636ef5fa80b75a23a0c",
+      "current_bytes": 516536,
+      "archived_bytes": 516536,
+      "passed": true
+    },
+    {
+      "case": "output/source_graph_2026-09-24/growth_rewire",
+      "classification": "source_graph_application",
+      "count": 129,
+      "input_files": {
+        "definition.json.xz": {
+          "sha256": "c0aaca10071f074ad98de4d2c0ca77ef411bd72ab78e222ef90a5e255813ffea",
+          "bytes": 83112
+        },
+        "manifest.json.xz": {
+          "sha256": "e0d7f12adabda9f03d5f87d0e5235aa312bbbb34402d47be676154dbe19df790",
+          "bytes": 99320
+        },
+        "program.bin": {
+          "sha256": "42b665ff5c7d440ed6ea8a23d2ba348cb783cccefda590af6cf47dd0b289600a",
+          "bytes": 489636
+        },
+        "source_model.json": {
+          "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+          "bytes": 13654
+        },
+        "source_graph.json": {
+          "sha256": "acf9fca2376bda46a9a8769beec77b505401dc9abcd99972158270ae0f5dc0e5",
+          "bytes": 165087
+        }
+      },
+      "source_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "source_graph_semantic_sha256": "acf9fca2376bda46a9a8769beec77b505401dc9abcd99972158270ae0f5dc0e5",
+      "source_cycle_semantic_sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+      "enzyme_inputs_semantic_sha256": null,
+      "instance_policy": "Current builder with inferred archived count and exact retained enzyme observations.",
+      "builder_initializers_equal_archive_before_override": true,
+      "current_definition_semantic_sha256": "49878e8682ce92f2cdb41dc340aa7a30764e95776b6e76123d8621320995818f",
+      "current_manifest_semantic_sha256": "5d5c929a244d27d350ccb4c17b4b26162d69c81e11b78115d3e58537415f7c0f",
+      "live_layout_audit": {
+        "passed": true,
+        "call_mappings_checked": [],
+        "enzyme_return_writes_checked": [],
+        "duplicated_authoring_policies_equal": true,
+        "both_current_plan_hashes_match": true
+      },
+      "current_manifest": {
+        "passed": true,
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": false,
+        "program_sha256": "42b665ff5c7d440ed6ea8a23d2ba348cb783cccefda590af6cf47dd0b289600a",
+        "configuration_sha256": "1c7cfc95e54561f8eb658da03b04483e1cc6d7342daa6ed2d5c2b4162d265339"
+      },
+      "historical_manifest": {
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": false,
+        "program_sha256": "42b665ff5c7d440ed6ea8a23d2ba348cb783cccefda590af6cf47dd0b289600a",
+        "configuration_sha256": "1c7cfc95e54561f8eb658da03b04483e1cc6d7342daa6ed2d5c2b4162d265339"
+      },
+      "complete_program_bytes_equal": true,
+      "current_program_sha256": "42b665ff5c7d440ed6ea8a23d2ba348cb783cccefda590af6cf47dd0b289600a",
+      "archived_program_sha256": "42b665ff5c7d440ed6ea8a23d2ba348cb783cccefda590af6cf47dd0b289600a",
+      "current_bytes": 489636,
+      "archived_bytes": 489636,
+      "passed": true
+    },
+    {
+      "case": "output/source_graph_2026-09-24/growth_rewire_identity_control",
+      "classification": "source_graph_application",
+      "count": 129,
+      "input_files": {
+        "definition.json.xz": {
+          "sha256": "aef61b177755eb75aa0dd80471e8edb90c36c9f685e148fa33bf80b7ef04258f",
+          "bytes": 83080
+        },
+        "manifest.json.xz": {
+          "sha256": "933916b1a01946aae775b6c2e0e53850f124918c68bca39969f132d2c2ad1a5d",
+          "bytes": 99304
+        },
+        "program.bin": {
+          "sha256": "5d0c2c75ab5676e51e736c195293cf2ccc792498cb3cd2a78a54fdef9878889f",
+          "bytes": 489636
+        },
+        "source_model.json": {
+          "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+          "bytes": 13654
+        },
+        "source_graph.json": {
+          "sha256": "df38a7e01ee22ea260ab8cca3b001fe0b7f4a03f1b2dc6f1d47071b54db9f9d5",
+          "bytes": 165087
+        }
+      },
+      "source_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "source_graph_semantic_sha256": "df38a7e01ee22ea260ab8cca3b001fe0b7f4a03f1b2dc6f1d47071b54db9f9d5",
+      "source_cycle_semantic_sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+      "enzyme_inputs_semantic_sha256": null,
+      "instance_policy": "Current builder with inferred archived count and exact retained enzyme observations.",
+      "builder_initializers_equal_archive_before_override": true,
+      "current_definition_semantic_sha256": "454fc46baf5c83665db13f82dff0a3292ddc6607680e245b18cedaa4f0a45fa0",
+      "current_manifest_semantic_sha256": "5f9376cdffc1467b99c9240675c261034c7f14f69bc73c75dd57778beadef8a3",
+      "live_layout_audit": {
+        "passed": true,
+        "call_mappings_checked": [],
+        "enzyme_return_writes_checked": [],
+        "duplicated_authoring_policies_equal": true,
+        "both_current_plan_hashes_match": true
+      },
+      "current_manifest": {
+        "passed": true,
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": false,
+        "program_sha256": "5d0c2c75ab5676e51e736c195293cf2ccc792498cb3cd2a78a54fdef9878889f",
+        "configuration_sha256": "aa2b612233c56c2e627242db5df82d9607d902c4db4133edc439031cf4ac842f"
+      },
+      "historical_manifest": {
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": false,
+        "program_sha256": "5d0c2c75ab5676e51e736c195293cf2ccc792498cb3cd2a78a54fdef9878889f",
+        "configuration_sha256": "aa2b612233c56c2e627242db5df82d9607d902c4db4133edc439031cf4ac842f"
+      },
+      "complete_program_bytes_equal": true,
+      "current_program_sha256": "5d0c2c75ab5676e51e736c195293cf2ccc792498cb3cd2a78a54fdef9878889f",
+      "archived_program_sha256": "5d0c2c75ab5676e51e736c195293cf2ccc792498cb3cd2a78a54fdef9878889f",
+      "current_bytes": 489636,
+      "archived_bytes": 489636,
+      "passed": true
+    },
+    {
+      "case": "output/source_graph_2026-09-24/mutation_bias",
+      "classification": "source_graph_application",
+      "count": 129,
+      "input_files": {
+        "definition.json.xz": {
+          "sha256": "262cfe3aaed2eab37953031ac11eea6730a4bb919474c82dd5fc841968476813",
+          "bytes": 83336
+        },
+        "manifest.json.xz": {
+          "sha256": "4b52dcba1083dc19b30834b1bc19e2b0ada2b11623b634e74483143682311230",
+          "bytes": 99652
+        },
+        "program.bin": {
+          "sha256": "cae7fdb1217d81983e281cb390dc5c8d7c2c6febfa6390b2309a37c4ebff9b26",
+          "bytes": 489776
+        },
+        "source_model.json": {
+          "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+          "bytes": 13654
+        },
+        "source_graph.json": {
+          "sha256": "22fc2b54190f1694e970a1490608e486f8f2b2e181d0768386ab708569c5d341",
+          "bytes": 166170
+        }
+      },
+      "source_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "source_graph_semantic_sha256": "22fc2b54190f1694e970a1490608e486f8f2b2e181d0768386ab708569c5d341",
+      "source_cycle_semantic_sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+      "enzyme_inputs_semantic_sha256": null,
+      "instance_policy": "Current builder with inferred archived count and exact retained enzyme observations.",
+      "builder_initializers_equal_archive_before_override": true,
+      "current_definition_semantic_sha256": "8ce38334001743fce91d334339f2c2d2c383b3e356d9af3f8df8dc62e141fcc8",
+      "current_manifest_semantic_sha256": "4e3704744da9e82276c29ae6a2f0b4da8696f0bc0e77083009ed60f3083e753e",
+      "live_layout_audit": {
+        "passed": true,
+        "call_mappings_checked": [],
+        "enzyme_return_writes_checked": [],
+        "duplicated_authoring_policies_equal": true,
+        "both_current_plan_hashes_match": true
+      },
+      "current_manifest": {
+        "passed": true,
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": false,
+        "program_sha256": "cae7fdb1217d81983e281cb390dc5c8d7c2c6febfa6390b2309a37c4ebff9b26",
+        "configuration_sha256": "72210c040b8bed826d65ef83d35532a472706171c7f374ede58ec07b8301700f"
+      },
+      "historical_manifest": {
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": false,
+        "program_sha256": "cae7fdb1217d81983e281cb390dc5c8d7c2c6febfa6390b2309a37c4ebff9b26",
+        "configuration_sha256": "72210c040b8bed826d65ef83d35532a472706171c7f374ede58ec07b8301700f"
+      },
+      "complete_program_bytes_equal": true,
+      "current_program_sha256": "cae7fdb1217d81983e281cb390dc5c8d7c2c6febfa6390b2309a37c4ebff9b26",
+      "archived_program_sha256": "cae7fdb1217d81983e281cb390dc5c8d7c2c6febfa6390b2309a37c4ebff9b26",
+      "current_bytes": 489776,
+      "archived_bytes": 489776,
+      "passed": true
+    },
+    {
+      "case": "output/source_graph_2026-09-24/mutation_bias_identity_control",
+      "classification": "source_graph_application",
+      "count": 129,
+      "input_files": {
+        "definition.json.xz": {
+          "sha256": "098e263c371d073c2d5153f9d3351ff9f40844e219dfa23d6b3726741c41ee8a",
+          "bytes": 83308
+        },
+        "manifest.json.xz": {
+          "sha256": "caea16d55a9e9c7466358ea388c12dab74c2b69c3832ec5b8b713be8fdf17364",
+          "bytes": 99572
+        },
+        "program.bin": {
+          "sha256": "4d91296a5a50c78170f6dc7c48b109abfa3f0fdd494e06872d3e9baacdd4e1a0",
+          "bytes": 489744
+        },
+        "source_model.json": {
+          "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+          "bytes": 13654
+        },
+        "source_graph.json": {
+          "sha256": "203a18c3e5e14659b82daed0f03ff626b16edac92aaaae4f0aae33a10766bc6e",
+          "bytes": 166050
+        }
+      },
+      "source_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "source_graph_semantic_sha256": "203a18c3e5e14659b82daed0f03ff626b16edac92aaaae4f0aae33a10766bc6e",
+      "source_cycle_semantic_sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+      "enzyme_inputs_semantic_sha256": null,
+      "instance_policy": "Current builder with inferred archived count and exact retained enzyme observations.",
+      "builder_initializers_equal_archive_before_override": true,
+      "current_definition_semantic_sha256": "c6b8b5f7730ff0fd9e767e75741be31107d17cbcbb8a36cd72afda98dbbca417",
+      "current_manifest_semantic_sha256": "a9c4fb4b5d4df401889c0e4208661f3532d851f6d874e7923f73d6945709520b",
+      "live_layout_audit": {
+        "passed": true,
+        "call_mappings_checked": [],
+        "enzyme_return_writes_checked": [],
+        "duplicated_authoring_policies_equal": true,
+        "both_current_plan_hashes_match": true
+      },
+      "current_manifest": {
+        "passed": true,
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": false,
+        "program_sha256": "4d91296a5a50c78170f6dc7c48b109abfa3f0fdd494e06872d3e9baacdd4e1a0",
+        "configuration_sha256": "b1e684f7a12fddb861096d55dd7a5bfcc5f862b42e4588ee0b8e0bff7bef316b"
+      },
+      "historical_manifest": {
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": false,
+        "program_sha256": "4d91296a5a50c78170f6dc7c48b109abfa3f0fdd494e06872d3e9baacdd4e1a0",
+        "configuration_sha256": "b1e684f7a12fddb861096d55dd7a5bfcc5f862b42e4588ee0b8e0bff7bef316b"
+      },
+      "complete_program_bytes_equal": true,
+      "current_program_sha256": "4d91296a5a50c78170f6dc7c48b109abfa3f0fdd494e06872d3e9baacdd4e1a0",
+      "archived_program_sha256": "4d91296a5a50c78170f6dc7c48b109abfa3f0fdd494e06872d3e9baacdd4e1a0",
+      "current_bytes": 489744,
+      "archived_bytes": 489744,
+      "passed": true
+    },
+    {
+      "case": "output/source_graph_2026-09-24/phase_bias",
+      "classification": "source_graph_application",
+      "count": 129,
+      "input_files": {
+        "definition.json.xz": {
+          "sha256": "6caedd038bd18bda2693a45918c4bb26c6c04cbf0e8f24aeab5aff1e802afe11",
+          "bytes": 83300
+        },
+        "manifest.json.xz": {
+          "sha256": "507098640cc82e0eeca928a019495e9afe3afed8dbce77445bcad55f6bb48a71",
+          "bytes": 99612
+        },
+        "program.bin": {
+          "sha256": "95e9644e31278365f02e9416bc7da2f9ce6c1fa36e8e9c15fb2d417aaaa699ee",
+          "bytes": 489776
+        },
+        "source_model.json": {
+          "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+          "bytes": 13654
+        },
+        "source_graph.json": {
+          "sha256": "55b28f28da8fe5794544d1d2014215cae5a3f90b4764f2031d0a8df851bc03ca",
+          "bytes": 166073
+        }
+      },
+      "source_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "source_graph_semantic_sha256": "55b28f28da8fe5794544d1d2014215cae5a3f90b4764f2031d0a8df851bc03ca",
+      "source_cycle_semantic_sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+      "enzyme_inputs_semantic_sha256": null,
+      "instance_policy": "Current builder with inferred archived count and exact retained enzyme observations.",
+      "builder_initializers_equal_archive_before_override": true,
+      "current_definition_semantic_sha256": "dee125e9a4b2b7d55001c0dadb2bbcee324a96ec66a6e9a5956a1e6d59ed665d",
+      "current_manifest_semantic_sha256": "2541f56bffe396a297635585bdce799728363b442548600cdc89e0267a5aa5ce",
+      "live_layout_audit": {
+        "passed": true,
+        "call_mappings_checked": [],
+        "enzyme_return_writes_checked": [],
+        "duplicated_authoring_policies_equal": true,
+        "both_current_plan_hashes_match": true
+      },
+      "current_manifest": {
+        "passed": true,
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": false,
+        "program_sha256": "95e9644e31278365f02e9416bc7da2f9ce6c1fa36e8e9c15fb2d417aaaa699ee",
+        "configuration_sha256": "71857b4f87da074058a9d26195db43a38532c5d00f5dae184bb1bd568b514c15"
+      },
+      "historical_manifest": {
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": false,
+        "program_sha256": "95e9644e31278365f02e9416bc7da2f9ce6c1fa36e8e9c15fb2d417aaaa699ee",
+        "configuration_sha256": "71857b4f87da074058a9d26195db43a38532c5d00f5dae184bb1bd568b514c15"
+      },
+      "complete_program_bytes_equal": true,
+      "current_program_sha256": "95e9644e31278365f02e9416bc7da2f9ce6c1fa36e8e9c15fb2d417aaaa699ee",
+      "archived_program_sha256": "95e9644e31278365f02e9416bc7da2f9ce6c1fa36e8e9c15fb2d417aaaa699ee",
+      "current_bytes": 489776,
+      "archived_bytes": 489776,
+      "passed": true
+    },
+    {
+      "case": "output/source_graph_2026-09-24/phase_bias_identity_control",
+      "classification": "source_graph_application",
+      "count": 129,
+      "input_files": {
+        "definition.json.xz": {
+          "sha256": "8e5be2ba1004d60a339344b7b41db320697b9ea3f09a8c866c38d5861d9e8651",
+          "bytes": 83284
+        },
+        "manifest.json.xz": {
+          "sha256": "5024fc8f0453b834c0691e2fae1b2e1924fecf6b0131792e3484549dabcd37a5",
+          "bytes": 99596
+        },
+        "program.bin": {
+          "sha256": "9640e1cb3dc44abfa9e465f99a9c2395d66a20e056781b23d12308afd087306f",
+          "bytes": 489744
+        },
+        "source_model.json": {
+          "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+          "bytes": 13654
+        },
+        "source_graph.json": {
+          "sha256": "059dbc44b0e5e9b05eedc16bb421bf67e2641fdef1e8130a6d5630e2dda7d398",
+          "bytes": 165953
+        }
+      },
+      "source_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "source_graph_semantic_sha256": "059dbc44b0e5e9b05eedc16bb421bf67e2641fdef1e8130a6d5630e2dda7d398",
+      "source_cycle_semantic_sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+      "enzyme_inputs_semantic_sha256": null,
+      "instance_policy": "Current builder with inferred archived count and exact retained enzyme observations.",
+      "builder_initializers_equal_archive_before_override": true,
+      "current_definition_semantic_sha256": "7c090a876765aff5becd3f07944c25acb72df049fd0c24434a57bfe8f67c6406",
+      "current_manifest_semantic_sha256": "aeb06c54c895f314ab5b55e979dfbfdb7994ed9212b570a4612461fb911c9355",
+      "live_layout_audit": {
+        "passed": true,
+        "call_mappings_checked": [],
+        "enzyme_return_writes_checked": [],
+        "duplicated_authoring_policies_equal": true,
+        "both_current_plan_hashes_match": true
+      },
+      "current_manifest": {
+        "passed": true,
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": false,
+        "program_sha256": "9640e1cb3dc44abfa9e465f99a9c2395d66a20e056781b23d12308afd087306f",
+        "configuration_sha256": "29f610b2b73caec574da156cd1a415769f099abe76999739401b01aa5473ea21"
+      },
+      "historical_manifest": {
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": false,
+        "program_sha256": "9640e1cb3dc44abfa9e465f99a9c2395d66a20e056781b23d12308afd087306f",
+        "configuration_sha256": "29f610b2b73caec574da156cd1a415769f099abe76999739401b01aa5473ea21"
+      },
+      "complete_program_bytes_equal": true,
+      "current_program_sha256": "9640e1cb3dc44abfa9e465f99a9c2395d66a20e056781b23d12308afd087306f",
+      "archived_program_sha256": "9640e1cb3dc44abfa9e465f99a9c2395d66a20e056781b23d12308afd087306f",
+      "current_bytes": 489744,
+      "archived_bytes": 489744,
+      "passed": true
+    }
+  ],
+  "matrix_cases": [
+    {
+      "case": "output/source_graph_2026-09-24/matrix_audit/application",
+      "classification": "matrix_source_graph_application",
+      "count": 257,
+      "input_files": {
+        "definition.json.xz": {
+          "sha256": "3ffe311b8ddc8c2a03a6f60ab337c715711fdb0617f81b7c22338a1b9f68049a",
+          "bytes": 86984
+        },
+        "manifest.json.xz": {
+          "sha256": "6da0647ba5875ca5af6ebb2e15aa580bf8b149f7c9d9b386fecbd3012b247d40",
+          "bytes": 89108
+        },
+        "program.bin": {
+          "sha256": "7f64cc6dd115ca7b9cf9beb2c3d73178c5c4c54e704d22ec39158cee578c8e1f",
+          "bytes": 898788
+        }
+      },
+      "source_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "source_graph_semantic_sha256": "098e015d3d4b5cf244948be3e0d22acc82769e714d0f50d2392c719402f23cf4",
+      "source_cycle_semantic_sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+      "enzyme_inputs_semantic_sha256": null,
+      "instance_policy": "Archived explicit initial instances restored after rebuilding the source graph.",
+      "builder_initializers_equal_archive_before_override": false,
+      "current_definition_semantic_sha256": "dc0c7aa9ecee7ff0d8c97788b87dd730f5940b50f5e234a26454da3d9edef550",
+      "current_manifest_semantic_sha256": "896a8e2604d5759a351807770f1b55671d1be6aad49033e5cf6cad4c8b44ad9a",
+      "live_layout_audit": {
+        "passed": true,
+        "call_mappings_checked": [],
+        "enzyme_return_writes_checked": [],
+        "duplicated_authoring_policies_equal": true,
+        "both_current_plan_hashes_match": true
+      },
+      "current_manifest": {
+        "passed": true,
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": false,
+        "program_sha256": "7f64cc6dd115ca7b9cf9beb2c3d73178c5c4c54e704d22ec39158cee578c8e1f",
+        "configuration_sha256": "08436eefbc11c6663c836c31635921933266718f1b7d7d317abe8c5552cbcc84"
+      },
+      "historical_manifest": {
+        "scope": "typed_resident_definition_execution",
+        "status": "application_semantics_require_separate_binding_and_evidence",
+        "complete_application_lowered": false,
+        "source_cycle_lowered": null,
+        "source_graph_lowered": null,
+        "source_graph_profile": null,
+        "domain_application_implemented": null,
+        "program_sha256": "7f64cc6dd115ca7b9cf9beb2c3d73178c5c4c54e704d22ec39158cee578c8e1f",
+        "configuration_sha256": "08436eefbc11c6663c836c31635921933266718f1b7d7d317abe8c5552cbcc84"
+      },
+      "complete_program_bytes_equal": true,
+      "current_program_sha256": "7f64cc6dd115ca7b9cf9beb2c3d73178c5c4c54e704d22ec39158cee578c8e1f",
+      "archived_program_sha256": "7f64cc6dd115ca7b9cf9beb2c3d73178c5c4c54e704d22ec39158cee578c8e1f",
+      "current_bytes": 898788,
+      "archived_bytes": 898788,
+      "passed": true,
+      "graph_document": "Embedded source.application_graph.graph from archived definition; no archived tape contributes to lowering."
+    },
+    {
+      "case": "output/source_graph_2026-09-24/matrix_audit/unconditioned_control",
+      "classification": "matrix_control_application",
+      "count": 257,
+      "input_files": {
+        "definition.json.xz": {
+          "sha256": "f7169a2454d5c30521371cb4bfe360f51bb722d63d2d51750e0b023b5da62581",
+          "bytes": 85596
+        },
+        "manifest.json.xz": {
+          "sha256": "d80216ca074120e370c5721a6ae4cb4f9827658d9611d6ccde44f1ec5b73a8f3",
+          "bytes": 87620
+        },
+        "program.bin": {
+          "sha256": "0d3d332549073d2f3cabd32bfd3293170c934bf6ff08dcd094e3a8f1183b8e0c",
+          "bytes": 896164
+        }
+      },
+      "source_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "source_graph_semantic_sha256": "8e7c5bc8431d5568705f53a12d698b0ec1b2c71aa1c05dba547de6e124963d22",
+      "source_cycle_semantic_sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+      "enzyme_inputs_semantic_sha256": null,
+      "instance_policy": "Archived explicit initial instances restored after rebuilding the source graph.",
+      "builder_initializers_equal_archive_before_override": false,
+      "current_definition_semantic_sha256": "fec7ed560d17cc998d90f3e97fcde40f946baa4ac1cff92d50ea64689a9050f2",
+      "current_manifest_semantic_sha256": "7b239896622aa0bdf329cf73004efb520f6b6efe162fd93c76badd5bb94babca",
+      "live_layout_audit": {
+        "passed": true,
+        "call_mappings_checked": [],
+        "enzyme_return_writes_checked": [],
+        "duplicated_authoring_policies_equal": true,
+        "both_current_plan_hashes_match": true
+      },
+      "current_manifest": {
+        "passed": true,
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": false,
+        "program_sha256": "0d3d332549073d2f3cabd32bfd3293170c934bf6ff08dcd094e3a8f1183b8e0c",
+        "configuration_sha256": "1b7eceab76ed17f8c521399288056b407cf3eb377a323adba82d74d3b8faa8d0"
+      },
+      "historical_manifest": {
+        "scope": "typed_resident_definition_execution",
+        "status": "application_semantics_require_separate_binding_and_evidence",
+        "complete_application_lowered": false,
+        "source_cycle_lowered": null,
+        "source_graph_lowered": null,
+        "source_graph_profile": null,
+        "domain_application_implemented": null,
+        "program_sha256": "0d3d332549073d2f3cabd32bfd3293170c934bf6ff08dcd094e3a8f1183b8e0c",
+        "configuration_sha256": "1b7eceab76ed17f8c521399288056b407cf3eb377a323adba82d74d3b8faa8d0"
+      },
+      "complete_program_bytes_equal": true,
+      "current_program_sha256": "0d3d332549073d2f3cabd32bfd3293170c934bf6ff08dcd094e3a8f1183b8e0c",
+      "archived_program_sha256": "0d3d332549073d2f3cabd32bfd3293170c934bf6ff08dcd094e3a8f1183b8e0c",
+      "current_bytes": 896164,
+      "archived_bytes": 896164,
+      "passed": true,
+      "graph_document": "Embedded source.application_graph.graph from archived definition; no archived tape contributes to lowering."
+    },
+    {
+      "case": "output/source_graph_2026-09-24/matrix_audit/wrong_T_route",
+      "classification": "negative_typed_route_graph",
+      "count": 257,
+      "input_files": {
+        "definition.json.xz": {
+          "sha256": "b9462ada10372fe3ceb238b9f83c6f9b8d4b52943ec6d73260757008f97dc5be",
+          "bytes": 86984
+        },
+        "manifest.json.xz": {
+          "sha256": "4449bc32d8b13d857ab1915760521cde4883506041cc6e760a0ed47eb3f57919",
+          "bytes": 89084
+        },
+        "program.bin": {
+          "sha256": "23d85e06f10ba4a01c59978fa16c49ccf6b52a92cde22b73a8e4c38a8e1f717b",
+          "bytes": 898788
+        }
+      },
+      "source_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "source_graph_semantic_sha256": "2ecc191d51cf0e776f13b9d5ce105063c6340923f13a864e9805e512d0f7d31f",
+      "source_cycle_semantic_sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+      "enzyme_inputs_semantic_sha256": null,
+      "instance_policy": "Archived explicit initial instances restored after rebuilding the source graph.",
+      "builder_initializers_equal_archive_before_override": false,
+      "current_definition_semantic_sha256": "14cd52d7477113c334803ff91b7d084f366b9d07d0db007387f56aa2a2ee3626",
+      "current_manifest_semantic_sha256": "59681deff3d11566cdb6750bf3e78202ab9d8efa2f44d9fcb2a9179fe3efa5e6",
+      "live_layout_audit": {
+        "passed": true,
+        "call_mappings_checked": [],
+        "enzyme_return_writes_checked": [],
+        "duplicated_authoring_policies_equal": true,
+        "both_current_plan_hashes_match": true
+      },
+      "current_manifest": {
+        "passed": true,
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": false,
+        "program_sha256": "23d85e06f10ba4a01c59978fa16c49ccf6b52a92cde22b73a8e4c38a8e1f717b",
+        "configuration_sha256": "ea7760397e340860434d9ed36dcef680cab113464e9229d27bc368f054cb62b4"
+      },
+      "historical_manifest": {
+        "scope": "typed_resident_definition_execution",
+        "status": "application_semantics_require_separate_binding_and_evidence",
+        "complete_application_lowered": false,
+        "source_cycle_lowered": null,
+        "source_graph_lowered": null,
+        "source_graph_profile": null,
+        "domain_application_implemented": null,
+        "program_sha256": "23d85e06f10ba4a01c59978fa16c49ccf6b52a92cde22b73a8e4c38a8e1f717b",
+        "configuration_sha256": "ea7760397e340860434d9ed36dcef680cab113464e9229d27bc368f054cb62b4"
+      },
+      "complete_program_bytes_equal": true,
+      "current_program_sha256": "23d85e06f10ba4a01c59978fa16c49ccf6b52a92cde22b73a8e4c38a8e1f717b",
+      "archived_program_sha256": "23d85e06f10ba4a01c59978fa16c49ccf6b52a92cde22b73a8e4c38a8e1f717b",
+      "current_bytes": 898788,
+      "archived_bytes": 898788,
+      "passed": true,
+      "graph_document": "Embedded source.application_graph.graph from archived definition; no archived tape contributes to lowering.",
+      "expected_runtime_role": "Negative workload: incompatible dynamically selected record; historical runtime status11, not an application-success claim."
+    },
+    {
+      "case": "output/source_graph_2026-09-24/matrix_audit/wrong_A_route",
+      "classification": "negative_typed_route_graph",
+      "count": 257,
+      "input_files": {
+        "definition.json.xz": {
+          "sha256": "5556426e600c60ee1f4131cb57f7321e636d1516c54a095fb21b541d38295589",
+          "bytes": 87008
+        },
+        "manifest.json.xz": {
+          "sha256": "bc097ce74d729708ae5223cf191391fae8d04236f5fca8888c501011c6d173e3",
+          "bytes": 89104
+        },
+        "program.bin": {
+          "sha256": "e3c07316c7016774da5aa042b2a9c66614de809d13fb0043cdbf79d70aa84b74",
+          "bytes": 898788
+        }
+      },
+      "source_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "source_graph_semantic_sha256": "98dc71940a796522cf4298fb2ee67348df4fcfa21a660d766391b8b74393c339",
+      "source_cycle_semantic_sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+      "enzyme_inputs_semantic_sha256": null,
+      "instance_policy": "Archived explicit initial instances restored after rebuilding the source graph.",
+      "builder_initializers_equal_archive_before_override": false,
+      "current_definition_semantic_sha256": "da5a2e36f8ad7f38f19a48efbdb524f4911bbb6e84a919d9c7c93b124ab67fd5",
+      "current_manifest_semantic_sha256": "a36f3a770c816486f6e34d0418a87fb8f6edaa333c0e1e7bb61932c6e2cc839f",
+      "live_layout_audit": {
+        "passed": true,
+        "call_mappings_checked": [],
+        "enzyme_return_writes_checked": [],
+        "duplicated_authoring_policies_equal": true,
+        "both_current_plan_hashes_match": true
+      },
+      "current_manifest": {
+        "passed": true,
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": false,
+        "program_sha256": "e3c07316c7016774da5aa042b2a9c66614de809d13fb0043cdbf79d70aa84b74",
+        "configuration_sha256": "ec5a8b3d8751e2a8a91c2fee42cfd2d3b0e8d20f5bde8ffd9a044737bebaa7dc"
+      },
+      "historical_manifest": {
+        "scope": "typed_resident_definition_execution",
+        "status": "application_semantics_require_separate_binding_and_evidence",
+        "complete_application_lowered": false,
+        "source_cycle_lowered": null,
+        "source_graph_lowered": null,
+        "source_graph_profile": null,
+        "domain_application_implemented": null,
+        "program_sha256": "e3c07316c7016774da5aa042b2a9c66614de809d13fb0043cdbf79d70aa84b74",
+        "configuration_sha256": "ec5a8b3d8751e2a8a91c2fee42cfd2d3b0e8d20f5bde8ffd9a044737bebaa7dc"
+      },
+      "complete_program_bytes_equal": true,
+      "current_program_sha256": "e3c07316c7016774da5aa042b2a9c66614de809d13fb0043cdbf79d70aa84b74",
+      "archived_program_sha256": "e3c07316c7016774da5aa042b2a9c66614de809d13fb0043cdbf79d70aa84b74",
+      "current_bytes": 898788,
+      "archived_bytes": 898788,
+      "passed": true,
+      "graph_document": "Embedded source.application_graph.graph from archived definition; no archived tape contributes to lowering.",
+      "expected_runtime_role": "Negative workload: incompatible dynamically selected record; historical runtime status11, not an application-success claim."
+    },
+    {
+      "case": "output/source_graph_2026-09-24/matrix_audit/attempt1_application",
+      "classification": "historical_retry_application",
+      "count": 257,
+      "input_files": {
+        "definition.json.xz": {
+          "sha256": "3ffe311b8ddc8c2a03a6f60ab337c715711fdb0617f81b7c22338a1b9f68049a",
+          "bytes": 86984
+        },
+        "manifest.json.xz": {
+          "sha256": "6da0647ba5875ca5af6ebb2e15aa580bf8b149f7c9d9b386fecbd3012b247d40",
+          "bytes": 89108
+        },
+        "program.bin": {
+          "sha256": "7f64cc6dd115ca7b9cf9beb2c3d73178c5c4c54e704d22ec39158cee578c8e1f",
+          "bytes": 898788
+        }
+      },
+      "source_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "source_graph_semantic_sha256": "098e015d3d4b5cf244948be3e0d22acc82769e714d0f50d2392c719402f23cf4",
+      "source_cycle_semantic_sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+      "enzyme_inputs_semantic_sha256": null,
+      "instance_policy": "Archived explicit initial instances restored after rebuilding the source graph.",
+      "builder_initializers_equal_archive_before_override": false,
+      "current_definition_semantic_sha256": "dc0c7aa9ecee7ff0d8c97788b87dd730f5940b50f5e234a26454da3d9edef550",
+      "current_manifest_semantic_sha256": "896a8e2604d5759a351807770f1b55671d1be6aad49033e5cf6cad4c8b44ad9a",
+      "live_layout_audit": {
+        "passed": true,
+        "call_mappings_checked": [],
+        "enzyme_return_writes_checked": [],
+        "duplicated_authoring_policies_equal": true,
+        "both_current_plan_hashes_match": true
+      },
+      "current_manifest": {
+        "passed": true,
+        "scope": "source_declared_complete_mutation_and_eight_stage_action_graph",
+        "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+        "complete_application_lowered": true,
+        "source_cycle_lowered": true,
+        "source_graph_lowered": true,
+        "source_graph_profile": "DWI-SOURCE-GRAPH-0.1",
+        "domain_application_implemented": false,
+        "program_sha256": "7f64cc6dd115ca7b9cf9beb2c3d73178c5c4c54e704d22ec39158cee578c8e1f",
+        "configuration_sha256": "08436eefbc11c6663c836c31635921933266718f1b7d7d317abe8c5552cbcc84"
+      },
+      "historical_manifest": {
+        "scope": "typed_resident_definition_execution",
+        "status": "application_semantics_require_separate_binding_and_evidence",
+        "complete_application_lowered": false,
+        "source_cycle_lowered": null,
+        "source_graph_lowered": null,
+        "source_graph_profile": null,
+        "domain_application_implemented": null,
+        "program_sha256": "7f64cc6dd115ca7b9cf9beb2c3d73178c5c4c54e704d22ec39158cee578c8e1f",
+        "configuration_sha256": "08436eefbc11c6663c836c31635921933266718f1b7d7d317abe8c5552cbcc84"
+      },
+      "complete_program_bytes_equal": true,
+      "current_program_sha256": "7f64cc6dd115ca7b9cf9beb2c3d73178c5c4c54e704d22ec39158cee578c8e1f",
+      "archived_program_sha256": "7f64cc6dd115ca7b9cf9beb2c3d73178c5c4c54e704d22ec39158cee578c8e1f",
+      "current_bytes": 898788,
+      "archived_bytes": 898788,
+      "passed": true,
+      "graph_document": "Embedded source.application_graph.graph from archived definition; no archived tape contributes to lowering."
+    },
+    {
+      "case": "output/source_graph_2026-09-24/matrix_audit/diagnostic",
+      "classification": "derived_diagnostic_tape",
+      "count": 257,
+      "capture_count": 37,
+      "capture_map_reconstructed_exactly": true,
+      "input_files": {
+        "definition.json.xz": {
+          "sha256": "8c10a0a03c1f7a4f7b6d6b44a72f2025569e5c3650001f0eb2a0ffb2c4afbc3c",
+          "bytes": 87032
+        },
+        "manifest.json.xz": {
+          "sha256": "3e5d1381d0b6503c31e4e3d16749f6640c4ce0d08a4d53cde37109c6c577fe31",
+          "bytes": 89152
+        },
+        "program.bin": {
+          "sha256": "6ec90ccbff9c58a7fcc0ab4bcfc89c382fd8ae6b0b08e8283ac5a9de4901e46e",
+          "bytes": 899012
+        }
+      },
+      "current_manifest": {
+        "scope": "typed_resident_definition_execution",
+        "status": "application_semantics_require_separate_binding_and_evidence",
+        "complete_application_lowered": false,
+        "source_cycle_lowered": null,
+        "source_graph_lowered": null,
+        "source_graph_profile": null,
+        "domain_application_implemented": null,
+        "program_sha256": "6ec90ccbff9c58a7fcc0ab4bcfc89c382fd8ae6b0b08e8283ac5a9de4901e46e",
+        "configuration_sha256": "558fba900c8bc017236f1f8e34d066cb817297257c34b1cf014dc70110760a1e"
+      },
+      "historical_manifest": {
+        "scope": "typed_resident_definition_execution",
+        "status": "application_semantics_require_separate_binding_and_evidence",
+        "complete_application_lowered": false,
+        "source_cycle_lowered": null,
+        "source_graph_lowered": null,
+        "source_graph_profile": null,
+        "domain_application_implemented": null,
+        "program_sha256": "6ec90ccbff9c58a7fcc0ab4bcfc89c382fd8ae6b0b08e8283ac5a9de4901e46e",
+        "configuration_sha256": "558fba900c8bc017236f1f8e34d066cb817297257c34b1cf014dc70110760a1e"
+      },
+      "scope": "The parent application graph is rebuilt with current code, then only state writes are replaced using the documented37-capture recipe. Parent graph layout metadata is not claimed to describe the instrumented tape. This diagnostic is not an application continuation.",
+      "complete_program_bytes_equal": true,
+      "current_program_sha256": "6ec90ccbff9c58a7fcc0ab4bcfc89c382fd8ae6b0b08e8283ac5a9de4901e46e",
+      "archived_program_sha256": "6ec90ccbff9c58a7fcc0ab4bcfc89c382fd8ae6b0b08e8283ac5a9de4901e46e",
+      "current_bytes": 899012,
+      "archived_bytes": 899012,
+      "passed": true
+    }
+  ],
+  "historical_metadata_policy": "Archived definitions/manifests and their recorded hashes remain unchanged. Historical generic manifest flags and former builder-layout positions are displayed only as historical data; current rebuilt metadata is independently checked.",
+  "summary": {
+    "top_level_cases": 14,
+    "top_level_passed": 14,
+    "matrix_cases": 6,
+    "matrix_passed": 6,
+    "all_passed": true
+  }
+}

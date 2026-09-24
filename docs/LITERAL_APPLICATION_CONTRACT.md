@@ -16,8 +16,12 @@ remain separate requirements.
 The later [source-authoring interface](SOURCE_PROGRAM_AUTHORING.md) binds actual
 edited slot declarations and one new routed record to acting resident functions.
 Its [evidence](../output/source_authoring_2026-09-24/REPORT.md) covers that bounded
-authoring milestone. The stage/application call graph still comes from explicit
-versioned builders, so general source-owned application composition remains open.
+authoring milestone. The later [source graph interface](SOURCE_GRAPH_PROGRAM.md)
+now declares the complete mutation and action wiring, including enzyme feedback
+and typed heterogeneous calls. The [requirements audit](SOURCE_GRAPH_REQUIREMENTS.md)
+maps its implementation and evidence to the acceptance conditions below. The
+versioned builders still initialize the numerical banks; final call plans are
+replaced from the graph, with no dependency on the old tape layout.
 
 ## What the source actually requires
 

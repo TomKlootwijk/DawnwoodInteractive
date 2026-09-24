@@ -1,0 +1,1548 @@
+{
+  "rows": [
+    {
+      "lane": 0,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 1,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 2,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 3,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 4,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 5,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 6,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 7,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 8,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 9,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 10,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 11,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 12,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 13,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 14,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 15,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 16,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 17,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 18,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 19,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 20,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 21,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 22,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 23,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 24,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 25,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 26,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 27,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 28,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 29,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 30,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 31,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 32,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 33,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 34,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 35,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 36,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 37,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 38,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 39,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 40,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 41,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 42,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 43,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 44,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 45,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 46,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 47,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 48,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 49,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 50,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 51,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 52,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 53,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 54,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 55,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 56,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 57,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 58,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 59,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 60,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 61,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 62,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 63,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 64,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 65,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 66,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 67,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 68,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 69,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 70,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 71,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 72,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 73,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 74,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 75,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 76,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 77,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 78,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 79,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 80,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 81,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 82,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 83,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 84,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 85,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 86,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 87,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 88,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 89,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 90,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 91,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 92,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 93,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 94,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 95,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 96,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 97,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 98,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 99,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 100,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 101,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 102,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 103,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 104,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 105,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 106,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 107,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 108,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 109,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 110,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 111,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 112,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 113,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 114,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 115,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 116,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 117,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 118,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 119,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 120,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 121,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 122,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 123,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 124,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 125,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 126,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 127,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 128,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 129,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 130,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 131,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 132,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 133,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 134,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 135,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 136,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 137,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 138,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 139,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 140,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 141,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 142,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 143,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 144,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 145,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 146,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 147,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 148,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 149,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 150,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 151,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 152,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 153,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 154,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 155,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 156,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 157,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 158,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 159,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 160,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 161,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 162,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 163,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 164,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 165,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 166,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 167,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 168,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 169,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 170,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 171,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 172,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 173,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 174,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 175,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 176,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 177,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 178,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 179,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 180,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 181,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 182,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 183,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 184,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 185,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 186,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 187,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 188,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 189,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 190,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 191,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 192,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 193,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 194,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 195,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 196,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 197,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 198,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 199,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 200,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 201,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 202,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 203,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 204,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 205,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 206,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 207,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 208,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 209,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 210,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 211,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 212,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 213,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 214,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 215,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 216,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 217,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 218,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 219,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 220,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 221,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 222,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 223,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 224,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 225,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 226,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 227,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 228,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 229,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 230,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 231,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 232,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 233,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 234,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 235,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 236,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 237,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 238,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 239,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 240,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 241,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 242,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 243,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 244,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 245,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 246,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 247,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 248,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 249,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 250,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 251,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 252,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 253,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 254,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 255,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    },
+    {
+      "lane": 256,
+      "returned_pair_changed": true,
+      "T_unchanged_at_first_epoch": true,
+      "A_unchanged_at_first_epoch": true
+    }
+  ],
+  "changed_pairs": 257,
+  "meaning": "Conditioned graph adds one inverse application before the existing pinion inverse application; its effective wave map includes A twice plus history/field and return rotation."
+}

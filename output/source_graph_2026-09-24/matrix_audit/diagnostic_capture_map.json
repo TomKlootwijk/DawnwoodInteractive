@@ -1,0 +1,191 @@
+{
+  "capture_state_slots": [
+    {
+      "name": "T_in_ar",
+      "at": 831,
+      "register": 192
+    },
+    {
+      "name": "T_in_ai",
+      "at": 831,
+      "register": 193
+    },
+    {
+      "name": "T_in_br",
+      "at": 831,
+      "register": 194
+    },
+    {
+      "name": "T_in_bi",
+      "at": 831,
+      "register": 195
+    },
+    {
+      "name": "T_in_crystal_ar",
+      "at": 831,
+      "register": 196
+    },
+    {
+      "name": "T_in_field_distance",
+      "at": 831,
+      "register": 197
+    },
+    {
+      "name": "t00",
+      "at": 832,
+      "register": 12
+    },
+    {
+      "name": "t01",
+      "at": 832,
+      "register": 13
+    },
+    {
+      "name": "t10",
+      "at": 832,
+      "register": 14
+    },
+    {
+      "name": "t11",
+      "at": 832,
+      "register": 15
+    },
+    {
+      "name": "inverse_field_distance",
+      "at": 878,
+      "register": 196
+    },
+    {
+      "name": "a00",
+      "at": 879,
+      "register": 29
+    },
+    {
+      "name": "a01",
+      "at": 879,
+      "register": 30
+    },
+    {
+      "name": "a10",
+      "at": 879,
+      "register": 31
+    },
+    {
+      "name": "a11",
+      "at": 879,
+      "register": 32
+    },
+    {
+      "name": "raw_ar",
+      "at": 887,
+      "register": 192
+    },
+    {
+      "name": "raw_ai",
+      "at": 887,
+      "register": 193
+    },
+    {
+      "name": "raw_br",
+      "at": 887,
+      "register": 194
+    },
+    {
+      "name": "raw_bi",
+      "at": 887,
+      "register": 195
+    },
+    {
+      "name": "conditioned_ar",
+      "at": 888,
+      "register": 33
+    },
+    {
+      "name": "conditioned_ai",
+      "at": 888,
+      "register": 34
+    },
+    {
+      "name": "conditioned_br",
+      "at": 888,
+      "register": 35
+    },
+    {
+      "name": "conditioned_bi",
+      "at": 888,
+      "register": 36
+    },
+    {
+      "name": "pinion_B0",
+      "at": 920,
+      "register": 199
+    },
+    {
+      "name": "pinion_B1",
+      "at": 920,
+      "register": 200
+    },
+    {
+      "name": "pinion_B2",
+      "at": 920,
+      "register": 201
+    },
+    {
+      "name": "pinion_B3",
+      "at": 920,
+      "register": 202
+    },
+    {
+      "name": "pinion_field_distance",
+      "at": 920,
+      "register": 207
+    },
+    {
+      "name": "return_field_distance",
+      "at": 949,
+      "register": 203
+    },
+    {
+      "name": "return_neck",
+      "at": 949,
+      "register": 199
+    },
+    {
+      "name": "return_parity",
+      "at": 949,
+      "register": 200
+    },
+    {
+      "name": "final_ar",
+      "at": 950,
+      "register": 33
+    },
+    {
+      "name": "final_ai",
+      "at": 950,
+      "register": 34
+    },
+    {
+      "name": "final_br",
+      "at": 950,
+      "register": 35
+    },
+    {
+      "name": "final_bi",
+      "at": 950,
+      "register": 36
+    },
+    {
+      "name": "route_T_index",
+      "at": 809,
+      "register": 29
+    },
+    {
+      "name": "route_A_index",
+      "at": 857,
+      "register": 28
+    }
+  ],
+  "state_words37_to43": "unchanged old values",
+  "scope": "Actual graph call operands/results captured during the same old-mutation and published-action transaction. Only state writes differ; this diagnostic is run for one epoch only."
+}

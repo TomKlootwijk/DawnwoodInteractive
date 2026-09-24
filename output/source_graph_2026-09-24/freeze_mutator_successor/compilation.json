@@ -1,0 +1,18 @@
+{
+  "program_sha256": "f3647e1c79704263a4223c5bc23240e5699778084d144636ef5fa80b75a23a0c",
+  "configuration_sha256": "0d8566057d9d2520f13ee5c036c142c0a8ee85b2c5d910a8cf39265afe052c5b",
+  "artifacts": {
+    "definition.json": {
+      "uncompressed_bytes": 21724315,
+      "uncompressed_sha256": "6e4a29d470b30909727483d66438658a60c4351e780db486bea24f4ac0ceb868",
+      "archive": "definition.json.xz",
+      "archive_sha256": "5119ed8f215217f1af1aae8714be511f2f6129dd53908dda29d0997ea5b9ea16"
+    },
+    "manifest.json": {
+      "uncompressed_bytes": 21983884,
+      "uncompressed_sha256": "a090f4ac49334f8f970b5daede2c4a8f5b9ee0a7fa2cc014caa0e487f869c1f4",
+      "archive": "manifest.json.xz",
+      "archive_sha256": "686c124d5c175bbbd74897ab661238105f7facdc6fc213e9d8e927b566f62a32"
+    }
+  }
+}

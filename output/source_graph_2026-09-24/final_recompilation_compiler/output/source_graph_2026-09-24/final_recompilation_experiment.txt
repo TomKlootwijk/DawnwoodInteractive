@@ -1,0 +1,240 @@
+"""Final bounded, read-only historical recompilation audit.
+Run from repository root by piping this text to Python -u -X utf8 -B -.
+Writes only this audit's JSON and frozen compiler/dependency source snapshot.
+No native process, GPU load, or historical artifact mutation is performed.
+"""
+from copy import deepcopy
+from datetime import datetime, timezone
+from pathlib import Path
+import hashlib
+import json
+import lzma
+import sys
+
+from local_lab import source_graph_program as gp
+
+ROOT=Path.cwd()
+OUT=ROOT/'output/source_graph_2026-09-24'
+SNAPSHOT=OUT/'final_recompilation_compiler'
+ir,r,c=gp.ir,gp.resident,gp.author.cycle_binding
+load=lambda p: json.loads(lzma.decompress(Path(p).read_bytes()) if str(p).endswith('.xz') else Path(p).read_bytes())
+sha=lambda raw: hashlib.sha256(raw).hexdigest()
+semantic=lambda obj:sha(ir.json_bytes(obj))
+relative=lambda p:str(Path(p).relative_to(ROOT)).replace('\\','/')
+
+# Freeze the input-folder list before any new CLI artifacts are created.
+case_folders=sorted(p for p in OUT.iterdir() if p.is_dir() and not p.name.startswith('cli')
+                    and all((p/name).exists() for name in ('source_model.json','source_graph.json','definition.json.xz','program.bin')))
+modules=[gp,gp.graph_compiler,gp.graph_types,gp.fidelity,gp.author,gp.author.slots,gp.author.catalogue,
+         gp.author.cycle_binding,gp.author.enzyme,ir,r,r.ir]
+source_files={Path(module.__file__).resolve() for module in modules}
+source_files.add(c.RESIDENT.resolve())
+source_files.add(Path(__file__).resolve() if '__file__' in globals() and Path(__file__).exists() else OUT/'final_recompilation_experiment.txt')
+source_snapshot={}
+for path in sorted(source_files):
+    raw=path.read_bytes();name=relative(path);target=SNAPSHOT/name
+    target.parent.mkdir(parents=True,exist_ok=True)
+    if target.exists() and target.read_bytes()!=raw:
+        raise ValueError('Refusing to replace an existing different compiler snapshot: '+str(target))
+    target.write_bytes(raw)
+    source_snapshot[name]={'sha256':sha(raw),'bytes':len(raw),'retained_file':relative(target)}
+(SNAPSHOT/'inventory.json').write_bytes(ir.json_bytes({'profile':'DWI-SOURCE-GRAPH-0.1','files':source_snapshot}))
+
+def mapping_audit(definition):
+    source=definition['source'];graph=source['application_graph'];checked=[]
+    def check(mapping):
+        plan_name=mapping['plan'];plan=definition[plan_name+'_plan']
+        provenance=next(n for n in graph[plan_name]['nodes'] if n['node']==mapping['node'])
+        assert mapping['source_pointer']==provenance['source_pointer']
+        assert mapping['plan_step_start']==provenance['plan_step_start']
+        assert mapping['plan_step_end_exclusive']==provenance['plan_step_end_exclusive']
+        assert mapping['output_registers']==provenance['output_registers']
+        step=plan[mapping['call_step']]
+        assert mapping['plan_step_start']<=mapping['call_step']<mapping['plan_step_end_exclusive']<=len(plan)
+        assert step[0] in (3,4,11)
+        input_base,output_base=(step[2],step[3]) if step[0]==3 else (step[4],step[5])
+        assert list(mapping['argument_registers'].values())==list(range(input_base,input_base+len(mapping['argument_registers'])))
+        assert list(mapping['output_registers'].values())==list(range(output_base,output_base+len(mapping['output_registers'])))
+        checked.append({'plan':plan_name,'node':mapping['node'],'call_step':mapping['call_step']})
+    def retention(policy):
+        assert not set(policy).intersection({'step','inputs','argument_base','output_base'})
+        assert policy['layout_source']==gp.graph_compiler.PROFILE and policy['graph_calls']
+        for mapping in policy['graph_calls']:check(mapping)
+    for metadata in (source.get('source_slot_bindings'),source.get('authoring',{}).get('slot_resolutions')):
+        if metadata:
+            for policy in metadata['mutation_program_retention']:retention(policy)
+    for metadata in (source.get('catalogue_extension'),source.get('authoring',{}).get('catalogue_extension')):
+        if metadata and metadata.get('added'):
+            retention(metadata['mutation_retention'])
+            routing=metadata['routing']
+            assert 'call_step' not in routing and routing['layout_source']==gp.graph_compiler.PROFILE and routing['graph_calls']
+            for mapping in routing['graph_calls']:check(mapping)
+    returned=[]
+    if source.get('enzyme'):
+        application=source['enzyme']['resident_application']
+        assert not set(application).intersection({'action_step_start','action_step_end_exclusive','original_action_prefix_preserved','base_action_steps'})
+        assert application['layout_source']==gp.graph_compiler.PROFILE
+        expected=graph['structural_fidelity']['enzyme']
+        assert {role:value['node'] for role,value in application['graph_calls'].items()}==expected
+        for mapping in application['graph_calls'].values():check(mapping)
+        for item in application['return_writes']:
+            step=definition['action_plan'][item['step']]
+            assert step[0]==6 and definition['state_names'][step[1]]==item['field']
+            returned.append({'field':item['field'],'step':item['step']})
+        assert set(x['field'] for x in returned)==set(source['enzyme']['state_layout'])
+    authoring=source.get('authoring',{})
+    assert source.get('source_slot_bindings')==authoring.get('slot_resolutions')
+    assert source.get('catalogue_extension')==authoring.get('catalogue_extension')
+    for scope in ('mutation','action'):
+        assert graph[scope]['plan_sha256']==semantic(definition[scope+'_plan'])
+    return {'passed':True,'call_mappings_checked':checked,'enzyme_return_writes_checked':returned,
+            'duplicated_authoring_policies_equal':True,'both_current_plan_hashes_match':True}
+
+def compact_manifest(manifest):
+    return {key:manifest.get(key) for key in ('scope','status','complete_application_lowered','source_cycle_lowered',
+            'source_graph_lowered','source_graph_profile','domain_application_implemented','program_sha256','configuration_sha256')}
+
+def manifest_audit(manifest,definition):
+    assert manifest['complete_application_lowered'] is True
+    assert manifest['source_cycle_lowered'] is True and manifest['source_graph_lowered'] is True
+    assert manifest['source_graph_profile']==gp.graph_compiler.PROFILE
+    assert manifest['status']=='explicit_source_graph_lowered_numerical_evidence_recorded_separately'
+    assert manifest['domain_application_implemented']==('enzyme' in definition['source'])
+    assert manifest['binding_contract']['application_graph']==definition['source']['application_graph']
+    assert manifest['binding_contract']['source_authoring']==definition['source']['authoring']
+    return {'passed':True,**compact_manifest(manifest)}
+
+def archive_files(folder):
+    names=('definition.json.xz','manifest.json.xz','program.bin','source_model.json','source_graph.json','enzyme_inputs.json')
+    return {name:{'sha256':sha((folder/name).read_bytes()),'bytes':(folder/name).stat().st_size}
+            for name in names if (folder/name).exists()}
+
+def compare_program(raw,expected):
+    result={'complete_program_bytes_equal':raw==expected,'current_program_sha256':sha(raw),
+            'archived_program_sha256':sha(expected),'current_bytes':len(raw),'archived_bytes':len(expected)}
+    if raw!=expected:
+        result['first_different_byte']=next((i for i,(a,b) in enumerate(zip(raw,expected)) if a!=b),min(len(raw),len(expected)))
+    return result
+
+def rebuild(folder, *, model=None, graph=None, override_instances=False, classification='source_graph_application'):
+    archived=load(folder/'definition.json.xz')
+    model=load(folder/'source_model.json') if model is None else model
+    graph=load(folder/'source_graph.json') if graph is None else graph
+    cycle=deepcopy(archived['source']['cycle_definition'])
+    kwargs={};enzyme=archived.get('source',{}).get('enzyme')
+    if enzyme:
+        kwargs['enzyme_inputs']=deepcopy(enzyme.get('input_document') or load(OUT/'enzyme/enzyme_inputs.json'))
+    current=gp.build_definition(model,cycle,graph,len(archived['instances']),**kwargs)
+    original_initializers_equal=current['instances']==archived['instances']
+    if override_instances:current['instances']=deepcopy(archived['instances'])
+    raw,manifest=gp.compile_definition(model,current)
+    layout=mapping_audit(current);flags=manifest_audit(manifest,current)
+    row={'case':relative(folder),'classification':classification,'count':len(current['instances']),
+         'input_files':archive_files(folder),'source_model_semantic_sha256':semantic(model),
+         'source_graph_semantic_sha256':semantic(graph),'source_cycle_semantic_sha256':semantic(cycle),
+         'enzyme_inputs_semantic_sha256':semantic(kwargs['enzyme_inputs']) if enzyme else None,
+         'instance_policy':'Archived explicit initial instances restored after rebuilding the source graph.' if override_instances else 'Current builder with inferred archived count and exact retained enzyme observations.',
+         'builder_initializers_equal_archive_before_override':original_initializers_equal,
+         'current_definition_semantic_sha256':semantic(current),'current_manifest_semantic_sha256':semantic(manifest),
+         'live_layout_audit':layout,'current_manifest':flags,
+         'historical_manifest':compact_manifest(load(folder/'manifest.json.xz')),
+         **compare_program(raw,(folder/'program.bin').read_bytes())}
+    row['passed']=row['complete_program_bytes_equal'] and layout['passed'] and flags['passed']
+    print(json.dumps({'case':folder.name,'passed':row['passed'],'count':row['count'],'classification':classification}),flush=True)
+    return row,current,model,graph
+
+rows=[]
+for folder in case_folders:
+    try:
+        row,*_=rebuild(folder)
+        rows.append(row)
+    except Exception as error:
+        rows.append({'case':relative(folder),'passed':False,'error':type(error).__name__+': '+str(error)})
+        print(json.dumps(rows[-1]),flush=True)
+
+matrix=OUT/'matrix_audit'
+matrix_model=load(OUT/'core/source_model.json')
+matrix_rows=[];matrix_definitions={}
+for name,classification in [('application','matrix_source_graph_application'),('unconditioned_control','matrix_control_application'),
+                             ('wrong_T_route','negative_typed_route_graph'),('wrong_A_route','negative_typed_route_graph'),
+                             ('attempt1_application','historical_retry_application')]:
+    folder=matrix/name
+    archived=load(folder/'definition.json.xz')
+    authored_graph=deepcopy(archived['source']['application_graph']['graph'])
+    row,current,_,_=rebuild(folder,model=matrix_model,graph=authored_graph,override_instances=True,classification=classification)
+    row['graph_document']='Embedded source.application_graph.graph from archived definition; no archived tape contributes to lowering.'
+    if name.startswith('wrong_'):
+        row['expected_runtime_role']='Negative workload: incompatible dynamically selected record; historical runtime status11, not an application-success claim.'
+    matrix_rows.append(row)
+    if name=='application':matrix_definitions[name]=(current,authored_graph)
+
+# Reconstruct the documented matrix instrumentation from CURRENT named calls.
+# This is a separate derived tape; it is not passed off as an unmodified source graph.
+application,application_graph=matrix_definitions['application']
+graph_nodes={n['id']:n for phase in application_graph['phases'] for n in phase['nodes']}
+calls={item['graph_node']:item for item in application['source']['action_calls']}
+captures=[]
+def find(key):
+    return next(n for n in graph_nodes.values() if n['op']=='call_record' and n['slot']=='body'
+                and n.get('contract',{}).get('key',n.get('record',{}).get('key'))==key)
+def capture(node,which,names,prefix):
+    call=calls[node['id']]
+    if which=='input':
+        ordered=list(node['args']);base=call['inputs'][0];at=call['step']
+    else:
+        if node['op']=='call_helper':function=application['functions'][node['function']]
+        else:
+            key=node.get('contract',{}).get('key',node.get('record',{}).get('key'))
+            record=next(item for item in application['records'] if item['key']==key)
+            name=application['families'][record['body']]['methods'][str(node['role'])]
+            function=application['functions'][name]
+        ordered=list(function['binding']['outputs']);base=call['output_base'];at=call['step']+1
+    for name in names:captures.append({'name':prefix+name,'at':at,'register':base+ordered.index(name)})
+t,a,p,ret=find('T_transform'),find('inverse_T'),find('pinion'),find('return')
+conditioned=graph_nodes['matrix_conditioned_pair']
+capture(t,'input',['ar','ai','br','bi','crystal_ar','field_distance'],'T_in_')
+capture(t,'output',['t00','t01','t10','t11'],'')
+capture(a,'input',['field_distance'],'inverse_')
+capture(a,'output',['a00','a01','a10','a11'],'')
+capture(conditioned,'input',c.PAIR,'raw_');capture(conditioned,'output',c.PAIR,'conditioned_')
+capture(p,'input',['B0','B1','B2','B3','field_distance'],'pinion_')
+capture(ret,'input',['field_distance','neck','parity'],'return_');capture(ret,'output',c.PAIR,'final_')
+for prefix in ('T','A'):capture(graph_nodes[f'matrix_route_{prefix}_5'],'output',['index'],f'route_{prefix}_')
+capture_map=load(matrix/'diagnostic_capture_map.json')
+assert captures==capture_map['capture_state_slots']
+diagnostic=deepcopy(application);plan=[]
+for step,instruction in enumerate(application['action_plan']):
+    for index,item in enumerate(captures):
+        if item['at']==step:plan.append([6,index,item['register'],1,0,0,0,0])
+    if instruction[0]!=6:plan.append(instruction)
+for index in range(len(captures),44):
+    plan.append([1,192,index,1,0,0,0,0]);plan.append([6,index,192,1,0,0,0,0])
+diagnostic['action_plan']=plan
+raw,manifest=r.compile_definition(matrix_model,diagnostic)
+diagnostic_row={'case':relative(matrix/'diagnostic'),'classification':'derived_diagnostic_tape',
+                'count':len(diagnostic['instances']),'capture_count':len(captures),'capture_map_reconstructed_exactly':True,
+                'input_files':archive_files(matrix/'diagnostic'),
+                'current_manifest':compact_manifest(manifest),
+                'historical_manifest':compact_manifest(load(matrix/'diagnostic/manifest.json.xz')),
+                'scope':'The parent application graph is rebuilt with current code, then only state writes are replaced using the documented37-capture recipe. Parent graph layout metadata is not claimed to describe the instrumented tape. This diagnostic is not an application continuation.',
+                **compare_program(raw,(matrix/'diagnostic/program.bin').read_bytes())}
+diagnostic_row['passed']=diagnostic_row['complete_program_bytes_equal'] and manifest['complete_application_lowered'] is False
+matrix_rows.append(diagnostic_row)
+print(json.dumps({'case':'matrix diagnostic','passed':diagnostic_row['passed'],'classification':'derived_diagnostic_tape'}),flush=True)
+
+all_sources_unchanged=all(sha((ROOT/name).read_bytes())==entry['sha256'] for name,entry in source_snapshot.items())
+all_archives_unchanged=all(sha((ROOT/row['case']/name).read_bytes())==entry['sha256'] for row in rows+matrix_rows
+                         for name,entry in row.get('input_files',{}).items())
+report={'profile':'DWI-SOURCE-GRAPH-0.1','created_utc':datetime.now(timezone.utc).isoformat(),
+        'scope':'Final current-code recompilation and provenance audit. Complete input-program bytes are compared; no native or GPU workload is rerun.',
+        'selection_policy':'Top-level folders captured at audit start with retained model, graph, compressed definition and program; concurrent cli* folders excluded. Matrix applications, historical retry, negative routes and diagnostic instrumentation are reported separately.',
+        'source_snapshot_inventory':source_snapshot,'source_snapshot_inventory_file':relative(SNAPSHOT/'inventory.json'),
+        'current_sources_unchanged_during_audit':all_sources_unchanged,
+        'historical_inputs_unchanged_during_audit':all_archives_unchanged,
+        'top_level_cases':rows,'matrix_cases':matrix_rows,
+        'historical_metadata_policy':'Archived definitions/manifests and their recorded hashes remain unchanged. Historical generic manifest flags and former builder-layout positions are displayed only as historical data; current rebuilt metadata is independently checked.',
+        'summary':{'top_level_cases':len(rows),'top_level_passed':sum(row['passed'] for row in rows),
+                   'matrix_cases':len(matrix_rows),'matrix_passed':sum(row['passed'] for row in matrix_rows),
+                   'all_passed':all(row['passed'] for row in rows+matrix_rows) and all_sources_unchanged and all_archives_unchanged}}
+(OUT/'final_recompilation_audit.json').write_bytes(ir.json_bytes(report))
+print(json.dumps(report['summary'],indent=2),flush=True)

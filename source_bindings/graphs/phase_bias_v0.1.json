@@ -1,0 +1,5708 @@
+{
+  "profile": "DWI-SOURCE-GRAPH-0.1",
+  "type_profile": "DWI-GRAPH-TYPES-0.1",
+  "functions": {
+    "graph_phase_bias": {
+      "inputs": {
+        "phase": "phase"
+      },
+      "outputs": {
+        "phase": "phase"
+      },
+      "binding": {
+        "inputs": [
+          "phase"
+        ],
+        "outputs": {
+          "phase": {
+            "op": "add",
+            "args": [
+              {
+                "input": "phase"
+              },
+              0.03125
+            ]
+          }
+        },
+        "source": "Explicit DWI-SOURCE-GRAPH-0.1 application graph declaration",
+        "meaning": "Add an explicit0.03125-radian graph phase bias before the current resident double-Hadamard call.",
+        "status": "Authored computational law; validation recorded separately."
+      }
+    }
+  },
+  "mutation": {
+    "nodes": [
+      {
+        "id": "mutation_target_body_1",
+        "op": "read_record",
+        "record": {
+          "target": true
+        },
+        "bank": "old",
+        "fields": [
+          "body",
+          "field",
+          "placement",
+          "generation",
+          "anchor_u",
+          "anchor_v",
+          "anchor_orientation",
+          "radius",
+          "phase_gain",
+          "shift_u",
+          "shift_v",
+          "placement_scale",
+          "control",
+          "du",
+          "dv",
+          "feedback_gain",
+          "last_mutator_field",
+          "previous_body_handle",
+          "last_pinion_field",
+          "reserved_0",
+          "reserved_1",
+          "reserved_2",
+          "reserved_3",
+          "reserved_4"
+        ]
+      },
+      {
+        "id": "mutation_mutation_body_2",
+        "op": "read_record",
+        "record": {
+          "key": "mutation"
+        },
+        "bank": "old",
+        "fields": [
+          "body",
+          "field",
+          "placement",
+          "generation",
+          "anchor_u",
+          "anchor_v",
+          "anchor_orientation",
+          "radius",
+          "phase_gain",
+          "shift_u",
+          "shift_v",
+          "placement_scale",
+          "control",
+          "du",
+          "dv",
+          "feedback_gain",
+          "last_mutator_field",
+          "previous_body_handle",
+          "last_pinion_field",
+          "reserved_0",
+          "reserved_1",
+          "reserved_2",
+          "reserved_3",
+          "reserved_4"
+        ]
+      },
+      {
+        "id": "mutation_pinion_body_3",
+        "op": "read_record",
+        "record": {
+          "key": "pinion"
+        },
+        "bank": "old",
+        "fields": [
+          "body",
+          "field",
+          "placement",
+          "generation",
+          "anchor_u",
+          "anchor_v",
+          "anchor_orientation",
+          "radius",
+          "phase_gain",
+          "shift_u",
+          "shift_v",
+          "placement_scale",
+          "control",
+          "du",
+          "dv",
+          "feedback_gain",
+          "last_mutator_field",
+          "previous_body_handle",
+          "last_pinion_field",
+          "reserved_0",
+          "reserved_1",
+          "reserved_2",
+          "reserved_3",
+          "reserved_4"
+        ]
+      },
+      {
+        "id": "mutation_target_placement_role0_4",
+        "op": "call_record",
+        "record": {
+          "target": true
+        },
+        "bank": "old",
+        "slot": "placement",
+        "role": 0,
+        "args": {
+          "u": {
+            "node": "mutation_target_body_1",
+            "output": "anchor_u"
+          },
+          "v": {
+            "node": "mutation_target_body_1",
+            "output": "anchor_v"
+          },
+          "orientation": {
+            "node": "mutation_target_body_1",
+            "output": "anchor_orientation"
+          }
+        }
+      },
+      {
+        "id": "mutation_mutation_placement_role0_5",
+        "op": "call_record",
+        "record": {
+          "key": "mutation"
+        },
+        "bank": "old",
+        "slot": "placement",
+        "role": 0,
+        "args": {
+          "u": {
+            "node": "mutation_mutation_body_2",
+            "output": "anchor_u"
+          },
+          "v": {
+            "node": "mutation_mutation_body_2",
+            "output": "anchor_v"
+          },
+          "orientation": {
+            "node": "mutation_mutation_body_2",
+            "output": "anchor_orientation"
+          }
+        }
+      },
+      {
+        "id": "mutation_pinion_placement_role0_6",
+        "op": "call_record",
+        "record": {
+          "key": "pinion"
+        },
+        "bank": "old",
+        "slot": "placement",
+        "role": 0,
+        "args": {
+          "u": {
+            "node": "mutation_pinion_body_3",
+            "output": "anchor_u"
+          },
+          "v": {
+            "node": "mutation_pinion_body_3",
+            "output": "anchor_v"
+          },
+          "orientation": {
+            "node": "mutation_pinion_body_3",
+            "output": "anchor_orientation"
+          }
+        }
+      },
+      {
+        "id": "mutation_nearest_klein_lift_7",
+        "op": "call_helper",
+        "function": "nearest_klein_lift",
+        "args": {
+          "query_u": {
+            "node": "mutation_target_placement_role0_4",
+            "output": "u"
+          },
+          "query_v": {
+            "node": "mutation_target_placement_role0_4",
+            "output": "v"
+          },
+          "anchor_u": {
+            "node": "mutation_mutation_placement_role0_5",
+            "output": "u"
+          },
+          "anchor_v": {
+            "node": "mutation_mutation_placement_role0_5",
+            "output": "v"
+          },
+          "anchor_orientation": {
+            "node": "mutation_mutation_placement_role0_5",
+            "output": "orientation"
+          }
+        }
+      },
+      {
+        "id": "mutation_mutation_field_role0_8",
+        "op": "call_record",
+        "record": {
+          "key": "mutation"
+        },
+        "bank": "old",
+        "slot": "field",
+        "role": 0,
+        "args": {
+          "dx": {
+            "node": "mutation_nearest_klein_lift_7",
+            "output": "dx"
+          },
+          "dy": {
+            "node": "mutation_nearest_klein_lift_7",
+            "output": "dy"
+          },
+          "radius": {
+            "node": "mutation_mutation_body_2",
+            "output": "radius"
+          }
+        }
+      },
+      {
+        "id": "mutation_target_field_role0_9",
+        "op": "call_record",
+        "record": {
+          "target": true
+        },
+        "bank": "old",
+        "slot": "field",
+        "role": 0,
+        "args": {
+          "dx": {
+            "node": "mutation_nearest_klein_lift_7",
+            "output": "dx"
+          },
+          "dy": {
+            "node": "mutation_nearest_klein_lift_7",
+            "output": "dy"
+          },
+          "radius": {
+            "node": "mutation_target_body_1",
+            "output": "radius"
+          }
+        }
+      },
+      {
+        "id": "mutation_mutation_body_role0_10",
+        "op": "call_record",
+        "record": {
+          "key": "mutation"
+        },
+        "bank": "old",
+        "slot": "body",
+        "role": 0,
+        "args": {
+          "old_body": {
+            "node": "mutation_target_body_1",
+            "output": "body"
+          },
+          "target_index": {
+            "target_index": true
+          },
+          "field_distance": {
+            "node": "mutation_mutation_field_role0_8",
+            "output": "distance"
+          },
+          "ar": {
+            "state": "ar"
+          },
+          "ai": {
+            "state": "ai"
+          },
+          "br": {
+            "state": "br"
+          },
+          "bi": {
+            "state": "bi"
+          },
+          "jitter": {
+            "state": "jitter"
+          },
+          "old_control": {
+            "node": "mutation_target_body_1",
+            "output": "control"
+          },
+          "mutator_control": {
+            "node": "mutation_mutation_body_2",
+            "output": "control"
+          },
+          "target_field": {
+            "node": "mutation_target_field_role0_9",
+            "output": "distance"
+          },
+          "dt": {
+            "state": "dt"
+          }
+        }
+      },
+      {
+        "id": "mutation_nearest_klein_lift_11",
+        "op": "call_helper",
+        "function": "nearest_klein_lift",
+        "args": {
+          "query_u": {
+            "node": "mutation_target_placement_role0_4",
+            "output": "u"
+          },
+          "query_v": {
+            "node": "mutation_target_placement_role0_4",
+            "output": "v"
+          },
+          "anchor_u": {
+            "node": "mutation_pinion_placement_role0_6",
+            "output": "u"
+          },
+          "anchor_v": {
+            "node": "mutation_pinion_placement_role0_6",
+            "output": "v"
+          },
+          "anchor_orientation": {
+            "node": "mutation_pinion_placement_role0_6",
+            "output": "orientation"
+          }
+        }
+      },
+      {
+        "id": "mutation_pinion_field_role0_12",
+        "op": "call_record",
+        "record": {
+          "key": "pinion"
+        },
+        "bank": "old",
+        "slot": "field",
+        "role": 0,
+        "args": {
+          "dx": {
+            "node": "mutation_nearest_klein_lift_11",
+            "output": "dx"
+          },
+          "dy": {
+            "node": "mutation_nearest_klein_lift_11",
+            "output": "dy"
+          },
+          "radius": {
+            "node": "mutation_pinion_body_3",
+            "output": "radius"
+          }
+        }
+      },
+      {
+        "id": "mutation_pinion_body_role1_13",
+        "op": "call_record",
+        "record": {
+          "key": "pinion"
+        },
+        "bank": "old",
+        "slot": "body",
+        "role": 1,
+        "args": {
+          "u": {
+            "node": "mutation_target_placement_role0_4",
+            "output": "u"
+          },
+          "v": {
+            "node": "mutation_target_placement_role0_4",
+            "output": "v"
+          },
+          "orientation": {
+            "node": "mutation_target_placement_role0_4",
+            "output": "orientation"
+          },
+          "ar": {
+            "state": "ar"
+          },
+          "ai": {
+            "state": "ai"
+          },
+          "br": {
+            "state": "br"
+          },
+          "bi": {
+            "state": "bi"
+          },
+          "field_distance": {
+            "node": "mutation_pinion_field_role0_12",
+            "output": "distance"
+          },
+          "dt": {
+            "state": "dt"
+          },
+          "du": {
+            "node": "mutation_target_body_1",
+            "output": "du"
+          },
+          "dv": {
+            "node": "mutation_target_body_1",
+            "output": "dv"
+          },
+          "surface_u": {
+            "state": "surface_u"
+          },
+          "surface_v": {
+            "state": "surface_v"
+          },
+          "old_placement": {
+            "node": "mutation_target_body_1",
+            "output": "placement"
+          },
+          "jitter": {
+            "state": "jitter"
+          }
+        }
+      },
+      {
+        "id": "mutation_rebind_field_14",
+        "op": "call_helper",
+        "function": "rebind_field",
+        "args": {
+          "old_field": {
+            "node": "mutation_target_body_1",
+            "output": "field"
+          },
+          "new_body": {
+            "node": "mutation_mutation_body_role0_10",
+            "output": "body_handle"
+          },
+          "new_u": {
+            "node": "mutation_pinion_body_role1_13",
+            "output": "u"
+          },
+          "new_v": {
+            "node": "mutation_pinion_body_role1_13",
+            "output": "v"
+          },
+          "old_radius": {
+            "node": "mutation_target_body_1",
+            "output": "radius"
+          },
+          "surface_u": {
+            "state": "surface_u"
+          },
+          "surface_v": {
+            "state": "surface_v"
+          }
+        }
+      },
+      {
+        "id": "mutation_next_generation_15",
+        "op": "call_helper",
+        "function": "next_generation",
+        "args": {
+          "generation": {
+            "node": "mutation_target_body_1",
+            "output": "generation"
+          }
+        }
+      }
+    ],
+    "returns": {
+      "body": {
+        "node": "mutation_mutation_body_role0_10",
+        "output": "body_handle"
+      },
+      "field": {
+        "node": "mutation_rebind_field_14",
+        "output": "field_handle"
+      },
+      "placement": {
+        "node": "mutation_pinion_body_role1_13",
+        "output": "placement_handle"
+      },
+      "generation": {
+        "node": "mutation_next_generation_15",
+        "output": "generation"
+      },
+      "anchor_u": {
+        "node": "mutation_pinion_body_role1_13",
+        "output": "u"
+      },
+      "anchor_v": {
+        "node": "mutation_pinion_body_role1_13",
+        "output": "v"
+      },
+      "anchor_orientation": {
+        "node": "mutation_pinion_body_role1_13",
+        "output": "orientation"
+      },
+      "radius": {
+        "node": "mutation_rebind_field_14",
+        "output": "radius"
+      },
+      "phase_gain": {
+        "node": "mutation_target_body_1",
+        "output": "phase_gain"
+      },
+      "shift_u": {
+        "node": "mutation_target_body_1",
+        "output": "shift_u"
+      },
+      "shift_v": {
+        "node": "mutation_target_body_1",
+        "output": "shift_v"
+      },
+      "placement_scale": {
+        "node": "mutation_target_body_1",
+        "output": "placement_scale"
+      },
+      "control": {
+        "node": "mutation_mutation_body_role0_10",
+        "output": "control"
+      },
+      "du": {
+        "node": "mutation_target_body_1",
+        "output": "du"
+      },
+      "dv": {
+        "node": "mutation_target_body_1",
+        "output": "dv"
+      },
+      "feedback_gain": {
+        "node": "mutation_target_body_1",
+        "output": "feedback_gain"
+      },
+      "last_mutator_field": {
+        "node": "mutation_mutation_field_role0_8",
+        "output": "distance"
+      },
+      "previous_body_handle": {
+        "node": "mutation_target_body_1",
+        "output": "body"
+      },
+      "last_pinion_field": {
+        "node": "mutation_pinion_field_role0_12",
+        "output": "distance"
+      },
+      "reserved_0": {
+        "node": "mutation_target_body_1",
+        "output": "reserved_0"
+      },
+      "reserved_1": {
+        "node": "mutation_target_body_1",
+        "output": "reserved_1"
+      },
+      "reserved_2": {
+        "node": "mutation_target_body_1",
+        "output": "reserved_2"
+      },
+      "reserved_3": {
+        "node": "mutation_target_body_1",
+        "output": "reserved_3"
+      },
+      "reserved_4": {
+        "node": "mutation_target_body_1",
+        "output": "reserved_4"
+      }
+    }
+  },
+  "phases": [
+    {
+      "name": "operator_mutation",
+      "nodes": [
+        {
+          "id": "action_operator_mutation_placement_canonical_1",
+          "op": "call_helper",
+          "function": "placement_canonical",
+          "args": {
+            "u": {
+              "state": "u"
+            },
+            "v": {
+              "state": "v"
+            },
+            "orientation": {
+              "state": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_operator_mutation_nearest_klein_lift_2",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_placement_canonical_1",
+              "output": "u"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_placement_canonical_1",
+              "output": "v"
+            },
+            "anchor_u": {
+              "state": "surface_u"
+            },
+            "anchor_v": {
+              "state": "surface_v"
+            },
+            "anchor_orientation": {
+              "state": "K_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_operator_mutation_klein_anchor_u_3",
+          "op": "read_record",
+          "record": {
+            "key": "klein"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_operator_mutation_klein_placement_role0_4",
+          "op": "call_record",
+          "record": {
+            "key": "klein"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_operator_mutation_klein_anchor_u_3",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_operator_mutation_klein_anchor_u_3",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_operator_mutation_klein_anchor_u_3",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_operator_mutation_nearest_klein_lift_5",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "state": "surface_u"
+            },
+            "query_v": {
+              "state": "surface_v"
+            },
+            "anchor_u": {
+              "node": "action_operator_mutation_klein_placement_role0_4",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_operator_mutation_klein_placement_role0_4",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_operator_mutation_klein_placement_role0_4",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_operator_mutation_klein_radius_6",
+          "op": "read_record",
+          "record": {
+            "key": "klein"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_operator_mutation_klein_field_role0_7",
+          "op": "call_record",
+          "record": {
+            "key": "klein"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_operator_mutation_nearest_klein_lift_5",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_operator_mutation_nearest_klein_lift_5",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_operator_mutation_klein_radius_6",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_operator_mutation_klein_body_role0_8",
+          "op": "call_record",
+          "record": {
+            "key": "klein"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "ku": {
+              "state": "surface_u"
+            },
+            "kv": {
+              "state": "surface_v"
+            },
+            "ko": {
+              "state": "K_orientation"
+            },
+            "ar": {
+              "state": "ar"
+            },
+            "ai": {
+              "state": "ai"
+            },
+            "br": {
+              "state": "br"
+            },
+            "bi": {
+              "state": "bi"
+            },
+            "feedback_dx": {
+              "node": "action_operator_mutation_nearest_klein_lift_2",
+              "output": "dx"
+            },
+            "feedback_y": {
+              "node": "action_operator_mutation_nearest_klein_lift_2",
+              "output": "anchor_frame_y"
+            },
+            "feedback_orientation": {
+              "node": "action_operator_mutation_placement_canonical_1",
+              "output": "orientation"
+            },
+            "field_distance": {
+              "node": "action_operator_mutation_klein_field_role0_7",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_operator_mutation_psi_anchor_u_9",
+          "op": "read_record",
+          "record": {
+            "key": "psi"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_operator_mutation_psi_placement_role0_10",
+          "op": "call_record",
+          "record": {
+            "key": "psi"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_operator_mutation_psi_anchor_u_9",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_operator_mutation_psi_anchor_u_9",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_operator_mutation_psi_anchor_u_9",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_operator_mutation_nearest_klein_lift_11",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_operator_mutation_psi_placement_role0_10",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_operator_mutation_psi_placement_role0_10",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_operator_mutation_psi_placement_role0_10",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_operator_mutation_psi_radius_12",
+          "op": "read_record",
+          "record": {
+            "key": "psi"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_operator_mutation_psi_field_role0_13",
+          "op": "call_record",
+          "record": {
+            "key": "psi"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_operator_mutation_nearest_klein_lift_11",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_operator_mutation_nearest_klein_lift_11",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_operator_mutation_psi_radius_12",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_operator_mutation_psi_body_role0_14",
+          "op": "call_record",
+          "record": {
+            "key": "psi"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "dt": {
+              "state": "dt"
+            },
+            "field_distance": {
+              "node": "action_operator_mutation_psi_field_role0_13",
+              "output": "distance"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "log_polar",
+      "nodes": [
+        {
+          "id": "action_log_polar_phi_anchor_u_15",
+          "op": "read_record",
+          "record": {
+            "key": "phi"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_log_polar_phi_placement_role0_16",
+          "op": "call_record",
+          "record": {
+            "key": "phi"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_log_polar_phi_anchor_u_15",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_log_polar_phi_anchor_u_15",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_log_polar_phi_anchor_u_15",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_log_polar_nearest_klein_lift_17",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_log_polar_phi_placement_role0_16",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_log_polar_phi_placement_role0_16",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_log_polar_phi_placement_role0_16",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_log_polar_phi_radius_18",
+          "op": "read_record",
+          "record": {
+            "key": "phi"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_log_polar_phi_field_role0_19",
+          "op": "call_record",
+          "record": {
+            "key": "phi"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_log_polar_nearest_klein_lift_17",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_log_polar_nearest_klein_lift_17",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_log_polar_phi_radius_18",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_log_polar_phi_body_role0_20",
+          "op": "call_record",
+          "record": {
+            "key": "phi"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "ar": {
+              "state": "ar"
+            },
+            "ai": {
+              "state": "ai"
+            },
+            "br": {
+              "state": "br"
+            },
+            "bi": {
+              "state": "bi"
+            },
+            "field_distance": {
+              "node": "action_log_polar_phi_field_role0_19",
+              "output": "distance"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "split_and_hinge",
+      "nodes": [
+        {
+          "id": "action_split_and_hinge_split_anchor_u_21",
+          "op": "read_record",
+          "record": {
+            "key": "split"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_split_and_hinge_split_placement_role0_22",
+          "op": "call_record",
+          "record": {
+            "key": "split"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_split_and_hinge_split_anchor_u_21",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_split_and_hinge_split_anchor_u_21",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_split_and_hinge_split_anchor_u_21",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_split_and_hinge_nearest_klein_lift_23",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_split_and_hinge_split_placement_role0_22",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_split_and_hinge_split_placement_role0_22",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_split_and_hinge_split_placement_role0_22",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_split_and_hinge_split_radius_24",
+          "op": "read_record",
+          "record": {
+            "key": "split"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_split_and_hinge_split_field_role0_25",
+          "op": "call_record",
+          "record": {
+            "key": "split"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_split_and_hinge_nearest_klein_lift_23",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_split_and_hinge_nearest_klein_lift_23",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_split_and_hinge_split_radius_24",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_split_and_hinge_split_body_role0_26",
+          "op": "call_record",
+          "record": {
+            "key": "split"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "rho0": {
+              "node": "action_log_polar_phi_body_role0_20",
+              "output": "rho0"
+            },
+            "theta0": {
+              "node": "action_log_polar_phi_body_role0_20",
+              "output": "theta0"
+            },
+            "rho1": {
+              "node": "action_log_polar_phi_body_role0_20",
+              "output": "rho1"
+            },
+            "theta1": {
+              "node": "action_log_polar_phi_body_role0_20",
+              "output": "theta1"
+            },
+            "jitter": {
+              "state": "jitter"
+            },
+            "field_distance": {
+              "node": "action_split_and_hinge_split_field_role0_25",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_split_and_hinge_parity_anchor_u_27",
+          "op": "read_record",
+          "record": {
+            "key": "parity"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_split_and_hinge_parity_placement_role0_28",
+          "op": "call_record",
+          "record": {
+            "key": "parity"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_split_and_hinge_parity_anchor_u_27",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_split_and_hinge_parity_anchor_u_27",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_split_and_hinge_parity_anchor_u_27",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_split_and_hinge_nearest_klein_lift_29",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_split_and_hinge_parity_placement_role0_28",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_split_and_hinge_parity_placement_role0_28",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_split_and_hinge_parity_placement_role0_28",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_split_and_hinge_parity_radius_30",
+          "op": "read_record",
+          "record": {
+            "key": "parity"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_split_and_hinge_parity_field_role0_31",
+          "op": "call_record",
+          "record": {
+            "key": "parity"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_split_and_hinge_nearest_klein_lift_29",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_split_and_hinge_nearest_klein_lift_29",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_split_and_hinge_parity_radius_30",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_split_and_hinge_parity_body_role0_32",
+          "op": "call_record",
+          "record": {
+            "key": "parity"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "split_theta0": {
+              "node": "action_split_and_hinge_split_body_role0_26",
+              "output": "theta0"
+            },
+            "split_theta1": {
+              "node": "action_split_and_hinge_split_body_role0_26",
+              "output": "theta1"
+            },
+            "jitter": {
+              "state": "jitter"
+            },
+            "neck": {
+              "state": "neck"
+            },
+            "field_distance": {
+              "node": "action_split_and_hinge_parity_field_role0_31",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_split_and_hinge_sum_phases_33",
+          "op": "call_helper",
+          "function": "sum_phases",
+          "args": {
+            "a": {
+              "state": "phase"
+            },
+            "b": {
+              "node": "action_split_and_hinge_parity_body_role0_32",
+              "output": "phase"
+            }
+          }
+        },
+        {
+          "id": "action_split_and_hinge_hadamard_anchor_u_34",
+          "op": "read_record",
+          "record": {
+            "key": "hadamard"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_split_and_hinge_hadamard_placement_role0_35",
+          "op": "call_record",
+          "record": {
+            "key": "hadamard"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_split_and_hinge_hadamard_anchor_u_34",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_split_and_hinge_hadamard_anchor_u_34",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_split_and_hinge_hadamard_anchor_u_34",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_split_and_hinge_nearest_klein_lift_36",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_split_and_hinge_hadamard_placement_role0_35",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_split_and_hinge_hadamard_placement_role0_35",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_split_and_hinge_hadamard_placement_role0_35",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_split_and_hinge_hadamard_radius_37",
+          "op": "read_record",
+          "record": {
+            "key": "hadamard"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_split_and_hinge_hadamard_field_role0_38",
+          "op": "call_record",
+          "record": {
+            "key": "hadamard"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_split_and_hinge_nearest_klein_lift_36",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_split_and_hinge_nearest_klein_lift_36",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_split_and_hinge_hadamard_radius_37",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "authored_phase_bias",
+          "op": "call_helper",
+          "function": "graph_phase_bias",
+          "args": {
+            "phase": {
+              "node": "action_split_and_hinge_sum_phases_33",
+              "output": "phase"
+            }
+          }
+        },
+        {
+          "id": "action_split_and_hinge_hadamard_body_role1_39",
+          "op": "call_record",
+          "record": {
+            "key": "hadamard"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 1,
+          "args": {
+            "rho0": {
+              "node": "action_split_and_hinge_split_body_role0_26",
+              "output": "rho0"
+            },
+            "theta0": {
+              "node": "action_split_and_hinge_split_body_role0_26",
+              "output": "theta0"
+            },
+            "rho1": {
+              "node": "action_split_and_hinge_split_body_role0_26",
+              "output": "rho1"
+            },
+            "theta1": {
+              "node": "action_split_and_hinge_split_body_role0_26",
+              "output": "theta1"
+            },
+            "phase": {
+              "node": "authored_phase_bias",
+              "output": "phase"
+            },
+            "parity": {
+              "node": "action_split_and_hinge_parity_body_role0_32",
+              "output": "parity"
+            },
+            "field_distance": {
+              "node": "action_split_and_hinge_hadamard_field_role0_38",
+              "output": "distance"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "selected_operator",
+      "nodes": [
+        {
+          "id": "action_selected_operator_bst_anchor_u_40",
+          "op": "read_record",
+          "record": {
+            "key": "bst"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_selected_operator_bst_placement_role0_41",
+          "op": "call_record",
+          "record": {
+            "key": "bst"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_selected_operator_bst_anchor_u_40",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_selected_operator_bst_anchor_u_40",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_selected_operator_bst_anchor_u_40",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_selected_operator_nearest_klein_lift_42",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_selected_operator_bst_placement_role0_41",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_selected_operator_bst_placement_role0_41",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_selected_operator_bst_placement_role0_41",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_selected_operator_bst_radius_43",
+          "op": "read_record",
+          "record": {
+            "key": "bst"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_selected_operator_bst_field_role0_44",
+          "op": "call_record",
+          "record": {
+            "key": "bst"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_selected_operator_nearest_klein_lift_42",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_selected_operator_nearest_klein_lift_42",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_selected_operator_bst_radius_43",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_selected_operator_bst_body_role0_45",
+          "op": "call_record",
+          "record": {
+            "key": "bst"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "depth": {
+              "state": "route_depth"
+            },
+            "b0": {
+              "state": "route_b0"
+            },
+            "b1": {
+              "state": "route_b1"
+            },
+            "b2": {
+              "state": "route_b2"
+            },
+            "b3": {
+              "state": "route_b3"
+            },
+            "neck": {
+              "state": "neck"
+            },
+            "jitter": {
+              "state": "jitter"
+            },
+            "field_distance": {
+              "node": "action_selected_operator_bst_field_role0_44",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_selected_operator_selected_anchor_u_46",
+          "op": "read_record",
+          "record": {
+            "source_index": {
+              "node": "action_selected_operator_bst_body_role0_45",
+              "output": "index"
+            }
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_selected_operator_selected_placement_role0_47",
+          "op": "call_record",
+          "record": {
+            "source_index": {
+              "node": "action_selected_operator_bst_body_role0_45",
+              "output": "index"
+            }
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "contract": {
+            "key": "circle",
+            "slot": "placement",
+            "role": 0
+          },
+          "args": {
+            "u": {
+              "node": "action_selected_operator_selected_anchor_u_46",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_selected_operator_selected_anchor_u_46",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_selected_operator_selected_anchor_u_46",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_selected_operator_nearest_klein_lift_48",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_selected_operator_selected_placement_role0_47",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_selected_operator_selected_placement_role0_47",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_selected_operator_selected_placement_role0_47",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_selected_operator_selected_radius_49",
+          "op": "read_record",
+          "record": {
+            "source_index": {
+              "node": "action_selected_operator_bst_body_role0_45",
+              "output": "index"
+            }
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_selected_operator_selected_field_role0_50",
+          "op": "call_record",
+          "record": {
+            "source_index": {
+              "node": "action_selected_operator_bst_body_role0_45",
+              "output": "index"
+            }
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "contract": {
+            "key": "circle",
+            "slot": "field",
+            "role": 0
+          },
+          "args": {
+            "dx": {
+              "node": "action_selected_operator_nearest_klein_lift_48",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_selected_operator_nearest_klein_lift_48",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_selected_operator_selected_radius_49",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_selected_operator_selected_body_role99_51",
+          "op": "call_record",
+          "record": {
+            "source_index": {
+              "node": "action_selected_operator_bst_body_role0_45",
+              "output": "index"
+            }
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 99,
+          "contract": {
+            "key": "circle",
+            "slot": "body",
+            "role": 99
+          },
+          "args": {
+            "ar": {
+              "node": "action_split_and_hinge_hadamard_body_role1_39",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_split_and_hinge_hadamard_body_role1_39",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_split_and_hinge_hadamard_body_role1_39",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_split_and_hinge_hadamard_body_role1_39",
+              "output": "bi"
+            },
+            "routing_phase": {
+              "node": "action_selected_operator_bst_body_role0_45",
+              "output": "routing_phase"
+            },
+            "field_distance": {
+              "node": "action_selected_operator_selected_field_role0_50",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_selected_operator_psi_anchor_u_52",
+          "op": "read_record",
+          "record": {
+            "key": "psi"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_selected_operator_psi_placement_role0_53",
+          "op": "call_record",
+          "record": {
+            "key": "psi"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_selected_operator_psi_anchor_u_52",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_selected_operator_psi_anchor_u_52",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_selected_operator_psi_anchor_u_52",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_selected_operator_nearest_klein_lift_54",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_selected_operator_psi_placement_role0_53",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_selected_operator_psi_placement_role0_53",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_selected_operator_psi_placement_role0_53",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_selected_operator_psi_radius_55",
+          "op": "read_record",
+          "record": {
+            "key": "psi"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_selected_operator_psi_field_role0_56",
+          "op": "call_record",
+          "record": {
+            "key": "psi"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_selected_operator_nearest_klein_lift_54",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_selected_operator_nearest_klein_lift_54",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_selected_operator_psi_radius_55",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_selected_operator_psi_body_role0_57",
+          "op": "call_record",
+          "record": {
+            "key": "psi"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "dt": {
+              "state": "dt"
+            },
+            "field_distance": {
+              "node": "action_selected_operator_psi_field_role0_56",
+              "output": "distance"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "rk4_four_slots",
+      "nodes": [
+        {
+          "id": "action_rk4_four_slots_rk4_anchor_u_58",
+          "op": "read_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_placement_role0_59",
+          "op": "call_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_rk4_four_slots_rk4_anchor_u_58",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_rk4_four_slots_rk4_anchor_u_58",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_rk4_four_slots_rk4_anchor_u_58",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_nearest_klein_lift_60",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_rk4_four_slots_rk4_placement_role0_59",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_rk4_four_slots_rk4_placement_role0_59",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_rk4_four_slots_rk4_placement_role0_59",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_radius_61",
+          "op": "read_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_field_role0_62",
+          "op": "call_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_rk4_four_slots_nearest_klein_lift_60",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_rk4_four_slots_nearest_klein_lift_60",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_rk4_four_slots_rk4_radius_61",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_body_role1_63",
+          "op": "call_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 1,
+          "args": {
+            "ar": {
+              "node": "action_selected_operator_selected_body_role99_51",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_selected_operator_selected_body_role99_51",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_selected_operator_selected_body_role99_51",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_selected_operator_selected_body_role99_51",
+              "output": "bi"
+            },
+            "dt": {
+              "node": "action_selected_operator_psi_body_role0_57",
+              "output": "dt"
+            },
+            "jitter": {
+              "state": "jitter"
+            },
+            "field_distance": {
+              "node": "action_rk4_four_slots_rk4_field_role0_62",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_rk_stage_64",
+          "op": "call_helper",
+          "function": "rk_stage",
+          "args": {
+            "ar": {
+              "node": "action_selected_operator_selected_body_role99_51",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_selected_operator_selected_body_role99_51",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_selected_operator_selected_body_role99_51",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_selected_operator_selected_body_role99_51",
+              "output": "bi"
+            },
+            "k0": {
+              "node": "action_rk4_four_slots_rk4_body_role1_63",
+              "output": "ar"
+            },
+            "k1": {
+              "node": "action_rk4_four_slots_rk4_body_role1_63",
+              "output": "ai"
+            },
+            "k2": {
+              "node": "action_rk4_four_slots_rk4_body_role1_63",
+              "output": "br"
+            },
+            "k3": {
+              "node": "action_rk4_four_slots_rk4_body_role1_63",
+              "output": "bi"
+            },
+            "h": {
+              "node": "action_rk4_four_slots_rk4_body_role1_63",
+              "output": "h"
+            },
+            "fraction": {
+              "literal": 0.5,
+              "type": "coefficient"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_anchor_u_65",
+          "op": "read_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_placement_role0_66",
+          "op": "call_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_rk4_four_slots_rk4_anchor_u_65",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_rk4_four_slots_rk4_anchor_u_65",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_rk4_four_slots_rk4_anchor_u_65",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_nearest_klein_lift_67",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_rk4_four_slots_rk4_placement_role0_66",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_rk4_four_slots_rk4_placement_role0_66",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_rk4_four_slots_rk4_placement_role0_66",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_radius_68",
+          "op": "read_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_field_role0_69",
+          "op": "call_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_rk4_four_slots_nearest_klein_lift_67",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_rk4_four_slots_nearest_klein_lift_67",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_rk4_four_slots_rk4_radius_68",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_body_role1_70",
+          "op": "call_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 1,
+          "args": {
+            "ar": {
+              "node": "action_rk4_four_slots_rk_stage_64",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_rk4_four_slots_rk_stage_64",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_rk4_four_slots_rk_stage_64",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_rk4_four_slots_rk_stage_64",
+              "output": "bi"
+            },
+            "dt": {
+              "node": "action_selected_operator_psi_body_role0_57",
+              "output": "dt"
+            },
+            "jitter": {
+              "state": "jitter"
+            },
+            "field_distance": {
+              "node": "action_rk4_four_slots_rk4_field_role0_69",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_rk_stage_71",
+          "op": "call_helper",
+          "function": "rk_stage",
+          "args": {
+            "ar": {
+              "node": "action_selected_operator_selected_body_role99_51",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_selected_operator_selected_body_role99_51",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_selected_operator_selected_body_role99_51",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_selected_operator_selected_body_role99_51",
+              "output": "bi"
+            },
+            "k0": {
+              "node": "action_rk4_four_slots_rk4_body_role1_70",
+              "output": "ar"
+            },
+            "k1": {
+              "node": "action_rk4_four_slots_rk4_body_role1_70",
+              "output": "ai"
+            },
+            "k2": {
+              "node": "action_rk4_four_slots_rk4_body_role1_70",
+              "output": "br"
+            },
+            "k3": {
+              "node": "action_rk4_four_slots_rk4_body_role1_70",
+              "output": "bi"
+            },
+            "h": {
+              "node": "action_rk4_four_slots_rk4_body_role1_63",
+              "output": "h"
+            },
+            "fraction": {
+              "literal": 0.5,
+              "type": "coefficient"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_anchor_u_72",
+          "op": "read_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_placement_role0_73",
+          "op": "call_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_rk4_four_slots_rk4_anchor_u_72",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_rk4_four_slots_rk4_anchor_u_72",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_rk4_four_slots_rk4_anchor_u_72",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_nearest_klein_lift_74",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_rk4_four_slots_rk4_placement_role0_73",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_rk4_four_slots_rk4_placement_role0_73",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_rk4_four_slots_rk4_placement_role0_73",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_radius_75",
+          "op": "read_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_field_role0_76",
+          "op": "call_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_rk4_four_slots_nearest_klein_lift_74",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_rk4_four_slots_nearest_klein_lift_74",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_rk4_four_slots_rk4_radius_75",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_body_role1_77",
+          "op": "call_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 1,
+          "args": {
+            "ar": {
+              "node": "action_rk4_four_slots_rk_stage_71",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_rk4_four_slots_rk_stage_71",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_rk4_four_slots_rk_stage_71",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_rk4_four_slots_rk_stage_71",
+              "output": "bi"
+            },
+            "dt": {
+              "node": "action_selected_operator_psi_body_role0_57",
+              "output": "dt"
+            },
+            "jitter": {
+              "state": "jitter"
+            },
+            "field_distance": {
+              "node": "action_rk4_four_slots_rk4_field_role0_76",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_rk_stage_78",
+          "op": "call_helper",
+          "function": "rk_stage",
+          "args": {
+            "ar": {
+              "node": "action_selected_operator_selected_body_role99_51",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_selected_operator_selected_body_role99_51",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_selected_operator_selected_body_role99_51",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_selected_operator_selected_body_role99_51",
+              "output": "bi"
+            },
+            "k0": {
+              "node": "action_rk4_four_slots_rk4_body_role1_77",
+              "output": "ar"
+            },
+            "k1": {
+              "node": "action_rk4_four_slots_rk4_body_role1_77",
+              "output": "ai"
+            },
+            "k2": {
+              "node": "action_rk4_four_slots_rk4_body_role1_77",
+              "output": "br"
+            },
+            "k3": {
+              "node": "action_rk4_four_slots_rk4_body_role1_77",
+              "output": "bi"
+            },
+            "h": {
+              "node": "action_rk4_four_slots_rk4_body_role1_63",
+              "output": "h"
+            },
+            "fraction": {
+              "literal": 1.0,
+              "type": "coefficient"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_anchor_u_79",
+          "op": "read_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_placement_role0_80",
+          "op": "call_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_rk4_four_slots_rk4_anchor_u_79",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_rk4_four_slots_rk4_anchor_u_79",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_rk4_four_slots_rk4_anchor_u_79",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_nearest_klein_lift_81",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_rk4_four_slots_rk4_placement_role0_80",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_rk4_four_slots_rk4_placement_role0_80",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_rk4_four_slots_rk4_placement_role0_80",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_radius_82",
+          "op": "read_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_field_role0_83",
+          "op": "call_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_rk4_four_slots_nearest_klein_lift_81",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_rk4_four_slots_nearest_klein_lift_81",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_rk4_four_slots_rk4_radius_82",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_body_role1_84",
+          "op": "call_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 1,
+          "args": {
+            "ar": {
+              "node": "action_rk4_four_slots_rk_stage_78",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_rk4_four_slots_rk_stage_78",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_rk4_four_slots_rk_stage_78",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_rk4_four_slots_rk_stage_78",
+              "output": "bi"
+            },
+            "dt": {
+              "node": "action_selected_operator_psi_body_role0_57",
+              "output": "dt"
+            },
+            "jitter": {
+              "state": "jitter"
+            },
+            "field_distance": {
+              "node": "action_rk4_four_slots_rk4_field_role0_83",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_y_up_anchor_u_85",
+          "op": "read_record",
+          "record": {
+            "key": "y_up"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_rk4_four_slots_y_up_placement_role0_86",
+          "op": "call_record",
+          "record": {
+            "key": "y_up"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_rk4_four_slots_y_up_anchor_u_85",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_rk4_four_slots_y_up_anchor_u_85",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_rk4_four_slots_y_up_anchor_u_85",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_nearest_klein_lift_87",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_rk4_four_slots_y_up_placement_role0_86",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_rk4_four_slots_y_up_placement_role0_86",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_rk4_four_slots_y_up_placement_role0_86",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_y_up_radius_88",
+          "op": "read_record",
+          "record": {
+            "key": "y_up"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_rk4_four_slots_y_up_field_role0_89",
+          "op": "call_record",
+          "record": {
+            "key": "y_up"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_rk4_four_slots_nearest_klein_lift_87",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_rk4_four_slots_nearest_klein_lift_87",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_rk4_four_slots_y_up_radius_88",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_y_up_body_role0_90",
+          "op": "call_record",
+          "record": {
+            "key": "y_up"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "ar": {
+              "node": "action_rk4_four_slots_rk4_body_role1_84",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_rk4_four_slots_rk4_body_role1_84",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_rk4_four_slots_rk4_body_role1_84",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_rk4_four_slots_rk4_body_role1_84",
+              "output": "bi"
+            },
+            "field_distance": {
+              "node": "action_rk4_four_slots_y_up_field_role0_89",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_y_up_anchor_u_91",
+          "op": "read_record",
+          "record": {
+            "key": "y_up"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_rk4_four_slots_y_up_placement_role0_92",
+          "op": "call_record",
+          "record": {
+            "key": "y_up"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_rk4_four_slots_y_up_anchor_u_91",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_rk4_four_slots_y_up_anchor_u_91",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_rk4_four_slots_y_up_anchor_u_91",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_nearest_klein_lift_93",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_rk4_four_slots_y_up_placement_role0_92",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_rk4_four_slots_y_up_placement_role0_92",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_rk4_four_slots_y_up_placement_role0_92",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_y_up_radius_94",
+          "op": "read_record",
+          "record": {
+            "key": "y_up"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_rk4_four_slots_y_up_field_role0_95",
+          "op": "call_record",
+          "record": {
+            "key": "y_up"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_rk4_four_slots_nearest_klein_lift_93",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_rk4_four_slots_nearest_klein_lift_93",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_rk4_four_slots_y_up_radius_94",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_y_up_body_role0_96",
+          "op": "call_record",
+          "record": {
+            "key": "y_up"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "ar": {
+              "node": "action_rk4_four_slots_y_up_body_role0_90",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_rk4_four_slots_y_up_body_role0_90",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_rk4_four_slots_y_up_body_role0_90",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_rk4_four_slots_y_up_body_role0_90",
+              "output": "bi"
+            },
+            "field_distance": {
+              "node": "action_rk4_four_slots_y_up_field_role0_95",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_anchor_u_97",
+          "op": "read_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_placement_role0_98",
+          "op": "call_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_rk4_four_slots_rk4_anchor_u_97",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_rk4_four_slots_rk4_anchor_u_97",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_rk4_four_slots_rk4_anchor_u_97",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_nearest_klein_lift_99",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_rk4_four_slots_rk4_placement_role0_98",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_rk4_four_slots_rk4_placement_role0_98",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_rk4_four_slots_rk4_placement_role0_98",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_radius_100",
+          "op": "read_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_field_role0_101",
+          "op": "call_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_rk4_four_slots_nearest_klein_lift_99",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_rk4_four_slots_nearest_klein_lift_99",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_rk4_four_slots_rk4_radius_100",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_rk4_four_slots_rk4_body_role2_102",
+          "op": "call_record",
+          "record": {
+            "key": "rk4"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 2,
+          "args": {
+            "ar": {
+              "node": "action_selected_operator_selected_body_role99_51",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_selected_operator_selected_body_role99_51",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_selected_operator_selected_body_role99_51",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_selected_operator_selected_body_role99_51",
+              "output": "bi"
+            },
+            "dt": {
+              "node": "action_selected_operator_psi_body_role0_57",
+              "output": "dt"
+            },
+            "k1_0": {
+              "node": "action_rk4_four_slots_rk4_body_role1_63",
+              "output": "ar"
+            },
+            "k1_1": {
+              "node": "action_rk4_four_slots_rk4_body_role1_63",
+              "output": "ai"
+            },
+            "k1_2": {
+              "node": "action_rk4_four_slots_rk4_body_role1_63",
+              "output": "br"
+            },
+            "k1_3": {
+              "node": "action_rk4_four_slots_rk4_body_role1_63",
+              "output": "bi"
+            },
+            "k2_0": {
+              "node": "action_rk4_four_slots_rk4_body_role1_70",
+              "output": "ar"
+            },
+            "k2_1": {
+              "node": "action_rk4_four_slots_rk4_body_role1_70",
+              "output": "ai"
+            },
+            "k2_2": {
+              "node": "action_rk4_four_slots_rk4_body_role1_70",
+              "output": "br"
+            },
+            "k2_3": {
+              "node": "action_rk4_four_slots_rk4_body_role1_70",
+              "output": "bi"
+            },
+            "k3_0": {
+              "node": "action_rk4_four_slots_rk4_body_role1_77",
+              "output": "ar"
+            },
+            "k3_1": {
+              "node": "action_rk4_four_slots_rk4_body_role1_77",
+              "output": "ai"
+            },
+            "k3_2": {
+              "node": "action_rk4_four_slots_rk4_body_role1_77",
+              "output": "br"
+            },
+            "k3_3": {
+              "node": "action_rk4_four_slots_rk4_body_role1_77",
+              "output": "bi"
+            },
+            "k4_0": {
+              "node": "action_rk4_four_slots_y_up_body_role0_96",
+              "output": "ar"
+            },
+            "k4_1": {
+              "node": "action_rk4_four_slots_y_up_body_role0_96",
+              "output": "ai"
+            },
+            "k4_2": {
+              "node": "action_rk4_four_slots_y_up_body_role0_96",
+              "output": "br"
+            },
+            "k4_3": {
+              "node": "action_rk4_four_slots_y_up_body_role0_96",
+              "output": "bi"
+            },
+            "field_distance": {
+              "node": "action_rk4_four_slots_rk4_field_role0_101",
+              "output": "distance"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "geometry_divergence",
+      "nodes": [
+        {
+          "id": "action_geometry_divergence_T_shape_anchor_u_103",
+          "op": "read_record",
+          "record": {
+            "key": "T_shape"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_geometry_divergence_T_shape_placement_role0_104",
+          "op": "call_record",
+          "record": {
+            "key": "T_shape"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_geometry_divergence_T_shape_anchor_u_103",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_geometry_divergence_T_shape_anchor_u_103",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_geometry_divergence_T_shape_anchor_u_103",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_nearest_klein_lift_105",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_geometry_divergence_T_shape_placement_role0_104",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_geometry_divergence_T_shape_placement_role0_104",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_geometry_divergence_T_shape_placement_role0_104",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_T_shape_radius_106",
+          "op": "read_record",
+          "record": {
+            "key": "T_shape"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_geometry_divergence_T_shape_field_role0_107",
+          "op": "call_record",
+          "record": {
+            "key": "T_shape"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_geometry_divergence_nearest_klein_lift_105",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_geometry_divergence_nearest_klein_lift_105",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_geometry_divergence_T_shape_radius_106",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_T_shape_body_role0_108",
+          "op": "call_record",
+          "record": {
+            "key": "T_shape"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "ar": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "bi"
+            },
+            "field_distance": {
+              "node": "action_geometry_divergence_T_shape_field_role0_107",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_pyramid_anchor_u_109",
+          "op": "read_record",
+          "record": {
+            "key": "pyramid"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_geometry_divergence_pyramid_placement_role0_110",
+          "op": "call_record",
+          "record": {
+            "key": "pyramid"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_geometry_divergence_pyramid_anchor_u_109",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_geometry_divergence_pyramid_anchor_u_109",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_geometry_divergence_pyramid_anchor_u_109",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_nearest_klein_lift_111",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_geometry_divergence_pyramid_placement_role0_110",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_geometry_divergence_pyramid_placement_role0_110",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_geometry_divergence_pyramid_placement_role0_110",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_pyramid_radius_112",
+          "op": "read_record",
+          "record": {
+            "key": "pyramid"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_geometry_divergence_pyramid_field_role0_113",
+          "op": "call_record",
+          "record": {
+            "key": "pyramid"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_geometry_divergence_nearest_klein_lift_111",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_geometry_divergence_nearest_klein_lift_111",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_geometry_divergence_pyramid_radius_112",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_pyramid_body_role0_114",
+          "op": "call_record",
+          "record": {
+            "key": "pyramid"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "ar": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "bi"
+            },
+            "field_distance": {
+              "node": "action_geometry_divergence_pyramid_field_role0_113",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_circle_anchor_u_115",
+          "op": "read_record",
+          "record": {
+            "key": "circle"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_geometry_divergence_circle_placement_role0_116",
+          "op": "call_record",
+          "record": {
+            "key": "circle"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_geometry_divergence_circle_anchor_u_115",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_geometry_divergence_circle_anchor_u_115",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_geometry_divergence_circle_anchor_u_115",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_nearest_klein_lift_117",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_geometry_divergence_circle_placement_role0_116",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_geometry_divergence_circle_placement_role0_116",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_geometry_divergence_circle_placement_role0_116",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_circle_radius_118",
+          "op": "read_record",
+          "record": {
+            "key": "circle"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_geometry_divergence_circle_field_role0_119",
+          "op": "call_record",
+          "record": {
+            "key": "circle"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_geometry_divergence_nearest_klein_lift_117",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_geometry_divergence_nearest_klein_lift_117",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_geometry_divergence_circle_radius_118",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_circle_body_role0_120",
+          "op": "call_record",
+          "record": {
+            "key": "circle"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "ar": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "bi"
+            },
+            "field_distance": {
+              "node": "action_geometry_divergence_circle_field_role0_119",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_cone_anchor_u_121",
+          "op": "read_record",
+          "record": {
+            "key": "cone"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_geometry_divergence_cone_placement_role0_122",
+          "op": "call_record",
+          "record": {
+            "key": "cone"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_geometry_divergence_cone_anchor_u_121",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_geometry_divergence_cone_anchor_u_121",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_geometry_divergence_cone_anchor_u_121",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_nearest_klein_lift_123",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_geometry_divergence_cone_placement_role0_122",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_geometry_divergence_cone_placement_role0_122",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_geometry_divergence_cone_placement_role0_122",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_cone_radius_124",
+          "op": "read_record",
+          "record": {
+            "key": "cone"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_geometry_divergence_cone_field_role0_125",
+          "op": "call_record",
+          "record": {
+            "key": "cone"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_geometry_divergence_nearest_klein_lift_123",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_geometry_divergence_nearest_klein_lift_123",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_geometry_divergence_cone_radius_124",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_cone_body_role0_126",
+          "op": "call_record",
+          "record": {
+            "key": "cone"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "ar": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "bi"
+            },
+            "field_distance": {
+              "node": "action_geometry_divergence_cone_field_role0_125",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_sphere_anchor_u_127",
+          "op": "read_record",
+          "record": {
+            "key": "sphere"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_geometry_divergence_sphere_placement_role0_128",
+          "op": "call_record",
+          "record": {
+            "key": "sphere"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_geometry_divergence_sphere_anchor_u_127",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_geometry_divergence_sphere_anchor_u_127",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_geometry_divergence_sphere_anchor_u_127",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_nearest_klein_lift_129",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_geometry_divergence_sphere_placement_role0_128",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_geometry_divergence_sphere_placement_role0_128",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_geometry_divergence_sphere_placement_role0_128",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_sphere_radius_130",
+          "op": "read_record",
+          "record": {
+            "key": "sphere"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_geometry_divergence_sphere_field_role0_131",
+          "op": "call_record",
+          "record": {
+            "key": "sphere"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_geometry_divergence_nearest_klein_lift_129",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_geometry_divergence_nearest_klein_lift_129",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_geometry_divergence_sphere_radius_130",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_sphere_body_role0_132",
+          "op": "call_record",
+          "record": {
+            "key": "sphere"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "ar": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "bi"
+            },
+            "field_distance": {
+              "node": "action_geometry_divergence_sphere_field_role0_131",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_apex_anchor_u_133",
+          "op": "read_record",
+          "record": {
+            "key": "apex"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_geometry_divergence_apex_placement_role0_134",
+          "op": "call_record",
+          "record": {
+            "key": "apex"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_geometry_divergence_apex_anchor_u_133",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_geometry_divergence_apex_anchor_u_133",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_geometry_divergence_apex_anchor_u_133",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_nearest_klein_lift_135",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_geometry_divergence_apex_placement_role0_134",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_geometry_divergence_apex_placement_role0_134",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_geometry_divergence_apex_placement_role0_134",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_apex_radius_136",
+          "op": "read_record",
+          "record": {
+            "key": "apex"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_geometry_divergence_apex_field_role0_137",
+          "op": "call_record",
+          "record": {
+            "key": "apex"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_geometry_divergence_nearest_klein_lift_135",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_geometry_divergence_nearest_klein_lift_135",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_geometry_divergence_apex_radius_136",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_apex_body_role0_138",
+          "op": "call_record",
+          "record": {
+            "key": "apex"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "ar": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "bi"
+            },
+            "field_distance": {
+              "node": "action_geometry_divergence_apex_field_role0_137",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_delta_phi_anchor_u_139",
+          "op": "read_record",
+          "record": {
+            "key": "delta_phi"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_geometry_divergence_delta_phi_placement_role0_140",
+          "op": "call_record",
+          "record": {
+            "key": "delta_phi"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_geometry_divergence_delta_phi_anchor_u_139",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_geometry_divergence_delta_phi_anchor_u_139",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_geometry_divergence_delta_phi_anchor_u_139",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_nearest_klein_lift_141",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_geometry_divergence_delta_phi_placement_role0_140",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_geometry_divergence_delta_phi_placement_role0_140",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_geometry_divergence_delta_phi_placement_role0_140",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_delta_phi_radius_142",
+          "op": "read_record",
+          "record": {
+            "key": "delta_phi"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_geometry_divergence_delta_phi_field_role0_143",
+          "op": "call_record",
+          "record": {
+            "key": "delta_phi"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_geometry_divergence_nearest_klein_lift_141",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_geometry_divergence_nearest_klein_lift_141",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_geometry_divergence_delta_phi_radius_142",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_delta_phi_body_role0_144",
+          "op": "call_record",
+          "record": {
+            "key": "delta_phi"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "phase": {
+              "node": "action_log_polar_phi_body_role0_20",
+              "output": "theta0"
+            },
+            "previous": {
+              "state": "phase_previous"
+            },
+            "previous2": {
+              "state": "phase_previous2"
+            },
+            "jitter": {
+              "state": "jitter"
+            },
+            "dt": {
+              "node": "action_selected_operator_psi_body_role0_57",
+              "output": "dt"
+            },
+            "field_distance": {
+              "node": "action_geometry_divergence_delta_phi_field_role0_143",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_phyllotaxis_anchor_u_145",
+          "op": "read_record",
+          "record": {
+            "key": "phyllotaxis"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_geometry_divergence_phyllotaxis_placement_role0_146",
+          "op": "call_record",
+          "record": {
+            "key": "phyllotaxis"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_geometry_divergence_phyllotaxis_anchor_u_145",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_geometry_divergence_phyllotaxis_anchor_u_145",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_geometry_divergence_phyllotaxis_anchor_u_145",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_nearest_klein_lift_147",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_geometry_divergence_phyllotaxis_placement_role0_146",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_geometry_divergence_phyllotaxis_placement_role0_146",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_geometry_divergence_phyllotaxis_placement_role0_146",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_phyllotaxis_radius_148",
+          "op": "read_record",
+          "record": {
+            "key": "phyllotaxis"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_geometry_divergence_phyllotaxis_field_role0_149",
+          "op": "call_record",
+          "record": {
+            "key": "phyllotaxis"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_geometry_divergence_nearest_klein_lift_147",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_geometry_divergence_nearest_klein_lift_147",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_geometry_divergence_phyllotaxis_radius_148",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_phyllotaxis_body_role0_150",
+          "op": "call_record",
+          "record": {
+            "key": "phyllotaxis"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "delta": {
+              "node": "action_geometry_divergence_delta_phi_body_role0_144",
+              "output": "delta"
+            },
+            "g0": {
+              "node": "action_geometry_divergence_T_shape_body_role0_108",
+              "output": "value"
+            },
+            "g1": {
+              "node": "action_geometry_divergence_pyramid_body_role0_114",
+              "output": "value"
+            },
+            "g2": {
+              "node": "action_geometry_divergence_circle_body_role0_120",
+              "output": "value"
+            },
+            "g3": {
+              "node": "action_geometry_divergence_cone_body_role0_126",
+              "output": "value"
+            },
+            "g4": {
+              "node": "action_geometry_divergence_sphere_body_role0_132",
+              "output": "value"
+            },
+            "g5": {
+              "node": "action_geometry_divergence_apex_body_role0_138",
+              "output": "value"
+            },
+            "dt": {
+              "node": "action_selected_operator_psi_body_role0_57",
+              "output": "dt"
+            },
+            "field_distance": {
+              "node": "action_geometry_divergence_phyllotaxis_field_role0_149",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_double_dot_anchor_u_151",
+          "op": "read_record",
+          "record": {
+            "key": "double_dot"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_geometry_divergence_double_dot_placement_role0_152",
+          "op": "call_record",
+          "record": {
+            "key": "double_dot"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_geometry_divergence_double_dot_anchor_u_151",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_geometry_divergence_double_dot_anchor_u_151",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_geometry_divergence_double_dot_anchor_u_151",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_nearest_klein_lift_153",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_geometry_divergence_double_dot_placement_role0_152",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_geometry_divergence_double_dot_placement_role0_152",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_geometry_divergence_double_dot_placement_role0_152",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_double_dot_radius_154",
+          "op": "read_record",
+          "record": {
+            "key": "double_dot"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_geometry_divergence_double_dot_field_role0_155",
+          "op": "call_record",
+          "record": {
+            "key": "double_dot"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_geometry_divergence_nearest_klein_lift_153",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_geometry_divergence_nearest_klein_lift_153",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_geometry_divergence_double_dot_radius_154",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_double_dot_body_role0_156",
+          "op": "call_record",
+          "record": {
+            "key": "double_dot"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "ar": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_rk4_four_slots_rk4_body_role2_102",
+              "output": "bi"
+            },
+            "g0": {
+              "node": "action_geometry_divergence_phyllotaxis_body_role0_150",
+              "output": "ar"
+            },
+            "g1": {
+              "node": "action_geometry_divergence_phyllotaxis_body_role0_150",
+              "output": "ai"
+            },
+            "g2": {
+              "node": "action_geometry_divergence_phyllotaxis_body_role0_150",
+              "output": "br"
+            },
+            "g3": {
+              "node": "action_geometry_divergence_phyllotaxis_body_role0_150",
+              "output": "bi"
+            },
+            "field_distance": {
+              "node": "action_geometry_divergence_double_dot_field_role0_155",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_blend_anchor_u_157",
+          "op": "read_record",
+          "record": {
+            "key": "blend"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_geometry_divergence_blend_placement_role0_158",
+          "op": "call_record",
+          "record": {
+            "key": "blend"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_geometry_divergence_blend_anchor_u_157",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_geometry_divergence_blend_anchor_u_157",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_geometry_divergence_blend_anchor_u_157",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_nearest_klein_lift_159",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_geometry_divergence_blend_placement_role0_158",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_geometry_divergence_blend_placement_role0_158",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_geometry_divergence_blend_placement_role0_158",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_blend_radius_160",
+          "op": "read_record",
+          "record": {
+            "key": "blend"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_geometry_divergence_blend_field_role0_161",
+          "op": "call_record",
+          "record": {
+            "key": "blend"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_geometry_divergence_nearest_klein_lift_159",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_geometry_divergence_nearest_klein_lift_159",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_geometry_divergence_blend_radius_160",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_geometry_divergence_blend_body_role0_162",
+          "op": "call_record",
+          "record": {
+            "key": "blend"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "ar": {
+              "node": "action_geometry_divergence_double_dot_body_role0_156",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_geometry_divergence_double_dot_body_role0_156",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_geometry_divergence_double_dot_body_role0_156",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_geometry_divergence_double_dot_body_role0_156",
+              "output": "bi"
+            },
+            "score": {
+              "node": "action_geometry_divergence_double_dot_body_role0_156",
+              "output": "score"
+            },
+            "growth0": {
+              "node": "action_geometry_divergence_phyllotaxis_body_role0_150",
+              "output": "ar"
+            },
+            "growth1": {
+              "node": "action_geometry_divergence_phyllotaxis_body_role0_150",
+              "output": "ai"
+            },
+            "growth2": {
+              "node": "action_geometry_divergence_phyllotaxis_body_role0_150",
+              "output": "br"
+            },
+            "growth3": {
+              "node": "action_geometry_divergence_phyllotaxis_body_role0_150",
+              "output": "bi"
+            },
+            "g0": {
+              "node": "action_geometry_divergence_T_shape_body_role0_108",
+              "output": "value"
+            },
+            "g1": {
+              "node": "action_geometry_divergence_pyramid_body_role0_114",
+              "output": "value"
+            },
+            "g2": {
+              "node": "action_geometry_divergence_circle_body_role0_120",
+              "output": "value"
+            },
+            "g3": {
+              "node": "action_geometry_divergence_cone_body_role0_126",
+              "output": "value"
+            },
+            "g4": {
+              "node": "action_geometry_divergence_sphere_body_role0_132",
+              "output": "value"
+            },
+            "g5": {
+              "node": "action_geometry_divergence_apex_body_role0_138",
+              "output": "value"
+            },
+            "field_distance": {
+              "node": "action_geometry_divergence_blend_field_role0_161",
+              "output": "distance"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "rgba_crystal",
+      "nodes": [
+        {
+          "id": "action_rgba_crystal_crystal_anchor_u_163",
+          "op": "read_record",
+          "record": {
+            "key": "crystal"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_rgba_crystal_crystal_placement_role0_164",
+          "op": "call_record",
+          "record": {
+            "key": "crystal"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_rgba_crystal_crystal_anchor_u_163",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_rgba_crystal_crystal_anchor_u_163",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_rgba_crystal_crystal_anchor_u_163",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rgba_crystal_nearest_klein_lift_165",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_rgba_crystal_crystal_placement_role0_164",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_rgba_crystal_crystal_placement_role0_164",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_rgba_crystal_crystal_placement_role0_164",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rgba_crystal_crystal_radius_166",
+          "op": "read_record",
+          "record": {
+            "key": "crystal"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_rgba_crystal_crystal_field_role0_167",
+          "op": "call_record",
+          "record": {
+            "key": "crystal"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_rgba_crystal_nearest_klein_lift_165",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_rgba_crystal_nearest_klein_lift_165",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_rgba_crystal_crystal_radius_166",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_rgba_crystal_crystal_body_role0_168",
+          "op": "call_record",
+          "record": {
+            "key": "crystal"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "ar": {
+              "node": "action_geometry_divergence_blend_body_role0_162",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_geometry_divergence_blend_body_role0_162",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_geometry_divergence_blend_body_role0_162",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_geometry_divergence_blend_body_role0_162",
+              "output": "bi"
+            },
+            "field_distance": {
+              "node": "action_rgba_crystal_crystal_field_role0_167",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_rgba_crystal_dichromatic_anchor_u_169",
+          "op": "read_record",
+          "record": {
+            "key": "dichromatic"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_rgba_crystal_dichromatic_placement_role0_170",
+          "op": "call_record",
+          "record": {
+            "key": "dichromatic"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_rgba_crystal_dichromatic_anchor_u_169",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_rgba_crystal_dichromatic_anchor_u_169",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_rgba_crystal_dichromatic_anchor_u_169",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rgba_crystal_nearest_klein_lift_171",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_rgba_crystal_dichromatic_placement_role0_170",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_rgba_crystal_dichromatic_placement_role0_170",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_rgba_crystal_dichromatic_placement_role0_170",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rgba_crystal_dichromatic_radius_172",
+          "op": "read_record",
+          "record": {
+            "key": "dichromatic"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_rgba_crystal_dichromatic_field_role0_173",
+          "op": "call_record",
+          "record": {
+            "key": "dichromatic"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_rgba_crystal_nearest_klein_lift_171",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_rgba_crystal_nearest_klein_lift_171",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_rgba_crystal_dichromatic_radius_172",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_rgba_crystal_dichromatic_body_role0_174",
+          "op": "call_record",
+          "record": {
+            "key": "dichromatic"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "ar": {
+              "node": "action_rgba_crystal_crystal_body_role0_168",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_rgba_crystal_crystal_body_role0_168",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_rgba_crystal_crystal_body_role0_168",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_rgba_crystal_crystal_body_role0_168",
+              "output": "bi"
+            },
+            "parity": {
+              "node": "action_split_and_hinge_parity_body_role0_32",
+              "output": "parity"
+            },
+            "field_distance": {
+              "node": "action_rgba_crystal_dichromatic_field_role0_173",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_rgba_crystal_phase_history_anchor_u_175",
+          "op": "read_record",
+          "record": {
+            "key": "phase_history"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_rgba_crystal_phase_history_placement_role0_176",
+          "op": "call_record",
+          "record": {
+            "key": "phase_history"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_rgba_crystal_phase_history_anchor_u_175",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_rgba_crystal_phase_history_anchor_u_175",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_rgba_crystal_phase_history_anchor_u_175",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rgba_crystal_nearest_klein_lift_177",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_rgba_crystal_phase_history_placement_role0_176",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_rgba_crystal_phase_history_placement_role0_176",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_rgba_crystal_phase_history_placement_role0_176",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rgba_crystal_phase_history_radius_178",
+          "op": "read_record",
+          "record": {
+            "key": "phase_history"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_rgba_crystal_phase_history_field_role0_179",
+          "op": "call_record",
+          "record": {
+            "key": "phase_history"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_rgba_crystal_nearest_klein_lift_177",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_rgba_crystal_nearest_klein_lift_177",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_rgba_crystal_phase_history_radius_178",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_rgba_crystal_phase_history_body_role0_180",
+          "op": "call_record",
+          "record": {
+            "key": "phase_history"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "B0": {
+              "state": "B0"
+            },
+            "B1": {
+              "state": "B1"
+            },
+            "B2": {
+              "state": "B2"
+            },
+            "B3": {
+              "state": "B3"
+            },
+            "jitter": {
+              "state": "jitter"
+            },
+            "k1_0": {
+              "node": "action_rk4_four_slots_rk4_body_role1_63",
+              "output": "ar"
+            },
+            "k1_1": {
+              "node": "action_rk4_four_slots_rk4_body_role1_63",
+              "output": "ai"
+            },
+            "k1_2": {
+              "node": "action_rk4_four_slots_rk4_body_role1_63",
+              "output": "br"
+            },
+            "k1_3": {
+              "node": "action_rk4_four_slots_rk4_body_role1_63",
+              "output": "bi"
+            },
+            "k2_0": {
+              "node": "action_rk4_four_slots_rk4_body_role1_70",
+              "output": "ar"
+            },
+            "k2_1": {
+              "node": "action_rk4_four_slots_rk4_body_role1_70",
+              "output": "ai"
+            },
+            "k2_2": {
+              "node": "action_rk4_four_slots_rk4_body_role1_70",
+              "output": "br"
+            },
+            "k2_3": {
+              "node": "action_rk4_four_slots_rk4_body_role1_70",
+              "output": "bi"
+            },
+            "k3_0": {
+              "node": "action_rk4_four_slots_rk4_body_role1_77",
+              "output": "ar"
+            },
+            "k3_1": {
+              "node": "action_rk4_four_slots_rk4_body_role1_77",
+              "output": "ai"
+            },
+            "k3_2": {
+              "node": "action_rk4_four_slots_rk4_body_role1_77",
+              "output": "br"
+            },
+            "k3_3": {
+              "node": "action_rk4_four_slots_rk4_body_role1_77",
+              "output": "bi"
+            },
+            "k4_0": {
+              "node": "action_rk4_four_slots_y_up_body_role0_96",
+              "output": "ar"
+            },
+            "k4_1": {
+              "node": "action_rk4_four_slots_y_up_body_role0_96",
+              "output": "ai"
+            },
+            "k4_2": {
+              "node": "action_rk4_four_slots_y_up_body_role0_96",
+              "output": "br"
+            },
+            "k4_3": {
+              "node": "action_rk4_four_slots_y_up_body_role0_96",
+              "output": "bi"
+            },
+            "field_distance": {
+              "node": "action_rgba_crystal_phase_history_field_role0_179",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_rgba_crystal_T_transform_anchor_u_181",
+          "op": "read_record",
+          "record": {
+            "key": "T_transform"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_rgba_crystal_T_transform_placement_role0_182",
+          "op": "call_record",
+          "record": {
+            "key": "T_transform"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_rgba_crystal_T_transform_anchor_u_181",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_rgba_crystal_T_transform_anchor_u_181",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_rgba_crystal_T_transform_anchor_u_181",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rgba_crystal_nearest_klein_lift_183",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_rgba_crystal_T_transform_placement_role0_182",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_rgba_crystal_T_transform_placement_role0_182",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_rgba_crystal_T_transform_placement_role0_182",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rgba_crystal_T_transform_radius_184",
+          "op": "read_record",
+          "record": {
+            "key": "T_transform"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_rgba_crystal_T_transform_field_role0_185",
+          "op": "call_record",
+          "record": {
+            "key": "T_transform"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_rgba_crystal_nearest_klein_lift_183",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_rgba_crystal_nearest_klein_lift_183",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_rgba_crystal_T_transform_radius_184",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_rgba_crystal_T_transform_body_role0_186",
+          "op": "call_record",
+          "record": {
+            "key": "T_transform"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "ar": {
+              "node": "action_geometry_divergence_blend_body_role0_162",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_geometry_divergence_blend_body_role0_162",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_geometry_divergence_blend_body_role0_162",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_geometry_divergence_blend_body_role0_162",
+              "output": "bi"
+            },
+            "crystal_ar": {
+              "node": "action_rgba_crystal_crystal_body_role0_168",
+              "output": "ar"
+            },
+            "field_distance": {
+              "node": "action_rgba_crystal_T_transform_field_role0_185",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_rgba_crystal_inverse_T_anchor_u_187",
+          "op": "read_record",
+          "record": {
+            "key": "inverse_T"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_rgba_crystal_inverse_T_placement_role0_188",
+          "op": "call_record",
+          "record": {
+            "key": "inverse_T"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_rgba_crystal_inverse_T_anchor_u_187",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_rgba_crystal_inverse_T_anchor_u_187",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_rgba_crystal_inverse_T_anchor_u_187",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rgba_crystal_nearest_klein_lift_189",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_rgba_crystal_inverse_T_placement_role0_188",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_rgba_crystal_inverse_T_placement_role0_188",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_rgba_crystal_inverse_T_placement_role0_188",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_rgba_crystal_inverse_T_radius_190",
+          "op": "read_record",
+          "record": {
+            "key": "inverse_T"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_rgba_crystal_inverse_T_field_role0_191",
+          "op": "call_record",
+          "record": {
+            "key": "inverse_T"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_rgba_crystal_nearest_klein_lift_189",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_rgba_crystal_nearest_klein_lift_189",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_rgba_crystal_inverse_T_radius_190",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_rgba_crystal_inverse_T_body_role0_192",
+          "op": "call_record",
+          "record": {
+            "key": "inverse_T"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "t00": {
+              "node": "action_rgba_crystal_T_transform_body_role0_186",
+              "output": "t00"
+            },
+            "t01": {
+              "node": "action_rgba_crystal_T_transform_body_role0_186",
+              "output": "t01"
+            },
+            "t10": {
+              "node": "action_rgba_crystal_T_transform_body_role0_186",
+              "output": "t10"
+            },
+            "t11": {
+              "node": "action_rgba_crystal_T_transform_body_role0_186",
+              "output": "t11"
+            },
+            "field_distance": {
+              "node": "action_rgba_crystal_inverse_T_field_role0_191",
+              "output": "distance"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "surface_return",
+      "nodes": [
+        {
+          "id": "action_surface_return_pinion_anchor_u_193",
+          "op": "read_record",
+          "record": {
+            "key": "pinion"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_surface_return_pinion_placement_role0_194",
+          "op": "call_record",
+          "record": {
+            "key": "pinion"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_surface_return_pinion_anchor_u_193",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_surface_return_pinion_anchor_u_193",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_surface_return_pinion_anchor_u_193",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_surface_return_nearest_klein_lift_195",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_surface_return_pinion_placement_role0_194",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_surface_return_pinion_placement_role0_194",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_surface_return_pinion_placement_role0_194",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_surface_return_pinion_radius_196",
+          "op": "read_record",
+          "record": {
+            "key": "pinion"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_surface_return_pinion_field_role0_197",
+          "op": "call_record",
+          "record": {
+            "key": "pinion"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_surface_return_nearest_klein_lift_195",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_surface_return_nearest_klein_lift_195",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_surface_return_pinion_radius_196",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_surface_return_pinion_body_role0_198",
+          "op": "call_record",
+          "record": {
+            "key": "pinion"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "ku": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "kv": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "ko": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ko"
+            },
+            "Rr": {
+              "node": "action_rgba_crystal_dichromatic_body_role0_174",
+              "output": "ar"
+            },
+            "Ri": {
+              "node": "action_rgba_crystal_dichromatic_body_role0_174",
+              "output": "ai"
+            },
+            "Gr": {
+              "node": "action_rgba_crystal_dichromatic_body_role0_174",
+              "output": "br"
+            },
+            "Gi": {
+              "node": "action_rgba_crystal_dichromatic_body_role0_174",
+              "output": "bi"
+            },
+            "B0": {
+              "node": "action_rgba_crystal_phase_history_body_role0_180",
+              "output": "B0"
+            },
+            "B1": {
+              "node": "action_rgba_crystal_phase_history_body_role0_180",
+              "output": "B1"
+            },
+            "B2": {
+              "node": "action_rgba_crystal_phase_history_body_role0_180",
+              "output": "B2"
+            },
+            "B3": {
+              "node": "action_rgba_crystal_phase_history_body_role0_180",
+              "output": "B3"
+            },
+            "a00": {
+              "node": "action_rgba_crystal_inverse_T_body_role0_192",
+              "output": "a00"
+            },
+            "a01": {
+              "node": "action_rgba_crystal_inverse_T_body_role0_192",
+              "output": "a01"
+            },
+            "a10": {
+              "node": "action_rgba_crystal_inverse_T_body_role0_192",
+              "output": "a10"
+            },
+            "a11": {
+              "node": "action_rgba_crystal_inverse_T_body_role0_192",
+              "output": "a11"
+            },
+            "field_distance": {
+              "node": "action_surface_return_pinion_field_role0_197",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_surface_return_return_anchor_u_199",
+          "op": "read_record",
+          "record": {
+            "key": "return"
+          },
+          "bank": "published",
+          "fields": [
+            "anchor_u",
+            "anchor_v",
+            "anchor_orientation"
+          ]
+        },
+        {
+          "id": "action_surface_return_return_placement_role0_200",
+          "op": "call_record",
+          "record": {
+            "key": "return"
+          },
+          "bank": "published",
+          "slot": "placement",
+          "role": 0,
+          "args": {
+            "u": {
+              "node": "action_surface_return_return_anchor_u_199",
+              "output": "anchor_u"
+            },
+            "v": {
+              "node": "action_surface_return_return_anchor_u_199",
+              "output": "anchor_v"
+            },
+            "orientation": {
+              "node": "action_surface_return_return_anchor_u_199",
+              "output": "anchor_orientation"
+            }
+          }
+        },
+        {
+          "id": "action_surface_return_nearest_klein_lift_201",
+          "op": "call_helper",
+          "function": "nearest_klein_lift",
+          "args": {
+            "query_u": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "ku"
+            },
+            "query_v": {
+              "node": "action_operator_mutation_klein_body_role0_8",
+              "output": "kv"
+            },
+            "anchor_u": {
+              "node": "action_surface_return_return_placement_role0_200",
+              "output": "u"
+            },
+            "anchor_v": {
+              "node": "action_surface_return_return_placement_role0_200",
+              "output": "v"
+            },
+            "anchor_orientation": {
+              "node": "action_surface_return_return_placement_role0_200",
+              "output": "orientation"
+            }
+          }
+        },
+        {
+          "id": "action_surface_return_return_radius_202",
+          "op": "read_record",
+          "record": {
+            "key": "return"
+          },
+          "bank": "published",
+          "fields": [
+            "radius"
+          ]
+        },
+        {
+          "id": "action_surface_return_return_field_role0_203",
+          "op": "call_record",
+          "record": {
+            "key": "return"
+          },
+          "bank": "published",
+          "slot": "field",
+          "role": 0,
+          "args": {
+            "dx": {
+              "node": "action_surface_return_nearest_klein_lift_201",
+              "output": "dx"
+            },
+            "dy": {
+              "node": "action_surface_return_nearest_klein_lift_201",
+              "output": "dy"
+            },
+            "radius": {
+              "node": "action_surface_return_return_radius_202",
+              "output": "radius"
+            }
+          }
+        },
+        {
+          "id": "action_surface_return_return_body_role0_204",
+          "op": "call_record",
+          "record": {
+            "key": "return"
+          },
+          "bank": "published",
+          "slot": "body",
+          "role": 0,
+          "args": {
+            "ar": {
+              "node": "action_surface_return_pinion_body_role0_198",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_surface_return_pinion_body_role0_198",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_surface_return_pinion_body_role0_198",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_surface_return_pinion_body_role0_198",
+              "output": "bi"
+            },
+            "u": {
+              "node": "action_surface_return_pinion_body_role0_198",
+              "output": "u"
+            },
+            "v": {
+              "node": "action_surface_return_pinion_body_role0_198",
+              "output": "v"
+            },
+            "orientation": {
+              "node": "action_surface_return_pinion_body_role0_198",
+              "output": "orientation"
+            },
+            "neck": {
+              "state": "neck"
+            },
+            "parity": {
+              "node": "action_split_and_hinge_parity_body_role0_32",
+              "output": "parity"
+            },
+            "phase": {
+              "state": "phase"
+            },
+            "dt": {
+              "node": "action_selected_operator_psi_body_role0_57",
+              "output": "dt"
+            },
+            "field_distance": {
+              "node": "action_surface_return_return_field_role0_203",
+              "output": "distance"
+            }
+          }
+        },
+        {
+          "id": "action_surface_return_wave_energy_205",
+          "op": "call_helper",
+          "function": "wave_energy",
+          "args": {
+            "ar": {
+              "node": "action_surface_return_return_body_role0_204",
+              "output": "ar"
+            },
+            "ai": {
+              "node": "action_surface_return_return_body_role0_204",
+              "output": "ai"
+            },
+            "br": {
+              "node": "action_surface_return_return_body_role0_204",
+              "output": "br"
+            },
+            "bi": {
+              "node": "action_surface_return_return_body_role0_204",
+              "output": "bi"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "returns": {
+    "u": {
+      "node": "action_surface_return_return_body_role0_204",
+      "output": "u"
+    },
+    "v": {
+      "node": "action_surface_return_return_body_role0_204",
+      "output": "v"
+    },
+    "orientation": {
+      "node": "action_surface_return_return_body_role0_204",
+      "output": "orientation"
+    },
+    "ar": {
+      "node": "action_surface_return_return_body_role0_204",
+      "output": "ar"
+    },
+    "ai": {
+      "node": "action_surface_return_return_body_role0_204",
+      "output": "ai"
+    },
+    "br": {
+      "node": "action_surface_return_return_body_role0_204",
+      "output": "br"
+    },
+    "bi": {
+      "node": "action_surface_return_return_body_role0_204",
+      "output": "bi"
+    },
+    "phase": {
+      "node": "action_surface_return_return_body_role0_204",
+      "output": "phase"
+    },
+    "dt": {
+      "state": "dt"
+    },
+    "jitter": {
+      "state": "jitter"
+    },
+    "previous_ar": {
+      "state": "ar"
+    },
+    "previous_ai": {
+      "state": "ai"
+    },
+    "previous_br": {
+      "state": "br"
+    },
+    "previous_bi": {
+      "state": "bi"
+    },
+    "surface_u": {
+      "node": "action_operator_mutation_klein_body_role0_8",
+      "output": "ku"
+    },
+    "surface_v": {
+      "node": "action_operator_mutation_klein_body_role0_8",
+      "output": "kv"
+    },
+    "neck": {
+      "state": "neck"
+    },
+    "route_depth": {
+      "state": "route_depth"
+    },
+    "route_b0": {
+      "state": "route_b0"
+    },
+    "route_b1": {
+      "state": "route_b1"
+    },
+    "route_b2": {
+      "state": "route_b2"
+    },
+    "route_b3": {
+      "state": "route_b3"
+    },
+    "K_orientation": {
+      "node": "action_operator_mutation_klein_body_role0_8",
+      "output": "ko"
+    },
+    "B0": {
+      "node": "action_rgba_crystal_phase_history_body_role0_180",
+      "output": "B0"
+    },
+    "B1": {
+      "node": "action_rgba_crystal_phase_history_body_role0_180",
+      "output": "B1"
+    },
+    "B2": {
+      "node": "action_rgba_crystal_phase_history_body_role0_180",
+      "output": "B2"
+    },
+    "B3": {
+      "node": "action_rgba_crystal_phase_history_body_role0_180",
+      "output": "B3"
+    },
+    "phase_previous": {
+      "node": "action_geometry_divergence_delta_phi_body_role0_144",
+      "output": "unwrapped"
+    },
+    "phase_previous2": {
+      "state": "phase_previous"
+    },
+    "T00": {
+      "node": "action_rgba_crystal_T_transform_body_role0_186",
+      "output": "t00"
+    },
+    "T01": {
+      "node": "action_rgba_crystal_T_transform_body_role0_186",
+      "output": "t01"
+    },
+    "T10": {
+      "node": "action_rgba_crystal_T_transform_body_role0_186",
+      "output": "t10"
+    },
+    "T11": {
+      "node": "action_rgba_crystal_T_transform_body_role0_186",
+      "output": "t11"
+    },
+    "A00": {
+      "node": "action_rgba_crystal_inverse_T_body_role0_192",
+      "output": "a00"
+    },
+    "A01": {
+      "node": "action_rgba_crystal_inverse_T_body_role0_192",
+      "output": "a01"
+    },
+    "A10": {
+      "node": "action_rgba_crystal_inverse_T_body_role0_192",
+      "output": "a10"
+    },
+    "A11": {
+      "node": "action_rgba_crystal_inverse_T_body_role0_192",
+      "output": "a11"
+    },
+    "Rr": {
+      "node": "action_rgba_crystal_dichromatic_body_role0_174",
+      "output": "ar"
+    },
+    "Ri": {
+      "node": "action_rgba_crystal_dichromatic_body_role0_174",
+      "output": "ai"
+    },
+    "Gr": {
+      "node": "action_rgba_crystal_dichromatic_body_role0_174",
+      "output": "br"
+    },
+    "Gi": {
+      "node": "action_rgba_crystal_dichromatic_body_role0_174",
+      "output": "bi"
+    },
+    "selected_index": {
+      "node": "action_selected_operator_bst_body_role0_45",
+      "output": "index"
+    },
+    "last_field": {
+      "node": "action_surface_return_return_field_role0_203",
+      "output": "distance"
+    },
+    "energy": {
+      "node": "action_surface_return_wave_energy_205",
+      "output": "energy"
+    }
+  },
+  "source": {
+    "authoring": "Explicit source-only composition example derived from the complete default recurrence graph",
+    "scope": "phase_bias_v0.1.json"
+  },
+  "meaning": "Complete old-snapshot operator mutation and ordered source phases with named record calls, helper calls, data dependencies and complete state/record returns.",
+  "status": "Authored source graph; independent graph lowering and numerical evidence required."
+}

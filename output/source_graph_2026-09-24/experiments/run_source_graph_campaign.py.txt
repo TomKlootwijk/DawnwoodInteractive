@@ -1,0 +1,74 @@
+from pathlib import Path
+from copy import deepcopy
+import json,lzma,sys
+sys.path.insert(0,str(Path.cwd()));sys.path.insert(0,str(Path.cwd()/'tmp'))
+from local_lab import source_cycle as c,source_program as author,source_graph_program as gp,source_graph_export as exporter,source_resident_v2 as r,source_enzyme as e
+from run_resident_enzyme_campaign import paired,inputs
+
+BASE=Path('output/source_graph_2026-09-24').resolve();BASE.mkdir(exist_ok=True)
+MODEL,_=c.ir.read_json(c.MODEL);CYCLE,_=c.ir.read_json(c.CYCLE)
+ROWS=[];EQUIVALENCE=[]
+
+def save(name,model,graph,definition):
+    folder=BASE/name;folder.mkdir(exist_ok=False)
+    program,manifest=gp.compile_definition(model,definition)
+    (folder/'program.bin').write_bytes(program)
+    (folder/'source_model.json').write_bytes(c.ir.json_bytes(model))
+    (folder/'source_graph.json').write_bytes(c.ir.json_bytes(graph))
+    archive={}
+    for filename,obj in [('definition.json',definition),('manifest.json',manifest)]:
+        raw=c.ir.json_bytes(obj);compressed=lzma.compress(raw,preset=6)
+        (folder/(filename+'.xz')).write_bytes(compressed)
+        assert lzma.decompress(compressed)==raw
+        archive[filename]={'uncompressed_bytes':len(raw),'uncompressed_sha256':c.ir.sha256(raw),'archive':filename+'.xz','archive_sha256':c.ir.sha256(compressed)}
+    (folder/'compilation.json').write_bytes(c.ir.json_bytes({'program_sha256':c.ir.sha256(program),'configuration_sha256':manifest['configuration_sha256'],'artifacts':archive}))
+    return folder/'program.bin'
+
+def run(name,source,epochs,reverse=False):
+    row,dec,raw=paired(BASE/'runs',name,source,epochs,reverse)
+    ROWS.append(row);(BASE/'paired_summary.json').write_bytes(c.ir.json_bytes(ROWS))
+    return dec,raw
+
+def instance_bytes(raw):
+    info=r.decode_checkpoint(raw)
+    return raw[info['instances_offset_bytes']:]
+
+def old_reference(name,path):
+    return Path('output')/path
+
+def main():
+    configurations=[
+        ('core',MODEL,'cycle_v0.1.json',None,'source_authoring_2026-09-24/runs/baseline_'),
+        ('enzyme',MODEL,'enzyme_v0.1.json',inputs(),'resident_enzyme_2026-09-24/runs/epochs_'),
+    ]
+    amplitude,_=c.ir.read_json(Path('source_bindings/examples/amplitude_budget_model.json'))
+    configurations.append(('amplitude',amplitude,'amplitude_v0.1.json',None,'source_authoring_2026-09-24/runs/amplitude_'))
+    for name,model,graphname,domain,previous in configurations:
+        graph,_=c.ir.read_json(Path('source_bindings/graphs')/graphname)
+        d=gp.build_definition(model,CYCLE,graph,129,enzyme_inputs=domain)
+        src=save(name,model,graph,d)
+        if domain:(BASE/name/'enzyme_inputs.json').write_bytes(c.ir.json_bytes(domain))
+        epochs=[1,2,64] if name=='core' else ([1,2,8,64,128,2048] if name=='enzyme' else [1,2,64,2048])
+        for ep in epochs:
+            dec,raw=run(name+'_'+str(ep),src,ep)
+            path=Path('output')/(previous+str(ep))/'cpu.bin'
+            if path.exists():
+                ref=path.read_bytes();assert instance_bytes(raw)==instance_bytes(ref),(name,ep)
+                EQUIVALENCE.append({'profile':name,'epochs':ep,'reference':str(path),'same_complete_mutable_instance_images':True,'reference_sha256':c.ir.sha256(ref),'graph_sha256':c.ir.sha256(raw),'compared_words':dec['count']*dec['instance_words']})
+        resumed,raw=run(name+'_resume_1_plus_63',BASE/'runs'/(name+'_1')/'cpu.bin',63)
+        reference=(BASE/'runs'/(name+'_64')/'cpu.bin').read_bytes();assert raw==reference
+        reversed_,raw=run(name+'_reverse_64',src,64,True);assert raw==reference
+    # Existing source-program edits require their declared retention nodes.
+    model,_=c.ir.read_json(Path('source_bindings/examples/authored_hadamard_model.json'))
+    old=author.build_definition(model,CYCLE,129);graph=exporter.export_graph(old,CYCLE)
+    path=Path('source_bindings/graphs/authored_hadamard_v0.1.json');path.write_bytes(c.ir.json_bytes(graph))
+    d=gp.build_definition(model,CYCLE,graph,129);src=save('authored_hadamard',model,graph,d)
+    for ep in [1,2,64]:
+        dec,raw=run('authored_hadamard_'+str(ep),src,ep)
+        path=Path('output/source_authoring_2026-09-24/runs')/('combined_'+str(ep))/'cpu.bin'
+        ref=path.read_bytes();assert instance_bytes(raw)==instance_bytes(ref)
+        EQUIVALENCE.append({'profile':'authored_hadamard','epochs':ep,'reference':str(path),'same_complete_mutable_instance_images':True,'reference_sha256':c.ir.sha256(ref),'graph_sha256':c.ir.sha256(raw),'compared_words':dec['count']*dec['instance_words']})
+    summary={'healthy_pairs':len(ROWS),'compared_instance_words':sum(x['compared_instance_words'] for x in ROWS),'instance_epochs_per_backend':sum(x['epochs']*x['count'] for x in ROWS),'default_edition_equivalence':EQUIVALENCE,'all_mutable_image_comparisons_equal':True,'resume_and_reverse_exact':True,'validation_errors':0,'validation_warnings':0}
+    (BASE/'summary.json').write_bytes(c.ir.json_bytes(summary));print(json.dumps(summary),flush=True)
+
+if __name__=='__main__':main()

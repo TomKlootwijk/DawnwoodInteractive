@@ -1,0 +1,57 @@
+{
+  "scope": "Retained direct structural audit; no native or GPU execution.",
+  "artifacts": {
+    "amplitude_definition.json.xz": {
+      "bytes": 96180,
+      "sha256": "340592e83e5e9299328a89d139f0b359511260925512a8cadb33958ac5dcc54c"
+    },
+    "amplitude_graph.json": {
+      "bytes": 166990,
+      "sha256": "5ce2fceebafe566221f6ff3d21eca45c2dd0ea26d9479b5f451a2469fa8789bc"
+    },
+    "core_definition.json.xz": {
+      "bytes": 83348,
+      "sha256": "3a3289144e9c809eb8f784a60be14f124be782f1b6f71a6b27e2c2a78a2215cf"
+    },
+    "core_graph.json": {
+      "bytes": 165828,
+      "sha256": "8e7c5bc8431d5568705f53a12d698b0ec1b2c71aa1c05dba547de6e124963d22"
+    },
+    "enzyme_definition.json.xz": {
+      "bytes": 112088,
+      "sha256": "9c7636be25fd39ac2738f1cf785e7e2f6dfa57383f58e62271d489fd80fcd8df"
+    },
+    "enzyme_graph.json": {
+      "bytes": 193230,
+      "sha256": "2dbd8f7f1494cb3f0140be38597183bef3861a7eff7cf0d9c602ffbca7bcb0ab"
+    },
+    "execution.json": {
+      "bytes": 748,
+      "sha256": "a30a0a06fbfc66d55da4b16c4786eae00a8969a5349a7d3f0213b5e119396acd"
+    },
+    "experiment.txt": {
+      "bytes": 6745,
+      "sha256": "460677d9e301833844eb73ca2a74e83a5a70d103d4767d7a292b8074f23aca83"
+    },
+    "results.json": {
+      "bytes": 10472,
+      "sha256": "7b88f29491115c56fc4db1690fee481f540cfeab7effbc8956f9d1dadd9732ef"
+    },
+    "source_cycle.json": {
+      "bytes": 541,
+      "sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4"
+    },
+    "source_graph_fidelity.py.txt": {
+      "bytes": 33894,
+      "sha256": "40bb8ada4863f3db861faaae274d42c3d694cddedaa862eea1cdfd8afdd764bf"
+    },
+    "stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout.txt": {
+      "bytes": 7101,
+      "sha256": "04c5125db8e5b1053a06f4c63c4bd2f8f3b1bd35eb485a627bc2574246337933"
+    }
+  }
+}

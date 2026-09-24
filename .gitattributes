@@ -48,3 +48,8 @@ Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/tools/build_re
 Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/bin/windows-resident-v2/** -text
 Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/README.md -text
 Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/MANIFEST.sha256 -text
+
+# Preserve graph compiler and retained execution provenance byte for byte.
+local_lab/source_graph*.py -text
+Dawnwood-Graph.cmd -text
+output/source_graph_2026-09-24/** -text

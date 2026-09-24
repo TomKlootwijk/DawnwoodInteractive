@@ -1,0 +1,625 @@
+{
+  "profile": "DWI-SOURCE-GRAPH-0.1",
+  "timestamp_utc": "2026-09-24T17:45:26.747095+00:00",
+  "scope": "Direct Python compiler/schema/atomicity/liveness checks; no native execution or GPU experiment.",
+  "source_hashes": {
+    "local_lab/source_graph.py": "428f47db32022dc6f3200327bd74e0ecc7b12d4f4d11754443ebc37978ab7549",
+    "local_lab/source_graph_program.py": "6264470048504142292ae3e5f88fc5e5052204a8ba9b0297d4d8a55bac341635",
+    "local_lab/source_graph_types.py": "1efb287d32f93004e438cb5c6938da9eaa7d06d682329d926c9cbeb7e6fedb0b",
+    "local_lab/source_graph_fidelity.py": "40bb8ada4863f3db861faaae274d42c3d694cddedaa862eea1cdfd8afdd764bf",
+    "local_lab/source_graph_export.py": "6d9f64d6ab41a01afcf41f604f749025c0da0476a56e628affe0ba836ba6bf56",
+    "source_bindings/graphs/cycle_v0.1.json": "8e7c5bc8431d5568705f53a12d698b0ec1b2c71aa1c05dba547de6e124963d22",
+    "source_bindings/graphs/enzyme_v0.1.json": "2dbd8f7f1494cb3f0140be38597183bef3861a7eff7cf0d9c602ffbca7bcb0ab",
+    "source_bindings/graphs/amplitude_v0.1.json": "5ce2fceebafe566221f6ff3d21eca45c2dd0ea26d9479b5f451a2469fa8789bc",
+    "output/source_graph_2026-09-24/authored_hadamard/source_graph.json": "9c7fceeda8345714782658aa48e452475db36945a18af5637c4c33d151f4dc38",
+    "source_bindings/examples/authored_hadamard_model.json": "fcb2d8d14234f8b65fe4cba3fb24d1e7e564d1e3d6b21b30a078d6e84d202ba9",
+    "output/source_graph_2026-09-24/experiment.txt": "df524c6a04ad52c4b03e306400063fe916cbdc48dc041f30e8dd5566015d6b97"
+  },
+  "cases": [
+    {
+      "name": "canonical_core",
+      "expected": "accept",
+      "outcome": "accepted",
+      "program_sha256": "a84cc6a69d169edde40bb99064fcc6f1759039fac962503ccb0e801777d89c46",
+      "mutation_peak": 50,
+      "action_peak": 56,
+      "mutation_steps": 112,
+      "action_steps": 937,
+      "family_mapping_unchanged": true,
+      "records_unchanged": true,
+      "live_layout_metadata": {
+        "passed": true,
+        "mapped_calls_checked": 0,
+        "duplicated_policies_match": true
+      },
+      "complete_application_lowered": true,
+      "passed": true
+    },
+    {
+      "name": "unknown_state",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/0/nodes/0/args/u: unknown old-state input 'unknown_state'",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "unknown_node",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/0/nodes/0/args/u: unknown/future node output 'absent'.'u'",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "future_reference",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/0/nodes/0/args/u: unknown/future node output 'action_operator_mutation_nearest_klein_lift_2'.'dx'",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "self_cycle_reference",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/0/nodes/0/args/u: unknown/future node output 'action_operator_mutation_placement_canonical_1'.'u'",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "unknown_output",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/0/nodes/1/args/query_u: unknown/future node output 'action_operator_mutation_placement_canonical_1'.'absent'",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "duplicate_action_id",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/0/nodes/1: duplicate node identity 'action_operator_mutation_placement_canonical_1'",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "duplicate_mutation_id",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/mutation/nodes/1: duplicate node identity 'mutation_target_body_1'",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "wrong_nominal_state_wire",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/0/nodes/0/args/u: nominal type 'phase' does not match 'chart_coordinate'",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "wrong_nominal_literal_wire",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/0/nodes/0/args/u: nominal type 'phase' does not match 'chart_coordinate'",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "unknown_literal_nominal_type",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/0/nodes/0/args/u.type: unknown nominal type 'f32'",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "nonfinite_literal",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/0/nodes/0/args/u.literal: nonfinite numbers are not supported",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "invalid_bit_literal",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/0/nodes/0/args/orientation: a bit literal must be zero or one",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "fractional_index_literal",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/3/nodes/5/args/depth: this literal requires an exact bounded nonnegative integer",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "wrong_argument_order",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/0/nodes/0.args: expected ordered named arguments ['u', 'v', 'orientation']",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "missing_argument",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/0/nodes/0.args: expected ordered named arguments ['u', 'v', 'orientation']",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "unknown_node_operation",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/0/nodes/0: unsupported graph node operation 'raw_tape'",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "unknown_node_member",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/0/nodes/0: unsupported keys ['register']",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "unknown_record",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/0/nodes/3.record: unknown record key",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "unknown_helper",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/0/nodes/0: unknown helper function 'absent'",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "unknown_bank",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/0/nodes/3.bank: bank must be old or published",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "action_old_call_bank",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/0/nodes/3.bank: action calls must resolve published definitions",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "mutation_published_read_bank",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/mutation/nodes/0.bank: mutation reads the common old snapshot only",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "target_record_in_action",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/0/nodes/2.record: target record exists only in mutation",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "target_index_in_action",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/3/nodes/6.record.source_index: a mutation target is unavailable in the action graph",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "dynamic_call_missing_contract",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/3/nodes/11: computed/target body calls require a named contract",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "field_nonzero_role",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/0/nodes/6: field and placement calls use role0",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "incomplete_record_returns",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "mutation returns: missing keys ['body']",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "incomplete_state_returns",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "state returns: missing keys ['ar']",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "reordered_phases",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "Graph phases must match the complete declared source cycle in order",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "late_fidelity_failure_atomic",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "Source graph fidelity: missing live surface_return: return role0",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "helper_unknown_nominal_type",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "graph helper type: unknown nominal type 'scalar'",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "helper_wrong_ordered_names",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "Graph helper type contract must match its exact ordered numerical inputs and outputs",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "helper_unknown_expression_opcode",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "graph.functions.experiment_helper.outputs.y0: unsupported operation 'invented'",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "helper_guard_unknown_input",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "graph.functions.experiment_helper.requires[0]: undeclared input 'absent'",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "helper_guard_wrong_shape",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "graph helper experiment_helper.requires: expected a list of at most 256 conditions",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "helper_cannot_replace_function",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "A graph helper cannot replace an existing numerical definition",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "helper_cannot_bypass_resident_body_dispatch",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "/phases/0/nodes/7: use a current-record call for a resident body method",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "helper_excessive_instructions",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "Expression program exceeds 256 instructions",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "helper_excessive_function_bank",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "Graph helper declarations exceed the resident function-bank limit",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "extra_helper_keeps_body_methods",
+      "expected": "accept",
+      "outcome": "accepted",
+      "program_sha256": "fb6f43874d1c65c7b854fd1c6e8c9eab334d6b7286742a998cb460b5e283b19f",
+      "mutation_peak": 50,
+      "action_peak": 56,
+      "mutation_steps": 112,
+      "action_steps": 938,
+      "family_mapping_unchanged": true,
+      "records_unchanged": true,
+      "live_layout_metadata": {
+        "passed": true,
+        "mapped_calls_checked": 0,
+        "duplicated_policies_match": true
+      },
+      "complete_application_lowered": true,
+      "passed": true
+    },
+    {
+      "name": "unused_output_runtime_guard_is_retained",
+      "expected": "accept",
+      "outcome": "accepted",
+      "program_sha256": "9dff1c76d14b4bd5854359269a9d21023ef981aa16e0d19caf70a8e777ab878c",
+      "mutation_peak": 50,
+      "action_peak": 56,
+      "mutation_steps": 112,
+      "action_steps": 938,
+      "family_mapping_unchanged": true,
+      "records_unchanged": true,
+      "live_layout_metadata": {
+        "passed": true,
+        "mapped_calls_checked": 0,
+        "duplicated_policies_match": true
+      },
+      "complete_application_lowered": true,
+      "passed": true
+    },
+    {
+      "name": "liveness_large_accepted",
+      "expected": "accept",
+      "outcome": "accepted",
+      "program_sha256": "57670cea5142b110fdff1c38c93c2f8d81aae8fba48ba65ac4aeb2d136f363cb",
+      "mutation_peak": 50,
+      "action_peak": 172,
+      "mutation_steps": 112,
+      "action_steps": 1071,
+      "family_mapping_unchanged": true,
+      "records_unchanged": true,
+      "live_layout_metadata": {
+        "passed": true,
+        "mapped_calls_checked": 0,
+        "duplicated_policies_match": true
+      },
+      "complete_application_lowered": true,
+      "passed": true
+    },
+    {
+      "name": "liveness_overflow_atomic",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "Source graph's live values exceed the192-register value arena",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "node_count_limit_atomic",
+      "expected": "reject",
+      "outcome": "rejected",
+      "exception": "ValueError",
+      "message": "Source graph exceeds its2048-node-per-plan limit",
+      "definition_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "canonical_enzyme",
+      "expected": "accept",
+      "outcome": "accepted",
+      "program_sha256": "eafe1485722512a280d36e8315070a1a2aae85194e799f3210860532840a3c74",
+      "mutation_peak": 50,
+      "action_peak": 64,
+      "mutation_steps": 118,
+      "action_steps": 1118,
+      "family_mapping_unchanged": true,
+      "records_unchanged": true,
+      "live_layout_metadata": {
+        "passed": true,
+        "mapped_calls_checked": 6,
+        "duplicated_policies_match": true
+      },
+      "complete_application_lowered": true,
+      "passed": true
+    },
+    {
+      "name": "canonical_amplitude_extension",
+      "expected": "accept",
+      "outcome": "accepted",
+      "program_sha256": "9131b1495586a710e45addc56da720709761e62d981ec12a4a3942a19af00774",
+      "mutation_peak": 50,
+      "action_peak": 57,
+      "mutation_steps": 120,
+      "action_steps": 940,
+      "family_mapping_unchanged": true,
+      "records_unchanged": true,
+      "live_layout_metadata": {
+        "passed": true,
+        "mapped_calls_checked": 4,
+        "duplicated_policies_match": true
+      },
+      "complete_application_lowered": true,
+      "passed": true
+    },
+    {
+      "name": "authored_field_placement_retention_layout",
+      "expected": "accept",
+      "outcome": "accepted",
+      "program_sha256": "0a498f26eeef09145d3ee64244f51a46c7364d0e19a326ecce405e836f7b9b41",
+      "mutation_peak": 50,
+      "action_peak": 56,
+      "mutation_steps": 120,
+      "action_steps": 937,
+      "family_mapping_unchanged": true,
+      "records_unchanged": true,
+      "live_layout_metadata": {
+        "passed": true,
+        "mapped_calls_checked": 4,
+        "duplicated_policies_match": true
+      },
+      "complete_application_lowered": true,
+      "passed": true
+    }
+  ],
+  "poisoned_legacy_tapes": [
+    {
+      "profile": "core",
+      "normal_program_sha256": "a84cc6a69d169edde40bb99064fcc6f1759039fac962503ccb0e801777d89c46",
+      "poisoned_program_sha256": "a84cc6a69d169edde40bb99064fcc6f1759039fac962503ccb0e801777d89c46",
+      "program_bytes_identical": true,
+      "mutation_tapes_identical": true,
+      "action_tapes_identical": true,
+      "metadata_replaced": true,
+      "live_layout_metadata": {
+        "passed": true,
+        "mapped_calls_checked": 0,
+        "duplicated_policies_match": true
+      },
+      "passed": true
+    },
+    {
+      "profile": "enzyme",
+      "normal_program_sha256": "eafe1485722512a280d36e8315070a1a2aae85194e799f3210860532840a3c74",
+      "poisoned_program_sha256": "eafe1485722512a280d36e8315070a1a2aae85194e799f3210860532840a3c74",
+      "program_bytes_identical": true,
+      "mutation_tapes_identical": true,
+      "action_tapes_identical": true,
+      "metadata_replaced": true,
+      "live_layout_metadata": {
+        "passed": true,
+        "mapped_calls_checked": 6,
+        "duplicated_policies_match": true
+      },
+      "passed": true
+    },
+    {
+      "profile": "amplitude",
+      "normal_program_sha256": "9131b1495586a710e45addc56da720709761e62d981ec12a4a3942a19af00774",
+      "poisoned_program_sha256": "9131b1495586a710e45addc56da720709761e62d981ec12a4a3942a19af00774",
+      "program_bytes_identical": true,
+      "mutation_tapes_identical": true,
+      "action_tapes_identical": true,
+      "metadata_replaced": true,
+      "live_layout_metadata": {
+        "passed": true,
+        "mapped_calls_checked": 4,
+        "duplicated_policies_match": true
+      },
+      "passed": true
+    },
+    {
+      "profile": "authored_hadamard",
+      "normal_program_sha256": "0a498f26eeef09145d3ee64244f51a46c7364d0e19a326ecce405e836f7b9b41",
+      "poisoned_program_sha256": "0a498f26eeef09145d3ee64244f51a46c7364d0e19a326ecce405e836f7b9b41",
+      "program_bytes_identical": true,
+      "mutation_tapes_identical": true,
+      "action_tapes_identical": true,
+      "metadata_replaced": true,
+      "live_layout_metadata": {
+        "passed": true,
+        "mapped_calls_checked": 4,
+        "duplicated_policies_match": true
+      },
+      "passed": true
+    }
+  ],
+  "public_wrapper": {
+    "program_sha256": "a84cc6a69d169edde40bb99064fcc6f1759039fac962503ccb0e801777d89c46",
+    "graph_sha256": "8e7c5bc8431d5568705f53a12d698b0ec1b2c71aa1c05dba547de6e124963d22",
+    "source_graph_lowered": true,
+    "source_cycle_lowered": true,
+    "complete_application_lowered": true,
+    "status": "explicit_source_graph_lowered_numerical_evidence_recorded_separately",
+    "same_as_direct": true
+  },
+  "guard_retention": {
+    "unused_output_helper_handle": 55,
+    "function_opcodes": [
+      0,
+      17,
+      0
+    ],
+    "eager_call_plan_steps": [
+      893
+    ],
+    "require_opcode_retained": true,
+    "one_eager_call_retained": true,
+    "same_program_as_acceptance_case": true,
+    "passed": true
+  },
+  "metadata_only_revision": {
+    "previous_compiler_sha256": "05e150d7debdb64b99940cc3e02fa219e0d1f22f213f8b2483babf5015f04bad",
+    "previous_program_sha256": {
+      "canonical_core": "a84cc6a69d169edde40bb99064fcc6f1759039fac962503ccb0e801777d89c46",
+      "canonical_enzyme": "eafe1485722512a280d36e8315070a1a2aae85194e799f3210860532840a3c74",
+      "canonical_amplitude_extension": "9131b1495586a710e45addc56da720709761e62d981ec12a4a3942a19af00774"
+    },
+    "all_programs_unchanged": true
+  },
+  "summary": {
+    "cases": 48,
+    "passed": 48,
+    "accepted": 7,
+    "rejected": 41,
+    "poisoned_profiles_passed": 4,
+    "all_passed": true
+  }
+}

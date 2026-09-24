@@ -1,0 +1,213 @@
+"""Direct bounded mathematical/native experiment, retained as evidence.
+Run from repository root: Python -X utf8 -B - < this text.
+No expression interpreter is used as an independent mathematical oracle.
+"""
+from pathlib import Path
+from copy import deepcopy
+from datetime import datetime, timezone
+import hashlib, json, lzma, math, os, subprocess, time
+from local_lab import source_cycle as c, source_graph_program as gp, source_resident_v2 as r
+
+ROOT=Path.cwd(); OUT=ROOT/'output/source_graph_2026-09-24/matrix_audit'
+EXE=ROOT/'Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/bin/windows-resident-v2/dawnwood-resident-v2.exe'
+GRAPH=ROOT/'source_bindings/graphs/routed_matrix_conditioning_v0.1.json'
+MODEL,model_raw=c.ir.read_json(c.MODEL); CYCLE,cycle_raw=c.ir.read_json(c.CYCLE)
+graph,graph_raw=c.ir.read_json(GRAPH)
+THRESHOLDS={'scaled_vector_error':1e-6,'matrix_inverse_residual_max_abs':1e-6,
+            'scaled_error_definition':'Euclidean norm(actual-reference)/max(1,Euclidean norm(reference))'}
+ENV=os.environ.copy();ENV['DAWNWOOD_VALIDATION']='1';ENV['VK_LAYER_PATH']=str(ROOT/'tmp/rtx-toolchain/VulkanSDK/Bin')
+OUT.mkdir(parents=True,exist_ok=True)
+(OUT/'predeclared_thresholds.json').write_bytes(c.ir.json_bytes(THRESHOLDS))
+receipts=[]
+
+def save_json(name,value):
+    (OUT/name).write_bytes(c.ir.json_bytes(value))
+
+def save_definition(name,d):
+    folder=OUT/name;folder.mkdir(exist_ok=False)
+    raw,manifest=r.compile_definition(MODEL,d)
+    (folder/'program.bin').write_bytes(raw)
+    for fname,obj in [('definition.json',d),('manifest.json',manifest)]:
+        data=c.ir.json_bytes(obj);(folder/(fname+'.xz')).write_bytes(lzma.compress(data))
+    return folder/'program.bin',manifest
+
+def run_pair(name,source,epochs,expected=0):
+    folder=OUT/name;folder.mkdir(exist_ok=False)
+    reports={};outputs={}
+    for backend in ['cpu','vulkan']:
+        output=folder/(backend+'.bin')
+        command=[str(EXE),'run','--input',str(source),'--output',str(output),'--backend',backend,'--epochs',str(epochs)]
+        if backend=='vulkan':command+=['--device','RTX 5070 Ti']
+        started=time.perf_counter();run=subprocess.run(command,capture_output=True,env=ENV)
+        elapsed=time.perf_counter()-started
+        (folder/(backend+'.stdout.log')).write_bytes(run.stdout)
+        (folder/(backend+'.stderr.log')).write_bytes(run.stderr)
+        report=json.loads(run.stdout.decode('utf-8'));reports[backend]=report
+        receipt={'command':command,'returncode':run.returncode,'wall_seconds':elapsed,'report':report,
+                 'input_sha256':c.ir.sha256(Path(source).read_bytes()),'output_sha256':c.ir.sha256(output.read_bytes()) if output.exists() else None}
+        (folder/(backend+'.execution.json')).write_bytes(c.ir.json_bytes(receipt))
+        if run.returncode!=(0 if expected==0 else 3):raise AssertionError((name,backend,receipt))
+        outputs[backend]=output.read_bytes()
+    assert outputs['cpu']==outputs['vulkan'],name
+    decoded=r.decode_checkpoint(outputs['cpu'])
+    assert all(i['status']==expected for i in decoded['instances']),name
+    vr=reports['vulkan']
+    assert vr['validation_enabled'] and vr['validation_errors']==0 and vr['validation_warnings']==0,vr
+    row={'name':name,'epochs':epochs,'count':decoded['count'],'status':expected,
+         'complete_checkpoints_bit_identical':True,'validation_enabled':True,'validation_errors':0,'validation_warnings':0,
+         'compared_instance_words':decoded['count']*decoded['instance_words']}
+    receipts.append(row);save_json('paired_summary.json',receipts)
+    print(json.dumps(row),flush=True)
+    return decoded,outputs['cpu']
+
+def inputs(d):
+    # Preserve source seed wavefront. Vary the chart, neck, and external phase.
+    for i,instance in enumerate(d['instances']):
+        s=instance['state'];s['surface_u']=(i%17)/17;s['surface_v']=(i//17)/17
+        s['neck']=i%2;s['phase']=((i%13)-6)/8
+        # The original selected six-primitive route is adjusted for neck.
+        for bit,value in enumerate([0,1,0,0]):s[f'route_b{bit}']=value^(i%2)
+    return d
+
+definition=inputs(gp.build_definition(MODEL,CYCLE,graph,257))
+source,manifest=save_definition('application',definition)
+full={}
+for epochs in [1,8,64]:
+    full[epochs]=run_pair('application_'+str(epochs),source,epochs)
+
+core_graph,_=c.ir.read_json(ROOT/'source_bindings/graphs/cycle_v0.1.json')
+control=inputs(gp.build_definition(MODEL,CYCLE,core_graph,257))
+control_source,_=save_definition('unconditioned_control',control)
+control_result,_=run_pair('unconditioned_control_1',control_source,1)
+effect=[]
+for i,(before,after) in enumerate(zip(control_result['instances'],full[1][0]['instances'])):
+    effect.append({'lane':i,'returned_pair_changed':before['state_bits'][3:7]!=after['state_bits'][3:7],
+                   'T_unchanged_at_first_epoch':before['state_bits'][29:33]==after['state_bits'][29:33],
+                   'A_unchanged_at_first_epoch':before['state_bits'][33:37]==after['state_bits'][33:37]})
+save_json('full_application_effect.json',{'rows':effect,'changed_pairs':sum(x['returned_pair_changed'] for x in effect),
+  'meaning':'Conditioned graph adds one inverse application before the existing pinion inverse application; its effective wave map includes A twice plus history/field and return rotation.'})
+
+# Instrument the exact lowered plan. Capture live operands/results immediately
+# before/after their real calls; no function, route, mutation or call is replaced.
+# The diagnostic checkpoint state is deliberately not an application continuation.
+nodes={n['id']:n for ph in graph['phases'] for n in ph['nodes']}
+calls={entry['graph_node']:entry for entry in definition['source']['action_calls']}
+def find(key):
+    return next(n for n in nodes.values() if n['op']=='call_record' and n['slot']=='body'
+                and n.get('contract',{}).get('key',n.get('record',{}).get('key'))==key)
+captures=[]
+def capture(node,which,names,prefix):
+    call=calls[node['id']]
+    if which=='input':
+        ordered=list(node['args']);base=call['inputs'][0];at=call['step']
+    else:
+        if node['op']=='call_helper':fn=definition['functions'][node['function']]
+        else:
+            rec=next(x for x in definition['records'] if x['key']==node.get('contract',{}).get('key',node.get('record',{}).get('key')))
+            fn=definition['functions'][definition['families'][rec['body']]['methods'][str(node['role'])]]
+        ordered=list(fn['binding']['outputs']);base=call['output_base'];at=call['step']+1
+    for name in names:captures.append({'name':prefix+name,'at':at,'register':base+ordered.index(name)})
+
+t=find('T_transform');a=find('inverse_T');p=find('pinion');ret=find('return');conditioned=nodes['matrix_conditioned_pair']
+capture(t,'input',['ar','ai','br','bi','crystal_ar','field_distance'],'T_in_')
+capture(t,'output',['t00','t01','t10','t11'],'')
+capture(a,'input',['field_distance'],'inverse_')
+capture(a,'output',['a00','a01','a10','a11'],'')
+capture(conditioned,'input',['ar','ai','br','bi'],'raw_')
+capture(conditioned,'output',c.PAIR,'conditioned_')
+capture(p,'input',['B0','B1','B2','B3','field_distance'],'pinion_')
+capture(ret,'input',['field_distance','neck','parity'],'return_')
+capture(ret,'output',c.PAIR,'final_')
+for prefix in ['T','A']:
+    n=next(n for n in nodes.values() if n['id']==f'matrix_route_{prefix}_5')
+    capture(n,'output',['index'],f'route_{prefix}_')
+assert len(captures)==37
+diagnostic=deepcopy(definition);plan=[]
+for step,row in enumerate(definition['action_plan']):
+    for index,cap in enumerate(captures):
+        if cap['at']==step:plan.append([6,index,cap['register'],1,0,0,0,0])
+    if row[0]!=6:plan.append(row)
+for index in range(len(captures),44):
+    plan.append([1,192,index,1,0,0,0,0]);plan.append([6,index,192,1,0,0,0,0])
+diagnostic['action_plan']=plan
+diagnostic_source,_=save_definition('diagnostic',diagnostic)
+diag,_=run_pair('diagnostic_1',diagnostic_source,1)
+save_json('diagnostic_capture_map.json',{'capture_state_slots':captures,'state_words37_to43':'unchanged old values',
+ 'scope':'Actual graph call operands/results captured during the same old-mutation and published-action transaction. Only state writes differ; this diagnostic is run for one epoch only.'})
+
+def scaled(actual,reference):
+    return math.sqrt(sum((a-b)**2 for a,b in zip(actual,reference)))/max(1,math.sqrt(sum(x*x for x in reference)))
+def mat_apply(A,w):
+    return [A[0]*w[0]+A[1]*w[2], A[0]*w[1]+A[1]*w[3],
+            A[2]*w[0]+A[3]*w[2], A[2]*w[1]+A[3]*w[3]]
+rows=[]
+for lane,instance in enumerate(diag['instances']):
+    v=dict(zip((x['name'] for x in captures),instance['state']))
+    w=[v['T_in_'+n] for n in c.PAIR]
+    off=.02*math.sin(v['T_in_crystal_ar'])
+    expected_T=[1+.1*math.hypot(w[0],w[1])+.01*abs(v['T_in_field_distance']),off,off,
+                1+.1*math.hypot(w[2],w[3])+.01*abs(v['T_in_field_distance'])]
+    T=[v[n] for n in ['t00','t01','t10','t11']];A=[v[n] for n in ['a00','a01','a10','a11']]
+    det=T[0]*T[3]-T[1]*T[2];expected_A=[T[3]/det,-T[1]/det,-T[2]/det,T[0]/det]
+    residual=max(abs(T[0]*A[0]+T[1]*A[2]-1),abs(T[0]*A[1]+T[1]*A[3]),
+                 abs(T[2]*A[0]+T[3]*A[2]),abs(T[2]*A[1]+T[3]*A[3]-1))
+    raw=[v['raw_'+n] for n in c.PAIR];actual_conditioned=[v['conditioned_'+n] for n in c.PAIR]
+    expected_conditioned=mat_apply(A,raw)
+    pinion_handle=instance['records'][5]['body_handle']
+    pinion_name=list(definition['families'])[pinion_handle]
+    assert pinion_name in ['pinion','pinion_reverse'];sign=1 if pinion_name=='pinion' else -1
+    returned=mat_apply(A,actual_conditioned)
+    returned=[returned[i]+.02*v[f'pinion_B{i}']+sign*.001*v['pinion_field_distance'] for i in range(4)]
+    if v['return_neck']:returned=returned[2:]+returned[:2]
+    theta=.01*(v['return_field_distance']+v['return_parity']);cs,sn=math.cos(theta),math.sin(theta)
+    expected_final=[cs*returned[0]-sn*returned[1],sn*returned[0]+cs*returned[1],
+                    cs*returned[2]-sn*returned[3],sn*returned[2]+cs*returned[3]]
+    actual_final=[v['final_'+n] for n in c.PAIR]
+    row={'lane':lane,'captures':v,'T_scaled_error':scaled(T,expected_T),'inverse_scaled_error':scaled(A,expected_A),
+         'inverse_residual_max_abs':residual,'conditioned_scaled_error':scaled(actual_conditioned,expected_conditioned),
+         'final_pair_scaled_error':scaled(actual_final,expected_final),'determinant':det,
+         'inverse_branch':'adjugate' if v['inverse_field_distance']<0 else 'schur',
+         'route_indices_correct':v['route_T_index']==19 and v['route_A_index']==18,
+         'final_pair_matches_full_application_bits':instance['state_bits'][31:35]==full[1][0]['instances'][lane]['state_bits'][3:7]}
+    assert row['route_indices_correct'] and row['final_pair_matches_full_application_bits'],row
+    assert residual<=THRESHOLDS['matrix_inverse_residual_max_abs'],row
+    for key in ['T_scaled_error','inverse_scaled_error','conditioned_scaled_error','final_pair_scaled_error']:
+        assert row[key]<=THRESHOLDS['scaled_vector_error'],row
+    rows.append(row)
+save_json('mathematical_comparison.json',{'thresholds_predeclared':THRESHOLDS,'rows':rows,
+  'maxima':{key:max(x[key] for x in rows) for key in ['T_scaled_error','inverse_scaled_error','inverse_residual_max_abs','conditioned_scaled_error','final_pair_scaled_error']},
+  'inverse_branch_counts':{branch:sum(x['inverse_branch']==branch for x in rows) for branch in ['adjugate','schur']},
+  'all_route_indices_correct':True,'all_diagnostic_final_pairs_equal_full_application_bits':True,
+  'oracle':'Independent Python binary64 hypot/sin/cos plus explicit 2x2 adjugate and complex-channel matrix products. No XIR expression evaluation.'})
+
+# Both wrong paths exist in the catalogue, have the requested role0, and have
+# different operand signatures. Therefore status11 identifies a typed signature
+# mismatch, rather than a missing source index or a missing role.
+negative=[]
+for prefix,wrong in [('T',18),('A',19)]:
+    bad=deepcopy(graph)
+    outputs=bad['functions']['graph_matrix_route_bits']['binding']['outputs']
+    other='A' if prefix=='T' else 'T'
+    for bit in range(4):outputs[f'{prefix}_b{bit}']=deepcopy(outputs[f'{other}_b{bit}'])
+    wrong_definition=inputs(gp.build_definition(MODEL,CYCLE,bad,257))
+    wrong_source,_=save_definition(f'wrong_{prefix}_route',wrong_definition)
+    failed,raw=run_pair(f'wrong_{prefix}_route_1',wrong_source,1,11)
+    initial=r.decode_checkpoint(wrong_source.read_bytes())
+    matches=[]
+    expected_call=next(x for x in wrong_definition['source']['action_calls'] if x['graph_node']==(t if prefix=='T' else a)['id'])
+    for old,new in zip(initial['instances'],failed['instances']):
+        matches.append(old['state_bits']==new['state_bits'] and old['records']==new['records'] and new['epoch']==old['epoch']==0)
+        assert new['failure_phase']==2 and new['failure_step']==expected_call['step'],new
+    assert all(matches)
+    negative.append({'redirected_role':prefix,'wrong_existing_source_index':wrong,'status':11,'failed_call_step':expected_call['step'],
+       'all257_state_and_record_images_rolled_back':True,'epoch_remains_zero':True,
+       'cause':'Existing dynamically selected record has role0 but its function signature differs from the declared call contract.'})
+save_json('wrong_interface_rollback.json',negative)
+save_json('summary.json',{'created_utc':datetime.now(timezone.utc).isoformat(),'thresholds':THRESHOLDS,
+  'paired_workloads':len(receipts),'returned_instance_observations':sum(x['count'] for x in receipts),
+  'all_cpu_gpu_complete_checkpoints_equal':True,'mathematical_cases':len(rows),'source_graph_sha256':c.ir.sha256(graph_raw),
+  'source_model_sha256':c.ir.sha256(model_raw),'source_cycle_sha256':c.ir.sha256(cycle_raw),'native_executable_sha256':c.ir.sha256(EXE.read_bytes()),
+  'source_hashes':{str(Path(module.__file__).relative_to(ROOT)):c.ir.sha256(Path(module.__file__).read_bytes()) for module in [gp,gp.graph_compiler,gp.graph_types,gp.fidelity,gp.author,r]},
+  'application_graph_changes_returned_pairs':sum(x['returned_pair_changed'] for x in effect),'negative_cases':negative,
+  'mathematical_maxima':{key:max(x[key] for x in rows) for key in ['T_scaled_error','inverse_scaled_error','inverse_residual_max_abs','conditioned_scaled_error','final_pair_scaled_error']}})
+print('MATRIX AUDIT COMPLETE',flush=True)

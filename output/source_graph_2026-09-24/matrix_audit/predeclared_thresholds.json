@@ -1,0 +1,5 @@
+{
+  "scaled_vector_error": 1e-06,
+  "matrix_inverse_residual_max_abs": 1e-06,
+  "scaled_error_definition": "Euclidean norm(actual-reference)/max(1,Euclidean norm(reference))"
+}

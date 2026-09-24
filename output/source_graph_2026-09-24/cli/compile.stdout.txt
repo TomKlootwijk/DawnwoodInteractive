@@ -1,0 +1,11 @@
+{
+  "output": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_graph_2026-09-24\\cli\\enzyme",
+  "profile": "DWI-SOURCE-GRAPH-0.1",
+  "program_sha256": "540e0f48507f419d1ac37d98cc263e70bdd1e9ecf2e325eef81ceba6809c1b71",
+  "bytes": 122228,
+  "instances": 8,
+  "records": 31,
+  "state_width": 64,
+  "mutation_steps": 118,
+  "action_steps": 1118
+}

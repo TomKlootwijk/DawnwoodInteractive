@@ -1,0 +1,20 @@
+{
+  "command": [
+    "cmd",
+    "/d",
+    "/c",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood-Graph.cmd",
+    "run",
+    "--backend",
+    "vulkan",
+    "--epochs",
+    "128",
+    "--input",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_graph_2026-09-24\\cli\\enzyme\\program.bin",
+    "--output",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_graph_2026-09-24\\cli\\enzyme\\vulkan.bin",
+    "--device",
+    "RTX 5070 Ti"
+  ],
+  "exit_code": 0
+}

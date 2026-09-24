@@ -1,0 +1,20 @@
+[
+  {
+    "redirected_role": "T",
+    "wrong_existing_source_index": 18,
+    "status": 11,
+    "failed_call_step": 831,
+    "all257_state_and_record_images_rolled_back": true,
+    "epoch_remains_zero": true,
+    "cause": "Existing dynamically selected record has role0 but its function signature differs from the declared call contract."
+  },
+  {
+    "redirected_role": "A",
+    "wrong_existing_source_index": 19,
+    "status": 11,
+    "failed_call_step": 878,
+    "all257_state_and_record_images_rolled_back": true,
+    "epoch_remains_zero": true,
+    "cause": "Existing dynamically selected record has role0 but its function signature differs from the declared call contract."
+  }
+]

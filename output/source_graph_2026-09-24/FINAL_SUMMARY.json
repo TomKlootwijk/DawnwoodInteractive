@@ -1,0 +1,20 @@
+{
+  "paired_workloads": 51,
+  "healthy_pairs": 49,
+  "intentional_failure_pairs": 2,
+  "compared_instance_words": 5902446,
+  "committed_instance_epochs_per_backend": 750955,
+  "all_complete_paired_checkpoints_identical": true,
+  "validation_errors": 0,
+  "validation_warnings": 0,
+  "compiler_cases": 48,
+  "compiler_atomic_rejections": 41,
+  "structural_negative_cases": 18,
+  "structural_positive_controls": 4,
+  "saturation_instance_cycles": 67633152,
+  "saturation_compared_mutable_words": 26881536,
+  "saturation_word_differences": 0,
+  "saturation_max_GPU_percent": 100.0,
+  "saturation_max_temperature_C": 71.0,
+  "scope": "Paired total includes one diagnostic matrix capture and two deliberate failing-interface pairs, plus actual8-instanceCLI. Saturation is additional replica load, separately counted. No arithmetic guarantee or application-speedup claim."
+}

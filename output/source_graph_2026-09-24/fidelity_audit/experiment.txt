@@ -1,0 +1,113 @@
+"""Retained direct structural audit; no numerical execution or test-suite entry.
+
+Run this text file with Python -X utf8 -B. It uses only adjacent retained inputs
+and the captured checker, so later repository edits do not change its inputs.
+"""
+from copy import deepcopy
+from datetime import datetime, timezone
+from pathlib import Path
+import hashlib
+import json
+import lzma
+import types
+
+OUT = Path(__file__).resolve().parent
+sha = lambda raw: hashlib.sha256(raw).hexdigest()
+read = lambda name: json.loads((OUT / name).read_text(encoding="utf-8"))
+f = types.ModuleType("retained_fidelity_checker")
+checker = OUT / "source_graph_fidelity.py.txt"
+exec(compile(checker.read_text(encoding="utf-8"), str(checker), "exec"), f.__dict__)
+cycle = read("source_cycle.json")
+loaded = {edition: (json.loads(lzma.decompress((OUT / (edition + "_definition.json.xz")).read_bytes()).decode("utf-8")),
+                    read(edition + "_graph.json")) for edition in ("core", "enzyme", "amplitude")}
+rows = []
+
+
+def nodes(graph):
+    return [node for phase in graph["phases"] for node in phase["nodes"]]
+
+
+def call(graph, key, role=0):
+    return next(node for node in nodes(graph) if node.get("op") == "call_record"
+                and node.get("slot") == "body" and node.get("record") == {"key": key}
+                and node.get("role") == role)
+
+
+def mutator(graph):
+    return next(node for node in graph["mutation"]["nodes"] if node.get("slot") == "body"
+                and node.get("record") == {"key": "mutation"})
+
+
+def literal(kind, value=0):
+    return {"literal": value, "type": kind}
+
+
+def probe(name, edition, edit, expected="reject"):
+    definition, source = loaded[edition]
+    graph = deepcopy(source)
+    edit(graph)
+    row = {"name": name, "edition": edition, "expected": expected,
+           "edited_graph_semantic_sha256": sha(json.dumps(graph, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8"))}
+    try:
+        evidence = f.audit_graph(definition, cycle, graph)
+        row.update(outcome="accepted", structural_passed=evidence["passed"])
+    except ValueError as error:
+        row.update(outcome="rejected", exception="ValueError", message=str(error))
+    row["passed"] = row["outcome"] == ("rejected" if expected == "reject" else "accepted")
+    rows.append(row)
+    print(json.dumps(row, ensure_ascii=False))
+
+
+for edition in loaded:
+    probe("unchanged_" + edition, edition, lambda graph: None, "accept")
+
+probe("old action bank", "core", lambda g: call(g, "phi").update(bank="old"))
+probe("published mutation bank", "core", lambda g: g["mutation"]["nodes"][0].update(bank="published"))
+probe("missing phase", "core", lambda g: g["phases"].pop(2))
+probe("previous B disconnected", "core", lambda g: call(g, "phase_history")["args"].update(B2=literal("history_scalar")))
+probe("source jitter disconnected", "core", lambda g: call(g, "split")["args"].update(jitter=literal("bit")))
+probe("source interval disconnected", "core", lambda g: call(g, "return")["args"].update(dt=literal("interval", .02)))
+probe("old K feedback disconnected", "core", lambda g: call(g, "klein")["args"].update(feedback_orientation=literal("bit", 1)))
+probe("PHI replaced by constants", "core", lambda g: call(g, "split")["args"].update(
+    rho0=literal("log_radius"), theta0=literal("phase"), rho1=literal("log_radius"), theta1=literal("phase")))
+probe("new matrix return disconnected", "core", lambda g: g["returns"].update(A01=literal("matrix_scalar")))
+probe("wave history return disconnected", "core", lambda g: g["returns"].update(previous_ai=literal("amplitude")))
+
+
+def bypass_yup(graph):
+    derivative = [node for node in nodes(graph) if node.get("slot") == "body"
+                  and node.get("record") == {"key": "rk4"} and node.get("role") == 1][-1]
+    call(graph, "rk4", 2)["args"].update({f"k4_{i}": {"node": derivative["id"], "output": name}
+                                       for i, name in enumerate(f.PAIR)})
+
+
+probe("RK k4 bypasses Yup", "core", bypass_yup)
+probe("old mutation body disconnected", "core", lambda g: mutator(g)["args"].update(old_body=literal("body_handle", 1)))
+probe("old mutation target field disconnected", "core", lambda g: mutator(g)["args"].update(target_field=literal("carrier_distance")))
+probe("catalogue retained target index constant", "amplitude", lambda g: g["mutation"]["nodes"][-1]["args"].update(source_index=literal("index", 31)))
+probe("catalogue handle policy bypass", "amplitude", lambda g: g["mutation"]["returns"].update(body={"node": "mutation_mutation_body_role0_10", "output": "body_handle"}))
+probe("enzyme old chemical feedback disconnected", "enzyme", lambda g: mutator(g)["args"].update(domain_accepted=literal("bit")))
+probe("enzyme incumbent disconnected", "enzyme", lambda g: call(g, "blend", 103)["args"].update(incumbent_y0=literal("domain_coordinate")))
+probe("enzyme returned projection disconnected", "enzyme", lambda g: g["returns"].update(enzyme_projection_distance=literal("domain_distance")))
+
+
+def extra_helper(graph):
+    graph["phases"][-1]["nodes"].append({"id": "extra.diagnostic.with.dots", "op": "call_helper",
+        "function": "sum_phases", "args": {"a": {"state": "phase"}, "b": {"state": "phase_previous"}}})
+
+
+probe("compatible extra helper with dotted identity", "core", extra_helper, "accept")
+input_names = ["experiment.txt", "source_graph_fidelity.py.txt", "source_cycle.json",
+               *[edition + suffix for edition in loaded for suffix in ("_graph.json", "_definition.json.xz")]]
+report = {"profile": "DWI-SOURCE-GRAPH-FIDELITY-DIRECT-AUDIT-0.1",
+          "timestamp_utc": datetime.now(timezone.utc).isoformat(),
+          "scope": "Independent direct structural API checks only. No native execution, GPU use, numerical sensitivity proof or arbitrary graph completeness proof.",
+          "reconstruction": "Repeats the18 earlier in-memory broken-edge edits, with nominally typed replacement literals, against retained final campaign definitions and the captured checker. Three unchanged graphs and one added helper are positive controls.",
+          "inputs": {name: {"sha256": sha((OUT / name).read_bytes()), "bytes": (OUT / name).stat().st_size} for name in input_names},
+          "negative_cases": sum(row["expected"] == "reject" for row in rows),
+          "positive_cases": sum(row["expected"] == "accept" for row in rows),
+          "all_passed": all(row["passed"] for row in rows), "cases": rows}
+(OUT / "results.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+print(json.dumps({"all_passed": report["all_passed"], "negative_cases": report["negative_cases"], "positive_cases": report["positive_cases"]}))
+if not report["all_passed"]:
+    raise SystemExit(1)

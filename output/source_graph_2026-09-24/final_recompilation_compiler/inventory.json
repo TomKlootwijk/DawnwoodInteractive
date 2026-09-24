@@ -1,0 +1,75 @@
+{
+  "profile": "DWI-SOURCE-GRAPH-0.1",
+  "files": {
+    "local_lab/source_catalogue_extension.py": {
+      "sha256": "c1fb4fe505e5dc1316bb6b30d12f44f185456239fd8931a72ced7054598afddd",
+      "bytes": 22973,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_catalogue_extension.py"
+    },
+    "local_lab/source_cycle.py": {
+      "sha256": "b8bb4255b19e0e53d664449addc984b6c0c44ed795a3f78bfa8190d848ab9f51",
+      "bytes": 42804,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_cycle.py"
+    },
+    "local_lab/source_enzyme.py": {
+      "sha256": "2875592287d4905881422da819e55068cab9b4b2b20e985a1b673168a6419911",
+      "bytes": 26480,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_enzyme.py"
+    },
+    "local_lab/source_graph.py": {
+      "sha256": "428f47db32022dc6f3200327bd74e0ecc7b12d4f4d11754443ebc37978ab7549",
+      "bytes": 27164,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_graph.py"
+    },
+    "local_lab/source_graph_fidelity.py": {
+      "sha256": "40bb8ada4863f3db861faaae274d42c3d694cddedaa862eea1cdfd8afdd764bf",
+      "bytes": 33894,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_graph_fidelity.py"
+    },
+    "local_lab/source_graph_program.py": {
+      "sha256": "6264470048504142292ae3e5f88fc5e5052204a8ba9b0297d4d8a55bac341635",
+      "bytes": 6093,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_graph_program.py"
+    },
+    "local_lab/source_graph_types.py": {
+      "sha256": "1efb287d32f93004e438cb5c6938da9eaa7d06d682329d926c9cbeb7e6fedb0b",
+      "bytes": 16553,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_graph_types.py"
+    },
+    "local_lab/source_ir.py": {
+      "sha256": "6ba9b22f04da0034b2c3b3f2878566907df0353e2dc5ba05326cec0ea656b6b9",
+      "bytes": 20076,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_ir.py"
+    },
+    "local_lab/source_ir_v2.py": {
+      "sha256": "3e7f528c14bbcb59b2e2df877b1b47c2adedaa37b2d454305bcebf1a03befe2a",
+      "bytes": 3722,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_ir_v2.py"
+    },
+    "local_lab/source_program.py": {
+      "sha256": "c91049fd6eee0c9c89b2489dc2e1d56464f9ee4eec0e69e9b9edb1be10662fa9",
+      "bytes": 8199,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_program.py"
+    },
+    "local_lab/source_resident_v2.py": {
+      "sha256": "311206687ae0c1b9b1a76dfdaec295761836a2f6e1c4f0afac4994de1c6070d7",
+      "bytes": 45624,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_resident_v2.py"
+    },
+    "local_lab/source_slot_bindings.py": {
+      "sha256": "385016ddda79cf8050d4fbfddb8b6e8e1aeb2bde8981997134e1b8dcd12689db",
+      "bytes": 26678,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/local_lab/source_slot_bindings.py"
+    },
+    "output/source_graph_2026-09-24/final_recompilation_experiment.txt": {
+      "sha256": "23aa1a5b08620ec1096c2c68d5b390f99fc792b1990ce399cf7a582ab4d31672",
+      "bytes": 16948,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/output/source_graph_2026-09-24/final_recompilation_experiment.txt"
+    },
+    "source_bindings/resident_v0.1.json": {
+      "sha256": "5373231ef7a4381ec71ba598979ca6bb404f6386e2734cddb8d05cc891976587",
+      "bytes": 886455,
+      "retained_file": "output/source_graph_2026-09-24/final_recompilation_compiler/source_bindings/resident_v0.1.json"
+    }
+  }
+}

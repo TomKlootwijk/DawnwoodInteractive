@@ -1,0 +1,15 @@
+{
+  "command": [
+    "cmd",
+    "/d",
+    "/c",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood-Graph.cmd",
+    "results",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_graph_2026-09-24\\cli\\enzyme\\vulkan.bin",
+    "--manifest",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_graph_2026-09-24\\cli\\enzyme\\manifest.json",
+    "--output",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_graph_2026-09-24\\cli\\enzyme\\results.json"
+  ],
+  "exit_code": 0
+}

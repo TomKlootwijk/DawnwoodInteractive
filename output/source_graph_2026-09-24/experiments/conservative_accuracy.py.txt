@@ -1,0 +1,29 @@
+from pathlib import Path
+import json, sys
+sys.path.insert(0, str(Path.cwd()))
+# Run from repository root, with enzyme_reference_oracle.py from this directory
+# available on sys.path (or its original ignored tmp location).
+sys.path.insert(0, str(Path.cwd() / 'tmp'))
+from enzyme_reference_oracle import active_projection
+from local_lab import source_resident_v2 as resident, source_ir as ir
+
+base = Path('output/source_graph_2026-09-24')
+decoded = resident.read_checkpoint(base / 'runs/conservative_enzyme_128/cpu.bin')
+rows = []
+for index, instance in enumerate(decoded['instances']):
+    observed = instance['state'][44:48]
+    actual = [value / 10 for value in instance['state'][54:58]]
+    reference = active_projection(observed, 1, 10)
+    errors = [abs(a - float(b)) for a, b in zip(actual, reference['species'])]
+    rows.append({'instance': index, 'packed_observations_normalized': observed,
+                 'returned_species_normalized': actual,
+                 'exact_reference_species': [str(value) for value in reference['species']],
+                 'maximum_species_error_normalized': max(errors),
+                 'reference_active_set_mask': reference['mask']})
+report = {'count': len(rows), 'epochs': 128,
+          'maximum_species_error_normalized': max(row['maximum_species_error_normalized'] for row in rows),
+          'species_order': ['E', 'S', 'ES', 'P'],
+          'reference': 'Independent rational active-set projection of the packed normalized observations onto the four-species nonnegative conservation polytope. No expression AST evaluation. This sampled error is reported without an exact-nearest claim.',
+          'rows': rows}
+assert ir.json_bytes(report) == (base / 'conservative_enzyme_accuracy.json').read_bytes()
+print(json.dumps({key: value for key, value in report.items() if key != 'rows'}))

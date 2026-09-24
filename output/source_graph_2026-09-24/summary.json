@@ -1,0 +1,155 @@
+{
+  "healthy_pairs": 22,
+  "compared_instance_words": 2293362,
+  "instance_epochs_per_backend": 629649,
+  "default_edition_equivalence": [
+    {
+      "profile": "core",
+      "epochs": 1,
+      "reference": "output\\source_authoring_2026-09-24\\runs\\baseline_1\\cpu.bin",
+      "same_complete_mutable_instance_images": true,
+      "reference_sha256": "c5f75115394b495dbcf8e5a1fa4741065a0bb6b16ce1b4d85d721f1039aceeb1",
+      "graph_sha256": "9e1d5038c9db9fe19cc76524e0d6a2f8a5d15c4ba7fa96c26578079b7bd4d870",
+      "compared_words": 102426
+    },
+    {
+      "profile": "core",
+      "epochs": 2,
+      "reference": "output\\source_authoring_2026-09-24\\runs\\baseline_2\\cpu.bin",
+      "same_complete_mutable_instance_images": true,
+      "reference_sha256": "2a27a358dab6f7ea94e6655ae7deca4ac3409d85362aa4107ad3dc584e5d1ee2",
+      "graph_sha256": "900667ebb904312b9e5ea37d6c80ded50e74731d0d8d8b1485ad9f3e7a57f243",
+      "compared_words": 102426
+    },
+    {
+      "profile": "core",
+      "epochs": 64,
+      "reference": "output\\source_authoring_2026-09-24\\runs\\baseline_64\\cpu.bin",
+      "same_complete_mutable_instance_images": true,
+      "reference_sha256": "387dc7dbc144a4e35eea5f77cf146e113a2bae7eaf68268552f523aa4f1707b4",
+      "graph_sha256": "e2b142948e89652b4b4fffb1b687178356efe729a948de495c9b41eb37d9c28b",
+      "compared_words": 102426
+    },
+    {
+      "profile": "enzyme",
+      "epochs": 1,
+      "reference": "output\\resident_enzyme_2026-09-24\\runs\\epochs_1\\cpu.bin",
+      "same_complete_mutable_instance_images": true,
+      "reference_sha256": "45f76e20d9c9ead46d544efe71ae4cd862d60990b3b54be463cc4f353a4892f8",
+      "graph_sha256": "1da22832ff3bd424009407db2575c0667745b79bc11927cbe3ac1818a3592ea2",
+      "compared_words": 105006
+    },
+    {
+      "profile": "enzyme",
+      "epochs": 2,
+      "reference": "output\\resident_enzyme_2026-09-24\\runs\\epochs_2\\cpu.bin",
+      "same_complete_mutable_instance_images": true,
+      "reference_sha256": "dc9eb804ee801f6e0cd9fb11733dcea15d3c65c3b59d514b69620e024761b292",
+      "graph_sha256": "a61fc73340d139705a1e11370ef17a7fde6dbd28742e1b8b3fadfc50774830be",
+      "compared_words": 105006
+    },
+    {
+      "profile": "enzyme",
+      "epochs": 8,
+      "reference": "output\\resident_enzyme_2026-09-24\\runs\\epochs_8\\cpu.bin",
+      "same_complete_mutable_instance_images": true,
+      "reference_sha256": "728aa2709c1380da7abd171e421043f809b5fe9ee3c04ce9cf50f6ad33cdf11d",
+      "graph_sha256": "a9909877c06f6f5c4aa0ec7333c32fa53f2f27e5086493c0f364ebc4b765853a",
+      "compared_words": 105006
+    },
+    {
+      "profile": "enzyme",
+      "epochs": 64,
+      "reference": "output\\resident_enzyme_2026-09-24\\runs\\epochs_64\\cpu.bin",
+      "same_complete_mutable_instance_images": true,
+      "reference_sha256": "f21c66480a2f72cad4f45df7113ffdec3c97cafac67bc4b4bc03723136da4b05",
+      "graph_sha256": "29bd712b12dbc3e4e529ec4da50c580e35c3e234545c258957616daa300ad4d0",
+      "compared_words": 105006
+    },
+    {
+      "profile": "enzyme",
+      "epochs": 128,
+      "reference": "output\\resident_enzyme_2026-09-24\\runs\\epochs_128\\cpu.bin",
+      "same_complete_mutable_instance_images": true,
+      "reference_sha256": "0c5b97a819c7fe31be940feb69da63fff5408efc47d1b23768bddfc711bfcadc",
+      "graph_sha256": "d946f5e1e5d7fd99d0eab1dbc5e984250a7fd9cc2efbb63d23f9ae46c9e741cd",
+      "compared_words": 105006
+    },
+    {
+      "profile": "enzyme",
+      "epochs": 2048,
+      "reference": "output\\resident_enzyme_2026-09-24\\runs\\epochs_2048\\cpu.bin",
+      "same_complete_mutable_instance_images": true,
+      "reference_sha256": "3b7523cf504fb124bbb27ac30781718f3ec84f99804f81c18371b753640cc1ef",
+      "graph_sha256": "f831a343723b1e2a79c28580af2a7c3207a0c06f60e4b878f08cf6ccf756ec16",
+      "compared_words": 105006
+    },
+    {
+      "profile": "amplitude",
+      "epochs": 1,
+      "reference": "output\\source_authoring_2026-09-24\\runs\\amplitude_1\\cpu.bin",
+      "same_complete_mutable_instance_images": true,
+      "reference_sha256": "f787dc4f16d298aa8aec48e52123274e66328a8b5cca86634e9e1f43da756440",
+      "graph_sha256": "8b06de0246b12a3599bf376deb243f2b68ce685afedea2bfbfe9eaceeccf75bf",
+      "compared_words": 105651
+    },
+    {
+      "profile": "amplitude",
+      "epochs": 2,
+      "reference": "output\\source_authoring_2026-09-24\\runs\\amplitude_2\\cpu.bin",
+      "same_complete_mutable_instance_images": true,
+      "reference_sha256": "dc802568fb534fe0f829cd9c644adcc3f18328e3d6630126a2aa65f14b15c5aa",
+      "graph_sha256": "0dd6001af65cb2307084e76463c5a813bac897626bc9c1b1b6050531046600c5",
+      "compared_words": 105651
+    },
+    {
+      "profile": "amplitude",
+      "epochs": 64,
+      "reference": "output\\source_authoring_2026-09-24\\runs\\amplitude_64\\cpu.bin",
+      "same_complete_mutable_instance_images": true,
+      "reference_sha256": "8df75c8cc194fb0c9d9fe498788d1b2353ce24ad6e891d6728c555f8e6739e97",
+      "graph_sha256": "065214a64cdc188298e3a30f8b8697aa1d39abbd3e46d400d4897c98e695acd1",
+      "compared_words": 105651
+    },
+    {
+      "profile": "amplitude",
+      "epochs": 2048,
+      "reference": "output\\source_authoring_2026-09-24\\runs\\amplitude_2048\\cpu.bin",
+      "same_complete_mutable_instance_images": true,
+      "reference_sha256": "169ada913db8c39135dac917a9406b280428b875f380d4a50c09626ca7c0edb7",
+      "graph_sha256": "b2a50bc385e4d005893b256194104f22b8009872a263342cd5e66aee137367af",
+      "compared_words": 105651
+    },
+    {
+      "profile": "authored_hadamard",
+      "epochs": 1,
+      "reference": "output\\source_authoring_2026-09-24\\runs\\combined_1\\cpu.bin",
+      "same_complete_mutable_instance_images": true,
+      "reference_sha256": "0e9105506ec2b7b6a715203023c19c09ba797b60924fc5bc0f8069a5bb94722e",
+      "graph_sha256": "6ca92211c9f3b34565f86b4da182fd86a0ec46f1f7f1d7da9fd3670eff1b64b5",
+      "compared_words": 102426
+    },
+    {
+      "profile": "authored_hadamard",
+      "epochs": 2,
+      "reference": "output\\source_authoring_2026-09-24\\runs\\combined_2\\cpu.bin",
+      "same_complete_mutable_instance_images": true,
+      "reference_sha256": "afad98253cd5c602dcf4683f442b3baa6bb5f439cc20737cb332f649c0bf0d46",
+      "graph_sha256": "e3df49650d7c3303b4720f71a7f3054af9cd24aa26f27485d335face8bd917f0",
+      "compared_words": 102426
+    },
+    {
+      "profile": "authored_hadamard",
+      "epochs": 64,
+      "reference": "output\\source_authoring_2026-09-24\\runs\\combined_64\\cpu.bin",
+      "same_complete_mutable_instance_images": true,
+      "reference_sha256": "3ffef84e0892c1868773c7f3d8523605722b9962a7e5137dc59c9e81a73bb34a",
+      "graph_sha256": "31f9cc2521dab3dd2166f0ef74faf124c85840dc0b7155b5949c3b254429be7b",
+      "compared_words": 102426
+    }
+  ],
+  "all_mutable_image_comparisons_equal": true,
+  "resume_and_reverse_exact": true,
+  "validation_errors": 0,
+  "validation_warnings": 0
+}

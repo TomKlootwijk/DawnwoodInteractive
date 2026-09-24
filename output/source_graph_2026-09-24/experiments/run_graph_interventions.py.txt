@@ -1,0 +1,55 @@
+from pathlib import Path
+from copy import deepcopy
+import json,lzma,sys
+sys.path.insert(0,str(Path.cwd()));sys.path.insert(0,str(Path.cwd()/'tmp'))
+from run_source_graph_campaign import save, MODEL, CYCLE, instance_bytes
+from run_resident_enzyme_campaign import paired, inputs
+from local_lab import source_graph_program as gp,source_cycle as c,source_resident_v2 as r
+
+BASE=Path('output/source_graph_2026-09-24').resolve()
+CASES=[('phase_bias','phase_bias_v0.1.json',False),('growth_rewire','growth_rewire_v0.1.json',False),('mutation_bias','mutation_bias_v0.1.json',False),('conservative_enzyme','conservative_enzyme_v0.1.json',True)]
+rows=[];effects=[]
+
+def compare(raw,reference,names):
+    a=r.decode_checkpoint(raw);b=r.decode_checkpoint(reference)
+    per_field={name:sum(x['state'][i]!=y['state'][i] for x,y in zip(a['instances'],b['instances'])) for i,name in enumerate(names)}
+    return {'changed_state_instances':sum(x['state']!=y['state'] for x,y in zip(a['instances'],b['instances'])),
+            'changed_complete_instance_images':sum(x!=y for x,y in zip(a['instances'],b['instances'])),
+            'changed_instances_per_state_field':per_field}
+
+for name,filename,chemical in CASES:
+    graph,_=c.ir.read_json(Path('source_bindings/graphs')/filename)
+    d=gp.build_definition(MODEL,CYCLE,graph,129,enzyme_inputs=inputs() if chemical else None)
+    src=save(name,MODEL,graph,d)
+    baseline=json.loads(lzma.decompress((BASE/('enzyme' if chemical else 'core')/'definition.json.xz').read_bytes()))
+    assert all(d['functions'][k]==v for k,v in baseline['functions'].items())
+    assert d['families']==baseline['families'] and d['records']==baseline['records'] and d['instances']==baseline['instances']
+    for epochs in ([1,2,64,128] if chemical else [1,2,64]):
+        row,dec,raw=paired(BASE/'runs',name+'_'+str(epochs),src,epochs);rows.append(row)
+        ref=(BASE/'runs'/f"{'enzyme' if chemical else 'core'}_{epochs}"/'cpu.bin').read_bytes()
+        effect=compare(raw,ref,d['state_names']);effect.update(profile=name,epochs=epochs,existing_numeric_functions_families_records_and_initial_instances_unchanged=True)
+        if chemical:
+            states=[dict(zip(d['state_names'],x['state'])) for x in dec['instances']]
+            residual=max(max(abs(s['enzyme_E_uM']+s['enzyme_ES_uM']-10),abs(s['enzyme_S_uM']+s['enzyme_ES_uM']+s['enzyme_P_uM']-100))/10 for s in states)
+            lowest=min(s['enzyme_'+species+'_uM']/10 for s in states for species in ['E','S','ES','P'])
+            assert residual<=1e-5 and lowest>=-1e-5
+            effect['chemical_feasibility']={'declared_tolerance_normalized':1e-5,'maximum_pool_residual_normalized':residual,'minimum_species_normalized':lowest,'all_within_tolerance':True}
+        effects.append(effect)
+    # Source-only identity controls distinguish wiring intervention from compiler migration.
+    control=deepcopy(graph)
+    if name=='phase_bias': control['functions']['graph_phase_bias']['binding']['outputs']['phase']={'input':'phase'}
+    elif name=='mutation_bias':control['functions']['graph_mutator_bias']['binding']['outputs']['distance']={'input':'distance'}
+    elif name=='growth_rewire':
+        nodes=[n for phase in control['phases'] for n in phase['nodes']]
+        node=next(n for n in nodes if n.get('slot')=='body' and n.get('record')=={'key':'double_dot'})
+        node['args']['g0'],node['args']['g1']=node['args']['g1'],node['args']['g0']
+    else:
+        control['functions']['graph_conservative_proposal']['binding']['outputs']={key:{'input':key} for key in ['trial_y0','trial_y1','step']}
+    d0=gp.build_definition(MODEL,CYCLE,control,129,enzyme_inputs=inputs() if chemical else None)
+    src0=save(name+'_identity_control',MODEL,control,d0)
+    row,dec,raw=paired(BASE/'runs',name+'_identity_control_64',src0,64);rows.append(row)
+    ref=(BASE/'runs'/f"{'enzyme' if chemical else 'core'}_64"/'cpu.bin').read_bytes()
+    assert instance_bytes(raw)==instance_bytes(ref),name
+    effects.append({'profile':name+'_identity_control','epochs':64,'same_complete_mutable_instance_images':True})
+summary={'healthy_pairs':len(rows),'compared_instance_words':sum(x['compared_instance_words'] for x in rows),'instance_epochs_per_backend':sum(x['count']*x['epochs'] for x in rows),'paired_runs':rows,'effects':effects,'scope':'Source-only graph changes, retaining all existing numerical function/family/record banks and initial instances. Identity controls compare complete mutable images; static graph programs may differ. Chemical feasibility is sampled, not exact-nearest or convergence certification.'}
+(BASE/'interventions.json').write_bytes(c.ir.json_bytes(summary));print(json.dumps(summary),flush=True)

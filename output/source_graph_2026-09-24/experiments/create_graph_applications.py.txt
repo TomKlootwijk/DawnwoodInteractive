@@ -1,0 +1,101 @@
+from pathlib import Path
+from copy import deepcopy
+import sys
+sys.path.insert(0,str(Path.cwd()))
+from local_lab import source_cycle as c
+
+ROOT=Path('source_bindings/graphs')
+core,_=c.ir.read_json(ROOT/'cycle_v0.1.json')
+enzyme,_=c.ir.read_json(ROOT/'enzyme_v0.1.json')
+def ref(node,out):return {'node':node,'output':out}
+def literal(value,kind):return {'literal':value,'type':kind}
+def phase(g,name):return next(x['nodes'] for x in g['phases'] if x['name']==name)
+def key(node):return node.get('record',{}).get('key',node.get('contract',{}).get('key'))
+def body(nodes,name,role=0):return next(x for x in nodes if x['op']=='call_record' and key(x)==name and x['slot']=='body' and x['role']==role)
+def pure(inputs,outputs,expressions,meaning):
+    return {'inputs':inputs,'outputs':outputs,'binding':{'inputs':list(inputs),'outputs':expressions,'source':'Explicit DWI-SOURCE-GRAPH-0.1 application graph declaration','meaning':meaning,'status':'Authored computational law; validation recorded separately.'}}
+def save(name,graph):
+    graph['source']={'authoring':'Explicit source-only composition example derived from the complete default recurrence graph','scope':name}
+    (ROOT/name).write_bytes(c.ir.json_bytes(graph))
+
+# An early-stage graph operation; no body expression changes.
+g=deepcopy(core);nodes=phase(g,'split_and_hinge');hinge=body(nodes,'hadamard',1)
+g['functions']['graph_phase_bias']=pure({'phase':'phase'},{'phase':'phase'},{'phase':c.add(c.V('phase'),.03125)},'Add an explicit0.03125-radian graph phase bias before the current resident double-Hadamard call.')
+n={'id':'authored_phase_bias','op':'call_helper','function':'graph_phase_bias','args':{'phase':deepcopy(hinge['args']['phase'])}}
+nodes.insert(nodes.index(hinge),n);hinge['args']['phase']=ref(n['id'],'phase');save('phase_bias_v0.1.json',g)
+
+# Rewire growth components by name while retaining each component and source.
+g=deepcopy(core);coupling=body(phase(g,'geometry_divergence'),'double_dot')
+coupling['args']['g0'],coupling['args']['g1']=coupling['args']['g1'],coupling['args']['g0']
+save('growth_rewire_v0.1.json',g)
+
+# Source-owned mutation wiring; transformed old field still controls the oldM.
+g=deepcopy(core);mutation=body(g['mutation']['nodes'],'mutation')
+g['functions']['graph_mutator_bias']=pure({'distance':'carrier_distance'},{'distance':'carrier_distance'},{'distance':c.add(c.V('distance'),.03125)},'Explicit computational bias applied to the evaluated old mutator carrier-distance input; not a claim that the biased controller input is itself a new global SDF.')
+n={'id':'authored_mutator_bias','op':'call_helper','function':'graph_mutator_bias','args':{'distance':deepcopy(mutation['args']['field_distance'])}}
+g['mutation']['nodes'].insert(g['mutation']['nodes'].index(mutation),n);mutation['args']['field_distance']=ref(n['id'],'distance')
+save('mutation_bias_v0.1.json',g)
+
+# Source graph changes proposal composition before the protected chemical SDF.
+g=deepcopy(enzyme);nodes=phase(g,'surface_return');proposal=body(nodes,'blend',100)
+inputs={'old_y0':'domain_coordinate','old_y1':'domain_coordinate','trial_y0':'domain_coordinate','trial_y1':'domain_coordinate','step':'coefficient'}
+outputs={'trial_y0':'domain_coordinate','trial_y1':'domain_coordinate','step':'coefficient'}
+expressions={f'trial_y{i}':c.add(c.V(f'old_y{i}'),c.mul(.5,c.sub(c.V(f'trial_y{i}'),c.V(f'old_y{i}')))) for i in range(2)}
+expressions['step']=c.mul(.5,c.V('step'))
+g['functions']['graph_conservative_proposal']=pure(inputs,outputs,expressions,'Half the displacement of the current resident proposal before its protected domain distance/projection/evaluation; scale the corresponding step diagnostic. No observation-dependent host solve.')
+n={'id':'authored_conservative_proposal','op':'call_helper','function':'graph_conservative_proposal','args':{'old_y0':{'state':'enzyme_y0'},'old_y1':{'state':'enzyme_y1'},'trial_y0':ref(proposal['id'],'trial_y0'),'trial_y1':ref(proposal['id'],'trial_y1'),'step':ref(proposal['id'],'step')}}
+nodes.insert(nodes.index(proposal)+1,n)
+for node in nodes[nodes.index(n)+1:]:
+    if node['op']=='call_record' and key(node)=='blend' and node['slot']=='body':
+        for name,value in list(node['args'].items()):
+            if value.get('node')==proposal['id'] and value.get('output') in ['trial_y0','trial_y1']:
+                node['args'][name]=ref(n['id'],value['output'])
+g['returns']['enzyme_trial_y0']=ref(n['id'],'trial_y0');g['returns']['enzyme_trial_y1']=ref(n['id'],'trial_y1');g['returns']['enzyme_step']=ref(n['id'],'step')
+save('conservative_enzyme_v0.1.json',g)
+
+# Actual heterogeneous routing: source index19 returns a matrix,18 its inverse.
+g=deepcopy(core);rgba=phase(g,'rgba_crystal');surface=phase(g,'surface_return')
+selected=phase(g,'selected_operator');bst=body(selected,'bst');pos=selected.index(bst);bst_group=deepcopy(selected[pos-5:pos+1])
+assert len(bst_group)==6 and bst_group[0]['op']=='read_record'
+bit_outputs={f'{prefix}_b{i}':'bit' for prefix in ['T','A'] for i in range(4)}
+bit_expressions={}
+for prefix,bits in [('T',[0,1,0,0]),('A',[0,0,1,1])]:
+    for i,b in enumerate(bits):bit_expressions[f'{prefix}_b{i}']=c.sub(1,c.V('neck')) if b else c.V('neck')
+g['functions']['graph_matrix_route_bits']=pure({'neck':'bit'},bit_outputs,bit_expressions,'Raw implicit-tree paths for source indices19(T) and18(inverse), XOR-adjusted for the supplied neck bit. BST remains the current resident routing body.')
+g['functions']['graph_matrix_route_bits']['binding']['requires']=[c.bit_guard(c.V('neck'))]
+bitsnode={'id':'matrix_route_bits','op':'call_helper','function':'graph_matrix_route_bits','args':{'neck':{'state':'neck'}}}
+rgba.insert(0,bitsnode)
+
+def rename(value,names):
+    if isinstance(value,dict):return {k:(names[v] if k=='node' and v in names else rename(v,names)) for k,v in value.items()}
+    if isinstance(value,list):return [rename(v,names) for v in value]
+    return value
+
+for record,prefix in [('T_transform','T'),('inverse_T','A')]:
+    target=body(rgba,record);targetpos=rgba.index(target);group=rgba[targetpos-5:targetpos+1]
+    assert len(group)==6 and group[0]['op']=='read_record'
+    route=deepcopy(bst_group);names={node['id']:f'matrix_route_{prefix}_{i}' for i,node in enumerate(route)}
+    route=rename(route,names)
+    for old,node in zip(bst_group,route):node['id']=names[old['id']]
+    routebody=route[-1];routebody['args']['depth']=literal(4,'index')
+    for i in range(4):routebody['args'][f'b{i}']=ref('matrix_route_bits',f'{prefix}_b{i}')
+    selector={'source_index':ref(routebody['id'],'index')}
+    for node in group:
+        if 'record' in node:node['record']=deepcopy(selector)
+        if node['op']=='call_record':node['contract']={'key':record,'slot':node['slot'],'role':node['role']}
+    rgba[targetpos-5:targetpos-5]=route
+
+pinion=body(surface,'pinion');names=['ar','ai','br','bi','a00','a01','a10','a11']
+contract={name:('amplitude' if name in c.PAIR else 'matrix_scalar') for name in names}
+out={
+    'ar':c.add(c.mul(c.V('a00'),c.V('ar')),c.mul(c.V('a01'),c.V('br'))),
+    'ai':c.add(c.mul(c.V('a00'),c.V('ai')),c.mul(c.V('a01'),c.V('bi'))),
+    'br':c.add(c.mul(c.V('a10'),c.V('ar')),c.mul(c.V('a11'),c.V('br'))),
+    'bi':c.add(c.mul(c.V('a10'),c.V('ai')),c.mul(c.V('a11'),c.V('bi')))}
+g['functions']['graph_apply_current_inverse']=pure(contract,{name:'amplitude' for name in c.PAIR},out,'Apply the current resident inverse2x2 matrix to the two complex R/G channels, separately on real and imaginary components, before current pinion/return. This graph operation is computational conditioning, not a physical device claim.')
+args={name:deepcopy(pinion['args'][rgba_name]) for name,rgba_name in zip(c.PAIR,['Rr','Ri','Gr','Gi'])}
+args.update({name:deepcopy(pinion['args'][name]) for name in names[4:]})
+node={'id':'matrix_conditioned_pair','op':'call_helper','function':'graph_apply_current_inverse','args':args};rgba.append(node)
+for name,rgba_name in zip(c.PAIR,['Rr','Ri','Gr','Gi']):pinion['args'][rgba_name]=ref(node['id'],name)
+save('routed_matrix_conditioning_v0.1.json',g)
+print('Wrote5 source-only recurrence/application examples.')

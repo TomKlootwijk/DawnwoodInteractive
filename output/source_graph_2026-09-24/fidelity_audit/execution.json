@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:\\Users\\ietsm\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "output\\source_graph_2026-09-24\\fidelity_audit\\experiment.txt"
+  ],
+  "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+  "started_utc": "2026-09-24T17:42:22.671447+00:00",
+  "finished_utc": "2026-09-24T17:42:23.348273+00:00",
+  "exit_code": 0,
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "native_execution": false,
+  "gpu_execution": false,
+  "stdout_sha256": "04c5125db8e5b1053a06f4c63c4bd2f8f3b1bd35eb485a627bc2574246337933",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

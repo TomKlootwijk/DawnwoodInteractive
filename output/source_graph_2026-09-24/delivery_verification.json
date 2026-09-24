@@ -1,0 +1,22 @@
+{
+  "local_markdown_links_checked": 228,
+  "broken_links": [],
+  "unchanged_runtime_and_banks": {
+    "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\dawnwood-resident-v2.exe": "d6e08b44edf484571ad5d49954a8b3797c71e5bfc80ec4ce8cde795e8d865d29",
+    "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3\\Dawnwood_GPU_v0.3\\bin\\windows-resident-v2\\resident_v2.spv": "9e90c89135a93a115db1ceaea5475338a389f8ab41ab7e64165751d4410f6098",
+    "local_lab\\source_cycle.py": "b8bb4255b19e0e53d664449addc984b6c0c44ed795a3f78bfa8190d848ab9f51",
+    "local_lab\\source_enzyme.py": "2875592287d4905881422da819e55068cab9b4b2b20e985a1b673168a6419911"
+  },
+  "source_graph_files": {
+    "source_bindings\\graphs\\amplitude_v0.1.json": "5ce2fceebafe566221f6ff3d21eca45c2dd0ea26d9479b5f451a2469fa8789bc",
+    "source_bindings\\graphs\\authored_hadamard_v0.1.json": "9c7fceeda8345714782658aa48e452475db36945a18af5637c4c33d151f4dc38",
+    "source_bindings\\graphs\\conservative_enzyme_v0.1.json": "652d5709ea885911f8523c9bb49c3a99f6a540c311b73d66ee3b67df1ee36b24",
+    "source_bindings\\graphs\\cycle_v0.1.json": "8e7c5bc8431d5568705f53a12d698b0ec1b2c71aa1c05dba547de6e124963d22",
+    "source_bindings\\graphs\\enzyme_v0.1.json": "2dbd8f7f1494cb3f0140be38597183bef3861a7eff7cf0d9c602ffbca7bcb0ab",
+    "source_bindings\\graphs\\freeze_mutator_successor_v0.1.json": "35c8ac16ea051ee64c91c87d9400abbee29dd85b697468c49dc79e4675d9c5a6",
+    "source_bindings\\graphs\\growth_rewire_v0.1.json": "acf9fca2376bda46a9a8769beec77b505401dc9abcd99972158270ae0f5dc0e5",
+    "source_bindings\\graphs\\mutation_bias_v0.1.json": "22fc2b54190f1694e970a1490608e486f8f2b2e181d0768386ab708569c5d341",
+    "source_bindings\\graphs\\phase_bias_v0.1.json": "55b28f28da8fe5794544d1d2014215cae5a3f90b4764f2031d0a8df851bc03ca",
+    "source_bindings\\graphs\\routed_matrix_conditioning_v0.1.json": "098e015d3d4b5cf244948be3e0d22acc82769e714d0f50d2392c719402f23cf4"
+  }
+}

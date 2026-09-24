@@ -25,9 +25,12 @@ explicit source-slot edits and one additional situated record into the same
 runtime. Its [separate campaign](../output/source_authoring_2026-09-24/REPORT.md)
 verifies acting source edits, five-bit routing, retained programs, an amplitude
 projection, source-authored enzyme proposals and laptop saturation. The original
-cycle/enzyme builders and native executable remain unchanged. Application-call
-wiring is still supplied by those builders; a general source-declared typed
-application graph remains a concrete open requirement.
+cycle/enzyme builders and native executable remain unchanged. The subsequent
+[source graph compiler](SOURCE_GRAPH_PROGRAM.md) replaces both final call plans
+from explicit named, nominally typed references. Its complete mutation graph,
+eight action stages, helpers and returned values are source-owned; original
+builders supply the numerical banks and initial data. [Graph-specific evidence](../output/source_graph_2026-09-24/REPORT.md)
+checks migration equivalence and authored wiring changes separately.
 
 ## Source, binding, implementation and evidence
 
@@ -63,7 +66,8 @@ The source workbench's [binding inventory](../source_workbench/Dawnwood_Interact
 | Authored-cycle compute saturation | Measured on the laptop | Complete-cycle replica populations reach 100% reported GPU utilization and receive all-word CPU-reference comparisons. Maximum VRAM capacity and application speedup remain separate, unmeasured claims for this edition. |
 | Source-owned slot edits | Implemented and measured in DWI-SOURCE-PROGRAM-0.1 | Actual inline/registry expressions become resident functions; every compatible family is accounted for. Separate Hadamard body, field and placement edits change all129 returned waves in recorded one/64-epoch comparisons. |
 | Added source record and implicit route | Implemented with a32-record bound | One explicitly bound selected body at source index31..62, five-bit routing and common mutation. Actual routes31/32/62, continuation, retention, invalid-address rollback and independent amplitude math are recorded. |
-| General source-owned application wiring | Open | The numerical body/field/placement expressions are authorable, but the builders still construct stage call plans and enzyme role wiring. Arbitrary heterogeneous routed procedures are not supplied by role99. |
+| Source-owned application wiring | Implemented within DWI-SOURCE-GRAPH-0.1 | Both mutation and all eight action stages lower from named, typed graph references; poisoned old tapes compile identically. Source-only phase, growth, mutation and chemical-proposal changes are exercised with identity controls. |
+| Heterogeneous computed routing | Declared contracts implemented | The matrix example routes to actual current source indices 19 and 18, invoking matrix/inverse interfaces and composing their outputs. Mismatched actual interfaces fail; arbitrary procedures still require supported numerical bindings and a declared contract. |
 
 No row is completed by a changed symbolic-state hash, successful shader compilation alone or timing an unrelated profile. The [N1/D1 implementation mapping](SOURCE_TO_KERNEL.md) and [D1 results](DOMAIN_KERNEL.md) retain their own meanings.
 

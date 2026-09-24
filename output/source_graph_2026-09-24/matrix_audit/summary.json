@@ -1,0 +1,52 @@
+{
+  "created_utc": "2026-09-24T17:43:59.289009+00:00",
+  "thresholds": {
+    "scaled_vector_error": 1e-06,
+    "matrix_inverse_residual_max_abs": 1e-06,
+    "scaled_error_definition": "Euclidean norm(actual-reference)/max(1,Euclidean norm(reference))"
+  },
+  "paired_workloads": 7,
+  "returned_instance_observations": 1799,
+  "all_cpu_gpu_complete_checkpoints_equal": true,
+  "mathematical_cases": 257,
+  "source_graph_sha256": "098e015d3d4b5cf244948be3e0d22acc82769e714d0f50d2392c719402f23cf4",
+  "source_model_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+  "source_cycle_sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4",
+  "native_executable_sha256": "d6e08b44edf484571ad5d49954a8b3797c71e5bfc80ec4ce8cde795e8d865d29",
+  "source_hashes": {
+    "local_lab\\source_graph_program.py": "6264470048504142292ae3e5f88fc5e5052204a8ba9b0297d4d8a55bac341635",
+    "local_lab\\source_graph.py": "ecdf0df5276b836ec942869d9943fdeb45fda4b6097dc619c211f214bf63756d",
+    "local_lab\\source_graph_types.py": "1efb287d32f93004e438cb5c6938da9eaa7d06d682329d926c9cbeb7e6fedb0b",
+    "local_lab\\source_graph_fidelity.py": "40bb8ada4863f3db861faaae274d42c3d694cddedaa862eea1cdfd8afdd764bf",
+    "local_lab\\source_program.py": "c91049fd6eee0c9c89b2489dc2e1d56464f9ee4eec0e69e9b9edb1be10662fa9",
+    "local_lab\\source_resident_v2.py": "311206687ae0c1b9b1a76dfdaec295761836a2f6e1c4f0afac4994de1c6070d7"
+  },
+  "application_graph_changes_returned_pairs": 257,
+  "negative_cases": [
+    {
+      "redirected_role": "T",
+      "wrong_existing_source_index": 18,
+      "status": 11,
+      "failed_call_step": 831,
+      "all257_state_and_record_images_rolled_back": true,
+      "epoch_remains_zero": true,
+      "cause": "Existing dynamically selected record has role0 but its function signature differs from the declared call contract."
+    },
+    {
+      "redirected_role": "A",
+      "wrong_existing_source_index": 19,
+      "status": 11,
+      "failed_call_step": 878,
+      "all257_state_and_record_images_rolled_back": true,
+      "epoch_remains_zero": true,
+      "cause": "Existing dynamically selected record has role0 but its function signature differs from the declared call contract."
+    }
+  ],
+  "mathematical_maxima": {
+    "T_scaled_error": 5.646834264882049e-08,
+    "inverse_scaled_error": 8.82532185909269e-08,
+    "inverse_residual_max_abs": 1.0735007571760491e-07,
+    "conditioned_scaled_error": 5.742931845765613e-08,
+    "final_pair_scaled_error": 1.1328281442653518e-07
+  }
+}

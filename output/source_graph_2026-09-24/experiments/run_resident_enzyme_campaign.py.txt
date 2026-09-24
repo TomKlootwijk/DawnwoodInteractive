@@ -1,0 +1,66 @@
+from pathlib import Path
+import copy,hashlib,json,os,random,subprocess,sys
+sys.path.insert(0,str(Path.cwd()))
+from local_lab import source_cycle as c, source_resident_v2 as r
+
+ROOT=Path.cwd()
+EXE=ROOT/'Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/bin/windows-resident-v2/dawnwood-resident-v2.exe'
+ENV=os.environ.copy();ENV['DAWNWOOD_VALIDATION']='1';ENV['VK_LAYER_PATH']=str(ROOT/'tmp/rtx-toolchain/VulkanSDK/Bin')
+
+def inputs():
+    values=[('consistent',(8,78,2,20)),('enzyme_excess',(12,70,5,25)),
+            ('negative_substrate',(8,-5,2,100)),('negative_all',(-10,-10,-10,-10)),
+            ('origin',(0,0,0,0)),('free_pools',(10,100,0,0)),
+            ('product_corner',(10,0,0,100)),('bound_corner',(0,90,10,0)),
+            ('bound_product_corner',(0,0,10,90)),('negative_complex',(15,75,-5,30)),
+            ('excess_product',(5,20,5,150)),('large_complex',(0,0,30,0))]
+    rng=random.Random(3902)
+    while len(values)<129:
+        values.append((f'synthetic_{len(values):03}',(rng.uniform(-20,30),rng.uniform(-40,180),rng.uniform(-10,30),rng.uniform(-40,180))))
+    return {'profile':'DWI-ENZYME-0.1','pools':{'E_total_uM':10,'S_total_uM':100,'concentration_scale_uM':10},
+            'observations':[{'id':name,**dict(zip(['E_uM','S_uM','ES_uM','P_uM'],v))} for name,v in values]}
+
+def paired(base,name,source,epochs,reverse=False):
+    out=base/name;out.mkdir(parents=True,exist_ok=False);raw=[];receipts=[]
+    for backend in ['cpu','vulkan']:
+        args=[str(EXE),'run','--input',str(source),'--output',str(out/(backend+'.bin')),'--backend',backend,'--epochs',str(epochs)]
+        if backend=='vulkan':args+=['--device','RTX 5070 Ti']
+        if reverse:args+=['--reverse-targets']
+        run=subprocess.run(args,env=ENV,capture_output=True,text=True)
+        (out/(backend+'.stdout.json')).write_text(run.stdout,encoding='utf-8')
+        (out/(backend+'.stderr.txt')).write_text(run.stderr,encoding='utf-8')
+        report=json.loads(run.stdout)
+        receipt={'command':args,'exit_code':run.returncode,'report':report};receipts.append(receipt)
+        (out/(backend+'.execution.json')).write_text(json.dumps(receipt,indent=2)+'\n',encoding='utf-8')
+        if run.returncode!=0:raise RuntimeError((name,backend,run.stdout,run.stderr))
+        raw.append((out/(backend+'.bin')).read_bytes())
+    assert raw[0]==raw[1],name
+    assert report['validation_enabled'] and report['validation_errors']==report['validation_warnings']==0
+    decoded=r.decode_checkpoint(raw[0]);assert decoded['all_status_ok']
+    row={'name':name,'epochs':epochs,'count':decoded['count'],'all_checkpoint_bytes_identical':True,
+         'all_status_ok':True,'compared_instance_words':decoded['instance_words']*decoded['count'],
+         'gpu_validation_enabled':True,'gpu_validation_errors':0,'gpu_validation_warnings':0}
+    print(json.dumps(row),flush=True)
+    return row,decoded,raw[0]
+
+def main():
+    from local_lab import source_enzyme as e
+    base=ROOT/(sys.argv[1] if len(sys.argv)>1 else 'tmp/enzyme_probe')
+    base.mkdir(parents=True,exist_ok=False)
+    doc=inputs();(base/'inputs.json').write_text(json.dumps(doc,indent=2)+'\n',encoding='utf-8')
+    model=json.loads(c.MODEL.read_text(encoding='utf-8'));cycle=json.loads(c.CYCLE.read_text(encoding='utf-8'))
+    definition=e.build_definition(model,cycle,doc)
+    program,manifest=r.compile_definition(model,definition)
+    (base/'program.bin').write_bytes(program)
+    (base/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
+    (base/'definition.json').write_bytes(c.ir.json_bytes(definition))
+    rows=[]
+    for epoch in [1,2,8,64,128]:
+        row,decoded,raw=paired(base,'epochs_'+str(epoch),base/'program.bin',epoch);rows.append(row)
+    row,decoded,resume=paired(base,'resume_1_plus_127',base/'epochs_1/cpu.bin',127);rows.append(row)
+    row,decoded,reverse=paired(base,'reverse_128',base/'program.bin',128,True);rows.append(row)
+    assert resume==reverse==(base/'epochs_128/cpu.bin').read_bytes()
+    (base/'summary.json').write_text(json.dumps(rows,indent=2)+'\n',encoding='utf-8')
+    print(json.dumps({'completed':True,'base':str(base),'program_sha256':hashlib.sha256(program).hexdigest()}),flush=True)
+
+if __name__=='__main__':main()

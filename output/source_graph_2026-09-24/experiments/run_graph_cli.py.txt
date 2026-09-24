@@ -1,0 +1,30 @@
+from pathlib import Path
+import hashlib,json,os,subprocess
+BASE=Path('output/source_graph_2026-09-24/cli').resolve();BASE.mkdir(exist_ok=True)
+env=os.environ.copy();env['DAWNWOOD_VALIDATION']='1';env['VK_LAYER_PATH']=str(Path('tmp/rtx-toolchain/VulkanSDK/Bin').resolve())
+def run(name,args):
+ cmd=['cmd','/d','/c',str(Path('Dawnwood-Graph.cmd').resolve()),*map(str,args)]
+ proc=subprocess.run(cmd,env=env,capture_output=True,text=True,encoding='utf-8')
+ (BASE/(name+'.stdout.txt')).write_text(proc.stdout,encoding='utf-8');(BASE/(name+'.stderr.txt')).write_text(proc.stderr,encoding='utf-8')
+ (BASE/(name+'.execution.json')).write_text(json.dumps({'command':cmd,'exit_code':proc.returncode},indent=2)+'\n',encoding='utf-8')
+ assert proc.returncode==0,(name,proc.stdout,proc.stderr)
+ return json.loads(proc.stdout)
+out=BASE/'enzyme'
+compiled=json.loads((BASE/'compile.stdout.txt').read_bytes()) if out.exists() else run('compile',['compile','--graph','source_bindings/graphs/enzyme_v0.1.json','--enzyme-inputs','source_bindings/examples/enzyme_inputs.json','--output',out])
+for backend in ['cpu','vulkan']:
+ args=['run','--backend',backend,'--epochs','128','--input',out/'program.bin','--output',out/(backend+'.bin')]
+ if backend=='vulkan':args+=['--device','RTX 5070 Ti']
+ report=run('run_'+backend,args)
+ assert report['failed_lanes']==0
+ if backend=='vulkan':assert report['validation_enabled'] and report['validation_errors']==report['validation_warnings']==0
+assert (out/'cpu.bin').read_bytes()==(out/'vulkan.bin').read_bytes()
+exported=run('results',['results',out/'vulkan.bin','--manifest',out/'manifest.json','--output',out/'results.json'])
+inspected=run('inspect',['inspect',out/'vulkan.bin','--manifest',out/'manifest.json'])
+assert inspected['all_status_ok']
+manifest=json.loads((out/'manifest.json').read_bytes())
+assert manifest['complete_application_lowered'] and manifest['source_graph_lowered'] and manifest['domain_application_implemented']
+for name,item in manifest['files'].items():
+ raw=(out/name).read_bytes();assert len(raw)==item['bytes'] and hashlib.sha256(raw).hexdigest()==item['sha256'],name
+result=json.loads((out/'results.json').read_bytes());assert result['all_runtime_healthy'] and result['all_feasible_within_declared_tolerance']
+summary={'launcher':'Dawnwood-Graph.cmd','commands_executed':['compile','run cpu','run vulkan','results','inspect'],'instances':compiled['instances'],'epochs':128,'complete_checkpoints_equal':True,'manifest_file_hashes_verified':len(manifest['files']),'complete_application_lowered':True,'all_feasible_within_declared_tolerance':True,'gap_estimates_all_below_threshold':result['all_gap_estimates_below_requested_threshold'],'validation_errors':0,'validation_warnings':0,'scope':'Actual Windows launcher compilation, execution, inspection and numerical readout. Readout does not repair state.'}
+(BASE/'summary.json').write_text(json.dumps(summary,indent=2)+'\n',encoding='utf-8');print(json.dumps(summary),flush=True)

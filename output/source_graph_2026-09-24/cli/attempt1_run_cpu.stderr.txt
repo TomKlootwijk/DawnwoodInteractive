@@ -1,0 +1,1 @@
+DWI-RESIDENT-0.2: --device is valid only with --backend vulkan

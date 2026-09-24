@@ -68,8 +68,21 @@ For example:
 
 The [authoring campaign](output/source_authoring_2026-09-24/REPORT.md) records
 source-slot causality, added-record routing, independent distance/projection
-checks and a new GPU saturation run. Application-call composition remains an
-explicit open requirement.
+checks and a GPU saturation run. The later [source graph compiler](docs/SOURCE_GRAPH_PROGRAM.md)
+makes both mutation and all eight action stages authorable as named, typed graph
+connections. Its [separate evidence](output/source_graph_2026-09-24/REPORT.md) covers
+compatibility, graph-only interventions, heterogeneous matrix routing and laptop load.
+
+```powershell
+.\Dawnwood-Graph.cmd compile --graph source_bindings/graphs/enzyme_v0.1.json --enzyme-inputs source_bindings/examples/enzyme_inputs.json --output output/my_graph_enzyme
+.\Dawnwood-Graph.cmd run --backend vulkan --device "RTX 5070 Ti" --epochs 128 --input output/my_graph_enzyme/program.bin --output output/my_graph_enzyme/gpu128.bin
+.\Dawnwood-Graph.cmd results output/my_graph_enzyme/gpu128.bin --manifest output/my_graph_enzyme/manifest.json --output output/my_graph_enzyme/results.json
+```
+
+The graph names current records, typed inputs and returned state; the compiler
+assigns registers. The numerical body laws and initial banks still come from
+explicit bindings. The [requirements audit](docs/SOURCE_GRAPH_REQUIREMENTS.md)
+separates this executable scope from optional codecs and unproved physical claims.
 
 [DWI-ENZYME-0.1](docs/RESIDENT_ENZYME_BINDING.md) reconciles supplied enzyme,
 substrate, complex and product concentrations against two conserved pools. Its

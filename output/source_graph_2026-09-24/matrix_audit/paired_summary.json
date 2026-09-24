@@ -1,0 +1,79 @@
+[
+  {
+    "name": "application_1",
+    "epochs": 1,
+    "count": 257,
+    "status": 0,
+    "complete_checkpoints_bit_identical": true,
+    "validation_enabled": true,
+    "validation_errors": 0,
+    "validation_warnings": 0,
+    "compared_instance_words": 204058
+  },
+  {
+    "name": "application_8",
+    "epochs": 8,
+    "count": 257,
+    "status": 0,
+    "complete_checkpoints_bit_identical": true,
+    "validation_enabled": true,
+    "validation_errors": 0,
+    "validation_warnings": 0,
+    "compared_instance_words": 204058
+  },
+  {
+    "name": "application_64",
+    "epochs": 64,
+    "count": 257,
+    "status": 0,
+    "complete_checkpoints_bit_identical": true,
+    "validation_enabled": true,
+    "validation_errors": 0,
+    "validation_warnings": 0,
+    "compared_instance_words": 204058
+  },
+  {
+    "name": "unconditioned_control_1",
+    "epochs": 1,
+    "count": 257,
+    "status": 0,
+    "complete_checkpoints_bit_identical": true,
+    "validation_enabled": true,
+    "validation_errors": 0,
+    "validation_warnings": 0,
+    "compared_instance_words": 204058
+  },
+  {
+    "name": "diagnostic_1",
+    "epochs": 1,
+    "count": 257,
+    "status": 0,
+    "complete_checkpoints_bit_identical": true,
+    "validation_enabled": true,
+    "validation_errors": 0,
+    "validation_warnings": 0,
+    "compared_instance_words": 204058
+  },
+  {
+    "name": "wrong_T_route_1",
+    "epochs": 1,
+    "count": 257,
+    "status": 11,
+    "complete_checkpoints_bit_identical": true,
+    "validation_enabled": true,
+    "validation_errors": 0,
+    "validation_warnings": 0,
+    "compared_instance_words": 204058
+  },
+  {
+    "name": "wrong_A_route_1",
+    "epochs": 1,
+    "count": 257,
+    "status": 11,
+    "complete_checkpoints_bit_identical": true,
+    "validation_enabled": true,
+    "validation_errors": 0,
+    "validation_warnings": 0,
+    "compared_instance_words": 204058
+  }
+]

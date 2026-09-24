@@ -1,0 +1,16 @@
+{
+  "command": [
+    "cmd",
+    "/d",
+    "/c",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood-Graph.cmd",
+    "compile",
+    "--graph",
+    "source_bindings/graphs/enzyme_v0.1.json",
+    "--enzyme-inputs",
+    "source_bindings/examples/enzyme_inputs.json",
+    "--output",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_graph_2026-09-24\\cli\\enzyme"
+  ],
+  "exit_code": 0
+}

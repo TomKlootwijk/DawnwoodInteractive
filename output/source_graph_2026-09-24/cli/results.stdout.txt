@@ -1,0 +1,1 @@
+{"output": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_graph_2026-09-24\\cli\\enzyme\\results.json", "count": 8, "all_runtime_healthy": true, "all_feasible_within_declared_tolerance": true, "all_gap_estimates_below_requested_threshold": false}

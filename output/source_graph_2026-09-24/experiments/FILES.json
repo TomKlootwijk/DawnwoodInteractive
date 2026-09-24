@@ -1,0 +1,38 @@
+{
+  "conservative_accuracy.py.txt": {
+    "bytes": 1835,
+    "sha256": "f6c2cfc1761f14eafb149d632ee14c3239cf7d0e1acc8e593cdca1911b701401"
+  },
+  "create_graph_applications.py.txt": {
+    "bytes": 8126,
+    "sha256": "2b9e483effe13559e6923fa2c0db6af97162911b568e8f8eade4f6e86227e500"
+  },
+  "enzyme_reference_oracle.py.txt": {
+    "bytes": 3876,
+    "sha256": "58fa0695c5e75206bba687520808818ad290dc18ae26a576658bb8117a1bca9f"
+  },
+  "run_graph_cli.py.txt": {
+    "bytes": 3008,
+    "sha256": "a985fb525413a43a926b33c700425f1c2f928cfa620572ef56ca35615ebf2db7"
+  },
+  "run_graph_interventions.py.txt": {
+    "bytes": 4697,
+    "sha256": "826bb4a30ac416dbe8326b3c2b8b24bafa6924c0d0e5eeade1060e6350d56541"
+  },
+  "run_graph_self_change.py.txt": {
+    "bytes": 4948,
+    "sha256": "3a130d8e614a65ac9497d280d8d2bad6055cbefc74a1bd2c0e1a032697690127"
+  },
+  "run_resident_enzyme_campaign.py.txt": {
+    "bytes": 4259,
+    "sha256": "c85ea6fd5fd500b73ff6653bb3443c72e426a9fea12c8bf2574d8064ba1dcbce"
+  },
+  "run_source_graph_campaign.py.txt": {
+    "bytes": 5087,
+    "sha256": "0a4618587b32be679855770e36755831592a926dcf1c1615f4e575d3fabdc824"
+  },
+  "stress_source_graph.py.txt": {
+    "bytes": 6599,
+    "sha256": "baa6ccb8789c932a4a5e60e6d1ee988685f181adf362c63a032ce89ddd0efc2e"
+  }
+}

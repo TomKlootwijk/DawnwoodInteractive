@@ -1,0 +1,20 @@
+{
+  "launcher": "Dawnwood-Graph.cmd",
+  "commands_executed": [
+    "compile",
+    "run cpu",
+    "run vulkan",
+    "results",
+    "inspect"
+  ],
+  "instances": 8,
+  "epochs": 128,
+  "complete_checkpoints_equal": true,
+  "manifest_file_hashes_verified": 19,
+  "complete_application_lowered": true,
+  "all_feasible_within_declared_tolerance": true,
+  "gap_estimates_all_below_threshold": false,
+  "validation_errors": 0,
+  "validation_warnings": 0,
+  "scope": "Actual Windows launcher compilation, execution, inspection and numerical readout. Readout does not repair state."
+}

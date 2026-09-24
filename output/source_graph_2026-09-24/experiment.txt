@@ -1,0 +1,279 @@
+"""Direct compiler experiment, retained as evidence; not a test-suite source file.
+Run from repository root by piping this text to Python -X utf8 -B -.
+No native execution or GPU load. Every rejection retains its exception/atomicity.
+"""
+from copy import deepcopy
+from datetime import datetime, timezone
+from pathlib import Path
+import hashlib
+import json
+
+from local_lab import source_program as author
+from local_lab import source_graph as compiler
+from local_lab import source_graph_program as wrapper
+from local_lab import source_graph_types as nominal
+
+ROOT = Path.cwd()
+OUT = ROOT / 'output/source_graph_2026-09-24'
+ir, resident = author.ir, author.resident
+read = lambda path: json.loads(Path(path).read_text(encoding='utf-8'))
+digest = lambda obj: ir.sha256(ir.json_bytes(obj))
+model = read(author.cycle_binding.MODEL)
+cycle = read(author.cycle_binding.CYCLE)
+core = author.build_definition(model, cycle, 1)
+graph = read('source_bindings/graphs/cycle_v0.1.json')
+results = []
+
+def verify_layout(d):
+    source=d['source']
+    mapped=0
+    def call(item):
+        nonlocal mapped
+        plan=d[item['plan']+'_plan']; step=plan[item['call_step']]
+        assert item['plan_step_start']<=item['call_step']<item['plan_step_end_exclusive']<=len(plan)
+        assert step[0] in (3,4,11)
+        argument_base,output_base=(step[2],step[3]) if step[0]==3 else (step[4],step[5])
+        assert list(item['argument_registers'].values())==list(range(argument_base,argument_base+len(item['argument_registers'])))
+        assert list(item['output_registers'].values())==list(range(output_base,output_base+len(item['output_registers'])))
+        mapped+=1
+    def policy(item):
+        assert not set(item).intersection({'step','inputs','argument_base','output_base'})
+        assert item['layout_source']==compiler.PROFILE and item['graph_calls']
+        for mapping in item['graph_calls']: call(mapping)
+    for metadata in (source.get('source_slot_bindings'),source.get('authoring',{}).get('slot_resolutions')):
+        if metadata:
+            for item in metadata['mutation_program_retention']: policy(item)
+    for metadata in (source.get('catalogue_extension'),source.get('authoring',{}).get('catalogue_extension')):
+        if metadata and metadata.get('added'):
+            policy(metadata['mutation_retention'])
+            routing=metadata['routing']
+            assert 'call_step' not in routing and routing['layout_source']==compiler.PROFILE and routing['graph_calls']
+            for item in routing['graph_calls']: call(item)
+    if source.get('enzyme'):
+        application=source['enzyme']['resident_application']
+        assert not set(application).intersection({'action_step_start','action_step_end_exclusive','original_action_prefix_preserved','base_action_steps'})
+        assert application['layout_source']==compiler.PROFILE
+        for item in application['graph_calls'].values(): call(item)
+        for item in application['return_writes']:
+            step=d['action_plan'][item['step']]
+            assert step[0]==6 and d['state_names'][step[1]]==item['field']
+    authoring=source.get('authoring',{})
+    assert source.get('source_slot_bindings')==authoring.get('slot_resolutions')
+    assert source.get('catalogue_extension')==authoring.get('catalogue_extension')
+    return {'passed':True,'mapped_calls_checked':mapped,'duplicated_policies_match':True}
+
+def nodes(g):
+    return [n for phase in g['phases'] for n in phase['nodes']]
+
+def first_call(g):
+    return next(n for n in nodes(g) if n['op'] == 'call_record')
+
+def helper(width=1, inputs=0):
+    ins = [f'x{i}' for i in range(inputs)]
+    outputs = {f'y{i}': i + 1 for i in range(width)}
+    return {'binding': {'inputs': ins, 'outputs': outputs},
+            'inputs': dict.fromkeys(ins, 'coefficient'),
+            'outputs': dict.fromkeys(outputs, 'coefficient')}
+
+def probe(name, edit, *, expected='reject', base=core, source_graph=graph, source_model=model):
+    d, g = deepcopy(base), deepcopy(source_graph)
+    before = digest(d)
+    row = {'name': name, 'expected': expected}
+    try:
+        edit(g, d)
+        # Atomicity is relative to the exact input passed into apply_graph.
+        before = digest(d)
+        metadata = compiler.apply_graph(d, cycle, g)
+        layout=verify_layout(d)
+        program, manifest = wrapper.compile_definition(source_model, d)
+        row.update(outcome='accepted', program_sha256=ir.sha256(program),
+                   mutation_peak=metadata['mutation']['value_register_high_water'],
+                   action_peak=metadata['action']['value_register_high_water'],
+                   mutation_steps=len(d['mutation_plan']), action_steps=len(d['action_plan']),
+                   family_mapping_unchanged=d['families'] == base['families'],
+                   records_unchanged=d['records'] == base['records'],live_layout_metadata=layout,
+                   complete_application_lowered=manifest['complete_application_lowered'])
+    except Exception as error:
+        row.update(outcome='rejected', exception=type(error).__name__, message=str(error),
+                   definition_unchanged=digest(d) == before)
+    row['passed'] = ((expected == 'reject' and row['outcome'] == 'rejected' and row['definition_unchanged'])
+                     or (expected == 'accept' and row['outcome'] == 'accepted'))
+    results.append(row)
+    print(json.dumps({'name': name, 'passed': row['passed'], 'outcome': row['outcome']}))
+    return row
+
+probe('canonical_core', lambda g,d: None, expected='accept')
+
+def first_arg(g, value):
+    g['phases'][0]['nodes'][0]['args']['u'] = value
+
+probe('unknown_state', lambda g,d: first_arg(g, {'state': 'unknown_state'}))
+probe('unknown_node', lambda g,d: first_arg(g, {'node': 'absent', 'output': 'u'}))
+probe('future_reference', lambda g,d: first_arg(g, {'node': g['phases'][0]['nodes'][1]['id'], 'output': 'dx'}))
+probe('self_cycle_reference', lambda g,d: first_arg(g, {'node': g['phases'][0]['nodes'][0]['id'], 'output': 'u'}))
+probe('unknown_output', lambda g,d: g['phases'][0]['nodes'][1]['args'].__setitem__('query_u', {'node': g['phases'][0]['nodes'][0]['id'], 'output': 'absent'}))
+probe('duplicate_action_id', lambda g,d: g['phases'][0]['nodes'].insert(1, deepcopy(g['phases'][0]['nodes'][0])))
+probe('duplicate_mutation_id', lambda g,d: g['mutation']['nodes'].insert(1, deepcopy(g['mutation']['nodes'][0])))
+probe('wrong_nominal_state_wire', lambda g,d: first_arg(g, {'state': 'phase'}))
+probe('wrong_nominal_literal_wire', lambda g,d: first_arg(g, {'literal': 0, 'type': 'phase'}))
+probe('unknown_literal_nominal_type', lambda g,d: first_arg(g, {'literal': 0, 'type': 'f32'}))
+probe('nonfinite_literal', lambda g,d: first_arg(g, {'literal': float('inf'), 'type': 'chart_coordinate'}))
+probe('invalid_bit_literal', lambda g,d: g['phases'][0]['nodes'][0]['args'].__setitem__('orientation', {'literal': 2, 'type': 'bit'}))
+probe('fractional_index_literal', lambda g,d: next(n for n in nodes(g) if n.get('record',{}).get('key') == 'bst' and n['op']=='call_record' and n['slot']=='body')['args'].__setitem__('depth', {'literal': 0.5, 'type': 'index'}))
+probe('wrong_argument_order', lambda g,d: g['phases'][0]['nodes'][0].__setitem__('args', dict(reversed(list(g['phases'][0]['nodes'][0]['args'].items())))))
+probe('missing_argument', lambda g,d: g['phases'][0]['nodes'][0]['args'].pop('v'))
+probe('unknown_node_operation', lambda g,d: g['phases'][0]['nodes'][0].__setitem__('op', 'raw_tape'))
+probe('unknown_node_member', lambda g,d: g['phases'][0]['nodes'][0].__setitem__('register', 0))
+probe('unknown_record', lambda g,d: first_call(g).__setitem__('record', {'key': 'absent'}))
+probe('unknown_helper', lambda g,d: g['phases'][0]['nodes'][0].__setitem__('function', 'absent'))
+probe('unknown_bank', lambda g,d: first_call(g).__setitem__('bank', 'current'))
+probe('action_old_call_bank', lambda g,d: first_call(g).__setitem__('bank', 'old'))
+probe('mutation_published_read_bank', lambda g,d: g['mutation']['nodes'][0].__setitem__('bank', 'published'))
+probe('target_record_in_action', lambda g,d: next(n for n in nodes(g) if n['op']=='read_record').__setitem__('record', {'target': True}))
+probe('target_index_in_action', lambda g,d: next(n for n in nodes(g) if 'source_index' in n.get('record',{})).__setitem__('record', {'source_index': {'target_index': True}}))
+probe('dynamic_call_missing_contract', lambda g,d: next(n for n in nodes(g) if n['op']=='call_record' and n['slot']=='body' and 'source_index' in n.get('record',{})).pop('contract'))
+probe('field_nonzero_role', lambda g,d: next(n for n in nodes(g) if n['op']=='call_record' and n['slot']=='field').__setitem__('role', 1))
+probe('incomplete_record_returns', lambda g,d: g['mutation']['returns'].pop('body'))
+probe('incomplete_state_returns', lambda g,d: g['returns'].pop('ar'))
+probe('reordered_phases', lambda g,d: g['phases'].__setitem__(slice(0,2), list(reversed(g['phases'][:2]))))
+probe('late_fidelity_failure_atomic', lambda g,d: g['returns'].__setitem__('ar', {'state': 'ar'}))
+
+def add_helper(g, entry=None):
+    g['functions']['experiment_helper'] = deepcopy(entry or helper())
+    return g['functions']['experiment_helper']
+
+probe('helper_unknown_nominal_type', lambda g,d: add_helper(g)['outputs'].__setitem__('y0','scalar'))
+probe('helper_wrong_ordered_names', lambda g,d: add_helper(g, helper(inputs=2)).__setitem__('inputs', {'x1':'coefficient','x0':'coefficient'}))
+probe('helper_unknown_expression_opcode', lambda g,d: add_helper(g)['binding']['outputs'].__setitem__('y0', {'op':'invented','args':[]}))
+probe('helper_guard_unknown_input', lambda g,d: add_helper(g)['binding'].__setitem__('requires',[{'input':'absent'}]))
+probe('helper_guard_wrong_shape', lambda g,d: add_helper(g)['binding'].__setitem__('requires',{'input':'x0'}))
+probe('helper_cannot_replace_function', lambda g,d: g['functions'].__setitem__(next(iter(d['functions'])),helper()))
+
+def call_body_as_helper(g,d):
+    node=next(n for n in nodes(g) if n['op']=='call_record' and n['slot']=='body' and 'key' in n['record'])
+    rec=next(r for r in d['records'] if r['key']==node['record']['key'])
+    fn=d['families'][rec['body']]['methods'][str(node['role'])]
+    identity,args=node['id'],node['args']
+    node.clear(); node.update(id=identity,op='call_helper',function=fn,args=args)
+probe('helper_cannot_bypass_resident_body_dispatch',call_body_as_helper)
+
+def excessive_instructions(g,d):
+    expression={'input':'x0'}
+    for _ in range(130): expression={'op':'add','args':[expression, float(_+1)]}
+    add_helper(g,helper(inputs=1))['binding']['outputs']['y0']=expression
+probe('helper_excessive_instructions',excessive_instructions)
+probe('helper_excessive_function_bank',lambda g,d: g['functions'].update({f'extra_{i}':helper() for i in range(resident.MAX_FUNCTIONS-len(d['functions'])+1)}))
+
+def unused_helper(g,d):
+    add_helper(g)
+    g['phases'][-1]['nodes'].append({'id':'extra_eager_guarded_helper','op':'call_helper','function':'experiment_helper','args':{}})
+probe('extra_helper_keeps_body_methods',unused_helper,expected='accept')
+
+def runtime_guard_retained(g,d):
+    unused_helper(g,d)
+    g['functions']['experiment_helper']['binding']['requires']=[0]
+probe('unused_output_runtime_guard_is_retained',runtime_guard_retained,expected='accept')
+
+def liveness(g,d,count):
+    g['functions']['produce32']=helper(width=32)
+    g['functions']['consume64']=helper(inputs=64)
+    target=g['phases'][-1]['nodes']
+    for i in range(count): target.append({'id':f'hold_{i}','op':'call_helper','function':'produce32','args':{}})
+    for i in range(0,count,2):
+        refs=[{'node':f'hold_{j}','output':f'y{k}'} for j in range(i,min(i+2,count)) for k in range(32)]
+        while len(refs)<64: refs.append({'literal':0,'type':'coefficient'})
+        target.append({'id':f'consume_{i}','op':'call_helper','function':'consume64','args':dict(zip((f'x{k}' for k in range(64)),refs))})
+probe('liveness_large_accepted',lambda g,d:liveness(g,d,4),expected='accept')
+probe('liveness_overflow_atomic',lambda g,d:liveness(g,d,7))
+
+def excessive_nodes(g,d):
+    add_helper(g)
+    g['phases'][-1]['nodes'].extend({'id':f'excess_{i}','op':'call_helper','function':'experiment_helper','args':{}} for i in range(compiler.MAX_NODES))
+probe('node_count_limit_atomic',excessive_nodes)
+
+# All existing source-language profiles must compile, not just the core graph.
+enzyme_inputs=read('source_bindings/examples/enzyme_inputs.json')
+enzyme_inputs['observations']=enzyme_inputs['observations'][:1]
+enzyme_definition=author.build_definition(model,cycle,enzyme_inputs=enzyme_inputs)
+enzyme_graph=read('source_bindings/graphs/enzyme_v0.1.json')
+amplitude_model=read('source_bindings/examples/amplitude_budget_model.json')
+amplitude_definition=author.build_definition(amplitude_model,cycle,1)
+amplitude_graph=read('source_bindings/graphs/amplitude_v0.1.json')
+probe('canonical_enzyme',lambda g,d:None,expected='accept',base=enzyme_definition,source_graph=enzyme_graph)
+probe('canonical_amplitude_extension',lambda g,d:None,expected='accept',base=amplitude_definition,source_graph=amplitude_graph,source_model=amplitude_model)
+authored_model=read('source_bindings/examples/authored_hadamard_model.json')
+authored_definition=author.build_definition(authored_model,cycle,1)
+authored_graph=read('output/source_graph_2026-09-24/authored_hadamard/source_graph.json')
+probe('authored_field_placement_retention_layout',lambda g,d:None,expected='accept',base=authored_definition,source_graph=authored_graph,source_model=authored_model)
+
+poisoned=[]
+for name,base,g,m in [('core',core,graph,model),('enzyme',enzyme_definition,enzyme_graph,model),('amplitude',amplitude_definition,amplitude_graph,amplitude_model),('authored_hadamard',authored_definition,authored_graph,authored_model)]:
+    clean,poison=deepcopy(base),deepcopy(base)
+    poison['mutation_plan']=[['INVALID_LEGACY_TAPE_DO_NOT_READ']]
+    poison['action_plan']={'INVALID_LEGACY_TAPE_DO_NOT_READ':True}
+    for key in ('mutation_calls','action_calls','stage_boundaries'):
+        poison['source'][key]={'INVALID_LEGACY_METADATA_DO_NOT_READ':True}
+    # Obsolete nested construction positions must not be lowering inputs either.
+    if poison['source'].get('enzyme'):
+        poison['source']['enzyme']['resident_application']={'INVALID_OLD_LAYOUT':True}
+    for owner in (poison['source'],poison['source'].get('authoring',{})):
+        slots=owner.get('source_slot_bindings') or owner.get('slot_resolutions')
+        policies=list(slots.get('mutation_program_retention',[])) if slots else []
+        extension=owner.get('catalogue_extension')
+        if extension:
+            extension['routing']['call_step']={'INVALID_OLD_LAYOUT':True}
+            policies.append(extension['mutation_retention'])
+        for policy in policies:
+            for key in ('step','inputs','argument_base','output_base'):
+                policy[key]={'INVALID_OLD_LAYOUT':True}
+    compiler.apply_graph(clean,cycle,g)
+    compiler.apply_graph(poison,cycle,g)
+    pclean,_=wrapper.compile_definition(m,clean)
+    ppoison,_=wrapper.compile_definition(m,poison)
+    row={'profile':name,'normal_program_sha256':ir.sha256(pclean),'poisoned_program_sha256':ir.sha256(ppoison),
+         'program_bytes_identical':pclean==ppoison,'mutation_tapes_identical':clean['mutation_plan']==poison['mutation_plan'],
+         'action_tapes_identical':clean['action_plan']==poison['action_plan'],
+         'metadata_replaced':all(clean['source'][key]==poison['source'][key] for key in ('mutation_calls','action_calls','stage_boundaries','enzyme','source_slot_bindings','catalogue_extension','authoring') if key in clean['source']),
+         'live_layout_metadata':verify_layout(poison)}
+    row['passed']=all(row[k] for k in ('program_bytes_identical','mutation_tapes_identical','action_tapes_identical','metadata_replaced'))
+    poisoned.append(row)
+
+# Exercise the public root wrapper too; no native execution is necessary here.
+wrapped,program,manifest=wrapper.compile_program(model,cycle,graph,1)
+wrapper_evidence={'program_sha256':ir.sha256(program),'graph_sha256':manifest['binding_contract']['application_graph']['graph_sha256'],
+                  'source_graph_lowered':manifest['source_graph_lowered'],'source_cycle_lowered':manifest['source_cycle_lowered'],
+                  'complete_application_lowered':manifest['complete_application_lowered'],'status':manifest['status'],
+                  'same_as_direct':ir.sha256(program)==results[0]['program_sha256']}
+guard_definition,guard_graph=deepcopy(core),deepcopy(graph)
+runtime_guard_retained(guard_graph,guard_definition)
+compiler.apply_graph(guard_definition,cycle,guard_graph)
+guard_program,_=resident.compile_definition(model,guard_definition)
+decoded=resident.decode_checkpoint(guard_program)
+guard_handle=list(guard_definition['functions']).index('experiment_helper')
+descriptor=decoded['functions'][guard_handle]
+guard_opcodes=decoded['heap'][descriptor['code_offset']:descriptor['code_offset']+4*descriptor['instruction_count']:4]
+guard_steps=[i for i,step in enumerate(decoded['action_plan']) if step[0]==3 and step[1]==guard_handle]
+guard_evidence={'unused_output_helper_handle':guard_handle,'function_opcodes':guard_opcodes,'eager_call_plan_steps':guard_steps,
+                'require_opcode_retained':17 in guard_opcodes,'one_eager_call_retained':len(guard_steps)==1,
+                'same_program_as_acceptance_case':ir.sha256(guard_program)==next(r['program_sha256'] for r in results if r['name']=='unused_output_runtime_guard_is_retained')}
+guard_evidence['passed']=all(guard_evidence[k] for k in ('require_opcode_retained','one_eager_call_retained','same_program_as_acceptance_case'))
+files=['local_lab/source_graph.py','local_lab/source_graph_program.py','local_lab/source_graph_types.py','local_lab/source_graph_fidelity.py',
+       'local_lab/source_graph_export.py','source_bindings/graphs/cycle_v0.1.json','source_bindings/graphs/enzyme_v0.1.json',
+       'source_bindings/graphs/amplitude_v0.1.json','output/source_graph_2026-09-24/authored_hadamard/source_graph.json',
+       'source_bindings/examples/authored_hadamard_model.json','output/source_graph_2026-09-24/experiment.txt']
+previous_programs={'canonical_core':'a84cc6a69d169edde40bb99064fcc6f1759039fac962503ccb0e801777d89c46',
+                   'canonical_enzyme':'eafe1485722512a280d36e8315070a1a2aae85194e799f3210860532840a3c74',
+                   'canonical_amplitude_extension':'9131b1495586a710e45addc56da720709761e62d981ec12a4a3942a19af00774'}
+metadata_only={'previous_compiler_sha256':'05e150d7debdb64b99940cc3e02fa219e0d1f22f213f8b2483babf5015f04bad',
+               'previous_program_sha256':previous_programs,
+               'all_programs_unchanged':all(next(r['program_sha256'] for r in results if r['name']==name)==digest for name,digest in previous_programs.items())}
+report={'profile':'DWI-SOURCE-GRAPH-0.1','timestamp_utc':datetime.now(timezone.utc).isoformat(),
+        'scope':'Direct Python compiler/schema/atomicity/liveness checks; no native execution or GPU experiment.',
+        'source_hashes':{name:ir.sha256(Path(name).read_bytes()) for name in files},
+        'cases':results,'poisoned_legacy_tapes':poisoned,'public_wrapper':wrapper_evidence,'guard_retention':guard_evidence,'metadata_only_revision':metadata_only,
+        'summary':{'cases':len(results),'passed':sum(r['passed'] for r in results),
+                   'accepted':sum(r['outcome']=='accepted' for r in results),'rejected':sum(r['outcome']=='rejected' for r in results),
+                   'poisoned_profiles_passed':sum(r['passed'] for r in poisoned),
+                   'all_passed':all(r['passed'] for r in results+poisoned) and wrapper_evidence['same_as_direct'] and guard_evidence['passed'] and metadata_only['all_programs_unchanged']}}
+(OUT/'compiler_rejections.json').write_bytes(ir.json_bytes(report))
+print(json.dumps(report['summary'],indent=2))
