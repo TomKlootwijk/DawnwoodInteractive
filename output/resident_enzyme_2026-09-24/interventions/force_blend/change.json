@@ -1,0 +1,19 @@
+{
+  "baseline_definition": "../../baseline/definition.json",
+  "changes": {
+    "change": "force one resident proposal strategy; all protected law functions unchanged",
+    "family": "blend"
+  },
+  "epochs": [
+    1,
+    8
+  ],
+  "program_sha256": "a4a5a95fc0c782762c2266ef97cd44ae6ab804d7ae151d3180dd2f5d6b75705c",
+  "configuration_sha256": "fcafa0b1b9bec3d4fd58f5d6770a82bf18cb407c328270b322def6e3d68d58ab",
+  "protected_law_hashes": {
+    "enzyme_domain_sdf": "6a0deca9d3daa59e51509f489444d6d694d531002604ea7f70ea84ae4c189776",
+    "enzyme_project_evaluate": "87a6258b3ac387dc07e509677c38b7f3a769b7ecff7ba1258367adfdc260484e",
+    "enzyme_accept": "fd75c57ece7308c359e8648415c26c6aa864271f7fae83eda5189f0663bb2a47",
+    "enzyme_witness_gap": "7cd3699bfa0b85bf1bb3cc637f83e7a32ac7e12b4651432a5a80e3a0d0b1617a"
+  }
+}

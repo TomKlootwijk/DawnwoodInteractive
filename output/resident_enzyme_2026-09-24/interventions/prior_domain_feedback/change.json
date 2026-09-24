@@ -1,0 +1,18 @@
+{
+  "baseline_definition": "../../baseline/definition.json",
+  "changes": {
+    "change": "set preceding domain trial SDF to -1 as a deliberate causal intervention"
+  },
+  "epochs": [
+    1,
+    2
+  ],
+  "program_sha256": "f04e156824a855657b857260cbba03c0ab602248ccd73b9ca90204baffca794d",
+  "configuration_sha256": "ef40ff8b6cb4bbfb679242749c2e95a04dc3f17323e3dcbe572c741090acaa2b",
+  "protected_law_hashes": {
+    "enzyme_domain_sdf": "6a0deca9d3daa59e51509f489444d6d694d531002604ea7f70ea84ae4c189776",
+    "enzyme_project_evaluate": "87a6258b3ac387dc07e509677c38b7f3a769b7ecff7ba1258367adfdc260484e",
+    "enzyme_accept": "fd75c57ece7308c359e8648415c26c6aa864271f7fae83eda5189f0663bb2a47",
+    "enzyme_witness_gap": "7cd3699bfa0b85bf1bb3cc637f83e7a32ac7e12b4651432a5a80e3a0d0b1617a"
+  }
+}

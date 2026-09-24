@@ -1,0 +1,309 @@
+{
+  "profile": "DWI-ENZYME-0.1-results",
+  "scope": "Readout of the resident enzyme-consistency application; no host correction or projection.",
+  "checkpoint_sha256": "70ed6bd93119d53a52f587c9c41dc4f0756fa4bd438ec5234f067411c9613bec",
+  "configuration_sha256": "3e09639795a4038d3a94f001cb81afd8f009e3056790d18fab1f35e59c0c9cb8",
+  "manifest_sha256": "3aa1cab538941f37e13839a2d484845eb8e2f249bf66fea28d2da4b973fa8931",
+  "pools": {
+    "E_total_uM": 10,
+    "S_total_uM": 100,
+    "concentration_scale_uM": 10
+  },
+  "species_order": [
+    "E",
+    "S",
+    "ES",
+    "P"
+  ],
+  "metric": "Equal-weight Euclidean distance in the four concentrations, using one common scale.",
+  "feasibility_tolerance_normalized": 1e-05,
+  "feasibility_tolerance_uM": 0.0001,
+  "gap_threshold_normalized_squared": 1e-05,
+  "gap_interpretation": "Resident FP32 estimate of a convex objective-gap bound; not an interval-certified bound or a proof of exact nearest projection.",
+  "observation_precision": "Executed normalized FP32 inputs multiplied by the declared common scale; original decimal inputs may have rounded.",
+  "all_runtime_healthy": true,
+  "all_feasible_within_declared_tolerance": true,
+  "all_gap_estimates_below_requested_threshold": false,
+  "results": [
+    {
+      "id": "interior_noisy",
+      "epoch": 0,
+      "runtime_status": 0,
+      "runtime_healthy": true,
+      "application_diagnostics_evaluated": false,
+      "executed_observation_uM": {
+        "E_uM": 8.00000011920929,
+        "S_uM": 78.00000190734863,
+        "ES_uM": 3.0000001192092896,
+        "P_uM": 20.0
+      },
+      "returned_species_uM": {
+        "E_uM": 10.0,
+        "S_uM": 100.0,
+        "ES_uM": 0.0,
+        "P_uM": 0.0
+      },
+      "conservation_residuals_uM": {
+        "E_plus_ES_minus_total": 0.0,
+        "S_plus_ES_plus_P_minus_total": 0.0
+      },
+      "minimum_returned_species_uM": 0.0,
+      "feasible_within_declared_tolerance": true,
+      "resident_objective_normalized_squared": 8.970000267028809,
+      "returned_correction_distance_uM": 29.949956866664806,
+      "resident_optimality_gap_estimate_normalized_squared": null,
+      "gap_estimate_below_requested_threshold": false,
+      "trial_intrinsic_sdf_normalized": null,
+      "trial_projection_distance_normalized": null,
+      "last_proposal_accepted": null,
+      "last_objective_improvement": null,
+      "last_step": null,
+      "current_proposal_family": "blend"
+    },
+    {
+      "id": "boundary_noisy",
+      "epoch": 0,
+      "runtime_status": 0,
+      "runtime_healthy": true,
+      "application_diagnostics_evaluated": false,
+      "executed_observation_uM": {
+        "E_uM": 8.00000011920929,
+        "S_uM": -5.0,
+        "ES_uM": 20.0,
+        "P_uM": 90.0
+      },
+      "returned_species_uM": {
+        "E_uM": 10.0,
+        "S_uM": 100.0,
+        "ES_uM": 0.0,
+        "P_uM": 0.0
+      },
+      "conservation_residuals_uM": {
+        "E_plus_ES_minus_total": 0.0,
+        "S_plus_ES_plus_P_minus_total": 0.0
+      },
+      "minimum_returned_species_uM": 0.0,
+      "feasible_within_declared_tolerance": true,
+      "resident_objective_normalized_squared": 195.2899932861328,
+      "returned_correction_distance_uM": 139.74619851546288,
+      "resident_optimality_gap_estimate_normalized_squared": null,
+      "gap_estimate_below_requested_threshold": false,
+      "trial_intrinsic_sdf_normalized": null,
+      "trial_projection_distance_normalized": null,
+      "last_proposal_accepted": null,
+      "last_objective_improvement": null,
+      "last_step": null,
+      "current_proposal_family": "blend"
+    },
+    {
+      "id": "already_consistent",
+      "epoch": 0,
+      "runtime_status": 0,
+      "runtime_healthy": true,
+      "application_diagnostics_evaluated": false,
+      "executed_observation_uM": {
+        "E_uM": 6.9999998807907104,
+        "S_uM": 76.99999809265137,
+        "ES_uM": 3.0000001192092896,
+        "P_uM": 20.0
+      },
+      "returned_species_uM": {
+        "E_uM": 10.0,
+        "S_uM": 100.0,
+        "ES_uM": 0.0,
+        "P_uM": 0.0
+      },
+      "conservation_residuals_uM": {
+        "E_plus_ES_minus_total": 0.0,
+        "S_plus_ES_plus_P_minus_total": 0.0
+      },
+      "minimum_returned_species_uM": 0.0,
+      "feasible_within_declared_tolerance": true,
+      "resident_objective_normalized_squared": 9.470000267028809,
+      "returned_correction_distance_uM": 30.77336655565251,
+      "resident_optimality_gap_estimate_normalized_squared": null,
+      "gap_estimate_below_requested_threshold": false,
+      "trial_intrinsic_sdf_normalized": null,
+      "trial_projection_distance_normalized": null,
+      "last_proposal_accepted": null,
+      "last_objective_improvement": null,
+      "last_step": null,
+      "current_proposal_family": "blend"
+    },
+    {
+      "id": "product_excess",
+      "epoch": 0,
+      "runtime_status": 0,
+      "runtime_healthy": true,
+      "application_diagnostics_evaluated": false,
+      "executed_observation_uM": {
+        "E_uM": 2.0000000298023224,
+        "S_uM": 2.0000000298023224,
+        "ES_uM": 8.999999761581421,
+        "P_uM": 120.0
+      },
+      "returned_species_uM": {
+        "E_uM": 10.0,
+        "S_uM": 100.0,
+        "ES_uM": 0.0,
+        "P_uM": 0.0
+      },
+      "conservation_residuals_uM": {
+        "E_plus_ES_minus_total": 0.0,
+        "S_plus_ES_plus_P_minus_total": 0.0
+      },
+      "minimum_returned_species_uM": 0.0,
+      "feasible_within_declared_tolerance": true,
+      "resident_objective_normalized_squared": 241.49000549316406,
+      "returned_correction_distance_uM": 155.39948516449587,
+      "resident_optimality_gap_estimate_normalized_squared": null,
+      "gap_estimate_below_requested_threshold": false,
+      "trial_intrinsic_sdf_normalized": null,
+      "trial_projection_distance_normalized": null,
+      "last_proposal_accepted": null,
+      "last_objective_improvement": null,
+      "last_step": null,
+      "current_proposal_family": "blend"
+    },
+    {
+      "id": "negative_complex",
+      "epoch": 0,
+      "runtime_status": 0,
+      "runtime_healthy": true,
+      "application_diagnostics_evaluated": false,
+      "executed_observation_uM": {
+        "E_uM": 12.000000476837158,
+        "S_uM": 95.0,
+        "ES_uM": -2.0000000298023224,
+        "P_uM": 3.0000001192092896
+      },
+      "returned_species_uM": {
+        "E_uM": 10.0,
+        "S_uM": 100.0,
+        "ES_uM": 0.0,
+        "P_uM": 0.0
+      },
+      "conservation_residuals_uM": {
+        "E_plus_ES_minus_total": 0.0,
+        "S_plus_ES_plus_P_minus_total": 0.0
+      },
+      "minimum_returned_species_uM": 0.0,
+      "feasible_within_declared_tolerance": true,
+      "resident_objective_normalized_squared": 0.41999998688697815,
+      "returned_correction_distance_uM": 6.480740909943392,
+      "resident_optimality_gap_estimate_normalized_squared": null,
+      "gap_estimate_below_requested_threshold": false,
+      "trial_intrinsic_sdf_normalized": null,
+      "trial_projection_distance_normalized": null,
+      "last_proposal_accepted": null,
+      "last_objective_improvement": null,
+      "last_step": null,
+      "current_proposal_family": "blend"
+    },
+    {
+      "id": "zero_observation",
+      "epoch": 0,
+      "runtime_status": 0,
+      "runtime_healthy": true,
+      "application_diagnostics_evaluated": false,
+      "executed_observation_uM": {
+        "E_uM": 0.0,
+        "S_uM": 0.0,
+        "ES_uM": 0.0,
+        "P_uM": 0.0
+      },
+      "returned_species_uM": {
+        "E_uM": 10.0,
+        "S_uM": 100.0,
+        "ES_uM": 0.0,
+        "P_uM": 0.0
+      },
+      "conservation_residuals_uM": {
+        "E_plus_ES_minus_total": 0.0,
+        "S_plus_ES_plus_P_minus_total": 0.0
+      },
+      "minimum_returned_species_uM": 0.0,
+      "feasible_within_declared_tolerance": true,
+      "resident_objective_normalized_squared": 101.0,
+      "returned_correction_distance_uM": 100.4987562112089,
+      "resident_optimality_gap_estimate_normalized_squared": null,
+      "gap_estimate_below_requested_threshold": false,
+      "trial_intrinsic_sdf_normalized": null,
+      "trial_projection_distance_normalized": null,
+      "last_proposal_accepted": null,
+      "last_objective_improvement": null,
+      "last_step": null,
+      "current_proposal_family": "blend"
+    },
+    {
+      "id": "initial_feasible_corner",
+      "epoch": 0,
+      "runtime_status": 0,
+      "runtime_healthy": true,
+      "application_diagnostics_evaluated": false,
+      "executed_observation_uM": {
+        "E_uM": 10.0,
+        "S_uM": 100.0,
+        "ES_uM": 0.0,
+        "P_uM": 0.0
+      },
+      "returned_species_uM": {
+        "E_uM": 10.0,
+        "S_uM": 100.0,
+        "ES_uM": 0.0,
+        "P_uM": 0.0
+      },
+      "conservation_residuals_uM": {
+        "E_plus_ES_minus_total": 0.0,
+        "S_plus_ES_plus_P_minus_total": 0.0
+      },
+      "minimum_returned_species_uM": 0.0,
+      "feasible_within_declared_tolerance": true,
+      "resident_objective_normalized_squared": 0.0,
+      "returned_correction_distance_uM": 0.0,
+      "resident_optimality_gap_estimate_normalized_squared": null,
+      "gap_estimate_below_requested_threshold": false,
+      "trial_intrinsic_sdf_normalized": null,
+      "trial_projection_distance_normalized": null,
+      "last_proposal_accepted": null,
+      "last_objective_improvement": null,
+      "last_step": null,
+      "current_proposal_family": "blend"
+    },
+    {
+      "id": "depleted_substrate",
+      "epoch": 0,
+      "runtime_status": 0,
+      "runtime_healthy": true,
+      "application_diagnostics_evaluated": false,
+      "executed_observation_uM": {
+        "E_uM": 0.0,
+        "S_uM": 0.0,
+        "ES_uM": 10.0,
+        "P_uM": 90.0
+      },
+      "returned_species_uM": {
+        "E_uM": 10.0,
+        "S_uM": 100.0,
+        "ES_uM": 0.0,
+        "P_uM": 0.0
+      },
+      "conservation_residuals_uM": {
+        "E_plus_ES_minus_total": 0.0,
+        "S_plus_ES_plus_P_minus_total": 0.0
+      },
+      "minimum_returned_species_uM": 0.0,
+      "feasible_within_declared_tolerance": true,
+      "resident_objective_normalized_squared": 183.0,
+      "returned_correction_distance_uM": 135.27749258468683,
+      "resident_optimality_gap_estimate_normalized_squared": null,
+      "gap_estimate_below_requested_threshold": false,
+      "trial_intrinsic_sdf_normalized": null,
+      "trial_projection_distance_normalized": null,
+      "last_proposal_accepted": null,
+      "last_objective_improvement": null,
+      "last_step": null,
+      "current_proposal_family": "blend"
+    }
+  ]
+}

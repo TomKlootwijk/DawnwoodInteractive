@@ -1,0 +1,99 @@
+[
+  {
+    "name": "force_blend",
+    "epochs": [
+      1,
+      8
+    ]
+  },
+  {
+    "name": "force_blend_enzyme_cautious",
+    "epochs": [
+      1,
+      8
+    ]
+  },
+  {
+    "name": "freeze_mutator",
+    "epochs": [
+      1,
+      2,
+      8
+    ]
+  },
+  {
+    "name": "ablate_chemical_core_feedback",
+    "epochs": [
+      8,
+      64,
+      128
+    ]
+  },
+  {
+    "name": "prior_domain_feedback",
+    "epochs": [
+      1,
+      2
+    ]
+  },
+  {
+    "name": "carrier_field",
+    "epochs": [
+      1
+    ]
+  },
+  {
+    "name": "carrier_placement",
+    "epochs": [
+      1
+    ]
+  },
+  {
+    "name": "core_operator_mutation",
+    "epochs": [
+      1
+    ]
+  },
+  {
+    "name": "core_log_polar",
+    "epochs": [
+      1
+    ]
+  },
+  {
+    "name": "core_split_and_hinge",
+    "epochs": [
+      1
+    ]
+  },
+  {
+    "name": "core_selected_operator",
+    "epochs": [
+      1
+    ]
+  },
+  {
+    "name": "core_rk4_four_slots",
+    "epochs": [
+      1
+    ]
+  },
+  {
+    "name": "core_geometry_divergence",
+    "epochs": [
+      1
+    ]
+  },
+  {
+    "name": "core_rgba_crystal",
+    "epochs": [
+      1
+    ]
+  },
+  {
+    "name": "core_surface_return",
+    "epochs": [
+      1
+    ]
+  }
+]

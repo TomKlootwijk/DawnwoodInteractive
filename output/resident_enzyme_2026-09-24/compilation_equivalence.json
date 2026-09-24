@@ -1,0 +1,9 @@
+{
+  "executed_program_sha256": "d81a6c2fbdf0e43015664d291c23470c59e3b0277f9218773625aa74b6ea41b4",
+  "cli_program_byte_identical": true,
+  "definition_difference_only": "source.model_semantic_sha256",
+  "executed_metadata_value": "8fc98d57dbe7b80ec0b53ad5e6fb3d2a8cc602399349b34b38b34fb5d7504d1a",
+  "utf8_cli_metadata_value": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+  "cause": "Temporary experimental script used Windows default text decoding for original model metadata. CLI uses strict UTF8. This changed the model-title-derived provenance hash only; all executable expressions, plans, initial states and complete program bytes are identical. The original experimental definition metadata is retained separately.",
+  "all_other_definition_fields_equal": true
+}

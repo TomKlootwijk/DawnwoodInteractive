@@ -1,0 +1,21 @@
+{
+  "baseline_definition": "../../baseline/definition.json",
+  "changes": {
+    "phase": "rk4_four_slots",
+    "family": "rk4",
+    "role": 2,
+    "output": "ar",
+    "change": "add .03125; deliberate body intervention, not a proposed valid replacement for its original mathematical law"
+  },
+  "epochs": [
+    1
+  ],
+  "program_sha256": "3a657e4ad07edf0e5ea85b48caddab3b02ba696797d41e04e13040e9106ffa3d",
+  "configuration_sha256": "1ef6ab69e62609a67f561c567639d630165480ba0a91220fdabed0dc4ebc9302",
+  "protected_law_hashes": {
+    "enzyme_domain_sdf": "6a0deca9d3daa59e51509f489444d6d694d531002604ea7f70ea84ae4c189776",
+    "enzyme_project_evaluate": "87a6258b3ac387dc07e509677c38b7f3a769b7ecff7ba1258367adfdc260484e",
+    "enzyme_accept": "fd75c57ece7308c359e8648415c26c6aa864271f7fae83eda5189f0663bb2a47",
+    "enzyme_witness_gap": "7cd3699bfa0b85bf1bb3cc637f83e7a32ac7e12b4651432a5a80e3a0d0b1617a"
+  }
+}

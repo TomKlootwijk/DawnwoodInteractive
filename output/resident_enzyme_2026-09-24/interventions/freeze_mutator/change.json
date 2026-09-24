@@ -1,0 +1,19 @@
+{
+  "baseline_definition": "../../baseline/definition.json",
+  "changes": {
+    "change": "old mutator self-target retains original family30 instead of successor33"
+  },
+  "epochs": [
+    1,
+    2,
+    8
+  ],
+  "program_sha256": "e8b3349d77ac32eee2a418624623d20519e8180a024f06d745ce1dd690d26037",
+  "configuration_sha256": "45ab60eb55aa15808409ab1d852fb545f828e4f4f5adacf6421add0816b6deb9",
+  "protected_law_hashes": {
+    "enzyme_domain_sdf": "6a0deca9d3daa59e51509f489444d6d694d531002604ea7f70ea84ae4c189776",
+    "enzyme_project_evaluate": "87a6258b3ac387dc07e509677c38b7f3a769b7ecff7ba1258367adfdc260484e",
+    "enzyme_accept": "fd75c57ece7308c359e8648415c26c6aa864271f7fae83eda5189f0663bb2a47",
+    "enzyme_witness_gap": "7cd3699bfa0b85bf1bb3cc637f83e7a32ac7e12b4651432a5a80e3a0d0b1617a"
+  }
+}

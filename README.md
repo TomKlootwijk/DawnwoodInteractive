@@ -10,7 +10,7 @@ shared C++/Vulkan equations, hardware evidence and **headless native
 specialization tools**. Source intent, chosen equations, executable behavior and
 measured results remain distinct.
 
-## The source application and the numerical gap
+## The source application and its numerical edition
 
 The [literal application contract](docs/LITERAL_APPLICATION_CONTRACT.md) is the
 reference for implementing the requested architecture. The application must act
@@ -38,8 +38,8 @@ streams, finite history, inverse matrix and Klein return are documented in the
 [source-cycle binding](docs/SOURCE_CYCLE_BINDING.md) and
 [source fidelity audit](output/source_cycle_2026-09-24/SOURCE_FIDELITY_AUDIT.md).
 The source's open numerical laws are explicitly chosen bindings. This is a
-bounded numerical edition, not an unrestricted compiler for every symbolic
-expression or a completed biochemical application.
+bounded numerical edition with explicit source and arithmetic limits. A resident
+enzyme-pool application now specializes this cycle, as described below.
 
 ```powershell
 .\Dawnwood-Cycle.cmd compile --output output/my_cycle
@@ -51,8 +51,39 @@ Use a fresh compilation directory. The [recorded cycle campaign](output/source_c
 separates complete-cycle comparisons, deliberate body interventions, independent
 mathematical checks and hardware saturation. Selected-action adapters currently
 cover six geometric records; optional Bayer layout and BC5 encoding are not
-implemented by this edition. The next application milestone is independently
-checked domain work through these resident definitions.
+implemented by this edition. Its saturation and mathematical results belong to
+the source-cycle campaign; application-specific evidence is recorded separately.
+
+## Run the resident enzyme application
+
+[DWI-ENZYME-0.1](docs/RESIDENT_ENZYME_BINDING.md) reconciles supplied enzyme,
+substrate, complex and product concentrations against two conserved pools. Its
+proposal, chemical SDF, projection, evaluation and acceptance are executable
+resident definitions inside the full eight-stage cycle. A resident mutator
+changes the proposal strategy from preceding results. The chemical SDF uses an
+explicit concentration metric; the operator's Klein field and placement retain
+their carrier meanings.
+
+```powershell
+.\Dawnwood-Enzyme.cmd compile --inputs source_bindings/examples/enzyme_inputs.json --output output/my_enzyme
+.\Dawnwood-Enzyme.cmd run --backend vulkan --epochs 128 --input output/my_enzyme/program.bin --output output/my_enzyme/gpu128.bin
+.\Dawnwood-Enzyme.cmd results output/my_enzyme/gpu128.bin --manifest output/my_enzyme/manifest.json --output output/my_enzyme/results.json
+```
+
+The [resident application campaign](output/resident_enzyme_2026-09-24/REPORT.md)
+checked 129 synthetic cases: all were runtime-healthy and feasible within the
+declared `1e-5` normalized tolerance. CPU/GPU checkpoints, resumed execution and
+reversed mutation order agreed exactly. After 128 epochs, the maximum species
+error against an independent constrained optimum was `4.337e-4` normalized
+concentration units (`0.004337 uM` with that campaign's scale).
+
+This is a bounded consistency tool for the supplied model. It reports residuals
+and an estimated optimality gap; FP32 rounding prevents an exact-nearest or
+strict-monotonicity guarantee. Computational epochs are not biochemical time.
+See the [domain derivation](docs/ENZYME_POOL_DOMAIN_GROUNDING.md) for the scientific
+assumptions and metric. No speed advantage over a direct small solver is claimed.
+
+## Earlier numerical components
 
 The earlier numerical components remain available:
 [DWI-XIR expression bindings](source_bindings/README.md). It compiles a selected
@@ -174,6 +205,8 @@ computation. An unresolved bounded run remains an unresolved result.
    coordinate metrics and native mapping.
 7. [Native domain equations and ABI](docs/DOMAIN_KERNEL.md): the exact feedback,
    projection, immutable-law and checkpoint bindings.
+8. [Resident enzyme application](docs/RESIDENT_ENZYME_BINDING.md): complete-cycle
+   candidate reconciliation, executable domain roles and measured numerical limits.
 
 ## Original architecture and preserved numerical profile
 

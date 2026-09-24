@@ -1,0 +1,42 @@
+{
+  "profile": "DWI-RESIDENT-0.2",
+  "source_binding": "DWI-ENZYME-0.1",
+  "instances": 33024,
+  "distinct_template_instances": 129,
+  "template_repetitions": 256,
+  "epochs": 2048,
+  "instance_words": 814,
+  "logical_instance_bytes": 3256,
+  "two_state_buffer_bytes": 215052288,
+  "all_mutable_words_compared": 26881536,
+  "word_differences": 0,
+  "comparison": "Every full returned GPU instance image equals its corresponding 2048-epoch CPU template, repeated 256 times; this is a saturation population of independent replicas, not 33024 distinct initial scientific cases.",
+  "telemetry_samples": 127,
+  "maximum_GPU_percent": 100.0,
+  "samples_at_100_percent": 105,
+  "maximum_temperature_C": 71.0,
+  "maximum_power_W": 120.56,
+  "maximum_memory_used_MiB": 401.0,
+  "GPU_execution_seconds": 55.7988935,
+  "GPU_timing_scope": "sum of host submit-to-fence waits; excludes setup, command recording and readback",
+  "validation_errors": 0,
+  "validation_warnings": 0,
+  "per_epoch_host_reads": 0,
+  "per_epoch_host_uploads": 0,
+  "thermal_stop": false,
+  "capacity_claim": "Compute saturation workload; not a maximum VRAM capacity measurement.",
+  "input": {
+    "uncompressed_bytes": 107622164,
+    "uncompressed_sha256": "0ca449d0b7ac7202885411779cd4cd8c673fcce76ad76982adb98912d3721b2b",
+    "archive": "input.bin.xz",
+    "archive_bytes": 27016,
+    "archive_sha256": "dbfd4ecee62c836fc2cd1d7381081cc03ecf60ca178bed79ca922fe7cf615aed"
+  },
+  "output": {
+    "uncompressed_bytes": 107622164,
+    "uncompressed_sha256": "bf0297f0b20937a039ab9c0b70bc06606054acc5a30d8d05044465189c8431d1",
+    "archive": "output.bin.xz",
+    "archive_bytes": 129820,
+    "archive_sha256": "4afed425c4320bcbcaa4a1c2ef7b216a7e61bb27103640ee6da7f0ee675b0a82"
+  }
+}

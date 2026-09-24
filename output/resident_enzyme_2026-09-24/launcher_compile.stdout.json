@@ -1,0 +1,14 @@
+{
+  "output": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\resident_enzyme_2026-09-24\\baseline",
+  "profile": "DWI-RESIDENT-0.2",
+  "application_profile": "DWI-ENZYME-0.1",
+  "program_sha256": "d81a6c2fbdf0e43015664d291c23470c59e3b0277f9218773625aa74b6ea41b4",
+  "bytes": 516044,
+  "instances": 129,
+  "functions": 61,
+  "families": 35,
+  "state_width": 64,
+  "mutation_steps": 95,
+  "action_steps": 1136,
+  "domain_application_implemented": true
+}

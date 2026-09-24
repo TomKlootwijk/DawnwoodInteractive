@@ -1,0 +1,14 @@
+{
+  "command": [
+    "cmd.exe",
+    "/d",
+    "/c",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood-Enzyme.cmd",
+    "compile",
+    "--inputs",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\resident_enzyme_2026-09-24\\inputs.json",
+    "--output",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\resident_enzyme_2026-09-24\\baseline"
+  ],
+  "exit_code": 0
+}

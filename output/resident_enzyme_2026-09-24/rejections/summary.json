@@ -1,0 +1,564 @@
+{
+  "profile": "DWI-ENZYME-0.1",
+  "timestamp_utc": "2026-09-24T16:27:23.898440+00:00",
+  "scope": "Bounded direct authoring/frontend validation; no GPU execution, no persistent test file, no numerical-source edits.",
+  "source_sha256_before": "2875592287d4905881422da819e55068cab9b4b2b20e985a1b673168a6419911",
+  "source_sha256_after": "2875592287d4905881422da819e55068cab9b4b2b20e985a1b673168a6419911",
+  "source_unchanged": true,
+  "supporting_hashes": {
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\local_lab\\source_cycle.py": "b8bb4255b19e0e53d664449addc984b6c0c44ed795a3f78bfa8190d848ab9f51",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\local_lab\\source_resident_v2.py": "311206687ae0c1b9b1a76dfdaec295761836a2f6e1c4f0afac4994de1c6070d7",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\source_bindings\\examples\\enzyme_inputs.json": "de19cea1b1e6ac2f58f8e5c3c07ebfd755a92471b421a7e2edd9504adba4f0cf"
+  },
+  "valid_control": {
+    "name": "example_inputs_full_compile",
+    "accepted": true,
+    "instance_count": 8,
+    "program_bytes": 122068,
+    "program_sha256": "70ed6bd93119d53a52f587c9c41dc4f0756fa4bd438ec5234f067411c9613bec",
+    "functions": 61,
+    "families": 35,
+    "state_width": 64,
+    "mutation_steps": 95,
+    "action_steps": 1136,
+    "negative_observation_in_control": true
+  },
+  "case_count": 58,
+  "rejection_count": 58,
+  "all_expected_rejections": true,
+  "cases": [
+    {
+      "name": "profile_unknown",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Unknown application profile",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "inputs.profile must be DWI-ENZYME-0.1"
+    },
+    {
+      "name": "root_unknown_key",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Unexpected top-level solver key",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "inputs: unsupported keys ['solver']"
+    },
+    {
+      "name": "root_missing_pools",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Missing pools",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "inputs: missing keys ['pools']"
+    },
+    {
+      "name": "pools_unknown_key",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Unsupported pool parameter",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "inputs.pools: unsupported keys ['temperature_K']"
+    },
+    {
+      "name": "pools_not_object",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Pool object replaced by list",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "inputs.pools: expected an object"
+    },
+    {
+      "name": "pool_boolean",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Boolean enzyme total",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "inputs.pools.E_total_uM: expected a finite number"
+    },
+    {
+      "name": "observation_boolean",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Boolean substrate observation",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "inputs.observations[0].S_uM: expected a finite number"
+    },
+    {
+      "name": "pool_nan",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Nonfinite NaN total passed directly to Python API",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "inputs.pools.E_total_uM: expected a finite number"
+    },
+    {
+      "name": "pool_infinity",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Infinite total passed directly to Python API",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "inputs.pools.S_total_uM: expected a finite number"
+    },
+    {
+      "name": "observation_nan",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Nonfinite observation passed directly to Python API",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "inputs.observations[0].P_uM: expected a finite number"
+    },
+    {
+      "name": "observation_string",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "String used for concentration",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "inputs.observations[0].E_uM: expected a finite number"
+    },
+    {
+      "name": "observation_unknown_key",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Unexpected observation variance key",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "inputs.observations[0]: unsupported keys ['variance']"
+    },
+    {
+      "name": "observation_missing_species",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Missing complex concentration",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "inputs.observations[0]: missing keys ['ES_uM']"
+    },
+    {
+      "name": "duplicate_id",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Duplicate observation IDs",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "inputs.observations[1].id: expected a unique nonempty string"
+    },
+    {
+      "name": "empty_id",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Empty observation ID",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "inputs.observations[0].id: expected a unique nonempty string"
+    },
+    {
+      "name": "nonstring_id",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Non-string observation ID",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "inputs.observations[0].id: expected a unique nonempty string"
+    },
+    {
+      "name": "empty_observations",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "No observations",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "inputs.observations: expected 1..1000000 observation objects"
+    },
+    {
+      "name": "observations_not_list",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Observation array replaced by object",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "inputs.observations: expected 1..1000000 observation objects"
+    },
+    {
+      "name": "zero_enzyme_total",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Zero enzyme pool",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Pool constants require 0 < E_total_uM < S_total_uM and concentration_scale_uM > 0"
+    },
+    {
+      "name": "negative_enzyme_total",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Negative enzyme pool",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Pool constants require 0 < E_total_uM < S_total_uM and concentration_scale_uM > 0"
+    },
+    {
+      "name": "equal_pool_totals",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Degenerate ET=ST trapezoid edition",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Pool constants require 0 < E_total_uM < S_total_uM and concentration_scale_uM > 0"
+    },
+    {
+      "name": "inverted_pool_totals",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "ST<ET",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Pool constants require 0 < E_total_uM < S_total_uM and concentration_scale_uM > 0"
+    },
+    {
+      "name": "zero_scale",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Zero normalization scale",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Pool constants require 0 < E_total_uM < S_total_uM and concentration_scale_uM > 0"
+    },
+    {
+      "name": "negative_scale",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Negative normalization scale",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Pool constants require 0 < E_total_uM < S_total_uM and concentration_scale_uM > 0"
+    },
+    {
+      "name": "small_normalized_enzyme_total",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Normalized ET below 1e-4",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "This FP32 edition requires normalized E_total and S_total-E_total >= 1e-4, S_total <= 1e4, and scale <= 1e6 uM"
+    },
+    {
+      "name": "small_normalized_pool_gap",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Normalized ST-ET below 1e-4",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "This FP32 edition requires normalized E_total and S_total-E_total >= 1e-4, S_total <= 1e4, and scale <= 1e6 uM"
+    },
+    {
+      "name": "large_normalized_substrate_total",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Normalized ST exceeds 1e4",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "This FP32 edition requires normalized E_total and S_total-E_total >= 1e-4, S_total <= 1e4, and scale <= 1e6 uM"
+    },
+    {
+      "name": "large_scale",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Scale exceeds 1e6 uM",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "This FP32 edition requires normalized E_total and S_total-E_total >= 1e-4, S_total <= 1e4, and scale <= 1e6 uM"
+    },
+    {
+      "name": "large_normalized_observation",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Normalized observed concentration exceeds 1e4",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "inputs.observations[0].E_uM: normalized observation magnitude exceeds 1e4"
+    },
+    {
+      "name": "fp32_pool_vertices_collapse",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Real gap0.0002 passes normalized limit but both totals round to FP32 10000",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Pool geometry degenerates after FP32 encoding"
+    },
+    {
+      "name": "fp32_scale_underflow",
+      "category": "application_inputs",
+      "expected": "reject",
+      "specification": "Positive real scale rounds to FP32 zero while normalized totals remain valid",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Pool geometry degenerates after FP32 encoding"
+    },
+    {
+      "name": "json_duplicate_key",
+      "category": "json_reader",
+      "expected": "reject",
+      "specification": {
+        "raw_json": "{\"profile\":\"DWI-ENZYME-0.1\",\"profile\":\"DWI-ENZYME-0.1\"}"
+      },
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Duplicate JSON object key: 'profile'"
+    },
+    {
+      "name": "json_nan",
+      "category": "json_reader",
+      "expected": "reject",
+      "specification": {
+        "raw_json": "{\"value\":NaN}"
+      },
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Nonfinite JSON number is not supported: NaN"
+    },
+    {
+      "name": "json_infinity",
+      "category": "json_reader",
+      "expected": "reject",
+      "specification": {
+        "raw_json": "{\"value\":Infinity}"
+      },
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Nonfinite JSON number is not supported: Infinity"
+    },
+    {
+      "name": "source_body_unbound",
+      "category": "inherited_source_binding_guards",
+      "expected": "reject",
+      "specification": "Direct build_definition call with the named source edit; no native execution",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Unbound changed source declaration: blend.body"
+    },
+    {
+      "name": "source_field_unbound",
+      "category": "inherited_source_binding_guards",
+      "expected": "reject",
+      "specification": "Direct build_definition call with the named source edit; no native execution",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Unbound changed source declaration: blend.field"
+    },
+    {
+      "name": "source_placement_unbound",
+      "category": "inherited_source_binding_guards",
+      "expected": "reject",
+      "specification": "Direct build_definition call with the named source edit; no native execution",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Unbound changed source declaration: blend.placement"
+    },
+    {
+      "name": "source_record_parameters",
+      "category": "inherited_source_binding_guards",
+      "expected": "reject",
+      "specification": "Direct build_definition call with the named source edit; no native execution",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Source numerical parameters for blend need an explicit edition binding"
+    },
+    {
+      "name": "source_wrong_index",
+      "category": "inherited_source_binding_guards",
+      "expected": "reject",
+      "specification": "Direct build_definition call with the named source edit; no native execution",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Source record 14 has an unbound index/key change"
+    },
+    {
+      "name": "source_wrong_key",
+      "category": "inherited_source_binding_guards",
+      "expected": "reject",
+      "specification": "Direct build_definition call with the named source edit; no native execution",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Source record 14 has an unbound index/key change"
+    },
+    {
+      "name": "source_32_records",
+      "category": "inherited_source_binding_guards",
+      "expected": "reject",
+      "specification": "Direct build_definition call with the named source edit; no native execution",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "This authored edition requires exactly the original31-entry catalogue"
+    },
+    {
+      "name": "source_seed_zero_complex",
+      "category": "inherited_source_binding_guards",
+      "expected": "reject",
+      "specification": "Direct build_definition call with the named source edit; no native execution",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Each source complex seed must be nonzero for PHI"
+    },
+    {
+      "name": "cycle_unknown_phase",
+      "category": "inherited_source_binding_guards",
+      "expected": "reject",
+      "specification": "Direct build_definition call with the named source edit; no native execution",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Unknown, duplicate, missing or unexecutable source phase"
+    },
+    {
+      "name": "cycle_missing_phase",
+      "category": "inherited_source_binding_guards",
+      "expected": "reject",
+      "specification": "Direct build_definition call with the named source edit; no native execution",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Unknown, duplicate, missing or unexecutable source phase"
+    },
+    {
+      "name": "cycle_wrong_order",
+      "category": "inherited_source_binding_guards",
+      "expected": "reject",
+      "specification": "Direct build_definition call with the named source edit; no native execution",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Cycle phase surface_return precedes required dependencies ['geometry_divergence', 'log_polar', 'operator_mutation', 'rgba_crystal', 'rk4_four_slots', 'selected_operator', 'split_and_hinge']"
+    },
+    {
+      "name": "cycle_y_up_boolean",
+      "category": "inherited_source_binding_guards",
+      "expected": "reject",
+      "specification": "Direct build_definition call with the named source edit; no native execution",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Bounded Y-up count must be an integer in0..8"
+    },
+    {
+      "name": "cycle_y_up_out_of_range",
+      "category": "inherited_source_binding_guards",
+      "expected": "reject",
+      "specification": "Direct build_definition call with the named source edit; no native execution",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Bounded Y-up count must be an integer in0..8"
+    },
+    {
+      "name": "protected_sdf_remap",
+      "category": "protected_law_identity",
+      "expected": "reject",
+      "specification": "Direct protect_laws check on a mutated same-interface family mapping",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "blend_enzyme_cautious: protected resident law role 101 differs"
+    },
+    {
+      "name": "protected_accept_remap",
+      "category": "protected_law_identity",
+      "expected": "reject",
+      "specification": "Direct protect_laws check on a mutated same-interface family mapping",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "blend_enzyme_cautious: protected resident law role 103 differs"
+    },
+    {
+      "name": "protected_role0_remap",
+      "category": "protected_law_identity",
+      "expected": "reject",
+      "specification": "Direct protect_laws check on a mutated same-interface family mapping",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "blend_enzyme_cautious: protected resident law role 0 differs"
+    },
+    {
+      "name": "protected_role_missing",
+      "category": "protected_law_identity",
+      "expected": "reject",
+      "specification": "Direct protect_laws check on a mutated same-interface family mapping",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "blend_enzyme_cautious: enzyme strategies must share the complete typed interface"
+    },
+    {
+      "name": "undeclared_proposal_function",
+      "category": "protected_law_identity",
+      "expected": "reject",
+      "specification": "Direct protect_laws check on a mutated same-interface family mapping",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "blend_enzyme_cautious: undeclared enzyme proposal strategy"
+    },
+    {
+      "name": "protected_accept_same_ast_alias",
+      "category": "protected_law_identity",
+      "expected": "reject",
+      "specification": "Identical acceptance AST, different function name/handle",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "blend_enzyme_cautious: protected resident law role 103 differs"
+    },
+    {
+      "name": "added_same_interface_bad_law",
+      "category": "protected_law_identity",
+      "expected": "reject",
+      "specification": "Additional family with the blend interface and an altered protected law",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "unexpected_strategy: protected resident law role 102 differs"
+    },
+    {
+      "name": "base_mutation_read_width",
+      "category": "extension_source_plan_shape",
+      "expected": "reject",
+      "specification": "Changed base plan shape before the domain extension is installed",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Base mutation plan shape changed; application extension requires review"
+    },
+    {
+      "name": "base_mutation_call_missing",
+      "category": "extension_source_plan_shape",
+      "expected": "reject",
+      "specification": "Changed base plan shape before the domain extension is installed",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Base mutation plan shape changed; application extension requires review"
+    },
+    {
+      "name": "base_action_read_width",
+      "category": "extension_source_plan_shape",
+      "expected": "reject",
+      "specification": "Changed base plan shape before the domain extension is installed",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Base action plan shape changed; application extension requires review"
+    },
+    {
+      "name": "base_action_final_write_missing",
+      "category": "extension_source_plan_shape",
+      "expected": "reject",
+      "specification": "Changed base plan shape before the domain extension is installed",
+      "rejected": true,
+      "error_type": "ValueError",
+      "message": "Base action plan shape changed; application extension requires review"
+    }
+  ],
+  "limits": [
+    "Representative cases only; no exhaustive source-cycle, runtime ABI, native or GPU validation is claimed.",
+    "Protected-law checks constrain same-interface family mappings generated by this application compiler; they are not a prohibition on deliberate external source edits or new bindings.",
+    "Scientific/numerical equations were not changed or independently validated by this rejection campaign."
+  ]
+}

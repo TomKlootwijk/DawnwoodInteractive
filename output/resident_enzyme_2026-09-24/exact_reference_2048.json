@@ -1,0 +1,1811 @@
+{
+  "reference": "Exact rational active-set four-species projection of packed normalized observations; physical returned output divided byscale10 for comparison. No checkpoint values altered.",
+  "cases": [
+    {
+      "index": 0,
+      "max_species_error_normalized": 1.162290574896474e-07,
+      "exact_reference_species_normalized": [
+        "26843547/33554432",
+        "523449147/67108864",
+        "6710885/33554432",
+        "134217723/67108864"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.19999990463256836,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": -2.8610229563241774e-07
+    },
+    {
+      "index": 1,
+      "max_species_error_normalized": 6.198883060193339e-07,
+      "exact_reference_species_normalized": [
+        "8178893/10485760",
+        "149736653/20971520",
+        "2306867/10485760",
+        "55364813/20971520"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.2200000762939453,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": -3.8146972691777137e-07
+    },
+    {
+      "index": 2,
+      "max_species_error_normalized": 3.783206144969409e-05,
+      "exact_reference_species_normalized": [
+        "174483047/201326592",
+        "0",
+        "26843545/201326592",
+        "1986422375/201326592"
+      ],
+      "estimated_gap": 2.9675662517547607e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": -4.768371586472142e-08,
+      "substrate_pool_residual_normalized": 1.4305114781620887e-07
+    },
+    {
+      "index": 3,
+      "max_species_error_normalized": 7.629394529473643e-07,
+      "exact_reference_species_normalized": [
+        "0",
+        "9/2",
+        "1",
+        "9/2"
+      ],
+      "estimated_gap": 1.2138294550823048e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 4,
+      "max_species_error_normalized": 7.629394529473643e-07,
+      "exact_reference_species_normalized": [
+        "0",
+        "9/2",
+        "1",
+        "9/2"
+      ],
+      "estimated_gap": 1.2138294550823048e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 5,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "10",
+        "0",
+        "0"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 6,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "0",
+        "0",
+        "10"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 7,
+      "max_species_error_normalized": 1.1920928955078125e-07,
+      "exact_reference_species_normalized": [
+        "0",
+        "9",
+        "1",
+        "0"
+      ],
+      "estimated_gap": 1.5172867051660432e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 2.3841857821338408e-08,
+      "substrate_pool_residual_normalized": -9.536743128535363e-08
+    },
+    {
+      "index": 8,
+      "max_species_error_normalized": 9.5367431640625e-07,
+      "exact_reference_species_normalized": [
+        "0",
+        "0",
+        "1",
+        "9"
+      ],
+      "estimated_gap": 9.717277862364426e-07,
+      "minimum_species_normalized": 5.960464477539063e-08,
+      "enzyme_pool_residual_normalized": -3.5762786843029915e-08,
+      "substrate_pool_residual_normalized": 9.536743128535363e-08
+    },
+    {
+      "index": 9,
+      "max_species_error_normalized": 1.1444091798651357e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "29/4",
+        "0",
+        "11/4"
+      ],
+      "estimated_gap": 3.422324516577646e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": -3.8146972691777137e-07
+    },
+    {
+      "index": 10,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "0",
+        "0",
+        "10"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 11,
+      "max_species_error_normalized": 7.629394529473643e-07,
+      "exact_reference_species_normalized": [
+        "0",
+        "9/2",
+        "1",
+        "9/2"
+      ],
+      "estimated_gap": 1.2138294550823048e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 12,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "10",
+        "0",
+        "0"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 13,
+      "max_species_error_normalized": 4.76837158203125e-07,
+      "exact_reference_species_normalized": [
+        "0",
+        "13250177/2097152",
+        "1",
+        "5624191/2097152"
+      ],
+      "estimated_gap": 1.704264104773756e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": -1.9073486257070726e-07
+    },
+    {
+      "index": 14,
+      "max_species_error_normalized": 2.86102294921875e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "4416309/1048576",
+        "0",
+        "6069451/1048576"
+      ],
+      "estimated_gap": 4.544277908280492e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 15,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "10",
+        "0",
+        "0"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 16,
+      "max_species_error_normalized": 2.384185791015625e-07,
+      "exact_reference_species_normalized": [
+        "353789/2097152",
+        "21973175/4194304",
+        "1743363/2097152",
+        "16483139/4194304"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.16869986057281494,
+      "enzyme_pool_residual_normalized": 2.3841857821338408e-08,
+      "substrate_pool_residual_normalized": 1.9073486257070726e-07
+    },
+    {
+      "index": 17,
+      "max_species_error_normalized": 1.8119812015271464e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "6655705/2097152",
+        "0",
+        "14315815/2097152"
+      ],
+      "estimated_gap": 1.7121408745879307e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 18,
+      "max_species_error_normalized": 4.76837158203125e-07,
+      "exact_reference_species_normalized": [
+        "0",
+        "8999611/2097152",
+        "1",
+        "9874757/2097152"
+      ],
+      "estimated_gap": 1.157547922048252e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 19,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "0",
+        "0",
+        "10"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 20,
+      "max_species_error_normalized": 9.5367431640625e-07,
+      "exact_reference_species_normalized": [
+        "1",
+        "61451/65536",
+        "0",
+        "593909/65536"
+      ],
+      "estimated_gap": 5.058529495727271e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 1.9073486257070726e-07
+    },
+    {
+      "index": 21,
+      "max_species_error_normalized": 2.9802322387695312e-08,
+      "exact_reference_species_normalized": [
+        "0",
+        "9",
+        "1",
+        "0"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": -2.9802322387695312e-08,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": -2.9802322387695312e-08
+    },
+    {
+      "index": 22,
+      "max_species_error_normalized": 3.099441521214885e-07,
+      "exact_reference_species_normalized": [
+        "1",
+        "67265257/8388608",
+        "0",
+        "16620823/8388608"
+      ],
+      "estimated_gap": 1.622210766072385e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": -3.8146972514141453e-07
+    },
+    {
+      "index": 23,
+      "max_species_error_normalized": 3.5285949708807607e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "13616987/2097152",
+        "0",
+        "7354533/2097152"
+      ],
+      "estimated_gap": 8.757223258726299e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": -3.8146972691777137e-07
+    },
+    {
+      "index": 24,
+      "max_species_error_normalized": 5.453824996060064e-07,
+      "exact_reference_species_normalized": [
+        "109669821/335544320",
+        "508147703/335544320",
+        "225874499/335544320",
+        "1310710499/167772160"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.3268415451049805,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": -3.8146972691777137e-07
+    },
+    {
+      "index": 25,
+      "max_species_error_normalized": 1.430511474609375e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "14410373/2097152",
+        "0",
+        "6561147/2097152"
+      ],
+      "estimated_gap": 3.706981806317344e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 1.9073486257070726e-07
+    },
+    {
+      "index": 26,
+      "max_species_error_normalized": 3.3378601038691613e-07,
+      "exact_reference_species_normalized": [
+        "1488839/5242880",
+        "92000833/20971520",
+        "3754041/5242880",
+        "102698203/20971520"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.2839735746383667,
+      "enzyme_pool_residual_normalized": -2.384185793236071e-08,
+      "substrate_pool_residual_normalized": 9.536743128535363e-08
+    },
+    {
+      "index": 27,
+      "max_species_error_normalized": 2.145767217243133e-07,
+      "exact_reference_species_normalized": [
+        "8888181/20971520",
+        "193987841/41943040",
+        "12083339/20971520",
+        "201275881/41943040"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.42382144927978516,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": -1.9073486257070726e-07
+    },
+    {
+      "index": 28,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "10",
+        "0",
+        "0"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 29,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "2332989/524288",
+        "0",
+        "2909891/524288"
+      ],
+      "estimated_gap": 1.2002946277789306e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 30,
+      "max_species_error_normalized": 1.1920928955078125e-07,
+      "exact_reference_species_normalized": [
+        "0",
+        "42587679/8388608",
+        "1",
+        "32909793/8388608"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 31,
+      "max_species_error_normalized": 4.839152092372956e-07,
+      "exact_reference_species_normalized": [
+        "1985197/1342177280",
+        "5168593517/2684354560",
+        "1340192083/1342177280",
+        "18994567917/2684354560"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.001479029655456543,
+      "enzyme_pool_residual_normalized": -2.384185793236071e-08,
+      "substrate_pool_residual_normalized": 2.8610229563241774e-07
+    },
+    {
+      "index": 32,
+      "max_species_error_normalized": 3.6954879689687914e-07,
+      "exact_reference_species_normalized": [
+        "70602949/83886080",
+        "614419297/83886080",
+        "13283131/83886080",
+        "52789593/20971520"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.15834726095199586,
+      "enzyme_pool_residual_normalized": 3.576278695405222e-08,
+      "substrate_pool_residual_normalized": 3.2186508214238074e-07
+    },
+    {
+      "index": 33,
+      "max_species_error_normalized": 4.76837158203125e-07,
+      "exact_reference_species_normalized": [
+        "1",
+        "13295971/2097152",
+        "0",
+        "7675549/2097152"
+      ],
+      "estimated_gap": 3.420308348722756e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 34,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "0",
+        "0",
+        "10"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 35,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "10",
+        "0",
+        "0"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 36,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "10",
+        "0",
+        "0"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 37,
+      "max_species_error_normalized": 3.5285949708807607e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "16088707/2097152",
+        "0",
+        "4882813/2097152"
+      ],
+      "estimated_gap": 0.0001241617283085361,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": -3.8146972691777137e-07
+    },
+    {
+      "index": 38,
+      "max_species_error_normalized": 2.1457672083613488e-07,
+      "exact_reference_species_normalized": [
+        "0",
+        "74480715/8388608",
+        "1",
+        "1016757/8388608"
+      ],
+      "estimated_gap": 2.99370526590792e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 3.576278650996301e-08
+    },
+    {
+      "index": 39,
+      "max_species_error_normalized": 6.556510925292969e-07,
+      "exact_reference_species_normalized": [
+        "7510285/8388608",
+        "52097989/16777216",
+        "878323/8388608",
+        "113917525/16777216"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.10470428466796874,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 1.9073486257070726e-07
+    },
+    {
+      "index": 40,
+      "max_species_error_normalized": 2.3871660232988035e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "613729651/67108864",
+        "0",
+        "57358989/67108864"
+      ],
+      "estimated_gap": 9.559036698192358e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": -2.8610229563241774e-07
+    },
+    {
+      "index": 41,
+      "max_species_error_normalized": 1.9073486328125e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "1644937/524288",
+        "0",
+        "3597943/524288"
+      ],
+      "estimated_gap": 1.692601290415041e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 42,
+      "max_species_error_normalized": 0.0001989920934041267,
+      "exact_reference_species_normalized": [
+        "23280899/25165824",
+        "0",
+        "1884925/25165824",
+        "249773315/25165824"
+      ],
+      "estimated_gap": 8.344650268554688e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": -5.960464455334602e-09,
+      "substrate_pool_residual_normalized": -5.960464122267695e-09
+    },
+    {
+      "index": 43,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "0",
+        "0",
+        "1",
+        "9"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 44,
+      "max_species_error_normalized": 6.914138794833491e-07,
+      "exact_reference_species_normalized": [
+        "0",
+        "55589063/8388608",
+        "1",
+        "19908409/8388608"
+      ],
+      "estimated_gap": 1.7874939658213407e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 45,
+      "max_species_error_normalized": 5.960464477539062e-07,
+      "exact_reference_species_normalized": [
+        "1770777/20971520",
+        "275434887/41943040",
+        "19200743/20971520",
+        "105594027/41943040"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.08443725109100342,
+      "enzyme_pool_residual_normalized": -2.384185793236071e-08,
+      "substrate_pool_residual_normalized": 2.861022938560609e-07
+    },
+    {
+      "index": 46,
+      "max_species_error_normalized": 1.2159347537732401e-06,
+      "exact_reference_species_normalized": [
+        "0",
+        "17689769/8388608",
+        "1",
+        "57807703/8388608"
+      ],
+      "estimated_gap": 1.1376472684787586e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 47,
+      "max_species_error_normalized": 1.0490417481356928e-06,
+      "exact_reference_species_normalized": [
+        "0",
+        "4284221/2097152",
+        "1",
+        "14590147/2097152"
+      ],
+      "estimated_gap": 5.510451956070028e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 3.8146972691777137e-07
+    },
+    {
+      "index": 48,
+      "max_species_error_normalized": 2.384185791015625e-07,
+      "exact_reference_species_normalized": [
+        "0",
+        "24082647/4194304",
+        "1",
+        "13666089/4194304"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 3.8146972691777137e-07
+    },
+    {
+      "index": 49,
+      "max_species_error_normalized": 4.2319297755000207e-07,
+      "exact_reference_species_normalized": [
+        "0",
+        "250749093/33554432",
+        "1",
+        "51240795/33554432"
+      ],
+      "estimated_gap": 1.007870196190197e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 9.536743128535363e-08
+    },
+    {
+      "index": 50,
+      "max_species_error_normalized": 1.1920928955078125e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "1026235/4194304",
+        "0",
+        "40916805/4194304"
+      ],
+      "estimated_gap": 1.3199678505770862e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 51,
+      "max_species_error_normalized": 2.1457672119140625e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "3845223/4194304",
+        "0",
+        "38097817/4194304"
+      ],
+      "estimated_gap": 4.945810360368341e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 52,
+      "max_species_error_normalized": 2.6226043701171875e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "34544605/4194304",
+        "0",
+        "7398435/4194304"
+      ],
+      "estimated_gap": 7.775593985570595e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": -3.8146972691777137e-07
+    },
+    {
+      "index": 53,
+      "max_species_error_normalized": 7.985432942714255e-05,
+      "exact_reference_species_normalized": [
+        "366427/3145728",
+        "0",
+        "2779301/3145728",
+        "28677979/3145728"
+      ],
+      "estimated_gap": 0.00042057037353515625,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 2.3841857821338408e-08,
+      "substrate_pool_residual_normalized": 5.722045894884786e-07
+    },
+    {
+      "index": 54,
+      "max_species_error_normalized": 9.5367431640625e-07,
+      "exact_reference_species_normalized": [
+        "1",
+        "4821811/1048576",
+        "0",
+        "5663949/1048576"
+      ],
+      "estimated_gap": 6.201909400260774e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 55,
+      "max_species_error_normalized": 2.1457672119140625e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "35366663/4194304",
+        "0",
+        "6576377/4194304"
+      ],
+      "estimated_gap": 5.686163785867393e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 4.76837158203125e-07
+    },
+    {
+      "index": 56,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "10",
+        "0",
+        "0"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 57,
+      "max_species_error_normalized": 2.6543935140566077e-05,
+      "exact_reference_species_normalized": [
+        "5223217/6291456",
+        "61846321/6291456",
+        "1068239/6291456",
+        "0"
+      ],
+      "estimated_gap": 0.0001304149627685547,
+      "minimum_species_normalized": -1.4901161193847656e-08,
+      "enzyme_pool_residual_normalized": -4.768371586472142e-08,
+      "substrate_pool_residual_normalized": 3.188848491930685e-07
+    },
+    {
+      "index": 58,
+      "max_species_error_normalized": 2.6226043701171875e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "1567525/4194304",
+        "0",
+        "40375515/4194304"
+      ],
+      "estimated_gap": 2.016193320741877e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 59,
+      "max_species_error_normalized": 9.536743128535363e-08,
+      "exact_reference_species_normalized": [
+        "1",
+        "10269757/2097152",
+        "0",
+        "10701763/2097152"
+      ],
+      "estimated_gap": 1.3209164535510354e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 60,
+      "max_species_error_normalized": 7.152557373046875e-07,
+      "exact_reference_species_normalized": [
+        "1",
+        "2881601/4194304",
+        "0",
+        "39061439/4194304"
+      ],
+      "estimated_gap": 3.7063764466438442e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 1.9073486257070726e-07
+    },
+    {
+      "index": 61,
+      "max_species_error_normalized": 2.3841858265427618e-08,
+      "exact_reference_species_normalized": [
+        "0",
+        "43094925/8388608",
+        "1",
+        "32402547/8388608"
+      ],
+      "estimated_gap": 1.3857385965820868e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 62,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "10",
+        "0",
+        "0"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 63,
+      "max_species_error_normalized": 1.1086463929110835e-06,
+      "exact_reference_species_normalized": [
+        "0",
+        "35334887/16777216",
+        "1",
+        "115660057/16777216"
+      ],
+      "estimated_gap": 1.1362113582435995e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 3.8146972691777137e-07
+    },
+    {
+      "index": 64,
+      "max_species_error_normalized": 2.0980834962713857e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "2611453/1048576",
+        "0",
+        "7874307/1048576"
+      ],
+      "estimated_gap": 1.3435619621304795e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": -1.9073486257070726e-07
+    },
+    {
+      "index": 65,
+      "max_species_error_normalized": 0.00011760393778481593,
+      "exact_reference_species_normalized": [
+        "3837887/12582912",
+        "0",
+        "8745025/12582912",
+        "117084095/12582912"
+      ],
+      "estimated_gap": 0.0004876852035522461,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 2.3841857821338408e-08,
+      "substrate_pool_residual_normalized": 1.907348643470641e-07
+    },
+    {
+      "index": 66,
+      "max_species_error_normalized": 4.291534425604482e-07,
+      "exact_reference_species_normalized": [
+        "0",
+        "28609253/4194304",
+        "1",
+        "9139483/4194304"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": -3.8146972691777137e-07
+    },
+    {
+      "index": 67,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "10",
+        "0",
+        "0"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 68,
+      "max_species_error_normalized": 3.1344095864582755e-05,
+      "exact_reference_species_normalized": [
+        "1692127/3145728",
+        "30003679/3145728",
+        "1453601/3145728",
+        "0"
+      ],
+      "estimated_gap": 0.0001010894775390625,
+      "minimum_species_normalized": -1.4901161193847656e-08,
+      "enzyme_pool_residual_normalized": -4.768371586472142e-08,
+      "substrate_pool_residual_normalized": 3.278255356065074e-08
+    },
+    {
+      "index": 69,
+      "max_species_error_normalized": 2.2798776644350482e-07,
+      "exact_reference_species_normalized": [
+        "0",
+        "1018697595/134217728",
+        "1",
+        "189261957/134217728"
+      ],
+      "estimated_gap": 1.0236476555292029e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 70,
+      "max_species_error_normalized": 1.3351440433240214e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "8399645/1048576",
+        "0",
+        "2086115/1048576"
+      ],
+      "estimated_gap": 4.3215164623688906e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 71,
+      "max_species_error_normalized": 1.3709068280576275e-07,
+      "exact_reference_species_normalized": [
+        "50151949/83886080",
+        "985698409/167772160",
+        "33734131/83886080",
+        "624554929/167772160"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.4021421432495117,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 1.9073486257070726e-07
+    },
+    {
+      "index": 72,
+      "max_species_error_normalized": 1.1920928955078125e-06,
+      "exact_reference_species_normalized": [
+        "0",
+        "18481019/4194304",
+        "1",
+        "19267717/4194304"
+      ],
+      "estimated_gap": 1.1885328603966627e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 73,
+      "max_species_error_normalized": 0.0001998146375020715,
+      "exact_reference_species_normalized": [
+        "45409465/50331648",
+        "0",
+        "4922183/50331648",
+        "498394297/50331648"
+      ],
+      "estimated_gap": 0.00011438131332397461,
+      "minimum_species_normalized": -9.5367431640625e-07,
+      "enzyme_pool_residual_normalized": -2.9802322387695312e-08,
+      "substrate_pool_residual_normalized": 3.5166740453007606e-07
+    },
+    {
+      "index": 74,
+      "max_species_error_normalized": 1.7672777179456034e-06,
+      "exact_reference_species_normalized": [
+        "0",
+        "174301475/67108864",
+        "1",
+        "429678301/67108864"
+      ],
+      "estimated_gap": 1.4011882740305737e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": -3.8146972691777137e-07
+    },
+    {
+      "index": 75,
+      "max_species_error_normalized": 1.1920928955078125e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "4145099/4194304",
+        "0",
+        "37797941/4194304"
+      ],
+      "estimated_gap": 5.331516149453819e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 76,
+      "max_species_error_normalized": 4.005432129083886e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "7523061/1048576",
+        "0",
+        "2962699/1048576"
+      ],
+      "estimated_gap": 0.000120953940495383,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": -3.8146972691777137e-07
+    },
+    {
+      "index": 77,
+      "max_species_error_normalized": 2.384185791015625e-07,
+      "exact_reference_species_normalized": [
+        "0",
+        "23907985/4194304",
+        "1",
+        "13840751/4194304"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 78,
+      "max_species_error_normalized": 3.6954879778505756e-07,
+      "exact_reference_species_normalized": [
+        "0",
+        "98108259/16777216",
+        "1",
+        "52886685/16777216"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 1.9073486257070726e-07
+    },
+    {
+      "index": 79,
+      "max_species_error_normalized": 9.5367431640625e-07,
+      "exact_reference_species_normalized": [
+        "1",
+        "3123721/1048576",
+        "0",
+        "7362039/1048576"
+      ],
+      "estimated_gap": 8.035585778998211e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 3.8146972691777137e-07
+    },
+    {
+      "index": 80,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "0",
+        "0",
+        "10"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 81,
+      "max_species_error_normalized": 9.745359426105438e-07,
+      "exact_reference_species_normalized": [
+        "15348383/167772160",
+        "1831245383/335544320",
+        "152423777/167772160",
+        "1219350263/335544320"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.091483473777771,
+      "enzyme_pool_residual_normalized": -2.384185793236071e-08,
+      "substrate_pool_residual_normalized": -9.5367431640625e-07
+    },
+    {
+      "index": 82,
+      "max_species_error_normalized": 1.4781951904185853e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "39987103/4194304",
+        "0",
+        "1955937/4194304"
+      ],
+      "estimated_gap": 5.4646723583573475e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": -4.76837158203125e-07
+    },
+    {
+      "index": 83,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "10",
+        "0",
+        "0"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 84,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "10",
+        "0",
+        "0"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 85,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "10",
+        "0",
+        "0"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 86,
+      "max_species_error_normalized": 1.052021980640916e-06,
+      "exact_reference_species_normalized": [
+        "0",
+        "179623379/67108864",
+        "1",
+        "424356397/67108864"
+      ],
+      "estimated_gap": 7.219850886031054e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 87,
+      "max_species_error_normalized": 1.0490417476916036e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "10491557/2097152",
+        "0",
+        "10479963/2097152"
+      ],
+      "estimated_gap": 2.0241675883880816e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 88,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "10",
+        "0",
+        "0"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 89,
+      "max_species_error_normalized": 4.76837158203125e-07,
+      "exact_reference_species_normalized": [
+        "1",
+        "1571897/2097152",
+        "0",
+        "19399623/2097152"
+      ],
+      "estimated_gap": 4.043613444082439e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 1.9073486257070726e-07
+    },
+    {
+      "index": 90,
+      "max_species_error_normalized": 1.5497207641601562e-06,
+      "exact_reference_species_normalized": [
+        "0",
+        "10971283/8388608",
+        "1",
+        "64526189/8388608"
+      ],
+      "estimated_gap": 7.0557471190113574e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 91,
+      "max_species_error_normalized": 1.88946723866934e-06,
+      "exact_reference_species_normalized": [
+        "0",
+        "25172391/33554432",
+        "1",
+        "276817497/33554432"
+      ],
+      "estimated_gap": 4.0471641113981605e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": -1.9073486257070726e-07
+    },
+    {
+      "index": 92,
+      "max_species_error_normalized": 4.987814463675022e-07,
+      "exact_reference_species_normalized": [
+        "0",
+        "85446516359/17179869184",
+        "1",
+        "69172306297/17179869184"
+      ],
+      "estimated_gap": 6.707947250106372e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 93,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "10",
+        "0",
+        "0"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 94,
+      "max_species_error_normalized": 2.0995736123019526e-06,
+      "exact_reference_species_normalized": [
+        "0",
+        "411477683/134217728",
+        "1",
+        "796481869/134217728"
+      ],
+      "estimated_gap": 1.6539095668122172e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 95,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "10",
+        "0",
+        "0"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 96,
+      "max_species_error_normalized": 1.6212463380682607e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "5828555/2097152",
+        "0",
+        "15142965/2097152"
+      ],
+      "estimated_gap": 1.4993613149272278e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": -1.9073486257070726e-07
+    },
+    {
+      "index": 97,
+      "max_species_error_normalized": 4.196166992542771e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "2128807/524288",
+        "0",
+        "3114073/524288"
+      ],
+      "estimated_gap": 6.571479752892628e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 98,
+      "max_species_error_normalized": 4.76837158203125e-07,
+      "exact_reference_species_normalized": [
+        "1",
+        "895769/2097152",
+        "0",
+        "20075751/2097152"
+      ],
+      "estimated_gap": 2.3043139663059264e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 1.9073486257070726e-07
+    },
+    {
+      "index": 99,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "10",
+        "0",
+        "0"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 100,
+      "max_species_error_normalized": 1.430511474609375e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "1903607/2097152",
+        "0",
+        "19067913/2097152"
+      ],
+      "estimated_gap": 4.896923201158643e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 1.9073486257070726e-07
+    },
+    {
+      "index": 101,
+      "max_species_error_normalized": 3.767013549982323e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "17802637/4194304",
+        "0",
+        "24140403/4194304"
+      ],
+      "estimated_gap": 6.869436765555292e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 102,
+      "max_species_error_normalized": 1.430511474609375e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "4219681/2097152",
+        "0",
+        "16751839/2097152"
+      ],
+      "estimated_gap": 1.0854881111299619e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 3.8146972691777137e-07
+    },
+    {
+      "index": 103,
+      "max_species_error_normalized": 2.861022947442393e-07,
+      "exact_reference_species_normalized": [
+        "1",
+        "14393017/2097152",
+        "0",
+        "6578503/2097152"
+      ],
+      "estimated_gap": 9.2562913778238e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 3.8146972691777137e-07
+    },
+    {
+      "index": 104,
+      "max_species_error_normalized": 1.1444091789769573e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "513383/524288",
+        "0",
+        "4729497/524288"
+      ],
+      "estimated_gap": 5.2825926104560494e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": -1.9073486257070726e-07
+    },
+    {
+      "index": 105,
+      "max_species_error_normalized": 1.4901161193847656e-07,
+      "exact_reference_species_normalized": [
+        "0",
+        "88668859/33554432",
+        "1",
+        "213321029/33554432"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 106,
+      "max_species_error_normalized": 3.5762786865234375e-07,
+      "exact_reference_species_normalized": [
+        "0",
+        "28871517/8388608",
+        "1",
+        "46625955/8388608"
+      ],
+      "estimated_gap": 9.283779945690185e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 107,
+      "max_species_error_normalized": 3.8146972691777137e-07,
+      "exact_reference_species_normalized": [
+        "0",
+        "53741/524288",
+        "1",
+        "4664851/524288"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 3.8146972691777137e-07
+    },
+    {
+      "index": 108,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "10",
+        "0",
+        "0"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 109,
+      "max_species_error_normalized": 6.70830408732101e-05,
+      "exact_reference_species_normalized": [
+        "12102527/12582912",
+        "0",
+        "480385/12582912",
+        "125348735/12582912"
+      ],
+      "estimated_gap": 1.3530254364013672e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 2.3841857821338408e-08,
+      "substrate_pool_residual_normalized": 2.3841858265427618e-08
+    },
+    {
+      "index": 110,
+      "max_species_error_normalized": 9.298324585849116e-07,
+      "exact_reference_species_normalized": [
+        "0",
+        "13656347/8388608",
+        "1",
+        "61841125/8388608"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 111,
+      "max_species_error_normalized": 1.7166137693536143e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "3527719/1048576",
+        "0",
+        "6958041/1048576"
+      ],
+      "estimated_gap": 1.81496943696402e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": -3.8146972691777137e-07
+    },
+    {
+      "index": 112,
+      "max_species_error_normalized": 8.463859559881826e-07,
+      "exact_reference_species_normalized": [
+        "0",
+        "59644197/16777216",
+        "1",
+        "91350747/16777216"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 113,
+      "max_species_error_normalized": 1.5258789063388178e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "420463/65536",
+        "0",
+        "234897/65536"
+      ],
+      "estimated_gap": 5.191756281419657e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 114,
+      "max_species_error_normalized": 1.8119812015271464e-06,
+      "exact_reference_species_normalized": [
+        "1",
+        "11492369/2097152",
+        "0",
+        "9479151/2097152"
+      ],
+      "estimated_gap": 3.695429040817544e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 115,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "10",
+        "0",
+        "0"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 116,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "10",
+        "0",
+        "0"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 117,
+      "max_species_error_normalized": 1.773238182067871e-06,
+      "exact_reference_species_normalized": [
+        "0",
+        "60862089/67108864",
+        "1",
+        "543117687/67108864"
+      ],
+      "estimated_gap": 4.892634024145082e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 118,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "0",
+        "0",
+        "10"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 119,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "0",
+        "0",
+        "10"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 120,
+      "max_species_error_normalized": 8.940696716308594e-07,
+      "exact_reference_species_normalized": [
+        "0",
+        "25136177/16777216",
+        "1",
+        "125858767/16777216"
+      ],
+      "estimated_gap": 4.0413324313703924e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 121,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "10",
+        "0",
+        "0"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 122,
+      "max_species_error_normalized": 8.583068846768072e-07,
+      "exact_reference_species_normalized": [
+        "1",
+        "13339783/2097152",
+        "0",
+        "7631737/2097152"
+      ],
+      "estimated_gap": 2.5736841053003445e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": -3.8146972691777137e-07
+    },
+    {
+      "index": 123,
+      "max_species_error_normalized": 3.5762786865234375e-07,
+      "exact_reference_species_normalized": [
+        "1",
+        "74437829/8388608",
+        "0",
+        "9448251/8388608"
+      ],
+      "estimated_gap": 1.196792618429754e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": -1.9073486257070726e-07
+    },
+    {
+      "index": 124,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "10",
+        "0",
+        "0"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 125,
+      "max_species_error_normalized": 1.3113021850585938e-06,
+      "exact_reference_species_normalized": [
+        "0",
+        "12652753/8388608",
+        "1",
+        "62844719/8388608"
+      ],
+      "estimated_gap": 8.137118129525334e-06,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 2.8610229563241774e-07
+    },
+    {
+      "index": 126,
+      "max_species_error_normalized": 7.629394529473643e-07,
+      "exact_reference_species_normalized": [
+        "1",
+        "732223/131072",
+        "0",
+        "578497/131072"
+      ],
+      "estimated_gap": 2.2603195247938856e-05,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 127,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "0",
+        "0",
+        "1",
+        "9"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    },
+    {
+      "index": 128,
+      "max_species_error_normalized": 0.0,
+      "exact_reference_species_normalized": [
+        "1",
+        "0",
+        "0",
+        "10"
+      ],
+      "estimated_gap": 0.0,
+      "minimum_species_normalized": 0.0,
+      "enzyme_pool_residual_normalized": 0.0,
+      "substrate_pool_residual_normalized": 0.0
+    }
+  ]
+}

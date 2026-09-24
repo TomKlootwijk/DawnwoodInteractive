@@ -1,0 +1,7 @@
+{
+  "status": "Historical first candidate; not final application evidence",
+  "finding": "Strict comparison of full rounded FP32 squared-error totals stalled despite a nonzero remaining projection error. Acceptance law is being revised; this definition and its numerical outputs are retained unchanged.",
+  "source_definition_sha256_record": "definition.source.enzyme_generator_sha256",
+  "original_generator_snapshot_available": false,
+  "definition_is_complete_executable_bank_and_plan": true
+}

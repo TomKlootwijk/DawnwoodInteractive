@@ -1,0 +1,17 @@
+{
+  "profile": "DWI-ENZYME-0.1",
+  "pools": {
+    "E_total_uM": 10240.0,
+    "S_total_uM": 102400.0,
+    "concentration_scale_uM": 10240.0
+  },
+  "observations": [
+    {
+      "id": "scaled_observation",
+      "E_uM": 1024.0,
+      "S_uM": 4096.0,
+      "ES_uM": 2048.0,
+      "P_uM": 8192.0
+    }
+  ]
+}

@@ -1,5 +1,27 @@
 # Explicit numerical source bindings
 
+The [resident enzyme authoring module](../local_lab/source_enzyme.py) now builds
+**DWI-ENZYME-0.1**, an application of the complete source cycle in the generic
+DWI-RESIDENT-0.2 runtime. [Example observations](examples/enzyme_inputs.json)
+compile into 31 records, 35 body families, 61 functions and 64 state words.
+Chemical distance, projection, evaluation, acceptance and returned concentrations
+are resident expressions; only the compatible proposal role changes between
+strategies. The chemical metric and the Klein carrier metric remain distinct.
+
+```powershell
+.\Dawnwood-Enzyme.cmd compile --inputs source_bindings/examples/enzyme_inputs.json --output output/my_enzyme
+.\Dawnwood-Enzyme.cmd run --backend vulkan --epochs 128 --input output/my_enzyme/program.bin --output output/my_enzyme/gpu128.bin
+.\Dawnwood-Enzyme.cmd results output/my_enzyme/gpu128.bin --manifest output/my_enzyme/manifest.json --output output/my_enzyme/results.json
+```
+
+The [application contract](../docs/RESIDENT_ENZYME_BINDING.md) and
+[measured campaign](../output/resident_enzyme_2026-09-24/REPORT.md) describe its
+synthetic consistency task, exact CPU/GPU continuation, acting interventions and
+remaining FP32 error. The reported gap is an estimate; this edition does not
+guarantee an exact nearest composition, monotonic real-arithmetic improvement or
+biochemical time evolution. The generated definition is saved with each compile
+bundle and remains inspectable and resumable.
+
 [cycle_v0.1.json](cycle_v0.1.json) contains the **authored eight-stage source
 cycle** for DWI-RESIDENT-0.2: 31 resident records, 34 body families and 55 explicit
 expression functions. `Dawnwood-Cycle.cmd compile --output output/my_cycle`
@@ -9,7 +31,8 @@ supported meanings, and produces a complete executable checkpoint. `run` and
 and [source audit](../output/source_cycle_2026-09-24/SOURCE_FIDELITY_AUDIT.md)
 state the equations, direct dependencies and limits. The
 [cycle campaign](../output/source_cycle_2026-09-24/REPORT.md) records actual
-CPU/GPU results. Domain specialization remains the next application layer.
+CPU/GPU results. The enzyme application above extends this bank while preserving
+its complete action prefix and all eight phase boundaries.
 
 The large generated JSON is deliberately explicit; the compact authoring source
 is [source_cycle.py](../local_lab/source_cycle.py). Editing a generated function

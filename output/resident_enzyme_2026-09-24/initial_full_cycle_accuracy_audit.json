@@ -1,0 +1,905 @@
+[
+  {
+    "id": "synthetic_042",
+    "max_species_error_normalized": 0.00043369134267179366,
+    "gap": 0.00018960237503051758,
+    "last_accepted": false,
+    "objective": 31.960521697998047
+  },
+  {
+    "id": "synthetic_073",
+    "max_species_error_normalized": 0.0002618332703908238,
+    "gap": 0.00015091896057128906,
+    "last_accepted": false,
+    "objective": 6.859921932220459
+  },
+  {
+    "id": "synthetic_053",
+    "max_species_error_normalized": 0.00013508399327595566,
+    "gap": 0.0007138252258300781,
+    "last_accepted": false,
+    "objective": 15.481497764587402
+  },
+  {
+    "id": "synthetic_065",
+    "max_species_error_normalized": 0.00011760393778481593,
+    "gap": 0.0004876852035522461,
+    "last_accepted": false,
+    "objective": 7.665807723999023
+  },
+  {
+    "id": "synthetic_109",
+    "max_species_error_normalized": 8.594195048006181e-05,
+    "gap": 1.7940998077392578e-05,
+    "last_accepted": false,
+    "objective": 12.444938659667969
+  },
+  {
+    "id": "negative_substrate",
+    "max_species_error_normalized": 4.86085812250181e-05,
+    "gap": 3.8310885429382324e-05,
+    "last_accepted": false,
+    "objective": 0.27666667103767395
+  },
+  {
+    "id": "synthetic_068",
+    "max_species_error_normalized": 3.1344095864582755e-05,
+    "gap": 0.0001010894775390625,
+    "last_accepted": false,
+    "objective": 4.4982709884643555
+  },
+  {
+    "id": "synthetic_057",
+    "max_species_error_normalized": 2.6543935140566077e-05,
+    "gap": 0.0001304149627685547,
+    "last_accepted": false,
+    "objective": 5.299455165863037
+  },
+  {
+    "id": "synthetic_097",
+    "max_species_error_normalized": 4.196166992542771e-06,
+    "gap": 6.571479752892628e-05,
+    "last_accepted": false,
+    "objective": 10.183633804321289
+  },
+  {
+    "id": "synthetic_076",
+    "max_species_error_normalized": 4.005432129083886e-06,
+    "gap": 0.000120953940495383,
+    "last_accepted": false,
+    "objective": 7.525084495544434
+  },
+  {
+    "id": "synthetic_101",
+    "max_species_error_normalized": 3.767013549982323e-06,
+    "gap": 6.869436765555292e-05,
+    "last_accepted": false,
+    "objective": 8.365409851074219
+  },
+  {
+    "id": "synthetic_023",
+    "max_species_error_normalized": 3.5285949708807607e-06,
+    "gap": 8.757223258726299e-05,
+    "last_accepted": false,
+    "objective": 60.804832458496094
+  },
+  {
+    "id": "synthetic_037",
+    "max_species_error_normalized": 3.5285949708807607e-06,
+    "gap": 0.0001241617283085361,
+    "last_accepted": false,
+    "objective": 145.7247314453125
+  },
+  {
+    "id": "synthetic_014",
+    "max_species_error_normalized": 2.86102294921875e-06,
+    "gap": 4.544277908280492e-05,
+    "last_accepted": false,
+    "objective": 116.72227478027344
+  },
+  {
+    "id": "synthetic_052",
+    "max_species_error_normalized": 2.6226043701171875e-06,
+    "gap": 7.775593985570595e-05,
+    "last_accepted": false,
+    "objective": 48.978187561035156
+  },
+  {
+    "id": "synthetic_058",
+    "max_species_error_normalized": 2.6226043701171875e-06,
+    "gap": 2.016193320741877e-06,
+    "last_accepted": false,
+    "objective": 77.98590087890625
+  },
+  {
+    "id": "synthetic_040",
+    "max_species_error_normalized": 2.3871660232988035e-06,
+    "gap": 9.559036698192358e-05,
+    "last_accepted": false,
+    "objective": 1.5315734148025513
+  },
+  {
+    "id": "synthetic_051",
+    "max_species_error_normalized": 2.1457672119140625e-06,
+    "gap": 4.945810360368341e-06,
+    "last_accepted": false,
+    "objective": 91.02407836914062
+  },
+  {
+    "id": "synthetic_055",
+    "max_species_error_normalized": 2.1457672119140625e-06,
+    "gap": 5.686163785867393e-05,
+    "last_accepted": false,
+    "objective": 88.65992736816406
+  },
+  {
+    "id": "synthetic_094",
+    "max_species_error_normalized": 2.0995736123019526e-06,
+    "gap": 1.6539095668122172e-05,
+    "last_accepted": false,
+    "objective": 26.816944122314453
+  },
+  {
+    "id": "synthetic_064",
+    "max_species_error_normalized": 2.0980834962713857e-06,
+    "gap": 1.3435619621304795e-05,
+    "last_accepted": false,
+    "objective": 82.92863464355469
+  },
+  {
+    "id": "synthetic_041",
+    "max_species_error_normalized": 1.9073486328125e-06,
+    "gap": 1.692601290415041e-05,
+    "last_accepted": false,
+    "objective": 112.87407684326172
+  },
+  {
+    "id": "synthetic_091",
+    "max_species_error_normalized": 1.88946723866934e-06,
+    "gap": 4.0471641113981605e-06,
+    "last_accepted": false,
+    "objective": 7.032902717590332
+  },
+  {
+    "id": "synthetic_017",
+    "max_species_error_normalized": 1.8119812015271464e-06,
+    "gap": 1.7121408745879307e-05,
+    "last_accepted": false,
+    "objective": 111.92665100097656
+  },
+  {
+    "id": "synthetic_114",
+    "max_species_error_normalized": 1.8119812015271464e-06,
+    "gap": 3.695429040817544e-05,
+    "last_accepted": false,
+    "objective": 6.446746349334717
+  },
+  {
+    "id": "synthetic_117",
+    "max_species_error_normalized": 1.773238182067871e-06,
+    "gap": 4.892634024145082e-06,
+    "last_accepted": false,
+    "objective": 3.4402987957000732
+  },
+  {
+    "id": "synthetic_074",
+    "max_species_error_normalized": 1.7672777179456034e-06,
+    "gap": 1.4011882740305737e-05,
+    "last_accepted": false,
+    "objective": 79.73712158203125
+  },
+  {
+    "id": "synthetic_111",
+    "max_species_error_normalized": 1.7166137693536143e-06,
+    "gap": 1.81496943696402e-05,
+    "last_accepted": false,
+    "objective": 254.28916931152344
+  },
+  {
+    "id": "synthetic_096",
+    "max_species_error_normalized": 1.6212463380682607e-06,
+    "gap": 1.4993613149272278e-05,
+    "last_accepted": false,
+    "objective": 160.16610717773438
+  },
+  {
+    "id": "synthetic_090",
+    "max_species_error_normalized": 1.5497207641601562e-06,
+    "gap": 7.0557471190113574e-06,
+    "last_accepted": false,
+    "objective": 37.914642333984375
+  },
+  {
+    "id": "synthetic_113",
+    "max_species_error_normalized": 1.5258789063388178e-06,
+    "gap": 5.191756281419657e-05,
+    "last_accepted": false,
+    "objective": 243.43988037109375
+  },
+  {
+    "id": "synthetic_082",
+    "max_species_error_normalized": 1.4781951904185853e-06,
+    "gap": 5.4646723583573475e-05,
+    "last_accepted": false,
+    "objective": 77.47758483886719
+  },
+  {
+    "id": "synthetic_025",
+    "max_species_error_normalized": 1.430511474609375e-06,
+    "gap": 3.706981806317344e-05,
+    "last_accepted": false,
+    "objective": 106.08629608154297
+  },
+  {
+    "id": "synthetic_100",
+    "max_species_error_normalized": 1.430511474609375e-06,
+    "gap": 4.896923201158643e-06,
+    "last_accepted": false,
+    "objective": 95.45152282714844
+  },
+  {
+    "id": "synthetic_102",
+    "max_species_error_normalized": 1.430511474609375e-06,
+    "gap": 1.0854881111299619e-05,
+    "last_accepted": false,
+    "objective": 98.93120574951172
+  },
+  {
+    "id": "synthetic_070",
+    "max_species_error_normalized": 1.3351440433240214e-06,
+    "gap": 4.3215164623688906e-05,
+    "last_accepted": false,
+    "objective": 48.11220932006836
+  },
+  {
+    "id": "synthetic_125",
+    "max_species_error_normalized": 1.3113021850585938e-06,
+    "gap": 8.137118129525334e-06,
+    "last_accepted": false,
+    "objective": 20.51352310180664
+  },
+  {
+    "id": "synthetic_046",
+    "max_species_error_normalized": 1.2159347537732401e-06,
+    "gap": 1.1376472684787586e-05,
+    "last_accepted": false,
+    "objective": 1.9147140979766846
+  },
+  {
+    "id": "synthetic_050",
+    "max_species_error_normalized": 1.1920928955078125e-06,
+    "gap": 1.3199678505770862e-06,
+    "last_accepted": false,
+    "objective": 48.09480667114258
+  },
+  {
+    "id": "synthetic_072",
+    "max_species_error_normalized": 1.1920928955078125e-06,
+    "gap": 1.1885328603966627e-05,
+    "last_accepted": false,
+    "objective": 135.84744262695312
+  },
+  {
+    "id": "synthetic_075",
+    "max_species_error_normalized": 1.1920928955078125e-06,
+    "gap": 5.331516149453819e-06,
+    "last_accepted": false,
+    "objective": 31.936304092407227
+  },
+  {
+    "id": "negative_complex",
+    "max_species_error_normalized": 1.1444091798651357e-06,
+    "gap": 3.422324516577646e-05,
+    "last_accepted": false,
+    "objective": 0.6250001192092896
+  },
+  {
+    "id": "synthetic_104",
+    "max_species_error_normalized": 1.1444091789769573e-06,
+    "gap": 5.2825926104560494e-06,
+    "last_accepted": false,
+    "objective": 118.46710968017578
+  },
+  {
+    "id": "synthetic_063",
+    "max_species_error_normalized": 1.1086463929110835e-06,
+    "gap": 1.1362113582435995e-05,
+    "last_accepted": false,
+    "objective": 61.349205017089844
+  },
+  {
+    "id": "synthetic_086",
+    "max_species_error_normalized": 1.052021980640916e-06,
+    "gap": 7.219850886031054e-06,
+    "last_accepted": false,
+    "objective": 23.554107666015625
+  },
+  {
+    "id": "synthetic_047",
+    "max_species_error_normalized": 1.0490417481356928e-06,
+    "gap": 5.510451956070028e-06,
+    "last_accepted": false,
+    "objective": 67.51640319824219
+  },
+  {
+    "id": "synthetic_087",
+    "max_species_error_normalized": 1.0490417476916036e-06,
+    "gap": 2.0241675883880816e-05,
+    "last_accepted": false,
+    "objective": 63.81241226196289
+  },
+  {
+    "id": "synthetic_081",
+    "max_species_error_normalized": 9.745359426105438e-07,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 15.74980354309082
+  },
+  {
+    "id": "bound_product_corner",
+    "max_species_error_normalized": 9.5367431640625e-07,
+    "gap": 9.717277862364426e-07,
+    "last_accepted": false,
+    "objective": 1.8260948309034575e-12
+  },
+  {
+    "id": "synthetic_020",
+    "max_species_error_normalized": 9.5367431640625e-07,
+    "gap": 5.058529495727271e-06,
+    "last_accepted": false,
+    "objective": 149.4717559814453
+  },
+  {
+    "id": "synthetic_054",
+    "max_species_error_normalized": 9.5367431640625e-07,
+    "gap": 6.201909400260774e-06,
+    "last_accepted": false,
+    "objective": 28.337467193603516
+  },
+  {
+    "id": "synthetic_079",
+    "max_species_error_normalized": 9.5367431640625e-07,
+    "gap": 8.035585778998211e-06,
+    "last_accepted": false,
+    "objective": 7.53671407699585
+  },
+  {
+    "id": "synthetic_110",
+    "max_species_error_normalized": 9.298324585849116e-07,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 3.7525453567504883
+  },
+  {
+    "id": "synthetic_120",
+    "max_species_error_normalized": 8.940696716308594e-07,
+    "gap": 4.0413324313703924e-06,
+    "last_accepted": false,
+    "objective": 3.545287609100342
+  },
+  {
+    "id": "synthetic_122",
+    "max_species_error_normalized": 8.583068846768072e-07,
+    "gap": 2.5736841053003445e-05,
+    "last_accepted": false,
+    "objective": 105.30621337890625
+  },
+  {
+    "id": "synthetic_112",
+    "max_species_error_normalized": 8.463859559881826e-07,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 46.57456588745117
+  },
+  {
+    "id": "negative_all",
+    "max_species_error_normalized": 7.629394529473643e-07,
+    "gap": 1.2138294550823048e-05,
+    "last_accepted": false,
+    "objective": 65.5
+  },
+  {
+    "id": "origin",
+    "max_species_error_normalized": 7.629394529473643e-07,
+    "gap": 1.2138294550823048e-05,
+    "last_accepted": false,
+    "objective": 41.5
+  },
+  {
+    "id": "large_complex",
+    "max_species_error_normalized": 7.629394529473643e-07,
+    "gap": 1.2138294550823048e-05,
+    "last_accepted": false,
+    "objective": 44.5
+  },
+  {
+    "id": "synthetic_126",
+    "max_species_error_normalized": 7.629394529473643e-07,
+    "gap": 2.2603195247938856e-05,
+    "last_accepted": false,
+    "objective": 251.9920196533203
+  },
+  {
+    "id": "synthetic_060",
+    "max_species_error_normalized": 7.152557373046875e-07,
+    "gap": 3.7063764466438442e-06,
+    "last_accepted": false,
+    "objective": 65.10111236572266
+  },
+  {
+    "id": "synthetic_044",
+    "max_species_error_normalized": 6.914138794833491e-07,
+    "gap": 1.7874939658213407e-05,
+    "last_accepted": false,
+    "objective": 20.96567153930664
+  },
+  {
+    "id": "synthetic_039",
+    "max_species_error_normalized": 6.556510925292969e-07,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 29.731966018676758
+  },
+  {
+    "id": "enzyme_excess",
+    "max_species_error_normalized": 6.198883060193339e-07,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 0.29399991035461426
+  },
+  {
+    "id": "synthetic_045",
+    "max_species_error_normalized": 5.960464477539062e-07,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 12.974363327026367
+  },
+  {
+    "id": "synthetic_024",
+    "max_species_error_normalized": 5.453824996060064e-07,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 8.514311790466309
+  },
+  {
+    "id": "synthetic_092",
+    "max_species_error_normalized": 4.987814463675022e-07,
+    "gap": 6.707947250106372e-06,
+    "last_accepted": false,
+    "objective": 35.97685241699219
+  },
+  {
+    "id": "synthetic_031",
+    "max_species_error_normalized": 4.839152092372956e-07,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 6.441547393798828
+  },
+  {
+    "id": "synthetic_013",
+    "max_species_error_normalized": 4.76837158203125e-07,
+    "gap": 1.704264104773756e-05,
+    "last_accepted": false,
+    "objective": 13.915128707885742
+  },
+  {
+    "id": "synthetic_018",
+    "max_species_error_normalized": 4.76837158203125e-07,
+    "gap": 1.157547922048252e-05,
+    "last_accepted": false,
+    "objective": 8.836531639099121
+  },
+  {
+    "id": "synthetic_033",
+    "max_species_error_normalized": 4.76837158203125e-07,
+    "gap": 3.420308348722756e-05,
+    "last_accepted": false,
+    "objective": 119.70976257324219
+  },
+  {
+    "id": "synthetic_089",
+    "max_species_error_normalized": 4.76837158203125e-07,
+    "gap": 4.043613444082439e-06,
+    "last_accepted": false,
+    "objective": 158.92779541015625
+  },
+  {
+    "id": "synthetic_098",
+    "max_species_error_normalized": 4.76837158203125e-07,
+    "gap": 2.3043139663059264e-06,
+    "last_accepted": false,
+    "objective": 73.68685913085938
+  },
+  {
+    "id": "synthetic_066",
+    "max_species_error_normalized": 4.291534425604482e-07,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 34.336204528808594
+  },
+  {
+    "id": "synthetic_049",
+    "max_species_error_normalized": 4.2319297755000207e-07,
+    "gap": 1.007870196190197e-05,
+    "last_accepted": false,
+    "objective": 12.589499473571777
+  },
+  {
+    "id": "synthetic_107",
+    "max_species_error_normalized": 3.8146972691777137e-07,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 16.738658905029297
+  },
+  {
+    "id": "synthetic_078",
+    "max_species_error_normalized": 3.6954879778505756e-07,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 54.742347717285156
+  },
+  {
+    "id": "synthetic_032",
+    "max_species_error_normalized": 3.6954879689687914e-07,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 12.67789077758789
+  },
+  {
+    "id": "synthetic_106",
+    "max_species_error_normalized": 3.5762786865234375e-07,
+    "gap": 9.283779945690185e-06,
+    "last_accepted": false,
+    "objective": 16.28936004638672
+  },
+  {
+    "id": "synthetic_123",
+    "max_species_error_normalized": 3.5762786865234375e-07,
+    "gap": 1.196792618429754e-05,
+    "last_accepted": false,
+    "objective": 6.743006229400635
+  },
+  {
+    "id": "synthetic_026",
+    "max_species_error_normalized": 3.3378601038691613e-07,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 10.845847129821777
+  },
+  {
+    "id": "synthetic_022",
+    "max_species_error_normalized": 3.099441521214885e-07,
+    "gap": 1.622210766072385e-05,
+    "last_accepted": false,
+    "objective": 1.6092979907989502
+  },
+  {
+    "id": "synthetic_103",
+    "max_species_error_normalized": 2.861022947442393e-07,
+    "gap": 9.2562913778238e-06,
+    "last_accepted": false,
+    "objective": 183.82015991210938
+  },
+  {
+    "id": "synthetic_016",
+    "max_species_error_normalized": 2.384185791015625e-07,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 9.360834121704102
+  },
+  {
+    "id": "synthetic_048",
+    "max_species_error_normalized": 2.384185791015625e-07,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 55.207496643066406
+  },
+  {
+    "id": "synthetic_077",
+    "max_species_error_normalized": 2.384185791015625e-07,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 3.187511444091797
+  },
+  {
+    "id": "synthetic_069",
+    "max_species_error_normalized": 2.2798776644350482e-07,
+    "gap": 1.0236476555292029e-05,
+    "last_accepted": false,
+    "objective": 5.9819512367248535
+  },
+  {
+    "id": "synthetic_027",
+    "max_species_error_normalized": 2.145767217243133e-07,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 21.921451568603516
+  },
+  {
+    "id": "synthetic_038",
+    "max_species_error_normalized": 2.1457672083613488e-07,
+    "gap": 2.99370526590792e-06,
+    "last_accepted": false,
+    "objective": 4.881490707397461
+  },
+  {
+    "id": "synthetic_105",
+    "max_species_error_normalized": 1.4901161193847656e-07,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 26.837581634521484
+  },
+  {
+    "id": "synthetic_071",
+    "max_species_error_normalized": 1.3709068280576275e-07,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 0.8469215035438538
+  },
+  {
+    "id": "bound_corner",
+    "max_species_error_normalized": 1.1920928955078125e-07,
+    "gap": 1.5172867051660432e-06,
+    "last_accepted": false,
+    "objective": 2.842170943040401e-14
+  },
+  {
+    "id": "synthetic_030",
+    "max_species_error_normalized": 1.1920928955078125e-07,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 115.42144775390625
+  },
+  {
+    "id": "consistent",
+    "max_species_error_normalized": 1.162290574896474e-07,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 7.127631818093505e-14
+  },
+  {
+    "id": "synthetic_059",
+    "max_species_error_normalized": 9.536743128535363e-08,
+    "gap": 1.3209164535510354e-05,
+    "last_accepted": false,
+    "objective": 23.20635223388672
+  },
+  {
+    "id": "synthetic_021",
+    "max_species_error_normalized": 2.9802322387695312e-08,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 11.9517822265625
+  },
+  {
+    "id": "synthetic_061",
+    "max_species_error_normalized": 2.3841858265427618e-08,
+    "gap": 1.3857385965820868e-05,
+    "last_accepted": false,
+    "objective": 66.14442443847656
+  },
+  {
+    "id": "free_pools",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 0.0
+  },
+  {
+    "id": "product_corner",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 0.0
+  },
+  {
+    "id": "excess_product",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 29.5
+  },
+  {
+    "id": "synthetic_012",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 56.9118537902832
+  },
+  {
+    "id": "synthetic_015",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 64.06815338134766
+  },
+  {
+    "id": "synthetic_019",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 101.54461669921875
+  },
+  {
+    "id": "synthetic_028",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 66.2967529296875
+  },
+  {
+    "id": "synthetic_029",
+    "max_species_error_normalized": 0.0,
+    "gap": 1.2002946277789306e-05,
+    "last_accepted": false,
+    "objective": 47.829689025878906
+  },
+  {
+    "id": "synthetic_034",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 70.92019653320312
+  },
+  {
+    "id": "synthetic_035",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 48.276451110839844
+  },
+  {
+    "id": "synthetic_036",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 46.11617660522461
+  },
+  {
+    "id": "synthetic_043",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 24.116342544555664
+  },
+  {
+    "id": "synthetic_056",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 80.92786407470703
+  },
+  {
+    "id": "synthetic_062",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 20.743528366088867
+  },
+  {
+    "id": "synthetic_067",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 49.283302307128906
+  },
+  {
+    "id": "synthetic_080",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 40.28605270385742
+  },
+  {
+    "id": "synthetic_083",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 34.61873245239258
+  },
+  {
+    "id": "synthetic_084",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 27.26223373413086
+  },
+  {
+    "id": "synthetic_085",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 41.64973068237305
+  },
+  {
+    "id": "synthetic_088",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 78.89795684814453
+  },
+  {
+    "id": "synthetic_093",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 27.43730354309082
+  },
+  {
+    "id": "synthetic_095",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 48.93341064453125
+  },
+  {
+    "id": "synthetic_099",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 54.56553268432617
+  },
+  {
+    "id": "synthetic_108",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 65.01213073730469
+  },
+  {
+    "id": "synthetic_115",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 97.09175872802734
+  },
+  {
+    "id": "synthetic_116",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 60.219966888427734
+  },
+  {
+    "id": "synthetic_118",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 46.66333770751953
+  },
+  {
+    "id": "synthetic_119",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 82.25818634033203
+  },
+  {
+    "id": "synthetic_121",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 7.496200084686279
+  },
+  {
+    "id": "synthetic_124",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 30.613000869750977
+  },
+  {
+    "id": "synthetic_127",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 5.475050926208496
+  },
+  {
+    "id": "synthetic_128",
+    "max_species_error_normalized": 0.0,
+    "gap": 0.0,
+    "last_accepted": false,
+    "objective": 38.95016098022461
+  }
+]

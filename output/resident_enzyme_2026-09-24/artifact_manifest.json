@@ -1,0 +1,2005 @@
+{
+  "scope": "All retained final and explicitly historical enzyme application evidence; this top-level inventory excludes itself.",
+  "files": {
+    "baseline/definition.json": {
+      "bytes": 21311336,
+      "sha256": "f7c46f5a48d0c30e68237b73cb4fbe23c02ae8ed439ecb69201a0c0e19648636"
+    },
+    "baseline/inputs.json": {
+      "bytes": 23128,
+      "sha256": "03f557cfd615efe8e4f8f7484721daa6cd6538cf512d1a5ee5587626de4258d1"
+    },
+    "baseline/manifest.json": {
+      "bytes": 21169861,
+      "sha256": "5bfb1a8fa3250d24c5b27d2ed8e55452a7fa8eb0e06f5c0b4e4736e82abf06d9"
+    },
+    "baseline/program.bin": {
+      "bytes": 516044,
+      "sha256": "d81a6c2fbdf0e43015664d291c23470c59e3b0277f9218773625aa74b6ea41b4"
+    },
+    "baseline/resident_binding_dependency.json": {
+      "bytes": 886455,
+      "sha256": "5373231ef7a4381ec71ba598979ca6bb404f6386e2734cddb8d05cc891976587"
+    },
+    "baseline/source_cycle.json": {
+      "bytes": 541,
+      "sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4"
+    },
+    "baseline/source_cycle_generator.py": {
+      "bytes": 42804,
+      "sha256": "b8bb4255b19e0e53d664449addc984b6c0c44ed795a3f78bfa8190d848ab9f51"
+    },
+    "baseline/source_enzyme_generator.py": {
+      "bytes": 26480,
+      "sha256": "2875592287d4905881422da819e55068cab9b4b2b20e985a1b673168a6419911"
+    },
+    "baseline/source_model.json": {
+      "bytes": 13654,
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9"
+    },
+    "baseline_summary.json": {
+      "bytes": 2057,
+      "sha256": "4ae3f7675c95c69eb25f9f75d73de52924353bfec4fae3131327e4c2aae3c207"
+    },
+    "compilation_equivalence.json": {
+      "bytes": 801,
+      "sha256": "c1c67242232c8c31b1f2d4b0753700f8459e9d1d75326d2909357e12ebcafc9c"
+    },
+    "demo/cpu.execution.json": {
+      "bytes": 1994,
+      "sha256": "a5dcdea791fcbd912915e5b28bd1cd6867ba24ac53470b409ecdc2dd39f3e4d2"
+    },
+    "demo/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "demo/cpu.stdout.json": {
+      "bytes": 1112,
+      "sha256": "77607f1f14dba1c96891c22ece1b7d853853f4063746fc78affd11b242666866"
+    },
+    "demo/cpu128.bin": {
+      "bytes": 122068,
+      "sha256": "069aa7a762cd3a2bc4e437cc4eed4c476e27594b23f56f7ae54b4545dbce6d5e"
+    },
+    "demo/definition.json": {
+      "bytes": 21075982,
+      "sha256": "023187679965c7275c4339a68fcbc723eb800327a51e5ae213aca036dd31e021"
+    },
+    "demo/initial_results.json": {
+      "bytes": 10527,
+      "sha256": "3240ab8b8c1c1af88748eaef7648876e11580b274a7e5958e6b9a8cbfe38513e"
+    },
+    "demo/inputs.json": {
+      "bytes": 792,
+      "sha256": "de19cea1b1e6ac2f58f8e5c3c07ebfd755a92471b421a7e2edd9504adba4f0cf"
+    },
+    "demo/manifest.json": {
+      "bytes": 21138703,
+      "sha256": "3aa1cab538941f37e13839a2d484845eb8e2f249bf66fea28d2da4b973fa8931"
+    },
+    "demo/program.bin": {
+      "bytes": 122068,
+      "sha256": "70ed6bd93119d53a52f587c9c41dc4f0756fa4bd438ec5234f067411c9613bec"
+    },
+    "demo/resident_binding_dependency.json": {
+      "bytes": 886455,
+      "sha256": "5373231ef7a4381ec71ba598979ca6bb404f6386e2734cddb8d05cc891976587"
+    },
+    "demo/results.execution.json": {
+      "bytes": 855,
+      "sha256": "fa1f9c980c02d13c296360351bb209cd2dc458f56f3a74903e6abce4192e6eaa"
+    },
+    "demo/results.json": {
+      "bytes": 11307,
+      "sha256": "38c1afca9399564f57ff5a336b4d2eda73cd99cc570022d05abee6aa9f514edc"
+    },
+    "demo/source_cycle.json": {
+      "bytes": 541,
+      "sha256": "43e8f9387f5bc076c0c54b69d81787dee36ce3c80f9f6ddbd8e8a543faef3ab4"
+    },
+    "demo/source_cycle_generator.py": {
+      "bytes": 42804,
+      "sha256": "b8bb4255b19e0e53d664449addc984b6c0c44ed795a3f78bfa8190d848ab9f51"
+    },
+    "demo/source_enzyme_generator.py": {
+      "bytes": 26480,
+      "sha256": "2875592287d4905881422da819e55068cab9b4b2b20e985a1b673168a6419911"
+    },
+    "demo/source_model.json": {
+      "bytes": 13654,
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9"
+    },
+    "demo/vulkan.execution.json": {
+      "bytes": 2170,
+      "sha256": "3408fcaacdf57ba457eaf3e6804aa66cb8a2d3c56c86f11fe7727f79dbe3eb67"
+    },
+    "demo/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "demo/vulkan.stdout.json": {
+      "bytes": 1245,
+      "sha256": "954724814a4570a363f34624dabc121317c748a3f4d0addfb027b2a85f029e17"
+    },
+    "demo/vulkan128.bin": {
+      "bytes": 122068,
+      "sha256": "069aa7a762cd3a2bc4e437cc4eed4c476e27594b23f56f7ae54b4545dbce6d5e"
+    },
+    "exact_reference_128.json": {
+      "bytes": 54582,
+      "sha256": "4187c875bd8432e34d53d4356b0b93fa9fa596e0e0d5bb6053cd0e479dfed8a7"
+    },
+    "exact_reference_2048.json": {
+      "bytes": 54618,
+      "sha256": "66de87d3c8522c97379ae1c33cf89b8a958efc26e3238ceb9153a99fd1662765"
+    },
+    "FINAL_SUMMARY.json": {
+      "bytes": 3599,
+      "sha256": "2e3ff649074512deb33d678845e2cba35735f58f0b9931f6ce7a713728e5aed9"
+    },
+    "initial_full_cycle_accuracy_audit.json": {
+      "bytes": 24194,
+      "sha256": "1aff6b1171c4216fbdd4db4f1b522c31b90fa37db4d59717965ffa43ed454720"
+    },
+    "inputs.json": {
+      "bytes": 23128,
+      "sha256": "03f557cfd615efe8e4f8f7484721daa6cd6538cf512d1a5ee5587626de4258d1"
+    },
+    "interventions/ablate_chemical_core_feedback/change.json": {
+      "bytes": 853,
+      "sha256": "460f010d3d00a77ff5dde95384b3466eb19aa50bcfebf25fd7e5546c8fb718f9"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_128/cpu.bin": {
+      "bytes": 515596,
+      "sha256": "b87491fb7cdf195d2e36006a239205415663f226b71b2c947ee63e6a4208da57"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_128/cpu.execution.json": {
+      "bytes": 2149,
+      "sha256": "4dd7776d9c1974f4613715e0882306ef78f23347e81c68cd3aa0e218241d21cc"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_128/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_128/cpu.stdout.json": {
+      "bytes": 1117,
+      "sha256": "25208d053aa34ab5681362cdc5b556e83acabf981221a7659cc168c428ec78c9"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_128/vulkan.bin": {
+      "bytes": 515596,
+      "sha256": "b87491fb7cdf195d2e36006a239205415663f226b71b2c947ee63e6a4208da57"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_128/vulkan.execution.json": {
+      "bytes": 2326,
+      "sha256": "86fc5d02c66e826e7eb5d65682e418d3fa8f411679cc0ea765d5b8cb7abfd840"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_128/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_128/vulkan.stdout.json": {
+      "bytes": 1251,
+      "sha256": "f5e20a28f31c5462df61d621d1d5d3356461781ec3352b3332d2e57aef196d53"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_2048/cpu.bin": {
+      "bytes": 515596,
+      "sha256": "826d0037d8cd666e6013b0f5d45594261ef68bf096bf1f1865ed4498cbacddae"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_2048/cpu.execution.json": {
+      "bytes": 2156,
+      "sha256": "b6b76cb2f4dc2a5fb9375a2a43879ed0ce4a332696b5f69d2fd5318f82d4c5d9"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_2048/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_2048/cpu.stdout.json": {
+      "bytes": 1122,
+      "sha256": "d686084ab14445320275f3af9da2a9294f644e8db99d3f27b37956d1ce475198"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_2048/vulkan.bin": {
+      "bytes": 515596,
+      "sha256": "826d0037d8cd666e6013b0f5d45594261ef68bf096bf1f1865ed4498cbacddae"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_2048/vulkan.execution.json": {
+      "bytes": 2336,
+      "sha256": "13bd261e5e6df1aa1df783b768143f67260efa8414c65b9646661ebfdbccf70b"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_2048/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_2048/vulkan.stdout.json": {
+      "bytes": 1259,
+      "sha256": "f88376ff5b856af1d7ed8a692057dda99c9ee1dd1a14ea4bae109be7beefaa3a"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_64/cpu.bin": {
+      "bytes": 515596,
+      "sha256": "f2bcf1a1e4afa78a3bccc06c2929273d650f961ba7a47e2eac63804c639d6c53"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_64/cpu.execution.json": {
+      "bytes": 2143,
+      "sha256": "5d217be73a363bdab2d3122cf873efcd1a070c7d767ff84c2def5df72d898c6a"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_64/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_64/cpu.stdout.json": {
+      "bytes": 1113,
+      "sha256": "d1a374c4c95a9cc09bbde0444be4a10411e4543fd74d636e5aaa79907d67495e"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_64/vulkan.bin": {
+      "bytes": 515596,
+      "sha256": "f2bcf1a1e4afa78a3bccc06c2929273d650f961ba7a47e2eac63804c639d6c53"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_64/vulkan.execution.json": {
+      "bytes": 2319,
+      "sha256": "8f005794ceb784ffb82fe5731cc1263d3a426be5bda206c1e2e21898682a3521"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_64/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_64/vulkan.stdout.json": {
+      "bytes": 1246,
+      "sha256": "d03d64a333a8bcfcdb062f2feedae58d5fc5cee8ffea0d222f9f7b0c67cf3550"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_8/cpu.bin": {
+      "bytes": 515596,
+      "sha256": "612811a6a8a970a7ef5cdefcb631c683769078b677544bf8b7228c26c68ee419"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_8/cpu.execution.json": {
+      "bytes": 2138,
+      "sha256": "064a6a6c8e33baf209853b13a20628982997c9b753d5a292277030f4c1ea6188"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_8/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_8/cpu.stdout.json": {
+      "bytes": 1110,
+      "sha256": "2ebb5ae1901ec75d0cb0374890f2bf7aee5593e31e1f1b370ef473706811d19d"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_8/vulkan.bin": {
+      "bytes": 515596,
+      "sha256": "612811a6a8a970a7ef5cdefcb631c683769078b677544bf8b7228c26c68ee419"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_8/vulkan.execution.json": {
+      "bytes": 2313,
+      "sha256": "eb5264c2d4169d087bfe08ab9eb884db2802235206fc1d41cddf3cb54cf41c3c"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_8/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/ablate_chemical_core_feedback/epochs_8/vulkan.stdout.json": {
+      "bytes": 1242,
+      "sha256": "251f7547aab035156322e047c6b8e3a5b18657120e0ba2b211dc8f4bc28a96b8"
+    },
+    "interventions/ablate_chemical_core_feedback/program.bin": {
+      "bytes": 515596,
+      "sha256": "ebb0450de6b6b87ee0a9d697b22bdafd2c1171e1834d962435b7f7beb865c017"
+    },
+    "interventions/carrier_field/change.json": {
+      "bytes": 815,
+      "sha256": "9aeac40544e6a51756c7599b97b075961a20ffab8c864aefa3a13169d829e6c4"
+    },
+    "interventions/carrier_field/epochs_1/cpu.bin": {
+      "bytes": 516076,
+      "sha256": "2e2c0b4f0375443ff3a66559f8adbf9b3b1d3ba0a59468de385edce6daf1987f"
+    },
+    "interventions/carrier_field/epochs_1/cpu.execution.json": {
+      "bytes": 2104,
+      "sha256": "cd1a484eccf4aebfcee7232fa8be0ebfdbc532c6eb3595239a33c150bd71c80c"
+    },
+    "interventions/carrier_field/epochs_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/carrier_field/epochs_1/cpu.stdout.json": {
+      "bytes": 1108,
+      "sha256": "12474fe789351d9564750638b37c9f4b9b36ca34b0070b32f96d04b555dfaf8b"
+    },
+    "interventions/carrier_field/epochs_1/vulkan.bin": {
+      "bytes": 516076,
+      "sha256": "2e2c0b4f0375443ff3a66559f8adbf9b3b1d3ba0a59468de385edce6daf1987f"
+    },
+    "interventions/carrier_field/epochs_1/vulkan.execution.json": {
+      "bytes": 2280,
+      "sha256": "3c340a067b6f0cf8c944f972bc6dc3db2837b05eec5429d35fe43b15807211ed"
+    },
+    "interventions/carrier_field/epochs_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/carrier_field/epochs_1/vulkan.stdout.json": {
+      "bytes": 1241,
+      "sha256": "09099baab7f28e9ae381b7dbadd7f24f4961f2368427bc098c605c20e31fd041"
+    },
+    "interventions/carrier_field/program.bin": {
+      "bytes": 516076,
+      "sha256": "e8c645516b6d8643329c65729132c100607cd5d692fd5b80d9c47c541578beb8"
+    },
+    "interventions/carrier_placement/change.json": {
+      "bytes": 823,
+      "sha256": "0303b7532b110d9f00ee572f366e2733015d6bdd203f9aca48ce9b1008f3504f"
+    },
+    "interventions/carrier_placement/epochs_1/cpu.bin": {
+      "bytes": 516076,
+      "sha256": "fb02cd11547447c942b0cc9bc0086bf42a4c4719d49812eb93eb9737a8f07682"
+    },
+    "interventions/carrier_placement/epochs_1/cpu.execution.json": {
+      "bytes": 2113,
+      "sha256": "b01676372a796830bfe623f91d862d4ae8c500c006c873d565eb5e809c2bd9d4"
+    },
+    "interventions/carrier_placement/epochs_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/carrier_placement/epochs_1/cpu.stdout.json": {
+      "bytes": 1109,
+      "sha256": "9854b86af4e5907896961ed90140a16fb21ed729b5278e06be4c7f83ff48ee38"
+    },
+    "interventions/carrier_placement/epochs_1/vulkan.bin": {
+      "bytes": 516076,
+      "sha256": "fb02cd11547447c942b0cc9bc0086bf42a4c4719d49812eb93eb9737a8f07682"
+    },
+    "interventions/carrier_placement/epochs_1/vulkan.execution.json": {
+      "bytes": 2288,
+      "sha256": "9af6ca9713fce44765193200f30692108f496b7893c335c9ba12e135c3a93c53"
+    },
+    "interventions/carrier_placement/epochs_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/carrier_placement/epochs_1/vulkan.stdout.json": {
+      "bytes": 1241,
+      "sha256": "8e6df7ca42ed8fe7c1a250582ffffe40b25d21d61514f6994e13e21cc3289b9e"
+    },
+    "interventions/carrier_placement/program.bin": {
+      "bytes": 516076,
+      "sha256": "e45c001c93e67ba4e4af2abfa3a564614ef965647133f7efa1b504601abd27ed"
+    },
+    "interventions/core_geometry_divergence/change.json": {
+      "bytes": 936,
+      "sha256": "2f8b62dc99cff58caa72d6cd562c189369ed560ecf5d8a9ae84b7c0a6ae48ae5"
+    },
+    "interventions/core_geometry_divergence/epochs_1/cpu.bin": {
+      "bytes": 516076,
+      "sha256": "3cd8af67c7a9164b77c754fc9b55e48dfd7947083e15fbe3f6efbb9c8f2b857d"
+    },
+    "interventions/core_geometry_divergence/epochs_1/cpu.execution.json": {
+      "bytes": 2127,
+      "sha256": "3bb59af0142cac4eb6e5833ff1c23b934b7c11a7d1838db6487e903d8421bbc0"
+    },
+    "interventions/core_geometry_divergence/epochs_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/core_geometry_divergence/epochs_1/cpu.stdout.json": {
+      "bytes": 1109,
+      "sha256": "502c80fd239bb4280f810e20e282692fb4b46fe0c7721790bbf368330f338bd1"
+    },
+    "interventions/core_geometry_divergence/epochs_1/vulkan.bin": {
+      "bytes": 516076,
+      "sha256": "3cd8af67c7a9164b77c754fc9b55e48dfd7947083e15fbe3f6efbb9c8f2b857d"
+    },
+    "interventions/core_geometry_divergence/epochs_1/vulkan.execution.json": {
+      "bytes": 2302,
+      "sha256": "61486e6e545d207e9928cc91ef2b48cd745538f19809c24201842c933bfddfc6"
+    },
+    "interventions/core_geometry_divergence/epochs_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/core_geometry_divergence/epochs_1/vulkan.stdout.json": {
+      "bytes": 1241,
+      "sha256": "6e8746ed092f9d6a0ded2de6124e8f8342075e2ccb4d64c75870e02b95b2101b"
+    },
+    "interventions/core_geometry_divergence/program.bin": {
+      "bytes": 516076,
+      "sha256": "57ecce278832da009be560c29ae1a1d3f9dc88f8389c2052faf91cf7e1b90a49"
+    },
+    "interventions/core_log_polar/change.json": {
+      "bytes": 926,
+      "sha256": "5bdb4ec66030e9f7004eb054a87a955b554e66e454090fe08d2f81bc00959687"
+    },
+    "interventions/core_log_polar/epochs_1/cpu.bin": {
+      "bytes": 516076,
+      "sha256": "2c10edc19e6e973b20c353285adf2974d4f6be0ea0c83521e0a59957e33941fc"
+    },
+    "interventions/core_log_polar/epochs_1/cpu.execution.json": {
+      "bytes": 2107,
+      "sha256": "8a0a03a0273675436121ebd01e790f1c255695d31a6f8e94c8ac7d6ea4eeb894"
+    },
+    "interventions/core_log_polar/epochs_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/core_log_polar/epochs_1/cpu.stdout.json": {
+      "bytes": 1109,
+      "sha256": "9d08b3cd2aa8765dcbaeaf798a99e720e06cfbbbf9a21132ac88bf612d52f724"
+    },
+    "interventions/core_log_polar/epochs_1/vulkan.bin": {
+      "bytes": 516076,
+      "sha256": "2c10edc19e6e973b20c353285adf2974d4f6be0ea0c83521e0a59957e33941fc"
+    },
+    "interventions/core_log_polar/epochs_1/vulkan.execution.json": {
+      "bytes": 2281,
+      "sha256": "9ea91c64a10d5ba4cab68a4b9aacb254ab876e681cb3bc2a19d7da6539c7c3f1"
+    },
+    "interventions/core_log_polar/epochs_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/core_log_polar/epochs_1/vulkan.stdout.json": {
+      "bytes": 1240,
+      "sha256": "c56d6e8d7e77af67768c1e6ff67abb37a27b607e764aefce463dde86a48c1fcb"
+    },
+    "interventions/core_log_polar/program.bin": {
+      "bytes": 516076,
+      "sha256": "a70d24bba2d0d5fa7681a34c1ed1dc5d583b290029e87e3dabf82a7db340cc59"
+    },
+    "interventions/core_operator_mutation/change.json": {
+      "bytes": 934,
+      "sha256": "b7aa90e59702ef290cc6fc1a59ff074ea5d507ca73a6adad8b8f1135ddbf1eec"
+    },
+    "interventions/core_operator_mutation/epochs_1/cpu.bin": {
+      "bytes": 516076,
+      "sha256": "e8c55a02aa1717b83c6618f022701d85138b4a942d28ee789c76c7a3375d10b7"
+    },
+    "interventions/core_operator_mutation/epochs_1/cpu.execution.json": {
+      "bytes": 2122,
+      "sha256": "72a9cb4ee05d3c42a426ac03acce7030b3e3a98d7550d3ab878a639614cef10c"
+    },
+    "interventions/core_operator_mutation/epochs_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/core_operator_mutation/epochs_1/cpu.stdout.json": {
+      "bytes": 1108,
+      "sha256": "9280bbb82449e6a6441f86825b97ef7ed2f87adad829b48f71934115ab9efed6"
+    },
+    "interventions/core_operator_mutation/epochs_1/vulkan.bin": {
+      "bytes": 516076,
+      "sha256": "e8c55a02aa1717b83c6618f022701d85138b4a942d28ee789c76c7a3375d10b7"
+    },
+    "interventions/core_operator_mutation/epochs_1/vulkan.execution.json": {
+      "bytes": 2298,
+      "sha256": "cf749373fdcbf43aaaa38958b4c018c1512da0bb928fa303fe8abf2c7db82662"
+    },
+    "interventions/core_operator_mutation/epochs_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/core_operator_mutation/epochs_1/vulkan.stdout.json": {
+      "bytes": 1241,
+      "sha256": "3b30715dc999bfd71c2c38a043612beb0879b6811d16750e1f97769b9af00208"
+    },
+    "interventions/core_operator_mutation/program.bin": {
+      "bytes": 516076,
+      "sha256": "e5e276be87f536f6d9dee6ea2fb857e07bb724aa1a9544eeda4672a9367efc54"
+    },
+    "interventions/core_rgba_crystal/change.json": {
+      "bytes": 931,
+      "sha256": "6d84d34d09a90f71f72c31feb11856883570a441bb341c83d5a4ba60c6c731a2"
+    },
+    "interventions/core_rgba_crystal/epochs_1/cpu.bin": {
+      "bytes": 516076,
+      "sha256": "68595fbf3de47a9cd65d71d49190e92787dfb4367c318fba8b2a564c588c9d28"
+    },
+    "interventions/core_rgba_crystal/epochs_1/cpu.execution.json": {
+      "bytes": 2112,
+      "sha256": "819588d2bd76c58f2af31ac57300008eea015ea2e05e3fd0f76a575e82549e65"
+    },
+    "interventions/core_rgba_crystal/epochs_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/core_rgba_crystal/epochs_1/cpu.stdout.json": {
+      "bytes": 1108,
+      "sha256": "ea1bdbf566350a5c8ab6b2fa0ccc4905a92af6fa672abf4a766126d55fc82d62"
+    },
+    "interventions/core_rgba_crystal/epochs_1/vulkan.bin": {
+      "bytes": 516076,
+      "sha256": "68595fbf3de47a9cd65d71d49190e92787dfb4367c318fba8b2a564c588c9d28"
+    },
+    "interventions/core_rgba_crystal/epochs_1/vulkan.execution.json": {
+      "bytes": 2288,
+      "sha256": "b50e8e4ae56d2d1919560a22954fe4a71c51afc7ad5cec571b2aebd6e3cee2f4"
+    },
+    "interventions/core_rgba_crystal/epochs_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/core_rgba_crystal/epochs_1/vulkan.stdout.json": {
+      "bytes": 1241,
+      "sha256": "3980649a91cbc06edc9f737464e0a6bd79fd7b804fa774b19d578200290dc329"
+    },
+    "interventions/core_rgba_crystal/program.bin": {
+      "bytes": 516076,
+      "sha256": "173da65698f8072c2ae2c851110898659c3574fa05fe7827d775dbabc674f05c"
+    },
+    "interventions/core_rk4_four_slots/change.json": {
+      "bytes": 929,
+      "sha256": "f31545d6eda17fe09fb2b699784dbafed1bcca5509444e14dd5c0d9eb8949f31"
+    },
+    "interventions/core_rk4_four_slots/epochs_1/cpu.bin": {
+      "bytes": 516076,
+      "sha256": "8b006b31e98b0283f6e91b9e7a43ca27bb71a398707c09e6d0c83b8113422e4f"
+    },
+    "interventions/core_rk4_four_slots/epochs_1/cpu.execution.json": {
+      "bytes": 2117,
+      "sha256": "eaf4f5ed872627168ab42cce260016e47b2bd927dabcfc9a092250d840a50ecf"
+    },
+    "interventions/core_rk4_four_slots/epochs_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/core_rk4_four_slots/epochs_1/cpu.stdout.json": {
+      "bytes": 1109,
+      "sha256": "147c4de4b63832d22e90a3dba18df25b55a23f8faa4978c8cadf0c49148c7aac"
+    },
+    "interventions/core_rk4_four_slots/epochs_1/vulkan.bin": {
+      "bytes": 516076,
+      "sha256": "8b006b31e98b0283f6e91b9e7a43ca27bb71a398707c09e6d0c83b8113422e4f"
+    },
+    "interventions/core_rk4_four_slots/epochs_1/vulkan.execution.json": {
+      "bytes": 2292,
+      "sha256": "52fa7dc5dea57302ff1067334c0abe263b8668747335e51fa1c98bdb8fc1d552"
+    },
+    "interventions/core_rk4_four_slots/epochs_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/core_rk4_four_slots/epochs_1/vulkan.stdout.json": {
+      "bytes": 1241,
+      "sha256": "9685bcaec73de90dbd6d0d88a3eca0601606ac56a949f5b3958c1d449481fbe1"
+    },
+    "interventions/core_rk4_four_slots/program.bin": {
+      "bytes": 516076,
+      "sha256": "3a657e4ad07edf0e5ea85b48caddab3b02ba696797d41e04e13040e9106ffa3d"
+    },
+    "interventions/core_selected_operator/change.json": {
+      "bytes": 936,
+      "sha256": "29af87d48c15c57e3980bebc71ab9d0350e1e399b5a0621aca7b7a41895413ae"
+    },
+    "interventions/core_selected_operator/epochs_1/cpu.bin": {
+      "bytes": 516076,
+      "sha256": "d933ab4d33d79e43b36bdbc85f1d40162f54a32e92c474131625497072d5aae1"
+    },
+    "interventions/core_selected_operator/epochs_1/cpu.execution.json": {
+      "bytes": 2122,
+      "sha256": "4a7ab1abf7b81f4f3aa2eaa32cf6159d0cb120d4083c3bc9c7931975e3bbec99"
+    },
+    "interventions/core_selected_operator/epochs_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/core_selected_operator/epochs_1/cpu.stdout.json": {
+      "bytes": 1108,
+      "sha256": "5fd7dc72d18dfe92d0b7213cee36fa037086659303a29ef8659e4f7e5be413f9"
+    },
+    "interventions/core_selected_operator/epochs_1/vulkan.bin": {
+      "bytes": 516076,
+      "sha256": "d933ab4d33d79e43b36bdbc85f1d40162f54a32e92c474131625497072d5aae1"
+    },
+    "interventions/core_selected_operator/epochs_1/vulkan.execution.json": {
+      "bytes": 2298,
+      "sha256": "d56024f9af076a78dfa5259bf9183fdcd247ab24e7b208e14529a0119573c3a9"
+    },
+    "interventions/core_selected_operator/epochs_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/core_selected_operator/epochs_1/vulkan.stdout.json": {
+      "bytes": 1241,
+      "sha256": "b8c87253b4a8611a9c6b9dc67932e5e9905a955569179901f8473023e19f3051"
+    },
+    "interventions/core_selected_operator/program.bin": {
+      "bytes": 516076,
+      "sha256": "dd53f7269932b323f4f003a5d85ab178182eca5abf8a6391c9db3dbde276cb00"
+    },
+    "interventions/core_split_and_hinge/change.json": {
+      "bytes": 935,
+      "sha256": "db2a97d9b5a23782ca166c0235b99f6ce6cf8c81739d39b14f8442d52eb65750"
+    },
+    "interventions/core_split_and_hinge/epochs_1/cpu.bin": {
+      "bytes": 516076,
+      "sha256": "6d93f68d0f4efcc620c0eb7e8556b1037e10f6099971bea43c694e433859e720"
+    },
+    "interventions/core_split_and_hinge/epochs_1/cpu.execution.json": {
+      "bytes": 2118,
+      "sha256": "23d8f2dc7ae2a96e5cdf9355165fcefee23224ccd81f98c670cfdd10fff42ec5"
+    },
+    "interventions/core_split_and_hinge/epochs_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/core_split_and_hinge/epochs_1/cpu.stdout.json": {
+      "bytes": 1108,
+      "sha256": "a61584163f3193e0a8d3f9e38a40ab4adc7a48355539677233d46b4740cb7be1"
+    },
+    "interventions/core_split_and_hinge/epochs_1/vulkan.bin": {
+      "bytes": 516076,
+      "sha256": "6d93f68d0f4efcc620c0eb7e8556b1037e10f6099971bea43c694e433859e720"
+    },
+    "interventions/core_split_and_hinge/epochs_1/vulkan.execution.json": {
+      "bytes": 2294,
+      "sha256": "b01ac93e64dd6af7f2d62bc29d8cb1dfd9f2a7d7767305d1d2186399cd679ae2"
+    },
+    "interventions/core_split_and_hinge/epochs_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/core_split_and_hinge/epochs_1/vulkan.stdout.json": {
+      "bytes": 1241,
+      "sha256": "aa70d99f383fee6de8d41e2e6b5bc7bbd4f6753f04e5984eb6b5750aa142953a"
+    },
+    "interventions/core_split_and_hinge/program.bin": {
+      "bytes": 516076,
+      "sha256": "64dc519268c5685b4f63152acb5a08efd9aefa28a95df26c870ca8c4e00d1b56"
+    },
+    "interventions/core_surface_return/change.json": {
+      "bytes": 932,
+      "sha256": "230b6197c33c930d8f464963303e6a4cea3c4beb6a3811a8df1f3c01144a963a"
+    },
+    "interventions/core_surface_return/epochs_1/cpu.bin": {
+      "bytes": 516076,
+      "sha256": "2e38741f7b1f0ce6fc60d6693a0e87788d6892f38e5a56a81718b82edefd2eb6"
+    },
+    "interventions/core_surface_return/epochs_1/cpu.execution.json": {
+      "bytes": 2117,
+      "sha256": "9e42e796681d3ca5f4675589df0f92acd938a9c59a77f0ddeeb1acf6b3309fbe"
+    },
+    "interventions/core_surface_return/epochs_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/core_surface_return/epochs_1/cpu.stdout.json": {
+      "bytes": 1109,
+      "sha256": "443f9e3ae6a8279df04f2ca1d36f038645f58439ab708572926ee1c7c9c3027d"
+    },
+    "interventions/core_surface_return/epochs_1/vulkan.bin": {
+      "bytes": 516076,
+      "sha256": "2e38741f7b1f0ce6fc60d6693a0e87788d6892f38e5a56a81718b82edefd2eb6"
+    },
+    "interventions/core_surface_return/epochs_1/vulkan.execution.json": {
+      "bytes": 2291,
+      "sha256": "2a8e4b8c8d46c2ffcb8335458056b488fc4075e07a61d62b04c20acb1215ab08"
+    },
+    "interventions/core_surface_return/epochs_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/core_surface_return/epochs_1/vulkan.stdout.json": {
+      "bytes": 1240,
+      "sha256": "e9bb4d5bd548125ced4f21e2b2a9fafd867a976778142478a73c6217e661c75a"
+    },
+    "interventions/core_surface_return/program.bin": {
+      "bytes": 516076,
+      "sha256": "723a62d2b84af835479eac2e835422856bf4673575d9ed2e94eebcfde1067c33"
+    },
+    "interventions/force_blend/change.json": {
+      "bytes": 837,
+      "sha256": "c642cc96d6d0ff5db0741f5266b78fab5a2eddecb6f0d88cb0701c578078a940"
+    },
+    "interventions/force_blend/epochs_1/cpu.bin": {
+      "bytes": 516076,
+      "sha256": "0decfc4ad77c7d0d12a189d298e8f89860a752a26519d0acd4c9bf1c9f2bb76d"
+    },
+    "interventions/force_blend/epochs_1/cpu.execution.json": {
+      "bytes": 2101,
+      "sha256": "78c7628f7ee7dde967a4ec3cf04bdea638ea81bd23090d5d180f5f5fe9232942"
+    },
+    "interventions/force_blend/epochs_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/force_blend/epochs_1/cpu.stdout.json": {
+      "bytes": 1109,
+      "sha256": "76f8ef96e04bfc777378af93f04058b5c8cd6e1073a51e804a930da36574ae61"
+    },
+    "interventions/force_blend/epochs_1/vulkan.bin": {
+      "bytes": 516076,
+      "sha256": "0decfc4ad77c7d0d12a189d298e8f89860a752a26519d0acd4c9bf1c9f2bb76d"
+    },
+    "interventions/force_blend/epochs_1/vulkan.execution.json": {
+      "bytes": 2275,
+      "sha256": "0147981af1958099ddd189395b2318a629a47dd9763d38c1d01c2045cea58ce6"
+    },
+    "interventions/force_blend/epochs_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/force_blend/epochs_1/vulkan.stdout.json": {
+      "bytes": 1240,
+      "sha256": "030636bf222e2fe29b6b5205047871ee266dec27e9eb15becac6680850a19a64"
+    },
+    "interventions/force_blend/epochs_8/cpu.bin": {
+      "bytes": 516076,
+      "sha256": "f942ee382ccd97d2455425db0c9a2d10618c305cce5c62785fcdc8b46c25997b"
+    },
+    "interventions/force_blend/epochs_8/cpu.execution.json": {
+      "bytes": 2101,
+      "sha256": "069e0ba08ec6f6fad7488f070204cc3b2af4bed993d6e53953a2dfa9d610c7d1"
+    },
+    "interventions/force_blend/epochs_8/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/force_blend/epochs_8/cpu.stdout.json": {
+      "bytes": 1109,
+      "sha256": "789df8bde001329da936ebf09e6188b445840901d3ad5ecb5e4910dea46fec58"
+    },
+    "interventions/force_blend/epochs_8/vulkan.bin": {
+      "bytes": 516076,
+      "sha256": "f942ee382ccd97d2455425db0c9a2d10618c305cce5c62785fcdc8b46c25997b"
+    },
+    "interventions/force_blend/epochs_8/vulkan.execution.json": {
+      "bytes": 2276,
+      "sha256": "e8953eb603308bf634fbf8b8312cb6a2ab483b21ca743aac99d5e0a585773e6f"
+    },
+    "interventions/force_blend/epochs_8/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/force_blend/epochs_8/vulkan.stdout.json": {
+      "bytes": 1241,
+      "sha256": "21d948c2e9b1af411b9480acaa6baf9772744971fa5a1974aa8cfd5a3bc6e540"
+    },
+    "interventions/force_blend/program.bin": {
+      "bytes": 516076,
+      "sha256": "a4a5a95fc0c782762c2266ef97cd44ae6ab804d7ae151d3180dd2f5d6b75705c"
+    },
+    "interventions/force_blend_enzyme_cautious/change.json": {
+      "bytes": 853,
+      "sha256": "fa35ff8ae086fd14657691ec897e7a32f852dcbe49cdb13421886d13f6966094"
+    },
+    "interventions/force_blend_enzyme_cautious/epochs_1/cpu.bin": {
+      "bytes": 516076,
+      "sha256": "7ad55099d4e63ccc860e3b345d27d5da80c2f2e74047c0e2b3b1ab8c8b7d193f"
+    },
+    "interventions/force_blend_enzyme_cautious/epochs_1/cpu.execution.json": {
+      "bytes": 2131,
+      "sha256": "0444a78aee57d95a611c26b7a5a407a7b64961513d5917185e29a0cae96a7b6f"
+    },
+    "interventions/force_blend_enzyme_cautious/epochs_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/force_blend_enzyme_cautious/epochs_1/cpu.stdout.json": {
+      "bytes": 1107,
+      "sha256": "fa7165d406f0e08404b157c35476ef87f81eb8b8c693f7c2c8243d181148884b"
+    },
+    "interventions/force_blend_enzyme_cautious/epochs_1/vulkan.bin": {
+      "bytes": 516076,
+      "sha256": "7ad55099d4e63ccc860e3b345d27d5da80c2f2e74047c0e2b3b1ab8c8b7d193f"
+    },
+    "interventions/force_blend_enzyme_cautious/epochs_1/vulkan.execution.json": {
+      "bytes": 2308,
+      "sha256": "87efbf35b83736614929e27c67bf7edba595de5251b28a193505792d41c9e832"
+    },
+    "interventions/force_blend_enzyme_cautious/epochs_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/force_blend_enzyme_cautious/epochs_1/vulkan.stdout.json": {
+      "bytes": 1241,
+      "sha256": "8cb5aa27774687078fcb9afd704be63803bdff2dde015f71dc8d153165a9fb97"
+    },
+    "interventions/force_blend_enzyme_cautious/epochs_8/cpu.bin": {
+      "bytes": 516076,
+      "sha256": "d78ffb3253a69be34ba535aff95acb7898fccd4d18b9c791454d9e7e7e633cfc"
+    },
+    "interventions/force_blend_enzyme_cautious/epochs_8/cpu.execution.json": {
+      "bytes": 2134,
+      "sha256": "b0303541e34da816235ca5a10360106d53ff1e857fb7a3c3bc1025b4937889a1"
+    },
+    "interventions/force_blend_enzyme_cautious/epochs_8/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/force_blend_enzyme_cautious/epochs_8/cpu.stdout.json": {
+      "bytes": 1110,
+      "sha256": "4a106e1dc556fa1fb13e3ed5e7a2e85b972da36ea034724bf4df944ecf91f1be"
+    },
+    "interventions/force_blend_enzyme_cautious/epochs_8/vulkan.bin": {
+      "bytes": 516076,
+      "sha256": "d78ffb3253a69be34ba535aff95acb7898fccd4d18b9c791454d9e7e7e633cfc"
+    },
+    "interventions/force_blend_enzyme_cautious/epochs_8/vulkan.execution.json": {
+      "bytes": 2309,
+      "sha256": "811ef7310ddbbe74918665b7a2908293b91cafabb3da236235885893368066ef"
+    },
+    "interventions/force_blend_enzyme_cautious/epochs_8/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/force_blend_enzyme_cautious/epochs_8/vulkan.stdout.json": {
+      "bytes": 1242,
+      "sha256": "c23e869c7c2cdacb34fa157e8ff08a0fcb71a47ed1c08fa7833017b162e3d7af"
+    },
+    "interventions/force_blend_enzyme_cautious/program.bin": {
+      "bytes": 516076,
+      "sha256": "b3d52141c6315ea9120691b1f5f14442d662c86f40702aa7d0496137394a2db7"
+    },
+    "interventions/freeze_mutator/change.json": {
+      "bytes": 818,
+      "sha256": "0e5b59cd15da5a3d1c5a52a5d61fe0e53515e4d9467cb2cba888525a6c933e1a"
+    },
+    "interventions/freeze_mutator/epochs_1/cpu.bin": {
+      "bytes": 516060,
+      "sha256": "1e85fe36aa76ad7c1d5dfe6eaf85a0d4007e4c501f08fef632903509304c62a7"
+    },
+    "interventions/freeze_mutator/epochs_1/cpu.execution.json": {
+      "bytes": 2106,
+      "sha256": "b96ded30ba28cd7a907270ae5dd288cd875cb8ad3494e9a5ce0d064f317569d1"
+    },
+    "interventions/freeze_mutator/epochs_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/freeze_mutator/epochs_1/cpu.stdout.json": {
+      "bytes": 1108,
+      "sha256": "230fd5b213ecb84ca369b9dd3f6d67998a0c5cf1450fb190a5a749d853f43fcc"
+    },
+    "interventions/freeze_mutator/epochs_1/vulkan.bin": {
+      "bytes": 516060,
+      "sha256": "1e85fe36aa76ad7c1d5dfe6eaf85a0d4007e4c501f08fef632903509304c62a7"
+    },
+    "interventions/freeze_mutator/epochs_1/vulkan.execution.json": {
+      "bytes": 2282,
+      "sha256": "ef556be3a5cbb645d416ba5ff170b297d4a44302c6a6e77b7669d3d067de76bf"
+    },
+    "interventions/freeze_mutator/epochs_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/freeze_mutator/epochs_1/vulkan.stdout.json": {
+      "bytes": 1241,
+      "sha256": "6ff78454b064ba0b194c8feeb10f8af5f38a5ae96d81b455827eebcaf9cbead1"
+    },
+    "interventions/freeze_mutator/epochs_2/cpu.bin": {
+      "bytes": 516060,
+      "sha256": "d2b9cacca4c1ac8c5d20f2ab6f0832be1f06d6333a615d312e7e1017fd4ebdb5"
+    },
+    "interventions/freeze_mutator/epochs_2/cpu.execution.json": {
+      "bytes": 2107,
+      "sha256": "c1fd63c213dcb32cd13b2ba63bdcce28c6b1198701c29677a6b01fa67241b0a9"
+    },
+    "interventions/freeze_mutator/epochs_2/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/freeze_mutator/epochs_2/cpu.stdout.json": {
+      "bytes": 1109,
+      "sha256": "ff7ceb799010a034b460da9aaf46d38ed38aa6dc0fb873ef9d5d74fe051139b7"
+    },
+    "interventions/freeze_mutator/epochs_2/vulkan.bin": {
+      "bytes": 516060,
+      "sha256": "d2b9cacca4c1ac8c5d20f2ab6f0832be1f06d6333a615d312e7e1017fd4ebdb5"
+    },
+    "interventions/freeze_mutator/epochs_2/vulkan.execution.json": {
+      "bytes": 2282,
+      "sha256": "9124cc417578984a4deb4378291d5ea81a13fbeda385c77b7a68de6295fa197a"
+    },
+    "interventions/freeze_mutator/epochs_2/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/freeze_mutator/epochs_2/vulkan.stdout.json": {
+      "bytes": 1241,
+      "sha256": "290012085a7099e0b7d30445de57589a4eb09edaceab942b62c79682f122a63d"
+    },
+    "interventions/freeze_mutator/epochs_8/cpu.bin": {
+      "bytes": 516060,
+      "sha256": "5cf003a2e09d0fe1ae2c2b731a292dc8208033c88f742d1cb91cfd4f256b2f39"
+    },
+    "interventions/freeze_mutator/epochs_8/cpu.execution.json": {
+      "bytes": 2108,
+      "sha256": "766b854636e096a580c1f6b07d6a6e33ddd895d06b697a16e5714d2b07e7d88c"
+    },
+    "interventions/freeze_mutator/epochs_8/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/freeze_mutator/epochs_8/cpu.stdout.json": {
+      "bytes": 1110,
+      "sha256": "fead8e9bcdb2f8880d79aa36d3306451e34f0892730aa01ded6ecaa8dfae19f3"
+    },
+    "interventions/freeze_mutator/epochs_8/vulkan.bin": {
+      "bytes": 516060,
+      "sha256": "5cf003a2e09d0fe1ae2c2b731a292dc8208033c88f742d1cb91cfd4f256b2f39"
+    },
+    "interventions/freeze_mutator/epochs_8/vulkan.execution.json": {
+      "bytes": 2283,
+      "sha256": "25137057a61407ad17157c090aec26ff206f77d9d003ccf078046e2475a37f8f"
+    },
+    "interventions/freeze_mutator/epochs_8/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/freeze_mutator/epochs_8/vulkan.stdout.json": {
+      "bytes": 1242,
+      "sha256": "af8d2bd2d7f00838bc0502cbaa4391c65a85dc176e2851d4ac59975c91ed330a"
+    },
+    "interventions/freeze_mutator/program.bin": {
+      "bytes": 516060,
+      "sha256": "e8b3349d77ac32eee2a418624623d20519e8180a024f06d745ce1dd690d26037"
+    },
+    "interventions/index.json": {
+      "bytes": 1282,
+      "sha256": "7e94fef2f5126454006337882c49f29dd7acf979c509d8a74fb7646156937442"
+    },
+    "interventions/prior_domain_feedback/change.json": {
+      "bytes": 810,
+      "sha256": "e2203c2811a28d2185eacfa68746ea0d690ccad506e59d57ed25ced41b00c4e8"
+    },
+    "interventions/prior_domain_feedback/epochs_1/cpu.bin": {
+      "bytes": 516044,
+      "sha256": "d4b6db5e37960b435370ef453af41f4bb51d285b2882f103be3fdfc4a281517c"
+    },
+    "interventions/prior_domain_feedback/epochs_1/cpu.execution.json": {
+      "bytes": 2121,
+      "sha256": "6fafa3ba3719d8ffc51689bb08d02000ee0120f6c06f568f51794f13b9d5dba1"
+    },
+    "interventions/prior_domain_feedback/epochs_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/prior_domain_feedback/epochs_1/cpu.stdout.json": {
+      "bytes": 1109,
+      "sha256": "fc5fe625ef6c74ad5fe6bdad4cf0aff67db44bc6f7ce14b48b2f5ec293eb1a35"
+    },
+    "interventions/prior_domain_feedback/epochs_1/vulkan.bin": {
+      "bytes": 516044,
+      "sha256": "d4b6db5e37960b435370ef453af41f4bb51d285b2882f103be3fdfc4a281517c"
+    },
+    "interventions/prior_domain_feedback/epochs_1/vulkan.execution.json": {
+      "bytes": 2296,
+      "sha256": "29ab0a3f8b3a0fb4a4de2b9a73c4c4b5c99e5bbb5114628e5faf4abe87299997"
+    },
+    "interventions/prior_domain_feedback/epochs_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/prior_domain_feedback/epochs_1/vulkan.stdout.json": {
+      "bytes": 1241,
+      "sha256": "36dfaf4b98c42d1e34b6356d76d964d128c4149d7d21b529b2d01efd477b46b0"
+    },
+    "interventions/prior_domain_feedback/epochs_2/cpu.bin": {
+      "bytes": 516044,
+      "sha256": "c2d42daf185dc4b6d0b22a76ed387d1b30929e853ba00fec3b3b8fa1fcfea2a9"
+    },
+    "interventions/prior_domain_feedback/epochs_2/cpu.execution.json": {
+      "bytes": 2121,
+      "sha256": "3d293f942beb7a9810e667b145f3a5664e3affbf9b39fcae6d5f88ba52bb4780"
+    },
+    "interventions/prior_domain_feedback/epochs_2/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/prior_domain_feedback/epochs_2/cpu.stdout.json": {
+      "bytes": 1109,
+      "sha256": "6462ec771b398046b2b85f1615c17b7eb07277d0059c8d46645e2a91634679cc"
+    },
+    "interventions/prior_domain_feedback/epochs_2/vulkan.bin": {
+      "bytes": 516044,
+      "sha256": "c2d42daf185dc4b6d0b22a76ed387d1b30929e853ba00fec3b3b8fa1fcfea2a9"
+    },
+    "interventions/prior_domain_feedback/epochs_2/vulkan.execution.json": {
+      "bytes": 2296,
+      "sha256": "c65bbc6c0a1afeb839e17c39f24e4c5452616fafad4e0f9813bdf4ac671735b9"
+    },
+    "interventions/prior_domain_feedback/epochs_2/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "interventions/prior_domain_feedback/epochs_2/vulkan.stdout.json": {
+      "bytes": 1241,
+      "sha256": "7809cbaf782a5d5cf836f1b0485919d0498519cdc9d7457db6deb2b71998bb4d"
+    },
+    "interventions/prior_domain_feedback/program.bin": {
+      "bytes": 516044,
+      "sha256": "f04e156824a855657b857260cbba03c0ab602248ccd73b9ca90204baffca794d"
+    },
+    "interventions_summary.json": {
+      "bytes": 15858,
+      "sha256": "c8855b0308d56bc54022a9a5c1f746c32c50215820632a5e9cc9e06e0a4623f9"
+    },
+    "launcher.cmd": {
+      "bytes": 576,
+      "sha256": "17c00db4070e80e465515b37abf63dd6ea8385360931521a3201fc249ee171a5"
+    },
+    "launcher_compile.execution.json": {
+      "bytes": 408,
+      "sha256": "b35cfb24c7727198991fc30ee901c98530dd2f9ded6932928e4ffbcec41c0022"
+    },
+    "launcher_compile.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "launcher_compile.stdout.json": {
+      "bytes": 474,
+      "sha256": "e228a100384d2c80a241623fcc4c45adcf4251faf45a964875de417a59544cc4"
+    },
+    "long_feedback_audit.json": {
+      "bytes": 967,
+      "sha256": "d14ee201ecdc7948e4dfb2fa9b61d9f0a333d6ca498ab4aead8037cf987dc010"
+    },
+    "math/acceptance_cancellation/cpu.bin": {
+      "bytes": 191080,
+      "sha256": "1c0274c4f175cbea91416fa69dc1aebeac2b0f42adad7f2bf2e9e186fc20ba5c"
+    },
+    "math/acceptance_cancellation/cpu.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "math/acceptance_cancellation/cpu.stdout.log": {
+      "bytes": 1106,
+      "sha256": "fd137ad6677377f6e1df0ce90a39c7b5e82c011da46d8a1a68e3b01703c7d8d8"
+    },
+    "math/acceptance_cancellation/definition.json": {
+      "bytes": 2768059,
+      "sha256": "c1344b5d86f0f01bdbcbaf25d6e1c5f525fc22eb61a083fb0277990dd6e8863e"
+    },
+    "math/acceptance_cancellation/execution_receipts.json": {
+      "bytes": 2024,
+      "sha256": "8bacc3c18227eb9a014e23d21c4b956e4ab01329c66cc4552f0506e8dc727ddc"
+    },
+    "math/acceptance_cancellation/manifest.json": {
+      "bytes": 2168208,
+      "sha256": "ffd59e2a3be0367b579daf10573f52f44073d8768e3d56c42668f5ad5185e91b"
+    },
+    "math/acceptance_cancellation/program.bin": {
+      "bytes": 191080,
+      "sha256": "46a92db2886c2a6021bd6b0f8aad143bea3f27768778317af1b8779c4acb2f4b"
+    },
+    "math/acceptance_cancellation/reference_comparisons.json": {
+      "bytes": 446928,
+      "sha256": "c812d54505fd41736d002a426224d6139bfdc81c22bbff55fae178a27dda0023"
+    },
+    "math/acceptance_cancellation/source_model.json": {
+      "bytes": 13659,
+      "sha256": "8fc98d57dbe7b80ec0b53ad5e6fb3d2a8cc602399349b34b38b34fb5d7504d1a"
+    },
+    "math/acceptance_cancellation/vulkan.bin": {
+      "bytes": 191080,
+      "sha256": "1c0274c4f175cbea91416fa69dc1aebeac2b0f42adad7f2bf2e9e186fc20ba5c"
+    },
+    "math/acceptance_cancellation/vulkan.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "math/acceptance_cancellation/vulkan.stdout.log": {
+      "bytes": 1238,
+      "sha256": "1b5c47e33cbbfd8537278ba974645db4ec4f2e37de1daffa784817dd748af652"
+    },
+    "math/artifact_manifest.json": {
+      "bytes": 15252,
+      "sha256": "02cbdd24674757881896ca8966377004ab19e96aef731df25332f41113322c2b"
+    },
+    "math/boundary_next_step/cpu.bin": {
+      "bytes": 81484,
+      "sha256": "d43237cd860ee7ae265dbcf685c5bff04f37f79e05ec3a5ff667b3b4eb3bd2b1"
+    },
+    "math/boundary_next_step/cpu.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "math/boundary_next_step/cpu.stdout.log": {
+      "bytes": 1103,
+      "sha256": "550a4408dd2129557130b5bd819b3b9b37c8b15827b906cd32eaed11779a3be9"
+    },
+    "math/boundary_next_step/definition.json": {
+      "bytes": 2445989,
+      "sha256": "9cab91e8ca9c16014e4974ff55f345e9cd0407a40e37e4f4f6187695393f48a9"
+    },
+    "math/boundary_next_step/execution_receipts.json": {
+      "bytes": 2006,
+      "sha256": "f33ab2dcbd30f5d91a8da3fbc4cc2d0aa9559036e2c86abc7e55369564b911c5"
+    },
+    "math/boundary_next_step/manifest.json": {
+      "bytes": 2226629,
+      "sha256": "79ba1a580ac84d77c39d4744bf6ca90be9a8216acf312298a8f5d080925f4593"
+    },
+    "math/boundary_next_step/program.bin": {
+      "bytes": 81484,
+      "sha256": "940bd79c19b82e915ad5d245fe755c76d95b6c98ebd89b59ea441202665c7b3a"
+    },
+    "math/boundary_next_step/reference_comparisons.json": {
+      "bytes": 261942,
+      "sha256": "6937629843fd95de0363fdbccee6f83cc776109b984056397754302bef7f125c"
+    },
+    "math/boundary_next_step/source_model.json": {
+      "bytes": 13654,
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9"
+    },
+    "math/boundary_next_step/vulkan.bin": {
+      "bytes": 81484,
+      "sha256": "d43237cd860ee7ae265dbcf685c5bff04f37f79e05ec3a5ff667b3b4eb3bd2b1"
+    },
+    "math/boundary_next_step/vulkan.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "math/boundary_next_step/vulkan.stdout.log": {
+      "bytes": 1233,
+      "sha256": "047df649d75f787194f2e22d7d24440b6ccd0c83616fcad33b81abc887e5af5f"
+    },
+    "math/campaign_script.py.txt": {
+      "bytes": 11021,
+      "sha256": "5a8918045d84e2880e390aefe5522ab41fde609d60eba132836d6468fed111c5"
+    },
+    "math/common_scale_large/cpu.bin": {
+      "bytes": 124016,
+      "sha256": "5c7d4d7a7943c5306eb7845e7e58a1f63f9b4a4f151b23b47d81aff9467c9618"
+    },
+    "math/common_scale_large/cpu.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "math/common_scale_large/cpu.stdout.log": {
+      "bytes": 1103,
+      "sha256": "e617015bfa92cc71562088a8512d81af5d05efadab51d055b28abcd48aa14c0e"
+    },
+    "math/common_scale_large/definition.json": {
+      "bytes": 2570682,
+      "sha256": "98760e647d3982cd72ac69049735910dcbd45e446e26ebdf39f33b18cf3d9318"
+    },
+    "math/common_scale_large/execution_receipts.json": {
+      "bytes": 2005,
+      "sha256": "e0b5937ce51083d7ec35b9368249959b8e0a3702f0fb2ba093e988b947c6b2d8"
+    },
+    "math/common_scale_large/manifest.json": {
+      "bytes": 2168389,
+      "sha256": "39c2205501df0eed3c7bf38a8c8ef95df2074719d3931e13be36b4ee5d2644d2"
+    },
+    "math/common_scale_large/physical_scaling_inputs.json": {
+      "bytes": 304,
+      "sha256": "409a3c621304b018da8a86ed055083b5fd850ab8fd9a2fc525fd0355cd3579f5"
+    },
+    "math/common_scale_large/program.bin": {
+      "bytes": 124016,
+      "sha256": "a411edef311b9b7356a4e9fc92854a2293d9602e79cae247272fee6c4963af01"
+    },
+    "math/common_scale_large/source_model.json": {
+      "bytes": 13654,
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9"
+    },
+    "math/common_scale_large/vulkan.bin": {
+      "bytes": 124016,
+      "sha256": "5c7d4d7a7943c5306eb7845e7e58a1f63f9b4a4f151b23b47d81aff9467c9618"
+    },
+    "math/common_scale_large/vulkan.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "math/common_scale_large/vulkan.stdout.log": {
+      "bytes": 1235,
+      "sha256": "260ed3bf46ade3e8462af1e0e248c874a580de98e0809f4cebe876c7eb96fac5"
+    },
+    "math/common_scale_small/cpu.bin": {
+      "bytes": 124016,
+      "sha256": "f9a38c3fa222d51c04c949b39dcd05974d357d771cfe5d5f2a8eb5a8ef4c164f"
+    },
+    "math/common_scale_small/cpu.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "math/common_scale_small/cpu.stdout.log": {
+      "bytes": 1103,
+      "sha256": "12a65083dad449752849dbba9338c4ff9618d0f984c8bb04085f925e281c7dc5"
+    },
+    "math/common_scale_small/definition.json": {
+      "bytes": 2570698,
+      "sha256": "b53a6e530dedc1200b0e44165f45cdd6476db575498021f53cf1dac0bbfd1dbd"
+    },
+    "math/common_scale_small/execution_receipts.json": {
+      "bytes": 2006,
+      "sha256": "4af5e1a8b3cbcbd2d33fa276d84004877a8f77a3afc3fad3c52a6dc094ab4ed9"
+    },
+    "math/common_scale_small/manifest.json": {
+      "bytes": 2168405,
+      "sha256": "de582194a1a4133b0912cf7877e4889eb8c98837a756836c8a81d4e25403541d"
+    },
+    "math/common_scale_small/physical_scaling_inputs.json": {
+      "bytes": 332,
+      "sha256": "ab30d52e8bd70383e1f38190aa4ad07642f24d614ec2ec4220546f57303e390e"
+    },
+    "math/common_scale_small/program.bin": {
+      "bytes": 124016,
+      "sha256": "5fd55f1d93d8dcff92ca05c14e7d96fdf00d479cab1f47f6b1b10cef0e70fdac"
+    },
+    "math/common_scale_small/source_model.json": {
+      "bytes": 13654,
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9"
+    },
+    "math/common_scale_small/vulkan.bin": {
+      "bytes": 124016,
+      "sha256": "f9a38c3fa222d51c04c949b39dcd05974d357d771cfe5d5f2a8eb5a8ef4c164f"
+    },
+    "math/common_scale_small/vulkan.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "math/common_scale_small/vulkan.stdout.log": {
+      "bytes": 1234,
+      "sha256": "4172f5050000d436624535e0e6d59ec86c45d5d4bf66929325b3a3047fd3e94a"
+    },
+    "math/convergence_cautious/cpu.bin": {
+      "bytes": 35100,
+      "sha256": "1c979cb17f730211f8d5b0ba0d32ff1827b8e3c5eb223806fe2b14279ba75fc7"
+    },
+    "math/convergence_cautious/cpu.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "math/convergence_cautious/cpu.stdout.log": {
+      "bytes": 1111,
+      "sha256": "ff3b10ad3be8166cef234fbfdf04fe64adeb9da63c14a22183f756d1ef5229cc"
+    },
+    "math/convergence_cautious/definition.json": {
+      "bytes": 2291012,
+      "sha256": "7eb9e0a68287ebe2dc35094ebe8fda6887faa95a1cb8fc11e7ce531f7f74d66d"
+    },
+    "math/convergence_cautious/execution_receipts.json": {
+      "bytes": 2018,
+      "sha256": "079905079981bdb163af4eb80ea392df6f1fa13498ea9ffcfc9cf8ebb35489fd"
+    },
+    "math/convergence_cautious/manifest.json": {
+      "bytes": 2227742,
+      "sha256": "3391d1c96f6f2226572b7740323655527d4505fcaec3238c5e689fe740701fe2"
+    },
+    "math/convergence_cautious/program.bin": {
+      "bytes": 35100,
+      "sha256": "9674d046bdec150b5adf0baf7cc960f3bf63033bd2136d9175b77cb594ef3376"
+    },
+    "math/convergence_cautious/reference_comparisons.json": {
+      "bytes": 44386,
+      "sha256": "bb480ac6066b2e48b27721c9adab445fda1e864c815216c597d44ce60a463a91"
+    },
+    "math/convergence_cautious/source_model.json": {
+      "bytes": 13659,
+      "sha256": "8fc98d57dbe7b80ec0b53ad5e6fb3d2a8cc602399349b34b38b34fb5d7504d1a"
+    },
+    "math/convergence_cautious/vulkan.bin": {
+      "bytes": 35100,
+      "sha256": "1c979cb17f730211f8d5b0ba0d32ff1827b8e3c5eb223806fe2b14279ba75fc7"
+    },
+    "math/convergence_cautious/vulkan.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "math/convergence_cautious/vulkan.stdout.log": {
+      "bytes": 1242,
+      "sha256": "dd475af1042b8267b20d3653e8a3f11a74b8e884fdfb17956fa2242a979e3342"
+    },
+    "math/convergence_fast/cpu.bin": {
+      "bytes": 35100,
+      "sha256": "5df4d7d449975f6a1b2c316a8509ac4d9ecc79b61b48190f8e667a3ee39a34a4"
+    },
+    "math/convergence_fast/cpu.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "math/convergence_fast/cpu.stdout.log": {
+      "bytes": 1110,
+      "sha256": "07f23e61f52067d002527a2a872212e1c99907c02d51d906ef202cd08693fdab"
+    },
+    "math/convergence_fast/definition.json": {
+      "bytes": 2291003,
+      "sha256": "63b9c3933fade1a8e86a2c866b721d1a23fd03a6591c1f37f6967a4722568f81"
+    },
+    "math/convergence_fast/execution_receipts.json": {
+      "bytes": 2002,
+      "sha256": "4c536e2eb52efe021fdb7cf43aa726b774d59a59cbe72b7c9abe9115ad8457e3"
+    },
+    "math/convergence_fast/manifest.json": {
+      "bytes": 2227733,
+      "sha256": "ba964dee3a9e6e4d8300f869e37c13c33149b1181cb788469f726c6fdea08431"
+    },
+    "math/convergence_fast/program.bin": {
+      "bytes": 35100,
+      "sha256": "346f6f3b34ac7efb623f39b2e607ec90511f5801b24aa4befc0afe816996848e"
+    },
+    "math/convergence_fast/reference_comparisons.json": {
+      "bytes": 43201,
+      "sha256": "94b993add7bb7cf8a1be50b03663295e2095a28c0f08ee214d629f03ef409922"
+    },
+    "math/convergence_fast/source_model.json": {
+      "bytes": 13659,
+      "sha256": "8fc98d57dbe7b80ec0b53ad5e6fb3d2a8cc602399349b34b38b34fb5d7504d1a"
+    },
+    "math/convergence_fast/vulkan.bin": {
+      "bytes": 35100,
+      "sha256": "5df4d7d449975f6a1b2c316a8509ac4d9ecc79b61b48190f8e667a3ee39a34a4"
+    },
+    "math/convergence_fast/vulkan.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "math/convergence_fast/vulkan.stdout.log": {
+      "bytes": 1243,
+      "sha256": "01188a09a93db143e4caaeeffef1953408914c8febdeb235289390501df6a515"
+    },
+    "math/domain_projection_gap/cpu.bin": {
+      "bytes": 124000,
+      "sha256": "d5a2e08b3db3f6891fb4ed05e24edeeec123cb72eda0e19985e2f3665e8c8d63"
+    },
+    "math/domain_projection_gap/cpu.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "math/domain_projection_gap/cpu.stdout.log": {
+      "bytes": 1103,
+      "sha256": "a333c37aac855f9e6d8042e51bb4e02a3af8916cb1e0a6c9a9c4f2f09ab8fd34"
+    },
+    "math/domain_projection_gap/definition.json": {
+      "bytes": 2570004,
+      "sha256": "1e54c81ab65df40b6bf4d7f8d09f4a64c6e6888593170bda0c279c0bf2818c38"
+    },
+    "math/domain_projection_gap/execution_receipts.json": {
+      "bytes": 2017,
+      "sha256": "b786e90486f29d1379333460958724ea7f9bb2ab4649444d074ee95f1926a546"
+    },
+    "math/domain_projection_gap/manifest.json": {
+      "bytes": 2168398,
+      "sha256": "7eafd9fb9126ec041a52771c247c406b903530907f5ffb37e6f3597b071f3e23"
+    },
+    "math/domain_projection_gap/program.bin": {
+      "bytes": 124000,
+      "sha256": "fec5359132de35377cdbaadf85ca8e6b9468306f72ea6738d93dd30736ab590d"
+    },
+    "math/domain_projection_gap/reference_comparisons.json": {
+      "bytes": 451623,
+      "sha256": "262191e2997596a8476f510dfe1c2649fba70cf7e48a6b798f0398b289ae79d6"
+    },
+    "math/domain_projection_gap/source_model.json": {
+      "bytes": 13659,
+      "sha256": "8fc98d57dbe7b80ec0b53ad5e6fb3d2a8cc602399349b34b38b34fb5d7504d1a"
+    },
+    "math/domain_projection_gap/vulkan.bin": {
+      "bytes": 124000,
+      "sha256": "d5a2e08b3db3f6891fb4ed05e24edeeec123cb72eda0e19985e2f3665e8c8d63"
+    },
+    "math/domain_projection_gap/vulkan.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "math/domain_projection_gap/vulkan.stdout.log": {
+      "bytes": 1234,
+      "sha256": "09799c8467173a1c8e220cec1098af3d0402557e49e4de1c8509bb2ede29221d"
+    },
+    "math/followup_campaign_script.py.txt": {
+      "bytes": 6905,
+      "sha256": "c67895e7fb2c26f3ddd1a77e19726a789f08febbd94e96d9bd77d8b0bd974506"
+    },
+    "math/gap_theorem_reference_checks.json": {
+      "bytes": 121954,
+      "sha256": "d980c60944d24d649b2fe99b6736a0906e484a4e334a401e9afa93e2d6edd2b1"
+    },
+    "math/generator_snapshot.py.txt": {
+      "bytes": 26480,
+      "sha256": "2875592287d4905881422da819e55068cab9b4b2b20e985a1b673168a6419911"
+    },
+    "math/independent_numeric_audit.json": {
+      "bytes": 27665,
+      "sha256": "75371f4704f400041690a5fc7be42c033db5b671242b71c36ac848c1d121197d"
+    },
+    "math/oracle_script.py.txt": {
+      "bytes": 3876,
+      "sha256": "58fa0695c5e75206bba687520808818ad290dc18ae26a576658bb8117a1bca9f"
+    },
+    "math/REPORT.md": {
+      "bytes": 9118,
+      "sha256": "cf7f95a89e1fdc2b1350f90ba36603458e816c2b184982679dce173e67969015"
+    },
+    "math/report_script.py.txt": {
+      "bytes": 8412,
+      "sha256": "55ba325d2d7b89d8ece77d35fa8f0e93f9c8de0999f4a0503379aaf55f82b67e"
+    },
+    "math/runtime_script.py.txt": {
+      "bytes": 5420,
+      "sha256": "d2eb21c8a0f3eaf3f334f35a67ca65d8d63fef3e6f6d79997fd8b4179c544564"
+    },
+    "math/source_definition.json": {
+      "bytes": 21075982,
+      "sha256": "023187679965c7275c4339a68fcbc723eb800327a51e5ae213aca036dd31e021"
+    },
+    "math/source_model_original_utf8.json": {
+      "bytes": 13654,
+      "sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9"
+    },
+    "pre_stable_acceptance/definition.json": {
+      "bytes": 21177835,
+      "sha256": "3903c4ae3943c3640ec9e73f20e176257c82cc5d58112e7c7a8915752b2c9729"
+    },
+    "pre_stable_acceptance/epochs_1/cpu.bin": {
+      "bytes": 514636,
+      "sha256": "fadde8d29e954da7eebd71453800be80376acdba7c8f0712d2f692a1a3204645"
+    },
+    "pre_stable_acceptance/epochs_1/cpu.execution.json": {
+      "bytes": 2013,
+      "sha256": "7b7fe5bf8643475dc9d7102572c0c15533da0c9e8d94189bb2673b19d6e2889b"
+    },
+    "pre_stable_acceptance/epochs_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_stable_acceptance/epochs_1/cpu.stdout.json": {
+      "bytes": 1109,
+      "sha256": "d9b4eb320ea63dd3ebff41b13642d5f89477f9d5118ffafae7f5c15ba0b172ce"
+    },
+    "pre_stable_acceptance/epochs_1/vulkan.bin": {
+      "bytes": 514636,
+      "sha256": "fadde8d29e954da7eebd71453800be80376acdba7c8f0712d2f692a1a3204645"
+    },
+    "pre_stable_acceptance/epochs_1/vulkan.execution.json": {
+      "bytes": 2188,
+      "sha256": "d7c4de945e34f019f69511266600bbbbb8fc13fa8df53731395d938948384d3e"
+    },
+    "pre_stable_acceptance/epochs_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_stable_acceptance/epochs_1/vulkan.stdout.json": {
+      "bytes": 1241,
+      "sha256": "79d0955c6bb03998872c5cfc954cba135908c20b4dc6e842ae12eec066ab4d71"
+    },
+    "pre_stable_acceptance/epochs_128/cpu.bin": {
+      "bytes": 514636,
+      "sha256": "cda7d6562985f4cc80f9bb2a940ebc0cbd7c3887a899b4b071f08c4de8f10798"
+    },
+    "pre_stable_acceptance/epochs_128/cpu.execution.json": {
+      "bytes": 2025,
+      "sha256": "bffb3b473807d9c7a176898223d3c33096dee6f3233384e944b29cc4737ca16f"
+    },
+    "pre_stable_acceptance/epochs_128/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_stable_acceptance/epochs_128/cpu.stdout.json": {
+      "bytes": 1117,
+      "sha256": "a537f88f66af7672c341bb485b7ad7e23028a89b304e8f156cba50b8f4fbe559"
+    },
+    "pre_stable_acceptance/epochs_128/vulkan.bin": {
+      "bytes": 514636,
+      "sha256": "cda7d6562985f4cc80f9bb2a940ebc0cbd7c3887a899b4b071f08c4de8f10798"
+    },
+    "pre_stable_acceptance/epochs_128/vulkan.execution.json": {
+      "bytes": 2202,
+      "sha256": "cd89b72c0923465fec14edd938306ba0e479570764065ecb56fdb73cbd989a19"
+    },
+    "pre_stable_acceptance/epochs_128/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_stable_acceptance/epochs_128/vulkan.stdout.json": {
+      "bytes": 1251,
+      "sha256": "94a570de4fa1857bf13e9903af5577f3a1b84bd4361caf31ccbce26db717dab6"
+    },
+    "pre_stable_acceptance/epochs_2/cpu.bin": {
+      "bytes": 514636,
+      "sha256": "84205b1be5443d6a5a2382a68469c421e04aedf5c0e3d79e850d1b09ce56288b"
+    },
+    "pre_stable_acceptance/epochs_2/cpu.execution.json": {
+      "bytes": 2013,
+      "sha256": "e990d1af0a0d832ccec9138a94c04ff5a86969d38614d4573579148ca097de51"
+    },
+    "pre_stable_acceptance/epochs_2/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_stable_acceptance/epochs_2/cpu.stdout.json": {
+      "bytes": 1109,
+      "sha256": "ee76bfc6934b3946040e6e7b6cabfafc3d9dfd1a3d334e280f652fbc1aea7cff"
+    },
+    "pre_stable_acceptance/epochs_2/vulkan.bin": {
+      "bytes": 514636,
+      "sha256": "84205b1be5443d6a5a2382a68469c421e04aedf5c0e3d79e850d1b09ce56288b"
+    },
+    "pre_stable_acceptance/epochs_2/vulkan.execution.json": {
+      "bytes": 2188,
+      "sha256": "9a45df593802731717ecadf87513655e3743d3257349298b3e737415a90f37a9"
+    },
+    "pre_stable_acceptance/epochs_2/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_stable_acceptance/epochs_2/vulkan.stdout.json": {
+      "bytes": 1241,
+      "sha256": "b62852d03b96935879fabf2423e06847902a7de2bf5b1b4f119e8452834b7de1"
+    },
+    "pre_stable_acceptance/epochs_64/cpu.bin": {
+      "bytes": 514636,
+      "sha256": "8ab64167147e7eb44e6f4c01b6dd92c7524cb6bb0955a48f10d891241b2caac3"
+    },
+    "pre_stable_acceptance/epochs_64/cpu.execution.json": {
+      "bytes": 2018,
+      "sha256": "6bf2b936d1b67bf7e6b3c0661ef14f6441c0757fe9346c1e2b3fd4db65921c6a"
+    },
+    "pre_stable_acceptance/epochs_64/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_stable_acceptance/epochs_64/cpu.stdout.json": {
+      "bytes": 1112,
+      "sha256": "813407f06410364a9243c465d8c8c3b941e3468ce77dda39455c34280a644237"
+    },
+    "pre_stable_acceptance/epochs_64/vulkan.bin": {
+      "bytes": 514636,
+      "sha256": "8ab64167147e7eb44e6f4c01b6dd92c7524cb6bb0955a48f10d891241b2caac3"
+    },
+    "pre_stable_acceptance/epochs_64/vulkan.execution.json": {
+      "bytes": 2195,
+      "sha256": "da1b74622895edcaf94297c9302f465c10f13dc2121187dbd7f472705b4c9112"
+    },
+    "pre_stable_acceptance/epochs_64/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_stable_acceptance/epochs_64/vulkan.stdout.json": {
+      "bytes": 1246,
+      "sha256": "6a5ad0b21e9928bdbd95cf9add9f860f3b997982222021b21b980b3346d483e6"
+    },
+    "pre_stable_acceptance/epochs_8/cpu.bin": {
+      "bytes": 514636,
+      "sha256": "e5dfda283279e7baaea1878c6a905e4e734a2e06d99a39bb50b78620bd45a175"
+    },
+    "pre_stable_acceptance/epochs_8/cpu.execution.json": {
+      "bytes": 2014,
+      "sha256": "772b6d112de18f144b571723b7edb2a92916e1256fe83a824bae5d55eac378ba"
+    },
+    "pre_stable_acceptance/epochs_8/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_stable_acceptance/epochs_8/cpu.stdout.json": {
+      "bytes": 1110,
+      "sha256": "d03da91c6d085e03e65ff1f14bdb572b2a3d99094da3846d0968167a1ae1e288"
+    },
+    "pre_stable_acceptance/epochs_8/vulkan.bin": {
+      "bytes": 514636,
+      "sha256": "e5dfda283279e7baaea1878c6a905e4e734a2e06d99a39bb50b78620bd45a175"
+    },
+    "pre_stable_acceptance/epochs_8/vulkan.execution.json": {
+      "bytes": 2188,
+      "sha256": "e54cfd301f65d980a2ef949910fda41e91ad2f6177301b76efdef603c0d7c9f8"
+    },
+    "pre_stable_acceptance/epochs_8/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_stable_acceptance/epochs_8/vulkan.stdout.json": {
+      "bytes": 1241,
+      "sha256": "30478d044fb9f385daba3e3e5dca960c96b585426757f603ea1f046671abaed9"
+    },
+    "pre_stable_acceptance/initial_accuracy_audit.json": {
+      "bytes": 24452,
+      "sha256": "0329d21f0f2496c471c832de346ee8f80a6c3b5338a0c036c7589269cb97d625"
+    },
+    "pre_stable_acceptance/inputs.json": {
+      "bytes": 23128,
+      "sha256": "03f557cfd615efe8e4f8f7484721daa6cd6538cf512d1a5ee5587626de4258d1"
+    },
+    "pre_stable_acceptance/manifest.json": {
+      "bytes": 21305502,
+      "sha256": "2bf518533b928eb57bd695666919a1cd5327275ff87591ede279253f29f61655"
+    },
+    "pre_stable_acceptance/program.bin": {
+      "bytes": 514636,
+      "sha256": "8ad5398ad4d8e73618f0f8de804c267d3ae137f3ce8e58fcfca55032b1319ff8"
+    },
+    "pre_stable_acceptance/results_128.json": {
+      "bytes": 161900,
+      "sha256": "e97f95c2341e42ee592f2c37aba511daa0273d3d0e9aada71b1e734edc5f700d"
+    },
+    "pre_stable_acceptance/resume_1_plus_127/cpu.bin": {
+      "bytes": 514636,
+      "sha256": "cda7d6562985f4cc80f9bb2a940ebc0cbd7c3887a899b4b071f08c4de8f10798"
+    },
+    "pre_stable_acceptance/resume_1_plus_127/cpu.execution.json": {
+      "bytes": 2037,
+      "sha256": "7e14061e0527ae7daad4624570b9af305e2056794ccb690f3e41e59eede83dee"
+    },
+    "pre_stable_acceptance/resume_1_plus_127/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_stable_acceptance/resume_1_plus_127/cpu.stdout.json": {
+      "bytes": 1116,
+      "sha256": "2c009b93be0076813f881abaef139140ae926809dd871439efbcfc492059f88f"
+    },
+    "pre_stable_acceptance/resume_1_plus_127/vulkan.bin": {
+      "bytes": 514636,
+      "sha256": "cda7d6562985f4cc80f9bb2a940ebc0cbd7c3887a899b4b071f08c4de8f10798"
+    },
+    "pre_stable_acceptance/resume_1_plus_127/vulkan.execution.json": {
+      "bytes": 2215,
+      "sha256": "f0cbe2bac453cd5ec2d3b06837e4c7899711635b32c658a710d9ab724568c0e2"
+    },
+    "pre_stable_acceptance/resume_1_plus_127/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_stable_acceptance/resume_1_plus_127/vulkan.stdout.json": {
+      "bytes": 1251,
+      "sha256": "74866706bb222b9b4b0d3ae47f00eb7df29fc36ba36b09e3c3546852a2d8e5e3"
+    },
+    "pre_stable_acceptance/reverse_128/cpu.bin": {
+      "bytes": 514636,
+      "sha256": "cda7d6562985f4cc80f9bb2a940ebc0cbd7c3887a899b4b071f08c4de8f10798"
+    },
+    "pre_stable_acceptance/reverse_128/cpu.execution.json": {
+      "bytes": 2051,
+      "sha256": "d784b860edbafe6c0f2b824c6b72847cfcbee6526f35008068e664bad706aeef"
+    },
+    "pre_stable_acceptance/reverse_128/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_stable_acceptance/reverse_128/cpu.stdout.json": {
+      "bytes": 1116,
+      "sha256": "dfc988d1f08f7de5d1c55640c92f2ad8856bddbdb197a063a07014c87749f57e"
+    },
+    "pre_stable_acceptance/reverse_128/vulkan.bin": {
+      "bytes": 514636,
+      "sha256": "cda7d6562985f4cc80f9bb2a940ebc0cbd7c3887a899b4b071f08c4de8f10798"
+    },
+    "pre_stable_acceptance/reverse_128/vulkan.execution.json": {
+      "bytes": 2228,
+      "sha256": "5e88cf3c79daf2b1e69391e9e65b66654b62c65f1ffb3113b329fbd385d2a39b"
+    },
+    "pre_stable_acceptance/reverse_128/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pre_stable_acceptance/reverse_128/vulkan.stdout.json": {
+      "bytes": 1250,
+      "sha256": "cd0a2fa1ce35b8210c81d4f1cbdeecfaba7c749a1ac534c05f78f1b3a23d3dcd"
+    },
+    "pre_stable_acceptance/STATUS.json": {
+      "bytes": 504,
+      "sha256": "0afe100319550435b7c6c703b121d264828808919ead8238598283318d65ebe5"
+    },
+    "pre_stable_acceptance/summary.json": {
+      "bytes": 2057,
+      "sha256": "4ae3f7675c95c69eb25f9f75d73de52924353bfec4fae3131327e4c2aae3c207"
+    },
+    "PROVENANCE_VERIFICATION.json": {
+      "bytes": 395,
+      "sha256": "2298aa56b3f43f57216750e3e0b37058a1e084f508c056449740dbbfa981144f"
+    },
+    "rejections/REPORT.md": {
+      "bytes": 1322,
+      "sha256": "2d72710ae5f9203de390df0dfd1f64fb301fbe4375a275d2d26e125517f001ff"
+    },
+    "rejections/summary.json": {
+      "bytes": 21519,
+      "sha256": "6d949a69a471998d89c866c62929f3efeb53364be2091b82f8d8a60a4eecd8ca"
+    },
+    "REPORT.md": {
+      "bytes": 12041,
+      "sha256": "fb51e142b6d193cd3e43c6344e0f71b52e2d15a692c4907006d87b5e28e8eccb"
+    },
+    "result_exporter.py": {
+      "bytes": 7740,
+      "sha256": "423e42e7f7d8af1f1bb68670526c49b6f6c1496129996b0b83941048afe4c3e5"
+    },
+    "results_128.json": {
+      "bytes": 172315,
+      "sha256": "c5465f6536e1566921b473e2e852fb1a6c97c4888596c612952341df4235a4f5"
+    },
+    "results_2048.json": {
+      "bytes": 172506,
+      "sha256": "8680c01cb58f55a90295494f33f051b3659ccf9bb763db5933562513ce05464a"
+    },
+    "runs/epochs_1/cpu.bin": {
+      "bytes": 516044,
+      "sha256": "45f76e20d9c9ead46d544efe71ae4cd862d60990b3b54be463cc4f353a4892f8"
+    },
+    "runs/epochs_1/cpu.execution.json": {
+      "bytes": 2013,
+      "sha256": "07a91ecbdb96a1ffdbdccc32653afd1ad29cfd64a8da9d4ee5528997af26ec0d"
+    },
+    "runs/epochs_1/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/epochs_1/cpu.stdout.json": {
+      "bytes": 1109,
+      "sha256": "6bc26d44ff85297df2241e513eb4cbffe14a25efe9458cdf113bce7e26b4ef76"
+    },
+    "runs/epochs_1/vulkan.bin": {
+      "bytes": 516044,
+      "sha256": "45f76e20d9c9ead46d544efe71ae4cd862d60990b3b54be463cc4f353a4892f8"
+    },
+    "runs/epochs_1/vulkan.execution.json": {
+      "bytes": 2187,
+      "sha256": "9f6a3ebc04d2cb0a70581577e4ebf25932101419c9bb134f6b605e0c97361443"
+    },
+    "runs/epochs_1/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/epochs_1/vulkan.stdout.json": {
+      "bytes": 1240,
+      "sha256": "4bda506cca0d4eba22453957303235aaf09c3e8c1f91676ca5c434f0a08988c0"
+    },
+    "runs/epochs_128/cpu.bin": {
+      "bytes": 516044,
+      "sha256": "0c5b97a819c7fe31be940feb69da63fff5408efc47d1b23768bddfc711bfcadc"
+    },
+    "runs/epochs_128/cpu.execution.json": {
+      "bytes": 2025,
+      "sha256": "d27b47f8a57ab4abd9dc6fe83040a5652f1cf479a1d67209c16b3b8ebbd5ae8b"
+    },
+    "runs/epochs_128/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/epochs_128/cpu.stdout.json": {
+      "bytes": 1117,
+      "sha256": "12de56533f7a2e1ffa6ea5238b7ef63fcd83fda35c829d5c96fecb594fa4558e"
+    },
+    "runs/epochs_128/vulkan.bin": {
+      "bytes": 516044,
+      "sha256": "0c5b97a819c7fe31be940feb69da63fff5408efc47d1b23768bddfc711bfcadc"
+    },
+    "runs/epochs_128/vulkan.execution.json": {
+      "bytes": 2202,
+      "sha256": "fead59026ebcd91e9f5e608deb312b01396f3160326bbc5e375c3999f9314d0c"
+    },
+    "runs/epochs_128/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/epochs_128/vulkan.stdout.json": {
+      "bytes": 1251,
+      "sha256": "6f6abd4db7401bedab5c3bbedcd0ddb4c4acaf375f7be1aa0ea18bf75ecf1f18"
+    },
+    "runs/epochs_2/cpu.bin": {
+      "bytes": 516044,
+      "sha256": "dc9eb804ee801f6e0cd9fb11733dcea15d3c65c3b59d514b69620e024761b292"
+    },
+    "runs/epochs_2/cpu.execution.json": {
+      "bytes": 2012,
+      "sha256": "23ac74fc3d2c06bb6b3ea76a0ab4ecdfa9147d4c11e4a64e1faf05847cc6b292"
+    },
+    "runs/epochs_2/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/epochs_2/cpu.stdout.json": {
+      "bytes": 1108,
+      "sha256": "ec02efc9b5419c394925badc974a4492f0e2876b9bd218e9dd03eab60b4e42ce"
+    },
+    "runs/epochs_2/vulkan.bin": {
+      "bytes": 516044,
+      "sha256": "dc9eb804ee801f6e0cd9fb11733dcea15d3c65c3b59d514b69620e024761b292"
+    },
+    "runs/epochs_2/vulkan.execution.json": {
+      "bytes": 2187,
+      "sha256": "dc6638c327bae9ef36378d89aacb4a832d5d93b4a326eae1f1db1c989282fd1f"
+    },
+    "runs/epochs_2/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/epochs_2/vulkan.stdout.json": {
+      "bytes": 1240,
+      "sha256": "a20dbe8932834bb966753a384227a0fbfb82cb6269db3eae137a4df34b5cdd5c"
+    },
+    "runs/epochs_2048/cpu.bin": {
+      "bytes": 516044,
+      "sha256": "3b7523cf504fb124bbb27ac30781718f3ec84f99804f81c18371b753640cc1ef"
+    },
+    "runs/epochs_2048/cpu.execution.json": {
+      "bytes": 2081,
+      "sha256": "30226fa21b7883a2aa95a188235b1fe14683bf2ce4892e27e4018e49f2bd7ccb"
+    },
+    "runs/epochs_2048/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/epochs_2048/cpu.stdout.json": {
+      "bytes": 1123,
+      "sha256": "9757490bd1e239942bd235c4c8cc5152c7601938ef5ca88e4c1c1d54254f89ad"
+    },
+    "runs/epochs_2048/vulkan.bin": {
+      "bytes": 516044,
+      "sha256": "3b7523cf504fb124bbb27ac30781718f3ec84f99804f81c18371b753640cc1ef"
+    },
+    "runs/epochs_2048/vulkan.execution.json": {
+      "bytes": 2260,
+      "sha256": "240b61f67d77533b1f75039f87d251fcc9284c16ffbb92c91ac0b657d9d73569"
+    },
+    "runs/epochs_2048/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/epochs_2048/vulkan.stdout.json": {
+      "bytes": 1259,
+      "sha256": "b1c44e33f19796c98dbad4eb466a11fe8781dc0fb0ac3cbdff712ae2755bdf8c"
+    },
+    "runs/epochs_64/cpu.bin": {
+      "bytes": 516044,
+      "sha256": "f21c66480a2f72cad4f45df7113ffdec3c97cafac67bc4b4bc03723136da4b05"
+    },
+    "runs/epochs_64/cpu.execution.json": {
+      "bytes": 2019,
+      "sha256": "df303653c3760c38820501f375fd866e01491e9a4b1163fc48efc70dbb7a54b4"
+    },
+    "runs/epochs_64/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/epochs_64/cpu.stdout.json": {
+      "bytes": 1113,
+      "sha256": "c828b17cac85cf50dcd138a96c26343ed89406272bcae93c60167e3bb5a4cf99"
+    },
+    "runs/epochs_64/vulkan.bin": {
+      "bytes": 516044,
+      "sha256": "f21c66480a2f72cad4f45df7113ffdec3c97cafac67bc4b4bc03723136da4b05"
+    },
+    "runs/epochs_64/vulkan.execution.json": {
+      "bytes": 2195,
+      "sha256": "a54482ed07310b0674fbedea238e16abe5a3dac69f713481d6d6dd82d1680670"
+    },
+    "runs/epochs_64/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/epochs_64/vulkan.stdout.json": {
+      "bytes": 1246,
+      "sha256": "67ab976a802019e57ee17dcabfb68a3a955672634ef80f118e58849e7cab2669"
+    },
+    "runs/epochs_8/cpu.bin": {
+      "bytes": 516044,
+      "sha256": "728aa2709c1380da7abd171e421043f809b5fe9ee3c04ce9cf50f6ad33cdf11d"
+    },
+    "runs/epochs_8/cpu.execution.json": {
+      "bytes": 2014,
+      "sha256": "dc8b36ff34e602a46958ea25d99f040134225dff88b24ae30bbd850c8730a7e4"
+    },
+    "runs/epochs_8/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/epochs_8/cpu.stdout.json": {
+      "bytes": 1110,
+      "sha256": "5dc3e0285ce19d06f0d67295d5cba0b03c7baf8e202f16b254a50499cac922a2"
+    },
+    "runs/epochs_8/vulkan.bin": {
+      "bytes": 516044,
+      "sha256": "728aa2709c1380da7abd171e421043f809b5fe9ee3c04ce9cf50f6ad33cdf11d"
+    },
+    "runs/epochs_8/vulkan.execution.json": {
+      "bytes": 2188,
+      "sha256": "3eeea4723fabf48ba348689a76cd7cc262fd1e0f70a185e1438e2b868e65e671"
+    },
+    "runs/epochs_8/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/epochs_8/vulkan.stdout.json": {
+      "bytes": 1241,
+      "sha256": "48ee37105080a623884d7f017432499c7cca5d400725ea93c335fdf4379a461e"
+    },
+    "runs/executed_definition_metadata.json": {
+      "bytes": 21311336,
+      "sha256": "5bc7f0720df5600fc2f2c512cabe929bd4c89addec4f581bf97ba4f780653b0c"
+    },
+    "runs/resume_1_plus_127/cpu.bin": {
+      "bytes": 516044,
+      "sha256": "0c5b97a819c7fe31be940feb69da63fff5408efc47d1b23768bddfc711bfcadc"
+    },
+    "runs/resume_1_plus_127/cpu.execution.json": {
+      "bytes": 2037,
+      "sha256": "ef57871e08054cda94587d3ed5d6c87ea7c53a8a2e5901d0a045d2e432c78f26"
+    },
+    "runs/resume_1_plus_127/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/resume_1_plus_127/cpu.stdout.json": {
+      "bytes": 1116,
+      "sha256": "d07e1ed52a92fbd6faa25639e5da91f391240f7d76b6b0aaa12b2e2e8fdc4316"
+    },
+    "runs/resume_1_plus_127/vulkan.bin": {
+      "bytes": 516044,
+      "sha256": "0c5b97a819c7fe31be940feb69da63fff5408efc47d1b23768bddfc711bfcadc"
+    },
+    "runs/resume_1_plus_127/vulkan.execution.json": {
+      "bytes": 2215,
+      "sha256": "cc940b5ea5e65e90d23b4632724be3a3382fe0e813e343fbb38e99b32bd504ea"
+    },
+    "runs/resume_1_plus_127/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/resume_1_plus_127/vulkan.stdout.json": {
+      "bytes": 1251,
+      "sha256": "becb284083ab8ab8010bfec4d0bd8cd2a7f9e4878dc6f9a5cc670689248866cf"
+    },
+    "runs/reverse_128/cpu.bin": {
+      "bytes": 516044,
+      "sha256": "0c5b97a819c7fe31be940feb69da63fff5408efc47d1b23768bddfc711bfcadc"
+    },
+    "runs/reverse_128/cpu.execution.json": {
+      "bytes": 2051,
+      "sha256": "8933beeeeaf8d6ee10408ff7cfa8243e71345658a3fc0bb0dfaebffb8a272729"
+    },
+    "runs/reverse_128/cpu.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/reverse_128/cpu.stdout.json": {
+      "bytes": 1116,
+      "sha256": "487ebe5eccaec7610359a0d87cd8c5a9f696afc6ab959e80c88c422d44e51ce4"
+    },
+    "runs/reverse_128/vulkan.bin": {
+      "bytes": 516044,
+      "sha256": "0c5b97a819c7fe31be940feb69da63fff5408efc47d1b23768bddfc711bfcadc"
+    },
+    "runs/reverse_128/vulkan.execution.json": {
+      "bytes": 2227,
+      "sha256": "625a83c794ebbb37db869bd32bb2a7d79dd369c1e02e0ef5e782d23887a1a88f"
+    },
+    "runs/reverse_128/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "runs/reverse_128/vulkan.stdout.json": {
+      "bytes": 1249,
+      "sha256": "0df1c2c4fb1d4bffd9a2847388cee245e71ad0ccfc8caac17b0eeb16d6e6b07b"
+    },
+    "saturation/cpu.execution.json": {
+      "bytes": 2081,
+      "sha256": "30226fa21b7883a2aa95a188235b1fe14683bf2ce4892e27e4018e49f2bd7ccb"
+    },
+    "saturation/cpu_templates.bin": {
+      "bytes": 516044,
+      "sha256": "3b7523cf504fb124bbb27ac30781718f3ec84f99804f81c18371b753640cc1ef"
+    },
+    "saturation/input.bin.xz": {
+      "bytes": 27016,
+      "sha256": "dbfd4ecee62c836fc2cd1d7381081cc03ecf60ca178bed79ca922fe7cf615aed"
+    },
+    "saturation/output.bin.xz": {
+      "bytes": 129820,
+      "sha256": "4afed425c4320bcbcaa4a1c2ef7b216a7e61bb27103640ee6da7f0ee675b0a82"
+    },
+    "saturation/summary.json": {
+      "bytes": 1788,
+      "sha256": "68744743c7c778de3c31a7fe42dc49caf292cde530623deda6ecfe50614a5ad2"
+    },
+    "saturation/telemetry.csv": {
+      "bytes": 12959,
+      "sha256": "159c4af2f19af7087c5a408a9faf7377e25b4700285708edb9cfc650f8e66015"
+    },
+    "saturation/telemetry.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "saturation/vulkan.execution.json": {
+      "bytes": 2530,
+      "sha256": "f3cf9d11e42865f25426f774e0530d151d815a026b561c810d6cb68f7f649856"
+    },
+    "saturation/vulkan.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "saturation/vulkan.stdout.txt": {
+      "bytes": 1271,
+      "sha256": "603ea1ce873e8bbc88220e9c5145d332ce2e9d4cc5948a251ea4e60041d914af"
+    },
+    "SOURCE_FIDELITY_AUDIT.md": {
+      "bytes": 13252,
+      "sha256": "4d20a68b6413e18475485f5e705cd7f10c41e7cc090a7c170df2d7174f7a1ed6"
+    }
+  }
+}

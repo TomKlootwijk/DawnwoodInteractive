@@ -1,0 +1,14 @@
+{
+  "all_passed": true,
+  "checks": {
+    "baseline_compiled_files": 8,
+    "demo_compiled_files": 8,
+    "math_inventory": 95,
+    "final_source_hashes": 4,
+    "original_source_manifest_entries": 39,
+    "native_manifest_entries": 2242,
+    "independent_utf8_compilation_program_equivalence": true,
+    "final_demo_epoch_zero_diagnostics_unevaluated": true
+  },
+  "errors": []
+}

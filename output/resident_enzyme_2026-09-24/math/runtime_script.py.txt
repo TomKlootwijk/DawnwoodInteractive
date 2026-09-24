@@ -1,0 +1,51 @@
+
+"""Temporary direct resident component runner; no persistent test suite."""
+from pathlib import Path
+import os,sys,struct,json,hashlib,subprocess,time,copy
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
+from local_lab import source_resident_v2 as resident,source_ir_v2 as ir
+NATIVE=ROOT/'Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3'
+EXE=NATIVE/'bin/windows-resident-v2/dawnwood-resident-v2.exe'
+def step(*words):return list(words)+[0]*(8-len(words))
+def sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+def save(path,obj):Path(path).write_bytes(ir.json_bytes(obj))
+def canonical(obj):return json.dumps(obj,sort_keys=True,separators=(',',':'),ensure_ascii=False)
+def fp(value):return ir.fp32(value,'probe input')[0]
+class Probe:
+ def __init__(self,out,name,source_definition,model,fn_names,role_functions,record_key,input_names,output_names,rows):
+  self.directory=Path(out)/name;self.directory.mkdir(parents=True,exist_ok=False);self.input_names=input_names;self.output_names=output_names;self.rows=rows
+  self.functions={'diagnostic_generation':{'signature':900001,'binding':{'inputs':['g'],'outputs':{'next':{'op':'add','args':[{'input':'g'},1]}}}},'diagnostic_uncalled_slot':{'signature':900002,'binding':{'inputs':[],'outputs':{'zero':0}}}}
+  self.functions.update({name:copy.deepcopy(source_definition['functions'][name]) for name in fn_names});self.handles={name:i for i,name in enumerate(self.functions)}
+  source=ir.resolve_operator(model,record_key)
+  self.definition={'profile':resident.PROFILE,'functions':self.functions,'families':{'diagnostic_family':{'interface':1,'methods':{str(role):fn for role,fn in role_functions.items()}}},'records':[{'key':record_key,'body':'diagnostic_family','field':'diagnostic_uncalled_slot','placement':'diagnostic_uncalled_slot','source_slots':{key:source[key] for key in resident.SLOTS},'values':[0]*20}],'state_names':['input_'+s for s in input_names]+['output_'+s for s in output_names],
+   'mutation_plan':[step(2,0,resident.TARGET,0,24,0),step(3,0,3,32),step(5,0,0,3),step(5,3,32,1),step(5,4,4,20)],
+   'instances':[{'state':{**dict(zip(['input_'+s for s in input_names],row)),**{'output_'+s:0 for s in output_names}}} for row in rows],
+   'source':{'scope':'Actual enzyme binding expressions called through resident typed body roles, with direct explicit arguments and generation-only mutation. Full source cycle and resident controller feedback excluded from these component probes.','function_provenance':{name:{'sha256':hashlib.sha256(canonical(source_definition['functions'][name]).encode()).hexdigest()} for name in fn_names}},'meaning':'Independent enzyme-domain component diagnostic.'}
+  self.model=model;self.plan=[step(1,0,0,len(input_names))]
+ def const(self,dst,value):self.plan.append(step(0,dst,ir.fp32(value,'constant')[1]))
+ def call(self,fn,args,dst,role=None):
+  assert len(args)==len(self.functions[fn]['binding']['inputs']),(fn,len(args),self.functions[fn]['binding']['inputs'])
+  for i,arg in enumerate(args):self.plan.append(step(10,200+i,arg,1))
+  self.plan.append(step(3,self.handles[fn],200,dst) if role is None else step(4,0,0,1,200,dst,self.functions[fn]['signature'],role))
+ def run(self,output_registers,epochs=1,state_updates=None):
+  if state_updates:
+   for i in range(len(self.input_names)):self.plan.append(step(6,i,state_updates.get(i,i),1))
+  else:self.plan.append(step(6,0,0,len(self.input_names)))
+  for i,register in enumerate(output_registers):self.plan.append(step(6,len(self.input_names)+i,register,1))
+  self.definition['action_plan']=self.plan
+  program,manifest=resident.compile_definition(self.model,self.definition);(self.directory/'program.bin').write_bytes(program)
+  save(self.directory/'definition.json',self.definition);save(self.directory/'manifest.json',manifest);save(self.directory/'source_model.json',self.model)
+  initial=resident.decode_checkpoint(program);receipts=[];results={}
+  env=os.environ.copy();env['DAWNWOOD_VALIDATION']='1';env['VK_LAYER_PATH']=str(ROOT/'tmp/rtx-toolchain/VulkanSDK/Bin')
+  for backend in ('cpu','vulkan'):
+   cmd=[str(EXE),'run','--input',str(self.directory/'program.bin'),'--output',str(self.directory/(backend+'.bin')),'--backend',backend,'--epochs',str(epochs)]
+   if backend=='vulkan':cmd+=['--device','5070 Ti']
+   start=time.time();run=subprocess.run(cmd,capture_output=True,env=env)
+   (self.directory/(backend+'.stdout.log')).write_bytes(run.stdout);(self.directory/(backend+'.stderr.log')).write_bytes(run.stderr)
+   receipts.append({'command':cmd,'exit_code':run.returncode,'elapsed_seconds':time.time()-start,'binary_sha256':sha(EXE),'shader_sha256':sha(EXE.with_name('resident_v2.spv')),'validation_env':{key:env[key] for key in ('DAWNWOOD_VALIDATION','VK_LAYER_PATH')}})
+   save(self.directory/'execution_receipts.json',receipts)
+   print(self.directory.name,backend,run.returncode,flush=True)
+   if not (self.directory/(backend+'.bin')).exists():raise RuntimeError(run.stdout.decode()+run.stderr.decode())
+   results[backend]=resident.decode_checkpoint((self.directory/(backend+'.bin')).read_bytes())
+  results['initial']=initial;results['checkpoint_byte_identical']=(self.directory/'cpu.bin').read_bytes()==(self.directory/'vulkan.bin').read_bytes()
+  results['vulkan_receipt']=json.loads((self.directory/'vulkan.stdout.log').read_text());return results

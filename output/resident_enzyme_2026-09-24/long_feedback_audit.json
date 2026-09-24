@@ -1,0 +1,34 @@
+{
+  "baseline": {
+    "name": "epochs_2048",
+    "epochs": 2048,
+    "count": 129,
+    "all_checkpoint_bytes_identical": true,
+    "all_status_ok": true,
+    "compared_instance_words": 105006,
+    "gpu_validation_enabled": true,
+    "gpu_validation_errors": 0,
+    "gpu_validation_warnings": 0
+  },
+  "feedback_ablation": {
+    "name": "epochs_2048",
+    "epochs": 2048,
+    "count": 129,
+    "all_checkpoint_bytes_identical": true,
+    "all_status_ok": true,
+    "compared_instance_words": 105006,
+    "gpu_validation_enabled": true,
+    "gpu_validation_errors": 0,
+    "gpu_validation_warnings": 0
+  },
+  "differences": {
+    "core_wave_changed_instances": 45,
+    "core_wave_changed_words": 180,
+    "all_core_changed_instances": 45,
+    "all_core_changed_words": 1485,
+    "domain_changed_instances": 45,
+    "domain_changed_words": 141,
+    "accepted_species_changed_instances": 0,
+    "accepted_species_changed_words": 0
+  }
+}

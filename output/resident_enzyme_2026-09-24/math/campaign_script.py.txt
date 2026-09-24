@@ -1,0 +1,108 @@
+"""Temporary independent component experiment, never a persistent test suite."""
+from enzyme_probe_runtime import *
+from enzyme_reference_oracle import *
+import random, shutil
+OUT=ROOT/'output/resident_enzyme_2026-09-24/math'
+OUT.mkdir(parents=True,exist_ok=False)
+SOURCE=ROOT/'tmp/enzyme_compile_smoke2/definition.json'
+D=json.loads(SOURCE.read_text());MODEL=json.loads((ROOT/'source_workbench/Dawnwood_Interactive_v0.2/model/substrate.json').read_text())
+shutil.copyfile(SOURCE,OUT/'source_definition.json')
+shutil.copyfile(ROOT/'local_lab/source_enzyme.py',OUT/'generator_snapshot.py.txt')
+shutil.copyfile(Path(__file__),OUT/'campaign_script.py.txt')
+shutil.copyfile(ROOT/'tmp/enzyme_reference_oracle.py',OUT/'oracle_script.py.txt')
+R=random.Random(932874);ET=1.;ST=10.;SCALE=10.
+FN=['enzyme_domain_sdf','enzyme_project_evaluate','enzyme_accept','enzyme_witness_gap']
+ROLES={101:FN[0],102:FN[1],103:FN[2],104:FN[3]}
+REPORT={'scope':'Direct calls to actual resident typed enzyme role expressions; full source cycle and adaptation excluded. Independent exact rational active-set oracle operates in four-species space. All comparisons use packed FP32 inputs and exact scientific ET=1,ST=10 normalized.','source_definition_sha256':sha(SOURCE),'generator_sha256_at_start':sha(ROOT/'local_lab/source_enzyme.py'),'groups':{}}
+def output_states(result):
+ assert result['checkpoint_byte_identical']
+ assert all(x['status']==0 for x in result['vulkan']['instances'])
+ return [x['state'] for x in result['vulkan']['instances']]
+def summary(result):
+ return {'count':result['vulkan']['count'],'cpu_gpu_checkpoint_byte_identical':result['checkpoint_byte_identical'],'statuses':sorted(set(x['status'] for x in result['vulkan']['instances'])),'vulkan_receipt':result['vulkan_receipt']}
+def normalized(q):return [float(v) for v in q]
+def fn_hashes(d):return {n:hashlib.sha256(canonical(d['functions'][n]).encode()).hexdigest() for n in FN}
+REPORT['function_hashes']=fn_hashes(D)
+def write_report():save(OUT/'independent_numeric_audit.json',REPORT)
+# Exact active-set reference algebra check over raw rational observations.
+oracle_checks=[]
+for q in [(1,10,0,0),(0,9,1,0),(0,0,1,9),(1,0,0,10),(-1,4,2,8),(100,-100,50,80)]:
+ opt=active_projection(q,1,10);qp,normal=project_plane(q,1,10)
+ assert opt['squared_distance']==normal+sum((a-b)**2 for a,b in zip(qp,opt['species']))
+ oracle_checks.append({'observations':q,'solution':list(map(str,opt['species'])),'squared_distance':str(opt['squared_distance'])})
+REPORT['rational_oracle_anchor_checks']=oracle_checks
+# Geometric fixtures: corners, all edges, interior, near each edge, broad outside and observation-plane projections.
+rows=[];labels=[]
+def append(xy,obs,label):rows.append([*xy,*obs]);labels.append(label)
+for c in (0,.125,.5,.875,1):
+ for p in (0,.125,1,4.5,9,10):
+  q=(1-c,10-c-p,c,p);xy=metric_from_species(tuple(map(F,q)))
+  for n,off in enumerate(((0,0),(1e-6,0),(-1e-6,0),(0,1e-6),(0,-1e-6))):append((xy[0]+off[0],xy[1]+off[1]),q,f'grid_{c}_{p}_offset{n}')
+for i in range(256):
+ c=R.uniform(-4,5);p=R.uniform(-10,20);xy=metric_from_species(tuple(map(F,(1-c,10-c-p,c,p))))
+ append(xy,[R.uniform(-20,20) for _ in range(4)],f'random_domain_{i}')
+for i in range(192):
+ obs=[R.uniform(-20,20) for _ in range(4)];qp,_=project_plane(obs,1,10)
+ append(metric_from_species(qp),obs,f'orthoproject_observations_{i}')
+p=Probe(OUT,'domain_projection_gap',D,MODEL,FN,ROLES,'blend',['trial_y0','trial_y1','obs_E','obs_S','obs_ES','obs_P'],['sdf','boundary_y0','boundary_y1','candidate_y0','candidate_y1','objective','projection_distance','E_uM','S_uM','ES_uM','P_uM','objective_return','gap'],rows)
+p.call(FN[0],[0,1],32,101);p.call(FN[1],[0,1,32,33,34,2,3,4,5],40,102);p.call(FN[3],[40,41,2,3,4,5],48,104)
+result=p.run([32,33,34,40,41,42,43,48,49,50,51,52,53]);states=output_states(result);details=[]
+for label,s in zip(labels,states):
+ inp=s[:6];o=s[6:];xy=inp[:2];obs=inp[2:];ref=signed_domain(*xy,1,10)
+ cand=species_from_metric(o[3],o[4],1,10);returned=[v/10 for v in o[7:11]]
+ exactobjective=sum((float(a)-b)**2 for a,b in zip(cand,obs));opt=active_projection(obs,1,10)
+ vertices=((1,10,0,0),(0,9,1,0),(0,0,1,9),(1,0,0,10))
+ gap=max(0.,max(2*sum((float(a)-b)*(float(a)-v) for a,b,v in zip(cand,obs,vert)) for vert in vertices))
+ bw=species_from_metric(o[1],o[2],1,10);xq=species_from_metric(*xy,1,10)
+ boundary_dist=math.sqrt(sum(float(a-b)**2 for a,b in zip(bw,xq)))
+ details.append({'id':label,'sdf_absolute_error':abs(o[0]-ref['signed_distance']),'sign_disagreement_away_from_2e-6_boundary':abs(ref['signed_distance'])>2e-6 and (o[0]<0)!=(ref['signed_distance']<0),'boundary_witness_distance_error':abs(boundary_dist-abs(ref['signed_distance'])),'boundary_witness_min_abs_species':min(abs(float(v)) for v in bw),'candidate_max_species_projection_error':max(abs(float(a-b)) for a,b in zip(cand,ref['feasible_species'])),'candidate_negativity':max(0.,-min(map(float,cand))),'returned_negativity':max(0.,-min(returned)),'returned_pool_residual':max(abs(returned[0]+returned[2]-1),abs(sum(returned[1:])-10)),'returned_species_decode_error':max(abs(a-float(b)) for a,b in zip(returned,cand)),'objective_absolute_error':abs(o[5]-exactobjective),'gap_estimate_absolute_error':abs(o[12]-gap),'exact_objective_minus_optimum':exactobjective-float(opt['squared_distance']),'fp32_gap_estimate':o[12],'reference_gap_expression':gap})
+g=summary(result);g['maxima']={key:max(row[key] for row in details) for key in details[0] if key!='id'};g['sign_disagreements_away_from_2e-6_boundary']=sum(row['sign_disagreement_away_from_2e-6_boundary'] for row in details)
+save(p.directory/'reference_comparisons.json',details);REPORT['groups']['domain_projection_gap']=g;write_report()
+# Cancellation-resistant acceptance versus the exact metric objective at packed y points.
+rows=[];labels=[]
+for i in range(640):
+ c=R.uniform(.05,.95);pp=R.uniform(.05,8.95);inc=metric_from_species(tuple(map(F,(1-c,10-c-pp,c,pp))))
+ move=10**R.uniform(-7,-1);cand=(inc[0]+R.choice((-1,1))*move,inc[1]+R.choice((-1,1))*move)
+ normal=R.choice((0,1,100,10000));a=R.choice((-1,1))*normal;b=R.choice((-1,1))*normal
+ # Exact normal directions A^T(a,b) change only the out-of-plane residual.
+ target=(inc[0]+R.uniform(-.02,.02),inc[1]+R.uniform(-.02,.02));q=species_from_metric(*target,1,10)
+ obs=[float(q[j])+[a,b,a+b,b][j] for j in range(4)]
+ rows.append([*inc,*cand,*obs]);labels.append(f'interior_{i}_normal_{normal}')
+for edge in range(4):
+ for i in range(96):
+  c,p0=[(R.random(),0),(1,R.uniform(.1,8.9)),(R.random(),0),(0,R.uniform(.1,9.9))][edge]
+  if edge==2:p0=10-c
+  q=(1-c,10-c-p0,c,p0);inc=metric_from_species(tuple(map(F,q)))
+  tangent=[(1,0),(0,1),(1,-1),(0,1)][edge];dc=R.choice((-1,1))*10**R.uniform(-7,-2)
+  cc,pp=c+dc*tangent[0],p0+dc*tangent[1];cand=metric_from_species(tuple(map(F,(1-cc,10-cc-pp,cc,pp))))
+  obs=[x+R.uniform(-10,10) for x in q]
+  rows.append([*inc,*cand,*obs]);labels.append(f'edge_{edge}_{i}')
+p=Probe(OUT,'acceptance_cancellation',D,MODEL,FN,ROLES,'blend',['old_y0','old_y1','new_y0','new_y1','obs_E','obs_S','obs_ES','obs_P'],['y0','y1','objective','improvement','accepted','old_objective','new_objective'],rows)
+p.call(FN[3],[0,1,4,5,6,7],32,104);p.call(FN[3],[2,3,4,5,6,7],40,104);p.call(FN[2],[0,1,2,3,36,44,4,5,6,7],48,103)
+result=p.run([48,49,50,51,52,36,44]);details=[]
+for label,s in zip(labels,output_states(result)):
+ inc,cand,obs=s[:2],s[2:4],s[4:8];o=s[8:]
+ qi=species_from_metric(*inc,1,10);qc=species_from_metric(*cand,1,10)
+ delta=sum((b-a)*(a+b-2*F(c)) for a,b,c in zip(qi,qc,obs));accepted=o[4]!=0
+ details.append({'id':label,'exact_four_species_objective_change':float(delta),'resident_accepted':accepted,'resident_reported_improvement':o[3],'old_full_objective':o[5],'new_full_objective':o[6],'full_objective_bits_equal':ir.fp32(o[5],'x')[1]==ir.fp32(o[6],'x')[1],'accepted_true_increase':accepted and delta>0,'rejected_true_decrease':not accepted and delta<0,'improvement_absolute_error':abs(o[3]+float(delta)) if accepted else 0.})
+g=summary(result);g.update({'accepted_count':sum(x['resident_accepted'] for x in details),'accepted_true_increase_count':sum(x['accepted_true_increase'] for x in details),'max_accepted_true_increase':max([x['exact_four_species_objective_change'] for x in details if x['accepted_true_increase']]+[0]),'rejected_true_decrease_count':sum(x['rejected_true_decrease'] for x in details),'max_rejected_true_decrease_magnitude':max([-x['exact_four_species_objective_change'] for x in details if x['rejected_true_decrease']]+[0]),'accepted_when_full_objective_bits_equal':sum(x['resident_accepted'] and x['full_objective_bits_equal'] for x in details),'max_improvement_absolute_error':max(x['improvement_absolute_error'] for x in details)})
+save(p.directory/'reference_comparisons.json',details);REPORT['groups']['acceptance_cancellation']=g;write_report()
+# Actual proposal/field/project/accept/witness recurrent execution, source-context fixed.
+obsrows=[[R.uniform(-8,15) for _ in range(4)] for _ in range(128)]
+obsrows += [[1,10,0,0],[0,9,1,0],[0,0,1,9],[1,0,0,10],[-1,4,2,8],[.6,4,.4,5.6],[100,-100,50,80]]
+for strategy in ('fast','cautious'):
+ fn='enzyme_proposal_'+strategy;roles={**ROLES,100:fn}
+ rows=[[*obs,0,0] for obs in obsrows]
+ p=Probe(OUT,'convergence_'+strategy,D,MODEL,FN+[fn],roles,'blend',['obs_E','obs_S','obs_ES','obs_P','y0','y1'],['step','trial_sdf','improvement','accepted','E_uM','S_uM','ES_uM','P_uM','objective','gap'],rows)
+ for j,val in enumerate([0,0,0,0,0,0,0,0,1,0,0,1,1,0]):p.const(100+j,val)
+ p.call(fn,[4,5,0,1,2,3,*range(100,114)],24,100)
+ p.call(FN[0],[24,25],32,101);p.call(FN[1],[24,25,32,33,34,0,1,2,3],40,102)
+ p.call(FN[3],[4,5,0,1,2,3],50,104);p.call(FN[2],[4,5,40,41,54,42,0,1,2,3],60,103);p.call(FN[3],[60,61,0,1,2,3],70,104)
+ result=p.run([26,32,63,64,*range(70,76)],epochs=128,state_updates={4:60,5:61});details=[]
+ for i,s in enumerate(output_states(result)):
+  obs=s[:4];xy=s[4:6];o=s[6:];q=species_from_metric(*xy,1,10);opt=active_projection(obs,1,10);err=max(abs(float(a-b)) for a,b in zip(q,opt['species']))
+  objective=sum((float(a)-b)**2 for a,b in zip(q,obs));dist=math.sqrt(sum(float(a-b)**2 for a,b in zip(q,opt['species'])))
+  details.append({'id':i,'max_species_error_normalized':err,'distance_to_exact_optimum':dist,'max_negative_species':max(0.,-min(map(float,q))),'objective_excess':objective-float(opt['squared_distance']),'fp32_gap_estimate':o[-1],'step':o[0],'last_accepted':bool(o[3])})
+ g=summary(result);g['epochs']=128;g['maxima']={key:max(x[key] for x in details) for key in details[0] if key!='id'};g['gap_estimate_below_true_objective_excess_count']=sum(x['fp32_gap_estimate']<x['objective_excess'] for x in details);g['mathematical_contraction_only']='For exact Euclidean projection and constant alpha in(0,1), ||e_n|| <= (1-alpha)^n ||e_0||. FP32 component results plateau; no finite-step exact-optimum claim.'
+ save(p.directory/'reference_comparisons.json',details);REPORT['groups']['convergence_'+strategy]=g;write_report()
+print('COMPONENTS_COMPLETE',flush=True)

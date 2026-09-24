@@ -1,0 +1,18 @@
+{
+  "profile": "DWI-ENZYME-0.1",
+  "pools": {
+    "E_total_uM": 10,
+    "S_total_uM": 100,
+    "concentration_scale_uM": 10
+  },
+  "observations": [
+    {"id": "interior_noisy", "E_uM": 8, "S_uM": 78, "ES_uM": 3, "P_uM": 20},
+    {"id": "boundary_noisy", "E_uM": 8, "S_uM": -5, "ES_uM": 20, "P_uM": 90},
+    {"id": "already_consistent", "E_uM": 7, "S_uM": 77, "ES_uM": 3, "P_uM": 20},
+    {"id": "product_excess", "E_uM": 2, "S_uM": 2, "ES_uM": 9, "P_uM": 120},
+    {"id": "negative_complex", "E_uM": 12, "S_uM": 95, "ES_uM": -2, "P_uM": 3},
+    {"id": "zero_observation", "E_uM": 0, "S_uM": 0, "ES_uM": 0, "P_uM": 0},
+    {"id": "initial_feasible_corner", "E_uM": 10, "S_uM": 100, "ES_uM": 0, "P_uM": 0},
+    {"id": "depleted_substrate", "E_uM": 0, "S_uM": 0, "ES_uM": 10, "P_uM": 90}
+  ]
+}

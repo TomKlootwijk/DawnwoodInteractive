@@ -1,0 +1,52 @@
+from enzyme_probe_runtime import *
+from enzyme_reference_oracle import *
+import shutil
+OUT=ROOT/'output/resident_enzyme_2026-09-24/math';r=json.loads((OUT/'independent_numeric_audit.json').read_text(encoding='utf-8'))
+actual_model_path=ROOT/'source_workbench/Dawnwood_Interactive_v0.2/model/substrate.json';actual_model=json.loads(actual_model_path.read_text(encoding='utf-8'))
+provenance=[]
+for name,group in r['groups'].items():
+ folder=OUT/name;definition=json.loads((folder/'definition.json').read_text(encoding='utf-8'));saved_model=json.loads((folder/'source_model.json').read_text(encoding='utf-8'))
+ recompiled,manifest=resident.compile_definition(actual_model,definition)
+ provenance.append({'group':name,'model_object_equal_to_explicit_utf8_original':saved_model==actual_model,'original_model_file_sha256':sha(actual_model_path),'utf8_recompiled_program_byte_identical':recompiled==(folder/'program.bin').read_bytes(),'utf8_model_semantic_sha256':manifest['source_model_semantic_sha256'],'record_source_slots_equal':definition['records'][0]['source_slots']=={slot:ir.resolve_operator(actual_model,'blend')[slot] for slot in resident.SLOTS}})
+ assert provenance[-1]['utf8_recompiled_program_byte_identical']
+r['model_encoding_provenance']=provenance
+r['generator_sha256_at_end']=sha(ROOT/'local_lab/source_enzyme.py');r['generator_unchanged_during_component_campaign']=r['generator_sha256_at_end']==r['generator_sha256_at_start']
+shutil.copyfile(actual_model_path,OUT/'source_model_original_utf8.json')
+# Actual rounded coefficient values, evaluated as real numbers to isolate
+# coefficient error from each executed operation's rounding.
+a,h,k=[fp(v) for v in (math.sqrt(2.5),math.sqrt(2),math.sqrt(.4))];b=fp(1/math.sqrt(2))
+T=((a,0),(b,h));T_runtime_nominal=((a,0),(1/h,2/h));G=((3,1),(1,2))
+def metric(t):return [[sum(t[j][u]*t[j][v] for j in range(2))-G[u][v] for v in range(2)] for u in range(2)]
+D=((-.0-k,0),(-k/2,-h/2),(k,0),(-k/2,h/2))
+decoder_metric=[[sum(D[j][u]*D[j][v] for j in range(4))-(u==v) for v in range(2)] for u in range(2)]
+r['coefficient_metric_audit']={'coefficient_words':{name:{'fp32':v,'word_hex':f'0x{ir.fp32(v,name)[1]:08x}'} for name,v in [('sqrt_5_over_2',a),('sqrt_2',h),('sqrt_2_over_5',k),('one_over_sqrt_2_vertex_factor',b)]},'rounded_forward_T':T,'rounded_forward_T_transpose_T_minus_G':metric(T),'runtime_target_nominal_T':T_runtime_nominal,'runtime_target_nominal_T_transpose_T_minus_G':metric(T_runtime_nominal),'decoded_species_D_transpose_D_minus_identity':decoder_metric,'maximum_absolute_decoder_metric_defect':max(abs(v) for row in decoder_metric for v in row),'scope':'Coefficient-only real-number calculation; executed target uses ordered FP32 division by sqrt2, so total error also includes division and all operation rounding. Polygon vertices and edge constants are separately packed from host binary64 calculations. No coefficient matrix is substituted for the exact independent scientific metric.'}
+# Valid mathematical gap theorem on exact feasible reference points.
+gapdetails=[]
+for name in ('convergence_fast','convergence_cautious'):
+ ck=resident.decode_checkpoint((OUT/name/'vulkan.bin').read_bytes())
+ for index,item in enumerate(ck['instances']):
+  s=item['state'];q=species_from_metric(*s[4:6],1,10);feasible=active_projection(q,1,10)['species'];oracle=gap_reference(feasible,s[:4],1,10)
+  true_gap=2*oracle['frank_wolfe_gap'];true_excess=2*oracle['objective_gap'];reported=F(s[-1]);shortfall=max(F(0),true_excess-reported)
+  gapdetails.append({'group':name,'index':index,'exact_feasible_reference_objective_excess':float(true_excess),'exact_feasible_reference_gap_bound':float(true_gap),'reported_fp32_gap':float(reported),'gap_estimate_shortfall_vs_exact_feasible_objective_excess':float(shortfall),'reference_feasibility_correction_distance':math.sqrt(sum(float(a-b)**2 for a,b in zip(q,feasible))),'exact_feasible_reference_distance_to_optimum_bound':oracle['distance_to_optimum_bound']})
+save(OUT/'gap_theorem_reference_checks.json',gapdetails)
+r['gap_theorem_audit']={'cases':len(gapdetails),'exact_rational_feasible_gap_inequalities_passed':True,'fp32_estimate_understates_exact_feasible_objective_excess_count':sum(x['gap_estimate_shortfall_vs_exact_feasible_objective_excess']>0 for x in gapdetails),'maximum_gap_estimate_shortfall':max(x['gap_estimate_shortfall_vs_exact_feasible_objective_excess'] for x in gapdetails),'max_reference_feasibility_correction_distance':max(x['reference_feasibility_correction_distance'] for x in gapdetails),'scope':'Exact feasible copies exist only in the independent oracle to satisfy theorem hypotheses. Native checkpoint states and returned species are preserved unchanged. Numerical estimate lacks a directed-rounding allowance and must not be promoted to a rigorous certificate.'}
+# Input rounding and profile-range disclosure.
+packing={}
+for name in r['groups']:
+ folder=OUT/name;definition=json.loads((folder/'definition.json').read_text(encoding='utf-8'));initial=resident.decode_checkpoint((folder/'program.bin').read_bytes())
+ errors=[abs(float(row['state'][key])-packed) for row,out in zip(definition['instances'],initial['instances']) for key,packed in zip(definition['state_names'],out['state'])]
+ packing[name]={'max_absolute_source_state_to_fp32_rounding':max(errors,default=0),'state_words_rounded':sum(x!=0 for x in errors)}
+r['source_input_rounding']=packing
+acc=resident.decode_checkpoint((OUT/'acceptance_cancellation/program.bin').read_bytes())
+r['groups']['acceptance_cancellation']['cases_outside_frontend_observation_magnitude_limit']=sum(any(abs(v)>10000 for v in row['state'][4:8]) for row in acc['instances'])
+r['groups']['acceptance_cancellation']['range_scope']='Some deliberate normal-residual stress fixtures bypass the application frontend range guard while remaining finite native inputs. They are arithmetic-component stress evidence, not evidence of accepted CLI inputs.'
+direct=resident.decode_checkpoint((OUT/'domain_projection_gap/vulkan.bin').read_bytes());nearest=[]
+for item in direct['instances'][-192:]:
+ s=item['state'];opt=active_projection(s[2:6],1,10);candidate=species_from_metric(*s[9:11],1,10)
+ nearest.append(max(abs(float(a-b)) for a,b in zip(candidate,opt['species'])))
+r['groups']['domain_projection_gap']['orthoproject_observations_subgroup']={'count':192,'max_species_error_vs_direct_four_species_nearest_feasible':max(nearest),'scope':'The diagnostic input plane point was constructed independently then packed; this error includes that extra input rounding. Actual proposal target construction is checked by the recurrent groups.'}
+r['total_component_cases']=sum(g['count'] for g in r['groups'].values());r['total_committed_instance_epochs_per_backend']=sum(g['vulkan_receipt']['committed_instance_epochs'] for g in r['groups'].values())
+r['limitations']=['This is finite equal-weight concentration reconciliation under two supplied conserved pools, not kinetic evolution, experimental assay validation or biological prediction.','Direct component calls preserve actual numerical body definitions but bypass the source cycle, carrier placement/field and adaptation; root campaign separately checks complete integration.','The exact-arithmetic SDF and projection law is approximated by independently rounded constants and ordered FP32 operations. Slight negative species and pool residuals are retained in raw checkpoints.','The stable acceptance formula removes subtraction of large common objective terms but does not guarantee monotonicity of the exact scientific objective in FP32. Focused boundary fixtures show accepted tiny increases and rejected true decreases.','A rounded gap estimate is not a certified bound. Independent rational oracle and feasibility checks are required before an accuracy claim.','Power-of-two common concentration rescaling establishes covariance for those factors and these inputs; arbitrary scales and all admissible pool ratios were not exhaustively audited.']
+save(OUT/'independent_numeric_audit.json',r)
+shutil.copyfile(Path(__file__),OUT/'report_script.py.txt')
+print(json.dumps({'total_cases':r['total_component_cases'],'epochs_per_backend':r['total_committed_instance_epochs_per_backend'],'metric':r['coefficient_metric_audit'],'gap':r['gap_theorem_audit'],'model':provenance,'range_stress_count':r['groups']['acceptance_cancellation']['cases_outside_frontend_observation_magnitude_limit']},indent=2))

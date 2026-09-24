@@ -1,0 +1,79 @@
+[
+  {
+    "name": "epochs_1",
+    "epochs": 1,
+    "count": 129,
+    "all_checkpoint_bytes_identical": true,
+    "all_status_ok": true,
+    "compared_instance_words": 105006,
+    "gpu_validation_enabled": true,
+    "gpu_validation_errors": 0,
+    "gpu_validation_warnings": 0
+  },
+  {
+    "name": "epochs_2",
+    "epochs": 2,
+    "count": 129,
+    "all_checkpoint_bytes_identical": true,
+    "all_status_ok": true,
+    "compared_instance_words": 105006,
+    "gpu_validation_enabled": true,
+    "gpu_validation_errors": 0,
+    "gpu_validation_warnings": 0
+  },
+  {
+    "name": "epochs_8",
+    "epochs": 8,
+    "count": 129,
+    "all_checkpoint_bytes_identical": true,
+    "all_status_ok": true,
+    "compared_instance_words": 105006,
+    "gpu_validation_enabled": true,
+    "gpu_validation_errors": 0,
+    "gpu_validation_warnings": 0
+  },
+  {
+    "name": "epochs_64",
+    "epochs": 64,
+    "count": 129,
+    "all_checkpoint_bytes_identical": true,
+    "all_status_ok": true,
+    "compared_instance_words": 105006,
+    "gpu_validation_enabled": true,
+    "gpu_validation_errors": 0,
+    "gpu_validation_warnings": 0
+  },
+  {
+    "name": "epochs_128",
+    "epochs": 128,
+    "count": 129,
+    "all_checkpoint_bytes_identical": true,
+    "all_status_ok": true,
+    "compared_instance_words": 105006,
+    "gpu_validation_enabled": true,
+    "gpu_validation_errors": 0,
+    "gpu_validation_warnings": 0
+  },
+  {
+    "name": "resume_1_plus_127",
+    "epochs": 127,
+    "count": 129,
+    "all_checkpoint_bytes_identical": true,
+    "all_status_ok": true,
+    "compared_instance_words": 105006,
+    "gpu_validation_enabled": true,
+    "gpu_validation_errors": 0,
+    "gpu_validation_warnings": 0
+  },
+  {
+    "name": "reverse_128",
+    "epochs": 128,
+    "count": 129,
+    "all_checkpoint_bytes_identical": true,
+    "all_status_ok": true,
+    "compared_instance_words": 105006,
+    "gpu_validation_enabled": true,
+    "gpu_validation_errors": 0,
+    "gpu_validation_warnings": 0
+  }
+]

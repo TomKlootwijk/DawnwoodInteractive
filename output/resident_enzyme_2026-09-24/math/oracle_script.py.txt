@@ -1,0 +1,62 @@
+
+"""Temporary independent four-species exact active-set oracle; not a repository test."""
+from fractions import Fraction as F
+from decimal import Decimal, localcontext
+import math,struct
+A=((1,0,1,0),(0,1,1,1))
+def rational(value):return value if isinstance(value,F) else F(value)
+def active_projection(q,et,st,boundary=False):
+ q=tuple(map(rational,q));et,st=rational(et),rational(st)
+ if not 0<et<st:raise ValueError('Requires0<ET<ST')
+ feasible=[]
+ for mask in range(16):
+  if boundary and mask==0:continue
+  free=[i for i in range(4) if not(mask>>i)&1]
+  m00=sum(A[0][i]**2 for i in free);m01=sum(A[0][i]*A[1][i] for i in free);m11=sum(A[1][i]**2 for i in free);det=m00*m11-m01*m01
+  # Strict0<ET<ST excludes a feasible rank-deficient active face here.
+  if det==0:continue
+  r0=sum(A[0][i]*q[i] for i in free)-et;r1=sum(A[1][i]*q[i] for i in free)-st
+  l0=(m11*r0-m01*r1)/det;l1=(-m01*r0+m00*r1)/det
+  y=tuple(q[i]-A[0][i]*l0-A[1][i]*l1 if i in free else F(0) for i in range(4))
+  if any(v<0 for v in y):continue
+  assert y[0]+y[2]==et and y[1]+y[2]+y[3]==st
+  score=sum((a-b)**2 for a,b in zip(y,q))
+  feasible.append((score,mask,y))
+ if not feasible:raise AssertionError('No feasible active set')
+ feasible.sort(key=lambda v:(v[0],v[1]));score,mask,y=feasible[0]
+ vertices=((et,st,F(0),F(0)),(F(0),st-et,et,F(0)),(F(0),F(0),et,st-et),(et,F(0),F(0),st))
+ certificate=max(sum((qi-yi)*(vi-yi) for qi,yi,vi in zip(q,y,v)) for v in vertices)
+ if not boundary:assert certificate<=0
+ return {'squared_distance':score,'species':y,'mask':mask,'projection_vertex_residual':certificate,'tied_active_set_count':sum(item[0]==score for item in feasible)}
+def project_plane(q,et,st):
+ e,s,c,p=map(rational,q);et,st=rational(et),rational(st)
+ cc=(2*et+st-2*e-s+2*c-p)/5;pp=(-et+2*st+e-2*s-c+3*p)/5
+ qq=(et-cc,st-cc-pp,cc,pp)
+ return qq,sum((x-y)**2 for x,y in zip((e,s,c,p),qq))
+def species_from_metric(x,y,et,st):
+ # Independently decoded with80decimaldigits, not the expression bank constants.
+ with localcontext() as ctx:
+  ctx.prec=80
+  xx=Decimal.from_float(float(x));yy=Decimal.from_float(float(y))
+  cc=xx/(Decimal(5)/2).sqrt();pp=(Decimal(2).sqrt()*yy-cc)/2
+  c,p=F(cc),F(pp)
+ return (rational(et)-c,rational(st)-c-p,c,p)
+def metric_from_species(q):
+ with localcontext() as ctx:
+  ctx.prec=80
+  c=Decimal(q[2].numerator)/Decimal(q[2].denominator);p=Decimal(q[3].numerator)/Decimal(q[3].denominator)
+  return float((Decimal(5)/2).sqrt()*c),float((c+2*p)/Decimal(2).sqrt())
+def signed_domain(x,y,et,st):
+ q=species_from_metric(x,y,et,st);inside=all(v>=0 for v in q)
+ boundary=active_projection(q,et,st,True);feasible=active_projection(q,et,st,False)
+ boundary_norm=math.sqrt(float(boundary['squared_distance']))
+ return {'signed_distance':-boundary_norm if inside else boundary_norm,'inside':inside,'boundary_species':boundary['species'],'boundary_metric':metric_from_species(boundary['species']),'feasible_species':feasible['species'],'feasible_metric':metric_from_species(feasible['species']),'squared_distance_to_feasible':float(feasible['squared_distance']),'boundary_tied_active_sets':boundary['tied_active_set_count']}
+def gap_reference(candidate_q,observations,et,st):
+ y=tuple(map(rational,candidate_q));q=tuple(map(rational,observations));et,st=rational(et),rational(st)
+ if any(v<0 for v in y) or y[0]+y[2]!=et or y[1]+y[2]+y[3]!=st:raise ValueError('Gap requires exact feasibility')
+ verts=((et,st,F(0),F(0)),(F(0),st-et,et,F(0)),(F(0),F(0),et,st-et),(et,F(0),F(0),st))
+ g=max(sum((yi-qi)*(yi-vi) for yi,qi,vi in zip(y,q,v)) for v in verts)
+ optimum=active_projection(q,et,st)
+ f=sum((yi-qi)**2 for yi,qi in zip(y,q))/2;fstar=optimum['squared_distance']/2
+ assert g>=0 and f-fstar<=g
+ return {'frank_wolfe_gap':g,'objective_gap':f-fstar,'distance_to_optimum_bound':math.sqrt(2*float(g)),'optimum':optimum}

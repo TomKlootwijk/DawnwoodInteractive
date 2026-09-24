@@ -1,0 +1,17 @@
+{
+  "command": [
+    "cmd.exe",
+    "/d",
+    "/c",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood-Enzyme.cmd",
+    "results",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\resident_enzyme_2026-09-24\\demo\\vulkan128.bin",
+    "--manifest",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\resident_enzyme_2026-09-24\\demo\\manifest.json",
+    "--output",
+    "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\resident_enzyme_2026-09-24\\demo\\results.json"
+  ],
+  "exit_code": 0,
+  "stdout": "{\"output\": \"C:\\\\TOMWERKPLEKTORENTJE\\\\DawnwoodInteractive\\\\output\\\\resident_enzyme_2026-09-24\\\\demo\\\\results.json\", \"count\": 8, \"all_runtime_healthy\": true, \"all_feasible_within_declared_tolerance\": true, \"all_gap_estimates_below_requested_threshold\": false}\n",
+  "stderr": ""
+}

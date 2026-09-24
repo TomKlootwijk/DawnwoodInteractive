@@ -1,0 +1,19 @@
+{
+  "baseline_definition": "../../baseline/definition.json",
+  "changes": {
+    "function": "disk",
+    "output": "distance",
+    "change": "add .0078125; causal intervention"
+  },
+  "epochs": [
+    1
+  ],
+  "program_sha256": "e8c645516b6d8643329c65729132c100607cd5d692fd5b80d9c47c541578beb8",
+  "configuration_sha256": "7ce28386b3caaa9f09c74c834708731e3d7085ab92035a882e05492032ae647a",
+  "protected_law_hashes": {
+    "enzyme_domain_sdf": "6a0deca9d3daa59e51509f489444d6d694d531002604ea7f70ea84ae4c189776",
+    "enzyme_project_evaluate": "87a6258b3ac387dc07e509677c38b7f3a769b7ecff7ba1258367adfdc260484e",
+    "enzyme_accept": "fd75c57ece7308c359e8648415c26c6aa864271f7fae83eda5189f0663bb2a47",
+    "enzyme_witness_gap": "7cd3699bfa0b85bf1bb3cc637f83e7a32ac7e12b4651432a5a80e3a0d0b1617a"
+  }
+}

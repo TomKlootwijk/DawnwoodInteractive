@@ -1,0 +1,794 @@
+{
+  "scope": "Direct calls to actual resident typed enzyme role expressions; full source cycle and adaptation excluded. Independent exact rational active-set oracle operates in four-species space. All comparisons use packed FP32 inputs and exact scientific ET=1,ST=10 normalized.",
+  "source_definition_sha256": "023187679965c7275c4339a68fcbc723eb800327a51e5ae213aca036dd31e021",
+  "generator_sha256_at_start": "2875592287d4905881422da819e55068cab9b4b2b20e985a1b673168a6419911",
+  "groups": {
+    "domain_projection_gap": {
+      "count": 598,
+      "cpu_gpu_checkpoint_byte_identical": true,
+      "statuses": [
+        0
+      ],
+      "vulkan_receipt": {
+        "profile": "DWI-RESIDENT-0.2",
+        "backend": "vulkan",
+        "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+        "device_type": "discrete_gpu",
+        "vendor_id": 4318,
+        "device_id": 12056,
+        "driver_version": 2479800320,
+        "api_version": 4211013,
+        "count": 598,
+        "record_count": 1,
+        "state_width": 19,
+        "function_count": 6,
+        "family_count": 1,
+        "mutation_steps": 5,
+        "action_steps": 35,
+        "epochs_requested": 1,
+        "committed_instance_epochs": 598,
+        "minimum_final_epoch": 1,
+        "maximum_final_epoch": 1,
+        "reverse_targets": false,
+        "status": "ok",
+        "failed_lanes": 0,
+        "previously_failed_lanes": 0,
+        "status_counts": [
+          598,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "execution_seconds": 0.002874,
+        "total_seconds": 2.6116685,
+        "timing_scope": "sum of host submit-to-fence waits; excludes setup, command recording and readback",
+        "validation_enabled": true,
+        "validation_errors": 0,
+        "validation_warnings": 0,
+        "upload_bytes": 123992,
+        "download_bytes": 117208,
+        "dispatches": 1,
+        "submissions": 1,
+        "all_buffers_device_local": true,
+        "per_epoch_host_reads": 0,
+        "per_epoch_host_uploads": 0,
+        "transfer_counter_scope": "explicit host/device buffer uploads and readbacks; not CPU memory accesses or device bus traffic",
+        "instance_model": "independent substrate per lane",
+        "failure_policy": "rollback full epoch; retain first failure and freeze instance",
+        "checkpoint_format": "DWRD0002"
+      },
+      "maxima": {
+        "sdf_absolute_error": 1.445983887293778e-06,
+        "sign_disagreement_away_from_2e-6_boundary": false,
+        "boundary_witness_distance_error": 9.345000832206869e-07,
+        "boundary_witness_min_abs_species": 4.531103879935768e-07,
+        "candidate_max_species_projection_error": 9.693775157505627e-07,
+        "candidate_negativity": 4.395012857930607e-07,
+        "returned_negativity": 9.5367431640625e-07,
+        "returned_pool_residual": 8.583068851208964e-07,
+        "returned_species_decode_error": 1.2088628461779918e-06,
+        "objective_absolute_error": 0.00015961901044647675,
+        "gap_estimate_absolute_error": 7.286721211130498e-05,
+        "exact_objective_minus_optimum": 737.3088071335347,
+        "fp32_gap_estimate": 937.3087768554688,
+        "reference_gap_expression": 937.3088070313221
+      },
+      "sign_disagreements_away_from_2e-6_boundary": 0,
+      "orthoproject_observations_subgroup": {
+        "count": 192,
+        "max_species_error_vs_direct_four_species_nearest_feasible": 1.077339252290913e-06,
+        "scope": "The diagnostic input plane point was constructed independently then packed; this error includes that extra input rounding. Actual proposal target construction is checked by the recurrent groups."
+      }
+    },
+    "acceptance_cancellation": {
+      "count": 1024,
+      "cpu_gpu_checkpoint_byte_identical": true,
+      "statuses": [
+        0
+      ],
+      "vulkan_receipt": {
+        "profile": "DWI-RESIDENT-0.2",
+        "backend": "vulkan",
+        "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+        "device_type": "discrete_gpu",
+        "vendor_id": 4318,
+        "device_id": 12056,
+        "driver_version": 2479800320,
+        "api_version": 4211013,
+        "count": 1024,
+        "record_count": 1,
+        "state_width": 15,
+        "function_count": 6,
+        "family_count": 1,
+        "mutation_steps": 5,
+        "action_steps": 34,
+        "epochs_requested": 1,
+        "committed_instance_epochs": 1024,
+        "minimum_final_epoch": 1,
+        "maximum_final_epoch": 1,
+        "reverse_targets": false,
+        "status": "ok",
+        "failed_lanes": 0,
+        "previously_failed_lanes": 0,
+        "status_counts": [
+          1024,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "execution_seconds": 0.0027588,
+        "total_seconds": 1.1177077,
+        "timing_scope": "sum of host submit-to-fence waits; excludes setup, command recording and readback",
+        "validation_enabled": true,
+        "validation_errors": 0,
+        "validation_warnings": 0,
+        "upload_bytes": 191072,
+        "download_bytes": 184320,
+        "dispatches": 1,
+        "submissions": 1,
+        "all_buffers_device_local": true,
+        "per_epoch_host_reads": 0,
+        "per_epoch_host_uploads": 0,
+        "transfer_counter_scope": "explicit host/device buffer uploads and readbacks; not CPU memory accesses or device bus traffic",
+        "instance_model": "independent substrate per lane",
+        "failure_policy": "rollback full epoch; retain first failure and freeze instance",
+        "checkpoint_format": "DWRD0002"
+      },
+      "accepted_count": 490,
+      "accepted_true_increase_count": 0,
+      "max_accepted_true_increase": 0,
+      "rejected_true_decrease_count": 0,
+      "max_rejected_true_decrease_magnitude": 0,
+      "accepted_when_full_objective_bits_equal": 147,
+      "max_improvement_absolute_error": 1.94919213440552e-05,
+      "cases_outside_frontend_observation_magnitude_limit": 156,
+      "range_scope": "Some deliberate normal-residual stress fixtures bypass the application frontend range guard while remaining finite native inputs. They are arithmetic-component stress evidence, not evidence of accepted CLI inputs."
+    },
+    "convergence_fast": {
+      "count": 135,
+      "cpu_gpu_checkpoint_byte_identical": true,
+      "statuses": [
+        0
+      ],
+      "vulkan_receipt": {
+        "profile": "DWI-RESIDENT-0.2",
+        "backend": "vulkan",
+        "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+        "device_type": "discrete_gpu",
+        "vendor_id": 4318,
+        "device_id": 12056,
+        "driver_version": 2479800320,
+        "api_version": 4211013,
+        "count": 135,
+        "record_count": 1,
+        "state_width": 16,
+        "function_count": 7,
+        "family_count": 1,
+        "mutation_steps": 5,
+        "action_steps": 90,
+        "epochs_requested": 128,
+        "committed_instance_epochs": 17280,
+        "minimum_final_epoch": 128,
+        "maximum_final_epoch": 128,
+        "reverse_targets": false,
+        "status": "ok",
+        "failed_lanes": 0,
+        "previously_failed_lanes": 0,
+        "status_counts": [
+          135,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "execution_seconds": 0.0230252,
+        "total_seconds": 0.3092941,
+        "timing_scope": "sum of host submit-to-fence waits; excludes setup, command recording and readback",
+        "validation_enabled": true,
+        "validation_errors": 0,
+        "validation_warnings": 0,
+        "upload_bytes": 35092,
+        "download_bytes": 24840,
+        "dispatches": 128,
+        "submissions": 2,
+        "all_buffers_device_local": true,
+        "per_epoch_host_reads": 0,
+        "per_epoch_host_uploads": 0,
+        "transfer_counter_scope": "explicit host/device buffer uploads and readbacks; not CPU memory accesses or device bus traffic",
+        "instance_model": "independent substrate per lane",
+        "failure_policy": "rollback full epoch; retain first failure and freeze instance",
+        "checkpoint_format": "DWRD0002"
+      },
+      "epochs": 128,
+      "maxima": {
+        "max_species_error_normalized": 0.0003587776831917807,
+        "distance_to_exact_optimum": 0.0006212468921234536,
+        "max_negative_species": 4.317585213704185e-07,
+        "objective_excess": 8.688039088156074e-07,
+        "fp32_gap_estimate": 0.0008401870727539062,
+        "step": 0.6772499680519104,
+        "last_accepted": false
+      },
+      "gap_estimate_below_true_objective_excess_count": 43,
+      "mathematical_contraction_only": "For exact Euclidean projection and constant alpha in(0,1), ||e_n|| <= (1-alpha)^n ||e_0||. FP32 component results plateau; no finite-step exact-optimum claim."
+    },
+    "convergence_cautious": {
+      "count": 135,
+      "cpu_gpu_checkpoint_byte_identical": true,
+      "statuses": [
+        0
+      ],
+      "vulkan_receipt": {
+        "profile": "DWI-RESIDENT-0.2",
+        "backend": "vulkan",
+        "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+        "device_type": "discrete_gpu",
+        "vendor_id": 4318,
+        "device_id": 12056,
+        "driver_version": 2479800320,
+        "api_version": 4211013,
+        "count": 135,
+        "record_count": 1,
+        "state_width": 16,
+        "function_count": 7,
+        "family_count": 1,
+        "mutation_steps": 5,
+        "action_steps": 90,
+        "epochs_requested": 128,
+        "committed_instance_epochs": 17280,
+        "minimum_final_epoch": 128,
+        "maximum_final_epoch": 128,
+        "reverse_targets": false,
+        "status": "ok",
+        "failed_lanes": 0,
+        "previously_failed_lanes": 0,
+        "status_counts": [
+          135,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "execution_seconds": 0.023065,
+        "total_seconds": 1.3861009,
+        "timing_scope": "sum of host submit-to-fence waits; excludes setup, command recording and readback",
+        "validation_enabled": true,
+        "validation_errors": 0,
+        "validation_warnings": 0,
+        "upload_bytes": 35092,
+        "download_bytes": 24840,
+        "dispatches": 128,
+        "submissions": 2,
+        "all_buffers_device_local": true,
+        "per_epoch_host_reads": 0,
+        "per_epoch_host_uploads": 0,
+        "transfer_counter_scope": "explicit host/device buffer uploads and readbacks; not CPU memory accesses or device bus traffic",
+        "instance_model": "independent substrate per lane",
+        "failure_policy": "rollback full epoch; retain first failure and freeze instance",
+        "checkpoint_format": "DWRD0002"
+      },
+      "epochs": 128,
+      "maxima": {
+        "max_species_error_normalized": 0.0014431234727373655,
+        "distance_to_exact_optimum": 0.0024993965253828423,
+        "max_negative_species": 3.819107023516752e-07,
+        "objective_excess": 3.324429400208828e-06,
+        "fp32_gap_estimate": 0.007404327392578125,
+        "step": 0.22624999284744263,
+        "last_accepted": false
+      },
+      "gap_estimate_below_true_objective_excess_count": 10,
+      "mathematical_contraction_only": "For exact Euclidean projection and constant alpha in(0,1), ||e_n|| <= (1-alpha)^n ||e_0||. FP32 component results plateau; no finite-step exact-optimum claim."
+    },
+    "boundary_next_step": {
+      "count": 398,
+      "cpu_gpu_checkpoint_byte_identical": true,
+      "statuses": [
+        0
+      ],
+      "vulkan_receipt": {
+        "profile": "DWI-RESIDENT-0.2",
+        "backend": "vulkan",
+        "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+        "device_type": "discrete_gpu",
+        "vendor_id": 4318,
+        "device_id": 12056,
+        "driver_version": 2479800320,
+        "api_version": 4211013,
+        "count": 398,
+        "record_count": 1,
+        "state_width": 15,
+        "function_count": 7,
+        "family_count": 1,
+        "mutation_steps": 5,
+        "action_steps": 77,
+        "epochs_requested": 1,
+        "committed_instance_epochs": 398,
+        "minimum_final_epoch": 1,
+        "maximum_final_epoch": 1,
+        "reverse_targets": false,
+        "status": "ok",
+        "failed_lanes": 0,
+        "previously_failed_lanes": 0,
+        "status_counts": [
+          398,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "execution_seconds": 0.0028227,
+        "total_seconds": 2.7018637,
+        "timing_scope": "sum of host submit-to-fence waits; excludes setup, command recording and readback",
+        "validation_enabled": true,
+        "validation_errors": 0,
+        "validation_warnings": 0,
+        "upload_bytes": 81476,
+        "download_bytes": 71640,
+        "dispatches": 1,
+        "submissions": 1,
+        "all_buffers_device_local": true,
+        "per_epoch_host_reads": 0,
+        "per_epoch_host_uploads": 0,
+        "transfer_counter_scope": "explicit host/device buffer uploads and readbacks; not CPU memory accesses or device bus traffic",
+        "instance_model": "independent substrate per lane",
+        "failure_policy": "rollback full epoch; retain first failure and freeze instance",
+        "checkpoint_format": "DWRD0002"
+      },
+      "rejected_actual_descent_count": 12,
+      "accepted_actual_increase_count": 19,
+      "max_accepted_actual_increase": 1.4580724652503822e-08,
+      "max_rejected_actual_descent_magnitude": 3.4800899947625625e-12,
+      "rejected_ideal_feasible_descent_count": 112,
+      "max_candidate_species_error_vs_ideal_projection": 3.1397885137379236e-05,
+      "max_candidate_negative_species": 4.4315920496248966e-07
+    },
+    "common_scale_small": {
+      "count": 598,
+      "cpu_gpu_checkpoint_byte_identical": true,
+      "statuses": [
+        0
+      ],
+      "vulkan_receipt": {
+        "profile": "DWI-RESIDENT-0.2",
+        "backend": "vulkan",
+        "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+        "device_type": "discrete_gpu",
+        "vendor_id": 4318,
+        "device_id": 12056,
+        "driver_version": 2479800320,
+        "api_version": 4211013,
+        "count": 598,
+        "record_count": 1,
+        "state_width": 19,
+        "function_count": 6,
+        "family_count": 1,
+        "mutation_steps": 5,
+        "action_steps": 35,
+        "epochs_requested": 1,
+        "committed_instance_epochs": 598,
+        "minimum_final_epoch": 1,
+        "maximum_final_epoch": 1,
+        "reverse_targets": false,
+        "status": "ok",
+        "failed_lanes": 0,
+        "previously_failed_lanes": 0,
+        "status_counts": [
+          598,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "execution_seconds": 0.002791,
+        "total_seconds": 1.0878038,
+        "timing_scope": "sum of host submit-to-fence waits; excludes setup, command recording and readback",
+        "validation_enabled": true,
+        "validation_errors": 0,
+        "validation_warnings": 0,
+        "upload_bytes": 124008,
+        "download_bytes": 117208,
+        "dispatches": 1,
+        "submissions": 1,
+        "all_buffers_device_local": true,
+        "per_epoch_host_reads": 0,
+        "per_epoch_host_uploads": 0,
+        "transfer_counter_scope": "explicit host/device buffer uploads and readbacks; not CPU memory accesses or device bus traffic",
+        "instance_model": "independent substrate per lane",
+        "failure_policy": "rollback full epoch; retain first failure and freeze instance",
+        "checkpoint_format": "DWRD0002"
+      },
+      "common_concentration_multiplier": 0.0009765625,
+      "normalized_output_bit_mismatches": 0,
+      "physical_output_rescaled_bit_mismatches": 0
+    },
+    "common_scale_large": {
+      "count": 598,
+      "cpu_gpu_checkpoint_byte_identical": true,
+      "statuses": [
+        0
+      ],
+      "vulkan_receipt": {
+        "profile": "DWI-RESIDENT-0.2",
+        "backend": "vulkan",
+        "device": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+        "device_type": "discrete_gpu",
+        "vendor_id": 4318,
+        "device_id": 12056,
+        "driver_version": 2479800320,
+        "api_version": 4211013,
+        "count": 598,
+        "record_count": 1,
+        "state_width": 19,
+        "function_count": 6,
+        "family_count": 1,
+        "mutation_steps": 5,
+        "action_steps": 35,
+        "epochs_requested": 1,
+        "committed_instance_epochs": 598,
+        "minimum_final_epoch": 1,
+        "maximum_final_epoch": 1,
+        "reverse_targets": false,
+        "status": "ok",
+        "failed_lanes": 0,
+        "previously_failed_lanes": 0,
+        "status_counts": [
+          598,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "execution_seconds": 0.0028198,
+        "total_seconds": 1.2705059,
+        "timing_scope": "sum of host submit-to-fence waits; excludes setup, command recording and readback",
+        "validation_enabled": true,
+        "validation_errors": 0,
+        "validation_warnings": 0,
+        "upload_bytes": 124008,
+        "download_bytes": 117208,
+        "dispatches": 1,
+        "submissions": 1,
+        "all_buffers_device_local": true,
+        "per_epoch_host_reads": 0,
+        "per_epoch_host_uploads": 0,
+        "transfer_counter_scope": "explicit host/device buffer uploads and readbacks; not CPU memory accesses or device bus traffic",
+        "instance_model": "independent substrate per lane",
+        "failure_policy": "rollback full epoch; retain first failure and freeze instance",
+        "checkpoint_format": "DWRD0002"
+      },
+      "common_concentration_multiplier": 1024.0,
+      "normalized_output_bit_mismatches": 0,
+      "physical_output_rescaled_bit_mismatches": 0
+    }
+  },
+  "function_hashes": {
+    "enzyme_domain_sdf": "aaa53180da9bd79e362b09e8758cd3788ace171426fab6d8f223ba1a766543ec",
+    "enzyme_project_evaluate": "a773b4efbb22a21569bb7d55e76e000b2b61171f11598b7df6d707a4d9cd97c0",
+    "enzyme_accept": "014fa0e4e4311e9147fbbd46ea64f0254031b768ff54fce7fad32a9ae3dd773d",
+    "enzyme_witness_gap": "95ccf6d305c135906033cde28ab8830ffe444c5c51d25f0e275e80cceec9a52b"
+  },
+  "rational_oracle_anchor_checks": [
+    {
+      "observations": [
+        1,
+        10,
+        0,
+        0
+      ],
+      "solution": [
+        "1",
+        "10",
+        "0",
+        "0"
+      ],
+      "squared_distance": "0"
+    },
+    {
+      "observations": [
+        0,
+        9,
+        1,
+        0
+      ],
+      "solution": [
+        "0",
+        "9",
+        "1",
+        "0"
+      ],
+      "squared_distance": "0"
+    },
+    {
+      "observations": [
+        0,
+        0,
+        1,
+        9
+      ],
+      "solution": [
+        "0",
+        "0",
+        "1",
+        "9"
+      ],
+      "squared_distance": "0"
+    },
+    {
+      "observations": [
+        1,
+        0,
+        0,
+        10
+      ],
+      "solution": [
+        "1",
+        "0",
+        "0",
+        "10"
+      ],
+      "squared_distance": "0"
+    },
+    {
+      "observations": [
+        -1,
+        4,
+        2,
+        8
+      ],
+      "solution": [
+        "0",
+        "5/2",
+        "1",
+        "13/2"
+      ],
+      "squared_distance": "13/2"
+    },
+    {
+      "observations": [
+        100,
+        -100,
+        50,
+        80
+      ],
+      "solution": [
+        "1",
+        "0",
+        "0",
+        "10"
+      ],
+      "squared_distance": "27201"
+    }
+  ],
+  "model_encoding_provenance": [
+    {
+      "group": "domain_projection_gap",
+      "model_object_equal_to_explicit_utf8_original": false,
+      "original_model_file_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "utf8_recompiled_program_byte_identical": true,
+      "utf8_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "record_source_slots_equal": true
+    },
+    {
+      "group": "acceptance_cancellation",
+      "model_object_equal_to_explicit_utf8_original": false,
+      "original_model_file_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "utf8_recompiled_program_byte_identical": true,
+      "utf8_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "record_source_slots_equal": true
+    },
+    {
+      "group": "convergence_fast",
+      "model_object_equal_to_explicit_utf8_original": false,
+      "original_model_file_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "utf8_recompiled_program_byte_identical": true,
+      "utf8_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "record_source_slots_equal": true
+    },
+    {
+      "group": "convergence_cautious",
+      "model_object_equal_to_explicit_utf8_original": false,
+      "original_model_file_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "utf8_recompiled_program_byte_identical": true,
+      "utf8_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "record_source_slots_equal": true
+    },
+    {
+      "group": "boundary_next_step",
+      "model_object_equal_to_explicit_utf8_original": true,
+      "original_model_file_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "utf8_recompiled_program_byte_identical": true,
+      "utf8_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "record_source_slots_equal": true
+    },
+    {
+      "group": "common_scale_small",
+      "model_object_equal_to_explicit_utf8_original": true,
+      "original_model_file_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "utf8_recompiled_program_byte_identical": true,
+      "utf8_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "record_source_slots_equal": true
+    },
+    {
+      "group": "common_scale_large",
+      "model_object_equal_to_explicit_utf8_original": true,
+      "original_model_file_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "utf8_recompiled_program_byte_identical": true,
+      "utf8_model_semantic_sha256": "94f67d3e323c0427548cd1b7485d4f99dd4e33c7164b2f74b0b96d83c405ebe9",
+      "record_source_slots_equal": true
+    }
+  ],
+  "generator_sha256_at_end": "2875592287d4905881422da819e55068cab9b4b2b20e985a1b673168a6419911",
+  "generator_unchanged_during_component_campaign": true,
+  "coefficient_metric_audit": {
+    "coefficient_words": {
+      "sqrt_5_over_2": {
+        "fp32": 1.5811388492584229,
+        "word_hex": "0x3fca62c2"
+      },
+      "sqrt_2": {
+        "fp32": 1.4142135381698608,
+        "word_hex": "0x3fb504f3"
+      },
+      "sqrt_2_over_5": {
+        "fp32": 0.6324555277824402,
+        "word_hex": "0x3f21e89b"
+      },
+      "one_over_sqrt_2_vertex_factor": {
+        "fp32": 0.7071067690849304,
+        "word_hex": "0x3f3504f3"
+      }
+    },
+    "rounded_forward_T": [
+      [
+        1.5811388492584229,
+        0
+      ],
+      [
+        0.7071067690849304,
+        1.4142135381698608
+      ]
+    ],
+    "rounded_forward_T_transpose_T_minus_G": [
+      [
+        4.3519978731865194e-08,
+        -3.422854177870249e-08
+      ],
+      [
+        -3.422854177870249e-08,
+        -6.845708355740499e-08
+      ]
+    ],
+    "runtime_target_nominal_T": [
+      [
+        1.5811388492584229,
+        0
+      ],
+      [
+        0.7071067932881648,
+        1.4142135865763297
+      ]
+    ],
+    "runtime_target_nominal_T_transpose_T_minus_G": [
+      [
+        7.77485209546569e-08,
+        3.422854288892552e-08
+      ],
+      [
+        3.422854288892552e-08,
+        6.845708577785103e-08
+      ]
+    ],
+    "decoded_species_D_transpose_D_minus_identity": [
+      [
+        -1.3443587576489335e-08,
+        0.0
+      ],
+      [
+        0.0,
+        -3.422854177870249e-08
+      ]
+    ],
+    "maximum_absolute_decoder_metric_defect": 3.422854177870249e-08,
+    "scope": "Coefficient-only real-number calculation; executed target uses ordered FP32 division by sqrt2, so total error also includes division and all operation rounding. Polygon vertices and edge constants are separately packed from host binary64 calculations. No coefficient matrix is substituted for the exact independent scientific metric."
+  },
+  "gap_theorem_audit": {
+    "cases": 270,
+    "exact_rational_feasible_gap_inequalities_passed": true,
+    "fp32_estimate_understates_exact_feasible_objective_excess_count": 110,
+    "maximum_gap_estimate_shortfall": 8.688075469184777e-07,
+    "max_reference_feasibility_correction_distance": 5.5739785428359e-07,
+    "scope": "Exact feasible copies exist only in the independent oracle to satisfy theorem hypotheses. Native checkpoint states and returned species are preserved unchanged. Numerical estimate lacks a directed-rounding allowance and must not be promoted to a rigorous certificate."
+  },
+  "source_input_rounding": {
+    "domain_projection_gap": {
+      "max_absolute_source_state_to_fp32_rounding": 9.531593718747899e-07,
+      "state_words_rounded": 2967
+    },
+    "acceptance_cancellation": {
+      "max_absolute_source_state_to_fp32_rounding": 0.0009507879549346399,
+      "state_words_rounded": 8000
+    },
+    "convergence_fast": {
+      "max_absolute_source_state_to_fp32_rounding": 4.7335778674550966e-07,
+      "state_words_rounded": 515
+    },
+    "convergence_cautious": {
+      "max_absolute_source_state_to_fp32_rounding": 4.7335778674550966e-07,
+      "state_words_rounded": 515
+    },
+    "boundary_next_step": {
+      "max_absolute_source_state_to_fp32_rounding": 0.00010665032868928392,
+      "state_words_rounded": 736
+    },
+    "common_scale_small": {
+      "max_absolute_source_state_to_fp32_rounding": 0.0,
+      "state_words_rounded": 0
+    },
+    "common_scale_large": {
+      "max_absolute_source_state_to_fp32_rounding": 0.0,
+      "state_words_rounded": 0
+    }
+  },
+  "total_component_cases": 3486,
+  "total_committed_instance_epochs_per_backend": 37776,
+  "limitations": [
+    "This is finite equal-weight concentration reconciliation under two supplied conserved pools, not kinetic evolution, experimental assay validation or biological prediction.",
+    "Direct component calls preserve actual numerical body definitions but bypass the source cycle, carrier placement/field and adaptation; root campaign separately checks complete integration.",
+    "The exact-arithmetic SDF and projection law is approximated by independently rounded constants and ordered FP32 operations. Slight negative species and pool residuals are retained in raw checkpoints.",
+    "The stable acceptance formula removes subtraction of large common objective terms but does not guarantee monotonicity of the exact scientific objective in FP32. Focused boundary fixtures show accepted tiny increases and rejected true decreases.",
+    "A rounded gap estimate is not a certified bound. Independent rational oracle and feasibility checks are required before an accuracy claim.",
+    "Power-of-two common concentration rescaling establishes covariance for those factors and these inputs; arbitrary scales and all admissible pool ratios were not exhaustively audited."
+  ]
+}

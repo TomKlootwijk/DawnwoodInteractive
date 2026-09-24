@@ -1,6 +1,6 @@
 # Literal application contract
 
-The target is an application whose acting definitions belong to the circulating SDF operator field. An external application algorithm that consumes distance values does not, by itself, implement that target. This document connects the primary sources, the original application and the conditions for a numerical implementation. It records an integration contract, not a claim that the numerical work is complete.
+The target is an application whose acting definitions belong to the circulating SDF operator field. An external application algorithm that consumes distance values does not, by itself, implement that target. This document connects the primary sources, the original application and the conditions for a numerical implementation. The bounded source cycle and a resident enzyme-pool application now implement the declared relationships; open numerical choices and broader source claims remain explicit.
 
 Page references below are physical PDF pages. The sources are the 24-page [original discussion](../double-slit-theory.pdf), the 18-page [Unified v0.2 definition](../Dawnwood_Interactive_Unified_v0.2.pdf), and the 20-page [early formalization](../Dawnwood_Interactive_Formalization.pdf). The original application is preserved in [the source archive](../Dawnwood_Interactive_Unified_v0.2.zip) and its restored [workbench directory](../source_workbench/Dawnwood_Interactive_v0.2/README.md).
 
@@ -8,14 +8,16 @@ The bounded [cycle_v0.1 numerical edition](SOURCE_CYCLE_BINDING.md) now executes
 these eight-stage core relationships through resident definitions. Its
 [source audit](../output/source_cycle_2026-09-24/SOURCE_FIDELITY_AUDIT.md) and
 [recorded campaign](../output/source_cycle_2026-09-24/REPORT.md) identify the
-implemented relationships and explicit limits. Useful domain specialization,
-unrestricted authoring and optional output packing remain separate requirements.
+implemented relationships and explicit limits. The [resident enzyme specialization](RESIDENT_ENZYME_BINDING.md)
+now adds an independently checked consistency task inside that cycle.
+Unrestricted authoring, optional output packing and broader application claims
+remain separate requirements.
 
 ## What the source actually requires
 
 The [numerical integration ledger](SOURCE_NUMERICAL_INTEGRATION.md) tracks the
-implementation against this contract. It now separates verified components,
-the bounded complete-cycle edition, and remaining application requirements.
+implementation against this contract. It separates earlier components, the
+bounded complete-cycle edition, the enzyme application and remaining requirements.
 
 The author's corrections in the original discussion determine the architectural scope. On p12 the author places rasterization, raymarching, raytracing and square output fields outside the core. On p14 the author asks about self-referential computing with operators "defined and packed as SDF operations": the double pinion holds them on the Klein-bottle surface while one-bit jitter acts on the operators in the LUT/BST at interval PSI. Graphics is optional downstream observation.
 
@@ -88,11 +90,11 @@ The [D1 profile](DOMAIN_KERNEL.md) adds a fixed cyclic relaxed projection of fou
 
 However, the application procedure is still the native projector. [Protected law evaluation](../Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/include/numeric_types.inc#L157) bypasses ordinary body/anchor evaluation and returns domain distance directly; those law records are outside the core route. A field-controlled scalar does not encode the application's selection, composition and action as situated executable definitions. Verified constraints and GPU saturation establish results for D1, not completion of the source application contract.
 
-Immutable scientific facts are not the defect. Conservation laws and source data can remain protected while computational strategies change. The missing connection is the application program itself: its acting procedures must be represented and executed through the common definition, rather than hidden in a fixed application-specific loop.
+Immutable scientific facts are not the defect. Conservation laws and source data can remain protected while computational strategies change. The connection missing from D1 is the application program itself: its acting procedures must be represented and executed through the common definition. The later resident enzyme application supplies that connection with explicit typed roles interpreted by the generic runtime; it does not retroactively change D1's scope.
 
 ## Acceptance conditions for numerical integration
 
-These conditions make the next implementation reviewable without claiming that every interpreter detail must be mutable:
+These conditions make each numerical edition reviewable without requiring every interpreter detail to be mutable:
 
 1. **One authoritative application model.** The catalogue, body expressions, field definitions, anchors and declared cycle produce the executed application. A CPU or GPU evaluator may provide stable primitives, but application behavior must not be duplicated in an independent solver keyed to the application's name.
 2. **Explicit numerical bindings.** Every executed term has a typed meaning and versioned binding. Unsupported expressions fail visibly. Missing source laws remain identified choices rather than receiving silent substitutes. Finite record sizes and supported operations are declared implementation limits.
@@ -102,8 +104,16 @@ These conditions make the next implementation reviewable without claiming that e
 6. **Whole-state continuation and device fidelity.** Checkpoints preserve live definitions, their numerical state, cycle and required history. Device packing preserves those semantics within declared error limits. CPU/GPU agreement and hardware measurements assess this executed profile, separately from expression-graph identity.
 7. **Application-level evidence.** A source-native conditional/body-change example should show which resident definition acted before and after change. A useful domain application must additionally produce independently checkable domain outputs. Throughput alone satisfies neither condition.
 
-For a biochemical specialization, a concrete first target could be enzyme-pool consistency and a reaction-feasibility witness. This remains a proposed application. It would require sourced species and reaction definitions, concentration units and scales, initial observations, conservation constraints, and a clear distinction between feasibility, kinetics and thermodynamic direction. The [existing domain field documentation](DOMAIN_FIELDS.md) supplies authored field examples, not the complete resident application.
+## Current resident domain application
 
-The application would need situated definitions for proposing a candidate, evaluating relevant laws, selecting the next action, accepting or rejecting a proposal, returning history and producing a witness. A resident metarule could change proposal composition or search behavior while preserving authoritative scientific laws. The carrier coordinates locate an operator; concentration coordinates describe its domain operands. Their relation must be explicitly encoded through the same acting record and cycle rather than treating them as interchangeable units. Distance to a conservation surface alone does not establish reaction kinetics, equilibrium or biological usefulness.
+[DWI-ENZYME-0.1](RESIDENT_ENZYME_BINDING.md) is a bounded implementation of enzyme-pool consistency: it reconciles four supplied concentrations under the two conserved totals of a closed, fixed-volume `E + S ⇌ ES → E + P` model. The [grounding document](ENZYME_POOL_DOMAIN_GROUNDING.md) states the source assumptions, species order, units and induced concentration metric. The task produces a composition witness under those assumptions; it is not a reaction-rate, equilibrium or thermodynamic-direction calculation.
 
-Success would mean a trace from sourced inputs through those current resident definitions to an independently checked result, including observable effects of legitimate operator and metarule edits. The original symbolic application preserves the relationships needed to express that work. D1 demonstrates a narrower numerical task. Neither currently establishes the complete biochemical application described here.
+The current `blend` record has additional resident roles for proposing a candidate, evaluating the intrinsic conservation-plane SDF, projecting/evaluating a proposal, accepting or rejecting it and returning a four-species witness. Its two compatible body families share identical scientific-law function handles while changing the proposal role. The preceding resident mutator uses prior domain results to choose the next family and still changes its own subsequent definition. All original eight source stages remain active, and the complete current bank, records, history and 64-word state are checkpointed.
+
+The operator's field slot remains its Klein carrier disk. The chemical SDF is a typed body role with concentration-space operands. This is an explicit situated distance-operator specialization; it does not claim that concentration coordinates are Klein chart coordinates, or that the original `Math_blend` symbol uniquely specified enzyme chemistry. Carrier placement and field affect the computational proposal while the scientific laws keep their meanings.
+
+The [application campaign](../output/resident_enzyme_2026-09-24/REPORT.md) records 129 synthetic observations, healthy execution, feasibility within `1e-5` normalized tolerance, exact CPU/GPU checkpoint agreement, exact continuation and reverse mutation-order agreement. Interventions in each of the eight source stages and in carrier field/placement alter accepted concentrations in 108/129 cases. Freezing the mutator's self-change affects the accepted domain state in 81/129 cases by epoch 2. These are numerical acting-definition effects, not only changed graph identifiers.
+
+The extra chemical-to-controller feedback path is both declared and observed with delay: ablating it leaves core waves unchanged through 128 epochs, but changes waves in 45/129 cases at epoch 2,048. Accepted concentrations remain unchanged in that long comparison because the sampled recurrence has already plateaued. The observation supports that conditional coupling, not a claim that every feedback perturbation changes every output.
+
+Against an independent constrained optimum, maximum species error after 128 epochs is `4.337e-4` normalized units. FP32 boundary effects leave unresolved gaps and can reverse very small true objective differences. The implementation therefore reports approximate candidates and estimated gaps; it does not guarantee exact nearest solutions or monotonic real-arithmetic improvement. Synthetic consistency evidence also does not establish empirical biochemical validity, a speed advantage, unrestricted program synthesis, general intelligence or physical quantum computation. Optional device packing and wider source-language support remain open.

@@ -1,0 +1,2702 @@
+[
+  {
+    "group": "convergence_fast",
+    "index": 0,
+    "exact_feasible_reference_objective_excess": 3.7682385525337263e-13,
+    "exact_feasible_reference_gap_bound": 8.795031201751736e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 3.7682385525337263e-13,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0029656417858115866
+  },
+  {
+    "group": "convergence_fast",
+    "index": 1,
+    "exact_feasible_reference_objective_excess": 6.622279080620052e-13,
+    "exact_feasible_reference_gap_bound": 2.21723841576725e-05,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 6.622279080620052e-13,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.004708756115756315
+  },
+  {
+    "group": "convergence_fast",
+    "index": 2,
+    "exact_feasible_reference_objective_excess": 2.9033929699479256e-13,
+    "exact_feasible_reference_gap_bound": 7.034439191273374e-06,
+    "reported_fp32_gap": 6.22510469838744e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0026522517209483292
+  },
+  {
+    "group": "convergence_fast",
+    "index": 3,
+    "exact_feasible_reference_objective_excess": 3.859475488854514e-07,
+    "exact_feasible_reference_gap_bound": 0.0006137748972554608,
+    "reported_fp32_gap": 0.0006131827831268311,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 3.8998410031865496e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0247744807666167
+  },
+  {
+    "group": "convergence_fast",
+    "index": 4,
+    "exact_feasible_reference_objective_excess": 9.371646184752243e-16,
+    "exact_feasible_reference_gap_bound": 3.3394279537249614e-07,
+    "reported_fp32_gap": 6.936725185369141e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0005778778377585492
+  },
+  {
+    "group": "convergence_fast",
+    "index": 5,
+    "exact_feasible_reference_objective_excess": 8.728031505209316e-14,
+    "exact_feasible_reference_gap_bound": 3.402372572458428e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 8.728031505209316e-14,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0018445521332991453
+  },
+  {
+    "group": "convergence_fast",
+    "index": 6,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_fast",
+    "index": 7,
+    "exact_feasible_reference_objective_excess": 5.888417714248106e-13,
+    "exact_feasible_reference_gap_bound": 8.503209038394287e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 5.888417714248106e-13,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0029160262410332124
+  },
+  {
+    "group": "convergence_fast",
+    "index": 8,
+    "exact_feasible_reference_objective_excess": 4.132896560695777e-12,
+    "exact_feasible_reference_gap_bound": 4.902692077521478e-05,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 4.132896560695777e-12,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.007001922648474116
+  },
+  {
+    "group": "convergence_fast",
+    "index": 9,
+    "exact_feasible_reference_objective_excess": 5.073811935885271e-08,
+    "exact_feasible_reference_gap_bound": 5.073811937191199e-08,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 5.073811935885271e-08,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0002252512361162797
+  },
+  {
+    "group": "convergence_fast",
+    "index": 10,
+    "exact_feasible_reference_objective_excess": 1.2110829691609461e-14,
+    "exact_feasible_reference_gap_bound": 2.7666942458302506e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 1.2110829691609461e-14,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0016633382836423415
+  },
+  {
+    "group": "convergence_fast",
+    "index": 11,
+    "exact_feasible_reference_objective_excess": 4.551994555638681e-13,
+    "exact_feasible_reference_gap_bound": 3.6769202229238243e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 4.551994555638681e-13,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0019175297189154134
+  },
+  {
+    "group": "convergence_fast",
+    "index": 12,
+    "exact_feasible_reference_objective_excess": 3.258038239505537e-08,
+    "exact_feasible_reference_gap_bound": 3.258038587157693e-08,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 3.258038239505537e-08,
+    "reference_feasibility_correction_distance": 1.7881020557077998e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.00018050037637516695
+  },
+  {
+    "group": "convergence_fast",
+    "index": 13,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 2.2673781219676736e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_fast",
+    "index": 14,
+    "exact_feasible_reference_objective_excess": 6.116309398807154e-07,
+    "exact_feasible_reference_gap_bound": 6.11630943357237e-07,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 6.116309398807154e-07,
+    "reference_feasibility_correction_distance": 1.7881020557077998e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0007820683751164197
+  },
+  {
+    "group": "convergence_fast",
+    "index": 15,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 2.2673781219676736e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_fast",
+    "index": 16,
+    "exact_feasible_reference_objective_excess": 2.1569332406960365e-13,
+    "exact_feasible_reference_gap_bound": 3.781975563746232e-06,
+    "reported_fp32_gap": 7.7660552051384e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0019447302033305885
+  },
+  {
+    "group": "convergence_fast",
+    "index": 17,
+    "exact_feasible_reference_objective_excess": 5.4544904428413665e-15,
+    "exact_feasible_reference_gap_bound": 1.21808517176101e-07,
+    "reported_fp32_gap": 3.175135589117417e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.00034901076942710663
+  },
+  {
+    "group": "convergence_fast",
+    "index": 18,
+    "exact_feasible_reference_objective_excess": 4.228889430023999e-09,
+    "exact_feasible_reference_gap_bound": 4.228889443083282e-09,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 4.228889430023999e-09,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 6.502991191046842e-05
+  },
+  {
+    "group": "convergence_fast",
+    "index": 19,
+    "exact_feasible_reference_objective_excess": 2.6046380716039987e-13,
+    "exact_feasible_reference_gap_bound": 9.766439309543981e-06,
+    "reported_fp32_gap": 4.562497906590579e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0031251302868110925
+  },
+  {
+    "group": "convergence_fast",
+    "index": 20,
+    "exact_feasible_reference_objective_excess": 4.0465569887480067e-14,
+    "exact_feasible_reference_gap_bound": 2.269405195988585e-06,
+    "reported_fp32_gap": 5.379467893362744e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0015064545117555277
+  },
+  {
+    "group": "convergence_fast",
+    "index": 21,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 2.2673781219676736e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_fast",
+    "index": 22,
+    "exact_feasible_reference_objective_excess": 9.345207263405349e-14,
+    "exact_feasible_reference_gap_bound": 6.731733387688692e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 9.345207263405349e-14,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0025945584186309414
+  },
+  {
+    "group": "convergence_fast",
+    "index": 23,
+    "exact_feasible_reference_objective_excess": 2.880411249576532e-16,
+    "exact_feasible_reference_gap_bound": 4.4310934328378113e-07,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 2.880411249576532e-16,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0006656645876744392
+  },
+  {
+    "group": "convergence_fast",
+    "index": 24,
+    "exact_feasible_reference_objective_excess": 5.577870932899377e-12,
+    "exact_feasible_reference_gap_bound": 4.306491690125898e-05,
+    "reported_fp32_gap": 4.3473988625919446e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.006562386524829132
+  },
+  {
+    "group": "convergence_fast",
+    "index": 25,
+    "exact_feasible_reference_objective_excess": 5.965085774620455e-08,
+    "exact_feasible_reference_gap_bound": 5.965085775926382e-08,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 5.965085774620455e-08,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.00024423525085307365
+  },
+  {
+    "group": "convergence_fast",
+    "index": 26,
+    "exact_feasible_reference_objective_excess": 7.371624169215278e-14,
+    "exact_feasible_reference_gap_bound": 4.906209215779986e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 7.371624169215278e-14,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0022149964369677856
+  },
+  {
+    "group": "convergence_fast",
+    "index": 27,
+    "exact_feasible_reference_objective_excess": 4.4175587576398836e-13,
+    "exact_feasible_reference_gap_bound": 9.899071341792452e-06,
+    "reported_fp32_gap": 7.101880783011438e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.003146278967573036
+  },
+  {
+    "group": "convergence_fast",
+    "index": 28,
+    "exact_feasible_reference_objective_excess": 1.1785659847335498e-14,
+    "exact_feasible_reference_gap_bound": 2.4775406519856645e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 1.1785659847335498e-14,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0015740205373455788
+  },
+  {
+    "group": "convergence_fast",
+    "index": 29,
+    "exact_feasible_reference_objective_excess": 3.4818030941496534e-12,
+    "exact_feasible_reference_gap_bound": 4.122403934358171e-06,
+    "reported_fp32_gap": 2.1069226932013407e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.002030370393390864
+  },
+  {
+    "group": "convergence_fast",
+    "index": 30,
+    "exact_feasible_reference_objective_excess": 4.643610389122142e-13,
+    "exact_feasible_reference_gap_bound": 9.519854303285103e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 4.643610389122142e-13,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0030854261137296906
+  },
+  {
+    "group": "convergence_fast",
+    "index": 31,
+    "exact_feasible_reference_objective_excess": 3.002446494756327e-15,
+    "exact_feasible_reference_gap_bound": 1.0310738785518998e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 3.002446494756327e-15,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.001015418080670174
+  },
+  {
+    "group": "convergence_fast",
+    "index": 32,
+    "exact_feasible_reference_objective_excess": 6.033389110540114e-14,
+    "exact_feasible_reference_gap_bound": 5.2780299956079365e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 6.033389110540114e-14,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0022973963514395894
+  },
+  {
+    "group": "convergence_fast",
+    "index": 33,
+    "exact_feasible_reference_objective_excess": 1.958612261473798e-12,
+    "exact_feasible_reference_gap_bound": 3.472020855817114e-05,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 1.958612261473798e-12,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.005892385642349891
+  },
+  {
+    "group": "convergence_fast",
+    "index": 34,
+    "exact_feasible_reference_objective_excess": 9.163190000428242e-14,
+    "exact_feasible_reference_gap_bound": 5.515519601918664e-06,
+    "reported_fp32_gap": 8.68826737132622e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.00234851433930446
+  },
+  {
+    "group": "convergence_fast",
+    "index": 35,
+    "exact_feasible_reference_objective_excess": 2.767330774559434e-08,
+    "exact_feasible_reference_gap_bound": 0.0004688685196384067,
+    "reported_fp32_gap": 0.0004673600196838379,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 3.186592353260375e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.021653372015425373
+  },
+  {
+    "group": "convergence_fast",
+    "index": 36,
+    "exact_feasible_reference_objective_excess": 1.5508425209546368e-13,
+    "exact_feasible_reference_gap_bound": 5.511046625302239e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 1.5508425209546368e-13,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0023475618469599984
+  },
+  {
+    "group": "convergence_fast",
+    "index": 37,
+    "exact_feasible_reference_objective_excess": 4.1529528295323305e-14,
+    "exact_feasible_reference_gap_bound": 4.434816850332937e-07,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 4.1529528295323305e-14,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0006659442056458587
+  },
+  {
+    "group": "convergence_fast",
+    "index": 38,
+    "exact_feasible_reference_objective_excess": 6.36151562966214e-14,
+    "exact_feasible_reference_gap_bound": 5.291423803676574e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 6.36151562966214e-14,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0023003095017141875
+  },
+  {
+    "group": "convergence_fast",
+    "index": 39,
+    "exact_feasible_reference_objective_excess": 9.129121851557603e-15,
+    "exact_feasible_reference_gap_bound": 5.62396510054055e-07,
+    "reported_fp32_gap": 1.4033571460458916e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.000749931003529028
+  },
+  {
+    "group": "convergence_fast",
+    "index": 40,
+    "exact_feasible_reference_objective_excess": 1.8494990880340253e-08,
+    "exact_feasible_reference_gap_bound": 0.00015620187223419464,
+    "reported_fp32_gap": 0.000156402587890625,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 2.4520301204698085e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.012498074741102913
+  },
+  {
+    "group": "convergence_fast",
+    "index": 41,
+    "exact_feasible_reference_objective_excess": 5.181719363275146e-13,
+    "exact_feasible_reference_gap_bound": 1.4321592033892285e-05,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 5.181719363275146e-13,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.003784387933853014
+  },
+  {
+    "group": "convergence_fast",
+    "index": 42,
+    "exact_feasible_reference_objective_excess": 7.521070595961063e-13,
+    "exact_feasible_reference_gap_bound": 1.1643672968655007e-05,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 7.521070595961063e-13,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0034122826624790343
+  },
+  {
+    "group": "convergence_fast",
+    "index": 43,
+    "exact_feasible_reference_objective_excess": 7.525669639022634e-14,
+    "exact_feasible_reference_gap_bound": 4.290463341699808e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 7.525669639022634e-14,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0020713433664411624
+  },
+  {
+    "group": "convergence_fast",
+    "index": 44,
+    "exact_feasible_reference_objective_excess": 8.050751301829731e-13,
+    "exact_feasible_reference_gap_bound": 1.561647696429061e-05,
+    "reported_fp32_gap": 1.6598351066932082e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.003951768839936189
+  },
+  {
+    "group": "convergence_fast",
+    "index": 45,
+    "exact_feasible_reference_objective_excess": 1.3600792080313082e-13,
+    "exact_feasible_reference_gap_bound": 7.738573404581442e-07,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 1.3600792080313082e-13,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0008796916166806094
+  },
+  {
+    "group": "convergence_fast",
+    "index": 46,
+    "exact_feasible_reference_objective_excess": 8.931887829967392e-13,
+    "exact_feasible_reference_gap_bound": 8.399625644451233e-06,
+    "reported_fp32_gap": 8.475950380670838e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.002898210766050536
+  },
+  {
+    "group": "convergence_fast",
+    "index": 47,
+    "exact_feasible_reference_objective_excess": 1.947122184827624e-15,
+    "exact_feasible_reference_gap_bound": 1.0464983435119347e-06,
+    "reported_fp32_gap": 2.8271708742977353e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0010229850162695126
+  },
+  {
+    "group": "convergence_fast",
+    "index": 48,
+    "exact_feasible_reference_objective_excess": 1.605477305046087e-14,
+    "exact_feasible_reference_gap_bound": 1.8034141028253464e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 1.605477305046087e-14,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0013429125447419674
+  },
+  {
+    "group": "convergence_fast",
+    "index": 49,
+    "exact_feasible_reference_objective_excess": 3.2715533939732975e-09,
+    "exact_feasible_reference_gap_bound": 2.5201843995864077e-05,
+    "reported_fp32_gap": 2.5212764739990234e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 3.166048163786753e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.005020143822229008
+  },
+  {
+    "group": "convergence_fast",
+    "index": 50,
+    "exact_feasible_reference_objective_excess": 2.4979529459243833e-13,
+    "exact_feasible_reference_gap_bound": 1.1749823307176131e-05,
+    "reported_fp32_gap": 1.6815141862025484e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.003427801526806377
+  },
+  {
+    "group": "convergence_fast",
+    "index": 51,
+    "exact_feasible_reference_objective_excess": 9.172378425108085e-13,
+    "exact_feasible_reference_gap_bound": 1.8727172304760275e-05,
+    "reported_fp32_gap": 1.8647959223017097e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.004327490300943524
+  },
+  {
+    "group": "convergence_fast",
+    "index": 52,
+    "exact_feasible_reference_objective_excess": 1.8924905818134615e-13,
+    "exact_feasible_reference_gap_bound": 1.558176270775666e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 1.8924905818134615e-13,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0012482693101953865
+  },
+  {
+    "group": "convergence_fast",
+    "index": 53,
+    "exact_feasible_reference_objective_excess": 3.42928505889431e-13,
+    "exact_feasible_reference_gap_bound": 9.548177219634344e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 3.42928505889431e-13,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0030900124950612
+  },
+  {
+    "group": "convergence_fast",
+    "index": 54,
+    "exact_feasible_reference_objective_excess": 4.5283711970457594e-13,
+    "exact_feasible_reference_gap_bound": 6.0128844563795555e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 4.5283711970457594e-13,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.002452118361005348
+  },
+  {
+    "group": "convergence_fast",
+    "index": 55,
+    "exact_feasible_reference_objective_excess": 8.128682284923085e-08,
+    "exact_feasible_reference_gap_bound": 0.0008434934239589685,
+    "reported_fp32_gap": 0.0008401870727539062,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 4.865635198197573e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.029042958250821635
+  },
+  {
+    "group": "convergence_fast",
+    "index": 56,
+    "exact_feasible_reference_objective_excess": 1.4503955178555707e-13,
+    "exact_feasible_reference_gap_bound": 5.903251722815207e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 1.4503955178555707e-13,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0024296608246451206
+  },
+  {
+    "group": "convergence_fast",
+    "index": 57,
+    "exact_feasible_reference_objective_excess": 9.66995809876276e-13,
+    "exact_feasible_reference_gap_bound": 2.4789954442331077e-05,
+    "reported_fp32_gap": 9.015602699946612e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.00497895113877723
+  },
+  {
+    "group": "convergence_fast",
+    "index": 58,
+    "exact_feasible_reference_objective_excess": 3.2652671748141044e-07,
+    "exact_feasible_reference_gap_bound": 3.2652672095793197e-07,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 3.2652671748141044e-07,
+    "reference_feasibility_correction_distance": 1.7881020557077998e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0005714251665423321
+  },
+  {
+    "group": "convergence_fast",
+    "index": 59,
+    "exact_feasible_reference_objective_excess": 5.661873239597805e-09,
+    "exact_feasible_reference_gap_bound": 5.661873252657088e-09,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 5.661873239597805e-09,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 7.52454201440665e-05
+  },
+  {
+    "group": "convergence_fast",
+    "index": 60,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_fast",
+    "index": 61,
+    "exact_feasible_reference_objective_excess": 2.066200340387414e-12,
+    "exact_feasible_reference_gap_bound": 3.69014843698199e-05,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 2.066200340387414e-12,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.006074659197833233
+  },
+  {
+    "group": "convergence_fast",
+    "index": 62,
+    "exact_feasible_reference_objective_excess": 5.775001261647282e-07,
+    "exact_feasible_reference_gap_bound": 5.775001296412498e-07,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 5.775001261647282e-07,
+    "reference_feasibility_correction_distance": 1.7881020557077998e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0007599342929762085
+  },
+  {
+    "group": "convergence_fast",
+    "index": 63,
+    "exact_feasible_reference_objective_excess": 1.1590398313446318e-13,
+    "exact_feasible_reference_gap_bound": 4.888165404223805e-06,
+    "reported_fp32_gap": 1.369294295727741e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.002210919583391446
+  },
+  {
+    "group": "convergence_fast",
+    "index": 64,
+    "exact_feasible_reference_objective_excess": 5.827016885731705e-14,
+    "exact_feasible_reference_gap_bound": 1.3355487624040002e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 5.827016885731705e-14,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.001155659449147542
+  },
+  {
+    "group": "convergence_fast",
+    "index": 65,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 2.2673781219676736e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_fast",
+    "index": 66,
+    "exact_feasible_reference_objective_excess": 3.2003359142758555e-12,
+    "exact_feasible_reference_gap_bound": 8.675805410111967e-06,
+    "reported_fp32_gap": 4.625004294211976e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0029454720182191456
+  },
+  {
+    "group": "convergence_fast",
+    "index": 67,
+    "exact_feasible_reference_objective_excess": 5.086312744237174e-13,
+    "exact_feasible_reference_gap_bound": 2.5166320739207735e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 5.086312744237174e-13,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0015863896349638613
+  },
+  {
+    "group": "convergence_fast",
+    "index": 68,
+    "exact_feasible_reference_objective_excess": 5.166253262513519e-13,
+    "exact_feasible_reference_gap_bound": 2.615352871532442e-07,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 5.166253262513519e-13,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0005114052083751633
+  },
+  {
+    "group": "convergence_fast",
+    "index": 69,
+    "exact_feasible_reference_objective_excess": 6.63339853075924e-13,
+    "exact_feasible_reference_gap_bound": 2.1698958256376055e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 6.63339853075924e-13,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0014730566267586612
+  },
+  {
+    "group": "convergence_fast",
+    "index": 70,
+    "exact_feasible_reference_objective_excess": 3.375408856381681e-08,
+    "exact_feasible_reference_gap_bound": 3.375408857687609e-08,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 3.375408856381681e-08,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0001837228580685487
+  },
+  {
+    "group": "convergence_fast",
+    "index": 71,
+    "exact_feasible_reference_objective_excess": 1.8770588485186709e-13,
+    "exact_feasible_reference_gap_bound": 2.724595771164607e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 1.8770588485186709e-13,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0016506349599970938
+  },
+  {
+    "group": "convergence_fast",
+    "index": 72,
+    "exact_feasible_reference_objective_excess": 6.220590003148626e-13,
+    "exact_feasible_reference_gap_bound": 1.296622746207507e-05,
+    "reported_fp32_gap": 1.5678262570872903e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.003600864821410972
+  },
+  {
+    "group": "convergence_fast",
+    "index": 73,
+    "exact_feasible_reference_objective_excess": 3.4624181949818707e-09,
+    "exact_feasible_reference_gap_bound": 0.00011426908158792213,
+    "reported_fp32_gap": 0.00011324882507324219,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 2.555364118788177e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.010689671724983987
+  },
+  {
+    "group": "convergence_fast",
+    "index": 74,
+    "exact_feasible_reference_objective_excess": 8.427877598840723e-09,
+    "exact_feasible_reference_gap_bound": 8.427877611900007e-09,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 8.427877598840723e-09,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 9.180347276601255e-05
+  },
+  {
+    "group": "convergence_fast",
+    "index": 75,
+    "exact_feasible_reference_objective_excess": 2.1474885782396035e-14,
+    "exact_feasible_reference_gap_bound": 1.6693803922327717e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 2.1474885782396035e-14,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0012920450426485803
+  },
+  {
+    "group": "convergence_fast",
+    "index": 76,
+    "exact_feasible_reference_objective_excess": 9.406059648078166e-08,
+    "exact_feasible_reference_gap_bound": 9.406059995730322e-08,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 9.406059648078166e-08,
+    "reference_feasibility_correction_distance": 1.7881020557077998e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.00030669300604562735
+  },
+  {
+    "group": "convergence_fast",
+    "index": 77,
+    "exact_feasible_reference_objective_excess": 1.3694327513652637e-13,
+    "exact_feasible_reference_gap_bound": 6.577796880011252e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 1.3694327513652637e-13,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0025647215989286734
+  },
+  {
+    "group": "convergence_fast",
+    "index": 78,
+    "exact_feasible_reference_objective_excess": 3.2405980819086002e-12,
+    "exact_feasible_reference_gap_bound": 3.660320049955342e-05,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 3.2405980819086002e-12,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0060500578922480916
+  },
+  {
+    "group": "convergence_fast",
+    "index": 79,
+    "exact_feasible_reference_objective_excess": 2.4380782124226267e-09,
+    "exact_feasible_reference_gap_bound": 2.43807822548191e-09,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 2.4380782124226267e-09,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 4.937689971516954e-05
+  },
+  {
+    "group": "convergence_fast",
+    "index": 80,
+    "exact_feasible_reference_objective_excess": 2.301640120988431e-13,
+    "exact_feasible_reference_gap_bound": 7.699363978330198e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 2.301640120988431e-13,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0027747727795857805
+  },
+  {
+    "group": "convergence_fast",
+    "index": 81,
+    "exact_feasible_reference_objective_excess": 2.5806883899007365e-08,
+    "exact_feasible_reference_gap_bound": 2.5806883912066648e-08,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 2.5806883899007365e-08,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.00016064521129516014
+  },
+  {
+    "group": "convergence_fast",
+    "index": 82,
+    "exact_feasible_reference_objective_excess": 1.6140748589142578e-13,
+    "exact_feasible_reference_gap_bound": 2.18512949797e-07,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 1.6140748589142578e-13,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0004674536873284882
+  },
+  {
+    "group": "convergence_fast",
+    "index": 83,
+    "exact_feasible_reference_objective_excess": 6.077926141346731e-13,
+    "exact_feasible_reference_gap_bound": 1.1987530540131027e-05,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 6.077926141346731e-13,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0034623013358358956
+  },
+  {
+    "group": "convergence_fast",
+    "index": 84,
+    "exact_feasible_reference_objective_excess": 1.1894530790977474e-12,
+    "exact_feasible_reference_gap_bound": 1.1302544298543216e-05,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 1.1894530790977474e-12,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.003361925683078556
+  },
+  {
+    "group": "convergence_fast",
+    "index": 85,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_fast",
+    "index": 86,
+    "exact_feasible_reference_objective_excess": 3.259376322158215e-08,
+    "exact_feasible_reference_gap_bound": 0.0003601893575303173,
+    "reported_fp32_gap": 0.0003604888916015625,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 5.5739785428359e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.01897865531407105
+  },
+  {
+    "group": "convergence_fast",
+    "index": 87,
+    "exact_feasible_reference_objective_excess": 4.163422569266006e-13,
+    "exact_feasible_reference_gap_bound": 5.315390968938257e-06,
+    "reported_fp32_gap": 7.856155207264237e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0023055131682422152
+  },
+  {
+    "group": "convergence_fast",
+    "index": 88,
+    "exact_feasible_reference_objective_excess": 7.155647770708826e-14,
+    "exact_feasible_reference_gap_bound": 3.872554131825821e-06,
+    "reported_fp32_gap": 5.2352093007357325e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0019678806193023555
+  },
+  {
+    "group": "convergence_fast",
+    "index": 89,
+    "exact_feasible_reference_objective_excess": 1.890754602351437e-12,
+    "exact_feasible_reference_gap_bound": 2.724248651802024e-05,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 1.890754602351437e-12,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.005219433543788085
+  },
+  {
+    "group": "convergence_fast",
+    "index": 90,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 2.2673781219676736e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_fast",
+    "index": 91,
+    "exact_feasible_reference_objective_excess": 1.7505902083504056e-13,
+    "exact_feasible_reference_gap_bound": 9.421861115056099e-06,
+    "reported_fp32_gap": 5.368890469981125e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.003069505027696827
+  },
+  {
+    "group": "convergence_fast",
+    "index": 92,
+    "exact_feasible_reference_objective_excess": 1.4911180182472342e-12,
+    "exact_feasible_reference_gap_bound": 3.2759019297090255e-05,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 1.4911180182472342e-12,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.005723549536528033
+  },
+  {
+    "group": "convergence_fast",
+    "index": 93,
+    "exact_feasible_reference_objective_excess": 5.13732732619939e-13,
+    "exact_feasible_reference_gap_bound": 1.8263443442977567e-05,
+    "reported_fp32_gap": 3.0375549613381736e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.004273575018994936
+  },
+  {
+    "group": "convergence_fast",
+    "index": 94,
+    "exact_feasible_reference_objective_excess": 4.798148723994548e-14,
+    "exact_feasible_reference_gap_bound": 3.6849710674582457e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 4.798148723994548e-14,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0019196278460832572
+  },
+  {
+    "group": "convergence_fast",
+    "index": 95,
+    "exact_feasible_reference_objective_excess": 4.475302379952213e-09,
+    "exact_feasible_reference_gap_bound": 0.00022919193391155641,
+    "reported_fp32_gap": 0.00023031234741210938,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 3.659600139323322e-10,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.015139086297117023
+  },
+  {
+    "group": "convergence_fast",
+    "index": 96,
+    "exact_feasible_reference_objective_excess": 2.825263641819171e-13,
+    "exact_feasible_reference_gap_bound": 1.3297414508617632e-06,
+    "reported_fp32_gap": 2.3858210624894127e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0011531441587510917
+  },
+  {
+    "group": "convergence_fast",
+    "index": 97,
+    "exact_feasible_reference_objective_excess": 7.625747475759765e-18,
+    "exact_feasible_reference_gap_bound": 7.022481145993805e-08,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 7.625747475759765e-18,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0002649996442637953
+  },
+  {
+    "group": "convergence_fast",
+    "index": 98,
+    "exact_feasible_reference_objective_excess": 8.769368480087337e-13,
+    "exact_feasible_reference_gap_bound": 7.799779004884062e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 8.769368480087337e-13,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0027928084440011387
+  },
+  {
+    "group": "convergence_fast",
+    "index": 99,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_fast",
+    "index": 100,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 2.2673781219676736e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_fast",
+    "index": 101,
+    "exact_feasible_reference_objective_excess": 7.169870208734799e-14,
+    "exact_feasible_reference_gap_bound": 8.038976312224058e-07,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 7.169870208734799e-14,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0008966033856853351
+  },
+  {
+    "group": "convergence_fast",
+    "index": 102,
+    "exact_feasible_reference_objective_excess": 1.2209613198331138e-13,
+    "exact_feasible_reference_gap_bound": 5.724535113992473e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 1.2209613198331138e-13,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.002392600073976525
+  },
+  {
+    "group": "convergence_fast",
+    "index": 103,
+    "exact_feasible_reference_objective_excess": 6.9819623887828485e-12,
+    "exact_feasible_reference_gap_bound": 5.174202291022067e-05,
+    "reported_fp32_gap": 4.668686960940249e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.007193192817533857
+  },
+  {
+    "group": "convergence_fast",
+    "index": 104,
+    "exact_feasible_reference_objective_excess": 4.5266100602201005e-14,
+    "exact_feasible_reference_gap_bound": 3.3988001630592443e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 4.5266100602201005e-14,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0018435835112788474
+  },
+  {
+    "group": "convergence_fast",
+    "index": 105,
+    "exact_feasible_reference_objective_excess": 1.8673908211621266e-13,
+    "exact_feasible_reference_gap_bound": 3.663901297759062e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 1.8673908211621266e-13,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0019141319959080831
+  },
+  {
+    "group": "convergence_fast",
+    "index": 106,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_fast",
+    "index": 107,
+    "exact_feasible_reference_objective_excess": 2.4695656119524307e-13,
+    "exact_feasible_reference_gap_bound": 7.004630556084216e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 2.4695656119524307e-13,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0026466262592372606
+  },
+  {
+    "group": "convergence_fast",
+    "index": 108,
+    "exact_feasible_reference_objective_excess": 2.8252667754019314e-16,
+    "exact_feasible_reference_gap_bound": 2.671113182356215e-07,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 2.8252667754019314e-16,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0005168281322022065
+  },
+  {
+    "group": "convergence_fast",
+    "index": 109,
+    "exact_feasible_reference_objective_excess": 8.992674250967456e-13,
+    "exact_feasible_reference_gap_bound": 8.876231629574162e-07,
+    "reported_fp32_gap": 6.137012178442092e-07,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0009421375499137142
+  },
+  {
+    "group": "convergence_fast",
+    "index": 110,
+    "exact_feasible_reference_objective_excess": 1.3227257422910446e-14,
+    "exact_feasible_reference_gap_bound": 3.355841969654757e-07,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 1.3227257422910446e-14,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0005792962946243275
+  },
+  {
+    "group": "convergence_fast",
+    "index": 111,
+    "exact_feasible_reference_objective_excess": 8.468494656468198e-14,
+    "exact_feasible_reference_gap_bound": 3.485193740976427e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 8.468494656468198e-14,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0018668673603061431
+  },
+  {
+    "group": "convergence_fast",
+    "index": 112,
+    "exact_feasible_reference_objective_excess": 1.0312133609436991e-13,
+    "exact_feasible_reference_gap_bound": 3.5526277029625593e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 1.0312133609436991e-13,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0018848415591138051
+  },
+  {
+    "group": "convergence_fast",
+    "index": 113,
+    "exact_feasible_reference_objective_excess": 2.467038180920184e-08,
+    "exact_feasible_reference_gap_bound": 2.4670381822261122e-08,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 2.467038180920184e-08,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.00015706808021447618
+  },
+  {
+    "group": "convergence_fast",
+    "index": 114,
+    "exact_feasible_reference_objective_excess": 1.0414187802077443e-12,
+    "exact_feasible_reference_gap_bound": 1.9956513842818874e-05,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 1.0414187802077443e-12,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.004467271409128717
+  },
+  {
+    "group": "convergence_fast",
+    "index": 115,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_fast",
+    "index": 116,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_fast",
+    "index": 117,
+    "exact_feasible_reference_objective_excess": 7.072943890484906e-15,
+    "exact_feasible_reference_gap_bound": 6.96910275894157e-07,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 7.072943890484906e-15,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0008348115211795756
+  },
+  {
+    "group": "convergence_fast",
+    "index": 118,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 2.2673781219676736e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_fast",
+    "index": 119,
+    "exact_feasible_reference_objective_excess": 3.4929460485685805e-14,
+    "exact_feasible_reference_gap_bound": 3.926556429831707e-07,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 3.4929460485685805e-14,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0006266224086187557
+  },
+  {
+    "group": "convergence_fast",
+    "index": 120,
+    "exact_feasible_reference_objective_excess": 8.336172567834978e-14,
+    "exact_feasible_reference_gap_bound": 5.285058333954282e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 8.336172567834978e-14,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0022989254737712317
+  },
+  {
+    "group": "convergence_fast",
+    "index": 121,
+    "exact_feasible_reference_objective_excess": 3.64159706453127e-14,
+    "exact_feasible_reference_gap_bound": 4.590402905779345e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 3.64159706453127e-14,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0021425225566559024
+  },
+  {
+    "group": "convergence_fast",
+    "index": 122,
+    "exact_feasible_reference_objective_excess": 4.6710932300813085e-14,
+    "exact_feasible_reference_gap_bound": 2.6142388826794357e-06,
+    "reported_fp32_gap": 5.767745733464835e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0016168608111644725
+  },
+  {
+    "group": "convergence_fast",
+    "index": 123,
+    "exact_feasible_reference_objective_excess": 4.4953770579324886e-14,
+    "exact_feasible_reference_gap_bound": 6.657869233868674e-07,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 4.4953770579324886e-14,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0008159576725461115
+  },
+  {
+    "group": "convergence_fast",
+    "index": 124,
+    "exact_feasible_reference_objective_excess": 7.807494251054812e-08,
+    "exact_feasible_reference_gap_bound": 7.807494598706968e-08,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 7.807494251054812e-08,
+    "reference_feasibility_correction_distance": 1.7881020557077998e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0002794189435007399
+  },
+  {
+    "group": "convergence_fast",
+    "index": 125,
+    "exact_feasible_reference_objective_excess": 2.921931127700342e-07,
+    "exact_feasible_reference_gap_bound": 2.921931162465558e-07,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 2.921931127700342e-07,
+    "reference_feasibility_correction_distance": 1.7881020557077998e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0005405489027336525
+  },
+  {
+    "group": "convergence_fast",
+    "index": 126,
+    "exact_feasible_reference_objective_excess": 8.648676879509184e-14,
+    "exact_feasible_reference_gap_bound": 4.059308225890353e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 8.648676879509184e-14,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0020147724997851128
+  },
+  {
+    "group": "convergence_fast",
+    "index": 127,
+    "exact_feasible_reference_objective_excess": 2.6597381150389976e-13,
+    "exact_feasible_reference_gap_bound": 1.2995347108795686e-05,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 2.6597381150389976e-13,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0036049059778024287
+  },
+  {
+    "group": "convergence_fast",
+    "index": 128,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_fast",
+    "index": 129,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 2.2673781219676736e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_fast",
+    "index": 130,
+    "exact_feasible_reference_objective_excess": 3.4765215557989596e-15,
+    "exact_feasible_reference_gap_bound": 6.12751447609275e-07,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 3.4765215557989596e-15,
+    "reference_feasibility_correction_distance": 1.7881020557077998e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0007827844196260391
+  },
+  {
+    "group": "convergence_fast",
+    "index": 131,
+    "exact_feasible_reference_objective_excess": 1.3059282933560742e-17,
+    "exact_feasible_reference_gap_bound": 2.6118565867121484e-17,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 1.3059282933560742e-17,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 5.110632628855403e-09
+  },
+  {
+    "group": "convergence_fast",
+    "index": 132,
+    "exact_feasible_reference_objective_excess": 5.859429234842329e-13,
+    "exact_feasible_reference_gap_bound": 5.412684995481277e-06,
+    "reported_fp32_gap": 6.743497579009272e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.002326517783186124
+  },
+  {
+    "group": "convergence_fast",
+    "index": 133,
+    "exact_feasible_reference_objective_excess": 5.338108579460311e-13,
+    "exact_feasible_reference_gap_bound": 1.190738219262641e-05,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 5.338108579460311e-13,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0034507074916060925
+  },
+  {
+    "group": "convergence_fast",
+    "index": 134,
+    "exact_feasible_reference_objective_excess": 8.688075469184777e-07,
+    "exact_feasible_reference_gap_bound": 8.68807546931537e-07,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 8.688075469184777e-07,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0009320984641825868
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 0,
+    "exact_feasible_reference_objective_excess": 3.7682385525337263e-13,
+    "exact_feasible_reference_gap_bound": 8.795031201751736e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 3.7682385525337263e-13,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0029656417858115866
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 1,
+    "exact_feasible_reference_objective_excess": 1.1959057664734817e-12,
+    "exact_feasible_reference_gap_bound": 1.1350264392822805e-06,
+    "reported_fp32_gap": 1.9796461856458336e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0010653761961308694
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 2,
+    "exact_feasible_reference_objective_excess": 1.0315826566316347e-12,
+    "exact_feasible_reference_gap_bound": 1.3259544861724203e-05,
+    "reported_fp32_gap": 1.2450210306269582e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.003641365796198482
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 3,
+    "exact_feasible_reference_objective_excess": 4.4337155537062573e-07,
+    "exact_feasible_reference_gap_bound": 0.0006579124642723172,
+    "reported_fp32_gap": 0.0006570518016815186,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 4.930445966488053e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.025649804371034046
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 4,
+    "exact_feasible_reference_objective_excess": 9.371646184752243e-16,
+    "exact_feasible_reference_gap_bound": 3.3394279537249614e-07,
+    "reported_fp32_gap": 6.936725185369141e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0005778778377585492
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 5,
+    "exact_feasible_reference_objective_excess": 8.728031505209316e-14,
+    "exact_feasible_reference_gap_bound": 3.402372572458428e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 8.728031505209316e-14,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0018445521332991453
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 6,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 7,
+    "exact_feasible_reference_objective_excess": 5.888417714248106e-13,
+    "exact_feasible_reference_gap_bound": 8.503209038394287e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 5.888417714248106e-13,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0029160262410332124
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 8,
+    "exact_feasible_reference_objective_excess": 1.577637429592623e-14,
+    "exact_feasible_reference_gap_bound": 3.029080963040309e-06,
+    "reported_fp32_gap": 2.5553381419740617e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0017404255120631589
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 9,
+    "exact_feasible_reference_objective_excess": 5.073811935885271e-08,
+    "exact_feasible_reference_gap_bound": 5.073811937191199e-08,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 5.073811935885271e-08,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0002252512361162797
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 10,
+    "exact_feasible_reference_objective_excess": 3.230285197767381e-12,
+    "exact_feasible_reference_gap_bound": 5.667426604909039e-07,
+    "reported_fp32_gap": 6.014452083036304e-07,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0007528231269633684
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 11,
+    "exact_feasible_reference_objective_excess": 6.666896174425275e-12,
+    "exact_feasible_reference_gap_bound": 1.4071665086248193e-05,
+    "reported_fp32_gap": 1.0394742275821045e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.003751221812456335
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 12,
+    "exact_feasible_reference_objective_excess": 3.258038239505537e-08,
+    "exact_feasible_reference_gap_bound": 3.258038587157693e-08,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 3.258038239505537e-08,
+    "reference_feasibility_correction_distance": 1.7881020557077998e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.00018050037637516695
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 13,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 2.2673781219676736e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 14,
+    "exact_feasible_reference_objective_excess": 6.116309398807154e-07,
+    "exact_feasible_reference_gap_bound": 6.11630943357237e-07,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 6.116309398807154e-07,
+    "reference_feasibility_correction_distance": 1.7881020557077998e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0007820683751164197
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 15,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 2.2673781219676736e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 16,
+    "exact_feasible_reference_objective_excess": 2.1569332406960365e-13,
+    "exact_feasible_reference_gap_bound": 3.781975563746232e-06,
+    "reported_fp32_gap": 7.7660552051384e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0019447302033305885
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 17,
+    "exact_feasible_reference_objective_excess": 3.190206582310451e-11,
+    "exact_feasible_reference_gap_bound": 0.0001504394601370865,
+    "reported_fp32_gap": 0.00015558171435259283,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.01226537647759279
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 18,
+    "exact_feasible_reference_objective_excess": 4.228889430023999e-09,
+    "exact_feasible_reference_gap_bound": 4.228889443083282e-09,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 4.228889430023999e-09,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 6.502991191046842e-05
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 19,
+    "exact_feasible_reference_objective_excess": 7.395025950083613e-14,
+    "exact_feasible_reference_gap_bound": 5.203941476282564e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 7.395025950083613e-14,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0022812149123400374
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 20,
+    "exact_feasible_reference_objective_excess": 4.0465569887480067e-14,
+    "exact_feasible_reference_gap_bound": 2.269405195988585e-06,
+    "reported_fp32_gap": 5.379467893362744e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0015064545117555277
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 21,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 2.2673781219676736e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 22,
+    "exact_feasible_reference_objective_excess": 2.5652805296911202e-12,
+    "exact_feasible_reference_gap_bound": 5.501795304080716e-06,
+    "reported_fp32_gap": 6.5518979681655765e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.00234559060879786
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 23,
+    "exact_feasible_reference_objective_excess": 3.5735246669693014e-12,
+    "exact_feasible_reference_gap_bound": 4.112837412468066e-06,
+    "reported_fp32_gap": 4.149762389715761e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.002028013168711699
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 24,
+    "exact_feasible_reference_objective_excess": 5.577870932899377e-12,
+    "exact_feasible_reference_gap_bound": 4.306491690125898e-05,
+    "reported_fp32_gap": 4.3473988625919446e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.006562386524829132
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 25,
+    "exact_feasible_reference_objective_excess": 5.965085774620455e-08,
+    "exact_feasible_reference_gap_bound": 5.965085775926382e-08,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 5.965085774620455e-08,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.00024423525085307365
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 26,
+    "exact_feasible_reference_objective_excess": 2.67597669901014e-12,
+    "exact_feasible_reference_gap_bound": 1.670850273232916e-05,
+    "reported_fp32_gap": 1.948168210219592e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.004087603543927561
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 27,
+    "exact_feasible_reference_objective_excess": 6.615162468407977e-12,
+    "exact_feasible_reference_gap_bound": 3.8306604299009015e-05,
+    "reported_fp32_gap": 3.550941255525686e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.006189232933006239
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 28,
+    "exact_feasible_reference_objective_excess": 3.2356341456526287e-12,
+    "exact_feasible_reference_gap_bound": 9.826400876780068e-06,
+    "reported_fp32_gap": 1.0419451427878812e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.003134709057756408
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 29,
+    "exact_feasible_reference_objective_excess": 3.4818030941496534e-12,
+    "exact_feasible_reference_gap_bound": 4.122403934358171e-06,
+    "reported_fp32_gap": 2.1069226932013407e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.002030370393390864
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 30,
+    "exact_feasible_reference_objective_excess": 1.954128189341824e-13,
+    "exact_feasible_reference_gap_bound": 3.7452444782937687e-06,
+    "reported_fp32_gap": 1.2590512596943881e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0019352634131543356
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 31,
+    "exact_feasible_reference_objective_excess": 1.0170095241728869e-12,
+    "exact_feasible_reference_gap_bound": 1.8976438187270254e-05,
+    "reported_fp32_gap": 1.7945363651961088e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.004356195379832068
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 32,
+    "exact_feasible_reference_objective_excess": 5.013273472120788e-13,
+    "exact_feasible_reference_gap_bound": 2.8095809576916414e-06,
+    "reported_fp32_gap": 3.784260115935467e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0016761804669222348
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 33,
+    "exact_feasible_reference_objective_excess": 2.5790587516755224e-13,
+    "exact_feasible_reference_gap_bound": 1.7649326699028502e-06,
+    "reported_fp32_gap": 6.628688424825668e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0013285076853006346
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 34,
+    "exact_feasible_reference_objective_excess": 1.0009191081145964e-11,
+    "exact_feasible_reference_gap_bound": 5.7645141953565596e-05,
+    "reported_fp32_gap": 6.081788887968287e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.007592439789261789
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 35,
+    "exact_feasible_reference_objective_excess": 3.03804954500632e-07,
+    "exact_feasible_reference_gap_bound": 0.0015539482181968923,
+    "reported_fp32_gap": 0.001552671194076538,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 4.5650554407224324e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.03942014990074102
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 36,
+    "exact_feasible_reference_objective_excess": 3.033342876395939e-12,
+    "exact_feasible_reference_gap_bound": 8.089918151477022e-06,
+    "reported_fp32_gap": 1.0304578609066084e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0028442781424250726
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 37,
+    "exact_feasible_reference_objective_excess": 1.199280517831808e-15,
+    "exact_feasible_reference_gap_bound": 8.061890336038765e-07,
+    "reported_fp32_gap": 5.55030192117556e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0008978803002649498
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 38,
+    "exact_feasible_reference_objective_excess": 2.7394492956445782e-12,
+    "exact_feasible_reference_gap_bound": 1.209056981871119e-05,
+    "reported_fp32_gap": 1.3933018635725603e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0034771496687245416
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 39,
+    "exact_feasible_reference_objective_excess": 3.165749617612053e-11,
+    "exact_feasible_reference_gap_bound": 0.00012602332630235445,
+    "reported_fp32_gap": 0.00012282325769774616,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.01122601114832666
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 40,
+    "exact_feasible_reference_objective_excess": 2.772834083259858e-07,
+    "exact_feasible_reference_gap_bound": 0.0006052243399306421,
+    "reported_fp32_gap": 0.0006058216094970703,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.1911653204757287e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.024601307687410482
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 41,
+    "exact_feasible_reference_objective_excess": 5.181719363275146e-13,
+    "exact_feasible_reference_gap_bound": 1.4321592033892285e-05,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 5.181719363275146e-13,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.003784387933853014
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 42,
+    "exact_feasible_reference_objective_excess": 1.5241520808958408e-13,
+    "exact_feasible_reference_gap_bound": 5.241604967412584e-06,
+    "reported_fp32_gap": 5.736225375585491e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0022894551682469313
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 43,
+    "exact_feasible_reference_objective_excess": 1.336756666449737e-12,
+    "exact_feasible_reference_gap_bound": 1.4619294814925497e-05,
+    "reported_fp32_gap": 1.808804336178582e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0038235186432036
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 44,
+    "exact_feasible_reference_objective_excess": 7.865828403535797e-12,
+    "exact_feasible_reference_gap_bound": 4.881318981067227e-05,
+    "reported_fp32_gap": 4.979506411473267e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.006986643672799713
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 45,
+    "exact_feasible_reference_objective_excess": 6.773744640486746e-14,
+    "exact_feasible_reference_gap_bound": 4.067968776638372e-07,
+    "reported_fp32_gap": 3.213073114238796e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0006378063010537269
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 46,
+    "exact_feasible_reference_objective_excess": 3.605293221588532e-12,
+    "exact_feasible_reference_gap_bound": 1.68755792894714e-05,
+    "reported_fp32_gap": 1.6951904399320483e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.004107989689552714
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 47,
+    "exact_feasible_reference_objective_excess": 1.947122184827624e-15,
+    "exact_feasible_reference_gap_bound": 1.0464983435119347e-06,
+    "reported_fp32_gap": 2.8271708742977353e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0010229850162695126
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 48,
+    "exact_feasible_reference_objective_excess": 6.838742296900826e-13,
+    "exact_feasible_reference_gap_bound": 9.28100531656464e-06,
+    "reported_fp32_gap": 1.070303642336512e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0030464742435419735
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 49,
+    "exact_feasible_reference_objective_excess": 6.065611998465519e-08,
+    "exact_feasible_reference_gap_bound": 0.00010860885084824195,
+    "reported_fp32_gap": 0.00010862946510314941,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 2.455585227839769e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.010421557026099409
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 50,
+    "exact_feasible_reference_objective_excess": 2.4979529459243833e-13,
+    "exact_feasible_reference_gap_bound": 1.1749823307176131e-05,
+    "reported_fp32_gap": 1.6815141862025484e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.003427801526806377
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 51,
+    "exact_feasible_reference_objective_excess": 1.458283855874353e-11,
+    "exact_feasible_reference_gap_bound": 7.467107184554272e-05,
+    "reported_fp32_gap": 7.459185871994123e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.00864124249431427
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 52,
+    "exact_feasible_reference_objective_excess": 1.7480347919656637e-15,
+    "exact_feasible_reference_gap_bound": 9.145435737808582e-07,
+    "reported_fp32_gap": 1.0430363545310684e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0009563177159191699
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 53,
+    "exact_feasible_reference_objective_excess": 1.747016861975656e-12,
+    "exact_feasible_reference_gap_bound": 1.5833684195155256e-05,
+    "reported_fp32_gap": 2.284880611114204e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.003979156216480481
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 54,
+    "exact_feasible_reference_objective_excess": 4.5283711970457594e-13,
+    "exact_feasible_reference_gap_bound": 6.0128844563795555e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 4.5283711970457594e-13,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.002452118361005348
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 55,
+    "exact_feasible_reference_objective_excess": 6.246982852186743e-06,
+    "exact_feasible_reference_gap_bound": 0.007405534206204865,
+    "reported_fp32_gap": 0.007404327392578125,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 3.7270508704540793e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.08605541357872185
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 56,
+    "exact_feasible_reference_objective_excess": 7.645370864435827e-12,
+    "exact_feasible_reference_gap_bound": 4.2859538486092824e-05,
+    "reported_fp32_gap": 3.6956284020561725e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.006546719673706277
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 57,
+    "exact_feasible_reference_objective_excess": 8.356193225834383e-12,
+    "exact_feasible_reference_gap_bound": 7.287318230832719e-05,
+    "reported_fp32_gap": 5.7098826800938696e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.008536579075269389
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 58,
+    "exact_feasible_reference_objective_excess": 3.2652671748141044e-07,
+    "exact_feasible_reference_gap_bound": 3.2652672095793197e-07,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 3.2652671748141044e-07,
+    "reference_feasibility_correction_distance": 1.7881020557077998e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0005714251665423321
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 59,
+    "exact_feasible_reference_objective_excess": 5.661873239597805e-09,
+    "exact_feasible_reference_gap_bound": 5.661873252657088e-09,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 5.661873239597805e-09,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 7.52454201440665e-05
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 60,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 61,
+    "exact_feasible_reference_objective_excess": 2.208250463709026e-13,
+    "exact_feasible_reference_gap_bound": 1.2276188079363291e-06,
+    "reported_fp32_gap": 4.9827540351543576e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0011079796062817805
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 62,
+    "exact_feasible_reference_objective_excess": 5.775001261647282e-07,
+    "exact_feasible_reference_gap_bound": 5.775001296412498e-07,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 5.775001261647282e-07,
+    "reference_feasibility_correction_distance": 1.7881020557077998e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0007599342929762085
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 63,
+    "exact_feasible_reference_objective_excess": 3.1362929997538377e-12,
+    "exact_feasible_reference_gap_bound": 2.5427584917231074e-05,
+    "reported_fp32_gap": 3.423236557864584e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.005042577209843304
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 64,
+    "exact_feasible_reference_objective_excess": 5.827016885731705e-14,
+    "exact_feasible_reference_gap_bound": 1.3355487624040002e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 5.827016885731705e-14,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.001155659449147542
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 65,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 2.2673781219676736e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 66,
+    "exact_feasible_reference_objective_excess": 3.2003359142758555e-12,
+    "exact_feasible_reference_gap_bound": 8.675805410111967e-06,
+    "reported_fp32_gap": 4.625004294211976e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0029454720182191456
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 67,
+    "exact_feasible_reference_objective_excess": 6.867190752605728e-12,
+    "exact_feasible_reference_gap_bound": 9.247156807595605e-06,
+    "reported_fp32_gap": 6.7305227275937796e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0030409138112737766
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 68,
+    "exact_feasible_reference_objective_excess": 6.8964808542109166e-12,
+    "exact_feasible_reference_gap_bound": 9.555661737806842e-07,
+    "reported_fp32_gap": 6.940281309653074e-07,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0009775306510696655
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 69,
+    "exact_feasible_reference_objective_excess": 7.408224727231488e-12,
+    "exact_feasible_reference_gap_bound": 7.251511417587352e-06,
+    "reported_fp32_gap": 5.081612471258268e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0026928630521412247
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 70,
+    "exact_feasible_reference_objective_excess": 3.375408856381681e-08,
+    "exact_feasible_reference_gap_bound": 3.375408857687609e-08,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 3.375408856381681e-08,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0001837228580685487
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 71,
+    "exact_feasible_reference_objective_excess": 3.4076521959905477e-12,
+    "exact_feasible_reference_gap_bound": 1.677292187906444e-05,
+    "reported_fp32_gap": 1.6058293113019317e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0040954757817699815
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 72,
+    "exact_feasible_reference_objective_excess": 7.268716892923093e-12,
+    "exact_feasible_reference_gap_bound": 4.4322762902242986e-05,
+    "reported_fp32_gap": 4.703479862655513e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.00665753429598699
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 73,
+    "exact_feasible_reference_objective_excess": 4.7744152011915395e-06,
+    "exact_feasible_reference_gap_bound": 0.004252546065455051,
+    "reported_fp32_gap": 0.004250884056091309,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 4.4656036744260775e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.06521154855894047
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 74,
+    "exact_feasible_reference_objective_excess": 8.427877598840723e-09,
+    "exact_feasible_reference_gap_bound": 8.427877611900007e-09,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 8.427877598840723e-09,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 9.180347276601255e-05
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 75,
+    "exact_feasible_reference_objective_excess": 4.218471328950367e-12,
+    "exact_feasible_reference_gap_bound": 2.3397398565289045e-05,
+    "reported_fp32_gap": 2.1728017600253224e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.004837085751285483
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 76,
+    "exact_feasible_reference_objective_excess": 9.406059648078166e-08,
+    "exact_feasible_reference_gap_bound": 9.406059995730322e-08,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 9.406059648078166e-08,
+    "reference_feasibility_correction_distance": 1.7881020557077998e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.00030669300604562735
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 77,
+    "exact_feasible_reference_objective_excess": 2.36326102840489e-12,
+    "exact_feasible_reference_gap_bound": 1.1807660855369096e-05,
+    "reported_fp32_gap": 1.4650016964878887e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0034362277071476356
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 78,
+    "exact_feasible_reference_objective_excess": 1.148808972429318e-14,
+    "exact_feasible_reference_gap_bound": 8.522124268904317e-07,
+    "reported_fp32_gap": 1.5165405784500763e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0009231535229258629
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 79,
+    "exact_feasible_reference_objective_excess": 2.4380782124226267e-09,
+    "exact_feasible_reference_gap_bound": 2.43807822548191e-09,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 2.4380782124226267e-09,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 4.937689971516954e-05
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 80,
+    "exact_feasible_reference_objective_excess": 2.2460035607660221e-13,
+    "exact_feasible_reference_gap_bound": 4.458301635421952e-06,
+    "reported_fp32_gap": 8.971484930953011e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0021114690704393357
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 81,
+    "exact_feasible_reference_objective_excess": 2.5806883899007365e-08,
+    "exact_feasible_reference_gap_bound": 2.5806883912066648e-08,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 2.5806883899007365e-08,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.00016064521129516014
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 82,
+    "exact_feasible_reference_objective_excess": 5.331961919800898e-12,
+    "exact_feasible_reference_gap_bound": 1.2559198045032794e-06,
+    "reported_fp32_gap": 1.0374060366302729e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0011206782787683892
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 83,
+    "exact_feasible_reference_objective_excess": 6.077926141346731e-13,
+    "exact_feasible_reference_gap_bound": 1.1987530540131027e-05,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 6.077926141346731e-13,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0034623013358358956
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 84,
+    "exact_feasible_reference_objective_excess": 8.987818932505026e-12,
+    "exact_feasible_reference_gap_bound": 3.106918617891347e-05,
+    "reported_fp32_gap": 1.9766637706197798e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.005573974002353569
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 85,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 86,
+    "exact_feasible_reference_objective_excess": 6.056489135651681e-07,
+    "exact_feasible_reference_gap_bound": 0.0015535821813674171,
+    "reported_fp32_gap": 0.0015541911125183105,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 4.1299229342082153e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.03941550686427129
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 87,
+    "exact_feasible_reference_objective_excess": 4.90966798177569e-12,
+    "exact_feasible_reference_gap_bound": 4.441857742861156e-05,
+    "reported_fp32_gap": 3.8235666579566896e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.006664726358119406
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 88,
+    "exact_feasible_reference_objective_excess": 7.155647770708826e-14,
+    "exact_feasible_reference_gap_bound": 3.872554131825821e-06,
+    "reported_fp32_gap": 5.2352093007357325e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0019678806193023555
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 89,
+    "exact_feasible_reference_objective_excess": 2.8334489274940674e-13,
+    "exact_feasible_reference_gap_bound": 4.509784318640544e-06,
+    "reported_fp32_gap": 1.6159508959390223e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0021236252773595777
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 90,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 2.2673781219676736e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 91,
+    "exact_feasible_reference_objective_excess": 4.3141136928737463e-13,
+    "exact_feasible_reference_gap_bound": 1.4790751922607377e-05,
+    "reported_fp32_gap": 1.0737781849456951e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.003845874662883253
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 92,
+    "exact_feasible_reference_objective_excess": 4.709187483410177e-13,
+    "exact_feasible_reference_gap_bound": 9.99915872558064e-07,
+    "reported_fp32_gap": 2.7792048058472574e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0009999579353943164
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 93,
+    "exact_feasible_reference_objective_excess": 5.13732732619939e-13,
+    "exact_feasible_reference_gap_bound": 1.8263443442977567e-05,
+    "reported_fp32_gap": 3.0375549613381736e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.004273575018994936
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 94,
+    "exact_feasible_reference_objective_excess": 4.798148723994548e-14,
+    "exact_feasible_reference_gap_bound": 3.6849710674582457e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 4.798148723994548e-14,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0019196278460832572
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 95,
+    "exact_feasible_reference_objective_excess": 4.549316005522132e-09,
+    "exact_feasible_reference_gap_bound": 0.00023107945210309997,
+    "reported_fp32_gap": 0.00023221969604492188,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 3.6992050541015314e-10,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.01520129771115282
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 96,
+    "exact_feasible_reference_objective_excess": 2.2058380737715862e-12,
+    "exact_feasible_reference_gap_bound": 3.715564988907777e-06,
+    "reported_fp32_gap": 4.7716457629576325e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.001927580086250057
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 97,
+    "exact_feasible_reference_objective_excess": 1.4876867550864768e-14,
+    "exact_feasible_reference_gap_bound": 3.101738097604942e-06,
+    "reported_fp32_gap": 3.0315134154079715e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.001761175203551578
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 98,
+    "exact_feasible_reference_objective_excess": 8.087185335969225e-12,
+    "exact_feasible_reference_gap_bound": 2.368628961640257e-05,
+    "reported_fp32_gap": 1.5886507753748447e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.00486685623543603
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 99,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 100,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 2.2673781219676736e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 101,
+    "exact_feasible_reference_objective_excess": 4.371069349705362e-14,
+    "exact_feasible_reference_gap_bound": 4.694398669166203e-06,
+    "reported_fp32_gap": 1.070671441993909e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0021666561031151673
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 102,
+    "exact_feasible_reference_objective_excess": 1.7229977996589475e-12,
+    "exact_feasible_reference_gap_bound": 2.0421238277081415e-05,
+    "reported_fp32_gap": 1.4696703146910295e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0045189864214314045
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 103,
+    "exact_feasible_reference_objective_excess": 6.9819623887828485e-12,
+    "exact_feasible_reference_gap_bound": 5.174202291022067e-05,
+    "reported_fp32_gap": 4.668686960940249e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.007193192817533857
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 104,
+    "exact_feasible_reference_objective_excess": 7.013305572846777e-12,
+    "exact_feasible_reference_gap_bound": 3.2598396126057387e-05,
+    "reported_fp32_gap": 3.521731196087785e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.005709500514585964
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 105,
+    "exact_feasible_reference_objective_excess": 1.8673908211621266e-13,
+    "exact_feasible_reference_gap_bound": 3.663901297759062e-06,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 1.8673908211621266e-13,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0019141319959080831
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 106,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 107,
+    "exact_feasible_reference_objective_excess": 4.044154648071729e-16,
+    "exact_feasible_reference_gap_bound": 2.834580516648011e-07,
+    "reported_fp32_gap": 5.417120519268792e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0005324077870061642
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 108,
+    "exact_feasible_reference_objective_excess": 3.574141880704547e-12,
+    "exact_feasible_reference_gap_bound": 2.342919961342457e-05,
+    "reported_fp32_gap": 2.3637505364604294e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0048403718466068875
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 109,
+    "exact_feasible_reference_objective_excess": 2.2788677413243248e-11,
+    "exact_feasible_reference_gap_bound": 0.00013055374524987553,
+    "reported_fp32_gap": 0.00013855710858479142,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.011426011782327005
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 110,
+    "exact_feasible_reference_objective_excess": 1.3091902667773014e-13,
+    "exact_feasible_reference_gap_bound": 8.154854051814906e-06,
+    "reported_fp32_gap": 1.0746942280093208e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0028556705082720775
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 111,
+    "exact_feasible_reference_objective_excess": 4.8327665252627125e-12,
+    "exact_feasible_reference_gap_bound": 2.6328242055555022e-05,
+    "reported_fp32_gap": 2.2843047190690413e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.005131105344421904
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 112,
+    "exact_feasible_reference_objective_excess": 4.0011849887607946e-13,
+    "exact_feasible_reference_gap_bound": 9.104142732775112e-06,
+    "reported_fp32_gap": 1.3726026736549102e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.003017307198939994
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 113,
+    "exact_feasible_reference_objective_excess": 2.467038180920184e-08,
+    "exact_feasible_reference_gap_bound": 2.4670381822261122e-08,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 2.467038180920184e-08,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.00015706808021447618
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 114,
+    "exact_feasible_reference_objective_excess": 7.865017748210003e-13,
+    "exact_feasible_reference_gap_bound": 7.740986698598967e-06,
+    "reported_fp32_gap": 1.6648555174469948e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.002782262873741259
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 115,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 116,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 117,
+    "exact_feasible_reference_objective_excess": 3.965870827580413e-12,
+    "exact_feasible_reference_gap_bound": 1.6502367106118865e-05,
+    "reported_fp32_gap": 1.580545722390525e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.004062310562490129
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 118,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 2.2673781219676736e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 119,
+    "exact_feasible_reference_objective_excess": 5.942241091907182e-14,
+    "exact_feasible_reference_gap_bound": 1.523822862647894e-06,
+    "reported_fp32_gap": 6.153527465357911e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0012344322025319551
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 120,
+    "exact_feasible_reference_objective_excess": 2.6199447068465583e-12,
+    "exact_feasible_reference_gap_bound": 1.6152922243224392e-05,
+    "reported_fp32_gap": 1.903422162286006e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.004019069823133755
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 121,
+    "exact_feasible_reference_objective_excess": 1.842540766612376e-13,
+    "exact_feasible_reference_gap_bound": 1.0325555420359492e-05,
+    "reported_fp32_gap": 5.73515262658475e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0032133402279185272
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 122,
+    "exact_feasible_reference_objective_excess": 4.6710932300813085e-14,
+    "exact_feasible_reference_gap_bound": 2.6142388826794357e-06,
+    "reported_fp32_gap": 5.767745733464835e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0016168608111644725
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 123,
+    "exact_feasible_reference_objective_excess": 4.4953770579324886e-14,
+    "exact_feasible_reference_gap_bound": 6.657869233868674e-07,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 4.4953770579324886e-14,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0008159576725461115
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 124,
+    "exact_feasible_reference_objective_excess": 7.807494251054812e-08,
+    "exact_feasible_reference_gap_bound": 7.807494598706968e-08,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 7.807494251054812e-08,
+    "reference_feasibility_correction_distance": 1.7881020557077998e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0002794189435007399
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 125,
+    "exact_feasible_reference_objective_excess": 2.921931127700342e-07,
+    "exact_feasible_reference_gap_bound": 2.921931162465558e-07,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 2.921931127700342e-07,
+    "reference_feasibility_correction_distance": 1.7881020557077998e-07,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0005405489027336525
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 126,
+    "exact_feasible_reference_objective_excess": 4.368515761896974e-12,
+    "exact_feasible_reference_gap_bound": 3.0267061099142845e-05,
+    "reported_fp32_gap": 3.4525772207416594e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.005501550790381095
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 127,
+    "exact_feasible_reference_objective_excess": 4.0314344294252956e-13,
+    "exact_feasible_reference_gap_bound": 1.599919935854418e-05,
+    "reported_fp32_gap": 3.003852270921925e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.003999899918565986
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 128,
+    "exact_feasible_reference_objective_excess": 0.0,
+    "exact_feasible_reference_gap_bound": 0.0,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 129,
+    "exact_feasible_reference_objective_excess": 1.4542684596404908e-14,
+    "exact_feasible_reference_gap_bound": 1.253239805190377e-06,
+    "reported_fp32_gap": 1.5172865914792055e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 2.4619421162405785e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0011194819360714923
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 130,
+    "exact_feasible_reference_objective_excess": 3.0066292300428687e-12,
+    "exact_feasible_reference_gap_bound": 1.7392080912749755e-06,
+    "reported_fp32_gap": 1.9434592104516923e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0013187903894383579
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 131,
+    "exact_feasible_reference_objective_excess": 3.651777278163652e-12,
+    "exact_feasible_reference_gap_bound": 7.303554556327303e-12,
+    "reported_fp32_gap": 7.275957614183426e-12,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 2.7025089373260735e-06
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 132,
+    "exact_feasible_reference_objective_excess": 5.859429234842329e-13,
+    "exact_feasible_reference_gap_bound": 5.412684995481277e-06,
+    "reported_fp32_gap": 6.743497579009272e-06,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 1.917423318556305e-08,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.002326517783186124
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 133,
+    "exact_feasible_reference_objective_excess": 1.4258013976020812e-12,
+    "exact_feasible_reference_gap_bound": 1.4224367073262951e-05,
+    "reported_fp32_gap": 2.2507361791213043e-05,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 0.0,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0037715205253667852
+  },
+  {
+    "group": "convergence_cautious",
+    "index": 134,
+    "exact_feasible_reference_objective_excess": 8.688075469184777e-07,
+    "exact_feasible_reference_gap_bound": 8.68807546931537e-07,
+    "reported_fp32_gap": 0.0,
+    "gap_estimate_shortfall_vs_exact_feasible_objective_excess": 8.688075469184777e-07,
+    "reference_feasibility_correction_distance": 0.0,
+    "exact_feasible_reference_distance_to_optimum_bound": 0.0009320984641825868
+  }
+]

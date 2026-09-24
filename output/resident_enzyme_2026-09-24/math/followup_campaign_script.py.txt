@@ -1,0 +1,59 @@
+from enzyme_probe_runtime import *
+from enzyme_reference_oracle import *
+from local_lab import source_enzyme
+import random,shutil
+OUT=ROOT/'output/resident_enzyme_2026-09-24/math';REPORT=json.loads((OUT/'independent_numeric_audit.json').read_text(encoding='utf-8'));D=json.loads((OUT/'source_definition.json').read_text(encoding='utf-8'));MODEL=json.loads((ROOT/'source_workbench/Dawnwood_Interactive_v0.2/model/substrate.json').read_text(encoding='utf-8'));R=random.Random(641726)
+FN=['enzyme_domain_sdf','enzyme_project_evaluate','enzyme_accept','enzyme_witness_gap'];ROLES={101:FN[0],102:FN[1],103:FN[2],104:FN[3]}
+def result_summary(r):
+ assert r['checkpoint_byte_identical'];assert all(x['status']==0 for x in r['vulkan']['instances'])
+ return {'count':r['vulkan']['count'],'cpu_gpu_checkpoint_byte_identical':r['checkpoint_byte_identical'],'statuses':[0],'vulkan_receipt':r['vulkan_receipt']}
+def save_report():save(OUT/'independent_numeric_audit.json',REPORT)
+rows=[];labels=[]
+# Every final fast/cautious state, followed by its actual next proposal.
+for strategy in ('fast','cautious'):
+ ck=resident.decode_checkpoint((OUT/('convergence_'+strategy)/'vulkan.bin').read_bytes())
+ for i,item in enumerate(ck['instances']):
+  s=item['state'];rows.append([*s[:4],*s[4:6]]);labels.append(f'plateau_{strategy}_{i}')
+# Large outward gradients at all four faces; a small tangential displacement
+# leaves a genuine feasible descent direction near the optimum.
+for edge in range(4):
+ for force in (1,100,1000,4000):
+  for eps in (1e-2,1e-3,1e-4,1e-5):
+   for sign in (-1,1):
+    c,p=[(.5,0),(1,4.5),(.5,9.5),(0,5)][edge]
+    verts=((1-c,10-c-p,c,p));opt=metric_from_species(tuple(map(F,verts)))
+    outward=[(1/math.sqrt(6),-math.sqrt(5/6)),(1,0),(1/math.sqrt(6),math.sqrt(5/6)),(-1,0)][edge]
+    target=(opt[0]+force*outward[0],opt[1]+force*outward[1]);obs=list(map(float,species_from_metric(*target,1,10)))
+    dc,dp=[(eps*sign,0),(0,eps*sign),(eps*sign,-eps*sign),(0,eps*sign)][edge]
+    inc=metric_from_species(tuple(map(F,(1-c-dc,10-c-dc-p-dp,c+dc,p+dp))))
+    rows.append([*obs,*inc]);labels.append(f'face{edge}_force{force}_eps{eps}_sign{sign}')
+p=Probe(OUT,'boundary_next_step',D,MODEL,FN+['enzyme_proposal_fast'],{**ROLES,100:'enzyme_proposal_fast'},'blend',['obs_E','obs_S','obs_ES','obs_P','y0','y1'],['trial_y0','trial_y1','candidate_y0','candidate_y1','sdf','accepted','improvement','old_objective','candidate_objective'],rows)
+for j,val in enumerate([0,0,0,0,0,0,0,0,1,0,0,1,1,0]):p.const(100+j,val)
+p.call('enzyme_proposal_fast',[4,5,0,1,2,3,*range(100,114)],24,100);p.call(FN[0],[24,25],32,101);p.call(FN[1],[24,25,32,33,34,0,1,2,3],40,102);p.call(FN[3],[4,5,0,1,2,3],50,104);p.call(FN[2],[4,5,40,41,54,42,0,1,2,3],60,103)
+r=p.run([24,25,40,41,32,64,63,54,42]);g=result_summary(r);details=[]
+for label,item in zip(labels,r['vulkan']['instances']):
+ s=item['state'];obs=s[:4];inc=species_from_metric(*s[4:6],1,10);o=s[6:];cand=species_from_metric(*o[2:4],1,10);trial=species_from_metric(*o[:2],1,10)
+ exactchange=sum((b-a)*(a+b-2*F(c)) for a,b,c in zip(inc,cand,obs));ideal=active_projection(trial,1,10)['species'];idealchange=sum((b-a)*(a+b-2*F(c)) for a,b,c in zip(inc,ideal,obs))
+ # A feasible reference copy is used only to evaluate the theorem's domain.
+ feasible_old=active_projection(inc,1,10)['species'];ideal_vs_feasible_old=sum((b-a)*(a+b-2*F(c)) for a,b,c in zip(feasible_old,ideal,obs))
+ details.append({'id':label,'accepted':bool(o[5]),'actual_candidate_exact_objective_change':float(exactchange),'ideal_projected_candidate_exact_objective_change_from_packed_old':float(idealchange),'ideal_projected_candidate_exact_objective_change_from_feasible_old':float(ideal_vs_feasible_old),'candidate_max_negative_species':max(0.,-min(map(float,cand))),'old_max_negative_species':max(0.,-min(map(float,inc))),'candidate_max_species_error_vs_ideal_projection':max(abs(float(a-b)) for a,b in zip(cand,ideal)),'rejected_actual_descent':not o[5] and exactchange<0,'accepted_actual_increase':bool(o[5]) and exactchange>0,'rejected_ideal_feasible_descent':not o[5] and ideal_vs_feasible_old<0,'reported_improvement':o[6]})
+g.update({'rejected_actual_descent_count':sum(x['rejected_actual_descent'] for x in details),'accepted_actual_increase_count':sum(x['accepted_actual_increase'] for x in details),'max_accepted_actual_increase':max([x['actual_candidate_exact_objective_change'] for x in details if x['accepted_actual_increase']]+[0]),'max_rejected_actual_descent_magnitude':max([-x['actual_candidate_exact_objective_change'] for x in details if x['rejected_actual_descent']]+[0]),'rejected_ideal_feasible_descent_count':sum(x['rejected_ideal_feasible_descent'] for x in details),'max_candidate_species_error_vs_ideal_projection':max(x['candidate_max_species_error_vs_ideal_projection'] for x in details),'max_candidate_negative_species':max(x['candidate_max_negative_species'] for x in details)})
+save(p.directory/'reference_comparisons.json',details);REPORT['groups']['boundary_next_step']=g;save_report()
+# Common physical concentration scaling preserves normalized problem and all
+# scientific laws; only the returned concentration multiplier changes.
+baseck=resident.decode_checkpoint((OUT/'domain_projection_gap/vulkan.bin').read_bytes());rows=[x['state'][:6] for x in baseck['instances']]
+cycle=json.loads(source_enzyme.base.CYCLE.read_text(encoding='utf-8'))
+for exponent in (-10,10):
+ factor=2.**exponent;doc={'profile':'DWI-ENZYME-0.1','pools':{'E_total_uM':10*factor,'S_total_uM':100*factor,'concentration_scale_uM':10*factor},'observations':[{'id':'scaled_observation','E_uM':1*factor,'S_uM':4*factor,'ES_uM':2*factor,'P_uM':8*factor}]}
+ scaled=source_enzyme.build_definition(MODEL,cycle,doc)
+ p=Probe(OUT,'common_scale_'+('small' if exponent<0 else 'large'),scaled,MODEL,FN,ROLES,'blend',['trial_y0','trial_y1','obs_E','obs_S','obs_ES','obs_P'],['sdf','boundary_y0','boundary_y1','candidate_y0','candidate_y1','objective','projection_distance','E_uM','S_uM','ES_uM','P_uM','objective_return','gap'],rows)
+ p.call(FN[0],[0,1],32,101);p.call(FN[1],[0,1,32,33,34,2,3,4,5],40,102);p.call(FN[3],[40,41,2,3,4,5],48,104)
+ r=p.run([32,33,34,40,41,42,43,48,49,50,51,52,53]);g=result_summary(r);g['common_concentration_multiplier']=factor;g['normalized_output_bit_mismatches']=0;g['physical_output_rescaled_bit_mismatches']=0
+ for original,other in zip(baseck['instances'],r['vulkan']['instances']):
+  a,b=original['state'][6:],other['state'][6:]
+  for j in range(13):
+   if 7<=j<=10:g['physical_output_rescaled_bit_mismatches']+=ir.fp32(a[j]*factor,'a')[1]!=ir.fp32(b[j],'b')[1]
+   else:g['normalized_output_bit_mismatches']+=ir.fp32(a[j],'a')[1]!=ir.fp32(b[j],'b')[1]
+ save(p.directory/'physical_scaling_inputs.json',doc);REPORT['groups'][p.directory.name]=g;save_report()
+shutil.copyfile(Path(__file__),OUT/'followup_campaign_script.py.txt')
+print('ALL_GPU_COMPONENTS_DONE',flush=True)
