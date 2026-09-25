@@ -1,0 +1,109 @@
+{
+  "prepared_utc": "2026-09-24T23:59:38.554285+00:00",
+  "decision": "development-004",
+  "parent_checkpoint_sha256": "c1074458cee7875905503665caad43e3cc57e3666d49aec4404bcf5cfecbc723",
+  "cases": {
+    "original_045": {
+      "template_sha256": "5deb1d05a2bc9a577ee3ab9e523e0d297a826aa96c0e4616745da60db27df2c0",
+      "published_sha256": "9d11c470a8ba8e91053926723ddc8aa50766ee3689a43d9b25122b04c477a848",
+      "configuration_sha256": "eb17a7772ceb9caca30493b969540df4ebb8d63bad48e42429df5119cfcbbdb7",
+      "parent_checkpoint_sha256": "c1074458cee7875905503665caad43e3cc57e3666d49aec4404bcf5cfecbc723",
+      "parent_epoch": 8,
+      "diagnostics_require_epoch_at_least": 9,
+      "query_changed_words": 258,
+      "changed_functions": [
+        {
+          "name": "development__score",
+          "numeric_changed": true,
+          "ordered_contract_changed": true
+        }
+      ]
+    },
+    "guided_034": {
+      "template_sha256": "df93c4f1f35d4f52397a7e360c4b674a754587c52ca7f64ba4e621d00636862e",
+      "published_sha256": "dfad9068349b0edde160fc01c42574dd353db234e8bec34686bb47e0d2d6b7c4",
+      "configuration_sha256": "8ac0b399f14f6d134f75ca0fe774b09459267f5277f39839f90b0f2fd3e33427",
+      "parent_checkpoint_sha256": "c1074458cee7875905503665caad43e3cc57e3666d49aec4404bcf5cfecbc723",
+      "parent_epoch": 8,
+      "diagnostics_require_epoch_at_least": 9,
+      "query_changed_words": 258,
+      "changed_functions": [
+        {
+          "name": "development__propose_edit",
+          "numeric_changed": true,
+          "ordered_contract_changed": false
+        },
+        {
+          "name": "development__score",
+          "numeric_changed": true,
+          "ordered_contract_changed": true
+        }
+      ]
+    }
+  },
+  "checks": [
+    {
+      "name": "original_045_preserved_and_stale",
+      "passed": true
+    },
+    {
+      "name": "guided_034_preserved_and_stale",
+      "passed": true
+    },
+    {
+      "name": "no_query_preserves_complete_parent_mutable_image",
+      "passed": true
+    },
+    {
+      "name": "all_negative_migrations_atomic",
+      "passed": true
+    }
+  ],
+  "rejections": [
+    {
+      "name": "malformed_parent_program",
+      "passed": true,
+      "inputs_unchanged": true,
+      "error": "Parent checkpoint must contain healthy, independently valid programs and readout"
+    },
+    {
+      "name": "boolean_query",
+      "passed": true,
+      "inputs_unchanged": true,
+      "error": "query[0]: expected a finite numeric value, not a Boolean or other type"
+    },
+    {
+      "name": "function_handle_retarget",
+      "passed": true,
+      "inputs_unchanged": true,
+      "error": "An existing function handle cannot change its name or signature identity"
+    },
+    {
+      "name": "ambiguous_role_spelling",
+      "passed": true,
+      "inputs_unchanged": true,
+      "error": "new.families[34].methods: role keys must be exact canonical nonnegative integers"
+    },
+    {
+      "name": "declared_function_differs_from_native",
+      "passed": true,
+      "inputs_unchanged": true,
+      "error": "new.functions[80]: declared binding does not compile to native words"
+    },
+    {
+      "name": "stale_named_graph_hash",
+      "passed": true,
+      "inputs_unchanged": true,
+      "error": "new: named application graph hash is inconsistent"
+    },
+    {
+      "name": "record_value_layout_change",
+      "passed": true,
+      "inputs_unchanged": true,
+      "error": "Guidance publication requires identical ordered record value names"
+    }
+  ],
+  "all_passed": true,
+  "gpu_executed": false,
+  "module_prepare_note": "A preliminary in-memory compiler manifest used integer role keys while a JSON manifest used strings. The checked adapter now accepts only exact canonical forms and rejects aliases; no numerical execution occurred during this correction."
+}

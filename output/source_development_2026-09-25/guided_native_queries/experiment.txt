@@ -1,0 +1,148 @@
+"""Direct retained application experiment, not a repository test suite."""
+from datetime import datetime, timezone
+import hashlib
+import json
+import lzma
+import os
+from pathlib import Path
+import subprocess
+import sys
+
+from local_lab import source_development_queries as preparation
+from local_lab import source_development_results as reader
+from local_lab import source_resident_v3 as resident
+from local_lab import source_ir_v2 as ir
+
+ROOT = Path(__file__).resolve().parents[1]
+CAMPAIGN = ROOT/'output/source_development_2026-09-25'
+PARENTS = CAMPAIGN/'guidance_comparison'
+OUT = CAMPAIGN/'guided_native_queries'
+EXE = ROOT/'Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/bin/windows-resident-v3/dawnwood-resident-v3.exe'
+SPV = EXE.with_name('resident_v3.spv')
+CASES = ('original_045', 'guided_034')
+
+def sha(raw): return hashlib.sha256(raw).hexdigest()
+def now(): return datetime.now(timezone.utc).isoformat()
+def save(path, value): path.write_bytes(ir.json_bytes(value))
+def read(path): return json.loads(lzma.decompress(path.read_bytes()) if path.suffix == '.xz' else path.read_bytes())
+
+def prepare():
+    frozen_raw = (PARENTS/'FROZEN_CHECKPOINTS.json').read_bytes()
+    assert sha(frozen_raw) == '4716f493515514e4b72db83ced8bfb6afbfa05a30200394965c70ad9f518feeb'
+    frozen = json.loads(frozen_raw)
+    queries_raw = (CAMPAIGN/'guided_holdouts/queries.json').read_bytes()
+    queries = json.loads(queries_raw)
+    assert len(queries) == 1200
+    OUT.mkdir(parents=True, exist_ok=False)
+    (OUT/'FROZEN_CHECKPOINTS.json').write_bytes(frozen_raw)
+    (OUT/'queries.json').write_bytes(queries_raw)
+    sources = {}
+    for module in (preparation, reader, resident, ir, reader.bindings, reader.sdf):
+        path = Path(module.__file__)
+        data = path.read_bytes()
+        target = OUT/'sources'/path.name
+        target.parent.mkdir(exist_ok=True)
+        target.write_bytes(data)
+        sources[str(path.relative_to(ROOT))] = sha(data)
+    protocol = {'created_utc': now(), 'queries_sha256': sha(queries_raw),
+        'count': 1200, 'selected_parent_lane': 0,
+        'distance_tolerance': 1e-5, 'score_tolerance': 2e-5,
+        'source_hashes': sources, 'executable_sha256': sha(EXE.read_bytes()),
+        'shader_sha256': sha(SPV.read_bytes()), 'parents': {},
+        'scope': 'Frozen generated programs answer the same unseen requests in native execution; no host construction or acceptance.'}
+    for name in CASES:
+        case = OUT/name
+        case.mkdir()
+        item = frozen['final_checkpoints'][name]['vulkan']
+        checkpoint = (PARENTS/item['path']).read_bytes()
+        assert sha(checkpoint) == item['sha256']
+        manifest_path = PARENTS/name/'manifest.json.xz'
+        manifest = read(manifest_path)
+        raw, prepared_manifest = preparation.prepare_queries(checkpoint, manifest, queries, lane=0)
+        decoded = resident.decode_checkpoint(raw)
+        parent = resident.decode_checkpoint(checkpoint)
+        assert all(instance['epoch'] == 10 for instance in decoded['instances'])
+        assert prepared_manifest['query_population']['diagnostics_require_epoch_at_least'] == 11
+        program_indices = [prepared_manifest['state_names'].index(value)
+            for value in prepared_manifest['binding_contract']['development']['program_state_fields'].values()]
+        parent_program = [parent['instances'][0]['state_bits'][index] for index in program_indices]
+        assert all([instance['state_bits'][index] for index in program_indices] == parent_program
+            for instance in decoded['instances'])
+        (case/'program.bin').write_bytes(raw)
+        save(case/'manifest.json', prepared_manifest)
+        protocol['parents'][name] = {'checkpoint_sha256': sha(checkpoint),
+            'manifest_archive_sha256': sha(manifest_path.read_bytes()),
+            'prepared_input_sha256': sha(raw), 'parent_program_bits': parent_program,
+            'all_prepared_programs_preserved': True,
+            'prepared_diagnostics': 'Pending: epoch10 is below the explicit epoch11 freshness floor.'}
+    save(OUT/'protocol.json', protocol)
+    (OUT/'experiment.txt').write_bytes(Path(__file__).read_bytes())
+    print(json.dumps({'prepared': True, 'count_per_policy': 1200, 'query_sha256': sha(queries_raw)}), flush=True)
+
+def run():
+    protocol = read(OUT/'protocol.json')
+    assert sha(EXE.read_bytes()) == protocol['executable_sha256']
+    assert sha(SPV.read_bytes()) == protocol['shader_sha256']
+    env = dict(os.environ, DAWNWOOD_VALIDATION='1',
+        VK_LAYER_PATH=str(ROOT/'tmp/rtx-toolchain/VulkanSDK/Bin'))
+    receipts, summaries = [], {}
+    for name in CASES:
+        case = OUT/name
+        manifest = read(case/'manifest.json')
+        assert sha((case/'program.bin').read_bytes()) == protocol['parents'][name]['prepared_input_sha256']
+        for backend in ('cpu', 'vulkan'):
+            output = case/(backend+'.bin')
+            assert not output.exists()
+            command = [str(EXE), 'run', '--backend', backend, '--input', str(case/'program.bin'),
+                '--output', str(output), '--epochs', '1']
+            if backend == 'vulkan': command += ['--device', 'RTX 5070 Ti']
+            started = now()
+            process = subprocess.run(command, cwd=ROOT, env=env, capture_output=True, timeout=60)
+            (case/(backend+'.stdout.json')).write_bytes(process.stdout)
+            (case/(backend+'.stderr.txt')).write_bytes(process.stderr)
+            receipt = {'command': command, 'started_utc': started, 'finished_utc': now(),
+                'returncode': process.returncode, 'environment_overrides': {
+                    key: env[key] for key in ('DAWNWOOD_VALIDATION', 'VK_LAYER_PATH')},
+                'input_sha256': protocol['parents'][name]['prepared_input_sha256'],
+                'stdout_sha256': sha(process.stdout), 'stderr_sha256': sha(process.stderr)}
+            receipts.append(receipt)
+            save(OUT/'execution_receipts.json', receipts)
+            assert process.returncode == 0, process.stderr.decode(errors='replace')
+            native = json.loads(process.stdout)
+            receipt['native'] = native
+            receipt['output_sha256'] = sha(output.read_bytes())
+            assert native['status'] == 'ok' and native['failed_lanes'] == 0
+            if backend == 'vulkan':
+                assert native['device_type'] == 'discrete_gpu' and native['vendor_id'] == 4318
+                assert native['validation_enabled'] and native['validation_errors'] == 0 and native['validation_warnings'] == 0
+            save(OUT/'execution_receipts.json', receipts)
+            print(json.dumps({'case': name, 'backend': backend, 'native_ok': True}), flush=True)
+        raw = (case/'vulkan.bin').read_bytes()
+        assert raw == (case/'cpu.bin').read_bytes()
+        report = reader.evaluate_results(raw, manifest, distance_tolerance=1e-5, score_tolerance=2e-5)
+        assert report['all_assessments_passed'] and report['evaluated_diagnostic_count'] == 1200
+        assert all(row['epoch'] == 11 and row['native_diagnostics']['admitted'] == 1
+            and row['native_diagnostics']['accepted'] == 0 and row['program']['node_count'] == 7
+            and row['program']['revision'] == 3 for row in report['results'])
+        decoded = resident.decode_checkpoint(raw)
+        indices = [manifest['state_names'].index(value)
+            for value in manifest['binding_contract']['development']['program_state_fields'].values()]
+        assert all([instance['state_bits'][index] for index in indices]
+            == protocol['parents'][name]['parent_program_bits'] for instance in decoded['instances'])
+        data = ir.json_bytes(report)
+        (case/'results.json.xz').write_bytes(lzma.compress(data))
+        summaries[name] = {'all_assessments_passed': True, 'fresh_admitted_count': 1200,
+            'compared_checkpoint_bytes': len(raw), 'zero_byte_differences': True,
+            'checkpoint_sha256': sha(raw), 'retained_program_words': 40,
+            'all_program_words_preserved': True, 'final_epoch': 11,
+            'results_original_bytes': len(data), 'results_original_sha256': sha(data),
+            'results_archive_sha256': sha((case/'results.json.xz').read_bytes()),
+            'parent_program': report['results'][0]['program'],
+            'max_query_error': max(abs(row['independent_readout']['query']['signed_error']) for row in report['results'])}
+        save(OUT/'REPORT.json', {'created_utc': now(), 'protocol_sha256': sha((OUT/'protocol.json').read_bytes()),
+            'scope': 'Native application to1200 fresh held-out requests for lane0 of each frozen policy; not a speedup or physical-allocation result.',
+            'cases': summaries})
+        print(json.dumps({'case': name, 'fresh_admitted': 1200, 'byte_exact': True}), flush=True)
+
+if __name__ == '__main__':
+    {'prepare': prepare, 'run': run}[sys.argv[1]]()

@@ -1,0 +1,150 @@
+{
+  "profile": "DWI-GUIDANCE-READER-DIRECT-ASSESSMENT-0.1",
+  "created_utc": "2026-09-25T00:00:08.698752+00:00",
+  "scope": "In-memory compiler/publication/readout validation; no native execution, no GPU, no checkpoint overwritten.",
+  "source_hashes": {
+    "local_lab\\source_development.py": "ee8cf0b6654e0feac35523f2ff75ec5d2bc66c8a4920b67534cf18abef9ee380",
+    "local_lab\\source_development_fidelity.py": "913ba6436947245fbdc1a17eb5fde93194a30b40eee2b1283d9171fe39b5e5b8",
+    "local_lab\\source_development_results.py": "68094367b314693c4849e2570dd359785f134afcaf46cd7c0a735eacef6511da",
+    "local_lab\\source_development_queries.py": "b48af7c1d023125adc438dab68dbb8230691ad883f0a59207445a8d570dd9547",
+    "local_lab\\source_development_guidance.py": "071f833337182fccd0e98e41bce1940e9770181618ddfdb9f1bf0c25f6b37bc0"
+  },
+  "experiment_sha256": "cfbb1fa9aabd1f841a395299ed073699d23524d2518d33fa8a7a5e1c8e825c8f",
+  "parent_checkpoint_sha256": "fff1ca1ed34c57fa9c6a967b211330b42c13fc5c37074039f8e41a8aba7a1639",
+  "parent_manifest_file_sha256": "be3b3005f6ac2b8a49d96c3d5df6798d9e1557f3f57e77094ad15a0b63d04668",
+  "compiled_three_point_template_sha256": "2dec999608b06d02b6e3f440d812202b68102263ef76c8c4597082f4a4b14ae3",
+  "published_checkpoint_sha256": "41a699b1f619e54196133d3c2599c119b0ff020c714f7b3ee6ccfc9962f6c2d6",
+  "parent_mutable_image_sha256": "0fbadf41eed9d57505ea6ea5518c0d4352319d1c87e6c917020f34362104fb84",
+  "published_mutable_image_sha256": "0fbadf41eed9d57505ea6ea5518c0d4352319d1c87e6c917020f34362104fb84",
+  "old_training_count": 9,
+  "new_training_count": 3,
+  "parent_epochs": [
+    8,
+    8,
+    8
+  ],
+  "checks": [
+    {
+      "name": "contraction_9_to_3_publishes_without_query_override",
+      "passed": true
+    },
+    {
+      "name": "complete_mutable_image_preserved",
+      "passed": true
+    },
+    {
+      "name": "all_diagnostics_explicitly_stale",
+      "passed": true,
+      "required_epochs": [
+        9,
+        9,
+        9
+      ]
+    },
+    {
+      "name": "old_coverage_9_retained_in_all_lanes",
+      "passed": true
+    },
+    {
+      "name": "stale_coverage_bound_is_integer_encoding_bound",
+      "passed": true
+    },
+    {
+      "name": "malformed_stale_coverage_rejected_8.5",
+      "passed": true
+    },
+    {
+      "name": "malformed_stale_coverage_rejected_-1.0",
+      "passed": true
+    },
+    {
+      "name": "artificial_fresh_floor_rejects_old9_against_new3",
+      "passed": true,
+      "diagnostic_coverage_limits": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "reviewed_sources_unchanged_during_direct_check",
+      "passed": true
+    }
+  ],
+  "all_checks_passed": true,
+  "malformed_coverage_receipts": [
+    {
+      "value": 8.5,
+      "checkpoint_sha256": "b602ed9fbf24494311de16749d21d3feab4a14810e9633921bc600cc8d12d512",
+      "all_assessments_passed": false,
+      "encoding_checks": {
+        "accepted_is_bit": true,
+        "admitted_is_bit": true,
+        "coverage_is_bounded_integer": false,
+        "trials_is_exact_integer": true,
+        "improvement_is_nonnegative": true,
+        "enabled_is_bit": true
+      }
+    },
+    {
+      "value": -1.0,
+      "checkpoint_sha256": "67bd399abde15f9952f243f5b8cce20964265c24a09167f532b8785ff563fadd",
+      "all_assessments_passed": false,
+      "encoding_checks": {
+        "accepted_is_bit": true,
+        "admitted_is_bit": true,
+        "coverage_is_bounded_integer": false,
+        "trials_is_exact_integer": true,
+        "improvement_is_nonnegative": true,
+        "enabled_is_bit": true
+      }
+    }
+  ],
+  "freshness_scope": "A valid stale receipt suppresses comparison with the new policy until the required next epoch. Artificially declaring it fresh reinstates the new coverage bound and rejects the old9 value against3 requests.",
+  "protected_gate_publication_review": {
+    "before_fix": {
+      "recorded_utc": "2026-09-25T00:01:50.949450+00:00",
+      "phase": "before_fix",
+      "scope": "No native execution or GPU; native-valid candidate bank compiled in memory for publication validation.",
+      "guidance_source_sha256": "071f833337182fccd0e98e41bce1940e9770181618ddfdb9f1bf0c25f6b37bc0",
+      "guidance_source_unchanged_during_probe": true,
+      "experiment_sha256": "76821373f729e11d0719cbc5ee50bd705893282dff4f7abc7d4d5ffa60f0a777",
+      "parent_checkpoint_sha256": "fff1ca1ed34c57fa9c6a967b211330b42c13fc5c37074039f8e41a8aba7a1639",
+      "valid_template_sha256": "c3af6851c99c3d1fb4285fedf14d6f45bfb18c096822d8ea92b09981c4daab90",
+      "valid_publication_sha256": "fff1ca1ed34c57fa9c6a967b211330b42c13fc5c37074039f8e41a8aba7a1639",
+      "malformed_declaration_template_sha256": "a5ad17b10b53eeef03af4cc8b9a83ea3bcc10e985f961d716a2cdde8dd472219",
+      "valid_unchanged_source_control_accepted": true,
+      "function_name": "development__validate_geometry_boxes",
+      "alteration": "Actual compiled valid_boxes output replaced by constant1 while development source declaration retains original protected geometry equation.",
+      "declared_binding_matches_actual_function_binding": false,
+      "outcome": {
+        "accepted": true,
+        "published_checkpoint_sha256": "2c80d4be3dc9fe81d5ce04d7d4601eb06343ed1a97824640c3f40ce92bf4b281",
+        "changed_numeric_functions": [
+          "development__validate_geometry_boxes"
+        ]
+      }
+    },
+    "after_fix": {
+      "recorded_utc": "2026-09-25T00:08:36.954926+00:00",
+      "phase": "after_fix",
+      "scope": "No native execution or GPU; native-valid candidate bank compiled in memory for publication validation.",
+      "guidance_source_sha256": "b04bd9f33c2330923aac15753bee49088ecc8852660d9211f34646d609a32aa9",
+      "guidance_source_unchanged_during_probe": true,
+      "experiment_sha256": "76821373f729e11d0719cbc5ee50bd705893282dff4f7abc7d4d5ffa60f0a777",
+      "parent_checkpoint_sha256": "fff1ca1ed34c57fa9c6a967b211330b42c13fc5c37074039f8e41a8aba7a1639",
+      "valid_template_sha256": "c3af6851c99c3d1fb4285fedf14d6f45bfb18c096822d8ea92b09981c4daab90",
+      "valid_publication_sha256": "fff1ca1ed34c57fa9c6a967b211330b42c13fc5c37074039f8e41a8aba7a1639",
+      "malformed_declaration_template_sha256": "a5ad17b10b53eeef03af4cc8b9a83ea3bcc10e985f961d716a2cdde8dd472219",
+      "valid_unchanged_source_control_accepted": true,
+      "function_name": "development__validate_geometry_boxes",
+      "alteration": "Actual compiled valid_boxes output replaced by constant1 while development source declaration retains original protected geometry equation.",
+      "declared_binding_matches_actual_function_binding": false,
+      "outcome": {
+        "accepted": false,
+        "exception_type": "ValueError",
+        "message": "Source development fidelity: resident binding differs from declared development source: validate_geometry_boxes"
+      }
+    }
+  }
+}

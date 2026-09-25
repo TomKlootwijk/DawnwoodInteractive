@@ -1,0 +1,88 @@
+"""Direct checked-publication comparison from decision development-004.
+
+Set MODE='prepare' or MODE='run' before executing this file. GPU execution is
+separately coordinated with the other agent. No new holdout points are generated.
+"""
+from pathlib import Path
+from copy import deepcopy
+from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime, timezone
+import hashlib,json,lzma,os,struct,subprocess
+from local_lab import source_development as d
+from local_lab import source_development_guidance as guidance
+from local_lab import source_development_results as results
+from local_lab import source_resident_v3 as resident
+from local_lab import source_ir_v2 as ir
+
+ROOT=Path.cwd()
+OUT=ROOT/'output/source_development_2026-09-25/guidance_comparison'
+PARENT=ROOT/'output/source_development_2026-09-25/resident_construction'
+NATIVE=ROOT/'Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3'
+EXE=NATIVE/'bin/windows-resident-v3/dawnwood-resident-v3.exe'
+SHADER=NATIVE/'bin/windows-resident-v3/resident_v3.spv'
+LAYER=ROOT/'tmp/rtx-toolchain/VulkanSDK/Bin'
+OUT.mkdir(exist_ok=True,parents=True)
+sha=lambda data:hashlib.sha256(data).hexdigest()
+
+def save(path,obj):
+    path=OUT/path;path.parent.mkdir(exist_ok=True,parents=True)
+    data=ir.json_bytes(obj);path.write_bytes(lzma.compress(data,preset=3) if path.suffix=='.xz' else data)
+
+def read(path):
+    path=Path(path);raw=path.read_bytes()
+    return json.loads(lzma.decompress(raw) if path.suffix=='.xz' else raw)
+
+parent_manifest=read(PARENT/'baseline/manifest.json.xz')
+parent_raw=(PARENT/'baseline_8_vulkan/checkpoint.bin').read_bytes()
+parent_dec=resident.decode_checkpoint(parent_raw)
+
+
+checks=[];cases={}
+for name in ('original_045','guided_034'):
+ manifest=read(OUT/name/'manifest.json.xz');meta=manifest['guidance_publication']
+ cases[name]={'template_sha256':meta['compiled_template_program_sha256'],'published_sha256':meta['published_input_sha256'],'configuration_sha256':manifest['configuration_sha256'],'parent_checkpoint_sha256':meta['parent_checkpoint_sha256'],'parent_epoch':meta['parent_epoch'],'diagnostics_require_epoch_at_least':meta['diagnostics_require_epoch_at_least'],'query_changed_words':sum(x['changed_word_count'] for x in meta['query_override']['lanes']),'changed_functions':[{'name':x['name'],'numeric_changed':x['numeric_changed'],'ordered_contract_changed':x['ordered_contract_changed']} for x in meta['definition_changes']['functions']]}
+ oldread=read(OUT/name/'published_readout.json.xz');checks.append({'name':name+'_preserved_and_stale','passed':oldread['all_assessments_passed'] and oldread['evaluated_diagnostic_count']==0})
+negative_template=(OUT/'guided_034/compiled_template.bin').read_bytes();negative_manifest=read(OUT/'guided_034/compiled_manifest.json.xz')
+# Keep small negative probes on three actual retained lanes. Only the
+# container count/header hash changes in this reduced reader fixture.
+def first_three(raw,manifest):
+    decoded=resident.decode_checkpoint(raw);raw=bytearray(raw[:decoded['instances_offset_bytes']+3*decoded['instance_words']*4])
+    struct.pack_into('<I',raw,8,3);raw=bytes(raw)
+    m=deepcopy(manifest);m['count']=3;m['configuration_sha256']=resident.decode_checkpoint(raw)['configuration_sha256'];m['program_sha256']=sha(raw)
+    return raw,m
+small_parent,small_pm=first_three(parent_raw,parent_manifest)
+small_new,small_nm=first_three(negative_template,negative_manifest)
+# Entire images survive when no query override is supplied.
+unchanged,unchanged_m=guidance.migrate_guidance(small_parent,small_pm,small_new,small_nm)
+checks.append({'name':'no_query_preserves_complete_parent_mutable_image',
+    'passed':unchanged_m['guidance_publication']['state_preservation']['complete_mutable_image_identical']})
+rejections=[]
+def reject(name,pr,pm,nr,nm,query=None):
+    before=(sha(pr),sha(nr),sha(ir.json_bytes(pm)),sha(ir.json_bytes(nm)))
+    try:
+        guidance.migrate_guidance(pr,pm,nr,nm,query=query)
+        rejections.append({'name':name,'passed':False,'error':'accepted'})
+    except ValueError as error:
+        atomic=before==(sha(pr),sha(nr),sha(ir.json_bytes(pm)),sha(ir.json_bytes(nm)))
+        rejections.append({'name':name,'passed':atomic,'inputs_unchanged':atomic,'error':str(error)})
+malformed=bytearray(small_parent);parsed=resident.decode_checkpoint(malformed)
+op=small_pm['state_names'].index('sdf_op0');struct.pack_into('<f',malformed,parsed['instances_offset_bytes']+4*(6+op),1.5)
+reject('malformed_parent_program',bytes(malformed),small_pm,small_new,small_nm)
+reject('boolean_query',small_parent,small_pm,small_new,small_nm,query=(True,.2))
+bad=deepcopy(small_nm);bad['functions'][-1]['name']='accidental_retarget'
+reject('function_handle_retarget',small_parent,small_pm,small_new,bad)
+bad=deepcopy(small_nm);methods=bad['families'][-1]['methods'];methods['0211']=methods.pop(211 if 211 in methods else '211')
+reject('ambiguous_role_spelling',small_parent,small_pm,small_new,bad)
+bad=deepcopy(small_nm);bad['functions'][-1]['binding']['outputs'][next(iter(bad['functions'][-1]['binding']['outputs']))]=0
+reject('declared_function_differs_from_native',small_parent,small_pm,small_new,bad)
+bad=deepcopy(small_nm);bad['definition_metadata']['source']['application_graph']['graph']['meaning']='Changed without rehash'
+reject('stale_named_graph_hash',small_parent,small_pm,small_new,bad)
+bad=deepcopy(small_nm);bad['record_value_names'][0],bad['record_value_names'][1]=bad['record_value_names'][1],bad['record_value_names'][0]
+reject('record_value_layout_change',small_parent,small_pm,small_new,bad)
+checks.append({'name':'all_negative_migrations_atomic','passed':all(x['passed'] for x in rejections)})
+report={'prepared_utc':datetime.now(timezone.utc).isoformat(),'decision':'development-004',
+    'parent_checkpoint_sha256':sha(parent_raw),'cases':cases,'checks':checks,'rejections':rejections,
+    'all_passed':all(x['passed'] for x in checks),'gpu_executed':False,
+    'module_prepare_note':'A preliminary in-memory compiler manifest used integer role keys while a JSON manifest used strings. The checked adapter now accepts only exact canonical forms and rejects aliases; no numerical execution occurred during this correction.'}
+save('prepare_report.json',report);print(json.dumps(report),flush=True)
+raise SystemExit(0 if report['all_passed'] else 1)

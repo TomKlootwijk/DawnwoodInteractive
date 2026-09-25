@@ -1,0 +1,196 @@
+{
+  "frozen_utc": "2026-09-25T00:08:06.716414+00:00",
+  "before_new_rng_or_holdout_generation": true,
+  "source_hashes": {
+    "development_sdf.py": "f7b3d1d35a98b6efda867ae784bce17156adf5a56213ff8c64ddbaf5ed421448",
+    "source_development_results.py": "68094367b314693c4849e2570dd359785f134afcaf46cd7c0a735eacef6511da",
+    "source_development_bindings.py": "538edbdc2a02be244185f5f28e5d318d7121c8b886e6c80234d09e6e160567cb",
+    "source_resident_v3.py": "725a722d52ccc696a12e18a7926b1ea3c870746160639dee16b0bc1e235467e0"
+  },
+  "incoming_freeze_sha256": "4716f493515514e4b72db83ced8bfb6afbfa05a30200394965c70ad9f518feeb",
+  "incoming_report_sha256": "7c05b5a3c460e62171d7c6588b6a5773dfaf9e2db7a1da482608e14eee1b993f",
+  "decision_ledger_sha256": "fcc8b9afa43304d111ce36ce0d263d52786a92dd8bd92d242c38ff5577bfc0d5",
+  "programs": {
+    "original_045_lane_0": {
+      "checkpoint_sha256": "2b9b7dcee60038c61b44759711229cf7f4114f84eb62909d76c1580e9ee6f8d0",
+      "manifest_file_sha256": "6167ac188e1cb809aa9bcae4745d04a25b63c3400bbff17ef6b49d937c154e31",
+      "lane": 0,
+      "epoch": 10,
+      "native_status": 0,
+      "configuration_sha256": "eb17a7772ceb9caca30493b969540df4ebb8d63bad48e42429df5119cfcbbdb7",
+      "program_hashes": {
+        "program_sha256": "e8be71ccf2812e8b344f3438bc722dcfcc2946ffd32fb2c35aa19940c65724d3",
+        "topology_sha256": "7ff2f60d4ea472047481262079a40fe87af20b6a874e80839f2194b286077d25",
+        "semantic_sha256": "d8e7cb23e762b9ddb5e0c657901e6c1f030f4e8b0f6ac611b76d65cfe4d03e1d"
+      }
+    },
+    "original_045_lane_64": {
+      "checkpoint_sha256": "2b9b7dcee60038c61b44759711229cf7f4114f84eb62909d76c1580e9ee6f8d0",
+      "manifest_file_sha256": "6167ac188e1cb809aa9bcae4745d04a25b63c3400bbff17ef6b49d937c154e31",
+      "lane": 64,
+      "epoch": 10,
+      "native_status": 0,
+      "configuration_sha256": "eb17a7772ceb9caca30493b969540df4ebb8d63bad48e42429df5119cfcbbdb7",
+      "program_hashes": {
+        "program_sha256": "e00e924df0cba873f0717375242da2da1a3060431a90c83a7f0e0a1200acef83",
+        "topology_sha256": "7ff2f60d4ea472047481262079a40fe87af20b6a874e80839f2194b286077d25",
+        "semantic_sha256": "a96ed56b1d0b9a3eed64f6a47fed2f373fb363cf0d8e14eac6669652c3b2eca5"
+      }
+    },
+    "original_045_lane_128": {
+      "checkpoint_sha256": "2b9b7dcee60038c61b44759711229cf7f4114f84eb62909d76c1580e9ee6f8d0",
+      "manifest_file_sha256": "6167ac188e1cb809aa9bcae4745d04a25b63c3400bbff17ef6b49d937c154e31",
+      "lane": 128,
+      "epoch": 10,
+      "native_status": 0,
+      "configuration_sha256": "eb17a7772ceb9caca30493b969540df4ebb8d63bad48e42429df5119cfcbbdb7",
+      "program_hashes": {
+        "program_sha256": "f7b8ebc30319c51e3f6abbb90ee62d2fd42ff0c335c5241044560a769b021ca3",
+        "topology_sha256": "7ff2f60d4ea472047481262079a40fe87af20b6a874e80839f2194b286077d25",
+        "semantic_sha256": "732d5dd878136ad4a92f9d60d4bc978e6e32f14e8d45abd5a2541f1e06043b05"
+      }
+    },
+    "guided_034_lane_0": {
+      "checkpoint_sha256": "b6e8f7134ec5ec33e5b5941810d1f92ad882864279e925452e9d5aaab2a4d045",
+      "manifest_file_sha256": "ffced72e38f1602be088b9ea21aa2ed9633338a9af404fca654f51cdc4db1803",
+      "lane": 0,
+      "epoch": 10,
+      "native_status": 0,
+      "configuration_sha256": "8ac0b399f14f6d134f75ca0fe774b09459267f5277f39839f90b0f2fd3e33427",
+      "program_hashes": {
+        "program_sha256": "ca5ef3b4d38ede9d6cefc1f7d38d6012c6d59a7b1903b53ed06c411054f66b65",
+        "topology_sha256": "7ff2f60d4ea472047481262079a40fe87af20b6a874e80839f2194b286077d25",
+        "semantic_sha256": "cf058dac994bc8b030316559a17b12d4c107689165abd00340522070a761aa5b"
+      }
+    },
+    "guided_034_lane_64": {
+      "checkpoint_sha256": "b6e8f7134ec5ec33e5b5941810d1f92ad882864279e925452e9d5aaab2a4d045",
+      "manifest_file_sha256": "ffced72e38f1602be088b9ea21aa2ed9633338a9af404fca654f51cdc4db1803",
+      "lane": 64,
+      "epoch": 10,
+      "native_status": 0,
+      "configuration_sha256": "8ac0b399f14f6d134f75ca0fe774b09459267f5277f39839f90b0f2fd3e33427",
+      "program_hashes": {
+        "program_sha256": "3275c1ed70e01dc191f2385a07c42cbbe79c489c4bc9595c1da56e901602c048",
+        "topology_sha256": "7ff2f60d4ea472047481262079a40fe87af20b6a874e80839f2194b286077d25",
+        "semantic_sha256": "136bf4c09df6e8c88638ada4f4bf4533d8d28f6a2067e2da50f56a0d027fe14b"
+      }
+    },
+    "guided_034_lane_128": {
+      "checkpoint_sha256": "b6e8f7134ec5ec33e5b5941810d1f92ad882864279e925452e9d5aaab2a4d045",
+      "manifest_file_sha256": "ffced72e38f1602be088b9ea21aa2ed9633338a9af404fca654f51cdc4db1803",
+      "lane": 128,
+      "epoch": 10,
+      "native_status": 0,
+      "configuration_sha256": "8ac0b399f14f6d134f75ca0fe774b09459267f5277f39839f90b0f2fd3e33427",
+      "program_hashes": {
+        "program_sha256": "548ae0e86a412f4b7f0f98791782a8339ade825b5522295084145167ba9bd872",
+        "topology_sha256": "7ff2f60d4ea472047481262079a40fe87af20b6a874e80839f2194b286077d25",
+        "semantic_sha256": "ebd8f8cc022fcfec3bf8ca1499e5d935c6e2e42cfdf436ecc956d4ed71b0ddb0"
+      }
+    },
+    "retained_parent_lane_0": {
+      "checkpoint_sha256": "c1074458cee7875905503665caad43e3cc57e3666d49aec4404bcf5cfecbc723",
+      "lane": 0,
+      "epoch": 8,
+      "program_hashes": {
+        "program_sha256": "96a6f8f5d2a08840bb64c850b64310f017264b9f0f507cb532cd9ea6fc065f8f",
+        "topology_sha256": "093884d25f0e7655e90c0eba83a5371713afda443e590c39d44bbaa602aeddf0",
+        "semantic_sha256": "94f8de24513a856e7e47b175d11e74a426f4de557ffd3eed5e07482020c302cc"
+      }
+    },
+    "retained_parent_lane_64": {
+      "checkpoint_sha256": "c1074458cee7875905503665caad43e3cc57e3666d49aec4404bcf5cfecbc723",
+      "lane": 64,
+      "epoch": 8,
+      "program_hashes": {
+        "program_sha256": "5e3117bd89a6cc0a2fab4880775eaa8cf59fa16839b93a55a49a520d11fb5f8a",
+        "topology_sha256": "093884d25f0e7655e90c0eba83a5371713afda443e590c39d44bbaa602aeddf0",
+        "semantic_sha256": "4d98890e41877bc63b64cbaf45f1b28ddf96f23abb6faaa60c53239334fd2736"
+      }
+    },
+    "retained_parent_lane_128": {
+      "checkpoint_sha256": "c1074458cee7875905503665caad43e3cc57e3666d49aec4404bcf5cfecbc723",
+      "lane": 128,
+      "epoch": 8,
+      "program_hashes": {
+        "program_sha256": "6050c97027ea155e631552b1d29fdb23e7c6dd1441085af1dc99bd77c86ff6f0",
+        "topology_sha256": "093884d25f0e7655e90c0eba83a5371713afda443e590c39d44bbaa602aeddf0",
+        "semantic_sha256": "3431007bf8c8b31ab65505b0558e75f4ba3f3e3c8cc2cb926b45835f654a8ee2"
+      }
+    },
+    "hand_defined_four_box_reference": {
+      "actor": "Independent hand-authored fixed reference before holdout generation; not a resident output or fitted region.",
+      "program_hashes": {
+        "program_sha256": "0cbe95bc307dabea38d129c6bd6a48e86162f05b66831cfbce781e9e4907a2d4",
+        "topology_sha256": "7ff2f60d4ea472047481262079a40fe87af20b6a874e80839f2194b286077d25",
+        "semantic_sha256": "dc737aa3a67a30319f488abc893dd2ebd984e40753d2a60606cd6a7f8143e1d5"
+      }
+    }
+  },
+  "protocol": {
+    "seed": 2026092502,
+    "centers": [
+      [
+        0.72,
+        0.16
+      ],
+      [
+        0.16,
+        0.72
+      ],
+      [
+        0.42,
+        0.42
+      ],
+      [
+        0.2,
+        0.2
+      ]
+    ],
+    "count_per_cluster": 300,
+    "half_width": 0.015,
+    "sampled_lanes_per_policy": [
+      0,
+      64,
+      128
+    ],
+    "population_per_policy": 129,
+    "bounded_sample_not_all129_holdout_claim": true,
+    "coverage_threshold": -9.999999747378752e-05,
+    "coverage_ambiguity_band": 1e-05,
+    "later_native_fp32_distance_absolute_tolerance": 1e-05,
+    "host_formula_vs_edge_oracle_absolute_tolerance": 1e-05,
+    "exact_geometry_inequalities_have_no_tolerance": true,
+    "reference_boxes": [
+      [
+        0.72,
+        0.16,
+        0.03,
+        0.03
+      ],
+      [
+        0.16,
+        0.72,
+        0.03,
+        0.03
+      ],
+      [
+        0.42,
+        0.42,
+        0.03,
+        0.03
+      ],
+      [
+        0.2,
+        0.2,
+        0.03,
+        0.03
+      ]
+    ],
+    "negative_probe_set": "Same736 outside-quota probes declared in first holdout assessment; they are not new random holdouts.",
+    "score": "Count coverage minus packedFP32(.02)*leaf_count minus packedFP32(.005)*exact union area; compare each dataset separately."
+  },
+  "scope": "Authored normalized resource-admissibility structural benchmark, not a real allocation trace or allocator performance measure.",
+  "no_native_or_gpu_execution_in_this_assessment": true
+}

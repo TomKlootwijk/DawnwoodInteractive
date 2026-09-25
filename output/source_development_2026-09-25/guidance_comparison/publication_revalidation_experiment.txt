@@ -1,0 +1,131 @@
+"""Direct publication hardening replay; retains old evidence, writes only new evidence."""
+from pathlib import Path
+from copy import deepcopy
+from datetime import datetime, timezone
+import hashlib, json, lzma, struct
+from local_lab import source_development_guidance as guidance
+from local_lab import source_development as development
+from local_lab import source_resident_v3 as resident
+from local_lab import source_ir_v2 as ir
+
+ROOT = Path.cwd()
+OUT = ROOT / 'output/source_development_2026-09-25/guidance_comparison'
+sha = lambda value: hashlib.sha256(value).hexdigest()
+def read(path):
+    raw = path.read_bytes()
+    return json.loads(lzma.decompress(raw) if path.suffix == '.xz' else raw)
+def save(path, value):
+    path = OUT / path
+    path.parent.mkdir(parents=True, exist_ok=True)
+    raw = ir.json_bytes(value)
+    path.write_bytes(lzma.compress(raw, preset=3) if path.suffix == '.xz' else raw)
+
+parent = (OUT/'parent_checkpoint.bin').read_bytes()
+parent_manifest = read(OUT/'parent_manifest.json.xz')
+checks, cases, rejections = [], {}, []
+original_inventory = read(OUT/'source_inventory.json')
+inventory = {}
+for name in ('source_development_guidance', 'source_development', 'source_development_bindings',
+             'source_development_results', 'source_development_fidelity', 'source_graph',
+             'source_graph_fidelity', 'source_graph_types', 'source_resident_v3', 'source_ir_v2', 'source_ir'):
+    relative = 'local_lab/'+name+'.py'
+    raw = (ROOT/relative).read_bytes()
+    target = OUT/'source_snapshots'/(relative+'.revalidated.txt')
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_bytes(raw)
+    inventory[relative] = {'sha256':sha(raw), 'prepared_sha256':original_inventory.get(relative,{}).get('sha256'),
+                           'snapshot':str(target.relative_to(OUT)).replace('\\','/')}
+save('publication_revalidation_source_inventory.json', inventory)
+for policy in ('original_045','guided_034'):
+    folder = OUT/policy
+    template = (folder/'compiled_template.bin').read_bytes()
+    manifest = read(folder/'compiled_manifest.json.xz')
+    published, new_manifest = guidance.migrate_guidance(parent, parent_manifest, template, manifest, query=(.2,.2))
+    expected = (folder/'published_input.bin').read_bytes()
+    identical = published == expected
+    cases[policy] = {'published_sha256':sha(published), 'prepared_input_sha256':sha(expected),
+                     'all_input_bytes_identical':identical, 'source_validation':new_manifest['guidance_publication']['source_validation']}
+    checks.append({'name':policy+'_postfix_publication_bytes_unchanged','passed':identical})
+    save(Path(policy)/'manifest_revalidated.json.xz',new_manifest)
+
+# Reduce the lane count for focused negative probes without altering retained
+# lane contents or executable definitions. Native validation still runs fully.
+def three(raw, manifest):
+    decoded = resident.decode_checkpoint(raw)
+    result = bytearray(raw[:decoded['instances_offset_bytes'] + 3*4*decoded['instance_words']])
+    struct.pack_into('<I', result, 8, 3)
+    result = bytes(result)
+    copied = deepcopy(manifest)
+    copied['count'] = 3
+    copied['configuration_sha256'] = resident.decode_checkpoint(result)['configuration_sha256']
+    copied['program_sha256'] = sha(result)
+    return result, copied
+pr, pm = three(parent, parent_manifest)
+nr, nm = three((OUT/'guided_034/compiled_template.bin').read_bytes(), read(OUT/'guided_034/compiled_manifest.json.xz'))
+def reject(name, raw, manifest, parent_raw=pr, parent_meta=pm, query=None):
+    before = tuple(map(sha,(raw,parent_raw,ir.json_bytes(manifest),ir.json_bytes(parent_meta))))
+    try:
+        guidance.migrate_guidance(parent_raw,parent_meta,raw,manifest,query=query)
+        item = {'name':name,'passed':False,'error':'accepted'}
+    except ValueError as error:
+        after = tuple(map(sha,(raw,parent_raw,ir.json_bytes(manifest),ir.json_bytes(parent_meta))))
+        item = {'name':name,'passed':before==after,'inputs_unchanged':before==after,'error':str(error)}
+    rejections.append(item)
+    print(json.dumps(item),flush=True)
+
+reject('boolean_query',nr,nm,query=(True,.2))
+bad=deepcopy(nm);bad['functions'][-1]['name']='accidental_retarget'
+reject('function_handle_retarget',nr,bad)
+bad=deepcopy(nm);methods=bad['families'][-1]['methods'];methods['0211']=methods.pop('211')
+reject('ambiguous_role_spelling',nr,bad)
+bad=deepcopy(nm);bad['functions'][-1]['binding']['outputs'][next(iter(bad['functions'][-1]['binding']['outputs']))]=0
+reject('binding_disagrees_with_native',nr,bad)
+bad=deepcopy(nm);bad['definition_metadata']['source']['application_graph']['graph']['meaning']='Changed without hash'
+reject('stale_graph_hash',nr,bad)
+bad=deepcopy(nm);bad['record_value_names'][0],bad['record_value_names'][1]=bad['record_value_names'][1],bad['record_value_names'][0]
+reject('record_layout_change',nr,bad)
+badpr=bytearray(pr);dec=resident.decode_checkpoint(pr)
+struct.pack_into('<f',badpr,dec['instances_offset_bytes']+4*(6+pm['state_names'].index('sdf_op0')),1.5)
+reject('malformed_parent_program',nr,nm,parent_raw=bytes(badpr))
+
+model=read(OUT/'guided_034/source_model.json')
+base=read(OUT/'guided_034/definition.json.xz')
+base['instances']=base['instances'][:3]
+def compile_native(definition):
+    raw,m=resident.compile_definition(model,definition)
+    m['binding_contract']['development']=deepcopy(definition['source']['development'])
+    m['development_profile']=development.PROFILE
+    return raw,m
+
+changed=deepcopy(base)
+key=changed['source']['development']['functions']['validate_geometry_boxes']
+changed['functions'][key]['binding']['outputs']['valid_boxes']=1
+raw,m=compile_native(changed)
+save('protected_gate_native_manifest.json.xz',m)
+(OUT/'protected_gate_native_template.bin').write_bytes(raw)
+reject('actual_native_protected_gate_differs_from_authored_binding',raw,m)
+
+changed=deepcopy(base)
+# Even if an attacker rewrites both declarations and their retained hash, the
+# protected edition constructor must reject the newly weakened law.
+meta=changed['source']['development']
+meta['source']['bindings']['validate_geometry_boxes']['binding']['outputs']['valid_boxes']=1
+meta['source_sha256']=sha(ir.json_bytes(meta['source']))
+changed['functions'][key]['binding']['outputs']['valid_boxes']=1
+raw,m=compile_native(changed)
+reject('self_consistent_but_wrong_protected_edition',raw,m)
+
+changed=deepcopy(base)
+constant=next(word for word in changed['action_plan'] if word[0]==0)
+constant[2]=0 if constant[2] else 0x3f800000
+changed['source']['application_graph']['action']['plan_sha256']=sha(ir.json_bytes(changed['action_plan']))
+raw,m=compile_native(changed)
+reject('native_tape_changed_but_manifest_plan_hash_updated',raw,m)
+
+checks.append({'name':'all_postfix_negative_probes_rejected_atomically','passed':all(x['passed'] for x in rejections)})
+report={'completed_utc':datetime.now(timezone.utc).isoformat(),'scope':'Host-only hardening replay; no numerical inputs or historical execution artifacts were rewritten.',
+        'cases':cases,'checks':checks,'rejections':rejections,'all_passed':all(x['passed'] for x in checks),
+        'source_inventory':'publication_revalidation_source_inventory.json','gpu_invocations':0}
+save('publication_revalidation.json',report)
+print(json.dumps({'all_passed':report['all_passed'],'rejections':len(rejections),'sha256':sha((OUT/'publication_revalidation.json').read_bytes())}),flush=True)
+raise SystemExit(0 if report['all_passed'] else 1)

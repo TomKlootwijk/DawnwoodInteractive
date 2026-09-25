@@ -1,0 +1,237 @@
+{
+  "profile": "DWI-GUIDANCE-COMPARISON-0.1",
+  "completed_utc": "2026-09-25T00:04:12.809324+00:00",
+  "decision": "development-004",
+  "parent_checkpoint_sha256": "c1074458cee7875905503665caad43e3cc57e3666d49aec4404bcf5cfecbc723",
+  "instances": 129,
+  "all_checks_passed": true,
+  "checks": [
+    {
+      "name": "original_045_1_cpu_healthy",
+      "passed": true
+    },
+    {
+      "name": "original_045_1_vulkan_healthy",
+      "passed": true
+    },
+    {
+      "name": "original_045_1_vulkan_physical_gpu_validation",
+      "passed": true
+    },
+    {
+      "name": "original_045_1_cpu_gpu_exact",
+      "passed": true,
+      "changed_words": 0
+    },
+    {
+      "name": "original_045_1_independent_domain_assessment",
+      "passed": true
+    },
+    {
+      "name": "original_045_1_expected_refresh_or_growth",
+      "passed": true
+    },
+    {
+      "name": "original_045_1_old_three_leaves_and_first_five_nodes_exact",
+      "passed": true
+    },
+    {
+      "name": "original_045_2_cpu_healthy",
+      "passed": true
+    },
+    {
+      "name": "original_045_2_vulkan_healthy",
+      "passed": true
+    },
+    {
+      "name": "original_045_2_vulkan_physical_gpu_validation",
+      "passed": true
+    },
+    {
+      "name": "original_045_2_cpu_gpu_exact",
+      "passed": true,
+      "changed_words": 0
+    },
+    {
+      "name": "original_045_2_independent_domain_assessment",
+      "passed": true
+    },
+    {
+      "name": "original_045_2_expected_refresh_or_growth",
+      "passed": true
+    },
+    {
+      "name": "original_045_2_old_three_leaves_and_first_five_nodes_exact",
+      "passed": true
+    },
+    {
+      "name": "original_045_resume_1_plus_1_healthy",
+      "passed": true
+    },
+    {
+      "name": "original_045_resume_1_plus_1_physical_gpu_validation",
+      "passed": true
+    },
+    {
+      "name": "original_045_resume_exactly_equals_two",
+      "passed": true,
+      "changed_words": 0
+    },
+    {
+      "name": "guided_034_1_cpu_healthy",
+      "passed": true
+    },
+    {
+      "name": "guided_034_1_vulkan_healthy",
+      "passed": true
+    },
+    {
+      "name": "guided_034_1_vulkan_physical_gpu_validation",
+      "passed": true
+    },
+    {
+      "name": "guided_034_1_cpu_gpu_exact",
+      "passed": true,
+      "changed_words": 0
+    },
+    {
+      "name": "guided_034_1_independent_domain_assessment",
+      "passed": true
+    },
+    {
+      "name": "guided_034_1_expected_refresh_or_growth",
+      "passed": true
+    },
+    {
+      "name": "guided_034_1_old_three_leaves_and_first_five_nodes_exact",
+      "passed": true
+    },
+    {
+      "name": "guided_034_2_cpu_healthy",
+      "passed": true
+    },
+    {
+      "name": "guided_034_2_vulkan_healthy",
+      "passed": true
+    },
+    {
+      "name": "guided_034_2_vulkan_physical_gpu_validation",
+      "passed": true
+    },
+    {
+      "name": "guided_034_2_cpu_gpu_exact",
+      "passed": true,
+      "changed_words": 0
+    },
+    {
+      "name": "guided_034_2_independent_domain_assessment",
+      "passed": true
+    },
+    {
+      "name": "guided_034_2_expected_refresh_or_growth",
+      "passed": true
+    },
+    {
+      "name": "guided_034_2_old_three_leaves_and_first_five_nodes_exact",
+      "passed": true
+    },
+    {
+      "name": "guided_034_resume_1_plus_1_healthy",
+      "passed": true
+    },
+    {
+      "name": "guided_034_resume_1_plus_1_physical_gpu_validation",
+      "passed": true
+    },
+    {
+      "name": "guided_034_resume_exactly_equals_two",
+      "passed": true,
+      "changed_words": 0
+    },
+    {
+      "name": "all_guided_new_leaves_smaller_without_training_coverage_loss",
+      "passed": true
+    },
+    {
+      "name": "guided_scores_not_lower",
+      "passed": true
+    }
+  ],
+  "comparisons": [
+    {
+      "name": "original_045_1_cpu_gpu_exact",
+      "left_sha256": "3127ecb0178e56ba6890456fa4fd3301d31275b430877e5497487504b618669b",
+      "right_sha256": "3127ecb0178e56ba6890456fa4fd3301d31275b430877e5497487504b618669b",
+      "all_bytes_equal": true,
+      "compared_words": 158849,
+      "changed_words": 0
+    },
+    {
+      "name": "original_045_2_cpu_gpu_exact",
+      "left_sha256": "2b9b7dcee60038c61b44759711229cf7f4114f84eb62909d76c1580e9ee6f8d0",
+      "right_sha256": "2b9b7dcee60038c61b44759711229cf7f4114f84eb62909d76c1580e9ee6f8d0",
+      "all_bytes_equal": true,
+      "compared_words": 158849,
+      "changed_words": 0
+    },
+    {
+      "name": "original_045_resume_exactly_equals_two",
+      "left_sha256": "2b9b7dcee60038c61b44759711229cf7f4114f84eb62909d76c1580e9ee6f8d0",
+      "right_sha256": "2b9b7dcee60038c61b44759711229cf7f4114f84eb62909d76c1580e9ee6f8d0",
+      "all_bytes_equal": true,
+      "compared_words": 158849,
+      "changed_words": 0
+    },
+    {
+      "name": "guided_034_1_cpu_gpu_exact",
+      "left_sha256": "bc1d5154fc20e80e71b78d07b8d7cf1d6188f375c0fa2ca22c8e45328c6dcbd1",
+      "right_sha256": "bc1d5154fc20e80e71b78d07b8d7cf1d6188f375c0fa2ca22c8e45328c6dcbd1",
+      "all_bytes_equal": true,
+      "compared_words": 158849,
+      "changed_words": 0
+    },
+    {
+      "name": "guided_034_2_cpu_gpu_exact",
+      "left_sha256": "b6e8f7134ec5ec33e5b5941810d1f92ad882864279e925452e9d5aaab2a4d045",
+      "right_sha256": "b6e8f7134ec5ec33e5b5941810d1f92ad882864279e925452e9d5aaab2a4d045",
+      "all_bytes_equal": true,
+      "compared_words": 158849,
+      "changed_words": 0
+    },
+    {
+      "name": "guided_034_resume_exactly_equals_two",
+      "left_sha256": "b6e8f7134ec5ec33e5b5941810d1f92ad882864279e925452e9d5aaab2a4d045",
+      "right_sha256": "b6e8f7134ec5ec33e5b5941810d1f92ad882864279e925452e9d5aaab2a4d045",
+      "all_bytes_equal": true,
+      "compared_words": 158849,
+      "changed_words": 0
+    }
+  ],
+  "counts": {
+    "checks": 36,
+    "passed": 36,
+    "native_invocations": 10,
+    "gpu_invocations": 6,
+    "compared_words": 953094,
+    "changed_words": 0
+  },
+  "new_leaf_area_reduction_fraction_range": [
+    0.42913570559523606,
+    0.42913587591938607
+  ],
+  "resident_score_improvement_range": [
+    1.239776611328125e-05,
+    1.239776611328125e-05
+  ],
+  "max_query_error": 1.973617469452904e-08,
+  "max_witness_error": 2.73409359041743e-08,
+  "max_score_arithmetic_error": 8.471142542987309e-07,
+  "freeze": "FROZEN_CHECKPOINTS.json",
+  "holdout_assessment": "Pending; no fresh holdouts were generated by this comparison.",
+  "actor_boundary": "AI-selected new source policy and training requests were explicitly published between runs. Resident methods then refreshed returned evidence, constructed a fourth leaf/union and retained it under the unchanged objective. The interpreter itself was not rewritten by the resident.",
+  "limitations": [
+    "The proposal-size change is derived from an authored request-support assumption; this is not discovery of a physical law.",
+    "Training coverage is not held-out evidence. Both checkpoint editions were frozen before requesting fresh holdout generation.",
+    "All original program leaf constants and existing node opcodes/references were retained exactly; only the fourth leaf and its union were appended by the resident."
+  ]
+}

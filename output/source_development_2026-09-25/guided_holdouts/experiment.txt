@@ -1,0 +1,189 @@
+"""Direct frozen-program assessment; no native execution or constructor call."""
+from pathlib import Path
+from datetime import datetime, timezone
+from fractions import Fraction
+import hashlib
+import json
+import lzma
+import random
+import struct
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+from local_lab import development_sdf as sdf, source_development_results as readout
+
+SOURCE = ROOT / "output/source_development_2026-09-25/guidance_comparison"
+OUT = ROOT / "output/source_development_2026-09-25/guided_holdouts"
+OUT.mkdir(parents=True, exist_ok=False)
+sha = lambda b: hashlib.sha256(b).hexdigest()
+now = lambda: datetime.now(timezone.utc).isoformat()
+fp = lambda v: struct.unpack("<f",struct.pack("<f",v))[0]
+q = Fraction.from_float
+
+def write(name,value):
+    data=(json.dumps(value,indent=2,ensure_ascii=False,allow_nan=False)+"\n").encode("utf-8")
+    stored=lzma.compress(data) if name.endswith(".xz") else data
+    (OUT/name).write_bytes(stored)
+    return {"file_sha256":sha(stored),"uncompressed_json_sha256":sha(data),"bytes":len(stored)}
+
+def load(path):
+    data=path.read_bytes()
+    if path.suffix==".xz":data=lzma.decompress(data)
+    return json.loads(data.decode("utf-8"))
+
+frozen_bytes=(SOURCE/"FROZEN_CHECKPOINTS.json").read_bytes()
+assert sha(frozen_bytes)=="4716f493515514e4b72db83ced8bfb6afbfa05a30200394965c70ad9f518feeb"
+frozen=json.loads(frozen_bytes.decode("utf-8"))
+campaign=load(SOURCE/"REPORT.json")
+assert campaign["all_checks_passed"]
+lanes=[0,64,128]
+programs,provenance,manifests={}, {}, {}
+source_hashes={}
+for name in ("development_sdf.py","source_development_results.py","source_development_bindings.py","source_resident_v3.py"):
+    source_hashes[name]=sha((ROOT/"local_lab"/name).read_bytes())
+for edition,entry in frozen["final_checkpoints"].items():
+    gpu=(SOURCE/entry["vulkan"]["path"]).read_bytes()
+    cpu=(SOURCE/entry["cpu"]["path"]).read_bytes()
+    assert sha(gpu)==entry["vulkan"]["sha256"] and gpu==cpu
+    mp=SOURCE/edition/"manifest.json.xz"
+    manifest=load(mp)
+    decoded=readout.resident.decode_checkpoint(gpu)
+    contract=readout._manifest_contract(decoded,manifest)
+    assert decoded["count"]==129 and decoded["all_status_ok"]
+    manifests[edition]=manifest
+    (OUT/(edition+"_frozen.bin")).write_bytes(gpu)
+    (OUT/(edition+"_manifest.json.xz")).write_bytes(mp.read_bytes())
+    for lane in lanes:
+        row=decoded["instances"][lane]
+        state=dict(zip(contract["state_names"],row["state"]))
+        name=edition+"_lane_"+str(lane)
+        programs[name]=readout.bindings.unpack_program({key:state[field] for key,field in contract["program_fields"].items()})
+        assert programs[name]["node_count"]==7 and programs[name]["revision"]==3
+        assert state["resource_quota"]==1
+        provenance[name]={"checkpoint_sha256":sha(gpu),"manifest_file_sha256":sha(mp.read_bytes()),"lane":lane,"epoch":row["epoch"],"native_status":row["status"],"configuration_sha256":decoded["configuration_sha256"],"program_hashes":sdf.program_hashes(programs[name])}
+parent_bytes=(SOURCE/"parent_checkpoint.bin").read_bytes()
+assert sha(parent_bytes)==campaign["parent_checkpoint_sha256"]
+parent_manifest=load(SOURCE/"parent_manifest.json.xz")
+parent=readout.resident.decode_checkpoint(parent_bytes)
+parent_contract=readout._manifest_contract(parent,parent_manifest)
+(OUT/"parent_frozen.bin").write_bytes(parent_bytes)
+(OUT/"parent_manifest.json.xz").write_bytes((SOURCE/"parent_manifest.json.xz").read_bytes())
+for lane in lanes:
+    row=parent["instances"][lane]
+    state=dict(zip(parent_contract["state_names"],row["state"]))
+    name="retained_parent_lane_"+str(lane)
+    programs[name]=readout.bindings.unpack_program({key:state[field] for key,field in parent_contract["program_fields"].items()})
+    assert programs[name]["node_count"]==5 and programs[name]["revision"]==2
+    provenance[name]={"checkpoint_sha256":sha(parent_bytes),"lane":lane,"epoch":row["epoch"],"program_hashes":sdf.program_hashes(programs[name])}
+centers=[[.72,.16],[.16,.72],[.42,.42],[.20,.20]]
+reference=sdf.single_box_program([*centers[0],.03,.03])
+for center in centers[1:]:reference=sdf.append_box_candidate(reference,[*center,.03,.03])
+programs["hand_defined_four_box_reference"]=reference
+provenance["hand_defined_four_box_reference"]={"actor":"Independent hand-authored fixed reference before holdout generation; not a resident output or fitted region.","program_hashes":sdf.program_hashes(reference)}
+certs={name:sdf.validate_program(program) for name,program in programs.items()}
+assert all(c["admissible"] for c in certs.values())
+for lane in lanes:
+    old=programs["retained_parent_lane_"+str(lane)]
+    for edition in frozen["final_checkpoints"]:
+        new=programs[edition+"_lane_"+str(lane)]
+        assert old["nodes"][:5]==new["nodes"][:5] and old["boxes"][:3]==new["boxes"][:3]
+training=manifests["original_045"]["binding_contract"]["development"]["training_points"]
+assert training==manifests["guided_034"]["binding_contract"]["development"]["training_points"] and len(training)==12
+ledger=(ROOT/"output/source_development_2026-09-25/decision_ledger.jsonl").read_bytes()
+write("frozen_programs.json",programs)
+write("exact_certificates.json",certs)
+(OUT/"experiment.txt").write_bytes(Path(__file__).read_bytes())
+(OUT/"incoming_frozen_checkpoints.json").write_bytes(frozen_bytes)
+(OUT/"incoming_decision_ledger.jsonl").write_bytes(ledger)
+protocol={"seed":2026092502,"centers":centers,"count_per_cluster":300,"half_width":.015,
+          "sampled_lanes_per_policy":lanes,"population_per_policy":129,"bounded_sample_not_all129_holdout_claim":True,
+          "coverage_threshold":-fp(1e-4),"coverage_ambiguity_band":1e-5,"later_native_fp32_distance_absolute_tolerance":1e-5,
+          "host_formula_vs_edge_oracle_absolute_tolerance":1e-5,"exact_geometry_inequalities_have_no_tolerance":True,
+          "reference_boxes":[[*center,.03,.03] for center in centers],"negative_probe_set":"Same736 outside-quota probes declared in first holdout assessment; they are not new random holdouts.",
+          "score":"Count coverage minus packedFP32(.02)*leaf_count minus packedFP32(.005)*exact union area; compare each dataset separately."}
+freeze_receipt={"frozen_utc":now(),"before_new_rng_or_holdout_generation":True,"source_hashes":source_hashes,
+                "incoming_freeze_sha256":sha(frozen_bytes),"incoming_report_sha256":sha((SOURCE/"REPORT.json").read_bytes()),"decision_ledger_sha256":sha(ledger),
+                "programs":provenance,"protocol":protocol,"scope":"Authored normalized resource-admissibility structural benchmark, not a real allocation trace or allocator performance measure.",
+                "no_native_or_gpu_execution_in_this_assessment":True}
+write("freeze_receipt.json",freeze_receipt)
+
+# First RNG creation occurs after lane selection, program hashes and protocol are frozen.
+rng=random.Random(protocol["seed"])
+queries=[]
+labels=[]
+for group,(cx,cy) in enumerate(centers):
+    for _ in range(300):
+        queries.append([cx+rng.uniform(-.015,.015),cy+rng.uniform(-.015,.015)])
+        labels.append(group)
+query_receipt=write("queries.json",queries)
+write("queries_packed_fp32.json",[[fp(v) for v in point] for point in queries])
+negative_path=ROOT/"output/source_development_2026-09-25/heldout_assessment/outside_quota_queries.json"
+negative=load(negative_path)
+write("dataset_receipt.json",{"generated_utc":now(),"queries":query_receipt,"count":1200,"cluster_labels":labels,
+                              "rng":"Python random.Random, independent uniform offsets per axis, cluster-major order", "seed":protocol["seed"],
+                              "freeze_receipt_sha256":sha((OUT/"freeze_receipt.json").read_bytes()),
+                              "negative_probes_sha256":sha(negative_path.read_bytes()),"negative_count":len(negative),
+                              "max_raw_query_fp32_change":max(abs(v-fp(v)) for point in queries for v in point)})
+print("QUERIES_READY",query_receipt["file_sha256"],flush=True)
+
+def rects(program,cert):
+    result=[]
+    for i in cert["leaf_indices"]:
+        cx,cy,hx,hy=map(q,program["boxes"][i]);result.append((cx-hx,cx+hx,cy-hy,cy+hy))
+    return result
+def area(rectangles):return sum((r[1]-r[0])*(r[3]-r[2]) for r in rectangles)
+def overlap(left,right):return sum(max(Fraction(),min(a[1],b[1])-max(a[0],b[0]))*max(Fraction(),min(a[3],b[3])-max(a[2],b[2])) for a in left for b in right)
+
+metrics,values={},{}
+rr=rects(reference,certs["hand_defined_four_box_reference"])
+for name,program in programs.items():
+    rectangles=rects(program,certs[name]); ar=area(rectangles); n=len(rectangles)
+    penalty=q(fp(.02))*n+q(fp(.005))*ar
+    datasets={};values[name]={}
+    for dataset,points in (("training",training),("holdout",queries),("outside_quota",negative)):
+        rows=[]
+        for i,point in enumerate(points):
+            oracle=sdf.boundary_oracle(program,point)
+            formula=sdf.evaluate_program(program,point)
+            rows.append({"index":i,"oracle_distance":oracle["distance"],"formula_distance":formula,"absolute_error":abs(formula-oracle["distance"]),
+                         "covered":oracle["distance"]<=protocol["coverage_threshold"],"inside_or_boundary":oracle["inside_or_boundary"],
+                         "coverage_ambiguous":abs(oracle["distance"]-protocol["coverage_threshold"])<=protocol["coverage_ambiguity_band"],
+                         "boundary":oracle["boundary"],"squared_boundary_distance_exact":oracle["squared_boundary_distance_exact"],"box_index":oracle["box_index"],"edge_index":oracle["edge_index"]})
+        covered=sum(row["covered"] for row in rows)
+        datasets[dataset]={"count":len(rows),"covered":covered,"inside_or_boundary":sum(r["inside_or_boundary"] for r in rows),
+                           "ambiguous":sum(r["coverage_ambiguous"] for r in rows),"distance_min":min(r["oracle_distance"] for r in rows),
+                           "distance_max":max(r["oracle_distance"] for r in rows),"max_formula_oracle_absolute_error":max(r["absolute_error"] for r in rows),
+                           "score":float(Fraction(covered)-penalty)}
+        if dataset=="holdout":datasets[dataset]["coverage_per_cluster"]=[sum(row["covered"] for row,label in zip(rows,labels) if label==group) for group in range(4)]
+        values[name][dataset]=rows
+    intersection=overlap(rectangles,rr)
+    metrics[name]={"leaf_count":n,"node_count":program["node_count"],"revision":program["revision"],"area":float(ar),"area_exact":str(ar),
+                   "new_fourth_leaf_area":float(4*q(program["boxes"][3][2])*q(program["boxes"][3][3])) if n==4 else None,
+                   "complexity_penalty":float(q(fp(.02))*n),"area_penalty":float(q(fp(.005))*ar),
+                   "reference_iou":float(intersection/(ar+area(rr)-intersection)),"reference_uncovered_area":float(area(rr)-intersection),
+                   "area_outside_reference":float(ar-intersection),"datasets":datasets}
+    print(name,datasets["holdout"]["covered"],"area",float(ar),flush=True)
+write("oracle_values.json.xz",values)
+write("metrics.json",metrics)
+comparisons=[]
+for lane in lanes:
+    a=metrics["original_045_lane_"+str(lane)];b=metrics["guided_034_lane_"+str(lane)]
+    comparisons.append({"lane":lane,"new_leaf_area_reduction_fraction":1-b["new_fourth_leaf_area"]/a["new_fourth_leaf_area"],
+                        "total_area_reduction_fraction":1-b["area"]/a["area"],"holdout_coverage_change":b["datasets"]["holdout"]["covered"]-a["datasets"]["holdout"]["covered"],
+                        "training_score_improvement":b["datasets"]["training"]["score"]-a["datasets"]["training"]["score"]})
+assert all(sdf.program_hashes(program)==provenance[name]["program_hashes"] for name,program in programs.items())
+assert all(sha((SOURCE/entry["vulkan"]["path"]).read_bytes())==entry["vulkan"]["sha256"] for entry in frozen["final_checkpoints"].values())
+assert all(m["datasets"]["outside_quota"]["inside_or_boundary"]==0 for m in metrics.values())
+summary={"completed_utc":now(),"sampled_lanes":lanes,"policy_sample_count":6,"retained_parent_sample_count":3,"fixed_reference_count":1,
+         "holdout_queries":1200,"queries_json_sha256":query_receipt["file_sha256"],"holdout_program_query_pairs":12000,
+         "all_exact_certificates_pass":True,"all_frozen_hashes_unchanged":True,"outside_quota_false_admissions":0,
+         "coverage":{name:m["datasets"]["holdout"]["covered"] for name,m in metrics.items()},
+         "ambiguous_holdout_values":sum(m["datasets"]["holdout"]["ambiguous"] for m in metrics.values()),
+         "max_host_formula_oracle_absolute_error":max(d["max_formula_oracle_absolute_error"] for m in metrics.values() for d in m["datasets"].values()),
+         "policy_comparisons":comparisons,"native_execution_performed":False,"gpu_execution_performed":False,
+         "scope":"Fresh heldout assessment of lanes0,64,128 from each129-lane policy, corresponding retained parents and one fixed reference. Not a holdout claim for all129 lanes. Authored benchmark; no real allocation trace or speedup claim.",
+         "no_constructor_parameter_or_program_changes_after_holdouts":True,"oracle":"Independent exact-rational rectangle-edge projection and membership, followed by binary64 square root at packedFP32 query coordinates."}
+assert summary["max_host_formula_oracle_absolute_error"]<=protocol["host_formula_vs_edge_oracle_absolute_tolerance"]
+write("REPORT.json",summary)
+print(json.dumps(summary,indent=2))

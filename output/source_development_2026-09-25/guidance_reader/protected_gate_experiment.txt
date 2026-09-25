@@ -1,0 +1,56 @@
+"""Direct publication counterexample/control; all candidate bytes stay in memory."""
+from pathlib import Path
+from datetime import datetime, timezone
+from copy import deepcopy
+import hashlib
+import json
+import sys
+
+ROOT = Path(__file__).resolve().parents[3]
+sys.path.insert(0, str(ROOT))
+from local_lab import source_development as development
+from local_lab import source_development_guidance as guidance
+
+OUT = Path(__file__).resolve().parent
+phase = sys.argv[1]
+if phase not in ("before_fix", "after_fix"):
+    raise ValueError("Use before_fix or after_fix for an explicit chronological receipt")
+sha = lambda raw: hashlib.sha256(raw).hexdigest()
+source_path = Path(guidance.__file__)
+start_hash = sha(source_path.read_bytes())
+SOURCE = ROOT / "tmp/development-first"
+read = lambda p: json.loads(p.read_text(encoding="utf-8"))
+parent = (SOURCE / "gpu8.bin").read_bytes()
+manifest, model, cycle = [read(SOURCE / name) for name in ("manifest.json", "source_model.json", "source_cycle.json")]
+definition, _, valid_template, valid_manifest = development.compile_program(model, cycle, development.make_spec(), instance_count=3)
+control, control_manifest = guidance.migrate_guidance(parent, manifest, valid_template, valid_manifest)
+function_name = definition["source"]["development"]["functions"]["validate_geometry_boxes"]
+definition["functions"][function_name]["binding"]["outputs"]["valid_boxes"] = 1
+bad_template, bad_manifest = development.resident.compile_definition(model, definition)
+bad_manifest["binding_contract"]["development"] = deepcopy(definition["source"]["development"])
+bad_manifest["development_profile"] = development.PROFILE
+declared = bad_manifest["binding_contract"]["development"]["source"]["bindings"]["validate_geometry_boxes"]["binding"]
+actual = next(item["binding"] for item in bad_manifest["functions"] if item["name"] == function_name)
+try:
+    accepted, accepted_manifest = guidance.migrate_guidance(parent, manifest, bad_template, bad_manifest)
+    outcome = {"accepted":True,"published_checkpoint_sha256":sha(accepted),
+               "changed_numeric_functions":[item["name"] for item in accepted_manifest["guidance_publication"]["definition_changes"]["functions"] if item["numeric_changed"]]}
+except ValueError as error:
+    outcome = {"accepted":False,"exception_type":type(error).__name__,"message":str(error)}
+receipt = {
+    "recorded_utc":datetime.now(timezone.utc).isoformat(),"phase":phase,
+    "scope":"No native execution or GPU; native-valid candidate bank compiled in memory for publication validation.",
+    "guidance_source_sha256":start_hash,"guidance_source_unchanged_during_probe":start_hash==sha(source_path.read_bytes()),
+    "experiment_sha256":sha(Path(__file__).read_bytes()),"parent_checkpoint_sha256":sha(parent),
+    "valid_template_sha256":sha(valid_template),"valid_publication_sha256":sha(control),
+    "malformed_declaration_template_sha256":sha(bad_template),
+    "valid_unchanged_source_control_accepted":True,"function_name":function_name,
+    "alteration":"Actual compiled valid_boxes output replaced by constant1 while development source declaration retains original protected geometry equation.",
+    "declared_binding_matches_actual_function_binding":declared==actual,
+    "outcome":outcome,
+}
+report_path = OUT / "REPORT.json"
+report = json.loads(report_path.read_text(encoding="utf-8"))
+report.setdefault("protected_gate_publication_review",{})[phase] = receipt
+report_path.write_text(json.dumps(report,indent=2,ensure_ascii=False,allow_nan=False)+"\n",encoding="utf-8")
+print(json.dumps(receipt,indent=2))

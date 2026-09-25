@@ -1,0 +1,127 @@
+{
+  "completed_utc": "2026-09-25T00:08:21.993388+00:00",
+  "scope": "Host-only hardening replay; no numerical inputs or historical execution artifacts were rewritten.",
+  "cases": {
+    "original_045": {
+      "published_sha256": "9d11c470a8ba8e91053926723ddc8aa50766ee3689a43d9b25122b04c477a848",
+      "prepared_input_sha256": "9d11c470a8ba8e91053926723ddc8aa50766ee3689a43d9b25122b04c477a848",
+      "all_input_bytes_identical": true,
+      "source_validation": {
+        "parent": {
+          "edition_declaration_validated": true,
+          "protected_bindings_match_actual_native_functions": true,
+          "structural_audit_profile": "DWI-SDF-DEVELOPMENT-FIDELITY-0.1",
+          "structural_audit_sha256": "0a353bc8b541a62789342d849c804d51ff2a964ecb35c17c0b0b7b7b6008ffef",
+          "both_native_plans_relowered_from_named_graph": true
+        },
+        "new": {
+          "edition_declaration_validated": true,
+          "protected_bindings_match_actual_native_functions": true,
+          "structural_audit_profile": "DWI-SDF-DEVELOPMENT-FIDELITY-0.1",
+          "structural_audit_sha256": "525a19f08c3f2aff0a5ed60e91d9d2cf69e962ba698b7fcc1ac6fbb733e702dc",
+          "both_native_plans_relowered_from_named_graph": true
+        }
+      }
+    },
+    "guided_034": {
+      "published_sha256": "dfad9068349b0edde160fc01c42574dd353db234e8bec34686bb47e0d2d6b7c4",
+      "prepared_input_sha256": "dfad9068349b0edde160fc01c42574dd353db234e8bec34686bb47e0d2d6b7c4",
+      "all_input_bytes_identical": true,
+      "source_validation": {
+        "parent": {
+          "edition_declaration_validated": true,
+          "protected_bindings_match_actual_native_functions": true,
+          "structural_audit_profile": "DWI-SDF-DEVELOPMENT-FIDELITY-0.1",
+          "structural_audit_sha256": "0a353bc8b541a62789342d849c804d51ff2a964ecb35c17c0b0b7b7b6008ffef",
+          "both_native_plans_relowered_from_named_graph": true
+        },
+        "new": {
+          "edition_declaration_validated": true,
+          "protected_bindings_match_actual_native_functions": true,
+          "structural_audit_profile": "DWI-SDF-DEVELOPMENT-FIDELITY-0.1",
+          "structural_audit_sha256": "525a19f08c3f2aff0a5ed60e91d9d2cf69e962ba698b7fcc1ac6fbb733e702dc",
+          "both_native_plans_relowered_from_named_graph": true
+        }
+      }
+    }
+  },
+  "checks": [
+    {
+      "name": "original_045_postfix_publication_bytes_unchanged",
+      "passed": true
+    },
+    {
+      "name": "guided_034_postfix_publication_bytes_unchanged",
+      "passed": true
+    },
+    {
+      "name": "all_postfix_negative_probes_rejected_atomically",
+      "passed": true
+    }
+  ],
+  "rejections": [
+    {
+      "name": "boolean_query",
+      "passed": true,
+      "inputs_unchanged": true,
+      "error": "query[0]: expected a finite numeric value, not a Boolean or other type"
+    },
+    {
+      "name": "function_handle_retarget",
+      "passed": true,
+      "inputs_unchanged": true,
+      "error": "new: graph helper handles are not the declared final bank suffix"
+    },
+    {
+      "name": "ambiguous_role_spelling",
+      "passed": true,
+      "inputs_unchanged": true,
+      "error": "new.families[34].methods: role keys must be exact canonical nonnegative integers"
+    },
+    {
+      "name": "binding_disagrees_with_native",
+      "passed": true,
+      "inputs_unchanged": true,
+      "error": "new.functions[80]: declared binding does not compile to native words"
+    },
+    {
+      "name": "stale_graph_hash",
+      "passed": true,
+      "inputs_unchanged": true,
+      "error": "new: named application graph hash is inconsistent"
+    },
+    {
+      "name": "record_layout_change",
+      "passed": true,
+      "inputs_unchanged": true,
+      "error": "new: actual native mutation plan differs from the checked source graph"
+    },
+    {
+      "name": "malformed_parent_program",
+      "passed": true,
+      "inputs_unchanged": true,
+      "error": "Parent checkpoint must contain healthy, independently valid programs and readout"
+    },
+    {
+      "name": "actual_native_protected_gate_differs_from_authored_binding",
+      "passed": true,
+      "inputs_unchanged": true,
+      "error": "Source development fidelity: resident binding differs from declared development source: validate_geometry_boxes"
+    },
+    {
+      "name": "self_consistent_but_wrong_protected_edition",
+      "passed": true,
+      "inputs_unchanged": true,
+      "error": "Development numerical declarations differ from this edition; declare and verify a new numerical profile"
+    },
+    {
+      "name": "native_tape_changed_but_manifest_plan_hash_updated",
+      "passed": true,
+      "inputs_unchanged": true,
+      "error": "new: actual native action plan differs from the checked source graph"
+    }
+  ],
+  "all_passed": true,
+  "source_inventory": "publication_revalidation_source_inventory.json",
+  "gpu_invocations": 0
+}

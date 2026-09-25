@@ -1,0 +1,59 @@
+{
+  "completed_utc": "2026-09-25T00:08:17.231030+00:00",
+  "sampled_lanes": [
+    0,
+    64,
+    128
+  ],
+  "policy_sample_count": 6,
+  "retained_parent_sample_count": 3,
+  "fixed_reference_count": 1,
+  "holdout_queries": 1200,
+  "queries_json_sha256": "dd41d90ce4a792278c8d251222466f329b8fbbdf6302a7303a01b536e1857c33",
+  "holdout_program_query_pairs": 12000,
+  "all_exact_certificates_pass": true,
+  "all_frozen_hashes_unchanged": true,
+  "outside_quota_false_admissions": 0,
+  "coverage": {
+    "original_045_lane_0": 1200,
+    "original_045_lane_64": 1200,
+    "original_045_lane_128": 1200,
+    "guided_034_lane_0": 1200,
+    "guided_034_lane_64": 1200,
+    "guided_034_lane_128": 1200,
+    "retained_parent_lane_0": 900,
+    "retained_parent_lane_64": 900,
+    "retained_parent_lane_128": 900,
+    "hand_defined_four_box_reference": 1200
+  },
+  "ambiguous_holdout_values": 0,
+  "max_host_formula_oracle_absolute_error": 2.220446049250313e-16,
+  "policy_comparisons": [
+    {
+      "lane": 0,
+      "new_leaf_area_reduction_fraction": 0.4291357924465906,
+      "total_area_reduction_fraction": 0.10975485026124532,
+      "holdout_coverage_change": 0,
+      "training_score_improvement": 1.2033700642177791e-05
+    },
+    {
+      "lane": 64,
+      "new_leaf_area_reduction_fraction": 0.4291357573711275,
+      "total_area_reduction_fraction": 0.10977118237759531,
+      "holdout_coverage_change": 0,
+      "training_score_improvement": 1.2035538651034017e-05
+    },
+    {
+      "lane": 128,
+      "new_leaf_area_reduction_fraction": 0.42913576739122183,
+      "total_area_reduction_fraction": 0.10975502275328997,
+      "holdout_coverage_change": 0,
+      "training_score_improvement": 1.2034382359971119e-05
+    }
+  ],
+  "native_execution_performed": false,
+  "gpu_execution_performed": false,
+  "scope": "Fresh heldout assessment of lanes0,64,128 from each129-lane policy, corresponding retained parents and one fixed reference. Not a holdout claim for all129 lanes. Authored benchmark; no real allocation trace or speedup claim.",
+  "no_constructor_parameter_or_program_changes_after_holdouts": true,
+  "oracle": "Independent exact-rational rectangle-edge projection and membership, followed by binary64 square root at packedFP32 query coordinates."
+}

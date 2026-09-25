@@ -1,0 +1,512 @@
+{
+  "original_045_lane_0": {
+    "leaf_count": 4,
+    "node_count": 7,
+    "revision": 3,
+    "area": 0.02192832641378102,
+    "area_exact": "1580102442655405/72057594037927936",
+    "new_fourth_leaf_area": 0.005608341751926427,
+    "complexity_penalty": 0.07999999821186066,
+    "area_penalty": 0.00010964162961822366,
+    "reference_iou": 0.6321112363909611,
+    "reference_uncovered_area": 0.00033015999329905413,
+    "area_outside_reference": 0.007858487050810232,
+    "datasets": {
+      "training": {
+        "count": 12,
+        "covered": 12,
+        "inside_or_boundary": 12,
+        "ambiguous": 0,
+        "distance_min": -0.03992297872900963,
+        "distance_max": -0.017444435507059097,
+        "max_formula_oracle_absolute_error": 0.0,
+        "score": 11.91989036015852
+      },
+      "holdout": {
+        "count": 1200,
+        "covered": 1200,
+        "inside_or_boundary": 1200,
+        "ambiguous": 0,
+        "distance_min": -0.03975835070014,
+        "distance_max": -0.012506190687417984,
+        "max_formula_oracle_absolute_error": 0.0,
+        "score": 1199.9198903601584,
+        "coverage_per_cluster": [
+          300,
+          300,
+          300,
+          300
+        ]
+      },
+      "outside_quota": {
+        "count": 736,
+        "covered": 0,
+        "inside_or_boundary": 0,
+        "ambiguous": 0,
+        "distance_min": 0.050107826423715876,
+        "distance_max": 1.1316161877573292,
+        "max_formula_oracle_absolute_error": 1.1102230246251565e-16,
+        "score": -0.08010963984147888
+      }
+    }
+  },
+  "original_045_lane_64": {
+    "leaf_count": 4,
+    "node_count": 7,
+    "revision": 3,
+    "area": 0.021928412645238995,
+    "area_exact": "1580108656286797/72057594037927936",
+    "new_fourth_leaf_area": 0.005609198819687189,
+    "complexity_penalty": 0.07999999821186066,
+    "area_penalty": 0.0001096420607755039,
+    "reference_iou": 0.6321116794260313,
+    "reference_uncovered_area": 0.0003301205540850484,
+    "area_outside_reference": 0.0078585338430542,
+    "datasets": {
+      "training": {
+        "count": 12,
+        "covered": 12,
+        "inside_or_boundary": 12,
+        "ambiguous": 0,
+        "distance_min": -0.039920736104249954,
+        "distance_max": -0.017447296530008316,
+        "max_formula_oracle_absolute_error": 0.0,
+        "score": 11.919890359727363
+      },
+      "holdout": {
+        "count": 1200,
+        "covered": 1200,
+        "inside_or_boundary": 1200,
+        "ambiguous": 0,
+        "distance_min": -0.039756108075380325,
+        "distance_max": -0.012509051710367203,
+        "max_formula_oracle_absolute_error": 0.0,
+        "score": 1199.9198903597273,
+        "coverage_per_cluster": [
+          300,
+          300,
+          300,
+          300
+        ]
+      },
+      "outside_quota": {
+        "count": 736,
+        "covered": 0,
+        "inside_or_boundary": 0,
+        "ambiguous": 0,
+        "distance_min": 0.050110966238074685,
+        "distance_max": 1.131616430101708,
+        "max_formula_oracle_absolute_error": 2.220446049250313e-16,
+        "score": -0.08010964027263616
+      }
+    }
+  },
+  "original_045_lane_128": {
+    "leaf_count": 4,
+    "node_count": 7,
+    "revision": 3,
+    "area": 0.02192953420760803,
+    "area_exact": "1580189473372673/72057594037927936",
+    "new_fourth_leaf_area": 0.0056086597967743845,
+    "complexity_penalty": 0.07999999821186066,
+    "area_penalty": 0.00010964766858722371,
+    "reference_iou": 0.6321103640638082,
+    "reference_uncovered_area": 0.00032970411584737694,
+    "area_outside_reference": 0.007859238967185562,
+    "datasets": {
+      "training": {
+        "count": 12,
+        "covered": 12,
+        "inside_or_boundary": 12,
+        "ambiguous": 0,
+        "distance_min": -0.03992544859647751,
+        "distance_max": -0.01744549721479416,
+        "max_formula_oracle_absolute_error": 0.0,
+        "score": 11.919890354119552
+      },
+      "holdout": {
+        "count": 1200,
+        "covered": 1200,
+        "inside_or_boundary": 1200,
+        "ambiguous": 0,
+        "distance_min": -0.03976082056760788,
+        "distance_max": -0.012507252395153046,
+        "max_formula_oracle_absolute_error": 0.0,
+        "score": 1199.9198903541196,
+        "coverage_per_cluster": [
+          300,
+          300,
+          300,
+          300
+        ]
+      },
+      "outside_quota": {
+        "count": 736,
+        "covered": 0,
+        "inside_or_boundary": 0,
+        "ambiguous": 0,
+        "distance_min": 0.050104368460036144,
+        "distance_max": 1.1316157399470637,
+        "max_formula_oracle_absolute_error": 1.1102230246251565e-16,
+        "score": -0.08010964588044787
+      }
+    }
+  },
+  "guided_034_lane_0": {
+    "leaf_count": 4,
+    "node_count": 7,
+    "revision": 3,
+    "area": 0.019521586231756774,
+    "area_exact": "1406678535664333/72057594037927936",
+    "new_fourth_leaf_area": 0.0032016015699021794,
+    "complexity_penalty": 0.07999999821186066,
+    "area_penalty": 9.76079289770766e-05,
+    "reference_iou": 0.6293137119066735,
+    "reference_uncovered_area": 0.0012979682470001287,
+    "area_outside_reference": 0.006419555122487059,
+    "datasets": {
+      "training": {
+        "count": 12,
+        "covered": 12,
+        "inside_or_boundary": 12,
+        "ambiguous": 0,
+        "distance_min": -0.03992297872900963,
+        "distance_max": -0.008291352540254593,
+        "max_formula_oracle_absolute_error": 0.0,
+        "score": 11.919902393859163
+      },
+      "holdout": {
+        "count": 1200,
+        "covered": 1200,
+        "inside_or_boundary": 1200,
+        "ambiguous": 0,
+        "distance_min": -0.03975835070014,
+        "distance_max": -0.0033531077206134796,
+        "max_formula_oracle_absolute_error": 0.0,
+        "score": 1199.9199023938593,
+        "coverage_per_cluster": [
+          300,
+          300,
+          300,
+          300
+        ]
+      },
+      "outside_quota": {
+        "count": 736,
+        "covered": 0,
+        "inside_or_boundary": 0,
+        "ambiguous": 0,
+        "distance_min": 0.050107826423715876,
+        "distance_max": 1.1316161877573292,
+        "max_formula_oracle_absolute_error": 1.1102230246251565e-16,
+        "score": -0.08009760614083773
+      }
+    }
+  },
+  "guided_034_lane_64": {
+    "leaf_count": 4,
+    "node_count": 7,
+    "revision": 3,
+    "area": 0.0195213048615073,
+    "area_exact": "703329130400561/36028797018963968",
+    "new_fourth_leaf_area": 0.0032020910359554927,
+    "complexity_penalty": 0.07999999821186066,
+    "area_penalty": 9.760652212586067e-05,
+    "reference_iou": 0.6293159248426876,
+    "reference_uncovered_area": 0.001298048647881793,
+    "area_outside_reference": 0.0064193541531192486,
+    "datasets": {
+      "training": {
+        "count": 12,
+        "covered": 12,
+        "inside_or_boundary": 12,
+        "ambiguous": 0,
+        "distance_min": -0.039920736104249954,
+        "distance_max": -0.00829351507127285,
+        "max_formula_oracle_absolute_error": 0.0,
+        "score": 11.919902395266014
+      },
+      "holdout": {
+        "count": 1200,
+        "covered": 1200,
+        "inside_or_boundary": 1200,
+        "ambiguous": 0,
+        "distance_min": -0.039756108075380325,
+        "distance_max": -0.0033552702516317368,
+        "max_formula_oracle_absolute_error": 0.0,
+        "score": 1199.919902395266,
+        "coverage_per_cluster": [
+          300,
+          300,
+          300,
+          300
+        ]
+      },
+      "outside_quota": {
+        "count": 736,
+        "covered": 0,
+        "inside_or_boundary": 0,
+        "ambiguous": 0,
+        "distance_min": 0.050110966238074685,
+        "distance_max": 1.131616430101708,
+        "max_formula_oracle_absolute_error": 2.220446049250313e-16,
+        "score": -0.08009760473398651
+      }
+    }
+  },
+  "guided_034_lane_128": {
+    "leaf_count": 4,
+    "node_count": 7,
+    "revision": 3,
+    "area": 0.01952265768168296,
+    "area_exact": "703377870884073/36028797018963968",
+    "new_fourth_leaf_area": 0.003201783270849315,
+    "complexity_penalty": 0.07999999821186066,
+    "area_penalty": 9.761328622658778e-05,
+    "reference_iou": 0.6293135235723051,
+    "reference_uncovered_area": 0.0012975568118275618,
+    "area_outside_reference": 0.006420215137240677,
+    "datasets": {
+      "training": {
+        "count": 12,
+        "covered": 12,
+        "inside_or_boundary": 12,
+        "ambiguous": 0,
+        "distance_min": -0.03992544859647751,
+        "distance_max": -0.008292155340313911,
+        "max_formula_oracle_absolute_error": 0.0,
+        "score": 11.919902388501912
+      },
+      "holdout": {
+        "count": 1200,
+        "covered": 1200,
+        "inside_or_boundary": 1200,
+        "ambiguous": 0,
+        "distance_min": -0.03976082056760788,
+        "distance_max": -0.003353910520672798,
+        "max_formula_oracle_absolute_error": 0.0,
+        "score": 1199.919902388502,
+        "coverage_per_cluster": [
+          300,
+          300,
+          300,
+          300
+        ]
+      },
+      "outside_quota": {
+        "count": 736,
+        "covered": 0,
+        "inside_or_boundary": 0,
+        "ambiguous": 0,
+        "distance_min": 0.050104368460036144,
+        "distance_max": 1.1316157399470637,
+        "max_formula_oracle_absolute_error": 1.1102230246251565e-16,
+        "score": -0.08009761149808725
+      }
+    }
+  },
+  "retained_parent_lane_0": {
+    "leaf_count": 3,
+    "node_count": 5,
+    "revision": 2,
+    "area": 0.016319984661854595,
+    "area_exact": "1175978829469129/72057594037927936",
+    "new_fourth_leaf_area": null,
+    "complexity_penalty": 0.05999999865889549,
+    "area_penalty": 8.159992148537256e-05,
+    "reference_iou": 0.5398483094358919,
+    "reference_uncovered_area": 0.0036300219913191836,
+    "area_outside_reference": 0.005550007296903935,
+    "datasets": {
+      "training": {
+        "count": 12,
+        "covered": 9,
+        "inside_or_boundary": 9,
+        "ambiguous": 0,
+        "distance_min": -0.03992297872900963,
+        "distance_max": 0.2548037723425145,
+        "max_formula_oracle_absolute_error": 0.0,
+        "score": 8.93991840141962
+      },
+      "holdout": {
+        "count": 1200,
+        "covered": 900,
+        "inside_or_boundary": 900,
+        "ambiguous": 0,
+        "distance_min": -0.03975835070014,
+        "distance_max": 0.25970080466030127,
+        "max_formula_oracle_absolute_error": 0.0,
+        "score": 899.9399184014196,
+        "coverage_per_cluster": [
+          300,
+          300,
+          300,
+          0
+        ]
+      },
+      "outside_quota": {
+        "count": 736,
+        "covered": 0,
+        "inside_or_boundary": 0,
+        "ambiguous": 0,
+        "distance_min": 0.050107826423715876,
+        "distance_max": 1.1316161877573292,
+        "max_formula_oracle_absolute_error": 1.1102230246251565e-16,
+        "score": -0.06008159858038087
+      }
+    }
+  },
+  "retained_parent_lane_64": {
+    "leaf_count": 3,
+    "node_count": 5,
+    "revision": 2,
+    "area": 0.016319213825551807,
+    "area_exact": "1175923284859753/72057594037927936",
+    "new_fourth_leaf_area": null,
+    "complexity_penalty": 0.05999999865889549,
+    "area_penalty": 8.159606730394476e-05,
+    "reference_iou": 0.5398468409746398,
+    "reference_uncovered_area": 0.003630311259928805,
+    "area_outside_reference": 0.005549525729210768,
+    "datasets": {
+      "training": {
+        "count": 12,
+        "covered": 9,
+        "inside_or_boundary": 9,
+        "ambiguous": 0,
+        "distance_min": -0.039920736104249954,
+        "distance_max": 0.2548040146868934,
+        "max_formula_oracle_absolute_error": 0.0,
+        "score": 8.9399184052738
+      },
+      "holdout": {
+        "count": 1200,
+        "covered": 900,
+        "inside_or_boundary": 900,
+        "ambiguous": 0,
+        "distance_min": -0.039756108075380325,
+        "distance_max": 0.25970104700336216,
+        "max_formula_oracle_absolute_error": 0.0,
+        "score": 899.9399184052738,
+        "coverage_per_cluster": [
+          300,
+          300,
+          300,
+          0
+        ]
+      },
+      "outside_quota": {
+        "count": 736,
+        "covered": 0,
+        "inside_or_boundary": 0,
+        "ambiguous": 0,
+        "distance_min": 0.050110966238074685,
+        "distance_max": 1.131616430101708,
+        "max_formula_oracle_absolute_error": 2.220446049250313e-16,
+        "score": -0.060081594726199436
+      }
+    }
+  },
+  "retained_parent_lane_128": {
+    "leaf_count": 3,
+    "node_count": 5,
+    "revision": 2,
+    "area": 0.016320874410833644,
+    "area_exact": "1176042942639857/72057594037927936",
+    "new_fourth_leaf_area": null,
+    "complexity_penalty": 0.05999999865889549,
+    "area_penalty": 8.160437023016837e-05,
+    "reference_iou": 0.539850004761577,
+    "reference_uncovered_area": 0.0036296880933760836,
+    "area_outside_reference": 0.005550563147939884,
+    "datasets": {
+      "training": {
+        "count": 12,
+        "covered": 9,
+        "inside_or_boundary": 9,
+        "ambiguous": 0,
+        "distance_min": -0.03992544859647751,
+        "distance_max": 0.254803324532249,
+        "max_formula_oracle_absolute_error": 0.0,
+        "score": 8.939918396970874
+      },
+      "holdout": {
+        "count": 1200,
+        "covered": 900,
+        "inside_or_boundary": 900,
+        "ambiguous": 0,
+        "distance_min": -0.03976082056760788,
+        "distance_max": 0.2597003568524714,
+        "max_formula_oracle_absolute_error": 0.0,
+        "score": 899.9399183969708,
+        "coverage_per_cluster": [
+          300,
+          300,
+          300,
+          0
+        ]
+      },
+      "outside_quota": {
+        "count": 736,
+        "covered": 0,
+        "inside_or_boundary": 0,
+        "ambiguous": 0,
+        "distance_min": 0.050104368460036144,
+        "distance_max": 1.1316157399470637,
+        "max_formula_oracle_absolute_error": 1.1102230246251565e-16,
+        "score": -0.06008160302912566
+      }
+    }
+  },
+  "hand_defined_four_box_reference": {
+    "leaf_count": 4,
+    "node_count": 7,
+    "revision": 3,
+    "area": 0.014399999356269844,
+    "area_exact": "259407326940129/18014398509481984",
+    "new_fourth_leaf_area": 0.003599999839067461,
+    "complexity_penalty": 0.07999999821186066,
+    "area_penalty": 7.199999517202388e-05,
+    "reference_iou": 1.0,
+    "reference_uncovered_area": 0.0,
+    "area_outside_reference": 0.0,
+    "datasets": {
+      "training": {
+        "count": 12,
+        "covered": 12,
+        "inside_or_boundary": 12,
+        "ambiguous": 0,
+        "distance_min": -0.029999999329447746,
+        "distance_max": -0.019999949261546135,
+        "max_formula_oracle_absolute_error": 0.0,
+        "score": 11.919928001792968
+      },
+      "holdout": {
+        "count": 1200,
+        "covered": 1200,
+        "inside_or_boundary": 1200,
+        "ambiguous": 0,
+        "distance_min": -0.02997697703540325,
+        "distance_max": -0.015017403289675713,
+        "max_formula_oracle_absolute_error": 0.0,
+        "score": 1199.9199280017929,
+        "coverage_per_cluster": [
+          300,
+          300,
+          300,
+          300
+        ]
+      },
+      "outside_quota": {
+        "count": 736,
+        "covered": 0,
+        "inside_or_boundary": 0,
+        "ambiguous": 0,
+        "distance_min": 0.07071141411162689,
+        "distance_max": 1.1313708693913935,
+        "max_formula_oracle_absolute_error": 1.1102230246251565e-16,
+        "score": -0.08007199820703267
+      }
+    }
+  }
+}

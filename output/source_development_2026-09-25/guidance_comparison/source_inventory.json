@@ -1,0 +1,125 @@
+{
+  "local_lab/source_development_guidance.py": {
+    "sha256": "071f833337182fccd0e98e41bce1940e9770181618ddfdb9f1bf0c25f6b37bc0",
+    "bytes": 23468,
+    "snapshot": "source_snapshots/local_lab/source_development_guidance.py.txt"
+  },
+  "local_lab/source_development.py": {
+    "sha256": "ee8cf0b6654e0feac35523f2ff75ec5d2bc66c8a4920b67534cf18abef9ee380",
+    "bytes": 30339,
+    "snapshot": "source_snapshots/local_lab/source_development.py.txt"
+  },
+  "local_lab/source_development_bindings.py": {
+    "sha256": "538edbdc2a02be244185f5f28e5d318d7121c8b886e6c80234d09e6e160567cb",
+    "bytes": 18051,
+    "snapshot": "source_snapshots/local_lab/source_development_bindings.py.txt"
+  },
+  "local_lab/source_development_results.py": {
+    "sha256": "68094367b314693c4849e2570dd359785f134afcaf46cd7c0a735eacef6511da",
+    "bytes": 27603,
+    "snapshot": "source_snapshots/local_lab/source_development_results.py.txt"
+  },
+  "local_lab/development_sdf.py": {
+    "sha256": "f7b3d1d35a98b6efda867ae784bce17156adf5a56213ff8c64ddbaf5ed421448",
+    "bytes": 16483,
+    "snapshot": "source_snapshots/local_lab/development_sdf.py.txt"
+  },
+  "local_lab/source_resident_v3.py": {
+    "sha256": "725a722d52ccc696a12e18a7926b1ea3c870746160639dee16b0bc1e235467e0",
+    "bytes": 45632,
+    "snapshot": "source_snapshots/local_lab/source_resident_v3.py.txt"
+  },
+  "local_lab/source_ir_v2.py": {
+    "sha256": "3e7f528c14bbcb59b2e2df877b1b47c2adedaa37b2d454305bcebf1a03befe2a",
+    "bytes": 3722,
+    "snapshot": "source_snapshots/local_lab/source_ir_v2.py.txt"
+  },
+  "local_lab/source_ir.py": {
+    "sha256": "6ba9b22f04da0034b2c3b3f2878566907df0353e2dc5ba05326cec0ea656b6b9",
+    "bytes": 20076,
+    "snapshot": "source_snapshots/local_lab/source_ir.py.txt"
+  },
+  "local_lab/source_graph.py": {
+    "sha256": "af28152d5a565b24e769ee10c4001f1fd8af6d8b799297e0b22ccb4903dd5ac7",
+    "bytes": 28327,
+    "snapshot": "source_snapshots/local_lab/source_graph.py.txt"
+  },
+  "local_lab/source_graph_types.py": {
+    "sha256": "5cefe06ed3d754dfda9813fd7e3d7c8ed943598ee322e1595eebc998fd6b159a",
+    "bytes": 19284,
+    "snapshot": "source_snapshots/local_lab/source_graph_types.py.txt"
+  },
+  "local_lab/source_program.py": {
+    "sha256": "c91049fd6eee0c9c89b2489dc2e1d56464f9ee4eec0e69e9b9edb1be10662fa9",
+    "bytes": 8199,
+    "snapshot": "source_snapshots/local_lab/source_program.py.txt"
+  },
+  "local_lab/source_cycle.py": {
+    "sha256": "b8bb4255b19e0e53d664449addc984b6c0c44ed795a3f78bfa8190d848ab9f51",
+    "bytes": 42804,
+    "snapshot": "source_snapshots/local_lab/source_cycle.py.txt"
+  },
+  "local_lab/source_slot_bindings.py": {
+    "sha256": "385016ddda79cf8050d4fbfddb8b6e8e1aeb2bde8981997134e1b8dcd12689db",
+    "bytes": 26678,
+    "snapshot": "source_snapshots/local_lab/source_slot_bindings.py.txt"
+  },
+  "local_lab/source_catalogue_extension.py": {
+    "sha256": "c1fb4fe505e5dc1316bb6b30d12f44f185456239fd8931a72ced7054598afddd",
+    "bytes": 22973,
+    "snapshot": "source_snapshots/local_lab/source_catalogue_extension.py.txt"
+  },
+  "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/include/resident_v3.inc": {
+    "sha256": "f6073baeddf7b4fa76048b283126e0de113183a6cff1aeb39d0ad4864713d534",
+    "bytes": 12498,
+    "snapshot": "source_snapshots/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/include/resident_v3.inc.txt"
+  },
+  "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/include/numeric_types.inc": {
+    "sha256": "5f0fbb86d8f0dd54f8b2f7e1f622fb3159ed4530fa673cc6d2621b1494138faa",
+    "bytes": 10823,
+    "snapshot": "source_snapshots/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/include/numeric_types.inc.txt"
+  },
+  "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/include/source_math_v2.inc": {
+    "sha256": "41334180da91e9a6782a189c3805f725a30617c64877d54513a0755e023072e9",
+    "bytes": 3814,
+    "snapshot": "source_snapshots/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/include/source_math_v2.inc.txt"
+  },
+  "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/resident_v3_cli.cpp": {
+    "sha256": "adbfe1daa93000283432fb5f4b447fab4f814f55ca3df92682ee8074832514c9",
+    "bytes": 41385,
+    "snapshot": "source_snapshots/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/src/resident_v3_cli.cpp.txt"
+  },
+  "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/shaders/resident_v3.comp": {
+    "sha256": "ba32e242f9d955138f1b83333445500ed34caec28fd5bc7c1729b6981d0da166",
+    "bytes": 607,
+    "snapshot": "source_snapshots/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/shaders/resident_v3.comp.txt"
+  },
+  "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/bin/windows-resident-v3/build.json": {
+    "sha256": "1657995b487dbdc96142a8e5444920968d232694700d09523879a510547bde20",
+    "bytes": 3458,
+    "snapshot": "source_snapshots/Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/bin/windows-resident-v3/build.json.txt"
+  },
+  "DAWNWOOD_AGENT.md": {
+    "sha256": "171b6112fdaa83949f50b6ff45df542b1a4b40dbbba3019f7aa6a8cf27b5a108",
+    "bytes": 21639,
+    "snapshot": "source_snapshots/DAWNWOOD_AGENT.md.txt"
+  },
+  "source_bindings/graphs/amplitude_v0.1.json": {
+    "sha256": "5ce2fceebafe566221f6ff3d21eca45c2dd0ea26d9479b5f451a2469fa8789bc",
+    "bytes": 166990,
+    "snapshot": "source_snapshots/source_bindings/graphs/amplitude_v0.1.json.txt"
+  },
+  "output/source_development_2026-09-25/decision_ledger.jsonl": {
+    "sha256": "fcc8b9afa43304d111ce36ce0d263d52786a92dd8bd92d242c38ff5577bfc0d5",
+    "bytes": 8289,
+    "snapshot": "source_snapshots/output/source_development_2026-09-25/decision_ledger.jsonl.txt"
+  },
+  "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/bin/windows-resident-v3/dawnwood-resident-v3.exe": {
+    "sha256": "2843b944d16d4f46873258fc11d828fa8c8c65a6129c79d7f4cce2f7bed00cd1",
+    "bytes": 1582592
+  },
+  "Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/bin/windows-resident-v3/resident_v3.spv": {
+    "sha256": "9e90c89135a93a115db1ceaea5475338a389f8ab41ab7e64165751d4410f6098",
+    "bytes": 78352
+  }
+}

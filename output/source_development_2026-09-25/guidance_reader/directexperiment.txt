@@ -1,0 +1,81 @@
+"""Direct in-memory check of guidance contraction and stale coverage handling."""
+from pathlib import Path
+from datetime import datetime, timezone
+from copy import deepcopy
+import hashlib
+import json
+import struct
+import sys
+
+ROOT = Path(__file__).resolve().parents[3]
+sys.path.insert(0, str(ROOT))
+from local_lab import source_development as development
+from local_lab import source_development_guidance as guidance
+from local_lab import source_development_results as results
+
+OUT = Path(__file__).resolve().parent
+SOURCE = ROOT / "tmp/development-first"
+sha = lambda raw: hashlib.sha256(raw).hexdigest()
+read = lambda path: json.loads(path.read_text(encoding="utf-8"))
+source_paths = [ROOT / "local_lab" / name for name in (
+    "source_development.py", "source_development_fidelity.py", "source_development_results.py",
+    "source_development_queries.py", "source_development_guidance.py")]
+source_hashes = {str(p.relative_to(ROOT)): sha(p.read_bytes()) for p in source_paths}
+parent = (SOURCE / "gpu8.bin").read_bytes()
+manifest = read(SOURCE / "manifest.json")
+model, cycle = read(SOURCE / "source_model.json"), read(SOURCE / "source_cycle.json")
+spec = development.make_spec(training_points=[[.71,.15],[.72,.16],[.73,.17]])
+_, _, compiled, new_manifest = development.compile_program(model, cycle, spec, instance_count=3)
+published, published_manifest = guidance.migrate_guidance(parent, manifest, compiled, new_manifest)
+before = development.resident.decode_checkpoint(parent)
+after = development.resident.decode_checkpoint(published)
+stale = results.evaluate_results(published, published_manifest)
+checks = []
+def check(name, passed, **detail):
+    checks.append(dict(name=name, passed=bool(passed), **detail))
+
+check("contraction_9_to_3_publishes_without_query_override", stale["all_assessments_passed"])
+check("complete_mutable_image_preserved", parent[before["instances_offset_bytes"]:] == published[after["instances_offset_bytes"]:])
+check("all_diagnostics_explicitly_stale", stale["evaluated_diagnostic_count"] == 0,
+      required_epochs=[row["diagnostics_required_epoch"] for row in stale["results"]])
+check("old_coverage_9_retained_in_all_lanes", all(row["native_diagnostics"]["coverage"] == 9 for row in stale["results"]))
+check("stale_coverage_bound_is_integer_encoding_bound", all(row["diagnostic_coverage_limit"] == development.resident.EXACT_LIMIT for row in stale["results"]))
+coverage_index = published_manifest["state_names"].index("resource_coverage")
+malformed = []
+for value in (8.5, -1.0):
+    data = bytearray(published)
+    struct.pack_into("<f", data, after["instances_offset_bytes"] + 4 * (6 + coverage_index), value)
+    report = results.evaluate_results(bytes(data), published_manifest)
+    first = report["results"][0]
+    passed = (not report["all_assessments_passed"] and not first["diagnostic_encoding_checks"]["coverage_is_bounded_integer"]
+              and not first["application_diagnostics_evaluated"])
+    check("malformed_stale_coverage_rejected_" + str(value), passed)
+    malformed.append({"value":value,"checkpoint_sha256":sha(data),"all_assessments_passed":report["all_assessments_passed"],
+                      "encoding_checks":first["diagnostic_encoding_checks"]})
+
+false_fresh_manifest = deepcopy(published_manifest)
+false_fresh_manifest["guidance_publication"]["diagnostics_require_epoch_at_least"] = 1
+fresh = results.evaluate_results(published, false_fresh_manifest)
+check("artificial_fresh_floor_rejects_old9_against_new3", not fresh["all_assessments_passed"]
+      and fresh["evaluated_diagnostic_count"] == 3
+      and all(not row["diagnostic_encoding_checks"]["coverage_is_bounded_integer"] for row in fresh["results"]),
+      diagnostic_coverage_limits=[row["diagnostic_coverage_limit"] for row in fresh["results"]])
+check("reviewed_sources_unchanged_during_direct_check", source_hashes == {str(p.relative_to(ROOT)):sha(p.read_bytes()) for p in source_paths})
+report = {
+    "profile":"DWI-GUIDANCE-READER-DIRECT-ASSESSMENT-0.1",
+    "created_utc":datetime.now(timezone.utc).isoformat(),
+    "scope":"In-memory compiler/publication/readout validation; no native execution, no GPU, no checkpoint overwritten.",
+    "source_hashes":source_hashes,"experiment_sha256":sha(Path(__file__).read_bytes()),
+    "parent_checkpoint_sha256":sha(parent),"parent_manifest_file_sha256":sha((SOURCE/"manifest.json").read_bytes()),
+    "compiled_three_point_template_sha256":sha(compiled),"published_checkpoint_sha256":sha(published),
+    "parent_mutable_image_sha256":sha(parent[before["instances_offset_bytes"]:]),
+    "published_mutable_image_sha256":sha(published[after["instances_offset_bytes"]:]),
+    "old_training_count":9,"new_training_count":3,"parent_epochs":[i["epoch"] for i in before["instances"]],
+    "checks":checks,"all_checks_passed":all(item["passed"] for item in checks),
+    "malformed_coverage_receipts":malformed,
+    "freshness_scope":"A valid stale receipt suppresses comparison with the new policy until the required next epoch. Artificially declaring it fresh reinstates the new coverage bound and rejects the old9 value against3 requests.",
+}
+(OUT/"REPORT.json").write_text(json.dumps(report,indent=2,ensure_ascii=False,allow_nan=False)+"\n",encoding="utf-8")
+print(json.dumps({"checks":len(checks),"all_checks_passed":report["all_checks_passed"],"published_checkpoint_sha256":sha(published)},indent=2))
+if not report["all_checks_passed"]:
+    raise SystemExit(1)

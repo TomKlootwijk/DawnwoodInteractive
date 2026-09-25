@@ -1,0 +1,152 @@
+[
+  {
+    "name": "original_045_1_cpu_healthy",
+    "passed": true
+  },
+  {
+    "name": "original_045_1_vulkan_healthy",
+    "passed": true
+  },
+  {
+    "name": "original_045_1_vulkan_physical_gpu_validation",
+    "passed": true
+  },
+  {
+    "name": "original_045_1_cpu_gpu_exact",
+    "passed": true,
+    "changed_words": 0
+  },
+  {
+    "name": "original_045_1_independent_domain_assessment",
+    "passed": true
+  },
+  {
+    "name": "original_045_1_expected_refresh_or_growth",
+    "passed": true
+  },
+  {
+    "name": "original_045_1_old_three_leaves_and_first_five_nodes_exact",
+    "passed": true
+  },
+  {
+    "name": "original_045_2_cpu_healthy",
+    "passed": true
+  },
+  {
+    "name": "original_045_2_vulkan_healthy",
+    "passed": true
+  },
+  {
+    "name": "original_045_2_vulkan_physical_gpu_validation",
+    "passed": true
+  },
+  {
+    "name": "original_045_2_cpu_gpu_exact",
+    "passed": true,
+    "changed_words": 0
+  },
+  {
+    "name": "original_045_2_independent_domain_assessment",
+    "passed": true
+  },
+  {
+    "name": "original_045_2_expected_refresh_or_growth",
+    "passed": true
+  },
+  {
+    "name": "original_045_2_old_three_leaves_and_first_five_nodes_exact",
+    "passed": true
+  },
+  {
+    "name": "original_045_resume_1_plus_1_healthy",
+    "passed": true
+  },
+  {
+    "name": "original_045_resume_1_plus_1_physical_gpu_validation",
+    "passed": true
+  },
+  {
+    "name": "original_045_resume_exactly_equals_two",
+    "passed": true,
+    "changed_words": 0
+  },
+  {
+    "name": "guided_034_1_cpu_healthy",
+    "passed": true
+  },
+  {
+    "name": "guided_034_1_vulkan_healthy",
+    "passed": true
+  },
+  {
+    "name": "guided_034_1_vulkan_physical_gpu_validation",
+    "passed": true
+  },
+  {
+    "name": "guided_034_1_cpu_gpu_exact",
+    "passed": true,
+    "changed_words": 0
+  },
+  {
+    "name": "guided_034_1_independent_domain_assessment",
+    "passed": true
+  },
+  {
+    "name": "guided_034_1_expected_refresh_or_growth",
+    "passed": true
+  },
+  {
+    "name": "guided_034_1_old_three_leaves_and_first_five_nodes_exact",
+    "passed": true
+  },
+  {
+    "name": "guided_034_2_cpu_healthy",
+    "passed": true
+  },
+  {
+    "name": "guided_034_2_vulkan_healthy",
+    "passed": true
+  },
+  {
+    "name": "guided_034_2_vulkan_physical_gpu_validation",
+    "passed": true
+  },
+  {
+    "name": "guided_034_2_cpu_gpu_exact",
+    "passed": true,
+    "changed_words": 0
+  },
+  {
+    "name": "guided_034_2_independent_domain_assessment",
+    "passed": true
+  },
+  {
+    "name": "guided_034_2_expected_refresh_or_growth",
+    "passed": true
+  },
+  {
+    "name": "guided_034_2_old_three_leaves_and_first_five_nodes_exact",
+    "passed": true
+  },
+  {
+    "name": "guided_034_resume_1_plus_1_healthy",
+    "passed": true
+  },
+  {
+    "name": "guided_034_resume_1_plus_1_physical_gpu_validation",
+    "passed": true
+  },
+  {
+    "name": "guided_034_resume_exactly_equals_two",
+    "passed": true,
+    "changed_words": 0
+  },
+  {
+    "name": "all_guided_new_leaves_smaller_without_training_coverage_loss",
+    "passed": true
+  },
+  {
+    "name": "guided_scores_not_lower",
+    "passed": true
+  }
+]

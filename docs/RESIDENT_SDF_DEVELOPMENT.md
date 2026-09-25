@@ -61,3 +61,27 @@ The [resident construction campaign](../output/source_development_2026-09-25/res
 The first [held-out assessment](../output/source_development_2026-09-25/heldout_assessment/REPORT.md) freezes three generated programs before creating 900 unseen requests. Each covers all 900, compared with 300 for the initial box. A hand-defined three-box reference also covers all 900 and uses less region area. This demonstrates benefit over the seed and exposes a policy limitation; it does not establish superiority over an informed fixed definition. These are synthetic request distributions with explicit support, not measured allocation traces.
 
 The native box-admission guard in this integration uses twice the proof margin. The earlier component campaign exercised its original default one-margin binding; that exact earlier module is preserved as [a source snapshot](../output/source_development_2026-09-25/binding_capacity/source_development_bindings.py.txt). The [admission investigation](../output/source_development_2026-09-25/admission_bounds/) derives and checks the revised bound, while the resident campaign exercises it on the device. Earlier receipts keep their original source hashes.
+
+## Changing guidance while retaining a definition
+
+The Python API in `local_lab.source_development_guidance` accepts the actual parent checkpoint and manifest plus a newly compiled program and its manifest:
+
+```python
+from local_lab.source_development_guidance import migrate_guidance
+
+published_bytes, published_manifest = migrate_guidance(
+    parent_checkpoint_bytes, parent_manifest,
+    new_program_bytes, new_manifest,
+    query=(0.20, 0.20),
+)
+```
+
+This is an explicit publication of AI-authored guidance between runs. It copies the complete parent program, state, live records and epoch into the new immutable configuration. An optional query changes only its two declared state words. Function and family handles retain their declared identities; numerical function definitions can change within the checked source profile. The new compiled template's initial program and records are discarded. Native execution resumes from the returned published bytes.
+
+Publication records both configurations, changed definitions, parent program identities and exact word preservation. Old application diagnostics remain marked pending until another native epoch evaluates the new guidance. This also applies when the request set shrinks: a retained coverage of nine is an old observation, not an invalid encoding merely because the new request set contains three items. Fresh results must obey the new request count.
+
+The publisher validates the authored numerical edition, connects its declared bindings to actual native functions and record roles, audits the development graph, and reconstructs both execution plans to compare their exact native words. This closes a review-discovered gap where a substituted geometry gate could previously disagree with the stated protected law. The [publication revalidation](../output/source_development_2026-09-25/guidance_comparison/publication_revalidation.json) rejects ten malformed changes without modifying either input; both legitimate publications remain byte-identical after the correction. The [independent readout review](../output/source_development_2026-09-25/guidance_reader/REPORT.json) also checks the gate correction and stale coverage when the request set shrinks.
+
+The guiding AI chooses the policy change and supplies the new source before publication. The resident then constructs, evaluates and accepts or declines subsequent SDF nodes. This mechanism does not claim the resident box program authored its own interpreter, objective or scientific laws. The [decision ledger](../output/source_development_2026-09-25/decision_ledger.jsonl) identifies the evidence behind a guidance change and the later execution that assesses it.
+
+The first [measured guidance comparison](../output/source_development_2026-09-25/guidance_comparison/REPORT.json) preserves the three-leaf epoch-8 program and introduces a fourth request class. It compares proposal half-sizes `.045` and `.034` from the same complete checkpoint. At epoch 9 each policy refreshes the returned witness; at epoch 10 each resident instance appends the fourth leaf and its union, reaching seven nodes, revision three and coverage 12/12. All prior leaves and existing nodes are unchanged. The tighter policy reduces the newly added leaf's area by about 42.9%; this percentage concerns the fourth leaf, not total area or physical memory use. The 36-check campaign includes exact CPU/Vulkan comparisons and 1+1 versus 2-epoch continuation. Both final checkpoints were frozen before fresh holdout generation.

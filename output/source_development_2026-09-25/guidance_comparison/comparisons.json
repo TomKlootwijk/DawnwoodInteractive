@@ -1,0 +1,50 @@
+[
+  {
+    "name": "original_045_1_cpu_gpu_exact",
+    "left_sha256": "3127ecb0178e56ba6890456fa4fd3301d31275b430877e5497487504b618669b",
+    "right_sha256": "3127ecb0178e56ba6890456fa4fd3301d31275b430877e5497487504b618669b",
+    "all_bytes_equal": true,
+    "compared_words": 158849,
+    "changed_words": 0
+  },
+  {
+    "name": "original_045_2_cpu_gpu_exact",
+    "left_sha256": "2b9b7dcee60038c61b44759711229cf7f4114f84eb62909d76c1580e9ee6f8d0",
+    "right_sha256": "2b9b7dcee60038c61b44759711229cf7f4114f84eb62909d76c1580e9ee6f8d0",
+    "all_bytes_equal": true,
+    "compared_words": 158849,
+    "changed_words": 0
+  },
+  {
+    "name": "original_045_resume_exactly_equals_two",
+    "left_sha256": "2b9b7dcee60038c61b44759711229cf7f4114f84eb62909d76c1580e9ee6f8d0",
+    "right_sha256": "2b9b7dcee60038c61b44759711229cf7f4114f84eb62909d76c1580e9ee6f8d0",
+    "all_bytes_equal": true,
+    "compared_words": 158849,
+    "changed_words": 0
+  },
+  {
+    "name": "guided_034_1_cpu_gpu_exact",
+    "left_sha256": "bc1d5154fc20e80e71b78d07b8d7cf1d6188f375c0fa2ca22c8e45328c6dcbd1",
+    "right_sha256": "bc1d5154fc20e80e71b78d07b8d7cf1d6188f375c0fa2ca22c8e45328c6dcbd1",
+    "all_bytes_equal": true,
+    "compared_words": 158849,
+    "changed_words": 0
+  },
+  {
+    "name": "guided_034_2_cpu_gpu_exact",
+    "left_sha256": "b6e8f7134ec5ec33e5b5941810d1f92ad882864279e925452e9d5aaab2a4d045",
+    "right_sha256": "b6e8f7134ec5ec33e5b5941810d1f92ad882864279e925452e9d5aaab2a4d045",
+    "all_bytes_equal": true,
+    "compared_words": 158849,
+    "changed_words": 0
+  },
+  {
+    "name": "guided_034_resume_exactly_equals_two",
+    "left_sha256": "b6e8f7134ec5ec33e5b5941810d1f92ad882864279e925452e9d5aaab2a4d045",
+    "right_sha256": "b6e8f7134ec5ec33e5b5941810d1f92ad882864279e925452e9d5aaab2a4d045",
+    "all_bytes_equal": true,
+    "compared_words": 158849,
+    "changed_words": 0
+  }
+]

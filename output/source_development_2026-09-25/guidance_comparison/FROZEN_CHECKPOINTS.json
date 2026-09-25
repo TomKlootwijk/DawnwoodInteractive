@@ -1,0 +1,27 @@
+{
+  "frozen_utc": "2026-09-25T00:04:12.805794+00:00",
+  "new_holdouts_generated": false,
+  "purpose": "Freeze both complete retained programs before the independently seeded1200-query holdout campaign.",
+  "final_checkpoints": {
+    "original_045": {
+      "cpu": {
+        "path": "original_045_2_cpu/checkpoint.bin",
+        "sha256": "2b9b7dcee60038c61b44759711229cf7f4114f84eb62909d76c1580e9ee6f8d0"
+      },
+      "vulkan": {
+        "path": "original_045_2_vulkan/checkpoint.bin",
+        "sha256": "2b9b7dcee60038c61b44759711229cf7f4114f84eb62909d76c1580e9ee6f8d0"
+      }
+    },
+    "guided_034": {
+      "cpu": {
+        "path": "guided_034_2_cpu/checkpoint.bin",
+        "sha256": "b6e8f7134ec5ec33e5b5941810d1f92ad882864279e925452e9d5aaab2a4d045"
+      },
+      "vulkan": {
+        "path": "guided_034_2_vulkan/checkpoint.bin",
+        "sha256": "b6e8f7134ec5ec33e5b5941810d1f92ad882864279e925452e9d5aaab2a4d045"
+      }
+    }
+  }
+}
