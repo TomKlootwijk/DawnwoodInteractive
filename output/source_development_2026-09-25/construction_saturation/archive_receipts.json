@@ -1,0 +1,10 @@
+[
+  {
+    "original_name": "source_compilation/definition.json",
+    "original_bytes": 21852588,
+    "original_sha256": "9221c42bfa9fd638247bdc557245520cb84cb6f3c3f94c41966fc6605b2b6beb",
+    "archive": "source_compilation/definition.json.xz",
+    "archive_bytes": 129480,
+    "archive_sha256": "41599567fa6a9cd325bffa69777a9be33778ed5967182d4bd53b52cfc3cf3950"
+  }
+]

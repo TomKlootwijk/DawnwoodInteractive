@@ -1,0 +1,30 @@
+{
+  "expected_default_program_sha256": "c3af6851c99c3d1fb4285fedf14d6f45bfb18c096822d8ea92b09981c4daab90",
+  "default_program_matches": true,
+  "initial_program": {
+    "path": "output\\source_development_2026-09-25\\construction_saturation\\program.bin",
+    "bytes": 57449868,
+    "sha256": "4ed25a5ec01f0b329905067a02a421ca62ad27554c5eddcf9329c9893ceaaba9"
+  },
+  "cpu_input": {
+    "path": "output\\source_development_2026-09-25\\construction_saturation\\cpu_input.bin",
+    "bytes": 181892,
+    "sha256": "c3af6851c99c3d1fb4285fedf14d6f45bfb18c096822d8ea92b09981c4daab90"
+  },
+  "static_bytes_after_count_unchanged": true,
+  "every_population_image_equals_declared_template": true,
+  "source_template_count": 3,
+  "population_count": 16384,
+  "instance_words": 874,
+  "instance_offset": 171404,
+  "source_manifest": {
+    "path": "output\\source_development_2026-09-25\\construction_saturation\\source_compilation\\manifest.json",
+    "bytes": 23066486,
+    "sha256": "8cd8c5e0f84ee9cbba2812e6c6dbe66cfa12925a82feed0abb33bf89969a7966"
+  },
+  "protocol": {
+    "path": "output\\source_development_2026-09-25\\construction_saturation\\protocol.json",
+    "bytes": 1017,
+    "sha256": "f540ab8f9a03280ffa9aca67075e09926a689a0f88174d63fdd7a9999b7d66bf"
+  }
+}

@@ -1,0 +1,119 @@
+[
+  {
+    "label": "cpu_reference",
+    "command": [
+      "C:\\WINDOWS\\system32\\cmd.exe",
+      "/d",
+      "/c",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood-Develop.cmd",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\construction_saturation\\continued_1024\\cpu_input.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\construction_saturation\\continued_1024\\cpu_reference.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "1024"
+    ],
+    "display": "C:\\WINDOWS\\system32\\cmd.exe /d /c C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood-Develop.cmd run --input C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\construction_saturation\\continued_1024\\cpu_input.bin --output C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\construction_saturation\\continued_1024\\cpu_reference.bin --backend cpu --epochs 1024",
+    "started_utc": "2026-09-25T00:11:15.825882+00:00",
+    "elapsed_wall_seconds": 0.267974200003664,
+    "exit_code": 0,
+    "timeout_seconds": 180,
+    "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+    "environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin"
+    },
+    "stdout": {
+      "path": "output\\source_development_2026-09-25\\construction_saturation\\continued_1024\\logs\\cpu_reference.stdout.txt",
+      "bytes": 1116,
+      "sha256": "763edcc2af8e3fb95863138017d4206ef2a7ad96b1a1ece374aadc62db983604"
+    },
+    "stderr": {
+      "path": "output\\source_development_2026-09-25\\construction_saturation\\continued_1024\\logs\\cpu_reference.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "cpu_results",
+    "command": [
+      "C:\\WINDOWS\\system32\\cmd.exe",
+      "/d",
+      "/c",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood-Develop.cmd",
+      "results",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\construction_saturation\\continued_1024\\cpu_reference.bin",
+      "--manifest",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\construction_saturation\\continued_1024\\source_compilation\\manifest.json",
+      "--distance-tolerance",
+      "0.00001",
+      "--score-tolerance",
+      "0.00002",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\construction_saturation\\continued_1024\\cpu_reference_results.json"
+    ],
+    "display": "C:\\WINDOWS\\system32\\cmd.exe /d /c C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood-Develop.cmd results C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\construction_saturation\\continued_1024\\cpu_reference.bin --manifest C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\construction_saturation\\continued_1024\\source_compilation\\manifest.json --distance-tolerance 0.00001 --score-tolerance 0.00002 --output C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\construction_saturation\\continued_1024\\cpu_reference_results.json",
+    "started_utc": "2026-09-25T00:11:16.100591+00:00",
+    "elapsed_wall_seconds": 0.2322137000010116,
+    "exit_code": 0,
+    "timeout_seconds": 180,
+    "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+    "environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin"
+    },
+    "stdout": {
+      "path": "output\\source_development_2026-09-25\\construction_saturation\\continued_1024\\logs\\cpu_results.stdout.txt",
+      "bytes": 212,
+      "sha256": "2938e2b1d95ed97f03c0e8cc77a074bc9e91f055dcd23cb2e42b74cb2054f691"
+    },
+    "stderr": {
+      "path": "output\\source_development_2026-09-25\\construction_saturation\\continued_1024\\logs\\cpu_results.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "vulkan_load",
+    "command": [
+      "C:\\WINDOWS\\system32\\cmd.exe",
+      "/d",
+      "/c",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood-Develop.cmd",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\construction_saturation\\continued_1024\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\construction_saturation\\continued_1024\\gpu.bin",
+      "--backend",
+      "vulkan",
+      "--epochs",
+      "1024",
+      "--device",
+      "5070 Ti"
+    ],
+    "display": "C:\\WINDOWS\\system32\\cmd.exe /d /c C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood-Develop.cmd run --input C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\construction_saturation\\continued_1024\\program.bin --output C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\construction_saturation\\continued_1024\\gpu.bin --backend vulkan --epochs 1024 --device \"5070 Ti\"",
+    "started_utc": "2026-09-25T00:11:49.327369+00:00",
+    "elapsed_wall_seconds": 22.494784399998025,
+    "exit_code": 0,
+    "timeout_seconds": 180,
+    "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+    "environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin"
+    },
+    "stdout": {
+      "path": "output\\source_development_2026-09-25\\construction_saturation\\continued_1024\\logs\\vulkan_load.stdout.txt",
+      "bytes": 1271,
+      "sha256": "dba1d0baf8516adf75b773735ff82a9b2766812732d180cdabff4cfa186d2acf"
+    },
+    "stderr": {
+      "path": "output\\source_development_2026-09-25\\construction_saturation\\continued_1024\\logs\\vulkan_load.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+]

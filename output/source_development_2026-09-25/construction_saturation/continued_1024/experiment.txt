@@ -1,0 +1,81 @@
+"""One fixed continuation after the initial load was shorter than intended.
+
+The unchanged helper definitions from the first direct experiment are reused;
+their exact source hash is retained before execution. There is no search loop.
+"""
+import hashlib
+import json
+from pathlib import Path
+import shutil
+import sys
+from datetime import datetime,timezone
+
+from local_lab import source_ir_v2 as ir
+from local_lab import source_resident_v3 as resident
+
+ROOT=Path.cwd().resolve()
+INITIAL=ROOT/'output/source_development_2026-09-25/construction_saturation'
+OUT=INITIAL/'continued_1024'
+helper_text=(INITIAL/'experiment.txt').read_text(encoding='utf-8')
+footer='\nif sys.argv[1]=='
+if footer not in helper_text:raise ValueError('Recorded helper script has no expected CLI footer')
+helpers={'__name__':'recorded_construction_load_helpers'}
+exec(compile(helper_text.rsplit(footer,1)[0],str(INITIAL/'experiment.txt'),'exec'),helpers)
+helpers['OUT']=OUT
+helpers['EPOCHS']=1024
+
+def digest(data):return hashlib.sha256(data).hexdigest()
+def save(path,value):Path(path).write_bytes(ir.json_bytes(value))
+def read(path):return json.loads(Path(path).read_text(encoding='utf-8'))
+
+def prepare():
+    if (OUT/'commands.json').exists():raise ValueError('Preserve existing continuation receipts')
+    (OUT/'logs').mkdir();(OUT/'runtime').mkdir();(OUT/'source_compilation').mkdir()
+    base=read(INITIAL/'summary.json')
+    before=read(INITIAL/'protocol.json')
+    decision={'recorded_utc':datetime.now(timezone.utc).isoformat(),'population':16384,'additional_epochs':1024,
+       'initial_epoch':128,'expected_final_epoch':1152,'no_further_extension':True,
+       'reason':'The first fixed128-epoch run reached100percent utilization but its2.3259571s submit-to-fence sum was shorter than the intended10-30s sustained interval. Retain that observation and perform one8x longer continuation without resetting state.',
+       'estimate_seconds_from_initial':base['native']['execution_seconds']*8,
+       'timing_target_seconds':before['duration_target_seconds'],'native_process_timeout_seconds':180,
+       'adaptation_basis':'Elapsed duration only; not selection of successful numerical outputs. Original results and full checkpoint are retained.',
+       'parent_gpu_checkpoint_sha256':digest((INITIAL/'gpu.bin').read_bytes()),
+       'parent_cpu_reference_sha256':digest((INITIAL/'cpu_reference.bin').read_bytes()),
+       'parent_summary_sha256':digest((INITIAL/'summary.json').read_bytes()),
+       'reused_helper_source_sha256':digest((INITIAL/'experiment.txt').read_bytes()),
+       'domain_query_absolute_tolerance':1e-5,'score_absolute_tolerance':2e-5,
+       'comparison':'Every final GPU instance compared byte for byte with its corresponding three-class CPU continuation.'}
+    save(OUT/'protocol.json',decision)
+    shutil.copyfile(INITIAL/'gpu.bin',OUT/'program.bin')
+    shutil.copyfile(INITIAL/'cpu_reference.bin',OUT/'cpu_input.bin')
+    shutil.copyfile(INITIAL/'source_compilation/manifest.json',OUT/'source_compilation/manifest.json')
+    shutil.copyfile(INITIAL/'manifest.json',OUT/'manifest.json')
+    for p in (INITIAL/'runtime').iterdir():shutil.copyfile(p,OUT/'runtime'/p.name)
+    cpu=(OUT/'cpu_input.bin').read_bytes();gpu=(OUT/'program.bin').read_bytes()
+    d=resident.decode_checkpoint(cpu);offset=d['instances_offset_bytes'];width=4*d['instance_words']
+    images=[cpu[offset+i*width:offset+(i+1)*width] for i in range(3)]
+    matched=all(gpu[offset+i*width:offset+(i+1)*width]==images[i%3] for i in range(16384))
+    if not matched or any(i['epoch']!=128 for i in d['instances']):raise RuntimeError('Continuation input classes do not match parent CPU128')
+    save(OUT/'preparation_receipt.json',{'parent_gpu_bytes_copied_without_change':True,'parent_cpu_bytes_copied_without_change':True,
+       'all16384_gpu_input_images_match_cpu_classes':matched,'parent_epoch':128,'input_sha256':digest(gpu),'cpu_input_sha256':digest(cpu),
+       'source_configuration_unchanged':gpu[:offset]==(INITIAL/'gpu.bin').read_bytes()[:offset]})
+    receipts=[]
+    helpers['run']('cpu_reference',['run','--input',OUT/'cpu_input.bin','--output',OUT/'cpu_reference.bin','--backend','cpu','--epochs','1024'],receipts)
+    helpers['run']('cpu_results',['results',OUT/'cpu_reference.bin','--manifest',OUT/'source_compilation/manifest.json',
+       '--distance-tolerance','0.00001','--score-tolerance','0.00002','--output',OUT/'cpu_reference_results.json'],receipts)
+    print('CPU1152_READY_GPU_NOT_USED',flush=True)
+
+def assess():
+    helpers['assess']()
+    s=read(OUT/'summary.json')
+    s['initial_epoch']=128;s['additional_epochs']=1024;s['final_epoch']=1152
+    s['continuation_of_parent_checkpoint']=True;s['parent_gpu_checkpoint_sha256']=read(OUT/'protocol.json')['parent_gpu_checkpoint_sha256']
+    s['duration_target_met']=10<=s['native']['execution_seconds']<=30
+    s['fixed_single_extension_no_more_runs']=True
+    if s['native']['minimum_final_epoch']!=1152 or s['native']['maximum_final_epoch']!=1152:raise RuntimeError('Incorrect resumed epoch')
+    save(OUT/'summary.json',s)
+
+if sys.argv[1]=='prepare':prepare()
+elif sys.argv[1]=='gpu':helpers['gpu']()
+elif sys.argv[1]=='assess':assess()
+else:raise ValueError('Choose prepare, gpu or assess')

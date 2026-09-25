@@ -1,0 +1,23 @@
+{
+  "recorded_utc": "2026-09-25T00:11:15.647550+00:00",
+  "population": 16384,
+  "additional_epochs": 1024,
+  "initial_epoch": 128,
+  "expected_final_epoch": 1152,
+  "no_further_extension": true,
+  "reason": "The first fixed128-epoch run reached100percent utilization but its2.3259571s submit-to-fence sum was shorter than the intended10-30s sustained interval. Retain that observation and perform one8x longer continuation without resetting state.",
+  "estimate_seconds_from_initial": 18.6076568,
+  "timing_target_seconds": [
+    10,
+    30
+  ],
+  "native_process_timeout_seconds": 180,
+  "adaptation_basis": "Elapsed duration only; not selection of successful numerical outputs. Original results and full checkpoint are retained.",
+  "parent_gpu_checkpoint_sha256": "b6c606a020932608b4b420eeb38540e9caf5adbfb03fe133f8bf7edad522bdab",
+  "parent_cpu_reference_sha256": "ba08f21bf92052ce95cd9c7d60d94c3ab6d593d74f4b10905f72d234b70dcc1b",
+  "parent_summary_sha256": "a3bb103c86f61ec05ece8bd95119c7c0d1a9ead23f594c23ffa2f3984bf2ef55",
+  "reused_helper_source_sha256": "ebf1984e1125710c62f928c708edd6fe5845ae000c88681d626251bfc76fb60c",
+  "domain_query_absolute_tolerance": 1e-05,
+  "score_absolute_tolerance": 2e-05,
+  "comparison": "Every final GPU instance compared byte for byte with its corresponding three-class CPU continuation."
+}

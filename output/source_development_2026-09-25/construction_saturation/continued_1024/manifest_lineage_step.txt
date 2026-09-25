@@ -1,0 +1,11 @@
+Metadata-only operation performed after prepare and before the Vulkan continuation.
+This did not change any checkpoint byte, native command or numerical definition.
+
+import hashlib,json
+from pathlib import Path
+from local_lab.source_ir_v2 import json_bytes
+out=Path('output/source_development_2026-09-25/construction_saturation/continued_1024')
+m=json.loads((out/'manifest.json').read_text(encoding='utf-8'))
+m['continuation_input']={'epoch':128,'parent_checkpoint_sha256':hashlib.sha256((out/'program.bin').read_bytes()).hexdigest(),'mutable_bytes_modified_by_host':False}
+m['program_sha256']=m['continuation_input']['parent_checkpoint_sha256']
+(out/'manifest.json').write_bytes(json_bytes(m))

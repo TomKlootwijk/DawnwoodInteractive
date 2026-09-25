@@ -1,0 +1,9 @@
+{
+  "parent_gpu_bytes_copied_without_change": true,
+  "parent_cpu_bytes_copied_without_change": true,
+  "all16384_gpu_input_images_match_cpu_classes": true,
+  "parent_epoch": 128,
+  "input_sha256": "b6c606a020932608b4b420eeb38540e9caf5adbfb03fe133f8bf7edad522bdab",
+  "cpu_input_sha256": "ba08f21bf92052ce95cd9c7d60d94c3ab6d593d74f4b10905f72d234b70dcc1b",
+  "source_configuration_unchanged": true
+}

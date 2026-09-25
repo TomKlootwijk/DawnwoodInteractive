@@ -1,0 +1,21 @@
+{
+  "recorded_utc": "2026-09-25T00:06:10.779219+00:00",
+  "population": 16384,
+  "epochs": 128,
+  "template_count": 3,
+  "replication": "lane i clones complete initial image i modulo3; no randomized perturbation or host solver",
+  "cpu_reference": "First three actual population images mechanically extracted before GPU run, with only count reset to3; all unique initial classes covered",
+  "comparison": "Every returned GPU instance header/state/record byte must equal its corresponding CPU template at the same epoch",
+  "telemetry": "nvidia-smi one-second samples around one native run, including setup/readback windows; no inference of allocation capacity",
+  "duration_target_seconds": [
+    10,
+    30
+  ],
+  "hard_limits": {
+    "epochs": 128,
+    "native_process_timeout_seconds": 180
+  },
+  "domain_query_absolute_tolerance": 1e-05,
+  "score_absolute_tolerance": 2e-05,
+  "scope": "Peak observed compute load for this construction graph, not task speedup, maximal-memory proof or an indefinite stress run"
+}

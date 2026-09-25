@@ -1,0 +1,263 @@
+[
+  {
+    "utc": "2026-09-25T00:06:28.420222+00:00",
+    "elapsed_seconds": 1.6399993910454214e-05,
+    "phase": "before_native_process",
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=timestamp,index,name,uuid,utilization.gpu,utilization.memory,temperature.gpu,power.draw,memory.used,memory.total,clocks.current.graphics,clocks.current.memory",
+      "--format=csv,noheader,nounits"
+    ],
+    "exit_code": 0,
+    "stdout": "2026/09/25 02:06:30.971, 0, NVIDIA GeForce RTX 5070 Ti Laptop GPU, GPU-072d759c-b0d7-47c0-04e9-48d3e81c9c8d, 0, 0, 43, 20.70, 0, 12227, 0, 14001\r\n",
+    "stderr": "",
+    "rows": [
+      {
+        "timestamp": "2026/09/25 02:06:30.971",
+        "index": "0",
+        "name": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+        "uuid": "GPU-072d759c-b0d7-47c0-04e9-48d3e81c9c8d",
+        "utilization.gpu": "0",
+        "utilization.memory": "0",
+        "temperature.gpu": "43",
+        "power.draw": "20.70",
+        "memory.used": "0",
+        "memory.total": "12227",
+        "clocks.current.graphics": "0",
+        "clocks.current.memory": "14001"
+      }
+    ]
+  },
+  {
+    "utc": "2026-09-25T00:06:30.987365+00:00",
+    "elapsed_seconds": 2.5676420999952825,
+    "phase": "native_process_window",
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=timestamp,index,name,uuid,utilization.gpu,utilization.memory,temperature.gpu,power.draw,memory.used,memory.total,clocks.current.graphics,clocks.current.memory",
+      "--format=csv,noheader,nounits"
+    ],
+    "exit_code": 0,
+    "stdout": "2026/09/25 02:06:31.017, 0, NVIDIA GeForce RTX 5070 Ti Laptop GPU, GPU-072d759c-b0d7-47c0-04e9-48d3e81c9c8d, 0, 0, 43, 20.70, 0, 12227, 0, 14001\r\n",
+    "stderr": "",
+    "rows": [
+      {
+        "timestamp": "2026/09/25 02:06:31.017",
+        "index": "0",
+        "name": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+        "uuid": "GPU-072d759c-b0d7-47c0-04e9-48d3e81c9c8d",
+        "utilization.gpu": "0",
+        "utilization.memory": "0",
+        "temperature.gpu": "43",
+        "power.draw": "20.70",
+        "memory.used": "0",
+        "memory.total": "12227",
+        "clocks.current.graphics": "0",
+        "clocks.current.memory": "14001"
+      }
+    ]
+  },
+  {
+    "utc": "2026-09-25T00:06:32.001808+00:00",
+    "elapsed_seconds": 3.581177000000025,
+    "phase": "native_process_window",
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=timestamp,index,name,uuid,utilization.gpu,utilization.memory,temperature.gpu,power.draw,memory.used,memory.total,clocks.current.graphics,clocks.current.memory",
+      "--format=csv,noheader,nounits"
+    ],
+    "exit_code": 0,
+    "stdout": "2026/09/25 02:06:32.500, 0, NVIDIA GeForce RTX 5070 Ti Laptop GPU, GPU-072d759c-b0d7-47c0-04e9-48d3e81c9c8d, 0, 0, 43, 18.24, 0, 12227, 285, 14001\r\n",
+    "stderr": "",
+    "rows": [
+      {
+        "timestamp": "2026/09/25 02:06:32.500",
+        "index": "0",
+        "name": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+        "uuid": "GPU-072d759c-b0d7-47c0-04e9-48d3e81c9c8d",
+        "utilization.gpu": "0",
+        "utilization.memory": "0",
+        "temperature.gpu": "43",
+        "power.draw": "18.24",
+        "memory.used": "0",
+        "memory.total": "12227",
+        "clocks.current.graphics": "285",
+        "clocks.current.memory": "14001"
+      }
+    ]
+  },
+  {
+    "utc": "2026-09-25T00:06:32.998756+00:00",
+    "elapsed_seconds": 4.578139399993233,
+    "phase": "native_process_window",
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=timestamp,index,name,uuid,utilization.gpu,utilization.memory,temperature.gpu,power.draw,memory.used,memory.total,clocks.current.graphics,clocks.current.memory",
+      "--format=csv,noheader,nounits"
+    ],
+    "exit_code": 0,
+    "stdout": "2026/09/25 02:06:33.029, 0, NVIDIA GeForce RTX 5070 Ti Laptop GPU, GPU-072d759c-b0d7-47c0-04e9-48d3e81c9c8d, 41, 10, 48, 31.22, 305, 12227, 1785, 11001\r\n",
+    "stderr": "",
+    "rows": [
+      {
+        "timestamp": "2026/09/25 02:06:33.029",
+        "index": "0",
+        "name": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+        "uuid": "GPU-072d759c-b0d7-47c0-04e9-48d3e81c9c8d",
+        "utilization.gpu": "41",
+        "utilization.memory": "10",
+        "temperature.gpu": "48",
+        "power.draw": "31.22",
+        "memory.used": "305",
+        "memory.total": "12227",
+        "clocks.current.graphics": "1785",
+        "clocks.current.memory": "11001"
+      }
+    ]
+  },
+  {
+    "utc": "2026-09-25T00:06:33.993231+00:00",
+    "elapsed_seconds": 5.57271669999318,
+    "phase": "native_process_window",
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=timestamp,index,name,uuid,utilization.gpu,utilization.memory,temperature.gpu,power.draw,memory.used,memory.total,clocks.current.graphics,clocks.current.memory",
+      "--format=csv,noheader,nounits"
+    ],
+    "exit_code": 0,
+    "stdout": "2026/09/25 02:06:34.024, 0, NVIDIA GeForce RTX 5070 Ti Laptop GPU, GPU-072d759c-b0d7-47c0-04e9-48d3e81c9c8d, 100, 26, 53, 106.19, 305, 12227, 2782, 14001\r\n",
+    "stderr": "",
+    "rows": [
+      {
+        "timestamp": "2026/09/25 02:06:34.024",
+        "index": "0",
+        "name": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+        "uuid": "GPU-072d759c-b0d7-47c0-04e9-48d3e81c9c8d",
+        "utilization.gpu": "100",
+        "utilization.memory": "26",
+        "temperature.gpu": "53",
+        "power.draw": "106.19",
+        "memory.used": "305",
+        "memory.total": "12227",
+        "clocks.current.graphics": "2782",
+        "clocks.current.memory": "14001"
+      }
+    ]
+  },
+  {
+    "utc": "2026-09-25T00:06:34.991022+00:00",
+    "elapsed_seconds": 6.570320399994671,
+    "phase": "native_process_window",
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=timestamp,index,name,uuid,utilization.gpu,utilization.memory,temperature.gpu,power.draw,memory.used,memory.total,clocks.current.graphics,clocks.current.memory",
+      "--format=csv,noheader,nounits"
+    ],
+    "exit_code": 0,
+    "stdout": "2026/09/25 02:06:35.038, 0, NVIDIA GeForce RTX 5070 Ti Laptop GPU, GPU-072d759c-b0d7-47c0-04e9-48d3e81c9c8d, 100, 26, 54, 117.67, 305, 12227, 2782, 14001\r\n",
+    "stderr": "",
+    "rows": [
+      {
+        "timestamp": "2026/09/25 02:06:35.038",
+        "index": "0",
+        "name": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+        "uuid": "GPU-072d759c-b0d7-47c0-04e9-48d3e81c9c8d",
+        "utilization.gpu": "100",
+        "utilization.memory": "26",
+        "temperature.gpu": "54",
+        "power.draw": "117.67",
+        "memory.used": "305",
+        "memory.total": "12227",
+        "clocks.current.graphics": "2782",
+        "clocks.current.memory": "14001"
+      }
+    ]
+  },
+  {
+    "utc": "2026-09-25T00:06:35.997070+00:00",
+    "elapsed_seconds": 7.576464399993711,
+    "phase": "native_process_window",
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=timestamp,index,name,uuid,utilization.gpu,utilization.memory,temperature.gpu,power.draw,memory.used,memory.total,clocks.current.graphics,clocks.current.memory",
+      "--format=csv,noheader,nounits"
+    ],
+    "exit_code": 0,
+    "stdout": "2026/09/25 02:06:36.027, 0, NVIDIA GeForce RTX 5070 Ti Laptop GPU, GPU-072d759c-b0d7-47c0-04e9-48d3e81c9c8d, 0, 0, 45, 48.84, 305, 12227, 1507, 11001\r\n",
+    "stderr": "",
+    "rows": [
+      {
+        "timestamp": "2026/09/25 02:06:36.027",
+        "index": "0",
+        "name": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+        "uuid": "GPU-072d759c-b0d7-47c0-04e9-48d3e81c9c8d",
+        "utilization.gpu": "0",
+        "utilization.memory": "0",
+        "temperature.gpu": "45",
+        "power.draw": "48.84",
+        "memory.used": "305",
+        "memory.total": "12227",
+        "clocks.current.graphics": "1507",
+        "clocks.current.memory": "11001"
+      }
+    ]
+  },
+  {
+    "utc": "2026-09-25T00:06:36.996328+00:00",
+    "elapsed_seconds": 8.575770999996166,
+    "phase": "native_process_window",
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=timestamp,index,name,uuid,utilization.gpu,utilization.memory,temperature.gpu,power.draw,memory.used,memory.total,clocks.current.graphics,clocks.current.memory",
+      "--format=csv,noheader,nounits"
+    ],
+    "exit_code": 0,
+    "stdout": "2026/09/25 02:06:37.027, 0, NVIDIA GeForce RTX 5070 Ti Laptop GPU, GPU-072d759c-b0d7-47c0-04e9-48d3e81c9c8d, 0, 0, 45, 18.49, 3, 12227, 1507, 11001\r\n",
+    "stderr": "",
+    "rows": [
+      {
+        "timestamp": "2026/09/25 02:06:37.027",
+        "index": "0",
+        "name": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+        "uuid": "GPU-072d759c-b0d7-47c0-04e9-48d3e81c9c8d",
+        "utilization.gpu": "0",
+        "utilization.memory": "0",
+        "temperature.gpu": "45",
+        "power.draw": "18.49",
+        "memory.used": "3",
+        "memory.total": "12227",
+        "clocks.current.graphics": "1507",
+        "clocks.current.memory": "11001"
+      }
+    ]
+  },
+  {
+    "utc": "2026-09-25T00:06:37.274914+00:00",
+    "elapsed_seconds": 8.854148099999293,
+    "phase": "after_native_process",
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=timestamp,index,name,uuid,utilization.gpu,utilization.memory,temperature.gpu,power.draw,memory.used,memory.total,clocks.current.graphics,clocks.current.memory",
+      "--format=csv,noheader,nounits"
+    ],
+    "exit_code": 0,
+    "stdout": "2026/09/25 02:06:37.303, 0, NVIDIA GeForce RTX 5070 Ti Laptop GPU, GPU-072d759c-b0d7-47c0-04e9-48d3e81c9c8d, 0, 0, 45, 18.17, 0, 12227, 1507, 11001\r\n",
+    "stderr": "",
+    "rows": [
+      {
+        "timestamp": "2026/09/25 02:06:37.303",
+        "index": "0",
+        "name": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+        "uuid": "GPU-072d759c-b0d7-47c0-04e9-48d3e81c9c8d",
+        "utilization.gpu": "0",
+        "utilization.memory": "0",
+        "temperature.gpu": "45",
+        "power.draw": "18.17",
+        "memory.used": "0",
+        "memory.total": "12227",
+        "clocks.current.graphics": "1507",
+        "clocks.current.memory": "11001"
+      }
+    ]
+  }
+]

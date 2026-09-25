@@ -1,0 +1,190 @@
+"""Bounded direct load experiment, retained as text rather than a test suite.
+
+prepare performs only source compilation, mechanical population replication
+and CPU reference execution. gpu must run only after exclusive GPU release.
+The fixed 16,384 population and128 epochs are not adjusted after seeing timing.
+"""
+import csv
+import hashlib
+import io
+import json
+import lzma
+import os
+from pathlib import Path
+import shutil
+import struct
+import subprocess
+import sys
+import threading
+import time
+from datetime import datetime, timezone
+
+from local_lab import source_ir_v2 as ir
+from local_lab import source_resident_v3 as resident
+from local_lab import source_development_results as reader
+
+ROOT=Path.cwd().resolve()
+OUT=ROOT/'output/source_development_2026-09-25/construction_saturation'
+LAUNCHER=ROOT/'Dawnwood-Develop.cmd'
+BIN=ROOT/'Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/bin/windows-resident-v3'
+COUNT=16384
+EPOCHS=128
+TEMPLATES=3
+EXPECTED='c3af6851c99c3d1fb4285fedf14d6f45bfb18c096822d8ea92b09981c4daab90'
+ENV=dict(os.environ,DAWNWOOD_VALIDATION='1',VK_LAYER_PATH=str(ROOT/'tmp/rtx-toolchain/VulkanSDK/Bin'))
+FIELDS=['timestamp','index','name','uuid','utilization.gpu','utilization.memory','temperature.gpu','power.draw','memory.used','memory.total','clocks.current.graphics','clocks.current.memory']
+
+def digest(data):return hashlib.sha256(data).hexdigest()
+def save(path,value):Path(path).write_bytes(ir.json_bytes(value))
+def read(path):return json.loads(Path(path).read_text(encoding='utf-8'))
+def info(path):
+    path=Path(path);return {'path':str(path.relative_to(ROOT)),'bytes':path.stat().st_size,'sha256':digest(path.read_bytes())}
+
+def run(label,args,receipts,timeout=180):
+    command=[os.environ.get('COMSPEC','cmd.exe'),'/d','/c',str(LAUNCHER),*map(str,args)]
+    start=datetime.now(timezone.utc).isoformat();before=time.perf_counter()
+    p=subprocess.run(command,cwd=ROOT,env=ENV,stdout=subprocess.PIPE,stderr=subprocess.PIPE,timeout=timeout)
+    elapsed=time.perf_counter()-before
+    stdout=OUT/'logs'/f'{label}.stdout.txt';stderr=OUT/'logs'/f'{label}.stderr.txt'
+    stdout.write_bytes(p.stdout);stderr.write_bytes(p.stderr)
+    receipts.append({'label':label,'command':command,'display':subprocess.list2cmdline(command),'started_utc':start,
+       'elapsed_wall_seconds':elapsed,'exit_code':p.returncode,'timeout_seconds':timeout,'cwd':str(ROOT),
+       'environment':{k:ENV[k] for k in ('DAWNWOOD_VALIDATION','VK_LAYER_PATH')},'stdout':info(stdout),'stderr':info(stderr)})
+    save(OUT/'commands.json',receipts)
+    print(json.dumps({'command':label,'exit_code':p.returncode,'wall_seconds':elapsed}),flush=True)
+    if p.returncode:raise RuntimeError(label+' failed: '+p.stderr.decode('utf-8','replace')[-3000:])
+    return p
+
+def prepare():
+    if (OUT/'commands.json').exists():raise ValueError('Preserve existing campaign; do not rerun prepare')
+    (OUT/'logs').mkdir();(OUT/'sources').mkdir();(OUT/'runtime').mkdir()
+    save(OUT/'protocol.json',{'recorded_utc':datetime.now(timezone.utc).isoformat(),'population':COUNT,'epochs':EPOCHS,
+       'template_count':TEMPLATES,'replication':'lane i clones complete initial image i modulo3; no randomized perturbation or host solver',
+       'cpu_reference':'First three actual population images mechanically extracted before GPU run, with only count reset to3; all unique initial classes covered',
+       'comparison':'Every returned GPU instance header/state/record byte must equal its corresponding CPU template at the same epoch',
+       'telemetry':'nvidia-smi one-second samples around one native run, including setup/readback windows; no inference of allocation capacity',
+       'duration_target_seconds':[10,30],'hard_limits':{'epochs':EPOCHS,'native_process_timeout_seconds':180},
+       'domain_query_absolute_tolerance':1e-5,'score_absolute_tolerance':2e-5,
+       'scope':'Peak observed compute load for this construction graph, not task speedup, maximal-memory proof or an indefinite stress run'})
+    for path in [LAUNCHER,*sorted((ROOT/'local_lab').glob('*.py'))]:shutil.copyfile(path,OUT/'sources'/path.name)
+    for name in ('dawnwood-resident-v3.exe','resident_v3.spv','build.json'):shutil.copyfile(BIN/name,OUT/'runtime'/name)
+    receipts=[]
+    run('compile',['compile','--instances','3','--output',OUT/'source_compilation'],receipts)
+    original=(OUT/'source_compilation/program.bin').read_bytes()
+    if digest(original)!=EXPECTED:raise RuntimeError('Default source compiler changed expected program bytes')
+    decoded=resident.decode_checkpoint(original);offset=decoded['instances_offset_bytes'];width=4*decoded['instance_words']
+    images=[original[offset+i*width:offset+(i+1)*width] for i in range(TEMPLATES)]
+    header=bytearray(original[:offset]);struct.pack_into('<I',header,8,COUNT)
+    population=bytes(header)+b''.join(images[i%TEMPLATES] for i in range(COUNT))
+    (OUT/'program.bin').write_bytes(population)
+    cpu_input=bytearray(population[:offset]);struct.pack_into('<I',cpu_input,8,TEMPLATES)
+    cpu_input=bytes(cpu_input)+population[offset:offset+TEMPLATES*width]
+    if cpu_input!=original:raise RuntimeError('Mechanical CPU extraction does not equal original templates')
+    (OUT/'cpu_input.bin').write_bytes(cpu_input)
+    manifest=read(OUT/'source_compilation/manifest.json')
+    population_manifest=dict(manifest)
+    population_manifest.update(count=COUNT,configuration_sha256=digest(population[:offset]),program_sha256=digest(population))
+    population_manifest.pop('files',None)
+    parent_definition=population_manifest.pop('definition_semantic_sha256',None)
+    population_manifest['replicated_population']={'profile':'DWI-EXPERIMENT-REPLICATION-0.1','count':COUNT,'template_count':TEMPLATES,
+       'mapping':'lane modulo3','template_program_sha256':digest(original),'template_definition_semantic_sha256':parent_definition,
+       'static_change':'Only count word at byte8; all function, family, metadata, heap and plan bytes identical',
+       'template_image_sha256':[digest(v) for v in images],'template_multiplicities':[sum(i%TEMPLATES==j for i in range(COUNT)) for j in range(TEMPLATES)]}
+    save(OUT/'manifest.json',population_manifest)
+    save(OUT/'preparation_receipt.json',{'expected_default_program_sha256':EXPECTED,'default_program_matches':True,
+       'initial_program':info(OUT/'program.bin'),'cpu_input':info(OUT/'cpu_input.bin'),'static_bytes_after_count_unchanged':population[12:offset]==original[12:offset],
+       'every_population_image_equals_declared_template':all(population[offset+i*width:offset+(i+1)*width]==images[i%TEMPLATES] for i in range(COUNT)),
+       'source_template_count':TEMPLATES,'population_count':COUNT,'instance_words':decoded['instance_words'],'instance_offset':offset,
+       'source_manifest':info(OUT/'source_compilation/manifest.json'),'protocol':info(OUT/'protocol.json')})
+    run('cpu_reference',['run','--input',OUT/'cpu_input.bin','--output',OUT/'cpu_reference.bin','--backend','cpu','--epochs',str(EPOCHS)],receipts)
+    run('cpu_results',['results',OUT/'cpu_reference.bin','--manifest',OUT/'source_compilation/manifest.json',
+                       '--distance-tolerance','0.00001','--score-tolerance','0.00002','--output',OUT/'cpu_reference_results.json'],receipts)
+    print('CPU_PREPARATION_COMPLETE_GPU_NOT_USED',flush=True)
+
+def gpu():
+    if (OUT/'gpu.bin').exists():raise ValueError('GPU campaign already has a retained output; do not rerun')
+    receipts=read(OUT/'commands.json');samples=[];stop=threading.Event();start=time.perf_counter()
+    telemetry_command=['nvidia-smi','--query-gpu='+','.join(FIELDS),'--format=csv,noheader,nounits']
+    def sample(phase):
+        timestamp=datetime.now(timezone.utc).isoformat();elapsed=time.perf_counter()-start
+        p=subprocess.run(telemetry_command,stdout=subprocess.PIPE,stderr=subprocess.PIPE,timeout=10)
+        raw=p.stdout.decode('utf-8','replace');rows=[]
+        if p.returncode==0:
+            for values in csv.reader(io.StringIO(raw)):
+                if len(values)==len(FIELDS):rows.append(dict(zip(FIELDS,[x.strip() for x in values])))
+        samples.append({'utc':timestamp,'elapsed_seconds':elapsed,'phase':phase,'command':telemetry_command,
+                        'exit_code':p.returncode,'stdout':raw,'stderr':p.stderr.decode('utf-8','replace'),'rows':rows})
+        save(OUT/'telemetry.json',samples)
+    def worker():
+        deadline=time.perf_counter()
+        while not stop.is_set():
+            try:sample('native_process_window')
+            except Exception as e:samples.append({'phase':'telemetry_error','error':str(e),'elapsed_seconds':time.perf_counter()-start})
+            deadline+=1;stop.wait(max(0,deadline-time.perf_counter()))
+    sample('before_native_process');thread=threading.Thread(target=worker,daemon=True);thread.start()
+    try:run('vulkan_load',['run','--input',OUT/'program.bin','--output',OUT/'gpu.bin','--backend','vulkan','--epochs',str(EPOCHS),'--device','5070 Ti'],receipts)
+    finally:
+        stop.set();thread.join(timeout=15);sample('after_native_process')
+    for name in ('dawnwood-resident-v3.exe','resident_v3.spv'):
+        if (BIN/name).read_bytes()!=(OUT/'runtime'/name).read_bytes():raise RuntimeError('Runtime changed during campaign')
+    save(OUT/'gpu_released.json',{'released_utc':datetime.now(timezone.utc).isoformat(),'epochs_requested':EPOCHS,'population':COUNT,
+                                 'native_command_finished':True,'telemetry_samples':len(samples)})
+    print('GPU_RELEASED',flush=True)
+
+def assess():
+    reference=(OUT/'cpu_reference.bin').read_bytes();initial=(OUT/'program.bin').read_bytes();raw=(OUT/'gpu.bin').read_bytes()
+    decoded=resident.decode_checkpoint(reference);offset=decoded['instances_offset_bytes'];width=4*decoded['instance_words']
+    expected=[reference[offset+i*width:offset+(i+1)*width] for i in range(TEMPLATES)]
+    if len(raw)!=offset+COUNT*width:raise RuntimeError('GPU result shape mismatch')
+    static_exact=raw[:offset]==initial[:offset];mismatches=[]
+    for lane in range(COUNT):
+        actual=raw[offset+lane*width:offset+(lane+1)*width]
+        if actual!=expected[lane%TEMPLATES]:mismatches.append(lane)
+    gpu_templates=bytearray(raw[:offset]);struct.pack_into('<I',gpu_templates,8,TEMPLATES)
+    gpu_templates=bytes(gpu_templates)+raw[offset:offset+TEMPLATES*width]
+    (OUT/'gpu_templates.bin').write_bytes(gpu_templates)
+    if gpu_templates!=reference:raise RuntimeError('GPU representative templates differ from CPU')
+    report=reader.evaluate_results(gpu_templates,read(OUT/'source_compilation/manifest.json'),distance_tolerance=1e-5,score_tolerance=2e-5)
+    save(OUT/'gpu_template_results.json',report)
+    native=json.loads((OUT/'logs/vulkan_load.stdout.txt').read_text(encoding='utf-8'))
+    telemetry=read(OUT/'telemetry.json');rows=[(s,row) for s in telemetry for row in s.get('rows',[]) if row.get('name')==native['device']]
+    def numbers(field,phase=None):
+        out=[]
+        for s,row in rows:
+            if phase and s['phase']!=phase:continue
+            try:out.append(float(row[field]))
+            except (ValueError,KeyError):pass
+        return out
+    util=numbers('utilization.gpu','native_process_window')
+    result={'completed_utc':datetime.now(timezone.utc).isoformat(),'profile':'DWI-CONSTRUCTION-LOAD-0.1','count':COUNT,'epochs':EPOCHS,
+       'committed_instance_epochs_per_backend_class':'GPU '+str(COUNT*EPOCHS)+'; CPU3template reference '+str(TEMPLATES*EPOCHS),
+       'gpu_committed_instance_epochs':native['committed_instance_epochs'],'cpu_template_instance_epochs':TEMPLATES*EPOCHS,
+       'template_count':TEMPLATES,'template_multiplicities':[sum(i%TEMPLATES==j for i in range(COUNT)) for j in range(TEMPLATES)],
+       'all_gpu_instances_equal_corresponding_cpu_template':not mismatches,'mismatching_lanes':mismatches,
+       'mutable_words_compared':COUNT*decoded['instance_words'],'mutable_bytes_compared':COUNT*width,
+       'static_configuration_preserved':static_exact,'gpu_template_complete_checkpoint_equals_cpu':gpu_templates==reference,
+       'all_template_domain_assessments_passed':report['all_assessments_passed'],'all_template_programs_geometrically_admissible':report['all_programs_geometrically_admissible'],
+       'template_program_node_counts':[r['program']['node_count'] for r in report['results']],
+       'template_program_revisions':[r['program']['revision'] for r in report['results']],
+       'template_training_coverage':[r['native_diagnostics']['coverage'] for r in report['results']],
+       'maximum_template_query_absolute_error':max(r['independent_readout']['query']['absolute_error'] for r in report['results']),
+       'maximum_template_score_absolute_error':max(abs(r['independent_readout']['objective']['score_signed_error_given_native_coverage']) for r in report['results']),
+       'native':native,'telemetry_sample_count':len(telemetry),'native_window_device_samples':len(util),
+       'maximum_observed_gpu_utilization_percent':max(util) if util else None,'samples_at_100_percent':sum(v==100 for v in util),
+       'maximum_observed_temperature_c':max(numbers('temperature.gpu')) if numbers('temperature.gpu') else None,
+       'maximum_observed_power_w':max(numbers('power.draw')) if numbers('power.draw') else None,
+       'maximum_observed_memory_mib':max(numbers('memory.used')) if numbers('memory.used') else None,
+       'observed_gpu_memory_total_mib':max(numbers('memory.total')) if numbers('memory.total') else None,
+       'initial_program_sha256':digest(initial),'gpu_checkpoint_sha256':digest(raw),'cpu_reference_sha256':digest(reference),
+       'limitations':['All16384lanes are repetitions of3actual source initial images; full comparison covers those3classes, not16384independently varied cases.',
+       'Telemetry covers the native process window including setup/readback and is sampled once per second; it does not establish continuous100percent utilization.',
+       'Peak compute load is not proof of maximum memory capacity or useful-task speedup.','The fixed epoch count bounded the run; no repeated search for a favorable load duration.']}
+    if not all([not mismatches,static_exact,report['all_assessments_passed'],native['status']=='ok',native['validation_enabled'],native['validation_errors']==0,native['validation_warnings']==0]):
+        raise RuntimeError('Construction load acceptance checks failed')
+    save(OUT/'summary.json',result)
+    print(json.dumps({k:v for k,v in result.items() if k not in ('native','limitations','mismatching_lanes')},indent=2),flush=True)
+
+if sys.argv[1]=='prepare':prepare()
+elif sys.argv[1]=='gpu':gpu()
+elif sys.argv[1]=='assess':assess()
+else:raise ValueError('Choose prepare, gpu or assess')
