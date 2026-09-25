@@ -1,0 +1,10 @@
+{
+  "profile": "DWI-SDF-QUERY-POPULATION-0.1",
+  "output": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\native_queries\\prepared",
+  "count": 900,
+  "parent_lane": 0,
+  "parent_epoch": 8,
+  "diagnostics_require_epoch_at_least": 9,
+  "program_sha256": "34c3230c8b22b139c4d905d8b8824e3aba0c679d36e15d5a4f690b9e81a5d276",
+  "native_execution_performed": false
+}

@@ -1,0 +1,200 @@
+{
+  "started_utc": "2026-09-24T23:56:25.384085+00:00",
+  "source_snapshots": [
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\Dawnwood-Develop.cmd",
+      "bytes": 899,
+      "sha256": "b5e9e0faee452127c1f2520ad9439a858d1ebaad1539b5bd059ddc7b60ada2ea"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\definition_experiments.py",
+      "bytes": 24677,
+      "sha256": "7ad5b1475b0576d84c69a113532cfcb0d2b91a3a5373daa5f25abd6c70d5eec2"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\development_sdf.py",
+      "bytes": 16483,
+      "sha256": "f7b3d1d35a98b6efda867ae784bce17156adf5a56213ff8c64ddbaf5ed421448"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\domain_fields.py",
+      "bytes": 21659,
+      "sha256": "134b2c3f859c0ca305bb93d3079408193ecc7477019db1e1cdcbb1fca302f309"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\source_apply.py",
+      "bytes": 25613,
+      "sha256": "1a79d4c67864a097721eccfec75c3790038e9c51e8584176c9fb6d1fab42d5e8"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\source_catalogue_extension.py",
+      "bytes": 22973,
+      "sha256": "c1fb4fe505e5dc1316bb6b30d12f44f185456239fd8931a72ced7054598afddd"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\source_cycle.py",
+      "bytes": 42804,
+      "sha256": "b8bb4255b19e0e53d664449addc984b6c0c44ed795a3f78bfa8190d848ab9f51"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\source_development.py",
+      "bytes": 30339,
+      "sha256": "ee8cf0b6654e0feac35523f2ff75ec5d2bc66c8a4920b67534cf18abef9ee380"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\source_development_bindings.py",
+      "bytes": 18051,
+      "sha256": "538edbdc2a02be244185f5f28e5d318d7121c8b886e6c80234d09e6e160567cb"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\source_development_fidelity.py",
+      "bytes": 25694,
+      "sha256": "913ba6436947245fbdc1a17eb5fde93194a30b40eee2b1283d9171fe39b5e5b8"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\source_development_guidance.py",
+      "bytes": 23468,
+      "sha256": "071f833337182fccd0e98e41bce1940e9770181618ddfdb9f1bf0c25f6b37bc0"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\source_development_queries.py",
+      "bytes": 14673,
+      "sha256": "b48af7c1d023125adc438dab68dbb8230691ad883f0a59207445a8d570dd9547"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\source_development_results.py",
+      "bytes": 27150,
+      "sha256": "89fa1d14772ec6fe9b41b295496dfa2c6454ac82ddb8ec269bae9fb6fc0eed7d"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\source_enzyme.py",
+      "bytes": 26480,
+      "sha256": "2875592287d4905881422da819e55068cab9b4b2b20e985a1b673168a6419911"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\source_enzyme_results.py",
+      "bytes": 7740,
+      "sha256": "423e42e7f7d8af1f1bb68670526c49b6f6c1496129996b0b83941048afe4c3e5"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\source_graph.py",
+      "bytes": 28327,
+      "sha256": "af28152d5a565b24e769ee10c4001f1fd8af6d8b799297e0b22ccb4903dd5ac7"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\source_graph_export.py",
+      "bytes": 16666,
+      "sha256": "6d9f64d6ab41a01afcf41f604f749025c0da0476a56e628affe0ba836ba6bf56"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\source_graph_fidelity.py",
+      "bytes": 33894,
+      "sha256": "40bb8ada4863f3db861faaae274d42c3d694cddedaa862eea1cdfd8afdd764bf"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\source_graph_program.py",
+      "bytes": 6093,
+      "sha256": "6264470048504142292ae3e5f88fc5e5052204a8ba9b0297d4d8a55bac341635"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\source_graph_types.py",
+      "bytes": 19284,
+      "sha256": "5cefe06ed3d754dfda9813fd7e3d7c8ed943598ee322e1595eebc998fd6b159a"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\source_ir.py",
+      "bytes": 20076,
+      "sha256": "6ba9b22f04da0034b2c3b3f2878566907df0353e2dc5ba05326cec0ea656b6b9"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\source_ir_v2.py",
+      "bytes": 3722,
+      "sha256": "3e7f528c14bbcb59b2e2df877b1b47c2adedaa37b2d454305bcebf1a03befe2a"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\source_program.py",
+      "bytes": 8199,
+      "sha256": "c91049fd6eee0c9c89b2489dc2e1d56464f9ee4eec0e69e9b9edb1be10662fa9"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\source_resident.py",
+      "bytes": 38637,
+      "sha256": "e1b4e6463dde8fce7d1d2e91b1b60d5ea7b27e6136a08493ecc93131436d748c"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\source_resident_v2.py",
+      "bytes": 45624,
+      "sha256": "311206687ae0c1b9b1a76dfdaec295761836a2f6e1c4f0afac4994de1c6070d7"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\source_resident_v3.py",
+      "bytes": 45632,
+      "sha256": "725a722d52ccc696a12e18a7926b1ea3c870746160639dee16b0bc1e235467e0"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\source_slot_bindings.py",
+      "bytes": 26678,
+      "sha256": "385016ddda79cf8050d4fbfddb8b6e8e1aeb2bde8981997134e1b8dcd12689db"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\sources\\specialize.py",
+      "bytes": 16599,
+      "sha256": "cacfbc542189b4d2bea3168d703bf8739aae042ceb9ab3c93ec956d84a0847c6"
+    }
+  ],
+  "runtime_snapshots": [
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\runtime\\dawnwood-resident-v3.exe",
+      "bytes": 1582592,
+      "sha256": "2843b944d16d4f46873258fc11d828fa8c8c65a6129c79d7f4cce2f7bed00cd1"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\runtime\\resident_v3.spv",
+      "bytes": 78352,
+      "sha256": "9e90c89135a93a115db1ceaea5475338a389f8ab41ab7e64165751d4410f6098"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\native_queries\\runtime\\build.json",
+      "bytes": 3458,
+      "sha256": "1657995b487dbdc96142a8e5444920968d232694700d09523879a510547bde20"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "tmp\\development-first\\gpu8.bin",
+      "bytes": 181892,
+      "sha256": "fff1ca1ed34c57fa9c6a967b211330b42c13fc5c37074039f8e41a8aba7a1639"
+    },
+    {
+      "path": "tmp\\development-first\\manifest.json",
+      "bytes": 22952074,
+      "sha256": "be3b3005f6ac2b8a49d96c3d5df6798d9e1557f3f57e77094ad15a0b63d04668"
+    },
+    {
+      "path": "tmp\\development-first\\program.bin",
+      "bytes": 181892,
+      "sha256": "c3af6851c99c3d1fb4285fedf14d6f45bfb18c096822d8ea92b09981c4daab90"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\heldout_assessment\\queries.json",
+      "bytes": 51001,
+      "sha256": "bc770ef0451a843665789b4a1bae623490d33dd79a320bde969c8d93c349e61e"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\heldout_assessment\\freeze_receipt.json",
+      "bytes": 4025,
+      "sha256": "5ab619358aca13c9ab46844514d0b00d775648bdffb7ac4d08644c6df2b92d9c"
+    },
+    {
+      "path": "output\\source_development_2026-09-25\\heldout_assessment\\summary.json",
+      "bytes": 2422,
+      "sha256": "b92357377a440b6d1d9f7517ab6964fe50daf6ee3f2c814741bc680aa696d65c"
+    }
+  ],
+  "native_query_distance_absolute_tolerance": 1e-05,
+  "score_absolute_tolerance": 2e-05,
+  "parent_lane": 0,
+  "parent_epoch": 8,
+  "expected_default_three_lane_program_sha256": "c3af6851c99c3d1fb4285fedf14d6f45bfb18c096822d8ea92b09981c4daab90",
+  "scope": "One frozen three-leaf retained definition,900 independently sampled requests; no performance or generalization beyond this declared request-family claim."
+}

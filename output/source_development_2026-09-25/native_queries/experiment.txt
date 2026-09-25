@@ -1,0 +1,175 @@
+"""Direct public-CLI experiment; retained text, not a test-suite source file.
+
+Run phase1, release the GPU after its final command, then phase2 on the host.
+All query answers come from the existing resident executable. The host oracle
+only verifies retained results. No graph, program constants or metric are fitted.
+"""
+import hashlib
+import json
+import lzma
+import os
+from pathlib import Path
+import shutil
+import struct
+import subprocess
+import sys
+import time
+from datetime import datetime, timezone
+
+from local_lab import source_development_results as reader
+from local_lab import source_resident_v3 as resident
+from local_lab import source_ir_v2 as ir
+
+ROOT = Path.cwd().resolve()
+OUT = ROOT / 'output/source_development_2026-09-25/native_queries'
+PARENT = ROOT / 'tmp/development-first'
+HOLDOUT = ROOT / 'output/source_development_2026-09-25/heldout_assessment'
+COMPILED = ROOT / 'tmp/development-public-compile-native-queries'
+LAUNCHER = ROOT / 'Dawnwood-Develop.cmd'
+BIN = ROOT / 'Dawnwood_GPU_Kernels_GTX1650Ti_POCO_X7_Pro_v0.3/Dawnwood_GPU_v0.3/bin/windows-resident-v3'
+EXPECTED = 'c3af6851c99c3d1fb4285fedf14d6f45bfb18c096822d8ea92b09981c4daab90'
+ENV = dict(os.environ, DAWNWOOD_VALIDATION='1', VK_LAYER_PATH=str(ROOT/'tmp/rtx-toolchain/VulkanSDK/Bin'))
+
+def digest(data): return hashlib.sha256(data).hexdigest()
+def read(path): return json.loads(Path(path).read_text(encoding='utf-8'))
+def save(path, value): Path(path).write_bytes(ir.json_bytes(value))
+def info(path):
+    path = Path(path)
+    return {'path':str(path.relative_to(ROOT)), 'bytes':path.stat().st_size, 'sha256':digest(path.read_bytes())}
+
+def run(label, args, receipts):
+    command = [os.environ.get('COMSPEC','cmd.exe'), '/d', '/c', str(LAUNCHER), *map(str,args)]
+    start = datetime.now(timezone.utc).isoformat()
+    before = time.perf_counter()
+    p = subprocess.run(command,cwd=ROOT,env=ENV,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+    elapsed = time.perf_counter()-before
+    stdout,stderr = OUT/'logs'/f'{label}.stdout.txt',OUT/'logs'/f'{label}.stderr.txt'
+    stdout.write_bytes(p.stdout);stderr.write_bytes(p.stderr)
+    receipt = {'label':label,'command':command,'shell_display':subprocess.list2cmdline(command),
+               'cwd':str(ROOT),'started_utc':start,'elapsed_wall_seconds':elapsed,'exit_code':p.returncode,
+               'environment':{k:ENV[k] for k in ('DAWNWOOD_VALIDATION','VK_LAYER_PATH')},
+               'stdout':info(stdout),'stderr':info(stderr)}
+    receipts.append(receipt)
+    save(OUT/'commands.json',receipts)
+    print(json.dumps({'command':label,'exit_code':p.returncode,'seconds':elapsed}),flush=True)
+    if p.returncode:
+        raise RuntimeError(label+' failed: '+p.stderr.decode('utf-8','replace')[-3000:])
+    return p
+
+def archive(path):
+    path=Path(path);raw=path.read_bytes();target=path.with_suffix(path.suffix+'.xz')
+    target.write_bytes(lzma.compress(raw,preset=6))
+    if lzma.decompress(target.read_bytes())!=raw:raise RuntimeError('lossless archival verification failed')
+    result={'original_name':str(path.relative_to(OUT)),'original_bytes':len(raw),'original_sha256':digest(raw),'archive':info(target)}
+    path.unlink()
+    return result
+
+def phase1():
+    if (OUT/'commands.json').exists():raise ValueError('Existing experiment evidence; do not overwrite')
+    (OUT/'logs').mkdir();(OUT/'runtime').mkdir();(OUT/'sources').mkdir()
+    snapshots=[]
+    for path in [LAUNCHER,*sorted((ROOT/'local_lab').glob('*.py'))]:
+        target=OUT/'sources'/path.name;shutil.copyfile(path,target);snapshots.append(info(target))
+    runtime=[]
+    for name in ('dawnwood-resident-v3.exe','resident_v3.spv','build.json'):
+        path=BIN/name;target=OUT/'runtime'/name;shutil.copyfile(path,target);runtime.append(info(target))
+    inputs=[info(PARENT/name) for name in ('gpu8.bin','manifest.json','program.bin')]
+    inputs += [info(HOLDOUT/'queries.json'),info(HOLDOUT/'freeze_receipt.json'),info(HOLDOUT/'summary.json')]
+    save(OUT/'provenance.json',{'started_utc':datetime.now(timezone.utc).isoformat(),'source_snapshots':snapshots,'runtime_snapshots':runtime,'inputs':inputs,
+         'native_query_distance_absolute_tolerance':1e-5,'score_absolute_tolerance':2e-5,
+         'parent_lane':0,'parent_epoch':8,'expected_default_three_lane_program_sha256':EXPECTED,
+         'scope':'One frozen three-leaf retained definition,900 independently sampled requests; no performance or generalization beyond this declared request-family claim.'})
+    receipts=[]
+    run('compile',['compile','--instances','3','--output',COMPILED],receipts)
+    if digest((COMPILED/'program.bin').read_bytes())!=EXPECTED:raise RuntimeError('Public compilation byte identity failed')
+    for name in ('program.bin','manifest.json','source_graph.json','development_source.json','source_model.json','source_cycle.json'):
+        target=OUT/('compiled_'+name);shutil.copyfile(COMPILED/name,target)
+    run('inspect',['inspect',COMPILED/'program.bin','--manifest',COMPILED/'manifest.json'],receipts)
+    run('prepare',['prepare','--input',PARENT/'gpu8.bin','--manifest',PARENT/'manifest.json',
+                  '--queries',HOLDOUT/'queries.json','--lane','0','--output',OUT/'prepared'],receipts)
+    run('cpu_query',['run','--input',OUT/'prepared/program.bin','--output',OUT/'cpu.bin','--backend','cpu','--epochs','1'],receipts)
+    run('vulkan_query',['run','--input',OUT/'prepared/program.bin','--output',OUT/'vulkan.bin','--backend','vulkan','--epochs','1','--device','5070 Ti'],receipts)
+    for name in ('dawnwood-resident-v3.exe','resident_v3.spv'):
+        if (BIN/name).read_bytes()!=(OUT/'runtime'/name).read_bytes():raise RuntimeError('Runtime changed during paired experiment')
+    save(OUT/'gpu_released.json',{'released_utc':datetime.now(timezone.utc).isoformat(),'native_commands_finished':True,'gpu_used':True,
+         'complete_cpu_vulkan_checkpoint_identity':(OUT/'cpu.bin').read_bytes()==(OUT/'vulkan.bin').read_bytes()})
+    print('GPU_RELEASED',flush=True)
+
+def phase2():
+    receipts=read(OUT/'commands.json')
+    run('results',['results',OUT/'vulkan.bin','--manifest',OUT/'prepared/manifest.json',
+                  '--distance-tolerance','0.00001','--score-tolerance','0.00002','--output',OUT/'results.json'],receipts)
+    raw_parent=(PARENT/'gpu8.bin').read_bytes();raw_prepared=(OUT/'prepared/program.bin').read_bytes()
+    raw_cpu=(OUT/'cpu.bin').read_bytes();raw_gpu=(OUT/'vulkan.bin').read_bytes()
+    before=resident.decode_checkpoint(raw_parent);prepared=resident.decode_checkpoint(raw_prepared);executed=resident.decode_checkpoint(raw_gpu)
+    manifest=read(OUT/'prepared/manifest.json');native=read(OUT/'results.json')
+    freshness=reader.evaluate_results(raw_prepared,manifest,distance_tolerance=1e-5,score_tolerance=2e-5)
+    fields=manifest['state_names'];meta=manifest['binding_contract']['development'];parent=before['instances'][0]
+    program_indices=[fields.index(name) for name in meta['program_state_fields'].values()]
+    allowed={fields.index('resource_query_x'),fields.index('resource_query_y'),fields.index('resource_enabled')}
+    prep_changes=[];program_preserved=True;records_identical_across_query_lanes=True
+    expected_program=[parent['state_bits'][i] for i in program_indices]
+    for lane,image in enumerate(prepared['instances']):
+        changed=[i for i,(x,y) in enumerate(zip(parent['state_bits'],image['state_bits'])) if x!=y]
+        if not set(changed)<=allowed:raise RuntimeError('Preparation changed another state word')
+        if image['header_words']!=parent['header_words'] or [r['raw_words'] for r in image['records']]!=[r['raw_words'] for r in parent['records']]:
+            raise RuntimeError('Preparation altered parent header or records')
+        prep_changes.append({'lane':lane,'changed_state_fields':[fields[i] for i in changed]})
+    record_names=['body','field','placement','generation',*manifest['record_value_names']]
+    record_changes=[]
+    for ordinal,(old,new) in enumerate(zip(parent['records'],executed['instances'][0]['records'])):
+        record_changes.append({'ordinal':ordinal,'source_index':old['source_index'],
+            'key':manifest['selected_records'][ordinal]['key'],
+            'changed_fields':[record_names[i] for i,(x,y) in enumerate(zip(old['raw_words'],new['raw_words'])) if x!=y],
+            'old_generation':old['generation'],'new_generation':new['generation'],
+            'old_words':old['raw_words'],'new_words':new['raw_words']})
+    for image in executed['instances']:
+        program_preserved &= [image['state_bits'][i] for i in program_indices]==expected_program
+        records_identical_across_query_lanes &= [r['raw_words'] for r in image['records']]==[r['raw_words'] for r in executed['instances'][0]['records']]
+        if any(new['generation']!=old['generation']+1 for old,new in zip(parent['records'],image['records'])):
+            raise RuntimeError('Expected one-epoch record generation did not occur')
+    save(OUT/'preparation_changes.json',prep_changes);save(OUT/'normal_record_evolution.json',record_changes)
+    max_error=max(row['independent_readout']['query']['absolute_error'] for row in native['results'])
+    admitted=sum(row['native_diagnostics']['admitted']==1 for row in native['results'])
+    result={'completed_utc':datetime.now(timezone.utc).isoformat(),'profile':'DWI-SDF-NATIVE-QUERIES-0.1',
+      'scope':'Public headless query preparation and one complete source-cycle epoch; frozen constructed program, evolving normal source state/records. These900 heldouts were frozen and sampled before this native run.',
+      'public_commands':['compile','inspect','prepare','run cpu','run vulkan','results'],
+      'count':executed['count'],'parent_lane':0,'parent_epoch':parent['epoch'],
+      'default_compile_expected_sha256':EXPECTED,'default_compile_matches_expected':digest((COMPILED/'program.bin').read_bytes())==EXPECTED,
+      'parent_checkpoint_sha256':digest(raw_parent),'queries_sha256':digest((HOLDOUT/'queries.json').read_bytes()),
+      'prepared_checkpoint_sha256':digest(raw_prepared),'cpu_checkpoint_sha256':digest(raw_cpu),'vulkan_checkpoint_sha256':digest(raw_gpu),
+      'complete_checkpoint_bytes_compared':len(raw_gpu),'complete_checkpoint_word_count_including_magic':len(raw_gpu)//4,
+      'mutable_instance_words_compared':executed['count']*executed['instance_words'],
+      'complete_cpu_vulkan_checkpoint_identity':raw_cpu==raw_gpu,
+      'prepared_fresh_diagnostic_count':freshness['evaluated_diagnostic_count'],
+      'executed_fresh_diagnostic_count':native['evaluated_diagnostic_count'],
+      'all_runtime_healthy':native['all_runtime_healthy'],'all_independent_assessments_passed':native['all_assessments_passed'],
+      'all_programs_geometrically_admissible':native['all_programs_geometrically_admissible'],
+      'retained_40_program_words_unchanged_in_every_lane':program_preserved,
+      'retained_program_revision':native['results'][0]['program']['revision'],
+      'retained_node_count':native['results'][0]['program']['node_count'],
+      'native_admissions':admitted,'maximum_query_absolute_error':max_error,'predeclared_native_query_tolerance':1e-5,
+      'all_query_answers_within_predeclared_tolerance':max_error<=1e-5,
+      'all_output_epochs_nine':all(i['epoch']==9 for i in executed['instances']),
+      'all_construction_disabled':all(row['native_diagnostics']['enabled']==0 for row in native['results']),
+      'all_new_program_acceptances_zero':all(row['native_diagnostics']['accepted']==0 for row in native['results']),
+      'record_tables_identical_across_query_lanes':records_identical_across_query_lanes,
+      'record_generations_advanced_once':True,'native_static_configuration_unchanged':raw_gpu[:executed['instances_offset_bytes']]==raw_prepared[:prepared['instances_offset_bytes']],
+      'preparation_static_bytes_after_count_preserved':raw_prepared[12:prepared['instances_offset_bytes']]==raw_parent[12:before['instances_offset_bytes']],
+      'limitations':['The complete retained AST is frozen; normal mutable source records and state evolve through one source epoch.','Coverage concerns the authored request-family holdouts, not actual device allocation success.','A paired correctness run is not a throughput or saturation benchmark.','Source preparation is an explicit forked population, not ordinary checkpoint resume.']}
+    if not all([result['count']==900,result['default_compile_matches_expected'],result['complete_cpu_vulkan_checkpoint_identity'],
+      result['prepared_fresh_diagnostic_count']==0,result['executed_fresh_diagnostic_count']==900,result['all_runtime_healthy'],
+      result['all_independent_assessments_passed'],program_preserved,admitted==900,max_error<=1e-5]):raise RuntimeError('Query acceptance conditions failed')
+    result['native_stdout']={backend:(OUT/'logs'/f'{backend}_query.stdout.txt').read_text(encoding='utf-8') for backend in ('cpu','vulkan')}
+    result['native_stderr']={backend:(OUT/'logs'/f'{backend}_query.stderr.txt').read_text(encoding='utf-8') for backend in ('cpu','vulkan')}
+    save(OUT/'summary.json',result)
+    archives=[]
+    for path in [OUT/'results.json',OUT/'logs/inspect.stdout.txt',OUT/'compiled_manifest.json',
+                 OUT/'prepared/source_manifest.json',OUT/'prepared/manifest.json']:
+        archives.append(archive(path))
+    save(OUT/'archive_receipts.json',archives)
+    print(json.dumps({k:v for k,v in result.items() if k not in ('native_stdout','native_stderr','limitations')},indent=2),flush=True)
+
+if sys.argv[1]=='phase1':phase1()
+elif sys.argv[1]=='phase2':phase2()
+else:raise ValueError('Choose phase1 or phase2')

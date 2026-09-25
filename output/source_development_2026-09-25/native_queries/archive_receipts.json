@@ -1,0 +1,54 @@
+[
+  {
+    "original_name": "results.json",
+    "original_bytes": 26218305,
+    "original_sha256": "3352b87f0972458011311864f0d57761d55d7db578edd3405a31a7365e977004",
+    "archive": {
+      "path": "output\\source_development_2026-09-25\\native_queries\\results.json.xz",
+      "bytes": 117676,
+      "sha256": "873aa0aff3cd69ebab686955a7ee8208043d1783913976d1f6a4f43491dc7bbd"
+    }
+  },
+  {
+    "original_name": "logs\\inspect.stdout.txt",
+    "original_bytes": 759637,
+    "original_sha256": "5b1ebd693fdc76fe8c9952d82da9566b7df8c5663ff96d4b91426a61ef7de6df",
+    "archive": {
+      "path": "output\\source_development_2026-09-25\\native_queries\\logs\\inspect.stdout.txt.xz",
+      "bytes": 23956,
+      "sha256": "c37785af928acc835fd89314f68a852fb6befd8d3fa02b909a976c187be3ae5f"
+    }
+  },
+  {
+    "original_name": "compiled_manifest.json",
+    "original_bytes": 23066486,
+    "original_sha256": "11268362f0e2fc61aab21d7b87c75d6c15776daeec850a61b2a2030c6ac641dc",
+    "archive": {
+      "path": "output\\source_development_2026-09-25\\native_queries\\compiled_manifest.json.xz",
+      "bytes": 150224,
+      "sha256": "5c3de94fd97f0df9f736da793a16947a3c9b44e50eefae296e24d434fcb8e068"
+    }
+  },
+  {
+    "original_name": "prepared\\source_manifest.json",
+    "original_bytes": 22952074,
+    "original_sha256": "be3b3005f6ac2b8a49d96c3d5df6798d9e1557f3f57e77094ad15a0b63d04668",
+    "archive": {
+      "path": "output\\source_development_2026-09-25\\native_queries\\prepared\\source_manifest.json.xz",
+      "bytes": 147696,
+      "sha256": "4253f94c00b634d1280e9bb09b4411fb073fa205e9a92ad0cf77d6193c4f36ec"
+    },
+    "uncompressed_restored_for_immediate_use": true
+  },
+  {
+    "original_name": "prepared\\manifest.json",
+    "original_bytes": 24241711,
+    "original_sha256": "b2a10db1cb2f24387e7d8d20aa98b4dc48cb32b291531ad45a322266d87ebed0",
+    "archive": {
+      "path": "output\\source_development_2026-09-25\\native_queries\\prepared\\manifest.json.xz",
+      "bytes": 236684,
+      "sha256": "9d485a18362997bae0c19cba0429a7b6b3ecd5abdc73b8dbae64ea8e5602c6c7"
+    },
+    "uncompressed_restored_for_immediate_use": true
+  }
+]

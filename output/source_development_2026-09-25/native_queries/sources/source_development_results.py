@@ -1,0 +1,435 @@
+"""Independently assess returned resident SDF programs without repairing them.
+
+The checkpoint supplies the program and numerical results. The manifest names
+their state fields and declares the protected geometry and scoring policy.
+Exact-rational geometry gates and a separate boundary-projection oracle check
+that readout; no host program construction, installation or selection occurs.
+"""
+from __future__ import annotations
+
+import argparse
+from fractions import Fraction
+import hashlib
+import json
+import math
+from pathlib import Path
+import sys
+
+try:
+    from . import development_sdf as sdf
+    from . import source_development_bindings as bindings
+    from . import source_ir_v2 as ir
+    from . import source_resident_v3 as resident
+except ImportError:
+    # The binding module uses relative imports; keep one consistent package.
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    from local_lab import development_sdf as sdf
+    from local_lab import source_development_bindings as bindings
+    from local_lab import source_ir_v2 as ir
+    from local_lab import source_resident_v3 as resident
+
+
+PROFILE = "DWI-SDF-DEVELOPMENT-RESULTS-0.1"
+APPLICATION_PROFILE = "DWI-SDF-DEVELOPMENT-0.1"
+DIAGNOSTICS = (
+    "query_x", "query_y", "quota", "score", "coverage", "witness_x",
+    "witness_y", "witness_distance", "accepted", "improvement", "distance",
+    "trials", "previous_score", "admitted",
+)
+OPTIONAL_DIAGNOSTICS = ("enabled",)
+
+
+def _positive(value, where, *, allow_zero=False):
+    if type(value) not in (int, float):
+        raise ValueError(f"{where}: expected a finite number, not a Boolean")
+    try:
+        number = float(value)
+    except OverflowError as error:
+        raise ValueError(f"{where}: number is out of range") from error
+    if not math.isfinite(number) or number < 0 or (number == 0 and not allow_zero):
+        raise ValueError(f"{where}: expected a finite {'nonnegative' if allow_zero else 'positive'} number")
+    return number
+
+
+def _same_json(left, right):
+    # JSON scalar types matter: True must not compare equal to1 in metadata.
+    return (json.dumps(left, sort_keys=True, allow_nan=False, separators=(",", ":"))
+            == json.dumps(right, sort_keys=True, allow_nan=False, separators=(",", ":")))
+
+
+def _field_mapping(value, expected, state_names, prefix, where, optional=()):
+    ir.exact_keys(value, set(expected) | set(optional), set(expected), where)
+    for key, name in value.items():
+        if not isinstance(name, str) or name != prefix + key or name not in state_names:
+            raise ValueError(f"{where}.{key}: expected declared state field {prefix + key!r}")
+    if len(set(value.values())) != len(value):
+        raise ValueError(f"{where}: state mappings must be distinct")
+    return dict(value)
+
+
+def _manifest_contract(decoded, manifest):
+    if not isinstance(manifest, dict) or manifest.get("profile") != resident.PROFILE:
+        raise ValueError("Manifest must describe DWI-RESIDENT-0.3")
+    if manifest.get("format") != resident.MAGIC.decode("ascii"):
+        raise ValueError("Manifest format must be DWRD0003")
+    if manifest.get("configuration_sha256") != decoded["configuration_sha256"]:
+        raise ValueError("Checkpoint static bank, plans or dimensions do not match the manifest")
+    for name in ("count", "record_count", "state_width", "function_count", "family_count",
+                 "heap_words", "mutation_steps", "action_steps", "instance_words"):
+        if type(manifest.get(name)) is not int or manifest[name] != decoded[name]:
+            raise ValueError(f"Manifest {name} does not match the checkpoint")
+    state_names = resident.names(manifest.get("state_names"), "manifest.state_names",
+                                 decoded["state_width"], decoded["state_width"])
+    contract = manifest.get("binding_contract")
+    development = contract.get("development") if isinstance(contract, dict) else None
+    if not isinstance(development, dict) or development.get("profile") != APPLICATION_PROFILE:
+        raise ValueError(f"Manifest must explicitly declare {APPLICATION_PROFILE}")
+    metadata = manifest.get("definition_metadata")
+    if not isinstance(metadata, dict):
+        raise ValueError("Manifest definition_metadata must contain the declared development source")
+    source = metadata.get("source")
+    if not isinstance(source, dict) or not _same_json(source.get("development"), development):
+        raise ValueError("Definition source.development and binding_contract.development must match")
+    program_fields = _field_mapping(development.get("program_state_fields"), bindings.PROGRAM_NAMES,
+                                    state_names, "sdf_", "development.program_state_fields")
+    diagnostic_fields = _field_mapping(development.get("diagnostic_state_fields"), DIAGNOSTICS,
+                                       state_names, "resource_", "development.diagnostic_state_fields",
+                                       OPTIONAL_DIAGNOSTICS)
+    if set(program_fields.values()) & set(diagnostic_fields.values()):
+        raise ValueError("Program and diagnostic state mappings must not overlap")
+    protected = development.get("protected")
+    ir.exact_keys(protected, {"proof_margin", "separation_margin", "native_admission_margin", "coverage_margin"},
+                  {"proof_margin", "separation_margin", "native_admission_margin", "coverage_margin"},
+                  "development.protected")
+    packed_protected = {}
+    for key, value in protected.items():
+        _positive(value, "development.protected." + key, allow_zero=key == "separation_margin")
+        packed_protected[key] = ir.fp32(value, "development.protected." + key)[0]
+        _positive(packed_protected[key], "packed development.protected." + key,
+                  allow_zero=key == "separation_margin")
+    if packed_protected["native_admission_margin"] < packed_protected["proof_margin"]:
+        raise ValueError("Native admission margin cannot be smaller than the independent proof margin")
+    policy = development.get("policy")
+    ir.exact_keys(policy, {"base_half_extent", "complexity_cost", "area_cost"},
+                  {"base_half_extent", "complexity_cost", "area_cost"}, "development.policy")
+    packed_policy = {}
+    for key, value in policy.items():
+        _positive(value, "development.policy." + key)
+        packed_policy[key] = ir.fp32(value, "development.policy." + key)[0]
+        _positive(packed_policy[key], "packed development.policy." + key)
+    points = development.get("training_points")
+    if not isinstance(points, list) or not 1 <= len(points) <= bindings.MAX_TRAINING:
+        raise ValueError(f"development.training_points: expected1..{bindings.MAX_TRAINING} explicit points")
+    packed_points = []
+    for index, point in enumerate(points):
+        if not isinstance(point, list) or len(point) != 2:
+            raise ValueError(f"development.training_points[{index}]: expected two coordinates")
+        packed = [ir.fp32(value, f"training_points[{index}][{axis}]")[0]
+                  for axis, value in enumerate(point)]
+        if any(value < 0 or value > 16 for value in packed):
+            raise ValueError("Training coordinates must lie in the declared[0,16] envelope")
+        packed_points.append(packed)
+    # Readout labels are used only after checking native source-index identity.
+    selected = manifest.get("selected_records")
+    if not isinstance(selected, list) or len(selected) != decoded["record_count"]:
+        raise ValueError("Manifest selected_records must match the native record count")
+    keys = []
+    for ordinal, item in enumerate(selected):
+        if (not isinstance(item, dict) or type(item.get("ordinal")) is not int
+                or item["ordinal"] != ordinal or type(item.get("source_index")) is not int
+                or item["source_index"] != decoded["record_metadata_words"][ordinal][0]
+                or not isinstance(item.get("key"), str) or not item["key"]):
+            raise ValueError("Manifest record identity does not match native ordinal/source index")
+        keys.append(item["key"])
+    if len(set(keys)) != len(keys):
+        raise ValueError("Manifest record keys must be unique")
+    function_names, family_names = [], []
+    for label, count, output in (("functions", decoded["function_count"], function_names),
+                                 ("families", decoded["family_count"], family_names)):
+        entries = manifest.get(label)
+        if not isinstance(entries, list) or len(entries) != count:
+            raise ValueError(f"Manifest {label} must match the native count")
+        for handle, item in enumerate(entries):
+            if (not isinstance(item, dict) or type(item.get("handle")) is not int
+                    or item["handle"] != handle or not isinstance(item.get("name"), str)
+                    or not item["name"]):
+                raise ValueError(f"Manifest {label} must retain exact handle order and nonempty names")
+            output.append(item["name"])
+        if len(set(output)) != len(output):
+            raise ValueError(f"Manifest {label} names must be unique")
+    return dict(development=development, state_names=state_names, program_fields=program_fields,
+                diagnostic_fields=diagnostic_fields, protected=packed_protected,
+                policy=packed_policy, training_points=packed_points,
+                record_keys=keys, function_names=function_names, family_names=family_names)
+
+
+def _canonical_constructor_grammar(program):
+    if program["node_count"] not in (1, 3, 5, 7):
+        return False
+    for index, node in enumerate(program["nodes"][:program["node_count"]]):
+        leaf = index == 0 or index % 2 == 1
+        expected = ([sdf.NODE_BOX, 0 if index == 0 else (index + 1) // 2, 0] if leaf else
+                    [sdf.NODE_SEPARATED_UNION, index - 2, index - 1])
+        if node != expected:
+            return False
+    return True
+
+
+def _integer_in(value, low, high):
+    return low <= value <= high and value == math.floor(value)
+
+
+def _diagnostic_checks(diag, training_count):
+    checks = {
+        "accepted_is_bit": diag["accepted"] in (0, 1),
+        "admitted_is_bit": diag["admitted"] in (0, 1),
+        "coverage_is_bounded_integer": _integer_in(diag["coverage"], 0, training_count),
+        "trials_is_exact_integer": _integer_in(diag["trials"], 0, resident.EXACT_LIMIT),
+        "improvement_is_nonnegative": diag["improvement"] >= 0,
+    }
+    if "enabled" in diag:
+        checks["enabled_is_bit"] = diag["enabled"] in (0, 1)
+    return checks
+
+
+def _reference_readout(program, validation, diag, contract, distance_tolerance, score_tolerance):
+    policy = dict(beta=diag["quota"], proof_margin=contract["protected"]["proof_margin"],
+                  separation_margin=contract["protected"]["separation_margin"])
+    query = sdf.boundary_oracle(program, [diag["query_x"], diag["query_y"]], **policy)
+    witness = sdf.boundary_oracle(program, [diag["witness_x"], diag["witness_y"]], **policy)
+    # Repeated points are deliberately retained: the declared objective counts
+    # requests, including duplicates, rather than deduplicating the workload.
+    training = [sdf.boundary_oracle(program, point, **policy)
+                for point in contract["training_points"]]
+    threshold = -contract["protected"]["coverage_margin"]
+    ambiguous = [index for index, item in enumerate(training)
+                 if abs(item["distance"] - threshold) <= distance_tolerance]
+    definitely_covered = sum(item["distance"] < threshold - distance_tolerance for item in training)
+    possibly_covered = sum(item["distance"] <= threshold + distance_tolerance for item in training)
+    reference_coverage = sum(item["distance"] <= threshold for item in training)
+    area = sum((4 * Fraction.from_float(program["boxes"][index][2])
+                * Fraction.from_float(program["boxes"][index][3])
+                for index in validation["leaf_indices"]), Fraction())
+    cost = (Fraction.from_float(contract["policy"]["complexity_cost"])
+            * len(validation["leaf_indices"])
+            + Fraction.from_float(contract["policy"]["area_cost"]) * area)
+    score_using_returned_coverage = float(Fraction.from_float(diag["coverage"]) - cost)
+    score_reference = float(Fraction(reference_coverage) - cost)
+    worst_index = max(range(len(training)), key=lambda index: training[index]["distance"])
+    worst_distance = training[worst_index]["distance"]
+    witness_point = [diag["witness_x"], diag["witness_y"]]
+    matching_witness_indices = [index for index, point in enumerate(contract["training_points"])
+                                if point == witness_point]
+    query_error = diag["distance"] - query["distance"]
+    witness_error = diag["witness_distance"] - witness["distance"]
+    score_error = diag["score"] - score_using_returned_coverage
+    admission_ambiguous = abs(query["distance"]) <= distance_tolerance
+    checks = {
+        "query_distance_matches_oracle": abs(query_error) <= distance_tolerance,
+        "witness_distance_matches_oracle": abs(witness_error) <= distance_tolerance,
+        "witness_is_declared_training_point": bool(matching_witness_indices),
+        "witness_is_worst_within_tolerance": worst_distance - witness["distance"] <= 2 * distance_tolerance,
+        "coverage_consistent_with_boundary_band": definitely_covered <= diag["coverage"] <= possibly_covered,
+        "score_matches_returned_coverage_and_packed_costs": abs(score_error) <= score_tolerance,
+        "admission_consistent_with_boundary_band": (diag["admitted"] in (0, 1)
+            and (admission_ambiguous or diag["admitted"] == int(query["inside_or_boundary"]))),
+    }
+    return {
+        "query": dict(query, native_distance=diag["distance"], signed_error=query_error,
+                      absolute_error=abs(query_error)),
+        "witness": dict(witness, native_distance=diag["witness_distance"], signed_error=witness_error,
+                        absolute_error=abs(witness_error), training_indices=matching_witness_indices,
+                        first_oracle_worst_index=worst_index,
+                        first_oracle_worst_point=contract["training_points"][worst_index],
+                        oracle_worst_distance=worst_distance),
+        "admission": {"native_admitted": diag["admitted"],
+                      "oracle_inside_or_boundary": query["inside_or_boundary"],
+                      "boundary_ambiguous_at_requested_tolerance": admission_ambiguous},
+        "training": [{"index": index, "point": contract["training_points"][index],
+                      "oracle_distance": item["distance"],
+                      "oracle_covered": item["distance"] <= threshold,
+                      "coverage_boundary_ambiguous": index in ambiguous}
+                     for index, item in enumerate(training)],
+        "objective": {"oracle_coverage": reference_coverage,
+                      "native_coverage": diag["coverage"],
+                      "coverage_margin": contract["protected"]["coverage_margin"],
+                      "ambiguous_training_indices": ambiguous,
+                      "coverage_interval_at_requested_tolerance": [definitely_covered, possibly_covered],
+                      "leaf_count": len(validation["leaf_indices"]),
+                      "area_exact": str(area), "area_binary64": float(area),
+                      "oracle_score_binary64": score_reference,
+                      "score_using_native_coverage_and_exact_packed_costs": score_using_returned_coverage,
+                      "native_score": diag["score"], "score_signed_error_given_native_coverage": score_error},
+        "checks": checks,
+        "all_checks_consistent_with_tolerance": all(checks.values()),
+    }
+
+
+def evaluate_results(checkpoint_bytes, manifest, *, distance_tolerance=2e-5, score_tolerance=2e-5):
+    """Return JSON-safe per-lane assessment of an unchanged DWRD0003 payload.
+
+    Invalid native encoding or mismatched/ambiguous manifest metadata raises
+    ValueError. A valid native image containing malformed SDF data is retained
+    as a failed lane assessment, with original words and an explicit error.
+    Initial epoch0 diagnostics and failed runtime lanes are not called fresh
+    application measurements. Their retained program geometry is still checked.
+    """
+    distance_tolerance = _positive(distance_tolerance, "distance_tolerance")
+    score_tolerance = _positive(score_tolerance, "score_tolerance")
+    if not isinstance(checkpoint_bytes, (bytes, bytearray, memoryview)):
+        raise ValueError("checkpoint_bytes must contain the actual binary checkpoint")
+    raw = bytes(checkpoint_bytes)
+    decoded = resident.decode_checkpoint(raw)
+    contract = _manifest_contract(decoded, manifest)
+    rows = []
+    for lane, instance in enumerate(decoded["instances"]):
+        state = dict(zip(contract["state_names"], instance["state"]))
+        state_bits = dict(zip(contract["state_names"], instance["state_bits"]))
+        words = {key: state[name] for key, name in contract["program_fields"].items()}
+        bits = {key: state_bits[name] for key, name in contract["program_fields"].items()}
+        diag = {key: state[name] for key, name in contract["diagnostic_fields"].items()}
+        healthy = instance["status"] == 0
+        required_epoch = 1
+        freshness_sources = []
+        for publication_kind in ("query_population", "guidance_publication"):
+            publication = manifest.get(publication_kind)
+            if publication is None:
+                continue
+            if not isinstance(publication, dict):
+                raise ValueError(publication_kind + " must be a mapping")
+            floor = publication.get("diagnostics_require_epoch_at_least")
+            if isinstance(floor, list):
+                if len(floor) != decoded["count"]:
+                    raise ValueError(publication_kind + " needs one diagnostic epoch per lane")
+                floor = floor[lane]
+            if type(floor) is not int or not 1 <= floor <= resident.EXACT_LIMIT:
+                raise ValueError(publication_kind + " has an invalid diagnostic epoch")
+            required_epoch = max(required_epoch, floor)
+            freshness_sources.append(publication_kind)
+        evaluated = healthy and instance["epoch"] >= required_epoch
+        checks = _diagnostic_checks(diag, len(contract["training_points"]))
+        row = {
+            "lane": lane, "epoch": instance["epoch"], "runtime_status": instance["status"],
+            "runtime_healthy": healthy, "application_diagnostics_evaluated": evaluated,
+            "diagnostics_required_epoch": required_epoch,
+            "diagnostic_freshness_sources": freshness_sources,
+            "failure": {key: instance[key] for key in (
+                "failure_phase", "failure_target_ordinal", "failure_step", "failure_detail")},
+            "header_words": instance["header_words"],
+            "program_words": words, "program_word_bits": bits,
+            "native_diagnostics": diag,
+            "diagnostic_word_bits": {key: state_bits[name] for key, name in contract["diagnostic_fields"].items()},
+            "diagnostic_encoding_checks": checks,
+            "program": None, "program_well_formed": False,
+            "within_declared_constructor_grammar": False,
+            "independent_validation": None, "program_geometrically_admissible": False,
+            "independent_readout": None, "program_error": None,
+            "current_records": [{"key": contract["record_keys"][ordinal],
+                "source_index": record["source_index"], "generation": record["generation"],
+                "body_handle": record["body_handle"], "field_handle": record["field_handle"],
+                "placement_handle": record["placement_handle"],
+                "body_family": contract["family_names"][record["body_handle"]],
+                "field_function": contract["function_names"][record["field_handle"]],
+                "placement_function": contract["function_names"][record["placement_handle"]]}
+                for ordinal, record in enumerate(instance["records"])],
+        }
+        try:
+            program = bindings.unpack_program(words)
+            row["program"] = program
+            row["program_well_formed"] = True
+            row["within_declared_constructor_grammar"] = _canonical_constructor_grammar(program)
+            row.update(sdf.program_hashes(program))
+            row["expression"] = sdf.pretty_expression(program)
+            validation = sdf.validate_program(program, beta=diag["quota"],
+                proof_margin=contract["protected"]["proof_margin"],
+                separation_margin=contract["protected"]["separation_margin"])
+            row["independent_validation"] = validation
+            row["program_geometrically_admissible"] = validation["admissible"]
+            if validation["admissible"]:
+                row["independent_readout"] = _reference_readout(
+                    program, validation, diag, contract, distance_tolerance, score_tolerance)
+        except ValueError as error:
+            row["program_error"] = {"type": type(error).__name__, "message": str(error)}
+        geometry_ok = (row["program_well_formed"] and row["within_declared_constructor_grammar"]
+                       and row["program_geometrically_admissible"])
+        row["diagnostics_consistent_with_tolerance"] = (
+            all(checks.values()) and bool(row["independent_readout"])
+            and row["independent_readout"]["all_checks_consistent_with_tolerance"]
+        ) if evaluated else None
+        row["assessment_passed"] = (healthy and geometry_ok and all(checks.values())
+                                    and (not evaluated or row["diagnostics_consistent_with_tolerance"]))
+        rows.append(row)
+    evaluated_rows = [row for row in rows if row["application_diagnostics_evaluated"]]
+    return {
+        "profile": PROFILE, "application_profile": APPLICATION_PROFILE,
+        "scope": "Independent readout of checkpointed SDF program data; no repair, construction, host acceptance or checkpoint overwrite.",
+        "checkpoint_sha256": hashlib.sha256(raw).hexdigest(),
+        "configuration_sha256": decoded["configuration_sha256"],
+        "manifest_semantic_sha256": hashlib.sha256(json.dumps(manifest, sort_keys=True,
+            separators=(",", ":"), allow_nan=False).encode("utf-8")).hexdigest(),
+        "count": decoded["count"], "runtime_failed_count": decoded["failed_instance_count"],
+        "evaluated_diagnostic_count": len(evaluated_rows),
+        "development_contract": contract["development"],
+        "packed_protected": contract["protected"], "packed_policy": contract["policy"],
+        "packed_training_points": contract["training_points"],
+        "distance_tolerance": distance_tolerance, "score_tolerance": score_tolerance,
+        "all_runtime_healthy": decoded["all_status_ok"],
+        "all_programs_well_formed": all(row["program_well_formed"] for row in rows),
+        "all_programs_within_declared_constructor_grammar": all(row["within_declared_constructor_grammar"] for row in rows),
+        "all_programs_geometrically_admissible": all(row["program_geometrically_admissible"] for row in rows),
+        "all_evaluated_diagnostics_consistent_with_tolerance": (
+            all(row["diagnostics_consistent_with_tolerance"] for row in evaluated_rows) if evaluated_rows else None),
+        "all_assessments_passed": all(row["assessment_passed"] for row in rows),
+        "unique_program_count": len({row["program_sha256"] for row in rows if row["program_well_formed"]}),
+        "unique_topology_count": len({row["topology_sha256"] for row in rows if row["program_well_formed"]}),
+        "unique_semantic_region_count": len({row["semantic_sha256"] for row in rows if row["program_well_formed"]}),
+        "limitations": [
+            "Native binary dimensions/configuration hash are checked. State names, method names and policy meanings are explicit manifest interpretation, not independently encoded semantic labels in the native payload.",
+            "Raw state words and bits are retained. The separate mathematical source serialization canonicalizes signed zero for hashes; it does not overwrite or repair checkpoint data.",
+            "Exact geometric admission concerns rational values of packed FP32 constants. Oracle distances use a binary64 square root of independently projected exact squared distances.",
+            "Requested numerical tolerances define diagnostic ambiguity bands, not proven error intervals. Near a scoring or admission boundary, consistent classification is not an exact FP32 correctness certificate.",
+            "Score policy is evaluated separately from geometric truth. The reported score error holds returned coverage fixed to expose arithmetic error without concealing near-margin coverage ambiguity.",
+            "Epoch0, failed-lane and not-yet-executed query/guidance-publication diagnostics are retained but not called fresh application measurements. Independent oracle outputs can still describe their retained program.",
+            "One checkpoint does not establish structural novelty, a before/after improvement, acceptance history, CPU/GPU parity, or causal feedback; compare retained checkpoints and execution evidence separately.",
+        ],
+        "results": rows,
+    }
+
+
+def export_results(checkpoint, manifest_path, *, distance_tolerance=2e-5, score_tolerance=2e-5):
+    """Read strict JSON and checkpoint files, preserving both source hashes."""
+    manifest, manifest_raw = ir.read_json(Path(manifest_path))
+    report = evaluate_results(Path(checkpoint).read_bytes(), manifest,
+                              distance_tolerance=distance_tolerance, score_tolerance=score_tolerance)
+    report["manifest_sha256"] = hashlib.sha256(manifest_raw).hexdigest()
+    return report
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("command", choices=["results"])
+    parser.add_argument("checkpoint", type=Path)
+    parser.add_argument("--manifest", type=Path, required=True)
+    parser.add_argument("--output", type=Path)
+    parser.add_argument("--distance-tolerance", type=float, default=2e-5)
+    parser.add_argument("--score-tolerance", type=float, default=2e-5)
+    args = parser.parse_args(argv)
+    report = export_results(args.checkpoint, args.manifest,
+                            distance_tolerance=args.distance_tolerance, score_tolerance=args.score_tolerance)
+    raw = ir.json_bytes(report)
+    if args.output is None:
+        sys.stdout.buffer.write(raw)
+    else:
+        with args.output.open("xb") as handle:
+            handle.write(raw)
+        print(json.dumps({"output": str(args.output.resolve()), "count": report["count"],
+                          "all_assessments_passed": report["all_assessments_passed"]}))
+    return 0 if report["all_assessments_passed"] else 2
+
+
+if __name__ == "__main__":
+    try:
+        raise SystemExit(main())
+    except (OSError, ValueError, TypeError, KeyError) as error:
+        print(f"{type(error).__name__}: {error}", file=sys.stderr)
+        raise SystemExit(1)

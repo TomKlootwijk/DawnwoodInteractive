@@ -1,0 +1,42 @@
+{
+  "completed_utc": "2026-09-24T23:41:27.416954+00:00",
+  "scope": "Authored structural resource-admissibility benchmark; not a real allocation trace, allocator, measured speedup or learned hardware safety envelope.",
+  "checkpoint_sha256": "fff1ca1ed34c57fa9c6a967b211330b42c13fc5c37074039f8e41a8aba7a1639",
+  "queries_json_sha256": "bc770ef0451a843665789b4a1bae623490d33dd79a320bde969c8d93c349e61e",
+  "frozen_lane_count": 3,
+  "holdout_count_per_program": 900,
+  "comparison_program_count": 5,
+  "outside_quota_count_per_program": 736,
+  "native_holdout_executed": false,
+  "gpu_used_in_this_assessment": false,
+  "exact_certificates_all_passed": true,
+  "outside_quota_false_admissions": 0,
+  "max_host_formula_vs_rational_edge_oracle_absolute_error": 2.220446049250313e-16,
+  "holdout_coverage": {
+    "initial_one_box": 300,
+    "hand_defined_three_box_reference": 900,
+    "constructed_lane_0": 900,
+    "constructed_lane_1": 900,
+    "constructed_lane_2": 900
+  },
+  "training_coverage": {
+    "initial_one_box": 3,
+    "hand_defined_three_box_reference": 9,
+    "constructed_lane_0": 9,
+    "constructed_lane_1": 9,
+    "constructed_lane_2": 9
+  },
+  "holdout_ambiguous_count": {
+    "initial_one_box": 0,
+    "hand_defined_three_box_reference": 0,
+    "constructed_lane_0": 0,
+    "constructed_lane_1": 0,
+    "constructed_lane_2": 0
+  },
+  "reference_comparison": "The hand-defined three-box reference is an independent authored baseline, not an observed true region. Equal coverage does not establish superiority; its area/complexity penalty is reported without adjustment.",
+  "one_box_upper_bound": "Each cluster-pair requires a containing rectangle with upper-x plus upper-y at least 1.12 (A/C and B/C) or 1.42 (A/B), exceeding quota1. Consequently a safe one-box program covers at most the three training points of one cluster.",
+  "unchanged_checkpoint_and_program_hashes_rechecked": true,
+  "no_host_constructor_or_parameter_changes_after_freeze": true,
+  "oracle": "Exact-rational rectangle-edge projection and membership with one final binary64 square root; compared separately to binary64 postorder box-SDF/min evaluation at the same packed FP32 coordinates.",
+  "numeric_scope": "This evaluates the retained packed program on the host. It does not establish native FP32 execution of these heldout queries. The predeclared native-query absolute error limit remains1e-5 for the later native batch."
+}

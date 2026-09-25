@@ -1,0 +1,220 @@
+[
+  {
+    "label": "compile",
+    "command": [
+      "C:\\WINDOWS\\system32\\cmd.exe",
+      "/d",
+      "/c",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood-Develop.cmd",
+      "compile",
+      "--instances",
+      "3",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\development-public-compile-native-queries"
+    ],
+    "shell_display": "C:\\WINDOWS\\system32\\cmd.exe /d /c C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood-Develop.cmd compile --instances 3 --output C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\development-public-compile-native-queries",
+    "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+    "started_utc": "2026-09-24T23:56:25.386274+00:00",
+    "elapsed_wall_seconds": 1.5550761999984388,
+    "exit_code": 0,
+    "environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin"
+    },
+    "stdout": {
+      "path": "output\\source_development_2026-09-25\\native_queries\\logs\\compile.stdout.txt",
+      "bytes": 337,
+      "sha256": "8f506774ca50938b401df400712dc1503a27c87edac75926e2ac981667b1a56b"
+    },
+    "stderr": {
+      "path": "output\\source_development_2026-09-25\\native_queries\\logs\\compile.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "inspect",
+    "command": [
+      "C:\\WINDOWS\\system32\\cmd.exe",
+      "/d",
+      "/c",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood-Develop.cmd",
+      "inspect",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\development-public-compile-native-queries\\program.bin",
+      "--manifest",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\development-public-compile-native-queries\\manifest.json"
+    ],
+    "shell_display": "C:\\WINDOWS\\system32\\cmd.exe /d /c C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood-Develop.cmd inspect C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\development-public-compile-native-queries\\program.bin --manifest C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\development-public-compile-native-queries\\manifest.json",
+    "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+    "started_utc": "2026-09-24T23:56:26.988706+00:00",
+    "elapsed_wall_seconds": 0.16651640000054613,
+    "exit_code": 0,
+    "environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin"
+    },
+    "stdout": {
+      "path": "output\\source_development_2026-09-25\\native_queries\\logs\\inspect.stdout.txt",
+      "bytes": 759637,
+      "sha256": "5b1ebd693fdc76fe8c9952d82da9566b7df8c5663ff96d4b91426a61ef7de6df"
+    },
+    "stderr": {
+      "path": "output\\source_development_2026-09-25\\native_queries\\logs\\inspect.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "prepare",
+    "command": [
+      "C:\\WINDOWS\\system32\\cmd.exe",
+      "/d",
+      "/c",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood-Develop.cmd",
+      "prepare",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\development-first\\gpu8.bin",
+      "--manifest",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\development-first\\manifest.json",
+      "--queries",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\heldout_assessment\\queries.json",
+      "--lane",
+      "0",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\native_queries\\prepared"
+    ],
+    "shell_display": "C:\\WINDOWS\\system32\\cmd.exe /d /c C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood-Develop.cmd prepare --input C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\development-first\\gpu8.bin --manifest C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\development-first\\manifest.json --queries C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\heldout_assessment\\queries.json --lane 0 --output C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\native_queries\\prepared",
+    "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+    "started_utc": "2026-09-24T23:56:27.165891+00:00",
+    "elapsed_wall_seconds": 1.8096484999987297,
+    "exit_code": 0,
+    "environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin"
+    },
+    "stdout": {
+      "path": "output\\source_development_2026-09-25\\native_queries\\logs\\prepare.stdout.txt",
+      "bytes": 410,
+      "sha256": "65c5942537207ec554df7fe542b723d17abf7156f35c7c8aa2a1b9e4f45e4a0b"
+    },
+    "stderr": {
+      "path": "output\\source_development_2026-09-25\\native_queries\\logs\\prepare.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "cpu_query",
+    "command": [
+      "C:\\WINDOWS\\system32\\cmd.exe",
+      "/d",
+      "/c",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood-Develop.cmd",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\native_queries\\prepared\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\native_queries\\cpu.bin",
+      "--backend",
+      "cpu",
+      "--epochs",
+      "1"
+    ],
+    "shell_display": "C:\\WINDOWS\\system32\\cmd.exe /d /c C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood-Develop.cmd run --input C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\native_queries\\prepared\\program.bin --output C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\native_queries\\cpu.bin --backend cpu --epochs 1",
+    "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+    "started_utc": "2026-09-24T23:56:28.983632+00:00",
+    "elapsed_wall_seconds": 0.14937800000188872,
+    "exit_code": 0,
+    "environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin"
+    },
+    "stdout": {
+      "path": "output\\source_development_2026-09-25\\native_queries\\logs\\cpu_query.stdout.txt",
+      "bytes": 1111,
+      "sha256": "907c080b41fbde112a605801bf3ad8ad0df3ff1adfc30146d0e8e0b7fb19bbb1"
+    },
+    "stderr": {
+      "path": "output\\source_development_2026-09-25\\native_queries\\logs\\cpu_query.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "vulkan_query",
+    "command": [
+      "C:\\WINDOWS\\system32\\cmd.exe",
+      "/d",
+      "/c",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood-Develop.cmd",
+      "run",
+      "--input",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\native_queries\\prepared\\program.bin",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\native_queries\\vulkan.bin",
+      "--backend",
+      "vulkan",
+      "--epochs",
+      "1",
+      "--device",
+      "5070 Ti"
+    ],
+    "shell_display": "C:\\WINDOWS\\system32\\cmd.exe /d /c C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood-Develop.cmd run --input C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\native_queries\\prepared\\program.bin --output C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\native_queries\\vulkan.bin --backend vulkan --epochs 1 --device \"5070 Ti\"",
+    "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+    "started_utc": "2026-09-24T23:56:29.141271+00:00",
+    "elapsed_wall_seconds": 2.872748399997363,
+    "exit_code": 0,
+    "environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin"
+    },
+    "stdout": {
+      "path": "output\\source_development_2026-09-25\\native_queries\\logs\\vulkan_query.stdout.txt",
+      "bytes": 1245,
+      "sha256": "86039fef217454bd9d74aabf76d7d64ee92e9712066ee6712c2c69dff24e1f0a"
+    },
+    "stderr": {
+      "path": "output\\source_development_2026-09-25\\native_queries\\logs\\vulkan_query.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  {
+    "label": "results",
+    "command": [
+      "C:\\WINDOWS\\system32\\cmd.exe",
+      "/d",
+      "/c",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood-Develop.cmd",
+      "results",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\native_queries\\vulkan.bin",
+      "--manifest",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\native_queries\\prepared\\manifest.json",
+      "--distance-tolerance",
+      "0.00001",
+      "--score-tolerance",
+      "0.00002",
+      "--output",
+      "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\native_queries\\results.json"
+    ],
+    "shell_display": "C:\\WINDOWS\\system32\\cmd.exe /d /c C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\Dawnwood-Develop.cmd results C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\native_queries\\vulkan.bin --manifest C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\native_queries\\prepared\\manifest.json --distance-tolerance 0.00001 --score-tolerance 0.00002 --output C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\output\\source_development_2026-09-25\\native_queries\\results.json",
+    "cwd": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive",
+    "started_utc": "2026-09-24T23:56:53.853036+00:00",
+    "elapsed_wall_seconds": 3.734701800000039,
+    "exit_code": 0,
+    "environment": {
+      "DAWNWOOD_VALIDATION": "1",
+      "VK_LAYER_PATH": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\rtx-toolchain\\VulkanSDK\\Bin"
+    },
+    "stdout": {
+      "path": "output\\source_development_2026-09-25\\native_queries\\logs\\results.stdout.txt",
+      "bytes": 175,
+      "sha256": "a05a4415b50f94056c79ab4fb219cb965de1b0b8cbe32c1ae01f7738059b9264"
+    },
+    "stderr": {
+      "path": "output\\source_development_2026-09-25\\native_queries\\logs\\results.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+]

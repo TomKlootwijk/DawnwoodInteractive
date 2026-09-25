@@ -1,0 +1,78 @@
+{
+  "frozen_utc": "2026-09-24T23:41:24.705904+00:00",
+  "before_holdout_generation": true,
+  "checkpoint_sha256": "fff1ca1ed34c57fa9c6a967b211330b42c13fc5c37074039f8e41a8aba7a1639",
+  "source_directory": "tmp\\development-first",
+  "source_hashes": {
+    "gpu8.bin": "fff1ca1ed34c57fa9c6a967b211330b42c13fc5c37074039f8e41a8aba7a1639",
+    "cpu8.bin": "fff1ca1ed34c57fa9c6a967b211330b42c13fc5c37074039f8e41a8aba7a1639",
+    "program.bin": "c3af6851c99c3d1fb4285fedf14d6f45bfb18c096822d8ea92b09981c4daab90",
+    "manifest.json": "be3b3005f6ac2b8a49d96c3d5df6798d9e1557f3f57e77094ad15a0b63d04668",
+    "results8.json": "e1669b7363922ea941441001ac62349b711385dfddcdd1f75e9fddd555a8adc9",
+    "development_source.json": "1d9c99edea4d7e7e356894656b6c3d81005213d12e25ed56b82ca96c89c29f9b"
+  },
+  "cpu_checkpoint_byte_identical": true,
+  "protocol_sha256": "97aebafa8b651ef4e7879abf92e3f28a7bed483ecc541271f8b41f6104d9ae6e",
+  "incoming_ledger_sha256": "969b9b7ff980fb90c2c366b1d979b2229ade1370a3c2d7423b73e1b04b90570a",
+  "frozen_programs_json_sha256": "e54a6e6f0c9489db0117e6a3ae2896eb7fbe8cfc879be8aebc433cfd1b7d680b",
+  "program_hashes": {
+    "initial_one_box": {
+      "program_sha256": "775480cc2282bf2bfdb6a99e76906ab76fb01fd4cca6e59c3b5fe826fbb29168",
+      "topology_sha256": "e17f090dcc66adc5e5ed16f2f1d385fa4fcf886a9314e816e490028a7e14a78f",
+      "semantic_sha256": "0a4c35e54d499bd7bce037b876312733f27de27a6805bc1dbe0b0edb23643796"
+    },
+    "hand_defined_three_box_reference": {
+      "program_sha256": "85678ed89342b14dd98781b9e909fc6b3470ec2df29687b496eff3899ff891c2",
+      "topology_sha256": "093884d25f0e7655e90c0eba83a5371713afda443e590c39d44bbaa602aeddf0",
+      "semantic_sha256": "fdd2726613593ed1c5af446682d17ad9986be8c47a030483d860372e912857c8"
+    },
+    "constructed_lane_0": {
+      "program_sha256": "96a6f8f5d2a08840bb64c850b64310f017264b9f0f507cb532cd9ea6fc065f8f",
+      "topology_sha256": "093884d25f0e7655e90c0eba83a5371713afda443e590c39d44bbaa602aeddf0",
+      "semantic_sha256": "94f8de24513a856e7e47b175d11e74a426f4de557ffd3eed5e07482020c302cc"
+    },
+    "constructed_lane_1": {
+      "program_sha256": "7f7b09e1e6c6dff4183395b30a24a66cb5345e46cd9ded79271deaa5e407beac",
+      "topology_sha256": "093884d25f0e7655e90c0eba83a5371713afda443e590c39d44bbaa602aeddf0",
+      "semantic_sha256": "8900005a434e3acfb2a5a81bd6e4dfac776fc6ba637e1891eedb445163ac8aa9"
+    },
+    "constructed_lane_2": {
+      "program_sha256": "0a3214eba21af7c7c3d9ae64d71b54b4699d7d6a920bb08488ec619ad8f55539",
+      "topology_sha256": "093884d25f0e7655e90c0eba83a5371713afda443e590c39d44bbaa602aeddf0",
+      "semantic_sha256": "f4098b70e0537c76f917d12bfd18330f6491f66063c3bb1ed8b3f45411f6a2d3"
+    }
+  },
+  "source_library_hashes": {
+    "development_sdf.py": "f7b3d1d35a98b6efda867ae784bce17156adf5a56213ff8c64ddbaf5ed421448",
+    "source_development_results.py": "f79019f613328f1bcf78b96a689b7a95a8b4975ff666aa6bfeab7b98f8a0f34d"
+  },
+  "comparison_declared_before_queries": {
+    "reference_boxes": [
+      [
+        0.72,
+        0.16,
+        0.03,
+        0.03
+      ],
+      [
+        0.16,
+        0.72,
+        0.03,
+        0.03
+      ],
+      [
+        0.42,
+        0.42,
+        0.03,
+        0.03
+      ]
+    ],
+    "reference_actor": "Independent hand-authored benchmark reference, not resident construction or a fitted holdout result.",
+    "score": "covered_count - .02 * leaf_count - .005 * union_area; report training and holdout separately",
+    "region_comparison": "Exact pairwise rectangle-intersection area against the fixed reference; no assertion that the reference is a measured true operational region.",
+    "outside_quota_probes": "All points outside x>=0,y>=0,x+y<=1 on a 31x31 grid [-.25,1.25]^2 in .05 steps, plus six near-boundary points.",
+    "host_oracle_error_limit": 1e-05,
+    "native_holdout_execution": false
+  },
+  "scope": "Authored structural resource-admissibility benchmark; not a real allocation trace, allocator, measured speedup or learned hardware safety envelope."
+}

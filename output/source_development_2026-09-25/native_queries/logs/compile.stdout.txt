@@ -1,0 +1,9 @@
+{
+  "profile": "DWI-SDF-DEVELOPMENT-0.1",
+  "output": "C:\\TOMWERKPLEKTORENTJE\\DawnwoodInteractive\\tmp\\development-public-compile-native-queries",
+  "instances": 3,
+  "state_width": 100,
+  "mutation_steps": 150,
+  "action_steps": 2718,
+  "program_sha256": "c3af6851c99c3d1fb4285fedf14d6f45bfb18c096822d8ea92b09981c4daab90"
+}
