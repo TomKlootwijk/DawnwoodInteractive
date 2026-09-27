@@ -1,0 +1,12 @@
+loaded_h_0(function(_){var window=this;
+_.B6b=function(){return _.maa&&_.na?_.na.mobile:!_.A6b()&&(_.oa("iPod")||_.oa("iPhone")||_.oa("Android")||_.oa("IEMobile"))};_.A6b=function(){return _.maa&&_.na?!_.na.mobile&&(_.oa("iPad")||_.oa("Android")||_.oa("Silk")):_.oa("iPad")||_.oa("Android")&&!_.oa("Mobile")||_.oa("Silk")};_.nx=function(){return!_.B6b()&&!_.A6b()};_.C6b=function(a,b){return Array.prototype.every.call(a,b,void 0)};
+var wKt;
+_.g1=function(a,b){var c=a===0?"Height":"Width";if(_.B6b()&&_.ra())return wKt&&_.vaa()||_.pa()?a===0?_.oi().innerHeight:_.oi().innerWidth:a===0?Math.round(_.oi().outerHeight/(_.oi().devicePixelRatio||1)):Math.round(_.oi().outerWidth/(_.oi().devicePixelRatio||1));if(_.eba()&&_.ra()){if(_.waa()){b=_.oi().outerWidth;c=_.oi().screen.width;let d=_.oi().screen.height,e=_.oi().devicePixelRatio;0<e&&e<Number.MAX_VALUE||(e=1);let f=null,g=a===0;for(let h=0;h<xKt.length;h++){let k=xKt[h],l=h%2?xKt[h-1]:xKt[h+
+1];if(_.Id(b,k,5)){f=g?l:k;break}}f===null&&(f=a===1?c:d);return f/e}if(a===1)return _.oi().document.documentElement.offsetWidth;a=screen.height/screen.width;0<a&&a<Number.MAX_VALUE||(a=1);b=_.oi().outerHeight/_.oi().outerWidth;if(b>1&&a<1||b<1&&a>1)a=1/a;return Math.round(_.oi().document.documentElement.offsetWidth*a)}return b?_.oi().document.documentElement[`client${c}`]:_.oi()[`inner${c}`]?_.oi()[`inner${c}`]:_.oi().document.documentElement&&_.oi().document.documentElement[`offset${c}`]?_.oi().document.documentElement[`offset${c}`]:
+0};wKt=!!(_.Si[37]&64);var xKt=[600,1024,800,1200];
+_.xbr=_.fc("rhYw1b",[]);
+_.v("rhYw1b");
+_.Bs(_.xbr,class extends _.zs{static Qa(){return{}}constructor(){super();this.deviceModel=this.getData("dmd").Hb("");this.deviceType=this.getData("dvt").Hb("");var a=_.g1(1),b=_.g1(0);a=Math.max(a,b);this.oa=a<=800?"xs":a<=1E3?"s":a<=1300?"m":a<=2E3?"l":"xl";this.ka=this.getData("iscsc").Zb(!1);typeof window.google!=="undefined"&&(window.google.dvs=this.oa,window.google.dmd=this.deviceModel,window.google.dvt=this.deviceType,this.ka&&(window.google.iscsc="1"))}});
+_.w();
+});
+// Google Inc.

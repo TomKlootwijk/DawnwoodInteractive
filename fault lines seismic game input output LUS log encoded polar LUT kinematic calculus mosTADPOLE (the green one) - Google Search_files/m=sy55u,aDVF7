@@ -1,0 +1,7 @@
+loaded_h_0(function(_){var window=this;
+_.lcq=_.fc("aDVF7",[]);
+_.v("aDVF7");
+_.Bs(_.lcq,class extends _.zs{static Qa(){return{}}constructor(){super();this.ka=this.getData("len").Hb("");if(typeof window.google!=="undefined"){let a=this.ka.slice(-1);window.google.len=a===","?this.ka.slice(0,-1):this.ka}}});
+_.w();
+});
+// Google Inc.
