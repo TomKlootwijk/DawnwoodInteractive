@@ -1,0 +1,324 @@
+{
+  "format": "tk-lplut-rev16-independent-arithmetic-v1",
+  "scope": "Independent CPU reference reconstructed from supplied PDFs; not solvefinite regression or GPU verification.",
+  "baseline_status": "Historical runtime results are reported by Revision 15 and were not rerun here. VP remains formal only.",
+  "new_extension_status": "LG is opt-in FORMAL ONLY; no production integration or W endpoint is claimed.",
+  "python": "3.13.5",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "script_sha256": "56952d377741f758feffdc0a5b253b565ef3a7b505b21b12c6f078348dfe90bc",
+  "elapsed_seconds": 0.54575,
+  "named_groups_passed": 19,
+  "failure": null,
+  "groups": [
+    {
+      "name": "RP32 lane sweeps and mirror involution",
+      "status": "PASS",
+      "cases": 896,
+      "source": "K pp.7-8",
+      "details": {}
+    },
+    {
+      "name": "Three literal packed pairs",
+      "status": "PASS",
+      "cases": 3,
+      "source": "K p.8",
+      "details": {
+        "pairs": [
+          "11F9030681F903FA",
+          "91F903FB81F90305",
+          "91F903F201F9030E"
+        ]
+      }
+    },
+    {
+      "name": "Single-bit detection and typed-zero examples",
+      "status": "PASS",
+      "cases": 259,
+      "source": "K p.24",
+      "details": {}
+    },
+    {
+      "name": "Exhaustive K8 phase and mirror coherence",
+      "status": "PASS",
+      "cases": 262144,
+      "source": "K pp.6,8,20; LP normal form",
+      "details": {}
+    },
+    {
+      "name": "Two-pinion fixed-path phase normal form",
+      "status": "PASS",
+      "cases": 49152,
+      "source": "Derived from K pp.6,20",
+      "details": {}
+    },
+    {
+      "name": "Weighted seven-node SDF and 64-tick v1 trace",
+      "status": "PASS",
+      "cases": 65,
+      "source": "K pp.27,31",
+      "details": {
+        "field": [
+          -6,
+          -4,
+          -3,
+          0,
+          2,
+          3,
+          5
+        ],
+        "final_pair": "1102046C01020494"
+      }
+    },
+    {
+      "name": "Klein default 64-tick seam trace",
+      "status": "PASS",
+      "cases": 64,
+      "source": "K p.21",
+      "details": {
+        "seams": 8,
+        "final_pair": "11FE00D681FE002A"
+      }
+    },
+    {
+      "name": "Local Psi, degeneracy and reflected frames",
+      "status": "PASS",
+      "cases": 100,
+      "source": "K p.39",
+      "details": {}
+    },
+    {
+      "name": "PX canonical key and lower-median orders",
+      "status": "PASS",
+      "cases": 20,
+      "source": "K pp.40-43",
+      "details": {
+        "sorted": [
+          18,
+          17,
+          19,
+          15,
+          16,
+          4,
+          3,
+          14,
+          13,
+          1,
+          2,
+          11,
+          12,
+          9,
+          0,
+          5,
+          10,
+          6,
+          8,
+          7
+        ],
+        "preorder": [
+          1,
+          16,
+          17,
+          18,
+          19,
+          15,
+          3,
+          4,
+          14,
+          13,
+          0,
+          11,
+          2,
+          12,
+          9,
+          6,
+          5,
+          10,
+          8,
+          7
+        ]
+      }
+    },
+    {
+      "name": "HP reference edge costs and owned pairs",
+      "status": "PASS",
+      "cases": 4,
+      "source": "K p.48",
+      "details": {
+        "actions": [
+          [
+            "11FF04FB01FF0405",
+            98
+          ],
+          [
+            "81001010910010F0",
+            93
+          ],
+          [
+            "81011145910111BB",
+            91
+          ],
+          [
+            "06011145160111BB",
+            86
+          ]
+        ]
+      }
+    },
+    {
+      "name": "Phase-retaining versus phase-dropping search witness",
+      "status": "PASS",
+      "cases": 2,
+      "source": "K p.48",
+      "details": {
+        "phase_labels": [
+          [
+            1,
+            6,
+            5,
+            10
+          ],
+          10
+        ],
+        "phase_free_labels": [
+          [
+            5,
+            10
+          ],
+          11
+        ]
+      }
+    },
+    {
+      "name": "OG union-redistance and geometric forgery rejection",
+      "status": "PASS",
+      "cases": 10,
+      "source": "K pp.14,61,65",
+      "details": {
+        "margin": [
+          -2,
+          -1,
+          -1,
+          -1,
+          -2,
+          -1,
+          -1,
+          -1,
+          0
+        ],
+        "field": [
+          -2,
+          -1,
+          -2,
+          -2,
+          -2,
+          -1,
+          -1,
+          -1,
+          0
+        ]
+      }
+    },
+    {
+      "name": "DP taper distinguishes the OG field family",
+      "status": "PASS",
+      "cases": 64,
+      "source": "K p.90",
+      "details": {
+        "occupied": 16,
+        "boundary": 12,
+        "interior": [
+          19,
+          26,
+          27,
+          28
+        ],
+        "witness": 38
+      }
+    },
+    {
+      "name": "GD redistance is not a shifted old B lane",
+      "status": "PASS",
+      "cases": 2,
+      "source": "K p.51",
+      "details": {
+        "old_B": -3,
+        "new_B": -4
+      }
+    },
+    {
+      "name": "VP three-solid literal occupancy expectations",
+      "status": "PASS",
+      "cases": 3,
+      "source": "K p.104; FORMAL ONLY baseline",
+      "details": {
+        "cone": [
+          29,
+          27,
+          2,
+          4
+        ],
+        "pyramid": [
+          45,
+          43,
+          2,
+          8
+        ],
+        "sphere": [
+          33,
+          26,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "name": "VP exact limbs and small-work u32 overflow witness",
+      "status": "PASS",
+      "cases": 65617,
+      "source": "K p.112; FORMAL ONLY baseline",
+      "details": {
+        "wrapped_membership_disagreements": 40,
+        "charged_sites": 75
+      }
+    },
+    {
+      "name": "W raw-fragment byte order and lengths",
+      "status": "PASS",
+      "cases": 6,
+      "source": "K pp.73,80",
+      "details": {
+        "literal_words": [
+          "FFFBFA00EFBEADDE",
+          "FFFBFA0067452301",
+          "FFFBFA0000000089"
+        ]
+      }
+    },
+    {
+      "name": "Optional phase-window cardinality including wrap",
+      "status": "PASS",
+      "cases": 65792,
+      "source": "NEW LG formal-only extension",
+      "details": {
+        "membership_evaluations": 16842752,
+        "wrapped_window": [
+          252,
+          253,
+          254,
+          255,
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "name": "Optional phase-window full-mirror invariance",
+      "status": "PASS",
+      "cases": 131072,
+      "source": "NEW LG formal-only extension",
+      "details": {}
+    }
+  ]
+}

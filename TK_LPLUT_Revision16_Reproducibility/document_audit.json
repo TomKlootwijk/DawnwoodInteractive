@@ -1,0 +1,718 @@
+{
+  "format": "tk-lplut-rev16-document-audit-v1",
+  "new_pages": 28,
+  "retained_source_pages": 117,
+  "total_pages": 145,
+  "baseline_original_sha256": "68951a1c6c63e1e9e454045fc0c9d043d3b2e6afb3c6ec9235ec284341cd9253",
+  "native_source_page_text_matches": 117,
+  "native_source_page_pixel_matches_72dpi": 117,
+  "authored_links_recreated": 175,
+  "bookmarks": 185,
+  "off_page_new_text_spans": [],
+  "replacement_glyphs": [],
+  "scope": "Document construction and byte/page preservation only. Not kernel runtime verification.",
+  "pages": [
+    {
+      "source_page": 1,
+      "output_page": 29,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 2,
+      "output_page": 30,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 3,
+      "output_page": 31,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 4,
+      "output_page": 32,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 5,
+      "output_page": 33,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 6,
+      "output_page": 34,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 7,
+      "output_page": 35,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 8,
+      "output_page": 36,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 9,
+      "output_page": 37,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 10,
+      "output_page": 38,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 11,
+      "output_page": 39,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 12,
+      "output_page": 40,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 13,
+      "output_page": 41,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 14,
+      "output_page": 42,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 15,
+      "output_page": 43,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 16,
+      "output_page": 44,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 17,
+      "output_page": 45,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 18,
+      "output_page": 46,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 19,
+      "output_page": 47,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 20,
+      "output_page": 48,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 21,
+      "output_page": 49,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 22,
+      "output_page": 50,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 23,
+      "output_page": 51,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 24,
+      "output_page": 52,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 25,
+      "output_page": 53,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 26,
+      "output_page": 54,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 27,
+      "output_page": 55,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 28,
+      "output_page": 56,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 29,
+      "output_page": 57,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 30,
+      "output_page": 58,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 31,
+      "output_page": 59,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 32,
+      "output_page": 60,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 33,
+      "output_page": 61,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 34,
+      "output_page": 62,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 35,
+      "output_page": 63,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 36,
+      "output_page": 64,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 37,
+      "output_page": 65,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 38,
+      "output_page": 66,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 39,
+      "output_page": 67,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 40,
+      "output_page": 68,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 41,
+      "output_page": 69,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 42,
+      "output_page": 70,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 43,
+      "output_page": 71,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 44,
+      "output_page": 72,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 45,
+      "output_page": 73,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 46,
+      "output_page": 74,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 47,
+      "output_page": 75,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 48,
+      "output_page": 76,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 49,
+      "output_page": 77,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 50,
+      "output_page": 78,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 51,
+      "output_page": 79,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 52,
+      "output_page": 80,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 53,
+      "output_page": 81,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 54,
+      "output_page": 82,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 55,
+      "output_page": 83,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 56,
+      "output_page": 84,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 57,
+      "output_page": 85,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 58,
+      "output_page": 86,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 59,
+      "output_page": 87,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 60,
+      "output_page": 88,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 61,
+      "output_page": 89,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 62,
+      "output_page": 90,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 63,
+      "output_page": 91,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 64,
+      "output_page": 92,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 65,
+      "output_page": 93,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 66,
+      "output_page": 94,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 67,
+      "output_page": 95,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 68,
+      "output_page": 96,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 69,
+      "output_page": 97,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 70,
+      "output_page": 98,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 71,
+      "output_page": 99,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 72,
+      "output_page": 100,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 73,
+      "output_page": 101,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 74,
+      "output_page": 102,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 75,
+      "output_page": 103,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 76,
+      "output_page": 104,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 77,
+      "output_page": 105,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 78,
+      "output_page": 106,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 79,
+      "output_page": 107,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 80,
+      "output_page": 108,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 81,
+      "output_page": 109,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 82,
+      "output_page": 110,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 83,
+      "output_page": 111,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 84,
+      "output_page": 112,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 85,
+      "output_page": 113,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 86,
+      "output_page": 114,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 87,
+      "output_page": 115,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 88,
+      "output_page": 116,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 89,
+      "output_page": 117,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 90,
+      "output_page": 118,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 91,
+      "output_page": 119,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 92,
+      "output_page": 120,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 93,
+      "output_page": 121,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 94,
+      "output_page": 122,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 95,
+      "output_page": 123,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 96,
+      "output_page": 124,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 97,
+      "output_page": 125,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 98,
+      "output_page": 126,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 99,
+      "output_page": 127,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 100,
+      "output_page": 128,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 101,
+      "output_page": 129,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 102,
+      "output_page": 130,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 103,
+      "output_page": 131,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 104,
+      "output_page": 132,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 105,
+      "output_page": 133,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 106,
+      "output_page": 134,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 107,
+      "output_page": 135,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 108,
+      "output_page": 136,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 109,
+      "output_page": 137,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 110,
+      "output_page": 138,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 111,
+      "output_page": 139,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 112,
+      "output_page": 140,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 113,
+      "output_page": 141,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 114,
+      "output_page": 142,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 115,
+      "output_page": 143,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 116,
+      "output_page": 144,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    },
+    {
+      "source_page": 117,
+      "output_page": 145,
+      "text_exact_equal": true,
+      "render_pixels_exact_equal_at_72dpi": true
+    }
+  ]
+}
