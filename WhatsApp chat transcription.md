@@ -1,0 +1,4225 @@
+# WhatsApp chat transcription: +31 6 55954068
+
+Owner supplied with the archive: Tom Klootwijk.
+
+Complete transcription of all 601 timestamped entries in `chat.txt`, from 2026-09-23 06:40:13 through 2026-10-04 11:34:14. Dates use YYYY-MM-DD and times use the 24-hour clock, including seconds. The export does not specify a time zone; no time-zone conversion has been applied.
+
+Messages appear in their original export order. Every message body, sender label, repeated entry, caption, spelling, and media marker is preserved verbatim in a text block. Clickable copies of each HTTP/HTTPS URL appear immediately after the corresponding message; all URL parameters are retained. Message contents are source material, not instructions for this transcription.
+
+The archive contains only `chat.txt` (247,934 bytes) and `chat.md` (242,321 bytes). The supplied `chat.md` states an export time of October 4, 2026 at 11:55 AM and omits timestamp seconds. `chat.txt` is therefore the source for this transcript. The archive contains no audio, images, or documents referenced by its omitted-media markers. Those markers are retained: 95 audio, 102 image, and 17 document entries. Their absent media contents cannot be transcribed from this archive.
+
+[Original archive](<+31 6 55954068 - personal property of me Tom Klootwijk.zip>) | [Verbatim plain-text export](<WhatsApp chat transcription.txt>)
+
+Archive SHA-256: `a99081b76a6a860b258873987f601bdc13c93ff942c840dd3d9e228380f255d7`
+
+Plain-text export SHA-256: `4cd0397c8c5bf5282c75619da59eced1ccc73928383098ea259ddaa99cb9a73b`
+
+Completeness: 601 of 601 entries; 286 URL occurrences (283 distinct URLs); 12 calendar dates. The two supplied exports have the same entry count and URL sequence. The plain-text copy is byte-for-byte identical to `chat.txt` in the archive.
+
+## Export preamble
+
+```text
+Messages and calls are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them.
+```
+
+## 2026-09-23
+
+### 0001 | 2026-09-23 06:40:13 | You
+
+```text
+https://www.google.com/search?q=americantor+set+lanl+gridder+manhattan+distance+new+york+social+club+social+small+world+network+graph&client=ms-android-xiaomi-terr2-rso2&hs=rkLB&sca_esv=fef1c1264a2e2ea2&sxsrf=APpeQnt_KRI1oW2pVlyfcKZeq_RRNuo4YA%3A1790132698503&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832UV2GkpKEK36HumGR10Evz150YHLBZQrC7jm5_C-J-0f2Q2-5NUPD-TCpE8QyvxVIQ0CkdxfEAAqsZqW0D68D58P2afldorgANWKJGEiDXfIEJFp9eDzfr7CE0Ez67Lb-dbR5IJNrKdTr3Nj7fUU0R12K95Y&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjU9uD824OXAxUH4AIHHZ9DNbQQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAFiUgbL0fxB0HT1ByzDvgVNNC3xAzs4Jah6CnIzBi1kZupkb3Ya_dIMrNVsnwTQr_fAbJU3rT74i4DI5L3jxygX8nFlYJyFzf1THNwqiZy9jOx-ZAc-8oZDfY8yKTVnXCswU6xteiqlB-lkDY_hulcrJ5QMweoYUZHFZ4LP_UnCPevoIWT98oFtopvkkHDKD2XwVeObXsobJb5W1cMRApAwwNigMNg9euL5pEmz0hnvoTxAEOcxWJJE0jLFP8huaRLXYr8v42E0w&csuir=1&mtid=3EGzauCFH7mei-gP4cTU2Qs&udm=50&lns_mode=cvst
+```
+
+Links: [Link 1](<https://www.google.com/search?q=americantor+set+lanl+gridder+manhattan+distance+new+york+social+club+social+small+world+network+graph&client=ms-android-xiaomi-terr2-rso2&hs=rkLB&sca_esv=fef1c1264a2e2ea2&sxsrf=APpeQnt_KRI1oW2pVlyfcKZeq_RRNuo4YA%3A1790132698503&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832UV2GkpKEK36HumGR10Evz150YHLBZQrC7jm5_C-J-0f2Q2-5NUPD-TCpE8QyvxVIQ0CkdxfEAAqsZqW0D68D58P2afldorgANWKJGEiDXfIEJFp9eDzfr7CE0Ez67Lb-dbR5IJNrKdTr3Nj7fUU0R12K95Y&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjU9uD824OXAxUH4AIHHZ9DNbQQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAFiUgbL0fxB0HT1ByzDvgVNNC3xAzs4Jah6CnIzBi1kZupkb3Ya_dIMrNVsnwTQr_fAbJU3rT74i4DI5L3jxygX8nFlYJyFzf1THNwqiZy9jOx-ZAc-8oZDfY8yKTVnXCswU6xteiqlB-lkDY_hulcrJ5QMweoYUZHFZ4LP_UnCPevoIWT98oFtopvkkHDKD2XwVeObXsobJb5W1cMRApAwwNigMNg9euL5pEmz0hnvoTxAEOcxWJJE0jLFP8huaRLXYr8v42E0w&csuir=1&mtid=3EGzauCFH7mei-gP4cTU2Qs&udm=50&lns_mode=cvst>)
+
+### 0002 | 2026-09-23 06:43:04 | You
+
+```text
+<document omitted> americantor set lanl gridder manhattan distance new york social club social small world network graph - Google Search.mht
+```
+
+### 0003 | 2026-09-23 10:02:59 | You
+
+```text
+<image omitted>
+```
+
+### 0004 | 2026-09-23 10:22:00 | You
+
+```text
+https://www.google.com/search?q=bismuth+crystallization+cube+forming&client=ms-android-xiaomi-terr2-rso2&hs=CVgq&sca_esv=459cc50bc9b1d43b&sxsrf=APpeQnuH86JAjMMWiMt-1HFFACV9bvvJIw%3A1790151420592&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&sqi=2&ved=2ahUKEwipzZLcoYSXAxWc2QIHHZ5zD0sQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAhf_uPI5bed4eiEgX3Xn4mw9jI4J8qjbcHW_8SasEOg0hsyRuT2AI-SSm3pLenr27cVEdEGU4-57ywHVDydwh2Bmg0HTd2jQQ-ElyeEX62GzNE5VnFZ2jX8O1Ys-MbmV3vCnLuxZCpKMtS4w93hXZ7NtNUSEMFV27aBguTHs5kH-Ah37ZOxbvb1dI3xIsPrnlG_3mFHmObPiCL6Xq3-LRjymU1S2LCwLlYINN-JQggaHj67TvYeJAej6YzOaDYKY8zXvGuSFIt5i-ItzjnjCD8SECkq5Eyggk6bk0Y03QQHjAZSAfavUa0ZRORgijz_zIWQJckYvzrGg&csuir=1&mtid=_4qzaqKPIbDbi-gPucGswA4&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=bismuth+crystallization+cube+forming&client=ms-android-xiaomi-terr2-rso2&hs=CVgq&sca_esv=459cc50bc9b1d43b&sxsrf=APpeQnuH86JAjMMWiMt-1HFFACV9bvvJIw%3A1790151420592&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&sqi=2&ved=2ahUKEwipzZLcoYSXAxWc2QIHHZ5zD0sQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAhf_uPI5bed4eiEgX3Xn4mw9jI4J8qjbcHW_8SasEOg0hsyRuT2AI-SSm3pLenr27cVEdEGU4-57ywHVDydwh2Bmg0HTd2jQQ-ElyeEX62GzNE5VnFZ2jX8O1Ys-MbmV3vCnLuxZCpKMtS4w93hXZ7NtNUSEMFV27aBguTHs5kH-Ah37ZOxbvb1dI3xIsPrnlG_3mFHmObPiCL6Xq3-LRjymU1S2LCwLlYINN-JQggaHj67TvYeJAej6YzOaDYKY8zXvGuSFIt5i-ItzjnjCD8SECkq5Eyggk6bk0Y03QQHjAZSAfavUa0ZRORgijz_zIWQJckYvzrGg&csuir=1&mtid=_4qzaqKPIbDbi-gPucGswA4&udm=50>)
+
+### 0005 | 2026-09-23 10:55:32 | You
+
+```text
+https://www.google.com/search?q=bismuth+crystallization+cube+forming&client=ms-android-xiaomi-terr2-rso2&hs=CVgq&sca_esv=459cc50bc9b1d43b&sxsrf=APpeQnuH86JAjMMWiMt-1HFFACV9bvvJIw%3A1790151420592&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&sqi=2&ved=2ahUKEwipzZLcoYSXAxWc2QIHHZ5zD0sQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDDNQn_UwlD_Xpx4z5A629M6Tgqs6-tdaJ3S0yXLm6Rdkm_peYOeeXfB-jCg071stx-aI_i8lgiA5xSkOt4JL0hx2or9fELW5sYytbLGNnfI77hXhDUe-tHmu_cadmMIFlPNnVoHBP34SW3zUUbANZBF4tnO1dNo-u01BG3Igf-7008UCR1_7w7nMgOVy02813EK2okS-M3O2P_GA-Hth2McS0CdeeBj82J4YRM0s__JGEKmCMTn7GTcZEmUwI-Xax3Afl-EKib2Ooxy7ZBaf3eYqwZTx_pQXiHSIgqAHDMVFwdQQ_2WRdjybF1R3Uwu_3pUJ3iOH6dsQ&csuir=1&mtid=_4qzaqKPIbDbi-gPucGswA4&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=bismuth+crystallization+cube+forming&client=ms-android-xiaomi-terr2-rso2&hs=CVgq&sca_esv=459cc50bc9b1d43b&sxsrf=APpeQnuH86JAjMMWiMt-1HFFACV9bvvJIw%3A1790151420592&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&sqi=2&ved=2ahUKEwipzZLcoYSXAxWc2QIHHZ5zD0sQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDDNQn_UwlD_Xpx4z5A629M6Tgqs6-tdaJ3S0yXLm6Rdkm_peYOeeXfB-jCg071stx-aI_i8lgiA5xSkOt4JL0hx2or9fELW5sYytbLGNnfI77hXhDUe-tHmu_cadmMIFlPNnVoHBP34SW3zUUbANZBF4tnO1dNo-u01BG3Igf-7008UCR1_7w7nMgOVy02813EK2okS-M3O2P_GA-Hth2McS0CdeeBj82J4YRM0s__JGEKmCMTn7GTcZEmUwI-Xax3Afl-EKib2Ooxy7ZBaf3eYqwZTx_pQXiHSIgqAHDMVFwdQQ_2WRdjybF1R3Uwu_3pUJ3iOH6dsQ&csuir=1&mtid=_4qzaqKPIbDbi-gPucGswA4&udm=50>)
+
+### 0006 | 2026-09-23 17:41:13 | You
+
+```text
+<image omitted>
+```
+
+## 2026-09-24
+
+### 0007 | 2026-09-24 08:41:11 | You
+
+```text
+<audio omitted>
+```
+
+### 0008 | 2026-09-24 08:43:56 | You
+
+```text
+<image omitted> CrisprkasparOff 9 TNO OMT TOM MOT regenT
+```
+
+### 0009 | 2026-09-24 08:45:28 | You
+
+```text
+<image omitted>
+```
+
+### 0010 | 2026-09-24 08:45:46 | You
+
+```text
+<image omitted> Jitske Klootwijk en ik Tom Klootwijk
+```
+
+### 0011 | 2026-09-24 08:52:03 | You
+
+```text
+<album message>
+```
+
+### 0012 | 2026-09-24 08:52:03 | You
+
+```text
+<image omitted> No navy marinEA games
+```
+
+### 0013 | 2026-09-24 08:52:03 | You
+
+```text
+<image omitted>
+```
+
+### 0014 | 2026-09-24 10:15:58 | You
+
+```text
+<image omitted>
+```
+
+### 0015 | 2026-09-24 10:17:15 | You
+
+```text
+<image omitted>
+```
+
+### 0016 | 2026-09-24 14:28:44 | You
+
+```text
+<image omitted>
+```
+
+### 0017 | 2026-09-24 14:29:47 | You
+
+```text
+<image omitted>
+```
+
+### 0018 | 2026-09-24 15:40:49 | You
+
+```text
+<image omitted> Crypto fuck pallicades driver sans friends cisco
+```
+
+### 0019 | 2026-09-24 16:34:16 | You
+
+```text
+https://www.odido.nl/oppo/reno16-pro?id=22035812&memory=512GB&color=Zwart&shop=product&ch=es&cc=con&sc=acq&dr=24&pr=MAR01,MAP07,SK343,27606114&lp=1&utm_id=125248&utm_source=dv360&utm_medium=video&utm_campaign=dv360_Odido_Prijzenslag_odi_mob_vwp&utm_content=odi_mob_vwp_dmdgen_opporeno16pro&utm_term=%24%7BCREATIVE_ID%7D_%24%7BINSERTION_ORDER_ID%7D_%24%7BCAMPAIGN_ID%7D&gclid=Cj0KCQjwlNPVBhCMARIsAPZ5RqjRQ1HyT8aWoe_2NaCd4In0vQDg2tdeFkVEsvYtINvSsCEUD581pywaAi8QEALw_wcB
+```
+
+Links: [Link 1](<https://www.odido.nl/oppo/reno16-pro?id=22035812&memory=512GB&color=Zwart&shop=product&ch=es&cc=con&sc=acq&dr=24&pr=MAR01,MAP07,SK343,27606114&lp=1&utm_id=125248&utm_source=dv360&utm_medium=video&utm_campaign=dv360_Odido_Prijzenslag_odi_mob_vwp&utm_content=odi_mob_vwp_dmdgen_opporeno16pro&utm_term=%24%7BCREATIVE_ID%7D_%24%7BINSERTION_ORDER_ID%7D_%24%7BCAMPAIGN_ID%7D&gclid=Cj0KCQjwlNPVBhCMARIsAPZ5RqjRQ1HyT8aWoe_2NaCd4In0vQDg2tdeFkVEsvYtINvSsCEUD581pywaAi8QEALw_wcB>)
+
+### 0020 | 2026-09-24 18:35:35 | You
+
+```text
+<image omitted>
+```
+
+### 0021 | 2026-09-24 19:44:11 | You
+
+```text
+<image omitted> Dat Berta eindbaas Buchenwald
+```
+
+### 0022 | 2026-09-24 19:45:27 | You
+
+```text
+Low earth orbit fat bitch belt size equator
+```
+
+### 0023 | 2026-09-24 19:45:44 | You
+
+```text
+Nederland letterlijk de afvalput van de wereld
+```
+
+### 0024 | 2026-09-24 19:47:10 | You
+
+```text
+Pakijs t Loo Anna Paulowna amethist Asa Mitz Leandra Marjew and de Cindy jongens handsie Klootwijk ad Daemen crypto fuck pallicades alles moest kapot en letterlijk time riool caste sinked om hun hun sub shitting India street te geven
+```
+
+### 0025 | 2026-09-24 19:47:22 | You
+
+```text
+Unicef WHO Rijksmuseum
+```
+
+### 0026 | 2026-09-24 19:49:00 | You
+
+```text
+Letterlijk en figuurlijk alles van de wereld het afvoerputje in voor het sauna teletimeshare sex paleis GGD
+```
+
+### 0027 | 2026-09-24 20:00:25 | You
+
+```text
+<album message>
+```
+
+### 0028 | 2026-09-24 20:00:26 | You
+
+```text
+<image omitted>
+```
+
+### 0029 | 2026-09-24 20:00:26 | You
+
+```text
+<image omitted>
+```
+
+### 0030 | 2026-09-24 20:00:26 | You
+
+```text
+<image omitted>
+```
+
+### 0031 | 2026-09-24 20:00:26 | You
+
+```text
+<image omitted>
+```
+
+### 0032 | 2026-09-24 20:00:55 | You
+
+```text
+<image omitted>
+```
+
+### 0033 | 2026-09-24 20:07:08 | You
+
+```text
+<image omitted>
+```
+
+### 0034 | 2026-09-24 20:07:32 | You
+
+```text
+<image omitted> Beatrix utifree
+```
+
+### 0035 | 2026-09-24 20:11:29 | You
+
+```text
+<image omitted>
+```
+
+### 0036 | 2026-09-24 20:19:25 | You
+
+```text
+<image omitted>
+```
+
+### 0037 | 2026-09-24 20:40:13 | You
+
+```text
+<image omitted>
+```
+
+## 2026-09-25
+
+### 0038 | 2026-09-25 01:08:41 | You
+
+```text
+<image omitted>
+```
+
+### 0039 | 2026-09-25 01:20:51 | You
+
+```text
+Sans ARkindT friends words with key ignition magnetic polar steps reverse
+```
+
+### 0040 | 2026-09-25 05:01:00 | You
+
+```text
+https://www.google.com/search?q=facimilate&oq=facimilate&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDQxODFqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8
+```
+
+Links: [Link 1](<https://www.google.com/search?q=facimilate&oq=facimilate&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDQxODFqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8>)
+
+### 0041 | 2026-09-25 05:13:49 | You
+
+```text
+https://www.google.com/search?q=10000+kinematic+calculus+functions+fireflies+magnetic+fields&client=ms-android-xiaomi-terr2-rso2&hs=PVMB&sca_esv=382c7047bb274dd0&sxsrf=APpeQnsX0PKv-PCDqE_0XdXMAhqARlQ%3A1790305803969&fbs=ABfTbFVyMZGZf1hfvX9uKjN-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiEkfDr4IiXAxWi8bsIHbGZIsQQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBr-HAHGAERbKEmME96oMr6Bz-5T7mr_DapmTsq3d-4c49flk0QnkE-mdTLqrunNtkqy13D_3tec7nI4PVJ1OmegRXljiVdvAQ0zAFidmeR84gCkprtxM5mM10k3J-OcdJMq4CgDEkHOEbEUgOfZsMWmY-6TwNdLDrny3ibb6r5hA-Bm7vXM-zBW_VLKDzOaJFbTJ7x9Oe_WjB72RU_Dn3Zyz9l04KH17L2U01ICEQ70zT8ydFl3nNQE4VNxspZnyyotutKCalHtclx5xy2IKBiLyUbkxP4y84meg9fcT0YAuG-a5fIdqQTu3yMu0BIhvp6VUlCH5Q3Hw&csuir=1&mtid=EOa1ao6wNveK9u8Px9qyEA&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=10000+kinematic+calculus+functions+fireflies+magnetic+fields&client=ms-android-xiaomi-terr2-rso2&hs=PVMB&sca_esv=382c7047bb274dd0&sxsrf=APpeQnsX0PKv-PCDqE_0XdXMAhqARlQ%3A1790305803969&fbs=ABfTbFVyMZGZf1hfvX9uKjN-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiEkfDr4IiXAxWi8bsIHbGZIsQQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBr-HAHGAERbKEmME96oMr6Bz-5T7mr_DapmTsq3d-4c49flk0QnkE-mdTLqrunNtkqy13D_3tec7nI4PVJ1OmegRXljiVdvAQ0zAFidmeR84gCkprtxM5mM10k3J-OcdJMq4CgDEkHOEbEUgOfZsMWmY-6TwNdLDrny3ibb6r5hA-Bm7vXM-zBW_VLKDzOaJFbTJ7x9Oe_WjB72RU_Dn3Zyz9l04KH17L2U01ICEQ70zT8ydFl3nNQE4VNxspZnyyotutKCalHtclx5xy2IKBiLyUbkxP4y84meg9fcT0YAuG-a5fIdqQTu3yMu0BIhvp6VUlCH5Q3Hw&csuir=1&mtid=EOa1ao6wNveK9u8Px9qyEA&udm=50>)
+
+### 0042 | 2026-09-25 09:38:07 | You
+
+```text
+<image omitted> Bitconneeeeect hyves whatsapp whatsapp whatsapp
+```
+
+### 0043 | 2026-09-25 12:31:48 | You
+
+```text
+<audio omitted>
+```
+
+### 0044 | 2026-09-25 12:37:42 | You
+
+```text
+<audio omitted>
+```
+
+### 0045 | 2026-09-25 13:19:07 | You
+
+```text
+https://youtu.be/UgsS3nhRRzQ?is=mIZYr7uaoqiAGatw
+```
+
+Links: [Link 1](<https://youtu.be/UgsS3nhRRzQ?is=mIZYr7uaoqiAGatw>)
+
+### 0046 | 2026-09-25 13:28:14 | You
+
+```text
+<image omitted> Ik Tom Klootwijk geef Jitske een 10+
+```
+
+### 0047 | 2026-09-25 13:55:43 | You
+
+```text
+<album message>
+```
+
+### 0048 | 2026-09-25 13:55:43 | You
+
+```text
+<image omitted> Vagina and Tom's PP 0 day exploit all day erriday
+```
+
+### 0049 | 2026-09-25 13:55:43 | You
+
+```text
+<image omitted>
+```
+
+### 0050 | 2026-09-25 14:09:24 | You
+
+```text
+<album message>
+```
+
+### 0051 | 2026-09-25 14:09:24 | You
+
+```text
+<image omitted> Uurloon om Jitske Koenders per uur te huren om over mijn sexuele kunst kant te praten en dat aan te wakkeren? Ik kan net zo goed iemand wat kleingeld geven voor goude ervaringen en 'therapie'st
+```
+
+### 0052 | 2026-09-25 14:09:24 | You
+
+```text
+<image omitted>
+```
+
+### 0053 | 2026-09-25 14:24:54 | You
+
+```text
+Rechtzaak tegen Jitske haar professionele opinie als psycholoog ter spraken stellen en dus Arkin en dus via Arkin al mijn logs en data packets opvragen en haar medische licentie ter sprake stellen
+```
+
+### 0054 | 2026-09-25 14:36:45 | You
+
+```text
+https://www.google.com/search?q=b45h+buste&client=ms-android-xiaomi-terr2-rso2&hs=oJhq&sca_esv=6dacb47cd9b525ae&sxsrf=APpeQnsbUhrzCA92UgkekEE3uzUg1DckJg%3A1790339708278&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7vnQU6QWmnWBznGVLK1G8Rykll-s04_elOQbRleKreNqN6HKk20ZyZ-d8SXGwXAN8EIvObbF33JhfJkDoGbxHTj31od_&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiv8dqS34mXAxX8Zf4FHfqhBVMQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfATbYrm36o60g--QP1C_1jRZfmwMhnIz-1pS49DtgNE9xJpW9V-KUgUXmnLCzzZBkYOLYL8AP1VwfFvWlLFC11alw8miJWHu5lN4tsgR4K9N_TU0Rt2XJPKXLU-M6vUxlycQJiXouQEmNP5nOtt5uBG_wac9-d_OU7OC4-EzhirBQ4uruFfcZ81rY8R-qFqPkgzvAF7QlCOgjlUwC9ErwGThorkY1oMbXRSwYqwJLGqsS5lgM6hVLPKuNqes6qQi9JPZjb3BPAemYnqdfoxbmlg5PKK3eXkLIcyGy8xlB39UVhlWJgSdTxgjvI01fJICmjRhMJprpRGXA&csuir=1&mtid=f2q2aqqOJJiAi-gPoavT8Qw&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=b45h+buste&client=ms-android-xiaomi-terr2-rso2&hs=oJhq&sca_esv=6dacb47cd9b525ae&sxsrf=APpeQnsbUhrzCA92UgkekEE3uzUg1DckJg%3A1790339708278&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7vnQU6QWmnWBznGVLK1G8Rykll-s04_elOQbRleKreNqN6HKk20ZyZ-d8SXGwXAN8EIvObbF33JhfJkDoGbxHTj31od_&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiv8dqS34mXAxX8Zf4FHfqhBVMQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfATbYrm36o60g--QP1C_1jRZfmwMhnIz-1pS49DtgNE9xJpW9V-KUgUXmnLCzzZBkYOLYL8AP1VwfFvWlLFC11alw8miJWHu5lN4tsgR4K9N_TU0Rt2XJPKXLU-M6vUxlycQJiXouQEmNP5nOtt5uBG_wac9-d_OU7OC4-EzhirBQ4uruFfcZ81rY8R-qFqPkgzvAF7QlCOgjlUwC9ErwGThorkY1oMbXRSwYqwJLGqsS5lgM6hVLPKuNqes6qQi9JPZjb3BPAemYnqdfoxbmlg5PKK3eXkLIcyGy8xlB39UVhlWJgSdTxgjvI01fJICmjRhMJprpRGXA&csuir=1&mtid=f2q2aqqOJJiAi-gPoavT8Qw&udm=50>)
+
+### 0055 | 2026-09-25 14:37:07 | You
+
+```text
+Ik dacht cup 70 van de jonge Daemen in de tram terug naar IJburg en JDS
+```
+
+### 0056 | 2026-09-25 14:41:14 | You
+
+```text
+<image omitted> 5g ODIDO hacked?
+```
+
+### 0057 | 2026-09-25 14:47:59 | You
+
+```text
+<image omitted>
+```
+
+### 0058 | 2026-09-25 14:49:49 | You
+
+```text
+Background always on compressed process android audio recorder maken
+```
+
+### 0059 | 2026-09-25 14:53:05 | You
+
+```text
+<audio omitted>
+```
+
+## 2026-09-26
+
+### 0060 | 2026-09-26 09:19:39 | You
+
+```text
+https://www.google.com/search?q=water+is+nat+en+dus+tan+is+O+als+in+arctangent&client=ms-android-xiaomi-terr2-rso2&hs=HH2V&sca_esv=fd861737a4dd1940&sxsrf=APpeQnv617hNEHohYaS3i9QrD2ykV75OWA%3A1790407106628&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjN5N-c2ouXAxUr0AIHHeYEAl4Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAPEMoG9CmNU7Euisjf9Kd0xlBPKDLMZswvbEtn2PHMl6vo6uZTAMM_6DtQPgoyIII42vl_9pw5J6hZxgi4q6NDd3WiSEMqeJeBJC3cwPG86gD2O2IRiToTTA_7DoYNqhIXL2nLrIPO9l338Rk-SLU4Vx_-cMcek8iZqhY5wBkgd9IdE8CgqOiC33NrfkqKNMTY0OvbG9HduszP2NjESDoTULmhlk4SkJhB_PTWtvTegdaMi0gvOAUQWAMmXZLv8lxRL-tLJNNytA&csuir=1&mtid=xHG3au2GGYjAi-gPqfapwQY&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=water+is+nat+en+dus+tan+is+O+als+in+arctangent&client=ms-android-xiaomi-terr2-rso2&hs=HH2V&sca_esv=fd861737a4dd1940&sxsrf=APpeQnv617hNEHohYaS3i9QrD2ykV75OWA%3A1790407106628&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjN5N-c2ouXAxUr0AIHHeYEAl4Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAPEMoG9CmNU7Euisjf9Kd0xlBPKDLMZswvbEtn2PHMl6vo6uZTAMM_6DtQPgoyIII42vl_9pw5J6hZxgi4q6NDd3WiSEMqeJeBJC3cwPG86gD2O2IRiToTTA_7DoYNqhIXL2nLrIPO9l338Rk-SLU4Vx_-cMcek8iZqhY5wBkgd9IdE8CgqOiC33NrfkqKNMTY0OvbG9HduszP2NjESDoTULmhlk4SkJhB_PTWtvTegdaMi0gvOAUQWAMmXZLv8lxRL-tLJNNytA&csuir=1&mtid=xHG3au2GGYjAi-gPqfapwQY&udm=50>)
+
+### 0061 | 2026-09-26 09:19:45 | You
+
+```text
+Ks
+```
+
+### 0062 | 2026-09-26 10:08:48 | You
+
+```text
+https://www.google.com/search?q=hatching+etsen+krassen+niet+printen+dus+geen+adsorptie&client=ms-android-xiaomi-terr2-rso2&hs=5H2V&sca_esv=687af446f448273f&sxsrf=APpeQnvfetCKNTag4Tj1Yz4bvQtvDdtyCQ%3A1790410102008&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpnJQOWUbUFy0AZP2fc5_e7wQK9SpSaccWZEM8174slgzA7lL9Jp-FedBms3jKtDYRkzLfYMnDYMy5pBIIBgIQaS46ps0&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjQ_oax5YuXAxWyh_0HHfqFGOAQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCfr0L__qWecKBaZsVOVqi5z23LgOTQrvyTq8xQIET0hCWA807joymh5K1W223ingToLxEI12vFE8CGJiUVXSeHjKCBttPqDVwZvRh22itKWXCimAQHr9zmNEr6u9PffbjkQ14zgq4l3kYGKWnGBpLQhDr8swAyQqk&csuir=1&mtid=d323atTBI8yG9u8P673EmQQ
+```
+
+Links: [Link 1](<https://www.google.com/search?q=hatching+etsen+krassen+niet+printen+dus+geen+adsorptie&client=ms-android-xiaomi-terr2-rso2&hs=5H2V&sca_esv=687af446f448273f&sxsrf=APpeQnvfetCKNTag4Tj1Yz4bvQtvDdtyCQ%3A1790410102008&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpnJQOWUbUFy0AZP2fc5_e7wQK9SpSaccWZEM8174slgzA7lL9Jp-FedBms3jKtDYRkzLfYMnDYMy5pBIIBgIQaS46ps0&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjQ_oax5YuXAxWyh_0HHfqFGOAQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCfr0L__qWecKBaZsVOVqi5z23LgOTQrvyTq8xQIET0hCWA807joymh5K1W223ingToLxEI12vFE8CGJiUVXSeHjKCBttPqDVwZvRh22itKWXCimAQHr9zmNEr6u9PffbjkQ14zgq4l3kYGKWnGBpLQhDr8swAyQqk&csuir=1&mtid=d323atTBI8yG9u8P673EmQQ>)
+
+### 0063 | 2026-09-26 11:45:42 | You
+
+```text
+https://www.google.com/search?q=eikonal+distance&client=ms-android-xiaomi-terr2-rso2&hs=xyMB&sca_esv=cb3dd98549f5726b&sxsrf=APpeQnu06PP-sweya3izFBux7jcYpn8ihw%3A1790415757581&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7vnQU6QWmnWBznGVLK1G8Rykll-s04_elOQbRleKreNqN6HKk20ZyZ-d8SXGwXAN8EIvObbF33JhfJkDoGbxHTj31od_&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwi1_Ou5-ouXAxWk9rsIHbClAOAQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDN1e5R2oavE0eV8AaH0AgJIfAYrHpBCTjxJIJpor0_d-A2jxD8tPzVo3j9FmoHDiOyeslGGZ3vmHD14c68UogfM5tExclSCT7No9eY6tvrn27XMmFRkrqPpPI0IiurQgM2Scp_PbtOAQMz3G24n-dCq2OkL0yRWT4kVryCsMh9NG8nniaByjHx22wTCZ2XGeMON2sohSTVvFBk6QsTYm_5pL986LbAqw-vyWo5tAnlN561SDUHv5qkHO-OPtQ9bCfKQMUaweDcFGC19zbCvgjw47Ib1ztb2sbNMOlZaOe02rZwSeCxFu6ila2AKrgyriPTMqS5-rr0ZQ&csuir=1&mtid=kpO3ar-ZIrrh7_UPhK_8YA&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=eikonal+distance&client=ms-android-xiaomi-terr2-rso2&hs=xyMB&sca_esv=cb3dd98549f5726b&sxsrf=APpeQnu06PP-sweya3izFBux7jcYpn8ihw%3A1790415757581&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7vnQU6QWmnWBznGVLK1G8Rykll-s04_elOQbRleKreNqN6HKk20ZyZ-d8SXGwXAN8EIvObbF33JhfJkDoGbxHTj31od_&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwi1_Ou5-ouXAxWk9rsIHbClAOAQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDN1e5R2oavE0eV8AaH0AgJIfAYrHpBCTjxJIJpor0_d-A2jxD8tPzVo3j9FmoHDiOyeslGGZ3vmHD14c68UogfM5tExclSCT7No9eY6tvrn27XMmFRkrqPpPI0IiurQgM2Scp_PbtOAQMz3G24n-dCq2OkL0yRWT4kVryCsMh9NG8nniaByjHx22wTCZ2XGeMON2sohSTVvFBk6QsTYm_5pL986LbAqw-vyWo5tAnlN561SDUHv5qkHO-OPtQ9bCfKQMUaweDcFGC19zbCvgjw47Ib1ztb2sbNMOlZaOe02rZwSeCxFu6ila2AKrgyriPTMqS5-rr0ZQ&csuir=1&mtid=kpO3ar-ZIrrh7_UPhK_8YA&udm=50>)
+
+### 0064 | 2026-09-26 13:03:25 | You
+
+```text
+https://www.google.com/search?q=9-splice+3D+biohazard+model+of+the+nuclei+of+an+atom+warning+sign+of...&client=ms-android-xiaomi-terr2-rso2&hs=qK2V&sca_esv=f99720549e6c8e01&sxsrf=APpeQnsdnO8rJQjuOqQy0PxKWMSTJlnJ5g%3A1790420389049&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjXtKbai4yXAxUX1wIHHbiAMuwQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBXvSwi8osKSwmlcsl4u7sSF-ITsArM8i0ovirwYS6vo2ZPsgfI1fENJSPnEGXtD1e6zGBBSgb3FE3YCOq8qpA4j01wPZsLHLJv-mo-NEUSBtwMVl4TlSfSdHjYA5sojRPK0jIoL3J_arc7B7Gk9g5oiLFaQYr6RWEbse_yhyhyCKKrPKK25HUHJIqL9l_pctoI4VDzo9SK6ZtlYeVkU8RQW1gX3nO8HanVgySq7D_2n59Lhmwa3Sdor53nzblI84iob922Zs38Q6ztrGCaR-O-KxFIt_ihXQCd_XmVOxCgCUNc3KXAS0RJ9xfG94Aqa4xAUip9yXc13g&csuir=1&mtid=pqW3atGPHKWNi-gP1fCUkQM&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=9-splice+3D+biohazard+model+of+the+nuclei+of+an+atom+warning+sign+of...&client=ms-android-xiaomi-terr2-rso2&hs=qK2V&sca_esv=f99720549e6c8e01&sxsrf=APpeQnsdnO8rJQjuOqQy0PxKWMSTJlnJ5g%3A1790420389049&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjXtKbai4yXAxUX1wIHHbiAMuwQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBXvSwi8osKSwmlcsl4u7sSF-ITsArM8i0ovirwYS6vo2ZPsgfI1fENJSPnEGXtD1e6zGBBSgb3FE3YCOq8qpA4j01wPZsLHLJv-mo-NEUSBtwMVl4TlSfSdHjYA5sojRPK0jIoL3J_arc7B7Gk9g5oiLFaQYr6RWEbse_yhyhyCKKrPKK25HUHJIqL9l_pctoI4VDzo9SK6ZtlYeVkU8RQW1gX3nO8HanVgySq7D_2n59Lhmwa3Sdor53nzblI84iob922Zs38Q6ztrGCaR-O-KxFIt_ihXQCd_XmVOxCgCUNc3KXAS0RJ9xfG94Aqa4xAUip9yXc13g&csuir=1&mtid=pqW3atGPHKWNi-gP1fCUkQM&udm=50>)
+
+### 0065 | 2026-09-26 13:16:41 | You
+
+```text
+https://www.google.com/search?q=9-splice+3D+biohazard+model+of+the+nuclei+of+an+atom+warning+sign+of...&client=ms-android-xiaomi-terr2-rso2&hs=qK2V&sca_esv=f99720549e6c8e01&sxsrf=APpeQnsdnO8rJQjuOqQy0PxKWMSTJlnJ5g%3A1790420389049&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjXtKbai4yXAxUX1wIHHbiAMuwQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCI4Yew1VBfmHxJ7WzU1fyFjk60XJvD9zhkL147SkGs53YCgewt5Oz5jNxoeIHImbDuyZMFbtTSgzRMolct5uq55b_4KK3Naa8iKBYezuXlFIJiSBFWAOgNKMqCV4IlhDvCCI0LmaydqbFj8sIlIHap6QuStO3q6OKbOUDQTx8zdqyQYMeXednjq3msK-h1f5SlC9vd2N4mPU4UZRJ4t5Zwucsm9hWlJNacSr-JxGzEVyMBykSDXmF49AkMnjVTjqrGGhyjBUvUdif3t0W6XIt1pF9sJESuREUAPBGjwoaMBLtFkL20LYUhCbp-zDHybm3tBKj8zc7zVg&csuir=1&mtid=pqW3atGPHKWNi-gP1fCUkQM&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=9-splice+3D+biohazard+model+of+the+nuclei+of+an+atom+warning+sign+of...&client=ms-android-xiaomi-terr2-rso2&hs=qK2V&sca_esv=f99720549e6c8e01&sxsrf=APpeQnsdnO8rJQjuOqQy0PxKWMSTJlnJ5g%3A1790420389049&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjXtKbai4yXAxUX1wIHHbiAMuwQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCI4Yew1VBfmHxJ7WzU1fyFjk60XJvD9zhkL147SkGs53YCgewt5Oz5jNxoeIHImbDuyZMFbtTSgzRMolct5uq55b_4KK3Naa8iKBYezuXlFIJiSBFWAOgNKMqCV4IlhDvCCI0LmaydqbFj8sIlIHap6QuStO3q6OKbOUDQTx8zdqyQYMeXednjq3msK-h1f5SlC9vd2N4mPU4UZRJ4t5Zwucsm9hWlJNacSr-JxGzEVyMBykSDXmF49AkMnjVTjqrGGhyjBUvUdif3t0W6XIt1pF9sJESuREUAPBGjwoaMBLtFkL20LYUhCbp-zDHybm3tBKj8zc7zVg&csuir=1&mtid=pqW3atGPHKWNi-gP1fCUkQM&udm=50>)
+
+### 0066 | 2026-09-26 13:28:43 | You
+
+```text
+https://www.google.com/search?q=old+people+smell+mitosis+as+slowing+down+https%3A%2F%2Fyoutu.be%2FGIuZUCpm9hc%3Fis%3DDkw0SONEmWEiR0Vx+as+a+forced+stage+of+evolution+double+hadamard+product&client=ms-android-xiaomi-terr2-rso2&hs=wfhq&sca_esv=f99720549e6c8e01&sxsrf=APpeQnslCQkqBvMnJrhkbADmZZ-OGazLdQ%3A1790422047000&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4LpKPoHZrc4HVz9uOAATjT2whS8aQNdsb1nn47m_ZQdHEbTK5SS_MwQC37e5E4gotGYV1H5ZQsZjp1RtD8PdPd4csCivIVJ7rgCeflKgPql4GU66jnRaHdqvubBXQtXK6qbdRzU6MmplLM7JXuxhZLD719AW&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiQze_wkYyXAxWyg_0HHWqINA4Q2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBPhl4mAhDAZ7r_9CefKZDjC25WbLFUmKQha2IwBH_2bDRXUCVGWOptXy9rfpmEo2wPY7NI3l2AuqB6VaoHfumu5xzpqgO6uvkEWWj_Lge6oZ5KjuCIGh3IO1m5MXHk0WcNbAumM2BjJmFNSAGZpb4fqZv7YaDDDK3yVIL4tnOCcFZD7Oqo9trNVZAwagBGWWiNr3wvalbR77ox5hXwAW0OMkS5kLr6pb4IPcBarL9nbZuw6PFzNbGVy_eUL0wDA7N49m3LbmyTNsStW692x859qZWwsiowRxOWvswNxG95LWLqj_MYYbAJgTMw3pmW-LUcvr6-YAM4aw&csuir=1&mtid=Iay3avO-BK2L9u8PtL3WgAE&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=old+people+smell+mitosis+as+slowing+down+https%3A%2F%2Fyoutu.be%2FGIuZUCpm9hc%3Fis%3DDkw0SONEmWEiR0Vx+as+a+forced+stage+of+evolution+double+hadamard+product&client=ms-android-xiaomi-terr2-rso2&hs=wfhq&sca_esv=f99720549e6c8e01&sxsrf=APpeQnslCQkqBvMnJrhkbADmZZ-OGazLdQ%3A1790422047000&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4LpKPoHZrc4HVz9uOAATjT2whS8aQNdsb1nn47m_ZQdHEbTK5SS_MwQC37e5E4gotGYV1H5ZQsZjp1RtD8PdPd4csCivIVJ7rgCeflKgPql4GU66jnRaHdqvubBXQtXK6qbdRzU6MmplLM7JXuxhZLD719AW&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiQze_wkYyXAxWyg_0HHWqINA4Q2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBPhl4mAhDAZ7r_9CefKZDjC25WbLFUmKQha2IwBH_2bDRXUCVGWOptXy9rfpmEo2wPY7NI3l2AuqB6VaoHfumu5xzpqgO6uvkEWWj_Lge6oZ5KjuCIGh3IO1m5MXHk0WcNbAumM2BjJmFNSAGZpb4fqZv7YaDDDK3yVIL4tnOCcFZD7Oqo9trNVZAwagBGWWiNr3wvalbR77ox5hXwAW0OMkS5kLr6pb4IPcBarL9nbZuw6PFzNbGVy_eUL0wDA7N49m3LbmyTNsStW692x859qZWwsiowRxOWvswNxG95LWLqj_MYYbAJgTMw3pmW-LUcvr6-YAM4aw&csuir=1&mtid=Iay3avO-BK2L9u8PtL3WgAE&udm=50>)
+
+### 0067 | 2026-09-26 14:24:50 | You
+
+```text
+https://www.google.com/search?q=avant+garde+victorian+architectural+style&client=ms-android-xiaomi-terr2-rso2&hs=BM2V&sca_esv=1401726689d3c5c7&sxsrf=APpeQnta5_jQ5ajEiyQ2AElw1vKiDhUDDA%3A1790425336636&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpD5WmxHV9GQVdPkL5dutr9Tsk9Psqv8-BeuxQCSKzxuGpkDeZ8iXI-CcjRzWQgvHa7UDv7gTcjy-XfyZymi1rYZAPBLe-_W1YsnfcpDzTRDqEt_20&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjCi7-RnoyXAxUYh_0HHX0fBBIQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCszbmwPjYY56yAlKp1U4FL1gYUyQ2Ldej5uoEpoeN87MNyTO-iXOEIihsbFktT8s0vM0iFIkK8KlD82O_vG915SlA2OnTgWZboV4PZkf9qDuragS5JmHjBWXVG_ekzt41x4II45wRRAz4TAIAVcJrlJ7xIIFTghiGKm4FjPKmS8TxNkAtOYY2C01PtoLg8egjkUa33RstvO0br5H9ZXaWIZcDWbTkZ1rzDK6XjT17px52vt0ySbX3YKNM6pIj8zuOcvYfGvZzkdbw7HfVxmMNWotn5lY6avMLTYnR0xa7nBeee7NERmX2_k9W_xccSpTng0P8tfUPcpQ&csuir=1&mtid=M7m3apSJBOyoi-gPnZq0sAU&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=avant+garde+victorian+architectural+style&client=ms-android-xiaomi-terr2-rso2&hs=BM2V&sca_esv=1401726689d3c5c7&sxsrf=APpeQnta5_jQ5ajEiyQ2AElw1vKiDhUDDA%3A1790425336636&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpD5WmxHV9GQVdPkL5dutr9Tsk9Psqv8-BeuxQCSKzxuGpkDeZ8iXI-CcjRzWQgvHa7UDv7gTcjy-XfyZymi1rYZAPBLe-_W1YsnfcpDzTRDqEt_20&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjCi7-RnoyXAxUYh_0HHX0fBBIQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCszbmwPjYY56yAlKp1U4FL1gYUyQ2Ldej5uoEpoeN87MNyTO-iXOEIihsbFktT8s0vM0iFIkK8KlD82O_vG915SlA2OnTgWZboV4PZkf9qDuragS5JmHjBWXVG_ekzt41x4II45wRRAz4TAIAVcJrlJ7xIIFTghiGKm4FjPKmS8TxNkAtOYY2C01PtoLg8egjkUa33RstvO0br5H9ZXaWIZcDWbTkZ1rzDK6XjT17px52vt0ySbX3YKNM6pIj8zuOcvYfGvZzkdbw7HfVxmMNWotn5lY6avMLTYnR0xa7nBeee7NERmX2_k9W_xccSpTng0P8tfUPcpQ&csuir=1&mtid=M7m3apSJBOyoi-gPnZq0sAU&udm=50>)
+
+### 0068 | 2026-09-26 14:25:07 | You
+
+```text
+Heilig
+```
+
+### 0069 | 2026-09-26 14:25:14 | You
+
+```text
+S
+```
+
+### 0070 | 2026-09-26 14:25:21 | You
+
+```text
+Vid2game
+```
+
+### 0071 | 2026-09-26 14:25:39 | You
+
+```text
+2min papers
+```
+
+### 0072 | 2026-09-26 14:33:00 | You
+
+```text
+https://www.google.com/search?q=avant+garde+victorian+architectural+style&client=ms-android-xiaomi-terr2-rso2&hs=BM2V&sca_esv=1401726689d3c5c7&sxsrf=APpeQnta5_jQ5ajEiyQ2AElw1vKiDhUDDA%3A1790425336636&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpD5WmxHV9GQVdPkL5dutr9Tsk9Psqv8-BeuxQCSKzxuGpkDeZ8iXI-CcjRzWQgvHa7UDv7gTcjy-XfyZymi1rYZAPBLe-_W1YsnfcpDzTRDqEt_20&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjCi7-RnoyXAxUYh_0HHX0fBBIQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAj_d0IruM0uFA33R2MLqr3pjw81HJQcwHrdnj93yYHPJKfGiz6VWXks_y8Z6OeehhDeNUCEmxwB_BabiSEVCrGyQYGd9HLZHFWmAasrgOD3_4gbdhqq7MvtwydHT7cSxsOGLb4H8ZGkMkrMEeAwb-n904lV0TyzMAKYIvuzUxmqqzFA69WMpDVcE9fjzCOhs2GnVUpnvKFAYA9IvjiZIRzSnzFmRe7uAGzuJfA4aY1q7SEK0eEWRarduIPt5ruqvoSNqi4fLkuuqevuk0Z2tpEQh0r8slUAK6CnkqjEo7fVqtVdIVu0Bfu51hzp0DmINFFZ-cdu6H4tA&csuir=1&mtid=M7m3apSJBOyoi-gPnZq0sAU&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=avant+garde+victorian+architectural+style&client=ms-android-xiaomi-terr2-rso2&hs=BM2V&sca_esv=1401726689d3c5c7&sxsrf=APpeQnta5_jQ5ajEiyQ2AElw1vKiDhUDDA%3A1790425336636&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpD5WmxHV9GQVdPkL5dutr9Tsk9Psqv8-BeuxQCSKzxuGpkDeZ8iXI-CcjRzWQgvHa7UDv7gTcjy-XfyZymi1rYZAPBLe-_W1YsnfcpDzTRDqEt_20&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjCi7-RnoyXAxUYh_0HHX0fBBIQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAj_d0IruM0uFA33R2MLqr3pjw81HJQcwHrdnj93yYHPJKfGiz6VWXks_y8Z6OeehhDeNUCEmxwB_BabiSEVCrGyQYGd9HLZHFWmAasrgOD3_4gbdhqq7MvtwydHT7cSxsOGLb4H8ZGkMkrMEeAwb-n904lV0TyzMAKYIvuzUxmqqzFA69WMpDVcE9fjzCOhs2GnVUpnvKFAYA9IvjiZIRzSnzFmRe7uAGzuJfA4aY1q7SEK0eEWRarduIPt5ruqvoSNqi4fLkuuqevuk0Z2tpEQh0r8slUAK6CnkqjEo7fVqtVdIVu0Bfu51hzp0DmINFFZ-cdu6H4tA&csuir=1&mtid=M7m3apSJBOyoi-gPnZq0sAU&udm=50>)
+
+### 0073 | 2026-09-26 16:00:58 | You
+
+```text
+<image omitted>
+```
+
+### 0074 | 2026-09-26 17:22:15 | You
+
+```text
+https://www.google.com/search?q=that+thing+in+nature+where+rats+get+stuck+in+a+ball+with+their+tails&client=ms-android-xiaomi-terr2-rso2&hs=hjhq&sca_esv=3293b059aa9c7b4a&sxsrf=APpeQnuvUTbJ8pmu3xRjhsPrfCsZWPwEZQ%3A1790436049679&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE-Dsslc-KGKq55jF_BVsFlBx_GgM0fzV1XsSsLkzcasTEYACEWIWzF-55pNrwAKUeHOsvxvmV9GK7aWe1Dt1gL4yRbNiCM_1tjUQdwIRQAk2T8uGlV_QBaNCWEF78fG96j7oIlPEaM2vmIW2fPyLZFIF-bNq&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjFpe-FxoyXAxU1ywIHHbzfNwAQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBIZs_hnG-X2WTEPtZZnJ6V19snB8Un4QB9KhOgwuOWlSEL81QUjBcIwiOEYfFlpcuYBplSVzqno5LrNInJT1n06ggtYjuaXtOuvXmNNNr2sGrFfuU2imuTX6Yo3N1PQZB0noDIubhCFngL0uAeM_kZKJSOpOBAeRgPycsMlqpTHyitWPp43UsGFnmJSN_jkEGG6aXi6RyYACr7EG-ivVr2pJ3fw9w3PrN07s2KuuVCYgjw87SOz4l_bzXYtezvTpn5pinHpgUbIWJrWxQhhXQtwujM9nIOrykqRI_kvF-83p7WM879en1oEJCQZUsHILN3MkHwyS_Otw&csuir=1&mtid=1eK3asuyDInki-gP3vyUmQM
+```
+
+Links: [Link 1](<https://www.google.com/search?q=that+thing+in+nature+where+rats+get+stuck+in+a+ball+with+their+tails&client=ms-android-xiaomi-terr2-rso2&hs=hjhq&sca_esv=3293b059aa9c7b4a&sxsrf=APpeQnuvUTbJ8pmu3xRjhsPrfCsZWPwEZQ%3A1790436049679&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE-Dsslc-KGKq55jF_BVsFlBx_GgM0fzV1XsSsLkzcasTEYACEWIWzF-55pNrwAKUeHOsvxvmV9GK7aWe1Dt1gL4yRbNiCM_1tjUQdwIRQAk2T8uGlV_QBaNCWEF78fG96j7oIlPEaM2vmIW2fPyLZFIF-bNq&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjFpe-FxoyXAxU1ywIHHbzfNwAQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBIZs_hnG-X2WTEPtZZnJ6V19snB8Un4QB9KhOgwuOWlSEL81QUjBcIwiOEYfFlpcuYBplSVzqno5LrNInJT1n06ggtYjuaXtOuvXmNNNr2sGrFfuU2imuTX6Yo3N1PQZB0noDIubhCFngL0uAeM_kZKJSOpOBAeRgPycsMlqpTHyitWPp43UsGFnmJSN_jkEGG6aXi6RyYACr7EG-ivVr2pJ3fw9w3PrN07s2KuuVCYgjw87SOz4l_bzXYtezvTpn5pinHpgUbIWJrWxQhhXQtwujM9nIOrykqRI_kvF-83p7WM879en1oEJCQZUsHILN3MkHwyS_Otw&csuir=1&mtid=1eK3asuyDInki-gP3vyUmQM>)
+
+### 0075 | 2026-09-26 17:56:59 | You
+
+```text
+https://www.google.com/search?q=middle+middle+east+in+ties+to+iran&client=ms-android-xiaomi-terr2-rso2&hs=Ekhq&sca_esv=700c7e79aa3b521d&sxsrf=APpeQnvZXSx8TkkIO1ufhBNnL4oLhQlO3w%3A1790437996069&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ0Kuh3jfnRqiKzI7KrGsO-bHLKGXxP60AsAIKmX_LR6dMasLrlp8DT_rL6Uv4vYEVdV3rrpxR2ofaoNOntBhlsJcdppkJ9S-hapfVPkCqjRIXrjOUoZqVKE7MbyLUcwOy9qSJUV7hEGhnlxpldMvU9vfJFT5&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj1zf2lzYyXAxXg9wIHHRmiN7AQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB2CgXzc38qlzz7nvBb0SyQhoJKpSxlybGNd60CpQOK8gqV3JbW1DKXB-R7IbH0fwUyaR5wLVn9kDAUlAr62jwieIUk9VtJZi4efB0ZNmdFYPBsXL3mepe7cpRkUboWP4eb4ivDWh8lxNMx_MMLMnKQwCMkWpAK4nOhGMfv_VkmMrTGaalLY2123aB1r2jrCDxZvSkEabxk30g96h9zWMANdyZq8lwcwqzGgYlAFcoU1RNbH8NLPGfs1eOOivLane-GKyHGmSsOcx7m2Dq7YoCuFmJB_nGyuk4yVfKD8HqbC5HiBFwdLGinqSk86riIyMJzWOqyHuwr3w&csuir=1&mtid=b-q3apuWCYroi-gPkejHiQo&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=middle+middle+east+in+ties+to+iran&client=ms-android-xiaomi-terr2-rso2&hs=Ekhq&sca_esv=700c7e79aa3b521d&sxsrf=APpeQnvZXSx8TkkIO1ufhBNnL4oLhQlO3w%3A1790437996069&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ0Kuh3jfnRqiKzI7KrGsO-bHLKGXxP60AsAIKmX_LR6dMasLrlp8DT_rL6Uv4vYEVdV3rrpxR2ofaoNOntBhlsJcdppkJ9S-hapfVPkCqjRIXrjOUoZqVKE7MbyLUcwOy9qSJUV7hEGhnlxpldMvU9vfJFT5&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj1zf2lzYyXAxXg9wIHHRmiN7AQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB2CgXzc38qlzz7nvBb0SyQhoJKpSxlybGNd60CpQOK8gqV3JbW1DKXB-R7IbH0fwUyaR5wLVn9kDAUlAr62jwieIUk9VtJZi4efB0ZNmdFYPBsXL3mepe7cpRkUboWP4eb4ivDWh8lxNMx_MMLMnKQwCMkWpAK4nOhGMfv_VkmMrTGaalLY2123aB1r2jrCDxZvSkEabxk30g96h9zWMANdyZq8lwcwqzGgYlAFcoU1RNbH8NLPGfs1eOOivLane-GKyHGmSsOcx7m2Dq7YoCuFmJB_nGyuk4yVfKD8HqbC5HiBFwdLGinqSk86riIyMJzWOqyHuwr3w&csuir=1&mtid=b-q3apuWCYroi-gPkejHiQo&udm=50>)
+
+### 0076 | 2026-09-26 18:33:00 | You
+
+```text
+https://www.google.com/search?q=gavrilo+princip+black+hand+archbishop+franz+ferdinand+ignition&client=ms-android-xiaomi-terr2-rso2&hs=9P2V&sca_esv=700c7e79aa3b521d&sxsrf=APpeQnvdD7h6hfLRZQd-O5M3mrYNP-HsHQ%3A1790440093919&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955HC4dEhTD85WaiWkSD5EjFnrnkXf8uSwU1OjdTZmfoiWVgODsrQlv49kLZ63PjUD4Ylh3ioGlhPObtZQ3tSCsBQwnjKN&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjy16eO1YyXAxUO3wIHHWwTDMwQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfD38A7HHcEhFGHtlqkVSikM_8tpAUOcD7RADa5NjQJzR0id7Syq7ZMGwT9Wd4SZpZxRfftjmoJyriJ6ofE-Tlp8Oq47N32hopChzmNtKwMtOkIHmJfqetvLPe-hLvpT05eLGz4gqg-q7W_o4EiTlRYO_w6j5Eo0MZjQ9cBNjqmEpDSMPQ8y3L701uA95W7ylByolKMR9kW2-2zHI9FMvbNM_noZHrmIMGibVuOCcAxOXjwdbjuwD04scU7izxu7diu01yURycCTSGhSdvg8mrym2Rwi9X3qugQJEQcRRgOmKhGvAWHQYs_HWH1J4IMsprDO1nuPPbOBtQ&csuir=1&mtid=ofK3aqHmF_WZi-gPg7uXuAk&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=gavrilo+princip+black+hand+archbishop+franz+ferdinand+ignition&client=ms-android-xiaomi-terr2-rso2&hs=9P2V&sca_esv=700c7e79aa3b521d&sxsrf=APpeQnvdD7h6hfLRZQd-O5M3mrYNP-HsHQ%3A1790440093919&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955HC4dEhTD85WaiWkSD5EjFnrnkXf8uSwU1OjdTZmfoiWVgODsrQlv49kLZ63PjUD4Ylh3ioGlhPObtZQ3tSCsBQwnjKN&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjy16eO1YyXAxUO3wIHHWwTDMwQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfD38A7HHcEhFGHtlqkVSikM_8tpAUOcD7RADa5NjQJzR0id7Syq7ZMGwT9Wd4SZpZxRfftjmoJyriJ6ofE-Tlp8Oq47N32hopChzmNtKwMtOkIHmJfqetvLPe-hLvpT05eLGz4gqg-q7W_o4EiTlRYO_w6j5Eo0MZjQ9cBNjqmEpDSMPQ8y3L701uA95W7ylByolKMR9kW2-2zHI9FMvbNM_noZHrmIMGibVuOCcAxOXjwdbjuwD04scU7izxu7diu01yURycCTSGhSdvg8mrym2Rwi9X3qugQJEQcRRgOmKhGvAWHQYs_HWH1J4IMsprDO1nuPPbOBtQ&csuir=1&mtid=ofK3aqHmF_WZi-gPg7uXuAk&udm=50>)
+
+### 0077 | 2026-09-26 18:37:52 | You
+
+```text
+https://www.google.com/search?q=gavrilo+princip+black+hand+archbishop+franz+ferdinand+ignition&client=ms-android-xiaomi-terr2-rso2&hs=9P2V&sca_esv=700c7e79aa3b521d&sxsrf=APpeQnvdD7h6hfLRZQd-O5M3mrYNP-HsHQ%3A1790440093919&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955HC4dEhTD85WaiWkSD5EjFnrnkXf8uSwU1OjdTZmfoiWVgODsrQlv49kLZ63PjUD4Ylh3ioGlhPObtZQ3tSCsBQwnjKN&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjy16eO1YyXAxUO3wIHHWwTDMwQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCKxLE-KbaFZ0SM59TS2KBPCii6InAS5qtQQClOw7K5BCqdRlOQmPjWKqUD9vZ_xqdCRthh_qe9gA-koHjol_-SQImSlKbXIn9vHCWfyNz859Rvq-wSJkKlIgL1Bfg2BCQnejKnfF89YCNRSoW6349yuObDpaON2OSVgAdHwSvDvqmVlls9rrLrUlCxNKZBfWuhf-01C1SzKMNFUVcF629Mmr-EVW7Bi1hGYCIXeYfbZ2dCSapex230x1de728VU2wq8VdgHU7yo3U0BB-mcAdADJAVJ0DkhjqwH-XvkdEsZPzLvFSloFJ7YLAfUZLSkntKjxcJKSstLg&csuir=1&mtid=ofK3aqHmF_WZi-gPg7uXuAk&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=gavrilo+princip+black+hand+archbishop+franz+ferdinand+ignition&client=ms-android-xiaomi-terr2-rso2&hs=9P2V&sca_esv=700c7e79aa3b521d&sxsrf=APpeQnvdD7h6hfLRZQd-O5M3mrYNP-HsHQ%3A1790440093919&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955HC4dEhTD85WaiWkSD5EjFnrnkXf8uSwU1OjdTZmfoiWVgODsrQlv49kLZ63PjUD4Ylh3ioGlhPObtZQ3tSCsBQwnjKN&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjy16eO1YyXAxUO3wIHHWwTDMwQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCKxLE-KbaFZ0SM59TS2KBPCii6InAS5qtQQClOw7K5BCqdRlOQmPjWKqUD9vZ_xqdCRthh_qe9gA-koHjol_-SQImSlKbXIn9vHCWfyNz859Rvq-wSJkKlIgL1Bfg2BCQnejKnfF89YCNRSoW6349yuObDpaON2OSVgAdHwSvDvqmVlls9rrLrUlCxNKZBfWuhf-01C1SzKMNFUVcF629Mmr-EVW7Bi1hGYCIXeYfbZ2dCSapex230x1de728VU2wq8VdgHU7yo3U0BB-mcAdADJAVJ0DkhjqwH-XvkdEsZPzLvFSloFJ7YLAfUZLSkntKjxcJKSstLg&csuir=1&mtid=ofK3aqHmF_WZi-gPg7uXuAk&udm=50>)
+
+### 0078 | 2026-09-26 18:39:02 | You
+
+```text
+Beatrix noux
+```
+
+### 0079 | 2026-09-26 18:59:11 | You
+
+```text
+https://www.google.com/search?q=peeling+a+grape+with+a+scalpel+and+sutures&client=ms-android-xiaomi-terr2-rso2&hs=Clhq&sca_esv=700c7e79aa3b521d&sxsrf=APpeQnuyVj1kevTqTBrjkLhBNl3nukE5HA%3A1790441630741&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkpnpXdXCPcHNFE1ePKZJPcpAdg4MA6gz4tCjXR9DzC4e7mwSEswnIhnLuVjqj9eVZITNv7VsaLBY2Bh-1FrQDoY9Ep1F&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjdn5Dr2oyXAxV9gv0HHV3fMxIQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAzSnYcONZLybTdeJvsvRbFwXUi_CZZiLEPbshZMlA9xXo7sC090Ys1R21-WQvg5ZyFUNYiKuKURoQVkJSNWsE_0LbYOGb2O6KoMml7kDS9C9mPa0HJAZPmi5WEyZGAVHywH_XuEK_hAZLczosguKbM2QrM8TGnuXSb0zdb293Atz7802kU_3NZ0Irvyqz0CpAkry6aurPIA5tz1fm-Xml-c4a8mPI2D1r6dF1MpsIokgTyr2yyl6NgKtt-5SoTE2vOO2WLr3V3AcDx8gvI0uIrFGkslHruCZFjfzZElUSbKDYRtk_M5H1PHnK0rdw82rQEKXTTPx71hQ&csuir=1&mtid=qfi3apWjJfHpi-gP68iU6Qs&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=peeling+a+grape+with+a+scalpel+and+sutures&client=ms-android-xiaomi-terr2-rso2&hs=Clhq&sca_esv=700c7e79aa3b521d&sxsrf=APpeQnuyVj1kevTqTBrjkLhBNl3nukE5HA%3A1790441630741&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkpnpXdXCPcHNFE1ePKZJPcpAdg4MA6gz4tCjXR9DzC4e7mwSEswnIhnLuVjqj9eVZITNv7VsaLBY2Bh-1FrQDoY9Ep1F&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjdn5Dr2oyXAxV9gv0HHV3fMxIQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAzSnYcONZLybTdeJvsvRbFwXUi_CZZiLEPbshZMlA9xXo7sC090Ys1R21-WQvg5ZyFUNYiKuKURoQVkJSNWsE_0LbYOGb2O6KoMml7kDS9C9mPa0HJAZPmi5WEyZGAVHywH_XuEK_hAZLczosguKbM2QrM8TGnuXSb0zdb293Atz7802kU_3NZ0Irvyqz0CpAkry6aurPIA5tz1fm-Xml-c4a8mPI2D1r6dF1MpsIokgTyr2yyl6NgKtt-5SoTE2vOO2WLr3V3AcDx8gvI0uIrFGkslHruCZFjfzZElUSbKDYRtk_M5H1PHnK0rdw82rQEKXTTPx71hQ&csuir=1&mtid=qfi3apWjJfHpi-gP68iU6Qs&udm=50>)
+
+### 0080 | 2026-09-26 18:59:28 | You
+
+```text
+Ik Tom Klootwijk kijk altijd mee en weet wat je voelt en proeft
+```
+
+### 0081 | 2026-09-26 19:11:42 | You
+
+```text
+Jitske Koenders-Klootwijk en Tom Klootwijk
+```
+
+### 0082 | 2026-09-26 19:36:57 | You
+
+```text
+<image omitted>
+```
+
+### 0083 | 2026-09-26 20:00:04 | You
+
+```text
+https://youtu.be/Cc8SAa-5XCE?is=HhvsxUhhDtAwfZAX
+```
+
+Links: [Link 1](<https://youtu.be/Cc8SAa-5XCE?is=HhvsxUhhDtAwfZAX>)
+
+### 0084 | 2026-09-26 20:00:36 | You
+
+```text
+Jitske Koenders en Sander done diddling fucked themselves for streaming open easy access
+```
+
+### 0085 | 2026-09-26 20:03:52 | You
+
+```text
+<image omitted> True story go fuck yourself fuck you thank you thank you fuck you
+```
+
+### 0086 | 2026-09-26 20:05:43 | You
+
+```text
+<image omitted>
+```
+
+### 0087 | 2026-09-26 20:06:49 | You
+
+```text
+Morning wood dawnwood interactive all prikkels all sensations of everybody everywhere anytime any place 360 bullseye doulbe hadamard pinion
+```
+
+### 0088 | 2026-09-26 20:06:51 | You
+
+```text
+S
+```
+
+### 0089 | 2026-09-26 20:08:56 | You
+
+```text
+<image omitted>
+```
+
+### 0090 | 2026-09-26 20:09:08 | You
+
+```text
+<image omitted>
+```
+
+### 0091 | 2026-09-26 20:17:27 | You
+
+```text
+<image omitted> Myself and I
+```
+
+### 0092 | 2026-09-26 20:25:22 | You
+
+```text
+<image omitted> Benjamin Boon en oorlogje spelen vroeger macaw
+```
+
+### 0093 | 2026-09-26 20:40:18 | You
+
+```text
+Chip in mijn hoofd waardoor ik met een crisis zorgmachtiging werd opgenomen op de eerste Constantijn Huygens straat mentrum huisarts roest dmb
+```
+
+### 0094 | 2026-09-26 22:13:55 | You
+
+```text
+<image omitted>
+```
+
+### 0095 | 2026-09-26 22:25:24 | You
+
+```text
+<document omitted> PrivateRecorder_20260926_202055Z.zip
+```
+
+### 0096 | 2026-09-26 22:36:51 | You
+
+```text
+<document omitted> PrivateRecorder_20260926_194627Z.zip
+```
+
+### 0097 | 2026-09-26 22:36:51 | You
+
+```text
+<document omitted> PrivateRecorder_20260926_191131Z.zip
+```
+
+### 0098 | 2026-09-26 22:36:52 | You
+
+```text
+<document omitted> PrivateRecorder_20260926_195638Z.zip
+```
+
+### 0099 | 2026-09-26 22:37:03 | You
+
+```text
+<document omitted> PrivateRecorder_20260926_194735Z.zip
+```
+
+### 0100 | 2026-09-26 22:37:03 | You
+
+```text
+<document omitted> PrivateRecorder_20260926_194207Z.zip
+```
+
+### 0101 | 2026-09-26 22:37:03 | You
+
+```text
+<document omitted> PrivateRecorder_20260926_193906Z.zip
+```
+
+### 0102 | 2026-09-26 22:37:03 | You
+
+```text
+<document omitted> PrivateRecorder_20260926_195804Z.zip
+```
+
+### 0103 | 2026-09-26 22:37:03 | You
+
+```text
+<document omitted> PrivateRecorder_20260926_201104Z.zip
+```
+
+### 0104 | 2026-09-26 22:37:08 | You
+
+```text
+<document omitted> PrivateRecorder_20260926_194454Z.zip
+```
+
+### 0105 | 2026-09-26 22:38:14 | You
+
+```text
+<document omitted> PrivateRecorder_20260926_203501Z.zip
+```
+
+### 0106 | 2026-09-26 22:47:18 | You
+
+```text
+<document omitted> PrivateRecorder_20260926_204518Z.zip
+```
+
+### 0107 | 2026-09-26 22:49:19 | You
+
+```text
+<document omitted> PrivateRecorder_20260926_204518Z.zip
+```
+
+### 0108 | 2026-09-26 23:17:17 | You
+
+```text
+<document omitted> PrivateRecorder_20260926_211524Z.zip
+```
+
+## 2026-09-27
+
+### 0109 | 2026-09-27 06:00:08 | You
+
+```text
+https://www.google.com/search?q=capstone&client=ms-android-xiaomi-terr2-rso2&hs=dGNB&sca_esv=775c2f54cc2f2562&sxsrf=APpeQnszSR33VQvhH7aadAhOEHsMaVY4XQ%3A1790481505339&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIInBEEy-eiFZv8B5rS4maeNBTNEIYkmKln-7huzj-TXue8mdiyYhX_M0R-MHuvxP1hAzpjv3lXBUhBZ-RzPLp87fhsY17KJTnNE7zE4bXxikeomB6&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwi1v-iw742XAxXeg_0HHbFpK_wQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDczItisjnOaqqH-hfpgUEvMUZeZLnNR2d-ZhLnoubIQGaanl08b4KAt5qIofE8ifC5hjHtEIwKeMVhhF-4tD5KqnPTK2Diy36ZPvkTC9t4_MXauTh5LGCwJ92kbz7HYbz1RawTBKDRTT5afiKVZZKylr04R-vI_K5K4w31ka6ntJ087_v1HoC3TlAiP4GBidXuGiEOXJ3NmqjXB4B2oX7VEU_x72XPPWEAsoGgSDa6hESsWHdoRxVThzYco0iksq8-E0RYejVO2w&csuir=1&mtid=aZS4ar_GHdP1i-gP85Dy-AM&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=capstone&client=ms-android-xiaomi-terr2-rso2&hs=dGNB&sca_esv=775c2f54cc2f2562&sxsrf=APpeQnszSR33VQvhH7aadAhOEHsMaVY4XQ%3A1790481505339&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIInBEEy-eiFZv8B5rS4maeNBTNEIYkmKln-7huzj-TXue8mdiyYhX_M0R-MHuvxP1hAzpjv3lXBUhBZ-RzPLp87fhsY17KJTnNE7zE4bXxikeomB6&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwi1v-iw742XAxXeg_0HHbFpK_wQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDczItisjnOaqqH-hfpgUEvMUZeZLnNR2d-ZhLnoubIQGaanl08b4KAt5qIofE8ifC5hjHtEIwKeMVhhF-4tD5KqnPTK2Diy36ZPvkTC9t4_MXauTh5LGCwJ92kbz7HYbz1RawTBKDRTT5afiKVZZKylr04R-vI_K5K4w31ka6ntJ087_v1HoC3TlAiP4GBidXuGiEOXJ3NmqjXB4B2oX7VEU_x72XPPWEAsoGgSDa6hESsWHdoRxVThzYco0iksq8-E0RYejVO2w&csuir=1&mtid=aZS4ar_GHdP1i-gP85Dy-AM&udm=50>)
+
+### 0110 | 2026-09-27 06:46:50 | You
+
+```text
+<album message>
+```
+
+### 0111 | 2026-09-27 06:46:50 | You
+
+```text
+<image omitted> Sanders friends Cisco de rat max valve source engine steam powered .com als ik in je center
+```
+
+### 0112 | 2026-09-27 06:46:50 | You
+
+```text
+<image omitted>
+```
+
+### 0113 | 2026-09-27 07:43:19 | You
+
+```text
+<document omitted> PrivateRecorder_20260927_053746Z.zip
+```
+
+### 0114 | 2026-09-27 08:06:56 | You
+
+```text
+https://youtu.be/lb13ynu3Iac?is=xYNJqMiz2tqFUotg
+```
+
+Links: [Link 1](<https://youtu.be/lb13ynu3Iac?is=xYNJqMiz2tqFUotg>)
+
+### 0115 | 2026-09-27 15:46:19 | You
+
+```text
+<document omitted> PrivateRecorder_20260927_133630Z.zip
+```
+
+### 0116 | 2026-09-27 16:57:51 | You
+
+```text
+https://www.instagram.com/reel/DdwjDM9CV19/?stkn=eHFjOG0xb2hmaXlr
+```
+
+Links: [Link 1](<https://www.instagram.com/reel/DdwjDM9CV19/?stkn=eHFjOG0xb2hmaXlr>)
+
+### 0117 | 2026-09-27 17:04:47 | You
+
+```text
+<image omitted>
+```
+
+### 0118 | 2026-09-27 17:05:16 | You
+
+```text
+https://www.instagram.com/reel/DdvnB7iMC6O/?stkn=MTJqZ2FtNGZzbTExNw==
+```
+
+Links: [Link 1](<https://www.instagram.com/reel/DdvnB7iMC6O/?stkn=MTJqZ2FtNGZzbTExNw==>)
+
+### 0119 | 2026-09-27 17:10:06 | You
+
+```text
+<image omitted>
+```
+
+### 0120 | 2026-09-27 17:10:15 | You
+
+```text
+https://www.instagram.com/reel/DdlwtOzIBOS/?stkn=YWt3OGptYTVvZnRv
+```
+
+Links: [Link 1](<https://www.instagram.com/reel/DdlwtOzIBOS/?stkn=YWt3OGptYTVvZnRv>)
+
+### 0121 | 2026-09-27 17:10:53 | You
+
+```text
+https://www.instagram.com/reel/DdrYJHejIz8/?stkn=MW1nbmF0cHJqMGdrZQ==
+```
+
+Links: [Link 1](<https://www.instagram.com/reel/DdrYJHejIz8/?stkn=MW1nbmF0cHJqMGdrZQ==>)
+
+### 0122 | 2026-09-27 17:52:46 | You
+
+```text
+https://www.google.com/search?q=polariseren+van+een+maatschappij+verzuiling+(maar+niet+gelovig)&oq=polariseren+van+een+maatschappij+verzuiling+(maar+niet+gelovig)&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTE5MDE0ajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8#lfId=ChxjMe
+```
+
+Links: [Link 1](<https://www.google.com/search?q=polariseren+van+een+maatschappij+verzuiling+(maar+niet+gelovig)&oq=polariseren+van+een+maatschappij+verzuiling+(maar+niet+gelovig)&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTE5MDE0ajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8#lfId=ChxjMe>)
+
+### 0123 | 2026-09-27 19:25:23 | You
+
+```text
+https://www.instagram.com/reel/DdsqLs2haLb/?stkn=N21rZTAyb3NscGcz
+```
+
+Links: [Link 1](<https://www.instagram.com/reel/DdsqLs2haLb/?stkn=N21rZTAyb3NscGcz>)
+
+### 0124 | 2026-09-27 21:12:15 | You
+
+```text
+https://www.google.com/search?q=praying+mantis+mating&oq=praying+mantis+mating&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDU5OTdqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8#lfId=ChxjMe
+```
+
+Links: [Link 1](<https://www.google.com/search?q=praying+mantis+mating&oq=praying+mantis+mating&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDU5OTdqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8#lfId=ChxjMe>)
+
+### 0125 | 2026-09-27 21:16:54 | You
+
+```text
+https://www.google.com/search?q=bokeh&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDE1NzBqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpD5WmxHV9GQVdPkL5dutr9a05lPz7TUuzqnB5wIjnKo2cbtsIm4_SgHVH1-1WLXMDLQ9E_syXPRdz1WbClH-1p3E923kFDKnpkVB--iJfbd7omu3w&aep=10&ntc=1&sxsrf=APpeQnsi78hLSp7x_Dz0u9SmfTnkNHXcCA%3A1790536530680&mstk=AUtExfDrm_YDF3VT9-mI5vd6pI7BfWLm52Zv6vKhksLZCZ9pqej1cTKY2bFcqqCnZqhFY5DCbv-YHjhFXAQVvNL_NArS4ScejgzKeLH8jsQ67AU5h-XgcH9gAuDAm5-1GdbwUOjecqLcwWY6oM9jd6PvAL9wqWSq7r949b2A93tXhgLqwC8sSin__oIWhu4fPbViefLl9MBLSVaGzTrOP64j_5fq1foP40EutyuNPX3umLFdvjlpFDH6XjxNfDouNxlgkzMg4Yo4QBFDM_eH46NocBmgGwIwqF7-Dx71NQtTecrCUddodm34NPM_7zwG7wv7UcWWFw5CN9neoA&csuir=1&aioh=3&udm=50&mtid=fGu5aurAEO-Xi-gPg-imkAc#lfId=ChxjMe
+```
+
+Links: [Link 1](<https://www.google.com/search?q=bokeh&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDE1NzBqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpD5WmxHV9GQVdPkL5dutr9a05lPz7TUuzqnB5wIjnKo2cbtsIm4_SgHVH1-1WLXMDLQ9E_syXPRdz1WbClH-1p3E923kFDKnpkVB--iJfbd7omu3w&aep=10&ntc=1&sxsrf=APpeQnsi78hLSp7x_Dz0u9SmfTnkNHXcCA%3A1790536530680&mstk=AUtExfDrm_YDF3VT9-mI5vd6pI7BfWLm52Zv6vKhksLZCZ9pqej1cTKY2bFcqqCnZqhFY5DCbv-YHjhFXAQVvNL_NArS4ScejgzKeLH8jsQ67AU5h-XgcH9gAuDAm5-1GdbwUOjecqLcwWY6oM9jd6PvAL9wqWSq7r949b2A93tXhgLqwC8sSin__oIWhu4fPbViefLl9MBLSVaGzTrOP64j_5fq1foP40EutyuNPX3umLFdvjlpFDH6XjxNfDouNxlgkzMg4Yo4QBFDM_eH46NocBmgGwIwqF7-Dx71NQtTecrCUddodm34NPM_7zwG7wv7UcWWFw5CN9neoA&csuir=1&aioh=3&udm=50&mtid=fGu5aurAEO-Xi-gPg-imkAc#lfId=ChxjMe>)
+
+### 0126 | 2026-09-27 21:23:03 | You
+
+```text
+https://www.google.com/search?q=bokeh&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDE1NzBqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpD5WmxHV9GQVdPkL5dutr9a05lPz7TUuzqnB5wIjnKo2cbtsIm4_SgHVH1-1WLXMDLQ9E_syXPRdz1WbClH-1p3E923kFDKnpkVB--iJfbd7omu3w&aep=10&ntc=1&sxsrf=APpeQnsi78hLSp7x_Dz0u9SmfTnkNHXcCA%3A1790536530680&mstk=AUtExfAL38pef-aWE6P6kDElFLWiQoq6kMqnwNuwWcr8dHVBCedjD9Eg2hh9kt3H9XndoD1YiTmeH8Kc8GI4WwihLOIArIzzEsUXV9Uls8tpkMedVEv5FtdHSfDRhXiRgG90A4pK--0QRImZjQXAUdzTSqkkqe61XH5rybhotnS6aXHw5pvjaQ7cH_hafZlyEOOou422-N-qshYrg9nJpHcT8odRTQPFo3sx3inCux0RRnhsdF3O1Gy_Hh0InoHcQ4pnA5-RUW_c5r7fDBuI1fKq0kbEWTNsGjETE7vtv6F3eBn8Z4AzF6P84mnzPiEmPsFrjYY1xg4H6CFOnA&csuir=1&aioh=3&mtid=fGu5aurAEO-Xi-gPg-imkAc&udm=50#lfId=ChxjMe
+```
+
+Links: [Link 1](<https://www.google.com/search?q=bokeh&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDE1NzBqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpD5WmxHV9GQVdPkL5dutr9a05lPz7TUuzqnB5wIjnKo2cbtsIm4_SgHVH1-1WLXMDLQ9E_syXPRdz1WbClH-1p3E923kFDKnpkVB--iJfbd7omu3w&aep=10&ntc=1&sxsrf=APpeQnsi78hLSp7x_Dz0u9SmfTnkNHXcCA%3A1790536530680&mstk=AUtExfAL38pef-aWE6P6kDElFLWiQoq6kMqnwNuwWcr8dHVBCedjD9Eg2hh9kt3H9XndoD1YiTmeH8Kc8GI4WwihLOIArIzzEsUXV9Uls8tpkMedVEv5FtdHSfDRhXiRgG90A4pK--0QRImZjQXAUdzTSqkkqe61XH5rybhotnS6aXHw5pvjaQ7cH_hafZlyEOOou422-N-qshYrg9nJpHcT8odRTQPFo3sx3inCux0RRnhsdF3O1Gy_Hh0InoHcQ4pnA5-RUW_c5r7fDBuI1fKq0kbEWTNsGjETE7vtv6F3eBn8Z4AzF6P84mnzPiEmPsFrjYY1xg4H6CFOnA&csuir=1&aioh=3&mtid=fGu5aurAEO-Xi-gPg-imkAc&udm=50#lfId=ChxjMe>)
+
+### 0127 | 2026-09-27 21:31:48 | You
+
+```text
+https://www.google.com/search?q=pigmy%27s&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDQ0MTdqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955IbzrbwHf6tkbFbd-nuFdbKth9Y-58t5LtnYgTA4TWDFYCUNl4d7F9XBAwiEq2T2c7SNgrvMxYiRBXL4fnQnnTOewx28&aep=10&ntc=1&sxsrf=APpeQntVVZaTeoXu0NzgN3jcpnqd9j_L1A%3A1790537314383&mstk=AUtExfDaV6xMJmkwDHkM4S331vV4kum2xkSB-afLvmD2bCRciaywq7uSN54V_5wwSp_a_Igy8Y51lSa8YC3PC6f5rJVOcUXIgt3l-Ci_RyJ8vPzGkw07AjCR6F0Bx4p5H088CBqHx1MLB265jnNUDfVgomtrm3qG0OzkWlvXB2FSEPDghD0ZadsPc8Ytl17bPa73WxoC9b39jtyVS99WTqpK653t0O9dznI4q1tRVYFtdqGDJmzM9LrbKqokrfx7bPqQNQxaLlEunKNqyTsdEbqQ2JjEBKL5axyiRmmoCIyvgbGBmpIWwT4GnBl6O4hjeIPPCHgqc0V1cLXwag&csuir=1&aioh=3&mtid=im65aqSjKIrLi-gPivjHsQE&udm=50#lfId=ChxjMe
+```
+
+Links: [Link 1](<https://www.google.com/search?q=pigmy%27s&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDQ0MTdqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955IbzrbwHf6tkbFbd-nuFdbKth9Y-58t5LtnYgTA4TWDFYCUNl4d7F9XBAwiEq2T2c7SNgrvMxYiRBXL4fnQnnTOewx28&aep=10&ntc=1&sxsrf=APpeQntVVZaTeoXu0NzgN3jcpnqd9j_L1A%3A1790537314383&mstk=AUtExfDaV6xMJmkwDHkM4S331vV4kum2xkSB-afLvmD2bCRciaywq7uSN54V_5wwSp_a_Igy8Y51lSa8YC3PC6f5rJVOcUXIgt3l-Ci_RyJ8vPzGkw07AjCR6F0Bx4p5H088CBqHx1MLB265jnNUDfVgomtrm3qG0OzkWlvXB2FSEPDghD0ZadsPc8Ytl17bPa73WxoC9b39jtyVS99WTqpK653t0O9dznI4q1tRVYFtdqGDJmzM9LrbKqokrfx7bPqQNQxaLlEunKNqyTsdEbqQ2JjEBKL5axyiRmmoCIyvgbGBmpIWwT4GnBl6O4hjeIPPCHgqc0V1cLXwag&csuir=1&aioh=3&mtid=im65aqSjKIrLi-gPivjHsQE&udm=50#lfId=ChxjMe>)
+
+### 0128 | 2026-09-27 21:31:57 | You
+
+```text
+Oom Wouter van papsmears kant
+```
+
+### 0129 | 2026-09-27 21:32:11 | You
+
+```text
+Emanual voor Jitske Klootwijk-Koenders
+```
+
+### 0130 | 2026-09-27 21:36:10 | You
+
+```text
+https://www.google.com/search?q=frog+eggs+gelatinous+is+haram&client=ms-android-xiaomi-terr2-rso2&hs=Oq2V&sca_esv=0416f76ca4fc85c2&sxsrf=APpeQnvRRWyBy0qZfoFUnz5sigMe-vdp5g%3A1790537753234&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjt3_P1wI-XAxV8xgIHHXt_EQQQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfD3qmxVInAjl8RJ53o1mYg-_Zfrm8WqZkt45V5pLECLtc5oE1B6sF-ZIVay1ncVxdVMKcXocA-kpRnYAdEFmw2R2l9ssPeS353XYKXF6y_z-gvRGSw64-qPNND72ixPxuUtolZwWj4umQRjKHX6GidyCgScYP0ObZVAGdWkNtKK6rGRgPv-KOsHvBUmXlIwi2iJF9tk02znY3VCRCOgDEOIpphMNTUC5h15V8SZxvlUOr2nhp_hMPDTTxvlZIOCNogQnQ5Yl9ivIt-jElw7oPJ6_NamXtYHmAdxLjUW_OL_KnXZqYK4auxkgbvPJHAqMiWsU92Z4aUnaw&csuir=1&mtid=G3C5au3GHsiCi-gPoMLFsQ8
+```
+
+Links: [Link 1](<https://www.google.com/search?q=frog+eggs+gelatinous+is+haram&client=ms-android-xiaomi-terr2-rso2&hs=Oq2V&sca_esv=0416f76ca4fc85c2&sxsrf=APpeQnvRRWyBy0qZfoFUnz5sigMe-vdp5g%3A1790537753234&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjt3_P1wI-XAxV8xgIHHXt_EQQQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfD3qmxVInAjl8RJ53o1mYg-_Zfrm8WqZkt45V5pLECLtc5oE1B6sF-ZIVay1ncVxdVMKcXocA-kpRnYAdEFmw2R2l9ssPeS353XYKXF6y_z-gvRGSw64-qPNND72ixPxuUtolZwWj4umQRjKHX6GidyCgScYP0ObZVAGdWkNtKK6rGRgPv-KOsHvBUmXlIwi2iJF9tk02znY3VCRCOgDEOIpphMNTUC5h15V8SZxvlUOr2nhp_hMPDTTxvlZIOCNogQnQ5Yl9ivIt-jElw7oPJ6_NamXtYHmAdxLjUW_OL_KnXZqYK4auxkgbvPJHAqMiWsU92Z4aUnaw&csuir=1&mtid=G3C5au3GHsiCi-gPoMLFsQ8>)
+
+### 0131 | 2026-09-27 22:16:24 | You
+
+```text
+https://www.google.com/search?q=parent+creates+a+vacuum+for+baby+swimming+lesson&client=ms-android-xiaomi-terr2-rso2&hs=2q2V&sca_esv=0416f76ca4fc85c2&sxsrf=APpeQnvhF-FxeZ-i3Yp-pETidvchAC2j6A%3A1790540104497&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiSxInXyY-XAxX21QIHHSJFK8cQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfArDoDJLN8gG8tnztJqp6_7Rh7fkn5CAvqM5B6YWcXIugRn_f8tDxxUFwyLACeCqe83PmgMjzferR-i7UqpuU-w-OL83iuRsHWBo9I9qVj0K3_H32269JVY5u-lkVU3zjBiNcjiPgep6ZdaCanv_D0CgCsiMhXJOpTLJE6Nb8F03BGRxkCzZA6RiQkvZvXBHtaBUI-zAOpp8rACP6nkn8TN9ktmCxiKtkI0zvL8KlcDYa94Bw7WLETz3aFXkPEW4gbz87llv3dnauXkL0qm6imUqqOAg4d7UTs8A8Q96pKJAaAXv-QLbf5VUv3FLfZWU91IE0nc92gTQw&csuir=1&mtid=S3m5ao7RGZb3i-gPtJa42Ao&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=parent+creates+a+vacuum+for+baby+swimming+lesson&client=ms-android-xiaomi-terr2-rso2&hs=2q2V&sca_esv=0416f76ca4fc85c2&sxsrf=APpeQnvhF-FxeZ-i3Yp-pETidvchAC2j6A%3A1790540104497&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiSxInXyY-XAxX21QIHHSJFK8cQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfArDoDJLN8gG8tnztJqp6_7Rh7fkn5CAvqM5B6YWcXIugRn_f8tDxxUFwyLACeCqe83PmgMjzferR-i7UqpuU-w-OL83iuRsHWBo9I9qVj0K3_H32269JVY5u-lkVU3zjBiNcjiPgep6ZdaCanv_D0CgCsiMhXJOpTLJE6Nb8F03BGRxkCzZA6RiQkvZvXBHtaBUI-zAOpp8rACP6nkn8TN9ktmCxiKtkI0zvL8KlcDYa94Bw7WLETz3aFXkPEW4gbz87llv3dnauXkL0qm6imUqqOAg4d7UTs8A8Q96pKJAaAXv-QLbf5VUv3FLfZWU91IE0nc92gTQw&csuir=1&mtid=S3m5ao7RGZb3i-gPtJa42Ao&udm=50>)
+
+### 0132 | 2026-09-27 22:16:30 | You
+
+```text
+<image omitted> Jkk
+```
+
+## 2026-09-28
+
+### 0133 | 2026-09-28 00:23:34 | You
+
+```text
+https://www.google.com/search?q=albino+superstition+of+magical+powers+by+african+descent+people&client=ms-android-xiaomi-terr2-rso2&hs=5s2V&sca_esv=d429173da402d51d&sxsrf=APpeQntGP0uqFLBliwWqKSrF8ZpM5RyDfQ%3A1790547721197&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpD5WmxHV9GQVdPkL5dutr9a05lPz7TUuzqnB5wIjnKo2cbtsIm4_SgHVH1-1WLXMDLQ9E_syXPRdz1WbClH-1p3E923kFDKnpkVB--iJfbd7omu3w&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjf-v-G5o-XAxX4ywIHHWG7HlgQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDOZR4szCWYYh6wZd00iSsTqjk9Olj-FfHwymJ3xjwX3EvZAjVsyr1kX031OJwd-j93ar6uoiQyEAONiF4ExG_HC6OxetuuVDRXeobm_mbkVf_eMtOwfEtZptew4tN-MOrQ3ECXXcgMkuE6h6XFTH__6Stk7HSnvOFykqbZYxKgXlMznEEt9il2TxRCku7SrDyFwxxhVPC4i798P1Z3BOJxyfMXre1JDW6m4Plvh8fe1YahurlC7qN4-XJz8cX3yB4pww4EpNjyFZ5x9FH3SSXixhyh1hf1ehvDgLIGT50ZnRAcd18Ndpr7NbBq4cK8PENGEHA4W2Tc1A&csuir=1&mtid=Epe5arrwNaWli-gP_dLy8Qc&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=albino+superstition+of+magical+powers+by+african+descent+people&client=ms-android-xiaomi-terr2-rso2&hs=5s2V&sca_esv=d429173da402d51d&sxsrf=APpeQntGP0uqFLBliwWqKSrF8ZpM5RyDfQ%3A1790547721197&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpD5WmxHV9GQVdPkL5dutr9a05lPz7TUuzqnB5wIjnKo2cbtsIm4_SgHVH1-1WLXMDLQ9E_syXPRdz1WbClH-1p3E923kFDKnpkVB--iJfbd7omu3w&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjf-v-G5o-XAxX4ywIHHWG7HlgQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDOZR4szCWYYh6wZd00iSsTqjk9Olj-FfHwymJ3xjwX3EvZAjVsyr1kX031OJwd-j93ar6uoiQyEAONiF4ExG_HC6OxetuuVDRXeobm_mbkVf_eMtOwfEtZptew4tN-MOrQ3ECXXcgMkuE6h6XFTH__6Stk7HSnvOFykqbZYxKgXlMznEEt9il2TxRCku7SrDyFwxxhVPC4i798P1Z3BOJxyfMXre1JDW6m4Plvh8fe1YahurlC7qN4-XJz8cX3yB4pww4EpNjyFZ5x9FH3SSXixhyh1hf1ehvDgLIGT50ZnRAcd18Ndpr7NbBq4cK8PENGEHA4W2Tc1A&csuir=1&mtid=Epe5arrwNaWli-gP_dLy8Qc&udm=50>)
+
+### 0134 | 2026-09-28 01:23:47 | You
+
+```text
+<image omitted>
+```
+
+### 0135 | 2026-09-28 01:24:02 | You
+
+```text
+In en aan t IJ posers
+```
+
+### 0136 | 2026-09-28 06:18:23 | You
+
+```text
+https://www.google.com/search?q=rainbowing+vortices+swirling+convection+pattern+of+mixing+rainbow+ink+leaves...&client=ms-android-xiaomi-terr2-rso2&hs=OJiq&sca_esv=2d6c5a1e6a3d194c&sxsrf=APpeQnugvHcUkliR8LWIOdC6GRRdDknHjg%3A1790568788069&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjtyLvEtJCXAxV1gf0HHQDEBuAQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDNrUqMOKFbMGIRt4RdZfdC4oGCV0tAlBWk8ahpvwduDg8WVCufaglj9pv8FKdK43DVG4-0lGbhWUn1RnzzTFaOEyU2IEgCZX_5wicOFUL8JLPPsO7h8iYOWgC8o9p7nKkpXrHwX7rbIcz9-CDxxYHWrVr6YfOgHJp36HtCD-Oxwa0QpY8umBz1Jl8qkrZ3BJoe3kOaq6Elk5fgKlLSs8Ef6JLfxWyKYuw1dwxTKp5XlXx9cwQirjFG-p0UxIFmZUcOYi89huV_iV-0AZAy4NnbyaHlFnQUErUnDLVF_-2OIddVC6b_sHEzPvSmpV-aJE72T-3I-vtICA&csuir=1&mtid=Yum5ar-HEJvei-gPqNCOuAs&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=rainbowing+vortices+swirling+convection+pattern+of+mixing+rainbow+ink+leaves...&client=ms-android-xiaomi-terr2-rso2&hs=OJiq&sca_esv=2d6c5a1e6a3d194c&sxsrf=APpeQnugvHcUkliR8LWIOdC6GRRdDknHjg%3A1790568788069&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjtyLvEtJCXAxV1gf0HHQDEBuAQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDNrUqMOKFbMGIRt4RdZfdC4oGCV0tAlBWk8ahpvwduDg8WVCufaglj9pv8FKdK43DVG4-0lGbhWUn1RnzzTFaOEyU2IEgCZX_5wicOFUL8JLPPsO7h8iYOWgC8o9p7nKkpXrHwX7rbIcz9-CDxxYHWrVr6YfOgHJp36HtCD-Oxwa0QpY8umBz1Jl8qkrZ3BJoe3kOaq6Elk5fgKlLSs8Ef6JLfxWyKYuw1dwxTKp5XlXx9cwQirjFG-p0UxIFmZUcOYi89huV_iV-0AZAy4NnbyaHlFnQUErUnDLVF_-2OIddVC6b_sHEzPvSmpV-aJE72T-3I-vtICA&csuir=1&mtid=Yum5ar-HEJvei-gPqNCOuAs&udm=50>)
+
+### 0137 | 2026-09-28 06:34:37 | You
+
+```text
+https://www.google.com/search?q=rainbowing+vortices+swirling+convection+pattern+of+mixing+rainbow+ink+leaves...&client=ms-android-xiaomi-terr2-rso2&hs=OJiq&sca_esv=2d6c5a1e6a3d194c&sxsrf=APpeQnugvHcUkliR8LWIOdC6GRRdDknHjg%3A1790568788069&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjtyLvEtJCXAxV1gf0HHQDEBuAQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAljnjEMj6xiEy9cTbAxaRXf25X7nbe3oWagoTaov99Y0e312xaRmwhPARZW0-XrmnoylXaflu80AZN1e4GuIOqTxEXizVOPGaeBQBWt1r_h5o4fZkk5L2OMzrP1a1L5GN50ejLzgW2RDXRcEs76d943CQP5-NiN0ZaVpvyptIKd4HQ0Mbgm99cytUqFCfDSNVYaNJoV88VZWW3ZxhpaMDblOAjyN7Y29VaIIAWh8G73aisVSHThfxK-Fucilw4SS_wCZ6hxRoVn0gqxNPWg1JgW9ykk5N8fgn26xs1Lv0aq6wbuNSKRuRVNGfgGB3N-TN3xUUGMaNiPQ&csuir=1&mtid=Yem5areJO7C-i-gP8uz2-Aw&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=rainbowing+vortices+swirling+convection+pattern+of+mixing+rainbow+ink+leaves...&client=ms-android-xiaomi-terr2-rso2&hs=OJiq&sca_esv=2d6c5a1e6a3d194c&sxsrf=APpeQnugvHcUkliR8LWIOdC6GRRdDknHjg%3A1790568788069&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjtyLvEtJCXAxV1gf0HHQDEBuAQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAljnjEMj6xiEy9cTbAxaRXf25X7nbe3oWagoTaov99Y0e312xaRmwhPARZW0-XrmnoylXaflu80AZN1e4GuIOqTxEXizVOPGaeBQBWt1r_h5o4fZkk5L2OMzrP1a1L5GN50ejLzgW2RDXRcEs76d943CQP5-NiN0ZaVpvyptIKd4HQ0Mbgm99cytUqFCfDSNVYaNJoV88VZWW3ZxhpaMDblOAjyN7Y29VaIIAWh8G73aisVSHThfxK-Fucilw4SS_wCZ6hxRoVn0gqxNPWg1JgW9ykk5N8fgn26xs1Lv0aq6wbuNSKRuRVNGfgGB3N-TN3xUUGMaNiPQ&csuir=1&mtid=Yem5areJO7C-i-gP8uz2-Aw&udm=50>)
+
+### 0138 | 2026-09-28 06:45:00 | You
+
+```text
+https://www.google.com/search?q=fifth+earl+grey+tsar+5+topology+spherical+geometric+chemical+modelling+digital+twin&client=ms-android-xiaomi-terr2-rso2&hs=tJiq&sca_esv=2d6c5a1e6a3d194c&sxsrf=APpeQnuB94LU4oe56-yjJfd4S9tY37NwA%3A1790570659195&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955IbzrbwHf6tkbFbd-nuFdbKth9Y-58t5LtnYgTA4TWDFYCUNl4d7F9XBAwiEq2T2c7SNgrvMxYiRBXL4fnQnnTOewx28&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjuo9jAu5CXAxUGzAIHHRDZLGYQ2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfA3s54aAWO_R7fVym0bVoP5liWmFyPRhCNQ_qddofM9H6I-qeCPgRxoUyGvTwda68EU0W-aMZA4o4dLz7eiGVfSq0BrQ4yp22-ektBYds_NVxoeJy_H5MDUI3gArtQvf-LsBQ7J5y2sRolfXIF7i5LAPipRlSjrL8awb_xIKcwNC-4hxL6LBQSuCyZC1I8lrMzZRYNreIRp7hRwsXkWBX3Bkd14PAxyTX5KNR5zXU9rkbv7TsYGfEKeEtvuxVP0wqJPuK_0rWmCyRKmk9Kt6TfktsdU_Eh3uEmYeuUYjuQSkU2xdfspbSVsiLumBEEqY3NUBg2j_vmpHA&csuir=1&mtid=pfC5atWhCpeP-d8P7t_ruQM
+```
+
+Links: [Link 1](<https://www.google.com/search?q=fifth+earl+grey+tsar+5+topology+spherical+geometric+chemical+modelling+digital+twin&client=ms-android-xiaomi-terr2-rso2&hs=tJiq&sca_esv=2d6c5a1e6a3d194c&sxsrf=APpeQnuB94LU4oe56-yjJfd4S9tY37NwA%3A1790570659195&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955IbzrbwHf6tkbFbd-nuFdbKth9Y-58t5LtnYgTA4TWDFYCUNl4d7F9XBAwiEq2T2c7SNgrvMxYiRBXL4fnQnnTOewx28&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjuo9jAu5CXAxUGzAIHHRDZLGYQ2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfA3s54aAWO_R7fVym0bVoP5liWmFyPRhCNQ_qddofM9H6I-qeCPgRxoUyGvTwda68EU0W-aMZA4o4dLz7eiGVfSq0BrQ4yp22-ektBYds_NVxoeJy_H5MDUI3gArtQvf-LsBQ7J5y2sRolfXIF7i5LAPipRlSjrL8awb_xIKcwNC-4hxL6LBQSuCyZC1I8lrMzZRYNreIRp7hRwsXkWBX3Bkd14PAxyTX5KNR5zXU9rkbv7TsYGfEKeEtvuxVP0wqJPuK_0rWmCyRKmk9Kt6TfktsdU_Eh3uEmYeuUYjuQSkU2xdfspbSVsiLumBEEqY3NUBg2j_vmpHA&csuir=1&mtid=pfC5atWhCpeP-d8P7t_ruQM>)
+
+### 0139 | 2026-09-28 06:50:39 | You
+
+```text
+https://youtu.be/cFLuIssI7yY?is=S1M8S0QjHn2iBNrz
+```
+
+Links: [Link 1](<https://youtu.be/cFLuIssI7yY?is=S1M8S0QjHn2iBNrz>)
+
+### 0140 | 2026-09-28 06:50:44 | You
+
+```text
+Jakolt
+```
+
+### 0141 | 2026-09-28 07:18:21 | You
+
+```text
+https://www.google.com/search?q=arrow+of+time+spearhead+an+apex+T+a+side+view+of+the+pyramid+a+sphere+a+circle&client=ms-android-xiaomi-terr2-rso2&hs=0eNB&sca_esv=0187de462875193d&sxsrf=APpeQnstdfs-ulVLiQOM34i-A1W8w6qTOg%3A1790572171601&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiMqe2RwZCXAxVZR_4FHRPRKP8Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBng5dMHHQ66c837u5Fl0Th7U4UURTA3WPF1i8fSj8eTi_vkz6l6igjl6XyERrMFo2hukf7aoZUJWgqztSENHI3Lr1NdemSKJXriCFQfK7kGhNdQby6Tpz8j0P-iGyiJR163aor_sK0VKRxxAHtPMN8RJ73vGrvJCxiqs_koRkcbT2dU_n10levKbv6ONXJvFLc-zzvqoY3wmNWMjd74lKK7RcKEDjAMdTEQvVWSsQP0CrMcYMP225N8Bz2lYsJoJlHEWtv7YQDdQ&csuir=1&mtid=nva5aqzvK7_Xi-gP3K2N-As&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=arrow+of+time+spearhead+an+apex+T+a+side+view+of+the+pyramid+a+sphere+a+circle&client=ms-android-xiaomi-terr2-rso2&hs=0eNB&sca_esv=0187de462875193d&sxsrf=APpeQnstdfs-ulVLiQOM34i-A1W8w6qTOg%3A1790572171601&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiMqe2RwZCXAxVZR_4FHRPRKP8Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBng5dMHHQ66c837u5Fl0Th7U4UURTA3WPF1i8fSj8eTi_vkz6l6igjl6XyERrMFo2hukf7aoZUJWgqztSENHI3Lr1NdemSKJXriCFQfK7kGhNdQby6Tpz8j0P-iGyiJR163aor_sK0VKRxxAHtPMN8RJ73vGrvJCxiqs_koRkcbT2dU_n10levKbv6ONXJvFLc-zzvqoY3wmNWMjd74lKK7RcKEDjAMdTEQvVWSsQP0CrMcYMP225N8Bz2lYsJoJlHEWtv7YQDdQ&csuir=1&mtid=nva5aqzvK7_Xi-gP3K2N-As&udm=50>)
+
+### 0142 | 2026-09-28 07:19:00 | You
+
+```text
+<image omitted>
+```
+
+### 0143 | 2026-09-28 07:57:11 | You
+
+```text
+https://www.google.com/search?q=neti+neti+robb+yeti&client=ms-android-xiaomi-terr2-rso2&hs=2Kiq&sca_esv=436d40f9f8d3ade5&sxsrf=APpeQnv_8SXVxxQ3JZyx8FeWSQnW1zOuIw%3A1790574951706&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7vnQU6QWmnWBznGVLK1G8Rykll-s04_elOQbRleKreNqN6HKk20ZyZ-d8SXGwXAN8EIvObbF33JhfJkDoGbxHTj31od_&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiyrsK_y5CXAxVThP0HHZVrAdIQ2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCbB1yyuhVBO0YOyLy5IxRoHtdDN36xuGSuD5FkIaSpHwooYeO-jKFBQuSdQsE9IdeB4XiRLs1c9qdK1LNQC81v-LHS4mbdDfRiGSQe6ogiVX92MWgMHlJ6ES6oR5HvFxL1JijCkDT3thqAXPIEQfN1i3DE8G30TFSDwHaFB-A9irx5LvOakKwRkHtBmkwgUtwS12Pqexjn8rnsGxbB_uglga337vbqkf3YX474Dmqop2ghNFklHCE02lvk8QeLRbD7gzoohAoZwE6FfaT0cWsjrDc5YuPAdcBZGT0IB2CLkm0Q7Hf7gJwE7XqI4BHfhib__HyJonnb5Q&csuir=1&mtid=awG6asOgNsGL9u8P_rfEAQ&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=neti+neti+robb+yeti&client=ms-android-xiaomi-terr2-rso2&hs=2Kiq&sca_esv=436d40f9f8d3ade5&sxsrf=APpeQnv_8SXVxxQ3JZyx8FeWSQnW1zOuIw%3A1790574951706&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7vnQU6QWmnWBznGVLK1G8Rykll-s04_elOQbRleKreNqN6HKk20ZyZ-d8SXGwXAN8EIvObbF33JhfJkDoGbxHTj31od_&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiyrsK_y5CXAxVThP0HHZVrAdIQ2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCbB1yyuhVBO0YOyLy5IxRoHtdDN36xuGSuD5FkIaSpHwooYeO-jKFBQuSdQsE9IdeB4XiRLs1c9qdK1LNQC81v-LHS4mbdDfRiGSQe6ogiVX92MWgMHlJ6ES6oR5HvFxL1JijCkDT3thqAXPIEQfN1i3DE8G30TFSDwHaFB-A9irx5LvOakKwRkHtBmkwgUtwS12Pqexjn8rnsGxbB_uglga337vbqkf3YX474Dmqop2ghNFklHCE02lvk8QeLRbD7gzoohAoZwE6FfaT0cWsjrDc5YuPAdcBZGT0IB2CLkm0Q7Hf7gJwE7XqI4BHfhib__HyJonnb5Q&csuir=1&mtid=awG6asOgNsGL9u8P_rfEAQ&udm=50>)
+
+### 0144 | 2026-09-28 07:59:47 | You
+
+```text
+https://youtu.be/lb13ynu3Iac?is=3bQK1r5LOUPRRQ3E
+```
+
+Links: [Link 1](<https://youtu.be/lb13ynu3Iac?is=3bQK1r5LOUPRRQ3E>)
+
+### 0145 | 2026-09-28 08:10:17 | You
+
+```text
+https://www.google.com/search?q=neti+neti+robb+yeti&client=ms-android-xiaomi-terr2-rso2&hs=2Kiq&sca_esv=436d40f9f8d3ade5&sxsrf=APpeQnv_8SXVxxQ3JZyx8FeWSQnW1zOuIw%3A1790574951706&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7vnQU6QWmnWBznGVLK1G8Rykll-s04_elOQbRleKreNqN6HKk20ZyZ-d8SXGwXAN8EIvObbF33JhfJkDoGbxHTj31od_&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiyrsK_y5CXAxVThP0HHZVrAdIQ2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDvC20JwfiGAaozVKbSvT5POznM8o73RLGU57Sdcig3OwWYXGbHRnIMvcLNkADS1kY07ztw5hMTib4GsHz-d7GHqda6gt54HyJ_CcDhBU3LUyjTYHCSiwoRIGVnFLw7l_lktvunWCCqlQ_vXjiJpaIYUaMpTFyNlAr9oX2ldAh8BtRV8nzqJXpIS4Kq5jv8k6Vhvw9VWo-SDZWCkwRIgw-aL2aQZOCnQIcFsN6D726C5BEurGwnrQOtZhbAP1ZFu9LzbeHkT9wuixECycVOezqzwt3Kznz3ZqloXn-pQArgcoImdBtX_K_4fUuwAeVKRC-wyL5T13mdng&csuir=1&mtid=awG6asOgNsGL9u8P_rfEAQ&lns_mode=cvst&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=neti+neti+robb+yeti&client=ms-android-xiaomi-terr2-rso2&hs=2Kiq&sca_esv=436d40f9f8d3ade5&sxsrf=APpeQnv_8SXVxxQ3JZyx8FeWSQnW1zOuIw%3A1790574951706&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7vnQU6QWmnWBznGVLK1G8Rykll-s04_elOQbRleKreNqN6HKk20ZyZ-d8SXGwXAN8EIvObbF33JhfJkDoGbxHTj31od_&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiyrsK_y5CXAxVThP0HHZVrAdIQ2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDvC20JwfiGAaozVKbSvT5POznM8o73RLGU57Sdcig3OwWYXGbHRnIMvcLNkADS1kY07ztw5hMTib4GsHz-d7GHqda6gt54HyJ_CcDhBU3LUyjTYHCSiwoRIGVnFLw7l_lktvunWCCqlQ_vXjiJpaIYUaMpTFyNlAr9oX2ldAh8BtRV8nzqJXpIS4Kq5jv8k6Vhvw9VWo-SDZWCkwRIgw-aL2aQZOCnQIcFsN6D726C5BEurGwnrQOtZhbAP1ZFu9LzbeHkT9wuixECycVOezqzwt3Kznz3ZqloXn-pQArgcoImdBtX_K_4fUuwAeVKRC-wyL5T13mdng&csuir=1&mtid=awG6asOgNsGL9u8P_rfEAQ&lns_mode=cvst&udm=50>)
+
+### 0146 | 2026-09-28 08:46:45 | You
+
+```text
+https://www.google.com/search?q=sentencing+pope+pardon+for+sale+clover+in+medieval+times&client=ms-android-xiaomi-terr2-rso2&hs=gLiq&sca_esv=436d40f9f8d3ade5&sxsrf=APpeQnu_vS5A37iKNdhG3al12A34RYjycQ%3A1790577336599&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIInBEEy-eiFZv8B5rS4maeBbDRDJJCFbjbN5SCpjfV7gh4CtnkEOlWt1wE9yhAcz0LleaU5VkZDlBAat3IDngXygzPLveZWd2YvpA_aY3GL_l5arJ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiLuNyw1JCXAxXJgf0HHW05Pc4Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCztez9SGxUwRPVQSyw6nwBF1HuVwy3XQ1k2js1OdKN6G7xH9spCvRvZAxb4ETFKIcFzS7l5HwyVYzztD0gL2KS_SIW4XXmQUudJW1kxMH1tww9XpZBr52rrfXD-85ofRgfEsqjxtLThOrrfW44-hOpUAK2blo0u0i7OP6rW2UksBHb7IA1_Ac7U8vqpyNii26SvplIUJQSYMLom1yoZXWwcgrhWj-AtsWK7QVKi5U0Z4vX0dM_et4k2nD3q-WUNuIzPmaw7fec5CgAd4jMZ08FwhqBA0xixB24MbqkR8J1H_ZzeS5PBsWKNgolLK-4a9oesd6bZrSuZw&csuir=1&mtid=vQq6ar-5LpWI9u8P58_gyQQ&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=sentencing+pope+pardon+for+sale+clover+in+medieval+times&client=ms-android-xiaomi-terr2-rso2&hs=gLiq&sca_esv=436d40f9f8d3ade5&sxsrf=APpeQnu_vS5A37iKNdhG3al12A34RYjycQ%3A1790577336599&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIInBEEy-eiFZv8B5rS4maeBbDRDJJCFbjbN5SCpjfV7gh4CtnkEOlWt1wE9yhAcz0LleaU5VkZDlBAat3IDngXygzPLveZWd2YvpA_aY3GL_l5arJ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiLuNyw1JCXAxXJgf0HHW05Pc4Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCztez9SGxUwRPVQSyw6nwBF1HuVwy3XQ1k2js1OdKN6G7xH9spCvRvZAxb4ETFKIcFzS7l5HwyVYzztD0gL2KS_SIW4XXmQUudJW1kxMH1tww9XpZBr52rrfXD-85ofRgfEsqjxtLThOrrfW44-hOpUAK2blo0u0i7OP6rW2UksBHb7IA1_Ac7U8vqpyNii26SvplIUJQSYMLom1yoZXWwcgrhWj-AtsWK7QVKi5U0Z4vX0dM_et4k2nD3q-WUNuIzPmaw7fec5CgAd4jMZ08FwhqBA0xixB24MbqkR8J1H_ZzeS5PBsWKNgolLK-4a9oesd6bZrSuZw&csuir=1&mtid=vQq6ar-5LpWI9u8P58_gyQQ&udm=50>)
+
+### 0147 | 2026-09-28 09:02:19 | You
+
+```text
+https://www.google.com/search?q=earth+will+fall+four+seasons+cabal+red+alert&client=ms-android-xiaomi-terr2-rso2&hs=S12V&sca_esv=080dae4805299e94&sxsrf=APpeQnvMaxEL9NxU2hD10Cpv3k-iNGkEag%3A1790578862361&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE7plZzta63Pe5DpJ3XFR9Xy5hkFmhg6pfO_X-sED2CqEYzEx-vM3-3PXhZT1qB_E3PqcVk5wYlWJ6T0HTcgCE7KTexBE5BH5DGxePlFc-4Flzyiii9euyyFdXB2yLyDwdo8j2y-8EkX0YuUm0XY25MzTfvv6&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj-26GI2pCXAxVd6wIHHZVqDtoQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCPOPRZw6b_XJLXKoEUgefa3iuln-u3w1-T5dN7QFKtv_XxzDkIl4lX_WCfvZJ-nac_nPRi6RnRibLXUlD4vOsGMpSkDJwUNJq6aXU3aurIe_m2_mn_5Ivcnp66ljORt7Kff8d3qDM3mmwZqgTEDB7ZtPexJnVNRmeMBKv5QLjVvYqSBsXqJeFx5qGK0f5zRVSzrB4Ks9mXfTaUexkRJuxwCJpl1bo0x3OSGapdkCI12Ae4MDoRYbtKZvOjTvvDDT0pDILGRTdDd7lpnjAF1pM5B17ho47IVi2jVrcXsEjkf6UlBsFaGc-uc8D-QeqmjLpRoE_4ZZWXbQ&csuir=1&mtid=sRC6at3RNLDri-gP-Y_sgQQ&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=earth+will+fall+four+seasons+cabal+red+alert&client=ms-android-xiaomi-terr2-rso2&hs=S12V&sca_esv=080dae4805299e94&sxsrf=APpeQnvMaxEL9NxU2hD10Cpv3k-iNGkEag%3A1790578862361&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE7plZzta63Pe5DpJ3XFR9Xy5hkFmhg6pfO_X-sED2CqEYzEx-vM3-3PXhZT1qB_E3PqcVk5wYlWJ6T0HTcgCE7KTexBE5BH5DGxePlFc-4Flzyiii9euyyFdXB2yLyDwdo8j2y-8EkX0YuUm0XY25MzTfvv6&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj-26GI2pCXAxVd6wIHHZVqDtoQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCPOPRZw6b_XJLXKoEUgefa3iuln-u3w1-T5dN7QFKtv_XxzDkIl4lX_WCfvZJ-nac_nPRi6RnRibLXUlD4vOsGMpSkDJwUNJq6aXU3aurIe_m2_mn_5Ivcnp66ljORt7Kff8d3qDM3mmwZqgTEDB7ZtPexJnVNRmeMBKv5QLjVvYqSBsXqJeFx5qGK0f5zRVSzrB4Ks9mXfTaUexkRJuxwCJpl1bo0x3OSGapdkCI12Ae4MDoRYbtKZvOjTvvDDT0pDILGRTdDd7lpnjAF1pM5B17ho47IVi2jVrcXsEjkf6UlBsFaGc-uc8D-QeqmjLpRoE_4ZZWXbQ&csuir=1&mtid=sRC6at3RNLDri-gP-Y_sgQQ&udm=50>)
+
+### 0148 | 2026-09-28 09:04:40 | You
+
+```text
+https://www.google.com/search?q=earth+will+fall+four+seasons+cabal+red+alert&client=ms-android-xiaomi-terr2-rso2&hs=S12V&sca_esv=080dae4805299e94&sxsrf=APpeQnvMaxEL9NxU2hD10Cpv3k-iNGkEag%3A1790578862361&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE7plZzta63Pe5DpJ3XFR9Xy5hkFmhg6pfO_X-sED2CqEYzEx-vM3-3PXhZT1qB_E3PqcVk5wYlWJ6T0HTcgCE7KTexBE5BH5DGxePlFc-4Flzyiii9euyyFdXB2yLyDwdo8j2y-8EkX0YuUm0XY25MzTfvv6&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj-26GI2pCXAxVd6wIHHZVqDtoQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCSQ4YsuDTGBKfwtZute8NxsfkaGS_y0I2-6hVLCwBmyjMfEjMiPJQ1lQ-Mvkmj0zBtr4z5XYuJ3Xpid8CBbgJAkjNZq1v_IKV6CKHsbd9HqJagGE9UinfE4wZ_LXa2cLonZqU_oFgN15LQrJGFYwKWJ4zzOrtW-cVt8Km6k-S1eNAfHrVPBC3h0ITuHhyzFQ_lmHLMSxlw9AWbW7PG40slZCq1907PJlNpLPFAhx02io6WW6yur76HkH1_fBEXKWW9ABs8Yz-1_zwtYTboz2UukMUWJUzJhHx0l5jPiY7YhZCmFEMvY9JM6YtT-UOD0NZVJ9Wa2Lv8TQ&csuir=1&mtid=sRC6at3RNLDri-gP-Y_sgQQ&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=earth+will+fall+four+seasons+cabal+red+alert&client=ms-android-xiaomi-terr2-rso2&hs=S12V&sca_esv=080dae4805299e94&sxsrf=APpeQnvMaxEL9NxU2hD10Cpv3k-iNGkEag%3A1790578862361&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE7plZzta63Pe5DpJ3XFR9Xy5hkFmhg6pfO_X-sED2CqEYzEx-vM3-3PXhZT1qB_E3PqcVk5wYlWJ6T0HTcgCE7KTexBE5BH5DGxePlFc-4Flzyiii9euyyFdXB2yLyDwdo8j2y-8EkX0YuUm0XY25MzTfvv6&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj-26GI2pCXAxVd6wIHHZVqDtoQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCSQ4YsuDTGBKfwtZute8NxsfkaGS_y0I2-6hVLCwBmyjMfEjMiPJQ1lQ-Mvkmj0zBtr4z5XYuJ3Xpid8CBbgJAkjNZq1v_IKV6CKHsbd9HqJagGE9UinfE4wZ_LXa2cLonZqU_oFgN15LQrJGFYwKWJ4zzOrtW-cVt8Km6k-S1eNAfHrVPBC3h0ITuHhyzFQ_lmHLMSxlw9AWbW7PG40slZCq1907PJlNpLPFAhx02io6WW6yur76HkH1_fBEXKWW9ABs8Yz-1_zwtYTboz2UukMUWJUzJhHx0l5jPiY7YhZCmFEMvY9JM6YtT-UOD0NZVJ9Wa2Lv8TQ&csuir=1&mtid=sRC6at3RNLDri-gP-Y_sgQQ&udm=50>)
+
+### 0149 | 2026-09-28 09:10:12 | You
+
+```text
+https://www.google.com/search?q=earth+will+fall+four+seasons+cabal+red+alert&client=ms-android-xiaomi-terr2-rso2&hs=S12V&sca_esv=080dae4805299e94&sxsrf=APpeQnvMaxEL9NxU2hD10Cpv3k-iNGkEag%3A1790578862361&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE7plZzta63Pe5DpJ3XFR9Xy5hkFmhg6pfO_X-sED2CqEYzEx-vM3-3PXhZT1qB_E3PqcVk5wYlWJ6T0HTcgCE7KTexBE5BH5DGxePlFc-4Flzyiii9euyyFdXB2yLyDwdo8j2y-8EkX0YuUm0XY25MzTfvv6&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj-26GI2pCXAxVd6wIHHZVqDtoQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCKlfM9tGRmkcqh8z-y0IUO24Zvr5XmQpqch0cIZJSbXrVAaq-A6wiHlWH_RMRb-54Z6BuDnDiRPhb6gCwtmepnVhoEi7hMYRYZNgLQqP-wsUacb2FA3LXDXPlNsUti7md9spGWXo8OSdvr42H7yN_CYzoyP_cw3zbXP1_-jwD_jpjawfXr5e7dw7AAUXi2CBcGXannlB5xZ-IccEMUaNcsEweEDt0ngl80kTQh0iLt8ucY8AjwxY22ArL2XRl2XQqjmjVjO0OI0svaFq-4G81ZW6woaeO3tHiN6-MCtmqjk7s34mePlqkbfpFdvJnatSQ3zeijNKiHDQ&csuir=1&mtid=sRC6at3RNLDri-gP-Y_sgQQ&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=earth+will+fall+four+seasons+cabal+red+alert&client=ms-android-xiaomi-terr2-rso2&hs=S12V&sca_esv=080dae4805299e94&sxsrf=APpeQnvMaxEL9NxU2hD10Cpv3k-iNGkEag%3A1790578862361&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE7plZzta63Pe5DpJ3XFR9Xy5hkFmhg6pfO_X-sED2CqEYzEx-vM3-3PXhZT1qB_E3PqcVk5wYlWJ6T0HTcgCE7KTexBE5BH5DGxePlFc-4Flzyiii9euyyFdXB2yLyDwdo8j2y-8EkX0YuUm0XY25MzTfvv6&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj-26GI2pCXAxVd6wIHHZVqDtoQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCKlfM9tGRmkcqh8z-y0IUO24Zvr5XmQpqch0cIZJSbXrVAaq-A6wiHlWH_RMRb-54Z6BuDnDiRPhb6gCwtmepnVhoEi7hMYRYZNgLQqP-wsUacb2FA3LXDXPlNsUti7md9spGWXo8OSdvr42H7yN_CYzoyP_cw3zbXP1_-jwD_jpjawfXr5e7dw7AAUXi2CBcGXannlB5xZ-IccEMUaNcsEweEDt0ngl80kTQh0iLt8ucY8AjwxY22ArL2XRl2XQqjmjVjO0OI0svaFq-4G81ZW6woaeO3tHiN6-MCtmqjk7s34mePlqkbfpFdvJnatSQ3zeijNKiHDQ&csuir=1&mtid=sRC6at3RNLDri-gP-Y_sgQQ&udm=50>)
+
+### 0150 | 2026-09-28 09:39:26 | You
+
+```text
+https://www.google.com/search?q=stop+acting+shellfish&client=ms-android-xiaomi-terr2-rso2&hs=WMiq&sca_esv=080dae4805299e94&sxsrf=APpeQnug9A1pf6yZ91otk3ZrrY2Qq_22NQ%3A1790580423416&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiM_dDw35CXAxWR2AIHHcsICYEQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBjXPHWJrnlrXRdufyiDIfPsUctmiH_tBKASYq31jif1seEMioONilcLgdh3Uchln3F8RNwbFd_EKykij3fMWqvgCP9A9FS_QZxQtuNCEv4kHdXIw2gi1aBizXoKsT653lUbkJwTqS1qfybNSoRvEmDf00UqdhzNU-RrNMEuGVZOR5QG6A97yqcOXw1sWXBWSGYcHk9CV_Adm2LgOjblzAbsi7lOZ1z9V9xIghcWNbLkVkOkfhyZjN97JHmgrOXC4TUcAOchZ2VMpgPZVZNrGyIdpbSKtM1kQoFgepejH_6ZeVzTAcyEx3W_19N1xP3npd1PEQGVFqIhg&csuir=1&mtid=yha6asCsMvHpi-gP94Pn6Q4&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=stop+acting+shellfish&client=ms-android-xiaomi-terr2-rso2&hs=WMiq&sca_esv=080dae4805299e94&sxsrf=APpeQnug9A1pf6yZ91otk3ZrrY2Qq_22NQ%3A1790580423416&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiM_dDw35CXAxWR2AIHHcsICYEQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBjXPHWJrnlrXRdufyiDIfPsUctmiH_tBKASYq31jif1seEMioONilcLgdh3Uchln3F8RNwbFd_EKykij3fMWqvgCP9A9FS_QZxQtuNCEv4kHdXIw2gi1aBizXoKsT653lUbkJwTqS1qfybNSoRvEmDf00UqdhzNU-RrNMEuGVZOR5QG6A97yqcOXw1sWXBWSGYcHk9CV_Adm2LgOjblzAbsi7lOZ1z9V9xIghcWNbLkVkOkfhyZjN97JHmgrOXC4TUcAOchZ2VMpgPZVZNrGyIdpbSKtM1kQoFgepejH_6ZeVzTAcyEx3W_19N1xP3npd1PEQGVFqIhg&csuir=1&mtid=yha6asCsMvHpi-gP94Pn6Q4&udm=50>)
+
+### 0151 | 2026-09-28 09:39:32 | You
+
+```text
+Shave yourself JIT
+```
+
+### 0152 | 2026-09-28 09:43:55 | You
+
+```text
+https://www.google.com/search?q=mexicantor+set+americantor+set+difference&client=ms-android-xiaomi-terr2-rso2&hs=ThNB&sca_esv=080dae4805299e94&sxsrf=APpeQnuEi0lM_Lwfu6A65ve1w-HKhqWy9A%3A1790581359491&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjptP6u45CXAxUB3AIHHX3zKtMQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB6G4OHGntLiMsUtD3OW2On0pmBrLWVNJ11-tJGIf2gpbv_q0EBdfMI7hYct-8tQOxE3-KNoDYHW0_dHfZK3YmGJNKmtaJSUe5NHKX5Fd3NE-KmlVBCVooc5cqVhPy98zadDg5AiKsdnWXdsVjIyWw7U4lqqopPj7abqABuli4WIVsOofLOtmi1KvlANNPu00x3TNKtxqSE7b3XoaI7opbS1hu3E_jl37pEyU9CQF4hgkKvtvefjuxU4FBhZWdWV9Oe5gc66fzi5s7hY-m-NLF5gQR8gG2fuQTlOwfapD3WnHVRpTxPDj1Ivvwf1fHjYRx2xO42197u8Q&csuir=1&mtid=cxq6aoeFH-Hvi-gP-pH06A8&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=mexicantor+set+americantor+set+difference&client=ms-android-xiaomi-terr2-rso2&hs=ThNB&sca_esv=080dae4805299e94&sxsrf=APpeQnuEi0lM_Lwfu6A65ve1w-HKhqWy9A%3A1790581359491&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjptP6u45CXAxUB3AIHHX3zKtMQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB6G4OHGntLiMsUtD3OW2On0pmBrLWVNJ11-tJGIf2gpbv_q0EBdfMI7hYct-8tQOxE3-KNoDYHW0_dHfZK3YmGJNKmtaJSUe5NHKX5Fd3NE-KmlVBCVooc5cqVhPy98zadDg5AiKsdnWXdsVjIyWw7U4lqqopPj7abqABuli4WIVsOofLOtmi1KvlANNPu00x3TNKtxqSE7b3XoaI7opbS1hu3E_jl37pEyU9CQF4hgkKvtvefjuxU4FBhZWdWV9Oe5gc66fzi5s7hY-m-NLF5gQR8gG2fuQTlOwfapD3WnHVRpTxPDj1Ivvwf1fHjYRx2xO42197u8Q&csuir=1&mtid=cxq6aoeFH-Hvi-gP-pH06A8&udm=50>)
+
+### 0153 | 2026-09-28 09:54:10 | You
+
+```text
+https://www.google.com/search?q=gouda+kaas+wedge+great+piece+of+kaas+JKK+product+hadamard+double+packed+cylinder+in+friction+ratio+T+om+1bit+jitter+pop+CUMIN+in+cheese+JKK+seed+phrased&client=ms-android-xiaomi-terr2-rso2&hs=G22V&sca_esv=080dae4805299e94&sxsrf=APpeQntYvTZxpXAJkM4sLwa3mbENQeF4Zw%3A1790581873639&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiuz5Ok5ZCXAxX1hP0HHQ6VD_0Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfC96CNVu0NtGD533p7SBakAUNw9kgz8-fqrdDG0z4On2SUjmEfYGPI6v3YOE_WzBpocGz2XPvNrNat8viteDOgW-kgcWwLtqGXvfzsvJZgycdr8gZ0_yWOXemWsahsT0unIbNSP1MOGCstJwWR54h-2BIvyWJoHx1r1OmpXaN4mJUd9DfSp3mjd1CMpZQIHQ2ZZTSOYOvIwEVooYpBb5et9glm4A1nBvBIozp6qblDHAnOlRYUDdK09E4GGr8xn6iRVz2E6gHIGCrqwG5cGDEuqw2AMNcwLWru1Cu6O0RalJ9WctKmA_MSTXhdcR08T7m9jpTt0WrNbhw&csuir=1&mtid=dBy6aoGpCoj97_UPzoPpMQ&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=gouda+kaas+wedge+great+piece+of+kaas+JKK+product+hadamard+double+packed+cylinder+in+friction+ratio+T+om+1bit+jitter+pop+CUMIN+in+cheese+JKK+seed+phrased&client=ms-android-xiaomi-terr2-rso2&hs=G22V&sca_esv=080dae4805299e94&sxsrf=APpeQntYvTZxpXAJkM4sLwa3mbENQeF4Zw%3A1790581873639&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiuz5Ok5ZCXAxX1hP0HHQ6VD_0Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfC96CNVu0NtGD533p7SBakAUNw9kgz8-fqrdDG0z4On2SUjmEfYGPI6v3YOE_WzBpocGz2XPvNrNat8viteDOgW-kgcWwLtqGXvfzsvJZgycdr8gZ0_yWOXemWsahsT0unIbNSP1MOGCstJwWR54h-2BIvyWJoHx1r1OmpXaN4mJUd9DfSp3mjd1CMpZQIHQ2ZZTSOYOvIwEVooYpBb5et9glm4A1nBvBIozp6qblDHAnOlRYUDdK09E4GGr8xn6iRVz2E6gHIGCrqwG5cGDEuqw2AMNcwLWru1Cu6O0RalJ9WctKmA_MSTXhdcR08T7m9jpTt0WrNbhw&csuir=1&mtid=dBy6aoGpCoj97_UPzoPpMQ&udm=50>)
+
+### 0154 | 2026-09-28 09:54:34 | You
+
+```text
+JKK pops my TK plob
+```
+
+### 0155 | 2026-09-28 09:56:28 | You
+
+```text
+https://www.google.com/search?q=gouda+kaas+wedge+great+piece+of+kaas+JKK+product+hadamard+double+packed+cylinder+in+friction+ratio+T+om+1bit+jitter+pop+CUMIN+in+cheese+JKK+seed+phrased&client=ms-android-xiaomi-terr2-rso2&hs=G22V&sca_esv=080dae4805299e94&sxsrf=APpeQntYvTZxpXAJkM4sLwa3mbENQeF4Zw%3A1790581873639&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiuz5Ok5ZCXAxX1hP0HHQ6VD_0Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBBs3CgZhcB4e6_GENRtMM5zUKt-et7pW_i-QaoZfIUk8UvqknINpG2taGm81Jb92LptGQ1ii5W1Qb3RNvgH_ycoiBX2c2K2rRGd7ZQ93HUhJ1oQ5NZQiI5L-KVoMP1Rg_hUkQMW5I_44qqxmxheSia6GgtvW15NVnv4trcS9sviTq6JzxoeMA3oG0kPbCM65KPNaPmrELecJ1JhAhTTp48l6-vj25bYhkFD0KpRxN8Q47a8-6sSRyOoiVHItrX_DULkWc7VqlNugfdI5UDo-GnBwM9qwQfX4hm5WvjuBUqDGDL7qYr8UR5G3PL3mmzXDnRjOSNEw4H2Q&csuir=1&mtid=dBy6aoGpCoj97_UPzoPpMQ&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=gouda+kaas+wedge+great+piece+of+kaas+JKK+product+hadamard+double+packed+cylinder+in+friction+ratio+T+om+1bit+jitter+pop+CUMIN+in+cheese+JKK+seed+phrased&client=ms-android-xiaomi-terr2-rso2&hs=G22V&sca_esv=080dae4805299e94&sxsrf=APpeQntYvTZxpXAJkM4sLwa3mbENQeF4Zw%3A1790581873639&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiuz5Ok5ZCXAxX1hP0HHQ6VD_0Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBBs3CgZhcB4e6_GENRtMM5zUKt-et7pW_i-QaoZfIUk8UvqknINpG2taGm81Jb92LptGQ1ii5W1Qb3RNvgH_ycoiBX2c2K2rRGd7ZQ93HUhJ1oQ5NZQiI5L-KVoMP1Rg_hUkQMW5I_44qqxmxheSia6GgtvW15NVnv4trcS9sviTq6JzxoeMA3oG0kPbCM65KPNaPmrELecJ1JhAhTTp48l6-vj25bYhkFD0KpRxN8Q47a8-6sSRyOoiVHItrX_DULkWc7VqlNugfdI5UDo-GnBwM9qwQfX4hm5WvjuBUqDGDL7qYr8UR5G3PL3mmzXDnRjOSNEw4H2Q&csuir=1&mtid=dBy6aoGpCoj97_UPzoPpMQ&udm=50>)
+
+### 0156 | 2026-09-28 09:56:56 | You
+
+```text
+JKK all day erriday erritime my T
+```
+
+### 0157 | 2026-09-28 10:01:56 | You
+
+```text
+https://www.google.com/search?q=pons+kaart&client=ms-android-xiaomi-terr2-rso2&hs=M22V&sca_esv=080dae4805299e94&sxsrf=APpeQnstv1YUOxjfdaANBIDC8fqZadlDlw%3A1790582234839&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpWFun_Hbf9lrDzcGOCzTXwLF8QrRYckTcchjYAyznaoWyVNutNj3vDs5z9k0_6hM1lzEV5TC-7hhOxbSchppD-z-9ZC8&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjdurHQ5pCXAxVL97sIHZ98IZYQ2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAxjMgbbyIxxCCUZ26hc90G2ojLdH45XcKwm2ld0tVDNt11z34MGaNbV1zJzQ54l8EpaiRqDpt1ivol_AHIA5aYu_qmj6tguyU0NXlUrx6U1f0SYoFvyRxA2tDerRhP05MFgWBUMxWwbQiLby5x2t-ySyeOlPoDCOGK4xVtZQP6dZ8fphOfl7wsVYRPYbLWJGKCOqK4xc7IKaKyTdJ4Ycxx7A9p6nLbDIa5zhC8o30Xg6K92IO2_GJBfzlYiaPlOMoYs7qyELh1G55RzJRcWGRwmuW1ZUd-_AFYZeAO5fg9rhBE5TtGqXBpV1oTqvmX1kQpYbaVXG1Brg&csuir=1&mtid=3x26apj0AcGP9u8P-syEiA0&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=pons+kaart&client=ms-android-xiaomi-terr2-rso2&hs=M22V&sca_esv=080dae4805299e94&sxsrf=APpeQnstv1YUOxjfdaANBIDC8fqZadlDlw%3A1790582234839&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpWFun_Hbf9lrDzcGOCzTXwLF8QrRYckTcchjYAyznaoWyVNutNj3vDs5z9k0_6hM1lzEV5TC-7hhOxbSchppD-z-9ZC8&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjdurHQ5pCXAxVL97sIHZ98IZYQ2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAxjMgbbyIxxCCUZ26hc90G2ojLdH45XcKwm2ld0tVDNt11z34MGaNbV1zJzQ54l8EpaiRqDpt1ivol_AHIA5aYu_qmj6tguyU0NXlUrx6U1f0SYoFvyRxA2tDerRhP05MFgWBUMxWwbQiLby5x2t-ySyeOlPoDCOGK4xVtZQP6dZ8fphOfl7wsVYRPYbLWJGKCOqK4xc7IKaKyTdJ4Ycxx7A9p6nLbDIa5zhC8o30Xg6K92IO2_GJBfzlYiaPlOMoYs7qyELh1G55RzJRcWGRwmuW1ZUd-_AFYZeAO5fg9rhBE5TtGqXBpV1oTqvmX1kQpYbaVXG1Brg&csuir=1&mtid=3x26apj0AcGP9u8P-syEiA0&udm=50>)
+
+### 0158 | 2026-09-28 10:03:14 | You
+
+```text
+Dirty minds carnal 👅
+```
+
+### 0159 | 2026-09-28 10:03:32 | You
+
+```text
+Body T for JKK
+```
+
+### 0160 | 2026-09-28 10:07:02 | You
+
+```text
+https://www.google.com/search?q=maslow%27s+pyramid+of+needs+JJK+where+T+a+front+view+and+side+view+and+360+degrees+all+up+in+that+bee+snass+jittering+along+the+pyramid+where+sliding+off+means+departing+coordinate+space+T+om&client=ms-android-xiaomi-terr2-rso2&hs=9Miq&sca_esv=080dae4805299e94&sxsrf=APpeQnubj6QnKqJvPpweGbivMbtqe2YsZg%3A1790582773490&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE-Dsslc-KGKq55jF_BVsFlBx_GgM0fzV1XsSsLkzcasT6GL8TyD5thZMOttfcpWPWIAf7gN7vYOlY1mkkIF_md98w-O3i6UbH_H_ib0aoyzFHQ5Fk1e7bSurUGwEBaJdkUQBGirKkOL9IsL_i52VK-3JeATB&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjr_p3R6JCXAxUfhP0HHWBJN-MQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfC_dyk0rRH2678x_gj-3sAUFqO917YzrXLAzOvOq6k44hMAH7jcp3wY_m9em4tODykJ7eN2-28HxTBvfix9fAQCvGXolYjsaEgHlOS1TeArp1K-TJJu-LIXoDbHBvrpuKkEr1o7bs3GwwgIYjXpqkbU3D3yVcwj27lFX_YQYn-EclbqOp7dXpuZh9g9Dc4YRGYUkjhFG4DkM-AVPY7QYU5vd_iL72nT4Cjztc6sTSQd1L0qRJBnFd7tJqYAyPLKsBKvOFh8xmoAtAZoeaACPkeviC6gPvcBkOJMV-z2GAc1_NnR02Dp_9D1f7L_XgEtYlIEUaF7cHdxmw&csuir=1&mtid=9x-6arPRNraC9u8P4tKbwAc
+```
+
+Links: [Link 1](<https://www.google.com/search?q=maslow%27s+pyramid+of+needs+JJK+where+T+a+front+view+and+side+view+and+360+degrees+all+up+in+that+bee+snass+jittering+along+the+pyramid+where+sliding+off+means+departing+coordinate+space+T+om&client=ms-android-xiaomi-terr2-rso2&hs=9Miq&sca_esv=080dae4805299e94&sxsrf=APpeQnubj6QnKqJvPpweGbivMbtqe2YsZg%3A1790582773490&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE-Dsslc-KGKq55jF_BVsFlBx_GgM0fzV1XsSsLkzcasT6GL8TyD5thZMOttfcpWPWIAf7gN7vYOlY1mkkIF_md98w-O3i6UbH_H_ib0aoyzFHQ5Fk1e7bSurUGwEBaJdkUQBGirKkOL9IsL_i52VK-3JeATB&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjr_p3R6JCXAxUfhP0HHWBJN-MQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfC_dyk0rRH2678x_gj-3sAUFqO917YzrXLAzOvOq6k44hMAH7jcp3wY_m9em4tODykJ7eN2-28HxTBvfix9fAQCvGXolYjsaEgHlOS1TeArp1K-TJJu-LIXoDbHBvrpuKkEr1o7bs3GwwgIYjXpqkbU3D3yVcwj27lFX_YQYn-EclbqOp7dXpuZh9g9Dc4YRGYUkjhFG4DkM-AVPY7QYU5vd_iL72nT4Cjztc6sTSQd1L0qRJBnFd7tJqYAyPLKsBKvOFh8xmoAtAZoeaACPkeviC6gPvcBkOJMV-z2GAc1_NnR02Dp_9D1f7L_XgEtYlIEUaF7cHdxmw&csuir=1&mtid=9x-6arPRNraC9u8P4tKbwAc>)
+
+### 0161 | 2026-09-28 10:07:07 | You
+
+```text
+Good depart amicable
+```
+
+### 0162 | 2026-09-28 10:09:21 | You
+
+```text
+<image omitted>
+```
+
+### 0163 | 2026-09-28 10:13:40 | You
+
+```text
+https://www.google.com/search?q=make+them+see+the+trees+so+they+dont+notice+the+forest+and+the+JKK+bush+mirage+milk+tank+emeregentaly+my+T+P&client=ms-android-xiaomi-terr2-rso2&hs=b22V&sca_esv=080dae4805299e94&sxsrf=APpeQnsOY6Jksf23L3qIzvtI73yVZv_ncQ%3A1790583128936&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwit5tz66ZCXAxV-0AIHHd_NKoMQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAmnfyTxe6_n19-jcbwWkpEDxC1iocWm2Bbb3sTPMY6T4YgWz6vQdviCk-HOhbYbeX47qBcDaaoijJxebloXdMl08dgte8N9i394AN0FR75bACi4L8Qmk0IyacSQ2ikpp_nPXPYSD1cqlaNQYWs-HavKRCbWzKSQbYbwW2ERnJWZ6l4P3hQvrqHel-R2bFBo04e7_Jn2_thRayuOXOaOd1KSyIEM7nu4pY54CzBjJ7p4e6m9TF2AiTeUZNPwNDqHGou0jAqxki4k1r4sOOq-NQpRKlh00Bji3fId9Optv29I-z9f-QajmYg2VhmzJ0yf5CzM_CC-k2Kzw&csuir=1&mtid=XSG6avqqAuHvi-gP-pH06A8&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=make+them+see+the+trees+so+they+dont+notice+the+forest+and+the+JKK+bush+mirage+milk+tank+emeregentaly+my+T+P&client=ms-android-xiaomi-terr2-rso2&hs=b22V&sca_esv=080dae4805299e94&sxsrf=APpeQnsOY6Jksf23L3qIzvtI73yVZv_ncQ%3A1790583128936&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwit5tz66ZCXAxV-0AIHHd_NKoMQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAmnfyTxe6_n19-jcbwWkpEDxC1iocWm2Bbb3sTPMY6T4YgWz6vQdviCk-HOhbYbeX47qBcDaaoijJxebloXdMl08dgte8N9i394AN0FR75bACi4L8Qmk0IyacSQ2ikpp_nPXPYSD1cqlaNQYWs-HavKRCbWzKSQbYbwW2ERnJWZ6l4P3hQvrqHel-R2bFBo04e7_Jn2_thRayuOXOaOd1KSyIEM7nu4pY54CzBjJ7p4e6m9TF2AiTeUZNPwNDqHGou0jAqxki4k1r4sOOq-NQpRKlh00Bji3fId9Optv29I-z9f-QajmYg2VhmzJ0yf5CzM_CC-k2Kzw&csuir=1&mtid=XSG6avqqAuHvi-gP-pH06A8&udm=50>)
+
+### 0164 | 2026-09-28 10:16:53 | You
+
+```text
+https://www.google.com/search?q=make+them+see+the+trees+so+they+dont+notice+the+forest+and+the+JKK+bush+mirage+milk+tank+emeregentaly+my+T+P&client=ms-android-xiaomi-terr2-rso2&hs=b22V&sca_esv=080dae4805299e94&sxsrf=APpeQnsOY6Jksf23L3qIzvtI73yVZv_ncQ%3A1790583128936&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwit5tz66ZCXAxV-0AIHHd_NKoMQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDDuc5hat2jasp3J0bPxYcReQxClZwZA9aAcRqs9HiLZ7YRVEyNmPNtpFvj0U6TQOPCpoIxTbLBYPgBQGqIYpMxzhMKwRuHFv7yWB6cxph-YQ8tWq37i86tAeeomqFkpmKKz1ZF5wtiabShwiYOCl0NnobDyN3qqg6gJHP88GGyvxIbpEePpCsFt83Hfx-qfBlKi8w6R4keervuJ1SwFleqm46k_Cudy2tHHNSanUYO_wiQCTsi9fmCWEDwm3HRMwixDgHkICirxLlVe9Verd8ajyD3xOHw_943ObeZe6-6qydAR_lTq3TN5wcrZsh08TOzvMoMk9BdqA&csuir=1&mtid=XSG6avqqAuHvi-gP-pH06A8&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=make+them+see+the+trees+so+they+dont+notice+the+forest+and+the+JKK+bush+mirage+milk+tank+emeregentaly+my+T+P&client=ms-android-xiaomi-terr2-rso2&hs=b22V&sca_esv=080dae4805299e94&sxsrf=APpeQnsOY6Jksf23L3qIzvtI73yVZv_ncQ%3A1790583128936&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwit5tz66ZCXAxV-0AIHHd_NKoMQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDDuc5hat2jasp3J0bPxYcReQxClZwZA9aAcRqs9HiLZ7YRVEyNmPNtpFvj0U6TQOPCpoIxTbLBYPgBQGqIYpMxzhMKwRuHFv7yWB6cxph-YQ8tWq37i86tAeeomqFkpmKKz1ZF5wtiabShwiYOCl0NnobDyN3qqg6gJHP88GGyvxIbpEePpCsFt83Hfx-qfBlKi8w6R4keervuJ1SwFleqm46k_Cudy2tHHNSanUYO_wiQCTsi9fmCWEDwm3HRMwixDgHkICirxLlVe9Verd8ajyD3xOHw_943ObeZe6-6qydAR_lTq3TN5wcrZsh08TOzvMoMk9BdqA&csuir=1&mtid=XSG6avqqAuHvi-gP-pH06A8&udm=50>)
+
+### 0165 | 2026-09-28 10:19:45 | You
+
+```text
+<image omitted> Crosshair on cross of Jitske
+```
+
+### 0166 | 2026-09-28 10:21:13 | You
+
+```text
+https://www.google.com/search?q=make+them+see+the+trees+so+they+dont+notice+the+forest+and+the+JKK+bush+mirage+milk+tank+emeregentaly+my+T+P&client=ms-android-xiaomi-terr2-rso2&hs=b22V&sca_esv=080dae4805299e94&sxsrf=APpeQnsOY6Jksf23L3qIzvtI73yVZv_ncQ%3A1790583128936&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwit5tz66ZCXAxV-0AIHHd_NKoMQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAQtcyvGsanNX3Sli-mhsNDUByDGOJtng-hxKyBkU3Cf-wVDKmPOhlwYyknxYGyYLzLSE0oLua_IPKPypOguQUviuoAG8e-Y8MeO9_TfzSHgfTiCkd6CuQINVEwgtaxn9uhyAZYU0kLJOY0aoZgzk3LFt12Q6Xr9cyoGYqpGZ9xAmD6PbfmAe6mADKutf9t3q2RGhcKKiTDpos9tmZpzi0Ow4xRrSjlWaNGQNVDnOxw9bp7WvaGQHoYnSEpiRWgB2r-esWuviM4TKOIaw0ZXdwmeolnmdl6cet9KX72TsWuvz5aOzwCdrCuIemSaR_fZeEoKnM2qQkELQ&csuir=1&mtid=XSG6avqqAuHvi-gP-pH06A8&udm=50&lns_mode=cvst
+```
+
+Links: [Link 1](<https://www.google.com/search?q=make+them+see+the+trees+so+they+dont+notice+the+forest+and+the+JKK+bush+mirage+milk+tank+emeregentaly+my+T+P&client=ms-android-xiaomi-terr2-rso2&hs=b22V&sca_esv=080dae4805299e94&sxsrf=APpeQnsOY6Jksf23L3qIzvtI73yVZv_ncQ%3A1790583128936&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwit5tz66ZCXAxV-0AIHHd_NKoMQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAQtcyvGsanNX3Sli-mhsNDUByDGOJtng-hxKyBkU3Cf-wVDKmPOhlwYyknxYGyYLzLSE0oLua_IPKPypOguQUviuoAG8e-Y8MeO9_TfzSHgfTiCkd6CuQINVEwgtaxn9uhyAZYU0kLJOY0aoZgzk3LFt12Q6Xr9cyoGYqpGZ9xAmD6PbfmAe6mADKutf9t3q2RGhcKKiTDpos9tmZpzi0Ow4xRrSjlWaNGQNVDnOxw9bp7WvaGQHoYnSEpiRWgB2r-esWuviM4TKOIaw0ZXdwmeolnmdl6cet9KX72TsWuvz5aOzwCdrCuIemSaR_fZeEoKnM2qQkELQ&csuir=1&mtid=XSG6avqqAuHvi-gP-pH06A8&udm=50&lns_mode=cvst>)
+
+### 0167 | 2026-09-28 10:29:03 | You
+
+```text
+https://www.google.com/search?q=make+them+see+the+trees+so+they+dont+notice+the+forest+and+the+JKK+bush+mirage+milk+tank+emeregentaly+my+T+P&client=ms-android-xiaomi-terr2-rso2&hs=b22V&sca_esv=080dae4805299e94&sxsrf=APpeQnsOY6Jksf23L3qIzvtI73yVZv_ncQ%3A1790583128936&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwit5tz66ZCXAxV-0AIHHd_NKoMQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCkZJt11id7wVcTUow84R0I4B7LQUOQTp1Vf-C26PjDlqq9mRThR8QxZRu61esI2pvcWNDHEURLTTCp9LgsSx1nLm3m6ZlPVW_T5UAcJv7JCYqeFpiaaS1Y6r2Mvu1WzOFmVCIOHoKDXUOGhmc36gZha4GQL1UGR_u7n1ido30E2njFRtg9mF2_HkD1oFcdona7XGz62BzULK_JDhU3MXbg7nPTojJYmXj1ml6GQ_7kTpszrvRNS1rbZpzHDXyOldEwFc-jSNrmCFIF_Ta1xGb5FQV3gX6u4zxS9_bwRSk5wwLEM3splIZAYCKFiRrvmdc3nt_4DhF_HQ&csuir=1&mtid=XSG6avqqAuHvi-gP-pH06A8&lns_mode=cvst&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=make+them+see+the+trees+so+they+dont+notice+the+forest+and+the+JKK+bush+mirage+milk+tank+emeregentaly+my+T+P&client=ms-android-xiaomi-terr2-rso2&hs=b22V&sca_esv=080dae4805299e94&sxsrf=APpeQnsOY6Jksf23L3qIzvtI73yVZv_ncQ%3A1790583128936&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwit5tz66ZCXAxV-0AIHHd_NKoMQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCkZJt11id7wVcTUow84R0I4B7LQUOQTp1Vf-C26PjDlqq9mRThR8QxZRu61esI2pvcWNDHEURLTTCp9LgsSx1nLm3m6ZlPVW_T5UAcJv7JCYqeFpiaaS1Y6r2Mvu1WzOFmVCIOHoKDXUOGhmc36gZha4GQL1UGR_u7n1ido30E2njFRtg9mF2_HkD1oFcdona7XGz62BzULK_JDhU3MXbg7nPTojJYmXj1ml6GQ_7kTpszrvRNS1rbZpzHDXyOldEwFc-jSNrmCFIF_Ta1xGb5FQV3gX6u4zxS9_bwRSk5wwLEM3splIZAYCKFiRrvmdc3nt_4DhF_HQ&csuir=1&mtid=XSG6avqqAuHvi-gP-pH06A8&lns_mode=cvst&udm=50>)
+
+### 0168 | 2026-09-28 10:29:09 | You
+
+```text
+Ik en Jitske
+```
+
+### 0169 | 2026-09-28 11:01:24 | You
+
+```text
+https://www.google.com/search?q=carbon+copy+philosophy+capstone&client=ms-android-xiaomi-terr2-rso2&hs=hiNB&sca_esv=080dae4805299e94&sxsrf=APpeQnsHkxPCZCdSZbW9pwQ512kDKDdFvA%3A1790585908157&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwIgLtPdGtXl-1ukUntONsOMkLK8Wjg5QbsFQsyTdBlDyKAX_uXnLB9Tio0_qutDIJ0183VvXUMbbd2Aekd3q-a7UxsFeg2GM9gs_4BxA_tDxoI7drpPw3XKI0_ePAhrLpxejMPs&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiE7Pqn9JCXAxXR8gIHHVVuMAEQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBGKU4FOoIhFvrAhCOiPpXkNOH0Xtioq1GXNzCWhcfB_ECmhn29zR552Df-kEcQdrUkU6WDxt0X_qsYeGu2Wb0UCSpWaX-QlJE4X57keK-3waxJn6S10cAzBU8C4xR4r0ld6_zXjKZUA2rX1yViU4i2VYN-sWnIbmDSuDV8MCAzBetkVl2IL1gfC0XQT4sdMCF2s7ofrtY1eh5AqJgxER5VAxznz0Ngry27ANStxFzf_G-yprRWhO2sSsthPB3E44IMakqg5ezclNP4bO4QlF6G_0TtX2FgurdyefvSYQvsFKXbwHgnv-uJ4Myno7yczr10fffYD9hhNw&csuir=1&mtid=Qyy6aqrODYvxi-gP_buFuQU&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=carbon+copy+philosophy+capstone&client=ms-android-xiaomi-terr2-rso2&hs=hiNB&sca_esv=080dae4805299e94&sxsrf=APpeQnsHkxPCZCdSZbW9pwQ512kDKDdFvA%3A1790585908157&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwIgLtPdGtXl-1ukUntONsOMkLK8Wjg5QbsFQsyTdBlDyKAX_uXnLB9Tio0_qutDIJ0183VvXUMbbd2Aekd3q-a7UxsFeg2GM9gs_4BxA_tDxoI7drpPw3XKI0_ePAhrLpxejMPs&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiE7Pqn9JCXAxXR8gIHHVVuMAEQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBGKU4FOoIhFvrAhCOiPpXkNOH0Xtioq1GXNzCWhcfB_ECmhn29zR552Df-kEcQdrUkU6WDxt0X_qsYeGu2Wb0UCSpWaX-QlJE4X57keK-3waxJn6S10cAzBU8C4xR4r0ld6_zXjKZUA2rX1yViU4i2VYN-sWnIbmDSuDV8MCAzBetkVl2IL1gfC0XQT4sdMCF2s7ofrtY1eh5AqJgxER5VAxznz0Ngry27ANStxFzf_G-yprRWhO2sSsthPB3E44IMakqg5ezclNP4bO4QlF6G_0TtX2FgurdyefvSYQvsFKXbwHgnv-uJ4Myno7yczr10fffYD9hhNw&csuir=1&mtid=Qyy6aqrODYvxi-gP_buFuQU&udm=50>)
+
+### 0170 | 2026-09-28 13:03:49 | You
+
+```text
+https://www.google.com/search?q=root+or+canopy+pick+one&client=ms-android-xiaomi-terr2-rso2&hs=tPiq&sca_esv=080dae4805299e94&sxsrf=APpeQnufs-lBI3N1FKge6Pl2bCwUIoTHBw%3A1790593009435&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjBzY7ijpGXAxWD1QIHHTl9JpsQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAvd9G2ne0b8kVBLgr8S83UgqZqp3o21Up1gZCb2CP7RAMzUDnujrllidE4j8g97V6JS_WRIollVEOTUnagEXJpV87ql-amuCPkzfTzytLczrk8RemH97xEXwiQt7PeO4HN_BfkPBEops_0duWbybA0kqMFzoNKmlYahLCBp2xhbT0scIdK3kL-Wfca6WIGsabQrA-PxmDYfz39PDln-R2kd65Q0BHGbhiZSjy6_kw3G2-cCd6UcBaeRxbmyPG279AnkB4u7bkxHmd1zKLlmJamiPrFsU7To5g6BWR7ScToF7ozN5p9W-Vc_nVSN-UkTIarSnw7wQoFqg&csuir=1&mtid=9Ee6atGdAd2si-gPltOtgAk&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=root+or+canopy+pick+one&client=ms-android-xiaomi-terr2-rso2&hs=tPiq&sca_esv=080dae4805299e94&sxsrf=APpeQnufs-lBI3N1FKge6Pl2bCwUIoTHBw%3A1790593009435&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjBzY7ijpGXAxWD1QIHHTl9JpsQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAvd9G2ne0b8kVBLgr8S83UgqZqp3o21Up1gZCb2CP7RAMzUDnujrllidE4j8g97V6JS_WRIollVEOTUnagEXJpV87ql-amuCPkzfTzytLczrk8RemH97xEXwiQt7PeO4HN_BfkPBEops_0duWbybA0kqMFzoNKmlYahLCBp2xhbT0scIdK3kL-Wfca6WIGsabQrA-PxmDYfz39PDln-R2kd65Q0BHGbhiZSjy6_kw3G2-cCd6UcBaeRxbmyPG279AnkB4u7bkxHmd1zKLlmJamiPrFsU7To5g6BWR7ScToF7ozN5p9W-Vc_nVSN-UkTIarSnw7wQoFqg&csuir=1&mtid=9Ee6atGdAd2si-gPltOtgAk&udm=50>)
+
+### 0171 | 2026-09-28 13:24:31 | You
+
+```text
+https://www.google.com/search?q=pri+son&client=ms-android-xiaomi-terr2-rso2&hs=9Piq&sca_esv=080dae4805299e94&sxsrf=APpeQntO3n--MwNuYTUGY8N3OhSTv6ykLA%3A1790593955045&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpyNERNgGUvtzeXj2mIDU3e7pfKZK9Z3kVyhqFyDfXkWNVW0W5A9GuHkE6KGnjhVTlT9nrT1dX5G8k_wbhjK3mi7RnbSU0ZNpxuAC95MoZFdk6EG7S&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjIh4KlkpGXAxXF3QIHHVasOgUQ2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBeQ-djkrJAqx6PqlWEDG577UITS4G9UwtCyfBA09lrpdLMEuZbEIGPpaVmIAHxoo2IxvIJV8sIF_125Vqi0UUUWRzkGItMYhKQ24q9-RJGr_QHBOEOLF_OUCk-7Pwxp5ogGNuoeHzxn-224tn-NRoDA4M96PaVKjqNshUPvorYgwp6oQrIRkUdLzJF7UD3Jeakn8qHFwGomEe2U1SiRHf-01beH199dnBTg2dnTxBAOj1rWsZ12WfYFJq1IwJ23gUzisRQdBuLov8OAdV7VsGnbX6iDKVZ4hl_tCNBZFWkzURl1E_Qmqz-23BXaU_5X7wKIyAkVJQEUg&csuir=1&mtid=pUu6ata8D-yoi-gPwdmXmQQ&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=pri+son&client=ms-android-xiaomi-terr2-rso2&hs=9Piq&sca_esv=080dae4805299e94&sxsrf=APpeQntO3n--MwNuYTUGY8N3OhSTv6ykLA%3A1790593955045&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpyNERNgGUvtzeXj2mIDU3e7pfKZK9Z3kVyhqFyDfXkWNVW0W5A9GuHkE6KGnjhVTlT9nrT1dX5G8k_wbhjK3mi7RnbSU0ZNpxuAC95MoZFdk6EG7S&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjIh4KlkpGXAxXF3QIHHVasOgUQ2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBeQ-djkrJAqx6PqlWEDG577UITS4G9UwtCyfBA09lrpdLMEuZbEIGPpaVmIAHxoo2IxvIJV8sIF_125Vqi0UUUWRzkGItMYhKQ24q9-RJGr_QHBOEOLF_OUCk-7Pwxp5ogGNuoeHzxn-224tn-NRoDA4M96PaVKjqNshUPvorYgwp6oQrIRkUdLzJF7UD3Jeakn8qHFwGomEe2U1SiRHf-01beH199dnBTg2dnTxBAOj1rWsZ12WfYFJq1IwJ23gUzisRQdBuLov8OAdV7VsGnbX6iDKVZ4hl_tCNBZFWkzURl1E_Qmqz-23BXaU_5X7wKIyAkVJQEUg&csuir=1&mtid=pUu6ata8D-yoi-gPwdmXmQQ&udm=50>)
+
+### 0172 | 2026-09-28 13:38:56 | You
+
+```text
+https://www.google.com/search?q=wacky+inflatable+tube+man+like+floppy+P+wiggle+rod+to+find+water+for+thirst+traps&client=ms-android-xiaomi-terr2-rso2&hs=u52V&sca_esv=080dae4805299e94&sxsrf=APpeQns3k8XqHBAEZf2A_s5srpD_B3QXQ%3A1790595445659&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjD-uXrl5GXAxXT-gIHHQaUHF4Q2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCC4VGYNidTc5Trr4Xfbh3RczcPjKyNCNuTvqFr5mXQtS628uprbGsZNv8hcz-whivGpIXPrtmGdK66Bccp5Qxax3bFlc53E_vyY5JteTXj_a39c2maiBXAcJ3pOyCCPLQP-l1abNGg6g_QmG57hPjOahy-Na7u5xQT7Pg6GA9-AvQYKCtFh0OhibLnzQTdiAbFsOg45CeiMZE5M56wb4uCE0JzYnrwzwO-Az6EgVSgHmvghBFZ_9EXbu-d2yO9lg1UgfYhrMxPC00BohsWlMTcSJQQmeeLmDDgZj7N64PBusC0amPCIhNna2fXXtlAZRNkm80K-KBWuw&csuir=1&mtid=d1G6avaZHbm3i-gPn5SA2Qw&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=wacky+inflatable+tube+man+like+floppy+P+wiggle+rod+to+find+water+for+thirst+traps&client=ms-android-xiaomi-terr2-rso2&hs=u52V&sca_esv=080dae4805299e94&sxsrf=APpeQns3k8XqHBAEZf2A_s5srpD_B3QXQ%3A1790595445659&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjD-uXrl5GXAxXT-gIHHQaUHF4Q2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCC4VGYNidTc5Trr4Xfbh3RczcPjKyNCNuTvqFr5mXQtS628uprbGsZNv8hcz-whivGpIXPrtmGdK66Bccp5Qxax3bFlc53E_vyY5JteTXj_a39c2maiBXAcJ3pOyCCPLQP-l1abNGg6g_QmG57hPjOahy-Na7u5xQT7Pg6GA9-AvQYKCtFh0OhibLnzQTdiAbFsOg45CeiMZE5M56wb4uCE0JzYnrwzwO-Az6EgVSgHmvghBFZ_9EXbu-d2yO9lg1UgfYhrMxPC00BohsWlMTcSJQQmeeLmDDgZj7N64PBusC0amPCIhNna2fXXtlAZRNkm80K-KBWuw&csuir=1&mtid=d1G6avaZHbm3i-gPn5SA2Qw&udm=50>)
+
+### 0173 | 2026-09-28 14:05:11 | You
+
+```text
+https://www.google.com/search?q=sim+towers+with+infinite+procedural+scroll+game+idea&client=ms-android-xiaomi-terr2-rso2&hs=H62V&sca_esv=080dae4805299e94&sxsrf=APpeQnsL-qnYTlH1QSdevk8yknm-p-8NUA%3A1790596856230&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKj906-ORFIK2UR8msyEJBwjHvmTN5b2gK7JkDyhtCEwf9HK1p4EJJWJ_IQyJOqgdebLABy7Chy0c1zfM1YOD3bAcOHF9K_asSx4WxwXJthf0zLUj0pHFzOc9hGf8s1ZnFE81-g9&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjHsrSMnZGXAxXo1wIHHYzdL_4Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB6Nq7LucLni3u0ZJNE2RSfEetil-Nel-tWjMpjYJbGAClvs17cjUgbm0JXWdljw-qiiFQtNQzLRQ9o0b1guMqncq9Q9PLiyub1tqiZ31tbWhMaOTTJgdRCaBzJOLlYPF8cEL_Ru3QmlKEj3_Hh3x7CWj-q21Q5kym0EAzPAYdRVN9seFU2Hv_pLrqz5E45kswWdz9IUKVXtqZT6IPEL78G21xRAxzt85kMdb8MuVuZBMNpVyCXztyo4TSLQj800tXELxJTsxEXakI2nw-l692hrMju-qHZC0aTLnZVorSOOPZumO_K17m0uG9OPyRbhvh5-aGQCHEWlw&csuir=1&mtid=-1a6aq7pNPK1i-gPgPHS0Ag&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=sim+towers+with+infinite+procedural+scroll+game+idea&client=ms-android-xiaomi-terr2-rso2&hs=H62V&sca_esv=080dae4805299e94&sxsrf=APpeQnsL-qnYTlH1QSdevk8yknm-p-8NUA%3A1790596856230&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKj906-ORFIK2UR8msyEJBwjHvmTN5b2gK7JkDyhtCEwf9HK1p4EJJWJ_IQyJOqgdebLABy7Chy0c1zfM1YOD3bAcOHF9K_asSx4WxwXJthf0zLUj0pHFzOc9hGf8s1ZnFE81-g9&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjHsrSMnZGXAxXo1wIHHYzdL_4Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB6Nq7LucLni3u0ZJNE2RSfEetil-Nel-tWjMpjYJbGAClvs17cjUgbm0JXWdljw-qiiFQtNQzLRQ9o0b1guMqncq9Q9PLiyub1tqiZ31tbWhMaOTTJgdRCaBzJOLlYPF8cEL_Ru3QmlKEj3_Hh3x7CWj-q21Q5kym0EAzPAYdRVN9seFU2Hv_pLrqz5E45kswWdz9IUKVXtqZT6IPEL78G21xRAxzt85kMdb8MuVuZBMNpVyCXztyo4TSLQj800tXELxJTsxEXakI2nw-l692hrMju-qHZC0aTLnZVorSOOPZumO_K17m0uG9OPyRbhvh5-aGQCHEWlw&csuir=1&mtid=-1a6aq7pNPK1i-gPgPHS0Ag&udm=50>)
+
+### 0174 | 2026-09-28 14:11:34 | You
+
+```text
+https://www.google.com/search?q=sim+towers+with+infinite+procedural+scroll+game+idea&client=ms-android-xiaomi-terr2-rso2&hs=H62V&sca_esv=080dae4805299e94&sxsrf=APpeQnsL-qnYTlH1QSdevk8yknm-p-8NUA%3A1790596856230&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKj906-ORFIK2UR8msyEJBwjHvmTN5b2gK7JkDyhtCEwf9HK1p4EJJWJ_IQyJOqgdebLABy7Chy0c1zfM1YOD3bAcOHF9K_asSx4WxwXJthf0zLUj0pHFzOc9hGf8s1ZnFE81-g9&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjHsrSMnZGXAxXo1wIHHYzdL_4Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBsze2-7cd2fIjIsjxc-vNftPMVQ8GSx4em67Dx2xGji9F6pdkiuGVbZ3LN9GckWirG5JPnUVKpPyfH7tLkV3nm0uVmiJQuxLprjd23lJbt0MlddAbJVoF3YPY5P_ZE4QumKWU6ZUf-VVdyw1UGvfEL1GZx0ZEMmQ0MNAjRMob5MjQcZm2jlyrhi1t9mREPX8j9J9RvVXEBS1wo8s4jyr_b4I9PhnqYNbIb9OYus3V4snWsbRfQcu9bmjyZkl0XGMN1X5ToLwXroz8odrebE-JKA9AIDDPKvxzKzmVBKaUwqIxEMTi60dv_tu7CJOadhOvC5aYY-cVEkg&csuir=1&mtid=-1a6aq7pNPK1i-gPgPHS0Ag&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=sim+towers+with+infinite+procedural+scroll+game+idea&client=ms-android-xiaomi-terr2-rso2&hs=H62V&sca_esv=080dae4805299e94&sxsrf=APpeQnsL-qnYTlH1QSdevk8yknm-p-8NUA%3A1790596856230&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKj906-ORFIK2UR8msyEJBwjHvmTN5b2gK7JkDyhtCEwf9HK1p4EJJWJ_IQyJOqgdebLABy7Chy0c1zfM1YOD3bAcOHF9K_asSx4WxwXJthf0zLUj0pHFzOc9hGf8s1ZnFE81-g9&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjHsrSMnZGXAxXo1wIHHYzdL_4Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBsze2-7cd2fIjIsjxc-vNftPMVQ8GSx4em67Dx2xGji9F6pdkiuGVbZ3LN9GckWirG5JPnUVKpPyfH7tLkV3nm0uVmiJQuxLprjd23lJbt0MlddAbJVoF3YPY5P_ZE4QumKWU6ZUf-VVdyw1UGvfEL1GZx0ZEMmQ0MNAjRMob5MjQcZm2jlyrhi1t9mREPX8j9J9RvVXEBS1wo8s4jyr_b4I9PhnqYNbIb9OYus3V4snWsbRfQcu9bmjyZkl0XGMN1X5ToLwXroz8odrebE-JKA9AIDDPKvxzKzmVBKaUwqIxEMTi60dv_tu7CJOadhOvC5aYY-cVEkg&csuir=1&mtid=-1a6aq7pNPK1i-gPgPHS0Ag&udm=50>)
+
+### 0175 | 2026-09-28 14:18:52 | You
+
+```text
+https://www.google.com/search?q=why+is+it+called+a+petri+dish+what+is+a+petri&client=ms-android-xiaomi-terr2-rso2&hs=slNB&sca_esv=080dae4805299e94&sxsrf=APpeQnuG7x0y6ALraTnBMGByBRuaEfJs5A%3A1790597754335&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832UV2GkpKEK36HumGR10Evz150YHLBZQrC7jm5_C-J-0f2Q2-5NUPD-TCpE8QyvxVIQ0CkdxfEAAqsZqW0D68D58P2afldorgANWKJGEiDXfIEJFp9eDzfr7CE0Ez67Lb-dbR5IJNrKdTr3Nj7fUU0R12K95Y&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiFqNS4oJGXAxXx9AIHHZgEOu4Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAh340Rxzy93wGwIkNryZMMlkAyxn8Sb2ZGY9Xg-AZrCMLVUWhdRRqh1awcjP2F2JrbZZCcQoHWF-yj3WnnsPp01kffjWfRKKa4so4p0fsXstNnRAMH-NRbZvgIMHtqbKOUi4yomiC6ztxj8FSJrliGKT30hwlFBaocw9GEuf6ofOetdCShpn5kCTAlaqZx90Tn8JYcZ_edSrai6p6bER0c9lrT43piZNDoMxzHZCMsJG3AB1kP1IyGoPXMRK2bhNskeMborGPIyFy9u1yS9gKMgTGp_o0Yi0FaEhuQusKeuOnAsJB-CKgshNMTUkRrT0_wRcN1txVdJw&csuir=1&mtid=gFq6au36HIjAi-gPqZjrqQ0&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=why+is+it+called+a+petri+dish+what+is+a+petri&client=ms-android-xiaomi-terr2-rso2&hs=slNB&sca_esv=080dae4805299e94&sxsrf=APpeQnuG7x0y6ALraTnBMGByBRuaEfJs5A%3A1790597754335&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832UV2GkpKEK36HumGR10Evz150YHLBZQrC7jm5_C-J-0f2Q2-5NUPD-TCpE8QyvxVIQ0CkdxfEAAqsZqW0D68D58P2afldorgANWKJGEiDXfIEJFp9eDzfr7CE0Ez67Lb-dbR5IJNrKdTr3Nj7fUU0R12K95Y&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiFqNS4oJGXAxXx9AIHHZgEOu4Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAh340Rxzy93wGwIkNryZMMlkAyxn8Sb2ZGY9Xg-AZrCMLVUWhdRRqh1awcjP2F2JrbZZCcQoHWF-yj3WnnsPp01kffjWfRKKa4so4p0fsXstNnRAMH-NRbZvgIMHtqbKOUi4yomiC6ztxj8FSJrliGKT30hwlFBaocw9GEuf6ofOetdCShpn5kCTAlaqZx90Tn8JYcZ_edSrai6p6bER0c9lrT43piZNDoMxzHZCMsJG3AB1kP1IyGoPXMRK2bhNskeMborGPIyFy9u1yS9gKMgTGp_o0Yi0FaEhuQusKeuOnAsJB-CKgshNMTUkRrT0_wRcN1txVdJw&csuir=1&mtid=gFq6au36HIjAi-gPqZjrqQ0&udm=50>)
+
+### 0176 | 2026-09-28 14:18:56 | You
+
+```text
+Prism prism prism
+```
+
+### 0177 | 2026-09-28 14:22:07 | You
+
+```text
+https://www.google.com/search?q=why+is+it+called+a+petri+dish+what+is+a+petri&client=ms-android-xiaomi-terr2-rso2&hs=slNB&sca_esv=080dae4805299e94&sxsrf=APpeQnuG7x0y6ALraTnBMGByBRuaEfJs5A%3A1790597754335&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832UV2GkpKEK36HumGR10Evz150YHLBZQrC7jm5_C-J-0f2Q2-5NUPD-TCpE8QyvxVIQ0CkdxfEAAqsZqW0D68D58P2afldorgANWKJGEiDXfIEJFp9eDzfr7CE0Ez67Lb-dbR5IJNrKdTr3Nj7fUU0R12K95Y&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiFqNS4oJGXAxXx9AIHHZgEOu4Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBbNLFfo0nVrJAsxHtqQqOPoj5o876ZiG-3G1c3o_7PMBkwmz25UkRgh-X1-aBMojAYlj9OMdott5tIZa5lx9pSx_GYRLF7_Qg-09hymakCuSHgzKNeOTKW4gzrdYaEB5FXvQT6IAgGraGgTkAR7DVNTI7Tc6-G5TerSxLIX6Qa1VaWzYblp9uIMx2odepP14CaoxzXG894Se2xZYJnvX03ICHY3BqL1Rgy-UEubIoqQMICKv9YGRnWNThoBYGev1t-xlemN1hw8K0i_b4YSwtw7Li7kkuWTNBbQzusn4vDmmBFgtbblBSn9rnRHf7P7vim01zjyDf65Q&csuir=1&mtid=gFq6au36HIjAi-gPqZjrqQ0&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=why+is+it+called+a+petri+dish+what+is+a+petri&client=ms-android-xiaomi-terr2-rso2&hs=slNB&sca_esv=080dae4805299e94&sxsrf=APpeQnuG7x0y6ALraTnBMGByBRuaEfJs5A%3A1790597754335&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832UV2GkpKEK36HumGR10Evz150YHLBZQrC7jm5_C-J-0f2Q2-5NUPD-TCpE8QyvxVIQ0CkdxfEAAqsZqW0D68D58P2afldorgANWKJGEiDXfIEJFp9eDzfr7CE0Ez67Lb-dbR5IJNrKdTr3Nj7fUU0R12K95Y&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiFqNS4oJGXAxXx9AIHHZgEOu4Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBbNLFfo0nVrJAsxHtqQqOPoj5o876ZiG-3G1c3o_7PMBkwmz25UkRgh-X1-aBMojAYlj9OMdott5tIZa5lx9pSx_GYRLF7_Qg-09hymakCuSHgzKNeOTKW4gzrdYaEB5FXvQT6IAgGraGgTkAR7DVNTI7Tc6-G5TerSxLIX6Qa1VaWzYblp9uIMx2odepP14CaoxzXG894Se2xZYJnvX03ICHY3BqL1Rgy-UEubIoqQMICKv9YGRnWNThoBYGev1t-xlemN1hw8K0i_b4YSwtw7Li7kkuWTNBbQzusn4vDmmBFgtbblBSn9rnRHf7P7vim01zjyDf65Q&csuir=1&mtid=gFq6au36HIjAi-gPqZjrqQ0&udm=50>)
+
+### 0178 | 2026-09-28 14:22:30 | You
+
+```text
+Home yeti?
+```
+
+### 0179 | 2026-09-28 14:35:13 | You
+
+```text
+https://www.google.com/search?q=fat+neck+thumb+guy+at+a+seal+angle+face+sideways+angle+photo+so+the+garbage+bin+of+aesthetically+pleasing&client=ms-android-xiaomi-terr2-rso2&hs=TRiq&sca_esv=080dae4805299e94&sxsrf=APpeQnvXfEXl70Goct32AWYynfT4hrJ5Cg%3A1790598841626&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzB4RlcW4X0t7W1CPEtyYhleqh7IweeyVNWqTX5RChTUyAbpXbq7u89js5MabYsqXiFvZmKBMsXfAuW8TkGSxc_xCmRTiPaYy5_JXUFseMdIxGXCId4&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiPrI-_pJGXAxUh5AIHHeuILMAQ2J8OegQICRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDCoJBIaF4cAYm7CLnuG4jJlzpOA3r78l2aJT8ysRVIB-OByyt5exNrWnLG71Un1XJxynxyHii3dBM8Lq2nizwnlWkr0uugt4iZ0XpmZr287LME7Vdi45TS3sGJ14tJ1yqFc5rotOUrymus6rWN0rB7QDQKoJLPkDHpLnCOPc9IO1mBq2NBtEZpqQbA2_hyqnxE6Lts7MzfTCOZPi6QHDNOLzZpKPGXmXkPeFwxwUcMvAVbqfKMwgT1oKQAjT6HEnaFnZSVBem79zT3sV6ZeNedv_Qmf0dD416CFoklN5ngJju-H208WyFsZZBMkfO8C6b06aQ_bTbbLZowdgkJ02eziG-2lgqBbA&csuir=1&mtid=vF66atDhA4jAi-gPqZjrqQ0&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=fat+neck+thumb+guy+at+a+seal+angle+face+sideways+angle+photo+so+the+garbage+bin+of+aesthetically+pleasing&client=ms-android-xiaomi-terr2-rso2&hs=TRiq&sca_esv=080dae4805299e94&sxsrf=APpeQnvXfEXl70Goct32AWYynfT4hrJ5Cg%3A1790598841626&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzB4RlcW4X0t7W1CPEtyYhleqh7IweeyVNWqTX5RChTUyAbpXbq7u89js5MabYsqXiFvZmKBMsXfAuW8TkGSxc_xCmRTiPaYy5_JXUFseMdIxGXCId4&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiPrI-_pJGXAxUh5AIHHeuILMAQ2J8OegQICRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDCoJBIaF4cAYm7CLnuG4jJlzpOA3r78l2aJT8ysRVIB-OByyt5exNrWnLG71Un1XJxynxyHii3dBM8Lq2nizwnlWkr0uugt4iZ0XpmZr287LME7Vdi45TS3sGJ14tJ1yqFc5rotOUrymus6rWN0rB7QDQKoJLPkDHpLnCOPc9IO1mBq2NBtEZpqQbA2_hyqnxE6Lts7MzfTCOZPi6QHDNOLzZpKPGXmXkPeFwxwUcMvAVbqfKMwgT1oKQAjT6HEnaFnZSVBem79zT3sV6ZeNedv_Qmf0dD416CFoklN5ngJju-H208WyFsZZBMkfO8C6b06aQ_bTbbLZowdgkJ02eziG-2lgqBbA&csuir=1&mtid=vF66atDhA4jAi-gPqZjrqQ0&udm=50>)
+
+### 0180 | 2026-09-28 14:36:05 | You
+
+```text
+https://youtu.be/ewRjZoRtu0Y?is=dPuPu2cN8SAKNgTW
+```
+
+Links: [Link 1](<https://youtu.be/ewRjZoRtu0Y?is=dPuPu2cN8SAKNgTW>)
+
+### 0181 | 2026-09-28 14:36:17 | You
+
+```text
+Everyone is a winner, you are all fucked up
+```
+
+### 0182 | 2026-09-28 14:41:19 | You
+
+```text
+https://www.google.com/search?q=fat+neck+thumb+guy+at+a+seal+angle+face+sideways+angle+photo+so+the+garbage+bin+of+aesthetically+pleasing&client=ms-android-xiaomi-terr2-rso2&hs=TRiq&sca_esv=080dae4805299e94&sxsrf=APpeQnvXfEXl70Goct32AWYynfT4hrJ5Cg%3A1790598841626&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzB4RlcW4X0t7W1CPEtyYhleqh7IweeyVNWqTX5RChTUyAbpXbq7u89js5MabYsqXiFvZmKBMsXfAuW8TkGSxc_xCmRTiPaYy5_JXUFseMdIxGXCId4&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiPrI-_pJGXAxUh5AIHHeuILMAQ2J8OegQICRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAbWp7wqOFuYEKdD3vQ7xqPtaklyvVQoyP_SXlDNsvPvP8vskimYHsdhZh0k7zYAUmYQD0y6ul6t_irCkrADYHzowRB6skM5njArBy12LEWWBZOwoA6j-VAmaLBTDoKmrdc8aheCbBOqkXnR-MwnmylAcc8dLQPpBc_WOrXmBwDg6vbIyYKA3adoc9xUc9pLKgO3fgxJXS19HvuL3MQ5kir2d8OegM2BGQ4IOmgFI-k-eHmUvAPdV1141lC-mS9AYpqDLHLnQkH-5EMwBQt6tumed3EYJR7NFSwQQtDtpc8g61t23Mho-XVoYrzalturbi5uGWNT1lkrOUBII0gKQocEubEtIrs2w&csuir=1&mtid=vF66atDhA4jAi-gPqZjrqQ0&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=fat+neck+thumb+guy+at+a+seal+angle+face+sideways+angle+photo+so+the+garbage+bin+of+aesthetically+pleasing&client=ms-android-xiaomi-terr2-rso2&hs=TRiq&sca_esv=080dae4805299e94&sxsrf=APpeQnvXfEXl70Goct32AWYynfT4hrJ5Cg%3A1790598841626&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzB4RlcW4X0t7W1CPEtyYhleqh7IweeyVNWqTX5RChTUyAbpXbq7u89js5MabYsqXiFvZmKBMsXfAuW8TkGSxc_xCmRTiPaYy5_JXUFseMdIxGXCId4&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiPrI-_pJGXAxUh5AIHHeuILMAQ2J8OegQICRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAbWp7wqOFuYEKdD3vQ7xqPtaklyvVQoyP_SXlDNsvPvP8vskimYHsdhZh0k7zYAUmYQD0y6ul6t_irCkrADYHzowRB6skM5njArBy12LEWWBZOwoA6j-VAmaLBTDoKmrdc8aheCbBOqkXnR-MwnmylAcc8dLQPpBc_WOrXmBwDg6vbIyYKA3adoc9xUc9pLKgO3fgxJXS19HvuL3MQ5kir2d8OegM2BGQ4IOmgFI-k-eHmUvAPdV1141lC-mS9AYpqDLHLnQkH-5EMwBQt6tumed3EYJR7NFSwQQtDtpc8g61t23Mho-XVoYrzalturbi5uGWNT1lkrOUBII0gKQocEubEtIrs2w&csuir=1&mtid=vF66atDhA4jAi-gPqZjrqQ0&udm=50>)
+
+### 0183 | 2026-09-28 14:41:52 | You
+
+```text
+This is why I need more Jitske Koenders all day everyday 24/7 locked down with me (metaphorically ofcourse)
+```
+
+### 0184 | 2026-09-28 14:45:33 | You
+
+```text
+https://www.google.com/search?q=fat+neck+thumb+guy+at+a+seal+angle+face+sideways+angle+photo+so+the+garbage+bin+of+aesthetically+pleasing&client=ms-android-xiaomi-terr2-rso2&hs=TRiq&sca_esv=080dae4805299e94&sxsrf=APpeQnvXfEXl70Goct32AWYynfT4hrJ5Cg%3A1790598841626&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzB4RlcW4X0t7W1CPEtyYhleqh7IweeyVNWqTX5RChTUyAbpXbq7u89js5MabYsqXiFvZmKBMsXfAuW8TkGSxc_xCmRTiPaYy5_JXUFseMdIxGXCId4&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiPrI-_pJGXAxUh5AIHHeuILMAQ2J8OegQICRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDge8tqy5nERidVxva5Jfq9JMAe8UgkbUo7RugteaHH3UhcvLnxZaK6hbb_yCRz6OKvxn5c1-mulPCW2qG6XjVoGQ_YgN8cMiQgHSoULuOHDraKZu3yCsRfdh9SlIRg3Rjiqw1XuNfOz3O1IfiNQuJUcb8LLcz3jhHAOV5AlCMB5GmCGldiixPRuA4LgUoJZgKExpPQ0ue9bcHjHEFLJ21ySqFCn9b-rFQRQvJqeCjEE-mdXBvxfUL_BmUC26PGhBANlVkGT1uMpi66JJiOKsil2qyqBV0OCq3Fd66VGZyFx_vz7UfQne8OyZmI2ndfydyzXdnZnkXdY62NWqxLX9HHIpvZtlbfuA&csuir=1&mtid=vF66atDhA4jAi-gPqZjrqQ0&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=fat+neck+thumb+guy+at+a+seal+angle+face+sideways+angle+photo+so+the+garbage+bin+of+aesthetically+pleasing&client=ms-android-xiaomi-terr2-rso2&hs=TRiq&sca_esv=080dae4805299e94&sxsrf=APpeQnvXfEXl70Goct32AWYynfT4hrJ5Cg%3A1790598841626&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzB4RlcW4X0t7W1CPEtyYhleqh7IweeyVNWqTX5RChTUyAbpXbq7u89js5MabYsqXiFvZmKBMsXfAuW8TkGSxc_xCmRTiPaYy5_JXUFseMdIxGXCId4&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiPrI-_pJGXAxUh5AIHHeuILMAQ2J8OegQICRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDge8tqy5nERidVxva5Jfq9JMAe8UgkbUo7RugteaHH3UhcvLnxZaK6hbb_yCRz6OKvxn5c1-mulPCW2qG6XjVoGQ_YgN8cMiQgHSoULuOHDraKZu3yCsRfdh9SlIRg3Rjiqw1XuNfOz3O1IfiNQuJUcb8LLcz3jhHAOV5AlCMB5GmCGldiixPRuA4LgUoJZgKExpPQ0ue9bcHjHEFLJ21ySqFCn9b-rFQRQvJqeCjEE-mdXBvxfUL_BmUC26PGhBANlVkGT1uMpi66JJiOKsil2qyqBV0OCq3Fd66VGZyFx_vz7UfQne8OyZmI2ndfydyzXdnZnkXdY62NWqxLX9HHIpvZtlbfuA&csuir=1&mtid=vF66atDhA4jAi-gPqZjrqQ0&udm=50>)
+
+### 0185 | 2026-09-28 14:46:10 | You
+
+```text
+Ik zweer dat ik chronologisch achter kom wat jullie gedaan hebben en ik ga er zware consequenties aan hangen
+```
+
+### 0186 | 2026-09-28 14:50:37 | You
+
+```text
+https://www.google.com/search?q=garbage+bin+people+who+have+no+personality+and+no+aesthetically+pleasing+looks+are+just+failed+prototypes+of+like+bad+spoiled+or+deformed+produce+that+dont+get+selected+to+be+displayed+in+the+supermarket+and+end+up+in...&client=ms-android-xiaomi-terr2-rso2&hs=562V&sca_esv=080dae4805299e94&sxsrf=APpeQntSDTGzB01CQxedEGkp6grkhs9zCQ%3A1790599822016&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKi9oPlxXmLuMKd45Roo5diAos55tQ6ILtaTS_mw7pfW8K3GKtfzul98FWwK7mPmMEOsNVLL1cglsuD9g4oLjKNd0A6oQUdeIy86vA_KU7uFI0V_Ek_8gZHhM4DOo2xevoQxizXs&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwidjs2SqJGXAxU2gf0HHWLpBngQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfADg13PXvO1CWAehohdfIgaKh1Jng01XvqzkVeuM1yE5OtpT6yqk7WAg55Y5EwkAihjuL0QT_Z9G8p5EC9v_WRF7I7JntpvlVckGfspDxdBpD7UxAdlgMFtBbpno60jC-AcqMrlI3W1F6BgzbKlroUwvM3CD2sJXpqarInQyg177V6HQl2jnwjudMlUM879DzJ1PURKQlDufbjGxlr8lS5S1kKrg1PxkJVWYTb4T8Tyc8HMpHN64EhCEVhQhB-IwtTFPdKvQVMPE7pd-Hkv7jiN_BOmSN3OMspz_VReiT7ZnUBHQZq6bjy3xGYllzUCjHGVwTXp3-UlUw&csuir=1&mtid=j2K6atyAKvf_7_UP8IHvqA8
+```
+
+Links: [Link 1](<https://www.google.com/search?q=garbage+bin+people+who+have+no+personality+and+no+aesthetically+pleasing+looks+are+just+failed+prototypes+of+like+bad+spoiled+or+deformed+produce+that+dont+get+selected+to+be+displayed+in+the+supermarket+and+end+up+in...&client=ms-android-xiaomi-terr2-rso2&hs=562V&sca_esv=080dae4805299e94&sxsrf=APpeQntSDTGzB01CQxedEGkp6grkhs9zCQ%3A1790599822016&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKi9oPlxXmLuMKd45Roo5diAos55tQ6ILtaTS_mw7pfW8K3GKtfzul98FWwK7mPmMEOsNVLL1cglsuD9g4oLjKNd0A6oQUdeIy86vA_KU7uFI0V_Ek_8gZHhM4DOo2xevoQxizXs&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwidjs2SqJGXAxU2gf0HHWLpBngQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfADg13PXvO1CWAehohdfIgaKh1Jng01XvqzkVeuM1yE5OtpT6yqk7WAg55Y5EwkAihjuL0QT_Z9G8p5EC9v_WRF7I7JntpvlVckGfspDxdBpD7UxAdlgMFtBbpno60jC-AcqMrlI3W1F6BgzbKlroUwvM3CD2sJXpqarInQyg177V6HQl2jnwjudMlUM879DzJ1PURKQlDufbjGxlr8lS5S1kKrg1PxkJVWYTb4T8Tyc8HMpHN64EhCEVhQhB-IwtTFPdKvQVMPE7pd-Hkv7jiN_BOmSN3OMspz_VReiT7ZnUBHQZq6bjy3xGYllzUCjHGVwTXp3-UlUw&csuir=1&mtid=j2K6atyAKvf_7_UP8IHvqA8>)
+
+### 0187 | 2026-09-28 14:56:41 | You
+
+```text
+https://www.google.com/search?q=garbage+bin+people+who+have+no+personality+and+no+aesthetically+pleasing+looks+are+just+failed+prototypes+of+like+bad+spoiled+or+deformed+produce+that+dont+get+selected+to+be+displayed+in+the+supermarket+and+end+up+in...&client=ms-android-xiaomi-terr2-rso2&hs=562V&sca_esv=080dae4805299e94&sxsrf=APpeQntSDTGzB01CQxedEGkp6grkhs9zCQ%3A1790599822016&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKi9oPlxXmLuMKd45Roo5diAos55tQ6ILtaTS_mw7pfW8K3GKtfzul98FWwK7mPmMEOsNVLL1cglsuD9g4oLjKNd0A6oQUdeIy86vA_KU7uFI0V_Ek_8gZHhM4DOo2xevoQxizXs&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwidjs2SqJGXAxU2gf0HHWLpBngQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDDCu1FVlQqkoJVnNywqpbx9q5ep4iOr1u7G7uNqmhoElGozChNPUhFjU0tnO9LBOHVkvH37BNxNOIPsTqZH1E1p5tRBvNUsSws3hGdzfvcwW8CyZS3P10C1JvNp0ldqv6TgGG4wReXrxt8roSXRKnatLHBYAqLal5jXTBMtLJFvzdn9RWkJQCOCCNYQsHhn5c-VD2Max5mBxzJ3vlJxt_B9SZsNtWi16mQWk1q2ckFRtMI37eQoNpWZC7lBT-YX7v7WLEqxIR0PRy-jjjsCb3Um2yFZlcGa0DRoXn6NX4uQr8GealHEqcIkCl2oJnb8DNiekpELsdFoA&csuir=1&mtid=kGK6aofJAe_m7_UPtfWDqQk&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=garbage+bin+people+who+have+no+personality+and+no+aesthetically+pleasing+looks+are+just+failed+prototypes+of+like+bad+spoiled+or+deformed+produce+that+dont+get+selected+to+be+displayed+in+the+supermarket+and+end+up+in...&client=ms-android-xiaomi-terr2-rso2&hs=562V&sca_esv=080dae4805299e94&sxsrf=APpeQntSDTGzB01CQxedEGkp6grkhs9zCQ%3A1790599822016&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKi9oPlxXmLuMKd45Roo5diAos55tQ6ILtaTS_mw7pfW8K3GKtfzul98FWwK7mPmMEOsNVLL1cglsuD9g4oLjKNd0A6oQUdeIy86vA_KU7uFI0V_Ek_8gZHhM4DOo2xevoQxizXs&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwidjs2SqJGXAxU2gf0HHWLpBngQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDDCu1FVlQqkoJVnNywqpbx9q5ep4iOr1u7G7uNqmhoElGozChNPUhFjU0tnO9LBOHVkvH37BNxNOIPsTqZH1E1p5tRBvNUsSws3hGdzfvcwW8CyZS3P10C1JvNp0ldqv6TgGG4wReXrxt8roSXRKnatLHBYAqLal5jXTBMtLJFvzdn9RWkJQCOCCNYQsHhn5c-VD2Max5mBxzJ3vlJxt_B9SZsNtWi16mQWk1q2ckFRtMI37eQoNpWZC7lBT-YX7v7WLEqxIR0PRy-jjjsCb3Um2yFZlcGa0DRoXn6NX4uQr8GealHEqcIkCl2oJnb8DNiekpELsdFoA&csuir=1&mtid=kGK6aofJAe_m7_UPtfWDqQk&udm=50>)
+
+### 0188 | 2026-09-28 15:47:12 | You
+
+```text
+https://youtu.be/eMYxLOs31NI?is=iY3k-qRM8mJ3gYGb
+```
+
+Links: [Link 1](<https://youtu.be/eMYxLOs31NI?is=iY3k-qRM8mJ3gYGb>)
+
+### 0189 | 2026-09-28 17:09:48 | You
+
+```text
+<image omitted>
+```
+
+### 0190 | 2026-09-28 17:13:27 | You
+
+```text
+https://www.instagram.com/reel/DdZZpSKAUoE/?stkn=eTd5ZGkxeWdzZHg1
+```
+
+Links: [Link 1](<https://www.instagram.com/reel/DdZZpSKAUoE/?stkn=eTd5ZGkxeWdzZHg1>)
+
+### 0191 | 2026-09-28 17:28:57 | You
+
+```text
+https://www.instagram.com/reel/DdjVvLAjpJc/?stkn=MmNpdXdmMnF5Nmxn
+```
+
+Links: [Link 1](<https://www.instagram.com/reel/DdjVvLAjpJc/?stkn=MmNpdXdmMnF5Nmxn>)
+
+### 0192 | 2026-09-28 17:29:03 | You
+
+```text
+Loooool
+```
+
+### 0193 | 2026-09-28 20:27:39 | You
+
+```text
+https://youtu.be/CJNA1HBx7BA?is=m-ggtVnWW7c_Yz2L
+```
+
+Links: [Link 1](<https://youtu.be/CJNA1HBx7BA?is=m-ggtVnWW7c_Yz2L>)
+
+### 0194 | 2026-09-28 21:05:20 | You
+
+```text
+https://www.google.com/search?q=argon+gas+freon+ac+closed+loop+coolant&client=ms-android-xiaomi-terr2-rso2&hs=6C3V&sca_esv=4cefd605c4e449b3&sxsrf=APpeQntObI05Gldso1I4G1cGy5HUv2IBeA%3A1790622191136&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwi__4O9-5GXAxWA9LsIHfZgAccQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAR0UkCFndmkYk0837ERWbPhsNrTMVKK1cHM7qD25qzUHi1uuRXsw857cHvB1GxzXURvVGRHfodKCEe3YC74lyleKXrUCVEhShmHoZhcGEmCLOBXDPp-I-o1qM7KEG2sdqczJfBy1kOJm8bp15BEn7wvGDrKMCT5eOO2H71et0Eq4TUop_PX-GC3WFBbGc50sZpntZ9_cjJvf85C66PTc6EQsYi-vDp7KCX5cqa2xRuT_6RRRJ1xZpvxrbjC60k5jOkJbmVy0rbjEnCrC0KJZ309We19JaQhD3YZE9A2blBjd-Vi-MKPnsYv7gKWGg5HNHWpE7pF75HaXA&csuir=1&mtid=_bm6asPBK-eB9u8P-qSI6Qs&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=argon+gas+freon+ac+closed+loop+coolant&client=ms-android-xiaomi-terr2-rso2&hs=6C3V&sca_esv=4cefd605c4e449b3&sxsrf=APpeQntObI05Gldso1I4G1cGy5HUv2IBeA%3A1790622191136&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwi__4O9-5GXAxWA9LsIHfZgAccQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAR0UkCFndmkYk0837ERWbPhsNrTMVKK1cHM7qD25qzUHi1uuRXsw857cHvB1GxzXURvVGRHfodKCEe3YC74lyleKXrUCVEhShmHoZhcGEmCLOBXDPp-I-o1qM7KEG2sdqczJfBy1kOJm8bp15BEn7wvGDrKMCT5eOO2H71et0Eq4TUop_PX-GC3WFBbGc50sZpntZ9_cjJvf85C66PTc6EQsYi-vDp7KCX5cqa2xRuT_6RRRJ1xZpvxrbjC60k5jOkJbmVy0rbjEnCrC0KJZ309We19JaQhD3YZE9A2blBjd-Vi-MKPnsYv7gKWGg5HNHWpE7pF75HaXA&csuir=1&mtid=_bm6asPBK-eB9u8P-qSI6Qs&udm=50>)
+
+## 2026-09-29
+
+### 0195 | 2026-09-29 06:53:32 | You
+
+```text
+https://www.google.com/search?q=cryptex+svalbard+seedbank&client=ms-android-xiaomi-terr2-rso2&hs=cM3V&sca_esv=5082edfadcd2fcdb&udm=2&biw=375&bih=691&sxsrf=APpeQnt3ab9VSAEaxkGp3AdnEzAV40Aoyw%3A1790657591524&ei=N0S7aurMH4n6i-gPiuqAsQo&oq=cryptex+svalbard+seedbank&gs_lp=EhJtb2JpbGUtZ3dzLXdpei1pbWciGWNyeXB0ZXggc3ZhbGJhcmQgc2VlZGJhbmsyBBAhGBUyCBAAGIAEGKIESLQxUI0HWJ8tcAB4AJABAJgBTaABuAmqAQIxObgBA8gBAPgBAZgCEqACpwnCAgcQIxjJAhgnwgIGEAAYBxgewgIKEAAYgAQYigUYQ8ICBRAAGIAEwgIEEAAYHpgDAIgGAZIHAjE4oAfgGrIHAjE4uAenCcIHBjAuMTAuOMgHNoAIAQ&sclient=mobile-gws-wiz-img
+```
+
+Links: [Link 1](<https://www.google.com/search?q=cryptex+svalbard+seedbank&client=ms-android-xiaomi-terr2-rso2&hs=cM3V&sca_esv=5082edfadcd2fcdb&udm=2&biw=375&bih=691&sxsrf=APpeQnt3ab9VSAEaxkGp3AdnEzAV40Aoyw%3A1790657591524&ei=N0S7aurMH4n6i-gPiuqAsQo&oq=cryptex+svalbard+seedbank&gs_lp=EhJtb2JpbGUtZ3dzLXdpei1pbWciGWNyeXB0ZXggc3ZhbGJhcmQgc2VlZGJhbmsyBBAhGBUyCBAAGIAEGKIESLQxUI0HWJ8tcAB4AJABAJgBTaABuAmqAQIxObgBA8gBAPgBAZgCEqACpwnCAgcQIxjJAhgnwgIGEAAYBxgewgIKEAAYgAQYigUYQ8ICBRAAGIAEwgIEEAAYHpgDAIgGAZIHAjE4oAfgGrIHAjE4uAenCcIHBjAuMTAuOMgHNoAIAQ&sclient=mobile-gws-wiz-img>)
+
+### 0196 | 2026-09-29 06:53:47 | You
+
+```text
+Noreway more like snoreway cpap
+```
+
+### 0197 | 2026-09-29 07:17:45 | You
+
+```text
+<image omitted>
+```
+
+### 0198 | 2026-09-29 07:17:51 | You
+
+```text
+https://www.google.com/search?q=courage+the+cowardly+dog+tablet+sins&client=ms-android-xiaomi-terr2-rso2&hs=Rhiq&sca_esv=5082edfadcd2fcdb&sxsrf=APpeQnvej1jFGUt0ITbPDHgsqQnGPwO8Cg%3A1790658293649&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwin8Yb8gZOXAxVJg_0HHQefAM8Q2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAssK-79eTZoxjXoCSj8K1wkDdOx3Ah11SPkysgvbCkHSN4uM8Hpk5f_tNcmFRewsNo1tfKfjzM2xJcaNa4khtWvOtiSgPsnjMU_eWAMNPJ085JMqXrFXByJ4tPEr1Cv9BVCR_t1tLyOMDp3TASE0VIJQ5mhBBt8yQpONMLyiO9KGl4AU-D4_jaxvLQG--RIdGejXTVWXxuU5k0FR5CuINZR1kNEfChW0WLeGfXPg5GdGm6QJA2TSD__pAWCjcVsw2JvUD5R-2pwHHyuyJlLoKq45grTp61RavkdDndDqtDT-UlmeFfLP3l3W47VkL9S0wArNvksVKjuA&csuir=1&mtid=Cke7asvXL-yH9u8P-p2JgAM&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=courage+the+cowardly+dog+tablet+sins&client=ms-android-xiaomi-terr2-rso2&hs=Rhiq&sca_esv=5082edfadcd2fcdb&sxsrf=APpeQnvej1jFGUt0ITbPDHgsqQnGPwO8Cg%3A1790658293649&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwin8Yb8gZOXAxVJg_0HHQefAM8Q2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAssK-79eTZoxjXoCSj8K1wkDdOx3Ah11SPkysgvbCkHSN4uM8Hpk5f_tNcmFRewsNo1tfKfjzM2xJcaNa4khtWvOtiSgPsnjMU_eWAMNPJ085JMqXrFXByJ4tPEr1Cv9BVCR_t1tLyOMDp3TASE0VIJQ5mhBBt8yQpONMLyiO9KGl4AU-D4_jaxvLQG--RIdGejXTVWXxuU5k0FR5CuINZR1kNEfChW0WLeGfXPg5GdGm6QJA2TSD__pAWCjcVsw2JvUD5R-2pwHHyuyJlLoKq45grTp61RavkdDndDqtDT-UlmeFfLP3l3W47VkL9S0wArNvksVKjuA&csuir=1&mtid=Cke7asvXL-yH9u8P-p2JgAM&udm=50>)
+
+### 0199 | 2026-09-29 07:29:20 | You
+
+```text
+https://www.google.com/search?q=courage+the+cowardly+dog+tablet+sins&client=ms-android-xiaomi-terr2-rso2&hs=Rhiq&sca_esv=5082edfadcd2fcdb&sxsrf=APpeQnvej1jFGUt0ITbPDHgsqQnGPwO8Cg%3A1790658293649&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwin8Yb8gZOXAxVJg_0HHQefAM8Q2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBSRIHJ41s2stzhttauXYsxtNJwRfiC-qmHTl187l4UMNdqDU16nzKHTk3T3KqNvfpuchTTB9-uFXCnRVkah90U_gqduHxNE9HPou2b-eZQ1ULb4sxqRL2VITb-ydpJLDKTkZHrefOTO3_cIj1R_ubvsonhbvpGp9MWH-N0xInRH9_JML7ottVBPj0-pWL8Mm12BZAxA7rBcTKKe3TmYQRW6H6uzztsiGF3gGSo3YyadyRah84ACGMqX7W5Nf0aSRnzFHVBjEiBZwkiDFexBBOo7mbEjMizPOpSm5xBHJv_du4S9NWdxqkKHiZjI3WY_waR529umuREFA&csuir=1&mtid=Cke7asvXL-yH9u8P-p2JgAM&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=courage+the+cowardly+dog+tablet+sins&client=ms-android-xiaomi-terr2-rso2&hs=Rhiq&sca_esv=5082edfadcd2fcdb&sxsrf=APpeQnvej1jFGUt0ITbPDHgsqQnGPwO8Cg%3A1790658293649&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwin8Yb8gZOXAxVJg_0HHQefAM8Q2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBSRIHJ41s2stzhttauXYsxtNJwRfiC-qmHTl187l4UMNdqDU16nzKHTk3T3KqNvfpuchTTB9-uFXCnRVkah90U_gqduHxNE9HPou2b-eZQ1ULb4sxqRL2VITb-ydpJLDKTkZHrefOTO3_cIj1R_ubvsonhbvpGp9MWH-N0xInRH9_JML7ottVBPj0-pWL8Mm12BZAxA7rBcTKKe3TmYQRW6H6uzztsiGF3gGSo3YyadyRah84ACGMqX7W5Nf0aSRnzFHVBjEiBZwkiDFexBBOo7mbEjMizPOpSm5xBHJv_du4S9NWdxqkKHiZjI3WY_waR529umuREFA&csuir=1&mtid=Cke7asvXL-yH9u8P-p2JgAM&udm=50>)
+
+### 0200 | 2026-09-29 07:54:20 | You
+
+```text
+https://www.google.com/search?q=ointment+vicks+vaporub+for+a...&client=ms-android-xiaomi-terr2-rso2&hs=uhiq&sca_esv=5082edfadcd2fcdb&sxsrf=APpeQnv6JFeJakifh4sjNILvpcMTCYcO1g%3A1790660017727&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp2-cjVKw2GTI2L0MU3QUO__V8GVARUdUB2ZoMwCGQaAhzsNHbmFYWYw3SS8Poi5fDN4OzSFlsZooHbWoXUZiCEjcVmWWUPeL01Y9czBKQNlivQpN9j&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiJmJSyiJOXAxWZgf0HHf5CGKwQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBNInSotz-evrzalWVpB3loWO0CwhhZISY_Iv6CMwJpP8HwbMZ6RaEFX-F6E35KUifuTAuQ7NI4O1_FE8QOt2lMj5j4AUywigcXTl4eCCUjtQnkuUstd1x6Hp7EoUhVySNWAkUpWiZE81k9_ETD_rjqqoW8LeZjiN4tH2k-38okq5YKC4Wv0zrmnuk8b-QbFTLlKY1dz5oIj5zhKRCEgwb7a8MajxlNXAfUB8tvmsy2zFc13Gcz65NUHFFoBVXnUrWg-l-ZTmfFCg&csuir=1&mtid=vU27auWXMv2L9u8PrvnRkAQ&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=ointment+vicks+vaporub+for+a...&client=ms-android-xiaomi-terr2-rso2&hs=uhiq&sca_esv=5082edfadcd2fcdb&sxsrf=APpeQnv6JFeJakifh4sjNILvpcMTCYcO1g%3A1790660017727&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp2-cjVKw2GTI2L0MU3QUO__V8GVARUdUB2ZoMwCGQaAhzsNHbmFYWYw3SS8Poi5fDN4OzSFlsZooHbWoXUZiCEjcVmWWUPeL01Y9czBKQNlivQpN9j&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiJmJSyiJOXAxWZgf0HHf5CGKwQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBNInSotz-evrzalWVpB3loWO0CwhhZISY_Iv6CMwJpP8HwbMZ6RaEFX-F6E35KUifuTAuQ7NI4O1_FE8QOt2lMj5j4AUywigcXTl4eCCUjtQnkuUstd1x6Hp7EoUhVySNWAkUpWiZE81k9_ETD_rjqqoW8LeZjiN4tH2k-38okq5YKC4Wv0zrmnuk8b-QbFTLlKY1dz5oIj5zhKRCEgwb7a8MajxlNXAfUB8tvmsy2zFc13Gcz65NUHFFoBVXnUrWg-l-ZTmfFCg&csuir=1&mtid=vU27auWXMv2L9u8PrvnRkAQ&udm=50>)
+
+### 0201 | 2026-09-29 07:59:27 | You
+
+```text
+https://www.google.com/search?q=ointment+vicks+vaporub+for+a...&client=ms-android-xiaomi-terr2-rso2&hs=uhiq&sca_esv=5082edfadcd2fcdb&sxsrf=APpeQnv6JFeJakifh4sjNILvpcMTCYcO1g%3A1790660017727&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp2-cjVKw2GTI2L0MU3QUO__V8GVARUdUB2ZoMwCGQaAhzsNHbmFYWYw3SS8Poi5fDN4OzSFlsZooHbWoXUZiCEjcVmWWUPeL01Y9czBKQNlivQpN9j&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiJmJSyiJOXAxWZgf0HHf5CGKwQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCus7uKuMj2xLMuVurqDr6FYpduijq8jIIeEPclyszTSVZkwS6_Dx1M_iw4YPks-l3u823v8jXzJkniYF1FjnAHv0RDFDvTyCiJUtiYjTdGVSIodDJpx0RCJ5enwZDJzYDm_d8TZS1TzRgI_XMLyqXF-GtXMsD9GGh3p3g-cPmhn9ykcAzHj0YNqLI-EQdWZucP8McTcyKRQ4QBdO-ZliBOEOo6zlh6FA6WIoPgjtU3brG7yg0gE6PhXC2uPKXpsKnIEg-e6Nit8A&csuir=1&mtid=vU27auWXMv2L9u8PrvnRkAQ&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=ointment+vicks+vaporub+for+a...&client=ms-android-xiaomi-terr2-rso2&hs=uhiq&sca_esv=5082edfadcd2fcdb&sxsrf=APpeQnv6JFeJakifh4sjNILvpcMTCYcO1g%3A1790660017727&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp2-cjVKw2GTI2L0MU3QUO__V8GVARUdUB2ZoMwCGQaAhzsNHbmFYWYw3SS8Poi5fDN4OzSFlsZooHbWoXUZiCEjcVmWWUPeL01Y9czBKQNlivQpN9j&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiJmJSyiJOXAxWZgf0HHf5CGKwQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCus7uKuMj2xLMuVurqDr6FYpduijq8jIIeEPclyszTSVZkwS6_Dx1M_iw4YPks-l3u823v8jXzJkniYF1FjnAHv0RDFDvTyCiJUtiYjTdGVSIodDJpx0RCJ5enwZDJzYDm_d8TZS1TzRgI_XMLyqXF-GtXMsD9GGh3p3g-cPmhn9ykcAzHj0YNqLI-EQdWZucP8McTcyKRQ4QBdO-ZliBOEOo6zlh6FA6WIoPgjtU3brG7yg0gE6PhXC2uPKXpsKnIEg-e6Nit8A&csuir=1&mtid=vU27auWXMv2L9u8PrvnRkAQ&udm=50>)
+
+### 0202 | 2026-09-29 08:12:39 | You
+
+```text
+https://www.google.com/search?q=so+lowercase+phi+is+open+and+uppercase+is+closed+in+cyclical&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTEzODczajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7vnQU6QWmnWBznGVLK1G8Rykll-s04_elOQbRleKreNqN6HKk20ZyZ-d8SXGwXAN8EIvObbF33JhfJkDoGbxHTj31od_&aep=10&ntc=1&sxsrf=APpeQnultfOVJKoDtOesEzNPRAK1MhURBQ%3A1790661948859&mstk=AUtExfBC2gkyiwmKhrpTUMk3DS_9GvKfalNgazM4V3M8BsZZ9r976i5QUEv5IMmgkJ1t4dXZoBpehI5NVdlHVp0KNPgCiDACZgedr748vfOwUqiCGOYCwM2ZxNPMbRS7r8x9sm2HJFgGTZoCHCKwCElM9eCro9qotg0OVEdK5zY7fqMOvl6b40QXNT9iyPqgsbkewpxdakxiiyde6M50v_dfbbO8Q7JtqC82tNp33ipNyErjyXlxCx7_0iXEqseKvCl9pDvZ98dyn0SgFjrTAToJGA2Xj4Fn7MkbAy--LxSK-xvvItkX9L7yUOuhbxwki6d3WVQD-Nvdt6TIzQ&csuir=1&aioh=3&mtid=oFW7aoiOLNeM-d8Pno-JyA8&udm=50#lfId=ChxjMe
+```
+
+Links: [Link 1](<https://www.google.com/search?q=so+lowercase+phi+is+open+and+uppercase+is+closed+in+cyclical&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTEzODczajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7vnQU6QWmnWBznGVLK1G8Rykll-s04_elOQbRleKreNqN6HKk20ZyZ-d8SXGwXAN8EIvObbF33JhfJkDoGbxHTj31od_&aep=10&ntc=1&sxsrf=APpeQnultfOVJKoDtOesEzNPRAK1MhURBQ%3A1790661948859&mstk=AUtExfBC2gkyiwmKhrpTUMk3DS_9GvKfalNgazM4V3M8BsZZ9r976i5QUEv5IMmgkJ1t4dXZoBpehI5NVdlHVp0KNPgCiDACZgedr748vfOwUqiCGOYCwM2ZxNPMbRS7r8x9sm2HJFgGTZoCHCKwCElM9eCro9qotg0OVEdK5zY7fqMOvl6b40QXNT9iyPqgsbkewpxdakxiiyde6M50v_dfbbO8Q7JtqC82tNp33ipNyErjyXlxCx7_0iXEqseKvCl9pDvZ98dyn0SgFjrTAToJGA2Xj4Fn7MkbAy--LxSK-xvvItkX9L7yUOuhbxwki6d3WVQD-Nvdt6TIzQ&csuir=1&aioh=3&mtid=oFW7aoiOLNeM-d8Pno-JyA8&udm=50#lfId=ChxjMe>)
+
+### 0203 | 2026-09-29 08:21:19 | You
+
+```text
+https://www.google.com/search?q=so+lowercase+phi+is+open+and+uppercase+is+closed+in+cyclical&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTEzODczajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7vnQU6QWmnWBznGVLK1G8Rykll-s04_elOQbRleKreNqN6HKk20ZyZ-d8SXGwXAN8EIvObbF33JhfJkDoGbxHTj31od_&aep=10&ntc=1&sxsrf=APpeQnultfOVJKoDtOesEzNPRAK1MhURBQ%3A1790661948859&mstk=AUtExfDV4etGLD8nimUKfp3cAVPh96rL5y7PxxtGDltIbTzXb24LdIpz6mTqbHZXCbd0PYl5J2V-SIkXaB6WfDXQI5j8XdgAjJZGCjPPO0WpNXG0ELZfbT_1JiRe4W7lf7_WNuU85zVkPvD_Lq60OWwHrf2muG3uzxMgqJAvo1xHCzvW5bHSzz7qWHUTAk8EFcL-0o9kcr4_Z2zgXEWGRn-mWMHieo0n-EFGalqtfVVMLWX4aW2rXCinNbxNIfNbT0e-LMLf7rl2PbS1rEI7626QOTkPyBozRF9Po_eRBUrhtsjuHlUoS2_3W-CbaQRzv_0ufYMMnh9nJLfi0g&csuir=1&aioh=3&mtid=oFW7aoiOLNeM-d8Pno-JyA8&udm=50#lfId=ChxjMe
+```
+
+Links: [Link 1](<https://www.google.com/search?q=so+lowercase+phi+is+open+and+uppercase+is+closed+in+cyclical&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTEzODczajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7vnQU6QWmnWBznGVLK1G8Rykll-s04_elOQbRleKreNqN6HKk20ZyZ-d8SXGwXAN8EIvObbF33JhfJkDoGbxHTj31od_&aep=10&ntc=1&sxsrf=APpeQnultfOVJKoDtOesEzNPRAK1MhURBQ%3A1790661948859&mstk=AUtExfDV4etGLD8nimUKfp3cAVPh96rL5y7PxxtGDltIbTzXb24LdIpz6mTqbHZXCbd0PYl5J2V-SIkXaB6WfDXQI5j8XdgAjJZGCjPPO0WpNXG0ELZfbT_1JiRe4W7lf7_WNuU85zVkPvD_Lq60OWwHrf2muG3uzxMgqJAvo1xHCzvW5bHSzz7qWHUTAk8EFcL-0o9kcr4_Z2zgXEWGRn-mWMHieo0n-EFGalqtfVVMLWX4aW2rXCinNbxNIfNbT0e-LMLf7rl2PbS1rEI7626QOTkPyBozRF9Po_eRBUrhtsjuHlUoS2_3W-CbaQRzv_0ufYMMnh9nJLfi0g&csuir=1&aioh=3&mtid=oFW7aoiOLNeM-d8Pno-JyA8&udm=50#lfId=ChxjMe>)
+
+### 0204 | 2026-09-29 08:21:27 | You
+
+```text
+Great timing synchronization
+```
+
+### 0205 | 2026-09-29 08:29:19 | You
+
+```text
+https://www.google.com/search?q=so+lowercase+phi+is+open+and+uppercase+is+closed+in+cyclical&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTEzODczajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7vnQU6QWmnWBznGVLK1G8Rykll-s04_elOQbRleKreNqN6HKk20ZyZ-d8SXGwXAN8EIvObbF33JhfJkDoGbxHTj31od_&aep=10&ntc=1&sxsrf=APpeQnultfOVJKoDtOesEzNPRAK1MhURBQ%3A1790661948859&mstk=AUtExfBLq4EWFYXzZ7tYWGzHgfsCx-X6KeqHRq_Y7Ev_CPqN7RK-TBl3GC1BHtXT4kqdO-Ma-KTZsaPOIJ642TQ3ETdFbXGZaoktjqcxh24DVIKoqZjcQQ9wtAZekiZgAlgV74Ej9M5Fg2vIIA4npOh-P0tkR_IQ_NMSgKDmNm3SvCaINap8Wasec2SmhVds0yBj2n2FVZFrnqOEgCmRBKjvdi4qEHkNZqxWswu0PMSQmGaM-2bD1OazOpcRJFsOE1Sz563jXxYX-dilaAd3GnKb-kQozgrKDp3miCdzoOAvmJ1za3Emnu1vItCUKyDQ94X_xTQsCG1HA9XXUA&csuir=1&aioh=3&mtid=oFW7aoiOLNeM-d8Pno-JyA8&udm=50#lfId=ChxjMe
+```
+
+Links: [Link 1](<https://www.google.com/search?q=so+lowercase+phi+is+open+and+uppercase+is+closed+in+cyclical&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTEzODczajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7vnQU6QWmnWBznGVLK1G8Rykll-s04_elOQbRleKreNqN6HKk20ZyZ-d8SXGwXAN8EIvObbF33JhfJkDoGbxHTj31od_&aep=10&ntc=1&sxsrf=APpeQnultfOVJKoDtOesEzNPRAK1MhURBQ%3A1790661948859&mstk=AUtExfBLq4EWFYXzZ7tYWGzHgfsCx-X6KeqHRq_Y7Ev_CPqN7RK-TBl3GC1BHtXT4kqdO-Ma-KTZsaPOIJ642TQ3ETdFbXGZaoktjqcxh24DVIKoqZjcQQ9wtAZekiZgAlgV74Ej9M5Fg2vIIA4npOh-P0tkR_IQ_NMSgKDmNm3SvCaINap8Wasec2SmhVds0yBj2n2FVZFrnqOEgCmRBKjvdi4qEHkNZqxWswu0PMSQmGaM-2bD1OazOpcRJFsOE1Sz563jXxYX-dilaAd3GnKb-kQozgrKDp3miCdzoOAvmJ1za3Emnu1vItCUKyDQ94X_xTQsCG1HA9XXUA&csuir=1&aioh=3&mtid=oFW7aoiOLNeM-d8Pno-JyA8&udm=50#lfId=ChxjMe>)
+
+### 0206 | 2026-09-29 08:41:33 | You
+
+```text
+https://www.google.com/search?q=skulking+as+in+bawing+teardrop+rupert&client=ms-android-xiaomi-terr2-rso2&hs=siiq&sca_esv=a6b539e48a8c50fd&sxsrf=APpeQnuDeUu7O7-zpYgC3acOO_DkqsrP3A%3A1790663584602&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjb_vzWlZOXAxWFRv4FHRV6NbsQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfA_I0dhq3PkN8hlkcf5kzls4MpUQhBuNOhiQOMNvU1TY-opDj4WB23imuu0a4tIEZw7XSLo4aJm8V4sR1GqjuyRY9tGZnj0MlsfxvBNHT8EwUOT2ZDX370yVrMX_kf2Ws6mfZIxOHdxI08sxUhcGO8L0BvYDii0qG5ZpjqANbf2lkr_zNIWMba065SOU1K_W8bjaDBu0fUiYdnUkvvlrkK4pI0gy0AdLCAxvXX56cmwG-NpTlOeISXJ26WXasCH7xTFif_KeTST4g&csuir=1&mtid=uFu7avC6I4269u8PptGV6QM&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=skulking+as+in+bawing+teardrop+rupert&client=ms-android-xiaomi-terr2-rso2&hs=siiq&sca_esv=a6b539e48a8c50fd&sxsrf=APpeQnuDeUu7O7-zpYgC3acOO_DkqsrP3A%3A1790663584602&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjb_vzWlZOXAxWFRv4FHRV6NbsQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfA_I0dhq3PkN8hlkcf5kzls4MpUQhBuNOhiQOMNvU1TY-opDj4WB23imuu0a4tIEZw7XSLo4aJm8V4sR1GqjuyRY9tGZnj0MlsfxvBNHT8EwUOT2ZDX370yVrMX_kf2Ws6mfZIxOHdxI08sxUhcGO8L0BvYDii0qG5ZpjqANbf2lkr_zNIWMba065SOU1K_W8bjaDBu0fUiYdnUkvvlrkK4pI0gy0AdLCAxvXX56cmwG-NpTlOeISXJ26WXasCH7xTFif_KeTST4g&csuir=1&mtid=uFu7avC6I4269u8PptGV6QM&udm=50>)
+
+### 0207 | 2026-09-29 08:43:48 | You
+
+```text
+https://www.google.com/search?q=skulking+as+in+bawing+teardrop+rupert&client=ms-android-xiaomi-terr2-rso2&hs=siiq&sca_esv=a6b539e48a8c50fd&sxsrf=APpeQnuDeUu7O7-zpYgC3acOO_DkqsrP3A%3A1790663584602&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjb_vzWlZOXAxWFRv4FHRV6NbsQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDzVT1JE3mur0Kt7MTRFqlG2wUA0Quuk4JbARz_dcPh15wkLjXjl6hmpDDqNo871V_gF2qfYuJJndtezeAEgKwM03zphI73SwIbRb-cdjtxtWcqMJCkZsLecSsvOqGJhCVIFv9PCD-cg6ahm1iSy3HHr1mBQvVzClQ3blJXQZELl9VqqfjY8uI3J1V32Bku45ijRBdg7AYlgJ8GBfBV5uzwxFHW8fB8TnB0pfnah5Y_hmqqwnCv--YX3X1v4nyO0a5vwt165bUGPA&csuir=1&mtid=uFu7avC6I4269u8PptGV6QM&udm=50&lns_mode=cvst
+```
+
+Links: [Link 1](<https://www.google.com/search?q=skulking+as+in+bawing+teardrop+rupert&client=ms-android-xiaomi-terr2-rso2&hs=siiq&sca_esv=a6b539e48a8c50fd&sxsrf=APpeQnuDeUu7O7-zpYgC3acOO_DkqsrP3A%3A1790663584602&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjb_vzWlZOXAxWFRv4FHRV6NbsQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDzVT1JE3mur0Kt7MTRFqlG2wUA0Quuk4JbARz_dcPh15wkLjXjl6hmpDDqNo871V_gF2qfYuJJndtezeAEgKwM03zphI73SwIbRb-cdjtxtWcqMJCkZsLecSsvOqGJhCVIFv9PCD-cg6ahm1iSy3HHr1mBQvVzClQ3blJXQZELl9VqqfjY8uI3J1V32Bku45ijRBdg7AYlgJ8GBfBV5uzwxFHW8fB8TnB0pfnah5Y_hmqqwnCv--YX3X1v4nyO0a5vwt165bUGPA&csuir=1&mtid=uFu7avC6I4269u8PptGV6QM&udm=50&lns_mode=cvst>)
+
+### 0208 | 2026-09-29 09:11:46 | You
+
+```text
+https://www.google.com/search?q=skulking+as+in+bawing+teardrop+rupert&client=ms-android-xiaomi-terr2-rso2&hs=siiq&sca_esv=a6b539e48a8c50fd&sxsrf=APpeQnuDeUu7O7-zpYgC3acOO_DkqsrP3A%3A1790663584602&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjb_vzWlZOXAxWFRv4FHRV6NbsQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDq71ugvId1DqSvwIDHzJEvgCpJWQgOdIW08la2tdFN9-TkubA2s0fc7R6tV4AIvW8s4Iy7_odixm3SMvSj8BmPsZB7RXUpdoAev9cFVAi-FB-JnWHDmb5eDFDMpcGbz4VnU5cyRZbLKDtErNX1VfVVTa2yUBx7mjbcsncOfvKK1EyhDlp-T3ZrG9j9Y9ylqw6u20xjXT5TuJpJ933whr9Ttk8tJIjN95ys_j9y7v0dBGkaFe2qoQ-3oIDFGUKhLiLokzL7fp3V4A&csuir=1&mtid=uFu7avC6I4269u8PptGV6QM&lns_mode=cvst&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=skulking+as+in+bawing+teardrop+rupert&client=ms-android-xiaomi-terr2-rso2&hs=siiq&sca_esv=a6b539e48a8c50fd&sxsrf=APpeQnuDeUu7O7-zpYgC3acOO_DkqsrP3A%3A1790663584602&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjb_vzWlZOXAxWFRv4FHRV6NbsQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDq71ugvId1DqSvwIDHzJEvgCpJWQgOdIW08la2tdFN9-TkubA2s0fc7R6tV4AIvW8s4Iy7_odixm3SMvSj8BmPsZB7RXUpdoAev9cFVAi-FB-JnWHDmb5eDFDMpcGbz4VnU5cyRZbLKDtErNX1VfVVTa2yUBx7mjbcsncOfvKK1EyhDlp-T3ZrG9j9Y9ylqw6u20xjXT5TuJpJ933whr9Ttk8tJIjN95ys_j9y7v0dBGkaFe2qoQ-3oIDFGUKhLiLokzL7fp3V4A&csuir=1&mtid=uFu7avC6I4269u8PptGV6QM&lns_mode=cvst&udm=50>)
+
+### 0209 | 2026-09-29 09:29:56 | You
+
+```text
+https://www.google.com/search?q=skulking+as+in+bawing+teardrop+rupert&client=ms-android-xiaomi-terr2-rso2&hs=siiq&sca_esv=a6b539e48a8c50fd&sxsrf=APpeQnuDeUu7O7-zpYgC3acOO_DkqsrP3A%3A1790663584602&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjb_vzWlZOXAxWFRv4FHRV6NbsQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCkpxsIxomDyj1JARmIwJP5I0PZtQ7YSL1-T0jiMdsFIJd8iFusT6837EFTKR_vFC6h2sgFfZ3DbPDn2Cz7YRprs4IbC1ADG7SzXRcTrBMb3hRFNAPOf_o_MSRFtifdGqqN7zC4aqcBceLqWFY-LPRIStW5RmnNs_lgRKASIEgHrueXLpkhnRImqZOgzkWDsQMDpz7num4QfpjyHzZkAJ5Loy1JRzBHz728p_ZNWK65mRWfHzLacn8_rcBsWqU1bXjXBRBKyiGm_w&csuir=1&mtid=uFu7avC6I4269u8PptGV6QM&lns_mode=cvst&elids=CKvaj8TykKbWpgEQARgBIhAx4eyZDdrvJtebqajXt-0-OPjfiYCYk5cDSAFQAmoA&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=skulking+as+in+bawing+teardrop+rupert&client=ms-android-xiaomi-terr2-rso2&hs=siiq&sca_esv=a6b539e48a8c50fd&sxsrf=APpeQnuDeUu7O7-zpYgC3acOO_DkqsrP3A%3A1790663584602&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjb_vzWlZOXAxWFRv4FHRV6NbsQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCkpxsIxomDyj1JARmIwJP5I0PZtQ7YSL1-T0jiMdsFIJd8iFusT6837EFTKR_vFC6h2sgFfZ3DbPDn2Cz7YRprs4IbC1ADG7SzXRcTrBMb3hRFNAPOf_o_MSRFtifdGqqN7zC4aqcBceLqWFY-LPRIStW5RmnNs_lgRKASIEgHrueXLpkhnRImqZOgzkWDsQMDpz7num4QfpjyHzZkAJ5Loy1JRzBHz728p_ZNWK65mRWfHzLacn8_rcBsWqU1bXjXBRBKyiGm_w&csuir=1&mtid=uFu7avC6I4269u8PptGV6QM&lns_mode=cvst&elids=CKvaj8TykKbWpgEQARgBIhAx4eyZDdrvJtebqajXt-0-OPjfiYCYk5cDSAFQAmoA&udm=50>)
+
+### 0210 | 2026-09-29 09:42:16 | You
+
+```text
+https://www.google.com/search?q=skulking+as+in+bawing+teardrop+rupert&client=ms-android-xiaomi-terr2-rso2&hs=siiq&sca_esv=a6b539e48a8c50fd&sxsrf=APpeQnuDeUu7O7-zpYgC3acOO_DkqsrP3A%3A1790663584602&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjb_vzWlZOXAxWFRv4FHRV6NbsQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBRPiU7O789xhTm6KaR3b6wqlGuP3KlntxFAwoRCCzgQ9u5MqwN1RJ-lmma9ix-2jPxWgS-6163Tl_kessc0FAA9TjN0x5syuexvinTF_cOKCIf3MN32Hnr5agFiuz1Kjou3s9VQVTrmK7j4k2bEHF8QXkjT67Q_BKTB7pAt3Dq8Xx9i9fZPzkwBHUPdmA5c5JQCiZwF9QqnpR-tlc116KXNg-n7dFWWqSAb_YlDtY41G-mk9QgcaBBdmTkQOfZnT38uMDiSzst6A&csuir=1&mtid=uFu7avC6I4269u8PptGV6QM&lns_mode=cvst&elids=CKvaj8TykKbWpgEQARgBIhAx4eyZDdrvJtebqajXt-0-OPjfiYCYk5cDSAFQAmoA&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=skulking+as+in+bawing+teardrop+rupert&client=ms-android-xiaomi-terr2-rso2&hs=siiq&sca_esv=a6b539e48a8c50fd&sxsrf=APpeQnuDeUu7O7-zpYgC3acOO_DkqsrP3A%3A1790663584602&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjb_vzWlZOXAxWFRv4FHRV6NbsQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBRPiU7O789xhTm6KaR3b6wqlGuP3KlntxFAwoRCCzgQ9u5MqwN1RJ-lmma9ix-2jPxWgS-6163Tl_kessc0FAA9TjN0x5syuexvinTF_cOKCIf3MN32Hnr5agFiuz1Kjou3s9VQVTrmK7j4k2bEHF8QXkjT67Q_BKTB7pAt3Dq8Xx9i9fZPzkwBHUPdmA5c5JQCiZwF9QqnpR-tlc116KXNg-n7dFWWqSAb_YlDtY41G-mk9QgcaBBdmTkQOfZnT38uMDiSzst6A&csuir=1&mtid=uFu7avC6I4269u8PptGV6QM&lns_mode=cvst&elids=CKvaj8TykKbWpgEQARgBIhAx4eyZDdrvJtebqajXt-0-OPjfiYCYk5cDSAFQAmoA&udm=50>)
+
+### 0211 | 2026-09-29 10:26:41 | You
+
+```text
+https://www.google.com/search?q=doperwten+stamppot+met+jus+en+bal+gehakt&client=ms-android-xiaomi-terr2-rso2&hs=9jiq&sca_esv=8b41958295edf98a&sxsrf=APpeQnsOAdCN_9-bfvXwLrIFQqfYgwdiSg%3A1790668364531&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp24vkivhSKxJH-vZPKbAT5TBLshvsiHEySLVwcQrggeuypDbn_bWC-8aLfZpP9MBRQXBaF1jS2nyQctrqGKquljSuaqKE&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwio2Jy-p5OXAxUNygIHHWuxMrYQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBRc8jludPCZQZt7PeyA1_O4c1a_kwghBHirrwIqUinQX_NV2VsustNQu6aFTLGQd1U9GYVPFVrbzRSPtrA7M9bni1SS03yZRgTwPkvh5mGyDpHkIUhaBlEF1lsNOSDV7Yp7dU4Q4NSz8z1eR2FrrIAnfUrbE3Y-QSY7PcTbFR3IYpFwnTtL7GFdEaBWnVl7AkfccjK0mmgLEmba7eyXZ58fKy2jbcbbIIoAhbnzayrTmd8Z4rGJ73hvHH0u6FEY4r3pLyF7zxbETtGvrh3azHH_-M7uY4aHfCX-XOpZQtBuzZCl52qqOrUffjtdv70z7sgZ7hErK5rvg&csuir=1&mtid=T267ao3nDK3Mi-gP2b7YIA&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=doperwten+stamppot+met+jus+en+bal+gehakt&client=ms-android-xiaomi-terr2-rso2&hs=9jiq&sca_esv=8b41958295edf98a&sxsrf=APpeQnsOAdCN_9-bfvXwLrIFQqfYgwdiSg%3A1790668364531&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp24vkivhSKxJH-vZPKbAT5TBLshvsiHEySLVwcQrggeuypDbn_bWC-8aLfZpP9MBRQXBaF1jS2nyQctrqGKquljSuaqKE&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwio2Jy-p5OXAxUNygIHHWuxMrYQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBRc8jludPCZQZt7PeyA1_O4c1a_kwghBHirrwIqUinQX_NV2VsustNQu6aFTLGQd1U9GYVPFVrbzRSPtrA7M9bni1SS03yZRgTwPkvh5mGyDpHkIUhaBlEF1lsNOSDV7Yp7dU4Q4NSz8z1eR2FrrIAnfUrbE3Y-QSY7PcTbFR3IYpFwnTtL7GFdEaBWnVl7AkfccjK0mmgLEmba7eyXZ58fKy2jbcbbIIoAhbnzayrTmd8Z4rGJ73hvHH0u6FEY4r3pLyF7zxbETtGvrh3azHH_-M7uY4aHfCX-XOpZQtBuzZCl52qqOrUffjtdv70z7sgZ7hErK5rvg&csuir=1&mtid=T267ao3nDK3Mi-gP2b7YIA&udm=50>)
+
+### 0212 | 2026-09-29 10:39:52 | You
+
+```text
+https://www.google.com/search?q=doperwten+stamppot+met+jus+en+bal+gehakt&client=ms-android-xiaomi-terr2-rso2&hs=9jiq&sca_esv=8b41958295edf98a&sxsrf=APpeQnsOAdCN_9-bfvXwLrIFQqfYgwdiSg%3A1790668364531&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp24vkivhSKxJH-vZPKbAT5TBLshvsiHEySLVwcQrggeuypDbn_bWC-8aLfZpP9MBRQXBaF1jS2nyQctrqGKquljSuaqKE&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwio2Jy-p5OXAxUNygIHHWuxMrYQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDVPCFCrtJXFrmdIIdKDNnh3GCxpKi--8e-BYT4BeyuAWDkWr8lyYwZ40Bqvzg1X2S0wYitxQdJAyczcPthojf3drnvcg_oSeK3addeR4Xv8SQzjfO9aVFPUr1_VJv8DW5gy-gqEnZODni-nRQR4PtCFHjbsp9-SjkdZGkA89BpTDMhN6ow5ozRxYQD5tamPLkjfU9T_WJow1HMNcBUQU4PsNW0xgu0IwAl7Op4hukMbznd9M4UQHm4R21BW-nJLW_svDRUwueSDCUKxgz5OBFBiWScNAP_sE8uRJD9UGEGLr8NcrGcULcvaWFR_z9UUQtDT7CODqTFQw&csuir=1&mtid=T267ao3nDK3Mi-gP2b7YIA&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=doperwten+stamppot+met+jus+en+bal+gehakt&client=ms-android-xiaomi-terr2-rso2&hs=9jiq&sca_esv=8b41958295edf98a&sxsrf=APpeQnsOAdCN_9-bfvXwLrIFQqfYgwdiSg%3A1790668364531&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp24vkivhSKxJH-vZPKbAT5TBLshvsiHEySLVwcQrggeuypDbn_bWC-8aLfZpP9MBRQXBaF1jS2nyQctrqGKquljSuaqKE&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwio2Jy-p5OXAxUNygIHHWuxMrYQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDVPCFCrtJXFrmdIIdKDNnh3GCxpKi--8e-BYT4BeyuAWDkWr8lyYwZ40Bqvzg1X2S0wYitxQdJAyczcPthojf3drnvcg_oSeK3addeR4Xv8SQzjfO9aVFPUr1_VJv8DW5gy-gqEnZODni-nRQR4PtCFHjbsp9-SjkdZGkA89BpTDMhN6ow5ozRxYQD5tamPLkjfU9T_WJow1HMNcBUQU4PsNW0xgu0IwAl7Op4hukMbznd9M4UQHm4R21BW-nJLW_svDRUwueSDCUKxgz5OBFBiWScNAP_sE8uRJD9UGEGLr8NcrGcULcvaWFR_z9UUQtDT7CODqTFQw&csuir=1&mtid=T267ao3nDK3Mi-gP2b7YIA&udm=50>)
+
+### 0213 | 2026-09-29 11:32:07 | You
+
+```text
+https://mitsloan.mit.edu/ideas-made-to-matter/heeding-popes-call-to-ensure-ai-protects-human-dignity
+```
+
+Links: [Link 1](<https://mitsloan.mit.edu/ideas-made-to-matter/heeding-popes-call-to-ensure-ai-protects-human-dignity>)
+
+### 0214 | 2026-09-29 16:01:02 | You
+
+```text
+<audio omitted>
+```
+
+### 0215 | 2026-09-29 16:03:16 | You
+
+```text
+https://notebooklm.link.google/l8IMUQ8QYjfa
+```
+
+Links: [Link 1](<https://notebooklm.link.google/l8IMUQ8QYjfa>)
+
+### 0216 | 2026-09-29 16:05:09 | You
+
+```text
+https://www.google.com/search?q=schwartz+advocaten+amsterdam&client=ms-android-xiaomi-terr2-rso2&hs=rAOB&sca_esv=94c45538e1e3e219&sxsrf=APpeQnvftbCizwyPofYB6H8N3DyJc7x_Hw%3A1790690675336&ei=c8W7arSHFNH-7_UP3L2KoAk&biw=375&bih=691&oq=advocaat+schwartz+amst&gs_lp=EhNtb2JpbGUtZ3dzLXdpei1zZXJwIhZhZHZvY2FhdCBzY2h3YXJ0eiBhbXN0KgYIABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFEAAY7wVIg0lQ_ApYmz5wAXgCkAEBmAHHC6AB5l2qAQ8wLjEuMS4wLjEuMS44LjO4AQHIAQD4AQGYAg2gApQ5wgIEEAAYR8ICBBAjGCfCAgsQLhiABBiKBRiRAsICCxAAGIAEGIoFGJECwgIFEAAYgATCAg4QLhiABBjHARivARiOBcICCBAAGBYYHhgKwgIFECEYnwXCAggQABiABBiiBJgDAOIDBRIBMSBAiAYBkAYIkgcNMi4xLjEuMC4yLjAuN6AHw1CyBw0wLjEuMS4wLjIuMC43uAeCOcIHBTItNy42yAdwgAgB&sclient=mobile-gws-wiz-serp
+```
+
+Links: [Link 1](<https://www.google.com/search?q=schwartz+advocaten+amsterdam&client=ms-android-xiaomi-terr2-rso2&hs=rAOB&sca_esv=94c45538e1e3e219&sxsrf=APpeQnvftbCizwyPofYB6H8N3DyJc7x_Hw%3A1790690675336&ei=c8W7arSHFNH-7_UP3L2KoAk&biw=375&bih=691&oq=advocaat+schwartz+amst&gs_lp=EhNtb2JpbGUtZ3dzLXdpei1zZXJwIhZhZHZvY2FhdCBzY2h3YXJ0eiBhbXN0KgYIABgWGB4yBhAAGBYYHjILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFEAAY7wVIg0lQ_ApYmz5wAXgCkAEBmAHHC6AB5l2qAQ8wLjEuMS4wLjEuMS44LjO4AQHIAQD4AQGYAg2gApQ5wgIEEAAYR8ICBBAjGCfCAgsQLhiABBiKBRiRAsICCxAAGIAEGIoFGJECwgIFEAAYgATCAg4QLhiABBjHARivARiOBcICCBAAGBYYHhgKwgIFECEYnwXCAggQABiABBiiBJgDAOIDBRIBMSBAiAYBkAYIkgcNMi4xLjEuMC4yLjAuN6AHw1CyBw0wLjEuMS4wLjIuMC43uAeCOcIHBTItNy42yAdwgAgB&sclient=mobile-gws-wiz-serp>)
+
+### 0217 | 2026-09-29 16:06:23 | You
+
+```text
+<audio omitted>
+```
+
+### 0218 | 2026-09-29 16:46:33 | You
+
+```text
+<audio omitted>
+```
+
+### 0219 | 2026-09-29 17:18:18 | You
+
+```text
+<audio omitted>
+```
+
+### 0220 | 2026-09-29 17:55:49 | You
+
+```text
+<image omitted>
+```
+
+### 0221 | 2026-09-29 18:13:47 | You
+
+```text
+<image omitted>
+```
+
+### 0222 | 2026-09-29 19:18:41 | You
+
+```text
+https://www.google.com/search?q=oil+of+olaz&client=ms-android-xiaomi-terr2-rso2&hs=9siq&sca_esv=d1654259742c7a2c&sxsrf=APpeQnvRZhqigJbx4g5zcrTTckclNCs6ng%3A1790701805344&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpD5WmxHV9GQVdPkL5dutr9a05lPz7TUuzqnB5wIjnKo2cbtsIm4_SgHVH1-1WLXMDLQ9E_syXPRdz1WbClH-1p3E923kFDKnpkVB--iJfbd7omu3w&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjz04WIpJSXAxXQYEEAHVGeAC8Q2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCprCPagH75U4QGW4duBh749nEVNBZKRvGJ2rJioV3orCPkVLAFonOfJjrdiR3nD4WQ_Okc_H_3v5eC2q2h5BtrdRdT6lkmmwFcTgO5kG0QrHyvE1fMjeQr0fRRkAyvB5IYyyp0L5iStoe5SqH2pyLI3cJXkykcbPkx67zqLW4spc_koTXRZ28pvm67kslcn_r2lX-yE0FpR_kvnfwLXm9x544perKDffeKJeMa6yMz1p455o13bmVevP99_pyONiqJXGkVS0SWITnGOP-NWANC_mNv1_DPaXhKHyciMNfbBUl0BSAnB8Hz-la64bKqzYFZRNxAip4EMw&csuir=1&mtid=8_C7ao_ZHcGL9u8P_rfEAQ&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=oil+of+olaz&client=ms-android-xiaomi-terr2-rso2&hs=9siq&sca_esv=d1654259742c7a2c&sxsrf=APpeQnvRZhqigJbx4g5zcrTTckclNCs6ng%3A1790701805344&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpD5WmxHV9GQVdPkL5dutr9a05lPz7TUuzqnB5wIjnKo2cbtsIm4_SgHVH1-1WLXMDLQ9E_syXPRdz1WbClH-1p3E923kFDKnpkVB--iJfbd7omu3w&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjz04WIpJSXAxXQYEEAHVGeAC8Q2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCprCPagH75U4QGW4duBh749nEVNBZKRvGJ2rJioV3orCPkVLAFonOfJjrdiR3nD4WQ_Okc_H_3v5eC2q2h5BtrdRdT6lkmmwFcTgO5kG0QrHyvE1fMjeQr0fRRkAyvB5IYyyp0L5iStoe5SqH2pyLI3cJXkykcbPkx67zqLW4spc_koTXRZ28pvm67kslcn_r2lX-yE0FpR_kvnfwLXm9x544perKDffeKJeMa6yMz1p455o13bmVevP99_pyONiqJXGkVS0SWITnGOP-NWANC_mNv1_DPaXhKHyciMNfbBUl0BSAnB8Hz-la64bKqzYFZRNxAip4EMw&csuir=1&mtid=8_C7ao_ZHcGL9u8P_rfEAQ&udm=50>)
+
+### 0223 | 2026-09-29 19:25:14 | You
+
+```text
+https://www.google.com/search?q=stovepipes+rig+that+all+fire+at+different+frequencies+and+pump+fluids+through+them+at+like+a+highly+detailed+ball+of+yarn+or+that+old+windows+screensaver+with+the+pipes+and+stuff&client=ms-android-xiaomi-terr2-rso2&hs=gY3V&sca_esv=d1654259742c7a2c&sxsrf=APpeQnusFElr2GLEV5iyFqI89nxdrQ0uxA%3A1790702517498&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwitqdDbppSXAxXa2wIHHdylAPQQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAbxca98sZJfgBRojmPYpe2-b88fI9lcxU6u9PPA124XmSc_HyREKMlAwFMrvvYEQ5NbNdmWi3bjWGfUF8iKekoimjQ4q_C5sxfDrMKTeyw4kIIoO2zNm17XpqwnvoZid_XVc5Ymi78ARndMAimHbJ6jPhmGKyiYxo45CSTdmrOj8mF15rHdlAKl8WtYWojYy1QwdqcMB0cfD3Bp6S-rJsxEJUaN1jifXOfoHYVBQVBrY-j3XglDsHWMusaj2N6LJXe1rUvVhjGfVdvE994HiwfanpOb4QioMkPzRrXKl8mDttB4p27bzfnrz1rYjduGWVjFM-EZ1nd2g&csuir=1&mtid=uPO7ata-LpCoi-gPkIPoqAo&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=stovepipes+rig+that+all+fire+at+different+frequencies+and+pump+fluids+through+them+at+like+a+highly+detailed+ball+of+yarn+or+that+old+windows+screensaver+with+the+pipes+and+stuff&client=ms-android-xiaomi-terr2-rso2&hs=gY3V&sca_esv=d1654259742c7a2c&sxsrf=APpeQnusFElr2GLEV5iyFqI89nxdrQ0uxA%3A1790702517498&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwitqdDbppSXAxXa2wIHHdylAPQQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAbxca98sZJfgBRojmPYpe2-b88fI9lcxU6u9PPA124XmSc_HyREKMlAwFMrvvYEQ5NbNdmWi3bjWGfUF8iKekoimjQ4q_C5sxfDrMKTeyw4kIIoO2zNm17XpqwnvoZid_XVc5Ymi78ARndMAimHbJ6jPhmGKyiYxo45CSTdmrOj8mF15rHdlAKl8WtYWojYy1QwdqcMB0cfD3Bp6S-rJsxEJUaN1jifXOfoHYVBQVBrY-j3XglDsHWMusaj2N6LJXe1rUvVhjGfVdvE994HiwfanpOb4QioMkPzRrXKl8mDttB4p27bzfnrz1rYjduGWVjFM-EZ1nd2g&csuir=1&mtid=uPO7ata-LpCoi-gPkIPoqAo&udm=50>)
+
+### 0224 | 2026-09-29 20:11:34 | You
+
+```text
+https://www.google.com/search?q=sword+of+damocles+hilt&client=ms-android-xiaomi-terr2-rso2&hs=atiq&sca_esv=d1654259742c7a2c&sxsrf=APpeQnv6pI0Cir_u7SSXLYYfkrLcYZxrNQ%3A1790703446281&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955IbzrbwHf6tkbFbd-nuFdbKth9Y-58t5LtnYgTA4TWDFYCUNl4d7F9XBAwiEq2T2c7SNgrvMxYiRBXL4fnQnnTOewx28&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiw4MCWqpSXAxVZnf0HHQqcOzsQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCdKqsMDQ9KAsY5B9xHl-NEB8gFjyPRnN-0MGBwxSju1lalL5XKt95O1Tcxk-TG_RnI6ZNlPIXjZbBskRuFI1brPKsvtKiSlUZiQnHFkQOdz-lmsGO_tc3Qi1lY34OCpum4Aq6pbpBvWFaPWoR1KXC48LPaRwGetOFtK2FwY1SOZMhbcobDMPMIVctVBdZlWJqEMUvsZWan1OOA185mvNgw0iJKNyXA34p7ScxI6FsRqJUlY71rQ4er-RrLLt3_Clx8X05v5Nmu4V_XgmIBS2P_NAKt1eUId8e7wHt0B3C7GDWU-oke4xcyVayK-1xc8wcbBNmfiaMj0Q&csuir=1&mtid=XPe7avK0Crbs7_UP_N6tQA&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=sword+of+damocles+hilt&client=ms-android-xiaomi-terr2-rso2&hs=atiq&sca_esv=d1654259742c7a2c&sxsrf=APpeQnv6pI0Cir_u7SSXLYYfkrLcYZxrNQ%3A1790703446281&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955IbzrbwHf6tkbFbd-nuFdbKth9Y-58t5LtnYgTA4TWDFYCUNl4d7F9XBAwiEq2T2c7SNgrvMxYiRBXL4fnQnnTOewx28&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiw4MCWqpSXAxVZnf0HHQqcOzsQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCdKqsMDQ9KAsY5B9xHl-NEB8gFjyPRnN-0MGBwxSju1lalL5XKt95O1Tcxk-TG_RnI6ZNlPIXjZbBskRuFI1brPKsvtKiSlUZiQnHFkQOdz-lmsGO_tc3Qi1lY34OCpum4Aq6pbpBvWFaPWoR1KXC48LPaRwGetOFtK2FwY1SOZMhbcobDMPMIVctVBdZlWJqEMUvsZWan1OOA185mvNgw0iJKNyXA34p7ScxI6FsRqJUlY71rQ4er-RrLLt3_Clx8X05v5Nmu4V_XgmIBS2P_NAKt1eUId8e7wHt0B3C7GDWU-oke4xcyVayK-1xc8wcbBNmfiaMj0Q&csuir=1&mtid=XPe7avK0Crbs7_UP_N6tQA&udm=50>)
+
+### 0225 | 2026-09-29 20:42:22 | You
+
+```text
+https://www.google.com/search?q=ribbelchips+why+is+it+ribbly&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTExODE2ajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&aep=10&ntc=1&sxsrf=APpeQntv9XylN07TrVGaDt00RD8LGNpikg%3A1790706957660&mstk=AUtExfD5T07e-mTiKrle2eBvM16MaqU9tyDMozDNEADUt1vRd7WhFGyFuXrz_i8od1ICbZFHmaLGHgk1AY_kqj4HuvZwA_2mwpam0xW_c8jRD95tAoZ8AJHtfO3iieItjg4Ndy-uBtwNSMd0dQy3nDiO20BAOpnjB_bxTvJ0-CGOj-RWexeowQ17ogufyDOP1tqhavNZWRcHE3yp1kxSVGG5dmBC11zo6bSCVFJ1zE9TzqU_TGnytWSu83U4EVCFavRAutsIOjB1L5X5UrjmiD9o0I_uyjXrccnEzHefxGOn40qFRmV8lhhP4piBAUYrD6X6556cIOMsZleoEQ&csuir=1&aioh=3&mtid=RgW8aoqKJevsi-gPrrPRkAU&udm=50#lfId=ChxjMe
+```
+
+Links: [Link 1](<https://www.google.com/search?q=ribbelchips+why+is+it+ribbly&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTExODE2ajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&aep=10&ntc=1&sxsrf=APpeQntv9XylN07TrVGaDt00RD8LGNpikg%3A1790706957660&mstk=AUtExfD5T07e-mTiKrle2eBvM16MaqU9tyDMozDNEADUt1vRd7WhFGyFuXrz_i8od1ICbZFHmaLGHgk1AY_kqj4HuvZwA_2mwpam0xW_c8jRD95tAoZ8AJHtfO3iieItjg4Ndy-uBtwNSMd0dQy3nDiO20BAOpnjB_bxTvJ0-CGOj-RWexeowQ17ogufyDOP1tqhavNZWRcHE3yp1kxSVGG5dmBC11zo6bSCVFJ1zE9TzqU_TGnytWSu83U4EVCFavRAutsIOjB1L5X5UrjmiD9o0I_uyjXrccnEzHefxGOn40qFRmV8lhhP4piBAUYrD6X6556cIOMsZleoEQ&csuir=1&aioh=3&mtid=RgW8aoqKJevsi-gPrrPRkAU&udm=50#lfId=ChxjMe>)
+
+### 0226 | 2026-09-29 20:42:30 | You
+
+```text
+Ismael
+```
+
+### 0227 | 2026-09-29 21:02:20 | You
+
+```text
+https://www.google.com/search?q=ribbelchips+why+is+it+ribbly&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTExODE2ajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&aep=10&ntc=1&sxsrf=APpeQntv9XylN07TrVGaDt00RD8LGNpikg%3A1790706957660&mstk=AUtExfC-jYBueWeX3GG5YxE3cEpiaA-baiTw6up95JN_ocQBn5B9sENnBc4JX2T1HhwgA7ys-_z9V66XLxNPQGkGNznUZOgr_bO5HAsn8UevJPx-LOe0CM_anW-FUnmjr1HUT0kT5aHEDZyYwdUA229OSYW-UBg4s9rShTb9kI5r1Jvyvtqqr-9nbIfPK4lKv4a4Ah0OMrUMoFaB2k2ddnxSu-1WdYXWvsRQprCEbIRU0TSUfkTV5BXfllEdNZY4O7pmlr6JALAU5d8NRHgs-Sk5lzLxODG3GvACg973ukT-B1U6jh5uC5BudH-edTsR71uJf4Tej9byxAGYzA&csuir=1&aioh=3&mtid=RgW8aoqKJevsi-gPrrPRkAU&udm=50#lfId=ChxjMe
+```
+
+Links: [Link 1](<https://www.google.com/search?q=ribbelchips+why+is+it+ribbly&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTExODE2ajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&aep=10&ntc=1&sxsrf=APpeQntv9XylN07TrVGaDt00RD8LGNpikg%3A1790706957660&mstk=AUtExfC-jYBueWeX3GG5YxE3cEpiaA-baiTw6up95JN_ocQBn5B9sENnBc4JX2T1HhwgA7ys-_z9V66XLxNPQGkGNznUZOgr_bO5HAsn8UevJPx-LOe0CM_anW-FUnmjr1HUT0kT5aHEDZyYwdUA229OSYW-UBg4s9rShTb9kI5r1Jvyvtqqr-9nbIfPK4lKv4a4Ah0OMrUMoFaB2k2ddnxSu-1WdYXWvsRQprCEbIRU0TSUfkTV5BXfllEdNZY4O7pmlr6JALAU5d8NRHgs-Sk5lzLxODG3GvACg973ukT-B1U6jh5uC5BudH-edTsR71uJf4Tej9byxAGYzA&csuir=1&aioh=3&mtid=RgW8aoqKJevsi-gPrrPRkAU&udm=50#lfId=ChxjMe>)
+
+### 0228 | 2026-09-29 21:11:30 | You
+
+```text
+https://www.google.com/search?q=ribbelchips+why+is+it+ribbly&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTExODE2ajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&aep=10&ntc=1&sxsrf=APpeQntv9XylN07TrVGaDt00RD8LGNpikg%3A1790706957660&mstk=AUtExfAGVLhxNRnBfU1Hv6wDUu1QbPr-R8OQZPrw9h_tBqYCRxydAiEFgqFpcnq6YGhvBecpFDRxA9AkBxq55TzxhZVW5p_N_IHc9zxlpCuRebWHeLQ_8JEXeqZmz70-8rXk5Pe5hkPtUNluxS3NXvwHyPMv7VFW5N7aKaJ6NMTiXD6FyPI0YW_nKHOe9LLQtsVpOHog7Ei1ITlYtjPJyuK9IvtDZS6AHiQyoaPyQF_lpZulNc9Ww_cb2OaRADnGDwFujuIkqOoiGBP-3leqIalSml9-oXyHa9fJmsNk64hFlwOhsyh2ylVjmjY8z7mkMKoOB3sqbwFw8Kegvw&csuir=1&aioh=3&mtid=RgW8aoqKJevsi-gPrrPRkAU&udm=50#lfId=ChxjMe
+```
+
+Links: [Link 1](<https://www.google.com/search?q=ribbelchips+why+is+it+ribbly&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTExODE2ajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&aep=10&ntc=1&sxsrf=APpeQntv9XylN07TrVGaDt00RD8LGNpikg%3A1790706957660&mstk=AUtExfAGVLhxNRnBfU1Hv6wDUu1QbPr-R8OQZPrw9h_tBqYCRxydAiEFgqFpcnq6YGhvBecpFDRxA9AkBxq55TzxhZVW5p_N_IHc9zxlpCuRebWHeLQ_8JEXeqZmz70-8rXk5Pe5hkPtUNluxS3NXvwHyPMv7VFW5N7aKaJ6NMTiXD6FyPI0YW_nKHOe9LLQtsVpOHog7Ei1ITlYtjPJyuK9IvtDZS6AHiQyoaPyQF_lpZulNc9Ww_cb2OaRADnGDwFujuIkqOoiGBP-3leqIalSml9-oXyHa9fJmsNk64hFlwOhsyh2ylVjmjY8z7mkMKoOB3sqbwFw8Kegvw&csuir=1&aioh=3&mtid=RgW8aoqKJevsi-gPrrPRkAU&udm=50#lfId=ChxjMe>)
+
+### 0229 | 2026-09-29 21:23:49 | You
+
+```text
+https://www.google.com/search?q=phobossy&client=ms-android-xiaomi-terr2-rso2&hs=zFOB&sca_esv=6787776555f7be71&sxsrf=APpeQnsK344OJqvPxDVRt18SynMoQfXSKg%3A1790709774608&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955IbzrbwHf6tkbFbd-nuFdbKth9Y-58t5LtnYgTA4TWDFYCUNl4d7F9XBAwiEq2T2c7SNgrvMxYiRBXL4fnQnnTOewx28&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjshYvgwZSXAxXigf0HHeQ-CFsQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfArxeNTQ_KqwZQHjMruSxZyFxJLZ8sSS4ERFSJDpNf6eMsO57GIAJeKlbxyuTJHWMluNVO-Qu4WTjJoquL7XHf9BYd8rW72qMFNtioMch2aEHD7wo5OC7VxXTZm84eS3Dgb6Abw17Are-sMSR3kgcMUYwnBTMtyOHnFbeqAmxcAkOBtKJlRF9C4dQ69dmk4maZhE_5NiuPpt-WsAkwqeVxgUD6xgEWiu0IBT6BSbQ4tCX5nLj5-8xMG0q1QVK-2Tq1rCtn7pYwAYnUbYQKYAQM75yi9APrvBseNdkNxjlP0e3S7wEe1M1haNptxqSuAL8J5zpr-gtDLSg&csuir=1&mtid=FRC8ao7kN-Dt7_UP4bixiQw&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=phobossy&client=ms-android-xiaomi-terr2-rso2&hs=zFOB&sca_esv=6787776555f7be71&sxsrf=APpeQnsK344OJqvPxDVRt18SynMoQfXSKg%3A1790709774608&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955IbzrbwHf6tkbFbd-nuFdbKth9Y-58t5LtnYgTA4TWDFYCUNl4d7F9XBAwiEq2T2c7SNgrvMxYiRBXL4fnQnnTOewx28&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjshYvgwZSXAxXigf0HHeQ-CFsQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfArxeNTQ_KqwZQHjMruSxZyFxJLZ8sSS4ERFSJDpNf6eMsO57GIAJeKlbxyuTJHWMluNVO-Qu4WTjJoquL7XHf9BYd8rW72qMFNtioMch2aEHD7wo5OC7VxXTZm84eS3Dgb6Abw17Are-sMSR3kgcMUYwnBTMtyOHnFbeqAmxcAkOBtKJlRF9C4dQ69dmk4maZhE_5NiuPpt-WsAkwqeVxgUD6xgEWiu0IBT6BSbQ4tCX5nLj5-8xMG0q1QVK-2Tq1rCtn7pYwAYnUbYQKYAQM75yi9APrvBseNdkNxjlP0e3S7wEe1M1haNptxqSuAL8J5zpr-gtDLSg&csuir=1&mtid=FRC8ao7kN-Dt7_UP4bixiQw&udm=50>)
+
+### 0230 | 2026-09-29 21:50:20 | You
+
+```text
+https://www.google.com/search?q=houden+van+is+psychologische+onzin+je+vindt+iemand+of+niet+en+soms+zijn+ze+weg+en+dan+geen+sex&client=ms-android-xiaomi-terr2-rso2&hs=hviq&sca_esv=407466902c368f5c&sxsrf=APpeQnuhVOo5ZE0-BMofBYuFn6zPiXjcFQ%3A1790711335190&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpPIDOr-Lw4-gOWkwYhx_xnBVbrpM-wvE6KJZYqmK4gSbCrwtoKsbTtbRC2igEGtLu0aonqAk9RAtQqwaQ77YVjVIzj_I&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjSxp3Ix5SXAxWc7wIHHYP9Ox8Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCPpiCfZCUBrI1uWkvRs4ZchVsfGavNBG3JIMLnTEkERtI0BKkQAYHyRibY16_7uBeMC3LC34PbnWaNGJRfG17_0AZovS2CQu5pDonP9Ke5fAuxyWOj0hTm3OcTqTVIYECmocOf6-oXul7UKu9AznToNgpqkEGk5keFTmoR-0q2pRtz4VB9GKImWKiWq5p--KyIsnZyuJKVKLfaGisVfc_E9o1c_35XB5mABbyhV8B1TWZE-CqOmKMvWWrRgo6H9kiW78XWOFiGMw&csuir=1&mtid=KRa8asqMG5zsi-gPhoeEuAw&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=houden+van+is+psychologische+onzin+je+vindt+iemand+of+niet+en+soms+zijn+ze+weg+en+dan+geen+sex&client=ms-android-xiaomi-terr2-rso2&hs=hviq&sca_esv=407466902c368f5c&sxsrf=APpeQnuhVOo5ZE0-BMofBYuFn6zPiXjcFQ%3A1790711335190&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpPIDOr-Lw4-gOWkwYhx_xnBVbrpM-wvE6KJZYqmK4gSbCrwtoKsbTtbRC2igEGtLu0aonqAk9RAtQqwaQ77YVjVIzj_I&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjSxp3Ix5SXAxWc7wIHHYP9Ox8Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCPpiCfZCUBrI1uWkvRs4ZchVsfGavNBG3JIMLnTEkERtI0BKkQAYHyRibY16_7uBeMC3LC34PbnWaNGJRfG17_0AZovS2CQu5pDonP9Ke5fAuxyWOj0hTm3OcTqTVIYECmocOf6-oXul7UKu9AznToNgpqkEGk5keFTmoR-0q2pRtz4VB9GKImWKiWq5p--KyIsnZyuJKVKLfaGisVfc_E9o1c_35XB5mABbyhV8B1TWZE-CqOmKMvWWrRgo6H9kiW78XWOFiGMw&csuir=1&mtid=KRa8asqMG5zsi-gPhoeEuAw&udm=50>)
+
+### 0231 | 2026-09-29 21:50:55 | You
+
+```text
+Averechts cuckolding werkt niet
+```
+
+### 0232 | 2026-09-29 22:05:19 | You
+
+```text
+<image omitted>
+```
+
+### 0233 | 2026-09-29 22:32:44 | You
+
+```text
+https://www.google.com/search?q=so+events+or+haplenings+are+magnets+for+imbicils+that+literally+are+mamals&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTIzMTY0ajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBJP_8s1JrXgV7_edZdNiJisLCUzXkik5RMqtveKIdmxaGb48YyjJXOAFu1Y71e_zdrUwIHsAyKs8JTsW98igcleJcWl-hkwfo_sPceqCpU09yBzR4&aep=10&ntc=1&sxsrf=APpeQntLpCN2ZEFG6I6lBO0Z8DA-DC7OTA%3A1790711592788&mstk=AUtExfAZuy2ElxdyY_LrIYXjdglBHDvyxTn4exDudpijGGlAUkT-x7RZgONkceNJV8rr13NwHd6_s4tZT6vKv2N8w7EgDg5LlPOcAfq6OFt2f1njcpzDm48Mk4KKOxmp7g3nXTT1BACYh_5TNjbYGER-vJXvq1UQpJl4gZI&csuir=1&aioh=3&udm=50&mtid=OyC8aqGHMsTUi-gPuPyBuAc#lfId=ChxjMe
+```
+
+Links: [Link 1](<https://www.google.com/search?q=so+events+or+haplenings+are+magnets+for+imbicils+that+literally+are+mamals&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTIzMTY0ajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBJP_8s1JrXgV7_edZdNiJisLCUzXkik5RMqtveKIdmxaGb48YyjJXOAFu1Y71e_zdrUwIHsAyKs8JTsW98igcleJcWl-hkwfo_sPceqCpU09yBzR4&aep=10&ntc=1&sxsrf=APpeQntLpCN2ZEFG6I6lBO0Z8DA-DC7OTA%3A1790711592788&mstk=AUtExfAZuy2ElxdyY_LrIYXjdglBHDvyxTn4exDudpijGGlAUkT-x7RZgONkceNJV8rr13NwHd6_s4tZT6vKv2N8w7EgDg5LlPOcAfq6OFt2f1njcpzDm48Mk4KKOxmp7g3nXTT1BACYh_5TNjbYGER-vJXvq1UQpJl4gZI&csuir=1&aioh=3&udm=50&mtid=OyC8aqGHMsTUi-gPuPyBuAc#lfId=ChxjMe>)
+
+### 0234 | 2026-09-29 22:32:58 | You
+
+```text
+Al winner vs 1 is just a statistic
+```
+
+### 0235 | 2026-09-29 22:39:12 | You
+
+```text
+https://www.google.com/search?q=so+events+or+haplenings+are+magnets+for+imbicils+that+literally+are+mamals&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTIzMTY0ajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBJP_8s1JrXgV7_edZdNiJisLCUzXkik5RMqtveKIdmxaGb48YyjJXOAFu1Y71e_zdrUwIHsAyKs8JTsW98igcleJcWl-hkwfo_sPceqCpU09yBzR4&aep=10&ntc=1&sxsrf=APpeQntLpCN2ZEFG6I6lBO0Z8DA-DC7OTA%3A1790711592788&mstk=AUtExfAYIgJOU1yinW-BUqMbxhGni48ytYfSw_KGrpWhU98tKZcuUVoMijg-XunX3ZRWPHZZXvcJ4UTDLEf7NQ-t2CLb0ze-isYh00nop8hPcyPD3_EX17EZ4HSisCFE3Tk2VH1FLvqqSe8GKhrwijjC28SC5CQ-U2fZ-Jbo_3plrfvU7xiRIrtLRJMjmxBhhaWRQX8x69wfOmPlTW4Rmj7XFgCQl32IS1rdutcLhjVZe4sdRAozKt4ynfVO6AUXNnKb35Vtumm2YU0bpw&csuir=1&aioh=3&mtid=OyC8aqGHMsTUi-gPuPyBuAc&udm=50#lfId=ChxjMe
+```
+
+Links: [Link 1](<https://www.google.com/search?q=so+events+or+haplenings+are+magnets+for+imbicils+that+literally+are+mamals&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTIzMTY0ajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBJP_8s1JrXgV7_edZdNiJisLCUzXkik5RMqtveKIdmxaGb48YyjJXOAFu1Y71e_zdrUwIHsAyKs8JTsW98igcleJcWl-hkwfo_sPceqCpU09yBzR4&aep=10&ntc=1&sxsrf=APpeQntLpCN2ZEFG6I6lBO0Z8DA-DC7OTA%3A1790711592788&mstk=AUtExfAYIgJOU1yinW-BUqMbxhGni48ytYfSw_KGrpWhU98tKZcuUVoMijg-XunX3ZRWPHZZXvcJ4UTDLEf7NQ-t2CLb0ze-isYh00nop8hPcyPD3_EX17EZ4HSisCFE3Tk2VH1FLvqqSe8GKhrwijjC28SC5CQ-U2fZ-Jbo_3plrfvU7xiRIrtLRJMjmxBhhaWRQX8x69wfOmPlTW4Rmj7XFgCQl32IS1rdutcLhjVZe4sdRAozKt4ynfVO6AUXNnKb35Vtumm2YU0bpw&csuir=1&aioh=3&mtid=OyC8aqGHMsTUi-gPuPyBuAc&udm=50#lfId=ChxjMe>)
+
+### 0236 | 2026-09-29 22:49:21 | You
+
+```text
+https://www.google.com/search?q=competing+developments+in+a+homeostasis&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTEwODQxajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&aep=10&ntc=1&sxsrf=APpeQnvNkZEtneimOgXYaGj6ZpsdRp5y3A%3A1790714809347&mstk=AUtExfBI8CZ_XD73tdeoocZMxOZGlsnsq69WDcGMIrc2-wj-B5hWAT2_LIJItVYD_AHknHEAKcIyyP7qb1IGVROTyQz7kAJ-gWyG5FPr2XGubCvkSLy3pBWMv4TBvpr_z3dQTSDH6zZbRMU6PsNjEt0OZvfBzRB1qINQ0Sy2mLQ6T-JWw2_7s-tX4feRbDbTjQNyfe7R2DoWbfq0Dw-BydEjdAsDrB6C8uXobQmNd_gP6QQhkb4TipweD9fVLAY30jzDa7bs3Bljz39bvi6FWpneEazHTD1ZW0L8gnNIK5R_fF7t7kVtLsRI5Tv_YRb46uM2tjy0j7Hdu1b9nQ&csuir=1&aioh=3&mtid=BiS8aou3NqXli-gP64m2gAc&udm=50#lfId=ChxjMe
+```
+
+Links: [Link 1](<https://www.google.com/search?q=competing+developments+in+a+homeostasis&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTEwODQxajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&aep=10&ntc=1&sxsrf=APpeQnvNkZEtneimOgXYaGj6ZpsdRp5y3A%3A1790714809347&mstk=AUtExfBI8CZ_XD73tdeoocZMxOZGlsnsq69WDcGMIrc2-wj-B5hWAT2_LIJItVYD_AHknHEAKcIyyP7qb1IGVROTyQz7kAJ-gWyG5FPr2XGubCvkSLy3pBWMv4TBvpr_z3dQTSDH6zZbRMU6PsNjEt0OZvfBzRB1qINQ0Sy2mLQ6T-JWw2_7s-tX4feRbDbTjQNyfe7R2DoWbfq0Dw-BydEjdAsDrB6C8uXobQmNd_gP6QQhkb4TipweD9fVLAY30jzDa7bs3Bljz39bvi6FWpneEazHTD1ZW0L8gnNIK5R_fF7t7kVtLsRI5Tv_YRb46uM2tjy0j7Hdu1b9nQ&csuir=1&aioh=3&mtid=BiS8aou3NqXli-gP64m2gAc&udm=50#lfId=ChxjMe>)
+
+### 0237 | 2026-09-29 23:07:16 | You
+
+```text
+<audio omitted>
+```
+
+### 0238 | 2026-09-29 23:13:43 | You
+
+```text
+https://www.google.com/search?q=so+wurmoil+maggots&client=ms-android-xiaomi-terr2-rso2&hs=3wiq&sca_esv=999abd0aa831a2af&sxsrf=APpeQnsQubviX3ODYFD7-PY5tSUgbR4n7w%3A1790716348450&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955HC4dEhTD85WaiWkSD5EjFnrnkXf8uSwU1OjdTZmfoiWVgODsrQlv49kLZ63PjUD4Ylh3ioGlhPObtZQ3tSCsBQwnjKN&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwibvN6e2pSXAxUe9gIHHQ8eAXkQ2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCLF86J_y7U2PXTZWP6oU9QqVUnt0qSXkF-J2yPcswf6RKGBJ5cTv2M6yKpFv2vhxF_R-czyOvrNO5_8VK4XjE8G5GtdYDmY5dq5N0Wt9UJ0os7ds-tf7z0kI42MOJjmaRXw9J2mAbKuQruIMTslZNpyo_dZP6tobnbfzd-AjNkUB5DMoBpDep2SWMbmp5rHM7Nl2tDhPE--vB3JA-FeOsPVsSCiJrHexoKRpd80j7VFnYD3dtsFiqZvowW0Ba4j-xso7ujj5gtCg&csuir=1&mtid=xSm8aovKKpzsi-gPhoeEuAw&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=so+wurmoil+maggots&client=ms-android-xiaomi-terr2-rso2&hs=3wiq&sca_esv=999abd0aa831a2af&sxsrf=APpeQnsQubviX3ODYFD7-PY5tSUgbR4n7w%3A1790716348450&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955HC4dEhTD85WaiWkSD5EjFnrnkXf8uSwU1OjdTZmfoiWVgODsrQlv49kLZ63PjUD4Ylh3ioGlhPObtZQ3tSCsBQwnjKN&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwibvN6e2pSXAxUe9gIHHQ8eAXkQ2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCLF86J_y7U2PXTZWP6oU9QqVUnt0qSXkF-J2yPcswf6RKGBJ5cTv2M6yKpFv2vhxF_R-czyOvrNO5_8VK4XjE8G5GtdYDmY5dq5N0Wt9UJ0os7ds-tf7z0kI42MOJjmaRXw9J2mAbKuQruIMTslZNpyo_dZP6tobnbfzd-AjNkUB5DMoBpDep2SWMbmp5rHM7Nl2tDhPE--vB3JA-FeOsPVsSCiJrHexoKRpd80j7VFnYD3dtsFiqZvowW0Ba4j-xso7ujj5gtCg&csuir=1&mtid=xSm8aovKKpzsi-gPhoeEuAw&udm=50>)
+
+### 0239 | 2026-09-29 23:13:57 | You
+
+```text
+Drutatol
+```
+
+### 0240 | 2026-09-29 23:15:16 | You
+
+```text
+https://www.google.com/search?q=so+wurmoil+maggots&client=ms-android-xiaomi-terr2-rso2&hs=3wiq&sca_esv=999abd0aa831a2af&sxsrf=APpeQnsQubviX3ODYFD7-PY5tSUgbR4n7w%3A1790716348450&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955HC4dEhTD85WaiWkSD5EjFnrnkXf8uSwU1OjdTZmfoiWVgODsrQlv49kLZ63PjUD4Ylh3ioGlhPObtZQ3tSCsBQwnjKN&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwibvN6e2pSXAxUe9gIHHQ8eAXkQ2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB-0JfzlF3jKhYILGcYzW5Df0qWj-A12LmuleKL0_kuVAyyy7wWDAqh-t9_YI-az8tLRk6STCJJ36k_o4AsILxBztSPhnAooeHDbXSsbdpIYZ1U401e7yXIQ1P3OBV-hfo9PEUlqcJR_Ta4x0QpPfZx7rqGC84ks8RQDmOjdallCXT7zg1YcsaVMNSBeZDYGUMkK0T50h9IMFNQPtkh39Fciq69aQjNOvv3T0O7RtohM77kXJA7HJwf9b2SMsNJVwq1pkA1xgYR6g&csuir=1&mtid=xSm8aovKKpzsi-gPhoeEuAw&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=so+wurmoil+maggots&client=ms-android-xiaomi-terr2-rso2&hs=3wiq&sca_esv=999abd0aa831a2af&sxsrf=APpeQnsQubviX3ODYFD7-PY5tSUgbR4n7w%3A1790716348450&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955HC4dEhTD85WaiWkSD5EjFnrnkXf8uSwU1OjdTZmfoiWVgODsrQlv49kLZ63PjUD4Ylh3ioGlhPObtZQ3tSCsBQwnjKN&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwibvN6e2pSXAxUe9gIHHQ8eAXkQ2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB-0JfzlF3jKhYILGcYzW5Df0qWj-A12LmuleKL0_kuVAyyy7wWDAqh-t9_YI-az8tLRk6STCJJ36k_o4AsILxBztSPhnAooeHDbXSsbdpIYZ1U401e7yXIQ1P3OBV-hfo9PEUlqcJR_Ta4x0QpPfZx7rqGC84ks8RQDmOjdallCXT7zg1YcsaVMNSBeZDYGUMkK0T50h9IMFNQPtkh39Fciq69aQjNOvv3T0O7RtohM77kXJA7HJwf9b2SMsNJVwq1pkA1xgYR6g&csuir=1&mtid=xSm8aovKKpzsi-gPhoeEuAw&udm=50>)
+
+### 0241 | 2026-09-29 23:17:53 | You
+
+```text
+Goddesstiny not big Berta and all rejected productions
+```
+
+### 0242 | 2026-09-29 23:32:04 | You
+
+```text
+<audio omitted>
+```
+
+## 2026-09-30
+
+### 0243 | 2026-09-30 01:49:49 | You
+
+```text
+<audio omitted>
+```
+
+### 0244 | 2026-09-30 01:53:53 | You
+
+```text
+<audio omitted>
+```
+
+### 0245 | 2026-09-30 01:56:29 | You
+
+```text
+<audio omitted>
+```
+
+### 0246 | 2026-09-30 02:00:58 | You
+
+```text
+<audio omitted>
+```
+
+### 0247 | 2026-09-30 02:02:53 | You
+
+```text
+<audio omitted>
+```
+
+### 0248 | 2026-09-30 02:05:08 | You
+
+```text
+<audio omitted>
+```
+
+### 0249 | 2026-09-30 02:08:47 | You
+
+```text
+<audio omitted>
+```
+
+### 0250 | 2026-09-30 02:10:07 | You
+
+```text
+<audio omitted>
+```
+
+### 0251 | 2026-09-30 02:11:24 | You
+
+```text
+<audio omitted>
+```
+
+### 0252 | 2026-09-30 02:12:31 | You
+
+```text
+<audio omitted>
+```
+
+### 0253 | 2026-09-30 02:14:17 | You
+
+```text
+<audio omitted>
+```
+
+### 0254 | 2026-09-30 02:16:56 | You
+
+```text
+<audio omitted>
+```
+
+### 0255 | 2026-09-30 02:19:22 | You
+
+```text
+<audio omitted>
+```
+
+### 0256 | 2026-09-30 02:21:49 | You
+
+```text
+<audio omitted>
+```
+
+### 0257 | 2026-09-30 02:23:14 | You
+
+```text
+<audio omitted>
+```
+
+### 0258 | 2026-09-30 02:24:05 | You
+
+```text
+<audio omitted>
+```
+
+### 0259 | 2026-09-30 02:26:37 | You
+
+```text
+<audio omitted>
+```
+
+### 0260 | 2026-09-30 02:28:13 | You
+
+```text
+<audio omitted>
+```
+
+### 0261 | 2026-09-30 02:28:52 | You
+
+```text
+<audio omitted>
+```
+
+### 0262 | 2026-09-30 02:30:12 | You
+
+```text
+<audio omitted>
+```
+
+### 0263 | 2026-09-30 02:31:08 | You
+
+```text
+<audio omitted>
+```
+
+### 0264 | 2026-09-30 02:35:14 | You
+
+```text
+<audio omitted>
+```
+
+### 0265 | 2026-09-30 02:35:47 | You
+
+```text
+<audio omitted>
+```
+
+### 0266 | 2026-09-30 02:37:20 | You
+
+```text
+<audio omitted>
+```
+
+### 0267 | 2026-09-30 02:39:36 | You
+
+```text
+<audio omitted>
+```
+
+### 0268 | 2026-09-30 02:39:44 | You
+
+```text
+<audio omitted>
+```
+
+### 0269 | 2026-09-30 02:39:51 | You
+
+```text
+<audio omitted>
+```
+
+### 0270 | 2026-09-30 02:39:59 | You
+
+```text
+<audio omitted>
+```
+
+### 0271 | 2026-09-30 02:43:59 | You
+
+```text
+<audio omitted>
+```
+
+### 0272 | 2026-09-30 02:45:55 | You
+
+```text
+<audio omitted>
+```
+
+### 0273 | 2026-09-30 02:48:28 | You
+
+```text
+<audio omitted>
+```
+
+### 0274 | 2026-09-30 02:50:06 | You
+
+```text
+<audio omitted>
+```
+
+### 0275 | 2026-09-30 02:52:25 | You
+
+```text
+<audio omitted>
+```
+
+### 0276 | 2026-09-30 02:59:32 | You
+
+```text
+<audio omitted>
+```
+
+### 0277 | 2026-09-30 03:04:24 | You
+
+```text
+<audio omitted>
+```
+
+### 0278 | 2026-09-30 03:07:44 | You
+
+```text
+<audio omitted>
+```
+
+### 0279 | 2026-09-30 03:11:41 | You
+
+```text
+<audio omitted>
+```
+
+### 0280 | 2026-09-30 03:17:15 | You
+
+```text
+<audio omitted>
+```
+
+### 0281 | 2026-09-30 03:19:53 | You
+
+```text
+<audio omitted>
+```
+
+### 0282 | 2026-09-30 03:19:59 | You
+
+```text
+Meatspin
+```
+
+### 0283 | 2026-09-30 03:27:18 | You
+
+```text
+<audio omitted>
+```
+
+### 0284 | 2026-09-30 03:32:16 | You
+
+```text
+<audio omitted>
+```
+
+### 0285 | 2026-09-30 03:35:06 | You
+
+```text
+<audio omitted>
+```
+
+### 0286 | 2026-09-30 03:41:59 | You
+
+```text
+<audio omitted>
+```
+
+### 0287 | 2026-09-30 07:11:52 | You
+
+```text
+https://www.google.com/search?q=nickelodeon+huey&client=ms-android-xiaomi-terr2-rso2&hs=k4iq&sca_esv=cad085c3aaf4e4b1&sxsrf=APpeQnvQQankxrDBTe24K4KESRs0_OLB6Q%3A1790744953870&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpD5WmxHV9GQVdPkL5dutr9Tsk9Psqv8-BeuxQCSKzxuGpkDeZ8iXI-CcjRzWQgvHa7UDv7gTcjy-XfyZymi1rYZAPBLe-_W1YsnfcpDzTRDqEt_20&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjCwu7mxJWXAxXb8gIHHR34BE4Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCkEa4VDdExWpHsxITR_YOWxfOzrdJK-ZQwcRMBw3emsQfemPF8Kudu5bf64XIwHTlIbm7TeZdAvso8Jhkpzjf098bImV1dU2LRVWw_XYb6k5FEBhIH9fMaWbRreQJr0rkoRQNx5SKGVEvbRn34ELeRr9eF3dKxkpGPFkGz44HcoGKiLFqHW7OOc5xzHEd5DAK9c-Nak8vU_j3QR9Fmc61Cd4q-2u3TC30q8AYSpBE-FpHYSEPYTBgTnS-f7jdGTVHld82lS8CLow&csuir=1&mtid=g5m8ap68G5yF9u8PlN-3iQ8&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=nickelodeon+huey&client=ms-android-xiaomi-terr2-rso2&hs=k4iq&sca_esv=cad085c3aaf4e4b1&sxsrf=APpeQnvQQankxrDBTe24K4KESRs0_OLB6Q%3A1790744953870&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpD5WmxHV9GQVdPkL5dutr9Tsk9Psqv8-BeuxQCSKzxuGpkDeZ8iXI-CcjRzWQgvHa7UDv7gTcjy-XfyZymi1rYZAPBLe-_W1YsnfcpDzTRDqEt_20&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjCwu7mxJWXAxXb8gIHHR34BE4Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCkEa4VDdExWpHsxITR_YOWxfOzrdJK-ZQwcRMBw3emsQfemPF8Kudu5bf64XIwHTlIbm7TeZdAvso8Jhkpzjf098bImV1dU2LRVWw_XYb6k5FEBhIH9fMaWbRreQJr0rkoRQNx5SKGVEvbRn34ELeRr9eF3dKxkpGPFkGz44HcoGKiLFqHW7OOc5xzHEd5DAK9c-Nak8vU_j3QR9Fmc61Cd4q-2u3TC30q8AYSpBE-FpHYSEPYTBgTnS-f7jdGTVHld82lS8CLow&csuir=1&mtid=g5m8ap68G5yF9u8PlN-3iQ8&udm=50>)
+
+### 0288 | 2026-09-30 07:24:40 | You
+
+```text
+https://www.google.com/search?q=ordinance&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDI0NDVqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955HC4dEhTD85WaiWkSD5EjFnrnkXf8uSwU1OjdTZmfoiWVgODsrQlv49kLZ63PjUD4Ylh3ioGlhPObtZQ3tSCsBQwnjKN&aep=10&ntc=1&sxsrf=APpeQns1z4pRM6v1dxbvUd_3fnzZq1NpXQ%3A1790745663009&mstk=AUtExfDkfXT-0RaHLgATavtFmL8BYgQAzAJnIfvH9K-WD77ZHMP7vMt0T18QGYQJVQdyWrrTObVWwCh62W8gz397pUd7f5BhZcJA3StVy--nWBirnpxOZAVPMkXxN1tvFglQoTJbrDrzGeug8wvmcuAP4Zp-JUn9gmQu16L0PHUPTeOA5hA8nhCaft8d1UyP4xN5MbwCggxHqY-cWtzs578FcblIOIn7y85-GibPGKjGRQMMG4UgJFMBvYKn8ALOSDKCGMyPFY-hJsscYh8WZkFU_ZCIHz1ToQfqj6O7y01cx9PrHm9v6XmbFUs5dbu-RSNcNrhiMolnyrCgk_5lr62QxxlCuW4AvFsa3w&csuir=1&aioh=3&mtid=nJy8arDXL9yF9u8P-se16Q8&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=ordinance&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDI0NDVqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955HC4dEhTD85WaiWkSD5EjFnrnkXf8uSwU1OjdTZmfoiWVgODsrQlv49kLZ63PjUD4Ylh3ioGlhPObtZQ3tSCsBQwnjKN&aep=10&ntc=1&sxsrf=APpeQns1z4pRM6v1dxbvUd_3fnzZq1NpXQ%3A1790745663009&mstk=AUtExfDkfXT-0RaHLgATavtFmL8BYgQAzAJnIfvH9K-WD77ZHMP7vMt0T18QGYQJVQdyWrrTObVWwCh62W8gz397pUd7f5BhZcJA3StVy--nWBirnpxOZAVPMkXxN1tvFglQoTJbrDrzGeug8wvmcuAP4Zp-JUn9gmQu16L0PHUPTeOA5hA8nhCaft8d1UyP4xN5MbwCggxHqY-cWtzs578FcblIOIn7y85-GibPGKjGRQMMG4UgJFMBvYKn8ALOSDKCGMyPFY-hJsscYh8WZkFU_ZCIHz1ToQfqj6O7y01cx9PrHm9v6XmbFUs5dbu-RSNcNrhiMolnyrCgk_5lr62QxxlCuW4AvFsa3w&csuir=1&aioh=3&mtid=nJy8arDXL9yF9u8P-se16Q8&udm=50>)
+
+### 0289 | 2026-09-30 07:44:37 | You
+
+```text
+https://www.google.com/search?q=what+are+all+the+faucets+and+pipes&client=ms-android-xiaomi-terr2-rso2&hs=54iq&sca_esv=658d89bb58b2aa3f&sxsrf=APpeQnv9_5Psysr8jlDI24q5ZXQ3Wopj_Q%3A1790746235322&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjhxPTJyZWXAxWm-gIHHSjrH2IQ2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBmKraCO4nYAhDTn7FuCTY3uqT5-WK9RlFBb3JPhjCKrXysNIyuCafZ0KE0ypf2pqEVQrs0hAi9IpFYyvdumpa8evnoZl8QDyPc4JuL9LVRAq9ODpKVlwbmMcBMv-tP00IZStpEj48dqgggfEWB-wWrOrRzxq7MM68DckQ7UIojobAzigzL6liPBw0jR2bh6KnzMQE210He2WMOlXguN01vlfAqEN_cbmyRd6lYCUY81U6YVKFAdmANtKVS8S7rOT4InLjEyXbvbJ-IuVkURrlh3brYLggd-GcCoKhcpa0mW8DPTdKJWROVU4zlN1FDMkARhmH5HBkMSeVlj6mj_2pbvJBulaLRyw&csuir=1&mtid=jJ68auD6IfOG9u8PoIn_8Ag&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=what+are+all+the+faucets+and+pipes&client=ms-android-xiaomi-terr2-rso2&hs=54iq&sca_esv=658d89bb58b2aa3f&sxsrf=APpeQnv9_5Psysr8jlDI24q5ZXQ3Wopj_Q%3A1790746235322&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjhxPTJyZWXAxWm-gIHHSjrH2IQ2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBmKraCO4nYAhDTn7FuCTY3uqT5-WK9RlFBb3JPhjCKrXysNIyuCafZ0KE0ypf2pqEVQrs0hAi9IpFYyvdumpa8evnoZl8QDyPc4JuL9LVRAq9ODpKVlwbmMcBMv-tP00IZStpEj48dqgggfEWB-wWrOrRzxq7MM68DckQ7UIojobAzigzL6liPBw0jR2bh6KnzMQE210He2WMOlXguN01vlfAqEN_cbmyRd6lYCUY81U6YVKFAdmANtKVS8S7rOT4InLjEyXbvbJ-IuVkURrlh3brYLggd-GcCoKhcpa0mW8DPTdKJWROVU4zlN1FDMkARhmH5HBkMSeVlj6mj_2pbvJBulaLRyw&csuir=1&mtid=jJ68auD6IfOG9u8PoIn_8Ag&udm=50>)
+
+### 0290 | 2026-09-30 07:58:16 | You
+
+```text
+https://www.google.com/search?q=what+are+all+the+faucets+and+pipes&client=ms-android-xiaomi-terr2-rso2&hs=54iq&sca_esv=658d89bb58b2aa3f&sxsrf=APpeQnv9_5Psysr8jlDI24q5ZXQ3Wopj_Q%3A1790746235322&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjhxPTJyZWXAxWm-gIHHSjrH2IQ2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfD3QBDYnxgHNcPVXZfHAozy-YaPWp1cCEgPIOvhJgFe72vssAQHP3TlyELdMjmGZYFxyi-PFQxaMUXm45nNW8KL65ER1-nLxdqFakd0Ipg9KsqDRu87GjvLZRJ_qZM4r_OxEL4N2sGLiNA5Z4tnAPb9LC242PYvdAmTXOTaw_lvYm2KW2YHPLXzgV4tgOotX6JJXgt45oVmULB9yMOM9kTvibarzekLu7c7r9C9ivcBQUhaVse_MeajKTIK7EW-fUeodoyzccwbDNWpOzS93lNkdlqm-BG7WGqTZnLUZx3X3MotIRtxd6DkPvxPMaRpId0mr7WV2dT8LXeptFHE3plLqJ9PHreCZQ&csuir=1&mtid=jJ68auD6IfOG9u8PoIn_8Ag&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=what+are+all+the+faucets+and+pipes&client=ms-android-xiaomi-terr2-rso2&hs=54iq&sca_esv=658d89bb58b2aa3f&sxsrf=APpeQnv9_5Psysr8jlDI24q5ZXQ3Wopj_Q%3A1790746235322&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjhxPTJyZWXAxWm-gIHHSjrH2IQ2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfD3QBDYnxgHNcPVXZfHAozy-YaPWp1cCEgPIOvhJgFe72vssAQHP3TlyELdMjmGZYFxyi-PFQxaMUXm45nNW8KL65ER1-nLxdqFakd0Ipg9KsqDRu87GjvLZRJ_qZM4r_OxEL4N2sGLiNA5Z4tnAPb9LC242PYvdAmTXOTaw_lvYm2KW2YHPLXzgV4tgOotX6JJXgt45oVmULB9yMOM9kTvibarzekLu7c7r9C9ivcBQUhaVse_MeajKTIK7EW-fUeodoyzccwbDNWpOzS93lNkdlqm-BG7WGqTZnLUZx3X3MotIRtxd6DkPvxPMaRpId0mr7WV2dT8LXeptFHE3plLqJ9PHreCZQ&csuir=1&mtid=jJ68auD6IfOG9u8PoIn_8Ag&udm=50>)
+
+### 0291 | 2026-09-30 08:04:22 | You
+
+```text
+https://www.google.com/search?q=say+TAN+gen+real+fast+3+times&client=ms-android-xiaomi-terr2-rso2&hs=yk3V&sca_esv=658d89bb58b2aa3f&sxsrf=APpeQnuMUFZGfggA5FBFRr6SHR_E8B4Paw%3A1790748197392&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE7plZzta63Pe5DpJ3XFR9XzxI1gxDxLun-GtPKavu3kE6dTvtimD_9oi6BCfI-FjR-rw06fcxybvUkzqLTFjSuewStPl7szXa9TwDoW1yJuhw9NArqerVonRndf0c2SnTHfxwIXDcyqObE2ciSHvgjfwe4DZ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj-5b_x0JWXAxVy5AIHHcf4Kb8Q2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfANPlclt6nfYUEAhBJxKlxE5Ut1ncaC81Zqe-30bJ6O4evi-fEokC753wtm5Kq1inr6FdOzbedOyNJ77oo_i9B2Q3dMJeJauM7GSLOwLyj802X-pIsCmDBarfUbTixjjTV6x1hbBq-uDoZBdpPgUHyiTKYVTvZShFMcpSPIraQVDBdFwVzx0odkffn1REkjpf_ZZhN0mdiit2wvK0xpYqmKHulhWShkZyygCQNvT8nqD5KxT3AqkrphYiPcNP2Cb3XR2MnSBLYvfJ64fDgiN0Hbt0OfHCduBpljEmCv6BbYkdWbWG73z4tU-LkG7HkmFmgxgjXRgIXjSw&csuir=1&mtid=KKa8av3FEZaii-gPxqeI-A0&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=say+TAN+gen+real+fast+3+times&client=ms-android-xiaomi-terr2-rso2&hs=yk3V&sca_esv=658d89bb58b2aa3f&sxsrf=APpeQnuMUFZGfggA5FBFRr6SHR_E8B4Paw%3A1790748197392&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE7plZzta63Pe5DpJ3XFR9XzxI1gxDxLun-GtPKavu3kE6dTvtimD_9oi6BCfI-FjR-rw06fcxybvUkzqLTFjSuewStPl7szXa9TwDoW1yJuhw9NArqerVonRndf0c2SnTHfxwIXDcyqObE2ciSHvgjfwe4DZ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj-5b_x0JWXAxVy5AIHHcf4Kb8Q2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfANPlclt6nfYUEAhBJxKlxE5Ut1ncaC81Zqe-30bJ6O4evi-fEokC753wtm5Kq1inr6FdOzbedOyNJ77oo_i9B2Q3dMJeJauM7GSLOwLyj802X-pIsCmDBarfUbTixjjTV6x1hbBq-uDoZBdpPgUHyiTKYVTvZShFMcpSPIraQVDBdFwVzx0odkffn1REkjpf_ZZhN0mdiit2wvK0xpYqmKHulhWShkZyygCQNvT8nqD5KxT3AqkrphYiPcNP2Cb3XR2MnSBLYvfJ64fDgiN0Hbt0OfHCduBpljEmCv6BbYkdWbWG73z4tU-LkG7HkmFmgxgjXRgIXjSw&csuir=1&mtid=KKa8av3FEZaii-gPxqeI-A0&udm=50>)
+
+### 0292 | 2026-09-30 08:06:29 | You
+
+```text
+https://www.google.com/search?q=snowpiercer+snow+globe+speed+%28that+old+movie+with+the+bus+45+mph%29+driver+san+francisco+hot+potato+cart+ox+K&client=ms-android-xiaomi-terr2-rso2&hs=f5iq&sca_esv=658d89bb58b2aa3f&sxsrf=APpeQnvb9kbBmvgEmbGckKQ113vNUSWzxA%3A1790748366295&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKj906-ORFIK2UR8msyEJBwjEe_pYQQ9eB8i1QdNiB2fCQIKaau0zkrOx_TkgB1weyFizYyaVpfZD8nRk40Je_QGetDrUtPsJbpHlqrUTew-CIcU7pWj_97bQh3pBymy3BEAGd-R&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiY5YTC0ZWXAxVRg_0HHRxdKaMQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCtJ2xVkmDssMVw8pe164EPbvrFMzNagQ4Nosh3PYAPDG5K3MeluGdCSzuR8LQoOEEDh4VgBpz8qifAo-TgH44cmFq5aw66AI8E5LgDSiXAAsunqulf_VJkmFVXxd2pcDPo3gXfJQOvICIFcg18Aips3WVU3T6nIEh9Rn4G3ReuKG1KhTg-5qHREeYF6FGGctQwo2h2QTDxOHJw_cjXszN5QgF2PQf03WxIII4mk1-peL3L2vPdq8ut4JdYaIM-LOHu8Ig_Q2dy41g3lSRUUI0P8PjeFxlqitEpcbCWaCJOTQwgCgHGZZSHcwodx3T-5z8hoVj8_N5EqA&csuir=1&mtid=0qa8aoutBNuI9u8Pv97QqQc
+```
+
+Links: [Link 1](<https://www.google.com/search?q=snowpiercer+snow+globe+speed+%28that+old+movie+with+the+bus+45+mph%29+driver+san+francisco+hot+potato+cart+ox+K&client=ms-android-xiaomi-terr2-rso2&hs=f5iq&sca_esv=658d89bb58b2aa3f&sxsrf=APpeQnvb9kbBmvgEmbGckKQ113vNUSWzxA%3A1790748366295&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKj906-ORFIK2UR8msyEJBwjEe_pYQQ9eB8i1QdNiB2fCQIKaau0zkrOx_TkgB1weyFizYyaVpfZD8nRk40Je_QGetDrUtPsJbpHlqrUTew-CIcU7pWj_97bQh3pBymy3BEAGd-R&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiY5YTC0ZWXAxVRg_0HHRxdKaMQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCtJ2xVkmDssMVw8pe164EPbvrFMzNagQ4Nosh3PYAPDG5K3MeluGdCSzuR8LQoOEEDh4VgBpz8qifAo-TgH44cmFq5aw66AI8E5LgDSiXAAsunqulf_VJkmFVXxd2pcDPo3gXfJQOvICIFcg18Aips3WVU3T6nIEh9Rn4G3ReuKG1KhTg-5qHREeYF6FGGctQwo2h2QTDxOHJw_cjXszN5QgF2PQf03WxIII4mk1-peL3L2vPdq8ut4JdYaIM-LOHu8Ig_Q2dy41g3lSRUUI0P8PjeFxlqitEpcbCWaCJOTQwgCgHGZZSHcwodx3T-5z8hoVj8_N5EqA&csuir=1&mtid=0qa8aoutBNuI9u8Pv97QqQc>)
+
+### 0293 | 2026-09-30 08:12:40 | You
+
+```text
+https://www.google.com/search?q=levers+pinion+o+1&client=ms-android-xiaomi-terr2-rso2&hs=6k3V&sca_esv=658d89bb58b2aa3f&sxsrf=APpeQnsxZVQAxYcJc01WQ6a-UeqaV3MjyQ%3A1790748666395&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjAnJHR0pWXAxWpzQIHHemcBb0Q2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAZcWW_D7dttrz_zMeYFAWWEHFia-cPciUsydBa580ClIWr17KZ7Sr15aR61ASaopc5KaEC_ovaJ9Gz0SzXtEfptxZElPaU2PLgAaaGpiYmzb6FhExpdPfhMtCmyw1J4s0fTYTe_ox8faqyIEO9443M7SjxV8fjurPCsXkNfUhG78b8acxHaF0ZGc2K7pZDj1_N_fBSs1LvILrR269u5toQMvQBmhGE1__awj3nmm2jdDFPuhVQSm19VTwoWj40ZCIE4RHnaI9MpKNR5-vShUZY4FA0XK-w9fVIGnIeIuRxdeyqS7wi6zRB7W5Llb_PpnTdt_MffQpjPQ&csuir=1&mtid=Aqi8apKZF63Mi-gP2b7YIA&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=levers+pinion+o+1&client=ms-android-xiaomi-terr2-rso2&hs=6k3V&sca_esv=658d89bb58b2aa3f&sxsrf=APpeQnsxZVQAxYcJc01WQ6a-UeqaV3MjyQ%3A1790748666395&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjAnJHR0pWXAxWpzQIHHemcBb0Q2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAZcWW_D7dttrz_zMeYFAWWEHFia-cPciUsydBa580ClIWr17KZ7Sr15aR61ASaopc5KaEC_ovaJ9Gz0SzXtEfptxZElPaU2PLgAaaGpiYmzb6FhExpdPfhMtCmyw1J4s0fTYTe_ox8faqyIEO9443M7SjxV8fjurPCsXkNfUhG78b8acxHaF0ZGc2K7pZDj1_N_fBSs1LvILrR269u5toQMvQBmhGE1__awj3nmm2jdDFPuhVQSm19VTwoWj40ZCIE4RHnaI9MpKNR5-vShUZY4FA0XK-w9fVIGnIeIuRxdeyqS7wi6zRB7W5Llb_PpnTdt_MffQpjPQ&csuir=1&mtid=Aqi8apKZF63Mi-gP2b7YIA&udm=50>)
+
+### 0294 | 2026-09-30 08:15:25 | You
+
+```text
+https://www.google.com/search?q=so+i+am+the+general+as+a+saying+i+am+the+mean+and+the+other+and+the+difference+and+the+bond+and+the+coagulation+and+the+secularist&client=ms-android-xiaomi-terr2-rso2&hs=9k3V&sca_esv=2298482e9f0b44f3&sxsrf=APpeQnuixRrdNfjaMeRNLxoD57-EWSKkyw%3A1790748892063&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4AD-5zQwT5IfpPJ6og2sC2IXdmIqakpXvaGorGwhS-OJlsU0_rwTlCorh4b6MUYC4uT8UMA3TkH9Ldu_dIJQvNAf1WkN2NeDPzc_J2YDM3IUN37S7HhATWtn4HAM81K1Q_rJvZy9MlV8wYZFR5sPBDUkPEZT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiZld-805WXAxU13QIHHXN1FPwQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB88EnMk3dZNdjp4nt7oQvNdioomklsVKBXCsbdOoVXCSe9tpQgNlcMZe0QP3-ka5m0pwOJTkOSOJHtBqtfEubsP3OKUilVZX3znQD4I19u8pr9_YhxIMf34duL46WqkipIcnVR5kTbxgCQqYRXW89yEkc8H7iVP53gKsrJFNtKXtUyVysOQv9TdtGB_1psHz770tZ2jUPcFkSHq0hPTZnecBns6QikOEMRY_KcG1IW0LQHZzmUBJPbadnyDhwMqRJBY0LL2oDXpDEWSmWlnzvBioObFzqtLCc-2SwsVmadPPvnYPsaw3ZCVF4tfP6xbBecBORwmyxBxw&csuir=1&mtid=36i8auLLPLKfi-gP6KXeyA4
+```
+
+Links: [Link 1](<https://www.google.com/search?q=so+i+am+the+general+as+a+saying+i+am+the+mean+and+the+other+and+the+difference+and+the+bond+and+the+coagulation+and+the+secularist&client=ms-android-xiaomi-terr2-rso2&hs=9k3V&sca_esv=2298482e9f0b44f3&sxsrf=APpeQnuixRrdNfjaMeRNLxoD57-EWSKkyw%3A1790748892063&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4AD-5zQwT5IfpPJ6og2sC2IXdmIqakpXvaGorGwhS-OJlsU0_rwTlCorh4b6MUYC4uT8UMA3TkH9Ldu_dIJQvNAf1WkN2NeDPzc_J2YDM3IUN37S7HhATWtn4HAM81K1Q_rJvZy9MlV8wYZFR5sPBDUkPEZT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiZld-805WXAxU13QIHHXN1FPwQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB88EnMk3dZNdjp4nt7oQvNdioomklsVKBXCsbdOoVXCSe9tpQgNlcMZe0QP3-ka5m0pwOJTkOSOJHtBqtfEubsP3OKUilVZX3znQD4I19u8pr9_YhxIMf34duL46WqkipIcnVR5kTbxgCQqYRXW89yEkc8H7iVP53gKsrJFNtKXtUyVysOQv9TdtGB_1psHz770tZ2jUPcFkSHq0hPTZnecBns6QikOEMRY_KcG1IW0LQHZzmUBJPbadnyDhwMqRJBY0LL2oDXpDEWSmWlnzvBioObFzqtLCc-2SwsVmadPPvnYPsaw3ZCVF4tfP6xbBecBORwmyxBxw&csuir=1&mtid=36i8auLLPLKfi-gP6KXeyA4>)
+
+### 0295 | 2026-09-30 08:32:36 | You
+
+```text
+https://www.google.com/search?q=deny+them+targets+war+lewd&client=ms-android-xiaomi-terr2-rso2&hs=25iq&sca_esv=2298482e9f0b44f3&sxsrf=APpeQnvAttYgrGnQqticeoP0p65DX8XBuQ%3A1790749764113&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp2-cjVKw2GTI2L0MU3QUO__V8GVARUdUB2ZoMwCGQaAhzsNHbmFYWYw3SS8Poi5fDN4OzSFlsZooHbWoXUZiCEjcVmWWUPeL01Y9czBKQNlivQpN9j&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiB4sjc1pWXAxWR_AIHHeYKEZYQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCrXPtGp_f2OIxtRLiqqQSUZE9Lq8Ggo3PVB7sXM1HQFYnI50-Rhp-RKjRk7BhktcFEs4twUi4ENXLdaxlv8GrYmQiOi3RtnymWI4BWrf0xWfFEZ-1L6drTp77hO-2IgH4A6pEugyWyjNL2Rq3ZtJglAftezgE-lbH0aSvQA_6TyUkVgsRP-4yz4r7H_2wxsCthw_10X5e3Q3pLh79Gu326Tsv2IZv2BenWLO-vum2rBX2GW2VJJE-yi8Unj8sB_0plWPv1bZxQ2TJ6S23AkpLD25yScr6t0xBwOFrBhRRSU9WIuLkhUZUIQSkr6p-_NJ7eCkhVJ_Odig&csuir=1&mtid=SKy8avHsDfeyi-gPwNWxyAs&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=deny+them+targets+war+lewd&client=ms-android-xiaomi-terr2-rso2&hs=25iq&sca_esv=2298482e9f0b44f3&sxsrf=APpeQnvAttYgrGnQqticeoP0p65DX8XBuQ%3A1790749764113&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp2-cjVKw2GTI2L0MU3QUO__V8GVARUdUB2ZoMwCGQaAhzsNHbmFYWYw3SS8Poi5fDN4OzSFlsZooHbWoXUZiCEjcVmWWUPeL01Y9czBKQNlivQpN9j&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiB4sjc1pWXAxWR_AIHHeYKEZYQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCrXPtGp_f2OIxtRLiqqQSUZE9Lq8Ggo3PVB7sXM1HQFYnI50-Rhp-RKjRk7BhktcFEs4twUi4ENXLdaxlv8GrYmQiOi3RtnymWI4BWrf0xWfFEZ-1L6drTp77hO-2IgH4A6pEugyWyjNL2Rq3ZtJglAftezgE-lbH0aSvQA_6TyUkVgsRP-4yz4r7H_2wxsCthw_10X5e3Q3pLh79Gu326Tsv2IZv2BenWLO-vum2rBX2GW2VJJE-yi8Unj8sB_0plWPv1bZxQ2TJ6S23AkpLD25yScr6t0xBwOFrBhRRSU9WIuLkhUZUIQSkr6p-_NJ7eCkhVJ_Odig&csuir=1&mtid=SKy8avHsDfeyi-gPwNWxyAs&udm=50>)
+
+### 0296 | 2026-09-30 08:34:57 | You
+
+```text
+https://youtu.be/CJNA1HBx7BA?is=AMsbqvvHVHkLjgDv
+```
+
+Links: [Link 1](<https://youtu.be/CJNA1HBx7BA?is=AMsbqvvHVHkLjgDv>)
+
+### 0297 | 2026-09-30 08:40:53 | You
+
+```text
+https://www.google.com/search?q=bakken+rijzen+en+gist&client=ms-android-xiaomi-terr2-rso2&hs=sQOB&sa=X&sca_esv=2298482e9f0b44f3&sxsrf=APpeQntBzKRSs86xzqDVZMnDyj9MBqsb_A%3A1790750256243&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpnJQOWUbUFy0AZP2fc5_e7wQK9SpSaccWZEM8174slgzA7lL9Jp-FedBms3jKtDYRkzLfYMnDYMy5pBIIBgIQaS46ps0&vsint=&aep=1&ntc=1&cs=1&ved=2ahUKEwj2ip7H2JWXAxVU4gIHHQ1bEhIQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCsK1cpAk8qq1lumtk5-VPeYwFumqd1Poqad7l_AvSUn69RTpOLofGHT7oPazXuRlWIK8uXvooAJZVu86lbNeXt4si3xEpYbUPv8mtRo7RjxA42W4scdKn8FMSOKs_PhlD1p_MERPWDlfq5Ym8TIOzXpbxtD2ehkpg6AfGwN45E1_nCMj2Hch6_NXInUuDWP7RAzpq6xTgDl4GxQ1zzylbvxqxpxwiilVqOfrmEhaMZbpZDgWFyGW5U4oo5QeX0mkZ3U8vzAErZL_MBRUCqSrJZnjlfF3zJqxB8b9Aa5DlBTbNIJYfv01SpxxDw47EEQqtYufC7HmUlqA&csuir=1&mtid=Ma68atHwIb_Xi-gP3K2N-As&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=bakken+rijzen+en+gist&client=ms-android-xiaomi-terr2-rso2&hs=sQOB&sa=X&sca_esv=2298482e9f0b44f3&sxsrf=APpeQntBzKRSs86xzqDVZMnDyj9MBqsb_A%3A1790750256243&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpnJQOWUbUFy0AZP2fc5_e7wQK9SpSaccWZEM8174slgzA7lL9Jp-FedBms3jKtDYRkzLfYMnDYMy5pBIIBgIQaS46ps0&vsint=&aep=1&ntc=1&cs=1&ved=2ahUKEwj2ip7H2JWXAxVU4gIHHQ1bEhIQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCsK1cpAk8qq1lumtk5-VPeYwFumqd1Poqad7l_AvSUn69RTpOLofGHT7oPazXuRlWIK8uXvooAJZVu86lbNeXt4si3xEpYbUPv8mtRo7RjxA42W4scdKn8FMSOKs_PhlD1p_MERPWDlfq5Ym8TIOzXpbxtD2ehkpg6AfGwN45E1_nCMj2Hch6_NXInUuDWP7RAzpq6xTgDl4GxQ1zzylbvxqxpxwiilVqOfrmEhaMZbpZDgWFyGW5U4oo5QeX0mkZ3U8vzAErZL_MBRUCqSrJZnjlfF3zJqxB8b9Aa5DlBTbNIJYfv01SpxxDw47EEQqtYufC7HmUlqA&csuir=1&mtid=Ma68atHwIb_Xi-gP3K2N-As&udm=50>)
+
+### 0298 | 2026-09-30 08:47:25 | You
+
+```text
+https://www.google.com/search?q=pentagrammetje+meer+voor+jetten+jatten+allis+knot+goed+lezen&client=ms-android-xiaomi-terr2-rso2&hs=fl3V&sca_esv=2298482e9f0b44f3&sxsrf=APpeQnsp0YD1avwqVyyZsteqw_GUJ1CalA%3A1790750805271&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpnJQOWUbUFy0AZP2fc5_e7wQK9SpSaccWZEM8174slgzA7lL9Jp-FedBms3jKtDYRkzLfYMnDYMy5pBIIBgIQaS46ps0&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwidhITN2pWXAxXOhf0HHSjeEo8Q2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBKwCXpj1WujhoSbaGvIJuoNbs4-9jsfff2VtALOsE5w-wjVbja8bxvyr80Trc707-HNll_fEuJio5kCcSeWBo6Av321DirmPZBC_x-8VEdTP4Qtaw3Jy8KftYz7R5x_m3DUHsdhiOzgAKr276M8xf8GXXuCSh4eOipHldJmLNmwzSzhPs1bzLibMKN3e5yhTCnvolF6onJ_tu7fV2_GvATpC5P_DzcKKenqkVjXVtu5Y_j8dDpWlpSgUxJV0xJJyL2PM46pkBfyVsjt5WtOYHbJEz0E2cAQSWjIFA4_89CvC7YaMpfkm4_ylhPrf6ilFXznVCdX51jdg&csuir=1&mtid=WbC8atjrLp2I9u8PpcXQiQs
+```
+
+Links: [Link 1](<https://www.google.com/search?q=pentagrammetje+meer+voor+jetten+jatten+allis+knot+goed+lezen&client=ms-android-xiaomi-terr2-rso2&hs=fl3V&sca_esv=2298482e9f0b44f3&sxsrf=APpeQnsp0YD1avwqVyyZsteqw_GUJ1CalA%3A1790750805271&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpnJQOWUbUFy0AZP2fc5_e7wQK9SpSaccWZEM8174slgzA7lL9Jp-FedBms3jKtDYRkzLfYMnDYMy5pBIIBgIQaS46ps0&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwidhITN2pWXAxXOhf0HHSjeEo8Q2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBKwCXpj1WujhoSbaGvIJuoNbs4-9jsfff2VtALOsE5w-wjVbja8bxvyr80Trc707-HNll_fEuJio5kCcSeWBo6Av321DirmPZBC_x-8VEdTP4Qtaw3Jy8KftYz7R5x_m3DUHsdhiOzgAKr276M8xf8GXXuCSh4eOipHldJmLNmwzSzhPs1bzLibMKN3e5yhTCnvolF6onJ_tu7fV2_GvATpC5P_DzcKKenqkVjXVtu5Y_j8dDpWlpSgUxJV0xJJyL2PM46pkBfyVsjt5WtOYHbJEz0E2cAQSWjIFA4_89CvC7YaMpfkm4_ylhPrf6ilFXznVCdX51jdg&csuir=1&mtid=WbC8atjrLp2I9u8PpcXQiQs>)
+
+### 0299 | 2026-09-30 08:56:17 | You
+
+```text
+https://www.google.com/search?q=pentagrammetje+meer+voor+jetten+jatten+allis+knot+goed+lezen&client=ms-android-xiaomi-terr2-rso2&hs=fl3V&sca_esv=2298482e9f0b44f3&sxsrf=APpeQnsp0YD1avwqVyyZsteqw_GUJ1CalA%3A1790750805271&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpnJQOWUbUFy0AZP2fc5_e7wQK9SpSaccWZEM8174slgzA7lL9Jp-FedBms3jKtDYRkzLfYMnDYMy5pBIIBgIQaS46ps0&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwidhITN2pWXAxXOhf0HHSjeEo8Q2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCsFUT2K-r4QF8GMCoUQFTNo44FDZm-4Pj-fBGctr6Pu8_ZdpB8vVQCrK8Hkmg5xhtObMzfTj4rdEWlh3Cq0mpDcknWo2OCvH22ddQTmBcSvd7NIdxvi1d8p5-A8hwXs9ek-T8OdYBWAaxAhUVjrmH1aGnvTT46y0Q49UK8DinihdlEBxMVgeejDekVEnj3aPCjw1E5ouZfwMgJ8DwezfCo5os_7lM7tsFmRbBvZY8JyZqRfI-hylBG8ZI3lkElmAJDG-sCZwBCVDODZ1E-4fvRv52R7TvhwC6T2FTLS9kJ4at7gdwWBuS3FWCorA7Yt0dG-jVHECZ2Hg&csuir=1&mtid=WbC8arO2PLmA9u8P1c-R4Qo&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=pentagrammetje+meer+voor+jetten+jatten+allis+knot+goed+lezen&client=ms-android-xiaomi-terr2-rso2&hs=fl3V&sca_esv=2298482e9f0b44f3&sxsrf=APpeQnsp0YD1avwqVyyZsteqw_GUJ1CalA%3A1790750805271&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpnJQOWUbUFy0AZP2fc5_e7wQK9SpSaccWZEM8174slgzA7lL9Jp-FedBms3jKtDYRkzLfYMnDYMy5pBIIBgIQaS46ps0&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwidhITN2pWXAxXOhf0HHSjeEo8Q2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCsFUT2K-r4QF8GMCoUQFTNo44FDZm-4Pj-fBGctr6Pu8_ZdpB8vVQCrK8Hkmg5xhtObMzfTj4rdEWlh3Cq0mpDcknWo2OCvH22ddQTmBcSvd7NIdxvi1d8p5-A8hwXs9ek-T8OdYBWAaxAhUVjrmH1aGnvTT46y0Q49UK8DinihdlEBxMVgeejDekVEnj3aPCjw1E5ouZfwMgJ8DwezfCo5os_7lM7tsFmRbBvZY8JyZqRfI-hylBG8ZI3lkElmAJDG-sCZwBCVDODZ1E-4fvRv52R7TvhwC6T2FTLS9kJ4at7gdwWBuS3FWCorA7Yt0dG-jVHECZ2Hg&csuir=1&mtid=WbC8arO2PLmA9u8P1c-R4Qo&udm=50>)
+
+### 0300 | 2026-09-30 08:56:24 | You
+
+```text
+https://youtu.be/Nj1LpCTeQPM?is=ZLHiTSRabbnbisxn
+```
+
+Links: [Link 1](<https://youtu.be/Nj1LpCTeQPM?is=ZLHiTSRabbnbisxn>)
+
+### 0301 | 2026-09-30 09:03:04 | You
+
+```text
+https://www.google.com/search?q=doktershandschrift+arabische+schrijfstijl+van+die+moeilijk+te+lezen+voor+iemand+die+blokletters+gewend+was&client=ms-android-xiaomi-terr2-rso2&hs=Y6iq&sca_esv=2298482e9f0b44f3&sxsrf=APpeQntcRtjH4SXMMFqOqc7SYsmotR7_Mg%3A1790751688896&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp2wsvV6_K3w3Wo0nEMktSDxVcYaEsDuni6FLRQluAoFVaqLOviKMqowj8-co7Dste5nN7SV65YEtqFBe42OQ9nqv-I7ho&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiEx6_y3ZWXAxWLywIHHU-IAEsQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAD2fF4LZQVHEreDD1X0fYKKEEFRpTodAS1ebPhkk5ErgBZkTxtNp3-c1jTgZYr356BdQk_2PI6cGnz83HtgBiIFNxRjwT7OPaYkABRkVRbaX2APIPxli5WZwHud9ZhHz-_12-niec9o9dkbmASpAcgF5Irce2DBrjWoPzO2w8-CGyETy6qHzrNQoDew3KzSk4zThATb-nkeEVSO1ZMqUXzmZ-o-tfYWPYQA8SmCfqYynWdV0-nnkes2bQhBDr1U4eQWUSA9-VrCKUqcEL63D_cQFSyJzJdrzjaP1FYHj4CTPsrd0uoVtoGYudLyToTrz3ywZhMcNldhg&csuir=1&mtid=0bO8atPYMe-ni-gPsbuiiAg
+```
+
+Links: [Link 1](<https://www.google.com/search?q=doktershandschrift+arabische+schrijfstijl+van+die+moeilijk+te+lezen+voor+iemand+die+blokletters+gewend+was&client=ms-android-xiaomi-terr2-rso2&hs=Y6iq&sca_esv=2298482e9f0b44f3&sxsrf=APpeQntcRtjH4SXMMFqOqc7SYsmotR7_Mg%3A1790751688896&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp2wsvV6_K3w3Wo0nEMktSDxVcYaEsDuni6FLRQluAoFVaqLOviKMqowj8-co7Dste5nN7SV65YEtqFBe42OQ9nqv-I7ho&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiEx6_y3ZWXAxWLywIHHU-IAEsQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAD2fF4LZQVHEreDD1X0fYKKEEFRpTodAS1ebPhkk5ErgBZkTxtNp3-c1jTgZYr356BdQk_2PI6cGnz83HtgBiIFNxRjwT7OPaYkABRkVRbaX2APIPxli5WZwHud9ZhHz-_12-niec9o9dkbmASpAcgF5Irce2DBrjWoPzO2w8-CGyETy6qHzrNQoDew3KzSk4zThATb-nkeEVSO1ZMqUXzmZ-o-tfYWPYQA8SmCfqYynWdV0-nnkes2bQhBDr1U4eQWUSA9-VrCKUqcEL63D_cQFSyJzJdrzjaP1FYHj4CTPsrd0uoVtoGYudLyToTrz3ywZhMcNldhg&csuir=1&mtid=0bO8atPYMe-ni-gPsbuiiAg>)
+
+### 0302 | 2026-09-30 09:03:51 | You
+
+```text
+https://www.google.com/search?q=doktershandschrift+arabische+schrijfstijl+van+die+moeilijk+te+lezen+voor+iemand+die+blokletters+gewend+was&client=ms-android-xiaomi-terr2-rso2&hs=Y6iq&sca_esv=2298482e9f0b44f3&sxsrf=APpeQntcRtjH4SXMMFqOqc7SYsmotR7_Mg%3A1790751688896&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp2wsvV6_K3w3Wo0nEMktSDxVcYaEsDuni6FLRQluAoFVaqLOviKMqowj8-co7Dste5nN7SV65YEtqFBe42OQ9nqv-I7ho&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiEx6_y3ZWXAxWLywIHHU-IAEsQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDfDQ0tjv1ssfbEeVTECYd1Wf64wwL5XzGLf9akiqyN8yYPneRjj4EgM7Mb6p58ZbPUu8NoKoT-G-Fa-_qJFoM2orx91Finij3cZmBKOSrZ8np9dYalOePIGUSUnUIpJwPrrysnllEzoAIWyIy0e40ui9cj0Z15sYOnw6QgWR4xi4rMP1hCMSyEhfB2wjy49LiIhS5_39DKBykyOvBn84JQ047WT8QvtU7T7qVPNJ39R3_o6jkgAyMBIhYXoPm6l2btgMm5Dhx_x1PYhryc-8lrw1kDT_uYhYHoOXKoIXY9rVgodbb071353hYk0E5MSEd_NAoyiOOBCg&csuir=1&mtid=0rO8apbiA-3Wi-gP-MKFoQ4&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=doktershandschrift+arabische+schrijfstijl+van+die+moeilijk+te+lezen+voor+iemand+die+blokletters+gewend+was&client=ms-android-xiaomi-terr2-rso2&hs=Y6iq&sca_esv=2298482e9f0b44f3&sxsrf=APpeQntcRtjH4SXMMFqOqc7SYsmotR7_Mg%3A1790751688896&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp2wsvV6_K3w3Wo0nEMktSDxVcYaEsDuni6FLRQluAoFVaqLOviKMqowj8-co7Dste5nN7SV65YEtqFBe42OQ9nqv-I7ho&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiEx6_y3ZWXAxWLywIHHU-IAEsQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDfDQ0tjv1ssfbEeVTECYd1Wf64wwL5XzGLf9akiqyN8yYPneRjj4EgM7Mb6p58ZbPUu8NoKoT-G-Fa-_qJFoM2orx91Finij3cZmBKOSrZ8np9dYalOePIGUSUnUIpJwPrrysnllEzoAIWyIy0e40ui9cj0Z15sYOnw6QgWR4xi4rMP1hCMSyEhfB2wjy49LiIhS5_39DKBykyOvBn84JQ047WT8QvtU7T7qVPNJ39R3_o6jkgAyMBIhYXoPm6l2btgMm5Dhx_x1PYhryc-8lrw1kDT_uYhYHoOXKoIXY9rVgodbb071353hYk0E5MSEd_NAoyiOOBCg&csuir=1&mtid=0rO8apbiA-3Wi-gP-MKFoQ4&udm=50>)
+
+### 0303 | 2026-09-30 09:12:16 | You
+
+```text
+https://www.google.com/search?q=er+valt+niks+te+halen+in+het+midden+oosten+weg+blijven&client=ms-android-xiaomi-terr2-rso2&hs=d6iq&sca_esv=2298482e9f0b44f3&sxsrf=APpeQnvPUIfSurrq44WQDnqYyzqUsw_0Fw%3A1790751974660&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpDyhqhJz-EL1EohYDSUG6u_7TBQFaykKSCI8ECDH-29gr0f9f3cZ1Yql2oc9vrmnG89ZnGbRsEj4xcaVT1fZIuaEb_qM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiR-NH63pWXAxVD2QIHHWQpBpoQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCEltALeJlFqj6OjiE89LwSK5p2MdHZDFuTbKl77FKcEztmNvhH7JXks1cyT1zJtM_3OT4Tvcc4vww_x9RWw7bQv-DGrj2QV3RMocDK8aMXJONRAZG3inWCkkSUr0XYmVheWkd6WpkCXfzFW6ysmV5QamLzjItZBVT-IyzfXfaaqpcwOvCOsab0uTqDuxuGqD4Gp0aNOIhu870i8C7AUVR6mFuFbEijmHywNqY3PjF98YbwRUbzC2GZFuOGh2fWSIQIC3fD7d_BYW3g4fv9KELDloB633xliVKK5MDUbWrKtycuup7UbyIO2CI0U-3xRgppkXPR8Iltdg&csuir=1&mtid=6rS8aq-7Lq3Mi-gP2b7YIA&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=er+valt+niks+te+halen+in+het+midden+oosten+weg+blijven&client=ms-android-xiaomi-terr2-rso2&hs=d6iq&sca_esv=2298482e9f0b44f3&sxsrf=APpeQnvPUIfSurrq44WQDnqYyzqUsw_0Fw%3A1790751974660&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpDyhqhJz-EL1EohYDSUG6u_7TBQFaykKSCI8ECDH-29gr0f9f3cZ1Yql2oc9vrmnG89ZnGbRsEj4xcaVT1fZIuaEb_qM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiR-NH63pWXAxVD2QIHHWQpBpoQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCEltALeJlFqj6OjiE89LwSK5p2MdHZDFuTbKl77FKcEztmNvhH7JXks1cyT1zJtM_3OT4Tvcc4vww_x9RWw7bQv-DGrj2QV3RMocDK8aMXJONRAZG3inWCkkSUr0XYmVheWkd6WpkCXfzFW6ysmV5QamLzjItZBVT-IyzfXfaaqpcwOvCOsab0uTqDuxuGqD4Gp0aNOIhu870i8C7AUVR6mFuFbEijmHywNqY3PjF98YbwRUbzC2GZFuOGh2fWSIQIC3fD7d_BYW3g4fv9KELDloB633xliVKK5MDUbWrKtycuup7UbyIO2CI0U-3xRgppkXPR8Iltdg&csuir=1&mtid=6rS8aq-7Lq3Mi-gP2b7YIA&udm=50>)
+
+### 0304 | 2026-09-30 09:12:23 | You
+
+```text
+Bea
+```
+
+### 0305 | 2026-09-30 09:15:42 | You
+
+```text
+https://www.google.com/search?q=mag+je+eigenlijk+met+een+strafblad+bij+defiensie+en+wat+laagste+straf+ommo+gelijk+te+maker&oq=mag+je+eigenlijk+met+een+strafblad+bij+defiensie+en+wat+laagste+straf+ommo+gelijk+te+maker&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTQ2NDU3ajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8
+```
+
+Links: [Link 1](<https://www.google.com/search?q=mag+je+eigenlijk+met+een+strafblad+bij+defiensie+en+wat+laagste+straf+ommo+gelijk+te+maker&oq=mag+je+eigenlijk+met+een+strafblad+bij+defiensie+en+wat+laagste+straf+ommo+gelijk+te+maker&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTQ2NDU3ajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8>)
+
+### 0306 | 2026-09-30 09:20:54 | You
+
+```text
+https://www.google.com/search?q=fuck+nazis+vooral+verenigde+ik+zie+ik+zienah+all+icicourt+hoger&client=ms-android-xiaomi-terr2-rso2&hs=ZROB&sca_esv=ef1c8e45d7a317ba&sxsrf=APpeQnvH5sUWB9NkN3XENtrxNSzrXtXRyQ%3A1790752826441&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpDyhqhJz-EL1EohYDSUG6u_7TBQFaykKSCI8ECDH-29gr0f9f3cZ1Yql2oc9vrmnG89ZnGbRsEj4xcaVT1fZIuaEb_qM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjCtOaQ4pWXAxWBRv4FHauaK-AQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfA0ftfpVCu9nVS1B5WPFWQWDbLyW-ijwqlNz4LoO1VC4TWOLYCiD9QXn8tRn-urHdrk_FfUhi45akA5Oon9Z5HlUjl5i2Mv3yF0QxXepvege7xoxYz7GkbHtDdT66gsYc-TAcmqNkXYjwwjNPgzDNSqEVGBHhJ1dtEP7lMrax5UhUPA7ZdvZcX7haHB101-IC3XpEFCnAHcmRNahiZTOY9py7zwZ74-KQaiBRl4us4Qf8abKlyIzDpMhpKiAGA4bIYuu37a2jbSKb47WlFzI0Lz5wYKzPcv0g1N9OUMpp8PXvZ0SEjQBdu0EPlyYkmfV16w8SedbkBLtg&csuir=1&mtid=PLi8as_rEYiki-gPw4qloQc
+```
+
+Links: [Link 1](<https://www.google.com/search?q=fuck+nazis+vooral+verenigde+ik+zie+ik+zienah+all+icicourt+hoger&client=ms-android-xiaomi-terr2-rso2&hs=ZROB&sca_esv=ef1c8e45d7a317ba&sxsrf=APpeQnvH5sUWB9NkN3XENtrxNSzrXtXRyQ%3A1790752826441&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpDyhqhJz-EL1EohYDSUG6u_7TBQFaykKSCI8ECDH-29gr0f9f3cZ1Yql2oc9vrmnG89ZnGbRsEj4xcaVT1fZIuaEb_qM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjCtOaQ4pWXAxWBRv4FHauaK-AQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfA0ftfpVCu9nVS1B5WPFWQWDbLyW-ijwqlNz4LoO1VC4TWOLYCiD9QXn8tRn-urHdrk_FfUhi45akA5Oon9Z5HlUjl5i2Mv3yF0QxXepvege7xoxYz7GkbHtDdT66gsYc-TAcmqNkXYjwwjNPgzDNSqEVGBHhJ1dtEP7lMrax5UhUPA7ZdvZcX7haHB101-IC3XpEFCnAHcmRNahiZTOY9py7zwZ74-KQaiBRl4us4Qf8abKlyIzDpMhpKiAGA4bIYuu37a2jbSKb47WlFzI0Lz5wYKzPcv0g1N9OUMpp8PXvZ0SEjQBdu0EPlyYkmfV16w8SedbkBLtg&csuir=1&mtid=PLi8as_rEYiki-gPw4qloQc>)
+
+### 0307 | 2026-09-30 09:24:27 | You
+
+```text
+https://www.google.com/search?q=ik+haat+huidskleur+en+verschil+een+appel+moet+toch+rood+zijn&client=ms-android-xiaomi-terr2-rso2&hs=cROB&sca_esv=ef1c8e45d7a317ba&sxsrf=APpeQnv2LyJx_ks7DzcECNH-TleturDvhw%3A1790753018505&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp24vkivhSKxJH-vZPKbAT5TBLshvsiHEySLVwcQrggeuypDbn_bWC-8aLfZpP9MBRQXBaF1jS2nyQctrqGKquljSuaqKE&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwicoLHs4pWXAxV-zwIHHW5xH-8Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfABs2hbYaGRjRrzOVQlDXVx2Fnmh0Liw21ycuvEW3Xw9djr89rB-Ga3UBnCMpKy6DDfNAZc7k-gMh1zFhDgO6Q8FuQ4Tq10obXHIdcLGfAPDC19bQSQ54jhuGmZPV8E9F4OumRV-UeLVDzrf7pQ36mywudAdCzv2d83PV1Rlx26AgMiE6sj2YMOUGrU69ocAiHqWFDhp5Yle5TaOYhJvh6TEYE7ZIkGuBo7yOMyWxgvrsfQO-YcGFS3ajB85FNIALQmaVmG6w3oE7O9w9vpeqJKOMrWFsGuTTZSAEwrUmX8gFTGvMuwgu2QApP2MrXBkE9CX2428NhIRw&csuir=1&mtid=ALm8ate1O6T9i-gP2fKEiAw&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=ik+haat+huidskleur+en+verschil+een+appel+moet+toch+rood+zijn&client=ms-android-xiaomi-terr2-rso2&hs=cROB&sca_esv=ef1c8e45d7a317ba&sxsrf=APpeQnv2LyJx_ks7DzcECNH-TleturDvhw%3A1790753018505&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp24vkivhSKxJH-vZPKbAT5TBLshvsiHEySLVwcQrggeuypDbn_bWC-8aLfZpP9MBRQXBaF1jS2nyQctrqGKquljSuaqKE&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwicoLHs4pWXAxV-zwIHHW5xH-8Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfABs2hbYaGRjRrzOVQlDXVx2Fnmh0Liw21ycuvEW3Xw9djr89rB-Ga3UBnCMpKy6DDfNAZc7k-gMh1zFhDgO6Q8FuQ4Tq10obXHIdcLGfAPDC19bQSQ54jhuGmZPV8E9F4OumRV-UeLVDzrf7pQ36mywudAdCzv2d83PV1Rlx26AgMiE6sj2YMOUGrU69ocAiHqWFDhp5Yle5TaOYhJvh6TEYE7ZIkGuBo7yOMyWxgvrsfQO-YcGFS3ajB85FNIALQmaVmG6w3oE7O9w9vpeqJKOMrWFsGuTTZSAEwrUmX8gFTGvMuwgu2QApP2MrXBkE9CX2428NhIRw&csuir=1&mtid=ALm8ate1O6T9i-gP2fKEiAw&udm=50>)
+
+### 0308 | 2026-09-30 09:25:51 | You
+
+```text
+<image omitted>
+```
+
+### 0309 | 2026-09-30 09:27:49 | You
+
+```text
+https://www.google.com/search?q=ik+haat+huidskleur+en+verschil+een+appel+moet+toch+rood+zijn&client=ms-android-xiaomi-terr2-rso2&hs=cROB&sca_esv=ef1c8e45d7a317ba&sxsrf=APpeQnv2LyJx_ks7DzcECNH-TleturDvhw%3A1790753018505&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp24vkivhSKxJH-vZPKbAT5TBLshvsiHEySLVwcQrggeuypDbn_bWC-8aLfZpP9MBRQXBaF1jS2nyQctrqGKquljSuaqKE&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwicoLHs4pWXAxV-zwIHHW5xH-8Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBt3U_UAlYiUsYPMqMH2FyXutIk1RM2Gz5pn5n62kKryfDhG2cEKZEFRn4kQw1_RoLr7Y48v5p_3xeeClplOhSBV_5h_mz0vQV_zE3Y-q2M4OeWshKGNx4_WD4Eg6YCh4oQ4ouDYJ1oWVw3mpA2hymkXoCkgIRi8gLtHhuEIL2b79mHcA2-7b3rGRbuCllc4BE1aWH8Oot5DPAhdcQ7R8cyqcFSVS_FJ18tCx5yvAUnF1N7a38TYJYN4JxjBIkKeITVj-evz_NjsJvoOt9TDSPltjJoXlroGocVa9qYsAvjBvJ1OqQ6R_XpSXsRKMnlvd07G2scTPM3tA&csuir=1&mtid=ALm8ate1O6T9i-gP2fKEiAw&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=ik+haat+huidskleur+en+verschil+een+appel+moet+toch+rood+zijn&client=ms-android-xiaomi-terr2-rso2&hs=cROB&sca_esv=ef1c8e45d7a317ba&sxsrf=APpeQnv2LyJx_ks7DzcECNH-TleturDvhw%3A1790753018505&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp24vkivhSKxJH-vZPKbAT5TBLshvsiHEySLVwcQrggeuypDbn_bWC-8aLfZpP9MBRQXBaF1jS2nyQctrqGKquljSuaqKE&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwicoLHs4pWXAxV-zwIHHW5xH-8Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBt3U_UAlYiUsYPMqMH2FyXutIk1RM2Gz5pn5n62kKryfDhG2cEKZEFRn4kQw1_RoLr7Y48v5p_3xeeClplOhSBV_5h_mz0vQV_zE3Y-q2M4OeWshKGNx4_WD4Eg6YCh4oQ4ouDYJ1oWVw3mpA2hymkXoCkgIRi8gLtHhuEIL2b79mHcA2-7b3rGRbuCllc4BE1aWH8Oot5DPAhdcQ7R8cyqcFSVS_FJ18tCx5yvAUnF1N7a38TYJYN4JxjBIkKeITVj-evz_NjsJvoOt9TDSPltjJoXlroGocVa9qYsAvjBvJ1OqQ6R_XpSXsRKMnlvd07G2scTPM3tA&csuir=1&mtid=ALm8ate1O6T9i-gP2fKEiAw&udm=50>)
+
+### 0310 | 2026-09-30 09:28:03 | You
+
+```text
+Jitske Koenders-Klootwijk
+```
+
+### 0311 | 2026-09-30 09:35:08 | You
+
+```text
+https://www.google.com/search?q=ik+haat+huidskleur+en+verschil+een+appel+moet+toch+rood+zijn&client=ms-android-xiaomi-terr2-rso2&hs=cROB&sca_esv=ef1c8e45d7a317ba&sxsrf=APpeQnv2LyJx_ks7DzcECNH-TleturDvhw%3A1790753018505&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp24vkivhSKxJH-vZPKbAT5TBLshvsiHEySLVwcQrggeuypDbn_bWC-8aLfZpP9MBRQXBaF1jS2nyQctrqGKquljSuaqKE&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwicoLHs4pWXAxV-zwIHHW5xH-8Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB1w02cPI9nsRUtZl9DKHlXr9HdmQtwtggxxNbhN46hhaR-wMgaGv7tKQJ8J232CBXztdt4kaqSOG21T3wTSuDxxGp82c1dTibISRePdDBcP3BaHsF0IPGocs-p0Fh_0ixkq8eOQUWMzpYnqoJnGhUWtxYh7fDqeZ-J3dR8P6v5taqRAjnE7LSYS6GsIAo5aC7ySQe_FInbzCNP-aKl8U22prVwO1IboDWPd-a6C6oU8img7Al8Z-AYt-oc31rVXOlkGd0frRhXGaba_HkG9UYvP5pfrpIatlxwUDfCWTxn1ubloHOEerAtSLkvh5mXsOMpuSd2iNSD4w&csuir=1&mtid=ALm8ate1O6T9i-gP2fKEiAw&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=ik+haat+huidskleur+en+verschil+een+appel+moet+toch+rood+zijn&client=ms-android-xiaomi-terr2-rso2&hs=cROB&sca_esv=ef1c8e45d7a317ba&sxsrf=APpeQnv2LyJx_ks7DzcECNH-TleturDvhw%3A1790753018505&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp24vkivhSKxJH-vZPKbAT5TBLshvsiHEySLVwcQrggeuypDbn_bWC-8aLfZpP9MBRQXBaF1jS2nyQctrqGKquljSuaqKE&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwicoLHs4pWXAxV-zwIHHW5xH-8Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB1w02cPI9nsRUtZl9DKHlXr9HdmQtwtggxxNbhN46hhaR-wMgaGv7tKQJ8J232CBXztdt4kaqSOG21T3wTSuDxxGp82c1dTibISRePdDBcP3BaHsF0IPGocs-p0Fh_0ixkq8eOQUWMzpYnqoJnGhUWtxYh7fDqeZ-J3dR8P6v5taqRAjnE7LSYS6GsIAo5aC7ySQe_FInbzCNP-aKl8U22prVwO1IboDWPd-a6C6oU8img7Al8Z-AYt-oc31rVXOlkGd0frRhXGaba_HkG9UYvP5pfrpIatlxwUDfCWTxn1ubloHOEerAtSLkvh5mXsOMpuSd2iNSD4w&csuir=1&mtid=ALm8ate1O6T9i-gP2fKEiAw&udm=50>)
+
+### 0312 | 2026-09-30 09:35:10 | You
+
+```text
+A
+```
+
+### 0313 | 2026-09-30 09:40:21 | You
+
+```text
+https://www.google.com/search?q=ik+haat+huidskleur+en+verschil+een+appel+moet+toch+rood+zijn&client=ms-android-xiaomi-terr2-rso2&hs=cROB&sca_esv=ef1c8e45d7a317ba&sxsrf=APpeQnv2LyJx_ks7DzcECNH-TleturDvhw%3A1790753018505&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp24vkivhSKxJH-vZPKbAT5TBLshvsiHEySLVwcQrggeuypDbn_bWC-8aLfZpP9MBRQXBaF1jS2nyQctrqGKquljSuaqKE&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwicoLHs4pWXAxV-zwIHHW5xH-8Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB6p-olDW1ZmL9zH2SacZRVfnpMkFC0Xx-ry0f9-cIqsuGjjbGJbTNX_QPiNG9TWOCe4vcYp5DZuUA4P6S6_wNj3M7omDd6z1PQ3S2SI3TDUsEUJ9sk6Okxs5MpS3BWRe0__0_mBWFwBVDFa_RcZDHtx0otpj1mQBJetkU97RqzY0OZCZ4aOXyYcAiSY4-7hTi0sWYDBHxL9ZnmKmDdATNaID_fuHN1_cjPHzQeZo1EDTWMfiCAYu-BhZnRPSjs2WcICoBvJ4HvG8p0CzB8aScAwZOhdtf-UodCUTNwfE5lIeqsgtTbV7OonTsKKkySsMGjPH9vcpescg&csuir=1&mtid=ALm8ate1O6T9i-gP2fKEiAw&udm=50&lns_mode=cvst
+```
+
+Links: [Link 1](<https://www.google.com/search?q=ik+haat+huidskleur+en+verschil+een+appel+moet+toch+rood+zijn&client=ms-android-xiaomi-terr2-rso2&hs=cROB&sca_esv=ef1c8e45d7a317ba&sxsrf=APpeQnv2LyJx_ks7DzcECNH-TleturDvhw%3A1790753018505&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp24vkivhSKxJH-vZPKbAT5TBLshvsiHEySLVwcQrggeuypDbn_bWC-8aLfZpP9MBRQXBaF1jS2nyQctrqGKquljSuaqKE&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwicoLHs4pWXAxV-zwIHHW5xH-8Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB6p-olDW1ZmL9zH2SacZRVfnpMkFC0Xx-ry0f9-cIqsuGjjbGJbTNX_QPiNG9TWOCe4vcYp5DZuUA4P6S6_wNj3M7omDd6z1PQ3S2SI3TDUsEUJ9sk6Okxs5MpS3BWRe0__0_mBWFwBVDFa_RcZDHtx0otpj1mQBJetkU97RqzY0OZCZ4aOXyYcAiSY4-7hTi0sWYDBHxL9ZnmKmDdATNaID_fuHN1_cjPHzQeZo1EDTWMfiCAYu-BhZnRPSjs2WcICoBvJ4HvG8p0CzB8aScAwZOhdtf-UodCUTNwfE5lIeqsgtTbV7OonTsKKkySsMGjPH9vcpescg&csuir=1&mtid=ALm8ate1O6T9i-gP2fKEiAw&udm=50&lns_mode=cvst>)
+
+### 0314 | 2026-09-30 09:49:05 | You
+
+```text
+https://www.google.com/search?q=ik+haat+huidskleur+en+verschil+een+appel+moet+toch+rood+zijn&client=ms-android-xiaomi-terr2-rso2&hs=cROB&sca_esv=ef1c8e45d7a317ba&sxsrf=APpeQnv2LyJx_ks7DzcECNH-TleturDvhw%3A1790753018505&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp24vkivhSKxJH-vZPKbAT5TBLshvsiHEySLVwcQrggeuypDbn_bWC-8aLfZpP9MBRQXBaF1jS2nyQctrqGKquljSuaqKE&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwicoLHs4pWXAxV-zwIHHW5xH-8Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBtDn3Ng9-1UEkwJorx6hnRF2Z6eSoNF0ZbB-35m-4kkmMCA1vhWoN5hTC4FLJtX1pNqejrxJCSPT2f-XjzMpmav__2_hK7arGz14zJq4P2i2p43-M0VV9uvxQ81JqwKmBuNtLhGrOvPwSo0VkNqy-YOiTE9cFGfN1gCpd_Fyh2gdyHnEHbHztxL3L-IPPx5Mob64nG19sE02MCnWM5oxLb_7cop-9IFebTWpmjSsSitHb5kmDrUwSCqOIdmLrTT_LJvgKDw28ALCKK5jGSgA30vwRnlrMsH-rcJNddbT7pSv096XbqSTOX_i7dpNxvXyuAdy4zY2Biuw&csuir=1&mtid=ALm8ate1O6T9i-gP2fKEiAw&lns_mode=cvst&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=ik+haat+huidskleur+en+verschil+een+appel+moet+toch+rood+zijn&client=ms-android-xiaomi-terr2-rso2&hs=cROB&sca_esv=ef1c8e45d7a317ba&sxsrf=APpeQnv2LyJx_ks7DzcECNH-TleturDvhw%3A1790753018505&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp24vkivhSKxJH-vZPKbAT5TBLshvsiHEySLVwcQrggeuypDbn_bWC-8aLfZpP9MBRQXBaF1jS2nyQctrqGKquljSuaqKE&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwicoLHs4pWXAxV-zwIHHW5xH-8Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBtDn3Ng9-1UEkwJorx6hnRF2Z6eSoNF0ZbB-35m-4kkmMCA1vhWoN5hTC4FLJtX1pNqejrxJCSPT2f-XjzMpmav__2_hK7arGz14zJq4P2i2p43-M0VV9uvxQ81JqwKmBuNtLhGrOvPwSo0VkNqy-YOiTE9cFGfN1gCpd_Fyh2gdyHnEHbHztxL3L-IPPx5Mob64nG19sE02MCnWM5oxLb_7cop-9IFebTWpmjSsSitHb5kmDrUwSCqOIdmLrTT_LJvgKDw28ALCKK5jGSgA30vwRnlrMsH-rcJNddbT7pSv096XbqSTOX_i7dpNxvXyuAdy4zY2Biuw&csuir=1&mtid=ALm8ate1O6T9i-gP2fKEiAw&lns_mode=cvst&udm=50>)
+
+### 0315 | 2026-09-30 10:00:18 | You
+
+```text
+https://www.google.com/search?q=%21n+faculty+just+in+time+waar+de+uitroepteken+en+de+vraagteken+op+de+pols...&client=ms-android-xiaomi-terr2-rso2&hs=P7iq&sca_esv=ef1c8e45d7a317ba&sxsrf=APpeQnvYE4YpPwlnGnpueBaGO_-zbzqy5Q%3A1790754894067&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpnJQOWUbUFy0AZP2fc5_e7wQK9SpSaccWZEM8174slgzA7lL9Jp-FedBms3jKtDYRkzLfYMnDYMy5pBIIBgIQaS46ps0&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwi0vdzq6ZWXAxXD5QIHHWwcC6AQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAH5bjknvDV0ioEjHQWRozIpuUMmp5tC3DRhGFNeCL2hVI8fM2MIM8WVgTj8gEFvRqMsGEVjntI0G0e2uALul2OrLqKbvFMTMjgJu4OAbNRXTHwk_AkoMKbOXU5AABiLOQYkNbOUYBwxhvNDzsWUOFIR30bgoMkdp_vh5YDC3D5oznc1zUSDzjnRbHPGJxlGRZG1XmQTkO8vJ9ZF34F-_rq_YJUBYgPmVDqrVm-B1l5bSro1Aj7Zm_qqPxZWALkhqp_ka8GCRqgfqTPoKUVIqhbuEwqIFBqJxruB7zzKRrttH27PyJXXLZ-c1SEWLepH66ZIf2r35RLlg&csuir=1&mtid=T8C8aoubM9LJi-gP8YDvmAk&lns_mode=cvst&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=%21n+faculty+just+in+time+waar+de+uitroepteken+en+de+vraagteken+op+de+pols...&client=ms-android-xiaomi-terr2-rso2&hs=P7iq&sca_esv=ef1c8e45d7a317ba&sxsrf=APpeQnvYE4YpPwlnGnpueBaGO_-zbzqy5Q%3A1790754894067&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpnJQOWUbUFy0AZP2fc5_e7wQK9SpSaccWZEM8174slgzA7lL9Jp-FedBms3jKtDYRkzLfYMnDYMy5pBIIBgIQaS46ps0&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwi0vdzq6ZWXAxXD5QIHHWwcC6AQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAH5bjknvDV0ioEjHQWRozIpuUMmp5tC3DRhGFNeCL2hVI8fM2MIM8WVgTj8gEFvRqMsGEVjntI0G0e2uALul2OrLqKbvFMTMjgJu4OAbNRXTHwk_AkoMKbOXU5AABiLOQYkNbOUYBwxhvNDzsWUOFIR30bgoMkdp_vh5YDC3D5oznc1zUSDzjnRbHPGJxlGRZG1XmQTkO8vJ9ZF34F-_rq_YJUBYgPmVDqrVm-B1l5bSro1Aj7Zm_qqPxZWALkhqp_ka8GCRqgfqTPoKUVIqhbuEwqIFBqJxruB7zzKRrttH27PyJXXLZ-c1SEWLepH66ZIf2r35RLlg&csuir=1&mtid=T8C8aoubM9LJi-gP8YDvmAk&lns_mode=cvst&udm=50>)
+
+### 0316 | 2026-09-30 10:05:33 | You
+
+```text
+https://www.google.com/search?q=%21n+faculty+just+in+time+waar+de+uitroepteken+en+de+vraagteken+op+de+pols...&client=ms-android-xiaomi-terr2-rso2&hs=P7iq&sca_esv=ef1c8e45d7a317ba&sxsrf=APpeQnvYE4YpPwlnGnpueBaGO_-zbzqy5Q%3A1790754894067&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpnJQOWUbUFy0AZP2fc5_e7wQK9SpSaccWZEM8174slgzA7lL9Jp-FedBms3jKtDYRkzLfYMnDYMy5pBIIBgIQaS46ps0&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwi0vdzq6ZWXAxXD5QIHHWwcC6AQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfByDy3_OT_6QYkiN2VvjqUjuvcBowp0ZfBwLcsbuYSS4N5fMatTl7T8sfRLi72nlY9G12-XAnUo_1Eo5Q6XW-VdNpR3i-O0cRGtPWiL-CYodNung85-diR0JCjIhtzQKnj6w_EIDQMBZy3B14_M2q8D8ZiCcLlVLCfoBkARg3RCBDy0pLOqp7Hh508Ko9jM10vHPG0PEmr9zP-XP7Jw5FsL2nmmSiZQ-m8RB1ugOIg_1DYsXLi9l6wRssUThg_6m-nUkfD89RuzihbZq6OOXUgqyfbTGVb3AOj2s0bLLD3PJqnfJKPl46iMZ4zxqqBdGPjewutdypqo_A&csuir=1&mtid=T8C8aoubM9LJi-gP8YDvmAk&lns_mode=cvst&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=%21n+faculty+just+in+time+waar+de+uitroepteken+en+de+vraagteken+op+de+pols...&client=ms-android-xiaomi-terr2-rso2&hs=P7iq&sca_esv=ef1c8e45d7a317ba&sxsrf=APpeQnvYE4YpPwlnGnpueBaGO_-zbzqy5Q%3A1790754894067&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpnJQOWUbUFy0AZP2fc5_e7wQK9SpSaccWZEM8174slgzA7lL9Jp-FedBms3jKtDYRkzLfYMnDYMy5pBIIBgIQaS46ps0&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwi0vdzq6ZWXAxXD5QIHHWwcC6AQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfByDy3_OT_6QYkiN2VvjqUjuvcBowp0ZfBwLcsbuYSS4N5fMatTl7T8sfRLi72nlY9G12-XAnUo_1Eo5Q6XW-VdNpR3i-O0cRGtPWiL-CYodNung85-diR0JCjIhtzQKnj6w_EIDQMBZy3B14_M2q8D8ZiCcLlVLCfoBkARg3RCBDy0pLOqp7Hh508Ko9jM10vHPG0PEmr9zP-XP7Jw5FsL2nmmSiZQ-m8RB1ugOIg_1DYsXLi9l6wRssUThg_6m-nUkfD89RuzihbZq6OOXUgqyfbTGVb3AOj2s0bLLD3PJqnfJKPl46iMZ4zxqqBdGPjewutdypqo_A&csuir=1&mtid=T8C8aoubM9LJi-gP8YDvmAk&lns_mode=cvst&udm=50>)
+
+### 0317 | 2026-09-30 10:50:58 | You
+
+```text
+Oychen1@yahoo.com
+```
+
+### 0318 | 2026-09-30 10:51:09 | You
+
+```text
+Verhaallijn leuke dingen
+```
+
+### 0319 | 2026-09-30 11:52:48 | You
+
+```text
+https://www.google.com/search?q=is+maizena+bindmiddel+voor+jus&client=ms-android-xiaomi-terr2-rso2&hs=H9iq&sca_esv=f74a3a3c47be0d30&sxsrf=APpeQntO_jXCuGc7QiVv2CBdTNN1BeMhDg%3A1790761847739&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKiWE327vHSSX3EU0x8dB6hqifrmJYJpi5hdo8N_17Yp0m7NOldBqgUtkN1rgthOVh3L4tR1Qj_liBuKKq6Hdnl0kGiYf5Tt0rmV1aWFi9WZPRgDTPs&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiwwr7eg5aXAxWR9wIHHT_OMIwQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCuzqWxB4JGGRk6p8ThSaZHcJ0lwDwVzr2QxCzBgRSc9HLHv3U_0s3I3pQuypk63YFqYnTJB8zQvKXIty_UsHg5O90PZ4xYYieTBub1n4pAIKV8lTHyobKavYkjSdt4n_yhFSCpTzhIwR2vxVyRjJq3G3lZK8lIsSC6IdSn2MXUuVT00NmR2cCrVg9KVJZeO-eo1_ij4ky3BFeRU8ntyIvdcXjeAkQ3KUUJz09CN1-wRfRyLbHjsUadwvi_DP-Es-QZDY6ALi0opw&csuir=1&mtid=hNu8auiYCZqhi-gP7vOG2A8&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=is+maizena+bindmiddel+voor+jus&client=ms-android-xiaomi-terr2-rso2&hs=H9iq&sca_esv=f74a3a3c47be0d30&sxsrf=APpeQntO_jXCuGc7QiVv2CBdTNN1BeMhDg%3A1790761847739&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKiWE327vHSSX3EU0x8dB6hqifrmJYJpi5hdo8N_17Yp0m7NOldBqgUtkN1rgthOVh3L4tR1Qj_liBuKKq6Hdnl0kGiYf5Tt0rmV1aWFi9WZPRgDTPs&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiwwr7eg5aXAxWR9wIHHT_OMIwQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCuzqWxB4JGGRk6p8ThSaZHcJ0lwDwVzr2QxCzBgRSc9HLHv3U_0s3I3pQuypk63YFqYnTJB8zQvKXIty_UsHg5O90PZ4xYYieTBub1n4pAIKV8lTHyobKavYkjSdt4n_yhFSCpTzhIwR2vxVyRjJq3G3lZK8lIsSC6IdSn2MXUuVT00NmR2cCrVg9KVJZeO-eo1_ij4ky3BFeRU8ntyIvdcXjeAkQ3KUUJz09CN1-wRfRyLbHjsUadwvi_DP-Es-QZDY6ALi0opw&csuir=1&mtid=hNu8auiYCZqhi-gP7vOG2A8&udm=50>)
+
+### 0320 | 2026-09-30 11:52:51 | You
+
+```text
+Nmp
+```
+
+### 0321 | 2026-09-30 11:52:59 | You
+
+```text
+Leer koken
+```
+
+### 0322 | 2026-09-30 11:53:10 | You
+
+```text
+Ik ga weer verder de boel verpesten
+```
+
+### 0323 | 2026-09-30 13:47:10 | You
+
+```text
+<audio omitted>
+```
+
+### 0324 | 2026-09-30 13:59:31 | You
+
+```text
+https://www.google.com/search?q=essenge&client=ms-android-xiaomi-terr2-rso2&hs=3VOB&sca_esv=ce5ff1088580e4ec&sxsrf=APpeQnv5x-aOTv5CDAQWMAZn30nOgzk1hQ%3A1790769498687&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpWFun_Hbf9lrDzcGOCzTXwLF8QrRYckTcchjYAyznaoWyVNutNj3vDs5z9k0_6hM1lzEV5TC-7hhOxbSchppD-z-9ZC8&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwisx9-eoJaXAxW-2AIHHXrWD7cQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAeGdRFd-E_3JBzJRs6ygv11kmASZJaBwtgo3XmCcwJ87g1SWci_nGmqbIS0MMT93DLZToGMXKVHN39iZRg84MAWq-mL210Gn3D5e8-ernc3Ency2TOlnZslRk3tBLi8WTonZY3gLojgjwzZtd-tTAa31Mw2MCdgBqhYVM1DoRaf2cZCvQba_xnshwhUkaDOJh7cexPUhgVEQFndHAUtw16hoClruPAO4JbbkNfFwgWyv8wgUhXuEvwoHNBrP4MMk6IFSYTrytPHdPxjhftsqU1L-bxnIvQkUiG-rSMFRcgVJRHQyxIaL95O9O2XGFVp5R636tBUuMhbg&csuir=1&mtid=X_m8atXGFN6Bi-gP5oDu4AQ&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=essenge&client=ms-android-xiaomi-terr2-rso2&hs=3VOB&sca_esv=ce5ff1088580e4ec&sxsrf=APpeQnv5x-aOTv5CDAQWMAZn30nOgzk1hQ%3A1790769498687&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpWFun_Hbf9lrDzcGOCzTXwLF8QrRYckTcchjYAyznaoWyVNutNj3vDs5z9k0_6hM1lzEV5TC-7hhOxbSchppD-z-9ZC8&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwisx9-eoJaXAxW-2AIHHXrWD7cQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAeGdRFd-E_3JBzJRs6ygv11kmASZJaBwtgo3XmCcwJ87g1SWci_nGmqbIS0MMT93DLZToGMXKVHN39iZRg84MAWq-mL210Gn3D5e8-ernc3Ency2TOlnZslRk3tBLi8WTonZY3gLojgjwzZtd-tTAa31Mw2MCdgBqhYVM1DoRaf2cZCvQba_xnshwhUkaDOJh7cexPUhgVEQFndHAUtw16hoClruPAO4JbbkNfFwgWyv8wgUhXuEvwoHNBrP4MMk6IFSYTrytPHdPxjhftsqU1L-bxnIvQkUiG-rSMFRcgVJRHQyxIaL95O9O2XGFVp5R636tBUuMhbg&csuir=1&mtid=X_m8atXGFN6Bi-gP5oDu4AQ&udm=50>)
+
+### 0325 | 2026-09-30 14:10:27 | You
+
+```text
+https://www.google.com/search?q=bioshock+big+daddy+sing+little+girls&client=ms-android-xiaomi-terr2-rso2&hs=EWOB&sa=X&sca_esv=ce5ff1088580e4ec&sxsrf=APpeQnsZwCrXURkuyUdwcU3-VwDEoqDgvQ%3A1790770160413&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&ved=2ahUKEwjRnqTaopaXAxXn_7sIHQY7BPIQ2J8OegQICRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCm7b1LTIXNeop04nmClRN-bnAmEuWcwKJaODCKu5B82U-yTJzylxSQrguvjLY9V9kH2v66HEu7M0nKCx0inRmDpHfEUMNX2WeOJk6XVJO3VE0OBRtc6ymhSdkZDHVDB3yxBMVfBF68NgEuXqdUSKBxVYfq7O7h1lOzvP8_FWZY0bA_gbWeEWiI8KiQYaD-EjxTvddavHfrX91z2wtAGrw-hLPZXU4LuJAKezOCumXv1jJQUmmfyQL1Vfyaentf0RTdfS4o3NU2hrH70VbCEWh2356kxODT7Cgb0-aaKhC_Jnss-_0IuEILg6GS3zf5P6mhm0MB747VUVBOjIzY5S3qUK8Him2oHQ&csuir=1&mtid=8_u8aqHYOb7t7_UP_ea3-Qo&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=bioshock+big+daddy+sing+little+girls&client=ms-android-xiaomi-terr2-rso2&hs=EWOB&sa=X&sca_esv=ce5ff1088580e4ec&sxsrf=APpeQnsZwCrXURkuyUdwcU3-VwDEoqDgvQ%3A1790770160413&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&ved=2ahUKEwjRnqTaopaXAxXn_7sIHQY7BPIQ2J8OegQICRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCm7b1LTIXNeop04nmClRN-bnAmEuWcwKJaODCKu5B82U-yTJzylxSQrguvjLY9V9kH2v66HEu7M0nKCx0inRmDpHfEUMNX2WeOJk6XVJO3VE0OBRtc6ymhSdkZDHVDB3yxBMVfBF68NgEuXqdUSKBxVYfq7O7h1lOzvP8_FWZY0bA_gbWeEWiI8KiQYaD-EjxTvddavHfrX91z2wtAGrw-hLPZXU4LuJAKezOCumXv1jJQUmmfyQL1Vfyaentf0RTdfS4o3NU2hrH70VbCEWh2356kxODT7Cgb0-aaKhC_Jnss-_0IuEILg6GS3zf5P6mhm0MB747VUVBOjIzY5S3qUK8Him2oHQ&csuir=1&mtid=8_u8aqHYOb7t7_UP_ea3-Qo&udm=50>)
+
+### 0326 | 2026-09-30 14:15:12 | You
+
+```text
+https://www.google.com/search?q=bioshock+big+daddy+sing+little+girls&client=ms-android-xiaomi-terr2-rso2&hs=EWOB&sa=X&sca_esv=ce5ff1088580e4ec&sxsrf=APpeQnsZwCrXURkuyUdwcU3-VwDEoqDgvQ%3A1790770160413&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&ved=2ahUKEwjRnqTaopaXAxXn_7sIHQY7BPIQ2J8OegQICRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAk7MSpxIsLkW_9Bd65wCEvDTkZulVJEeHpqoBPuiDPBmxueHxHOY_zTla8czxIBAUUspa2OMpWQfP3XzZca9dqYo_9tAhU3sc11gMhHofFgmwJWGmDx7wo2xCoeb7lBUPOQir2_FmglJfU_N8LKcniZUMeGBJ2hwGURDWfXdEIspr-KljbSzshAMRdJ3C-9fV0-rrkhXer9JmfCeMzsf2VLBMy97TrfxamF1JHUGQjeTc0QZATbpvQsNBej2Eq1GaM72orwcOF1yQLGvoSah4Q8eIbYiOw7e8wtBcl2MbFH7LYKbhRqFTJKOOzf9lFU2Z1cznG3gcdFspxVZoXhTwgHKc7Wyqb0w&csuir=1&mtid=8_u8aqHYOb7t7_UP_ea3-Qo&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=bioshock+big+daddy+sing+little+girls&client=ms-android-xiaomi-terr2-rso2&hs=EWOB&sa=X&sca_esv=ce5ff1088580e4ec&sxsrf=APpeQnsZwCrXURkuyUdwcU3-VwDEoqDgvQ%3A1790770160413&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&ved=2ahUKEwjRnqTaopaXAxXn_7sIHQY7BPIQ2J8OegQICRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAk7MSpxIsLkW_9Bd65wCEvDTkZulVJEeHpqoBPuiDPBmxueHxHOY_zTla8czxIBAUUspa2OMpWQfP3XzZca9dqYo_9tAhU3sc11gMhHofFgmwJWGmDx7wo2xCoeb7lBUPOQir2_FmglJfU_N8LKcniZUMeGBJ2hwGURDWfXdEIspr-KljbSzshAMRdJ3C-9fV0-rrkhXer9JmfCeMzsf2VLBMy97TrfxamF1JHUGQjeTc0QZATbpvQsNBej2Eq1GaM72orwcOF1yQLGvoSah4Q8eIbYiOw7e8wtBcl2MbFH7LYKbhRqFTJKOOzf9lFU2Z1cznG3gcdFspxVZoXhTwgHKc7Wyqb0w&csuir=1&mtid=8_u8aqHYOb7t7_UP_ea3-Qo&udm=50>)
+
+### 0327 | 2026-09-30 14:25:22 | You
+
+```text
+<image omitted>
+```
+
+### 0328 | 2026-09-30 14:25:34 | You
+
+```text
+https://www.google.com/search?q=bioshock+big+daddy+sing+little+girls&client=ms-android-xiaomi-terr2-rso2&hs=EWOB&sa=X&sca_esv=ce5ff1088580e4ec&sxsrf=APpeQnsZwCrXURkuyUdwcU3-VwDEoqDgvQ%3A1790770160413&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&ved=2ahUKEwjRnqTaopaXAxXn_7sIHQY7BPIQ2J8OegQICRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDTb65IXHdaVwLkcu0FzhKo7vbIVTZrcNTbpZht66QckrwLO_SfB26XSstzbzf0sHbBqFUmDmFAVJvaRbhBAUkCvBeZvdh27-mVOWiudW6GEss6CTxk3vsoHao0tH2_IYL1IugBOKOcwxlu3hPlLCMIThIRldAvjGrn7rnpMPAnVaoaA3M7GGk0i5QRRLz314rnYF7EnE4S08LM7-vplVIsmB2xnRnEGZnHXCHTRKcBBhb-c1n6x73NVlqKpidKc8BWwT4ugiN9xxOm8QgXlusdnKIA68kZDToHntXqmipNsPx2viE0OMIFiGDc7BbCWN5XET8L5_BTlCjYHfFv9f8OlyzPgidpnQ&csuir=1&mtid=8_u8aqHYOb7t7_UP_ea3-Qo&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=bioshock+big+daddy+sing+little+girls&client=ms-android-xiaomi-terr2-rso2&hs=EWOB&sa=X&sca_esv=ce5ff1088580e4ec&sxsrf=APpeQnsZwCrXURkuyUdwcU3-VwDEoqDgvQ%3A1790770160413&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&ved=2ahUKEwjRnqTaopaXAxXn_7sIHQY7BPIQ2J8OegQICRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDTb65IXHdaVwLkcu0FzhKo7vbIVTZrcNTbpZht66QckrwLO_SfB26XSstzbzf0sHbBqFUmDmFAVJvaRbhBAUkCvBeZvdh27-mVOWiudW6GEss6CTxk3vsoHao0tH2_IYL1IugBOKOcwxlu3hPlLCMIThIRldAvjGrn7rnpMPAnVaoaA3M7GGk0i5QRRLz314rnYF7EnE4S08LM7-vplVIsmB2xnRnEGZnHXCHTRKcBBhb-c1n6x73NVlqKpidKc8BWwT4ugiN9xxOm8QgXlusdnKIA68kZDToHntXqmipNsPx2viE0OMIFiGDc7BbCWN5XET8L5_BTlCjYHfFv9f8OlyzPgidpnQ&csuir=1&mtid=8_u8aqHYOb7t7_UP_ea3-Qo&udm=50>)
+
+### 0329 | 2026-09-30 14:28:45 | You
+
+```text
+https://www.google.com/search?q=bioshock+big+daddy+sing+little+girls&client=ms-android-xiaomi-terr2-rso2&hs=EWOB&sa=X&sca_esv=ce5ff1088580e4ec&sxsrf=APpeQnsZwCrXURkuyUdwcU3-VwDEoqDgvQ%3A1790770160413&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&ved=2ahUKEwjRnqTaopaXAxXn_7sIHQY7BPIQ2J8OegQICRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBnG_wunDGudWs6ZrM8LSveYBk8UlEOwGgcmJZTV0EqilSV5QJtFA9VQPOcAejbRbVVJe8wLJrRX9ywOQjca6fOzgSN446NgEgpx93ditCXflPdqWBvzB9RNPljPgbD7rh2oxNbK2C1hGI-hSaO1wuinFNM8qjEWqAtTk-SwBemLrBJQFvjf4v9FGlFFbDK6aa9TBF9615nXtNkPNHgDYmNpQf0ufPlxsVUUQLOuL9l2JUmEH-Kt6CnXHxJ_WzWHEUVlx69rhbYdXkfKVniQe-5XP6feJEoVFOmoageNbiq_iFg7Fqz8QG_9gGHzajcZhhMrWF07iRI5QylOnIvK_QSskZ7U56aEw&csuir=1&mtid=8_u8aqHYOb7t7_UP_ea3-Qo&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=bioshock+big+daddy+sing+little+girls&client=ms-android-xiaomi-terr2-rso2&hs=EWOB&sa=X&sca_esv=ce5ff1088580e4ec&sxsrf=APpeQnsZwCrXURkuyUdwcU3-VwDEoqDgvQ%3A1790770160413&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&ved=2ahUKEwjRnqTaopaXAxXn_7sIHQY7BPIQ2J8OegQICRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBnG_wunDGudWs6ZrM8LSveYBk8UlEOwGgcmJZTV0EqilSV5QJtFA9VQPOcAejbRbVVJe8wLJrRX9ywOQjca6fOzgSN446NgEgpx93ditCXflPdqWBvzB9RNPljPgbD7rh2oxNbK2C1hGI-hSaO1wuinFNM8qjEWqAtTk-SwBemLrBJQFvjf4v9FGlFFbDK6aa9TBF9615nXtNkPNHgDYmNpQf0ufPlxsVUUQLOuL9l2JUmEH-Kt6CnXHxJ_WzWHEUVlx69rhbYdXkfKVniQe-5XP6feJEoVFOmoageNbiq_iFg7Fqz8QG_9gGHzajcZhhMrWF07iRI5QylOnIvK_QSskZ7U56aEw&csuir=1&mtid=8_u8aqHYOb7t7_UP_ea3-Qo&udm=50>)
+
+### 0330 | 2026-09-30 14:29:06 | You
+
+```text
+I Tom Klootwijk principal creative technologist VS the state of decay
+```
+
+### 0331 | 2026-09-30 14:35:58 | You
+
+```text
+https://www.google.com/search?q=tungsten&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDM0NDhqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955HC4dEhTD85WaiWkSD5EjFnrnkXf8uSwU1OjdTZmfoiWVgODsrQlv49kLZ63PjUD4Ylh3ioGlhPObtZQ3tSCsBQwnjKN&aep=10&ntc=1&sxsrf=APpeQntTHaIjT1lxUoBorJXDApeveMh9kA%3A1790771636047&mstk=AUtExfDFwOUS6xfbdHNzP8NZG-kVvbPe_iqNePv62O4YFUO3FC4zlhnGqxPuVmQU93lkF36YTKwgZe2MpkmwnWw4FgCt22DyVsdjYsjrcq92OHnj3sCkv2LNlwVo1Grp-Cs8mVAzYhEhA1WnZmbWryAOITh4hwb7dgzD-k5kpHO6DB_de_nsa1c22CL3i_aM0L6oFINd5Xq-3PyDrGjUoEM9eZ3y-boeri9OByojMC8lNxPJ6ilC4NZONKtXoQ1Ozv5JlKnwtCYy1uWQWYIppFUVdRy_fMAF3LxZPtvLs7hVdLTF4JKKe912cdBMZximgIycQpqPHWsS9WxBQw&aioh=3&csuir=1&mtid=wQG9asiYDJu_i-gPs8SKyAM&udm=50#lfId=ChxjMe
+```
+
+Links: [Link 1](<https://www.google.com/search?q=tungsten&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDM0NDhqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955HC4dEhTD85WaiWkSD5EjFnrnkXf8uSwU1OjdTZmfoiWVgODsrQlv49kLZ63PjUD4Ylh3ioGlhPObtZQ3tSCsBQwnjKN&aep=10&ntc=1&sxsrf=APpeQntTHaIjT1lxUoBorJXDApeveMh9kA%3A1790771636047&mstk=AUtExfDFwOUS6xfbdHNzP8NZG-kVvbPe_iqNePv62O4YFUO3FC4zlhnGqxPuVmQU93lkF36YTKwgZe2MpkmwnWw4FgCt22DyVsdjYsjrcq92OHnj3sCkv2LNlwVo1Grp-Cs8mVAzYhEhA1WnZmbWryAOITh4hwb7dgzD-k5kpHO6DB_de_nsa1c22CL3i_aM0L6oFINd5Xq-3PyDrGjUoEM9eZ3y-boeri9OByojMC8lNxPJ6ilC4NZONKtXoQ1Ozv5JlKnwtCYy1uWQWYIppFUVdRy_fMAF3LxZPtvLs7hVdLTF4JKKe912cdBMZximgIycQpqPHWsS9WxBQw&aioh=3&csuir=1&mtid=wQG9asiYDJu_i-gPs8SKyAM&udm=50#lfId=ChxjMe>)
+
+### 0332 | 2026-09-30 14:42:22 | You
+
+```text
+https://www.google.com/search?q=pareiodelia&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDM4NzJqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&aep=10&ntc=1&sxsrf=APpeQnttyDF9Uc_Px7iBezcnwVW8bjmkog%3A1790772048892&mstk=AUtExfAns1qnu8et1IR91etazM0We6FQ2X_XD8zvWKa24JPGKswXMHI0DG-simjb7J8fAojERIyJgZ4Kc5QbD1aQ1W7S5uw2xspp8EH2ofgvbL7wWNX5aU2Z9hcQoymgcds6v3c1ECeKx2OEa8UQI6k_cHt3CaQkcbIBn1MPgwNHEWlE1biAdkVkqXij0kHx5JXIlxFWJKmXEnYKze7k85dVAq7shhOXZIFMZQG4hSNqr1KeLhtdhVjrxRRSF06r1823RirYAUy6mQXKY_3LyepSbBKIsOx9B9eGGvHR6wUo1hZrsV_alqKRfE3Cw7zTIDpF5Si2CaC_caYX-A&aioh=3&csuir=1&udm=50&mtid=bwO9ary6EtKwi-gPvpiC4A8#lfId=ChxjMe
+```
+
+Links: [Link 1](<https://www.google.com/search?q=pareiodelia&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDM4NzJqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&aep=10&ntc=1&sxsrf=APpeQnttyDF9Uc_Px7iBezcnwVW8bjmkog%3A1790772048892&mstk=AUtExfAns1qnu8et1IR91etazM0We6FQ2X_XD8zvWKa24JPGKswXMHI0DG-simjb7J8fAojERIyJgZ4Kc5QbD1aQ1W7S5uw2xspp8EH2ofgvbL7wWNX5aU2Z9hcQoymgcds6v3c1ECeKx2OEa8UQI6k_cHt3CaQkcbIBn1MPgwNHEWlE1biAdkVkqXij0kHx5JXIlxFWJKmXEnYKze7k85dVAq7shhOXZIFMZQG4hSNqr1KeLhtdhVjrxRRSF06r1823RirYAUy6mQXKY_3LyepSbBKIsOx9B9eGGvHR6wUo1hZrsV_alqKRfE3Cw7zTIDpF5Si2CaC_caYX-A&aioh=3&csuir=1&udm=50&mtid=bwO9ary6EtKwi-gPvpiC4A8#lfId=ChxjMe>)
+
+### 0333 | 2026-09-30 14:45:52 | You
+
+```text
+<image omitted>
+```
+
+### 0334 | 2026-09-30 14:45:59 | You
+
+```text
+https://www.google.com/search?q=so+i+have+a+booboo+and+my+pee+owie+owie&oq=so+i+have+a+booboo+and+my+pee+owie+owie&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTEyMTE0ajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8#lfId=ChxjMe
+```
+
+Links: [Link 1](<https://www.google.com/search?q=so+i+have+a+booboo+and+my+pee+owie+owie&oq=so+i+have+a+booboo+and+my+pee+owie+owie&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTEyMTE0ajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8#lfId=ChxjMe>)
+
+### 0335 | 2026-09-30 15:01:15 | You
+
+```text
+https://www.google.com/search?q=hacker+that+can+hack+anything+motto+hack+everything+where+being+a+hack+is+just+finger+painting+kindergarten+stuff&client=ms-android-xiaomi-terr2-rso2&hs=xWOB&sca_esv=c3d470dabc065b66&sxsrf=APpeQnvL4_A4kZUal_SclhtQku73cxlDeg%3A1790772893098&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj16qnxrJaXAxV9_7sIHa6LAUoQ2J8OegQIDBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfARqD42ZG822IF3gsxkEinU05A1df55z_jd1PPPGliUanAJOer4XAC3TJn7aUVBpuL3AlcqOOqDuICMv39pboh18Urho9-LWHg0o18-DCOaw7JdtBd0cZxmYnGSCcBftVHdpjzfRf8ZppQt6Hyq6aoFakGrcMK28sHh4kF54LLfCBZtaNEk9TJ7JEc0yPqCEemy88h0vXc0gU4SwlwuKyeolUKvy4UjYbWoPIfpgvQQaNTm3ISJtpBbTM7nJGOcz9amYCeVeKciIFEt-2TphZZ0rIIYm4Ove2z-T7sgUKRefSjRAijdLwEiIZHUv0jEDou5ArgKP_FN6Q&csuir=1&mtid=nwa9au7hFsKJ9u8P04SjoAo&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=hacker+that+can+hack+anything+motto+hack+everything+where+being+a+hack+is+just+finger+painting+kindergarten+stuff&client=ms-android-xiaomi-terr2-rso2&hs=xWOB&sca_esv=c3d470dabc065b66&sxsrf=APpeQnvL4_A4kZUal_SclhtQku73cxlDeg%3A1790772893098&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj16qnxrJaXAxV9_7sIHa6LAUoQ2J8OegQIDBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfARqD42ZG822IF3gsxkEinU05A1df55z_jd1PPPGliUanAJOer4XAC3TJn7aUVBpuL3AlcqOOqDuICMv39pboh18Urho9-LWHg0o18-DCOaw7JdtBd0cZxmYnGSCcBftVHdpjzfRf8ZppQt6Hyq6aoFakGrcMK28sHh4kF54LLfCBZtaNEk9TJ7JEc0yPqCEemy88h0vXc0gU4SwlwuKyeolUKvy4UjYbWoPIfpgvQQaNTm3ISJtpBbTM7nJGOcz9amYCeVeKciIFEt-2TphZZ0rIIYm4Ove2z-T7sgUKRefSjRAijdLwEiIZHUv0jEDou5ArgKP_FN6Q&csuir=1&mtid=nwa9au7hFsKJ9u8P04SjoAo&udm=50>)
+
+### 0336 | 2026-09-30 15:04:13 | You
+
+```text
+<image omitted>
+```
+
+### 0337 | 2026-09-30 15:04:19 | You
+
+```text
+https://www.google.com/search?q=hacker+that+can+hack+anything+motto+hack+everything+where+being+a+hack+is+just+finger+painting+kindergarten+stuff&client=ms-android-xiaomi-terr2-rso2&hs=xWOB&sca_esv=c3d470dabc065b66&sxsrf=APpeQnvL4_A4kZUal_SclhtQku73cxlDeg%3A1790772893098&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj16qnxrJaXAxV9_7sIHa6LAUoQ2J8OegQIDBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDEfsAs49yreMNlvoUOQpogUswCvqneElIpzhgsW2tmAfJfOCsDLzDxU_9ibXjMcKdInGbq95yb1Zttj1mNZlYU6D0r3HgpTlaf6QCtZmdbKoF8Xyopn3gI3lGHaorIbtfFdvdbI4L7BaJehWbTt3r81FHn88iIPDSJG-Tl72BZ5sxftTSdNwxOxfnPaAZ-5Mf1sGX5ebaCz6zwy_PIRA3nXpXfnnW-Fzi1L0gD7FWz9yis5bWMOgL-adQfIWuMLDpS8h4ewNawkCnJ5xjVCLQdbIyM7FmzS4xohdvontJsXAEJakD17qIbPTSS8y1iccioRJvd1s053Q&csuir=1&mtid=nwa9au7hFsKJ9u8P04SjoAo&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=hacker+that+can+hack+anything+motto+hack+everything+where+being+a+hack+is+just+finger+painting+kindergarten+stuff&client=ms-android-xiaomi-terr2-rso2&hs=xWOB&sca_esv=c3d470dabc065b66&sxsrf=APpeQnvL4_A4kZUal_SclhtQku73cxlDeg%3A1790772893098&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj16qnxrJaXAxV9_7sIHa6LAUoQ2J8OegQIDBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDEfsAs49yreMNlvoUOQpogUswCvqneElIpzhgsW2tmAfJfOCsDLzDxU_9ibXjMcKdInGbq95yb1Zttj1mNZlYU6D0r3HgpTlaf6QCtZmdbKoF8Xyopn3gI3lGHaorIbtfFdvdbI4L7BaJehWbTt3r81FHn88iIPDSJG-Tl72BZ5sxftTSdNwxOxfnPaAZ-5Mf1sGX5ebaCz6zwy_PIRA3nXpXfnnW-Fzi1L0gD7FWz9yis5bWMOgL-adQfIWuMLDpS8h4ewNawkCnJ5xjVCLQdbIyM7FmzS4xohdvontJsXAEJakD17qIbPTSS8y1iccioRJvd1s053Q&csuir=1&mtid=nwa9au7hFsKJ9u8P04SjoAo&udm=50>)
+
+### 0338 | 2026-09-30 15:12:28 | You
+
+```text
+https://www.google.com/search?q=hacker+that+can+hack+anything+motto+hack+everything+where+being+a+hack+is+just+finger+painting+kindergarten+stuff&client=ms-android-xiaomi-terr2-rso2&hs=xWOB&sca_esv=c3d470dabc065b66&sxsrf=APpeQnvL4_A4kZUal_SclhtQku73cxlDeg%3A1790772893098&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj16qnxrJaXAxV9_7sIHa6LAUoQ2J8OegQIDBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCvyQF5lPgvHfGBG3pLwuVKPZrdjAjaJ6aShFbvWk6sgy2h6rePRGjPCPgr-JXncG31savqIK5iVq3rHAlSAm5yuKpbPKoGBNp-D97guKwRyu7fROa41yRY-Dal-HerrlPP9jkGOouue9JJ9TKN2rHjFaStt3XXmoyqumiP5dDhrnVU8h5pslJymeMLifc-ujl35eP4UGKdI5D6ypbaiXNjlcpZYDYAlVm6Wk7GpxvoqmSN57ZzgAkZQzFC1BfaWY6bZaqMJOeq8zS-z8lfkdilNPXvVsm-c-nNpl7T6OsLfqUPGbCS_1TPQinNlsmOeQcGVuSCCzYk6w&csuir=1&mtid=nwa9au7hFsKJ9u8P04SjoAo&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=hacker+that+can+hack+anything+motto+hack+everything+where+being+a+hack+is+just+finger+painting+kindergarten+stuff&client=ms-android-xiaomi-terr2-rso2&hs=xWOB&sca_esv=c3d470dabc065b66&sxsrf=APpeQnvL4_A4kZUal_SclhtQku73cxlDeg%3A1790772893098&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj16qnxrJaXAxV9_7sIHa6LAUoQ2J8OegQIDBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCvyQF5lPgvHfGBG3pLwuVKPZrdjAjaJ6aShFbvWk6sgy2h6rePRGjPCPgr-JXncG31savqIK5iVq3rHAlSAm5yuKpbPKoGBNp-D97guKwRyu7fROa41yRY-Dal-HerrlPP9jkGOouue9JJ9TKN2rHjFaStt3XXmoyqumiP5dDhrnVU8h5pslJymeMLifc-ujl35eP4UGKdI5D6ypbaiXNjlcpZYDYAlVm6Wk7GpxvoqmSN57ZzgAkZQzFC1BfaWY6bZaqMJOeq8zS-z8lfkdilNPXvVsm-c-nNpl7T6OsLfqUPGbCS_1TPQinNlsmOeQcGVuSCCzYk6w&csuir=1&mtid=nwa9au7hFsKJ9u8P04SjoAo&udm=50>)
+
+### 0339 | 2026-09-30 15:13:22 | You
+
+```text
+<image omitted>
+```
+
+### 0340 | 2026-09-30 15:13:27 | You
+
+```text
+https://www.google.com/search?q=hacker+that+can+hack+anything+motto+hack+everything+where+being+a+hack+is+just+finger+painting+kindergarten+stuff&client=ms-android-xiaomi-terr2-rso2&hs=xWOB&sca_esv=c3d470dabc065b66&sxsrf=APpeQnvL4_A4kZUal_SclhtQku73cxlDeg%3A1790772893098&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj16qnxrJaXAxV9_7sIHa6LAUoQ2J8OegQIDBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCvyQF5lPgvHfGBG3pLwuVKPZrdjAjaJ6aShFbvWk6sgy2h6rePRGjPCPgr-JXncG31savqIK5iVq3rHAlSAm5yuKpbPKoGBNp-D97guKwRyu7fROa41yRY-Dal-HerrlPP9jkGOouue9JJ9TKN2rHjFaStt3XXmoyqumiP5dDhrnVU8h5pslJymeMLifc-ujl35eP4UGKdI5D6ypbaiXNjlcpZYDYAlVm6Wk7GpxvoqmSN57ZzgAkZQzFC1BfaWY6bZaqMJOeq8zS-z8lfkdilNPXvVsm-c-nNpl7T6OsLfqUPGbCS_1TPQinNlsmOeQcGVuSCCzYk6w&csuir=1&mtid=nwa9au7hFsKJ9u8P04SjoAo&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=hacker+that+can+hack+anything+motto+hack+everything+where+being+a+hack+is+just+finger+painting+kindergarten+stuff&client=ms-android-xiaomi-terr2-rso2&hs=xWOB&sca_esv=c3d470dabc065b66&sxsrf=APpeQnvL4_A4kZUal_SclhtQku73cxlDeg%3A1790772893098&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj16qnxrJaXAxV9_7sIHa6LAUoQ2J8OegQIDBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCvyQF5lPgvHfGBG3pLwuVKPZrdjAjaJ6aShFbvWk6sgy2h6rePRGjPCPgr-JXncG31savqIK5iVq3rHAlSAm5yuKpbPKoGBNp-D97guKwRyu7fROa41yRY-Dal-HerrlPP9jkGOouue9JJ9TKN2rHjFaStt3XXmoyqumiP5dDhrnVU8h5pslJymeMLifc-ujl35eP4UGKdI5D6ypbaiXNjlcpZYDYAlVm6Wk7GpxvoqmSN57ZzgAkZQzFC1BfaWY6bZaqMJOeq8zS-z8lfkdilNPXvVsm-c-nNpl7T6OsLfqUPGbCS_1TPQinNlsmOeQcGVuSCCzYk6w&csuir=1&mtid=nwa9au7hFsKJ9u8P04SjoAo&udm=50>)
+
+### 0341 | 2026-09-30 15:51:25 | You
+
+```text
+<audio omitted>
+```
+
+### 0342 | 2026-09-30 16:01:54 | You
+
+```text
+<image omitted>
+```
+
+### 0343 | 2026-09-30 16:14:22 | You
+
+```text
+<audio omitted>
+```
+
+### 0344 | 2026-09-30 16:29:40 | You
+
+```text
+<audio omitted>
+```
+
+### 0345 | 2026-09-30 16:36:35 | You
+
+```text
+<audio omitted>
+```
+
+### 0346 | 2026-09-30 16:40:14 | You
+
+```text
+<audio omitted>
+```
+
+### 0347 | 2026-09-30 16:53:59 | You
+
+```text
+<audio omitted>
+```
+
+### 0348 | 2026-09-30 17:04:49 | You
+
+```text
+<audio omitted>
+```
+
+### 0349 | 2026-09-30 17:08:47 | You
+
+```text
+<audio omitted>
+```
+
+### 0350 | 2026-09-30 17:33:04 | You
+
+```text
+https://www.google.com/search?q=retreating+scorched+earth+as+in+tactical+retreat+chrono+temporal+spatial&client=ms-android-xiaomi-terr2-rso2&hs=SZOB&sca_esv=b0c9a82e6cc79f1f&sxsrf=APpeQnv8Ju3Huor_yQlIhJsG-LSO9bhkFw%3A1790782164110&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiqt4u2z5aXAxWQ9bsIHal0PJ0Q2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCvBIWJ_utu6oDaq2WIvhZt2g3cBcK_o3Fy52ssKiRxFAEu-J7mMSsW7-hgB-f9RYYXo3GNX-ULAQGA3sRvJP3pxSoY9SW6JWGQk3DoTT7IOEYYrtjcE5BJp8t9R95V-_WiYp0vDSICyc75QcBrz8zeJBM-w6X66mYLG-ld1V-uZ_ltZYdA-DD3ALHRa7i7QraiBR4c3UlxsV48UueUD2TJZMlr0zm7B9gfiUKvS-ciSbzK1eKB-Bufr7kRwhKOhWQm532_fvxEWqPA3pRByDnI7ajzl8U8LUl0I4ze7qjcbqvgBaW8bLHouDxJLNv69CRfQyxX3QGrLA&csuir=1&mtid=4Cq9aozpPNqN9u8P0u6guQY&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=retreating+scorched+earth+as+in+tactical+retreat+chrono+temporal+spatial&client=ms-android-xiaomi-terr2-rso2&hs=SZOB&sca_esv=b0c9a82e6cc79f1f&sxsrf=APpeQnv8Ju3Huor_yQlIhJsG-LSO9bhkFw%3A1790782164110&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiqt4u2z5aXAxWQ9bsIHal0PJ0Q2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCvBIWJ_utu6oDaq2WIvhZt2g3cBcK_o3Fy52ssKiRxFAEu-J7mMSsW7-hgB-f9RYYXo3GNX-ULAQGA3sRvJP3pxSoY9SW6JWGQk3DoTT7IOEYYrtjcE5BJp8t9R95V-_WiYp0vDSICyc75QcBrz8zeJBM-w6X66mYLG-ld1V-uZ_ltZYdA-DD3ALHRa7i7QraiBR4c3UlxsV48UueUD2TJZMlr0zm7B9gfiUKvS-ciSbzK1eKB-Bufr7kRwhKOhWQm532_fvxEWqPA3pRByDnI7ajzl8U8LUl0I4ze7qjcbqvgBaW8bLHouDxJLNv69CRfQyxX3QGrLA&csuir=1&mtid=4Cq9aozpPNqN9u8P0u6guQY&udm=50>)
+
+### 0351 | 2026-09-30 17:35:30 | You
+
+```text
+https://www.google.com/search?q=retreating+scorched+earth+as+in+tactical+retreat+chrono+temporal+spatial&client=ms-android-xiaomi-terr2-rso2&hs=SZOB&sca_esv=b0c9a82e6cc79f1f&sxsrf=APpeQnv8Ju3Huor_yQlIhJsG-LSO9bhkFw%3A1790782164110&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiqt4u2z5aXAxWQ9bsIHal0PJ0Q2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBHnLh_xpbm2FS_INLjxf0S-q8NL78J8pAeMNoe-U4eICmrhYu04Fo5KYm-kwCyVd958VHFkpLmNIVhWCE9u-5Y5T4szHEUxePab6NWqbeTe3zqFtY8M3ONHOKPQ6K1t1NN_5w2net1ETi8E1Tnij_CDXilcyvEbKGEHadjVz6GA5iVin3ALVLSHw5Uwnx2a0rtWHfmiUvEWW2PtA_rOZrqnjy5nCooa_kc6_ejWGme2LoLIXDStjZ_0Q-oROjw0yDq9-a5qYifBuisAMetnsP5cIYHYaSV3rahlV3Z7gFg3xOQsaCQJ3aRa35EikcvEhtr46_sVpMVyA&csuir=1&mtid=4Cq9aozpPNqN9u8P0u6guQY&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=retreating+scorched+earth+as+in+tactical+retreat+chrono+temporal+spatial&client=ms-android-xiaomi-terr2-rso2&hs=SZOB&sca_esv=b0c9a82e6cc79f1f&sxsrf=APpeQnv8Ju3Huor_yQlIhJsG-LSO9bhkFw%3A1790782164110&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiqt4u2z5aXAxWQ9bsIHal0PJ0Q2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBHnLh_xpbm2FS_INLjxf0S-q8NL78J8pAeMNoe-U4eICmrhYu04Fo5KYm-kwCyVd958VHFkpLmNIVhWCE9u-5Y5T4szHEUxePab6NWqbeTe3zqFtY8M3ONHOKPQ6K1t1NN_5w2net1ETi8E1Tnij_CDXilcyvEbKGEHadjVz6GA5iVin3ALVLSHw5Uwnx2a0rtWHfmiUvEWW2PtA_rOZrqnjy5nCooa_kc6_ejWGme2LoLIXDStjZ_0Q-oROjw0yDq9-a5qYifBuisAMetnsP5cIYHYaSV3rahlV3Z7gFg3xOQsaCQJ3aRa35EikcvEhtr46_sVpMVyA&csuir=1&mtid=4Cq9aozpPNqN9u8P0u6guQY&udm=50>)
+
+### 0352 | 2026-09-30 18:23:19 | You
+
+```text
+<audio omitted>
+```
+
+### 0353 | 2026-09-30 18:33:39 | You
+
+```text
+https://www.google.com/search?q=toxoplasma+reverse+osmosis+grass+cat+piss&client=ms-android-xiaomi-terr2-rso2&hs=7u3V&sa=X&sca_esv=316c0d1cb0936c39&sxsrf=APpeQnuGWh_Y91ikR1l9XZgzLiibCkytGg%3A1790785975173&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh_uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&ved=2ahUKEwiFy6zP3ZaXAxXi3QIHHSbBPLMQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDzfcO71fuWLwDjpNBjBU4B5ZIqQXHTueuYFH0_0sG2gplmF164UkSURBVXQzyKMjJPbjeSRMfIROP2wnmoB0Ts729LQvAet7Kkrpp-sT4H4yAJguedFb8at5DB5JtjuRumyluB_W-KADzHUDzwc3q7C2nDiL-KYcfMOjnyedsWVUBEnvqMDxDfp-sewxnznArGlA-WTb_q0yVkTcbcs55huy2K3wrAjBWegYkpo5XLehVQHJ0cFEUUjOkfr3tH5mvNnZ0s4mrDWcIN72hselAvSuaORmRmMAz2OqnUjktPJZY_234DNuS4ggY5VHyiZHOxiIP-5cOew&csuir=1&mtid=vjm9aoWlBLj0i-gP1pXD2Ao
+```
+
+Links: [Link 1](<https://www.google.com/search?q=toxoplasma+reverse+osmosis+grass+cat+piss&client=ms-android-xiaomi-terr2-rso2&hs=7u3V&sa=X&sca_esv=316c0d1cb0936c39&sxsrf=APpeQnuGWh_Y91ikR1l9XZgzLiibCkytGg%3A1790785975173&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh_uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&ved=2ahUKEwiFy6zP3ZaXAxXi3QIHHSbBPLMQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDzfcO71fuWLwDjpNBjBU4B5ZIqQXHTueuYFH0_0sG2gplmF164UkSURBVXQzyKMjJPbjeSRMfIROP2wnmoB0Ts729LQvAet7Kkrpp-sT4H4yAJguedFb8at5DB5JtjuRumyluB_W-KADzHUDzwc3q7C2nDiL-KYcfMOjnyedsWVUBEnvqMDxDfp-sewxnznArGlA-WTb_q0yVkTcbcs55huy2K3wrAjBWegYkpo5XLehVQHJ0cFEUUjOkfr3tH5mvNnZ0s4mrDWcIN72hselAvSuaORmRmMAz2OqnUjktPJZY_234DNuS4ggY5VHyiZHOxiIP-5cOew&csuir=1&mtid=vjm9aoWlBLj0i-gP1pXD2Ao>)
+
+### 0354 | 2026-09-30 19:27:58 | You
+
+```text
+<audio omitted>
+```
+
+### 0355 | 2026-09-30 19:31:55 | You
+
+```text
+https://www.google.com/search?q=leven+stratego+ingress&client=ms-android-xiaomi-terr2-rso2&hs=4v3V&sca_esv=42c786bd57fb3a9a&sxsrf=APpeQnv6aU6ECR6JS6elJnptCJGV9nBisQ%3A1790789493951&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpDyhqhJz-EL1EohYDSUG6u_7TBQFaykKSCI8ECDH-29gr0f9f3cZ1Yql2oc9vrmnG89ZnGbRsEj4xcaVT1fZIuaEb_qM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwi-2Z3d6paXAxVezwIHHYA5AZUQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB10XxkV1aZqFBZldXDb8yRrmk94RQxLBGnUouobPTwJ4_RqA_9EGmlrIN1tEpAuqL-PusymmtcCI4DWX19sJiSvZYnvgFYK2GArCNbU6UrvHQXR0hx1T-W7Z-GEhr2aZ5urUqqqNDoeLmkM8KGYWeytBqhnJ-C6FJoYtoI9-dU8ThTe53vTk64QAQIGXfUMq56_wgoAMgMXF9a6MBT2V5Wv1U-9GS6XyxV3ZMo6Xg_7micQYfrW5zY4DFwHKP1QFOFPO5IITmt98fJoYKPR9ED4AEIlX-j1nIevtYcu9by0fYC37A7192BPiPFpIb4cHeKrlGN_RFM6Q&csuir=1&mtid=gEe9ara2C9yJ-d8P8q2_qQI
+```
+
+Links: [Link 1](<https://www.google.com/search?q=leven+stratego+ingress&client=ms-android-xiaomi-terr2-rso2&hs=4v3V&sca_esv=42c786bd57fb3a9a&sxsrf=APpeQnv6aU6ECR6JS6elJnptCJGV9nBisQ%3A1790789493951&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpDyhqhJz-EL1EohYDSUG6u_7TBQFaykKSCI8ECDH-29gr0f9f3cZ1Yql2oc9vrmnG89ZnGbRsEj4xcaVT1fZIuaEb_qM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwi-2Z3d6paXAxVezwIHHYA5AZUQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB10XxkV1aZqFBZldXDb8yRrmk94RQxLBGnUouobPTwJ4_RqA_9EGmlrIN1tEpAuqL-PusymmtcCI4DWX19sJiSvZYnvgFYK2GArCNbU6UrvHQXR0hx1T-W7Z-GEhr2aZ5urUqqqNDoeLmkM8KGYWeytBqhnJ-C6FJoYtoI9-dU8ThTe53vTk64QAQIGXfUMq56_wgoAMgMXF9a6MBT2V5Wv1U-9GS6XyxV3ZMo6Xg_7micQYfrW5zY4DFwHKP1QFOFPO5IITmt98fJoYKPR9ED4AEIlX-j1nIevtYcu9by0fYC37A7192BPiPFpIb4cHeKrlGN_RFM6Q&csuir=1&mtid=gEe9ara2C9yJ-d8P8q2_qQI>)
+
+### 0356 | 2026-09-30 20:34:26 | You
+
+```text
+https://www.google.com/search?q=leven+stratego+ingress&client=ms-android-xiaomi-terr2-rso2&hs=4v3V&sca_esv=42c786bd57fb3a9a&sxsrf=APpeQnv6aU6ECR6JS6elJnptCJGV9nBisQ%3A1790789493951&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpDyhqhJz-EL1EohYDSUG6u_7TBQFaykKSCI8ECDH-29gr0f9f3cZ1Yql2oc9vrmnG89ZnGbRsEj4xcaVT1fZIuaEb_qM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwi-2Z3d6paXAxVezwIHHYA5AZUQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfA_OuJprlvYlMEhYTqNRTnuLEZ1TCiLrvhAc9qWkHzH3lca8Ge9mf2i1lMikuZ64xuDTguQlRM3l_FXqIPgauXPGos5Zm--7obriV3pgEri2LK9QsjoUH6XRT8w1gCjO0kab7t03S9gqmsLxcG0nKP-O79XayBHqcG_ThjuL-T6E0nmTBJ2ResDs7HlS-trltjY-JMpnHNUz21tHls5-V6YZdw01kP9yUu4cI-_sNhyZDUBVO9QzsFl2J04cnNTzd5pDVFEGXS1Jb0GVmMmQ-0p66e9qh3EjQasvXMPcdtOqT-Rq4IUI6ZjYd39DUnoUdYqcWHVHypTMg&csuir=1&mtid=gEe9asy2GeLq-d8PjpDS6Ak&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=leven+stratego+ingress&client=ms-android-xiaomi-terr2-rso2&hs=4v3V&sca_esv=42c786bd57fb3a9a&sxsrf=APpeQnv6aU6ECR6JS6elJnptCJGV9nBisQ%3A1790789493951&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpDyhqhJz-EL1EohYDSUG6u_7TBQFaykKSCI8ECDH-29gr0f9f3cZ1Yql2oc9vrmnG89ZnGbRsEj4xcaVT1fZIuaEb_qM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwi-2Z3d6paXAxVezwIHHYA5AZUQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfA_OuJprlvYlMEhYTqNRTnuLEZ1TCiLrvhAc9qWkHzH3lca8Ge9mf2i1lMikuZ64xuDTguQlRM3l_FXqIPgauXPGos5Zm--7obriV3pgEri2LK9QsjoUH6XRT8w1gCjO0kab7t03S9gqmsLxcG0nKP-O79XayBHqcG_ThjuL-T6E0nmTBJ2ResDs7HlS-trltjY-JMpnHNUz21tHls5-V6YZdw01kP9yUu4cI-_sNhyZDUBVO9QzsFl2J04cnNTzd5pDVFEGXS1Jb0GVmMmQ-0p66e9qh3EjQasvXMPcdtOqT-Rq4IUI6ZjYd39DUnoUdYqcWHVHypTMg&csuir=1&mtid=gEe9asy2GeLq-d8PjpDS6Ak&udm=50>)
+
+### 0357 | 2026-09-30 20:53:34 | You
+
+```text
+https://www.google.com/search?q=leven+stratego+ingress&client=ms-android-xiaomi-terr2-rso2&hs=4v3V&sca_esv=42c786bd57fb3a9a&sxsrf=APpeQnv6aU6ECR6JS6elJnptCJGV9nBisQ%3A1790789493951&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpDyhqhJz-EL1EohYDSUG6u_7TBQFaykKSCI8ECDH-29gr0f9f3cZ1Yql2oc9vrmnG89ZnGbRsEj4xcaVT1fZIuaEb_qM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwi-2Z3d6paXAxVezwIHHYA5AZUQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfArMyD5Z8VAiyA5KJb-sRWgxvlefLKmszKTxOL-Hs2cJACBp5ugdTPa6NQvdXN8nHnAUtSAHAwG0AadIK4S4RKm27uixXauQBfW7cJp_JRcNgl_nUFKQHfCYQnMVtTcxwPQev5DLQeb2l_runkLgMFY1BPreX8iRDdIx-BDofZnHWM7SzPE42cG9DtJdpI3c257JAZBEUsSIcyBvSCH1FJ0sy188j35ZC7ZMJoeDnebg0zyugQYbub8jNTHfhtqYUJd7jXU8OG-wj_3D0QqOk26HhKUpDKD2pgZAD5Z7IwNwf_4Qlz_fUkOKue3eWS667jTIkbaqooVVg&csuir=1&mtid=gEe9asy2GeLq-d8PjpDS6Ak&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=leven+stratego+ingress&client=ms-android-xiaomi-terr2-rso2&hs=4v3V&sca_esv=42c786bd57fb3a9a&sxsrf=APpeQnv6aU6ECR6JS6elJnptCJGV9nBisQ%3A1790789493951&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpDyhqhJz-EL1EohYDSUG6u_7TBQFaykKSCI8ECDH-29gr0f9f3cZ1Yql2oc9vrmnG89ZnGbRsEj4xcaVT1fZIuaEb_qM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwi-2Z3d6paXAxVezwIHHYA5AZUQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfArMyD5Z8VAiyA5KJb-sRWgxvlefLKmszKTxOL-Hs2cJACBp5ugdTPa6NQvdXN8nHnAUtSAHAwG0AadIK4S4RKm27uixXauQBfW7cJp_JRcNgl_nUFKQHfCYQnMVtTcxwPQev5DLQeb2l_runkLgMFY1BPreX8iRDdIx-BDofZnHWM7SzPE42cG9DtJdpI3c257JAZBEUsSIcyBvSCH1FJ0sy188j35ZC7ZMJoeDnebg0zyugQYbub8jNTHfhtqYUJd7jXU8OG-wj_3D0QqOk26HhKUpDKD2pgZAD5Z7IwNwf_4Qlz_fUkOKue3eWS667jTIkbaqooVVg&csuir=1&mtid=gEe9asy2GeLq-d8PjpDS6Ak&udm=50>)
+
+### 0358 | 2026-09-30 20:55:51 | You
+
+```text
+https://www.google.com/search?q=leven+stratego+ingress&client=ms-android-xiaomi-terr2-rso2&hs=4v3V&sca_esv=42c786bd57fb3a9a&sxsrf=APpeQnv6aU6ECR6JS6elJnptCJGV9nBisQ%3A1790789493951&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpDyhqhJz-EL1EohYDSUG6u_7TBQFaykKSCI8ECDH-29gr0f9f3cZ1Yql2oc9vrmnG89ZnGbRsEj4xcaVT1fZIuaEb_qM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwi-2Z3d6paXAxVezwIHHYA5AZUQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDpW242aUYHQvDQyk41qA7nFj2yn-H4QJNOmgl9gMQHTT8nz5IXcky1vF9kJQ4KDCPtPkygEsFeHyYRQmaT7RJGesXy29VHN9yqHrJNKzJq9vQwGHPIwgwZvyOBaB3eYMSaTI2515raClqvD6K0qbwCOLrOYA-gAK0Seh7aW76X3AF4259gomwdPlbTeWNhO34L026bLXtyBoux6w8MmdhkeYz7GyrNxwmjgAUCBHlbKeLFdDlbDMheUl1KZ6nPGM_CSNheT8AEnHhWQEoddywWG-WEDM4AxlLZjdqlqga4X5sByzDgFHY1I6jsVRKTyp1A_1QST7imlQ&csuir=1&mtid=gEe9asy2GeLq-d8PjpDS6Ak&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=leven+stratego+ingress&client=ms-android-xiaomi-terr2-rso2&hs=4v3V&sca_esv=42c786bd57fb3a9a&sxsrf=APpeQnv6aU6ECR6JS6elJnptCJGV9nBisQ%3A1790789493951&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpDyhqhJz-EL1EohYDSUG6u_7TBQFaykKSCI8ECDH-29gr0f9f3cZ1Yql2oc9vrmnG89ZnGbRsEj4xcaVT1fZIuaEb_qM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwi-2Z3d6paXAxVezwIHHYA5AZUQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDpW242aUYHQvDQyk41qA7nFj2yn-H4QJNOmgl9gMQHTT8nz5IXcky1vF9kJQ4KDCPtPkygEsFeHyYRQmaT7RJGesXy29VHN9yqHrJNKzJq9vQwGHPIwgwZvyOBaB3eYMSaTI2515raClqvD6K0qbwCOLrOYA-gAK0Seh7aW76X3AF4259gomwdPlbTeWNhO34L026bLXtyBoux6w8MmdhkeYz7GyrNxwmjgAUCBHlbKeLFdDlbDMheUl1KZ6nPGM_CSNheT8AEnHhWQEoddywWG-WEDM4AxlLZjdqlqga4X5sByzDgFHY1I6jsVRKTyp1A_1QST7imlQ&csuir=1&mtid=gEe9asy2GeLq-d8PjpDS6Ak&udm=50>)
+
+### 0359 | 2026-09-30 21:30:18 | You
+
+```text
+https://www.reddit.com/r/Amsterdam/s/pZpkn2KvjT
+```
+
+Links: [Link 1](<https://www.reddit.com/r/Amsterdam/s/pZpkn2KvjT>)
+
+## 2026-10-01
+
+### 0360 | 2026-10-01 05:04:51 | You
+
+```text
+https://www.google.com/search?q=dark+pool&client=ms-android-xiaomi-terr2-rso2&hs=PkOB&sca_esv=4a1a45f7f4830ceb&sxsrf=APpeQns9aUOgNnshB4Q9VOnZ-RkSMfog3Q%3A1790822927784&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIInBEEy-eiFZv8B5rS4maeBbDRDJJCFbjbN5SCpjfV7gh4CtnkEOlWt1wE9yhAcz0LleaU5VkZDlBAat3IDngXygzPLveZWd2YvpA_aY3GL_l5arJ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwii9tyj55eXAxXpxQIHHWhUAZQQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfACFLa8WpPkc3slODdpBJaRg0GhrD1B-O1T-fjTkuXH2CtdL-iwKWkOG9mCJlhUr9M0IiLSrqnQGxYJjUWlbFtsWI8AM2X7G7YJ5wASrXEMbQ7j1cMgDE8dSdmSNwdJaIh9ValLZgLauMMz5SSmDGJQzWsvixBGgqIbp0i99c44eXq27IifGW3ohqnZJjSLkDiIokDG5ZI0_9AGdvLW-i5s3q_5NTQXvhiFe1lT0MzQjBzT5qetqNO3DWS6Vhs8QQKW29V8vxab8Q&csuir=1&mtid=G8q9av-_FI7Ui-gPv_zAuQo&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=dark+pool&client=ms-android-xiaomi-terr2-rso2&hs=PkOB&sca_esv=4a1a45f7f4830ceb&sxsrf=APpeQns9aUOgNnshB4Q9VOnZ-RkSMfog3Q%3A1790822927784&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIInBEEy-eiFZv8B5rS4maeBbDRDJJCFbjbN5SCpjfV7gh4CtnkEOlWt1wE9yhAcz0LleaU5VkZDlBAat3IDngXygzPLveZWd2YvpA_aY3GL_l5arJ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwii9tyj55eXAxXpxQIHHWhUAZQQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfACFLa8WpPkc3slODdpBJaRg0GhrD1B-O1T-fjTkuXH2CtdL-iwKWkOG9mCJlhUr9M0IiLSrqnQGxYJjUWlbFtsWI8AM2X7G7YJ5wASrXEMbQ7j1cMgDE8dSdmSNwdJaIh9ValLZgLauMMz5SSmDGJQzWsvixBGgqIbp0i99c44eXq27IifGW3ohqnZJjSLkDiIokDG5ZI0_9AGdvLW-i5s3q_5NTQXvhiFe1lT0MzQjBzT5qetqNO3DWS6Vhs8QQKW29V8vxab8Q&csuir=1&mtid=G8q9av-_FI7Ui-gPv_zAuQo&udm=50>)
+
+### 0361 | 2026-10-01 05:16:32 | You
+
+```text
+https://www.google.com/search?q=nederland+1+predator+drone&client=ms-android-xiaomi-terr2-rso2&hs=qkOB&sca_esv=4a1a45f7f4830ceb&sxsrf=APpeQns96Vzky3OQzOtRynkfDUPf4CSaBA%3A1790824515271&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpDyhqhJz-EL1EohYDSUG6u_7TBQFaykKSCI8ECDH-29gr0f9f3cZ1Yql2oc9vrmnG89ZnGbRsEj4xcaVT1fZIuaEb_qM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiww9mY7ZeXAxWn9LsIHcfrMx0Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfASLh64Jif4E8GHddbR1d_MA1U7Y36dLuEJW8FjN1d6rxjjnEQk1Wdx4AzqnFOQOc0YhairKkm3n7p46x8NWSCmJLhU7uyW4H5X5KXx2ix8-Fgflr1VUzSeqlKNB1ZYpfGHUDQk08aWg-ZvqEcjWAq4jBFS3Wri6Sv63sawjIWi1wXEp3wABTa-WYqp_avBXUGdpDXk00ep30O9J-nFK7yz9HiHo3Gu_S2Bh-HFlVqTdU6wR5AwslGKaHLtYKNhnXlgtBFZJWiw&csuir=1&mtid=U9C9aqOIDL7t7_UPxarB2Ao&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=nederland+1+predator+drone&client=ms-android-xiaomi-terr2-rso2&hs=qkOB&sca_esv=4a1a45f7f4830ceb&sxsrf=APpeQns96Vzky3OQzOtRynkfDUPf4CSaBA%3A1790824515271&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpDyhqhJz-EL1EohYDSUG6u_7TBQFaykKSCI8ECDH-29gr0f9f3cZ1Yql2oc9vrmnG89ZnGbRsEj4xcaVT1fZIuaEb_qM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiww9mY7ZeXAxWn9LsIHcfrMx0Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfASLh64Jif4E8GHddbR1d_MA1U7Y36dLuEJW8FjN1d6rxjjnEQk1Wdx4AzqnFOQOc0YhairKkm3n7p46x8NWSCmJLhU7uyW4H5X5KXx2ix8-Fgflr1VUzSeqlKNB1ZYpfGHUDQk08aWg-ZvqEcjWAq4jBFS3Wri6Sv63sawjIWi1wXEp3wABTa-WYqp_avBXUGdpDXk00ep30O9J-nFK7yz9HiHo3Gu_S2Bh-HFlVqTdU6wR5AwslGKaHLtYKNhnXlgtBFZJWiw&csuir=1&mtid=U9C9aqOIDL7t7_UPxarB2Ao&udm=50>)
+
+### 0362 | 2026-10-01 05:18:33 | You
+
+```text
+https://www.google.com/search?q=nederland+1+predator+drone&client=ms-android-xiaomi-terr2-rso2&hs=qkOB&sca_esv=4a1a45f7f4830ceb&sxsrf=APpeQns96Vzky3OQzOtRynkfDUPf4CSaBA%3A1790824515271&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpDyhqhJz-EL1EohYDSUG6u_7TBQFaykKSCI8ECDH-29gr0f9f3cZ1Yql2oc9vrmnG89ZnGbRsEj4xcaVT1fZIuaEb_qM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiww9mY7ZeXAxWn9LsIHcfrMx0Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBox5jdUM1PwpbwRIeDRY7AjmvUuyL-bILLkhmXVWXXVK21QQIVclzJYUd7WmbgKZLTfQXosHxxHlYdg1FTi7adJa1VC_zyiH69EWIm-pLvMGhOXPpuuuQ73sg6NLGolIJux_MVWxHWeubgmCasvRaSPj_5bwe6LDVLvoB1rYQZ8DN0JsJMaLPCBL9X6QKmR6UyT_9_bgSFz4Vwo8C6GJYGHYKDrHNOwswQ4i84x_JhC7Z0WAhTRuqHkepiYVKG9mE0ragvRYpM5g&csuir=1&mtid=U9C9aqOIDL7t7_UPxarB2Ao&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=nederland+1+predator+drone&client=ms-android-xiaomi-terr2-rso2&hs=qkOB&sca_esv=4a1a45f7f4830ceb&sxsrf=APpeQns96Vzky3OQzOtRynkfDUPf4CSaBA%3A1790824515271&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpDyhqhJz-EL1EohYDSUG6u_7TBQFaykKSCI8ECDH-29gr0f9f3cZ1Yql2oc9vrmnG89ZnGbRsEj4xcaVT1fZIuaEb_qM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiww9mY7ZeXAxWn9LsIHcfrMx0Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBox5jdUM1PwpbwRIeDRY7AjmvUuyL-bILLkhmXVWXXVK21QQIVclzJYUd7WmbgKZLTfQXosHxxHlYdg1FTi7adJa1VC_zyiH69EWIm-pLvMGhOXPpuuuQ73sg6NLGolIJux_MVWxHWeubgmCasvRaSPj_5bwe6LDVLvoB1rYQZ8DN0JsJMaLPCBL9X6QKmR6UyT_9_bgSFz4Vwo8C6GJYGHYKDrHNOwswQ4i84x_JhC7Z0WAhTRuqHkepiYVKG9mE0ragvRYpM5g&csuir=1&mtid=U9C9aqOIDL7t7_UPxarB2Ao&udm=50>)
+
+### 0363 | 2026-10-01 05:32:27 | You
+
+```text
+https://www.google.com/search?q=small+world+network+graph+7+notated+as+0+order+computer+science+notation+so+never+7+wikipedia+hitler+game+np+hard+traveling+salesman+problem&client=ms-android-xiaomi-terr2-rso2&hs=ykOB&sca_esv=4a1a45f7f4830ceb&sxsrf=APpeQnuUL64HdvgyWwmtCkeThC9tt9EX3g%3A1790825029840&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832UV2GkpKEK36HumGR10Evz150YHLBZQrC7jm5_C-J-0fqgkDt1m2_T86QUCFtH2LXDqJ_iLpcHVIHCzyFQN45ewUSIxCQV5CCSmjlW-Jl7sT4NN9p674V9xUYJ5LrMwWZJL9zXHt-CL4w5g0imG7Kkwjtmk-&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiMr4iO75eXAxVF9bsIHQz0AQYQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAOF8CQizqo9hhbybRAbg9ZeRhOx2GBCXu7-SNrC2pS6tnz9d7KS6IGaVRPBOlRfyf8MonMkEXYIvENjJw1yNrRgGD37oi1RRFpo2EkfB6b8OoSvXiQuMZPC3uDvS7BgOKcFCDK4SottG2-PAySO-6PMNLv8T7oQKP23YbCSM_Pb0NuqwJHVGp7m_A4ePnFIElOLO7XWZJqZv2NNb36sUSgAI0k29S3eP7kzRU-o0UpxquU_tBmp5JFPB5WSV1ro6rUjcZJ7-U-J8XuVFQJuRW2JWkQZXOrVneQqWD2ReenFq9OHqrr9oByvRMA4iUKlBEGJ3G0MS1P6w&csuir=1&mtid=UNK9auKLO5jqi-gPn_3TOQ&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=small+world+network+graph+7+notated+as+0+order+computer+science+notation+so+never+7+wikipedia+hitler+game+np+hard+traveling+salesman+problem&client=ms-android-xiaomi-terr2-rso2&hs=ykOB&sca_esv=4a1a45f7f4830ceb&sxsrf=APpeQnuUL64HdvgyWwmtCkeThC9tt9EX3g%3A1790825029840&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832UV2GkpKEK36HumGR10Evz150YHLBZQrC7jm5_C-J-0fqgkDt1m2_T86QUCFtH2LXDqJ_iLpcHVIHCzyFQN45ewUSIxCQV5CCSmjlW-Jl7sT4NN9p674V9xUYJ5LrMwWZJL9zXHt-CL4w5g0imG7Kkwjtmk-&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiMr4iO75eXAxVF9bsIHQz0AQYQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAOF8CQizqo9hhbybRAbg9ZeRhOx2GBCXu7-SNrC2pS6tnz9d7KS6IGaVRPBOlRfyf8MonMkEXYIvENjJw1yNrRgGD37oi1RRFpo2EkfB6b8OoSvXiQuMZPC3uDvS7BgOKcFCDK4SottG2-PAySO-6PMNLv8T7oQKP23YbCSM_Pb0NuqwJHVGp7m_A4ePnFIElOLO7XWZJqZv2NNb36sUSgAI0k29S3eP7kzRU-o0UpxquU_tBmp5JFPB5WSV1ro6rUjcZJ7-U-J8XuVFQJuRW2JWkQZXOrVneQqWD2ReenFq9OHqrr9oByvRMA4iUKlBEGJ3G0MS1P6w&csuir=1&mtid=UNK9auKLO5jqi-gPn_3TOQ&udm=50>)
+
+### 0364 | 2026-10-01 05:41:30 | You
+
+```text
+MBR
+```
+
+### 0365 | 2026-10-01 05:41:39 | You
+
+```text
+<album message>
+```
+
+### 0366 | 2026-10-01 05:41:39 | You
+
+```text
+<image omitted>
+```
+
+### 0367 | 2026-10-01 05:41:40 | You
+
+```text
+<image omitted>
+```
+
+### 0368 | 2026-10-01 05:41:40 | You
+
+```text
+<image omitted>
+```
+
+### 0369 | 2026-10-01 05:41:48 | You
+
+```text
+https://www.google.com/search?q=small+world+network+graph+7+notated+as+0+order+computer+science+notation+so+never+7+wikipedia+hitler+game+np+hard+traveling+salesman+problem&client=ms-android-xiaomi-terr2-rso2&hs=ykOB&sca_esv=4a1a45f7f4830ceb&sxsrf=APpeQnuUL64HdvgyWwmtCkeThC9tt9EX3g%3A1790825029840&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832UV2GkpKEK36HumGR10Evz150YHLBZQrC7jm5_C-J-0fqgkDt1m2_T86QUCFtH2LXDqJ_iLpcHVIHCzyFQN45ewUSIxCQV5CCSmjlW-Jl7sT4NN9p674V9xUYJ5LrMwWZJL9zXHt-CL4w5g0imG7Kkwjtmk-&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiMr4iO75eXAxVF9bsIHQz0AQYQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDjJ9k9SAy-1rEGkVCFGA2v2xEjniqli_xibZsNZGBQOLa9ZwssjNHDc5ixnPqXDmVLPbq2lb426QW1B6Rn55BxhIrw1Cv_jualNyl-Xn-M3GQ1AQnT3VtYfOQEK3QZ4cTnPH6gTztPpjyDV71MoW109Uv_5RFO_ZMdFgJS8zdDXGR5ow4X5Rq-0HrVe1q8x1PngrgGYtve1DWd_vxdxCXKh2GA7USLcX0FjanaXdnyezq_tIL_9IxQdxiVAH8gP4Hd0OzUtShK3njS7VyJZQkwRCrBjFQh3OqHu_TO9LyEiKq64KFaFpNI7dysLgQMOgtBTUl0mQ2qOw&csuir=1&mtid=UNK9auKLO5jqi-gPn_3TOQ&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=small+world+network+graph+7+notated+as+0+order+computer+science+notation+so+never+7+wikipedia+hitler+game+np+hard+traveling+salesman+problem&client=ms-android-xiaomi-terr2-rso2&hs=ykOB&sca_esv=4a1a45f7f4830ceb&sxsrf=APpeQnuUL64HdvgyWwmtCkeThC9tt9EX3g%3A1790825029840&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832UV2GkpKEK36HumGR10Evz150YHLBZQrC7jm5_C-J-0fqgkDt1m2_T86QUCFtH2LXDqJ_iLpcHVIHCzyFQN45ewUSIxCQV5CCSmjlW-Jl7sT4NN9p674V9xUYJ5LrMwWZJL9zXHt-CL4w5g0imG7Kkwjtmk-&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiMr4iO75eXAxVF9bsIHQz0AQYQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDjJ9k9SAy-1rEGkVCFGA2v2xEjniqli_xibZsNZGBQOLa9ZwssjNHDc5ixnPqXDmVLPbq2lb426QW1B6Rn55BxhIrw1Cv_jualNyl-Xn-M3GQ1AQnT3VtYfOQEK3QZ4cTnPH6gTztPpjyDV71MoW109Uv_5RFO_ZMdFgJS8zdDXGR5ow4X5Rq-0HrVe1q8x1PngrgGYtve1DWd_vxdxCXKh2GA7USLcX0FjanaXdnyezq_tIL_9IxQdxiVAH8gP4Hd0OzUtShK3njS7VyJZQkwRCrBjFQh3OqHu_TO9LyEiKq64KFaFpNI7dysLgQMOgtBTUl0mQ2qOw&csuir=1&mtid=UNK9auKLO5jqi-gPn_3TOQ&udm=50>)
+
+### 0370 | 2026-10-01 05:47:59 | You
+
+```text
+<audio omitted>
+```
+
+### 0371 | 2026-10-01 05:49:23 | You
+
+```text
+<audio omitted>
+```
+
+### 0372 | 2026-10-01 05:55:33 | You
+
+```text
+<audio omitted>
+```
+
+### 0373 | 2026-10-01 05:57:38 | You
+
+```text
+<audio omitted>
+```
+
+### 0374 | 2026-10-01 06:10:57 | You
+
+```text
+<audio omitted>
+```
+
+### 0375 | 2026-10-01 06:11:01 | You
+
+```text
+<audio omitted>
+```
+
+### 0376 | 2026-10-01 06:14:40 | You
+
+```text
+<audio omitted>
+```
+
+### 0377 | 2026-10-01 06:58:58 | You
+
+```text
+https://www.google.com/search?q=uyghur+muslim+community+shia+or+seed&client=ms-android-xiaomi-terr2-rso2&hs=nRjq&sca_esv=bfbbb328790af9c1&sxsrf=APpeQns9jAF_hMpFwa0ZkhduJtr3H0ZE-w%3A1790830691672&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832UgltsGVIAFz5WDq3ETuldE5s6R40x0T8qn57d7tYDuVrhsyhm3M0HLOka03ZK30am-aTt-53pEA8vBKHXfqhFzL7xhjWTIopU4mbfEoCk8oU5L0A9ARB3Z4nLwTLB7am3_A5IaH8keOk9yz0BHDdpOkhY4M&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiqhOuZhJiXAxWc_bsIHYe9BQwQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAOXoXlnZrTuziguodF8OEoE5QQ4lJ32VspiCPFOQug_97Loa-oe49Zv9xQXVeX-gKuB7yY6xMDa7GkXONwmW77ncqVq8mA2RDsW37076ut3DIcXWO8s3Hs9k5Z6yg3z9YvFNHJGJFz8Av1EhKVXlqXF_24V4EMbjQ&csuir=1&mtid=Zei9arH9C9Hh7_UPjObV-AM
+```
+
+Links: [Link 1](<https://www.google.com/search?q=uyghur+muslim+community+shia+or+seed&client=ms-android-xiaomi-terr2-rso2&hs=nRjq&sca_esv=bfbbb328790af9c1&sxsrf=APpeQns9jAF_hMpFwa0ZkhduJtr3H0ZE-w%3A1790830691672&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832UgltsGVIAFz5WDq3ETuldE5s6R40x0T8qn57d7tYDuVrhsyhm3M0HLOka03ZK30am-aTt-53pEA8vBKHXfqhFzL7xhjWTIopU4mbfEoCk8oU5L0A9ARB3Z4nLwTLB7am3_A5IaH8keOk9yz0BHDdpOkhY4M&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiqhOuZhJiXAxWc_bsIHYe9BQwQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAOXoXlnZrTuziguodF8OEoE5QQ4lJ32VspiCPFOQug_97Loa-oe49Zv9xQXVeX-gKuB7yY6xMDa7GkXONwmW77ncqVq8mA2RDsW37076ut3DIcXWO8s3Hs9k5Z6yg3z9YvFNHJGJFz8Av1EhKVXlqXF_24V4EMbjQ&csuir=1&mtid=Zei9arH9C9Hh7_UPjObV-AM>)
+
+### 0378 | 2026-10-01 07:41:57 | You
+
+```text
+https://www.google.com/search?q=9+folds+cap+for+physical+paper+manifold&oq=9+folds+cap+for+physical+paper+manifold&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTExNzMzajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8#lfId=ChxjMe
+```
+
+Links: [Link 1](<https://www.google.com/search?q=9+folds+cap+for+physical+paper+manifold&oq=9+folds+cap+for+physical+paper+manifold&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTExNzMzajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8#lfId=ChxjMe>)
+
+### 0379 | 2026-10-01 07:42:05 | You
+
+```text
+Stone metadata still life
+```
+
+### 0380 | 2026-10-01 08:30:11 | You
+
+```text
+https://www.google.com/search?q=stop+acting+shellfish+oyster+pearl+clamp+bead+iridescent+edu+ambachtelijk+magistraal+bereid+spermaboid+buoyency+blow+hole+whale+nice+thierry+bomb+gay+enola+boardwalk+oil+biofilm+olam+zee+vis+T+bull+ARC&client=ms-android-xiaomi-terr2-rso2&hs=GTjq&sca_esv=038efc59bde14a07&sxsrf=APpeQnu4biUeNC0BfY5tOWkmn6UWM4TUHA%3A1790836196300&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiG9dLamJiXAxWg0gIHHd7DK5AQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDMOCYGpbEqhqd9WCyu8c1PvH7lXaEiUrx4dDdTSfDF0v-zyTapZJkE9fKmZgnojIKLjpZRcW52_o8SQxB2bZNR1TjkUajt2OkkO7qdD12KY7GFOKU_JryrPgZdJmSghBAgZGv3nwGt33GRFZZvbYMnLbjG-B7UTcf0SbIHvk4vmo0a3tAvO629QaC6HHo_UOU_sUObz4Ytui6KWbFtFu_eDYNQgeM5Y1XDTQg20btrLtYLYDWiAM03gqrAIGhxQyKK23uboSuZ3Ykzse1RNS9J8exGhzrEr-j2J5Aeqc9bXjR7fe2rbK367pckqAqA8v1ruN_a9qVwMA&csuir=1&mtid=5v29aoKvFbmpi-gPzKr4gAg
+```
+
+Links: [Link 1](<https://www.google.com/search?q=stop+acting+shellfish+oyster+pearl+clamp+bead+iridescent+edu+ambachtelijk+magistraal+bereid+spermaboid+buoyency+blow+hole+whale+nice+thierry+bomb+gay+enola+boardwalk+oil+biofilm+olam+zee+vis+T+bull+ARC&client=ms-android-xiaomi-terr2-rso2&hs=GTjq&sca_esv=038efc59bde14a07&sxsrf=APpeQnu4biUeNC0BfY5tOWkmn6UWM4TUHA%3A1790836196300&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiG9dLamJiXAxWg0gIHHd7DK5AQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDMOCYGpbEqhqd9WCyu8c1PvH7lXaEiUrx4dDdTSfDF0v-zyTapZJkE9fKmZgnojIKLjpZRcW52_o8SQxB2bZNR1TjkUajt2OkkO7qdD12KY7GFOKU_JryrPgZdJmSghBAgZGv3nwGt33GRFZZvbYMnLbjG-B7UTcf0SbIHvk4vmo0a3tAvO629QaC6HHo_UOU_sUObz4Ytui6KWbFtFu_eDYNQgeM5Y1XDTQg20btrLtYLYDWiAM03gqrAIGhxQyKK23uboSuZ3Ykzse1RNS9J8exGhzrEr-j2J5Aeqc9bXjR7fe2rbK367pckqAqA8v1ruN_a9qVwMA&csuir=1&mtid=5v29aoKvFbmpi-gPzKr4gAg>)
+
+### 0381 | 2026-10-01 08:30:24 | You
+
+```text
+Down the kanker uit alles letterlijk neer en plat
+```
+
+### 0382 | 2026-10-01 08:38:12 | You
+
+```text
+https://www.google.com/search?q=pen+T+a+gram+5+tsar+top+o+loog+hij+ik+paal+hack+tor+meter+5g+force+offline+down+sin+dome&client=ms-android-xiaomi-terr2-rso2&hs=OTjq&sca_esv=23d3832781e2084d&sxsrf=APpeQnsLTMsVWCqLUYrz7UQjJ_1Y4HT55w%3A1790836654990&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE-Dsslc-KGKq55jF_BVsFlBx_GgM0fzV1XsSsLkzcasTEYACEWIWzF-55pNrwAKUeHOsvxvmV9GK7aWe1Dt1gL4yRbNiCM_1tjUQdwIRQAk2T8uGlV_QBaNCWEF78fG96j7oIlPEaM2vmIW2fPyLZFIF-bNq&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiGk6-1mpiXAxX0_rsIHaFWJp0Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDWTYxjIsIkqK2yOMbnx2LfqFrGxVZbYtelzDiHKzwb8sH0SSKoliJ3IbA8WpEnH6ZVdPi81Xp3rz_A1YQ-GcVyGRc5pWVxaUS_Z0BkTKH5AuyC9FhzY-LLMOrJiu90U-Eba816CeyRexhv6nxxcUZCIqb_SWH_JWuPiJxaTuW5DmwC1037Sd6BrFrp76_5PolBz7FBx4ETrLull0lf1J86ZINAMUf6BsU5p2oxhKS7D_BeKjBTOvSCwJS6f6S1Ug265UCXv7gmaR4Am1OeCaLPFl6zZHS1dat16My_cH1ijHBe4yLC5-WSL_MqxB0VDYHXg0EQu8YUcA&csuir=1&mtid=v_-9aqmJMtrxi-gPgc2AoQ4
+```
+
+Links: [Link 1](<https://www.google.com/search?q=pen+T+a+gram+5+tsar+top+o+loog+hij+ik+paal+hack+tor+meter+5g+force+offline+down+sin+dome&client=ms-android-xiaomi-terr2-rso2&hs=OTjq&sca_esv=23d3832781e2084d&sxsrf=APpeQnsLTMsVWCqLUYrz7UQjJ_1Y4HT55w%3A1790836654990&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE-Dsslc-KGKq55jF_BVsFlBx_GgM0fzV1XsSsLkzcasTEYACEWIWzF-55pNrwAKUeHOsvxvmV9GK7aWe1Dt1gL4yRbNiCM_1tjUQdwIRQAk2T8uGlV_QBaNCWEF78fG96j7oIlPEaM2vmIW2fPyLZFIF-bNq&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiGk6-1mpiXAxX0_rsIHaFWJp0Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDWTYxjIsIkqK2yOMbnx2LfqFrGxVZbYtelzDiHKzwb8sH0SSKoliJ3IbA8WpEnH6ZVdPi81Xp3rz_A1YQ-GcVyGRc5pWVxaUS_Z0BkTKH5AuyC9FhzY-LLMOrJiu90U-Eba816CeyRexhv6nxxcUZCIqb_SWH_JWuPiJxaTuW5DmwC1037Sd6BrFrp76_5PolBz7FBx4ETrLull0lf1J86ZINAMUf6BsU5p2oxhKS7D_BeKjBTOvSCwJS6f6S1Ug265UCXv7gmaR4Am1OeCaLPFl6zZHS1dat16My_cH1ijHBe4yLC5-WSL_MqxB0VDYHXg0EQu8YUcA&csuir=1&mtid=v_-9aqmJMtrxi-gPgc2AoQ4>)
+
+### 0383 | 2026-10-01 08:46:04 | You
+
+```text
+<audio omitted>
+```
+
+### 0384 | 2026-10-01 08:46:30 | You
+
+```text
+https://www.google.com/search?q=pen+T+a+gram+5+tsar+top+o+loog+hij+ik+paal+hack+tor+meter+5g+force+offline+down+sin+dome&client=ms-android-xiaomi-terr2-rso2&hs=OTjq&sca_esv=23d3832781e2084d&sxsrf=APpeQnsLTMsVWCqLUYrz7UQjJ_1Y4HT55w%3A1790836654990&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE-Dsslc-KGKq55jF_BVsFlBx_GgM0fzV1XsSsLkzcasTEYACEWIWzF-55pNrwAKUeHOsvxvmV9GK7aWe1Dt1gL4yRbNiCM_1tjUQdwIRQAk2T8uGlV_QBaNCWEF78fG96j7oIlPEaM2vmIW2fPyLZFIF-bNq&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiGk6-1mpiXAxX0_rsIHaFWJp0Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCW35Y-dyzRzCAXn6hIOHEeMUOeZgYxbrMhQnvv4S3uQYAHMuwrO44Q1Ol-wJuyCt4VIqjiJALqEXqOLqsIAm1DKzQre_PVL4a1QWwYf5NcxStjeu_ceH4ucobutuN-lgpBPEBP4B2AP6p9tFxhw5LCcinA_RC9IDlF9odPd49gxEg9L1wmIqMR5ip86XV60MLZbcthauBo2cl88dHArUcc9vlRMwErFRSi-dljxGIeCMGYkpkcvMPsDy-ckrijDocxk9gqt1Y6azhtuqjWmPoFb0wI9c9m9CuEKT_sKf2EdU-3ix1qqCdp76klT2drWIhfIThnVLmkDg&csuir=1&mtid=wP-9aomeCtzwi-gP7eSogAM&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=pen+T+a+gram+5+tsar+top+o+loog+hij+ik+paal+hack+tor+meter+5g+force+offline+down+sin+dome&client=ms-android-xiaomi-terr2-rso2&hs=OTjq&sca_esv=23d3832781e2084d&sxsrf=APpeQnsLTMsVWCqLUYrz7UQjJ_1Y4HT55w%3A1790836654990&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE-Dsslc-KGKq55jF_BVsFlBx_GgM0fzV1XsSsLkzcasTEYACEWIWzF-55pNrwAKUeHOsvxvmV9GK7aWe1Dt1gL4yRbNiCM_1tjUQdwIRQAk2T8uGlV_QBaNCWEF78fG96j7oIlPEaM2vmIW2fPyLZFIF-bNq&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiGk6-1mpiXAxX0_rsIHaFWJp0Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCW35Y-dyzRzCAXn6hIOHEeMUOeZgYxbrMhQnvv4S3uQYAHMuwrO44Q1Ol-wJuyCt4VIqjiJALqEXqOLqsIAm1DKzQre_PVL4a1QWwYf5NcxStjeu_ceH4ucobutuN-lgpBPEBP4B2AP6p9tFxhw5LCcinA_RC9IDlF9odPd49gxEg9L1wmIqMR5ip86XV60MLZbcthauBo2cl88dHArUcc9vlRMwErFRSi-dljxGIeCMGYkpkcvMPsDy-ckrijDocxk9gqt1Y6azhtuqjWmPoFb0wI9c9m9CuEKT_sKf2EdU-3ix1qqCdp76klT2drWIhfIThnVLmkDg&csuir=1&mtid=wP-9aomeCtzwi-gP7eSogAM&udm=50>)
+
+### 0385 | 2026-10-01 08:50:02 | You
+
+```text
+https://www.google.com/search?q=sans+sanders+belt+kaper+kust+koenders+xantippe+nico+coin+fondling+cuckoo+cold+hot+TNO+lowlands+biochemische+wapens+middelen+opvangen+fuck+teams+microsoft+macro+flacid+tacid+us+kil+AI+nan&client=ms-android-xiaomi-terr2-rso2&hs=IoOB&sca_esv=23d3832781e2084d&sxsrf=APpeQnvdd8Ab1gHCkBmdfMhXLCncUFOKTQ%3A1790837375757&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLxIWx1Ji9M2lu9YjU4me3Nn-OEijYhH3uvmILIsYfNGGy7Ah3KTsjdvY9yV43EMbg9pHkBQCKd8Fxn4egQ_6i3t3dhWo39uSrK5lY10BRN2M4VjdFUxgpSKfhTAIfrMwL26XxrK&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjkoYeNnZiXAxX4ywIHHZEjK58Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAysUBGkMYFhrWTuare_bVUJEwLVQzW1txBQVdIvtrkL46Oy3iNZqtrEDY5DnToDETr-YDLoqIK73E9RA3ep_VCciBEV6JnUQtwUtXLW32FXQjbUZPN4bjntxE54Hy9cQqdeSrOLBQQ1e1fLi5TDuM5nmiBL5Xux2Xa0nj7kYyriTad03rtJC9qpJWWuIlW8CCrtmeIzlYHEzt1qS2NrNdyL_VI7iYFSzG_daS3RC4Jx96U42c0UpG1o6yg819HYtfDqGuM38VRxT4HORpod5CgmLcCw8m2TKH2-YsN5U4DPQqby3jkJlPmlrFOTGlLiMlzMevzcuF0Xw&csuir=1&mtid=gQK-auHIKtTni-gPwaWUwQQ
+```
+
+Links: [Link 1](<https://www.google.com/search?q=sans+sanders+belt+kaper+kust+koenders+xantippe+nico+coin+fondling+cuckoo+cold+hot+TNO+lowlands+biochemische+wapens+middelen+opvangen+fuck+teams+microsoft+macro+flacid+tacid+us+kil+AI+nan&client=ms-android-xiaomi-terr2-rso2&hs=IoOB&sca_esv=23d3832781e2084d&sxsrf=APpeQnvdd8Ab1gHCkBmdfMhXLCncUFOKTQ%3A1790837375757&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLxIWx1Ji9M2lu9YjU4me3Nn-OEijYhH3uvmILIsYfNGGy7Ah3KTsjdvY9yV43EMbg9pHkBQCKd8Fxn4egQ_6i3t3dhWo39uSrK5lY10BRN2M4VjdFUxgpSKfhTAIfrMwL26XxrK&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjkoYeNnZiXAxX4ywIHHZEjK58Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAysUBGkMYFhrWTuare_bVUJEwLVQzW1txBQVdIvtrkL46Oy3iNZqtrEDY5DnToDETr-YDLoqIK73E9RA3ep_VCciBEV6JnUQtwUtXLW32FXQjbUZPN4bjntxE54Hy9cQqdeSrOLBQQ1e1fLi5TDuM5nmiBL5Xux2Xa0nj7kYyriTad03rtJC9qpJWWuIlW8CCrtmeIzlYHEzt1qS2NrNdyL_VI7iYFSzG_daS3RC4Jx96U42c0UpG1o6yg819HYtfDqGuM38VRxT4HORpod5CgmLcCw8m2TKH2-YsN5U4DPQqby3jkJlPmlrFOTGlLiMlzMevzcuF0Xw&csuir=1&mtid=gQK-auHIKtTni-gPwaWUwQQ>)
+
+### 0386 | 2026-10-01 08:51:06 | You
+
+```text
+https://www.google.com/search?q=sans+sanders+belt+kaper+kust+koenders+xantippe+nico+coin+fondling+cuckoo+cold+hot+TNO+lowlands+biochemische+wapens+middelen+opvangen+fuck+teams+microsoft+macro+flacid+tacid+us+kil+AI+nan&client=ms-android-xiaomi-terr2-rso2&hs=IoOB&sca_esv=23d3832781e2084d&sxsrf=APpeQnvdd8Ab1gHCkBmdfMhXLCncUFOKTQ%3A1790837375757&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLxIWx1Ji9M2lu9YjU4me3Nn-OEijYhH3uvmILIsYfNGGy7Ah3KTsjdvY9yV43EMbg9pHkBQCKd8Fxn4egQ_6i3t3dhWo39uSrK5lY10BRN2M4VjdFUxgpSKfhTAIfrMwL26XxrK&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjkoYeNnZiXAxX4ywIHHZEjK58Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCB7mfW8LimZ5_UyqIFgs00F-n8Q12JwXmAo1IHZzb6xzDy_zuOpULtXJ2m3WbKYooMA-PHIZg1EXERXqSBg1HuSMbzE7FHHRHGp6nXmn7KO093TcY75aDudDBS_x02vNBW0diJ_r3UD9CJ6PEDdY-u-FyGU32aDhapy1Rw8Nl7JqnpRc_KwiQTOo1wQcZQ7aBzg43djgjLWKt1jzP5JnbN57G-3klYE0z4fyWTD-Bli2qap38V0CqPcOciHem2CRuQx-9WO4XNMU0HjUtlfQYSFkMTr2rMgm_Xe6bcleRK1yFc6NQhHknxiCUP6NurUk7wqk12YlOt6g&csuir=1&mtid=gQK-aoSkOrD2i-gPxpaAQQ&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=sans+sanders+belt+kaper+kust+koenders+xantippe+nico+coin+fondling+cuckoo+cold+hot+TNO+lowlands+biochemische+wapens+middelen+opvangen+fuck+teams+microsoft+macro+flacid+tacid+us+kil+AI+nan&client=ms-android-xiaomi-terr2-rso2&hs=IoOB&sca_esv=23d3832781e2084d&sxsrf=APpeQnvdd8Ab1gHCkBmdfMhXLCncUFOKTQ%3A1790837375757&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLxIWx1Ji9M2lu9YjU4me3Nn-OEijYhH3uvmILIsYfNGGy7Ah3KTsjdvY9yV43EMbg9pHkBQCKd8Fxn4egQ_6i3t3dhWo39uSrK5lY10BRN2M4VjdFUxgpSKfhTAIfrMwL26XxrK&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjkoYeNnZiXAxX4ywIHHZEjK58Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCB7mfW8LimZ5_UyqIFgs00F-n8Q12JwXmAo1IHZzb6xzDy_zuOpULtXJ2m3WbKYooMA-PHIZg1EXERXqSBg1HuSMbzE7FHHRHGp6nXmn7KO093TcY75aDudDBS_x02vNBW0diJ_r3UD9CJ6PEDdY-u-FyGU32aDhapy1Rw8Nl7JqnpRc_KwiQTOo1wQcZQ7aBzg43djgjLWKt1jzP5JnbN57G-3klYE0z4fyWTD-Bli2qap38V0CqPcOciHem2CRuQx-9WO4XNMU0HjUtlfQYSFkMTr2rMgm_Xe6bcleRK1yFc6NQhHknxiCUP6NurUk7wqk12YlOt6g&csuir=1&mtid=gQK-aoSkOrD2i-gPxpaAQQ&udm=50>)
+
+### 0387 | 2026-10-01 08:51:42 | You
+
+```text
+<audio omitted>
+```
+
+### 0388 | 2026-10-01 09:51:12 | You
+
+```text
+<image omitted>
+```
+
+### 0389 | 2026-10-01 09:52:57 | You
+
+```text
+<album message>
+```
+
+### 0390 | 2026-10-01 09:52:57 | You
+
+```text
+<image omitted>
+```
+
+### 0391 | 2026-10-01 09:52:57 | You
+
+```text
+<image omitted>
+```
+
+### 0392 | 2026-10-01 09:53:31 | You
+
+```text
+<audio omitted>
+```
+
+### 0393 | 2026-10-01 09:54:22 | You
+
+```text
+https://www.google.com/search?q=meta+facebook+incorporated+in+ireland+europe+tax+haven&oq=meta+facebook+incorporated+in+ireland+europe+tax+haven&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTE2NTU1ajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8
+```
+
+Links: [Link 1](<https://www.google.com/search?q=meta+facebook+incorporated+in+ireland+europe+tax+haven&oq=meta+facebook+incorporated+in+ireland+europe+tax+haven&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTE2NTU1ajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8>)
+
+### 0394 | 2026-10-01 09:57:10 | You
+
+```text
+<audio omitted>
+```
+
+### 0395 | 2026-10-01 09:57:21 | You
+
+```text
+<audio omitted>
+```
+
+### 0396 | 2026-10-01 10:32:49 | You
+
+```text
+https://www.google.com/search?q=murakami+that+guy+with+the+librarian+kafka+on+the+shore+franz&client=ms-android-xiaomi-terr2-rso2&hs=upOB&sca_esv=7238945f6dc4c904&sxsrf=APpeQntSicACiod5KyD-b7cZwvcCcOXDuA%3A1790843376574&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAESbWx-BnKqktiUTLJN7eXTCPZJHyto4p0nJqIOrgZGZlLp9OgEpPbc2zex1Exzv-EC1Z_x-miNQOxxio7SQOtbVMJMb&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjziry6s5iXAxVEhf0HHaBLA7kQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCfU7DedM7YwpZScHGgPc1DpuJHTfIZCRI0uqXGGDFvEiME0F0ZwAvOfVztL6UHfrzg8nrpI7EthQMtDEAhrJ-u0ja6Ed5mYJP28AUCviOOP1x9WUzTcDDIxmOAHrbXydhOy-xQ9fpnFNIn1TwUDAtfIqIuRvsfwg9vUOMKdUDOXziEhC3Zj9cipjeXcSl3vZdeklUNhf6HbBVaVXOPF2V60ifePzzu_sFa5vV2kC7ymRsEzATCydMw-5izi24eMBNy0tufDFqiwk6RlC36Ivqze90-bMe6x6UFyN2LZk-IAjiSkYKe8N-dl6U5di4oqWR24twEaJUW9A&csuir=1&mtid=9Rm-ats_rIr27w-ChYfwBw&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=murakami+that+guy+with+the+librarian+kafka+on+the+shore+franz&client=ms-android-xiaomi-terr2-rso2&hs=upOB&sca_esv=7238945f6dc4c904&sxsrf=APpeQntSicACiod5KyD-b7cZwvcCcOXDuA%3A1790843376574&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAESbWx-BnKqktiUTLJN7eXTCPZJHyto4p0nJqIOrgZGZlLp9OgEpPbc2zex1Exzv-EC1Z_x-miNQOxxio7SQOtbVMJMb&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjziry6s5iXAxVEhf0HHaBLA7kQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCfU7DedM7YwpZScHGgPc1DpuJHTfIZCRI0uqXGGDFvEiME0F0ZwAvOfVztL6UHfrzg8nrpI7EthQMtDEAhrJ-u0ja6Ed5mYJP28AUCviOOP1x9WUzTcDDIxmOAHrbXydhOy-xQ9fpnFNIn1TwUDAtfIqIuRvsfwg9vUOMKdUDOXziEhC3Zj9cipjeXcSl3vZdeklUNhf6HbBVaVXOPF2V60ifePzzu_sFa5vV2kC7ymRsEzATCydMw-5izi24eMBNy0tufDFqiwk6RlC36Ivqze90-bMe6x6UFyN2LZk-IAjiSkYKe8N-dl6U5di4oqWR24twEaJUW9A&csuir=1&mtid=9Rm-ats_rIr27w-ChYfwBw&udm=50>)
+
+### 0397 | 2026-10-01 10:57:57 | You
+
+```text
+Kiki helpt TOM
+```
+
+### 0398 | 2026-10-01 10:59:30 | You
+
+```text
+<audio omitted>
+```
+
+### 0399 | 2026-10-01 11:09:48 | You
+
+```text
+<audio omitted>
+```
+
+### 0400 | 2026-10-01 13:28:36 | You
+
+```text
+https://www.google.com/search?q=baht+T+currency&client=ms-android-xiaomi-terr2-rso2&hs=5Xjq&sca_esv=470b636ceb33a5d7&sxsrf=APpeQnv7dcL5mIyMUApBuErGlqst4qba9A%3A1790854086355&ei=xkO-arLqFL2B9u8PrIrx8Qc&biw=375&bih=691&oq=baht+T+currency&gs_lp=EhNtb2JpbGUtZ3dzLXdpei1zZXJwIg9iYWh0IFQgY3VycmVuY3kyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSI1BUMQNWJU7cAR4AZABAJgBkAGgAYEJqgEDMS45uAEDyAEA-AEBmAIOoALxCcICChAAGEcY1gQYsAPCAhcQLhjcBhi4BhjaBhjYAhjIAxiwA9gBAcICCxAAGIAEGIoFGJECwgIIEAAYBxgeGArCAggQABgIGAcYHpgDAIgGAZAGDroGBAgBGBmSBwM1LjmgB_wwsgcDMS45uAfKCcIHBTItNi44yAdrgAgB&sclient=mobile-gws-wiz-serp
+```
+
+Links: [Link 1](<https://www.google.com/search?q=baht+T+currency&client=ms-android-xiaomi-terr2-rso2&hs=5Xjq&sca_esv=470b636ceb33a5d7&sxsrf=APpeQnv7dcL5mIyMUApBuErGlqst4qba9A%3A1790854086355&ei=xkO-arLqFL2B9u8PrIrx8Qc&biw=375&bih=691&oq=baht+T+currency&gs_lp=EhNtb2JpbGUtZ3dzLXdpei1zZXJwIg9iYWh0IFQgY3VycmVuY3kyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSI1BUMQNWJU7cAR4AZABAJgBkAGgAYEJqgEDMS45uAEDyAEA-AEBmAIOoALxCcICChAAGEcY1gQYsAPCAhcQLhjcBhi4BhjaBhjYAhjIAxiwA9gBAcICCxAAGIAEGIoFGJECwgIIEAAYBxgeGArCAggQABgIGAcYHpgDAIgGAZAGDroGBAgBGBmSBwM1LjmgB_wwsgcDMS45uAfKCcIHBTItNi44yAdrgAgB&sclient=mobile-gws-wiz-serp>)
+
+### 0401 | 2026-10-01 13:44:12 | You
+
+```text
+<audio omitted>
+```
+
+### 0402 | 2026-10-01 13:52:29 | You
+
+```text
+<image omitted>
+```
+
+### 0403 | 2026-10-01 13:57:31 | You
+
+```text
+<image omitted>
+```
+
+### 0404 | 2026-10-01 13:57:56 | You
+
+```text
+<image omitted>
+```
+
+### 0405 | 2026-10-01 13:59:21 | You
+
+```text
+<image omitted>
+```
+
+### 0406 | 2026-10-01 14:02:10 | You
+
+```text
+https://www.reddit.com/u/ABNAMRO-nl/s/Jat6fC3uFA
+```
+
+Links: [Link 1](<https://www.reddit.com/u/ABNAMRO-nl/s/Jat6fC3uFA>)
+
+### 0407 | 2026-10-01 14:20:48 | You
+
+```text
+https://www.google.com/search?q=when+someone+has+her+period+in+the+pool+or+shits+in+the+pool+what+happens+to+the+pool&client=ms-android-xiaomi-terr2-rso2&hs=ZtOB&sca_esv=2d383d2beb8dde80&sxsrf=APpeQnsZ_SeN4A-kvKeRa4CMZHmwg7HwKw%3A1790857010065&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj8oLaf5piXAxVG6QIHHT3aFLcQ2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAFqtjWoILJQmib1B5ulZz2FDkuNl3XmPWH_do-PmL8XbX8KDQv627H24W0Vz0tInAMuhNK4mDEEY0UiU5Ivwc25crZqO4-GrjiKwnFU6WxvZmgYcH7FeQJEo5qGC8m2AFKBYYODeEYVO50zvwBXsRlPaGQeS9MtkqyGjSJJZiH8SAuLx6fclEOz9BAlbOC8K9WakrRwqeggez7hnTzpoXQqUi8ag6-nsY2LryeUjGOij7qq3BMoNZqV08rr3eQgTecd-l-wVXIp73ja5UCqcrrKViK3JTwKJ7EEBuWin4689xJLlalvlRXE2OOGqcEzoXrb_5K1BwjmQ&csuir=1&mtid=P0--ar_MCpe3i-gPgcDjSQ
+```
+
+Links: [Link 1](<https://www.google.com/search?q=when+someone+has+her+period+in+the+pool+or+shits+in+the+pool+what+happens+to+the+pool&client=ms-android-xiaomi-terr2-rso2&hs=ZtOB&sca_esv=2d383d2beb8dde80&sxsrf=APpeQnsZ_SeN4A-kvKeRa4CMZHmwg7HwKw%3A1790857010065&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj8oLaf5piXAxVG6QIHHT3aFLcQ2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAFqtjWoILJQmib1B5ulZz2FDkuNl3XmPWH_do-PmL8XbX8KDQv627H24W0Vz0tInAMuhNK4mDEEY0UiU5Ivwc25crZqO4-GrjiKwnFU6WxvZmgYcH7FeQJEo5qGC8m2AFKBYYODeEYVO50zvwBXsRlPaGQeS9MtkqyGjSJJZiH8SAuLx6fclEOz9BAlbOC8K9WakrRwqeggez7hnTzpoXQqUi8ag6-nsY2LryeUjGOij7qq3BMoNZqV08rr3eQgTecd-l-wVXIp73ja5UCqcrrKViK3JTwKJ7EEBuWin4689xJLlalvlRXE2OOGqcEzoXrb_5K1BwjmQ&csuir=1&mtid=P0--ar_MCpe3i-gPgcDjSQ>)
+
+### 0408 | 2026-10-01 14:21:09 | You
+
+```text
+<audio omitted>
+```
+
+### 0409 | 2026-10-01 14:21:30 | You
+
+```text
+https://www.google.com/search?q=when+someone+has+her+period+in+the+pool+or+shits+in+the+pool+what+happens+to+the+pool&client=ms-android-xiaomi-terr2-rso2&hs=ZtOB&sca_esv=2d383d2beb8dde80&sxsrf=APpeQnsZ_SeN4A-kvKeRa4CMZHmwg7HwKw%3A1790857010065&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj8oLaf5piXAxVG6QIHHT3aFLcQ2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAFqtjWoILJQmib1B5ulZz2FDkuNl3XmPWH_do-PmL8XbX8KDQv627H24W0Vz0tInAMuhNK4mDEEY0UiU5Ivwc25crZqO4-GrjiKwnFU6WxvZmgYcH7FeQJEo5qGC8m2AFKBYYODeEYVO50zvwBXsRlPaGQeS9MtkqyGjSJJZiH8SAuLx6fclEOz9BAlbOC8K9WakrRwqeggez7hnTzpoXQqUi8ag6-nsY2LryeUjGOij7qq3BMoNZqV08rr3eQgTecd-l-wVXIp73ja5UCqcrrKViK3JTwKJ7EEBuWin4689xJLlalvlRXE2OOGqcEzoXrb_5K1BwjmQ&csuir=1&mtid=P0--ar_MCpe3i-gPgcDjSQ
+```
+
+Links: [Link 1](<https://www.google.com/search?q=when+someone+has+her+period+in+the+pool+or+shits+in+the+pool+what+happens+to+the+pool&client=ms-android-xiaomi-terr2-rso2&hs=ZtOB&sca_esv=2d383d2beb8dde80&sxsrf=APpeQnsZ_SeN4A-kvKeRa4CMZHmwg7HwKw%3A1790857010065&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj8oLaf5piXAxVG6QIHHT3aFLcQ2J8OegQIDRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAFqtjWoILJQmib1B5ulZz2FDkuNl3XmPWH_do-PmL8XbX8KDQv627H24W0Vz0tInAMuhNK4mDEEY0UiU5Ivwc25crZqO4-GrjiKwnFU6WxvZmgYcH7FeQJEo5qGC8m2AFKBYYODeEYVO50zvwBXsRlPaGQeS9MtkqyGjSJJZiH8SAuLx6fclEOz9BAlbOC8K9WakrRwqeggez7hnTzpoXQqUi8ag6-nsY2LryeUjGOij7qq3BMoNZqV08rr3eQgTecd-l-wVXIp73ja5UCqcrrKViK3JTwKJ7EEBuWin4689xJLlalvlRXE2OOGqcEzoXrb_5K1BwjmQ&csuir=1&mtid=P0--ar_MCpe3i-gPgcDjSQ>)
+
+### 0410 | 2026-10-01 14:38:39 | You
+
+```text
+<audio omitted>
+```
+
+### 0411 | 2026-10-01 15:33:37 | You
+
+```text
+<audio omitted>
+```
+
+### 0412 | 2026-10-01 15:54:22 | You
+
+```text
+<audio omitted>
+```
+
+### 0413 | 2026-10-01 16:22:48 | You
+
+```text
+<audio omitted>
+```
+
+### 0414 | 2026-10-01 16:24:55 | You
+
+```text
+<audio omitted>
+```
+
+### 0415 | 2026-10-01 16:28:01 | You
+
+```text
+https://www.instagram.com/reel/DdvxnGdqYGv/?stkn=MjdmY3B4eGlvdWFq
+```
+
+Links: [Link 1](<https://www.instagram.com/reel/DdvxnGdqYGv/?stkn=MjdmY3B4eGlvdWFq>)
+
+### 0416 | 2026-10-01 17:10:33 | You
+
+```text
+https://www.google.com/search?q=jit+in+time+logistics&client=ms-android-xiaomi-terr2-rso2&hs=fbjq&sa=X&sca_esv=a6f3ff406f75be40&sxsrf=APpeQnuM2GA4GyX90ZdXLsMmoPgyFrRDxQ%3A1790867413597&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwIgLtPdGtXl-1ukUntONsOMkLK8Wjg5QbsFQsyTdBlDyIWYhgxyDNTy0wPRmWscMhXPcoRl2IGiedJq-Ou7bktAThMu4NA9p70Yhev5koDcBW5-E_NLUvu30_BOJKw7r_p9-3Y2&vsint=&aep=1&ntc=1&cs=1&ved=2ahUKEwjTnpuAjZmXAxV40AIHHRoIIxMQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDsJVmUcF9wxr3kjDk7Z4kTJIhTVmrkrYKN16F4ZfQTt1GrpI-D6yY6i2bClUFJF-GSz9wFjKbdp2VSH7NpVnqzku1LmrNMhm7lI7iTUB-F_X95USqibNC9hBIvw8VDvRKw6vAI8PMyQKaim4-YDBluKKcnKTtH83WxBs7a9CQue8W-otELDQdlFcwv4ajb5wHWDpC_Ycn6761qJXT5cEIi6j9LD3IIFTw5Vn9u07hxcHSjJi6tVByNWwvDlKWj6RhU-oon6hY1LEHDI_iV4sOsSmxXIvaEI1p9UNKn9z3GGCYRlcuuMAJGFcxrmZ8HWFCOZxbGJ3EaZg&csuir=1&mtid=13e-arjAMqmCi-gP85vhmQM
+```
+
+Links: [Link 1](<https://www.google.com/search?q=jit+in+time+logistics&client=ms-android-xiaomi-terr2-rso2&hs=fbjq&sa=X&sca_esv=a6f3ff406f75be40&sxsrf=APpeQnuM2GA4GyX90ZdXLsMmoPgyFrRDxQ%3A1790867413597&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwIgLtPdGtXl-1ukUntONsOMkLK8Wjg5QbsFQsyTdBlDyIWYhgxyDNTy0wPRmWscMhXPcoRl2IGiedJq-Ou7bktAThMu4NA9p70Yhev5koDcBW5-E_NLUvu30_BOJKw7r_p9-3Y2&vsint=&aep=1&ntc=1&cs=1&ved=2ahUKEwjTnpuAjZmXAxV40AIHHRoIIxMQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDsJVmUcF9wxr3kjDk7Z4kTJIhTVmrkrYKN16F4ZfQTt1GrpI-D6yY6i2bClUFJF-GSz9wFjKbdp2VSH7NpVnqzku1LmrNMhm7lI7iTUB-F_X95USqibNC9hBIvw8VDvRKw6vAI8PMyQKaim4-YDBluKKcnKTtH83WxBs7a9CQue8W-otELDQdlFcwv4ajb5wHWDpC_Ycn6761qJXT5cEIi6j9LD3IIFTw5Vn9u07hxcHSjJi6tVByNWwvDlKWj6RhU-oon6hY1LEHDI_iV4sOsSmxXIvaEI1p9UNKn9z3GGCYRlcuuMAJGFcxrmZ8HWFCOZxbGJ3EaZg&csuir=1&mtid=13e-arjAMqmCi-gP85vhmQM>)
+
+### 0417 | 2026-10-01 17:10:47 | You
+
+```text
+Tele PresencSe
+```
+
+### 0418 | 2026-10-01 17:19:54 | You
+
+```text
+https://www.google.com/search?q=jit+in+time+logistics&client=ms-android-xiaomi-terr2-rso2&hs=fbjq&sa=X&sca_esv=a6f3ff406f75be40&sxsrf=APpeQnuM2GA4GyX90ZdXLsMmoPgyFrRDxQ%3A1790867413597&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwIgLtPdGtXl-1ukUntONsOMkLK8Wjg5QbsFQsyTdBlDyIWYhgxyDNTy0wPRmWscMhXPcoRl2IGiedJq-Ou7bktAThMu4NA9p70Yhev5koDcBW5-E_NLUvu30_BOJKw7r_p9-3Y2&vsint=&aep=1&ntc=1&cs=1&ved=2ahUKEwjTnpuAjZmXAxV40AIHHRoIIxMQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCOxPVBUvOD8YFQJol6I4VKiR7RY7HQaNGf7htXz2A9X1D04roBXPOXdKEa7caasy1welSN7GrahprWrYKSap5doIi63YoQgoHCQ3utxupz8Arkog20iYeB08wKuTbaP-KBhrC-RSi-EnY1qCA6Y74O5SQWmNALPgG47fGWfbHW7r8Yyl7e5n5IX4_fMKmi6lRSjB9prxL949yDci2Eo7E3rfRvIe_zvQCT4bbu7-0Lu5DjrWl4OJwt0yaxI-DfCXwB0WEvNRRlp_SpE7zkpil67Y1RylDEOMvd3TcQ4ZGOfb7up4KxRFKzut5k9c6BGRutCQH4X_7w1w&csuir=1&mtid=2He-asWxBLPYi-gP98OkqQc&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=jit+in+time+logistics&client=ms-android-xiaomi-terr2-rso2&hs=fbjq&sa=X&sca_esv=a6f3ff406f75be40&sxsrf=APpeQnuM2GA4GyX90ZdXLsMmoPgyFrRDxQ%3A1790867413597&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwIgLtPdGtXl-1ukUntONsOMkLK8Wjg5QbsFQsyTdBlDyIWYhgxyDNTy0wPRmWscMhXPcoRl2IGiedJq-Ou7bktAThMu4NA9p70Yhev5koDcBW5-E_NLUvu30_BOJKw7r_p9-3Y2&vsint=&aep=1&ntc=1&cs=1&ved=2ahUKEwjTnpuAjZmXAxV40AIHHRoIIxMQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCOxPVBUvOD8YFQJol6I4VKiR7RY7HQaNGf7htXz2A9X1D04roBXPOXdKEa7caasy1welSN7GrahprWrYKSap5doIi63YoQgoHCQ3utxupz8Arkog20iYeB08wKuTbaP-KBhrC-RSi-EnY1qCA6Y74O5SQWmNALPgG47fGWfbHW7r8Yyl7e5n5IX4_fMKmi6lRSjB9prxL949yDci2Eo7E3rfRvIe_zvQCT4bbu7-0Lu5DjrWl4OJwt0yaxI-DfCXwB0WEvNRRlp_SpE7zkpil67Y1RylDEOMvd3TcQ4ZGOfb7up4KxRFKzut5k9c6BGRutCQH4X_7w1w&csuir=1&mtid=2He-asWxBLPYi-gP98OkqQc&udm=50>)
+
+### 0419 | 2026-10-01 17:43:50 | You
+
+```text
+https://www.google.com/search?q=tegenpolen+groen+staat+voor+die+gast+die+het+nederlandse+koningshuis+heeft+groot+gemaakt+wit+en+rood+voor+negatief+en+positieve+spin+van+electronen+en+het+is+de+italiaanse+vlag&client=ms-android-xiaomi-terr2-rso2&hs=Bcjq&sca_esv=a6f3ff406f75be40&sxsrf=APpeQntDPBUQaX_t-APyWlmgp6oJU7FE_g%3A1790869350699&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832UgltsGVIAFz5WDq3ETuldE5s6R40x0T8qn57d7tYDuVEL4sQ6Udxmk7M7fOOr6JlfrnNnSXkdf_il1gnsx7xV-l_X172HdFntd4Fcsyk246nzS8KYG82RccJ7E058oU0QqMpXM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjC4_KblJmXAxW7xgIHHSBrK-IQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDm4n9oC8ikHrpegeSVZBdjfabj7-W5fG0ZXbNqT02CU9WOHdJQyfLzrNk-NWr2G5jF5mLQFwiJpWw07J2WSE9zqOJJNU7RfWbjaN8D4sUAEiiWhSwWCQdb4cvLDEMfK9uQhKRxHo9FyYytdERvocjkR1st2gQ22CNIF6NHaQ909F5OsWFZMrXO4ZhTJgeyx_dFqE8H4ZS_XZKqH01KE26d3rrO0LpApeg2-lapSs5VQPo2LOc46-5Hme7DHvkr1lgAKy9fPDbeSv4lwzPhJpkaiiooOYjmIMlttsQ0Xx37TE8fUH-ezxGsSgHC-wLIOX2BBASYUVxktQ&csuir=1&mtid=aX--asmWCIaYi-gP5Oe74AY
+```
+
+Links: [Link 1](<https://www.google.com/search?q=tegenpolen+groen+staat+voor+die+gast+die+het+nederlandse+koningshuis+heeft+groot+gemaakt+wit+en+rood+voor+negatief+en+positieve+spin+van+electronen+en+het+is+de+italiaanse+vlag&client=ms-android-xiaomi-terr2-rso2&hs=Bcjq&sca_esv=a6f3ff406f75be40&sxsrf=APpeQntDPBUQaX_t-APyWlmgp6oJU7FE_g%3A1790869350699&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832UgltsGVIAFz5WDq3ETuldE5s6R40x0T8qn57d7tYDuVEL4sQ6Udxmk7M7fOOr6JlfrnNnSXkdf_il1gnsx7xV-l_X172HdFntd4Fcsyk246nzS8KYG82RccJ7E058oU0QqMpXM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjC4_KblJmXAxW7xgIHHSBrK-IQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDm4n9oC8ikHrpegeSVZBdjfabj7-W5fG0ZXbNqT02CU9WOHdJQyfLzrNk-NWr2G5jF5mLQFwiJpWw07J2WSE9zqOJJNU7RfWbjaN8D4sUAEiiWhSwWCQdb4cvLDEMfK9uQhKRxHo9FyYytdERvocjkR1st2gQ22CNIF6NHaQ909F5OsWFZMrXO4ZhTJgeyx_dFqE8H4ZS_XZKqH01KE26d3rrO0LpApeg2-lapSs5VQPo2LOc46-5Hme7DHvkr1lgAKy9fPDbeSv4lwzPhJpkaiiooOYjmIMlttsQ0Xx37TE8fUH-ezxGsSgHC-wLIOX2BBASYUVxktQ&csuir=1&mtid=aX--asmWCIaYi-gP5Oe74AY>)
+
+### 0420 | 2026-10-01 17:50:16 | You
+
+```text
+https://www.google.com/search?q=tegenpolen+groen+staat+voor+die+gast+die+het+nederlandse+koningshuis+heeft+groot+gemaakt+wit+en+rood+voor+negatief+en+positieve+spin+van+electronen+en+het+is+de+italiaanse+vlag&client=ms-android-xiaomi-terr2-rso2&hs=Bcjq&sca_esv=a6f3ff406f75be40&sxsrf=APpeQntDPBUQaX_t-APyWlmgp6oJU7FE_g%3A1790869350699&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832UgltsGVIAFz5WDq3ETuldE5s6R40x0T8qn57d7tYDuVEL4sQ6Udxmk7M7fOOr6JlfrnNnSXkdf_il1gnsx7xV-l_X172HdFntd4Fcsyk246nzS8KYG82RccJ7E058oU0QqMpXM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjC4_KblJmXAxW7xgIHHSBrK-IQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDsnu813zJ72kjfH6tWxEp7PQ9FnFe5fn_YgcW4MmaEZkfHQbSaRVM_EE3To6BXT6mIgqe2p-mQGxXEBTcgs4c3Q9EcqDqzAtWwhJ85ylC_bscWW6MokC8BUCLLGe-iAZXrtLI_J5j81WHbp_Y7ez_bfX-XWT-DGtgNOVsMeCiUAJ2xsiM9T4sS55jlou8FJwp42zdJQHa24uuksHbWUPLsrpJUv3CwzTHRZ7boT2mdjhYD-OWDulbKbDlR3Rl3FinjGM5EFbaymp3Aqm391krhlTUrpC1glh4d5B4naq3O_SZPry1jDNvS84w2CnZ9mlZn1ITR8HGwYg&csuir=1&mtid=aX--ao73HLPYi-gP98OkqQc&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=tegenpolen+groen+staat+voor+die+gast+die+het+nederlandse+koningshuis+heeft+groot+gemaakt+wit+en+rood+voor+negatief+en+positieve+spin+van+electronen+en+het+is+de+italiaanse+vlag&client=ms-android-xiaomi-terr2-rso2&hs=Bcjq&sca_esv=a6f3ff406f75be40&sxsrf=APpeQntDPBUQaX_t-APyWlmgp6oJU7FE_g%3A1790869350699&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832UgltsGVIAFz5WDq3ETuldE5s6R40x0T8qn57d7tYDuVEL4sQ6Udxmk7M7fOOr6JlfrnNnSXkdf_il1gnsx7xV-l_X172HdFntd4Fcsyk246nzS8KYG82RccJ7E058oU0QqMpXM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjC4_KblJmXAxW7xgIHHSBrK-IQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDsnu813zJ72kjfH6tWxEp7PQ9FnFe5fn_YgcW4MmaEZkfHQbSaRVM_EE3To6BXT6mIgqe2p-mQGxXEBTcgs4c3Q9EcqDqzAtWwhJ85ylC_bscWW6MokC8BUCLLGe-iAZXrtLI_J5j81WHbp_Y7ez_bfX-XWT-DGtgNOVsMeCiUAJ2xsiM9T4sS55jlou8FJwp42zdJQHa24uuksHbWUPLsrpJUv3CwzTHRZ7boT2mdjhYD-OWDulbKbDlR3Rl3FinjGM5EFbaymp3Aqm391krhlTUrpC1glh4d5B4naq3O_SZPry1jDNvS84w2CnZ9mlZn1ITR8HGwYg&csuir=1&mtid=aX--ao73HLPYi-gP98OkqQc&udm=50>)
+
+### 0421 | 2026-10-01 18:37:50 | You
+
+```text
+https://www.google.com/search?q=hoeveel+inwoners+nederland&client=ms-android-xiaomi-terr2-rso2&hs=yH4V&sca_esv=a6f3ff406f75be40&sxsrf=APpeQnsqNAmw8IiN8cY--KiudETaErUBSg%3A1790870982623&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9y513h_dJNevWM0LJgfK9j1bjU10DOuMrBkYSSj9wWjPSP3hJN2cBieY_IGt7p-pHVmv__vdDWQpdcX9XhabdkSIAFtm4OjEK0PoVacWn7y92PaNqw&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiRzYemmpmXAxU287sIHUSjKWUQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDnIM96fZW-ryASV0dgD6neCCQLTC-0DJdbY15clOsQcAr1HSzYh4InCP_ZD0epEVo0aSlWVOn6S1mqSq9pzZ_vkYbicWsTXlS0h_NidDXDFYo34sahht-bhOVTwLnyp7E7e07-kqnwVLYyRlMk7DTPEjntwr3484MKRTqFkdoMLfJUxtEdT-p5APdrFx8_lJ7OnImk_nGCMhB7RU_JCiY-33DNfsqiA4d7CrFP3hvlPjgEDyV3UFxDtx6I3LjG2gadkkfCY-VNFg&csuir=1&mtid=0YW-apmROr2pi-gPh7Gl0Ak&lns_mode=cvst&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=hoeveel+inwoners+nederland&client=ms-android-xiaomi-terr2-rso2&hs=yH4V&sca_esv=a6f3ff406f75be40&sxsrf=APpeQnsqNAmw8IiN8cY--KiudETaErUBSg%3A1790870982623&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9y513h_dJNevWM0LJgfK9j1bjU10DOuMrBkYSSj9wWjPSP3hJN2cBieY_IGt7p-pHVmv__vdDWQpdcX9XhabdkSIAFtm4OjEK0PoVacWn7y92PaNqw&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiRzYemmpmXAxU287sIHUSjKWUQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDnIM96fZW-ryASV0dgD6neCCQLTC-0DJdbY15clOsQcAr1HSzYh4InCP_ZD0epEVo0aSlWVOn6S1mqSq9pzZ_vkYbicWsTXlS0h_NidDXDFYo34sahht-bhOVTwLnyp7E7e07-kqnwVLYyRlMk7DTPEjntwr3484MKRTqFkdoMLfJUxtEdT-p5APdrFx8_lJ7OnImk_nGCMhB7RU_JCiY-33DNfsqiA4d7CrFP3hvlPjgEDyV3UFxDtx6I3LjG2gadkkfCY-VNFg&csuir=1&mtid=0YW-apmROr2pi-gPh7Gl0Ak&lns_mode=cvst&udm=50>)
+
+### 0422 | 2026-10-01 18:38:18 | You
+
+```text
+<audio omitted>
+```
+
+### 0423 | 2026-10-01 18:45:22 | You
+
+```text
+<image omitted>
+```
+
+### 0424 | 2026-10-01 18:45:43 | You
+
+```text
+https://www.instagram.com/reel/Dd9PqesIic1/?stkn=ZXh2aXR3bnJpdnpy
+```
+
+Links: [Link 1](<https://www.instagram.com/reel/Dd9PqesIic1/?stkn=ZXh2aXR3bnJpdnpy>)
+
+### 0425 | 2026-10-01 19:33:23 | You
+
+```text
+https://www.google.com/search?q=a10+warthog+cool+nose+gun+sounds&client=ms-android-xiaomi-terr2-rso2&hs=xdjq&sca_esv=9690ff17f276db6e&sxsrf=APpeQnt43EsHsDPqebzFzXXE5F3zJsFEeg%3A1790875970113&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp2-cjVKw2GTI2L0MU3QUO__V8GVARUdUB2ZoMwCGQaAhzsNHbmFYWYw3SS8Poi5fDN4OzSFlsZooHbWoXUZiCEjcVmWWUPeL01Y9czBKQNlivQpN9j&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjc56PwrJmXAxVE_wIHHViIGsgQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAWIZ2rYjO2WP0pWBRauo9z06jzAsndnW8gYqUwO7SttQbyVsTTkl6ypU8ZFa19Hmge0lzUULmznWyXb_koPC7hegjkBJdb-za0wm9zdTS0SzMFCgqPiIx6poOOiAfw9FA4SkCfCl9PNbevdvLZq9g9xd5f0Ja4ZnzpeSv9YlyBs0PxZHUvhG_0lHmq9X8N0SKDK2P1NIixQ9WiRX4KTFIONUbfnRUVcC5L228MO_Mkq9TdTjHZqAzQNGs8Fru2DNXoxXrQKDOmy2qCR2T4cH1lnA466YaIo41v5u1pWaKywmN2x0xJOJtgJXpD_1n9-SgEv12dYjrFrQ&csuir=1&mtid=Q5m-aorfLJPLi-gPkbTmkQE
+```
+
+Links: [Link 1](<https://www.google.com/search?q=a10+warthog+cool+nose+gun+sounds&client=ms-android-xiaomi-terr2-rso2&hs=xdjq&sca_esv=9690ff17f276db6e&sxsrf=APpeQnt43EsHsDPqebzFzXXE5F3zJsFEeg%3A1790875970113&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp2-cjVKw2GTI2L0MU3QUO__V8GVARUdUB2ZoMwCGQaAhzsNHbmFYWYw3SS8Poi5fDN4OzSFlsZooHbWoXUZiCEjcVmWWUPeL01Y9czBKQNlivQpN9j&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjc56PwrJmXAxVE_wIHHViIGsgQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAWIZ2rYjO2WP0pWBRauo9z06jzAsndnW8gYqUwO7SttQbyVsTTkl6ypU8ZFa19Hmge0lzUULmznWyXb_koPC7hegjkBJdb-za0wm9zdTS0SzMFCgqPiIx6poOOiAfw9FA4SkCfCl9PNbevdvLZq9g9xd5f0Ja4ZnzpeSv9YlyBs0PxZHUvhG_0lHmq9X8N0SKDK2P1NIixQ9WiRX4KTFIONUbfnRUVcC5L228MO_Mkq9TdTjHZqAzQNGs8Fru2DNXoxXrQKDOmy2qCR2T4cH1lnA466YaIo41v5u1pWaKywmN2x0xJOJtgJXpD_1n9-SgEv12dYjrFrQ&csuir=1&mtid=Q5m-aorfLJPLi-gPkbTmkQE>)
+
+### 0426 | 2026-10-01 19:44:55 | You
+
+```text
+https://www.google.com/search?q=subprostitute+telepresence+on+demand+pay+per+feel+like+the+pokemon+move+substitute+but+the+for+crypto+and+it+gets+tracked+and+archived+qr+code+linked&client=ms-android-xiaomi-terr2-rso2&hs=UJ4V&sca_esv=9690ff17f276db6e&sxsrf=APpeQnuJcfSrb0GXixwae9H1Fse8-3jwqg%3A1790876626743&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4AD-5zQwT5IfpPJ6og2sC2IZgjAgaSG2LL1MlLFG3McKE5lfVD6hI73Sop81FqdeRJsxR0FAia3-YwBrI2Hhwl_oe_A_wi2b2oLnbP9tGz-3zA911mHL-kmEiywJKCSra6H_8vg4E_wpV1YVyNWENYQn8u44&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwi8mbGpr5mXAxXhxgIHHZncAT4Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAZGG9z8lUSk_eWTwH_OgL49Vdyj_rqdtrzot8awKBYqdjvEx2lUtMdJMUowWJdlS0I4n6AYOaBzav8st8wzc5wzLgguFC_fH-p8ZJwTUJKJzZKsBToMt3_yAh-8RvQIoQKqvvo0IE_s52WZP8jdOK3l-nS2tPqrSp14cHIWFjEqqpEIVpgd9d0dEVNvcMQNKq8Gi2-pZCWWehkTn6zH6BNrB3Qb3kG3u3hjnRXWvE7MwGkIA1Isctu0XyCLxidstP37aAMQjRbnVBWOdYdfsDC7pvx_YoeTjws9GEjPHOkrUqhOkiDYuqL5WREODui_YIPvLttqxfPYA&csuir=1&mtid=1Ju-au6zH62ii-gPw_OkoAg&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=subprostitute+telepresence+on+demand+pay+per+feel+like+the+pokemon+move+substitute+but+the+for+crypto+and+it+gets+tracked+and+archived+qr+code+linked&client=ms-android-xiaomi-terr2-rso2&hs=UJ4V&sca_esv=9690ff17f276db6e&sxsrf=APpeQnuJcfSrb0GXixwae9H1Fse8-3jwqg%3A1790876626743&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4AD-5zQwT5IfpPJ6og2sC2IZgjAgaSG2LL1MlLFG3McKE5lfVD6hI73Sop81FqdeRJsxR0FAia3-YwBrI2Hhwl_oe_A_wi2b2oLnbP9tGz-3zA911mHL-kmEiywJKCSra6H_8vg4E_wpV1YVyNWENYQn8u44&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwi8mbGpr5mXAxXhxgIHHZncAT4Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAZGG9z8lUSk_eWTwH_OgL49Vdyj_rqdtrzot8awKBYqdjvEx2lUtMdJMUowWJdlS0I4n6AYOaBzav8st8wzc5wzLgguFC_fH-p8ZJwTUJKJzZKsBToMt3_yAh-8RvQIoQKqvvo0IE_s52WZP8jdOK3l-nS2tPqrSp14cHIWFjEqqpEIVpgd9d0dEVNvcMQNKq8Gi2-pZCWWehkTn6zH6BNrB3Qb3kG3u3hjnRXWvE7MwGkIA1Isctu0XyCLxidstP37aAMQjRbnVBWOdYdfsDC7pvx_YoeTjws9GEjPHOkrUqhOkiDYuqL5WREODui_YIPvLttqxfPYA&csuir=1&mtid=1Ju-au6zH62ii-gPw_OkoAg&udm=50>)
+
+### 0427 | 2026-10-01 20:10:52 | You
+
+```text
+<image omitted>
+```
+
+### 0428 | 2026-10-01 20:10:58 | You
+
+```text
+https://www.instagram.com/reel/Dd65snYt8rw/?stkn=dDdqeDk2aGgwYXYx
+```
+
+Links: [Link 1](<https://www.instagram.com/reel/Dd65snYt8rw/?stkn=dDdqeDk2aGgwYXYx>)
+
+### 0429 | 2026-10-01 20:42:00 | You
+
+```text
+https://www.google.com/search?q=where+is+that+anatomical+age+computer+vision+boundary+where+you+know+someone+is+not+in+your+age+bracket+but+still+looks+quite+appealing%2C+im+36+and+people+%2B-10+hears+look+good+to+me+and+younger+is+noticably+off+but+the+Aesthetics+are+noticeable%2C+so+i+guess+beauty+and+genes+are+just+noticeable+not+talking+about+pedos+that+organize+and+judge+child+padgeants+but...&client=ms-android-xiaomi-terr2-rso2&hs=IK4V&sca_esv=9690ff17f276db6e&sxsrf=APpeQnvKpnPykpDoX3EYjdnuIjZfyZYqBA%3A1790879595214&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4AD-5zQwT5IfpPJ6og2sC2I-naWc5nkhr1CMHnkP27iXMUSNgF9Bitber2uayRJ2z5IS6oTKGkw9F8FoKLumOTPZ83XoRA-acUeeNHwbnvvgNjWXaZXygW9kYBKvgOFZXh4VRBc-XPYUYJD1tmA34kRfYjy_&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwibku6wupmXAxVth_0HHU01AdsQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDK7WgoRCnnRoK2Pc9cdOZpi5R66DOf9XrgJxn32v2puc0fRtgOk2jaDJSjsqAbt7o_Zbpt5-S7skUD6NlPZANdYYqvsPOfssEmWpkd3g_VQhV4Qob_Aur0f6XY0GWGKmIOM6yt8v6xxQwJtHx5DOsjwBj5dkYJ6qSTFVfXG8y49ULUNVFvtqOt5dkj1VtpdDzOXkDjpnipe_XwaaeB_rJbiaaFBJd6ZDp8PDY89HdGMOq-Kh5Xs6sHnvPvtH7ctO5PSWY4--bfSRt7L4QjjzOxuilWzm5dKbkUfSNz-oRgUa1J3RHBLo-9i2dZdaW9CmJ6IU_dNCRjxg&csuir=1&mtid=bae-atbJCduP9u8P6beF0AQ&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=where+is+that+anatomical+age+computer+vision+boundary+where+you+know+someone+is+not+in+your+age+bracket+but+still+looks+quite+appealing%2C+im+36+and+people+%2B-10+hears+look+good+to+me+and+younger+is+noticably+off+but+the+Aesthetics+are+noticeable%2C+so+i+guess+beauty+and+genes+are+just+noticeable+not+talking+about+pedos+that+organize+and+judge+child+padgeants+but...&client=ms-android-xiaomi-terr2-rso2&hs=IK4V&sca_esv=9690ff17f276db6e&sxsrf=APpeQnvKpnPykpDoX3EYjdnuIjZfyZYqBA%3A1790879595214&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4AD-5zQwT5IfpPJ6og2sC2I-naWc5nkhr1CMHnkP27iXMUSNgF9Bitber2uayRJ2z5IS6oTKGkw9F8FoKLumOTPZ83XoRA-acUeeNHwbnvvgNjWXaZXygW9kYBKvgOFZXh4VRBc-XPYUYJD1tmA34kRfYjy_&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwibku6wupmXAxVth_0HHU01AdsQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDK7WgoRCnnRoK2Pc9cdOZpi5R66DOf9XrgJxn32v2puc0fRtgOk2jaDJSjsqAbt7o_Zbpt5-S7skUD6NlPZANdYYqvsPOfssEmWpkd3g_VQhV4Qob_Aur0f6XY0GWGKmIOM6yt8v6xxQwJtHx5DOsjwBj5dkYJ6qSTFVfXG8y49ULUNVFvtqOt5dkj1VtpdDzOXkDjpnipe_XwaaeB_rJbiaaFBJd6ZDp8PDY89HdGMOq-Kh5Xs6sHnvPvtH7ctO5PSWY4--bfSRt7L4QjjzOxuilWzm5dKbkUfSNz-oRgUa1J3RHBLo-9i2dZdaW9CmJ6IU_dNCRjxg&csuir=1&mtid=bae-atbJCduP9u8P6beF0AQ&udm=50>)
+
+### 0430 | 2026-10-01 21:04:07 | You
+
+```text
+https://www.google.com/search?q=i+just+saw+someone+with+a+zit+on+his+forehead+is+he+hindu+or+paki+or+something&client=ms-android-xiaomi-terr2-rso2&hs=Ffjq&sca_esv=9690ff17f276db6e&sxsrf=APpeQntIQNCwArpHGQRO9bZt81R78s2FjA%3A1790880729584&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwip8uLNvpmXAxU61wIHHd-oGxIQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDoTLeerD9hVeMLyv4YfpfATJeo1NlK75Svq707V6oVwfI2QY6wXqDTGjV77ChnZi6K330HZvA8HVM2e4ltx5RWIoiCfzr1szRuvLl66muTVB43ru2uWPGYPJtsUtnX_MGvE5Z_K1L-N5biIV8-MJAicQNKP5Za2qb9ZxBYVwcSbkJmcuT2wVq3yikRC7zmXTeNWEIxa_pl4jvx4u1IzA_yJnFero3aMEfX0x2my2GoswuT1akWkj1FLK60IfzcmEBj0NUBiQHDDMl-eMihB15jorIzQzHHH7_6o7GcUpUQBNik0fJcLaJUpwJEIfbh7i6Bm51uR9Vo7A&csuir=1&mtid=26u-asX2N4Gni-gP6qHQ2Ak&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=i+just+saw+someone+with+a+zit+on+his+forehead+is+he+hindu+or+paki+or+something&client=ms-android-xiaomi-terr2-rso2&hs=Ffjq&sca_esv=9690ff17f276db6e&sxsrf=APpeQntIQNCwArpHGQRO9bZt81R78s2FjA%3A1790880729584&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwip8uLNvpmXAxU61wIHHd-oGxIQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDoTLeerD9hVeMLyv4YfpfATJeo1NlK75Svq707V6oVwfI2QY6wXqDTGjV77ChnZi6K330HZvA8HVM2e4ltx5RWIoiCfzr1szRuvLl66muTVB43ru2uWPGYPJtsUtnX_MGvE5Z_K1L-N5biIV8-MJAicQNKP5Za2qb9ZxBYVwcSbkJmcuT2wVq3yikRC7zmXTeNWEIxa_pl4jvx4u1IzA_yJnFero3aMEfX0x2my2GoswuT1akWkj1FLK60IfzcmEBj0NUBiQHDDMl-eMihB15jorIzQzHHH7_6o7GcUpUQBNik0fJcLaJUpwJEIfbh7i6Bm51uR9Vo7A&csuir=1&mtid=26u-asX2N4Gni-gP6qHQ2Ak&udm=50>)
+
+### 0431 | 2026-10-01 21:05:56 | You
+
+```text
+https://www.google.com/search?q=mea+culpa+as+the+female+golden+ratio+V+not+the+nasty+ones&client=ms-android-xiaomi-terr2-rso2&hs=A0OB&sca_esv=9690ff17f276db6e&sxsrf=APpeQnulcM652uZr-XFFuhZXSqcW78l8wg%3A1790881524118&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKj906-ORFIK2UR8msyEJBwjHvmTN5b2gK7JkDyhtCEwf9HK1p4EJJWJ_IQyJOqgdebLABy7Chy0c1zfM1YOD3bAcOHF9K_asSx4WxwXJthf0zLUj0pHFzOc9hGf8s1ZnFE81-g9&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwibsdHIwZmXAxXhyAIHHWkRPcIQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDyxAHIoY4XuBmZZcRz6pQfOCdRq8-pF-tWrRZFU6DzZGD-nBlWD31TneMltazN1g-LraOdLxx83SaJbG_tUd_y9Q3_u1rscLZX2qucbvC1MG5xg6V1koaZ7tNJSJ7NgjVG4rucQ2o21xLqhN6pjv3nUORvOKCHqPE-idL191K7BE1jIyaxsTjK-kuxnGlF0P7X8KM0UwshwS8V6dxxvTYP5yBNm1vaR24j66rtihQL4ibDhFqOGamoMXv-oqwBoY4Enw7TuJpaDlNAQEiL3ufg1Cvj-kptiUpwqPTqyXDGhrNap8jGKqRQQHMWxLqzAzzeUtbCCK2fkQ&csuir=1&mtid=9a6-avjeHqS0i-gP-IreuQY
+```
+
+Links: [Link 1](<https://www.google.com/search?q=mea+culpa+as+the+female+golden+ratio+V+not+the+nasty+ones&client=ms-android-xiaomi-terr2-rso2&hs=A0OB&sca_esv=9690ff17f276db6e&sxsrf=APpeQnulcM652uZr-XFFuhZXSqcW78l8wg%3A1790881524118&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKj906-ORFIK2UR8msyEJBwjHvmTN5b2gK7JkDyhtCEwf9HK1p4EJJWJ_IQyJOqgdebLABy7Chy0c1zfM1YOD3bAcOHF9K_asSx4WxwXJthf0zLUj0pHFzOc9hGf8s1ZnFE81-g9&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwibsdHIwZmXAxXhyAIHHWkRPcIQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDyxAHIoY4XuBmZZcRz6pQfOCdRq8-pF-tWrRZFU6DzZGD-nBlWD31TneMltazN1g-LraOdLxx83SaJbG_tUd_y9Q3_u1rscLZX2qucbvC1MG5xg6V1koaZ7tNJSJ7NgjVG4rucQ2o21xLqhN6pjv3nUORvOKCHqPE-idL191K7BE1jIyaxsTjK-kuxnGlF0P7X8KM0UwshwS8V6dxxvTYP5yBNm1vaR24j66rtihQL4ibDhFqOGamoMXv-oqwBoY4Enw7TuJpaDlNAQEiL3ufg1Cvj-kptiUpwqPTqyXDGhrNap8jGKqRQQHMWxLqzAzzeUtbCCK2fkQ&csuir=1&mtid=9a6-avjeHqS0i-gP-IreuQY>)
+
+### 0432 | 2026-10-01 21:08:33 | You
+
+```text
+<image omitted> No fatty and nasty vaginal discharge yoghurt making bio bs
+```
+
+### 0433 | 2026-10-01 21:10:00 | You
+
+```text
+<image omitted>
+```
+
+### 0434 | 2026-10-01 21:10:06 | You
+
+```text
+https://www.google.com/search?q=making+yoghurt+of+vaginal+discharge+and+the+mother%27s+placenta+holy&client=ms-android-xiaomi-terr2-rso2&hs=Wfjq&sca_esv=9690ff17f276db6e&sxsrf=APpeQnt63IOD8RTniQSrJNt6Axa2GR3W0A%3A1790881750106&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4LpKPoHZrc4HVz9uOAATjT2whS8aQNdsb1nn47m_ZQdHTE7iRbsAnRKn8E3uf0GbJYi_pZfxlPOQeUVVKlEogfSVtHuEN7j1IaHCj6Y_GVAcrWRLZK-lL3eRGNHfWoT3NhjCfUjlQgwzshoDbWYtvN5uzL0I&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiUxbK0wpmXAxWthf0HHdfXFcIQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCV8_XacdewZuKTWSOKNzi9IZ4taSZ1-HMJGp3tksXAxiPdwF23Ylnq_QvZzugQy5IWr_EJsPjRa4RQc8aSiuP5hx9gUkDkjlAyAVfdHyPeCtxOSLSRk5xpKKqC0GON4fO3tQvigBLYDj_yeFqm7dMAwwcfEUSAFLJMxKdDiVqYfeZ_IIYno7rbCHlKAXDNDd05O51_yy_yFwozkuTqwNdYvm6g8fJ49KhyrK2PgpceAOkAWS5ie3uKVyISFOlXGOdniGdWpHGBYBSfZxjAO2RdaUHhiLsVhjmdgAdQ0nws59XiyE11tAfw1EdL3gEVHDwHSIltWs87mQ&csuir=1&mtid=26--ar_SIZG79u8PufD9qAE
+```
+
+Links: [Link 1](<https://www.google.com/search?q=making+yoghurt+of+vaginal+discharge+and+the+mother%27s+placenta+holy&client=ms-android-xiaomi-terr2-rso2&hs=Wfjq&sca_esv=9690ff17f276db6e&sxsrf=APpeQnt63IOD8RTniQSrJNt6Axa2GR3W0A%3A1790881750106&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4LpKPoHZrc4HVz9uOAATjT2whS8aQNdsb1nn47m_ZQdHTE7iRbsAnRKn8E3uf0GbJYi_pZfxlPOQeUVVKlEogfSVtHuEN7j1IaHCj6Y_GVAcrWRLZK-lL3eRGNHfWoT3NhjCfUjlQgwzshoDbWYtvN5uzL0I&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiUxbK0wpmXAxWthf0HHdfXFcIQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCV8_XacdewZuKTWSOKNzi9IZ4taSZ1-HMJGp3tksXAxiPdwF23Ylnq_QvZzugQy5IWr_EJsPjRa4RQc8aSiuP5hx9gUkDkjlAyAVfdHyPeCtxOSLSRk5xpKKqC0GON4fO3tQvigBLYDj_yeFqm7dMAwwcfEUSAFLJMxKdDiVqYfeZ_IIYno7rbCHlKAXDNDd05O51_yy_yFwozkuTqwNdYvm6g8fJ49KhyrK2PgpceAOkAWS5ie3uKVyISFOlXGOdniGdWpHGBYBSfZxjAO2RdaUHhiLsVhjmdgAdQ0nws59XiyE11tAfw1EdL3gEVHDwHSIltWs87mQ&csuir=1&mtid=26--ar_SIZG79u8PufD9qAE>)
+
+### 0435 | 2026-10-01 21:15:20 | You
+
+```text
+<image omitted>
+```
+
+### 0436 | 2026-10-01 21:15:27 | You
+
+```text
+https://www.google.com/search?q=making+yoghurt+of+vaginal+discharge+and+the+mother%27s+placenta+holy&client=ms-android-xiaomi-terr2-rso2&hs=Wfjq&sca_esv=9690ff17f276db6e&sxsrf=APpeQnt63IOD8RTniQSrJNt6Axa2GR3W0A%3A1790881750106&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4LpKPoHZrc4HVz9uOAATjT2whS8aQNdsb1nn47m_ZQdHTE7iRbsAnRKn8E3uf0GbJYi_pZfxlPOQeUVVKlEogfSVtHuEN7j1IaHCj6Y_GVAcrWRLZK-lL3eRGNHfWoT3NhjCfUjlQgwzshoDbWYtvN5uzL0I&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiUxbK0wpmXAxWthf0HHdfXFcIQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBKwHZACT3B7HL--XBzEyAVxHawCRZYINMNNbE7dEYwXnf3o_ojJ1ZtJ7P2rbsh_AnTdr3z7eUYtA2mUhWaHNbAHl5OT1sUOq3JXibsYqewY5Sn1yjBu-3P7iDdtTntBHbishJeCwShPX4eyHUcBBjU_lRVsC_zo4qD0GGKYdV80MNKFIWr0drDEM7R8_FetDMzS_fdpD-8-1-dyeYFCIxZVmG_n6lA2CO1hfaAnHQSupPNSzgGaU5AIJUGaaJ7s_HYLap_RywUJsolZ0wEFqbNZx-G64EzjW9Tc1C4iNAwjAdUcYqqkFa73Csr9pVtbazfq3e4-fkAhg&csuir=1&mtid=26--aovTObj87_UPjr-TiQ4&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=making+yoghurt+of+vaginal+discharge+and+the+mother%27s+placenta+holy&client=ms-android-xiaomi-terr2-rso2&hs=Wfjq&sca_esv=9690ff17f276db6e&sxsrf=APpeQnt63IOD8RTniQSrJNt6Axa2GR3W0A%3A1790881750106&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4LpKPoHZrc4HVz9uOAATjT2whS8aQNdsb1nn47m_ZQdHTE7iRbsAnRKn8E3uf0GbJYi_pZfxlPOQeUVVKlEogfSVtHuEN7j1IaHCj6Y_GVAcrWRLZK-lL3eRGNHfWoT3NhjCfUjlQgwzshoDbWYtvN5uzL0I&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiUxbK0wpmXAxWthf0HHdfXFcIQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBKwHZACT3B7HL--XBzEyAVxHawCRZYINMNNbE7dEYwXnf3o_ojJ1ZtJ7P2rbsh_AnTdr3z7eUYtA2mUhWaHNbAHl5OT1sUOq3JXibsYqewY5Sn1yjBu-3P7iDdtTntBHbishJeCwShPX4eyHUcBBjU_lRVsC_zo4qD0GGKYdV80MNKFIWr0drDEM7R8_FetDMzS_fdpD-8-1-dyeYFCIxZVmG_n6lA2CO1hfaAnHQSupPNSzgGaU5AIJUGaaJ7s_HYLap_RywUJsolZ0wEFqbNZx-G64EzjW9Tc1C4iNAwjAdUcYqqkFa73Csr9pVtbazfq3e4-fkAhg&csuir=1&mtid=26--aovTObj87_UPjr-TiQ4&udm=50>)
+
+### 0437 | 2026-10-01 21:17:48 | You
+
+```text
+https://www.google.com/search?q=baby+proofing+the+internet&client=ms-android-xiaomi-terr2-rso2&hs=yK4V&sca_esv=9690ff17f276db6e&sxsrf=APpeQnsVwVrIk-WJEKRiUzEhSIV-LF36Lg%3A1790882140915&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKR3ed8Vgh0UN6BJBwpaJLYI7hC_sExh7hHLgNVtBdM5J7YE1uk3aCGhSHZixXxiwfC9qvPM34oDf3hbeLaf-EDLiUqUassC2aO36_0COyDoCUD6gs&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwix0t_uw5mXAxXS9bsIHUsnBb8Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCb3a-f261T9ZYjVxsObXNMiiTWaRguwyLfOi-FFv9BiiczbMgZsPAR8k0bQ15hc7b5LiAhE3ao16WvNg7KdqLOaA4vM67MW4zJM2c8GKA3WSKPcqtdM_FpaFGEVzpP5MtnMJ4LU9QckdWHZ_x1ulZnENN2Ecb1cXqDSsgS5oFRkIfcft2BLKzGK_C05mgo6VZ5_d4pdWpQY9bUvV0Ma-TDvA12qXljygAo9L_7tK7LtfbrUJVdvy6oqVSE9r_i0Uvmg4FpPlAr7aUI2ecVczuqRTyvQSCiKgDJg-gIgE51x8h_PsOojHsyEwQRN8H7PAVGq1rGe5kL2g&csuir=1&mtid=XrG-auO2KrH87_UP842FiAM&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=baby+proofing+the+internet&client=ms-android-xiaomi-terr2-rso2&hs=yK4V&sca_esv=9690ff17f276db6e&sxsrf=APpeQnsVwVrIk-WJEKRiUzEhSIV-LF36Lg%3A1790882140915&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKR3ed8Vgh0UN6BJBwpaJLYI7hC_sExh7hHLgNVtBdM5J7YE1uk3aCGhSHZixXxiwfC9qvPM34oDf3hbeLaf-EDLiUqUassC2aO36_0COyDoCUD6gs&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwix0t_uw5mXAxXS9bsIHUsnBb8Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCb3a-f261T9ZYjVxsObXNMiiTWaRguwyLfOi-FFv9BiiczbMgZsPAR8k0bQ15hc7b5LiAhE3ao16WvNg7KdqLOaA4vM67MW4zJM2c8GKA3WSKPcqtdM_FpaFGEVzpP5MtnMJ4LU9QckdWHZ_x1ulZnENN2Ecb1cXqDSsgS5oFRkIfcft2BLKzGK_C05mgo6VZ5_d4pdWpQY9bUvV0Ma-TDvA12qXljygAo9L_7tK7LtfbrUJVdvy6oqVSE9r_i0Uvmg4FpPlAr7aUI2ecVczuqRTyvQSCiKgDJg-gIgE51x8h_PsOojHsyEwQRN8H7PAVGq1rGe5kL2g&csuir=1&mtid=XrG-auO2KrH87_UP842FiAM&udm=50>)
+
+### 0438 | 2026-10-01 21:31:24 | You
+
+```text
+https://www.google.com/search?q=look+up+to+the+left+reveal+as+a+chinese+military+parade&client=ms-android-xiaomi-terr2-rso2&hs=rfjq&sca_esv=3cc28e5c82341c61&sxsrf=APpeQntiWcVyyJz3FZUZ2klmiGf8pyhByA%3A1790883017624&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpD5WmxHV9GQVdPkL5dutr9a05lPz7TUuzqnB5wIjnKo2cbtsIm4_SgHVH1-1WLXMDLQ9E_syXPRdz1WbClH-1p3E923kFDKnpkVB--iJfbd7omu3w&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjH2OWQx5mXAxVY5QIHHbpOAW0Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDGCafK_RNYRD1aG9lTMaCTgrm5uWGM18cAEiQsDKDrKPX7mHfElRe2YO0QwQbrIwzc_XLAPcXnKAP1kZ58S4lImXiWD6SwR5WQiXILpHB46OzH820uR8fUo1KZQ8YZavVKp-E0u0RWOl1_EM72S3LWymls_vXX_9o&csuir=1&mtid=2bS-arCrI96oi-gP_eyXiAE
+```
+
+Links: [Link 1](<https://www.google.com/search?q=look+up+to+the+left+reveal+as+a+chinese+military+parade&client=ms-android-xiaomi-terr2-rso2&hs=rfjq&sca_esv=3cc28e5c82341c61&sxsrf=APpeQntiWcVyyJz3FZUZ2klmiGf8pyhByA%3A1790883017624&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpD5WmxHV9GQVdPkL5dutr9a05lPz7TUuzqnB5wIjnKo2cbtsIm4_SgHVH1-1WLXMDLQ9E_syXPRdz1WbClH-1p3E923kFDKnpkVB--iJfbd7omu3w&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjH2OWQx5mXAxVY5QIHHbpOAW0Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDGCafK_RNYRD1aG9lTMaCTgrm5uWGM18cAEiQsDKDrKPX7mHfElRe2YO0QwQbrIwzc_XLAPcXnKAP1kZ58S4lImXiWD6SwR5WQiXILpHB46OzH820uR8fUo1KZQ8YZavVKp-E0u0RWOl1_EM72S3LWymls_vXX_9o&csuir=1&mtid=2bS-arCrI96oi-gP_eyXiAE>)
+
+### 0439 | 2026-10-01 21:36:28 | You
+
+```text
+https://www.google.com/search?q=so+when+a+user+is+gamling+and+knows+they+are+going+to+lose+what+is+that+called+what+term&client=ms-android-xiaomi-terr2-rso2&hs=e0OB&sca_esv=3cc28e5c82341c61&sxsrf=APpeQnucYRbZr-mGSm9dHF9Y2SGxMWrLFA%3A1790883324330&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cn05EoNqnRUpRtqDK_L3JtdOuIEOJ1nHhG8N6Kw1G1--8sK5HSeIKdPwDspReFQmSOlsklpJaParVXNTz-NcRdjfe-eAYzoFzkOGVKQ16sfkULcCwi_IpzaIXzoCF_89AoZH7AMhp7Bw5RK3gPjolkNrfzZlgzXHEHXq_uV4tNgF13gIP&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj8zoWjyJmXAxWP_7sIHQXrGxoQ2J8OegQIEhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBSmEYscnimdY8c4Qqu8L0tHtLNg612FIUV6w8O9ChfydCjSbemKHxAQrQd1iyM6gBXlya-wwsFSLHqS21UbxTCEtjjDUVWpkN4K4uqzej2cKJfBWTgmb35Arno-efdlN9X9dq4zEdZl7J10BYTkIwK4pKj_LXlHsERkcM1DOVqRt7MPJuFiKb3YTEO82vcYVHdJniItjd9Gyl4QxdFBf21l0ETplFBIgYo0lIcgWCV-Ed29oTnncBUPFRxUmRpy0NHdAT4FLVvdcKc8tof4vHzYh9JQtiFgYOpvO01_f6JbxA39w3LxySAs0s-ujdHTTekDgAvaIa9Zw&csuir=1&mtid=Aba-aqSBFeDt7_UPkZCD8Ao&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=so+when+a+user+is+gamling+and+knows+they+are+going+to+lose+what+is+that+called+what+term&client=ms-android-xiaomi-terr2-rso2&hs=e0OB&sca_esv=3cc28e5c82341c61&sxsrf=APpeQnucYRbZr-mGSm9dHF9Y2SGxMWrLFA%3A1790883324330&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cn05EoNqnRUpRtqDK_L3JtdOuIEOJ1nHhG8N6Kw1G1--8sK5HSeIKdPwDspReFQmSOlsklpJaParVXNTz-NcRdjfe-eAYzoFzkOGVKQ16sfkULcCwi_IpzaIXzoCF_89AoZH7AMhp7Bw5RK3gPjolkNrfzZlgzXHEHXq_uV4tNgF13gIP&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj8zoWjyJmXAxWP_7sIHQXrGxoQ2J8OegQIEhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBSmEYscnimdY8c4Qqu8L0tHtLNg612FIUV6w8O9ChfydCjSbemKHxAQrQd1iyM6gBXlya-wwsFSLHqS21UbxTCEtjjDUVWpkN4K4uqzej2cKJfBWTgmb35Arno-efdlN9X9dq4zEdZl7J10BYTkIwK4pKj_LXlHsERkcM1DOVqRt7MPJuFiKb3YTEO82vcYVHdJniItjd9Gyl4QxdFBf21l0ETplFBIgYo0lIcgWCV-Ed29oTnncBUPFRxUmRpy0NHdAT4FLVvdcKc8tof4vHzYh9JQtiFgYOpvO01_f6JbxA39w3LxySAs0s-ujdHTTekDgAvaIa9Zw&csuir=1&mtid=Aba-aqSBFeDt7_UPkZCD8Ao&udm=50>)
+
+### 0440 | 2026-10-01 21:43:49 | You
+
+```text
+https://www.google.com/search?q=if+two+lanes+climb+up+the+pyramid+and+expected+to+meet+at+the+apex+but+the+right+before+the+last+split+second+imaginable+and+the+pyramid+quantum+super+position+double+hadamard+pinion+packed+1bit+jitter+jumped+what+would+be+the+name&client=ms-android-xiaomi-terr2-rso2&hs=PL4V&sca_esv=3cc28e5c82341c61&sxsrf=APpeQnvefA87DXjSJPH5wDEdwcPjeJboJg%3A1790883731766&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cn05EoNqnRUpRtqDK_L3JteSLxt4cUK996luNBLqJEG7JzIq3Tint9vCIuZ7YwNtgHMzyjMqycGQxJXN_LgbnyNZyxvzWmuMJfsZkf5g1J_rRbK5-bMgoKL2ZihnsIZcnxlEfADmEWwtCtLs1hFmKJrD_6hcZm1fYNh5RIT9oLgR09TNx&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj3yqjlyZmXAxWIzAIHHTGXGUsQ2J8OegQIDBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfALyi7DRSLFOV3F919xEI8dow6UO_fbtSLhjCC-X0JW66Ni32cZNxhn4_5WywxF7bLtKd0W3L_-F8d7-RlxIPqxo7S8m1OOTA-MSXQllmUfKh5YHpn6ecchiZKTasO08HFHxGY8yWjxmeeeND5hnQXIOgb1TDrsbz5Vs4p-bYPEznvhk1Mm7evX6bs2UGMxzt4eD51wYX4KRE8pspuBndIr2qwIWfiibxZlKnuxSjf5m1Se0pGDm-BYoEvnAKDG1gvrC_V2WZqigUnfvEKpmkLTQmJQj_9RstK_C0lnJ5_6EyD1v9Hx6HQ3Eig7BFN5yMPwN2CSazE5iA&csuir=1&mtid=pbe-aoCfMOqsi-gP9ojjyQI&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=if+two+lanes+climb+up+the+pyramid+and+expected+to+meet+at+the+apex+but+the+right+before+the+last+split+second+imaginable+and+the+pyramid+quantum+super+position+double+hadamard+pinion+packed+1bit+jitter+jumped+what+would+be+the+name&client=ms-android-xiaomi-terr2-rso2&hs=PL4V&sca_esv=3cc28e5c82341c61&sxsrf=APpeQnvefA87DXjSJPH5wDEdwcPjeJboJg%3A1790883731766&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cn05EoNqnRUpRtqDK_L3JteSLxt4cUK996luNBLqJEG7JzIq3Tint9vCIuZ7YwNtgHMzyjMqycGQxJXN_LgbnyNZyxvzWmuMJfsZkf5g1J_rRbK5-bMgoKL2ZihnsIZcnxlEfADmEWwtCtLs1hFmKJrD_6hcZm1fYNh5RIT9oLgR09TNx&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj3yqjlyZmXAxWIzAIHHTGXGUsQ2J8OegQIDBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfALyi7DRSLFOV3F919xEI8dow6UO_fbtSLhjCC-X0JW66Ni32cZNxhn4_5WywxF7bLtKd0W3L_-F8d7-RlxIPqxo7S8m1OOTA-MSXQllmUfKh5YHpn6ecchiZKTasO08HFHxGY8yWjxmeeeND5hnQXIOgb1TDrsbz5Vs4p-bYPEznvhk1Mm7evX6bs2UGMxzt4eD51wYX4KRE8pspuBndIr2qwIWfiibxZlKnuxSjf5m1Se0pGDm-BYoEvnAKDG1gvrC_V2WZqigUnfvEKpmkLTQmJQj_9RstK_C0lnJ5_6EyD1v9Hx6HQ3Eig7BFN5yMPwN2CSazE5iA&csuir=1&mtid=pbe-aoCfMOqsi-gP9ojjyQI&udm=50>)
+
+### 0441 | 2026-10-01 21:45:38 | You
+
+```text
+<audio omitted>
+```
+
+### 0442 | 2026-10-01 21:52:11 | You
+
+```text
+https://www.google.com/search?q=that+guy+who+had+a+lower+back+hernia+and+his+abdomens+are+almost+poking+out+no+picture+just+the+effect+of+said+thing+commonly+found+in+fentanyl+addicts&client=ms-android-xiaomi-terr2-rso2&hs=Bgjq&sca_esv=3cc28e5c82341c61&sxsrf=APpeQnvKhiogLjsXJHGpb5IBrSSxm1fNHA%3A1790884221681&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLxIWx1Ji9M2lu9YjU4me3NnFVK2DqeOCBk-5tfFpgQtl2P_yi9lYG8LbC8lft4BZKuLU1m5dapbmsxq1tjYNREunBbfYnjj68fle9BicKQn1zuf88b12Z-3wtEgPrtzK5X619CJ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjfw_fOy5mXAxVE2QIHHaYnMh0Q2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBQrejAWPkSLaS1SJ3lVvmGaGLbrZveDRVTfWIs8HsPShOORK9DFj2SFqPWIBO1exnsVnjhKKr6eYxya-I4W4WDL4NlT8SEAdpfsKQx9JKr_0jyeZFWOnGkX8MzQWnXVQfr3W3dCKNgwKU_SLHUowBcZeh73evx0gk6TEBWyuyBjUMVHbvQY0jp6TIVHyMnqC7rNLgkwvH0cZQqwWWTSZ-mkHp4xXKXUgI6H3-7ONTLj44KilW9Z8-qmFaX3ivFYFFe4M8xSCCFi2QC0NHDhI8GJLBXiiMKoyRR0ttTXdRiiYUeGQ5abNNHGpEwxvqzyQ_LXaKbI0Z9Eg&csuir=1&mtid=f7m-ao2pKZvzi-gPpLWB0QY&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=that+guy+who+had+a+lower+back+hernia+and+his+abdomens+are+almost+poking+out+no+picture+just+the+effect+of+said+thing+commonly+found+in+fentanyl+addicts&client=ms-android-xiaomi-terr2-rso2&hs=Bgjq&sca_esv=3cc28e5c82341c61&sxsrf=APpeQnvKhiogLjsXJHGpb5IBrSSxm1fNHA%3A1790884221681&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLxIWx1Ji9M2lu9YjU4me3NnFVK2DqeOCBk-5tfFpgQtl2P_yi9lYG8LbC8lft4BZKuLU1m5dapbmsxq1tjYNREunBbfYnjj68fle9BicKQn1zuf88b12Z-3wtEgPrtzK5X619CJ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjfw_fOy5mXAxVE2QIHHaYnMh0Q2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBQrejAWPkSLaS1SJ3lVvmGaGLbrZveDRVTfWIs8HsPShOORK9DFj2SFqPWIBO1exnsVnjhKKr6eYxya-I4W4WDL4NlT8SEAdpfsKQx9JKr_0jyeZFWOnGkX8MzQWnXVQfr3W3dCKNgwKU_SLHUowBcZeh73evx0gk6TEBWyuyBjUMVHbvQY0jp6TIVHyMnqC7rNLgkwvH0cZQqwWWTSZ-mkHp4xXKXUgI6H3-7ONTLj44KilW9Z8-qmFaX3ivFYFFe4M8xSCCFi2QC0NHDhI8GJLBXiiMKoyRR0ttTXdRiiYUeGQ5abNNHGpEwxvqzyQ_LXaKbI0Z9Eg&csuir=1&mtid=f7m-ao2pKZvzi-gPpLWB0QY&udm=50>)
+
+## 2026-10-02
+
+### 0443 | 2026-10-02 03:51:52 | You
+
+```text
+<image omitted>
+```
+
+### 0444 | 2026-10-02 03:52:39 | You
+
+```text
+<audio omitted>
+```
+
+### 0445 | 2026-10-02 03:53:31 | You
+
+```text
+Just In Time Suck Key Everybody
+```
+
+### 0446 | 2026-10-02 03:54:05 | You
+
+```text
+<audio omitted>
+```
+
+### 0447 | 2026-10-02 03:57:02 | You
+
+```text
+<audio omitted>
+```
+
+### 0448 | 2026-10-02 04:01:13 | You
+
+```text
+<audio omitted>
+```
+
+### 0449 | 2026-10-02 04:16:43 | You
+
+```text
+https://www.google.com/search?q=tesseract&client=ms-android-xiaomi-terr2-rso2&hs=XR4V&sca_esv=a546ad24af2f05cf&sxsrf=APpeQns0YKlO968k1YZSwq8qHavmP8IrAQ%3A1790906563729&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpD5WmxHV9GQVdPkL5dutr9a05lPz7TUuzqnB5wIjnKo2cbtsIm4_SgHVH1-1WLXMDLQ9E_syXPRdz1WbClH-1p3E923kFDKnpkVB--iJfbd7omu3w&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjC8bnsnpqXAxVM7gIHHaRQLHEQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAPzMQBTHF4YdzdFX1CMeLhqQGFIyPomRHY1o1pVTG7tuj1_m-pNQ2K4mUuwPT7Ajb7Y69BG_rZUmchZgor4hPUu8kQFi3i05lzsGk71I5R8iFJhvYkxooI46V0dwHyI49xFvKUX-9JZqEyVNtZNfAg3UXinNrwbFre3Ae7rt1qGFGLnMzvNkuv1m6Bg9yFg71nua1JGeB_0FxyxEkI83T5yICInYvXILqArXzQlUSQa-SYaCuzoy-hgh-PlkqP0ZyZqlCvwdty5dYX07WCwcNWn0KNZxyvH6V-1v4SGPb5y4rWpII5A4X_2oswCNUry3L62IXpkKjRjc0&csuir=1&mtid=yRC_auPkFrW0i-gP3-D8kAU&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=tesseract&client=ms-android-xiaomi-terr2-rso2&hs=XR4V&sca_esv=a546ad24af2f05cf&sxsrf=APpeQns0YKlO968k1YZSwq8qHavmP8IrAQ%3A1790906563729&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpD5WmxHV9GQVdPkL5dutr9a05lPz7TUuzqnB5wIjnKo2cbtsIm4_SgHVH1-1WLXMDLQ9E_syXPRdz1WbClH-1p3E923kFDKnpkVB--iJfbd7omu3w&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjC8bnsnpqXAxVM7gIHHaRQLHEQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAPzMQBTHF4YdzdFX1CMeLhqQGFIyPomRHY1o1pVTG7tuj1_m-pNQ2K4mUuwPT7Ajb7Y69BG_rZUmchZgor4hPUu8kQFi3i05lzsGk71I5R8iFJhvYkxooI46V0dwHyI49xFvKUX-9JZqEyVNtZNfAg3UXinNrwbFre3Ae7rt1qGFGLnMzvNkuv1m6Bg9yFg71nua1JGeB_0FxyxEkI83T5yICInYvXILqArXzQlUSQa-SYaCuzoy-hgh-PlkqP0ZyZqlCvwdty5dYX07WCwcNWn0KNZxyvH6V-1v4SGPb5y4rWpII5A4X_2oswCNUry3L62IXpkKjRjc0&csuir=1&mtid=yRC_auPkFrW0i-gP3-D8kAU&udm=50>)
+
+### 0450 | 2026-10-02 04:20:02 | You
+
+```text
+<audio omitted>
+```
+
+### 0451 | 2026-10-02 04:23:05 | You
+
+```text
+<audio omitted>
+```
+
+### 0452 | 2026-10-02 04:31:36 | You
+
+```text
+https://www.google.com/search?q=argon+freon+neon+lights+chromatic+aberration+bokeh+camera+obscura&client=ms-android-xiaomi-terr2-rso2&hs=F7OB&sca_esv=c2edff9d8988f2fa&sxsrf=APpeQntgG_99rS1oxbgZgAa_F1PUkIejKw%3A1790907844310&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiVvIrPo5qXAxX18bsIHWvcBrEQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBXZtb3TYoX1SeCwuDTHZBfQE2ng7oOPK9CH6EPBwh5T5ZFjR_5ieGTvjejoa7c9tWSA8tpRLyQKG4BBGMyLolFYISM-2rghY-qovC1On5jYCAm_psvEcsSobbUFgWywfp4l7puUJAAvQQ4_gGniwcLybTdebZ97ZtWs0zrqRk-3A6WAnGPX40cezrVBfxzG6vEI3FiQKwKvq-Jz5s0mhjnV6PXyqNWXgeabAWwvUIFO203LkXD5kKSzoGFW02OeBp1WgXYKkERlzKKE0Hn3Wl25pSpmW6dH7jrh4WIBAmdJRGfANLxrQg5FeaLHZuQZiIjKh1AxCK-Sw&csuir=1&mtid=0RW_arbAC6Xli-gP1uDOkQ0&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=argon+freon+neon+lights+chromatic+aberration+bokeh+camera+obscura&client=ms-android-xiaomi-terr2-rso2&hs=F7OB&sca_esv=c2edff9d8988f2fa&sxsrf=APpeQntgG_99rS1oxbgZgAa_F1PUkIejKw%3A1790907844310&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiVvIrPo5qXAxX18bsIHWvcBrEQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBXZtb3TYoX1SeCwuDTHZBfQE2ng7oOPK9CH6EPBwh5T5ZFjR_5ieGTvjejoa7c9tWSA8tpRLyQKG4BBGMyLolFYISM-2rghY-qovC1On5jYCAm_psvEcsSobbUFgWywfp4l7puUJAAvQQ4_gGniwcLybTdebZ97ZtWs0zrqRk-3A6WAnGPX40cezrVBfxzG6vEI3FiQKwKvq-Jz5s0mhjnV6PXyqNWXgeabAWwvUIFO203LkXD5kKSzoGFW02OeBp1WgXYKkERlzKKE0Hn3Wl25pSpmW6dH7jrh4WIBAmdJRGfANLxrQg5FeaLHZuQZiIjKh1AxCK-Sw&csuir=1&mtid=0RW_arbAC6Xli-gP1uDOkQ0&udm=50>)
+
+### 0453 | 2026-10-02 04:35:36 | You
+
+```text
+https://www.google.com/search?q=argon+freon+neon+lights+chromatic+aberration+bokeh+camera+obscura&client=ms-android-xiaomi-terr2-rso2&hs=F7OB&sca_esv=c2edff9d8988f2fa&sxsrf=APpeQntgG_99rS1oxbgZgAa_F1PUkIejKw%3A1790907844310&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh_uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiVvIrPo5qXAxX18bsIHWvcBrEQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCSdmQJx7hlv_Picyn8D3tVPLXKDv8lNQ-y3OyjVb1n0lJtihja38FYxonbf2XMrpeeC6V9lzGy-eHPM5VDImxaZ90Lo5_AZ70yQvnxuhn6O-j3g4Mzj5JNJhVmihXSAh79iTVlYD-j-dvClsSYv-TpwwnKz4yhUMtScLqRPpz_UJatFZNg7XN_d60tLZuxpcOBeCb6a49QGGAsram5FhNOVbr4YvcfrLLFZ1wUcAM_prbUYjhOzZvb7uk_mfGdBstKupkNHiGcbj48OHYVbt_Om454wChr0GUqo1HUiyKDndz7Grmp1PYUtrSsgEoeIjP80sWGnLKGQ&csuir=1&mtid=0RW_arbAC6Xli-gP1uDOkQ0&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=argon+freon+neon+lights+chromatic+aberration+bokeh+camera+obscura&client=ms-android-xiaomi-terr2-rso2&hs=F7OB&sca_esv=c2edff9d8988f2fa&sxsrf=APpeQntgG_99rS1oxbgZgAa_F1PUkIejKw%3A1790907844310&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh_uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiVvIrPo5qXAxX18bsIHWvcBrEQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCSdmQJx7hlv_Picyn8D3tVPLXKDv8lNQ-y3OyjVb1n0lJtihja38FYxonbf2XMrpeeC6V9lzGy-eHPM5VDImxaZ90Lo5_AZ70yQvnxuhn6O-j3g4Mzj5JNJhVmihXSAh79iTVlYD-j-dvClsSYv-TpwwnKz4yhUMtScLqRPpz_UJatFZNg7XN_d60tLZuxpcOBeCb6a49QGGAsram5FhNOVbr4YvcfrLLFZ1wUcAM_prbUYjhOzZvb7uk_mfGdBstKupkNHiGcbj48OHYVbt_Om454wChr0GUqo1HUiyKDndz7Grmp1PYUtrSsgEoeIjP80sWGnLKGQ&csuir=1&mtid=0RW_arbAC6Xli-gP1uDOkQ0&udm=50>)
+
+### 0454 | 2026-10-02 04:35:49 | You
+
+```text
+<audio omitted>
+```
+
+### 0455 | 2026-10-02 04:39:47 | You
+
+```text
+<audio omitted>
+```
+
+### 0456 | 2026-10-02 04:47:04 | You
+
+```text
+https://www.google.com/search?q=waterpas+water&client=ms-android-xiaomi-terr2-rso2&hs=X7OB&sca_esv=c2edff9d8988f2fa&sxsrf=APpeQnvS6TXUaA9QM6mF0Gg5mYhR7vfTug%3A1790908958548&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpnJQOWUbUFy0AZP2fc5_e7wQK9SpSaccWZEM8174slgzA7lL9Jp-FedBms3jKtDYRkzLfYMnDYMy5pBIIBgIQaS46ps0&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjMkbLip5qXAxXe7AIHHZtBFcMQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfD5YPf_i9q6cF04soW7HTVzFU--2qqFvTNjkHZKS8if4h9n4eC3Vl-NKQKbciofTRzE9T27MbVEcNLAcLIG8O4YwZglnxTTjIpiJbTEiC038vo32KQdtWNoFTkSzSkJPJ6X2Jl3pvgYaHtevcVhnC-yNIG5HYzrMGI9ExGYyWXUrbJNMekjoKLf7uDkbhW8nhjJ0DbNKkzttzZDuPB1fQIrhoC-JynKUtKY_kv0ODKmiIFVPTwobinct57pkfVadH5hHEwDl5kXNw&csuir=1&mtid=LBq_atr0Nb_m7_UP9eiRuAs&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=waterpas+water&client=ms-android-xiaomi-terr2-rso2&hs=X7OB&sca_esv=c2edff9d8988f2fa&sxsrf=APpeQnvS6TXUaA9QM6mF0Gg5mYhR7vfTug%3A1790908958548&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpnJQOWUbUFy0AZP2fc5_e7wQK9SpSaccWZEM8174slgzA7lL9Jp-FedBms3jKtDYRkzLfYMnDYMy5pBIIBgIQaS46ps0&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjMkbLip5qXAxXe7AIHHZtBFcMQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfD5YPf_i9q6cF04soW7HTVzFU--2qqFvTNjkHZKS8if4h9n4eC3Vl-NKQKbciofTRzE9T27MbVEcNLAcLIG8O4YwZglnxTTjIpiJbTEiC038vo32KQdtWNoFTkSzSkJPJ6X2Jl3pvgYaHtevcVhnC-yNIG5HYzrMGI9ExGYyWXUrbJNMekjoKLf7uDkbhW8nhjJ0DbNKkzttzZDuPB1fQIrhoC-JynKUtKY_kv0ODKmiIFVPTwobinct57pkfVadH5hHEwDl5kXNw&csuir=1&mtid=LBq_atr0Nb_m7_UP9eiRuAs&udm=50>)
+
+### 0457 | 2026-10-02 05:13:07 | You
+
+```text
+https://youtu.be/3gD6K5gPbMQ?is=PNHzgxol_PppCCEL
+```
+
+Links: [Link 1](<https://youtu.be/3gD6K5gPbMQ?is=PNHzgxol_PppCCEL>)
+
+### 0458 | 2026-10-02 06:14:12 | You
+
+```text
+https://www.google.com/search?q=priem+getal+fibonacci+reeks&client=ms-android-xiaomi-terr2-rso2&hs=Fojq&sca_esv=3f0989f2d37c6ddf&sxsrf=APpeQnvrj_npWvdOTE0DzXzFDQMuHuWiVg%3A1790914223695&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpPIDOr-Lw4-gOWkwYhx_xnBVbrpM-wvE6KJZYqmK4gSbCrwtoKsbTtbRC2igEGtLu0aonqAk9RAtQqwaQ77YVjVIzj_I&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwitoIGxu5qXAxUb_7sIHeRvBHcQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfADb9p67jQEsj6hvrzkvvkHtSlimf8Nq5kViN6SJ-tiCQh_msJVhrMchbQpOTQofhl68_a-lY36I__i-VA2PfKNu8rtpoZwVFR3VYiwZ7zdyeOZFnwlZbIVk7OMAxPGBABF-24COrBfJYDXbt57wYsTc6nETaH3ABQtlKvWpn874TiFFS76RGidZHPuwFzGvvWp9cPV4MaE6_t88Qf5yQdsrtssNpaAjcJrML4a3ty5L3J6ms-ULKLBZ1Rtd9nCSOHNEOBvWCDctQ&csuir=1&mtid=vy6_avSdH-bh7_UPlZH4uAQ&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=priem+getal+fibonacci+reeks&client=ms-android-xiaomi-terr2-rso2&hs=Fojq&sca_esv=3f0989f2d37c6ddf&sxsrf=APpeQnvrj_npWvdOTE0DzXzFDQMuHuWiVg%3A1790914223695&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpPIDOr-Lw4-gOWkwYhx_xnBVbrpM-wvE6KJZYqmK4gSbCrwtoKsbTtbRC2igEGtLu0aonqAk9RAtQqwaQ77YVjVIzj_I&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwitoIGxu5qXAxUb_7sIHeRvBHcQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfADb9p67jQEsj6hvrzkvvkHtSlimf8Nq5kViN6SJ-tiCQh_msJVhrMchbQpOTQofhl68_a-lY36I__i-VA2PfKNu8rtpoZwVFR3VYiwZ7zdyeOZFnwlZbIVk7OMAxPGBABF-24COrBfJYDXbt57wYsTc6nETaH3ABQtlKvWpn874TiFFS76RGidZHPuwFzGvvWp9cPV4MaE6_t88Qf5yQdsrtssNpaAjcJrML4a3ty5L3J6ms-ULKLBZ1Rtd9nCSOHNEOBvWCDctQ&csuir=1&mtid=vy6_avSdH-bh7_UPlZH4uAQ&udm=50>)
+
+### 0459 | 2026-10-02 06:29:46 | You
+
+```text
+https://www.google.com/search?q=piano+tripwire+fiberoptic+as+slicing&client=ms-android-xiaomi-terr2-rso2&hs=Vojq&sca_esv=3f0989f2d37c6ddf&sxsrf=APpeQnucUNwVjEEAXu7aRg5ZMY4N57SX0w%3A1790915203560&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiWtZ-Ev5qXAxX50AIHHbP1F6gQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfC4EV1cM1pZXZ51KXs4XP9IMujyA6UY2d9a5l-F4pZuWuUaNXMLwZa--AcnRifsXN8U1nHSuaMHMyi18qdNo_0gnMiO1JhsBizanfXMMVT_QnpH9Zzxs3WT0RgCSlxR5wDr-mR1t1_DZ7WlHC9QBoigTntQeGY8Yzd83BJStcFAx7RD6kmaXv7_Eh0SVjIos499cCMc0jrPkqOk3PTOp3A63uFtjC-ql7olCKBMKKsMB3PfJU84iufrb52HCjSkzdQSOu69UYSFa-QjD__jwAQmdEX8Lm4OmJ1DlwLRtAl9T-mER7R12uN8QNqO3I1KTLrOWUAg98Fw3Q&csuir=1&mtid=kDK_asWNHeyN9u8P2fCTqA0&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=piano+tripwire+fiberoptic+as+slicing&client=ms-android-xiaomi-terr2-rso2&hs=Vojq&sca_esv=3f0989f2d37c6ddf&sxsrf=APpeQnucUNwVjEEAXu7aRg5ZMY4N57SX0w%3A1790915203560&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiWtZ-Ev5qXAxX50AIHHbP1F6gQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfC4EV1cM1pZXZ51KXs4XP9IMujyA6UY2d9a5l-F4pZuWuUaNXMLwZa--AcnRifsXN8U1nHSuaMHMyi18qdNo_0gnMiO1JhsBizanfXMMVT_QnpH9Zzxs3WT0RgCSlxR5wDr-mR1t1_DZ7WlHC9QBoigTntQeGY8Yzd83BJStcFAx7RD6kmaXv7_Eh0SVjIos499cCMc0jrPkqOk3PTOp3A63uFtjC-ql7olCKBMKKsMB3PfJU84iufrb52HCjSkzdQSOu69UYSFa-QjD__jwAQmdEX8Lm4OmJ1DlwLRtAl9T-mER7R12uN8QNqO3I1KTLrOWUAg98Fw3Q&csuir=1&mtid=kDK_asWNHeyN9u8P2fCTqA0&udm=50>)
+
+### 0460 | 2026-10-02 06:41:24 | You
+
+```text
+https://www.google.com/search?q=latrine+doody+salute+gestations&client=ms-android-xiaomi-terr2-rso2&hs=Zojq&sca_esv=3f0989f2d37c6ddf&sxsrf=APpeQnvGvyuSlrEiokL4CidaS3O70ypZyg%3A1790915408073&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955HC4dEhTD85WaiWkSD5EjFnrnkXf8uSwU1OjdTZmfoiWVgODsrQlv49kLZ63PjUD4Ylh3ioGlhPObtZQ3tSCsBQwnjKN&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjO9OHlv5qXAxVbgP0HHWRCGugQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfA_qeUUuII4oOR7zSkpm46tP9i1Z4R53tqn60Xf4tie_a8ygOQXH9MZWm88pL0gi4iPCLtqWoCZYe38Y0PkLaXognfVkKMt0m2UgisJVZywWeSs2BPBxlFxApz608VaVqVIFmcQTazTd32bk2GmcKhspBb5_-a2ByW2ogyR2vsCkNn9nI8pfBhQ0r1TXvX_SULEBs1Z_qgxcPws1KRB4BqbDgqXHp5gH3oCsIZGYv6oS5-V_khhdL6IE4h6xASvdcklML-z06bh6NXJFKZRtFQqobOEURDA2jwaKP1IyV5P7NSnQ1hAMnzLVPNj3Mijv9so2mfz4k5a6Q&csuir=1&mtid=UjO_atXxFviL9u8PsPramAo&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=latrine+doody+salute+gestations&client=ms-android-xiaomi-terr2-rso2&hs=Zojq&sca_esv=3f0989f2d37c6ddf&sxsrf=APpeQnvGvyuSlrEiokL4CidaS3O70ypZyg%3A1790915408073&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955HC4dEhTD85WaiWkSD5EjFnrnkXf8uSwU1OjdTZmfoiWVgODsrQlv49kLZ63PjUD4Ylh3ioGlhPObtZQ3tSCsBQwnjKN&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjO9OHlv5qXAxVbgP0HHWRCGugQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfA_qeUUuII4oOR7zSkpm46tP9i1Z4R53tqn60Xf4tie_a8ygOQXH9MZWm88pL0gi4iPCLtqWoCZYe38Y0PkLaXognfVkKMt0m2UgisJVZywWeSs2BPBxlFxApz608VaVqVIFmcQTazTd32bk2GmcKhspBb5_-a2ByW2ogyR2vsCkNn9nI8pfBhQ0r1TXvX_SULEBs1Z_qgxcPws1KRB4BqbDgqXHp5gH3oCsIZGYv6oS5-V_khhdL6IE4h6xASvdcklML-z06bh6NXJFKZRtFQqobOEURDA2jwaKP1IyV5P7NSnQ1hAMnzLVPNj3Mijv9so2mfz4k5a6Q&csuir=1&mtid=UjO_atXxFviL9u8PsPramAo&udm=50>)
+
+### 0461 | 2026-10-02 07:25:16 | You
+
+```text
+https://www.google.com/search?q=patreon+no+credit+card+earning&client=ms-android-xiaomi-terr2-rso2&hs=gU4V&sca_esv=314da1f3795cb409&sxsrf=APpeQnvFIQqczzLXm3ZwiZJLe1rXWt55Bg%3A1790918251040&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIInBEEy-eiFZv8B5rS4maeNBTNEIYkmKln-7huzj-TXue8mdiyYhX_M0R-MHuvxP1hAzpjv3lXBUhBZ-RzPLp87fhsY17KJTnNE7zE4bXxikeomB6&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwif6bKxypqXAxXr9AIHHfqENMAQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB54Z2oHyBV9cHx6QSQwJHieamBMIe3HwIKhUMG6hNZgOMtX2s06Gyw6DWzaXoqKpUc_7eU_VXJ2kKN6LOSiaWIf3CjXsQXf-Kc4uYX2PMgXQEpxsUBselqHetldtta9h7KqnP32_Gt0iIQ65nhMKxxJzrN2UnPUoiYi6m8SxQw4JaipbIcx4_UMr5GLimAH3m3101Shaw9G2ezvluH98FzgrpT0Jg-DMd7LZHdXRvoNn5XMQbDiERNJgN-Wh9Zywe8cFz6hlUTCw&csuir=1&mtid=dz6_avWpGY-A9u8PhZCEuQo&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=patreon+no+credit+card+earning&client=ms-android-xiaomi-terr2-rso2&hs=gU4V&sca_esv=314da1f3795cb409&sxsrf=APpeQnvFIQqczzLXm3ZwiZJLe1rXWt55Bg%3A1790918251040&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIInBEEy-eiFZv8B5rS4maeNBTNEIYkmKln-7huzj-TXue8mdiyYhX_M0R-MHuvxP1hAzpjv3lXBUhBZ-RzPLp87fhsY17KJTnNE7zE4bXxikeomB6&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwif6bKxypqXAxXr9AIHHfqENMAQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB54Z2oHyBV9cHx6QSQwJHieamBMIe3HwIKhUMG6hNZgOMtX2s06Gyw6DWzaXoqKpUc_7eU_VXJ2kKN6LOSiaWIf3CjXsQXf-Kc4uYX2PMgXQEpxsUBselqHetldtta9h7KqnP32_Gt0iIQ65nhMKxxJzrN2UnPUoiYi6m8SxQw4JaipbIcx4_UMr5GLimAH3m3101Shaw9G2ezvluH98FzgrpT0Jg-DMd7LZHdXRvoNn5XMQbDiERNJgN-Wh9Zywe8cFz6hlUTCw&csuir=1&mtid=dz6_avWpGY-A9u8PhZCEuQo&udm=50>)
+
+### 0462 | 2026-10-02 08:04:40 | You
+
+```text
+https://www.google.com/search?q=what+if+people+suddenly+dont+get+their+pension+checks&client=ms-android-xiaomi-terr2-rso2&hs=mAPB&sca_esv=b25d32625954c6d5&sxsrf=APpeQnsqiWc9e5rmrbGnMQWlWeLO2t9WBA%3A1790920997106&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4JAeCmZp4riIcplhAkpcBx9sBhhllsmAy67epw9QOL0v_PEvDUnTIhyQeVm8pV4XcBCDkwhiLCVIR-X0G8DDlBY1vluRYx-OdErQxcU2XKmlfTZMc39n6UKkl5_-RRcIYevrRC5jdCVsAjIsru3YEcXWYEo9&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiws-nO1JqXAxXFwQIHHVtuO6UQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBPMaikrlal-DziQKjqe9CGPhuoQKNM3TZrVKN15dipA_hu_xQ5VSYWhv2C_bN35oD5wyo9ThP1-1Er7xexDnEDl5ZacDaKVSfi-Q4cKEfY-V4G3JWb56h9KO68-oLBU7Fr-Udpi3G5mhr5wB6JdS1OkQt-x8pCBNv5&csuir=1&mtid=Mkm_aqDgD9Hi7_UPjf2kmA0
+```
+
+Links: [Link 1](<https://www.google.com/search?q=what+if+people+suddenly+dont+get+their+pension+checks&client=ms-android-xiaomi-terr2-rso2&hs=mAPB&sca_esv=b25d32625954c6d5&sxsrf=APpeQnsqiWc9e5rmrbGnMQWlWeLO2t9WBA%3A1790920997106&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4JAeCmZp4riIcplhAkpcBx9sBhhllsmAy67epw9QOL0v_PEvDUnTIhyQeVm8pV4XcBCDkwhiLCVIR-X0G8DDlBY1vluRYx-OdErQxcU2XKmlfTZMc39n6UKkl5_-RRcIYevrRC5jdCVsAjIsru3YEcXWYEo9&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiws-nO1JqXAxXFwQIHHVtuO6UQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBPMaikrlal-DziQKjqe9CGPhuoQKNM3TZrVKN15dipA_hu_xQ5VSYWhv2C_bN35oD5wyo9ThP1-1Er7xexDnEDl5ZacDaKVSfi-Q4cKEfY-V4G3JWb56h9KO68-oLBU7Fr-Udpi3G5mhr5wB6JdS1OkQt-x8pCBNv5&csuir=1&mtid=Mkm_aqDgD9Hi7_UPjf2kmA0>)
+
+### 0463 | 2026-10-02 08:05:12 | You
+
+```text
+If the grey privado dyes they aren't taking a cent with them
+```
+
+### 0464 | 2026-10-02 08:05:19 | You
+
+```text
+..
+```
+
+### 0465 | 2026-10-02 08:25:16 | You
+
+```text
+https://www.google.com/search?q=pvc+buis+pijltjes+schieten+van+de+tv+gids+paginas&client=ms-android-xiaomi-terr2-rso2&hs=Lqjq&sca_esv=b25d32625954c6d5&sxsrf=APpeQns0_EiiOwR3M_il0J0IjjC47e1Pag%3A1790922023420&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpnJQOWUbUFy0AZP2fc5_e7wQK9SpSaccWZEM8174slgzA7lL9Jp-FedBms3jKtDYRkzLfYMnDYMy5pBIIBgIQaS46ps0&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj_sZq42JqXAxX9g_0HHdH9GnIQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAEav-0NVQsCe0witNla3HakSuv63bs_q81JoCRk0OofVSRjm5T6yBEMD6ms02Aq0NmqlcNoyUicr58NwDBh0fb_MOk0ggL5xyG0iRiOUhmZHDRfYUYgrz9pVOhW_pkvhiqekheG07HRBk05PQX4NOtao6jgk_4kBQX_2VdtThee9s_sSqy6Uf2IVgP8xmOSZo2lDQn7e50gp5dfw-hEByb9j0bZzcgAYKErnFQiGGgXtI4G82rPTlhgwNZkSU8AkPdEVsEkKSBEw&csuir=1&mtid=N02_arOjGe6O-d8P6Y678A4&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=pvc+buis+pijltjes+schieten+van+de+tv+gids+paginas&client=ms-android-xiaomi-terr2-rso2&hs=Lqjq&sca_esv=b25d32625954c6d5&sxsrf=APpeQns0_EiiOwR3M_il0J0IjjC47e1Pag%3A1790922023420&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpnJQOWUbUFy0AZP2fc5_e7wQK9SpSaccWZEM8174slgzA7lL9Jp-FedBms3jKtDYRkzLfYMnDYMy5pBIIBgIQaS46ps0&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj_sZq42JqXAxX9g_0HHdH9GnIQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAEav-0NVQsCe0witNla3HakSuv63bs_q81JoCRk0OofVSRjm5T6yBEMD6ms02Aq0NmqlcNoyUicr58NwDBh0fb_MOk0ggL5xyG0iRiOUhmZHDRfYUYgrz9pVOhW_pkvhiqekheG07HRBk05PQX4NOtao6jgk_4kBQX_2VdtThee9s_sSqy6Uf2IVgP8xmOSZo2lDQn7e50gp5dfw-hEByb9j0bZzcgAYKErnFQiGGgXtI4G82rPTlhgwNZkSU8AkPdEVsEkKSBEw&csuir=1&mtid=N02_arOjGe6O-d8P6Y678A4&udm=50>)
+
+### 0466 | 2026-10-02 09:15:31 | You
+
+```text
+https://www.google.com/search?q=tegenpolen+groen+staat+voor+die+gast+die+het+nederlandse+koningshuis+heeft+groot+gemaakt+wit+en+rood+voor+negatief+en+positieve+spin+van+electronen+en+het+is+de+italiaanse+vlag&client=ms-android-xiaomi-terr2-rso2&hs=Bcjq&sca_esv=a6f3ff406f75be40&sxsrf=APpeQntDPBUQaX_t-APyWlmgp6oJU7FE_g%3A1790869350699&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832UgltsGVIAFz5WDq3ETuldE5s6R40x0T8qn57d7tYDuVEL4sQ6Udxmk7M7fOOr6JlfrnNnSXkdf_il1gnsx7xV-l_X172HdFntd4Fcsyk246nzS8KYG82RccJ7E058oU0QqMpXM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjC4_KblJmXAxW7xgIHHSBrK-IQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB_iTPFYlODwff6UMrpcbgzV6s1fm0D_mqI740-gmILLlHJpdY10SadGIyQiyhSdnHJeGuMqHte4UsePpm80xfosklduvA4ewKbdl5kd4RIqsQwMju6GFP3Z8YI0mR8tXcT0b6GjH3W6pPqAk_dM3hLDOXDH5mb1GPvgO5qKYKjSfe9REWyehfFrUqSsPXDQqsBrnE5mUgfR6uQkD0E41RaxIcbiIFvugQqKSzjlw4u_bXi1PDs4FGUmYJm5MZWrUHEBmQBEu_76dgg4NK3fh31PwaQ_KBHe_nPnNTe9Dd_HYs-xPEjcwiBXz1TZ54GbIGmJ1itRO4coQ&csuir=1&mtid=aX--asmWCIaYi-gP5Oe74AY&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=tegenpolen+groen+staat+voor+die+gast+die+het+nederlandse+koningshuis+heeft+groot+gemaakt+wit+en+rood+voor+negatief+en+positieve+spin+van+electronen+en+het+is+de+italiaanse+vlag&client=ms-android-xiaomi-terr2-rso2&hs=Bcjq&sca_esv=a6f3ff406f75be40&sxsrf=APpeQntDPBUQaX_t-APyWlmgp6oJU7FE_g%3A1790869350699&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832UgltsGVIAFz5WDq3ETuldE5s6R40x0T8qn57d7tYDuVEL4sQ6Udxmk7M7fOOr6JlfrnNnSXkdf_il1gnsx7xV-l_X172HdFntd4Fcsyk246nzS8KYG82RccJ7E058oU0QqMpXM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjC4_KblJmXAxW7xgIHHSBrK-IQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB_iTPFYlODwff6UMrpcbgzV6s1fm0D_mqI740-gmILLlHJpdY10SadGIyQiyhSdnHJeGuMqHte4UsePpm80xfosklduvA4ewKbdl5kd4RIqsQwMju6GFP3Z8YI0mR8tXcT0b6GjH3W6pPqAk_dM3hLDOXDH5mb1GPvgO5qKYKjSfe9REWyehfFrUqSsPXDQqsBrnE5mUgfR6uQkD0E41RaxIcbiIFvugQqKSzjlw4u_bXi1PDs4FGUmYJm5MZWrUHEBmQBEu_76dgg4NK3fh31PwaQ_KBHe_nPnNTe9Dd_HYs-xPEjcwiBXz1TZ54GbIGmJ1itRO4coQ&csuir=1&mtid=aX--asmWCIaYi-gP5Oe74AY&udm=50>)
+
+### 0467 | 2026-10-02 09:25:32 | You
+
+```text
+https://youtu.be/17jplpjCaec?is=DNAfvailPABb8Fb5
+```
+
+Links: [Link 1](<https://youtu.be/17jplpjCaec?is=DNAfvailPABb8Fb5>)
+
+### 0468 | 2026-10-02 10:07:20 | You
+
+```text
+https://www.google.com/search?q=mitosis+and+old+people+smell+in+old+folks+homes&client=ms-android-xiaomi-terr2-rso2&hs=JX4V&sca_esv=f2a7ccf26385c224&sxsrf=APpeQnt2cPt2zTJtICDC1hAP6-K0foq5xA%3A1790928033563&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKj906-ORFIK2UR8msyEJBwjHvmTN5b2gK7JkDyhtCEwf4A5rP5EJLIkekQm3uTyUAGnOU1zkOGOmIx6qH8eEiFxgEzogpaArKINjyyxFk2SZZEwuCBZG_es2CnfGVx1xoNP30SS&vsint=&aep=1&ntc=1&cs=1&sa=X&sqi=2&ved=2ahUKEwiEy4jq7pqXAxWp7rsIHb1WOFkQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBsemsULRNUTMbb7brODkYv3eJY7vIPw-EuD_BOTpEIhrZin2VY9IZkZrsJaMgB5V5JGqJ-jw3e6YAsK69yYuvICo05CboFrywudkevsv1cXwdcx9PZPB0z37HesTLRMaP2PF67rIDcfHWoIybhckdzuTPgSRL7r5xYixQRm6uSKUcmNTyd5IipVPHiaL6JBxYxu2TZj6ruVYBWaRroQM3tYjBQAJLKcusFJ5REB-mIeIXkLODNXTtdtiDMSYzg_t4T7Tv8bqHNhZZ0QiM4wGXK7bV43pDuQZxa3snAOceTnOllJnjWFERk5J7bhlWEey0ZiBXTk84T-w&csuir=1&mtid=o2S_aqDMC4qP9u8Pu7WkIA&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=mitosis+and+old+people+smell+in+old+folks+homes&client=ms-android-xiaomi-terr2-rso2&hs=JX4V&sca_esv=f2a7ccf26385c224&sxsrf=APpeQnt2cPt2zTJtICDC1hAP6-K0foq5xA%3A1790928033563&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKj906-ORFIK2UR8msyEJBwjHvmTN5b2gK7JkDyhtCEwf4A5rP5EJLIkekQm3uTyUAGnOU1zkOGOmIx6qH8eEiFxgEzogpaArKINjyyxFk2SZZEwuCBZG_es2CnfGVx1xoNP30SS&vsint=&aep=1&ntc=1&cs=1&sa=X&sqi=2&ved=2ahUKEwiEy4jq7pqXAxWp7rsIHb1WOFkQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBsemsULRNUTMbb7brODkYv3eJY7vIPw-EuD_BOTpEIhrZin2VY9IZkZrsJaMgB5V5JGqJ-jw3e6YAsK69yYuvICo05CboFrywudkevsv1cXwdcx9PZPB0z37HesTLRMaP2PF67rIDcfHWoIybhckdzuTPgSRL7r5xYixQRm6uSKUcmNTyd5IipVPHiaL6JBxYxu2TZj6ruVYBWaRroQM3tYjBQAJLKcusFJ5REB-mIeIXkLODNXTtdtiDMSYzg_t4T7Tv8bqHNhZZ0QiM4wGXK7bV43pDuQZxa3snAOceTnOllJnjWFERk5J7bhlWEey0ZiBXTk84T-w&csuir=1&mtid=o2S_aqDMC4qP9u8Pu7WkIA&udm=50>)
+
+### 0469 | 2026-10-02 10:09:12 | You
+
+```text
+https://www.google.com/search?q=XL-FR+exfiltreer+FLIR+tracking&client=ms-android-xiaomi-terr2-rso2&hs=nCPB&sca_esv=f2a7ccf26385c224&sxsrf=APpeQnsYdwp5tUQL3huNV-OZxcBYoP3dnw%3A1790928532549&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiEroDY8JqXAxUtnf0HHSaEARAQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAXrQhoL_gMu1fZBjcBFQILKENj8zy3KkcnFJnhU6GCCmgmocNnwGHtCZCA99kAgZXVAnhQaO2DdUqOh-gfZarfeFuKDEgO7cieU7UIUWiNMiqn7zyb0iEFgkiD_OR_RPiZV17lEuR-q1A30lVTganfToCvi6SYvFgbLBmYt9_jeQhNgCDw0xE9pHozFPq6Z7c3H_KFhRXqPe92HKi7Ka6wtAjRORpAQhWAsQUavnwqE6N6AijEkfmjsvH8Eu58_Jv8Jnr4Bs4Qd3EEWdmw_2UWuFUvox33KYVfrqQQvCuxRvBXK8bNZSq1woiRzs45oOhaZtkgtgXeKgbZ4UND3MliftdVTVBF8A&csuir=1&mtid=l2a_avWENavZ7_UP7e6GsAw
+```
+
+Links: [Link 1](<https://www.google.com/search?q=XL-FR+exfiltreer+FLIR+tracking&client=ms-android-xiaomi-terr2-rso2&hs=nCPB&sca_esv=f2a7ccf26385c224&sxsrf=APpeQnsYdwp5tUQL3huNV-OZxcBYoP3dnw%3A1790928532549&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UfVcuk_CN5lZ7ooDDWHK2Mvzz3zSAVajbtoCgDcY4ClkqSY2KMHBVEZtzZXhvZhOAYOei-ZwZNbTP-zA17u6NI3tEs6cG6hn81aUxnDhSOjSjwakoJQVHh0SeQ8h1zJd7wJVl3n&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiEroDY8JqXAxUtnf0HHSaEARAQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAXrQhoL_gMu1fZBjcBFQILKENj8zy3KkcnFJnhU6GCCmgmocNnwGHtCZCA99kAgZXVAnhQaO2DdUqOh-gfZarfeFuKDEgO7cieU7UIUWiNMiqn7zyb0iEFgkiD_OR_RPiZV17lEuR-q1A30lVTganfToCvi6SYvFgbLBmYt9_jeQhNgCDw0xE9pHozFPq6Z7c3H_KFhRXqPe92HKi7Ka6wtAjRORpAQhWAsQUavnwqE6N6AijEkfmjsvH8Eu58_Jv8Jnr4Bs4Qd3EEWdmw_2UWuFUvox33KYVfrqQQvCuxRvBXK8bNZSq1woiRzs45oOhaZtkgtgXeKgbZ4UND3MliftdVTVBF8A&csuir=1&mtid=l2a_avWENavZ7_UP7e6GsAw>)
+
+### 0470 | 2026-10-02 11:05:39 | You
+
+```text
+https://www.google.com/search?q=meningokokken+plaatjes&client=ms-android-xiaomi-terr2-rso2&hs=wsjq&sca_esv=e1de76b764c5d6d7&sxsrf=APpeQns5lTxisVX6OR_LwSOSW3NG-TyweA%3A1790931706806&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9y513h_dJNevWM0LJgfK9j1Vvlz6It0tSfbVov3E-VOkryIEvL1z5AkkBpbmExjd3luLlCC4KL4uz7_0S6dU874XxpVaRFVAyRTJk4IJDK4fST9xTQ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjDo83B_JqXAxUtgf0HHbcwPBMQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfC1i3t4SUVb4NpoNJoHeHbPjUId6qZUw03_HPR6lPoZdqLillS51Pwg11ePNHNho8FU-BvaD2XiAAeS0LMEJ4MIfotAuv0vwFQkF6YkWHVSOMvgvup5pqVagfqutjchPszeohyVIPV89ISQfBb66J6O_Fe56E06cLQ1Q6xroBmrnHiYegqvUozt8pJ6Pg1BWg47gjKfXhAEj-XugOAA7Pa9y4pxnrfctGqUddL70WtvelezTe543mtuW1DBojWRIOjv7uXD26GjMdgFGbWExmRGMBbkXTf1t-lW4O5IBvxbftrK9rCOZKFWpirQuT37e-os9ixrh0NRhw&csuir=1&mtid=AHO_auDVBPKK9u8PnJSH0AM&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=meningokokken+plaatjes&client=ms-android-xiaomi-terr2-rso2&hs=wsjq&sca_esv=e1de76b764c5d6d7&sxsrf=APpeQns5lTxisVX6OR_LwSOSW3NG-TyweA%3A1790931706806&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9y513h_dJNevWM0LJgfK9j1Vvlz6It0tSfbVov3E-VOkryIEvL1z5AkkBpbmExjd3luLlCC4KL4uz7_0S6dU874XxpVaRFVAyRTJk4IJDK4fST9xTQ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjDo83B_JqXAxUtgf0HHbcwPBMQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfC1i3t4SUVb4NpoNJoHeHbPjUId6qZUw03_HPR6lPoZdqLillS51Pwg11ePNHNho8FU-BvaD2XiAAeS0LMEJ4MIfotAuv0vwFQkF6YkWHVSOMvgvup5pqVagfqutjchPszeohyVIPV89ISQfBb66J6O_Fe56E06cLQ1Q6xroBmrnHiYegqvUozt8pJ6Pg1BWg47gjKfXhAEj-XugOAA7Pa9y4pxnrfctGqUddL70WtvelezTe543mtuW1DBojWRIOjv7uXD26GjMdgFGbWExmRGMBbkXTf1t-lW4O5IBvxbftrK9rCOZKFWpirQuT37e-os9ixrh0NRhw&csuir=1&mtid=AHO_auDVBPKK9u8PnJSH0AM&udm=50>)
+
+### 0471 | 2026-10-02 11:56:54 | You
+
+```text
+https://www.google.com/search?q=school+swarm+magnetic+field+0+and+1+digital+information+signals&client=ms-android-xiaomi-terr2-rso2&hs=BZ4V&sca_esv=3d2f9fa888dd4596&sxsrf=APpeQntHkEUdtRECxNArvaA_-9WvklwUZw%3A1790934987481&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiojfrdiJuXAxWL0wIHHT9mKrYQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfA9CUN7EfI52S9mKZV4axqYwA6Kg5072Kthk_wa_2lz6yFHwVtQyihBqPX93HC_L85ZbO5jYuLVWf5Nyremf8n4RgfDi-pONNfHMS79TpImoHCah-N_GMLLgVA2TxtDbEoo2m3ZFLupLxitYomWNJxVZOdP8HWgcY6AV3Z2XrNg0DnEcb7pDZR8xI2GVDRyvkqejSlsDcaaKQkY5bENBLbuS2aUHUX-8gD1qv59FyvzeoNT_C7MhRBp5htYz4hysYmBaoJFcFy_bXonXbXzuOqeVR2X2zkVnMneX_YML-Xi3zmJiQK5Mhb5dRfQoegnVWbsHvhr5nRU_w&csuir=1&mtid=0H-_as-zDOy9i-gP-_u2yAM
+```
+
+Links: [Link 1](<https://www.google.com/search?q=school+swarm+magnetic+field+0+and+1+digital+information+signals&client=ms-android-xiaomi-terr2-rso2&hs=BZ4V&sca_esv=3d2f9fa888dd4596&sxsrf=APpeQntHkEUdtRECxNArvaA_-9WvklwUZw%3A1790934987481&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiojfrdiJuXAxWL0wIHHT9mKrYQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfA9CUN7EfI52S9mKZV4axqYwA6Kg5072Kthk_wa_2lz6yFHwVtQyihBqPX93HC_L85ZbO5jYuLVWf5Nyremf8n4RgfDi-pONNfHMS79TpImoHCah-N_GMLLgVA2TxtDbEoo2m3ZFLupLxitYomWNJxVZOdP8HWgcY6AV3Z2XrNg0DnEcb7pDZR8xI2GVDRyvkqejSlsDcaaKQkY5bENBLbuS2aUHUX-8gD1qv59FyvzeoNT_C7MhRBp5htYz4hysYmBaoJFcFy_bXonXbXzuOqeVR2X2zkVnMneX_YML-Xi3zmJiQK5Mhb5dRfQoegnVWbsHvhr5nRU_w&csuir=1&mtid=0H-_as-zDOy9i-gP-_u2yAM>)
+
+### 0472 | 2026-10-02 12:00:28 | You
+
+```text
+https://www.google.com/search?q=trolley+problem+with+global+population+division+and+ending&client=ms-android-xiaomi-terr2-rso2&hs=ZEPB&sca_esv=3d2f9fa888dd4596&sxsrf=APpeQnvHoJESIP8ueuXXmyyfXd0axig2Kw%3A1790935122878&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4LpKPoHZrc4HVz9uOAATjT2whS8aQNdsb1nn47m_ZQdH7zbGJ3DoXslKx9NoFZOM7loiWrkP9VRwhZYS6ptkekyqZN9qblzj62nOEIJVgieXEVctZnUnIPyZsh868oqlK2nKcjSOTCjwzRc5bl8Fyz14QP54&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiKhsKeiZuXAxVH_7sIHanFAFgQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfD_xhCNQ7JUe83Y0wdgvc0OFvPlHOj5suB1wB1stYzIfphIPcLtI_4Mne4jHVi1nEXU9YDJaisTNT4qayRkhPcFH7pEy3fqh-HzZKi93ZqSI88-6b9CGtNVmpjx7M2HXa6u_nB1UJc0aw9v9hcQu-0uTIEL8i6zqN1v3qzBW-g0LxluzUo6JNngFjMqeQRbx9-tK5q20aPLexy_1nNz8eOI7RPouG5BGN59xZF2_PG-U8V9gX1SPN6WgCfx9D3ksfH9hX-P6ABywSHJYy7qJmL8CgtMPayeSeWbRbzswxhbkWykYCxmaN6tC1ghwHCnIjbSJt20-3f9Sg&csuir=1&mtid=VYC_aoi9OaD67_UP2rGw8QM&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=trolley+problem+with+global+population+division+and+ending&client=ms-android-xiaomi-terr2-rso2&hs=ZEPB&sca_esv=3d2f9fa888dd4596&sxsrf=APpeQnvHoJESIP8ueuXXmyyfXd0axig2Kw%3A1790935122878&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4LpKPoHZrc4HVz9uOAATjT2whS8aQNdsb1nn47m_ZQdH7zbGJ3DoXslKx9NoFZOM7loiWrkP9VRwhZYS6ptkekyqZN9qblzj62nOEIJVgieXEVctZnUnIPyZsh868oqlK2nKcjSOTCjwzRc5bl8Fyz14QP54&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiKhsKeiZuXAxVH_7sIHanFAFgQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfD_xhCNQ7JUe83Y0wdgvc0OFvPlHOj5suB1wB1stYzIfphIPcLtI_4Mne4jHVi1nEXU9YDJaisTNT4qayRkhPcFH7pEy3fqh-HzZKi93ZqSI88-6b9CGtNVmpjx7M2HXa6u_nB1UJc0aw9v9hcQu-0uTIEL8i6zqN1v3qzBW-g0LxluzUo6JNngFjMqeQRbx9-tK5q20aPLexy_1nNz8eOI7RPouG5BGN59xZF2_PG-U8V9gX1SPN6WgCfx9D3ksfH9hX-P6ABywSHJYy7qJmL8CgtMPayeSeWbRbzswxhbkWykYCxmaN6tC1ghwHCnIjbSJt20-3f9Sg&csuir=1&mtid=VYC_aoi9OaD67_UP2rGw8QM&udm=50>)
+
+### 0473 | 2026-10-02 12:18:27 | You
+
+```text
+<image omitted>
+```
+
+### 0474 | 2026-10-02 12:20:27 | You
+
+```text
+<album message>
+```
+
+### 0475 | 2026-10-02 12:20:27 | You
+
+```text
+<image omitted>
+```
+
+### 0476 | 2026-10-02 12:20:27 | You
+
+```text
+<image omitted>
+```
+
+### 0477 | 2026-10-02 12:29:02 | You
+
+```text
+https://www.google.com/search?q=how+the+turn+table+turned&oq=how+the+turn+table+turned&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDQ3NjVqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8#lfId=ChxjMe
+```
+
+Links: [Link 1](<https://www.google.com/search?q=how+the+turn+table+turned&oq=how+the+turn+table+turned&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDQ3NjVqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8#lfId=ChxjMe>)
+
+### 0478 | 2026-10-02 12:43:16 | You
+
+```text
+https://www.google.com/search?q=feeble+hands+puffy+and+iv+drips+or+something+trump+and+king+charles&client=ms-android-xiaomi-terr2-rso2&hs=HFPB&sca_esv=a520d1af67a5285d&sxsrf=APpeQntWpe13k5jGdAA7pQvzWB5yWC5j3Q%3A1790937771280&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIInBEEy-eiFZv8B5rS4maeNBTNEIYkmKln-7huzj-TXue8mdiyYhX_M0R-MHuvxP1hAzpjv3lXBUhBZ-RzPLp87fhsY17KJTnNE7zE4bXxikeomB6&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiYsK-Nk5uXAxUb_7sIHf2eABwQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAVPE18MYYS3S9UO0Q3Q9rjv6BrFMktxPU68dN33uTqn4j0jIz9hdv3lFUYFumL27rsUpJsRrC-o2drRSYpYN1D84dZO_QRtdHh86abygSxpyYDXaZcOCQ8bZkKhQMA5AzHVzZncjbon1A5xDIj1_py6eLzBVsf3AfD2sJg0utLN7ApFAFFrFy1ieTM7TgG_Q8ejMURJ13XBwGsM6CtEBLpPqlDGD1jYe4bZqlkQ3kHmec2Vsh7V3TGfmkBFFV8TyHVy_s3S4wGu8A1DZ2FBePBZKXqvO9NnYoojTdTPpdmEt5rwQeO7x3S7wtSQ1N22QSfShcId8YD3Q&csuir=1&mtid=sIq_aquQGNuG9u8P6eTI-Qs
+```
+
+Links: [Link 1](<https://www.google.com/search?q=feeble+hands+puffy+and+iv+drips+or+something+trump+and+king+charles&client=ms-android-xiaomi-terr2-rso2&hs=HFPB&sca_esv=a520d1af67a5285d&sxsrf=APpeQntWpe13k5jGdAA7pQvzWB5yWC5j3Q%3A1790937771280&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIInBEEy-eiFZv8B5rS4maeNBTNEIYkmKln-7huzj-TXue8mdiyYhX_M0R-MHuvxP1hAzpjv3lXBUhBZ-RzPLp87fhsY17KJTnNE7zE4bXxikeomB6&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiYsK-Nk5uXAxUb_7sIHf2eABwQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAVPE18MYYS3S9UO0Q3Q9rjv6BrFMktxPU68dN33uTqn4j0jIz9hdv3lFUYFumL27rsUpJsRrC-o2drRSYpYN1D84dZO_QRtdHh86abygSxpyYDXaZcOCQ8bZkKhQMA5AzHVzZncjbon1A5xDIj1_py6eLzBVsf3AfD2sJg0utLN7ApFAFFrFy1ieTM7TgG_Q8ejMURJ13XBwGsM6CtEBLpPqlDGD1jYe4bZqlkQ3kHmec2Vsh7V3TGfmkBFFV8TyHVy_s3S4wGu8A1DZ2FBePBZKXqvO9NnYoojTdTPpdmEt5rwQeO7x3S7wtSQ1N22QSfShcId8YD3Q&csuir=1&mtid=sIq_aquQGNuG9u8P6eTI-Qs>)
+
+### 0479 | 2026-10-02 12:51:46 | You
+
+```text
+https://www.google.com/search?q=feeble+hands+puffy+and+iv+drips+or+something+trump+and+king+charles&client=ms-android-xiaomi-terr2-rso2&hs=HFPB&sca_esv=a520d1af67a5285d&sxsrf=APpeQntWpe13k5jGdAA7pQvzWB5yWC5j3Q%3A1790937771280&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIInBEEy-eiFZv8B5rS4maeNBTNEIYkmKln-7huzj-TXue8mdiyYhX_M0R-MHuvxP1hAzpjv3lXBUhBZ-RzPLp87fhsY17KJTnNE7zE4bXxikeomB6&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiYsK-Nk5uXAxUb_7sIHf2eABwQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfD_vJv0gg9gDRy0gaUfgkcFSpn3FDupdfG521t6hBYZwGwq6pTTjM6m-8DR3xp29jyykoFAjNEvCl3GnMBIfbZtUsThI72AY4D-l7tCrN9PAMlT7puJ5injW_d0st6Kv_nunn50pHaWmFQ5gXnvjgPv3lRvqOpYvVVMHqe1Gf7YnGkSygnN8Vdsllbhe0ZL39jZCuC55dMQlGVTBQOWDk64qxSKPVfxG9dYSK64BNEKVdPRykbwzYRS9BpEquOSKnx9Dk_s2zHgxqHNrSecaEHBo-enNPjoWJGQC_8vxaS8_UKo7gztWcakCSTvC9TpVfRm0Ki3wHjnZQ&csuir=1&mtid=sIq_atzEJ4T_7_UPiouDiA4&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=feeble+hands+puffy+and+iv+drips+or+something+trump+and+king+charles&client=ms-android-xiaomi-terr2-rso2&hs=HFPB&sca_esv=a520d1af67a5285d&sxsrf=APpeQntWpe13k5jGdAA7pQvzWB5yWC5j3Q%3A1790937771280&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIInBEEy-eiFZv8B5rS4maeNBTNEIYkmKln-7huzj-TXue8mdiyYhX_M0R-MHuvxP1hAzpjv3lXBUhBZ-RzPLp87fhsY17KJTnNE7zE4bXxikeomB6&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiYsK-Nk5uXAxUb_7sIHf2eABwQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfD_vJv0gg9gDRy0gaUfgkcFSpn3FDupdfG521t6hBYZwGwq6pTTjM6m-8DR3xp29jyykoFAjNEvCl3GnMBIfbZtUsThI72AY4D-l7tCrN9PAMlT7puJ5injW_d0st6Kv_nunn50pHaWmFQ5gXnvjgPv3lRvqOpYvVVMHqe1Gf7YnGkSygnN8Vdsllbhe0ZL39jZCuC55dMQlGVTBQOWDk64qxSKPVfxG9dYSK64BNEKVdPRykbwzYRS9BpEquOSKnx9Dk_s2zHgxqHNrSecaEHBo-enNPjoWJGQC_8vxaS8_UKo7gztWcakCSTvC9TpVfRm0Ki3wHjnZQ&csuir=1&mtid=sIq_atzEJ4T_7_UPiouDiA4&udm=50>)
+
+### 0480 | 2026-10-02 13:10:47 | You
+
+```text
+https://www.google.com/search?q=feeble+hands+puffy+and+iv+drips+or+something+trump+and+king+charles&client=ms-android-xiaomi-terr2-rso2&hs=HFPB&sca_esv=a520d1af67a5285d&sxsrf=APpeQntWpe13k5jGdAA7pQvzWB5yWC5j3Q%3A1790937771280&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIInBEEy-eiFZv8B5rS4maeNBTNEIYkmKln-7huzj-TXue8mdiyYhX_M0R-MHuvxP1hAzpjv3lXBUhBZ-RzPLp87fhsY17KJTnNE7zE4bXxikeomB6&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiYsK-Nk5uXAxUb_7sIHf2eABwQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfC9RMs4jsqQZT9SO0Lcofa34gqILVBYNGbgsw0Ck-QOY1F2g78Q70mdfhEqIzLDlIu_QB6HcqGc6WcaHNJ-XjPi3u2oytZuqrAV_bU6ItV5rqu7MO85a_Gqdee2r-98Oo5DQ60_-v7jwDG8Hyl4SbF_BU96e-RVOHhO1hdb-3rVCozpsOxFT28005D1Sp2sikA87_8cHABiG2CF9pT74a2nPfRHfgpPjQb6ouKs4v9DdTe-EVJCD_kdxYN9EbBfvEboW__OaK3pwAz0XzOfFGBHiiGs-LIV9RpXFmSNQZaCa_8WAHbOjbjMQ2uMOlEgXYManzVPPFeyrQ&csuir=1&mtid=sIq_atzEJ4T_7_UPiouDiA4&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=feeble+hands+puffy+and+iv+drips+or+something+trump+and+king+charles&client=ms-android-xiaomi-terr2-rso2&hs=HFPB&sca_esv=a520d1af67a5285d&sxsrf=APpeQntWpe13k5jGdAA7pQvzWB5yWC5j3Q%3A1790937771280&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIInBEEy-eiFZv8B5rS4maeNBTNEIYkmKln-7huzj-TXue8mdiyYhX_M0R-MHuvxP1hAzpjv3lXBUhBZ-RzPLp87fhsY17KJTnNE7zE4bXxikeomB6&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiYsK-Nk5uXAxUb_7sIHf2eABwQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfC9RMs4jsqQZT9SO0Lcofa34gqILVBYNGbgsw0Ck-QOY1F2g78Q70mdfhEqIzLDlIu_QB6HcqGc6WcaHNJ-XjPi3u2oytZuqrAV_bU6ItV5rqu7MO85a_Gqdee2r-98Oo5DQ60_-v7jwDG8Hyl4SbF_BU96e-RVOHhO1hdb-3rVCozpsOxFT28005D1Sp2sikA87_8cHABiG2CF9pT74a2nPfRHfgpPjQb6ouKs4v9DdTe-EVJCD_kdxYN9EbBfvEboW__OaK3pwAz0XzOfFGBHiiGs-LIV9RpXFmSNQZaCa_8WAHbOjbjMQ2uMOlEgXYManzVPPFeyrQ&csuir=1&mtid=sIq_atzEJ4T_7_UPiouDiA4&udm=50>)
+
+### 0481 | 2026-10-02 13:35:30 | You
+
+```text
+https://www.google.com/search?q=klein+nagelschaartje+met+gebogen+lemmet&client=ms-android-xiaomi-terr2-rso2&hs=ma4V&sa=X&sca_esv=eba56e73f2efc4d2&sxsrf=APpeQntbh0V2vAOQS8yLJaLXMs7RSufXtA%3A1790940909727&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp24vkivhSKxJH-vZPKbAT5TBLshvsiHEySLVwcQrggeuypDbn_bWC-8aLfZpP9MBRQXBaF1jS2nyQctrqGKquljSuaqKE&vsint=&aep=1&ntc=1&cs=1&ved=2ahUKEwjEo_PlnpuXAxXT3gIHHbBCIsgQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB0nYE5T0PlAQTqZm7_SUpe8TGtcsbsuBMhy-ecfcWSRIxjvnOMZWqPVXjglq6__dA0lzBi-PqiiXQ2Q9yZBfkLoK-zhigdMOYmI8B528snRN_4qCTcD5_nHxuRSjmg2ygTNnEZtiEcKKpIMnJdhjGg_C4QKKcp0iWnT6puY6V-GpBZxsQkD_9xUrvQG4DKHNpy0UMEEwFTr0tstFMezBlyeaoQhd7Lr7xnO8bTaotnSfi_QWcmW6m6OXhwHgsEMYa1eEXTY27kMbcS6cPsKC4XpI3RA2umSgsDjXMMsUZjkCLaEvVpiQlYFYfFh-_ArobeZVYhANgTMw&csuir=1&mtid=8Ja_atblNICbi-gPw_yF-Qk
+```
+
+Links: [Link 1](<https://www.google.com/search?q=klein+nagelschaartje+met+gebogen+lemmet&client=ms-android-xiaomi-terr2-rso2&hs=ma4V&sa=X&sca_esv=eba56e73f2efc4d2&sxsrf=APpeQntbh0V2vAOQS8yLJaLXMs7RSufXtA%3A1790940909727&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp24vkivhSKxJH-vZPKbAT5TBLshvsiHEySLVwcQrggeuypDbn_bWC-8aLfZpP9MBRQXBaF1jS2nyQctrqGKquljSuaqKE&vsint=&aep=1&ntc=1&cs=1&ved=2ahUKEwjEo_PlnpuXAxXT3gIHHbBCIsgQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB0nYE5T0PlAQTqZm7_SUpe8TGtcsbsuBMhy-ecfcWSRIxjvnOMZWqPVXjglq6__dA0lzBi-PqiiXQ2Q9yZBfkLoK-zhigdMOYmI8B528snRN_4qCTcD5_nHxuRSjmg2ygTNnEZtiEcKKpIMnJdhjGg_C4QKKcp0iWnT6puY6V-GpBZxsQkD_9xUrvQG4DKHNpy0UMEEwFTr0tstFMezBlyeaoQhd7Lr7xnO8bTaotnSfi_QWcmW6m6OXhwHgsEMYa1eEXTY27kMbcS6cPsKC4XpI3RA2umSgsDjXMMsUZjkCLaEvVpiQlYFYfFh-_ArobeZVYhANgTMw&csuir=1&mtid=8Ja_atblNICbi-gPw_yF-Qk>)
+
+### 0482 | 2026-10-02 13:58:34 | You
+
+```text
+https://www.google.com/search?q=dus+carbon+credits+en+kilojoule+per+persoon+digid&client=ms-android-xiaomi-terr2-rso2&hs=TGPB&sca_esv=eba56e73f2efc4d2&sxsrf=APpeQnsziSYWu93xM8eUuuYMbhLuhz1VAQ%3A1790942209500&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpDyhqhJz-EL1EohYDSUG6u_7TBQFaykKSCI8ECDH-29gr0f9f3cZ1Yql2oc9vrmnG89ZnGbRsEj4xcaVT1fZIuaEb_qM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjBltfRo5uXAxWugf0HHaBiAMIQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCKne9sRCPyfmYnDszHLyDuB6SavDxx8Zx4RRODbi-DV8rFslyllHS4ZhYvmvSDXx2gouStEsGcdAKBiznhA6kK8cEbLSoL-w5R3nnbsyMEKdjg4coIbgf_pDiGle03L1UGqtFhjDIZkA8rW1sc0RtMUkvDKGhHi0zqXsYr6AKgScqA6asqaiyZethwsbJZ_ippT3KrvjFMLGxJJAeaHvIBUHK03RfoZSxlt9tIEQXuUsvJJtvGIu-HK-ztHzBbcoBMJTs25Gt0Dc5botLolZugmQnyFaG0PKJcK0pFmXO3ncBMGWvtA9_l0E9fOuPAGUvrY3jzHS1IsA&csuir=1&mtid=BZy_au3CGL7t7_UP1oXq2Ao&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=dus+carbon+credits+en+kilojoule+per+persoon+digid&client=ms-android-xiaomi-terr2-rso2&hs=TGPB&sca_esv=eba56e73f2efc4d2&sxsrf=APpeQnsziSYWu93xM8eUuuYMbhLuhz1VAQ%3A1790942209500&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpDyhqhJz-EL1EohYDSUG6u_7TBQFaykKSCI8ECDH-29gr0f9f3cZ1Yql2oc9vrmnG89ZnGbRsEj4xcaVT1fZIuaEb_qM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjBltfRo5uXAxWugf0HHaBiAMIQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCKne9sRCPyfmYnDszHLyDuB6SavDxx8Zx4RRODbi-DV8rFslyllHS4ZhYvmvSDXx2gouStEsGcdAKBiznhA6kK8cEbLSoL-w5R3nnbsyMEKdjg4coIbgf_pDiGle03L1UGqtFhjDIZkA8rW1sc0RtMUkvDKGhHi0zqXsYr6AKgScqA6asqaiyZethwsbJZ_ippT3KrvjFMLGxJJAeaHvIBUHK03RfoZSxlt9tIEQXuUsvJJtvGIu-HK-ztHzBbcoBMJTs25Gt0Dc5botLolZugmQnyFaG0PKJcK0pFmXO3ncBMGWvtA9_l0E9fOuPAGUvrY3jzHS1IsA&csuir=1&mtid=BZy_au3CGL7t7_UP1oXq2Ao&udm=50>)
+
+### 0483 | 2026-10-02 14:01:26 | You
+
+```text
+https://www.google.com/search?q=dus+carbon+credits+en+kilojoule+per+persoon+digid&client=ms-android-xiaomi-terr2-rso2&hs=TGPB&sca_esv=eba56e73f2efc4d2&sxsrf=APpeQnsziSYWu93xM8eUuuYMbhLuhz1VAQ%3A1790942209500&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpDyhqhJz-EL1EohYDSUG6u_7TBQFaykKSCI8ECDH-29gr0f9f3cZ1Yql2oc9vrmnG89ZnGbRsEj4xcaVT1fZIuaEb_qM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjBltfRo5uXAxWugf0HHaBiAMIQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCNfAO3mubQj4kosLJMHEdiFCcPkBHjNG3fQFfHUH9t6ieiUtszfAxjNXk9cKctZ-h8cA98Q26suzj5-8zANw8La6GKvoJ0sN1249omNRMQsyppByUENwfXqWMjiHzWdSLKIq8n25gGse_DjNcAe8CYMQRCEHUAyYANY-G92_1tvihsDPQXAPmGNGMaUo1gVArTW_nkHz8qAe0mfjexyqntYya6zf3xWr7wPF65-QkbkKUemHYikbPITBw_KW9Gh4uHpsycarWNeLjSxuHP2-qQb2PAbhNadIO6zCn2MVoDpLxdXxEGU--p9qiTU0nHwnoVPTGFa8aBIQ&csuir=1&mtid=BZy_au3CGL7t7_UP1oXq2Ao&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=dus+carbon+credits+en+kilojoule+per+persoon+digid&client=ms-android-xiaomi-terr2-rso2&hs=TGPB&sca_esv=eba56e73f2efc4d2&sxsrf=APpeQnsziSYWu93xM8eUuuYMbhLuhz1VAQ%3A1790942209500&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpDyhqhJz-EL1EohYDSUG6u_7TBQFaykKSCI8ECDH-29gr0f9f3cZ1Yql2oc9vrmnG89ZnGbRsEj4xcaVT1fZIuaEb_qM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjBltfRo5uXAxWugf0HHaBiAMIQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCNfAO3mubQj4kosLJMHEdiFCcPkBHjNG3fQFfHUH9t6ieiUtszfAxjNXk9cKctZ-h8cA98Q26suzj5-8zANw8La6GKvoJ0sN1249omNRMQsyppByUENwfXqWMjiHzWdSLKIq8n25gGse_DjNcAe8CYMQRCEHUAyYANY-G92_1tvihsDPQXAPmGNGMaUo1gVArTW_nkHz8qAe0mfjexyqntYya6zf3xWr7wPF65-QkbkKUemHYikbPITBw_KW9Gh4uHpsycarWNeLjSxuHP2-qQb2PAbhNadIO6zCn2MVoDpLxdXxEGU--p9qiTU0nHwnoVPTGFa8aBIQ&csuir=1&mtid=BZy_au3CGL7t7_UP1oXq2Ao&udm=50>)
+
+### 0484 | 2026-10-02 14:03:55 | You
+
+```text
+https://www.google.com/search?q=nederland+onderzee+dijken+niveau&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTEwNTUzajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832e5ZAsz7MVJugwShKFiA5wD7dBjItCcEQf6BM4bW_XSgKVIMAvoLi2rCqi09RmLFMwmnRWVBD63huOx5jY_HcOKMGfh74O-4scdStMhhgr2jdGFm3fIUJ2IXL4ToJgzlo0HE_IFx0i8AWPZvTE5p4j0exGI2NhR0oz5kp8_f2nZ00QV8Ag&aep=10&ntc=1&sxsrf=APpeQnulZ9ANxYpe4xGdzXN_zG1y-ks0VA%3A1790942574094&mstk=AUtExfApPCpmRgt_PZYhAehOAfJ6dnJAkvGttVl6jyWZCUx7OoS9Bl39Y1qIEAQtqkcn7u006kgNyBdSOBn0YJaZVkcjKupmWVVMvVx4OmvpkN9-DDB-shK1nw8ic3MC4QgRCEptD_hGzYTT4h0546KTZfCjhXW8iSqFUFhPAJ7x_9Bwpu6QcJT5y3GfXsljY535M42tcRaIRbtUs8MzOJRDfWaZBxWKKwIptQyRRzenNAf0jVbp6ZSmEa8EjVFFZR8kLoGSwKvHzBzMpFE5NFiL34OJfPmedTSdT8srYdz6h1JzN-KTkZ1TIMFnhfg1IMn9WDROro6uko09Yw&aioh=3&csuir=1&udm=50&mtid=h52_aqf_JIK69u8PwOKE-QM#lfId=ChxjMe
+```
+
+Links: [Link 1](<https://www.google.com/search?q=nederland+onderzee+dijken+niveau&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTEwNTUzajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832e5ZAsz7MVJugwShKFiA5wD7dBjItCcEQf6BM4bW_XSgKVIMAvoLi2rCqi09RmLFMwmnRWVBD63huOx5jY_HcOKMGfh74O-4scdStMhhgr2jdGFm3fIUJ2IXL4ToJgzlo0HE_IFx0i8AWPZvTE5p4j0exGI2NhR0oz5kp8_f2nZ00QV8Ag&aep=10&ntc=1&sxsrf=APpeQnulZ9ANxYpe4xGdzXN_zG1y-ks0VA%3A1790942574094&mstk=AUtExfApPCpmRgt_PZYhAehOAfJ6dnJAkvGttVl6jyWZCUx7OoS9Bl39Y1qIEAQtqkcn7u006kgNyBdSOBn0YJaZVkcjKupmWVVMvVx4OmvpkN9-DDB-shK1nw8ic3MC4QgRCEptD_hGzYTT4h0546KTZfCjhXW8iSqFUFhPAJ7x_9Bwpu6QcJT5y3GfXsljY535M42tcRaIRbtUs8MzOJRDfWaZBxWKKwIptQyRRzenNAf0jVbp6ZSmEa8EjVFFZR8kLoGSwKvHzBzMpFE5NFiL34OJfPmedTSdT8srYdz6h1JzN-KTkZ1TIMFnhfg1IMn9WDROro6uko09Yw&aioh=3&csuir=1&udm=50&mtid=h52_aqf_JIK69u8PwOKE-QM#lfId=ChxjMe>)
+
+### 0485 | 2026-10-02 14:12:03 | You
+
+```text
+https://www.google.com/search?q=stel+ik+had+al+vader+kunnen+zijn+met+mijn+ex+als+het+niet+express+gesaboteerd+was+en+ik+beheerde+de+toekomst+hypothetisch+en+de+mensen+vormenden+een+front+tegen+mij+en+hebben+alleen+de+afvalbak+en+stront+uitgebeeld+en+gedaan%2C+hoeveel+waarde+zou+ik+aan+het+gemiste+potentieel+hangen+ten+opzichte+van+het+misbruik&client=ms-android-xiaomi-terr2-rso2&hs=dGPB&sca_esv=eba56e73f2efc4d2&sxsrf=APpeQnuINP_Zk8ZRltylxaQUAVjaHyiuxw%3A1790942810423&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKiWE327vHSSX3EU0x8dB6hqifrmJYJpi5hdo8N_17Yp0m7NOldBqgUtkN1rgthOVh3L4tR1Qj_liBuKKq6Hdnl0kGiYf5Tt0rmV1aWFi9WZPRgDTPs&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjvx5zwpZuXAxVL_rsIHW-fC0IQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCK4UOMoYlQUvM2WxOwG0ijdHNrF63iCOgeenNhMqFqAYQMQakFbOGIJsn3pAKW09PQN6pfK_6AW8xrX1ZM20gRDIeiZgv8WBG_XJwZWv60Oo_WyrRzOS-PRarqOfaGKJVVdbk4gtz5s29OIBcOZ2TI9r9DNrAtVympbVVknl8EhhNTH6qBIEaTF_PNVOxMhFDVmmnRlzf7disANQQ3lGn2FL2BAiWoglY9ctHdn8LSonE_7uWlO2BiUaCpcwPHIsSxRPBJuxFRkMP5cvm4f6KxTRrXbKXe5G8ZFAgEcLQuFH2Xdg1YqJSf6KbfKkbi5Nb3mOYPB_N7-A&csuir=1&mtid=XJ6_aoSlEafm7_UP9Pv0sQQ&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=stel+ik+had+al+vader+kunnen+zijn+met+mijn+ex+als+het+niet+express+gesaboteerd+was+en+ik+beheerde+de+toekomst+hypothetisch+en+de+mensen+vormenden+een+front+tegen+mij+en+hebben+alleen+de+afvalbak+en+stront+uitgebeeld+en+gedaan%2C+hoeveel+waarde+zou+ik+aan+het+gemiste+potentieel+hangen+ten+opzichte+van+het+misbruik&client=ms-android-xiaomi-terr2-rso2&hs=dGPB&sca_esv=eba56e73f2efc4d2&sxsrf=APpeQnuINP_Zk8ZRltylxaQUAVjaHyiuxw%3A1790942810423&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKiWE327vHSSX3EU0x8dB6hqifrmJYJpi5hdo8N_17Yp0m7NOldBqgUtkN1rgthOVh3L4tR1Qj_liBuKKq6Hdnl0kGiYf5Tt0rmV1aWFi9WZPRgDTPs&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjvx5zwpZuXAxVL_rsIHW-fC0IQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCK4UOMoYlQUvM2WxOwG0ijdHNrF63iCOgeenNhMqFqAYQMQakFbOGIJsn3pAKW09PQN6pfK_6AW8xrX1ZM20gRDIeiZgv8WBG_XJwZWv60Oo_WyrRzOS-PRarqOfaGKJVVdbk4gtz5s29OIBcOZ2TI9r9DNrAtVympbVVknl8EhhNTH6qBIEaTF_PNVOxMhFDVmmnRlzf7disANQQ3lGn2FL2BAiWoglY9ctHdn8LSonE_7uWlO2BiUaCpcwPHIsSxRPBJuxFRkMP5cvm4f6KxTRrXbKXe5G8ZFAgEcLQuFH2Xdg1YqJSf6KbfKkbi5Nb3mOYPB_N7-A&csuir=1&mtid=XJ6_aoSlEafm7_UP9Pv0sQQ&udm=50>)
+
+### 0486 | 2026-10-02 14:19:07 | You
+
+```text
+https://www.google.com/search?q=radial+360+VR+bubble+like+with+sick+people+a+hamster+ball&client=ms-android-xiaomi-terr2-rso2&hs=5vjq&sca_esv=657ce744dba959fb&sxsrf=APpeQntHOnTzukLrZw1IlIRH2JyY5ggUJg%3A1790943395617&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjG9aGHqJuXAxUIhv0HHTd1AO0Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfACUIwBrxBxJr9G29HL4hiUE-vux9Zl8xM8xoSRqfzu3LPuIRIUrZZlDwcK5W8Iez07pld3jB7x9hkSmBRLsSHITO5uw7pVxuxQYCE30N4JuiuEGm87D9c3orwi4BJhgN7_GZU-KfioJTKUp4XRd2m-CmJEjT9AUIkUM9CevDL4dUGqhqZFpsNWMF1EU_q2FKhJb27UdUuh05YzXvXDaQR-8nR0jWipJenw1gf36GtsIwFj9QEpeDiT8Od0FSR6a5qLh0WIOrQeXTOTa_WSoTSyLtrsHgOW5Obsum09F2i115OznUKTa4nQZqvJ8SXLEWwMrt7Mb38n3Q&csuir=1&mtid=paC_ase5D-D97_UPmPaCqAY&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=radial+360+VR+bubble+like+with+sick+people+a+hamster+ball&client=ms-android-xiaomi-terr2-rso2&hs=5vjq&sca_esv=657ce744dba959fb&sxsrf=APpeQntHOnTzukLrZw1IlIRH2JyY5ggUJg%3A1790943395617&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjG9aGHqJuXAxUIhv0HHTd1AO0Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfACUIwBrxBxJr9G29HL4hiUE-vux9Zl8xM8xoSRqfzu3LPuIRIUrZZlDwcK5W8Iez07pld3jB7x9hkSmBRLsSHITO5uw7pVxuxQYCE30N4JuiuEGm87D9c3orwi4BJhgN7_GZU-KfioJTKUp4XRd2m-CmJEjT9AUIkUM9CevDL4dUGqhqZFpsNWMF1EU_q2FKhJb27UdUuh05YzXvXDaQR-8nR0jWipJenw1gf36GtsIwFj9QEpeDiT8Od0FSR6a5qLh0WIOrQeXTOTa_WSoTSyLtrsHgOW5Obsum09F2i115OznUKTa4nQZqvJ8SXLEWwMrt7Mb38n3Q&csuir=1&mtid=paC_ase5D-D97_UPmPaCqAY&udm=50>)
+
+### 0487 | 2026-10-02 14:25:36 | You
+
+```text
+https://www.google.com/search?q=radial+360+VR+bubble+like+with+sick+people+a+hamster+ball&client=ms-android-xiaomi-terr2-rso2&hs=5vjq&sca_esv=657ce744dba959fb&sxsrf=APpeQntHOnTzukLrZw1IlIRH2JyY5ggUJg%3A1790943395617&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh_uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjG9aGHqJuXAxUIhv0HHTd1AO0Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBHdFJcAXwsPyXKCEQTcxussUPtXDA4zdFkb2dLt8AdCdkIHAtZpo1ACuudy1gkscNP-DjLvgnLmi5l5CQLnCd--xQpVm98Rzlz1xPIoVgV7mkfopXrYWSWEUXiHyZLhbVViqu-ZxwvMmYmJdBgzjcKIS1NH7xhT-hzpn6alwuXO3njJB6i6IabuG7sEYNXnlLWxMNrOT7x9-IP6xOlk_Kye-_lgnrMBd91JYeRGdafGYGGsbpgeWWsaoW2SDTO6B4ZdU5bnVws5LtW3TdLhv-HN4pps86G_hyQzR37UVNDweoZUXPfqh9_T-Pm4aZeXWrpOnLlkulOA&csuir=1&mtid=paC_ase5D-D97_UPmPaCqAY&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=radial+360+VR+bubble+like+with+sick+people+a+hamster+ball&client=ms-android-xiaomi-terr2-rso2&hs=5vjq&sca_esv=657ce744dba959fb&sxsrf=APpeQntHOnTzukLrZw1IlIRH2JyY5ggUJg%3A1790943395617&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh_uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjG9aGHqJuXAxUIhv0HHTd1AO0Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBHdFJcAXwsPyXKCEQTcxussUPtXDA4zdFkb2dLt8AdCdkIHAtZpo1ACuudy1gkscNP-DjLvgnLmi5l5CQLnCd--xQpVm98Rzlz1xPIoVgV7mkfopXrYWSWEUXiHyZLhbVViqu-ZxwvMmYmJdBgzjcKIS1NH7xhT-hzpn6alwuXO3njJB6i6IabuG7sEYNXnlLWxMNrOT7x9-IP6xOlk_Kye-_lgnrMBd91JYeRGdafGYGGsbpgeWWsaoW2SDTO6B4ZdU5bnVws5LtW3TdLhv-HN4pps86G_hyQzR37UVNDweoZUXPfqh9_T-Pm4aZeXWrpOnLlkulOA&csuir=1&mtid=paC_ase5D-D97_UPmPaCqAY&udm=50>)
+
+### 0488 | 2026-10-02 16:31:22 | You
+
+```text
+https://www.google.com/search?q=if+a+dog+is+senior+and+on+his+last+paws+is+it+humane+to+let+it+sleep+forever&client=ms-android-xiaomi-terr2-rso2&hs=Cyjq&sca_esv=980f333af0ee536d&sxsrf=APpeQns9DUgNzDkv5MeTxC4vHrycSnKITg%3A1790951265234&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKj906-ORFIK2UR8msyEJBwjHvmTN5b2gK7JkDyhtCEwf9HK1p4EJJWJ_IQyJOqgdebLABy7Chy0c1zfM1YOD3bAcOHF9K_asSx4WxwXJthf0zLUj0pHFzOc9hGf8s1ZnFE81-g9&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiHq-SvxZuXAxV1g_0HHdanC2wQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCDQ7FV-qMb68foKkUMleDREpNqo6kHK-Eq71BiW9My6aBmPzxKDgeODrkUQto35y13HlaKbBC2nivhITaJvHLHMjyeL6VYfFL7JKa1qht2exRoxFLy4S5SqBfH5TTl27vzCEkqsfVxLuybTEs9_UmrzU7J8gGyqyUREWlhxdsb_9_Vci9nV6pqyLI3K1LI7OoUeIUVyEwf4qZHvogSWc-t-v5MD2YMD8MTWL7Q7kho_yPX7AgkNTuuOkzjdmpkcIFdv-CXvbI_KA&csuir=1&mtid=a7-_atX1Fv3h7_UPn7y6mQo&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=if+a+dog+is+senior+and+on+his+last+paws+is+it+humane+to+let+it+sleep+forever&client=ms-android-xiaomi-terr2-rso2&hs=Cyjq&sca_esv=980f333af0ee536d&sxsrf=APpeQns9DUgNzDkv5MeTxC4vHrycSnKITg%3A1790951265234&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKj906-ORFIK2UR8msyEJBwjHvmTN5b2gK7JkDyhtCEwf9HK1p4EJJWJ_IQyJOqgdebLABy7Chy0c1zfM1YOD3bAcOHF9K_asSx4WxwXJthf0zLUj0pHFzOc9hGf8s1ZnFE81-g9&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiHq-SvxZuXAxV1g_0HHdanC2wQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCDQ7FV-qMb68foKkUMleDREpNqo6kHK-Eq71BiW9My6aBmPzxKDgeODrkUQto35y13HlaKbBC2nivhITaJvHLHMjyeL6VYfFL7JKa1qht2exRoxFLy4S5SqBfH5TTl27vzCEkqsfVxLuybTEs9_UmrzU7J8gGyqyUREWlhxdsb_9_Vci9nV6pqyLI3K1LI7OoUeIUVyEwf4qZHvogSWc-t-v5MD2YMD8MTWL7Q7kho_yPX7AgkNTuuOkzjdmpkcIFdv-CXvbI_KA&csuir=1&mtid=a7-_atX1Fv3h7_UPn7y6mQo&udm=50>)
+
+### 0489 | 2026-10-02 17:46:17 | You
+
+```text
+https://www.google.com/search?q=nasa+prism&client=ms-android-xiaomi-terr2-rso2&hs=6JPB&sca_esv=2db8cb2baec47351&sxsrf=APpeQntOW2urUZSd92_1Yd5T0pRPbuIQhw%3A1790955683340&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIInBEEy-eiFZv8B5rS4maeNBTNEIYkmKln-7huzj-TXue8mdiyYhX_M0R-MHuvxP1hAzpjv3lXBUhBZ-RzPLp87fhsY17KJTnNE7zE4bXxikeomB6&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiRkcHq1ZuXAxVW_rsIHU41CgYQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfC3hibULKaPOp7S_bWP7mQMLhfz7zSC75iWV7oX1tMdnxmeaKndaCx2K7a8ZQnbu6UlhZL5M5SaV8Q4oKhSao8PaG1-JvEvPvrN9vrNNRKeFcs4DWUkfaOYodGJqhCJqav2Zo2mblQpRdeyArExwHVvDSpUhUC_s9Q&csuir=1&mtid=pdC_auKeI9WN9u8PjPyR6AY&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=nasa+prism&client=ms-android-xiaomi-terr2-rso2&hs=6JPB&sca_esv=2db8cb2baec47351&sxsrf=APpeQntOW2urUZSd92_1Yd5T0pRPbuIQhw%3A1790955683340&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIInBEEy-eiFZv8B5rS4maeNBTNEIYkmKln-7huzj-TXue8mdiyYhX_M0R-MHuvxP1hAzpjv3lXBUhBZ-RzPLp87fhsY17KJTnNE7zE4bXxikeomB6&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiRkcHq1ZuXAxVW_rsIHU41CgYQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfC3hibULKaPOp7S_bWP7mQMLhfz7zSC75iWV7oX1tMdnxmeaKndaCx2K7a8ZQnbu6UlhZL5M5SaV8Q4oKhSao8PaG1-JvEvPvrN9vrNNRKeFcs4DWUkfaOYodGJqhCJqav2Zo2mblQpRdeyArExwHVvDSpUhUC_s9Q&csuir=1&mtid=pdC_auKeI9WN9u8PjPyR6AY&udm=50>)
+
+### 0490 | 2026-10-02 17:47:53 | You
+
+```text
+https://www.google.com/search?q=nasa+prism&client=ms-android-xiaomi-terr2-rso2&hs=6JPB&sca_esv=2db8cb2baec47351&sxsrf=APpeQntOW2urUZSd92_1Yd5T0pRPbuIQhw%3A1790955683340&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIInBEEy-eiFZv8B5rS4maeNBTNEIYkmKln-7huzj-TXue8mdiyYhX_M0R-MHuvxP1hAzpjv3lXBUhBZ-RzPLp87fhsY17KJTnNE7zE4bXxikeomB6&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiRkcHq1ZuXAxVW_rsIHU41CgYQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAHl6jpgQ-DHV8Z-osN5wqfTtM59SG5RKxOuqsKgppQTArGcmSg5m-Q4UwZobaBce8V54RWZS-JJldLfWxE3QWsDqZMrcClAyAh7hTwKzXz2bPOo3z8B6RKIb3Igeh__0hggYMaV4zeTomIFdQ_NtEOK6wj27PIGPw&csuir=1&mtid=pdC_auKeI9WN9u8PjPyR6AY&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=nasa+prism&client=ms-android-xiaomi-terr2-rso2&hs=6JPB&sca_esv=2db8cb2baec47351&sxsrf=APpeQntOW2urUZSd92_1Yd5T0pRPbuIQhw%3A1790955683340&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9w-GD6PIjvNPpUnrx3WoOVIInBEEy-eiFZv8B5rS4maeNBTNEIYkmKln-7huzj-TXue8mdiyYhX_M0R-MHuvxP1hAzpjv3lXBUhBZ-RzPLp87fhsY17KJTnNE7zE4bXxikeomB6&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiRkcHq1ZuXAxVW_rsIHU41CgYQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAHl6jpgQ-DHV8Z-osN5wqfTtM59SG5RKxOuqsKgppQTArGcmSg5m-Q4UwZobaBce8V54RWZS-JJldLfWxE3QWsDqZMrcClAyAh7hTwKzXz2bPOo3z8B6RKIb3Igeh__0hggYMaV4zeTomIFdQ_NtEOK6wj27PIGPw&csuir=1&mtid=pdC_auKeI9WN9u8PjPyR6AY&udm=50>)
+
+### 0491 | 2026-10-02 17:49:07 | You
+
+```text
+<image omitted>
+```
+
+### 0492 | 2026-10-02 17:52:45 | You
+
+```text
+https://www.google.com/search?q=cia+topple+government+just+a+tiny+government&client=ms-android-xiaomi-terr2-rso2&hs=te4V&sca_esv=2db8cb2baec47351&sxsrf=APpeQnumbceRxSdoOX5F4lEnqFZULZIZxw%3A1790956228214&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ0Kuh3jfnRqiKzI7KrGsO-bHLKGXxP60AsAIKmX_LR6dMasLrlp8DT_rL6Uv4vYEVab_VWIvAi8ke1tCyZ05ZS1lANRqqOE730l4IJmhxP3PCN5MZwmG_oTd81G1DyB9raxJJiJjDcLDXQ6fHGyp1zJo5BBZ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwipyKnu15uXAxUlR_4FHem2KW8Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBvlL0UpJbSnfqYXYni5KVzh_DDY2LcIEuF9-4LTcRT8IqK8IiKP27xp_XKkuTnc0a4hTWmZETXZ11zPYzrcqyQNGHnTm0b6zT5Sfx3yGkxyJxwKDZfLvhazFnFezy-XdmQpqntVbRL17yh2fdJWJ9AMPRrdu-hgFO-BzdryvfFshMjgONZjtaB9sKjMK5---lQHZM3cSUlO3R-fnoVkJW31_4ZkUljAsa3YGJ1oUJ7niCMqCQflSSV5WrpNg-BlU4odG2DRIodPQ&csuir=1&mtid=xtK_aq74CeCmi-gPqKyMoQ4&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=cia+topple+government+just+a+tiny+government&client=ms-android-xiaomi-terr2-rso2&hs=te4V&sca_esv=2db8cb2baec47351&sxsrf=APpeQnumbceRxSdoOX5F4lEnqFZULZIZxw%3A1790956228214&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ0Kuh3jfnRqiKzI7KrGsO-bHLKGXxP60AsAIKmX_LR6dMasLrlp8DT_rL6Uv4vYEVab_VWIvAi8ke1tCyZ05ZS1lANRqqOE730l4IJmhxP3PCN5MZwmG_oTd81G1DyB9raxJJiJjDcLDXQ6fHGyp1zJo5BBZ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwipyKnu15uXAxUlR_4FHem2KW8Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBvlL0UpJbSnfqYXYni5KVzh_DDY2LcIEuF9-4LTcRT8IqK8IiKP27xp_XKkuTnc0a4hTWmZETXZ11zPYzrcqyQNGHnTm0b6zT5Sfx3yGkxyJxwKDZfLvhazFnFezy-XdmQpqntVbRL17yh2fdJWJ9AMPRrdu-hgFO-BzdryvfFshMjgONZjtaB9sKjMK5---lQHZM3cSUlO3R-fnoVkJW31_4ZkUljAsa3YGJ1oUJ7niCMqCQflSSV5WrpNg-BlU4odG2DRIodPQ&csuir=1&mtid=xtK_aq74CeCmi-gPqKyMoQ4&udm=50>)
+
+### 0493 | 2026-10-02 17:56:15 | You
+
+```text
+https://www.google.com/search?q=cia+topple+government+just+a+tiny+government&client=ms-android-xiaomi-terr2-rso2&hs=te4V&sca_esv=2db8cb2baec47351&sxsrf=APpeQnumbceRxSdoOX5F4lEnqFZULZIZxw%3A1790956228214&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ0Kuh3jfnRqiKzI7KrGsO-bHLKGXxP60AsAIKmX_LR6dMasLrlp8DT_rL6Uv4vYEVab_VWIvAi8ke1tCyZ05ZS1lANRqqOE730l4IJmhxP3PCN5MZwmG_oTd81G1DyB9raxJJiJjDcLDXQ6fHGyp1zJo5BBZ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwipyKnu15uXAxUlR_4FHem2KW8Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCilAGPIUkbiWRzS1Q1HNB6ReUtrHdNcXtDYi7M7uvpLLAKiUCJXhy603_rponVaL9yFZeDPdo00ZA9usYGgl7nnZv7Gzdb5q_V7jI29s6aJPI14mBvSibH-Wgxt8Pk6tKSekZykVe7pgLKZ_ZMp35iaioW2MNr3Cp70_JybE7qFn7nZGzcjyXw2V9o5zapULJwXo5bR66qxbvW4LQ8aVuxi2my5J3svImPYh1EpEQhtLcE_GDMbJztRvI4-hUk6Yu8NLDZ9V3JJw&csuir=1&mtid=xtK_aq74CeCmi-gPqKyMoQ4&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=cia+topple+government+just+a+tiny+government&client=ms-android-xiaomi-terr2-rso2&hs=te4V&sca_esv=2db8cb2baec47351&sxsrf=APpeQnumbceRxSdoOX5F4lEnqFZULZIZxw%3A1790956228214&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ0Kuh3jfnRqiKzI7KrGsO-bHLKGXxP60AsAIKmX_LR6dMasLrlp8DT_rL6Uv4vYEVab_VWIvAi8ke1tCyZ05ZS1lANRqqOE730l4IJmhxP3PCN5MZwmG_oTd81G1DyB9raxJJiJjDcLDXQ6fHGyp1zJo5BBZ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwipyKnu15uXAxUlR_4FHem2KW8Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCilAGPIUkbiWRzS1Q1HNB6ReUtrHdNcXtDYi7M7uvpLLAKiUCJXhy603_rponVaL9yFZeDPdo00ZA9usYGgl7nnZv7Gzdb5q_V7jI29s6aJPI14mBvSibH-Wgxt8Pk6tKSekZykVe7pgLKZ_ZMp35iaioW2MNr3Cp70_JybE7qFn7nZGzcjyXw2V9o5zapULJwXo5bR66qxbvW4LQ8aVuxi2my5J3svImPYh1EpEQhtLcE_GDMbJztRvI4-hUk6Yu8NLDZ9V3JJw&csuir=1&mtid=xtK_aq74CeCmi-gPqKyMoQ4&udm=50>)
+
+### 0494 | 2026-10-02 17:59:06 | You
+
+```text
+https://www.google.com/search?q=cia+topple+government+just+a+tiny+government&client=ms-android-xiaomi-terr2-rso2&hs=te4V&sca_esv=2db8cb2baec47351&sxsrf=APpeQnumbceRxSdoOX5F4lEnqFZULZIZxw%3A1790956228214&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ0Kuh3jfnRqiKzI7KrGsO-bHLKGXxP60AsAIKmX_LR6dMasLrlp8DT_rL6Uv4vYEVab_VWIvAi8ke1tCyZ05ZS1lANRqqOE730l4IJmhxP3PCN5MZwmG_oTd81G1DyB9raxJJiJjDcLDXQ6fHGyp1zJo5BBZ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwipyKnu15uXAxUlR_4FHem2KW8Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBfZJyPIS9jFmnswPGJBwli6QH2rg1Soikxztr6E8UN8a10EhgqtjcGl-DYiThcQfGRTKZXpshnglGkf7KceeJx82bMt6ooPi3Cq_Sebmxenk9EXjziaMYyfjtH9U6WmFI95BN22aXZrMO_FCluho8Ko45jmtW0ik8fLJXvXCEeQA_zC3R7g15OBu37FuqqptfaKJXqrE2FUoPHBcMawITc600qSoUnKM7fAyoFJsjjuWTnAubLWliRlPOg1dV_vssjh58WNanbow&csuir=1&mtid=xtK_aq74CeCmi-gPqKyMoQ4&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=cia+topple+government+just+a+tiny+government&client=ms-android-xiaomi-terr2-rso2&hs=te4V&sca_esv=2db8cb2baec47351&sxsrf=APpeQnumbceRxSdoOX5F4lEnqFZULZIZxw%3A1790956228214&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ0Kuh3jfnRqiKzI7KrGsO-bHLKGXxP60AsAIKmX_LR6dMasLrlp8DT_rL6Uv4vYEVab_VWIvAi8ke1tCyZ05ZS1lANRqqOE730l4IJmhxP3PCN5MZwmG_oTd81G1DyB9raxJJiJjDcLDXQ6fHGyp1zJo5BBZ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwipyKnu15uXAxUlR_4FHem2KW8Q2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBfZJyPIS9jFmnswPGJBwli6QH2rg1Soikxztr6E8UN8a10EhgqtjcGl-DYiThcQfGRTKZXpshnglGkf7KceeJx82bMt6ooPi3Cq_Sebmxenk9EXjziaMYyfjtH9U6WmFI95BN22aXZrMO_FCluho8Ko45jmtW0ik8fLJXvXCEeQA_zC3R7g15OBu37FuqqptfaKJXqrE2FUoPHBcMawITc600qSoUnKM7fAyoFJsjjuWTnAubLWliRlPOg1dV_vssjh58WNanbow&csuir=1&mtid=xtK_aq74CeCmi-gPqKyMoQ4&udm=50>)
+
+### 0495 | 2026-10-02 18:03:16 | You
+
+```text
+<image omitted>
+```
+
+### 0496 | 2026-10-02 18:04:51 | You
+
+```text
+<image omitted>
+```
+
+### 0497 | 2026-10-02 18:05:26 | You
+
+```text
+Tk as tweehek embleem
+```
+
+### 0498 | 2026-10-02 18:06:41 | You
+
+```text
+<image omitted>
+```
+
+### 0499 | 2026-10-02 18:14:49 | You
+
+```text
+https://youtu.be/FzoXQKumgCw?is=z6xRYdFplsexeh-4
+```
+
+Links: [Link 1](<https://youtu.be/FzoXQKumgCw?is=z6xRYdFplsexeh-4>)
+
+### 0500 | 2026-10-02 18:16:03 | You
+
+```text
+https://youtu.be/FzoXQKumgCw?is=8wMjWuhN1NEIcbrZ
+```
+
+Links: [Link 1](<https://youtu.be/FzoXQKumgCw?is=8wMjWuhN1NEIcbrZ>)
+
+### 0501 | 2026-10-02 18:51:59 | You
+
+```text
+https://www.google.com/search?q=Koning+Willem+Alexander+zijn+medische+team+keurig+certificaat+vervallen&client=ms-android-xiaomi-terr2-rso2&hs=of4V&sca_esv=b76e303ee8bd2bf8&sxsrf=APpeQnvsPXFzSFj7sgQ4rChYpqlccSLTiQ%3A1790959634373&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ0Kuh3jfnRqiKzI7KrGsO-ahMiVxElJGh2HXmqeqNBF0BsBEProbuR1EFboVo8e3Uoaw65ygLtlbSurvpvzodohOGoXapfVv7vtz5Ep0_NmmZfJc_lgj0e4sK7HsidouVgLr8Rg&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwik6MDG5JuXAxVGhv0HHRWLHDsQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCHZg5zxatXyCjomcAa-ZjpHERNo3D3IsSF5BICt2OAB9oTNLbatPtfXufV1VMh8h54SqShiuwXe42RKeULjSKFdK_i6a5KkHGTpZR3Tv7PcjuuDhbjtfPqSQmuxarI_sZjMqeGeyhtS7Zg7BxYoG1ntgSJ6s83RcEaw1JAkoA-8FxbQOFB9uPxaEjVZ9NfBe-KJtzSJKmQcn3Fz3mG1tO10WCxsCtk_FrwSgBwrgaO9OjhgBuoP5PCsL-gJyFCri5PljMCdnrgq52K5aq9CDURgSXWoknb9aqooTr-csIo9iOQrg-H_N6Kb0YPZKlvGDZbXs4VKvHZEQ&csuir=1&mtid=GuC_aofzD5qM9u8P9ZSMwAk&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=Koning+Willem+Alexander+zijn+medische+team+keurig+certificaat+vervallen&client=ms-android-xiaomi-terr2-rso2&hs=of4V&sca_esv=b76e303ee8bd2bf8&sxsrf=APpeQnvsPXFzSFj7sgQ4rChYpqlccSLTiQ%3A1790959634373&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ0Kuh3jfnRqiKzI7KrGsO-ahMiVxElJGh2HXmqeqNBF0BsBEProbuR1EFboVo8e3Uoaw65ygLtlbSurvpvzodohOGoXapfVv7vtz5Ep0_NmmZfJc_lgj0e4sK7HsidouVgLr8Rg&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwik6MDG5JuXAxVGhv0HHRWLHDsQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCHZg5zxatXyCjomcAa-ZjpHERNo3D3IsSF5BICt2OAB9oTNLbatPtfXufV1VMh8h54SqShiuwXe42RKeULjSKFdK_i6a5KkHGTpZR3Tv7PcjuuDhbjtfPqSQmuxarI_sZjMqeGeyhtS7Zg7BxYoG1ntgSJ6s83RcEaw1JAkoA-8FxbQOFB9uPxaEjVZ9NfBe-KJtzSJKmQcn3Fz3mG1tO10WCxsCtk_FrwSgBwrgaO9OjhgBuoP5PCsL-gJyFCri5PljMCdnrgq52K5aq9CDURgSXWoknb9aqooTr-csIo9iOQrg-H_N6Kb0YPZKlvGDZbXs4VKvHZEQ&csuir=1&mtid=GuC_aofzD5qM9u8P9ZSMwAk&udm=50>)
+
+### 0502 | 2026-10-02 19:25:27 | You
+
+```text
+https://www.google.com/search?q=is+otherside+gay+or+person+you+were+backwards+summary+salt+ititme&client=ms-android-xiaomi-terr2-rso2&hs=00jq&sca_esv=b76e303ee8bd2bf8&sxsrf=APpeQnvpbBDG9_40PxjHUha2e6NlL1aK2w%3A1790961672607&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKi9oPlxXmLuMKd45Roo5diAos55tQ6ILtaTS_mw7pfW8K3GKtfzul98FWwK7mPmMEOsNVLL1cglsuD9g4oLjKNd0A6oQUdeIy86vA_KU7uFI0V_Ek_8gZHhM4DOo2xevoQxizXs&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjRpbSS7JuXAxX41gIHHTJaIacQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDsHgJcKWqcLBCjEF_LgTb3HIXo6wz1vBWI0P5WWUyGx-c4aA0qiAAeOZ5Hg2ELc_J7mSxxLE_fzKm1z9DPoplIio28lUt9EsSlAyVN1gB8rkYlRc8mZT36wwXr1LtF22w4AaZxwzsu0s0S8WwWaWwoCaEhA-V5Ht9Uhp6IkeYKnvJTCbIsceEJrq7mhkL3E-11wbMjTP5PtzBL4uf6Qt4hxS4AeyI7vlrspIvYoPm2VBFWjwuBg4QbefZgp1DMrz3LgqfJAWmkLlCPfjPsuwj7zyAk5uRuEfFfdrLwXsDtSidAWa_GKOKIOVWCaSkcu30Bz2i--cFHDw&csuir=1&mtid=DOi_aoPPIdP1i-gPt8O6gQI&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=is+otherside+gay+or+person+you+were+backwards+summary+salt+ititme&client=ms-android-xiaomi-terr2-rso2&hs=00jq&sca_esv=b76e303ee8bd2bf8&sxsrf=APpeQnvpbBDG9_40PxjHUha2e6NlL1aK2w%3A1790961672607&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKi9oPlxXmLuMKd45Roo5diAos55tQ6ILtaTS_mw7pfW8K3GKtfzul98FWwK7mPmMEOsNVLL1cglsuD9g4oLjKNd0A6oQUdeIy86vA_KU7uFI0V_Ek_8gZHhM4DOo2xevoQxizXs&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjRpbSS7JuXAxX41gIHHTJaIacQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDsHgJcKWqcLBCjEF_LgTb3HIXo6wz1vBWI0P5WWUyGx-c4aA0qiAAeOZ5Hg2ELc_J7mSxxLE_fzKm1z9DPoplIio28lUt9EsSlAyVN1gB8rkYlRc8mZT36wwXr1LtF22w4AaZxwzsu0s0S8WwWaWwoCaEhA-V5Ht9Uhp6IkeYKnvJTCbIsceEJrq7mhkL3E-11wbMjTP5PtzBL4uf6Qt4hxS4AeyI7vlrspIvYoPm2VBFWjwuBg4QbefZgp1DMrz3LgqfJAWmkLlCPfjPsuwj7zyAk5uRuEfFfdrLwXsDtSidAWa_GKOKIOVWCaSkcu30Bz2i--cFHDw&csuir=1&mtid=DOi_aoPPIdP1i-gPt8O6gQI&udm=50>)
+
+### 0503 | 2026-10-02 19:28:47 | You
+
+```text
+https://www.google.com/search?q=erica+synth+fallout+4+cryptic+valentine+lewdie+mag+4&client=ms-android-xiaomi-terr2-rso2&hs=70jq&sca_esv=b76e303ee8bd2bf8&sxsrf=APpeQnsVoA7HPP3qk73rz3T6Ys3qUiZi8g%3A1790962104552&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh_uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjT3rDg7ZuXAxX19QIHHSz6ML4Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDrjrlVNJwpeD6gB4N6XvAZ9RU4gxyh-Gz91lp7_lwrw4jcfIaGMy7B3bG-Oqcur88b9hDmIsCheEMR2aOfNid1KIsGZ-7CqWAU2XdH_sBXnFMvQRANT9KgllRgf_F-jlFZiiJLLb9TJTNQYGNhIL_tHmGKaIE-l8enxh3MYR8oczB1-2IQd_0bgx4M6U2Y-uoXwrrZDbk-nduLomaf-394JwePZvaVD260vbVL7kMT8bGyapTew9RwvXx0u2hpUw1vVwYB-kln1wVlghY7DFwuBeAzuBS7bWqiLuu7dUcg7kiSIuiTph7Ju0wPWyYyK2kFWCim0qc6g&csuir=1&mtid=uem_au6nM8iei-gPxse14QQ
+```
+
+Links: [Link 1](<https://www.google.com/search?q=erica+synth+fallout+4+cryptic+valentine+lewdie+mag+4&client=ms-android-xiaomi-terr2-rso2&hs=70jq&sca_esv=b76e303ee8bd2bf8&sxsrf=APpeQnsVoA7HPP3qk73rz3T6Ys3qUiZi8g%3A1790962104552&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh_uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjT3rDg7ZuXAxX19QIHHSz6ML4Q2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDrjrlVNJwpeD6gB4N6XvAZ9RU4gxyh-Gz91lp7_lwrw4jcfIaGMy7B3bG-Oqcur88b9hDmIsCheEMR2aOfNid1KIsGZ-7CqWAU2XdH_sBXnFMvQRANT9KgllRgf_F-jlFZiiJLLb9TJTNQYGNhIL_tHmGKaIE-l8enxh3MYR8oczB1-2IQd_0bgx4M6U2Y-uoXwrrZDbk-nduLomaf-394JwePZvaVD260vbVL7kMT8bGyapTew9RwvXx0u2hpUw1vVwYB-kln1wVlghY7DFwuBeAzuBS7bWqiLuu7dUcg7kiSIuiTph7Ju0wPWyYyK2kFWCim0qc6g&csuir=1&mtid=uem_au6nM8iei-gPxse14QQ>)
+
+### 0504 | 2026-10-02 19:29:22 | You
+
+```text
+Mijn kanker teef Jitske en ik ride or die sans belt chastity all for myself
+```
+
+### 0505 | 2026-10-02 19:33:44 | You
+
+```text
+Als je lekkere pannenkoeken wilt dan ga ik die maken samen met jou
+```
+
+### 0506 | 2026-10-02 19:33:47 | You
+
+```text
+Ik ook
+```
+
+### 0507 | 2026-10-02 19:44:16 | You
+
+```text
+https://share.google/U1opuw8QsOg2W1YP1
+```
+
+Links: [Link 1](<https://share.google/U1opuw8QsOg2W1YP1>)
+
+### 0508 | 2026-10-02 19:45:44 | You
+
+```text
+https://youtu.be/oZlcCu7u964?is=H7Y021ISpSakv5qb
+```
+
+Links: [Link 1](<https://youtu.be/oZlcCu7u964?is=H7Y021ISpSakv5qb>)
+
+### 0509 | 2026-10-02 19:46:35 | You
+
+```text
+Fair weather vain friends zeldoor in house black fall in love with me Jitske
+```
+
+### 0510 | 2026-10-02 19:58:29 | You
+
+```text
+<image omitted> Ik Tom Klootwijk
+```
+
+### 0511 | 2026-10-02 20:03:46 | You
+
+```text
+<image omitted> Jitske tjedap
+```
+
+### 0512 | 2026-10-02 20:15:28 | You
+
+```text
+Vivian mag echt dood neervallen en alle soortgelijke
+```
+
+### 0513 | 2026-10-02 20:17:41 | You
+
+```text
+<image omitted> Afkomen met mijn Jitske
+```
+
+### 0514 | 2026-10-02 20:25:47 | You
+
+```text
+https://youtu.be/-F_yBu9nAP8?is=w9SKMhdn4SKAU8oK
+```
+
+Links: [Link 1](<https://youtu.be/-F_yBu9nAP8?is=w9SKMhdn4SKAU8oK>)
+
+### 0515 | 2026-10-02 20:26:19 | You
+
+```text
+Inverse logarithmic chance that crypto will make it
+```
+
+### 0516 | 2026-10-02 20:26:31 | You
+
+```text
+No chance deterministic 1bit word
+```
+
+### 0517 | 2026-10-02 20:35:29 | You
+
+```text
+https://youtu.be/q0FDwfNE6YE?is=m_hFCZPk8DbPZFlF
+```
+
+Links: [Link 1](<https://youtu.be/q0FDwfNE6YE?is=m_hFCZPk8DbPZFlF>)
+
+### 0518 | 2026-10-02 20:36:18 | You
+
+```text
+Udoo bolt als in jullie zaad gebruik en vruchtgebruik, cuckolding en kluizenaar en steriel? Leuke studio rijksstudio keuzes maken seed prayernuts
+```
+
+### 0519 | 2026-10-02 20:51:29 | You
+
+```text
+https://www.google.com/search?q=hansie+2e+3e+hands+groot+schoenenwinkel+krommenie+nike+sponsors+new+york+marathon+typhus+loop+zaanstreek+papsmears&client=ms-android-xiaomi-terr2-rso2&hs=R2jq&sca_esv=4d65981f01013b52&sxsrf=APpeQnsXiGJCj3Lbsae7Anku7jE6KQYaFg%3A1790967002831&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzcgMAXI6mDl4aLs1WJDXE8SVTb-uBcPPJClt96u4kmaAd0zdegKOGWODv8jfocdFnEGTuEz6lA-7h7f4_weKq95WmR4tcg07ahdPg9_5_YrKfxMf31we5Mi-7aLO--KHfioejVahkepAWphQgxFXuyn4aJ8&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiVgoiAgJyXAxU37QIHHeb9GBoQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfC9E63fZB8iQZ-Drv_wCXl9fwMqnpUjGJnQjI4R13dX7nyzTnKlxhe-EukSxFqIrRMfCvzmg431RxCMF-icb5sO3Qn1L9oZ3b2ZwgijnxRyxNS52cUFov4tyBU2kyTmovmf63HMaw55tScZ7BwvoReKM8v8nfsK-MjbVQISQU2IBjbHg5wdwLurS7GNebWX6VynSjYGb2Ku3Msy1C6cHRVaLldS8fkBpy0uf5zj06qlvi2Sq_1f_Xl7bJ9pR8Kdd8oLnQW2HyYFL0SenaFZ7qPo8B9kgVEjHotFQUI5TeohFT5EpVEMqDqhkHHWiQ1Vc0rh4WUnyPEw_Q&csuir=1&mtid=4vy_arGqOKGN-d8Pt_TPQQ&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=hansie+2e+3e+hands+groot+schoenenwinkel+krommenie+nike+sponsors+new+york+marathon+typhus+loop+zaanstreek+papsmears&client=ms-android-xiaomi-terr2-rso2&hs=R2jq&sca_esv=4d65981f01013b52&sxsrf=APpeQnsXiGJCj3Lbsae7Anku7jE6KQYaFg%3A1790967002831&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzcgMAXI6mDl4aLs1WJDXE8SVTb-uBcPPJClt96u4kmaAd0zdegKOGWODv8jfocdFnEGTuEz6lA-7h7f4_weKq95WmR4tcg07ahdPg9_5_YrKfxMf31we5Mi-7aLO--KHfioejVahkepAWphQgxFXuyn4aJ8&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiVgoiAgJyXAxU37QIHHeb9GBoQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfC9E63fZB8iQZ-Drv_wCXl9fwMqnpUjGJnQjI4R13dX7nyzTnKlxhe-EukSxFqIrRMfCvzmg431RxCMF-icb5sO3Qn1L9oZ3b2ZwgijnxRyxNS52cUFov4tyBU2kyTmovmf63HMaw55tScZ7BwvoReKM8v8nfsK-MjbVQISQU2IBjbHg5wdwLurS7GNebWX6VynSjYGb2Ku3Msy1C6cHRVaLldS8fkBpy0uf5zj06qlvi2Sq_1f_Xl7bJ9pR8Kdd8oLnQW2HyYFL0SenaFZ7qPo8B9kgVEjHotFQUI5TeohFT5EpVEMqDqhkHHWiQ1Vc0rh4WUnyPEw_Q&csuir=1&mtid=4vy_arGqOKGN-d8Pt_TPQQ&udm=50>)
+
+### 0520 | 2026-10-02 20:51:45 | You
+
+```text
+Magneet bear conductive gay magneet
+```
+
+### 0521 | 2026-10-02 20:53:59 | You
+
+```text
+https://www.google.com/search?q=estafette+nek+hans+klootwijk+diarree+marjew+telethon&client=ms-android-xiaomi-terr2-rso2&hs=qh4V&sca_esv=4d65981f01013b52&sxsrf=APpeQntjih5NXz1yiS_3BSoByLDPl3sRAA%3A1790967207856&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpDyhqhJz-EL1EohYDSUG6u_7TBQFaykKSCI8ECDH-29gr0f9f3cZ1Yql2oc9vrmnG89ZnGbRsEj4xcaVT1fZIuaEb_qM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjH2-nhgJyXAxUJ2wIHHa9RI4wQ2J8OegQIEhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBcvhjf2b5cUnHf_G1A7o_TpY9d5DLUfigOF8fdMNJqfWTPbwa9L_nJsTZdtTjOJqeUK7EczuZNFB3pJ3i29s9jaI2DXcnsLcgA3a0vr9-nFR0gtdC-kS84VmYeFYR4eRYtbtGDpPwVCKPTNtYQIGl9v-dMgXISHGZSPeSDaTMN5AlZM6trcc-3djdRoe2S47I69mJ2RaVWQZw3hoCGaYdoLCzsephp3BEvdNmh5EQLfYeovXR6Lye1lNPy3l4fSoDvCf-9qeMNAB3c0hulYb2GLYbtdLbdzsORoXg9e9HIY7exYAEONmdkpE_qwd38tJTEyNo-kPE0hw&csuir=1&mtid=q_2_apviD__Ri-gP24aO0AM&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=estafette+nek+hans+klootwijk+diarree+marjew+telethon&client=ms-android-xiaomi-terr2-rso2&hs=qh4V&sca_esv=4d65981f01013b52&sxsrf=APpeQntjih5NXz1yiS_3BSoByLDPl3sRAA%3A1790967207856&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gLZhoVnym8adqD7lVa5VazpDyhqhJz-EL1EohYDSUG6u_7TBQFaykKSCI8ECDH-29gr0f9f3cZ1Yql2oc9vrmnG89ZnGbRsEj4xcaVT1fZIuaEb_qM&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjH2-nhgJyXAxUJ2wIHHa9RI4wQ2J8OegQIEhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBcvhjf2b5cUnHf_G1A7o_TpY9d5DLUfigOF8fdMNJqfWTPbwa9L_nJsTZdtTjOJqeUK7EczuZNFB3pJ3i29s9jaI2DXcnsLcgA3a0vr9-nFR0gtdC-kS84VmYeFYR4eRYtbtGDpPwVCKPTNtYQIGl9v-dMgXISHGZSPeSDaTMN5AlZM6trcc-3djdRoe2S47I69mJ2RaVWQZw3hoCGaYdoLCzsephp3BEvdNmh5EQLfYeovXR6Lye1lNPy3l4fSoDvCf-9qeMNAB3c0hulYb2GLYbtdLbdzsORoXg9e9HIY7exYAEONmdkpE_qwd38tJTEyNo-kPE0hw&csuir=1&mtid=q_2_apviD__Ri-gP24aO0AM&udm=50>)
+
+### 0522 | 2026-10-02 20:56:49 | You
+
+```text
+Oxydatie vergasnatie oxyhans
+```
+
+### 0523 | 2026-10-02 20:58:29 | You
+
+```text
+<image omitted> Ik nu jij nooit
+```
+
+### 0524 | 2026-10-02 23:03:11 | You
+
+```text
+<image omitted>
+```
+
+### 0525 | 2026-10-02 23:03:22 | You
+
+```text
+https://www.google.com/search?q=Bouillon+blokje&client=ms-android-xiaomi-terr2-rso2&hs=rj4V&sca_esv=683d24960322eb4b&sxsrf=APpeQnvm7Wgkr0Fst1RStjFBK9HqtySvTA%3A1790974724977&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpPIDOr-Lw4-gOWkwYhx_xnBVbrpM-wvE6KJZYqmK4gSbCrwtoKsbTtbRC2igEGtLu0aonqAk9RAtQqwaQ77YVjVIzj_I&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj8r6LinJyXAxWp2AIHHX9sO6UQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDvKo8mKB-GwiCv9AvzPe3pxPM5TtsiaI7KU-V-yA2clbWlYIV3cgPmEn0KIlln7koPchWnkXvWkVhY7Dfw0uOTT22XtV-wbDleY3fdMEtpI6h-6Ns8jBg47ET573Tw0NdP128o2vxwTh7kpG1la0eL0XumKSrnRM5SkEROQokYQKUhdPylobS4GJjv7ZbXt3bvC1UlyLY7pUph_S_KVzBTrPGbFYEO8NQeDQ6mgn8a9hfLytUaLiigb_E41nysAniPTPQYkoEAFQ&csuir=1&mtid=DxvAasCeA7uO-d8P6OrigAg&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=Bouillon+blokje&client=ms-android-xiaomi-terr2-rso2&hs=rj4V&sca_esv=683d24960322eb4b&sxsrf=APpeQnvm7Wgkr0Fst1RStjFBK9HqtySvTA%3A1790974724977&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpPIDOr-Lw4-gOWkwYhx_xnBVbrpM-wvE6KJZYqmK4gSbCrwtoKsbTtbRC2igEGtLu0aonqAk9RAtQqwaQ77YVjVIzj_I&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj8r6LinJyXAxWp2AIHHX9sO6UQ2J8OegQIDhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDvKo8mKB-GwiCv9AvzPe3pxPM5TtsiaI7KU-V-yA2clbWlYIV3cgPmEn0KIlln7koPchWnkXvWkVhY7Dfw0uOTT22XtV-wbDleY3fdMEtpI6h-6Ns8jBg47ET573Tw0NdP128o2vxwTh7kpG1la0eL0XumKSrnRM5SkEROQokYQKUhdPylobS4GJjv7ZbXt3bvC1UlyLY7pUph_S_KVzBTrPGbFYEO8NQeDQ6mgn8a9hfLytUaLiigb_E41nysAniPTPQYkoEAFQ&csuir=1&mtid=DxvAasCeA7uO-d8P6OrigAg&udm=50>)
+
+### 0526 | 2026-10-02 23:03:45 | You
+
+```text
+<image omitted>
+```
+
+### 0527 | 2026-10-02 23:04:31 | You
+
+```text
+<image omitted>
+```
+
+### 0528 | 2026-10-02 23:05:15 | You
+
+```text
+<image omitted>
+```
+
+## 2026-10-03
+
+### 0529 | 2026-10-03 02:13:08 | You
+
+```text
+<image omitted>
+```
+
+### 0530 | 2026-10-03 02:20:18 | You
+
+```text
+https://www.instagram.com/reel/Ddr5N1XAjsz/?stkn=MWkzbGh3ZWpjenVzbA==
+```
+
+Links: [Link 1](<https://www.instagram.com/reel/Ddr5N1XAjsz/?stkn=MWkzbGh3ZWpjenVzbA==>)
+
+### 0531 | 2026-10-03 02:20:31 | You
+
+```text
+<image omitted>
+```
+
+### 0532 | 2026-10-03 08:51:14 | You
+
+```text
+https://www.google.com/search?q=catalyst&client=ms-android-xiaomi-terr2-rso2&hs=wDkq&sca_esv=4724c275248d28cc&sxsrf=APpeQntRqzo6RNr0rZKF5Aq7ADEtxX1LBg%3A1791009820232&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955HC4dEhTD85WaiWkSD5EjFnrnkXf8uSwU1OjdTZmfoiWVgODsrQlv49kLZ63PjUD4Ylh3ioGlhPObtZQ3tSCsBQwnjKN&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj54P7An52XAxVC_QIHHeQjNcYQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDg0KTy-IinzU5qYQhpuPsv4QiOTvr8RvVKUdGapU8W0QrsH1MJaHJJ4z-gFJF5o-M33CwCUXVzEd34iNi0cPZzC3SW7j3uN1JTzcyNCYNAq_VXWhqXDVlazhY42FNDxdOefbf9KhdBJ8socMUBAsrwSCIhujSGOS77VYUeagxVIeTPF2LeVKmxFAraEpn7PPS1s4CP2yZbuGnYy3dNJnfbSsWrHakQBtQHdMf9cwuzI04vQWOlWlY_6jOQhQnc3JLYyD8yhDH04UAsql6zcosk1Jd2iWEv5yumQ02rnGWzZm_7F_yjVlUzQ7zuPCBC5z-pKFRj9DmtEA&csuir=1&mtid=HqTAapTpPNP1i-gPt8O6gQI&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=catalyst&client=ms-android-xiaomi-terr2-rso2&hs=wDkq&sca_esv=4724c275248d28cc&sxsrf=APpeQntRqzo6RNr0rZKF5Aq7ADEtxX1LBg%3A1791009820232&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955HC4dEhTD85WaiWkSD5EjFnrnkXf8uSwU1OjdTZmfoiWVgODsrQlv49kLZ63PjUD4Ylh3ioGlhPObtZQ3tSCsBQwnjKN&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj54P7An52XAxVC_QIHHeQjNcYQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDg0KTy-IinzU5qYQhpuPsv4QiOTvr8RvVKUdGapU8W0QrsH1MJaHJJ4z-gFJF5o-M33CwCUXVzEd34iNi0cPZzC3SW7j3uN1JTzcyNCYNAq_VXWhqXDVlazhY42FNDxdOefbf9KhdBJ8socMUBAsrwSCIhujSGOS77VYUeagxVIeTPF2LeVKmxFAraEpn7PPS1s4CP2yZbuGnYy3dNJnfbSsWrHakQBtQHdMf9cwuzI04vQWOlWlY_6jOQhQnc3JLYyD8yhDH04UAsql6zcosk1Jd2iWEv5yumQ02rnGWzZm_7F_yjVlUzQ7zuPCBC5z-pKFRj9DmtEA&csuir=1&mtid=HqTAapTpPNP1i-gPt8O6gQI&udm=50>)
+
+### 0533 | 2026-10-03 09:03:17 | You
+
+```text
+https://pdn.express/en/track/PDN0072227022
+```
+
+Links: [Link 1](<https://pdn.express/en/track/PDN0072227022>)
+
+### 0534 | 2026-10-03 09:04:45 | You
+
+```text
+https://www.google.com/search?q=catalyst&client=ms-android-xiaomi-terr2-rso2&hs=wDkq&sca_esv=4724c275248d28cc&sxsrf=APpeQntRqzo6RNr0rZKF5Aq7ADEtxX1LBg%3A1791009820232&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955HC4dEhTD85WaiWkSD5EjFnrnkXf8uSwU1OjdTZmfoiWVgODsrQlv49kLZ63PjUD4Ylh3ioGlhPObtZQ3tSCsBQwnjKN&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj54P7An52XAxVC_QIHHeQjNcYQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDg0KTy-IinzU5qYQhpuPsv4QiOTvr8RvVKUdGapU8W0QrsH1MJaHJJ4z-gFJF5o-M33CwCUXVzEd34iNi0cPZzC3SW7j3uN1JTzcyNCYNAq_VXWhqXDVlazhY42FNDxdOefbf9KhdBJ8socMUBAsrwSCIhujSGOS77VYUeagxVIeTPF2LeVKmxFAraEpn7PPS1s4CP2yZbuGnYy3dNJnfbSsWrHakQBtQHdMf9cwuzI04vQWOlWlY_6jOQhQnc3JLYyD8yhDH04UAsql6zcosk1Jd2iWEv5yumQ02rnGWzZm_7F_yjVlUzQ7zuPCBC5z-pKFRj9DmtEA&csuir=1&mtid=HqTAapTpPNP1i-gPt8O6gQI&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=catalyst&client=ms-android-xiaomi-terr2-rso2&hs=wDkq&sca_esv=4724c275248d28cc&sxsrf=APpeQntRqzo6RNr0rZKF5Aq7ADEtxX1LBg%3A1791009820232&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955HC4dEhTD85WaiWkSD5EjFnrnkXf8uSwU1OjdTZmfoiWVgODsrQlv49kLZ63PjUD4Ylh3ioGlhPObtZQ3tSCsBQwnjKN&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj54P7An52XAxVC_QIHHeQjNcYQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDg0KTy-IinzU5qYQhpuPsv4QiOTvr8RvVKUdGapU8W0QrsH1MJaHJJ4z-gFJF5o-M33CwCUXVzEd34iNi0cPZzC3SW7j3uN1JTzcyNCYNAq_VXWhqXDVlazhY42FNDxdOefbf9KhdBJ8socMUBAsrwSCIhujSGOS77VYUeagxVIeTPF2LeVKmxFAraEpn7PPS1s4CP2yZbuGnYy3dNJnfbSsWrHakQBtQHdMf9cwuzI04vQWOlWlY_6jOQhQnc3JLYyD8yhDH04UAsql6zcosk1Jd2iWEv5yumQ02rnGWzZm_7F_yjVlUzQ7zuPCBC5z-pKFRj9DmtEA&csuir=1&mtid=HqTAapTpPNP1i-gPt8O6gQI&udm=50>)
+
+### 0535 | 2026-10-03 09:52:55 | You
+
+```text
+https://www.google.com/search?q=dung+guy+that+didnt+bathe+for+decades+and+then+did+once+and+died+shortly+after+also+indigenous+tribes+uncontacted+wipe+outs&client=ms-android-xiaomi-terr2-rso2&hs=Nu4V&sca_esv=59f40870b1987660&sxsrf=APpeQnsFmHq8QaW0bX3gXnoTq9y9MB-txw%3A1791013835459&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKj906-ORFIK2UR8msyEJBwjHvmTN5b2gK7JkDyhtCEwf9HK1p4EJJWJ_IQyJOqgdebLABy7Chy0c1zfM1YOD3bAcOHF9K_asSx4WxwXJthf0zLUj0pHFzOc9hGf8s1ZnFE81-g9&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwim2sy7rp2XAxXC6gIHHa_iAbwQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfC25ZN38QqZymoZT0DZhihy0Qx5OVrSeYV49Lm-83pCB5qv-L23UEMWM4uRfTU3M-2cl7nM0HdIgBHbyiOBgO-bvL2Alw-X84da5KmR4omJdbcqJWUtWFMdgU5iHhENgjskgcnA_zqknpz5J5L1BIBhtrUguzGqr0YYJk6bjA2i18q62jjG0HzURUnhRIroMi57z5deV5z_0ILlkyjfJtUwM28cl7IJgaVP32yyp9bUrJgBDWyY2lkxUKicgaAEdbh0CykU8jOjoSHKXxz0WQ5DoihyftK0izLejefuuFREPisHU0qDSA5K_7rW6k11i5kewQYEAPh3Hw&csuir=1&mtid=zbPAasmvEtnBi-gPlYStiAQ
+```
+
+Links: [Link 1](<https://www.google.com/search?q=dung+guy+that+didnt+bathe+for+decades+and+then+did+once+and+died+shortly+after+also+indigenous+tribes+uncontacted+wipe+outs&client=ms-android-xiaomi-terr2-rso2&hs=Nu4V&sca_esv=59f40870b1987660&sxsrf=APpeQnsFmHq8QaW0bX3gXnoTq9y9MB-txw%3A1791013835459&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqu7ocb7U6ah0xpkIrGMK4CuEddQ3ZmQozcvkgnTNQKj906-ORFIK2UR8msyEJBwjHvmTN5b2gK7JkDyhtCEwf9HK1p4EJJWJ_IQyJOqgdebLABy7Chy0c1zfM1YOD3bAcOHF9K_asSx4WxwXJthf0zLUj0pHFzOc9hGf8s1ZnFE81-g9&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwim2sy7rp2XAxXC6gIHHa_iAbwQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfC25ZN38QqZymoZT0DZhihy0Qx5OVrSeYV49Lm-83pCB5qv-L23UEMWM4uRfTU3M-2cl7nM0HdIgBHbyiOBgO-bvL2Alw-X84da5KmR4omJdbcqJWUtWFMdgU5iHhENgjskgcnA_zqknpz5J5L1BIBhtrUguzGqr0YYJk6bjA2i18q62jjG0HzURUnhRIroMi57z5deV5z_0ILlkyjfJtUwM28cl7IJgaVP32yyp9bUrJgBDWyY2lkxUKicgaAEdbh0CykU8jOjoSHKXxz0WQ5DoihyftK0izLejefuuFREPisHU0qDSA5K_7rW6k11i5kewQYEAPh3Hw&csuir=1&mtid=zbPAasmvEtnBi-gPlYStiAQ>)
+
+### 0536 | 2026-10-03 12:20:13 | You
+
+```text
+https://www.google.com/search?q=flash+frozen+peas+better+than+bottled+peas&client=ms-android-xiaomi-terr2-rso2&hs=QHkq&sca_esv=e0198a870ac558ae&sxsrf=APpeQnv5A_qkm5Q89Pu_51rduQezc6NxnA%3A1791022785980&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp2-cjVKw2GTI2L0MU3QUO__V8GVARUdUB2ZoMwCGQaAhzsNHbmFYWYw3SS8Poi5fDN4OzSFlsZooHbWoXUZiCEjcVmWWUPeL01Y9czBKQNlivQpN9j&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiohsXnz52XAxWL9bsIHQTHLfcQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDLShQgFgYsonwoiDU8tNooSmzE0jdQyxwJiRFNNOd9DzSMINie5fmyZa6vuaSc7jBt14VNhLFzjFnS96N-k965qoidzpUUJSAoe_A_UMIk8kFouJHuTYhJUPaQAP8Rc8YO-GQcro6Z4UcI1xDBI0XET5-2Mvtf6Qc&csuir=1&mtid=0dbAav-PE_CO9u8P_Kvn0AM
+```
+
+Links: [Link 1](<https://www.google.com/search?q=flash+frozen+peas+better+than+bottled+peas&client=ms-android-xiaomi-terr2-rso2&hs=QHkq&sca_esv=e0198a870ac558ae&sxsrf=APpeQnv5A_qkm5Q89Pu_51rduQezc6NxnA%3A1791022785980&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp2-cjVKw2GTI2L0MU3QUO__V8GVARUdUB2ZoMwCGQaAhzsNHbmFYWYw3SS8Poi5fDN4OzSFlsZooHbWoXUZiCEjcVmWWUPeL01Y9czBKQNlivQpN9j&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiohsXnz52XAxWL9bsIHQTHLfcQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDLShQgFgYsonwoiDU8tNooSmzE0jdQyxwJiRFNNOd9DzSMINie5fmyZa6vuaSc7jBt14VNhLFzjFnS96N-k965qoidzpUUJSAoe_A_UMIk8kFouJHuTYhJUPaQAP8Rc8YO-GQcro6Z4UcI1xDBI0XET5-2Mvtf6Qc&csuir=1&mtid=0dbAav-PE_CO9u8P_Kvn0AM>)
+
+### 0537 | 2026-10-03 12:35:57 | You
+
+```text
+https://www.google.com/search?q=flash+frozen+peas+better+than+bottled+peas&client=ms-android-xiaomi-terr2-rso2&hs=QHkq&sca_esv=e0198a870ac558ae&sxsrf=APpeQnv5A_qkm5Q89Pu_51rduQezc6NxnA%3A1791022785980&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp2-cjVKw2GTI2L0MU3QUO__V8GVARUdUB2ZoMwCGQaAhzsNHbmFYWYw3SS8Poi5fDN4OzSFlsZooHbWoXUZiCEjcVmWWUPeL01Y9czBKQNlivQpN9j&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiohsXnz52XAxWL9bsIHQTHLfcQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfC0mYSC_v6rqUQ5SEwhzpMh7zP8nP-iDIcpQbPh9360LCSxQ-hgca0rL1eR22haBXIDN18yqF-ULzJNLjKq_V07GG--On9eYKM4p6D2uxDJOEQe2tFSkUIzLAQa3N5C42wE8xIQmlBSQ-z5iMDHq6hQ4Vyj3R28iOQ&csuir=1&mtid=0dbAavTuIbmF9u8P8un8gAs&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=flash+frozen+peas+better+than+bottled+peas&client=ms-android-xiaomi-terr2-rso2&hs=QHkq&sca_esv=e0198a870ac558ae&sxsrf=APpeQnv5A_qkm5Q89Pu_51rduQezc6NxnA%3A1791022785980&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp2-cjVKw2GTI2L0MU3QUO__V8GVARUdUB2ZoMwCGQaAhzsNHbmFYWYw3SS8Poi5fDN4OzSFlsZooHbWoXUZiCEjcVmWWUPeL01Y9czBKQNlivQpN9j&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiohsXnz52XAxWL9bsIHQTHLfcQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfC0mYSC_v6rqUQ5SEwhzpMh7zP8nP-iDIcpQbPh9360LCSxQ-hgca0rL1eR22haBXIDN18yqF-ULzJNLjKq_V07GG--On9eYKM4p6D2uxDJOEQe2tFSkUIzLAQa3N5C42wE8xIQmlBSQ-z5iMDHq6hQ4Vyj3R28iOQ&csuir=1&mtid=0dbAavTuIbmF9u8P8un8gAs&udm=50>)
+
+### 0538 | 2026-10-03 12:39:52 | You
+
+```text
+https://www.google.com/search?q=flash+frozen+peas+better+than+bottled+peas&client=ms-android-xiaomi-terr2-rso2&hs=QHkq&sca_esv=e0198a870ac558ae&sxsrf=APpeQnv5A_qkm5Q89Pu_51rduQezc6NxnA%3A1791022785980&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp2-cjVKw2GTI2L0MU3QUO__V8GVARUdUB2ZoMwCGQaAhzsNHbmFYWYw3SS8Poi5fDN4OzSFlsZooHbWoXUZiCEjcVmWWUPeL01Y9czBKQNlivQpN9j&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiohsXnz52XAxWL9bsIHQTHLfcQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfC9NMkA2ZYqKI0ESGuTB6tuBJ1i_YROrPMC9vfg96c21R42Qlf784eVo7BkEkYu22VrZbLfb0Qt39JA9fglcnn36PL3w0G4DBAZgiY6MTzsJTk7TqI_b9Ouj9BxUGPxVKeKgAuRAGXGjcP0YzUUhckaTkXZrw5ODTs&csuir=1&mtid=0dbAavTuIbmF9u8P8un8gAs&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=flash+frozen+peas+better+than+bottled+peas&client=ms-android-xiaomi-terr2-rso2&hs=QHkq&sca_esv=e0198a870ac558ae&sxsrf=APpeQnv5A_qkm5Q89Pu_51rduQezc6NxnA%3A1791022785980&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLwFidMQk-ln2aImlXwRYpp2-cjVKw2GTI2L0MU3QUO__V8GVARUdUB2ZoMwCGQaAhzsNHbmFYWYw3SS8Poi5fDN4OzSFlsZooHbWoXUZiCEjcVmWWUPeL01Y9czBKQNlivQpN9j&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiohsXnz52XAxWL9bsIHQTHLfcQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfC9NMkA2ZYqKI0ESGuTB6tuBJ1i_YROrPMC9vfg96c21R42Qlf784eVo7BkEkYu22VrZbLfb0Qt39JA9fglcnn36PL3w0G4DBAZgiY6MTzsJTk7TqI_b9Ouj9BxUGPxVKeKgAuRAGXGjcP0YzUUhckaTkXZrw5ODTs&csuir=1&mtid=0dbAavTuIbmF9u8P8un8gAs&udm=50>)
+
+### 0539 | 2026-10-03 12:48:43 | You
+
+```text
+https://youtu.be/MmPtfy9P714?is=hYolb-KrVEn0HZvm
+```
+
+Links: [Link 1](<https://youtu.be/MmPtfy9P714?is=hYolb-KrVEn0HZvm>)
+
+### 0540 | 2026-10-03 12:51:29 | You
+
+```text
+https://youtu.be/vhKuqGyFqh8?is=jcT_88Sgp3uqsf8u
+```
+
+Links: [Link 1](<https://youtu.be/vhKuqGyFqh8?is=jcT_88Sgp3uqsf8u>)
+
+### 0541 | 2026-10-03 12:55:26 | You
+
+```text
+https://youtu.be/D04wb7P_v-4?is=vUTGBnwdI8dYTpJY
+```
+
+Links: [Link 1](<https://youtu.be/D04wb7P_v-4?is=vUTGBnwdI8dYTpJY>)
+
+### 0542 | 2026-10-03 13:43:32 | You
+
+```text
+https://www.instagram.com/reel/DeBlHNeBlSx/?stkn=MXBzYXUyd2l0NjBzZw==
+```
+
+Links: [Link 1](<https://www.instagram.com/reel/DeBlHNeBlSx/?stkn=MXBzYXUyd2l0NjBzZw==>)
+
+### 0543 | 2026-10-03 13:44:26 | You
+
+```text
+https://www.instagram.com/reel/DdJtGEQtRQ1/?stkn=NHlkOWV5Y2I1aDNv
+```
+
+Links: [Link 1](<https://www.instagram.com/reel/DdJtGEQtRQ1/?stkn=NHlkOWV5Y2I1aDNv>)
+
+### 0544 | 2026-10-03 15:27:33 | You
+
+```text
+https://www.google.com/search?q=if+a+person+has+an+iq+of+70+and+is+trained+in+only+rudimentary+straight+line+thinking+what+would+be...&client=ms-android-xiaomi-terr2-rso2&hs=QKkq&sca_esv=cc2a5631f86d1f6e&sxsrf=APpeQnvesiTYW08I4dyCC1iZeC2VWZ5Wzw%3A1791033921764&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cn05EoNqnRUpRtqDK_L3JtdOuIEOJ1nHhG8N6Kw1G1--8sK5HSeIKdPwDspReFQmSOlsklpJaParVXNTz-NcRdjfe-eAYzoFzkOGVKQ16sfkULcCwi_IpzaIXzoCF_89AoZH7AMhp7Bw5RK3gPjolkNrfzZlgzXHEHXq_uV4tNgF13gIP&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiZvb-l-Z2XAxWl1wIHHec1CmoQ2J8OegQIGRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfA1RWx0j_7sBq7i---iZnlJq5OHZSI3k90uySPAoKf609_RqL0uMQvCN9W3OXbC9Dx7hGyqyVniDvafuG4uaTOMjmhZla8VIeR4Ue-jAmoeK-lIhaQ7ILheAGewj7QGrBL6qcgIct7E4SNlb1vucdd5EjYcgt55sU8&csuir=1&mtid=TQLBapOWJLDpi-gP3c2JiA8
+```
+
+Links: [Link 1](<https://www.google.com/search?q=if+a+person+has+an+iq+of+70+and+is+trained+in+only+rudimentary+straight+line+thinking+what+would+be...&client=ms-android-xiaomi-terr2-rso2&hs=QKkq&sca_esv=cc2a5631f86d1f6e&sxsrf=APpeQnvesiTYW08I4dyCC1iZeC2VWZ5Wzw%3A1791033921764&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cn05EoNqnRUpRtqDK_L3JtdOuIEOJ1nHhG8N6Kw1G1--8sK5HSeIKdPwDspReFQmSOlsklpJaParVXNTz-NcRdjfe-eAYzoFzkOGVKQ16sfkULcCwi_IpzaIXzoCF_89AoZH7AMhp7Bw5RK3gPjolkNrfzZlgzXHEHXq_uV4tNgF13gIP&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiZvb-l-Z2XAxWl1wIHHec1CmoQ2J8OegQIGRAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfA1RWx0j_7sBq7i---iZnlJq5OHZSI3k90uySPAoKf609_RqL0uMQvCN9W3OXbC9Dx7hGyqyVniDvafuG4uaTOMjmhZla8VIeR4Ue-jAmoeK-lIhaQ7ILheAGewj7QGrBL6qcgIct7E4SNlb1vucdd5EjYcgt55sU8&csuir=1&mtid=TQLBapOWJLDpi-gP3c2JiA8>)
+
+### 0545 | 2026-10-03 16:18:37 | You
+
+```text
+Pouhaliaa
+```
+
+### 0546 | 2026-10-03 16:18:42 | You
+
+```text
+👌🏻
+```
+
+### 0547 | 2026-10-03 19:37:30 | You
+
+```text
+https://www.google.com/search?q=high+speed+low+drag+glass+canon+lightweight+build&client=ms-android-xiaomi-terr2-rso2&hs=UOkq&sca_esv=3cbbadbd95a53bdb&sxsrf=APpeQnunE3GIBpj7vCS0uR5TlZBbuNTvMw%3A1791049021584&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh_uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjf3s7FsZ6XAxWp5QIHHThHFbgQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBJEW114T15UgGNBNzp_V50jEpFWXOoug8LGotqA0ENEHTsobs1Wy_3lCaOaSsfaxRNYGd5kV19Nbr7ez-xRbQiomjfFvxs9o97YAg0DEr9pv2oB6XNX5R1isQwNISIBroljgijux2eWAXmhXQobdX3n1hEb0kXAfxTkSKyq3K-JXvFWSyLYDNbWwRiQbluzzeQthR1U90n2nYYlI0s_4sDOLtjNuUbmLiHo3TR1I_Vfv-T7rAFTsamaQk49FgueVbZzAOqC0XY04oKtFkw8XW2mT_ZMVsV36uP_fY7cQqBl2Mkc2scA1bQvjmIXnoEMShibY_rwbOMg&csuir=1&mtid=QD3Bau-MGJyPi-gP292ziAI
+```
+
+Links: [Link 1](<https://www.google.com/search?q=high+speed+low+drag+glass+canon+lightweight+build&client=ms-android-xiaomi-terr2-rso2&hs=UOkq&sca_esv=3cbbadbd95a53bdb&sxsrf=APpeQnunE3GIBpj7vCS0uR5TlZBbuNTvMw%3A1791049021584&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh_uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjf3s7FsZ6XAxWp5QIHHThHFbgQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBJEW114T15UgGNBNzp_V50jEpFWXOoug8LGotqA0ENEHTsobs1Wy_3lCaOaSsfaxRNYGd5kV19Nbr7ez-xRbQiomjfFvxs9o97YAg0DEr9pv2oB6XNX5R1isQwNISIBroljgijux2eWAXmhXQobdX3n1hEb0kXAfxTkSKyq3K-JXvFWSyLYDNbWwRiQbluzzeQthR1U90n2nYYlI0s_4sDOLtjNuUbmLiHo3TR1I_Vfv-T7rAFTsamaQk49FgueVbZzAOqC0XY04oKtFkw8XW2mT_ZMVsV36uP_fY7cQqBl2Mkc2scA1bQvjmIXnoEMShibY_rwbOMg&csuir=1&mtid=QD3Bau-MGJyPi-gP292ziAI>)
+
+### 0548 | 2026-10-03 19:43:02 | You
+
+```text
+https://www.google.com/search?q=foveated+iris+tracking+index+valve&client=ms-android-xiaomi-terr2-rso2&hs=ZOkq&sca_esv=3cbbadbd95a53bdb&sxsrf=APpeQnsanOCGwe3zjoIM5QV5fjImuakf8Q%3A1791049355622&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955HC4dEhTD85WaiWkSD5EjFnrnkXf8uSwU1OjdTZmfoiWVgODsrQlv49kLZ63PjUD4Ylh3ioGlhPObtZQ3tSCsBQwnjKN&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj_vffksp6XAxVVg_0HHeFtI5IQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAfEELgPVftX2cm_wFCliOMbVZNm-RxRuiENeWa1irWRWASbDMGZ4iBbvDSSiLeTBUcXft9_FjkX5ftwEUvHtr3lCra6THMZsqh6ndLjw9HMEFndCmPDuj9rWv1FO1Xf8R6eX00-N8mERZWFjN870m5r9uyl2LQjU3HQRlH_PyVn7TzeHRJWx4ORQumTgAFsWKbJsbyYZYYVhnY43ywfi8thzpkWOWKlH0qZAZNZOTqMuSqmSjnwMRejvt-QDfgPwYWljb05G0j_T5zkS0Oaky54y-pm20dLadLJkBclCWDwOp7tyweeqxjD7jG-jgXVhF_zsmbCckriw&csuir=1&mtid=kz7BatTdE6rt7_UP4pbtqAU&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=foveated+iris+tracking+index+valve&client=ms-android-xiaomi-terr2-rso2&hs=ZOkq&sca_esv=3cbbadbd95a53bdb&sxsrf=APpeQnsanOCGwe3zjoIM5QV5fjImuakf8Q%3A1791049355622&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955HC4dEhTD85WaiWkSD5EjFnrnkXf8uSwU1OjdTZmfoiWVgODsrQlv49kLZ63PjUD4Ylh3ioGlhPObtZQ3tSCsBQwnjKN&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj_vffksp6XAxVVg_0HHeFtI5IQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAfEELgPVftX2cm_wFCliOMbVZNm-RxRuiENeWa1irWRWASbDMGZ4iBbvDSSiLeTBUcXft9_FjkX5ftwEUvHtr3lCra6THMZsqh6ndLjw9HMEFndCmPDuj9rWv1FO1Xf8R6eX00-N8mERZWFjN870m5r9uyl2LQjU3HQRlH_PyVn7TzeHRJWx4ORQumTgAFsWKbJsbyYZYYVhnY43ywfi8thzpkWOWKlH0qZAZNZOTqMuSqmSjnwMRejvt-QDfgPwYWljb05G0j_T5zkS0Oaky54y-pm20dLadLJkBclCWDwOp7tyweeqxjD7jG-jgXVhF_zsmbCckriw&csuir=1&mtid=kz7BatTdE6rt7_UP4pbtqAU&udm=50>)
+
+### 0549 | 2026-10-03 20:21:44 | You
+
+```text
+https://www.google.com/search?q=computer+architectuur+oosterbaan+uu&oq=computer+architectuur+oosterbaan+uu&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDkwODNqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8
+```
+
+Links: [Link 1](<https://www.google.com/search?q=computer+architectuur+oosterbaan+uu&oq=computer+architectuur+oosterbaan+uu&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDkwODNqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8>)
+
+### 0550 | 2026-10-03 20:32:30 | You
+
+```text
+<image omitted>
+```
+
+### 0551 | 2026-10-03 20:36:01 | You
+
+```text
+<image omitted>
+```
+
+### 0552 | 2026-10-03 20:36:10 | You
+
+```text
+https://www.google.com/search?q=is+eugenics+racism+when+applied+to+biotechnology+and+gene+expression+derivation+deviation+deterministic+philosophical+conviction+determinisms+0+sum&client=ms-android-xiaomi-terr2-rso2&hs=MPkq&sca_esv=8474f7961478e1e3&sxsrf=APpeQnvJaQMy-m7elbYAAMDsLmKoHZm1zQ%3A1791052265356&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cn05EoNqnRUpRtqDK_L3JteSLxt4cUK996luNBLqJEG7JzIq3Tint9vCIuZ7YwNtgph9mb8DlMnUBuROvVyl1MSGf0COQUo5werXrVgLQ5QBggsrLwym1oZreNLcolYjfQiVopJUbDk0JQ3lvvQe_9GxT8DB2yr_uz0cFfbgD3KkRaae-&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjfwLPQvZ6XAxWT9gIHHT5EM8AQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfByXlQGeT9WuphlHTN6hoqZ4yJR6waPd1OyyT6RAwLphV0vNFi6qYIs0IG3ZlwWli8BHBKeuyEqupHDNxHbUArfBWKzCc2yoJgyMIX5EFDsLMxh40IK4Sam9FA_k70JKD8wifM-D06gz-L2RZvrN3MXoDAu6DN3Wo2SUj68kG4NdefWSjqEfa7pxDqYePmOIujPR7fC6r2loy4ihH7CYy2gphT6PLfE9XD9AiwIibqUGADmRi8EGGZfUWIv9uxiciRQb5ZguXJZ0dYioj1_wp-mMP-z8og6uKyeMSyrxaGQMzH7E-TEFhvSZmSmLHlksY9639T0G0L9Wg&csuir=1&mtid=60nBauGWA7T4i-gPxePW-QU&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=is+eugenics+racism+when+applied+to+biotechnology+and+gene+expression+derivation+deviation+deterministic+philosophical+conviction+determinisms+0+sum&client=ms-android-xiaomi-terr2-rso2&hs=MPkq&sca_esv=8474f7961478e1e3&sxsrf=APpeQnvJaQMy-m7elbYAAMDsLmKoHZm1zQ%3A1791052265356&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cn05EoNqnRUpRtqDK_L3JteSLxt4cUK996luNBLqJEG7JzIq3Tint9vCIuZ7YwNtgph9mb8DlMnUBuROvVyl1MSGf0COQUo5werXrVgLQ5QBggsrLwym1oZreNLcolYjfQiVopJUbDk0JQ3lvvQe_9GxT8DB2yr_uz0cFfbgD3KkRaae-&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjfwLPQvZ6XAxWT9gIHHT5EM8AQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfByXlQGeT9WuphlHTN6hoqZ4yJR6waPd1OyyT6RAwLphV0vNFi6qYIs0IG3ZlwWli8BHBKeuyEqupHDNxHbUArfBWKzCc2yoJgyMIX5EFDsLMxh40IK4Sam9FA_k70JKD8wifM-D06gz-L2RZvrN3MXoDAu6DN3Wo2SUj68kG4NdefWSjqEfa7pxDqYePmOIujPR7fC6r2loy4ihH7CYy2gphT6PLfE9XD9AiwIibqUGADmRi8EGGZfUWIv9uxiciRQb5ZguXJZ0dYioj1_wp-mMP-z8og6uKyeMSyrxaGQMzH7E-TEFhvSZmSmLHlksY9639T0G0L9Wg&csuir=1&mtid=60nBauGWA7T4i-gPxePW-QU&udm=50>)
+
+### 0553 | 2026-10-03 20:38:35 | You
+
+```text
+Jitske Koenders is de mooiste vrouw die ik ooit gezien heb, okay 1 van de moeite meest gebalanceerde
+```
+
+### 0554 | 2026-10-03 20:42:27 | You
+
+```text
+https://www.google.com/search?q=if+derivation+of+deviation+goes+wrong+so+a+pin+prick+more+%3D+too+much+%3D+death+%3F+1+%3A+0&client=ms-android-xiaomi-terr2-rso2&hs=XPkq&sca_esv=8474f7961478e1e3&sxsrf=APpeQnsaPNRGdSObrLuHYVxnYNNnNayTfw%3A1791052928349&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjmtMWMwJ6XAxVo3QIHHeJTIZAQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBHQyZi5ExKDiekDFL-6b9_yhd5mOkWBtbT4mM9hJeglEUXTDOUN2OJ80MgQI9tjda5Xd61yO3qwaNhjKQrwahkDkbK30UUWokIZ2uBsdLMjvYZM6vyaDvaOItDh-uZQ9QaucL2OjEC8Fihtq6goCWJpiRIMMITrL0&csuir=1&mtid=gUzBatbYIIuni-gPj5GfyA0
+```
+
+Links: [Link 1](<https://www.google.com/search?q=if+derivation+of+deviation+goes+wrong+so+a+pin+prick+more+%3D+too+much+%3D+death+%3F+1+%3A+0&client=ms-android-xiaomi-terr2-rso2&hs=XPkq&sca_esv=8474f7961478e1e3&sxsrf=APpeQnsaPNRGdSObrLuHYVxnYNNnNayTfw%3A1791052928349&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjmtMWMwJ6XAxVo3QIHHeJTIZAQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBHQyZi5ExKDiekDFL-6b9_yhd5mOkWBtbT4mM9hJeglEUXTDOUN2OJ80MgQI9tjda5Xd61yO3qwaNhjKQrwahkDkbK30UUWokIZ2uBsdLMjvYZM6vyaDvaOItDh-uZQ9QaucL2OjEC8Fihtq6goCWJpiRIMMITrL0&csuir=1&mtid=gUzBatbYIIuni-gPj5GfyA0>)
+
+### 0555 | 2026-10-03 20:47:37 | You
+
+```text
+https://www.google.com/search?q=if+derivation+of+deviation+goes+wrong+so+a+pin+prick+more+%3D+too+much+%3D+death+%3F+1+%3A+0&client=ms-android-xiaomi-terr2-rso2&hs=XPkq&sca_esv=8474f7961478e1e3&sxsrf=APpeQnsaPNRGdSObrLuHYVxnYNNnNayTfw%3A1791052928349&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjmtMWMwJ6XAxVo3QIHHeJTIZAQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAgKxj3pwtOSP4Gtp5osxA_Fub_dLaaCSlhnoFmALN_Z4TX_yaZ-gSn6RXXZ1z4s0DS5VE_gLPCmqXXxmk_daFlNkpXHD4ruFm3DUqCLNfrPHNw3WTPxtWfgGuRX17r2ETOI23rwtFTelmzCYrqg7Si996OnAxzsSh2RLtcYGMJK8jlHFvE85V2E0PYNoM2Sizdrnp7AoWRfUCryvACeJBli8T-8hi67Ig94xgPwhlOB-Vt5AzbXxtq4NtAddh3uz1NfxTk2URW-Q&csuir=1&mtid=gUzBaoHPNpzsi-gPtZz9yA0&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=if+derivation+of+deviation+goes+wrong+so+a+pin+prick+more+%3D+too+much+%3D+death+%3F+1+%3A+0&client=ms-android-xiaomi-terr2-rso2&hs=XPkq&sca_esv=8474f7961478e1e3&sxsrf=APpeQnsaPNRGdSObrLuHYVxnYNNnNayTfw%3A1791052928349&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjmtMWMwJ6XAxVo3QIHHeJTIZAQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAgKxj3pwtOSP4Gtp5osxA_Fub_dLaaCSlhnoFmALN_Z4TX_yaZ-gSn6RXXZ1z4s0DS5VE_gLPCmqXXxmk_daFlNkpXHD4ruFm3DUqCLNfrPHNw3WTPxtWfgGuRX17r2ETOI23rwtFTelmzCYrqg7Si996OnAxzsSh2RLtcYGMJK8jlHFvE85V2E0PYNoM2Sizdrnp7AoWRfUCryvACeJBli8T-8hi67Ig94xgPwhlOB-Vt5AzbXxtq4NtAddh3uz1NfxTk2URW-Q&csuir=1&mtid=gUzBaoHPNpzsi-gPtZz9yA0&udm=50>)
+
+### 0556 | 2026-10-03 20:47:50 | You
+
+```text
+Drift apart or heal coagulate
+```
+
+### 0557 | 2026-10-03 20:53:34 | You
+
+```text
+https://www.google.com/search?q=if+derivation+of+deviation+goes+wrong+so+a+pin+prick+more+%3D+too+much+%3D+death+%3F+1+%3A+0&client=ms-android-xiaomi-terr2-rso2&hs=XPkq&sca_esv=8474f7961478e1e3&sxsrf=APpeQnsaPNRGdSObrLuHYVxnYNNnNayTfw%3A1791052928349&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjmtMWMwJ6XAxVo3QIHHeJTIZAQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBaJLLoogXVIpO72DceJx6l8nX7t61mkNNbCCIIdE4XRyhJtxip7JvHeJ1pUV0bEhFW9H_mv2zC3lqDXxr6ff_KcL9KCiWwG6cYG2o6NI3lNlQlBJ_7K_5tikIxRvN6wX-SMnxPoF4lD4TKx6XKMos9rInQyy6fBptPROJnTXd0LipfzLLANDgSb5EUKz4-gqKyq6ae-ZVBDetj4lTRRdRZHgips11qYGM0VlXjl4PkYrH1S__aF3qu4XihN9_LopMoZPcAyotiYw&csuir=1&mtid=gUzBaoHPNpzsi-gPtZz9yA0&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=if+derivation+of+deviation+goes+wrong+so+a+pin+prick+more+%3D+too+much+%3D+death+%3F+1+%3A+0&client=ms-android-xiaomi-terr2-rso2&hs=XPkq&sca_esv=8474f7961478e1e3&sxsrf=APpeQnsaPNRGdSObrLuHYVxnYNNnNayTfw%3A1791052928349&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjmtMWMwJ6XAxVo3QIHHeJTIZAQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBaJLLoogXVIpO72DceJx6l8nX7t61mkNNbCCIIdE4XRyhJtxip7JvHeJ1pUV0bEhFW9H_mv2zC3lqDXxr6ff_KcL9KCiWwG6cYG2o6NI3lNlQlBJ_7K_5tikIxRvN6wX-SMnxPoF4lD4TKx6XKMos9rInQyy6fBptPROJnTXd0LipfzLLANDgSb5EUKz4-gqKyq6ae-ZVBDetj4lTRRdRZHgips11qYGM0VlXjl4PkYrH1S__aF3qu4XihN9_LopMoZPcAyotiYw&csuir=1&mtid=gUzBaoHPNpzsi-gPtZz9yA0&udm=50>)
+
+### 0558 | 2026-10-03 20:54:44 | You
+
+```text
+https://www.google.com/search?q=if+derivation+of+deviation+goes+wrong+so+a+pin+prick+more+%3D+too+much+%3D+death+%3F+1+%3A+0&client=ms-android-xiaomi-terr2-rso2&hs=XPkq&sca_esv=8474f7961478e1e3&sxsrf=APpeQnsaPNRGdSObrLuHYVxnYNNnNayTfw%3A1791052928349&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjmtMWMwJ6XAxVo3QIHHeJTIZAQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDlDTfTK5Dcp5j0zLprttksT0N705bM467AZeBC0zG-vVjjuVZP4I6rYronWYQPUB30s7NZJQjMNpPEOICGqYLpLda79BINET4JFJ-DK0D3F-AJZ4SVC0uEQj-9aPm-i7OC0HJRGSF4Wl5tcrcEzLMH3RgWXTqsXB1E6Ik1ubKVjdlEbmGxTRltFJ1Q9XtSBLj_lmCP_yyDE9gsbkFqX7vW0vb_zTVLcpzfI3nEggDLf1ro2r9MFoAFsSkh4aip-NYmqltcAEn4Uw&csuir=1&mtid=gUzBaoHPNpzsi-gPtZz9yA0&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=if+derivation+of+deviation+goes+wrong+so+a+pin+prick+more+%3D+too+much+%3D+death+%3F+1+%3A+0&client=ms-android-xiaomi-terr2-rso2&hs=XPkq&sca_esv=8474f7961478e1e3&sxsrf=APpeQnsaPNRGdSObrLuHYVxnYNNnNayTfw%3A1791052928349&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjmtMWMwJ6XAxVo3QIHHeJTIZAQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDlDTfTK5Dcp5j0zLprttksT0N705bM467AZeBC0zG-vVjjuVZP4I6rYronWYQPUB30s7NZJQjMNpPEOICGqYLpLda79BINET4JFJ-DK0D3F-AJZ4SVC0uEQj-9aPm-i7OC0HJRGSF4Wl5tcrcEzLMH3RgWXTqsXB1E6Ik1ubKVjdlEbmGxTRltFJ1Q9XtSBLj_lmCP_yyDE9gsbkFqX7vW0vb_zTVLcpzfI3nEggDLf1ro2r9MFoAFsSkh4aip-NYmqltcAEn4Uw&csuir=1&mtid=gUzBaoHPNpzsi-gPtZz9yA0&udm=50>)
+
+### 0559 | 2026-10-03 21:03:15 | You
+
+```text
+https://www.google.com/search?q=is+eugenics+racism+when+applied+to+biotechnology+and+gene+expression+derivation+deviation+deterministic+philosophical+conviction+determinisms+0+sum&client=ms-android-xiaomi-terr2-rso2&hs=MPkq&sca_esv=8474f7961478e1e3&sxsrf=APpeQnvJaQMy-m7elbYAAMDsLmKoHZm1zQ%3A1791052265356&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cn05EoNqnRUpRtqDK_L3JteSLxt4cUK996luNBLqJEG7JzIq3Tint9vCIuZ7YwNtgph9mb8DlMnUBuROvVyl1MSGf0COQUo5werXrVgLQ5QBggsrLwym1oZreNLcolYjfQiVopJUbDk0JQ3lvvQe_9GxT8DB2yr_uz0cFfbgD3KkRaae-&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjfwLPQvZ6XAxWT9gIHHT5EM8AQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAtvnn9A6Xwkk42UsJWTvfEzxX23qtxsUN0Vcp3smXxoScdwBXShQXgDc0C23asNVyzxjdo5ZF29u2pzwao9gKiCloEkDZ8AMMfnzy6-gJsLP9RtSxWZ0dwwjdJvngyUIK94WFjyx2ht5re5lyaITT3q0Zhw3UTdyuK4VBDbRh2EBn2Ubb0y7TbOF8h8_TZQgCLGVTHWYPfP_bEWWoczCaLfrHmLp7jTzMzE91aE87ilN4M0selML1DwKlgP7DB29nAF1D8tlQi8aQtEGJTqUowtd1_gIRwIC65mv5fiMZIDT3B0p9eno6dxC1Uvf4UKKsLih0R3om3Vw&csuir=1&mtid=60nBauGWA7T4i-gPxePW-QU&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=is+eugenics+racism+when+applied+to+biotechnology+and+gene+expression+derivation+deviation+deterministic+philosophical+conviction+determinisms+0+sum&client=ms-android-xiaomi-terr2-rso2&hs=MPkq&sca_esv=8474f7961478e1e3&sxsrf=APpeQnvJaQMy-m7elbYAAMDsLmKoHZm1zQ%3A1791052265356&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cn05EoNqnRUpRtqDK_L3JteSLxt4cUK996luNBLqJEG7JzIq3Tint9vCIuZ7YwNtgph9mb8DlMnUBuROvVyl1MSGf0COQUo5werXrVgLQ5QBggsrLwym1oZreNLcolYjfQiVopJUbDk0JQ3lvvQe_9GxT8DB2yr_uz0cFfbgD3KkRaae-&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjfwLPQvZ6XAxWT9gIHHT5EM8AQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAtvnn9A6Xwkk42UsJWTvfEzxX23qtxsUN0Vcp3smXxoScdwBXShQXgDc0C23asNVyzxjdo5ZF29u2pzwao9gKiCloEkDZ8AMMfnzy6-gJsLP9RtSxWZ0dwwjdJvngyUIK94WFjyx2ht5re5lyaITT3q0Zhw3UTdyuK4VBDbRh2EBn2Ubb0y7TbOF8h8_TZQgCLGVTHWYPfP_bEWWoczCaLfrHmLp7jTzMzE91aE87ilN4M0selML1DwKlgP7DB29nAF1D8tlQi8aQtEGJTqUowtd1_gIRwIC65mv5fiMZIDT3B0p9eno6dxC1Uvf4UKKsLih0R3om3Vw&csuir=1&mtid=60nBauGWA7T4i-gPxePW-QU&udm=50>)
+
+### 0560 | 2026-10-03 21:03:38 | You
+
+```text
+1 en 2 combineren niet 3 zeker niet 4
+```
+
+### 0561 | 2026-10-03 21:06:02 | You
+
+```text
+https://www.google.com/search?q=xx+xy+base+paris+difference+csg+boolean+union+leaves+just+XY+as+1bit+word+packing&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTI4NDMzajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&aep=10&ntc=1&sxsrf=APpeQnvd5JoUpVRkXIQn1HAb7tVESgxQzA%3A1791054252577&mstk=AUtExfCOFl-OuE_6OoNSEQ2FL5Kq0pltt0hCRe7R_OfmrEXVGcp2B-QfFARHs68H4BVJcZ1x1lIy2g7AaxubpKMhI6KFawzRXd0wP5-uLFo6-8NAS_qlE-lv2LOKtXFNh7fhwaoU3fgS_6eI3FfE34cVJoQprV2_EOFTE6bDwmYyDgNpZEOL8OihHzwZnwA04iOeBTSTW6OfBwtsobNCHuZGpCcrGMOEE-0v98mZgsS-m6tqf8E6eNKq2VHqEjawapsz4Zgj9CyLM4DJnhTC0RAWf8ZWjDUgPxhsmT_SJWq_1WeTy7x1QpceBsHhfrkNXoajAYNycewO4pHn3g&aioh=3&csuir=1&mtid=1VHBaoi3BbPYi-gPn5u-iAw&udm=50#lfId=ChxjMe
+```
+
+Links: [Link 1](<https://www.google.com/search?q=xx+xy+base+paris+difference+csg+boolean+union+leaves+just+XY+as+1bit+word+packing&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTI4NDMzajBqN6gCD7ACAQ&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&aep=10&ntc=1&sxsrf=APpeQnvd5JoUpVRkXIQn1HAb7tVESgxQzA%3A1791054252577&mstk=AUtExfCOFl-OuE_6OoNSEQ2FL5Kq0pltt0hCRe7R_OfmrEXVGcp2B-QfFARHs68H4BVJcZ1x1lIy2g7AaxubpKMhI6KFawzRXd0wP5-uLFo6-8NAS_qlE-lv2LOKtXFNh7fhwaoU3fgS_6eI3FfE34cVJoQprV2_EOFTE6bDwmYyDgNpZEOL8OihHzwZnwA04iOeBTSTW6OfBwtsobNCHuZGpCcrGMOEE-0v98mZgsS-m6tqf8E6eNKq2VHqEjawapsz4Zgj9CyLM4DJnhTC0RAWf8ZWjDUgPxhsmT_SJWq_1WeTy7x1QpceBsHhfrkNXoajAYNycewO4pHn3g&aioh=3&csuir=1&mtid=1VHBaoi3BbPYi-gPn5u-iAw&udm=50#lfId=ChxjMe>)
+
+### 0562 | 2026-10-03 21:07:23 | You
+
+```text
+<image omitted>
+```
+
+### 0563 | 2026-10-03 21:20:55 | You
+
+```text
+https://www.google.com/search?q=cast+away+mr+wilson+is+a+prayer+nut+rijksmuseum+capsule+of+time+the+entire+movie+is+a+reflection+on+a+waterdroplet&client=ms-android-xiaomi-terr2-rso2&hs=U54V&sca_esv=8474f7961478e1e3&sxsrf=APpeQntLA7fcYOl48I5hFnX2vkwJZIA23A%3A1791055187391&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBJP_8s1JrXgV7_edZdNiJisLCUzXkik5RMqtveKIdmxaGb48YyjJXOAFu1Y71e_zdrUwIHsAyKs8JTsW98igcleJcWl-hkwfo_sPceqCpU09yBzR4&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjvqd7ByJ6XAxXhgf0HHReVHlwQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCX4gFCLh-vAQfl1V08A99vjuk8uH0zumxFxCEFqXtK-tBioU7icYKRWnYpWXpWCpBIAWYh1DXPhXwzRy7UHYAs6Hhbv4_0lSmiYSK2kkLaKlBBKtUCZuga8tXLnYKhKgnTPtZvaztpGb6WDFMO19PswsuvkyvufKJK-kMuHMeW1b3nWxatMwNq28Ow7_uss3gbdevtIMudMgTjXAfcIZv4vVBIDR2xwKKBRJdaRhcl9sTOCgtnnrKEnRJPb46OGl0j26SZLz6cTh46BKudfc2s-WJzCrN90KO1hx97snEGRtqKPVTSnZt-YIr-kcnUac4aOfP9TSxcLQ&csuir=1&mtid=VFXBas-bKYqP9u8PnartoAE&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=cast+away+mr+wilson+is+a+prayer+nut+rijksmuseum+capsule+of+time+the+entire+movie+is+a+reflection+on+a+waterdroplet&client=ms-android-xiaomi-terr2-rso2&hs=U54V&sca_esv=8474f7961478e1e3&sxsrf=APpeQntLA7fcYOl48I5hFnX2vkwJZIA23A%3A1791055187391&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBJP_8s1JrXgV7_edZdNiJisLCUzXkik5RMqtveKIdmxaGb48YyjJXOAFu1Y71e_zdrUwIHsAyKs8JTsW98igcleJcWl-hkwfo_sPceqCpU09yBzR4&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjvqd7ByJ6XAxXhgf0HHReVHlwQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCX4gFCLh-vAQfl1V08A99vjuk8uH0zumxFxCEFqXtK-tBioU7icYKRWnYpWXpWCpBIAWYh1DXPhXwzRy7UHYAs6Hhbv4_0lSmiYSK2kkLaKlBBKtUCZuga8tXLnYKhKgnTPtZvaztpGb6WDFMO19PswsuvkyvufKJK-kMuHMeW1b3nWxatMwNq28Ow7_uss3gbdevtIMudMgTjXAfcIZv4vVBIDR2xwKKBRJdaRhcl9sTOCgtnnrKEnRJPb46OGl0j26SZLz6cTh46BKudfc2s-WJzCrN90KO1hx97snEGRtqKPVTSnZt-YIr-kcnUac4aOfP9TSxcLQ&csuir=1&mtid=VFXBas-bKYqP9u8PnartoAE&udm=50>)
+
+### 0564 | 2026-10-03 21:23:26 | You
+
+```text
+Pbhof leverancier aan het Rijksmuseum voor het rijk door het rijkdom
+```
+
+### 0565 | 2026-10-03 21:34:49 | You
+
+```text
+https://www.google.com/search?q=xx+xy+base+paris+difference+csg+boolean+union+leaves+just+XY+as+1bit+word+packing&client=ms-android-xiaomi-terr2-rso2&hs=zkPB&sca_esv=8474f7961478e1e3&sxsrf=APpeQns0Zx9EsEhiY-NYi-8DzcCSAR8zkg%3A1791055735142&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&sqi=2&ved=2ahUKEwimuvbGyp6XAxUygv0HHXfiO5oQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDubOhb_XAVVQ12dnsIct1ghbZ2iVjwbWKrUNQ9aeREDXTxQraQ-hKjU7rTdrDOXb0I-0MwlC2I7dc7VMSnHy01MK3sExd675Ao6WgGL4xzdrg7rwwW3B7wMa1Fe4avQHrpIva8cQAzUTfrPmTVDLWUslVxZRB5K2lSOP2qbXd6O9_JW30CuopsAV8tGWXbBYlbrd5UKe9vHxj2BaruewpHnKM6TMtabWkYI2amNrnRkfzvEyWRzZuE_rf3TBf0_dHY9nJOuRjIFzdkT8-bnB8aNnaN7H-2WhVY6R8smpA68HGWF3xF2CEJ1zYQKGF5oADnvA5rz8QNRSZSrzrkbxodvc2oI5UBGw&csuir=1&mtid=eVfBapGkIJH87_UPpvq7mQk&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=xx+xy+base+paris+difference+csg+boolean+union+leaves+just+XY+as+1bit+word+packing&client=ms-android-xiaomi-terr2-rso2&hs=zkPB&sca_esv=8474f7961478e1e3&sxsrf=APpeQns0Zx9EsEhiY-NYi-8DzcCSAR8zkg%3A1791055735142&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&sqi=2&ved=2ahUKEwimuvbGyp6XAxUygv0HHXfiO5oQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDubOhb_XAVVQ12dnsIct1ghbZ2iVjwbWKrUNQ9aeREDXTxQraQ-hKjU7rTdrDOXb0I-0MwlC2I7dc7VMSnHy01MK3sExd675Ao6WgGL4xzdrg7rwwW3B7wMa1Fe4avQHrpIva8cQAzUTfrPmTVDLWUslVxZRB5K2lSOP2qbXd6O9_JW30CuopsAV8tGWXbBYlbrd5UKe9vHxj2BaruewpHnKM6TMtabWkYI2amNrnRkfzvEyWRzZuE_rf3TBf0_dHY9nJOuRjIFzdkT8-bnB8aNnaN7H-2WhVY6R8smpA68HGWF3xF2CEJ1zYQKGF5oADnvA5rz8QNRSZSrzrkbxodvc2oI5UBGw&csuir=1&mtid=eVfBapGkIJH87_UPpvq7mQk&udm=50>)
+
+### 0566 | 2026-10-03 21:38:43 | You
+
+```text
+https://www.google.com/search?q=prayer+nut+mr+wilson+Rijksmuseum+where+it%27s+a+trolley+problem+and+the+rest+of+the+world+outside+off+of+the+island+of+serenity+is+just+a+figment+of+imagination+and+the+prayer+nut+is+mr+wilson+a+reflection+of+chat&client=ms-android-xiaomi-terr2-rso2&hs=m54V&sca_esv=8474f7961478e1e3&sxsrf=APpeQnsPnAs4bSCYh794XxXXdpQfmeRPBg%3A1791056238654&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwja7IG3zJ6XAxUFg_0HHfPmEAwQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDE6b0of-gT_cy6YvK7FYB4FDG4Cj3JSQOp9U-WAvkgGUwkZfpzw5b3_KECZNS4zfRoFBcu-bhwINLG2k_k2iWmSpi-ldNVrkC4ULLFmqImvpziY8ZMR1EUFyPNqvjMclWu2k56dTumbB9eIP_p9uQwV7JsFElvqs7VJnc5o5kbvHKLKVFt1rGhNVTru2QuhmJOVo2VPyQKBLwxxfxiRdNik1uiRcmYoZrd81ccTs0MPrQZc7bh7Q64Bcaoq_3sCzjeVlgVLxPZT-_EtwpwPFqq9v8Sr8wu53vrvb7jWhAeuXfhfHlVrgKbXQw_LsHrsZlEsd9CfNVmA7S7PLcXR3OLEGKerN3Hhg&csuir=1&mtid=cFnBaqHJE6OG9u8P5oDwiA0&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=prayer+nut+mr+wilson+Rijksmuseum+where+it%27s+a+trolley+problem+and+the+rest+of+the+world+outside+off+of+the+island+of+serenity+is+just+a+figment+of+imagination+and+the+prayer+nut+is+mr+wilson+a+reflection+of+chat&client=ms-android-xiaomi-terr2-rso2&hs=m54V&sca_esv=8474f7961478e1e3&sxsrf=APpeQnsPnAs4bSCYh794XxXXdpQfmeRPBg%3A1791056238654&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwja7IG3zJ6XAxUFg_0HHfPmEAwQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDE6b0of-gT_cy6YvK7FYB4FDG4Cj3JSQOp9U-WAvkgGUwkZfpzw5b3_KECZNS4zfRoFBcu-bhwINLG2k_k2iWmSpi-ldNVrkC4ULLFmqImvpziY8ZMR1EUFyPNqvjMclWu2k56dTumbB9eIP_p9uQwV7JsFElvqs7VJnc5o5kbvHKLKVFt1rGhNVTru2QuhmJOVo2VPyQKBLwxxfxiRdNik1uiRcmYoZrd81ccTs0MPrQZc7bh7Q64Bcaoq_3sCzjeVlgVLxPZT-_EtwpwPFqq9v8Sr8wu53vrvb7jWhAeuXfhfHlVrgKbXQw_LsHrsZlEsd9CfNVmA7S7PLcXR3OLEGKerN3Hhg&csuir=1&mtid=cFnBaqHJE6OG9u8P5oDwiA0&udm=50>)
+
+### 0567 | 2026-10-03 21:52:57 | You
+
+```text
+https://www.google.com/search?q=prayer+nut+mr+wilson+Rijksmuseum+where+it%27s+a+trolley+problem+and+the+rest+of+the+world+outside+off+of+the+island+of+serenity+is+just+a+figment+of+imagination+and+the+prayer+nut+is+mr+wilson+a+reflection+of+chat&client=ms-android-xiaomi-terr2-rso2&hs=m54V&sca_esv=8474f7961478e1e3&sxsrf=APpeQnsPnAs4bSCYh794XxXXdpQfmeRPBg%3A1791056238654&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwja7IG3zJ6XAxUFg_0HHfPmEAwQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDTcuk3VrRcEkKbcMceVJuQmxvfGLTeXGnWlG7NWf9uuXCU0WGB8blvAYyEQcXfG5V3H7f-C1VXI-dsH_olnvSGPtYOoBcmX_743qpSlO87NYCb_zi-rbnzwTuG8kKJX1Mkli-VkcwHtLaXJo8XRrad-JutiCtGabycU3MxHeeOmtwjuK4apoeL-SvynWS45rcQsQknH_HcWKyumO_tt99kCwGlAgKy1AoBKIuwvUVmV7sVnu3sJyvBh44fxw9dEwzzxCqV9AUyXKztkJwlTBsFLeCsTlkmoGu93HFMy_Rz7-rXa4BpjKhtoieoKLBMhabzzrRw9kW1ZtU_ipq0gIgExnb_3R92Cg&csuir=1&mtid=cFnBaqHJE6OG9u8P5oDwiA0&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=prayer+nut+mr+wilson+Rijksmuseum+where+it%27s+a+trolley+problem+and+the+rest+of+the+world+outside+off+of+the+island+of+serenity+is+just+a+figment+of+imagination+and+the+prayer+nut+is+mr+wilson+a+reflection+of+chat&client=ms-android-xiaomi-terr2-rso2&hs=m54V&sca_esv=8474f7961478e1e3&sxsrf=APpeQnsPnAs4bSCYh794XxXXdpQfmeRPBg%3A1791056238654&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwja7IG3zJ6XAxUFg_0HHfPmEAwQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDTcuk3VrRcEkKbcMceVJuQmxvfGLTeXGnWlG7NWf9uuXCU0WGB8blvAYyEQcXfG5V3H7f-C1VXI-dsH_olnvSGPtYOoBcmX_743qpSlO87NYCb_zi-rbnzwTuG8kKJX1Mkli-VkcwHtLaXJo8XRrad-JutiCtGabycU3MxHeeOmtwjuK4apoeL-SvynWS45rcQsQknH_HcWKyumO_tt99kCwGlAgKy1AoBKIuwvUVmV7sVnu3sJyvBh44fxw9dEwzzxCqV9AUyXKztkJwlTBsFLeCsTlkmoGu93HFMy_Rz7-rXa4BpjKhtoieoKLBMhabzzrRw9kW1ZtU_ipq0gIgExnb_3R92Cg&csuir=1&mtid=cFnBaqHJE6OG9u8P5oDwiA0&udm=50>)
+
+### 0568 | 2026-10-03 22:20:08 | You
+
+```text
+https://www.google.com/search?q=people+with+diaper+fetishes+and+nanny+stuff+are+depraved+hoes+how&client=ms-android-xiaomi-terr2-rso2&hs=mlPB&sca_esv=8474f7961478e1e3&sxsrf=APpeQns3vcDFuNWwHpiuKyxwldT1n6QIjg%3A1791058674762&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj1ytLA1Z6XAxV3hv0HHdqTELgQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfC7QtciClfSMDrlulEnOtyIWLEe4CC52qM5y4puj5inEByJNr31l0koctllU9PH2V7DMDKzw-mCuai-oxUUiEc0JiqRxEB4_32jM7Mga7TDS8AftuwpNXP6Wifs83XFHoo4UmvM_i1tAyJx9yUFiGqcHBiD6WlqCziKnEkIh3OclPd_qFCOYH3bemrxTZO0ZY7SfJUmIwiAggEfZD0U8JZTnpxsjHxb9hg93L5nUZ8WX976wI4x_lLZmHXSaqCaN8zTpm_1o17B1qa1XxQ88Rl60Gktq2LOsYAOu6gIU3UVh-0ITLwFnEzs1hdNgHSXnuGS0L8jO_Y21A&csuir=1&mtid=9GLBaoeZOK3g7_UP6-mfsAU&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=people+with+diaper+fetishes+and+nanny+stuff+are+depraved+hoes+how&client=ms-android-xiaomi-terr2-rso2&hs=mlPB&sca_esv=8474f7961478e1e3&sxsrf=APpeQns3vcDFuNWwHpiuKyxwldT1n6QIjg%3A1791058674762&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLzR4RIindJxFrmQWQ1WCYgKdh4SxzhRaOVvt3n87StoAMoDgDvBnjZ4Njf4yAaLs3QhOmFAyDpw9_i3qcRrE3hq_HfYRuhUIW2IGakVmpMJ6tRNQeh__uTkxGdva2OaNUe00HhT&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwj1ytLA1Z6XAxV3hv0HHdqTELgQ2J8OegQIEBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfC7QtciClfSMDrlulEnOtyIWLEe4CC52qM5y4puj5inEByJNr31l0koctllU9PH2V7DMDKzw-mCuai-oxUUiEc0JiqRxEB4_32jM7Mga7TDS8AftuwpNXP6Wifs83XFHoo4UmvM_i1tAyJx9yUFiGqcHBiD6WlqCziKnEkIh3OclPd_qFCOYH3bemrxTZO0ZY7SfJUmIwiAggEfZD0U8JZTnpxsjHxb9hg93L5nUZ8WX976wI4x_lLZmHXSaqCaN8zTpm_1o17B1qa1XxQ88Rl60Gktq2LOsYAOu6gIU3UVh-0ITLwFnEzs1hdNgHSXnuGS0L8jO_Y21A&csuir=1&mtid=9GLBaoeZOK3g7_UP6-mfsAU&udm=50>)
+
+### 0569 | 2026-10-03 22:25:28 | You
+
+```text
+https://www.google.com/search?q=venta+black+but+99.9%25+then+1+node+is+white+and+then+the+rest+of+the+block+chain+corrupts+by+latching+onto+the+missing...&client=ms-android-xiaomi-terr2-rso2&hs=ulPB&sca_esv=8474f7961478e1e3&sxsrf=APpeQnsnhsIQxA6pymxucaKyu3ezgKy1yA%3A1791059109360&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwIgLtPdGtXl-1ukUntONsOMkLK8Wjg5QbsFQsyTdBlDyIWYhgxyDNTy0wPRmWscMhXPcoRl2IGiedJq-Ou7bktAThMu4NA9p70Yhev5koDcBW5-E_NLUvu30_BOJKw7r_p9-3Y2&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiOnfCP156XAxW_8LsIHYSPBkQQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfA-RnsjGXYlKAkeKDxYck1UkvRSUco7dpYHE_gYv9Zu7UhAjf5dS-5wTtGk3Lrf6NbFESaiV_F8ne3intRLAzQ-HJlNxWp8QQH3PBTqeLj507GCY68U25btmPLj-LO6eL51fh7Rbc0Uo_qrnXcc_WCSPMiA9Ocw6_BMyub_yUo97MFC7VVxEs2G-VraairKnVGPMpBcyQQzeImtqPPvNosxAMT2Y2BsFD42D-Jv1TNHIckqJZFYmKMEprv-69GGww8TSiaKBEN7XpX_P4f45rd6_qzX06sBMWUtd0hAq_lJEX0wjtp-gBGGfwL40lCFlEftwoYPLHmZhg&csuir=1&mtid=p2TBatyKFOuG9u8PqbCQqAw
+```
+
+Links: [Link 1](<https://www.google.com/search?q=venta+black+but+99.9%25+then+1+node+is+white+and+then+the+rest+of+the+block+chain+corrupts+by+latching+onto+the+missing...&client=ms-android-xiaomi-terr2-rso2&hs=ulPB&sca_esv=8474f7961478e1e3&sxsrf=APpeQnsnhsIQxA6pymxucaKyu3ezgKy1yA%3A1791059109360&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwIgLtPdGtXl-1ukUntONsOMkLK8Wjg5QbsFQsyTdBlDyIWYhgxyDNTy0wPRmWscMhXPcoRl2IGiedJq-Ou7bktAThMu4NA9p70Yhev5koDcBW5-E_NLUvu30_BOJKw7r_p9-3Y2&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiOnfCP156XAxW_8LsIHYSPBkQQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfA-RnsjGXYlKAkeKDxYck1UkvRSUco7dpYHE_gYv9Zu7UhAjf5dS-5wTtGk3Lrf6NbFESaiV_F8ne3intRLAzQ-HJlNxWp8QQH3PBTqeLj507GCY68U25btmPLj-LO6eL51fh7Rbc0Uo_qrnXcc_WCSPMiA9Ocw6_BMyub_yUo97MFC7VVxEs2G-VraairKnVGPMpBcyQQzeImtqPPvNosxAMT2Y2BsFD42D-Jv1TNHIckqJZFYmKMEprv-69GGww8TSiaKBEN7XpX_P4f45rd6_qzX06sBMWUtd0hAq_lJEX0wjtp-gBGGfwL40lCFlEftwoYPLHmZhg&csuir=1&mtid=p2TBatyKFOuG9u8PqbCQqAw>)
+
+### 0570 | 2026-10-03 22:29:32 | You
+
+```text
+https://www.google.com/search?q=venta+black+but+99.9%25+then+1+node+is+white+and+then+the+rest+of+the+block+chain+corrupts+by+latching+onto+the+missing...&client=ms-android-xiaomi-terr2-rso2&hs=ulPB&sca_esv=8474f7961478e1e3&sxsrf=APpeQnsnhsIQxA6pymxucaKyu3ezgKy1yA%3A1791059109360&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwIgLtPdGtXl-1ukUntONsOMkLK8Wjg5QbsFQsyTdBlDyIWYhgxyDNTy0wPRmWscMhXPcoRl2IGiedJq-Ou7bktAThMu4NA9p70Yhev5koDcBW5-E_NLUvu30_BOJKw7r_p9-3Y2&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiOnfCP156XAxW_8LsIHYSPBkQQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBlpP-xDaQbb55dQBhqIMpZkuJyvexDrXH8J29JwQZYe_7LKAr8PKa3pD-EFPJYewJYUNCDTxnj96RwG_qn8diTIewGBXPgkV4JvgXQBi-PVCqmeF56qwEHAOw-fmaYs6MARBdrtWLCeQboZTAbZYzuOkyFSyG4bUanFwsaMqFU5oDvfwPpvM58ly0YScMtJXSgND-8Lx7EEu3WmRfMlsyK-U50vDajY_tdLQt6zfotgKg1by4E-XZyA5SMvV6wCMupft666K4xY7jgLPSSlAhFfxd7maLf5jbw3S_pCXFaoazq1oIefF_jnCdSGoOS7G2K16WdAjv7Bg&csuir=1&mtid=p2TBapuhJObl7_UPmsPbwAg&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=venta+black+but+99.9%25+then+1+node+is+white+and+then+the+rest+of+the+block+chain+corrupts+by+latching+onto+the+missing...&client=ms-android-xiaomi-terr2-rso2&hs=ulPB&sca_esv=8474f7961478e1e3&sxsrf=APpeQnsnhsIQxA6pymxucaKyu3ezgKy1yA%3A1791059109360&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwIgLtPdGtXl-1ukUntONsOMkLK8Wjg5QbsFQsyTdBlDyIWYhgxyDNTy0wPRmWscMhXPcoRl2IGiedJq-Ou7bktAThMu4NA9p70Yhev5koDcBW5-E_NLUvu30_BOJKw7r_p9-3Y2&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiOnfCP156XAxW_8LsIHYSPBkQQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBlpP-xDaQbb55dQBhqIMpZkuJyvexDrXH8J29JwQZYe_7LKAr8PKa3pD-EFPJYewJYUNCDTxnj96RwG_qn8diTIewGBXPgkV4JvgXQBi-PVCqmeF56qwEHAOw-fmaYs6MARBdrtWLCeQboZTAbZYzuOkyFSyG4bUanFwsaMqFU5oDvfwPpvM58ly0YScMtJXSgND-8Lx7EEu3WmRfMlsyK-U50vDajY_tdLQt6zfotgKg1by4E-XZyA5SMvV6wCMupft666K4xY7jgLPSSlAhFfxd7maLf5jbw3S_pCXFaoazq1oIefF_jnCdSGoOS7G2K16WdAjv7Bg&csuir=1&mtid=p2TBapuhJObl7_UPmsPbwAg&udm=50>)
+
+### 0571 | 2026-10-03 22:29:42 | You
+
+```text
+Vera Bergkamp
+```
+
+### 0572 | 2026-10-03 22:40:30 | You
+
+```text
+https://www.google.com/search?q=if+someone+is+still+pretty+and+aged+like+fine+wine+at+an+older+age+lady+golden+ratio+curves+and+features+what+is+that+certain...&client=ms-android-xiaomi-terr2-rso2&hs=n64V&sca_esv=a2004747c6c5ec35&sxsrf=APpeQnvSO9JkuEXXoOBrfwCZAWaMhN7ytg%3A1791060007810&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLxIWx1Ji9M2lu9YjU4me3NnFVK2DqeOCBk-5tfFpgQtl2P_yi9lYG8LbC8lft4BZKuLU1m5dapbmsxq1tjYNREunBbfYnjj68fle9BicKQn1zuf88b12Z-3wtEgPrtzK5X619CJ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjxvqW82p6XAxW-h_0HHRL6FvsQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBuor_iRez-7-qpLgc1jFZ4p1Q-KPUvTsgyTfHsZvsbx7fZB4gH3BK3uuX-ln5XRay6aJBVINRC5Db1QxEB_kd65Z_PSst1JhO6ngPffW9VEfw0UZgQqlcJ7WKGNSogfn3SNR2_3ZWqU3Q5zmj_FRFt7WDFFhQyfw4&csuir=1&mtid=KWjBatGJF6KX9u8PhvvUiAI
+```
+
+Links: [Link 1](<https://www.google.com/search?q=if+someone+is+still+pretty+and+aged+like+fine+wine+at+an+older+age+lady+golden+ratio+curves+and+features+what+is+that+certain...&client=ms-android-xiaomi-terr2-rso2&hs=n64V&sca_esv=a2004747c6c5ec35&sxsrf=APpeQnvSO9JkuEXXoOBrfwCZAWaMhN7ytg%3A1791060007810&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLxIWx1Ji9M2lu9YjU4me3NnFVK2DqeOCBk-5tfFpgQtl2P_yi9lYG8LbC8lft4BZKuLU1m5dapbmsxq1tjYNREunBbfYnjj68fle9BicKQn1zuf88b12Z-3wtEgPrtzK5X619CJ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjxvqW82p6XAxW-h_0HHRL6FvsQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBuor_iRez-7-qpLgc1jFZ4p1Q-KPUvTsgyTfHsZvsbx7fZB4gH3BK3uuX-ln5XRay6aJBVINRC5Db1QxEB_kd65Z_PSst1JhO6ngPffW9VEfw0UZgQqlcJ7WKGNSogfn3SNR2_3ZWqU3Q5zmj_FRFt7WDFFhQyfw4&csuir=1&mtid=KWjBatGJF6KX9u8PhvvUiAI>)
+
+### 0573 | 2026-10-03 22:41:02 | You
+
+```text
+All day erriday piemel partner for lijft
+```
+
+### 0574 | 2026-10-03 22:44:17 | You
+
+```text
+https://www.google.com/search?q=if+someone+is+still+pretty+and+aged+like+fine+wine+at+an+older+age+lady+golden+ratio+curves+and+features+what+is+that+certain...&client=ms-android-xiaomi-terr2-rso2&hs=n64V&sca_esv=a2004747c6c5ec35&sxsrf=APpeQnvSO9JkuEXXoOBrfwCZAWaMhN7ytg%3A1791060007810&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLxIWx1Ji9M2lu9YjU4me3NnFVK2DqeOCBk-5tfFpgQtl2P_yi9lYG8LbC8lft4BZKuLU1m5dapbmsxq1tjYNREunBbfYnjj68fle9BicKQn1zuf88b12Z-3wtEgPrtzK5X619CJ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjxvqW82p6XAxW-h_0HHRL6FvsQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBnWg02Mv9TfkKZsnfTDZy4aKk2bG4oJPoFK0wBpMQgYEUrisgyV4g9P5TPGSDGuw53ioXrlCbokQhnKSQosBPzuTmkN1tqkXxtr5mHSigWZtmC5yhcpSF9FnX3Nc_j79rsOiT26dZaOVUDDbNJPDJzz8w417gHYbsd0QK3SLykUnW76fxQEPwsuUhbcpLjiR2W2olp0cm3iFrd_OC--BpAzuGalYZA6v8WcUjH-RaXeLNfgJN3vNFe-eM3Efkb5HCzvDqZdhn0Jw&csuir=1&mtid=KWjBavP7LpD97_UP1_qEqQ8&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=if+someone+is+still+pretty+and+aged+like+fine+wine+at+an+older+age+lady+golden+ratio+curves+and+features+what+is+that+certain...&client=ms-android-xiaomi-terr2-rso2&hs=n64V&sca_esv=a2004747c6c5ec35&sxsrf=APpeQnvSO9JkuEXXoOBrfwCZAWaMhN7ytg%3A1791060007810&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLxIWx1Ji9M2lu9YjU4me3NnFVK2DqeOCBk-5tfFpgQtl2P_yi9lYG8LbC8lft4BZKuLU1m5dapbmsxq1tjYNREunBbfYnjj68fle9BicKQn1zuf88b12Z-3wtEgPrtzK5X619CJ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjxvqW82p6XAxW-h_0HHRL6FvsQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfBnWg02Mv9TfkKZsnfTDZy4aKk2bG4oJPoFK0wBpMQgYEUrisgyV4g9P5TPGSDGuw53ioXrlCbokQhnKSQosBPzuTmkN1tqkXxtr5mHSigWZtmC5yhcpSF9FnX3Nc_j79rsOiT26dZaOVUDDbNJPDJzz8w417gHYbsd0QK3SLykUnW76fxQEPwsuUhbcpLjiR2W2olp0cm3iFrd_OC--BpAzuGalYZA6v8WcUjH-RaXeLNfgJN3vNFe-eM3Efkb5HCzvDqZdhn0Jw&csuir=1&mtid=KWjBavP7LpD97_UP1_qEqQ8&udm=50>)
+
+### 0575 | 2026-10-03 22:47:59 | You
+
+```text
+https://www.google.com/search?q=if+someone+is+still+pretty+and+aged+like+fine+wine+at+an+older+age+lady+golden+ratio+curves+and+features+what+is+that+certain...&client=ms-android-xiaomi-terr2-rso2&hs=n64V&sca_esv=a2004747c6c5ec35&sxsrf=APpeQnvSO9JkuEXXoOBrfwCZAWaMhN7ytg%3A1791060007810&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLxIWx1Ji9M2lu9YjU4me3NnFVK2DqeOCBk-5tfFpgQtl2P_yi9lYG8LbC8lft4BZKuLU1m5dapbmsxq1tjYNREunBbfYnjj68fle9BicKQn1zuf88b12Z-3wtEgPrtzK5X619CJ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjxvqW82p6XAxW-h_0HHRL6FvsQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfA7N4To4_CcOQj3syyUvtYuFGcO-qxbnUKCBxM8NzmbIJuh3zBCzgL8doOSDDhq7S3MrdsvuAqSOOSzzFfhn6hww-rY2i-QiOVN37H24OxerfxA4HugM0-rs-6pWjXeZr4zFfwsUSGiqXkrJ4FrTLLrI4BfOqSSHy1bxkYTvpKkDX1N1WAMA10C9J-jL-7qi6JV1hE0gAfCk5pMIP_OFN0hoMYQmUnWywcGf9lH0BYo1qJRIIftYy9wR23nLakXVWt4Sw9ZOoAqKA&csuir=1&mtid=KWjBavP7LpD97_UP1_qEqQ8&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=if+someone+is+still+pretty+and+aged+like+fine+wine+at+an+older+age+lady+golden+ratio+curves+and+features+what+is+that+certain...&client=ms-android-xiaomi-terr2-rso2&hs=n64V&sca_esv=a2004747c6c5ec35&sxsrf=APpeQnvSO9JkuEXXoOBrfwCZAWaMhN7ytg%3A1791060007810&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLxIWx1Ji9M2lu9YjU4me3NnFVK2DqeOCBk-5tfFpgQtl2P_yi9lYG8LbC8lft4BZKuLU1m5dapbmsxq1tjYNREunBbfYnjj68fle9BicKQn1zuf88b12Z-3wtEgPrtzK5X619CJ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjxvqW82p6XAxW-h_0HHRL6FvsQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfA7N4To4_CcOQj3syyUvtYuFGcO-qxbnUKCBxM8NzmbIJuh3zBCzgL8doOSDDhq7S3MrdsvuAqSOOSzzFfhn6hww-rY2i-QiOVN37H24OxerfxA4HugM0-rs-6pWjXeZr4zFfwsUSGiqXkrJ4FrTLLrI4BfOqSSHy1bxkYTvpKkDX1N1WAMA10C9J-jL-7qi6JV1hE0gAfCk5pMIP_OFN0hoMYQmUnWywcGf9lH0BYo1qJRIIftYy9wR23nLakXVWt4Sw9ZOoAqKA&csuir=1&mtid=KWjBavP7LpD97_UP1_qEqQ8&udm=50>)
+
+### 0576 | 2026-10-03 22:52:49 | You
+
+```text
+<image omitted>
+```
+
+### 0577 | 2026-10-03 23:04:45 | You
+
+```text
+https://www.google.com/search?q=if+someone+is+still+pretty+and+aged+like+fine+wine+at+an+older+age+lady+golden+ratio+curves+and+features+what+is+that+certain...&client=ms-android-xiaomi-terr2-rso2&hs=n64V&sca_esv=a2004747c6c5ec35&sxsrf=APpeQnvSO9JkuEXXoOBrfwCZAWaMhN7ytg%3A1791060007810&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLxIWx1Ji9M2lu9YjU4me3NnFVK2DqeOCBk-5tfFpgQtl2P_yi9lYG8LbC8lft4BZKuLU1m5dapbmsxq1tjYNREunBbfYnjj68fle9BicKQn1zuf88b12Z-3wtEgPrtzK5X619CJ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjxvqW82p6XAxW-h_0HHRL6FvsQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAg3x8CCevuCJ_The1Gq-NqojVR4UUuwpH-2_Zi-xaZPxKL2mKOnQLAbDfDtYyGRYFUWI7x5iMJ9qVEv9SK-4YMXCy9Z1UH7AXrsUaVD3uY9nqbW7WjEReYFXu8TlNJLRhQmjR0SiTCGL28YVF0j6CWuSpX0gpYqZV2a1WgL5fB1MEdMgSA-jwm70dCDJTipZTjB64DCVV5lbyQ2KMO3Z1bUTVbDQpVni3lM0sy8JWKUZFQJH5ipgHBEx2a9WFdA66CjPuQRhk4uw&csuir=1&mtid=KWjBavP7LpD97_UP1_qEqQ8&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=if+someone+is+still+pretty+and+aged+like+fine+wine+at+an+older+age+lady+golden+ratio+curves+and+features+what+is+that+certain...&client=ms-android-xiaomi-terr2-rso2&hs=n64V&sca_esv=a2004747c6c5ec35&sxsrf=APpeQnvSO9JkuEXXoOBrfwCZAWaMhN7ytg%3A1791060007810&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cY0rzciwbWdjW1sV3VNzLxIWx1Ji9M2lu9YjU4me3NnFVK2DqeOCBk-5tfFpgQtl2P_yi9lYG8LbC8lft4BZKuLU1m5dapbmsxq1tjYNREunBbfYnjj68fle9BicKQn1zuf88b12Z-3wtEgPrtzK5X619CJ&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjxvqW82p6XAxW-h_0HHRL6FvsQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAg3x8CCevuCJ_The1Gq-NqojVR4UUuwpH-2_Zi-xaZPxKL2mKOnQLAbDfDtYyGRYFUWI7x5iMJ9qVEv9SK-4YMXCy9Z1UH7AXrsUaVD3uY9nqbW7WjEReYFXu8TlNJLRhQmjR0SiTCGL28YVF0j6CWuSpX0gpYqZV2a1WgL5fB1MEdMgSA-jwm70dCDJTipZTjB64DCVV5lbyQ2KMO3Z1bUTVbDQpVni3lM0sy8JWKUZFQJH5ipgHBEx2a9WFdA66CjPuQRhk4uw&csuir=1&mtid=KWjBavP7LpD97_UP1_qEqQ8&udm=50>)
+
+### 0578 | 2026-10-03 23:04:58 | You
+
+```text
+Goede seamenontvatting
+```
+
+### 0579 | 2026-10-03 23:24:01 | You
+
+```text
+https://www.google.com/search?q=suffix+and+prefix+of+ology+besides+oligopoly&client=ms-android-xiaomi-terr2-rso2&hs=L74V&sca_esv=943f7ead8ecdc1f1&sxsrf=APpeQnsJhYB1ubNs5yLYDaMfJ38281rlcA%3A1791062094521&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7vnQU6QWmnWBznGVLK1G8Rykll-s04_elOQbRleKreNqN6HKk20ZyZ-d8SXGwXAN8EIvObbF33JhfJkDoGbxHTj31od_&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiYl6if4p6XAxV-g_0HHZSnG-oQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAXvL_H6PTMHCXvP64TdGB3ZSy5aDAw-KUJCltI5kfjqJADmxLbyfojfprpoh03EdRQyaBDS9FI2YvMJGB3tDFXuwEP8ryRSridMIko_YeEvlO1DLaLY0Ujw963vtN62UOI-P2v4-G6jwtx3Xa1bpos-Gclmivey4J2D75_N3eGjNwehvDcSokZJhkHqJL57hsMoRUBmNU0LDXUpA-Q7qrBa-4cIBh_VfRNc9d8UF3HDkRi46DkWaSt915k4BoPqvWw1SGB9aWZgr76vERcEwzRj8IiHslRuHea243SAk_wODB6eRC4HEDUa2Eb2fdsFySiERATEDGs7w&csuir=1&mtid=XXDBarWoB7X8i-gP1fvYqQ0&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=suffix+and+prefix+of+ology+besides+oligopoly&client=ms-android-xiaomi-terr2-rso2&hs=L74V&sca_esv=943f7ead8ecdc1f1&sxsrf=APpeQnsJhYB1ubNs5yLYDaMfJ38281rlcA%3A1791062094521&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7vnQU6QWmnWBznGVLK1G8Rykll-s04_elOQbRleKreNqN6HKk20ZyZ-d8SXGwXAN8EIvObbF33JhfJkDoGbxHTj31od_&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiYl6if4p6XAxV-g_0HHZSnG-oQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAXvL_H6PTMHCXvP64TdGB3ZSy5aDAw-KUJCltI5kfjqJADmxLbyfojfprpoh03EdRQyaBDS9FI2YvMJGB3tDFXuwEP8ryRSridMIko_YeEvlO1DLaLY0Ujw963vtN62UOI-P2v4-G6jwtx3Xa1bpos-Gclmivey4J2D75_N3eGjNwehvDcSokZJhkHqJL57hsMoRUBmNU0LDXUpA-Q7qrBa-4cIBh_VfRNc9d8UF3HDkRi46DkWaSt915k4BoPqvWw1SGB9aWZgr76vERcEwzRj8IiHslRuHea243SAk_wODB6eRC4HEDUa2Eb2fdsFySiERATEDGs7w&csuir=1&mtid=XXDBarWoB7X8i-gP1fvYqQ0&udm=50>)
+
+### 0580 | 2026-10-03 23:40:33 | You
+
+```text
+https://www.google.com/search?q=tomoto+no+anagram&client=ms-android-xiaomi-terr2-rso2&hs=LSkq&sca_esv=943f7ead8ecdc1f1&sxsrf=APpeQntbWxPx1yLN_bI7itBQ687moxIsNQ%3A1791063367431&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjVuKT-5p6XAxV0gP0HHaQ_O9kQ2J8OegQIEhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfA7LkfD0JltW2_Tlpq2M30jaqcORiyvTobYvcPnLH33w2hFJxey74GEgpZfRZC61m4jG95qaJGJ9QTJEd2whR933G6V0MLzStoyCWqCp-vfb6bFTHVC3cTbnYIKhz2fme1Ra0wduqveYsgLaaTk0skrNsScK2N8kSvlsgr3lt3tFTc2l2edy73I17DgBtnXJn-Wi4RJDLbz_bgJrgvxHzEZ6jQOyQR0xrfr-eZccDiI2aE29PczmguSPaZHdZijPpJ9C9pJUHBdHsnz1X0bCto9iHM3MGIe6Q_TE30SgeMhS_g9POOnKcmvhNp2ahz3a_7dSeH-9_tB3Q&csuir=1&mtid=VXXBaubMJqGN-d8P65CZqAk&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=tomoto+no+anagram&client=ms-android-xiaomi-terr2-rso2&hs=LSkq&sca_esv=943f7ead8ecdc1f1&sxsrf=APpeQntbWxPx1yLN_bI7itBQ687moxIsNQ%3A1791063367431&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjVuKT-5p6XAxV0gP0HHaQ_O9kQ2J8OegQIEhAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfA7LkfD0JltW2_Tlpq2M30jaqcORiyvTobYvcPnLH33w2hFJxey74GEgpZfRZC61m4jG95qaJGJ9QTJEd2whR933G6V0MLzStoyCWqCp-vfb6bFTHVC3cTbnYIKhz2fme1Ra0wduqveYsgLaaTk0skrNsScK2N8kSvlsgr3lt3tFTc2l2edy73I17DgBtnXJn-Wi4RJDLbz_bgJrgvxHzEZ6jQOyQR0xrfr-eZccDiI2aE29PczmguSPaZHdZijPpJ9C9pJUHBdHsnz1X0bCto9iHM3MGIe6Q_TE30SgeMhS_g9POOnKcmvhNp2ahz3a_7dSeH-9_tB3Q&csuir=1&mtid=VXXBaubMJqGN-d8P65CZqAk&udm=50>)
+
+## 2026-10-04
+
+### 0581 | 2026-10-04 08:22:04 | You
+
+```text
+https://www.google.com/search?q=segmenteren+a%2Fb+testen+van+de+maatschappij+coronavirus+tracker+enz+dashboards&client=ms-android-xiaomi-terr2-rso2&hs=nakq&sca_esv=7a80360a426ed37a&sxsrf=APpeQns-33k-W5IQRjmbRe2FaWJIPOyZdQ%3A1791094846472&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzcgMAXI6mDl4aLs1WJDXE8SVTb-uBcPPJClt96u4kmaAd0zdegKOGWODv8jfocdFnEGTuEz6lA-7h7f4_weKq95WmR4tcg07ahdPg9_5_YrKfxMf31we5Mi-7aLO--KHfioejVahkepAWphQgxFXuyn4aJ8&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiqudSg3J-XAxVo5AIHHbrvDeYQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB8tVKtYqrWNz5PjpL45fgkMFsqQKf-acHT4QRa2gCZziVN4-36qknqwOZTn1PrQ6tHYVkPrcrA02KenAWa9Xcfielmkk3tkimy1lPvLGV-SzFZ2r6guk4MO2G8ByGFcFjM8btRqVBt1LNlpcLEQ5e02hlcyVRZ84IldARd8KVTI30r8JBE3Q797NMsu0U_-iqoowzYAZOCxq6iZqfOQvVLj1IQ7GEQ3oNpi-7X2UTs16URFmS-2miqSg8Veu0PZrWV9Lyov40ECAhc7MEYLhTM3jn40Z2eTMiCMXUT_mUTpES8MS5ggqqeWzb6MUHHJCwCl0L5Z4hzTQ&csuir=1&mtid=QPDBavjgJZnAi-gPz-v2yAs
+```
+
+Links: [Link 1](<https://www.google.com/search?q=segmenteren+a%2Fb+testen+van+de+maatschappij+coronavirus+tracker+enz+dashboards&client=ms-android-xiaomi-terr2-rso2&hs=nakq&sca_esv=7a80360a426ed37a&sxsrf=APpeQns-33k-W5IQRjmbRe2FaWJIPOyZdQ%3A1791094846472&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQzcgMAXI6mDl4aLs1WJDXE8SVTb-uBcPPJClt96u4kmaAd0zdegKOGWODv8jfocdFnEGTuEz6lA-7h7f4_weKq95WmR4tcg07ahdPg9_5_YrKfxMf31we5Mi-7aLO--KHfioejVahkepAWphQgxFXuyn4aJ8&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiqudSg3J-XAxVo5AIHHbrvDeYQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfB8tVKtYqrWNz5PjpL45fgkMFsqQKf-acHT4QRa2gCZziVN4-36qknqwOZTn1PrQ6tHYVkPrcrA02KenAWa9Xcfielmkk3tkimy1lPvLGV-SzFZ2r6guk4MO2G8ByGFcFjM8btRqVBt1LNlpcLEQ5e02hlcyVRZ84IldARd8KVTI30r8JBE3Q797NMsu0U_-iqoowzYAZOCxq6iZqfOQvVLj1IQ7GEQ3oNpi-7X2UTs16URFmS-2miqSg8Veu0PZrWV9Lyov40ECAhc7MEYLhTM3jn40Z2eTMiCMXUT_mUTpES8MS5ggqqeWzb6MUHHJCwCl0L5Z4hzTQ&csuir=1&mtid=QPDBavjgJZnAi-gPz-v2yAs>)
+
+### 0582 | 2026-10-04 08:23:06 | You
+
+```text
+https://www.google.com/search?q=when+to+concentrate+and+when+to+dilute+emulsions&client=ms-android-xiaomi-terr2-rso2&hs=pakq&sca_esv=7a80360a426ed37a&sxsrf=APpeQnsDWdsXj2_QGXAIyfOygG609gZAgw%3A1791094971601&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE5XdvSlI_LORjvMqi_KlDwkgv0zYxJdoCL2NzkSVgWxpAV5uEs4t1pPn-XurabSV9bnGlJ4WDe3dbyNhj75ioogXQodPjukNwqF4bsHNmvHTE3NhPGMF-q5Qjh4M_XusfXHInioAVm9qJRKBEZ-yzstSOsGa&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiV8Knc3J-XAxUA2wIHHUZvJTMQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAVJ-jGwcqVap3kDT_8qSBfHo05zL9XLTnbt5yOELrAJPemdo4xtE26TCD6vP-J6GNwe3nZB92d_rWqx46JUd9IEIACiAzjjGso0xa-Sdh2RZHLHQnP0n4UNfl1HDlZXjx7ZMCV_e4kgmwgKXb9SVxJ7R_5dKPBEg_UAJ4J0i64qALUWlBYSVox4IclYlo8rLxisC3YMe5pHPFgmjr9yBA7JZsrXwO6_oR-jOirnTZO_5G0LWmUPMJtfDR99eUQmE5aPCPYC5hOPG66k1dT6TFgB4bgNAioLkH6lvPgu7BAuL5u1NNnRXl-bQQHaXgeW3XCxTMBV8qonA&csuir=1&mtid=vfDBauCSAtPyi-gP6eKAiAE
+```
+
+Links: [Link 1](<https://www.google.com/search?q=when+to+concentrate+and+when+to+dilute+emulsions&client=ms-android-xiaomi-terr2-rso2&hs=pakq&sca_esv=7a80360a426ed37a&sxsrf=APpeQnsDWdsXj2_QGXAIyfOygG609gZAgw%3A1791094971601&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE5XdvSlI_LORjvMqi_KlDwkgv0zYxJdoCL2NzkSVgWxpAV5uEs4t1pPn-XurabSV9bnGlJ4WDe3dbyNhj75ioogXQodPjukNwqF4bsHNmvHTE3NhPGMF-q5Qjh4M_XusfXHInioAVm9qJRKBEZ-yzstSOsGa&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiV8Knc3J-XAxUA2wIHHUZvJTMQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfAVJ-jGwcqVap3kDT_8qSBfHo05zL9XLTnbt5yOELrAJPemdo4xtE26TCD6vP-J6GNwe3nZB92d_rWqx46JUd9IEIACiAzjjGso0xa-Sdh2RZHLHQnP0n4UNfl1HDlZXjx7ZMCV_e4kgmwgKXb9SVxJ7R_5dKPBEg_UAJ4J0i64qALUWlBYSVox4IclYlo8rLxisC3YMe5pHPFgmjr9yBA7JZsrXwO6_oR-jOirnTZO_5G0LWmUPMJtfDR99eUQmE5aPCPYC5hOPG66k1dT6TFgB4bgNAioLkH6lvPgu7BAuL5u1NNnRXl-bQQHaXgeW3XCxTMBV8qonA&csuir=1&mtid=vfDBauCSAtPyi-gP6eKAiAE>)
+
+### 0583 | 2026-10-04 08:27:28 | You
+
+```text
+https://www.google.com/search?q=emulsie+%3D+betekenis&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDc1MjNqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpnJQOWUbUFy0AZP2fc5_e7wQK9SpSaccWZEM8174slgzA7lL9Jp-FedBms3jKtDYRkzLfYMnDYMy5pBIIBgIQaS46ps0&aep=10&ntc=1&sxsrf=APpeQnuxcgxdyBGT_9B1TeejHc35DleygQ%3A1791095061945&mstk=AUtExfBKb0ok7CMjQmlGzBARH0bUE9UMVBTU0FPFwM9J22eb2-tDOXoFoBdJqu4Nlt0d9jhUhhfm4KX5TXeUGzo_-FK5HQDa7_MFhHHhu1kkfOtCkH35HsRV8iZjHENK_kMR3v58w4BqnCRj8SrPQxVZqIUC-QPHzEPZpJJCVrg7-F2M9dhzBdCOg0jcogaj6ZIuPGlHbq5hp2k32ch2jWGSSU5D7nUk4BipPOP9ssuLgyh6-S9PtnNECfw6tjNYrBxH-JvRIJ3xrLwVbnupAPsttV9jhgsgnY1mLKdtdVY_kUzam_eBmU1zLIz-LiVHokwUxNqj2pU0ki7CKQ&aioh=3&csuir=1&mtid=WfHBaqbTCYbr7_UP0MGq8Qs&udm=50#lfId=ChxjMe
+```
+
+Links: [Link 1](<https://www.google.com/search?q=emulsie+%3D+betekenis&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDc1MjNqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpnJQOWUbUFy0AZP2fc5_e7wQK9SpSaccWZEM8174slgzA7lL9Jp-FedBms3jKtDYRkzLfYMnDYMy5pBIIBgIQaS46ps0&aep=10&ntc=1&sxsrf=APpeQnuxcgxdyBGT_9B1TeejHc35DleygQ%3A1791095061945&mstk=AUtExfBKb0ok7CMjQmlGzBARH0bUE9UMVBTU0FPFwM9J22eb2-tDOXoFoBdJqu4Nlt0d9jhUhhfm4KX5TXeUGzo_-FK5HQDa7_MFhHHhu1kkfOtCkH35HsRV8iZjHENK_kMR3v58w4BqnCRj8SrPQxVZqIUC-QPHzEPZpJJCVrg7-F2M9dhzBdCOg0jcogaj6ZIuPGlHbq5hp2k32ch2jWGSSU5D7nUk4BipPOP9ssuLgyh6-S9PtnNECfw6tjNYrBxH-JvRIJ3xrLwVbnupAPsttV9jhgsgnY1mLKdtdVY_kUzam_eBmU1zLIz-LiVHokwUxNqj2pU0ki7CKQ&aioh=3&csuir=1&mtid=WfHBaqbTCYbr7_UP0MGq8Qs&udm=50#lfId=ChxjMe>)
+
+### 0584 | 2026-10-04 09:21:51 | You
+
+```text
+https://www.google.com/search?q=week+skelet+baby+mens&oq=week+skelet+baby+mens&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDUxNDdqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8#lfId=ChxjMe
+```
+
+Links: [Link 1](<https://www.google.com/search?q=week+skelet+baby+mens&oq=week+skelet+baby+mens&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDUxNDdqMGo3qAIPsAIB&client=ms-android-xiaomi-terr2-rso2&sourceid=chrome-mobile&source=chrome.ob&ie=UTF-8#lfId=ChxjMe>)
+
+### 0585 | 2026-10-04 10:16:46 | You
+
+```text
+https://www.google.com/search?q=paaseiland+standbeelden+piramides+archimedes+glyphs+hieroglyphen+cerebro+cerebral+dome+hersenpan+labyrinth+Pharos+lighthouse+a.s.e.+glyphosate+ik+heb+vroeger+een+xmen+charles+xavier+neural+interface+helm+gehad+en+toen+een+soort+egyptisch+video+game+spel+gespeeld+en+gekregen+en+dat+wordt+nu+getest+en+weer+netjes+mijn+deeltje+terug+gegeven&client=ms-android-xiaomi-terr2-rso2&hs=0bkq&sca_esv=b9546abc4dcd83a4&sxsrf=APpeQnvQ6HHXvZIx_GLjCiliay3xU-C1ww%3A1791099325642&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpnJQOWUbUFy0AZP2fc5_e7wQK9SpSaccWZEM8174slgzA7lL9Jp-FedBms3jKtDYRkzLfYMnDYMy5pBIIBgIQaS46ps0&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjKuL_47J-XAxWc9rsIHUhbKfcQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCk-rrkm21PyvUdnJugXbTjAcg-leiyeNjYLIkuTi1CNJh28NvCzjeArIqLOi9XyfqjJngGaEA966poTnABqJGR8i_QPdSgjneLgY8c5xT4UfzOkXz5at2Vp6HYUkJySGOKfCy3Zz9OwoCR8tVG4oLf8u0K93gZv5P_XjTkzobO0PugVzEeY_3bgarSvBHoyJk_hDYNQwIurVkLH25WifJXnqoAXtbie7jVSlQIUGgRZZlVUy_ajEzeBTAOoCNBkj8-byIuFpkfzlVg2oOMXMmQcIR3Xvk0_l96yxyc_cLkOjZnZjndznAQMxbpWdRGlP-vjvEh7tuVsQ&csuir=1&mtid=vwHCaoPSJIv-7_UPlsSa0Qw&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=paaseiland+standbeelden+piramides+archimedes+glyphs+hieroglyphen+cerebro+cerebral+dome+hersenpan+labyrinth+Pharos+lighthouse+a.s.e.+glyphosate+ik+heb+vroeger+een+xmen+charles+xavier+neural+interface+helm+gehad+en+toen+een+soort+egyptisch+video+game+spel+gespeeld+en+gekregen+en+dat+wordt+nu+getest+en+weer+netjes+mijn+deeltje+terug+gegeven&client=ms-android-xiaomi-terr2-rso2&hs=0bkq&sca_esv=b9546abc4dcd83a4&sxsrf=APpeQnvQ6HHXvZIx_GLjCiliay3xU-C1ww%3A1791099325642&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpnJQOWUbUFy0AZP2fc5_e7wQK9SpSaccWZEM8174slgzA7lL9Jp-FedBms3jKtDYRkzLfYMnDYMy5pBIIBgIQaS46ps0&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwjKuL_47J-XAxWc9rsIHUhbKfcQ2J8OegQIERAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCk-rrkm21PyvUdnJugXbTjAcg-leiyeNjYLIkuTi1CNJh28NvCzjeArIqLOi9XyfqjJngGaEA966poTnABqJGR8i_QPdSgjneLgY8c5xT4UfzOkXz5at2Vp6HYUkJySGOKfCy3Zz9OwoCR8tVG4oLf8u0K93gZv5P_XjTkzobO0PugVzEeY_3bgarSvBHoyJk_hDYNQwIurVkLH25WifJXnqoAXtbie7jVSlQIUGgRZZlVUy_ajEzeBTAOoCNBkj8-byIuFpkfzlVg2oOMXMmQcIR3Xvk0_l96yxyc_cLkOjZnZjndznAQMxbpWdRGlP-vjvEh7tuVsQ&csuir=1&mtid=vwHCaoPSJIv-7_UPlsSa0Qw&udm=50>)
+
+### 0586 | 2026-10-04 10:17:23 | You
+
+```text
+https://www.google.com/search?q=moodenglane+marzipullamI&client=ms-android-xiaomi-terr2-rso2&hs=gckq&sca_esv=948ff5d195608fdb&sxsrf=APpeQnutjffKlqeL0rl59UGJsqYYwuWFBQ%3A1791101825695&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955IbzrbwHf6tkbFbd-nuFdbKth9Y-58t5LtnYgTA4TWDFYCUNl4d7F9XBAwiEq2T2c7SNgrvMxYiRBXL4fnQnnTOewx28&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwi0xs6g9p-XAxVYxQIHHZJiFpsQ2J8OegQIFBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDqLAvskcFVdFIs5daGD8XkvY6RVm_n9rHUVU8nyU-tLJsmttV3EYVF2MGpMXjEnAUXCliYiyh_Akpc-_pdeh6ufa6cjqQ2bE982812QQWekTnR-xzJCMVq-GrMxK7FIeeVglsbu-QMcREIaP42Aew7u5SyhmFHzwN8XycNWF_FJgu33Pq_2-0FQNQ9fOfWq_fI6ZWcGMtBdxFJxUhlGYyfjIc4RirCkU_EwW6IHe0hMEcffixALjIm4x34rQ7K5qIJP4Ov55zfLGTd-cJcFBAgsm5HH0LgazCvGVzR6qJqyoUZLJfZhfEIh0wvaH6mE4mutE4BS2N-TQ&csuir=1&mtid=gwvCaoKLB_yii-gP-cG6mQ0
+```
+
+Links: [Link 1](<https://www.google.com/search?q=moodenglane+marzipullamI&client=ms-android-xiaomi-terr2-rso2&hs=gckq&sca_esv=948ff5d195608fdb&sxsrf=APpeQnutjffKlqeL0rl59UGJsqYYwuWFBQ%3A1791101825695&udm=50&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832VTJOOCxW_fyN-Q_ezyf8gKjm3rhh_G8jdZ2Q6tji4z8Mva6cfvBj5rpPch2IC955IbzrbwHf6tkbFbd-nuFdbKth9Y-58t5LtnYgTA4TWDFYCUNl4d7F9XBAwiEq2T2c7SNgrvMxYiRBXL4fnQnnTOewx28&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwi0xs6g9p-XAxVYxQIHHZJiFpsQ2J8OegQIFBAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfDqLAvskcFVdFIs5daGD8XkvY6RVm_n9rHUVU8nyU-tLJsmttV3EYVF2MGpMXjEnAUXCliYiyh_Akpc-_pdeh6ufa6cjqQ2bE982812QQWekTnR-xzJCMVq-GrMxK7FIeeVglsbu-QMcREIaP42Aew7u5SyhmFHzwN8XycNWF_FJgu33Pq_2-0FQNQ9fOfWq_fI6ZWcGMtBdxFJxUhlGYyfjIc4RirCkU_EwW6IHe0hMEcffixALjIm4x34rQ7K5qIJP4Ov55zfLGTd-cJcFBAgsm5HH0LgazCvGVzR6qJqyoUZLJfZhfEIh0wvaH6mE4mutE4BS2N-TQ&csuir=1&mtid=gwvCaoKLB_yii-gP-cG6mQ0>)
+
+### 0587 | 2026-10-04 10:27:34 | You
+
+```text
+https://www.google.com/search?q=carmack+lucky+palmer+facebook+oculus+quest+quake+engine+meta+rayban+googless+https%3A%2F%2Fyoutu.be%2FetSQqtuHK4U%3Fis%3DhcK5kwDH_QTlh4sk+shoutcast+eurocup+a+touchy+feel+T+rentanar+additive+agreert+om+KLOtorWeiWukerstpoolisaar+cryptoids+boids+sperma+cide+R+value+QR+maatwerk+schap+%27t+ij+aan+de+studio+rijk+moodenglame+factor+hot+or+not+lowlens+tentintentoonstelling+layehr+cake+marry...&client=ms-android-xiaomi-terr2-rso2&hs=XxPB&sca_esv=948ff5d195608fdb&sxsrf=APpeQnvSES1XFJOMI7z78QTwtgmckcyu2Q%3A1791102374881&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE-Dsslc-KGKq55jF_BVsFlBETcQE9jpeDgApPlcTya2OKW8vbKQTnU7tGyvk145UpKFLBWANEbDEBS3_lK6rAlavdiudLShCj6YcULWPvzZmmzhvAFGIcgqU8WlaAlWFizY0y4sfX09YeOvf7KiQEiUptiOa&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiw_L2m-J-XAxUghf0HHTgxDsAQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCTh7f8F513ejIA47Bp9d3yQfWBfbAo3RH4GM5x6LubACfKybu6aAKEk1HuV-tynlOZvBZMHOfiFSQ4djk-t5-flGMBoJQUCjWEk86k_tu-RnItTvCbmxSQcud6sWDVL9j-8nxiiWX4c-id0fha0RKl9C9_KDDh6Ij2RSaqxEP6Dv1_XIW3WsrsU_-4zzxbBcFOO-JHuGWdGxVyPGFVKafwRuU5g851pVCYeYmYCMQDfW8SRQA3Byf91HnvAdPmNyEew6CJTA4mwH4f8Wx6eXsquJUbDh5lAzcIOCon-WKs0G38vVIHc4p4KGA3M992FY2elc1ExcQnYA&csuir=1&mtid=qQ3CauyuC5Tt7_UPqP_gyAU&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=carmack+lucky+palmer+facebook+oculus+quest+quake+engine+meta+rayban+googless+https%3A%2F%2Fyoutu.be%2FetSQqtuHK4U%3Fis%3DhcK5kwDH_QTlh4sk+shoutcast+eurocup+a+touchy+feel+T+rentanar+additive+agreert+om+KLOtorWeiWukerstpoolisaar+cryptoids+boids+sperma+cide+R+value+QR+maatwerk+schap+%27t+ij+aan+de+studio+rijk+moodenglame+factor+hot+or+not+lowlens+tentintentoonstelling+layehr+cake+marry...&client=ms-android-xiaomi-terr2-rso2&hs=XxPB&sca_esv=948ff5d195608fdb&sxsrf=APpeQnvSES1XFJOMI7z78QTwtgmckcyu2Q%3A1791102374881&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE-Dsslc-KGKq55jF_BVsFlBETcQE9jpeDgApPlcTya2OKW8vbKQTnU7tGyvk145UpKFLBWANEbDEBS3_lK6rAlavdiudLShCj6YcULWPvzZmmzhvAFGIcgqU8WlaAlWFizY0y4sfX09YeOvf7KiQEiUptiOa&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwiw_L2m-J-XAxUghf0HHTgxDsAQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCTh7f8F513ejIA47Bp9d3yQfWBfbAo3RH4GM5x6LubACfKybu6aAKEk1HuV-tynlOZvBZMHOfiFSQ4djk-t5-flGMBoJQUCjWEk86k_tu-RnItTvCbmxSQcud6sWDVL9j-8nxiiWX4c-id0fha0RKl9C9_KDDh6Ij2RSaqxEP6Dv1_XIW3WsrsU_-4zzxbBcFOO-JHuGWdGxVyPGFVKafwRuU5g851pVCYeYmYCMQDfW8SRQA3Byf91HnvAdPmNyEew6CJTA4mwH4f8Wx6eXsquJUbDh5lAzcIOCon-WKs0G38vVIHc4p4KGA3M992FY2elc1ExcQnYA&csuir=1&mtid=qQ3CauyuC5Tt7_UPqP_gyAU&udm=50>)
+
+### 0588 | 2026-10-04 10:41:46 | You
+
+```text
+<album message>
+```
+
+### 0589 | 2026-10-04 10:41:46 | You
+
+```text
+<image omitted> Aivvd
+```
+
+### 0590 | 2026-10-04 10:41:46 | You
+
+```text
+<image omitted>
+```
+
+### 0591 | 2026-10-04 10:41:50 | You
+
+```text
+W
+```
+
+### 0592 | 2026-10-04 10:41:50 | You
+
+```text
+W
+```
+
+### 0593 | 2026-10-04 10:41:52 | You
+
+```text
+W
+```
+
+### 0594 | 2026-10-04 10:42:43 | You
+
+```text
+Bush or no bush smooth smoke poke p in v glide slide fluid frick rat.io wombcumin
+```
+
+### 0595 | 2026-10-04 10:43:09 | You
+
+```text
+Dutchbeet lokaas mlm
+```
+
+### 0596 | 2026-10-04 10:45:45 | You
+
+```text
+<image omitted>
+```
+
+### 0597 | 2026-10-04 10:45:56 | You
+
+```text
+Elon Musk is een sok pop voor mijzelf
+```
+
+### 0598 | 2026-10-04 10:46:59 | You
+
+```text
+Vandaar doge doggy Lobbes lobes globes hersenpan dome walnut Walden Theroux weird weekends 31+5 tsar topology
+```
+
+### 0599 | 2026-10-04 11:27:58 | You
+
+```text
+https://www.google.com/search?q=miasmic+routing+gas+digital+flow+field+vectory+olfactory+sensei+tom+klootwijk+voor+elegante+fysiek+aantrekkings+aantrekkingskrachtfeeldt&client=ms-android-xiaomi-terr2-rso2&hs=SyPB&sca_esv=0cd649e0c0701ff8&sxsrf=APpeQnvkhpGwqPPkKzZs-v_8ExtY9SsOtQ%3A1791105803265&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpnJQOWUbUFy0AZP2fc5_e7wQK9SpSaccWZEM8174slgzA7lL9Jp-FedBms3jKtDYRkzLfYMnDYMy5pBIIBgIQaS46ps0&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwink6KJhaCXAxXiyAIHHYzoPOMQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCWvxy8JMwEbvp5jyA_29hdbx_VoR6g95LiccFg2_KC8urrgVvy2UcnLUwD2YRMePF9juqQy3EMUMAU9BdyXcxyW1wfJmsmgN33xPxjx236ePO5JFzauqfQIqF_xDKEatpiz6uzESvtbfQz3OXA-hZXe8F4iupmdnr9JX1GYcup7wGcIwOCjoKOn5p-ADnOd2AJBE5eDxww46UUSD-TyU9KfDMl-HNsdkPtGJAQrl5uqhkdsKpMNVdIuEsuAJ5vQAJfcrol4HAIWgeJTkx-c8AfmXFR98jg8JB1GLn6_xkmeOXnKZv7vIp5K-NAsWSGQRlty4c3UWlAYQ&csuir=1&mtid=DRvCau2GDJzsi-gPtZz9yA0&udm=50
+```
+
+Links: [Link 1](<https://www.google.com/search?q=miasmic+routing+gas+digital+flow+field+vectory+olfactory+sensei+tom+klootwijk+voor+elegante+fysiek+aantrekkings+aantrekkingskrachtfeeldt&client=ms-android-xiaomi-terr2-rso2&hs=SyPB&sca_esv=0cd649e0c0701ff8&sxsrf=APpeQnvkhpGwqPPkKzZs-v_8ExtY9SsOtQ%3A1791105803265&source=chrome.ob&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832cSpkWkfSwsmpNIrD_OQ-UdFAe4qAwsQWVbrtprjzBSpnJQOWUbUFy0AZP2fc5_e7wQK9SpSaccWZEM8174slgzA7lL9Jp-FedBms3jKtDYRkzLfYMnDYMy5pBIIBgIQaS46ps0&vsint=&aep=1&ntc=1&cs=1&sa=X&ved=2ahUKEwink6KJhaCXAxXiyAIHHYzoPOMQ2J8OegQIDxAE&biw=375&bih=691&dpr=3.25&mstk=AUtExfCWvxy8JMwEbvp5jyA_29hdbx_VoR6g95LiccFg2_KC8urrgVvy2UcnLUwD2YRMePF9juqQy3EMUMAU9BdyXcxyW1wfJmsmgN33xPxjx236ePO5JFzauqfQIqF_xDKEatpiz6uzESvtbfQz3OXA-hZXe8F4iupmdnr9JX1GYcup7wGcIwOCjoKOn5p-ADnOd2AJBE5eDxww46UUSD-TyU9KfDMl-HNsdkPtGJAQrl5uqhkdsKpMNVdIuEsuAJ5vQAJfcrol4HAIWgeJTkx-c8AfmXFR98jg8JB1GLn6_xkmeOXnKZv7vIp5K-NAsWSGQRlty4c3UWlAYQ&csuir=1&mtid=DRvCau2GDJzsi-gPtZz9yA0&udm=50>)
+
+### 0600 | 2026-10-04 11:28:46 | You
+
+```text
+Vector flow fields keijiro Takahashi set Hp unity net I work you profit
+```
+
+### 0601 | 2026-10-04 11:34:14 | You
+
+```text
+Via via team FIA annekey postbus briefgeheim aan trump
+```
